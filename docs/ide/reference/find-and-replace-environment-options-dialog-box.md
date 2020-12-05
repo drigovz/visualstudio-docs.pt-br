@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo Localizar e Substituir, Ambiente, Opções
+description: Saiba como usar a página localizar e substituir na seção ambiente para controlar caixas de mensagens e outros aspectos de uma operação de localização e substituição.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ef53be4d3894dd1d22a3afbde9dbf631b472aa2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29f5fb6034c693c14cd04c83fe4c71f8763a0b0c
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569563"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617312"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Caixa de diálogo Localizar e Substituir, Ambiente, Opções
 

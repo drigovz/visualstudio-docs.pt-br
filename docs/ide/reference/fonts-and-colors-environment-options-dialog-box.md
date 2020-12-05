@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo Fontes e Cores, Ambiente, Opções
+description: Saiba como usar a página fontes e cores na seção ambiente para estabelecer uma fonte personalizada e um esquema de cores para vários elementos da interface do usuário no IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,16 +27,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbbd42b0e4eae6d124fc59d68592155bf2c9bd49
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595612"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617520"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Caixa de diálogo Fontes e Cores, Ambiente, Opções
 
-A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelecer um esquema de cores e fontes personalizado para vários elementos da interface do usuário no IDE (ambiente de desenvolvimento integrado). Você pode acessar essa caixa de diálogo clicando em **ferramentas**  >  **Opções**e, em **Environment**seguida, selecionando  >  **fontes e cores**do ambiente.
+A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelecer um esquema de cores e fontes personalizado para vários elementos da interface do usuário no IDE (ambiente de desenvolvimento integrado). Você pode acessar essa caixa de diálogo clicando em **ferramentas**  >  **Opções** e, em **Environment** seguida, selecionando  >  **fontes e cores** do ambiente.
 
 As alterações no esquema de cores não são implementadas durante a sessão em que foram feitas. É possível avaliar alterações de cores abrindo outra instância do Visual Studio e produzindo as condições nas quais você espera aplicar essas alterações.
 

@@ -1,5 +1,7 @@
 ---
 title: Projetos e Soluções, caixa de diálogo Locais
+description: Saiba como usar a página locais na seção projetos e soluções para definir locais padrão para projetos, modelos de projeto e modelos de item.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -9,16 +11,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be4f2977f34ec57198ed3e87f58bdacb4daae4a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 171635e9f08b0c427679d874dee3466d9eb5e3f6
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565715"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616818"
 ---
 # <a name="options-dialog-box-projects-and-solutions--locations"></a>Caixa de diálogo opções: locais de projetos e soluções \>
 
-Use esta página para definir locais padrão para projetos, modelos de projeto e modelos de item. Para acessar essas opções, selecione **ferramentas**  >  **Opções**, expanda **projetos e soluções**e, em seguida, selecione **locais**.
+Use esta página para definir locais padrão para projetos, modelos de projeto e modelos de item. Para acessar essas opções, selecione **ferramentas**  >  **Opções**, expanda **projetos e soluções** e, em seguida, selecione **locais**.
 
 As seguintes opções estão disponíveis na página **Locais**.
 

@@ -1,5 +1,7 @@
 ---
 title: Renomeação de refatoração
+description: Saiba como usar o recurso refatorar renomeação para renomear identificadores para símbolos de código, como campos, variáveis locais, métodos, namespaces, propriedades e tipos.
+ms.custom: SEO-VS-2020
 ms.date: 05/04/2020
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8d5b3d32b23b336dc86a92c33bcb97d02312f2dc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43a6e93815732c4f9d2ec7f29d6d6bef4c1f3451
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84182945"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616714"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refatoração Renomear um símbolo de código
 
@@ -78,7 +80,7 @@ Esta refatoração aplica-se a:
 
    ![Conflito de renomeação](media/rename-conflict-cs.png)
 
-- Outra maneira de renomear um símbolo é alterar seu nome no editor. Em seguida, com o cursor no nome do símbolo, pressione **Ctrl** + **.** ou simplesmente expanda o menu de ícone de lâmpada que aparece e escolha **renomear \<old name> como \<new name> **.
+- Outra maneira de renomear um símbolo é alterar seu nome no editor. Em seguida, com o cursor no nome do símbolo, pressione **Ctrl** + **.** ou simplesmente expanda o menu de ícone de lâmpada que aparece e escolha **renomear \<old name> como \<new name>**.
 
    ![Renomear no editor](media/rename-with-editor-cs.png)
 

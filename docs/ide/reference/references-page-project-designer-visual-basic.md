@@ -1,5 +1,7 @@
 ---
 title: Página Referências, Designer de Projeto (Visual Basic)
+description: Saiba como usar a página referências do designer de projeto para gerenciar referências do projeto, referências Web e namespaces importados.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b80427999ad841c493e61cd704b64435f81c3914
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6cc06bd51d66b49991e12db8bb03a63a5a742fe1
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565598"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616662"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referências, Designer de Projeto (Visual Basic)
 
@@ -56,7 +58,7 @@ Escolha **Referência** para adicionar uma referência ao seu projeto usando a c
 
 Escolha **Referência Web** para adicionar uma referência Web ao seu projeto usando a caixa de diálogo **Adicionar Referência Web**.
 
- **Remover**
+ **Removerr**
 
 Selecione uma ou mais referências na lista **Referências** e clique nesse botão para excluí-las.
 
@@ -68,7 +70,7 @@ Selecione uma referência Web na lista **Referências** e clique nesse botão pa
 
 Você pode digitar seu próprio namespace nesta caixa e clicar em **Adicionar Importação de Usuário** para adicioná-lo à lista de namespaces.
 
-Você pode criar aliases para namespaces importados pelo usuário. Para fazer isso, insira o alias e o namespace no namespace de *alias*de formato = *namespace*. Isso é útil se você estiver usando namespaces longos, por exemplo: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+Você pode criar aliases para namespaces importados pelo usuário. Para fazer isso, insira o alias e o namespace no namespace de *alias* de formato = *namespace*. Isso é útil se você estiver usando namespaces longos, por exemplo: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Adicionar Importação de Usuário**
 

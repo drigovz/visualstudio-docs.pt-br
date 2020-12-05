@@ -1,5 +1,7 @@
 ---
 title: Gerar campo, propriedade, variável local
+description: Saiba como usar o menu ações rápidas e refatoração para gerar o código para um campo, propriedade ou local não declarado anteriormente.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b554aa5586150942c0fc7d7aeada9356a67029ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ebce688317a04bdc223659fb0c085b2f0223119d
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595599"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617494"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Gerar um campo, uma propriedade ou uma variável local no Visual Studio
 

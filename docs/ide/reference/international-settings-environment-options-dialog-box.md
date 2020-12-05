@@ -1,5 +1,6 @@
 ---
 title: Configurações internacionais na caixa de diálogo opções
+description: Saiba como usar a página configurações internacionais na seção ambiente para alterar o idioma padrão quando tiver mais de uma versão de idioma do IDE instalada.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,24 +19,24 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1210f217c9e1dc1f8a90eb99fec9e55970aa8eff
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 37be8d3e5a652bb55b1d71f66c0e9c8ca4cc2f16
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102487"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617364"
 ---
 # <a name="options-dialog-box-environment--international-settings"></a>Caixa de diálogo opções: \> configurações internacionais de ambiente
 
-A página Configurações Internacionais permite alterar o idioma padrão quando você tem mais de uma versão de idioma do IDE (ambiente de desenvolvimento integrado) instalada em seu computador. Você pode acessar essa caixa de diálogo selecionando **Opções** no menu **Ferramentas** e, em seguida, escolhendo **Configurações Internacionais** na pasta **Ambiente** .
+A página Configurações Internacionais permite alterar o idioma padrão quando você tem mais de uma versão de idioma do IDE (ambiente de desenvolvimento integrado) instalada em seu computador. Você pode acessar essa caixa de diálogo selecionando **Opções** no menu **Ferramentas** e, em seguida, escolhendo **Configurações Internacionais** na pasta **Ambiente**.
 
-**Idioma**
+**Linguagem**
 
-Lista os idiomas disponíveis para as versões de idioma do produto instalado. Se vários idiomas de produtos ou uma instalação de idioma misto dos produtos compartilhar o ambiente, a seleção de idioma será alterada para **Usar o idioma do Microsoft Windows** .
+Lista os idiomas disponíveis para as versões de idioma do produto instalado. Se vários idiomas de produtos ou uma instalação de idioma misto dos produtos compartilhar o ambiente, a seleção de idioma será alterada para **Usar o idioma do Microsoft Windows**.
 
 > [!CAUTION]
 > Em um sistema com vários idiomas instalados, as ferramentas de build do Visual C++ (cl.exe, link.exe, nmake.exe, bscmake.exe e arquivos relacionados) não são afetadas por essa configuração. Essas ferramentas usam a versão do último idioma instalado. As ferramentas de build do idioma instalado anteriormente são substituídas porque as ferramentas de build do Visual C++ não usam o modelo DLL satélite.
 
-### <a name="see-also"></a>Veja também
+### <a name="see-also"></a>Confira também
 
 - [Instalar pacote de idiomas](../../install/install-visual-studio.md#step-6---install-language-packs-optional)

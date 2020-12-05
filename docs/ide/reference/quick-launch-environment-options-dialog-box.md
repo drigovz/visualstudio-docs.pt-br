@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo de início rápido, ambiente, opções
+description: Saiba como usar a página início rápido na seção ambiente para pesquisar e executar rapidamente ações para ativos do IDE, como opções, modelos e menus.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 706b54e3ee925b1833f860da2f84c8d28af9617e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e055906dd4cddabd16b39e3b2cad66d07dddd38d
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565663"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616740"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Caixa de diálogo de início rápido, ambiente, opções
 
@@ -42,7 +44,7 @@ Os resultados da pesquisa do Início Rápido aparecem em quatro categorias: **Us
 |Documentos|@doc<br /><br /> Por exemplo, `@doc program.cs`|Limita a pesquisa a nomes de arquivo e caminhos de documentos abertos para os critérios de pesquisa, mas não pesquisa o texto dentro dos próprios arquivos.|
 
 > [!NOTE]
-> Você pode alterar as teclas de atalho na página **geral**do  >  **teclado** na caixa de diálogo **Opções** .
+> Você pode alterar as teclas de atalho na página **geral** do  >  **teclado** na caixa de diálogo **Opções** .
 
 ## <a name="show-previous-results"></a>Mostrar resultados anteriores
 

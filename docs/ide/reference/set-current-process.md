@@ -1,5 +1,7 @@
 ---
 title: Definir processo atual
+description: Saiba mais sobre o comando Set Current Process e como ele define o processo especificado como o processo ativo no depurador.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3440c66d79fef3eac3744681870c9ce1ed0e97b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b6a5c2f010b60546fe1ece16f66bf437d2dc633
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593545"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616572"
 ---
 # <a name="set-current-process"></a>Definir processo atual
 Define o processo especificado como o processo ativo no depurador.

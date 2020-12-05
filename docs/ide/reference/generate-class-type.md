@@ -1,5 +1,7 @@
 ---
 title: Gerar a classe ou o tipo
+description: Saiba como usar o menu ações rápidas e refatoração para gerar imediatamente o código de uma classe ou tipo.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe38cacf9f33acfac6b1634b6be6a8a3e45de820
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595625"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617533"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Gerar uma classe ou um tipo no Visual Studio
 
@@ -72,10 +74,10 @@ Esta geração de código aplica-se a:
 
    Seleção | Descrição
    --- | ---
-   Acesso | Defina o tipo para ter acesso *Padrão*, *Interno* ou *Público*.
+   Access | Defina o tipo para ter acesso *Padrão*, *Interno* ou *Público*.
    Tipo | Isso pode ser definido como *classe* ou *struct*.
-   Name | Isso não pode ser alterado e será o nome que você já digitou.
-   Projeto | Se houver vários projetos em sua solução, você poderá escolher onde deseja que a classe/struct viva.
+   Nome | Isso não pode ser alterado e será o nome que você já digitou.
+   Project | Se houver vários projetos em sua solução, você poderá escolher onde deseja que a classe/struct viva.
    Nome do Arquivo | Você pode criar um novo arquivo ou pode adicionar o tipo a um arquivo existente.
 
 A classe ou o struct é criado. Para C#, um construtor também é criado.

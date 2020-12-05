@@ -1,5 +1,7 @@
 ---
 title: Gerar usos
+description: Saiba como usar o menu ações rápidas e refatoração para adicionar imediatamente as importações necessárias ou o uso de diretivas para código de cópia e colagem.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -12,12 +14,12 @@ ms.workload:
 - dotnet
 helpviewer_keywords:
 - add missing usings
-ms.openlocfilehash: 903b160bac0e8096062e09fd78ff4c92c46cf8ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38996d1cda52dfe98b6ce9cf24e5adcca6a8b069
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094317"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617156"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>Adicionar usos ausentes no Visual Studio
 

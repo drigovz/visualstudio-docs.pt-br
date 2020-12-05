@@ -1,5 +1,7 @@
 ---
 title: Refatoração Extrair uma interface
+description: Saiba como usar o menu ações rápidas e refatoração para criar uma interface usando membros existentes de uma classe, estrutura ou interface.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5055f50d07cf9362c9be1bdc8135e31240a7cc66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13e9b684c81abf491b5836c96190c6a89bdc0643
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595664"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617390"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refatoração Extrair uma interface
 
@@ -60,11 +62,11 @@ Esta refatoração aplica-se a:
 
    | Campo | Descrição |
    | - | - |
-   | **Nome da nova interface** | O nome da interface a ser criada. O nome usará como padrão I*ClassName*, em que *ClassName* é o nome da classe selecionada acima. |
-   | **Nome do novo arquivo** | O nome do arquivo gerado que conterá a interface. Assim como ocorre com o nome da interface, esse nome usará como padrão I*ClassName*, em que *ClassName* é o nome da classe selecionada acima. Selecione também a opção para **Adicionar ao arquivo atual**. |
+   | **Nome da nova interface** | O nome da interface a ser criada. O nome usará como padrão I *ClassName*, em que *ClassName* é o nome da classe selecionada acima. |
+   | **Nome do novo arquivo** | O nome do arquivo gerado que conterá a interface. Assim como ocorre com o nome da interface, esse nome usará como padrão I *ClassName*, em que *ClassName* é o nome da classe selecionada acima. Selecione também a opção para **Adicionar ao arquivo atual**. |
    | **Selecionar membros públicos para formar a interface** | Os itens a serem extraídos para a interface. Você pode selecionar quantos desejar. |
 
-4. Escolha **OK**.
+4. Selecione **OK**.
 
    A interface foi criada no arquivo com o nome especificado. Além disso, a classe que você selecionou implementa essa interface.
 

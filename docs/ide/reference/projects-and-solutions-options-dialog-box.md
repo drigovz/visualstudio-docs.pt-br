@@ -1,5 +1,7 @@
 ---
 title: Projetos e Soluções, caixa de diálogo Opções
+description: Saiba como usar a página Geral na seção projetos e soluções para definir o comportamento do Visual Studio relacionado a projetos e soluções.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -13,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ed60e07c625665f92838cfbc671b03c605fda0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01ee7e0da5fab8ceba2e5dc0642148033e2415da
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567639"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616896"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Caixa de diálogo opções: projetos e soluções \> geral
 
-Use esta página para definir o comportamento do Visual Studio relacionado a projetos e soluções. Para acessar essas opções, selecione **ferramentas**  >  **Opções**, expanda **projetos e soluções**e, em seguida, selecione **geral**.
+Use esta página para definir o comportamento do Visual Studio relacionado a projetos e soluções. Para acessar essas opções, selecione **ferramentas**  >  **Opções**, expanda **projetos e soluções** e, em seguida, selecione **geral**.
 
 As seguintes opções estão disponíveis na página **Geral**.
 

@@ -1,5 +1,6 @@
 ---
 title: Caixa de diálogo extensões, ambiente e opções
+description: Saiba como usar a página extensões na seção ambiente para definir opções de como o Visual Studio executa atualizações e como as extensões são atualizadas e descobertas.
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b0e1ca6d73e27f216f80054f87a35cf5389179
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10642cabb5ac9d0d864da25f8cbf285e5b58e995
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114238"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617338"
 ---
 # <a name="options-dialog-box-environment--extensions"></a>Caixa de diálogo opções: \> extensões de ambiente
 

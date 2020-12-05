@@ -1,5 +1,7 @@
 ---
 title: Gerar uma ação rápida de desconstrutor
+description: Saiba como usar o menu ações rápidas e refatoração para gerar imediatamente o stub do método para um novo desconstrutor.
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a3a89d15d05b44575fede98d3043d706b24c1d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff2ac7682eff1c3da0597a95945a6a0b016d9213
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "65531891"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617247"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Gerar um desconstrutor no Visual Studio
 
@@ -40,7 +42,7 @@ Esta geração de código aplica-se a:
       - Com o cursor na sua declaração, selecione Ctrl+. para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
       - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
-      - Selecione o ícone ![chave de fenda](media/screwdriver.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha vazia na classe.
+      - Selecione o :::image type="icon" source="media/screwdriver.png"::: ícone que aparece na margem esquerda se o cursor de texto já estiver na linha vazia da classe.
 
       ![Gerar uma correção de código de desconstrutor](media/deconstruct-codefix.png)
 

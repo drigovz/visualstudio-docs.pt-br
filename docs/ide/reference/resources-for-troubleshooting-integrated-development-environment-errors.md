@@ -1,5 +1,7 @@
 ---
 title: Recursos para solucionar erros
+description: Saiba como usar artigos, fóruns ou suporte a produtos da base de dados de conhecimento para solucionar erros de IDE que não são informativos o suficiente para ajudá-lo a resolver um problema.
+ms.custom: SEO-VS-2020
 ms.date: 07/23/2020
 ms.topic: troubleshooting
 f1_keywords:
@@ -93,12 +95,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f18ef8a0bf8ffc6b7478f307b6c2a37247bef034
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3fdf18c67be8188bd03c498778fe8e6ad9409ee
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234725"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616571"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Recursos para solucionar erros do ambiente de desenvolvimento integrado
 

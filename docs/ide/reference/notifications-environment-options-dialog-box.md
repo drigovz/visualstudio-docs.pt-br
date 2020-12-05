@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo notificações, ambiente e opções
+description: Saiba como usar a página notificações na seção ambiente para parar de ignorar todas as notificações que você optou anteriormente por ignorar por meio da caixa de diálogo notificações.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: ad95a4a40d8f4f2ed0ab1c3fd37e329c850cc03f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d257f1703615fe4bcc072362326ce48f99f904e
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770891"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616844"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>Caixa de diálogo Notificações, Ambiente, Opções
 

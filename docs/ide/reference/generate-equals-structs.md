@@ -1,5 +1,7 @@
 ---
 title: Gerar operadores IEquatable para structs
+description: Saiba como usar o menu ações rápidas e refatoração para gerar operadores Equals e IEquatable para structs.
+ms.custom: SEO-VS-2020
 ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5ee695169f52036858fc70598f81f375638ab03f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 28d70c0ea95c9373eb87e6199d53f1b43fadd508
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808110"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617195"
 ---
 # <a name="generate-iequatable-operators-when-generating-equals-for-structs"></a>Gerar operadores IEquatable ao gerar Equals para structs
 
@@ -30,7 +32,7 @@ Esta geração de código aplica-se a:
 
 - Implementar a interface IEquatable implementa um método Equals () específico do tipo.
 
-## <a name="how-to"></a>Instruções
+## <a name="how-to"></a>Como fazer
 
 1. Coloque o cursor em algum lugar na linha da sua declaração de struct.
 

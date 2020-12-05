@@ -1,5 +1,7 @@
 ---
 title: Comando Definir Quadro de Pilha Atual
+description: Saiba mais sobre o comando definir quadro de pilhas atual e como ele permite que você defina um determinado quadro de pilhas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f70f5ebfc80933f38f1543d5eb42f01fb470298f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 032602744247ded5cb38d8a3ae3e1157ccbc5cee
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769725"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616597"
 ---
 # <a name="set-current-stack-frame-command"></a>Comando Definir Quadro de Pilha Atual
 Permite definir um registro de ativação específico.

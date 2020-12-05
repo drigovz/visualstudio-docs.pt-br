@@ -1,5 +1,7 @@
 ---
 title: Mover a declaração de variável para perto da referência
+description: Saiba como usar o menu ações rápidas e refatoração para mover declarações de variável mais perto de seu uso.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1339f4a9d151ef41d9a35c5aac0a96f220a297b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 188907b4f1b6630e95ab435d588878b16c763f4a
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79093992"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616922"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>Mover declaração de variável para perto da referência no Visual Studio
 
