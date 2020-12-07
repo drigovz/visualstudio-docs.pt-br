@@ -1,5 +1,7 @@
 ---
 title: Como VSPackages adicionar elementos da interface do usuário | Microsoft Docs
+description: Saiba como VSPackages adicionar elementos da interface do usuário (IU), como menus, barras de ferramentas e janelas de ferramentas, ao Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d9cc3184009dd98e743064db1b8eb2abe6059d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3e2fe51c365e3e6936a73aef9d4de9d52024d47
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649591"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761082"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Como VSPackages adicionar elementos da interface do usuário
 Um VSPackage pode adicionar elementos de interface do usuário (IU), por exemplo, menus, barras de ferramentas e janelas de ferramentas, ao Visual Studio por meio do arquivo *. vsct* .

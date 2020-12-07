@@ -1,5 +1,7 @@
 ---
 title: Visualizador de biblioteca de imagens | Microsoft Docs
+description: Saiba mais sobre a ferramenta Visualizador de biblioteca de imagens do Visual Studio que carrega e pesquisa manifestos de imagem, permitindo que você exiba e manipule atributos de imagem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9714879f93af052e244134ce225b07317455921
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae9090604a16196c43b80140395eb3401215d665
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536338"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761265"
 ---
 # <a name="image-library-viewer"></a>Visualizador da biblioteca de imagens
 A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carregar e Pesquisar manifestos de imagem, permitindo que o usuário manipule-os da mesma forma que o Visual Studio. O usuário pode alterar o plano de fundo, tamanhos, DPI, alto contraste e outras configurações. A ferramenta também exibe informações de carregamento para cada manifesto de imagem e exibe informações de origem para cada imagem no manifesto da imagem. Essa ferramenta é útil para:
@@ -127,7 +129,7 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
 |**Atributo**|**Definição**|
 |-|-|
 |Uri|Necessária Um URI que define de onde a imagem pode ser carregada. Pode ser um dos seguintes:<br /><br /> -Um [pacote URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) usando a autoridade Application:///<br /><br /> -Uma referência de recurso de componente absoluto<br /><br /> -Um caminho para um arquivo que contém um recurso nativo|
-|Segundo plano|Adicional Indica em que tipo de plano de fundo a origem deve ser usada.<br /><br /> Pode ser um dos seguintes:<br /><br /> - *Light*: a origem pode ser usada em um plano de fundo claro.<br /><br /> - *Escuro*: a origem pode ser usada em um plano de fundo escuro.<br /><br /> - *HighContrast*: a origem pode ser usada em qualquer plano de fundo no modo de alto contraste.<br /><br /> - *HighContrastLight*: a origem pode ser usada em um plano de fundo claro no modo de alto contraste.<br /><br /> -*HighContrastDark*: a origem pode ser usada em um plano de fundo escuro no modo de alto contraste.<br /><br /> Se o atributo de **plano de fundo** for omitido, a origem poderá ser usada em qualquer plano de fundo.<br /><br /> Se **o plano de fundo** for *claro*, *escuro*, *HighContrastLight*ou *HighContrastDark*, as cores da fonte nunca serão invertidas. Se o **plano de fundo** for omitido ou definido como *HighContrast*, a inversão das cores da origem será controlada pelo atributo **AllowColorInversion** da imagem.|
+|Segundo plano|Adicional Indica em que tipo de plano de fundo a origem deve ser usada.<br /><br /> Pode ser um dos seguintes:<br /><br /> - *Light*: a origem pode ser usada em um plano de fundo claro.<br /><br /> - *Escuro*: a origem pode ser usada em um plano de fundo escuro.<br /><br /> - *HighContrast*: a origem pode ser usada em qualquer plano de fundo no modo de alto contraste.<br /><br /> - *HighContrastLight*: a origem pode ser usada em um plano de fundo claro no modo de alto contraste.<br /><br /> -*HighContrastDark*: a origem pode ser usada em um plano de fundo escuro no modo de alto contraste.<br /><br /> Se o atributo de **plano de fundo** for omitido, a origem poderá ser usada em qualquer plano de fundo.<br /><br /> Se **o plano de fundo** for *claro*, *escuro*, *HighContrastLight* ou *HighContrastDark*, as cores da fonte nunca serão invertidas. Se o **plano de fundo** for omitido ou definido como *HighContrast*, a inversão das cores da origem será controlada pelo atributo **AllowColorInversion** da imagem.|
 
  Um \<Source> elemento pode ter exatamente um dos seguintes subelementos opcionais:
 
@@ -146,7 +148,7 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
 
 |**Atributo**|**Definição**|
 |-|-|
-|Tipo|Necessária O tipo do recurso nativo, XAML ou PNG|
+|Type|Necessária O tipo do recurso nativo, XAML ou PNG|
 |ID|Necessária A parte da ID de número inteiro do recurso nativo|
 
  **ImageList**
@@ -179,7 +181,7 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
 
  Por padrão, a ferramenta tentará localizar o diretório de instalação do Visual Studio e adicionar esses diretórios à lista de diretórios de pesquisa. Você pode adicionar manualmente os diretórios que a ferramenta não encontra.
 
- Depois que todos os manifestos são carregados, a ferramenta pode ser usada para alternar as cores do **plano de fundo** , **dpi**, **alto contraste**ou **grayscaling** para as imagens para que um usuário possa inspecionar visualmente os ativos de imagem para verificar se eles estão sendo renderizados corretamente para várias configurações.
+ Depois que todos os manifestos são carregados, a ferramenta pode ser usada para alternar as cores do **plano de fundo** , **dpi**, **alto contraste** ou **grayscaling** para as imagens para que um usuário possa inspecionar visualmente os ativos de imagem para verificar se eles estão sendo renderizados corretamente para várias configurações.
 
  ![Tela de fundo do Visualizador da biblioteca de imagens](../../extensibility/internals/media/image-library-viewer-background.png "Tela de fundo do Visualizador da biblioteca de imagens")
 

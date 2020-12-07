@@ -1,5 +1,7 @@
 ---
 title: Implementando o tratamento de comandos para projetos aninhados | Microsoft Docs
+description: Saiba como implementar a manipulação de comandos para projetos aninhados no IDE (ambiente de desenvolvimento integrado) do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2092fc8033d5a5cc53b12bd63a945bd9865ca30e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13cfa6ebb8cae645202339c511f15ca15e2b3490
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707603"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761147"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implementando a manipulação de comando para projetos aninhados
 O IDE pode passar comandos que são passados através do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> e das <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaces para projetos aninhados, ou projetos pai podem filtrar ou substituir os comandos.

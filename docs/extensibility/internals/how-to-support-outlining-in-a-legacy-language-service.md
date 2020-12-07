@@ -1,5 +1,7 @@
 ---
 title: 'Como: dar suporte à estrutura de tópicos em um serviço de linguagem herdada | Microsoft Docs'
+description: Saiba como fornecer suporte para estrutura de tópicos, expansão ou recolhimento de diferentes regiões de texto em um serviço de linguagem herdado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28396d513c83ed83e2769e75a6020a98b10251b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9d1d7b7a74b6565c666e4d5e3293caaef3c7732
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707913"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761316"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Como: dar suporte à estrutura de tópicos em um serviço de linguagem herdada
 A estrutura de tópicos é usada para expandir ou recolher diferentes regiões de texto. A maneira como a estrutura de tópicos é usada pode ser definida de forma diferente por idiomas diferentes. Para obter mais informações, consulte [Estrutura de tópicos](../../ide/outlining.md).

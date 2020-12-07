@@ -1,5 +1,7 @@
 ---
-title: 'Como: usar itens de cores internas | Microsoft Docs'
+title: 'Como: usar Built-In itens Coloráveis | Microsoft Docs'
+description: Saiba como usar os itens coloridos internos no IDE (ambiente de desenvolvimento integrado) do Visual Studio para seu serviço de linguagem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 762d1e53f7aafa11ed345859e68fc98766eec77d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 926cb77fe9477b7dc78c35c2ab58f9b73530e4fa
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905217"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761004"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Como: usar itens de cores internos
 Antes de usar os itens coloridos internos, você deve primeiro sinalizar para o IDE (ambiente de desenvolvimento integrado) que você não está fornecendo seus próprios itens personalizáveis personalizados, que nesse caso seriam <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> objetos. Você faz isso definindo uma entrada de registro para o serviço de idioma.
 
 ## <a name="to-use-built-in-colorable-items"></a>Para usar itens coloráveis internos
 
-1. Em **HKEY_LOCAL_MACHINE \visualstudio \\<X. Y> serviços \Languages\language \\<\> nome do idioma**, em que \<X.Y> é uma versão do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e \<Language Name> é o nome do seu idioma, crie um valor de entrada do Registro DWORD chamado **RequestStockColors**.
+1. Em **HKEY_LOCAL_MACHINE\VisualStudio\\<X. Y> \languages\language Services \\<\> nome do idioma**, em que \<X.Y> é uma versão do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e \<Language Name> é o nome do seu idioma, crie um valor de entrada do Registro DWORD chamado **RequestStockColors**.
 
 2. Defina o valor de entrada do registro **RequestStockColors** como *1*.
 

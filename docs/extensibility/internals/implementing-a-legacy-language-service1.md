@@ -1,5 +1,7 @@
 ---
 title: Implementando um Service1 de linguagem herdada | Microsoft Docs
+description: Saiba como implementar um serviço de linguagem herdado que dá suporte a recursos de serviço de linguagem estendida, usando o MPF (estrutura de pacote gerenciada). Parte 1 de 2.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2535c527fc3d2d94609246959c5293e455b9808d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be2caf25dfef71cb267f49b6cfd732923aa0848c
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238732"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761173"
 ---
 # <a name="implementing-a-legacy-language-service-1"></a>Implementando um serviço de linguagem herdada 1
 Você pode usar classes na MPF (estrutura de pacote gerenciada) para implementar um serviço de linguagem herdado que dá suporte a uma ampla variedade de recursos, como realce de sintaxe, correspondência de chaves e conclusão do IntelliSense.

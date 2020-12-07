@@ -1,5 +1,7 @@
 ---
 title: Fornecer suporte a texto oculto no serviço de linguagem herdado
+description: Saiba como fornecer suporte a texto oculto em um serviço de linguagem herdado adicionando regiões de texto ocultos controladas pelo editor ou pelo cliente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a9d5fe85932f87eb68b6b5a0f5868ebbf8f2b5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f51f8e0c5ca268c1171804f663e5d01bd7c2530
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707923"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761303"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Como fornecer suporte a texto oculto em um serviço de idioma herdado
 Você pode criar regiões de texto ocultos, além de regiões de estrutura de tópicos. As regiões de texto ocultos podem ser controladas pelo cliente ou controladas pelo editor e usadas para ocultar completamente uma região de texto. O editor exibe uma região oculta como linhas horizontais. Um exemplo disso é a exibição **somente script** no editor de HTML.

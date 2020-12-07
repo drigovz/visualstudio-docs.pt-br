@@ -1,5 +1,7 @@
 ---
 title: 'Como: registrar uma biblioteca com o Gerenciador de objetos | Microsoft Docs'
+description: Saiba como registrar uma biblioteca com o Gerenciador de objetos do Visual Studio para que você possa exibir símbolos em ferramentas de navegação, como Modo de Exibição de Classe e pesquisador de objetos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7179bd87fdfd9a2c3fc36958a9d964ec4f790dbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8036a0f4fe073473891805766ea8e3bb941951f8
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905229"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761372"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Como registrar uma biblioteca com o Gerenciador de objetos
 Símbolos – ferramentas de navegação, como **modo de exibição de classe**, **pesquisador de objetos**, **pesquisador de chamadas** e **Localizar resultados de símbolos**, permitem Exibir símbolos em seu projeto ou em componentes externos. Os símbolos incluem namespaces, classes, interfaces, métodos e outros elementos de linguagem. As bibliotecas acompanham esses símbolos e os expõem ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gerenciador de objetos que popula as ferramentas com os dados.
