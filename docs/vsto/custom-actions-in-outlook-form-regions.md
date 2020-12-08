@@ -1,5 +1,7 @@
 ---
 title: Ações personalizadas nas regiões de formulário do Outlook
+description: Saiba como os botões de exibição de ação, como responder e responder a todos, permitem que os usuários respondam a um item Microsoft Office Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 817cf9fe8698c2908e873246a8971f90fe72b460
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fe77cddcfe810e73d13de81cc7280969c1d1b1c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254448"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848190"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Ações personalizadas nas regiões de formulário do Outlook
-  Ações exibem botões que permitem que os usuários respondam a um item Microsoft Office Outlook. Por exemplo, para responder a um item de email, os usuários clicam nos botões **responder**, **responder a todos**ou **encaminhar** ação. Cada uma dessas ações cria um novo item de email e popula os campos do item usando as informações do item original.
+  Ações exibem botões que permitem que os usuários respondam a um item Microsoft Office Outlook. Por exemplo, para responder a um item de email, os usuários clicam nos botões **responder**, **responder a todos** ou **encaminhar** ação. Cada uma dessas ações cria um novo item de email e popula os campos do item usando as informações do item original.
 
  Você pode criar uma ação personalizada que abre qualquer tipo de item do Outlook. Por exemplo, você pode adicionar uma ação personalizada que abre um novo compromisso ou item de tarefa. Defina as propriedades de uma ação personalizada ou use um código personalizado para preencher os campos do novo item. As ações personalizadas aparecem na lista suspensa **ações personalizadas** de um item aberto em uma janela do Inspetor do Outlook.
 
@@ -40,7 +42,7 @@ ms.locfileid: "71254448"
 |--------------|-----------------|
 |**AddressLike**|Especifica como o formulário de destino será endereçado.|
 |**Corpo**|Especifica como o corpo do item original é acrescentado ao formulário de destino.|
-|**Habilitada**|Indica se a ação personalizada está habilitada. Se essa propriedade for definida como **false**, a ação personalizada será desabilitada.|
+|**Habilitado**|Indica se a ação personalizada está habilitada. Se essa propriedade for definida como **false**, a ação personalizada será desabilitada.|
 |**Método**|Especifica o tipo de resposta disponível quando a ação personalizada é executada. A ação personalizada pode enviar o formulário, abrir o formulário ou avisar o usuário se deseja enviar ou abrir o formulário.|
 |**Nome**|Especifica o nome interno que você pode usar para fazer referência a essa ação personalizada no código.|
 |**ShowOnRibbon**|Indica se a ação personalizada deve ser exibida na faixa de faixas do item original.|

@@ -1,7 +1,8 @@
 ---
 title: '&lt;&gt;elemento customHostSpecified (desenvolvimento do Office no Visual Studio)'
+description: Saiba como o elemento customHostSpecified indica que essa solução não é um aplicativo autônomo.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -16,17 +17,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 689848f14b4540a54489b4ea5bbad67e493fe276
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8327c6e154f051f5ce79d41ceaa696e330c794f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544905"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848125"
 ---
 # <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento customHostSpecified (desenvolvimento do Office no Visual Studio)
   O `customHostSpecified` elemento indica que essa solução não é um aplicativo autônomo. As soluções do Office contêm componentes que são hospedados dentro de Microsoft Office aplicativos.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <customHostSpecified />

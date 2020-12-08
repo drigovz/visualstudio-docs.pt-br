@@ -1,5 +1,7 @@
 ---
 title: Como adicionar controles ListObject a planilhas
+description: Saiba como você pode adicionar controles ListObject a uma planilha Microsoft Office Excel em tempo de design e em tempo de execução em projetos de nível de documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c53d820170c359e568b0a7b0ab5711a632d9eba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5dd72db2678f448158f268b790d39d4f6e44a737
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538314"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848151"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Como adicionar controles ListObject a planilhas
   Você pode adicionar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a uma Microsoft Office planilha do Excel em tempo de design e em tempo de execução em projetos de nível de documento.
@@ -38,7 +40,7 @@ ms.locfileid: "85538314"
   Para obter mais informações sobre <xref:Microsoft.Office.Tools.Excel.ListObject> controles, consulte o [controle ListObject](../vsto/listobject-control.md).
 
 ## <a name="add-listobject-controls-at-design-time"></a><a name="designtime"></a> Adicionar controles ListObject em tempo de design
- Há várias maneiras de adicionar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a uma planilha em um projeto de nível de documento em tempo de design: de dentro do Excel, da **caixa de ferramentas**do Visual Studio e da janela fontes de **dados** .
+ Há várias maneiras de adicionar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a uma planilha em um projeto de nível de documento em tempo de design: de dentro do Excel, da **caixa de ferramentas** do Visual Studio e da janela fontes de **dados** .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

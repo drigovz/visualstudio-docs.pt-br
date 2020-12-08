@@ -1,5 +1,7 @@
 ---
 title: Soluções do Excel
+description: Saiba que você pode usar modelos de projeto para automatizar o Excel, estender recursos do Excel e personalizar a interface do usuário do Excel
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53351354a470eb5770f07b9afd527b81c4e587b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6ca4cfd45c1147d10ffaf8d3308b9adb09c689e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986077"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848112"
 ---
 # <a name="excel-solutions"></a>Soluções do Excel
   O Visual Studio fornece modelos de projeto que você pode usar para criar personalizações em nível de documento e suplementos do VSTO para o Microsoft Office Excel. Você pode usar essas soluções para automatizar o Excel, estender recursos do Excel e personalizar a interface do usuário do Excel. Para obter mais informações sobre as diferenças entre as personalizações em nível de documento e os suplementos do VSTO, consulte [visão geral do desenvolvimento de soluções do Office &#40;&#41;do VSTO ](../vsto/office-solutions-development-overview-vsto.md).

@@ -1,5 +1,7 @@
 ---
 title: 'Como: gerenciar o layout de controle em painéis de ações'
+description: Saiba como você pode gerenciar o layout de controle em painéis de ação escrevendo código para empilhar corretamente os controles de usuário.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6df90847000560299b8b1a6f259ffa6e7df0729
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbee49a97ab6cb3e6084950e53f30b3cb6ce1b7c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520141"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848242"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Como: gerenciar o layout de controle em painéis de ações
   Um painel Ações é encaixado à direita de um documento ou planilha por padrão; no entanto, ele pode ser encaixado à esquerda, à parte superior ou inferior. Se você estiver usando vários controles de usuário, poderá escrever código para empilhar corretamente os controles de usuário no painel Ações. Para obter mais informações, consulte [visão geral do painel Ações](../vsto/actions-pane-overview.md).

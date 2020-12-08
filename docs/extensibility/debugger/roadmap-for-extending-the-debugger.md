@@ -1,5 +1,7 @@
 ---
 title: Roteiro para estender o depurador | Microsoft Docs
+description: A documentação de depuração do Visual Studio inclui exemplos, uma referência e vários cenários que demonstram maneiras típicas de personalizar o depurador.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d97a7edd62540d12a0a60d15b3179ca0a623c26
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 2574fe76faadf4284088c0d47592d0c5ba0d38f9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011821"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848333"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Roteiro para estender o depurador
 Esta documentação fornece informações de guia e referência para estender o [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] depurador com o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
@@ -27,7 +29,7 @@ Esta documentação fornece informações de guia e referência para estender o 
 
 - Tem como alvo o sistema operacional Windows nativo e grava um *. Arquivo PDB* , você pode depurar programas com o mecanismo de depuração de código nativo (de), que é integrado ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Você não precisa implementar um avaliador DE expressão. O avaliador de expressão é escrito para a sintaxe da linguagem de programação C++.
 
-- Produz a saída da MSIL (Microsoft Intermediate Language), você pode depurar programas com o mecanismo DE depuração DE código gerenciado DE, que também é integrado ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Portanto, você só precisa implementar um avaliador de expressão. Um avaliador de expressão de exemplo é fornecido para você. Para obter mais informações, consulte estes tópicos:
+- Produz a saída da MSIL (Microsoft Intermediate Language), você pode depurar programas com o mecanismo DE depuração DE código gerenciado DE, que também é integrado ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Portanto, você só precisa implementar um avaliador de expressão. Um avaliador de expressão de exemplo é fornecido para você. Para mais informações, consulte os seguintes tópicos:
 
    [Avaliação de expressão](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
 
@@ -39,7 +41,7 @@ Esta documentação fornece informações de guia e referência para estender o 
 
    [Gravar um avaliador de expressão de Common Language Runtime](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 
-- Tem como alvo um sistema operacional proprietário ou algum outro ambiente de tempo de execução, você precisa escrever seus próprios. Um tutorial que cria uma simples DE usar COM ATL é fornecido. Para obter mais informações, consulte estes tópicos:
+- Tem como alvo um sistema operacional proprietário ou algum outro ambiente de tempo de execução, você precisa escrever seus próprios. Um tutorial que cria uma simples DE usar COM ATL é fornecido. Para mais informações, consulte os seguintes tópicos:
 
    [Criar um mecanismo de depuração personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 
@@ -49,5 +51,5 @@ Esta documentação fornece informações de guia e referência para estender o 
 
    [Amostras](../../extensibility/debugger/visual-studio-debugging-samples.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Introdução](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

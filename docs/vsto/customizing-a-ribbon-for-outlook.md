@@ -1,5 +1,7 @@
 ---
 title: Personalizar uma faixa de faixas para o Outlook
+description: Saiba que, ao personalizar a faixa de faixas no Microsoft Office Outlook, você deve considerar onde sua faixa de faixas personalizada aparecerá no aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2865bd89da3b59a24208e07739e8c56254959c88
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25b4faa994a99bccdc2122ad6b9d124f7391e9f8
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986099"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848099"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Personalizar uma faixa de faixas para o Outlook
   Ao personalizar a faixa de faixas no Microsoft Office Outlook, você deve considerar onde sua faixa de faixas personalizada aparecerá no aplicativo. O Outlook exibe a faixa de tipos na interface do usuário do aplicativo principal e no Windows que é aberta quando os usuários executam determinadas tarefas, como a criação de mensagens de email. Essas janelas de aplicativos são identificadas como inspetores.

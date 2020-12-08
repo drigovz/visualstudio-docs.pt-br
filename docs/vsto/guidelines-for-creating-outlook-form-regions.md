@@ -1,5 +1,7 @@
 ---
 title: Diretrizes para a criação de regiões de formulário do Outlook
+description: Saiba mais sobre as diretrizes para criar regiões de formulário do Outlook que podem ajudá-lo a otimizar suas regiões de formulário e evitar possíveis problemas.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a962b1ae2bff7b9a954204485a6ee73a3b63eb7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aaf6b96548a9856833fcd1768764ed914da30a07
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255949"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848086"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Diretrizes para criar regiões de formulário do Outlook
   As informações a seguir podem ajudá-lo a otimizar suas regiões de formulário e evitar possíveis problemas:

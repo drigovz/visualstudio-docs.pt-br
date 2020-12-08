@@ -1,5 +1,7 @@
 ---
 title: Eventos em projetos do Office
+description: Saiba como cada modelo de projeto do Office gera vários manipuladores de eventos e como esses manipuladores de eventos são ligeiramente diferentes dos manipuladores de eventos para os suplementos do VSTO.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -32,12 +34,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8e8aca881ba25df134c675ac504ea0794c4b051
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 381d6ffad2afadd90278577ad0e247a2f20ec375
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986113"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848177"
 ---
 # <a name="events-in-office-projects"></a>Eventos em projetos do Office
   Cada modelo de projeto do Office gera automaticamente vários manipuladores de eventos. Os manipuladores de eventos para personalizações em nível de documento são ligeiramente diferentes dos manipuladores de eventos para os suplementos do VSTO.

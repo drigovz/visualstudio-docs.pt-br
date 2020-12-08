@@ -1,5 +1,7 @@
 ---
 title: Assemblies no Ferramentas do Visual Studio para o tempo de execução do Office
+description: Saiba que o Visual Studio adiciona automaticamente referências ao Ferramentas do Visual Studio para assemblies de tempo de execução do Office.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b2fc47aa917fa9c9d5351fd313ec46ae4aaa0664
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86c3c2b77b6bbea1e609bbea092b44bd1dee1dd4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75918792"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848284"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Assemblies no Ferramentas do Visual Studio para o tempo de execução do Office
   Quando você cria um projeto do Office, o Visual Studio adiciona automaticamente referências aos [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] assemblies que são usados para o tipo de projeto e o .NET Framework de destino do projeto. Há diferentes assemblies nas extensões do Office para o .NET Framework 3,5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e [!INCLUDE[net_v45](includes/net-v45-md.md)] . Para obter mais informações sobre as extensões do Office, consulte [visão geral do ferramentas do Visual Studio for Office Runtime](visual-studio-tools-for-office-runtime-overview.md).
@@ -41,7 +43,7 @@ ms.locfileid: "75918792"
 
 |Nome do assembly|Descrição|
 |-------------------|-----------------|
-|Microsoft.Office.Tools.Common.v4.0.Utilities.dll|Fornece as classes base para a `ThisAddIn` classe gerada em projetos de suplemento do VSTO e a classe da faixa de bits gerada em todos os projetos.|
+|Microsoft.Office.Tools.Common.v4.0.Utilities.dll|Fornece as classes base para a `ThisAddIn` classe gerada no VSTO Add-In projetos e a classe da faixa de Ribbon gerada em todos os projetos.|
 |Microsoft.Office.Tools.Excel.v4.0.Utilities.dll|O fornece os seguintes tipos:<br /><br /> -Classes base para as classes geradas `ThisWorkbook` e `Sheet` em projetos de nível de documento para Excel.<br />-Windows Forms controles que você pode usar em planilhas em projetos do Excel.|
 |Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll|Fornece classes base para as `ThisAddIn` classes de região gerada e de formulário nos projetos do Outlook.|
 |Microsoft.Office.Tools.Word.v4.0.Utilities.dll|O fornece os seguintes tipos:<br /><br /> -Classes base para a `ThisDocument` classe gerada em projetos de nível de documento para o Word.<br />-Windows Forms controles que você pode usar em documentos em projetos do Word.|

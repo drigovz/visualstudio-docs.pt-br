@@ -1,5 +1,7 @@
 ---
 title: controle Indicador
+description: Saiba como o controle de indicador é um indicador que tem um nome exclusivo, expõe eventos e pode ser associado a dados.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2b8557581e93c8d2ba5a54a13c04d5de74b24f71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53f68bfd9abd26d9dfcb9e253c412a1ddf3c0e28
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255142"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848359"
 ---
 # <a name="bookmark-control"></a>controle Indicador
   O controle <xref:Microsoft.Office.Tools.Word.Bookmark> é um indicador que tem um nome exclusivo, expõe eventos e pode ser vinculado a dados. O indicador pode ser usado como um espaço reservado para marcar um item ou local em um Microsoft Office documento do Word. O <xref:Microsoft.Office.Tools.Word.Bookmark> controle é uma combinação de um <xref:Microsoft.Office.Interop.Word.Bookmark> objeto e um <xref:Microsoft.Office.Interop.Word.Range> objeto.

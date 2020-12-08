@@ -1,5 +1,7 @@
 ---
 title: 'Como: verificar a ortografia em planilhas programaticamente'
+description: Saiba como você pode verificar a ortografia de palavras de forma programática em uma planilha do Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 797fc498c54bdbc466fe8ddc35229b2c106db80d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f2a9f50767082ead9daafe684aae7fc1524ba9c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541538"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848281"
 ---
 # <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Como: verificar a ortografia em planilhas programaticamente
   Você pode verificar a ortografia de palavras de forma programática em uma planilha. A caixa de diálogo **ortografia** será exibida automaticamente se houver palavras escritas incorretamente na planilha.

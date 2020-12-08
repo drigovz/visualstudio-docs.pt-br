@@ -1,5 +1,7 @@
 ---
 title: 'Como: fechar documentos do Visio por meio de programação'
+description: Saiba como você pode fechar o documento do Active Microsoft Office Visio usando o Microsoft.Office.Interop.Visio.Document. Método Close.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 478905a8ba4dacd2102c4b19fe091016a7409773
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5117714564fe4d8a52dad6f3663f870ce39209ad
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547479"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848263"
 ---
 # <a name="how-to-programmatically-close-visio-documents"></a>Como: fechar documentos do Visio por meio de programação
   Você pode fechar o documento do Active Microsoft Office Visio usando o `Microsoft.Office.Interop.Visio.Document.Close` método.

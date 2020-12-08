@@ -1,5 +1,7 @@
 ---
 title: 'Como: adicionar controles ao modo de exibição de Backstage '
+description: Saiba como você pode usar o designer de faixa de faixas para adicionar controles ao menu que é aberto quando você clica na guia arquivo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b4ea5cdcd869f16f987e9431359511831af9573
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f0fa33318e2407b01178971c6965b8ea035dd42
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538340"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848164"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Como: adicionar controles ao modo de exibição de Backstage
   Você pode usar o designer de faixa de Ribbon para adicionar controles ao menu que é aberto quando você clica na guia **arquivo** . Quando você executa o aplicativo, os controles que você adiciona à guia **arquivo** aparecem um grupo chamado **suplementos**.
@@ -64,7 +66,7 @@ ms.locfileid: "85538340"
 
 ## <a name="see-also"></a>Confira também
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
-- [Designer de faixa de das](../vsto/ribbon-designer.md)
+- [Designer da faixa de opções](../vsto/ribbon-designer.md)
 - [XML da faixa de opções](../vsto/ribbon-xml.md)
 - [Como: começar a personalizar a faixa de faixas](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Walkthrough: criar uma guia personalizada usando o designer de faixa de faixas](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
