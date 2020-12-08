@@ -1,5 +1,6 @@
 ---
 title: 'Como: adicionar controles de indicador a documentos do Word'
+description: Saiba que, em projetos de nível de documento, você pode adicionar controles de indicador ao documento em seu projeto em tempo de design ou em tempo de execução.
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de5868674790239b8374ef9796308280588ae96e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6ccf3f5a355cdad682026453691a4203c95a814
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547245"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847462"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Como: adicionar controles de indicador a documentos do Word
   Em projetos de nível de documento, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles ao documento em seu projeto em tempo de design ou em tempo de execução. Em projetos de suplemento do VSTO, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles a qualquer documento aberto em tempo de execução.
@@ -41,7 +42,7 @@ ms.locfileid: "85547245"
 ## <a name="add-bookmark-controls-at-design-time"></a><a name="designtime"></a> Adicionar controles de indicador em tempo de design
  Há várias maneiras de adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles ao documento em um projeto de nível de documento em tempo de design:
 
-- Na **caixa de ferramentas**do Visual Studio.
+- Na **caixa de ferramentas** do Visual Studio.
 
    Você pode arrastar o <xref:Microsoft.Office.Tools.Word.Bookmark> controle da **caixa de ferramentas** para seu documento. Talvez você queira escolher dessa forma se já estiver usando a caixa de **ferramentas** para adicionar Windows Forms controles ao seu documento.
 

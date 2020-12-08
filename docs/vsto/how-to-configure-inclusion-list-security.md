@@ -1,5 +1,7 @@
 ---
 title: 'Como: configurar a segurança da lista de inclusão'
+description: Configure o prompt de confiança do ClickOnce para controlar se os usuários finais recebem a opção de instalar soluções do Office salvando uma decisão de confiança na lista de inclusão.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 459cf3f33197939a916a5f11a94bbaf09e8142e3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f9eca5150e019906805adf40e5c9b6af8a3c14e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541629"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846721"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Como: configurar a segurança da lista de inclusão
   Se você tiver permissões de administrador, poderá configurar o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] prompt de confiança para controlar se os usuários finais recebem a opção de instalar soluções do Office, salvando uma decisão de confiança na lista de inclusão. Para obter informações sobre listas de inclusão, consulte [confiar em soluções do Office usando listas de inclusão](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).
@@ -40,9 +42,9 @@ ms.locfileid: "85541629"
 
 1. Abra o Editor do Registro:
 
-    1. Clique em **Iniciar**e em **Executar**.
+    1. Clique em **Iniciar** e em **Executar**.
 
-    2. Na caixa **abrir** , digite **regedt32.exe**e clique em **OK**.
+    2. Na caixa **abrir** , digite **regedt32.exe** e clique em **OK**.
 
 2. Localize a seguinte chave do registro:
 
@@ -55,10 +57,10 @@ ms.locfileid: "85541629"
     |Subchave de valor da cadeia de caracteres|Valor|
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
-    |**UntrustedSites**|**Desabilitada**|
-    |**Meu**|**Habilitada**|
-    |**Intranet Local**|**Habilitada**|
-    |**TrustedSites**|**Habilitada**|
+    |**UntrustedSites**|**Desabilitado**|
+    |**Meu**|**Habilitado**|
+    |**Intranet Local**|**Habilitado**|
+    |**TrustedSites**|**Habilitado**|
 
      Por padrão, a **Internet** tem o valor **AuthenticodeRequired** e **UntrustedSites** tem o valor **desabilitado**.
 
@@ -90,7 +92,7 @@ ms.locfileid: "85541629"
     key.Close();
     ```
 
-3. Criar e executar o aplicativo.
+3. Compile e execute o aplicativo.
 
 ## <a name="restrict-the-inclusion-list"></a>Restringir a lista de inclusão
  Restrinja a lista de inclusão para que as soluções devam ser assinadas com certificados Authenticode com identidade conhecida antes que os usuários sejam solicitados a fornecer uma decisão de confiança.
@@ -99,9 +101,9 @@ ms.locfileid: "85541629"
 
 1. Abra o Editor do Registro:
 
-    1. Clique em **Iniciar**e em **Executar**.
+    1. Clique em **Iniciar** e em **Executar**.
 
-    2. Na caixa **abrir** , digite **regedt32.exe**e clique em **OK**.
+    2. Na caixa **abrir** , digite **regedt32.exe** e clique em **OK**.
 
 2. Localize a seguinte chave do registro:
 
@@ -113,7 +115,7 @@ ms.locfileid: "85541629"
 
     |Subchave de valor da cadeia de caracteres|Valor|
     |-------------------------|-----------|
-    |**UntrustedSites**|**Desabilitada**|
+    |**UntrustedSites**|**Desabilitado**|
     |**Internet**|**AuthenticodeRequired**|
     |**Meu**|**AuthenticodeRequired**|
     |**Intranet Local**|**AuthenticodeRequired**|
@@ -149,7 +151,7 @@ ms.locfileid: "85541629"
     key.Close();
     ```
 
-3. Criar e executar o aplicativo.
+3. Compile e execute o aplicativo.
 
 ## <a name="disable-the-inclusion-list"></a>Desabilitar a lista de inclusão
  Você pode desabilitar a lista de inclusão para que os usuários finais possam instalar apenas soluções assinadas com um certificado confiável e conhecido.
@@ -158,9 +160,9 @@ ms.locfileid: "85541629"
 
 1. Abra o Editor do Registro:
 
-    1. Clique em **Iniciar**e em **Executar**.
+    1. Clique em **Iniciar** e em **Executar**.
 
-    2. Na caixa **abrir** , digite **regedt32.exe**e clique em **OK**.
+    2. Na caixa **abrir** , digite **regedt32.exe** e clique em **OK**.
 
 2. Crie a seguinte chave do registro se ela ainda não existir:
 
@@ -170,11 +172,11 @@ ms.locfileid: "85541629"
 
     |Subchave de valor da cadeia de caracteres|Valor|
     |-------------------------|-----------|
-    |**UntrustedSites**|**Desabilitada**|
-    |**Internet**|**Desabilitada**|
-    |**Meu**|**Desabilitada**|
-    |**Intranet Local**|**Desabilitada**|
-    |**TrustedSites**|**Desabilitada**|
+    |**UntrustedSites**|**Desabilitado**|
+    |**Internet**|**Desabilitado**|
+    |**Meu**|**Desabilitado**|
+    |**Intranet Local**|**Desabilitado**|
+    |**TrustedSites**|**Desabilitado**|
 
 ### <a name="to-disable-the-inclusion-list-programmatically"></a>Para desabilitar a lista de inclusão programaticamente
 
@@ -205,7 +207,7 @@ ms.locfileid: "85541629"
 
     ```
 
-3. Criar e executar o aplicativo.
+3. Compile e execute o aplicativo.
 
 ## <a name="see-also"></a>Confira também
 - [Confiar em soluções do Office usando listas de inclusão](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)

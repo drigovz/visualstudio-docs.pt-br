@@ -1,5 +1,7 @@
 ---
 title: Implantando uma solução do VSTO usando o Windows Installer
+description: Saiba como implantar um suplemento do VSTO (Microsoft Visual Studio Tools for Office) ou uma solução em nível de documento usando um projeto Instalador do Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/18/2010
 ms.topic: conceptual
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6fd2824ae10ad36a7ed50250620e98575e9ea60
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e49705c99801cd6e09f4bf6d9be3c411cc2c53e3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585687"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846539"
 ---
 # <a name="deploying-a-vsto-solution-using-windows-installer"></a>Implantando uma solução do VSTO usando o Windows Installer
 
@@ -156,7 +158,7 @@ O projeto de instalação precisa implantar o manifesto de implantação e o man
 
 ### <a name="to-add-the-deployment-and-application-manifests"></a>Para adicionar os manifestos de implantação e de aplicativo
 
-1. Na **Gerenciador de soluções**, clique com o botão direito do mouse em **OfficeAddInSetup**, clique em **Adicionar**e clique em **arquivo**.
+1. Na **Gerenciador de soluções**, clique com o botão direito do mouse em **OfficeAddInSetup**, clique em **Adicionar** e clique em **arquivo**.
 2. Na caixa de diálogo **Adicionar arquivos** , navegue até o diretório de saída **ExcelAddIn** . Normalmente, o diretório de saída é a subpasta **bin \\ Release** do diretório raiz do projeto, dependendo da configuração da compilação selecionada.
 3. Selecione os arquivos **ExcelAddIn. vsto** e **ExcelAddIn.dll. manifest** e clique em **abrir** para adicionar esses dois arquivos ao projeto de instalação.
 
@@ -168,7 +170,7 @@ A referência ao ExcelAddIn inclui todos os componentes que o ExcelAddIn exige. 
 
 ### <a name="to-exclude-the-exceladdin-project-dependencies"></a>Para excluir as dependências do projeto ExcelAddIn
 
-1. No **Gerenciador de soluções**, no nó **OfficeAddInSetup** , selecione todos os itens de dependência abaixo do item **dependências detectadas** , exceto para **Microsoft .NET Framework** ou qualquer assembly que termine com ** \*.Utilities.dll**. Os assemblies de utilitários devem ser implantados junto com seu aplicativo.
+1. No **Gerenciador de soluções**, no nó **OfficeAddInSetup** , selecione todos os itens de dependência abaixo do item **dependências detectadas** , exceto para **Microsoft .NET Framework** ou qualquer assembly que termine com **\*.Utilities.dll**. Os assemblies de utilitários devem ser implantados junto com seu aplicativo.
 2. Clique com o botão direito do mouse no grupo e selecione **Propriedades**.
 3. Na janela **Propriedades** , altere a propriedade **Exclude** para **true** para excluir os assemblies dependentes do projeto de instalação. Certifique-se de não excluir nenhum assembly de utilitários.
 
@@ -205,9 +207,9 @@ Microsoft Office localiza suplementos usando chaves do registro. As chaves no hi
 2. Expandir **exibição**.
 3. Clique em **registro** para abrir a janela do editor do registro.
 4. No editor **do registro (OfficeAddInSetup)** , expanda **HKEY \_ local \_ Machine** e, em seguida, **software**.
-5. Excluir o ** \[ fabricante \] **? chave encontrada em **HKEY \_ local \_ Machine \\ software**.
+5. Excluir o **\[ fabricante \]**? chave encontrada em **HKEY \_ local \_ Machine \\ software**.
 6. Expanda **HKEY \_ Current \_ User** e, em seguida, **software**.
-7. Exclua a chave do ** \[ fabricante \] ** encontrada em **HKEY \_ atual \_ \\ software do usuário**.
+7. Exclua a chave do **\[ fabricante \]** encontrada em **HKEY \_ atual \_ \\ software do usuário**.
 8. Para adicionar chaves do registro para a instalação do suplemento, clique com o botão direito do mouse na chave do **hive do usuário/computador** , selecione **nova chave**. Use o **software** de texto para o nome da nova chave. Clique com o botão direito do mouse na chave de **software** criada recentemente e crie uma nova chave com o texto **Microsoft**.
 9. Use um processo semelhante para criar a hierarquia de chave inteira necessária para o registro do suplemento:
 
@@ -215,7 +217,7 @@ Microsoft Office localiza suplementos usando chaves do registro. As chaves no hi
 
     O nome da empresa é geralmente usado como um prefixo para o nome do suplemento para fornecer exclusividade.
 
-10. Clique com o botão direito do mouse na chave **SampleCompany. ExcelAddIn** , selecione **novo**e clique em **valor da cadeia de caracteres**. Use a **Descrição** de texto para o nome.
+10. Clique com o botão direito do mouse na chave **SampleCompany. ExcelAddIn** , selecione **novo** e clique em **valor da cadeia de caracteres**. Use a **Descrição** de texto para o nome.
 11. Use esta etapa para adicionar mais três valores:
     - **FriendlyName** do tipo **cadeia de caracteres**
     - **LoadBehavior** do tipo **DWORD**
@@ -255,7 +257,7 @@ Se o pacote MSI for usado para instalar o suplemento ou a solução, ele poderá
 1. Na **Gerenciador de soluções**, clique com o botão direito do mouse em **OfficeAddInSetup**.
 2. Expandir **exibição**.
 3. Clique em **condições de inicialização**.
-4. No editor de **condições de inicialização (OfficeAddInSetup)** , clique com o botão direito do mouse em **requisitos no computador de destino**e clique em **Adicionar condição de inicialização do registro**. Esse critério de pesquisa pode pesquisar o registro em busca de uma chave instalada pelo tempo de execução do VSTO. O valor da chave estará disponível para as várias partes do instalador por meio de uma propriedade nomeada. A condição de inicialização usa a propriedade definida pelo critério de pesquisa para verificar um determinado valor.
+4. No editor de **condições de inicialização (OfficeAddInSetup)** , clique com o botão direito do mouse em **requisitos no computador de destino** e clique em **Adicionar condição de inicialização do registro**. Esse critério de pesquisa pode pesquisar o registro em busca de uma chave instalada pelo tempo de execução do VSTO. O valor da chave estará disponível para as várias partes do instalador por meio de uma propriedade nomeada. A condição de inicialização usa a propriedade definida pelo critério de pesquisa para verificar um determinado valor.
 5. No editor de **condições de inicialização (OfficeAddInSetup)** , selecione o critério de pesquisa **do RegistryEntry1** de pesquisa, clique com o botão direito do mouse na condição e selecione **janela de propriedades**.
 
 6. Na janela **Propriedades** , defina estas propriedades:
@@ -280,7 +282,7 @@ Se o pacote MSI for usado para instalar o suplemento ou a solução, ele poderá
 
 ### <a name="configure-a-launch-condition-to-detect-the-vsto-runtime-installed-by-office"></a>Configurar uma condição de inicialização para detectar o tempo de execução do VSTO instalado pelo Office
 
-1. No editor de **condições de inicialização (OfficeAddInSetup)** , clique com o botão direito do mouse em **Pesquisar computador de destino**e clique em **Adicionar pesquisa de registro**.
+1. No editor de **condições de inicialização (OfficeAddInSetup)** , clique com o botão direito do mouse em **Pesquisar computador de destino** e clique em **Adicionar pesquisa de registro**.
 2. Selecione o critério de pesquisa **de pesquisa de RegistryEntry1** , clique com o botão direito do mouse na condição e selecione **janela de propriedades**.
 3. Na janela **Propriedades** , defina estas propriedades:
     1. Defina o valor de **(Name)** para **Pesquisar o tempo de execução do VSTO do Office**.
@@ -312,7 +314,7 @@ Para obter mais informações, consulte [equivalências de tipo e tipos de inter
 
 ### <a name="to-configure-launch-conditions-to-detect-that-for-office-pias"></a>Para configurar condições de inicialização para detectar os PIAs do Office
 
-1. No editor de **condições de inicialização (OfficeAddInSetup)** , clique com o botão direito do mouse em **requisitos no computador de destino**e **clique em Adicionar Windows Installer condição de inicialização**. Essa condição de inicialização procura um PIA do Office pesquisando a ID do componente específico.
+1. No editor de **condições de inicialização (OfficeAddInSetup)** , clique com o botão direito do mouse em **requisitos no computador de destino** e **clique em Adicionar Windows Installer condição de inicialização**. Essa condição de inicialização procura um PIA do Office pesquisando a ID do componente específico.
 2. Clique com o botão direito do mouse em **Pesquisar por Component1** e clique em **janela de propriedades** para mostrar as propriedades da condição de inicialização.
 3. Na **janela Propriedades**, defina estas propriedades:
 

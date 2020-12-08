@@ -1,5 +1,7 @@
 ---
 title: Combine personalizações do VBA e no nível do documento
+description: Saiba como você pode usar o código Visual Basic for Applications (VBA) em um documento que faz parte de uma personalização em nível de documento para Microsoft Office Word ou Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b3bab9c132439c6efa53842f1e13c6c5be31db00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59d0e9122bf35ac6f40799d91d3b52614d027f50
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70977596"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846396"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Combine personalizações do VBA e no nível do documento
   Você pode usar o código Visual Basic for Applications (VBA) em um documento que faz parte de uma personalização em nível de documento para Microsoft Office Word ou Microsoft Office Excel. Você pode chamar o código VBA no documento a partir do assembly de personalização ou pode configurar seu projeto para habilitar o código VBA no documento para chamar o código no assembly de personalização.
@@ -90,7 +92,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
   - Para Word: *. docm* ou *. doc*
 
-  - Para Excel: *. xlsm*, *. xltm*, *. xls*ou *. xlt*
+  - Para Excel: *. xlsm*, *. xltm*, *. xls* ou *. xlt*
 
 - O documento já deve conter um projeto do VBA que tenha código VBA.
 
@@ -247,7 +249,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 |Depois de definir a propriedade **EnableVbaCallers** ou **ReferenceAssemblyFromVbaProject** , uma mensagem de erro informa que o documento não contém um projeto do VBA ou você não tem permissão para acessar o projeto do VBA no documento.|Verifique se o documento no projeto contém pelo menos uma macro do VBA, se o projeto do VBA tem confiança suficiente para ser executado e se o projeto do VBA não está protegido por senha.|
 |Depois de definir a propriedade **EnableVbaCallers** ou **ReferenceAssemblyFromVbaProject** , uma mensagem de erro informa que a <xref:System.Runtime.InteropServices.GuidAttribute> declaração está ausente ou corrompida.|Verifique se a <xref:System.Runtime.InteropServices.GuidAttribute> declaração está localizada no arquivo *AssemblyInfo.cs* ou *AssemblyInfo. vb* em seu projeto e se esse atributo está definido como um GUID válido.|
 |Depois de definir a propriedade **EnableVbaCallers** ou **ReferenceAssemblyFromVbaProject** , uma mensagem de erro informa que o número de versão especificado pelo <xref:System.Reflection.AssemblyVersionAttribute> não é válido.|Verifique se a <xref:System.Reflection.AssemblyVersionAttribute> declaração no arquivo *AssemblyInfo.cs* ou *AssemblyInfo. vb* em seu projeto está definida como um número de versão de assembly válido. Para obter informações sobre números de versão de assembly válidos, consulte a <xref:System.Reflection.AssemblyVersionAttribute> classe.|
-|Depois de renomear o assembly de personalização, o código do VBA que chama o assembly de personalização para de funcionar.|Se você alterar o nome do assembly de personalização depois de expô-lo ao código do VBA, o link entre o projeto do VBA no documento e o assembly de personalização será interrompido. Para corrigir esse problema, altere a propriedade **ReferenceFromVbaAssembly** em seu projeto para **false** e, em seguida, volte para **true**e, em seguida, substitua todas as referências ao nome do assembly antigo no código do VBA pelo novo nome do assembly.|
+|Depois de renomear o assembly de personalização, o código do VBA que chama o assembly de personalização para de funcionar.|Se você alterar o nome do assembly de personalização depois de expô-lo ao código do VBA, o link entre o projeto do VBA no documento e o assembly de personalização será interrompido. Para corrigir esse problema, altere a propriedade **ReferenceFromVbaAssembly** em seu projeto para **false** e, em seguida, volte para **true** e, em seguida, substitua todas as referências ao nome do assembly antigo no código do VBA pelo novo nome do assembly.|
 
 ## <a name="see-also"></a>Confira também
 - [Como: expor código ao VBA em um projeto Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Como: criar manipuladores de eventos em projetos do Office'
+description: Saiba mais sobre as várias maneiras que você pode criar manipuladores de eventos padrão para controles em Visual Basic e C#.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee85d89dcb990cebd595dadbd7b28add4a7b371a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f87889c13021a7c0a43b58564210db34301abdf4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538301"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846695"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Como: criar manipuladores de eventos em projetos do Office
   Há várias maneiras de criar manipuladores de eventos em Visual Basic e C#. No modo Design, você pode criar os manipuladores de eventos padrão para controles clicando duas vezes no controle ou usando o painel eventos da janela **Propriedades** para criar manipuladores para qualquer evento no controle. No entanto, se você estiver no modo de exibição de código, talvez não queira alternar para modo de exibição de Design para criar um manipulador de eventos.

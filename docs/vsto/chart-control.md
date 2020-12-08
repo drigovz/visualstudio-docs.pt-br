@@ -1,5 +1,7 @@
 ---
 title: Controle de gráfico
+description: Saiba que, quando você adiciona um gráfico a uma planilha, o Visual Studio cria um objeto de gráfico com o qual você pode programar diretamente.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 864422aac695fbf474e6ed6b8cf6d765247eabf9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45de5170ca8a8b7e8a71521e18523e73ebc24046
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255298"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847814"
 ---
 # <a name="chart-control"></a>Controle de gráfico
   O <xref:Microsoft.Office.Tools.Excel.Chart> controle é um objeto de gráfico que expõe eventos. Quando você adiciona um gráfico a uma planilha, o Visual Studio cria um <xref:Microsoft.Office.Tools.Excel.Chart> objeto que você pode programar diretamente sem precisar atravessar o Microsoft Office modelo de objeto do Excel.

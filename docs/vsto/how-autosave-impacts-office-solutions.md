@@ -1,5 +1,7 @@
 ---
 title: Como o salvamento automático afeta as soluções do Office
+description: Saiba como o salvamento automático é um recurso para Excel, PowerPoint e Word que salva automaticamente e continuamente suas edições.
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2018
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ceaf13e24d56060e3d962e108d43c4d87d69fb8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6108ee35c79ec475de70e874ce0dc6d872cc62c6
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62826677"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846786"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>Como o salvamento automático afeta as soluções do Office
 

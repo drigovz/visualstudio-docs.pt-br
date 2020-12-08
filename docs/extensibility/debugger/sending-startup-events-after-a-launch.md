@@ -1,5 +1,7 @@
 ---
 title: Enviando eventos de inicialização após uma inicialização | Microsoft Docs
+description: Saiba mais sobre a série de eventos de inicialização que o mecanismo de depuração envia para a sessão de depuração depois que o mecanismo de depuração é anexado a um programa.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c71db002420a2b822bffd34f2ae05e712f6a4bb9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99b094fd1019e0d7dea09e2953cb4f31e03b80dc
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713007"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847878"
 ---
 # <a name="send-startup-events-after-a-launch"></a>Enviar eventos de inicialização após uma inicialização
 Depois que o mecanismo de depuração (DE) é anexado ao programa, ele envia uma série de eventos de inicialização de volta para a sessão de depuração.

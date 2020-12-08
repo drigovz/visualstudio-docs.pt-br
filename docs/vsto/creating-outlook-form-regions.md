@@ -1,5 +1,7 @@
 ---
 title: Criar regiões de formulário do Outlook
+description: Saiba como você pode usar regiões de formulário para personalizar formulários do Microsoft Outlook para facilitar o design, o desenvolvimento e a depuração de regiões de formulário.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8a999ca11427533690628fb92f28e93d22cf0971
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3273c02416cac54dfd244ba4f163fb5d726413c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255909"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847956"
 ---
 # <a name="create-outlook-form-regions"></a>Criar regiões de formulário do Outlook
   Você pode usar regiões de formulário para personalizar Microsoft Office formulários do Outlook. O Visual Studio fornece ferramentas avançadas que facilitam o design, o desenvolvimento e a depuração de regiões de formulário.
@@ -71,7 +73,7 @@ ms.locfileid: "71255909"
 
 |Tipo de região|Descrição|
 |-----------------|-----------------|
-|Diferente|Adiciona a região do formulário como uma nova página em um formulário do Outlook.|
+|Separate|Adiciona a região do formulário como uma nova página em um formulário do Outlook.|
 |Adjacente|Anexa a região do formulário à parte inferior da página padrão de um formulário do Outlook.|
 |Substituição|Adiciona a região do formulário como uma nova página que substitui a página padrão de um formulário do Outlook.|
 |Substituir tudo|Substitui todo o formulário do Outlook pela região do formulário.|

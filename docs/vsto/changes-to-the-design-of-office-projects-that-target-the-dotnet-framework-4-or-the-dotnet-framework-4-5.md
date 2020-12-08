@@ -1,5 +1,7 @@
 ---
 title: Alterações de design em projetos do Office direcionados .NET Framework
+description: Saiba mais sobre as alterações introduzidas no Visual Studio para o design de projetos do Office direcionados para o .NET Framework 4 ou posterior.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be681bb930e22b3e4cdd4597eb4d265c27b08139
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 05f3662f1bc6379fa3401e98473971bcefc36ddd
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583821"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847852"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Alterações no design de projetos do Office direcionados para o .NET Framework 4 ou o .NET Framework 4,5
   A partir do [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] , o Visual Studio introduziu algumas alterações no design de projetos do Office direcionados para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior. Se você estiver familiarizado com projetos do Office em versões anteriores do Visual Studio, deve estar ciente dessas alterações antes de desenvolver projetos do Office direcionados a essas versões do .NET Framework 4,0 ou posterior. Por padrão, todos os projetos que você cria usando o Visual Studio 2013 ou posterior direcionam o .NET Framework 4,0 ou posterior.
@@ -29,7 +31,7 @@ ms.locfileid: "91583821"
 ## <a name="understand-the-interface-based-design-of-the-visual-studio-2010-tools-for-office-runtime"></a>Entenda o design baseado em interface do tempo de execução das ferramentas do Visual Studio 2010 para Office
  Quando você desenvolve um projeto do Office direcionado [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] para o ou posterior, a maioria dos tipos que você usa no Visual Studio 2010 Tools for Office Runtime são interfaces. Essa é uma alteração importante das versões anteriores do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , onde esses tipos são classes. Por exemplo, quando você direciona o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, os <xref:Microsoft.Office.Tools.Excel.Worksheet> <xref:Microsoft.Office.Tools.Word.Document> tipos e são interfaces em vez de classes. Para obter mais informações, consulte [visão geral do ferramentas do Visual Studio para Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
- Para qualquer tipo que você possa instanciar diretamente nas versões anteriores do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , agora você usa métodos do `Globals.Factory` objeto para obter instâncias desses tipos. Por exemplo, para obter um objeto que implemente a interface <xref:Microsoft.Office.Tools.Excel.SmartTag>, use o método `Globals.Factory.CreateSmartTag`. Para obter mais informações, consulte estes tópicos:
+ Para qualquer tipo que você possa instanciar diretamente nas versões anteriores do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , agora você usa métodos do `Globals.Factory` objeto para obter instâncias desses tipos. Por exemplo, para obter um objeto que implemente a interface <xref:Microsoft.Office.Tools.Excel.SmartTag>, use o método `Globals.Factory.CreateSmartTag`. Para mais informações, consulte os seguintes tópicos:
 
 - [Atualize os projetos do Excel e do Word que você migra para o .NET Framework 4 ou o .NET Framework 4,5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
 

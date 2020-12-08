@@ -1,7 +1,8 @@
 ---
 title: Introdução (desenvolvimento do Office no Visual Studio)
+description: Saiba como você pode começar a usar o Microsoft Office Developer Tools no Visual Studio para criar soluções do Office.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1439bef59c621523b74f0e0634cd809deea1f3ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a14d8254d42b78e788622afd93c6832871d54627
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986069"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847319"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>Introdução (desenvolvimento do Office no Visual Studio)
   Esta seção contém tópicos que ajudam você a começar a usar o Microsoft Office ferramentas de desenvolvedor no Visual Studio.

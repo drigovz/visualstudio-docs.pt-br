@@ -1,5 +1,7 @@
 ---
 title: Manifestos do aplicativo para soluções do Office
+description: Saiba como um manifesto de aplicativo é um arquivo XML que descreve os assemblies que são carregados em uma solução de Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6272f145ee2c7ef2a91cc635112e440e6404457
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a16d0f438d06cbfa48538bb3e370ed9b334ad16
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531502"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847917"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Manifestos do aplicativo para soluções do Office
   Um manifesto de aplicativo é um arquivo XML que descreve os assemblies que são carregados em uma solução de Microsoft Office. As ferramentas de desenvolvimento Microsoft Office no Visual Studio usam o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] esquema de manifesto do aplicativo definido na referência de [manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md) .

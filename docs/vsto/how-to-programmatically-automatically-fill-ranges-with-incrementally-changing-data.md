@@ -1,5 +1,7 @@
 ---
 title: Preenchimento incremental de intervalos de dados de forma dinâmica
+description: Saiba como o método de preenchimento automático do objeto Range permite preencher um intervalo em uma planilha com valores automaticamente.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1cdcc02fa3c33945ffc4824310f0957bdbdd2dd
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: dc80b4b589eb46aefa9ef6d75384ed17bb1b7c8c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585308"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847202"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Como: preencher intervalos de forma programática automaticamente com dados em alteração incremental
   O <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> método do <xref:Microsoft.Office.Interop.Excel.Range> objeto permite preencher um intervalo em uma planilha com valores automaticamente. Geralmente, o <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> método é usado para armazenar valores incrementalmente crescentes ou decrescentes em um intervalo. Você pode especificar o comportamento fornecendo uma constante opcional da <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> enumeração.

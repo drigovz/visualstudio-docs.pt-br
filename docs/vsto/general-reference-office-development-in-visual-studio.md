@@ -1,7 +1,8 @@
 ---
 title: Referência geral (desenvolvimento do Office no Visual Studio)
+description: Aprenda informações de referência gerais sobre projetos de desenvolvimento de Microsoft Office no Visual Studio.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e8b8dee20b67338bbe1c8c78ebe1d8bcc730175
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c47f4360f63640f869231bc21929c43543d5c72e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551511"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847774"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Referência geral (desenvolvimento do Office no Visual Studio)
   Esta seção contém detalhes técnicos sobre Microsoft Office projetos no Visual Studio.

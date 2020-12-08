@@ -1,5 +1,7 @@
 ---
 title: Adicionar o painel ações a documentos do Word ou a pastas de trabalho do Excel
+description: Saiba que, para adicionar um painel ações a um Microsoft Office documento do Word ou uma pasta de trabalho do Microsoft Excel, você deve primeiro criar um controle de usuário Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d24ec3a17c9e0824c6b7aaffeaaac02c1c4f76e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69d675209f2a3ac47e8681da8fca73c5cd86e95d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546218"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848060"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Como adicionar um painel Ações a documentos do Word ou pastas de trabalho do Excel
   Para adicionar um painel ações a um Microsoft Office documento do Word ou uma pasta de trabalho do Microsoft Excel, primeiro crie um controle de usuário Windows Forms. Em seguida, adicione o controle de usuário à <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> Propriedade do `ThisDocument.ActionsPane` campo (palavra) ou `ThisWorkbook.ActionsPane` campo (Excel) em seu projeto.
@@ -39,7 +41,7 @@ ms.locfileid: "85546218"
 
 2. No menu **Projeto** , clique em **Adicionar Novo Item**.
 
-3. Na caixa de diálogo **Adicionar novo item** , selecione **controle do painel Ações**, nomeie-o **HelloControl**e clique em **Adicionar**.
+3. Na caixa de diálogo **Adicionar novo item** , selecione **controle do painel Ações**, nomeie-o **HelloControl** e clique em **Adicionar**.
 
     > [!NOTE]
     > Como alternativa, você pode adicionar um item de **controle de usuário** ao seu projeto. As classes geradas pelo **controle do painel Ações** e itens de **controle de usuário** são funcionalmente equivalentes.

@@ -1,5 +1,7 @@
 ---
 title: Registrando o programa | Microsoft Docs
+description: Saiba como um programa a ser depurado é registrado com uma porta depois que o mecanismo de depuração adquire uma porta.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b68fa67f784d155288482ad724b632ed5ba5fa41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80c3d13cc7319e43390a7e9e6f4eb42a5a87c780
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713166"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847090"
 ---
 # <a name="register-the-program"></a>Registrar o programa
 Depois que o mecanismo de depuração tiver adquirido uma porta, representada por uma interface [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) , a próxima etapa na habilitação do programa a ser depurado é registrá-la na porta. Uma vez registrado, o programa está disponível para depuração por um dos seguintes meios:

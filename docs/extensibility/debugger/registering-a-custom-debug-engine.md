@@ -1,5 +1,7 @@
 ---
 title: Registrando um mecanismo de depuração personalizado | Microsoft Docs
+description: Saiba como o mecanismo de depuração se registra como uma fábrica de classes, seguindo as convenções COM, bem como registrando-se no Visual Studio por meio do registro.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a664385594f139e2c3c5a18a0d8a59e23c13df0a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 01d7190bbf087bb60ac670341d82078e94c81c52
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011834"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847176"
 ---
 # <a name="register-a-custom-debug-engine"></a>Registrar um mecanismo de depuração personalizado
 O mecanismo de depuração deve se registrar como uma fábrica de classes, seguindo as convenções COM, bem como registrar com o Visual Studio por meio da subchave do registro do Visual Studio.
@@ -48,7 +50,7 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 }
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Criando um mecanismo de depuração personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 - [Auxiliares do SDK para depuração](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
 - [Tutorial: Criando um mecanismo de depuração usando o COM ATL](/previous-versions/bb147024(v=vs.90))

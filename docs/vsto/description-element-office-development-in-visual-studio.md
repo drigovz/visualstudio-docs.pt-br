@@ -1,7 +1,8 @@
 ---
 title: '&lt;&gt;elemento Description (desenvolvimento do Office no Visual Studio)'
+description: Saiba que o elemento Description do namespace vstov4 armazena a descrição da solução do Office que aparece na caixa de diálogo suplementos de COM.
 titleSuffix: ''
-ms.custom: secdec18
+ms.custom: secdec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -16,17 +17,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c8b54f8ccf2181a053ae5d2fe221b49840cd72c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 377599e770a93faca9e283ec543091508b773bc7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520261"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846227"
 ---
 # <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento Description (desenvolvimento do Office no Visual Studio)
   O `description` elemento do `vstov4` namespace armazena a descrição da solução do Office que aparece na caixa de diálogo suplementos de COM de Microsoft Office aplicativos.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <description>

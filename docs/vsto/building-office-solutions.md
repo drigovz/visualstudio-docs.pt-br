@@ -1,5 +1,7 @@
 ---
 title: Criar soluções do Office
+description: Aprenda as diferenças entre criar e depurar projetos do Office e criar e depurar outros tipos de projetos no Visual Studio, como Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f89e20b710584c678c035f4d85034e90bb11323
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d942a7818c3c71e0859c9271b329688734682f2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551852"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847930"
 ---
 # <a name="build-office-solutions"></a>Criar soluções do Office
   Em geral, compilar e depurar projetos do Office é o mesmo que compilar e depurar outros tipos de projetos no Visual Studio, como Windows Forms. Os tópicos nesta seção explicam as diferenças que existem. Para obter informações gerais sobre como criar aplicativos, consulte [Compilar e compilar no Visual Studio](../ide/compiling-and-building-in-visual-studio.md).

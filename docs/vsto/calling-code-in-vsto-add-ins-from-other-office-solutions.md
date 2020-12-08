@@ -1,5 +1,7 @@
 ---
 title: Chamar código em suplementos do VSTO de outras soluções do Office
+description: Saiba como você pode expor um objeto em seu suplemento do VSTO a outras soluções, incluindo outras soluções de Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 584406098f058c17b3dd215dda9c8c4e9498cf46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fad3f107487e4736ccd0a6aa59ea5a801b5f72e5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255323"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847839"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Chamar código em suplementos do VSTO de outras soluções do Office
   Você pode expor um objeto em seu suplemento do VSTO a outras soluções, incluindo outras soluções de Microsoft Office. Isso será útil se o suplemento do VSTO fornecer um serviço que você deseja permitir que outras soluções usem. Por exemplo, se você tiver um suplemento do VSTO para Microsoft Office Excel que executa cálculos em dados financeiros de um serviço Web, outras soluções poderão executar esses cálculos chamando o suplemento do VSTO do Excel em tempo de execução.
@@ -56,7 +58,7 @@ ms.locfileid: "71255323"
 2. Substitua o <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> método na `ThisAddIn` classe. Retorne uma instância da classe que você deseja expor a outras soluções.
 
 ### <a name="define-the-class-you-want-to-expose-to-other-solutions"></a>Definir a classe que você deseja expor a outras soluções
- No mínimo, a classe que você deseja expor deve ser pública, deve ter o <xref:System.Runtime.InteropServices.ComVisibleAttribute> atributo definido como **true**e deve expor a interface [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) .
+ No mínimo, a classe que você deseja expor deve ser pública, deve ter o <xref:System.Runtime.InteropServices.ComVisibleAttribute> atributo definido como **true** e deve expor a interface [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) .
 
  A maneira recomendada para expor a interface [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) é executar as seguintes etapas:
 

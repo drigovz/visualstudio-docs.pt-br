@@ -1,8 +1,8 @@
 ---
 title: Acesso do VBA para criar/abrir um projeto de sistema do VSTO
 titleSuffix: ''
-decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
-ms.custom: seodec18
+description: Saiba que você deve habilitar explicitamente o acesso ao sistema de projeto do VBA do Office antes de criar ou abrir um Ferramentas do Visual Studio para o projeto do Office System.
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71e30a89bdf8547eab9ed9c51b07c49e014b7302
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 62477f7cd37a7d5a416e8f42fb7eb2d2a8e43828
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584853"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846123"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Habilitar o acesso ao VBA para criar ou abrir um Ferramentas do Visual Studio para o projeto de sistema Microsoft Office
 
@@ -53,7 +53,7 @@ Você deve habilitar explicitamente o acesso ao sistema de projeto Visual Basic 
 
 2. Clique em **Opções**.
 
-3. Clique em **central de confiabilidade**e em **configurações da central de confiabilidade**.
+3. Clique em **central de confiabilidade** e em **configurações da central de confiabilidade**.
 
 4. Na **central de confiabilidade**, clique em **configurações de macro**.
 
@@ -63,7 +63,7 @@ Você deve habilitar explicitamente o acesso ao sistema de projeto Visual Basic 
 
 ### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>Para habilitar ou desabilitar o acesso a projetos Visual Basic com o sistema de Microsoft Office 2007
 
-1. No menu **ferramentas** do Word ou Excel, aponte para **macro**e clique em **segurança**.
+1. No menu **ferramentas** do Word ou Excel, aponte para **macro** e clique em **segurança**.
 
 2. Na caixa de diálogo **segurança** , clique na guia **editores confiáveis** .
 
@@ -77,7 +77,7 @@ Você deve habilitar explicitamente o acesso ao sistema de projeto Visual Basic 
 
 2. Clique em **Opções**.
 
-3. Clique em **central de confiabilidade**e em **configurações da central de confiabilidade**.
+3. Clique em **central de confiabilidade** e em **configurações da central de confiabilidade**.
 
 4. Na **central de confiabilidade**, clique em **configurações de macro**.
 
@@ -87,7 +87,7 @@ Você deve habilitar explicitamente o acesso ao sistema de projeto Visual Basic 
 
 ### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>Para definir o nível de segurança de macro do Office com o sistema de Microsoft Office de 2007
 
-1. No menu **ferramentas** do Word ou Excel, aponte para **macro**e clique em **segurança**.
+1. No menu **ferramentas** do Word ou Excel, aponte para **macro** e clique em **segurança**.
 
 2. Na guia **nível de segurança** , selecione a configuração desejada.
 
@@ -101,17 +101,17 @@ Você deve habilitar explicitamente o acesso ao sistema de projeto Visual Basic 
 
 3. Clique em **Alterar**.
 
-4. Selecione **Adicionar ou remover recursos**e clique em **continuar**.
+4. Selecione **Adicionar ou remover recursos** e clique em **continuar**.
 
-5. Selecione **escolher personalização avançada de aplicativos**e clique em **Avançar**.
+5. Selecione **escolher personalização avançada de aplicativos** e clique em **Avançar**.
 
 6. Expanda **recursos compartilhados do Office** na lista **escolha as opções de atualização para aplicativos e ferramentas** .
 
-7. Abra o menu suspenso ao lado de **Visual Basic for Applications**e, em seguida, clique em **Executar de meu computador**.
+7. Abra o menu suspenso ao lado de **Visual Basic for Applications** e, em seguida, clique em **Executar de meu computador**.
 
 8. Clique em **Continuar**.
 
-9. Clique em **Fechar**.
+9. Clique em **fechar**
 
 ## <a name="to-repair-your-installation-of-office"></a>Para reparar a instalação do Office
 
@@ -121,9 +121,9 @@ Você deve habilitar explicitamente o acesso ao sistema de projeto Visual Basic 
 
 3. Clique em **Alterar**.
 
-4. Selecione **reinstalar ou reparar**e clique em **Avançar**.
+4. Selecione **reinstalar ou reparar** e clique em **Avançar**.
 
-5. Selecione **detectar e reparar erros na instalação do Office**e, em seguida, clique em **instalar**.
+5. Selecione **detectar e reparar erros na instalação do Office** e, em seguida, clique em **instalar**.
 
 ## <a name="see-also"></a>Confira também
 - [Proteger soluções do Office](../vsto/securing-office-solutions.md)

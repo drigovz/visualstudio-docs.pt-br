@@ -1,5 +1,7 @@
 ---
 title: Dados armazenados em cache em personalizações em nível de documento
+description: Saiba como o Visual Studio separa os dados da exibição em personalizações em nível de documento, permitindo que os dados sejam inseridos como um cache de dados.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9985dd25ba62cc9c0735a8a8f4008a4c0abe0558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be4229c179ec6c5640ab612d28991fe476363a53
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238342"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847891"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Dados armazenados em cache em personalizações em nível de documento
   Um objetivo principal das personalizações no nível do documento é separar dados da exibição em documentos do Office. Os dados referem-se às informações armazenadas no documento, incluindo números e texto. A exibição refere-se à interface do usuário e ao modelo de objeto do Microsoft Office Word e Microsoft Office Excel.

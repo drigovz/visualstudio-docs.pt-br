@@ -1,5 +1,7 @@
 ---
 title: Estenda documentos do Word & pastas de trabalho do Excel em suplementos do VSTO em tempo de execução
+description: Saiba que você pode usar um suplemento do VSTO para personalizar documentos do Word e pastas de trabalho do Excel de várias maneiras.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2227aa2db4943ab132a8b2e2f9fc3a6f0ec4096
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 4686b2cd3a3ca5d4be7eefee9881039b9914a9b8
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585439"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847813"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>Estenda documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução
   Você pode usar um suplemento do VSTO para personalizar documentos do Word e pastas de trabalho do Excel das seguintes maneiras:

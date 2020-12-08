@@ -1,5 +1,7 @@
 ---
 title: Acessar a faixa de faixas em tempo de execução
+description: Você pode escrever código para mostrar, ocultar e modificar a faixa de faixas e permitir que os usuários executem o código de controles em um painel de tarefas personalizado, no painel ações ou na região de formulário do Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7c7fdda6234f1e98117cdb1bf047762ed9d4621a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8facf847e484824b636324d1f84427a08172035
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255740"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847592"
 ---
 # <a name="access-the-ribbon-at-run-time"></a>Acessar a faixa de faixas em tempo de execução
   Você pode escrever código para mostrar, ocultar e modificar a faixa de faixas e permitir que os usuários executem o código de controles em um painel de tarefas personalizado, no painel ações ou na região de formulário do Outlook.
@@ -39,7 +41,7 @@ ms.locfileid: "71255740"
  [!code-csharp[Trin_Outlook_FR_Access#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#4)]
 
 ## <a name="access-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>Acessar uma coleção de faixas de faixa que aparecem em uma janela específica do Inspetor do Outlook
- Você pode acessar uma coleção de faixas de faixa que aparecem nos *inspetores*do Outlook. Um inspetor é uma janela que é aberta no Outlook quando os usuários executam determinadas tarefas, como a criação de mensagens de email. Para acessar a faixa de uma janela de Inspetor, chame a `Ribbons` propriedade da `Globals` classe e passe um <xref:Microsoft.Office.Interop.Outlook.Inspector> objeto que represente o Inspetor.
+ Você pode acessar uma coleção de faixas de faixa que aparecem nos *inspetores* do Outlook. Um inspetor é uma janela que é aberta no Outlook quando os usuários executam determinadas tarefas, como a criação de mensagens de email. Para acessar a faixa de uma janela de Inspetor, chame a `Ribbons` propriedade da `Globals` classe e passe um <xref:Microsoft.Office.Interop.Outlook.Inspector> objeto que represente o Inspetor.
 
  O exemplo a seguir obtém a coleção da faixa de opções do inspetor que tem foco no momento. Em seguida, este exemplo acessa uma faixa de uma chamada `Ribbon1` e define o texto que aparece em uma caixa de combinação na faixa de para `Hello World` .
 
@@ -47,7 +49,7 @@ ms.locfileid: "71255740"
  [!code-csharp[Trin_Outlook_FR_Access#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#5)]
 
 ## <a name="access-a-collection-of-ribbons-that-appear-for-a-specific-outlook-explorer"></a>Acessar uma coleção de faixas de faixa que aparecem para um Gerenciador do Outlook específico
- Você pode acessar uma coleção de faixas de faixa que aparecem em um *Gerenciador*do Outlook. Um Gerenciador é a interface do usuário do aplicativo principal para uma instância do Outlook. Para acessar a faixa de faixas de uma janela do Explorer, chame a `Ribbons` propriedade da `Globals` classe e passe um <xref:Microsoft.Office.Interop.Outlook.Explorer> objeto que represente o Gerenciador.
+ Você pode acessar uma coleção de faixas de faixa que aparecem em um *Gerenciador* do Outlook. Um Gerenciador é a interface do usuário do aplicativo principal para uma instância do Outlook. Para acessar a faixa de faixas de uma janela do Explorer, chame a `Ribbons` propriedade da `Globals` classe e passe um <xref:Microsoft.Office.Interop.Outlook.Explorer> objeto que represente o Gerenciador.
 
  O exemplo a seguir obtém a coleção da faixa de opções do Gerenciador que tem o foco no momento. Em seguida, este exemplo acessa uma faixa de uma chamada `Ribbon1` e define o texto que aparece em uma caixa de combinação na faixa de para `Hello World` .
 
@@ -56,7 +58,7 @@ ms.locfileid: "71255740"
 
 ## <a name="see-also"></a>Confira também
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
-- [Designer de faixa de das](../vsto/ribbon-designer.md)
+- [Designer da faixa de opções](../vsto/ribbon-designer.md)
 - [XML da faixa de opções](../vsto/ribbon-xml.md)
 - [Visão geral do modelo de objeto Ribbon](../vsto/ribbon-object-model-overview.md)
 - [Walkthrough: criar uma guia personalizada usando o designer de faixa de faixas](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)

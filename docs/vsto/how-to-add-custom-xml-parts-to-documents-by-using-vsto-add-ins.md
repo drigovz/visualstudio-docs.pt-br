@@ -1,5 +1,7 @@
 ---
 title: Adicionar partes XML personalizadas a documentos usando suplementos do VSTO
+description: Saiba como você pode armazenar dados XML nos seguintes tipos de documentos criando uma parte XML personalizada em um suplemento do VSTO.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92c00ea69069b7374f5f595cc6f198aac23d1f91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b153fe3e7c68ed6a8288ff69a30e16dd32c448a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538288"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847709"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Como: adicionar partes XML personalizadas a documentos usando suplementos do VSTO
   Você pode armazenar dados XML nos seguintes tipos de documentos criando uma parte XML personalizada em um suplemento do VSTO:
@@ -67,7 +69,7 @@ ms.locfileid: "85538288"
 
 ## <a name="to-add-a-custom-xml-part-to-a-powerpoint-presentation"></a>Para adicionar uma parte XML personalizada a uma apresentação do PowerPoint
 
-1. Adicione um novo <xref:Microsoft.Office.Core.CustomXMLPart> objeto à coleção [Microsoft. Office. Interop. PowerPoint. _Presentation. CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29) na apresentação. O <xref:Microsoft.Office.Core.CustomXMLPart> contém a cadeia de caracteres XML que você deseja armazenar na apresentação.
+1. Adicione um novo <xref:Microsoft.Office.Core.CustomXMLPart> objeto à coleção [Microsoft.Office.Interop.PowerPoint._Presentation. CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29) na apresentação. O <xref:Microsoft.Office.Core.CustomXMLPart> contém a cadeia de caracteres XML que você deseja armazenar na apresentação.
 
      O exemplo de código a seguir adiciona uma parte XML personalizada a uma apresentação especificada.
 
@@ -76,7 +78,7 @@ ms.locfileid: "85538288"
 
 2. Adicione o `AddCustomXmlPartToPresentation` método à `ThisAddIn` classe em um projeto de suplemento do VSTO para PowerPoint.
 
-3. Chame o método de outro código em seu projeto. Por exemplo, para criar a parte XML personalizada quando o usuário abre uma apresentação, chame o método de um manipulador de eventos para o evento [Microsoft. Office. Interop. PowerPoint. EApplication_Event. AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v=office.14)) .
+3. Chame o método de outro código em seu projeto. Por exemplo, para criar a parte XML personalizada quando o usuário abre uma apresentação, chame o método de um manipulador de eventos para o evento [Microsoft.Office.Interop.PowerPoint.EApplication_Event. AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v=office.14)) .
 
 ## <a name="robust-programming"></a>Programação robusta
  Para simplificar, este exemplo usa uma cadeia de caracteres XML que é definida como uma variável local no método. Normalmente, você deve obter o XML de uma fonte externa, como um arquivo ou um banco de dados.

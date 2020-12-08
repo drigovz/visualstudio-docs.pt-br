@@ -1,5 +1,7 @@
 ---
 title: 'Como: popular documentos com dados de um banco de dado'
+description: Saiba como você pode usar os dados de um banco de dado em sua solução e como você pode usar Windows Forms controles para exibir os dados em um documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8470ec4acf686c016088c5f474539a1ab7ed85df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0915d0ef57da5cba7fe73b6b374babe95b1a09c7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547193"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848073"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>Como: popular documentos com dados de um banco de dado
 

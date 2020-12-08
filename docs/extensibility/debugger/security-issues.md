@@ -1,5 +1,7 @@
 ---
 title: Problemas de segurança | Microsoft Docs
+description: Saiba mais sobre as permissões necessárias para depurar um programa usando o Visual Studio, incluindo depuração remota e situações que envolvem outros serviços.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40898f5633eac374206ed40bfcac96d9c1c5b753
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 632150101b966e128e8a34636b01a369a1db5c64
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713047"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847605"
 ---
 # <a name="security-issues"></a>Problemas de segurança
 Para depurar um programa usando o Visual Studio, as únicas permissões necessárias são as mesmas que um desenvolvedor requer para executar o programa. Isso inclui a depuração remota na maioria das situações. Algumas situações, envolvendo outros serviços, como o serviço de informações da Internet, podem exigir um nível mais alto de permissões.

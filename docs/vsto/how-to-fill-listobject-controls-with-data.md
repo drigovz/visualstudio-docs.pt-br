@@ -1,5 +1,7 @@
 ---
 title: Como preencher controles ListObject com dados
+description: Use a vinculação de dados para adicionar rapidamente dados ao seu documento. Você também pode desconectar o objeto de lista para que ele exiba os dados, mas não esteja mais vinculado à fonte de dados.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2941022cb434198298e9d098ef562efeaba4893f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ce2ef20b56a1803af5356137b798d83a5f1457f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544814"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846513"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Como preencher controles ListObject com dados
   Você pode usar a associação de dados como uma maneira de adicionar rapidamente dados ao seu documento. Depois de vincular dados a um objeto de lista, você pode desconectar o objeto de lista para que ele exiba os dados, mas não esteja mais vinculado à fonte de dados.

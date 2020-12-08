@@ -1,7 +1,8 @@
 ---
 title: Como instalar o Ferramentas do Visual Studio para o Office Runtime Redistributable
+description: Saiba como você pode instalar o Microsoft Visual Studio 2010 Tools for Office Runtime Redistributable.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ef71de75be5977ab80cbdd85448daa5de381c077
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8fce7cc0fdbba49e0e247a6a65336105e149b6d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547219"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846526"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Como instalar o Ferramentas do Visual Studio para o Office Runtime Redistributable
   O tempo de execução das ferramentas do Visual Studio 2010 para Office deve ser instalado em cada computador que executa soluções criadas com o uso das ferramentas de desenvolvedor do Microsoft Office no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . O tempo de execução é instalado automaticamente quando você instala o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e o Microsoft Office. Para obter mais informações, consulte [Ferramentas do Visual Studio para cenários de instalação de tempo de execução do Office](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).

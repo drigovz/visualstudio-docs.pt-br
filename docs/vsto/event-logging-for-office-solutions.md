@@ -1,5 +1,7 @@
 ---
 title: Log de eventos para soluções do Office
+description: Saiba como você pode usar o Visualizador de eventos no Windows para ver as mensagens de exceção que são capturadas pelo Ferramentas do Visual Studio para o tempo de execução do Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74aaf7c1c07c349fa3669332a41e4e7d06ba86f1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62951925"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847761"
 ---
 # <a name="event-logging-for-office-solutions"></a>Log de eventos para soluções do Office
   Você pode usar o Visualizador de eventos no Windows para ver as mensagens de exceção que são capturadas pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] quando você instala ou desinstala as soluções do Office. Você pode usar essas mensagens do agente de log de eventos para resolver problemas de instalação e implantação.

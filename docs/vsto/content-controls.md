@@ -1,5 +1,7 @@
 ---
 title: Controles de conteúdo
+description: Aprenda controles de conteúdo e como os controles de conteúdo fornecem uma maneira de criar documentos e modelos.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -38,12 +40,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8683f5379aaa33446b150adf34f8a5aa57a83ff3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a34211c7fb1fa001719219b7d08baab65340bde5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986188"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848034"
 ---
 # <a name="content-controls"></a>Controles de conteúdo
   Os controles de conteúdo fornecem uma maneira de criar documentos e modelos que tenham estes recursos:
@@ -97,7 +99,7 @@ ms.locfileid: "72986188"
 ### <a name="group"></a>Grupo
  Um controle de grupo define uma região protegida de um documento que os usuários não podem editar ou excluir. Um controle de grupo pode conter qualquer item de documento, como texto, tabelas, elementos gráficos e outros controles de conteúdo. Para obter mais informações, consulte o <xref:Microsoft.Office.Tools.Word.GroupContentControl> tipo.
 
-### <a name="picture"></a>Imagem
+### <a name="picture"></a>Picture
  Um controle de imagem exibe uma imagem. Você pode especificar a imagem em tempo de design ou em tempo de execução, ou os usuários podem clicar nesse controle para selecionar uma imagem a ser inserida no documento. Para obter mais informações, consulte o <xref:Microsoft.Office.Tools.Word.PictureContentControl> tipo.
 
 ### <a name="rich-text"></a>Rich Text

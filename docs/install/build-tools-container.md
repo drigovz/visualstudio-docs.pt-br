@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 61ec972bd5e361c4417e49092de5976000a6da5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd584a977900de83af454f26722d3e4ba2bd8ac8
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80273888"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847657"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalar Ferramentas de Build em um contêiner
 
@@ -41,7 +41,7 @@ Salve o Dockerfile de exemplo a seguir em um novo arquivo no disco. Se o nome do
 > [!WARNING]
 > Este Dockerfile de exemplo exclui apenas SDKs do Windows anteriores que não podem ser instalados em contêineres. As versões anteriores causam uma falha no comando de build.
 
-1. Abra o prompt de comando.
+1. Abra um prompt de comando.
 
 1. Crie um novo diretório (recomendado):
 
@@ -72,7 +72,7 @@ Salve o Dockerfile de exemplo a seguir em um novo arquivo no disco. Se o nome do
    ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
 
    # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
-   RUN C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
+   RUN start /wait C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
        --installPath C:\BuildTools `
        --add Microsoft.VisualStudio.Workload.AzureBuildTools `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
@@ -172,7 +172,7 @@ Salve o Dockerfile de exemplo a seguir em um novo arquivo no disco. Se o nome do
 
 Agora que a imagem foi criada, é possível executá-la em um contêiner para fazer builds interativos e automatizados. O exemplo usa o Prompt de Comando do Desenvolvedor, assim, PATH e outras variáveis de ambiente já estão configuradas.
 
-1. Abra o prompt de comando.
+1. Abra um prompt de comando.
 
 1. Execute o contêiner para iniciar um ambiente do PowerShell com as variáveis de ambiente de desenvolvedor configuradas:
 

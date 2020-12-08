@@ -1,5 +1,7 @@
 ---
 title: Registrando um avaliador de expressão | Microsoft Docs
+description: Saiba como o avaliador de expressão deve se registrar como uma fábrica de classes com o ambiente COM do Windows e o Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 600f7c8a2e2957cddf23ccc82b0872617e491940
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f26eddf7191ee4393dd2ca986fe7a1d2c3af9e2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713206"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847137"
 ---
 # <a name="register-an-expression-evaluator"></a>Registrar um avaliador de expressão
 > [!IMPORTANT]
@@ -120,7 +122,7 @@ namespace EEMC
     > [!NOTE]
     > O `metricLanguage``GUID` identifica o idioma por nome, mas é o `guidLang` argumento para `SetEEMetric` o que seleciona o idioma. Quando o compilador gera o arquivo de informações de depuração, ele deve gravar o apropriado `guidLang` para que o saiba qual EE usar. O DE normalmente solicita ao provedor de símbolos esse idioma `GUID` , que é armazenado no arquivo de informações de depuração.
 
-3. Registra-se no Visual Studio criando chaves em HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *X. y*, em que *X. y* é a versão do Visual Studio com a qual se registrar.
+3. Registra-se no Visual Studio criando chaves em HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *x. y*, em que *x. y* é a versão do Visual Studio com a qual se registrar.
 
 ### <a name="example"></a>Exemplo
  A função a seguir mostra como um código não gerenciado (C++) EE registra e cancela o registro em si com o Visual Studio.

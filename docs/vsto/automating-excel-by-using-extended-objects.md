@@ -1,5 +1,7 @@
 ---
 title: Automatizar o Excel usando objetos estendidos
+description: Saiba que, ao desenvolver soluções do Excel no Visual Studio, você pode usar itens de host e controles de host em suas soluções.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,15 +22,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65734f5397bae8c35fb8e312041d0600b8fa84e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 912385950721de1d1e0b98c1b6582552210aa04a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254342"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846955"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automatizar o Excel usando objetos estendidos
-  Ao desenvolver soluções do Excel no Visual Studio, você pode usar *itens de host* e de *controle de host*s em suas soluções. Esses são objetos que estendem determinados objetos comumente usados no modelo de objeto do Excel (ou seja, o modelo de objeto que é exposto pelo assembly de interoperabilidade primário para o Excel), como os <xref:Microsoft.Office.Interop.Excel.Worksheet> <xref:Microsoft.Office.Interop.Excel.Range> objetos e. Os objetos estendidos se comportam como os objetos do Excel em que se baseiam, mas eles adicionam recursos adicionais, como novos eventos e recursos de vinculação de dados aos objetos.
+  Ao desenvolver soluções do Excel no Visual Studio, você pode usar *itens de host* e de *controle de host* s em suas soluções. Esses são objetos que estendem determinados objetos comumente usados no modelo de objeto do Excel (ou seja, o modelo de objeto que é exposto pelo assembly de interoperabilidade primário para o Excel), como os <xref:Microsoft.Office.Interop.Excel.Worksheet> <xref:Microsoft.Office.Interop.Excel.Range> objetos e. Os objetos estendidos se comportam como os objetos do Excel em que se baseiam, mas eles adicionam recursos adicionais, como novos eventos e recursos de vinculação de dados aos objetos.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
