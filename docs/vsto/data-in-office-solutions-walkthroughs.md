@@ -1,5 +1,7 @@
 ---
 title: Orientações sobre os dados nas soluções do Office
+description: Saiba como trabalhar com dados em personalizações em nível de documento e suplementos do VSTO para o Microsoft Word e o Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b2efa5e5def8214736d648e2b90906fe720dbe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25bf42015dcc60014012faf0254d4b6d02c30d56
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62956024"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845577"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Orientações sobre os dados nas soluções do Office
   As orientações a seguir demonstram como trabalhar com dados em personalizações em nível de documento e suplementos do VSTO para Microsoft Office Word e Microsoft Office Excel.

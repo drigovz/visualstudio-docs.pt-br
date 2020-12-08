@@ -1,5 +1,7 @@
 ---
 title: Visão geral do painel Ações
+description: Saiba como um painel Ações é um painel de tarefas de ações de documento personalizável que é anexado a um documento Microsoft Office do Word específico ou a uma pasta de trabalho do Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82bf3ac9515effaa1053a011085849f0afea67f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d03ba8968b08fb07eb2cc9c17839af57cf06eca
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986308"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844823"
 ---
 # <a name="actions-pane-overview"></a>Visão geral do painel Ações
   Um painel Ações é um painel de tarefas de **ações de documento** personalizável que é anexado a um documento do Word Microsoft Office específico ou Microsoft Office pasta de trabalho do Excel. O painel Ações é hospedado no painel de tarefas do Office junto com outros painéis de tarefas internos, como o painel de tarefas **origem XML** no Excel ou o painel de tarefas **estilos e formatação** no Word. Você pode usar controles de Windows Forms ou controles WPF para criar a interface do usuário do painel Ações.

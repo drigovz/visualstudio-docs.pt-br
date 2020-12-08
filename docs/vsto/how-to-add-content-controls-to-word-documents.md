@@ -1,5 +1,7 @@
 ---
 title: 'Como: adicionar controles de conteúdo a documentos do Word'
+description: Saiba que, em projetos de palavras no nível de documento, você pode adicionar controles de conteúdo ao documento em seu projeto em tempo de design ou em tempo de execução.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f15adeb801e33a134c681c206e3a5b38ccce70f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa1528371a1466ec2886bf652ed33561b66b7028
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538379"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845538"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Como: adicionar controles de conteúdo a documentos do Word
   Em projetos de palavras em nível de documento, você pode adicionar controles de conteúdo ao documento em seu projeto em tempo de design ou em tempo de execução. Em projetos de suplemento do VSTO do Word, você pode adicionar controles de conteúdo a qualquer documento aberto em tempo de execução.

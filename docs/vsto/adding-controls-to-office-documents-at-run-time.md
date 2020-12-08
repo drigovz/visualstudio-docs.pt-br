@@ -1,5 +1,7 @@
 ---
 title: Adicionar controles a documentos do Office em tempo de execução
+description: Saiba como você pode adicionar controles a um documento Microsoft Office Word e Microsoft Office pasta de trabalho do Excel em tempo de execução.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 44bf1de5d550a264a63ba7293fe1bdc0c9630aee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e971556605a120b4ef475f434390c6dcf7b17938
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986328"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844836"
 ---
 # <a name="add-controls-to-office-documents-at-run-time"></a>Adicionar controles a documentos do Office em tempo de execução
   Você pode adicionar controles a um documento Microsoft Office Word e Microsoft Office pasta de trabalho do Excel em tempo de execução. Você também pode removê-los em tempo de execução. Os controles que você adiciona ou remove em tempo de execução são chamados de *controles dinâmicos*.
@@ -54,7 +56,7 @@ ms.locfileid: "72986328"
 - Em um projeto de suplemento do VSTO para Excel ou Word, use a `Controls` propriedade de um <xref:Microsoft.Office.Tools.Excel.Worksheet> ou <xref:Microsoft.Office.Tools.Word.Document> que você gera em tempo de execução. Para obter mais informações sobre como gerar esses objetos em tempo de execução, consulte [estender documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 ### <a name="add-controls"></a>Adicionar controles
- Os <xref:Microsoft.Office.Tools.Excel.ControlCollection> <xref:Microsoft.Office.Tools.Word.ControlCollection> tipos e incluem métodos auxiliares que você pode usar para adicionar controles de host e controles de Windows Forms comuns a documentos e planilhas. Cada nome de método tem a `Add` *classe de controle*de formato, em que *classe de controle* é o nome de classe do controle que você deseja adicionar. Por exemplo, para adicionar um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle ao seu documento, use o <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> método.
+ Os <xref:Microsoft.Office.Tools.Excel.ControlCollection> <xref:Microsoft.Office.Tools.Word.ControlCollection> tipos e incluem métodos auxiliares que você pode usar para adicionar controles de host e controles de Windows Forms comuns a documentos e planilhas. Cada nome de método tem a `Add` *classe de controle* de formato, em que *classe de controle* é o nome de classe do controle que você deseja adicionar. Por exemplo, para adicionar um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle ao seu documento, use o <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> método.
 
  O exemplo de código a seguir adiciona um <xref:Microsoft.Office.Tools.Excel.NamedRange> a `Sheet1` em um projeto de nível de documento para Excel.
 

@@ -1,5 +1,7 @@
 ---
 title: Como armazenar em cache dados para uso offline ou em um servidor
+description: Marque um item de dados a ser armazenado em cache no documento, para que ele esteja disponível offline. Isso possibilita que os dados no documento sejam manipulados por outro código.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce295e299e4accb2d79655675f6264a1497b8d69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cefd4cd132e75f8ff622c8e0d809d317242c10f5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546179"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844316"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Como armazenar em cache dados para uso offline ou em um servidor
   Você pode marcar um item de dados para ser armazenado em cache no documento, para que ele esteja disponível offline. Isso também possibilita que os dados no documento sejam manipulados por outro código quando o documento é armazenado em um servidor.

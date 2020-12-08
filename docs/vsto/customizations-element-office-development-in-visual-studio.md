@@ -1,7 +1,8 @@
 ---
 title: '&lt;elemento personalizações &gt; (desenvolvimento do Office no Visual Studio)'
+description: Saiba como o elemento personalizações do namespace vstov4 contém todas as informações sobre como instalar e carregar cada solução do Office.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 58d88f865e5f220000bf021b548e4b9c4b8745f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc1f33101346d334d08d2bd2d7795961ea33011e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64790000"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844030"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;elemento personalizações &gt; (desenvolvimento do Office no Visual Studio)
   O `customizations` elemento do `vstov4` namespace contém todas as informações sobre a instalação e o carregamento de cada solução do Office.

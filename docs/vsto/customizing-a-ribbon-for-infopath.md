@@ -1,5 +1,7 @@
 ---
 title: Personalizar uma faixa de faixas para o InfoPath
+description: Saiba que, ao personalizar a faixa de faixas no Microsoft Office InfoPath, você deve considerar onde sua faixa de faixas personalizada aparecerá no aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76ec069ef71890a69fdbd41f40bd91cf75d93cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: baf5a7edbdd9452c4b7ce55e109eee9c79798b5e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255514"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844161"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Personalizar uma faixa de faixas para o InfoPath
   Ao personalizar a faixa de faixas no Microsoft Office InfoPath, você deve considerar onde sua faixa de faixas personalizada aparecerá no aplicativo. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] pode exibir a faixa de opções nos três seguintes tipos de janelas de aplicativo do InfoPath:

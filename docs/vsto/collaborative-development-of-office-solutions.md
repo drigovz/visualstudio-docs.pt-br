@@ -1,5 +1,7 @@
 ---
 title: Desenvolvimento colaborativo de soluções do Office
+description: Saiba como vários desenvolvedores podem trabalhar em um projeto do Office da mesma maneira que colaboram em outros projetos do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76c26a110d88d3dee8bf7540647ea0bfde4e7c4f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d30f28b3e97469bc9e0bf921438960206b4f89c0
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62949481"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845798"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Desenvolvimento colaborativo de soluções do Office
   Vários desenvolvedores podem trabalhar em um projeto do Office da mesma maneira que colaboram em outros projetos do Visual Studio. O Visual Studio localiza corretamente a instalação do Microsoft Office em cada computador, mesmo se o Office estiver instalado em locais diferentes. No entanto, há algumas considerações importantes a serem observadas.
@@ -33,7 +35,7 @@ ms.locfileid: "62949481"
  Se o projeto estiver hospedado em um compartilhamento de rede em vez de no controle do código-fonte, algumas etapas adicionais deverão ser executadas para permitir que os desenvolvedores de colaboração Abram a solução e testem o assembly.
 
 ## <a name="source-control-requires-checking-out-all-files"></a>O controle do código-fonte requer a verificação de todos os arquivos
- Se você usar o controle do código-fonte para seus projetos, deverá fazer check-out de todos os arquivos em um arquivo de código em **Gerenciador de soluções** (como os arquivos de código *ThisDocument*, *ThisWorkbook*ou *ThisAddIn* ) sempre que alterar o arquivo de código, até mesmo os arquivos ocultos por padrão. Se você fizer check-out apenas do arquivo de código de nível superior, suas alterações poderão ser perdidas.
+ Se você usar o controle do código-fonte para seus projetos, deverá fazer check-out de todos os arquivos em um arquivo de código em **Gerenciador de soluções** (como os arquivos de código *ThisDocument*, *ThisWorkbook* ou *ThisAddIn* ) sempre que alterar o arquivo de código, até mesmo os arquivos ocultos por padrão. Se você fizer check-out apenas do arquivo de código de nível superior, suas alterações poderão ser perdidas.
 
  Depois de fazer as alterações, verifique todos os arquivos novamente. Para obter mais informações sobre arquivos de código ocultos em projetos, consulte [projetos do Office no ambiente do Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).
 

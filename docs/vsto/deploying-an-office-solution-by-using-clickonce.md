@@ -1,5 +1,7 @@
 ---
 title: Implantar uma solução do Office usando o ClickOnce
+description: Saiba como você pode implantar sua solução do Office em menos etapas se usar o ClickOnce. Se você publicar atualizações, sua solução vai detectá-las e instalá-las automaticamente.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb495b30950105d1ff19a1f4fb13da1ee624b228
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d808348528a64cc184c7a6c50359c057b2325a75
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809343"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845642"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Implantar uma solução do Office usando o ClickOnce
   Você pode implantar sua solução do Office em menos etapas se usar o ClickOnce. Se você publicar atualizações, sua solução vai detectá-las e instalá-las automaticamente. No entanto, o ClickOnce exige que sua solução seja instalada separadamente para cada usuário de um computador. Portanto, você deve considerar o uso de Windows Installer (*. msi*) se mais de um usuário executar sua solução no mesmo computador.
@@ -52,7 +54,7 @@ ms.locfileid: "90809343"
 
 1. Em **Gerenciador de soluções**, escolha o nó que é nomeado para seu projeto.
 
-2. Na barra de menus, escolha **Project**, *ProjectName* **Propriedades**ProjectName.
+2. Na barra de menus, escolha **Project**, *ProjectName* **Propriedades** ProjectName.
 
 3. No **Designer de projeto**, escolha a guia **publicar** , que mostra a ilustração a seguir.
 
@@ -64,9 +66,9 @@ ms.locfileid: "90809343"
 
    - Um caminho local (por exemplo, *C:\FolderName\FolderName*).
 
-   - Um caminho UNC (Convenção de nomenclatura uniforme) para uma pasta em sua rede (por exemplo, * \\ \ServerName\FolderName*).
+   - Um caminho UNC (Convenção de nomenclatura uniforme) para uma pasta em sua rede (por exemplo, *\\ \ServerName\FolderName*).
 
-   - Um caminho relativo (por exemplo, *PublishFolder \\ *, que é a pasta na qual o projeto é publicado por padrão).
+   - Um caminho relativo (por exemplo, *PublishFolder \\*, que é a pasta na qual o projeto é publicado por padrão).
 
 5. Na caixa **URL da pasta de instalação** , insira o caminho totalmente qualificado do local onde os usuários finais encontrarão sua solução.
 
@@ -155,7 +157,7 @@ ms.locfileid: "90809343"
 
 2. Escolha o nome do computador, a pasta de **sites** ou o site da Web que você está configurando.
 
-3. Na barra de menus, escolha **Action**  >  **Propriedades**da ação.
+3. Na barra de menus, escolha **Action**  >  **Propriedades** da ação.
 
 4. Na guia **cabeçalhos HTTP** , escolha o botão **tipos de MIME** .
 
@@ -170,7 +172,7 @@ ms.locfileid: "90809343"
 
 1. No servidor que está executando o IIS 7,0, escolha **Iniciar**  >  **todos os programas**  >  **acessórios**.
 
-2. Abra o menu de atalho para o **prompt de comando**e escolha  **Executar como administrador.**
+2. Abra o menu de atalho para o **prompt de comando** e escolha  **Executar como administrador.**
 
 3. Na caixa **abrir** , digite o seguinte caminho e, em seguida, escolha o botão **OK** .
 
@@ -200,7 +202,7 @@ ms.locfileid: "90809343"
 
 3. No painel **modelos** , escolha o modelo **biblioteca de classes** .
 
-4. No campo **nome** , insira **FileCopyPDA**e, em seguida, escolha o botão **OK** .
+4. No campo **nome** , insira **FileCopyPDA** e, em seguida, escolha o botão **OK** .
 
 5. Em **Gerenciador de soluções**, escolha o projeto **FileCopyPDA** .
 
@@ -227,13 +229,13 @@ ms.locfileid: "90809343"
 
 3. Abra o menu de atalho para o projeto **ExcelWorkbook** e escolha **Adicionar referência**.
 
-4. Na caixa de diálogo **Adicionar referência** , escolha a guia **projetos** , escolha **FileCopyPDA**e, em seguida, escolha o botão **OK** .
+4. Na caixa de diálogo **Adicionar referência** , escolha a guia **projetos** , escolha **FileCopyPDA** e, em seguida, escolha o botão **OK** .
 
 5. Em **Gerenciador de soluções**, escolha o projeto **ExcelWorkbook** .
 
 6. Na barra de menus, escolha **projeto**  >  **nova pasta**.
 
-7. Insira **dados**e, em seguida, escolha a tecla **Enter** .
+7. Insira **dados** e, em seguida, escolha a tecla **Enter** .
 
 8. Em **Gerenciador de soluções**, escolha a pasta de **dados** .
 
@@ -342,20 +344,20 @@ ms.locfileid: "90809343"
 
  *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*
 
- Se a ferramenta não estiver nesse local, você poderá usar o **HKEY_LOCAL_MACHINE tempo de execução \Software\microsoft\vsto Setup\v4\InstallerPath** ou HKEY_LOCAL_MACHINE chave do registro do **\software\wow6432node\microsoft\vsto Runtime Setup\v4\InstallerPath** para localizar o caminho para essa ferramenta.
+ Se a ferramenta não estiver nesse local, você poderá usar a **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** ou **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath** chave do registro para localizar o caminho para essa ferramenta.
 
  Você pode usar os parâmetros a seguir com *VSTOinstaller.exe*.
 
 | Parâmetro | Definição |
 |------------------| - |
-| /Install ou /I | Instale a solução. Você deve seguir essa opção com o caminho de um manifesto de implantação. Você pode especificar um caminho no computador local, um compartilhamento de arquivos UNC (Convenção de nomenclatura universal). Você pode especificar um caminho local (*C:\FolderName\PublishFolder*), um caminho relativo (*publicar \\ *) ou um local totalmente qualificado (* \\ \ServerName\FolderName* ou http://<em>ServerName/nome_da_pasta</em>). |
-| /Uninstall ou /U | Desinstale a solução. Você deve seguir essa opção com o caminho de um manifesto de implantação. Você pode especificar que um caminho pode estar no computador local, um compartilhamento de arquivos UNC. Você pode especificar um caminho local (*c:\FolderName\PublishFolder*), um caminho relativo (*publicar \\ *) ou um local totalmente qualificado (* \\ \ServerName\FolderName* ou http://<em>ServerName/nome_da_pasta</em>). |
+| /Install ou /I | Instale a solução. Você deve seguir essa opção com o caminho de um manifesto de implantação. Você pode especificar um caminho no computador local, um compartilhamento de arquivos UNC (Convenção de nomenclatura universal). Você pode especificar um caminho local (*C:\FolderName\PublishFolder*), um caminho relativo (*publicar \\*) ou um local totalmente qualificado (*\\ \ServerName\FolderName* ou http://<em>ServerName/nome_da_pasta</em>). |
+| /Uninstall ou /U | Desinstale a solução. Você deve seguir essa opção com o caminho de um manifesto de implantação. Você pode especificar que um caminho pode estar no computador local, um compartilhamento de arquivos UNC. Você pode especificar um caminho local (*c:\FolderName\PublishFolder*), um caminho relativo (*publicar \\*) ou um local totalmente qualificado (*\\ \ServerName\FolderName* ou http://<em>ServerName/nome_da_pasta</em>). |
 | /Silent ou /S | Instale ou desinstale sem solicitar a interação do usuário ou sem exibição de mensagens. Se for necessário um prompt de confiança, a personalização não será instalada ou atualizada. |
 | /Ajuda ou /? | Exiba as informações da Ajuda. |
 
  Quando você executa o *VSTOinstaller.exe*, os códigos de erro a seguir podem ser exibidos.
 
-|Código do Erro|Definição|
+|Código de erro|Definição|
 |----------------|----------------|
 |0|A solução foi instalada ou desinstalada com êxito, ou a Ajuda do VSTOInstaller foi exibida.|
 |-100|Uma ou mais opções de linha de comando não são válidas ou foram definidas mais de uma vez. Para obter mais informações, digite "vstoinstaller/?" ou consulte [criar um instalador personalizado para uma solução de ClickOnce Office](/previous-versions/bb772078(v=vs.110)).|
@@ -370,7 +372,7 @@ ms.locfileid: "90809343"
 |-500|A operação foi cancelada porque a solução não pôde ser instalada ou desinstalada, ou o manifesto de implantação não pôde ser baixado.|
 
 ## <a name="publish-an-update"></a><a name="Update"></a> Publicar uma atualização
- Para atualizar uma solução, você a publica novamente usando o **Designer de projeto** ou o **Assistente de publicação**e, em seguida, copia a solução atualizada para o local de instalação. Ao copiar os arquivos no local da instalação, verifique se substituiu os arquivos anteriores.
+ Para atualizar uma solução, você a publica novamente usando o **Designer de projeto** ou o **Assistente de publicação** e, em seguida, copia a solução atualizada para o local de instalação. Ao copiar os arquivos no local da instalação, verifique se substituiu os arquivos anteriores.
 
  Na próxima vez que a solução verificar uma atualização, ela encontrará e carregará a nova versão automaticamente.
 
@@ -424,7 +426,7 @@ ms.locfileid: "90809343"
 
      A caixa **valor** contém o identificador do manifesto de implantação.
 
-4. Antes do identificador, insira o caminho totalmente qualificado do documento, seguido por uma barra, no identificador de *caminho*de formato | *Identifier* (por exemplo, *file://servername/FolderName/filename|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
+4. Antes do identificador, insira o caminho totalmente qualificado do documento, seguido por uma barra, no identificador de *caminho* de formato | *Identifier* (por exemplo, *file://servername/FolderName/filename|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
 
      Para obter mais informações sobre como formatar esse identificador, consulte [visão geral de propriedades de documento personalizadas](../vsto/custom-document-properties-overview.md).
 

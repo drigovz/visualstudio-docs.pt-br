@@ -1,5 +1,7 @@
 ---
 title: 'Como: anexar extensões de código gerenciado a documentos'
+description: Saiba como você pode anexar um assembly de personalização a um documento existente do Microsoft Office Word ou Microsoft Office pasta de trabalho do Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f44b153ac7d55704ba649a7dc09860518a5e76b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1929daaa82dbfec6f58513bf94eefe01f9520601
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547518"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844382"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Como: anexar extensões de código gerenciado a documentos
   Você pode anexar um assembly de personalização a um documento existente do Microsoft Office Word ou Microsoft Office pasta de trabalho do Excel. O documento ou a pasta de trabalho pode estar em qualquer formato de arquivo com suporte na Microsoft Office projetos e ferramentas de desenvolvimento no Visual Studio. Para obter mais informações, consulte [arquitetura de personalizações em nível de documento](../vsto/architecture-of-document-level-customizations.md).

@@ -1,7 +1,8 @@
 ---
 title: 'Como: criar projetos do Office no Visual Studio'
+description: Saiba como você pode usar o Visual Studio para criar o suplemento do VSTO e personalizações em nível de documento para aplicativos Microsoft Office.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c70668f2d4cb9597e00a7e3848b78b9f2ed49db7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652b7676ddf5d7e095010e711ab0dabc5b5f2ab7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547557"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844368"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Como: criar projetos do Office no Visual Studio
   Você pode usar o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para criar o suplemento do VSTO e personalizações em nível de documento para aplicativos Microsoft Office. Para obter mais informações sobre esses tipos de projetos, consulte [visão geral do desenvolvimento de soluções do Office &#40;&#41;do VSTO ](../vsto/office-solutions-development-overview-vsto.md).

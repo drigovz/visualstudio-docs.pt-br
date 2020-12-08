@@ -1,5 +1,7 @@
 ---
 title: Recursos adicionais para desenvolver soluções do Office
+description: Saiba mais sobre os recursos adicionais que você pode usar para desenvolver extensões para Microsoft Office aplicativos.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8bea9faa315fbd6ec41c667836dac7216f1f8f81
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 828cd2c451e531eeecda7574b5750bc3bb7023b2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986270"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844810"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>Recursos adicionais para desenvolver soluções do Office
   As ferramentas de desenvolvedor Microsoft Office no Visual Studio representam apenas uma das várias maneiras de estender os aplicativos do Office. Os aplicativos do Office também têm alguns recursos internos, como os formatos XML abertos, que não são cobertos pelas ferramentas de desenvolvimento do Office no Visual Studio ou por esta documentação.

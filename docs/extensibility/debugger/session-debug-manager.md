@@ -1,5 +1,7 @@
 ---
 title: Gerenciador de depuração de sessão | Microsoft Docs
+description: Saiba mais sobre o Gerenciador de depuração de sessão, que gerencia vários programas de depuração de mecanismos de depuração em vários processos em qualquer número de computadores.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 953b4e948ef5e21531a3e73bceed3a363ed3cec5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2c51b1fd345789cabbb9735621626ab7c2db993
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712879"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845278"
 ---
 # <a name="session-debug-manager"></a>Gerenciador de depuração de sessão
 O SDM (Gerenciador de depuração de sessão) gerencia qualquer número de mecanismos de depuração (DE) que estejam Depurando qualquer número de programas em vários processos em qualquer número de computadores. Além de ser um multiplexador de mecanismo de depuração, o SDM fornece uma exibição unificada da sessão de depuração para o IDE.

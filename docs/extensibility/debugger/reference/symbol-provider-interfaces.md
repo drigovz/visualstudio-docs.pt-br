@@ -1,5 +1,7 @@
 ---
 title: Interfaces de provedor de símbolo | Microsoft Docs
+description: Este artigo fornece links para descrições das interfaces de tratamento de símbolo do SDK do Visual Studio, que avaliam variáveis em uma pilha de chamadas durante o modo de interrupção.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7929ba36c76f0db1cabab087afe3590de509efff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a24baec6738382f93dee5d8b7843d624eea80890
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715844"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845785"
 ---
 # <a name="symbol-provider-interfaces"></a>Interfaces de provedor de símbolos
 A seguir estão as interfaces de tratamento de símbolos para o [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] .

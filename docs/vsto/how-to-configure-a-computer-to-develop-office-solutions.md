@@ -1,5 +1,7 @@
 ---
 title: Como configurar um computador para desenvolver soluções do Office
+description: Saiba como configurar um computador de desenvolvimento para que você possa usar as ferramentas de desenvolvedor de Microsoft Office no Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93c8287b0b2234c45056829ba78d993658b0428d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: d6504ac9682c4cd4e7691c651f1ee5c2b3818bf2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585491"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844303"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Como configurar um computador para desenvolver soluções do Office
   Para configurar um computador de desenvolvimento para que você possa usar as ferramentas de desenvolvedor do Microsoft Office no Visual Studio, siga as instruções neste tópico. Você deve ter privilégios administrativos no computador de desenvolvimento para executar essas etapas.

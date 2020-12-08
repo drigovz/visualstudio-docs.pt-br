@@ -1,5 +1,7 @@
 ---
 title: 'Como: adicionar um painel de tarefas personalizado a um aplicativo'
+description: Saiba como você pode adicionar um painel de tarefas personalizado aos aplicativos usando o suplemento Ferramentas do Visual Studio para Office (VSTO).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0df4d51795f01c98790f1d5b0525c45cc71899ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e8056eddef6329aeb10ed5545c4146f0af0f167
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546205"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845044"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Como: adicionar um painel de tarefas personalizado a um aplicativo
   Você pode adicionar um painel de tarefas personalizado aos aplicativos listados acima usando o suplemento do VSTO. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
@@ -36,7 +38,7 @@ ms.locfileid: "85546205"
 
 2. No menu **projeto** , clique em **Adicionar controle de usuário**.
 
-3. Na caixa de diálogo **Adicionar novo item** , altere o nome do novo controle de usuário para **MyUserControl**e clique em **Adicionar**.
+3. Na caixa de diálogo **Adicionar novo item** , altere o nome do novo controle de usuário para **MyUserControl** e clique em **Adicionar**.
 
      O controle de usuário é aberto no designer.
 

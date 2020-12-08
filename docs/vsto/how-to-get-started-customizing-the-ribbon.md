@@ -1,5 +1,7 @@
 ---
 title: 'Como: começar a personalizar a faixa de faixas'
+description: Saiba que, para personalizar a faixa de faixas de um aplicativo Microsoft Office, adicione um item da faixa de Ribbon (designer visual) ou da faixa de visualização (XML) a um projeto do Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be311f87862f4447d903294508927735d3507b08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3974fe85a97226a920959b41256fa7e29923c9d1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520062"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845941"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Como: começar a personalizar a faixa de faixas
   Para personalizar a faixa de visualização de um aplicativo Microsoft Office, adicione um item **da faixa de Ribbon (designer visual)** ou de **faixa (XML)** a um projeto do Office.
@@ -71,7 +73,7 @@ ms.locfileid: "85520062"
 
 ## <a name="see-also"></a>Confira também
 - [Acessar a faixa de faixas em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
-- [Designer de faixa de das](../vsto/ribbon-designer.md)
+- [Designer da faixa de opções](../vsto/ribbon-designer.md)
 - [XML da faixa de opções](../vsto/ribbon-xml.md)
 - [Walkthrough: criar uma guia personalizada usando o designer de faixa de faixas](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Walkthrough: criar uma guia personalizada usando o XML da faixa de uma](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

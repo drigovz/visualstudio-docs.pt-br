@@ -1,5 +1,7 @@
 ---
 title: Como exportar uma faixa de faixas do designer de faixa de das faixas para XML da faixa de modo
+description: Saiba que, para personalizar a faixa de faixas, você pode exportar a faixa de faixas do designer para o XML da faixa de informações e editar o XML diretamente.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf3101a062fa8b30ae821bf6a157319b6f37862a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f39131eb7e3469d389ad2d50aaeb1ee97e3865b9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298434"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844134"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Como exportar uma faixa de faixas do designer de faixa de das faixas para XML da faixa de modo
   O item **da faixa de tipos (Visual Designer)** não dá suporte a todos os tipos possíveis de personalização da faixa de medida. Para personalizar a faixa de opções de maneiras avançadas, você pode exportar a faixa do designer para o XML da faixa e editar o XML diretamente.
@@ -36,7 +38,7 @@ ms.locfileid: "92298434"
 
 ### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Para exportar uma faixa de faixas do designer de faixa de das para XML da faixa de para
 
-1. Clique com o botão direito do mouse no arquivo de código da faixa de bits em **Gerenciador de soluções**e clique em **Designer de exibição**.
+1. Clique com o botão direito do mouse no arquivo de código da faixa de bits em **Gerenciador de soluções** e clique em **Designer de exibição**.
 
 2. Clique com o botão direito do mouse no designer de faixa de faixas e clique em **Exportar faixa de bits para XML**.
 
@@ -44,11 +46,11 @@ ms.locfileid: "92298434"
 
 3. Na classe de código da faixa de, localize os comentários que começam com `TODO:` .
 
-4. Copie o bloco de código nesses comentários para a classe **ThisAddIn**, **ThisWorkbook**ou **ThisDocument** , dependendo do tipo de solução que você está desenvolvendo.
+4. Copie o bloco de código nesses comentários para a classe **ThisAddIn**, **ThisWorkbook** ou **ThisDocument** , dependendo do tipo de solução que você está desenvolvendo.
 
      Esse código permite que o aplicativo Microsoft Office descubra e carregue sua faixa de faixas personalizada. Para obter mais informações, consulte [Ribbon XML](../vsto/ribbon-xml.md).
 
-5. Na classe **ThisAddIn**, **ThisWorkbook**ou **ThisDocument** , remova a marca de comentário do bloco de código.
+5. Na classe **ThisAddIn**, **ThisWorkbook** ou **ThisDocument** , remova a marca de comentário do bloco de código.
 
      Depois que você remover o comentário do código, ele deverá ser semelhante ao exemplo a seguir. Neste exemplo, a classe Ribbon é chamada `MyRibbon` .
 

@@ -1,5 +1,7 @@
 ---
 title: Adicionar imagens e palavras-chave a documentos de forma programática
+description: Saiba como você pode adicionar imagens e desenhar objetos a seus documentos em tempo de design ou durante o tempo de execução.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e73473229a35bebb99eac03963fb43f880a39903
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 0662c9324aaab8f5a368bc4db300ccff1a0ece33
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585386"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844043"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Como: adicionar imagens e arte de palavras programaticamente a documentos
   Você pode adicionar imagens e objetos de desenho a seus documentos em tempo de design ou durante o tempo de execução. O WordArt permite que você adicione texto decorativo a Microsoft Office documentos do Word. Esses efeitos de texto especiais são objetos de desenho que você pode personalizar e inserir em seu documento.
@@ -63,7 +65,7 @@ ms.locfileid: "91585386"
 
 2. Clique na guia **Inserir** da faixa de faixas.
 
-3. No grupo de **texto** , clique em **WordArt**e selecione um estilo de WordArt.
+3. No grupo de **texto** , clique em **WordArt** e selecione um estilo de WordArt.
 
 4. Adicione o texto que você deseja que apareça no documento à caixa de diálogo **Editar texto de WordArt** e clique em **OK**.
 

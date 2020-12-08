@@ -1,5 +1,7 @@
 ---
 title: Introdução à programação de personalizações em nível de documento para o Word
+description: Saiba o que você precisa saber para começar a criar personalizações em nível de documento para Microsoft Office Word usando o Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4cf54dcdd08e7c44e8318973a3653dbe9c5ea1b
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9420ab02b5f402dd39e5ca1713b911a10932dfb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585661"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845174"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Introdução à programação de personalizações em nível de documento para o Word
   Se você estiver apenas começando a criar personalizações em nível de documento para Microsoft Office Word usando o Visual Studio, aqui está o que você precisa saber.
@@ -43,7 +45,7 @@ ms.locfileid: "91585661"
 
  Os controles de host são baseados em objetos nativos do Word, como controles de conteúdo, indicadores e nós XML. Os controles de host fornecem funcionalidade semelhante aos objetos nativos do Word, mas também têm novos eventos, suporte ao designer e capacidade de vinculação de dados. Eles aparecem como objetos de primeira classe no código do projeto e no IntelliSense, o que torna mais fácil referir-se a objetos específicos diretamente em seu código sem precisar navegar pelo modelo de objeto do Word.
 
- Para obter mais informações, consulte estes tópicos:
+ Para mais informações, consulte os seguintes tópicos:
 
 - [Programar personalizações em nível de documento](../vsto/programming-document-level-customizations.md)
 

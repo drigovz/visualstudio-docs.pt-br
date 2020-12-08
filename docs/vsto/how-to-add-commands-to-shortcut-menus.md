@@ -1,5 +1,7 @@
 ---
 title: 'Como: adicionar comandos a menus de atalho'
+description: Saiba como você pode adicionar comandos a um menu de atalho em um aplicativo do Office usando um suplemento do VSTO.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ad27481799718d9d2b0872d7a43837fc822ca40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95cc6a9dc773c9a0cb07eff518566af9dcc49e96
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546192"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845486"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Como: adicionar comandos a menus de atalho
   Este tópico demonstra como adicionar comandos a um menu de atalho em um aplicativo do Office usando um suplemento do VSTO.

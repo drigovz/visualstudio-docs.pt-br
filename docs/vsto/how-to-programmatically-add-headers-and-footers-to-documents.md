@@ -1,5 +1,7 @@
 ---
 title: 'Como: adicionar cabeçalhos e rodapés programaticamente a documentos'
+description: Saiba como você pode adicionar texto a cabeçalhos e rodapés no documento usando a propriedade Headers e os rodapés da seção.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6a60f58a116cd01c59145de0fcd29a2f55a787e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1abf9c0726a6b4afd1764aec095f129a4fcaf510
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585412"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844511"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Como: adicionar cabeçalhos e rodapés programaticamente a documentos
   Você pode adicionar texto a cabeçalhos e rodapés no documento usando a <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> propriedade e a <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> Propriedade do <xref:Microsoft.Office.Interop.Word.Section> . Cada seção de um documento contém três cabeçalhos e rodapés:

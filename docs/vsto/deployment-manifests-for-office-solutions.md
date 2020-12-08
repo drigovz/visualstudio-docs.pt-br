@@ -1,5 +1,7 @@
 ---
 title: Manifestos de implantação para soluções do Office
+description: Saiba que um manifesto de implantação é um arquivo XML que descreve as configurações de implantação de uma solução do Office e identifica a versão atual do aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31909d2a6765c357635cd0a8c039132f14b5967d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547544"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845499"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Manifestos de implantação para soluções do Office
   Um manifesto de implantação é um arquivo XML que descreve as configurações de implantação de uma solução do Office e identifica a versão atual do aplicativo.

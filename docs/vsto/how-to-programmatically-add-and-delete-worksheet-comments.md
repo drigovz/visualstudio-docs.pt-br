@@ -1,5 +1,7 @@
 ---
 title: 'Como: Adicionar e excluir de forma programática comentários da planilha'
+description: Saiba como você pode adicionar e excluir de forma programática comentários em planilhas Microsoft Office Excel. Você só pode adicionar comentários a células únicas, não a intervalos de várias células.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c87851afb70e9207f9a24fc18826a4c2b218ec08
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f845197de6664728a812e2795e51605ed962c575
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583795"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844602"
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Como: Adicionar e excluir de forma programática comentários da planilha
   Você pode adicionar e excluir de forma programática comentários em Microsoft Office planilhas do Excel. Os comentários podem ser adicionados somente a células únicas, não a intervalos com várias células.

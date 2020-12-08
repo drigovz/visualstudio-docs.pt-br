@@ -1,5 +1,7 @@
 ---
 title: Associar dados a controles em soluções do Office
+description: Saiba como você pode associar controles de Windows Forms e de host em um Microsoft Office documento do Word ou planilha do Excel a uma fonte de dados.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93e2d5abb9c8fda9d4a1300a9bb0958ac9266499
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9be201899f0e2ff4f685343d58a859d8a9157068
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986165"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844420"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Associar dados a controles em soluções do Office
   Você pode associar controles de Windows Forms e de *host* em um documento Microsoft Office Word ou Microsoft Office planilha do Excel a uma fonte de dados para que os controles exibam automaticamente os dados. Você pode associar dados a controles em projetos de nível de aplicativo e de documento.
@@ -101,7 +103,7 @@ ms.locfileid: "72986165"
 - [Associação de dados e Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)
 - [Como criar um controle de associação simples em um formulário do Windows](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
 - [Associar controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
+- [Salvar dados novamente no banco de dados](../data-tools/save-data-back-to-the-database.md)
 - [Atualizar dados usando um TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Dados de cache](../vsto/caching-data.md)
 - [Dados em soluções do Office](../vsto/data-in-office-solutions.md)

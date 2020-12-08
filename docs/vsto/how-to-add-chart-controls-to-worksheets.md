@@ -1,5 +1,7 @@
 ---
 title: 'Como: adicionar controles de gráfico a planilhas'
+description: Saiba como você pode adicionar controles de gráfico a uma planilha Microsoft Office Excel em tempo de design e em tempo de execução em personalizações em nível de documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdb1f738fe6e68f7470ae65e6ce08b2f3be0ef6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e48b8cfbcf4ee1c7340aef4cd59e09698f89412
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546231"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845460"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Como: adicionar controles de gráfico a planilhas
   Você pode adicionar <xref:Microsoft.Office.Tools.Excel.Chart> controles a uma Microsoft Office planilha do Excel em tempo de design e em tempo de execução em personalizações em nível de documento. Você também pode adicionar <xref:Microsoft.Office.Tools.Excel.Chart> controles em tempo de execução em suplementos do VSTO.

@@ -1,5 +1,7 @@
 ---
 title: Desenvolver soluções do Office
+description: Saiba como projetar um projeto usando as ferramentas de desenvolvedor do Office no Visual Studio. Saiba também como começar a implementar o código e a interface do usuário personalizada (UI).
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ede09f18808eda22c747ac28e3c279fc43266bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbfe569e587c53aede6d550bc20527ad8d0fd328
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551567"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844992"
 ---
 # <a name="develop-office-solutions"></a>Desenvolver soluções do Office
   Depois de projetar um projeto usando as ferramentas de desenvolvedor do Office no Visual Studio e configurar os arquivos de projeto, você pode começar a se concentrar na implementação do código e da interface do usuário personalizada (UI).

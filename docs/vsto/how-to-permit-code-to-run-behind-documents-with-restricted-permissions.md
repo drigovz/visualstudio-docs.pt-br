@@ -1,5 +1,7 @@
 ---
 title: Permitir que o código seja executado por trás de documentos com permissões restritas
+description: Saiba como você pode permitir que o código execute por trás de documentos com permissões restritas usando as ferramentas de desenvolvimento do Office no Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14c468a806160fd31c84b164a4b995f904e71fc6
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ac15302e81a68d8866c69a30a8368d36648ef1d9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298485"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844888"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Como: permitir que o código execute por trás de documentos com permissões restritas
   Você pode usar o recurso de Rights Management de informações (IRM) de Microsoft Office para restringir permissões a um documento ou pasta de trabalho. Por padrão, o código por trás de um documento Microsoft Office do Word restrito ou Microsoft Office pasta de trabalho do Excel não tem permissão para ser executado. Você pode alterar o padrão para que suas extensões de código gerenciado possam acessar o modelo de objeto e sua solução funcionará.
@@ -36,12 +38,12 @@ ms.locfileid: "92298485"
 
 1. Abra o documento ou pasta de trabalho no Word ou Excel.
 
-2. Clique na guia **arquivo** , aponte para **preparar**, aponte para **restringir permissão**e clique em **acesso restrito**.
+2. Clique na guia **arquivo** , aponte para **preparar**, aponte para **restringir permissão** e clique em **acesso restrito**.
 
    > [!NOTE]
    > Na primeira utilização, será solicitado que você instale o cliente do Windows Rights Management. Depois de instalar o cliente, talvez seja necessário repetir as etapas.
 
-3. Na caixa de diálogo **permissão** , selecione **restringir permissão para este documento**e clique em **mais opções**.
+3. Na caixa de diálogo **permissão** , selecione **restringir permissão para este documento** e clique em **mais opções**.
 
 4. Em **permissões adicionais para usuários**, selecione **acessar conteúdo programaticamente**.
 

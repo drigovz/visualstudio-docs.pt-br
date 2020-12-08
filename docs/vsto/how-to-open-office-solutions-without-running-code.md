@@ -1,5 +1,7 @@
 ---
 title: 'Como: abrir soluções do Office sem executar código'
+description: Saiba como você pode abrir um documento ou pasta de trabalho que contém extensões de código gerenciado sem executar o código do assembly.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d84515c2c3159b61b96f77555b23eef0df0ae961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8339f21fbf7add4335941360b73d42700ef6e635
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543475"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844914"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Como: abrir soluções do Office sem executar código
   Uma solução Microsoft Office criada com extensões de código gerenciado é executada mesmo se a configuração de segurança no aplicativo do Office do usuário final estiver definida como alta. Isso ocorre porque a segurança do código do assembly .NET é gerenciada pelo Microsoft .NET Framework, não por Microsoft Office.

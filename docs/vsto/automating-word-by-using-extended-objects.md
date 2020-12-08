@@ -1,5 +1,7 @@
 ---
 title: Automatizar o Word usando objetos estendidos
+description: Saiba como você pode usar itens de host e controles de host em suas soluções ao desenvolver soluções do Word no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,15 +22,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 083fe8cdd3bf9d0e4de4809aacfb78b537e4ed8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39ac9d50d0f75f595568c66b02bda1c5ed46a3d6
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255531"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844446"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>Automatizar o Word usando objetos estendidos
-  Ao desenvolver soluções do Word no Visual Studio, você pode usar *itens de host* e de *controle de host*s em suas soluções. Esses são objetos que estendem determinados objetos comumente usados no modelo de objeto do Word (ou seja, o modelo de objeto que é exposto pelo assembly de interoperabilidade primário do Word), como os <xref:Microsoft.Office.Interop.Word.Document> <xref:Microsoft.Office.Interop.Word.ContentControl> objetos e. Os objetos estendidos se comportam como os objetos do Word em que se baseiam, mas adicionam eventos adicionais e recursos de associação de dados aos objetos.
+  Ao desenvolver soluções do Word no Visual Studio, você pode usar *itens de host* e de *controle de host* s em suas soluções. Esses são objetos que estendem determinados objetos comumente usados no modelo de objeto do Word (ou seja, o modelo de objeto que é exposto pelo assembly de interoperabilidade primário do Word), como os <xref:Microsoft.Office.Interop.Word.Document> <xref:Microsoft.Office.Interop.Word.ContentControl> objetos e. Os objetos estendidos se comportam como os objetos do Word em que se baseiam, mas adicionam eventos adicionais e recursos de associação de dados aos objetos.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -52,7 +54,7 @@ ms.locfileid: "71255531"
 
 - [Controle XMLNode](../vsto/xmlnode-control.md)
 
-- [Controle XMLNodes](../vsto/xmlnodes-control.md)
+- [Controle de XMLNodes](../vsto/xmlnodes-control.md)
 
 ## <a name="see-also"></a>Confira também
 - [Como: adicionar controles de conteúdo a documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md)

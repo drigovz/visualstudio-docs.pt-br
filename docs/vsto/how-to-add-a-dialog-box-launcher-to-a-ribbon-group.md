@@ -1,5 +1,7 @@
 ---
 title: 'Como: adicionar um iniciador de caixa de diálogo a um grupo de faixa de faixas'
+description: Você pode adicionar um iniciador de caixa de diálogo a qualquer grupo em uma faixa de opções que possa abrir caixas de diálogo ou painéis de tarefas relacionados que fornecem mais informações relacionadas ao grupo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29b260929d0478749296496db5b454326497d3ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85b5d6f127c6f8b2b8140e778792aa1088efe05c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541608"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844927"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Como: adicionar um iniciador de caixa de diálogo a um grupo de faixa de faixas
   Você pode adicionar um iniciador de caixa de diálogo a qualquer grupo em uma faixa de faixas. Um iniciador de caixa de diálogo é um pequeno ícone que aparece em um grupo. Os usuários clicam nesse ícone para abrir caixas de diálogo ou painéis de tarefas relacionados que fornecem mais opções relacionadas ao grupo.

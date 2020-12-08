@@ -1,5 +1,7 @@
 ---
 title: Introdução à programação de suplementos do VSTO
+description: Saiba como você pode usar os suplementos do VSTO para automatizar Microsoft Office aplicativos, estender os recursos do aplicativo e personalizar a interface do usuário do aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39cf3e8d59a2ced26f878da979fa87fc663b5bab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be4e129de68d2a7f7690ba24acc92fb09400cfb2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253586"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845109"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Introdução à programação de suplementos do VSTO
   Você pode usar os suplementos do VSTO para automatizar Microsoft Office aplicativos, estender recursos do aplicativo e personalizar a interface do usuário do aplicativo. Para obter informações sobre como os suplementos do VSTO se comparam com outros tipos de soluções do Office que você pode criar usando o Visual Studio, consulte [visão geral do desenvolvimento de soluções do office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -74,7 +76,7 @@ ms.locfileid: "71253586"
 
 - [Walkthrough: criar seu primeiro suplemento do VSTO para Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
 
-- [Walkthrough: criar seu primeiro suplemento do VSTO para Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
+- [Walkthrough: criar seu primeiro Add-In do VSTO para Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
 
 - [Walkthrough: criar seu primeiro suplemento do VSTO para PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
 

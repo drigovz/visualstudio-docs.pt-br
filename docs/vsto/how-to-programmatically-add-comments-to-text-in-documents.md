@@ -1,5 +1,7 @@
 ---
 title: 'Como: adicionar comentários ao texto de forma programática em documentos'
+description: Adicione de forma programática comentários ao texto em documentos. A propriedade Comments da classe Document adiciona um comentário a um intervalo de texto em um documento do Microsoft Word.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 04d4ffdc747823a3df9a884b054b39ad484e09a4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2a39c02cfb7b170fd923e8e7409a0f4215d67583
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583782"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844589"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Como: adicionar comentários ao texto de forma programática em documentos
   A propriedade Comments da classe Document adiciona um comentário a um intervalo de texto em um Microsoft Office documento do Word.

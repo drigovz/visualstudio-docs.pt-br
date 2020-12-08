@@ -1,5 +1,7 @@
 ---
 title: Quadros de pilhas | Microsoft Docs
+description: Este artigo descreve a definição e a função de um quadro de pilha na arquitetura do depurador no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ea79ad199e20afeb5d2bf1ca6a3cf881c6d51c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab2c891002ad90d767a4c5ca9efffd3f3d1d10ee
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712836"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845200"
 ---
 # <a name="stack-frames"></a>Quadros de pilha
 Na arquitetura do depurador, um registro de *ativação*:
