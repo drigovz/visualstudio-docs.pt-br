@@ -1,0 +1,91 @@
+### YamlMime:Hub
+title: Documentação de desenvolvimento de jogos do Visual Studio
+summary: Saiba como fazer jogos usando o Visual Studio, Visual Studio para Mac e as principais ferramentas que eles integram com o Unity, o mecanismo inreal e muito mais.
+brand: visual-studio
+metadata:
+  title: Documentação de desenvolvimento de jogos do Visual Studio | Microsoft Docs
+  description: Este artigo apresenta os recursos do Visual Studio para desenvolvimento de jogos.
+  author: therealjohn
+  ms.author: johmil
+  ms.date: 08/05/2020
+  ms.topic: hub-page
+  ms.openlocfilehash: 5cd2470d62d90f686cc5175ac15e7c49eadfc014
+  ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/05/2020
+  ms.locfileid: "96926477"
+highlightedContent:
+  items:
+  - title: Desenvolvimento de jogos com o Visual Studio
+    itemType: overview
+    url: https://visualstudio.microsoft.com/vs/features/game-development
+  - title: Desenvolvimento de jogos em C# com o Unity
+    itemType: learn
+    url: unity/get-started/visual-studio-tools-for-unity.md
+  - title: O que há de novo no Ferramentas do Visual Studio para Unity?
+    itemType: whats-new
+    url: unity/change-log-visual-studio-tools-for-unity.md
+  - title: Criar seu primeiro aplicativo 3D com o Unity
+    itemType: quickstart
+    url: https://dotnet.microsoft.com/learn/games/unity-tutorial/intro
+  - title: Saiba mais sobre o desenvolvimento de jogos .NET
+    itemType: learn
+    url: https://dotnet.microsoft.com/apps/gaming
+productDirectory:
+  title: Desenvolvimento de jogos
+  summary: Saiba mais sobre as principais ferramentas e tecnologias integradas ao Visual Studio e ao .NET
+  items:
+  - title: Unity
+    imageSrc: unity/media/unity-logo.png
+    links:
+    - url: unity/get-started/visual-studio-tools-for-unity.md
+      text: Ferramentas do Visual Studio para Unity de Tour
+    - url: unity/get-started/getting-started-with-visual-studio-tools-for-unity.md
+      text: Introdução ao Visual Studio e ao Unity
+    - url: unity/troubleshooting/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
+      text: Solução de problemas Ferramentas do Visual Studio para Unity
+  - title: MonoGame
+    imageSrc: monogame/media/monogame-logo.png
+    links:
+    - url: https://www.monogame.net/
+      text: Visão geral do monogame
+    - url: https://docs.monogame.net/articles/getting_started/0_getting_started.html
+      text: Introdução ao monogame
+    - url: https://docs.monogame.net/articles/getting_started/0_getting_started.html#setting-up-your-development-environment
+      text: Configurando o Visual Studio para monogames
+  - title: Unreal Engine
+    imageSrc: unreal/media/unreal-engine-logo.png
+    links:
+    - url: https://www.unrealengine.com/features
+      text: Visão geral do mecanismo inreal
+    - url: https://docs.unrealengine.com/GettingStarted/index.html
+      text: Introdução ao mecanismo inreal
+    - url: https://docs.unrealengine.com/Programming/Development/VisualStudioSetup/index.html
+      text: Configurando o Visual Studio para o mecanismo inreal
+conceptualContent:
+  title: Nivelar com o Visual Studio
+  summary: Saiba mais sobre edição de código, depuração, criação e muito mais com o Visual Studio.
+  items:
+  - title: Saiba como usar o Visual Studio
+    links:
+    - text: Iniciar um tour guiado
+      url: /docs/get-started/visual-studio-ide.md
+      itemType: overview
+    - text: Escrever e editar o código
+      url: /docs/ide/index-writing-code.yml
+      itemType: tutorial
+    - text: Recursos gerais de depuração
+      itemType: tutorial
+      url: /docs/debugger/debugger-feature-tour.md
+  - title: Seguir um tutorial
+    links:
+    - text: Seu primeiro jogo com o Unity
+      url: https://dotnet.microsoft.com/learn/games/unity-tutorial/intro
+      itemType: tutorial
+    - text: Amostras de monojogo & demonstrações
+      url: https://docs.monogame.net/articles/samples.html
+      itemType: tutorial
+    - text: Tutoriais de mecanismo inreais
+      url: https://www.unrealengine.com/en-US/onlinelearning-courses
+      itemType: learn
