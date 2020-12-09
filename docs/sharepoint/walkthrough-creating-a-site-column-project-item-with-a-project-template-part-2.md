@@ -1,6 +1,8 @@
 ---
 title: Criar item de projeto de coluna de site com modelo de projeto, parte 2
 titleSuffix: ''
+description: Adicione um assistente a um modelo de projeto de coluna de site para coletar dados de usuários quando eles usam o modelo para criar um projeto do SharePoint que contém o item de projeto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 51fb7a4fb3d2ccba8c0a811619d7793e730a8ec4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e6e5c9a0bb461f6b81b9cb7e1aa5f0134a7bdcbd
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585452"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915135"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Walkthrough: criar um item de projeto de coluna de site com um modelo de projeto, parte 2
   Depois de definir um tipo personalizado de item de projeto do SharePoint e associá-lo a um modelo de projeto no Visual Studio, talvez você também queira fornecer um assistente para o modelo. Você pode usar o assistente para coletar informações de usuários quando eles usam seu modelo para criar um novo projeto que contém o item de projeto. As informações coletadas podem ser usadas para inicializar o item do projeto.
@@ -80,13 +82,13 @@ ms.locfileid: "91585452"
 
 1. No [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , abra a solução SiteColumnProjectItem.
 
-2. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução **SiteColumnProjectItem** , escolha **Adicionar**e, em seguida, escolha **novo projeto**.
+2. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução **SiteColumnProjectItem** , escolha **Adicionar** e, em seguida, escolha **novo projeto**.
 
 3. Na parte superior da caixa de diálogo **Adicionar novo projeto** , certifique-se de que **.NET Framework 4,5** seja escolhido na lista de versões do .NET Framework.
 
 4. Expanda o nó do **Visual C#** ou o nó **Visual Basic** e escolha o nó do **Windows** .
 
-5. Na lista de modelos de projeto, escolha **biblioteca de controle de usuário do WPF**, nomeie o projeto **ProjectTemplateWizard**e, em seguida, escolha o botão **OK** .
+5. Na lista de modelos de projeto, escolha **biblioteca de controle de usuário do WPF**, nomeie o projeto **ProjectTemplateWizard** e, em seguida, escolha o botão **OK** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **ProjectTemplateWizard** à solução e abre o arquivo UserControl1. XAML padrão.
 
@@ -94,13 +96,13 @@ ms.locfileid: "91585452"
 
 #### <a name="to-create-the-sharepoint-commands-project"></a>Para criar o projeto de comandos do SharePoint
 
-1. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução SiteColumnProjectItem, escolha **Adicionar**e, em seguida, escolha **novo projeto**.
+1. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução SiteColumnProjectItem, escolha **Adicionar** e, em seguida, escolha **novo projeto**.
 
 2. Na parte superior da caixa de diálogo **Adicionar novo projeto** , escolha **.NET Framework 3,5** na lista de versões do .NET Framework.
 
 3. Expanda o nó do **Visual C#** ou o nó  **Visual Basic** e, em seguida, escolha o nó do **Windows** .
 
-4. Escolha o modelo de projeto de **biblioteca de classes** , nomeie o projeto **SharePointCommands**e, em seguida, escolha o botão **OK** .
+4. Escolha o modelo de projeto de **biblioteca de classes** , nomeie o projeto **SharePointCommands** e, em seguida, escolha o botão **OK** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **SharePointCommands** à solução e abre o arquivo de código de Class1 padrão.
 
@@ -119,9 +121,9 @@ ms.locfileid: "91585452"
 
      Para obter mais informações, consulte [como: direcionar uma versão do .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
-4. Abra o menu de atalho para o projeto **ProjectTemplateWizard** , escolha **Adicionar**e, em seguida, escolha **novo item**.
+4. Abra o menu de atalho para o projeto **ProjectTemplateWizard** , escolha **Adicionar** e, em seguida, escolha **novo item**.
 
-5. Escolha o item **janela (WPF)** , nomeie o item **WizardWindow**e, em seguida, escolha o botão **Adicionar** .
+5. Escolha o item **janela (WPF)** , nomeie o item **WizardWindow** e, em seguida, escolha o botão **Adicionar** .
 
 6. Adicione dois itens de **controle de usuário (WPF)** ao projeto e nomeie-os como **página1** e **página2**.
 
@@ -318,7 +320,7 @@ ms.locfileid: "91585452"
 
 #### <a name="to-build-your-project"></a>Para compilar seu projeto
 
-1. Na barra de menus, escolha **Compilar**compilar  >  **solução**.
+1. Na barra de menus, escolha **Compilar** compilar  >  **solução**.
 
 ## <a name="removing-the-keysnk-file-from-the-project-template"></a>Removendo o arquivo Key. SNK do modelo de projeto
  Em [Walkthrough: criar um item de projeto de coluna de site com um modelo de projeto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), o modelo de projeto que você criou contém um arquivo Key. snk que é usado para assinar cada instância de projeto de coluna de site. Este arquivo Key. SNK não é mais necessário porque o assistente agora gera um novo arquivo Key. SNK para cada projeto. Remova o arquivo Key. SNK do modelo de projeto e remova as referências a esse arquivo.
@@ -377,7 +379,7 @@ ms.locfileid: "91585452"
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>Para obter o token de chave pública para o assembly do assistente
 
-1. No **menu iniciar**, escolha **todos os programas**, escolha **Microsoft Visual Studio**, escolha **Ferramentas do Visual Studio**e, em seguida, escolha **prompt de comando do desenvolvedor**.
+1. No **menu iniciar**, escolha **todos os programas**, escolha **Microsoft Visual Studio**, escolha **Ferramentas do Visual Studio** e, em seguida, escolha **prompt de comando do desenvolvedor**.
 
      Uma janela de prompt de comando do Visual Studio é aberta.
 
@@ -450,7 +452,7 @@ ms.locfileid: "91585452"
 
 4. Na lista **origem** , escolha **um projeto na solução atual**.
 
-5. Na lista **projeto** , escolha **ProjectTemplateWizard**e, em seguida, escolha o botão **OK** .
+5. Na lista **projeto** , escolha **ProjectTemplateWizard** e, em seguida, escolha o botão **OK** .
 
 6. Na guia **ativos** do editor, escolha o botão **novo** novamente.
 
@@ -462,7 +464,7 @@ ms.locfileid: "91585452"
 
 9. Na lista **projeto** , escolha o projeto **SharePointCommands** e, em seguida, escolha o botão **OK** .
 
-10. Na barra de menus, escolha **criar**  >  **solução de compilação**e, em seguida, certifique-se de que a solução seja compilada sem erros.
+10. Na barra de menus, escolha **criar**  >  **solução de compilação** e, em seguida, certifique-se de que a solução seja compilada sem erros.
 
 ## <a name="test-the-wizard"></a>Testar o assistente
  Agora você está pronto para testar o assistente. Primeiro, inicie a depuração da solução SiteColumnProjectItem na instância experimental do Visual Studio. Em seguida, teste o assistente para o projeto de coluna de site na instância experimental do Visual Studio. Por fim, compile e execute o projeto para verificar se a coluna site funciona conforme o esperado.
@@ -487,7 +489,7 @@ ms.locfileid: "91585452"
 
 2. Expanda o nó do **Visual C#** ou o nó **Visual Basic** (dependendo do idioma ao qual o modelo de projeto dá suporte), expanda o nó do **SharePoint** e escolha o nó **2010** .
 
-3. Na lista de modelos de projeto, escolha **site coluna**, nomeie o projeto **SiteColumnWizardTest**e, em seguida, escolha o botão **OK** .
+3. Na lista de modelos de projeto, escolha **site coluna**, nomeie o projeto **SiteColumnWizardTest** e, em seguida, escolha o botão **OK** .
 
 4. Verifique se o código na outra instância do Visual Studio é interrompido no ponto de interrupção que você definiu anteriormente no `RunStarted` método.
 
@@ -501,9 +503,9 @@ ms.locfileid: "91585452"
 
    - Na lista **grupo** , escolha **Personalizar colunas Sim/não**.
 
-   - Na caixa **nome** , insira **minha coluna Sim/não**e, em seguida, escolha o botão **concluir** .
+   - Na caixa **nome** , insira **minha coluna Sim/não** e, em seguida, escolha o botão **concluir** .
 
-     No **Gerenciador de soluções**, um novo projeto é exibido e contém um item de projeto chamado **Field1**e o Visual Studio abre o arquivo de *Elements.xml* do projeto no editor.
+     No **Gerenciador de soluções**, um novo projeto é exibido e contém um item de projeto chamado **Field1** e o Visual Studio abre o arquivo de *Elements.xml* do projeto no editor.
 
 8. Verifique se *Elements.xml* contém os valores que você especificou no assistente.
 
@@ -520,7 +522,7 @@ ms.locfileid: "91585452"
 
 3. Na página Configurações do site, em **galerias**, escolha o link **colunas do site** .
 
-4. Na lista de colunas do site, verifique se um grupo de **colunas Sim/não personalizado** contém uma coluna chamada **minha coluna Sim/não**e, em seguida, feche o navegador da Web.
+4. Na lista de colunas do site, verifique se um grupo de **colunas Sim/não personalizado** contém uma coluna chamada **minha coluna Sim/não** e, em seguida, feche o navegador da Web.
 
 ## <a name="clean-up-the-development-computer"></a>Limpar o computador de desenvolvimento
  Depois de concluir o teste do item de projeto, remova o modelo de projeto da instância experimental do Visual Studio.
@@ -531,7 +533,7 @@ ms.locfileid: "91585452"
 
      A caixa de diálogo **Extensões e Atualizações** é aberta.
 
-2. Na lista de extensões, escolha **site coluna**e, em seguida, escolha o botão **desinstalar** .
+2. Na lista de extensões, escolha **site coluna** e, em seguida, escolha o botão **desinstalar** .
 
 3. Na caixa de diálogo exibida, escolha o botão **Sim** para confirmar que você deseja desinstalar a extensão e, em seguida, escolha o botão **reiniciar agora** para concluir a desinstalação.
 

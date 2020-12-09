@@ -1,5 +1,7 @@
 ---
 title: Como adicionar um método excluidor | Microsoft Docs
+description: Saiba como adicionar um método excluidor no BDC designer do Visual Studio, de modo que um usuário final possa excluir um registro de dados de uma lista externa em um site do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dd97d28936e9f0cc50e9064fdc1a6a64bb20fc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5e41fbb4f70bd3f5ae2db72b630ae6e524d3def
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017036"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915434"
 ---
 # <a name="how-to-add-a-deleter-method"></a>Como adicionar um método excluidor
   Você pode habilitar um usuário final para excluir um registro de dados de uma lista externa em um site do SharePoint adicionando um método excluidor ao modelo. Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +35,7 @@ ms.locfileid: "86017036"
 
 1. No **BDC designer**, escolha uma entidade.
 
-2. Na barra de menus, escolha **Exibir**  >  **outros**  >  **detalhes do método**do Windows BDC.
+2. Na barra de menus, escolha **Exibir**  >  **outros**  >  **detalhes do método** do Windows BDC.
 
     A janela **detalhes do método BDC** é aberta. Para obter mais informações sobre essa janela, consulte [visão geral das ferramentas de design de modelo do BDC](../sharepoint/bdc-model-design-tools-overview.md).
 

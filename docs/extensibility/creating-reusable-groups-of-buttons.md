@@ -1,5 +1,7 @@
 ---
 title: Criando grupos de botões reutilizáveis | Microsoft Docs
+description: Saiba como criar um grupo de comandos, que é uma coleção de comandos que aparecem juntos em um menu ou barra de ferramentas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 477014ed77b60821ad191ba6842999be6f528fee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b9d1d8b985f7184ffdfbf083dc3f6b8ab03d894
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903645"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915577"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Criar grupos de botões reutilizáveis
 Um grupo de comandos é uma coleção de comandos que sempre aparecem juntos em um menu ou barra de ferramentas. Qualquer grupo de comandos pode ser usado novamente atribuindo-o a diferentes menus pai na seção CommandPlacements do arquivo *. vsct* .

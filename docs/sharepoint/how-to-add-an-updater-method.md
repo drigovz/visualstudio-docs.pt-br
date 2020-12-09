@@ -1,5 +1,7 @@
 ---
 title: Como adicionar um método de atualizador | Microsoft Docs
+description: Saiba como permitir que os usuários atualizem dados corporativos em uma lista externa do SharePoint adicionando um método de atualizador.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c76373c710908a8ae7edc49c4e26ff7e94336a6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d06737de7df40efa2bc6259cc0ea53bdda17b8c
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014983"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915369"
 ---
 # <a name="how-to-add-an-updater-method"></a>Como adicionar um método de atualizador
   Você pode permitir que os usuários atualizem dados corporativos em uma lista externa do SharePoint criando um método de *atualizador* . Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -31,7 +33,7 @@ ms.locfileid: "86014983"
 
 1. No BDC designer, escolha uma entidade.
 
-2. Na barra de menus, escolha **Exibir**  >  **outros**  >  **detalhes do método**do Windows BDC.
+2. Na barra de menus, escolha **Exibir**  >  **outros**  >  **detalhes do método** do Windows BDC.
 
     A janela detalhes do método BDC é aberta. Para obter mais informações sobre essa janela, consulte [visão geral das ferramentas de design de modelo do BDC](../sharepoint/bdc-model-design-tools-overview.md).
 

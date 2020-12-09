@@ -1,5 +1,7 @@
 ---
 title: Suporte de formulário em fluxos de trabalho | Microsoft Docs
+description: 'Leia sobre o suporte a formulários em fluxos de trabalho do SharePoint. Quatro tipos de formulários podem ser usados em um fluxo de trabalho: Associação, inicialização, tarefa e modificação.'
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b064df6729b914af7758cde86b03b886fd0e5d26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52939fe00dcbca1cfd633c81d4b0a00ea6b517b9
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986256"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915499"
 ---
 # <a name="form-support-in-workflows"></a>Suporte de formulário em fluxos de trabalho
   Quatro tipos de formulários podem ser usados em um fluxo de trabalho: Associação, inicialização, tarefa e modificação. Esses tipos de formulário podem ser baseados em um formulário ASPX ou em um formulário do InfoPath. O nível de suporte que [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] o fornece para um formulário específico depende de vários fatores, que são descritos nas tabelas a seguir. Para obter mais informações sobre tipos de formulário de fluxo de trabalho, consulte [visão geral do Workflow Forms](/previous-versions/office/developer/sharepoint-2010/ms457061(v=office.14)).

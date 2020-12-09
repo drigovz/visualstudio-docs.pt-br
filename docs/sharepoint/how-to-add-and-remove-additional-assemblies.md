@@ -1,5 +1,7 @@
 ---
 title: 'Como: Adicionar e remover assemblies adicionais | Microsoft Docs'
+description: Saiba como adicionar e remover assemblies adicionais nos pacotes de solução do SharePoint. Além disso, adicione ou exclua controles seguros e recursos de classe.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07b9016a4e246d3ed5a2697d924f556517a8226f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41b41ccd5eda2a44457adf23302a833574dade9e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014827"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914966"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Como: Adicionar e remover assemblies adicionais
   Se um pacote do SharePoint depender de outros assemblies para funcionalidade ou dados, você poderá adicionar os assemblies ao seu pacote de solução (. wsp). Dessa forma, o servidor do SharePoint garante que os assemblies personalizados sejam instalados com um pacote.

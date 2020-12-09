@@ -1,6 +1,8 @@
 ---
 title: Criar item de projeto de ação personalizada com modelo de item, parte 2
 titleSuffix: ''
+description: Neste tutorial, adicione um assistente para coletar informações de usuários quando eles usam um modelo de item para adicionar um item de projeto de ação personalizada em um site do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 957af3fdb4a86f4973ff8ac24251bae923ec299c
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fe283da2c2a81827ca70414315278cebd775873a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585465"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915200"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Walkthrough: criar um item de projeto de ação personalizada com um modelo de item, parte 2
   Depois de definir um tipo personalizado de item de projeto do SharePoint e associá-lo a um modelo de item no Visual Studio, talvez você também queira fornecer um assistente para o modelo. Você pode usar o assistente para coletar informações de usuários quando eles usam seu modelo para adicionar uma nova instância do item de projeto a um projeto. As informações coletadas podem ser usadas para inicializar o item do projeto.
@@ -59,13 +61,13 @@ ms.locfileid: "91585465"
 
 1. No Visual Studio, abra a solução CustomActionProjectItem
 
-2. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução, escolha **Adicionar**e, em seguida, escolha **novo projeto**.
+2. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução, escolha **Adicionar** e, em seguida, escolha **novo projeto**.
 
 3. Na caixa de diálogo **novo projeto** , expanda os nós **Visual C#** ou **Visual Basic** e, em seguida, escolha o nó **Windows** .
 
 4. Na parte superior da caixa de diálogo **novo projeto** , certifique-se de que **.NET Framework 4,5** seja escolhido na lista de versões do .NET Framework.
 
-5. Escolha o modelo de projeto de **biblioteca de controle de usuário do WPF** , nomeie o projeto **ItemTemplateWizard**e, em seguida, escolha o botão **OK** .
+5. Escolha o modelo de projeto de **biblioteca de controle de usuário do WPF** , nomeie o projeto **ItemTemplateWizard** e, em seguida, escolha o botão **OK** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **ItemTemplateWizard** à solução.
 
@@ -159,7 +161,7 @@ ms.locfileid: "91585465"
 
 #### <a name="to-build-your-project"></a>Para compilar seu projeto
 
-1. Na barra de menus, escolha **Compilar**compilar  >  **solução**.
+1. Na barra de menus, escolha **Compilar** compilar  >  **solução**.
 
 ## <a name="associate-the-wizard-with-the-item-template"></a>Associar o assistente ao modelo de item
  Agora que você implementou o assistente, você deve associá-lo ao modelo de item de **ação personalizado** , concluindo três etapas principais:
@@ -180,7 +182,7 @@ ms.locfileid: "91585465"
 
 4. Na caixa de diálogo **criar chave de nome forte** , insira um nome, desmarque a caixa de seleção **proteger meu arquivo de chave com uma senha** e escolha o botão **OK** .
 
-5. Na barra de menus, escolha **Compilar**compilar  >  **solução**.
+5. Na barra de menus, escolha **Compilar** compilar  >  **solução**.
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>Para obter o token de chave pública para o assembly do assistente
 
@@ -253,9 +255,9 @@ ms.locfileid: "91585465"
 
 4. Na lista **origem** , escolha **um projeto na solução atual**.
 
-5. Na lista **projeto** , escolha **ItemTemplateWizard**e, em seguida, escolha o botão **OK** .
+5. Na lista **projeto** , escolha **ItemTemplateWizard** e, em seguida, escolha o botão **OK** .
 
-6. Na barra de menus, escolha **criar**  >  **solução de compilação**e, em seguida, certifique-se de que a solução seja compilada sem erros.
+6. Na barra de menus, escolha **criar**  >  **solução de compilação** e, em seguida, certifique-se de que a solução seja compilada sem erros.
 
 ## <a name="test-the-wizard"></a>Testar o assistente
  Agora você está pronto para testar o assistente. Primeiro, comece a depurar a solução CustomActionProjectItem na instância experimental do Visual Studio. Em seguida, teste o assistente para o item de projeto de ação personalizada em um projeto do SharePoint na instância experimental do Visual Studio. Por fim, compile e execute o projeto do SharePoint para verificar se a ação personalizada funciona conforme o esperado.
@@ -280,11 +282,11 @@ ms.locfileid: "91585465"
 
 2. Expanda o nó **Visual C#** ou **Visual Basic** (dependendo do idioma ao qual o modelo de item dá suporte), expanda o nó do **SharePoint** e escolha o nó **2010** .
 
-3. Na lista de modelos de projeto, escolha **projeto do SharePoint 2010**, nomeie o projeto **CustomActionWizardTest**e, em seguida, escolha o botão **OK** .
+3. Na lista de modelos de projeto, escolha **projeto do SharePoint 2010**, nomeie o projeto **CustomActionWizardTest** e, em seguida, escolha o botão **OK** .
 
 4. No **Assistente para personalização do SharePoint**, insira a URL do site que você deseja usar para depuração e, em seguida, escolha o botão **concluir** .
 
-5. No **Gerenciador de soluções**, abra o menu de atalho para o nó do projeto, escolha **Adicionar**e, em seguida, escolha **novo item**.
+5. No **Gerenciador de soluções**, abra o menu de atalho para o nó do projeto, escolha **Adicionar** e, em seguida, escolha **novo item**.
 
 6. Na caixa de diálogo **Adicionar novo item-CustomItemWizardTest** , expanda o nó do **SharePoint** e, em seguida, expanda o nó **2010** .
 

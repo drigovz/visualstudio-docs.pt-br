@@ -1,5 +1,7 @@
 ---
 title: Criar & solução de fluxo de trabalho do SharePoint de depuração
+description: Neste tutorial, crie e depure uma solução de fluxo de trabalho do SharePoint. Crie um modelo de fluxo de trabalho seqüencial básico. Crie atividades de fluxo de trabalho e manipule eventos.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65af3cbfc799a90d640579f8eed0e051fd5888f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c8d5ca5b941a7ae6e6ebada21f1eafaef2b6f43
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014624"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915304"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Walkthrough: criar e depurar uma solução de fluxo de trabalho do SharePoint
   Este tutorial demonstra como criar um modelo de fluxo de trabalho seqüencial básico. O fluxo de trabalho verifica uma propriedade de uma biblioteca de documentos compartilhada para determinar se um documento foi revisado. Se o documento tiver sido revisado, o fluxo de trabalho é concluído.
@@ -91,7 +93,7 @@ ms.locfileid: "86014624"
 
 2. Na barra de menus, escolha **arquivo**  >  **novo**  >  **projeto** para exibir a caixa de diálogo **novo projeto** .
 
-3. Expanda o nó **do SharePoint** sob o **Visual C#** ou **Visual Basic**e escolha o nó **2010** .
+3. Expanda o nó **do SharePoint** sob o **Visual C#** ou **Visual Basic** e escolha o nó **2010** .
 
 4. No painel **modelos** , escolha o modelo de **projeto do SharePoint 2010** .
 
@@ -111,7 +113,7 @@ ms.locfileid: "86014624"
 
      O **Assistente para personalização do SharePoint** é exibido.
 
-10. Na página **especificar o nome do fluxo de trabalho para depuração** , aceite o nome padrão (**MySharePointWorkflow-Workflow1**). Mantenha o valor do tipo de modelo de fluxo de trabalho padrão, **lista fluxo de trabalho**e, em seguida, escolha o botão **Avançar** .
+10. Na página **especificar o nome do fluxo de trabalho para depuração** , aceite o nome padrão (**MySharePointWorkflow-Workflow1**). Mantenha o valor do tipo de modelo de fluxo de trabalho padrão, **lista fluxo de trabalho** e, em seguida, escolha o botão **Avançar** .
 
 11. Na página **você gostaria que o Visual Studio associasse automaticamente o fluxo de trabalho em uma sessão de depuração?** , escolha o botão **Avançar** para aceitar todas as configurações padrão.
 
@@ -274,7 +276,7 @@ ms.locfileid: "86014624"
 
 10. Na página **documentos compartilhados** , escolha o documento, escolha a seta que aparece e, em seguida, escolha o item de menu **Editar propriedades** .
 
-11. Defina **status do documento** como **revisão completa**e, em seguida, escolha o botão **salvar** .
+11. Defina **status do documento** como **revisão completa** e, em seguida, escolha o botão **salvar** .
 
      Isso retorna para a página **documentos compartilhados** do site padrão do SharePoint.
 

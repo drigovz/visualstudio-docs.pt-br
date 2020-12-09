@@ -1,6 +1,8 @@
 ---
 title: Criar item de projeto de ação personalizada com modelo de item, parte 1
 titleSuffix: ''
+description: Usando um modelo de item, crie um item de projeto que possa ser adicionado a um projeto do SharePoint para criar uma ação personalizada em um site do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5cdf574d17e63e1ef4906c629d43f5f928784d01
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5d9d1d2cca8f8ffaec67c92b44e7a621d08ad673
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585557"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915265"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Walkthrough: criar um item de projeto de ação personalizada com um modelo de item, parte 1
   Você pode estender o sistema de projeto do SharePoint no Visual Studio criando seus próprios tipos de item de projeto. Neste tutorial, você criará um item de projeto que pode ser adicionado a um projeto do SharePoint para criar uma ação personalizada em um site do SharePoint. A ação personalizada adiciona um item de menu ao menu **ações do site** do site do SharePoint.
@@ -86,13 +88,13 @@ ms.locfileid: "91585557"
 
 5. Escolha o modelo de **projeto VSIX** .
 
-6. Na caixa **nome** , digite **CustomActionProjectItem**e, em seguida, escolha o botão **OK** .
+6. Na caixa **nome** , digite **CustomActionProjectItem** e, em seguida, escolha o botão **OK** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **CustomActionProjectItem** ao **Gerenciador de soluções**.
 
 #### <a name="to-create-the-item-template-project"></a>Para criar o projeto de modelo de item
 
-1. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução, escolha **Adicionar**e, em seguida, escolha **novo projeto**.
+1. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução, escolha **Adicionar** e, em seguida, escolha **novo projeto**.
 
 2. Na lista na parte superior da caixa de diálogo **novo projeto** , verifique se **.NET Framework 4,5** está selecionado.
 
@@ -100,19 +102,19 @@ ms.locfileid: "91585557"
 
 4. Na lista de modelos do projeto, escolha o modelo de **Item C#** ou modelo de **modelo de item de Visual Basic** .
 
-5. Na caixa **nome** , digite **ItemTemplate**e, em seguida, escolha o botão **OK** .
+5. Na caixa **nome** , digite **ItemTemplate** e, em seguida, escolha o botão **OK** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **ItemTemplate** à solução.
 
 #### <a name="to-create-the-extension-project"></a>Para criar o projeto de extensão
 
-1. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução, escolha **Adicionar**e, em seguida, escolha **novo projeto**.
+1. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução, escolha **Adicionar** e, em seguida, escolha **novo projeto**.
 
 2. Na lista na parte superior da caixa de diálogo **novo projeto** , verifique se **.NET Framework 4,5** está selecionado.
 
 3. Na caixa de diálogo **novo projeto** , expanda os nós **Visual C#** ou **Visual Basic** , escolha o nó **Windows** e, em seguida, escolha o modelo de projeto de **biblioteca de classes** .
 
-4. Na caixa **nome** , digite **ProjectItemDefinition**e, em seguida, escolha o botão **OK** .
+4. Na caixa **nome** , digite **ProjectItemDefinition** e, em seguida, escolha o botão **OK** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **ProjectItemDefinition** à solução e abre o arquivo de código de Class1 padrão.
 
@@ -123,7 +125,7 @@ ms.locfileid: "91585557"
 
 #### <a name="to-configure-the-project"></a>Para configurar o projeto
 
-1. No **Gerenciador de soluções**, abra o menu de atalho para o projeto **ProjectItemDefinition** , escolha **Adicionar**e, em seguida, escolha **novo item**.
+1. No **Gerenciador de soluções**, abra o menu de atalho para o projeto **ProjectItemDefinition** , escolha **Adicionar** e, em seguida, escolha **novo item**.
 
 2. Na lista de itens de projeto, escolha **arquivo de código**.
 
@@ -160,14 +162,14 @@ ms.locfileid: "91585557"
 
 #### <a name="to-create-a-custom-icon-for-the-project-item"></a>Para criar um ícone personalizado para o item de projeto
 
-1. No **Gerenciador de soluções**, abra o menu de atalho para o projeto **ProjectItemDefinition** , escolha **Adicionar**e, em seguida, escolha **novo item...**.
+1. No **Gerenciador de soluções**, abra o menu de atalho para o projeto **ProjectItemDefinition** , escolha **Adicionar** e, em seguida, escolha **novo item...**.
 
 2. Na lista de itens de projeto, escolha o item de **arquivo de ícone** .
 
     > [!NOTE]
     > Em projetos Visual Basic, você deve escolher o nó **geral** para exibir o item de **arquivo de ícone** .
 
-3. Na caixa **nome** , digite **CustomAction_SolutionExplorer. ico**e, em seguida, escolha o botão **Adicionar** .
+3. Na caixa **nome** , digite **CustomAction_SolutionExplorer. ico** e, em seguida, escolha o botão **Adicionar** .
 
      O novo ícone é aberto no **Editor de imagem**.
 
@@ -221,11 +223,11 @@ ms.locfileid: "91585557"
 
      Esse arquivo define o conteúdo e o comportamento do modelo de item. Para obter mais informações sobre o conteúdo desse arquivo, consulte [referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
-4. No **Gerenciador de soluções**, abra o menu de atalho para o projeto **ItemTemplate** , escolha **Adicionar**e, em seguida, escolha **novo item**.
+4. No **Gerenciador de soluções**, abra o menu de atalho para o projeto **ItemTemplate** , escolha **Adicionar** e, em seguida, escolha **novo item**.
 
 5. Na caixa de diálogo **Adicionar novo item** , escolha o modelo de **arquivo de texto** .
 
-6. Na caixa **nome** , digite **CustomAction. OnData**e, em seguida, escolha o botão **Adicionar** .
+6. Na caixa **nome** , digite **CustomAction. OnData** e, em seguida, escolha o botão **Adicionar** .
 
 7. Adicione o seguinte XML ao arquivo *CustomAction. OnData* e salve e feche o arquivo.
 
@@ -241,11 +243,11 @@ ms.locfileid: "91585557"
 
      Esse arquivo contém informações sobre os arquivos contidos no item de projeto. O `Type` atributo do `ProjectItem` elemento deve ser definido como a mesma cadeia de caracteres que é passada para a <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> na definição de item do projeto (a `CustomActionProjectItemTypeProvider` classe que você criou anteriormente neste passo a passos). Para obter mais informações sobre o conteúdo de arquivos *. OnData* , consulte [referência de esquema de item de projeto do SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md).
 
-8. No **Gerenciador de soluções**, abra o menu de atalho para o projeto **ItemTemplate** , escolha **Adicionar**e, em seguida, escolha **novo item**.
+8. No **Gerenciador de soluções**, abra o menu de atalho para o projeto **ItemTemplate** , escolha **Adicionar** e, em seguida, escolha **novo item**.
 
 9. Na caixa de diálogo **Adicionar novo item** , escolha o modelo de **arquivo XML** .
 
-10. Na caixa **nome** , digite **Elements.xml**e, em seguida, escolha o botão **Adicionar** .
+10. Na caixa **nome** , digite **Elements.xml** e, em seguida, escolha o botão **Adicionar** .
 
 11. Substitua o conteúdo do arquivo de *Elements.xml* pelo seguinte XML e, em seguida, salve e feche o arquivo.
 
@@ -315,7 +317,7 @@ ms.locfileid: "91585557"
 
 7. Na lista **origem** , escolha **um projeto na solução atual**.
 
-8. Na lista **projeto** , escolha **ItemTemplate**e, em seguida, escolha o botão **OK** .
+8. Na lista **projeto** , escolha **ItemTemplate** e, em seguida, escolha o botão **OK** .
 
 9. Na guia **ativos** , escolha o botão **novo** novamente.
 
@@ -332,7 +334,7 @@ ms.locfileid: "91585557"
 
 13. Clique no botão **OK**.
 
-14. Na barra de menus, escolha **criar**  >  **solução de compilação**e, em seguida, certifique-se de que o projeto seja compilado sem erros.
+14. Na barra de menus, escolha **criar**  >  **solução de compilação** e, em seguida, certifique-se de que o projeto seja compilado sem erros.
 
 15. Verifique se a pasta de saída da compilação do projeto CustomActionProjectItem contém o arquivo CustomActionProjectItem. vsix.
 
@@ -355,15 +357,15 @@ ms.locfileid: "91585557"
 
 1. Na instância experimental do Visual Studio, na barra de menus, escolha **arquivo**  >  **novo**  >  **projeto**.
 
-2. Expanda **Visual C#** ou **Visual Basic** (dependendo do idioma ao qual o modelo de item dá suporte), expanda **SharePoint**e escolha o nó **2010** .
+2. Expanda **Visual C#** ou **Visual Basic** (dependendo do idioma ao qual o modelo de item dá suporte), expanda **SharePoint** e escolha o nó **2010** .
 
 3. Na lista de modelos de projeto, escolha **projeto do SharePoint 2010**.
 
-4. Na caixa **nome** , digite **CustomActionTest**e, em seguida, escolha o botão **OK** .
+4. Na caixa **nome** , digite **CustomActionTest** e, em seguida, escolha o botão **OK** .
 
 5. No **Assistente para personalização do SharePoint**, insira a URL do site que você deseja usar para depuração e, em seguida, escolha o botão **concluir** .
 
-6. No **Gerenciador de soluções**, abra o menu de atalho para o nó do projeto, escolha **Adicionar**e, em seguida, escolha **novo item**.
+6. No **Gerenciador de soluções**, abra o menu de atalho para o nó do projeto, escolha **Adicionar** e, em seguida, escolha **novo item**.
 
 7. Na caixa de diálogo **Adicionar novo item** , escolha o nó **2010** no nó do **SharePoint** .
 
@@ -439,7 +441,7 @@ ms.locfileid: "91585557"
 
      A caixa de diálogo **Extensões e Atualizações** é aberta.
 
-2. Na lista de extensões, escolha **item de projeto de ação personalizada**e, em seguida, escolha o botão **desinstalar** .
+2. Na lista de extensões, escolha **item de projeto de ação personalizada** e, em seguida, escolha o botão **desinstalar** .
 
 3. Na caixa de diálogo exibida, escolha o botão **Sim** para confirmar que você deseja desinstalar a extensão.
 

@@ -1,6 +1,8 @@
 ---
 title: Criar item de projeto de coluna de site com modelo de projeto, parte 1
 titleSuffix: ''
+description: Defina um tipo de item de projeto para criar uma coluna de site e, em seguida, crie um modelo de projeto a ser usado para criar um projeto do SharePoint que contenha o item de projeto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a740d96fb6ae846188fc4fa457c5baeb7b5e907d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 32f56f282dc5755b8162c4f19a9c036dc2e9cc5f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585544"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915205"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Walkthrough: criar um item de projeto de coluna de site com um modelo de projeto, parte 1
   Projetos do SharePoint são contêineres para um ou mais itens de projeto do SharePoint. Você pode estender o sistema de projeto do SharePoint no Visual Studio criando seus próprios tipos de item de projeto do SharePoint e, em seguida, associando-os a um modelo de projeto. Neste tutorial, você definirá um tipo de item de projeto para criar uma coluna de site e, em seguida, criará um modelo de projeto que pode ser usado para criar um novo projeto que contém um item de projeto de coluna de site.
@@ -80,13 +82,13 @@ ms.locfileid: "91585544"
 
 5. Na lista de modelos de projeto, escolha **projeto VSIX**.
 
-6. Na caixa **nome** , digite **SiteColumnProjectItem**e, em seguida, escolha o botão **OK** .
+6. Na caixa **nome** , digite **SiteColumnProjectItem** e, em seguida, escolha o botão **OK** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **SiteColumnProjectItem** ao **Gerenciador de soluções**.
 
 #### <a name="to-create-the-project-template-project"></a>Para criar o projeto de modelo de projeto
 
-1. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução, escolha **Adicionar**e, em seguida, escolha **novo projeto**.
+1. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução, escolha **Adicionar** e, em seguida, escolha **novo projeto**.
 
 2. Na parte superior da caixa de diálogo **novo projeto** , certifique-se de que **.NET Framework 4,5** seja escolhido na lista de versões do .NET Framework.
 
@@ -94,7 +96,7 @@ ms.locfileid: "91585544"
 
 4. Na lista de modelos de projeto, escolha o modelo de projeto **C#** ou modelo de **modelo de projeto de Visual Basic** .
 
-5. Na caixa **nome** , digite **SiteColumnProjectTemplate**e, em seguida, escolha o botão **OK** .
+5. Na caixa **nome** , digite **SiteColumnProjectTemplate** e, em seguida, escolha o botão **OK** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **SiteColumnProjectTemplate** à solução.
 
@@ -116,7 +118,7 @@ ms.locfileid: "91585544"
 
 #### <a name="to-create-the-extension-project"></a>Para criar o projeto de extensão
 
-1. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução, escolha **Adicionar**e, em seguida, escolha **novo projeto**.
+1. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução, escolha **Adicionar** e, em seguida, escolha **novo projeto**.
 
 2. Na parte superior da caixa de diálogo **novo projeto** , certifique-se de que **.NET Framework 4,5** seja escolhido na lista de versões do .NET Framework.
 
@@ -169,7 +171,7 @@ ms.locfileid: "91585544"
 
 4. Salve o projeto e, em seguida, feche a segunda instância do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
-5. Na instância do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] que tem a solução SiteColumnProjectItem aberta, em **Gerenciador de soluções**, abra o menu de atalho para o nó do projeto **SiteColumnProjectTemplate** , escolha **Adicionar**e, em seguida, escolha **Item existente**.
+5. Na instância do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] que tem a solução SiteColumnProjectItem aberta, em **Gerenciador de soluções**, abra o menu de atalho para o nó do projeto **SiteColumnProjectTemplate** , escolha **Adicionar** e, em seguida, escolha **Item existente**.
 
 6. Na caixa de diálogo **Adicionar item existente** , abra a lista de extensões de arquivo e, em seguida, escolha **todos os arquivos ( \* . \* )**.
 
@@ -428,7 +430,7 @@ ms.locfileid: "91585544"
 
     O novo XML faz as seguintes alterações no arquivo:
 
-   - Define o `Name` elemento para a **coluna de site**de valor. (Esse nome aparece na caixa de diálogo **novo projeto** ).
+   - Define o `Name` elemento para a **coluna de site** de valor. (Esse nome aparece na caixa de diálogo **novo projeto** ).
 
    - Adiciona `ProjectItem` elementos para cada fileproject incluído em cada instância do projeto.
 
@@ -659,7 +661,7 @@ ms.locfileid: "91585544"
 
 7. Na lista **origem** , escolha **um projeto na solução atual**.
 
-8. Na lista **projeto** , escolha **SiteColumnProjectTemplate**e, em seguida, escolha o botão **OK** .
+8. Na lista **projeto** , escolha **SiteColumnProjectTemplate** e, em seguida, escolha o botão **OK** .
 
 9. Escolha o botão **novo** novamente.
 
@@ -672,9 +674,9 @@ ms.locfileid: "91585544"
 
 11. Na lista **origem** , escolha **um projeto na solução atual**.
 
-12. Na lista **projeto** , escolha **projectItemTypeDefinition**e, em seguida, escolha o botão **OK** .
+12. Na lista **projeto** , escolha **projectItemTypeDefinition** e, em seguida, escolha o botão **OK** .
 
-13. Na barra de menus, escolha **criar**  >  **solução de compilação**e, em seguida, certifique-se de que o projeto seja compilado sem erros.
+13. Na barra de menus, escolha **criar**  >  **solução de compilação** e, em seguida, certifique-se de que o projeto seja compilado sem erros.
 
 ## <a name="test-the-project-template"></a>Testar o modelo do projeto
  Agora você está pronto para testar o modelo de projeto. Primeiro, inicie a depuração da solução SiteColumnProjectItem na instância experimental do Visual Studio. Em seguida, teste o projeto de **coluna do site** na instância experimental do Visual Studio. Por fim, compile e execute o projeto do SharePoint para verificar se a coluna site funciona conforme o esperado.

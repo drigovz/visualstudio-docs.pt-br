@@ -1,5 +1,7 @@
 ---
 title: Criar lista externa no SharePoint usando dados corporativos
+description: Crie um modelo para o serviço BDC que retorna informações sobre contatos em um banco de dados comercial e, em seguida, crie uma lista externa no SharePoint usando esse modelo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9f4fe79c3a6f158eb61d624ce6c5e1566925e3fd
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a791f94e46e16369392465e075ade92a833e2868
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740052"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915330"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Walkthrough: criar uma lista externa no SharePoint usando dados corporativos
 
@@ -56,7 +58,7 @@ Você precisará dos seguintes componentes para concluir este passo a passo:
 
 2. Em **Visual C#** ou **Visual Basic**, expanda o nó do **SharePoint** e escolha o item **2010** .
 
-3. No painel **modelos** , escolha **projeto do SharePoint 2010**, nomeie o projeto **AdventureWorksTest**e, em seguida, escolha o botão **OK** .
+3. No painel **modelos** , escolha **projeto do SharePoint 2010**, nomeie o projeto **AdventureWorksTest** e, em seguida, escolha o botão **OK** .
 
      O **Assistente para personalização do SharePoint** é exibido. Neste assistente, você pode especificar o site que será usado para depurar o projeto e definir o nível de confiança da solução.
 
@@ -70,7 +72,7 @@ Você precisará dos seguintes componentes para concluir este passo a passo:
 
      A caixa de diálogo **Adicionar novo item** é aberta.
 
-8. No painel **modelos** , escolha **modelo de conectividade de dados corporativos (somente solução de farm)**, nomeie o projeto **AdventureWorksContacts**e, em seguida, escolha o botão **Adicionar** .
+8. No painel **modelos** , escolha **modelo de conectividade de dados corporativos (somente solução de farm)**, nomeie o projeto **AdventureWorksContacts** e, em seguida, escolha o botão **Adicionar** .
 
 ## <a name="add-data-access-classes-to-the-project"></a>Adicionar classes de acesso a dados ao projeto
 
@@ -90,7 +92,7 @@ Você precisará dos seguintes componentes para concluir este passo a passo:
 
 6. No painel **modelos** , escolha **LINQ to SQL classes**.
 
-7. Na caixa **nome** , especifique **AdventureWorks**e, em seguida, escolha o botão **Adicionar** .
+7. Na caixa **nome** , especifique **AdventureWorks** e, em seguida, escolha o botão **Adicionar** .
 
      Um arquivo. dbml é adicionado ao projeto e o Object Relational Designer (O/R Designer) é aberto.
 
@@ -110,7 +112,7 @@ O projeto de **modelo de conectividade de dados corporativos** adiciona uma enti
 
 2. O arquivo de modelo de conectividade de dados corporativos é aberto no BDC designer.
 
-3. No designer, abra o menu de atalho para **Entity1**e, em seguida, escolha **excluir**.
+3. No designer, abra o menu de atalho para **Entity1** e, em seguida, escolha **excluir**.
 
 4. No **Gerenciador de soluções**, abra o menu de atalho para *Entity1. vb* (em Visual Basic) ou *Entity1.cs* (em C#) e, em seguida, escolha **excluir**.
 
@@ -126,11 +128,11 @@ Adicione uma entidade ao modelo. Você pode adicionar entidades da **caixa de fe
 
      A nova entidade aparece no designer. O Visual Studio adiciona um arquivo chamado *EntityService. vb* (em Visual Basic) ou *EntityService.cs* (em C#) ao projeto.
 
-3. Na barra de menus, escolha **Exibir**  >  **Properties**  >  **janela**de propriedades.
+3. Na barra de menus, escolha **Exibir**  >  **Properties**  >  **janela** de propriedades.
 
 4. Na janela **Propriedades** , defina o valor da propriedade **Name** como **Contact**.
 
-5. No designer, abra o menu de atalho da entidade, escolha **Adicionar**e, em seguida, escolha **identificador**.
+5. No designer, abra o menu de atalho da entidade, escolha **Adicionar** e, em seguida, escolha **identificador**.
 
      Um novo identificador é exibido na entidade.
 
@@ -146,7 +148,7 @@ Adicione um método localizador específico à entidade Contact usando a janela 
 
 1. No BDC designer, escolha a entidade **contato** .
 
-2. Na barra de menus, escolha **Exibir**  >  **outros**  >  **detalhes do método**do Windows BDC.
+2. Na barra de menus, escolha **Exibir**  >  **outros**  >  **detalhes do método** do Windows BDC.
 
      A janela detalhes do método BDC é aberta.
 
@@ -170,7 +172,7 @@ Adicione um método localizador específico à entidade Contact usando a janela 
 
 5. Na janela **Propriedades** , abra a lista ao lado da propriedade **TypeName** , escolha a guia **projeto atual** e, em seguida, escolha a propriedade **contato** .
 
-6. No **Gerenciador do BDC**, abra o menu de atalho do **contato**e escolha **Adicionar descritor de tipo**.
+6. No **Gerenciador do BDC**, abra o menu de atalho do **contato** e escolha **Adicionar descritor de tipo**.
 
      Um novo descritor de tipo chamado **TypeDescriptor1** aparece no **BDC Explorer**.
 
@@ -184,7 +186,7 @@ Adicione um método localizador específico à entidade Contact usando a janela 
 
     |Nome|Nome do Tipo|
     |----------|---------------|
-    |FirstName|System.String|
+    |Nome|System.String|
     |LastName|System.String|
     |Telefone|System.String|
     |EmailAddress|System.String|

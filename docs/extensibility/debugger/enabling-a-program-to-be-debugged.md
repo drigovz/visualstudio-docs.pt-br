@@ -1,5 +1,7 @@
 ---
 title: Habilitando um programa a ser depurado | Microsoft Docs
+description: Saiba mais sobre como iniciar o mecanismo de depuração ou anexe o mecanismo de depuração a um programa existente para depurar um programa.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17c6218cd0b25c0cf0134351fd5efd7490b6a1f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac9a43a0ec539dd978710c23c9b44f27eac81799
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738898"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915252"
 ---
 # <a name="enable-a-program-to-be-debugged"></a>Habilitar um programa a ser depurado
 Antes que o mecanismo DE depuração (DE) possa depurar um programa, você deve primeiro iniciar o ou anexá-lo a um programa existente.

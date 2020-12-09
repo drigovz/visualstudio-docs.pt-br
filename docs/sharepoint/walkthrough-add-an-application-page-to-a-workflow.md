@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: adicionar uma página de aplicativo a um fluxo de trabalho | Microsoft Docs'
+description: Neste tutorial, adicione uma página de aplicativo a uma solução de fluxo de trabalho do SharePoint. Modifique o código do fluxo de trabalho. Crie, codifique e teste a página do aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f54914e6676e0cc2400fa04ebb089fac08f58c3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c862c1de3b0630b3a5144f821e6266c34a88a5db
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015494"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915655"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Walkthrough: adicionar uma página de aplicativo a um fluxo de trabalho
   Este tutorial demonstra como adicionar uma página de aplicativo que exibe dados derivados de um fluxo de trabalho para um projeto de fluxo de trabalho. Ele baseia-se no projeto descrito no tópico [Walkthrough: criar um fluxo de trabalho com formulários de associação e de inicialização](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -44,7 +46,7 @@ ms.locfileid: "86015494"
 
 - Você também precisará concluir o projeto no tópico [Walkthrough: criar um fluxo de trabalho com formulários de associação e de inicialização](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
-## <a name="ammend-the-workflow-code"></a>Ammend o código do fluxo de trabalho
+## <a name="amend-the-workflow-code"></a>Modificar o código do fluxo de trabalho
  Primeiro, adicione uma linha de código ao fluxo de trabalho para definir o valor da coluna resultado como o valor do relatório de despesas. Esse valor é usado posteriormente no cálculo do resumo do relatório de despesas.
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Para definir o valor da coluna resultado no fluxo de trabalho

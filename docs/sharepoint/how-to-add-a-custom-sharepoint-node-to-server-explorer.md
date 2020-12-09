@@ -1,6 +1,8 @@
 ---
 title: 'Como: adicionar um nó personalizado do SharePoint a Gerenciador de Servidores | Microsoft Docs'
 titleSuffix: ''
+description: Adicione um nó personalizado do SharePoint a Gerenciador de Servidores no Visual Studio. Exiba componentes adicionais do SharePoint que não são mostrados em Gerenciador de Servidores por padrão.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a74c9c879df57a5ff6444626870ee9f021fb4e9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bbee6d780c7f447c8b47f7b478531cb58cef94fd
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584879"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915460"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Como: adicionar um nó personalizado do SharePoint a Gerenciador de Servidores
   Você pode adicionar nós personalizados no nó **conexões do SharePoint** no **Gerenciador de servidores**. Isso é útil quando você deseja exibir componentes adicionais do SharePoint que não são exibidos no **Gerenciador de servidores** por padrão. Para obter mais informações, consulte [estender o nó conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).

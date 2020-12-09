@@ -1,5 +1,7 @@
 ---
 title: 'Como: adicionar um parâmetro a um método | Microsoft Docs'
+description: Saiba como adicionar um parâmetro a um método de BDC (conectividade de dados corporativos), que permite que você passe informações para o método ou retorne informações do método.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6d0496d0fd6a347683d56630990e50af585520ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 179109ff4c0def002dac45887fe9491196a70d3e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016711"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915395"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Como: adicionar um parâmetro a um método
   Use um parâmetro para passar informações para o método ou para retornar informações de um método. Todos os métodos devem ter pelo menos um parâmetro. Para obter mais informações sobre como criar um parâmetro para dar suporte ao tipo de método que você deseja criar, consulte [criando um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +35,7 @@ ms.locfileid: "86016711"
 
 1. Adicione um método a uma entidade.
 
-2. Na barra de menus, escolha **Exibir**  >  **outros**  >  **detalhes do método**do Windows BDC.
+2. Na barra de menus, escolha **Exibir**  >  **outros**  >  **detalhes do método** do Windows BDC.
 
      A janela **detalhes do método BDC** é aberta. Para obter mais informações, consulte [visão geral das ferramentas de design de modelo do BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -47,7 +49,7 @@ ms.locfileid: "86016711"
 
 6. Na janela **Propriedades** , defina a propriedade **Name** como qualquer nome que faça sentido. Por exemplo, se o método retornar clientes, você poderá nomear o método **GetCustomers**.
 
-7. Na janela **detalhes do método BDC** , abra a lista que aparece para a direção do parâmetro e, em seguida, escolha **in**, **Inout**, **out**ou **Return**.
+7. Na janela **detalhes do método BDC** , abra a lista que aparece para a direção do parâmetro e, em seguida, escolha **in**, **Inout**, **out** ou **Return**.
 
      Para obter mais informações sobre qual direção escolher para o método de tipo que você está criando, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).
 

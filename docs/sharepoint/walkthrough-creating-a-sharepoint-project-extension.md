@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: criando uma extensão de projeto do SharePoint | Microsoft Docs'
+description: Crie uma extensão de projeto do SharePoint, que pode ser usada para responder a eventos de nível de projeto, como quando um projeto é adicionado, excluído ou renomeado.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d79bf66f88a7cbaa5321887b676cc9eca798a92
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: b815f8ea4656cc5a144f8cf12396391e55123ece
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739922"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914862"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Walkthrough: criar uma extensão de projeto do SharePoint
   Este tutorial ilustra como criar uma extensão para projetos do SharePoint. Você pode usar uma extensão de projeto para responder a eventos de nível de projeto, como quando um projeto é adicionado, excluído ou renomeado. Você também pode adicionar propriedades personalizadas ou responder quando um valor de propriedade for alterado. Ao contrário das extensões de item de projeto, as extensões de projeto não podem ser associadas a um tipo de projeto do SharePoint específico. Quando você cria uma extensão de projeto, a extensão é carregada quando qualquer tipo de projeto do SharePoint é aberto no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -69,19 +71,19 @@ ms.locfileid: "90739922"
 
 4. Na parte superior da caixa de diálogo, escolha **.NET Framework 4,5** na lista de versões do .NET Framework e, em seguida, escolha o modelo de **projeto VSIX** .
 
-5. Na caixa **nome** , digite **ProjectExtensionPackage**e, em seguida, escolha o botão **OK** .
+5. Na caixa **nome** , digite **ProjectExtensionPackage** e, em seguida, escolha o botão **OK** .
 
      O projeto **ProjectExtensionPackage** aparece na **Gerenciador de soluções**.
 
 #### <a name="to-create-the-extension-project"></a>Para criar o projeto de extensão
 
-1. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução, escolha **Adicionar**e, em seguida, escolha **novo projeto**.
+1. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução, escolha **Adicionar** e, em seguida, escolha **novo projeto**.
 
 2. Na caixa de diálogo **novo projeto** , expanda os nós **Visual C#** ou **Visual Basic** e, em seguida, escolha **Windows**.
 
 3. Na parte superior da caixa de diálogo, escolha **.NET Framework 4,5** na lista de versões do .NET Framework e, em seguida, escolha o modelo de projeto de **biblioteca de classes** .
 
-4. Na caixa **nome** , digite **ProjectExtension**e, em seguida, escolha o botão **OK** .
+4. Na caixa **nome** , digite **ProjectExtension** e, em seguida, escolha o botão **OK** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **ProjectExtension** à solução e abre o arquivo de código de Class1 padrão.
 
@@ -119,7 +121,7 @@ ms.locfileid: "90739922"
 
 #### <a name="to-build-the-solution"></a>Para compilar a solução
 
-1. Na barra de menus, escolha **Compilar**compilar  >  **solução**.
+1. Na barra de menus, escolha **Compilar** compilar  >  **solução**.
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-property-extension"></a>Criar um pacote VSIX para implantar a extensão de Propriedade do projeto
  Para implantar a extensão do projeto, use o projeto VSIX em sua solução para criar um pacote VSIX. Primeiro, configure o pacote VSIX modificando o arquivo. Extension. vsixmanifest de origem que está incluído no projeto VSIX. Em seguida, crie o pacote VSIX criando a solução.
@@ -155,7 +157,7 @@ ms.locfileid: "90739922"
 
 10. Na barra de menus, escolha **arquivo**  >  **salvar tudo** quando terminar e, em seguida, feche o designer de manifesto.
 
-11. Na barra de menus, escolha **criar**  >  **solução de compilação**e, em seguida, certifique-se de que o projeto seja compilado sem erros.
+11. Na barra de menus, escolha **criar**  >  **solução de compilação** e, em seguida, certifique-se de que o projeto seja compilado sem erros.
 
 12. No **Gerenciador de soluções**, abra o menu de atalho do projeto **ProjectExtensionPackage** e escolha a **pasta abrir no explorador de arquivos** .
 

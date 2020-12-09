@@ -1,6 +1,8 @@
 ---
 title: 'Como: adicionar um arquivo de modelo BDC existente a um projeto do SharePoint | Microsoft Docs'
 titleSuffix: ''
+description: Adicione um arquivo de modelo de BDC (conectividade de dados corporativos) existente a um projeto do SharePoint no Visual Studio, para que você possa personalizar, empacotar e reimplantar um modelo BDC.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbfbd4e485a359b7e760188217326d23d3b0aa47
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ce65f286c3de760ff74e5ef7239aac54d760f003
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584614"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914953"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Como: adicionar um arquivo de modelo BDC existente a um projeto do SharePoint
   Você pode personalizar, empacotar e reimplantar um modelo de BDC (conectividade de dados corporativos) usando o Visual Studio para adicionar o arquivo de modelo (*. bdcm*) a qualquer projeto de farm do SharePoint. Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/creating-a-business-data-connectivity-model.md).

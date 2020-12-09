@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: Adicionar receptores de evento de recurso | Microsoft Docs'
+description: Neste tutorial, adicione receptores de evento de recurso, que são métodos que são executados quando um recurso do SharePoint é instalado, ativado, desativado ou removido.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,15 +18,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f40358c157ec24557947f36b0c6eadb6d8a2622d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98b85222fca4da6dfca653ad74e1315801798d83
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015360"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915590"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Walkthrough: Adicionar receptores de evento de recurso
-  Os receptores de evento de recurso são métodos que são executados quando um dos seguintes eventos relacionados ao recurso ocorre no SharePoint:
+Os receptores de evento de recurso são métodos que são executados quando um dos seguintes eventos relacionados ao recurso ocorre no SharePoint:
 
 - Um recurso está instalado.
 
@@ -34,7 +36,7 @@ ms.locfileid: "86015360"
 
 - Um recurso é removido.
 
-  Este tutorial demonstra como adicionar um receptor de eventos a um recurso em um projeto do SharePoint. Ele demonstra as seguintes tarefas:
+Este tutorial demonstra como adicionar um receptor de eventos a um recurso em um projeto do SharePoint. Ele demonstra as seguintes tarefas:
 
 - Criando um projeto vazio com um receptor de eventos de recurso.
 
@@ -58,13 +60,13 @@ ms.locfileid: "86015360"
 
 1. Na barra de menus, escolha **arquivo**  >  **novo**  >  **projeto** para exibir a caixa de diálogo **novo projeto** .
 
-2. Expanda o nó **do SharePoint** sob o **Visual C#** ou **Visual Basic**e escolha o nó **2010** .
+2. Expanda o nó **do SharePoint** sob o **Visual C#** ou **Visual Basic** e escolha o nó **2010** .
 
 3. No painel **modelos** , escolha o modelo de **projeto do SharePoint 2010** .
 
      Você usa esse tipo de projeto para receptores de eventos de recurso porque eles não têm nenhum modelo de projeto.
 
-4. Na caixa **nome** , digite **FeatureEvtTest**e, em seguida, escolha o botão **OK** para exibir o assistente para **personalização do SharePoint**.
+4. Na caixa **nome** , digite **FeatureEvtTest** e, em seguida, escolha o botão **OK** para exibir o assistente para **personalização do SharePoint**.
 
 5. Na página **especificar o site e o nível de segurança para depuração** , insira a URL do site do SharePoint Server ao qual você deseja adicionar o novo item de campo personalizado ou use o local padrão (http:// \<*system name*> /).
 
@@ -81,7 +83,7 @@ ms.locfileid: "86015360"
 
 1. Abra o menu de atalho do nó recursos e escolha **Adicionar recurso** para criar um recurso.
 
-2. No nó **recursos** , abra o menu de atalho para **Feature1**e escolha **Adicionar receptor de eventos** para adicionar um receptor de eventos ao recurso.
+2. No nó **recursos** , abra o menu de atalho para **Feature1** e escolha **Adicionar receptor de eventos** para adicionar um receptor de eventos ao recurso.
 
      Isso adiciona um arquivo de código em Feature1. Nesse caso, ele é nomeado *Feature1.EventReceiver.cs* ou *Feature1. EventReceiver. vb*, dependendo da linguagem de desenvolvimento do seu projeto.
 

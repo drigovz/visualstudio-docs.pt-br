@@ -1,5 +1,7 @@
 ---
 title: 'Como: adicionar uma entidade a um modelo | Microsoft Docs'
+description: Adicione uma entidade a um modelo adicionando um controle de entidade da caixa de ferramentas do Visual Studio para o designer BDC (conectividade de dados corporativos).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b80f39494b98014a75d4265f228906be2ff45188
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0efd7a6fc0d6254dbfd3cbda538ffe0e30585453
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016671"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915382"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Como: adicionar uma entidade a um modelo
   Para criar uma entidade, adicione um controle de entidade da caixa de **ferramentas** do Visual Studio ao designer do BDC (conectividade de dados corporativos).
@@ -35,7 +37,7 @@ ms.locfileid: "86016671"
 
      A nova entidade aparece no designer. O Visual Studio adiciona um `<Entity>` elemento ao XML do arquivo de modelo do BDC em seu projeto. Para obter mais informações sobre os atributos de um elemento de entidade, consulte [Entity](/previous-versions/office/developer/sharepoint-2010/ee558325(v=office.14)).
 
-3. No designer, abra o menu de atalho da entidade, escolha **Adicionar**e, em seguida, escolha **identificador**.
+3. No designer, abra o menu de atalho da entidade, escolha **Adicionar** e, em seguida, escolha **identificador**.
 
      Um novo identificador é exibido na entidade.
 

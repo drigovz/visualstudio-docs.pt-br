@@ -1,5 +1,7 @@
 ---
 title: 'Como: adicionar um descritor de filtro a um método localizador | Microsoft Docs'
+description: Saiba como adicionar um descritor de filtro a um método localizador usando a janela detalhes do método BDC no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 228afb2f49f4d528fa9b806e9bf8d2531f7de901
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff312753be07867d8978dc4d5f60d5dfc0eee557
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016738"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915421"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Como: adicionar um descritor de filtro a um método localizador
   Os descritores de filtro permitem que os consumidores do modelo passem valores para métodos antes de serem executados. Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).

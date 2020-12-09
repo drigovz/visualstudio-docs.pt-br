@@ -1,5 +1,7 @@
 ---
 title: Criando modelos personalizados de projeto e item | Microsoft Docs
+description: Saiba como modelos de criação de modelo no SDK do Visual Studio permitem que você inclua modelos em extensões maiores.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: overview
 ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb6bcd63896a11f9ca1eabddddc17b3e52865e5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78770c74e5b866ad6791db01a448d46231edfd2a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801250"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915616"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Criar modelos de item e projeto personalizados
 
@@ -32,7 +34,7 @@ Para cenários de criação de modelo básico, você deve usar o assistente para
 
 1. Crie um projeto de modelo de projeto. Você pode encontrar o modelo de projeto na caixa de diálogo **novo projeto** , pesquisando "modelo de projeto" e selecionando a versão em C# ou Visual Basic.
 
-     O modelo gera um arquivo de classe, um ícone, um arquivo *. vstemplate* , um arquivo de projeto editável chamado *ProjectTemplate. vbproj* ou *ProjectTemplate. csproj*e alguns arquivos que normalmente são gerados por outros tipos de projeto, como um arquivo *. resx de recursos* , um arquivo *AssemblyInfo* e um arquivo *. Settings* . Cada arquivo de código contém substituições de parâmetro comuns, quando apropriado.
+     O modelo gera um arquivo de classe, um ícone, um arquivo *. vstemplate* , um arquivo de projeto editável chamado *ProjectTemplate. vbproj* ou *ProjectTemplate. csproj* e alguns arquivos que normalmente são gerados por outros tipos de projeto, como um arquivo *. resx de recursos* , um arquivo *AssemblyInfo* e um arquivo *. Settings* . Cada arquivo de código contém substituições de parâmetro comuns, quando apropriado.
 
 ![seleção de projeto de modelo de projeto](media/project-template-selection.png)
 

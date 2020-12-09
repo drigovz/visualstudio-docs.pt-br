@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 09/21/2020
 ms.topic: conceptual
 description: Saiba como os administradores podem atribuir licenças aos assinantes
-ms.openlocfilehash: 95e0358a39ccb88ed93f8e5bcee11d2b36d12d48
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: dd80a14a3ff57100f210fd7ae1b882c0ab7a9faf
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863108"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915408"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Atribuir licenças no portal de administração de assinaturas do Visual Studio
 Como administrador de assinaturas do Visual Studio, você pode usar o portal de administração para atribuir assinaturas a usuários individuais e grupos de usuários.
@@ -58,7 +58,7 @@ Assista ao vídeo ou Continue lendo para saber como atribuir uma assinatura do V
 ## <a name="why-use-a-different-notification-email-address"></a>Por que usar um endereço de email de notificação diferente?
 Algumas organizações configuram seus serviços de email para bloquear emails de entrada de outros domínios.  O bloqueio de emails de entrada significa que os assinantes e administradores perderão comunicações importantes:
 - Os assinantes não receberão uma notificação de que uma assinatura foi atribuída a eles.  Isso também impedirá que eles ativem alguns dos benefícios incluídos.  
-- Os assinantes que receberam assinaturas do Visual Studio com o GitHub Enterprise não receberão o convite para ingressar em sua organização do GitHub, o que significa que eles não poderão aceitar o convite. Eles devem aceitar o convite por email para obter acesso à sua organização do GitHub. 
+- Os assinantes que receberam assinaturas do Visual Studio com o GitHub Enterprise não receberão o convite para ingressar em sua organização do GitHub, o que significa que eles não poderão aceitar o convite. Eles **devem aceitar o convite por email** para obter acesso à sua organização do github. 
 - Os administradores não serão notificados quando forem adicionados a um contrato, receberão instruções de administrador mensais ou notificações de alterações de recursos que afetam a maneira como gerenciam assinaturas.
 
 Usar um endereço de email de notificação fornece a opção de permitir que seus assinantes recebam comunicações importantes sobre suas assinaturas sem alterar a funcionalidade de seus endereços de email de entrada.  

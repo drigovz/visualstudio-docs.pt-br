@@ -1,5 +1,7 @@
 ---
 title: 'Como: adicionar um método criador | Microsoft Docs'
+description: Saiba como adicionar um método de criador, que adiciona novos dados à fonte de dados de uma entidade no serviço corporativo de conectividade de dados (BDC) no SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 962e353b5ae82f6dd3eccc2898385fd4b9ee30ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790b4265b232c71ff3e0613cffcb45e710081fa3
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017070"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915447"
 ---
 # <a name="how-to-add-a-creator-method"></a>Como: adicionar um método de criador
   Um método de criador adiciona novos dados à fonte de dados de uma entidade. O serviço BDC (conectividade de dados corporativos) chama esse método quando os usuários escolhem o botão **novo item** na **faixa de faixas** de uma lista baseada no modelo. Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -31,7 +33,7 @@ ms.locfileid: "86017070"
 
 1. No **BDC designer**, escolha uma entidade.
 
-2. Na barra de menus, escolha **Exibir**  >  **outros**  > **detalhes do método**do Windows BDC.
+2. Na barra de menus, escolha **Exibir**  >  **outros**  > **detalhes do método** do Windows BDC.
 
     A janela **detalhes do método BDC** é aberta. Para obter mais informações sobre essa janela, consulte [visão geral das ferramentas de design de modelo do BDC](../sharepoint/bdc-model-design-tools-overview.md).
 

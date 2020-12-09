@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: criando uma página de aplicativo do SharePoint | Microsoft Docs'
+description: Neste tutorial, crie uma página de aplicativo (uma forma especializada de uma página ASP.NET) e, em seguida, depure-a usando um site do SharePoint local.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76375c15077bf672eaba01c840ba406228046435
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95addb145312de85a3525c228297e7ff9636ea0d
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016488"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914875"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Walkthrough: criar uma página de aplicativo do SharePoint
 
@@ -49,7 +51,7 @@ Primeiro, crie um **projeto do SharePoint vazio**. Posteriormente, você adicion
 
 2. Abra a caixa de diálogo **novo projeto** , expanda o nó **Office/SharePoint** sob o idioma que você deseja usar e, em seguida, escolha o nó **soluções do SharePoint** .
 
-3. No painel **modelos instalados do Visual Studio** , escolha o modelo de **projeto do SharePoint 2010-vazio** . Nomeie o projeto **MySharePointProject**e, em seguida, escolha o botão **OK** .
+3. No painel **modelos instalados do Visual Studio** , escolha o modelo de **projeto do SharePoint 2010-vazio** . Nomeie o projeto **MySharePointProject** e, em seguida, escolha o botão **OK** .
 
      O **Assistente para personalização do SharePoint** é exibido. Este assistente permite que você selecione o site que será usado para depurar o projeto e o nível de confiança da solução.
 
@@ -65,7 +67,7 @@ Para criar uma página de aplicativo, adicione um item de **página de aplicativ
 
 3. Na caixa de diálogo **Adicionar novo item** , escolha a **página do aplicativo (modelo somente solução de farm** .
 
-4. Nomeie a página **SearchItems**e, em seguida, escolha o botão **Adicionar** .
+4. Nomeie a página **SearchItems** e, em seguida, escolha o botão **Adicionar** .
 
      O designer do Visual Web Developer exibe a página do aplicativo no modo de exibição de **origem** , onde você pode ver os elementos HTML da página. O designer exibe a marcação para vários <xref:System.Web.UI.WebControls.Content> controles. Cada controle é mapeado para um <xref:System.Web.UI.WebControls.ContentPlaceHolder> controle que é definido na página mestra do aplicativo padrão.
 

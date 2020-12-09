@@ -1,6 +1,8 @@
 ---
 title: Introdução (desenvolvimento do SharePoint no Visual Studio) | Microsoft Docs
 titleSuffix: ''
+description: Introdução ao desenvolvimento do SharePoint no Visual Studio. O SharePoint oferece uma plataforma de colaboração baseada na Web.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ba96887e8a3c8bc3cb1db43b7c24fa90223a2947
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 40eb9444ec72787e154ddd0cd7bc93e786c84397
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585622"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915161"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Introdução (desenvolvimento do SharePoint no Visual Studio)
   Esta seção ajuda você a começar a trabalhar com o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para desenvolver soluções do SharePoint que tiram proveito do [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e do [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] .

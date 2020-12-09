@@ -1,5 +1,7 @@
 ---
 title: Criar etapa de implantação personalizada para projetos do SharePoint
+description: Neste tutorial, crie uma etapa de implantação personalizada para atualizar soluções de projeto do SharePoint em um servidor que está executando o SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8b739db2755336958492a0aa67c9d5f0809f74bb
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: ea8e6a09c512ed5edb6098183c66361e96537f54
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740013"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914927"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Walkthrough: criar uma etapa de implantação personalizada para projetos do SharePoint
   Quando você implanta um projeto do SharePoint, o Visual Studio executa uma série de etapas de implantação em uma ordem específica. O Visual Studio inclui muitas etapas de implantação internas, mas você também pode criar as suas próprias.
@@ -48,7 +50,7 @@ ms.locfileid: "90740013"
 
   O conhecimento dos seguintes conceitos é útil, mas não é necessário, para concluir o passo a passos:
 
-- Usando o modelo de objeto de servidor para SharePoint. Para obter mais informações, consulte [usando o modelo de objeto do SharePoint Foundation Server](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).
+- Usando o modelo de objeto de servidor para SharePoint. Para obter mais informações, consulte [usando o modelo de objeto Server-Side do SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).
 
 - Soluções do SharePoint. Para obter mais informações, consulte [visão geral de soluções](/previous-versions/office/developer/sharepoint-2010/aa543214(v=office.14)).
 
@@ -78,19 +80,19 @@ ms.locfileid: "90740013"
 
 4. Na parte superior da caixa de diálogo, escolha **.NET Framework 4,5** na lista de versões do .NET Framework.
 
-5. Escolha o modelo de **projeto VSIX** , nomeie o projeto **UpgradeDeploymentStep**e, em seguida, escolha o botão **OK** .
+5. Escolha o modelo de **projeto VSIX** , nomeie o projeto **UpgradeDeploymentStep** e, em seguida, escolha o botão **OK** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **UpgradeDeploymentStep** ao **Gerenciador de soluções**.
 
 #### <a name="to-create-the-extension-project"></a>Para criar o projeto de extensão
 
-1. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução UpgradeDeploymentStep, escolha **Adicionar**e, em seguida, escolha **novo projeto**.
+1. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução UpgradeDeploymentStep, escolha **Adicionar** e, em seguida, escolha **novo projeto**.
 
 2. Na caixa de diálogo **novo projeto** , expanda os nós **Visual C#** ou **Visual Basic** e, em seguida, escolha o nó **Windows** .
 
 3. Na parte superior da caixa de diálogo, escolha **.NET Framework 4,5** na lista de versões do .NET Framework.
 
-4. Escolha o modelo de projeto de **biblioteca de classes** , nomeie o projeto **DeploymentStepExtension**e, em seguida, escolha o botão **OK** .
+4. Escolha o modelo de projeto de **biblioteca de classes** , nomeie o projeto **DeploymentStepExtension** e, em seguida, escolha o botão **OK** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **DeploymentStepExtension** à solução e abre o arquivo de código de Class1 padrão.
 
@@ -98,13 +100,13 @@ ms.locfileid: "90740013"
 
 #### <a name="to-create-the-sharepoint-command-project"></a>Para criar o projeto de comando do SharePoint
 
-1. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução UpgradeDeploymentStep, escolha **Adicionar**e, em seguida, escolha **novo projeto**.
+1. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução UpgradeDeploymentStep, escolha **Adicionar** e, em seguida, escolha **novo projeto**.
 
-2. Na caixa de diálogo **novo projeto** , expanda **Visual C#** ou **Visual Basic**e, em seguida, escolha o nó **Windows** .
+2. Na caixa de diálogo **novo projeto** , expanda **Visual C#** ou **Visual Basic** e, em seguida, escolha o nó **Windows** .
 
 3. Na parte superior da caixa de diálogo, escolha **.NET Framework 3,5** na lista de versões do .NET Framework.
 
-4. Escolha o modelo de projeto de **biblioteca de classes** , nomeie o projeto **SharePointCommands**e, em seguida, escolha o botão **OK** .
+4. Escolha o modelo de projeto de **biblioteca de classes** , nomeie o projeto **SharePointCommands** e, em seguida, escolha o botão **OK** .
 
      O Visual Studio adiciona o projeto **SharePointCommands** à solução e abre o arquivo de código de Class1 padrão.
 
@@ -209,7 +211,7 @@ ms.locfileid: "90740013"
 
 7. Na lista **origem** , escolha **um projeto na solução atual**.
 
-8. Na lista **projeto** , escolha **DeploymentStepExtension**e, em seguida, escolha o botão **OK** .
+8. Na lista **projeto** , escolha **DeploymentStepExtension** e, em seguida, escolha o botão **OK** .
 
 9. No editor de manifesto, escolha o botão **novo** novamente.
 
@@ -222,9 +224,9 @@ ms.locfileid: "90740013"
 
 11. Na lista **origem** , escolha **um projeto na solução atual**.
 
-12. Na lista **projeto** , escolha **SharePointCommands**e, em seguida, escolha o botão **OK** .
+12. Na lista **projeto** , escolha **SharePointCommands** e, em seguida, escolha o botão **OK** .
 
-13. Na barra de menus, escolha **criar**  >  **solução de compilação**e, em seguida, certifique-se de que a solução seja compilada sem erros.
+13. Na barra de menus, escolha **criar**  >  **solução de compilação** e, em seguida, certifique-se de que a solução seja compilada sem erros.
 
 14. Verifique se a pasta de saída da compilação do projeto UpgradeDeploymentStep agora contém o arquivo UpgradeDeploymentStep. vsix.
 
@@ -255,7 +257,7 @@ ms.locfileid: "90740013"
 
     Projetos para [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] exigem esta versão do .NET Framework.
 
-4. Na lista de modelos de projeto, escolha **projeto do SharePoint 2010**, nomeie o projeto **EmployeesListDefinition**e, em seguida, escolha o botão **OK** .
+4. Na lista de modelos de projeto, escolha **projeto do SharePoint 2010**, nomeie o projeto **EmployeesListDefinition** e, em seguida, escolha o botão **OK** .
 
 5. No **Assistente para personalização do SharePoint**, insira a URL do site que você deseja usar para depuração.
 
@@ -268,11 +270,11 @@ ms.locfileid: "90740013"
 
     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o projeto EmployeesListDefinition.
 
-8. Abra o menu de atalho para o projeto EmployeesListDefinition, escolha **Adicionar**e, em seguida, escolha **novo item**.
+8. Abra o menu de atalho para o projeto EmployeesListDefinition, escolha **Adicionar** e, em seguida, escolha **novo item**.
 
 9. Na caixa de diálogo **Adicionar novo item-EmployeesListDefinition** , expanda o nó do **SharePoint** e escolha o nó **2010** .
 
-10. Escolha o modelo de item de **lista** , nomeie a **lista de funcionários**do item e, em seguida, escolha o botão **Adicionar** .
+10. Escolha o modelo de item de **lista** , nomeie a **lista de funcionários** do item e, em seguida, escolha o botão **Adicionar** .
 
      O assistente para personalização do SharePoint é exibido
 
@@ -371,7 +373,7 @@ ms.locfileid: "90740013"
 
 5. No designer de lista, escolha a guia **modos de exibição** .
 
-6. Na lista **colunas selecionadas** , escolha **anexos**e, em seguida, escolha a < chave para mover essa coluna para a lista **colunas disponíveis** .
+6. Na lista **colunas selecionadas** , escolha **anexos** e, em seguida, escolha a < chave para mover essa coluna para a lista **colunas disponíveis** .
 
 7. Repita a etapa anterior para mover a coluna de **telefone comercial** da lista **colunas selecionadas** para a lista **colunas disponíveis** .
 
@@ -477,7 +479,7 @@ ms.locfileid: "90740013"
 
      A caixa de diálogo **Extensões e Atualizações** é aberta.
 
-2. Na lista de extensões, escolha **Atualizar etapa de implantação para projetos do SharePoint**e, em seguida, escolha o comando **desinstalar** .
+2. Na lista de extensões, escolha **Atualizar etapa de implantação para projetos do SharePoint** e, em seguida, escolha o comando **desinstalar** .
 
 3. Na caixa de diálogo exibida, escolha **Sim** para confirmar que deseja desinstalar a extensão e escolha **reiniciar agora** para concluir a desinstalação.
 

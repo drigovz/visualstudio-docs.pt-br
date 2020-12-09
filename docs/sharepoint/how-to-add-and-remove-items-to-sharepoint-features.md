@@ -1,5 +1,7 @@
 ---
 title: 'Como: Adicionar e remover itens para recursos do SharePoint | Microsoft Docs'
+description: Adicione e remova manualmente itens de projeto do SharePoint para recursos do SharePoint usando o designer de recursos no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27c6ebfb0b0cdbff0a184859ffa2a73acab809c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dacfbf715ff37238af5332976313c3b592d21be6
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014531"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914914"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Como: Adicionar e remover itens para recursos do SharePoint
   Quando você cria uma solução do SharePoint, o Visual Studio adiciona os itens de projeto do SharePoint padrão ao seu recurso. Antes da implantação, você pode adicionar e remover itens de projeto do SharePoint para modificar o recurso do SharePoint.

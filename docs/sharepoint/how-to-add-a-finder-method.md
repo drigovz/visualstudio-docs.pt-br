@@ -1,5 +1,7 @@
 ---
 title: Como adicionar um método localizador | Microsoft Docs
+description: Adicione um método localizador no Visual Studio, que permite que o serviço BDC (conectividade de dados corporativos) exiba uma lista de entidades em uma Web Part ou lista do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1fa8f8eb34943cc17bc6cabca8e93ea7569a7ba6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7e2bb74278194878ed4496c12c918707cdc1e6e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016721"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915083"
 ---
 # <a name="how-to-add-a-finder-method"></a>Como adicionar um método localizador
   Para habilitar o serviço BDC (conectividade de dados corporativos) para exibir uma lista de entidades em uma Web Part ou lista, você deve criar um método *localizador* . Um método Finder é um método especial que retorna uma coleção de instâncias de entidade. Para obter mais informações, consulte [criando um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +35,7 @@ ms.locfileid: "86016721"
 
     Para obter mais informações, consulte [como: adicionar uma entidade a um modelo](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
-2. Na barra de menus, escolha **Exibir**  >  **outros**  >  **detalhes do método**do Windows BDC.
+2. Na barra de menus, escolha **Exibir**  >  **outros**  >  **detalhes do método** do Windows BDC.
 
     A janela **detalhes do método BDC** é aberta. Para obter mais informações sobre a janela **detalhes do método BDC** , consulte [visão geral das ferramentas de design do modelo do BDC](../sharepoint/bdc-model-design-tools-overview.md).
 

@@ -1,5 +1,7 @@
 ---
 title: Tarefas de depuração | Microsoft Docs
+description: Saiba mais sobre as tarefas necessárias para depurar um programa, como anexá-lo a um mecanismo de depuração, gerar eventos de inicialização e atingir pontos de interrupção.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 070068853d962bdf9b209edb9410d33d46ccf853
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83d351e2b995922d1a8257f7ea9fc0cdad67ab3e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903549"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915564"
 ---
 # <a name="debug-tasks"></a>Tarefas de depuração
 Para depurar um programa, ele deve ser iniciado e um mecanismo DE depuração (DE) deve ser anexado a ele, caso contrário, o DE deve ser anexado a um programa iniciado anteriormente. Uma vez anexado, o DE deve gerar determinados eventos DE inicialização. Em resposta, o pacote de depuração tenta associar os pontos de interrupção definidos no IDE. Quando o programa atinge um ponto de interrupção associado, ele é interrompido e aguarda a entrada do usuário.
