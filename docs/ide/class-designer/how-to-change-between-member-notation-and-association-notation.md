@@ -1,6 +1,6 @@
 ---
-title: Alterar entre notação de membro e associação (Designer de Classe)
-description: Saiba como alterar a maneira como o diagrama de classe representa uma relação de associação entre dois tipos de notação de membro para a notação de associação e vice-versa.
+title: Alterar entre a notação de associação de & de membros
+description: Saiba como alterar a maneira como o diagrama de classe representa uma relação de associação em Designer de Classe entre dois tipos de notação de membro para a notação de associação e vice-versa.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64d26b6ca1c71fe3484544f02006a27866ff4843
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f96fe04ee84be50bd241db6bf9f73280c40dec02
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901655"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933564"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Como alterar entre notação de membro e notação de associação no Designer de Classe
 
