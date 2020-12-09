@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo geral, depuração, opções | Microsoft Docs
+description: Defina as opções do depurador do Visual Studio para atender às suas necessidades de depuração. Você pode configurar o comportamento de interrupção, os níveis de depuração, o comportamento de exibição e muito mais.
+ms.custom: SEO-VS-2020
 ms.date: 06/04/2020
 ms.topic: reference
 f1_keywords:
@@ -21,16 +23,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5b03d7b45e488d7e8026a7d6835bbfba1efa210
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b052c2cce3d396debb4fbaf8ce688ede3effb98
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286551"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863004"
 ---
 # <a name="general-debugging-options"></a>Opções gerais de depuração
 
-Para definir opções do depurador do Visual Studio, selecione opções de **ferramentas**  >  **Options**e, em **depuração** , marque ou desmarque as caixas ao lado das opções **gerais** . Você pode restaurar todas as configurações padrão com **ferramentas**  >  **importar e exportar configurações**  >  **redefinir todas as configurações**. Para redefinir um subconjunto de configurações, salve suas configurações com o **Assistente de importação e exportação de configurações** antes de fazer as alterações que você deseja testar e, em seguida, importe as configurações salvas posteriormente.
+Para definir opções do depurador do Visual Studio, selecione opções de **ferramentas**  >  **Options** e, em **depuração** , marque ou desmarque as caixas ao lado das opções **gerais** . Você pode restaurar todas as configurações padrão com **ferramentas**  >  **importar e exportar configurações**  >  **redefinir todas as configurações**. Para redefinir um subconjunto de configurações, salve suas configurações com o **Assistente de importação e exportação de configurações** antes de fazer as alterações que você deseja testar e, em seguida, importe as configurações salvas posteriormente.
 
 Você pode definir as seguintes opções **gerais** :
 

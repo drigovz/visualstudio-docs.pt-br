@@ -1,5 +1,7 @@
 ---
 title: Executável para a caixa de diálogo sessão de depuração | Microsoft Docs
+description: Para depurar uma DLL, você deve especificar um executável para chamar a DLL. Saiba mais sobre a caixa de diálogo que aparece quando nenhum executável é especificado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92cf53ed499318d60c8da5147685e3f0f340e404
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4f1f1a88ad30d5102043571473be0d72d71a054
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72736231"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863043"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>Caixa de diálogo Executável para Sessão de Depuração
 
@@ -35,7 +37,7 @@ Essa caixa de diálogo aparece quando você tenta depurar uma DLL para a qual ne
 
  **URL em que o projeto pode ser acessado (somente servidor ATL)** Se você estiver Depurando uma DLL de servidor ATL, insira a URL onde o projeto pode ser encontrado.
 
- Depois de inseridas, essas configurações são armazenadas nas páginas de propriedades do projeto, portanto, você não precisará inseri-las novamente para sessões de depuração subsequentes. Se você precisar alterar as configurações, poderá abrir as Páginas de Propriedades e alterar os valores. Para obter mais informações sobre como especificar um executável para a sessão de depuração, confira [Depurando DLLs](../debugger/how-to-debug-from-a-dll-project.md).
+ Depois de inseridas, essas configurações são armazenadas nas páginas de propriedades do projeto, portanto, você não precisará inseri-las novamente para sessões de depuração subsequentes. Se você precisar alterar as configurações, poderá abrir as Páginas de Propriedades e alterar os valores. Para obter mais informações sobre como especificar um executável para a sessão de depuração, consulte [Debugging DLLs](../debugger/how-to-debug-from-a-dll-project.md).
 
 ## <a name="see-also"></a>Confira também
 

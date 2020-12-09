@@ -1,5 +1,7 @@
 ---
 title: Habilitando recursos de depuração em projetos C++ (-D_DEBUG) | Microsoft Docs
+description: No Visual C++ você habilita os recursos de depuração definindo _DEBUG. Saiba como fazer isso e saiba como vincular um programa MFC para depurá-lo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19d341cba47e0a3d2259cc57d239c63420095347
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a2ead92108d66b54342019fc19702e7a6e53575
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72737952"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862927"
 ---
 # <a name="enabling-debug-features-in-c-projects-d_debug"></a>Habilitando recursos de depuração em projetos C++ (/D_DEBUG)
 No [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], os recursos de depuração como asserções são habilitados quando você compila seu programa com o símbolo **_DEBUG** definido. Há duas maneiras de definir **_DEBUG**:
@@ -44,4 +46,4 @@ No [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], os recursos de dep
 
 ## <a name="see-also"></a>Confira também
 - [Depurando código nativo](../debugger/debugging-native-code.md)
-- [Definições do projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Configurações do projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)

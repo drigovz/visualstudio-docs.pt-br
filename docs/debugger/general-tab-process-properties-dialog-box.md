@@ -1,5 +1,7 @@
 ---
 title: Guia geral, caixa de diálogo Propriedades do processo | Microsoft Docs
+description: Exiba a guia geral para obter informações sobre um processo, incluindo o nome do módulo, a ID do processo, a prioridade básica, a contagem de threads, o tempo de CPU, o tempo de usuário e o tempo decorrido.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6116beb67baf072d9c9762a1e8c67408cc915f29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4980437c63348050db1a007e8f541e9af9e186cc
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849821"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862731"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>Guia Geral, Caixa de diálogo Propriedades do Processo
 Use a guia **geral** para saber mais sobre um processo específico. Para exibir a [caixa de diálogo Propriedades do processo](../debugger/process-properties-dialog-box.md), mova o foco para uma janela de [exibição de processos](../debugger/processes-view.md) . Selecione qualquer nó de processo na árvore e escolha **Propriedades** no menu **Exibir** .

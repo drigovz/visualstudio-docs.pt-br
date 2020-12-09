@@ -1,5 +1,6 @@
 ---
 title: Guia geral, caixa de diálogo Propriedades do thread | Microsoft Docs
+description: Exiba a caixa de diálogo Propriedades do thread para obter informações sobre um thread, incluindo o nome do módulo, a ID do thread, a ID do processo, o estado do thread, o motivo da espera e o tempo de CPU.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e8604c2d31f6bb50e9e77efbf6423f56ed719c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd4c2bf24058ce8a69f05d8d2cee17a18ff9505d
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62896351"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862991"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Guia Geral, Caixa de diálogo Propriedades do Thread
 Use essa caixa de diálogo para saber mais sobre um thread específico. Para exibir essa caixa de diálogo, mova o foco para uma janela de [exibição de threads](../debugger/threads-view.md) ou abra a [exibição mensagens](../debugger/messages-view.md) e expanda uma mensagem. Selecione qualquer nó de thread na árvore e, em seguida, escolha **Propriedades** no menu **Exibir** .

@@ -1,5 +1,7 @@
 ---
 title: Editar e continuar (Visual Basic) | Microsoft Docs
+description: Editar e continuar está disponível para projetos de Visual Basic. Saiba quais edições têm suporte e como pode controlar se, e quando, suas edições são aplicadas.
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f73b67ac4268c04dfa9ff7ab020891623f528f9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4560973cd6ccd2bbfee48028494731935945a4c
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62851261"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862965"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Editar e Continuar (Visual Basic)
 Editar e Continuar são um recurso para depuração do [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] que permite alterar seu código durante a execução em modo de interrupção. Depois que as edições do código tiverem sido aplicadas, você poderá retomar a execução de código com as novas edições no lugar e visualizar o efeito.

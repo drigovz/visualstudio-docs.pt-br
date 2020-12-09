@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo Editar e continuar mensagem de erro | Microsoft Docs
+description: Editar e continuar pode relatar que ele não está disponível para as alterações de código. Este artigo fornece possíveis motivos.
+ms.custom: SEO-VS-2020
 ms.date: 10/15/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df95eae689f7c3abbb0d75a7557ce749bdceee5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ef34889b838e2f7eaa92420eec90db9def57e65
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188227"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862836"
 ---
 # <a name="edit-and-continue-error-message"></a>Mensagem de erro editar e continuar
 
@@ -40,7 +42,7 @@ As possíveis razões para essa mensagem de erro incluem:
 - Tentando editar o código durante a depuração de um despejo de Dr. Watson.
 - A tentativa de editar o código após uma exceção sem tratamento ocorre e a opção **desenrolar a pilha de chamadas em exceções sem tratamento** não é selecionada.
 - Tentando editar o código durante a depuração de um aplicativo de tempo de execução inserido.
-- Tentando editar código gerenciado usando uma versão .NET Framework anterior à 4.5.1 com um destino de aplicativo de 64 bits. Para usar editar e continuar para .NET Framework anteriores ao 4.5.1, defina o destino como **x86** na **\<ProjectName>**  >  **Properties**  >  guia**Compilar** Propriedades, configuração **avançada do compilador** .
+- Tentando editar código gerenciado usando uma versão .NET Framework anterior à 4.5.1 com um destino de aplicativo de 64 bits. Para usar editar e continuar para .NET Framework anteriores ao 4.5.1, defina o destino como **x86** na **\<ProjectName>**  >  **Properties**  >  guia **Compilar** Propriedades, configuração **avançada do compilador** .
 - Tentativa de editar código em um assembly que foi modificado durante a depuração e foi recarregado.
 - Tentando editar o código em um assembly que não foi carregado.
 - Começando a depurar uma versão antiga de um aplicativo, pois a versão mais recente tem erros de compilação.

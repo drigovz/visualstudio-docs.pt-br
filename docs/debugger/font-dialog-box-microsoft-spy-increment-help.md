@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo fonte (ajuda do Microsoft Spy + +) | Microsoft Docs
+description: Use a caixa de diálogo fonte para configurar a fonte de caracteres usada em uma janela exibições do Spy + +. Este artigo fornece detalhes de uso.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1746b8419c342b5627e1c6374b2b29f08f7ee75c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c3a3d5babc0fe78098661f22dd84fca1eac9b19
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849873"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862822"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Caixa de diálogo Fonte (Ajuda do Microsoft Spy++)
 Use essa caixa de diálogo para configurar a fonte de caracteres usada em uma janela de [modos de exibição do Spy + +](../debugger/spy-increment-views.md) . Para exibir essa caixa de diálogo, expanda o menu **Exibir** e escolha **fonte**.

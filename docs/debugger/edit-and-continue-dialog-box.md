@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo Editar e continuar | Microsoft Docs
+description: A caixa de diálogo Editar e continuar será exibida se você tiver editado o código durante a depuração. Saiba como controlar se ele aplicará alterações de código sem pedir permissão.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 824ee989f17b6a341679f541f95906056cf6f8de
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: ed625d98cc4f3fe793ba0982771b0a57ff189526
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599531"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863095"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Caixa de diálogo Editar e Continuar
 (Apenas Nativo) Essa caixa de diálogo aparece quando você edita o código durante a depuração e **Editar e Continuar** reconhece que pode aplicar alterações do código. Para obter mais informações, confira [Editar e Continuar](../debugger/edit-and-continue.md).

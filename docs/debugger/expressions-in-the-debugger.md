@@ -1,5 +1,7 @@
 ---
 title: Expressões no depurador | Microsoft Docs
+description: Editar e continuar está disponível para projetos do Visual C#. Saiba quais edições têm suporte e como pode controlar se, e quando, suas edições são aplicadas.
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4a06a249fee38ca7fd8521459eda7bbf4100a97
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 28d04ce836316024eb4aef9f1b4a9955d98dbba8
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600293"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862861"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expressões no depurador do Visual Studio
 O depurador do Visual Studio inclui os avaliadores de expressão que funcionam quando você insere uma expressão na caixa de diálogo **QuickWatch**, na janela **Inspeção** ou na janela **Imediato**. Os avaliadores de expressão também estão no trabalho na janela **Pontos de interrupção** e em muitos outros locais no depurador.
@@ -207,5 +209,5 @@ Você não pode declarar novas variáveis explícitas nas janelas do depurador. 
 ## <a name="see-also"></a>Confira também
 - [Especificadores de formato em C++](../debugger/format-specifiers-in-cpp.md)
 - [Operador de contexto (C++)](../debugger/context-operator-cpp.md)
-- [Especificadores de formato em C#](../debugger/format-specifiers-in-csharp.md)
+- [Especificadores de formato em C #](../debugger/format-specifiers-in-csharp.md)
 - [Pseudovariáveis](../debugger/pseudovariables.md)

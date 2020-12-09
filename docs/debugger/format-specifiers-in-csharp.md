@@ -1,5 +1,7 @@
 ---
 title: Especificadores de formato no depurador (C#) | Microsoft Docs
+description: Use um especificador de formato para alterar o formato no qual um valor é exibido na janela Inspeção. Este artigo fornece detalhes de uso.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31739b9c8fecc862c891173a792986b467730400
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849824"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862783"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Especificadores de formato em C# no depurador do Visual Studio
 Você pode alterar o formato no qual um valor é exibido na janela de **inspeção** usando especificadores de formato. Você também pode usar especificadores de formato na janela **imediata** , na janela de **comando** , em [tracepoints](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e em janelas de origem. Se você pausar uma expressão nessas janelas, o resultado aparecerá em um  [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) na exibição do formato especificado.
@@ -48,7 +50,7 @@ Usaremos o seguinte código de exemplo:
 }
 ```
 
-Adicione a `my_var1` variável à janela **Watch** durante a depuração, **depure**o  >  **Windows**  >  **Watch**  >  **Watch 1**. Em seguida, clique com o botão direito do mouse na variável e selecione **exibição hexadecimal**. Agora, a janela **Watch** mostra o valor 0x0065. Para ver esse valor como um inteiro decimal em vez de um inteiro hexadecimal, adicione o especificador de formato decimal **, d** na coluna **nome** após o nome da variável. A coluna **valor** agora mostra **101**.
+Adicione a `my_var1` variável à janela **Watch** durante a depuração, **depure** o  >  **Windows**  >  **Watch**  >  **Watch 1**. Em seguida, clique com o botão direito do mouse na variável e selecione **exibição hexadecimal**. Agora, a janela **Watch** mostra o valor 0x0065. Para ver esse valor como um inteiro decimal em vez de um inteiro hexadecimal, adicione o especificador de formato decimal **, d** na coluna **nome** após o nome da variável. A coluna **valor** agora mostra **101**.
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
 
@@ -63,7 +65,7 @@ Você pode exibir e selecionar em uma lista de especificadores de formato dispon
 ## <a name="format-specifiers"></a>Especificadores de formato
 A tabela a seguir descreve os especificadores de formato C# para o depurador do Visual Studio.
 
-|Especificador|Formatar|Valor de inspeção original|Telas|
+|Especificador|Formato|Valor de inspeção original|Telas|
 |---------------|------------|--------------------------|--------------|
 |ac|Force a avaliação de uma expressão, que pode ser útil quando a avaliação implícita de propriedades e chamadas de função implícitas está desativada.|Mensagem "a avaliação da função implícita está desativada pelo usuário"|\<value>|
 |d|inteiro decimal|0x0065|101|

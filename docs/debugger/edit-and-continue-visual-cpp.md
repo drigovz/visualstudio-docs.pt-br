@@ -1,5 +1,7 @@
 ---
 title: Editar e continuar (C++) | Microsoft Docs
+description: Editar e continuar está disponível para projetos C++. Saiba quais edições têm suporte e como pode controlar se, e quando, suas edições são aplicadas.
+ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c32c161d1df70fc81eee4186aa9d1ac102afa69
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 2a8cb40850aefe83ac048c708192bc24533a8296
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599656"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863056"
 ---
 # <a name="edit-and-continue-c"></a>Editar e continuar (C++)
 Você pode usar editar e continuar em projetos C++. Consulte [alterações de código com suporte (C++)](../debugger/supported-code-changes-cpp.md) para obter informações sobre as limitações de editar e continuar.
@@ -80,4 +82,4 @@ Para obter mais informações sobre os aprimoramentos do Visual Studio 2015 atua
  Nesses casos, o depurador continua executando o código original até que as alterações possam ser aplicadas. O código obsoleto aparece como uma janela temporária do arquivo de origem em uma janela separada de origem, com um título como, por exemplo, `enc25.tmp`. A origem editada continuará aparecendo na janela do original. Se você tentar editar o código obsoleto, será exibida uma mensagem de aviso.
 
 ## <a name="see-also"></a>Confira também
-- [Alterações de código com suporte (C++)](../debugger/supported-code-changes-cpp.md)
+- [Alterações de código suportadas (C++)](../debugger/supported-code-changes-cpp.md)

@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo localizar janela | Microsoft Docs
+description: Use a caixa de diálogo localizar janela para selecionar uma janela e exibir suas propriedades ou mensagens.  Este artigo fornece detalhes de uso.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 392c0150c9bfb653a3a52c11c0d31097e04c9cc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 571cee3b1e3a391a8dc328fcc76a0ca0d06ed14f
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849980"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863017"
 ---
 # <a name="find-window-dialog-box"></a>Caixa de diálogo Localizar Janela
 Use essa caixa de diálogo para selecionar uma janela e exibir suas propriedades ou mensagens. Para exibir essa caixa de diálogo, escolha **localizar janela** no menu do **Spy** .

@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 09/21/2020
 ms.topic: conceptual
 description: Saiba como os administradores podem atribuir licenças aos assinantes
-ms.openlocfilehash: 044cf4e9df3eb2ebf1d10aa8c08be804ca98f393
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 95e0358a39ccb88ed93f8e5bcee11d2b36d12d48
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467525"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863108"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Atribuir licenças no portal de administração de assinaturas do Visual Studio
 Como administrador de assinaturas do Visual Studio, você pode usar o portal de administração para atribuir assinaturas a usuários individuais e grupos de usuários.
@@ -32,10 +32,10 @@ Assista ao vídeo ou Continue lendo para saber como atribuir uma assinatura do V
 
 
 1. Entre no portal de [Administração](https://manage.visualstudio.com).
-2. Para atribuir uma licença a um único assinante do Visual Studio, na parte superior da tabela, selecione **Adicionar**e, em seguida, escolha **assinante individual**.
+2. Para atribuir uma licença a um único assinante do Visual Studio, na parte superior da tabela, selecione **Adicionar** e, em seguida, escolha **assinante individual**.
    > [!div class="mx-imgBorder"]
    > ![Adicionar um único assinante](_img/assign-license-add/add-subscriber-individual.png "Selecione Adicionar e, em seguida, escolha assinante individual para atribuir uma única assinatura.")
-3. Insira as informações do novo assinante nos campos do formulário. Se sua organização estiver usando o Azure Active Directory, o campo **Nome** terá uma função de pesquisa para localizar pessoas no diretório atual, permitindo selecionar o usuário correto nos resultados da pesquisa. Quando você selecionar essa pessoa, o email de conexão e o email de notificação serão populados automaticamente.
+3. Insira as informações do novo assinante nos campos do formulário. Se sua organização estiver usando o Azure Active Directory, o campo **Nome** terá uma função de pesquisa para localizar pessoas no diretório atual, permitindo selecionar o usuário correto nos resultados da pesquisa. Quando você selecionar essa pessoa, o email de conexão e o email de notificação serão populados automaticamente.  Se o Assinante não for encontrado em sua organização, o email de notificação não será preenchido automaticamente, mas estará disponível para você adicionar manualmente um endereço de email diferente ao qual os emails relacionados à assinatura serão enviados.  Se o seu serviço de email bloquear emails de entrada para os endereços de email de entrada, é importante especificar um endereço de email de notificação diferente para que os assinantes e administradores recebam emails importantes relacionados à assinatura da Microsoft.
    > [!div class="mx-imgBorder"]
    > ![Detalhes do assinante](_img/assign-license-add/subscriber-details.png "Insira o nome do assinante e outros detalhes ou escolha um dos membros do locatário.")
 
@@ -45,7 +45,7 @@ Assista ao vídeo ou Continue lendo para saber como atribuir uma assinatura do V
 
     Caso deseje que esse assinante tenha acesso a downloads de software quando ele entrar no [Portal de Assinaturas do Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), deixe a alternância de downloads habilitada na seção **Configurações de Download**. Se você optar por desabilitar os downloads, o usuário não terá acesso aos downloads de software.  O acesso às chaves do produto também será desabilitado.  O assinante ainda terá acesso a todos os outros benefícios incluídos na assinatura.
    > [!div class="mx-imgBorder"]
-   > ! [Acesso a Downloads] (mídia/access-to-downloads.png "escolha" permitir "para fornecer ao Assinante acesso aos downloads de software.")
+   > ![Acesso a downloads](media/access-to-downloads.png "Escolha ' permitir ' para fornecer ao Assinante acesso aos downloads de software.")
 
     Caso deseje adicionar suas próprias anotações de referência para a assinatura, faça isso na seção **Adicionar referência**.
    > [!div class="mx-imgBorder"]
@@ -55,8 +55,18 @@ Assista ao vídeo ou Continue lendo para saber como atribuir uma assinatura do V
    > [!div class="mx-imgBorder"]
    > ![Escolha o botão Adicionar](media/add-button.png "Selecione Adicionar para salvar as informações e atribuir a assinatura ao Assinante.")
 
+## <a name="why-use-a-different-notification-email-address"></a>Por que usar um endereço de email de notificação diferente?
+Algumas organizações configuram seus serviços de email para bloquear emails de entrada de outros domínios.  O bloqueio de emails de entrada significa que os assinantes e administradores perderão comunicações importantes:
+- Os assinantes não receberão uma notificação de que uma assinatura foi atribuída a eles.  Isso também impedirá que eles ativem alguns dos benefícios incluídos.  
+- Os assinantes que receberam assinaturas do Visual Studio com o GitHub Enterprise não receberão o convite para ingressar em sua organização do GitHub, o que significa que eles não poderão aceitar o convite. Eles devem aceitar o convite por email para obter acesso à sua organização do GitHub. 
+- Os administradores não serão notificados quando forem adicionados a um contrato, receberão instruções de administrador mensais ou notificações de alterações de recursos que afetam a maneira como gerenciam assinaturas.
+
+Usar um endereço de email de notificação fornece a opção de permitir que seus assinantes recebam comunicações importantes sobre suas assinaturas sem alterar a funcionalidade de seus endereços de email de entrada.  
+
 ## <a name="resend-assignment-emails"></a>Reenviar emails de atribuição
 Depois de adicionar um assinante, um email de atribuição será enviado automaticamente para o novo assinante com mais instruções. Você pode enviar o email de atribuição novamente a qualquer momento selecionando o Assinante e, em seguida, selecionando o botão **reenviar** no menu superior.  Para reenviar emails a vários usuários, mantenha pressionada a tecla **Ctrl** enquanto seleciona os assinantes.  Ao selecionar o botão **reenviar** , você verá uma caixa de diálogo solicitando que você confirme se deseja reenviar para esses assinantes.  
+
+
 
 ## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](/visualstudio/)

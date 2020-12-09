@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo Editar e continuar (C++) | Microsoft Docs
+description: Editar e continuar pode relatar que não foi possível aplicar as alterações de código. Saiba por que isso pode acontecer e o que você pode fazer.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba7b133594d016d1a80efae4d18d1fb55a96398d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: dc1e7a27624cede9ca20295d3dc890f172e35889
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599554"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862978"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Caixa de diálogo Editar e Continuar (C++)
 Editar e Continuar não poderiam aplicar as alterações feitas ao seu código nativo. Essa pode ser uma condição temporária. Às vezes, Editar e Continuar não pode aplicar alterações de código nativo imediatamente, mas pode aplicá-las posteriormente durante a sessão de depuração (por exemplo, após a conclusão da chamada atual ao procedimento que agora é executado). Para obter mais informações, confira [Editar e Continuar](../debugger/edit-and-continue.md).

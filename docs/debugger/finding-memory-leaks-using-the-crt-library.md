@@ -1,5 +1,7 @@
 ---
 title: Encontrar vazamentos de memória com a biblioteca CRT | Microsoft Docs
+description: Saiba como o depurador C/C++ e a biblioteca de tempo de execução do C (CRT) podem ajudar a encontrar vazamentos de memória. As técnicas incluem relatórios de vazamento de memória e comparação de instantâneos de memória.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5deb42b2ab708bae572aebbcac15af2d077b14fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f5c906bd06fd4107166a45e93bf11be579c2270
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350479"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863069"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Localizar vazamentos de memória com a biblioteca CRT
 
@@ -108,7 +110,7 @@ Independentemente de você definir `_CRTDBG_MAP_ALLOC` , o relatório de vazamen
 - O tamanho do bloco, `64 bytes` no exemplo.
 - Os primeiros 16 bytes de dados no bloco, no formulário hexadecimal.
 
-Os tipos de bloco de memória são *normal*, *cliente*ou *CRT*. Um *bloco normal* é a memória comum atribuída pelo seu programa. Um *bloco de cliente* é um tipo especial de bloco de memória usado por programas MFC para os objetos que exigem um destruidor. O operador MFC `new` cria um bloco normal ou um bloco de cliente, como apropriado para o objeto que estiver sendo criado.
+Os tipos de bloco de memória são *normal*, *cliente* ou *CRT*. Um *bloco normal* é a memória comum atribuída pelo seu programa. Um *bloco de cliente* é um tipo especial de bloco de memória usado por programas MFC para os objetos que exigem um destruidor. O operador MFC `new` cria um bloco normal ou um bloco de cliente, como apropriado para o objeto que estiver sendo criado.
 
 Um *bloco de CRT* é atribuído pela biblioteca de CRT para seu próprio uso. A biblioteca CRT manipula a desalocação desses blocos, de modo que blocos CRT não aparecerão no relatório de vazamento de memória, a menos que haja problemas sérios com a biblioteca CRT.
 
@@ -182,7 +184,7 @@ Você pode usar o número de alocação para definir um ponto de interrupção n
 
 1. Defina um ponto de interrupção próximo ao início do seu aplicativo e inicie a depuração.
 
-1. Quando o aplicativo pausa no ponto de interrupção, abra uma janela de **inspeção** selecionando **depurar**  >  **Windows**  >  **Watch 1** ( **ou assista 2**, **Watch 3**ou **Watch 4**).
+1. Quando o aplicativo pausa no ponto de interrupção, abra uma janela de **inspeção** selecionando **depurar**  >  **Windows**  >  **Watch 1** ( **ou assista 2**, **Watch 3** ou **Watch 4**).
 
 1. Na janela **inspecionar** , digite `_crtBreakAlloc` a coluna **nome** .
 
@@ -262,6 +264,6 @@ Uma técnica para localizar vazamentos de memória começa colocando `_CrtMemChe
 
 ## <a name="see-also"></a>Confira também
 
-- [Detalhes de heap de depuração CRT](../debugger/crt-debug-heap-details.md)
+- [Detalhes de heap de depuração do CRT](../debugger/crt-debug-heap-details.md)
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Depuração de código nativo](../debugger/debugging-native-code.md)
