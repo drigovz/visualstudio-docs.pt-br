@@ -1,5 +1,7 @@
 ---
 title: Avaliando expressões | Microsoft Docs
+description: Saiba mais sobre como avaliar expressões, que são criadas a partir de cadeias de caracteres passadas das janelas automáticos, de inspeção, QuickWatch ou imediatas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18e342704cbb4abd7de9667576ce331ef8fbf60a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b43fc91de129407f2fd01e12951cffee4028186f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738832"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914589"
 ---
 # <a name="evaluate-expressions"></a>Avaliar expressões
-As expressões são criadas a partir de cadeias de caracteres passadas das janelas **automáticos**, de **inspeção**, **QuickWatch**ou **imediatas** . Quando uma expressão é avaliada, ela gera uma cadeia de caracteres imprimível que contém o nome e o tipo de variável ou argumento e seu valor. Essa cadeia de caracteres é exibida na janela do IDE correspondente.
+As expressões são criadas a partir de cadeias de caracteres passadas das janelas **automáticos**, de **inspeção**, **QuickWatch** ou **imediatas** . Quando uma expressão é avaliada, ela gera uma cadeia de caracteres imprimível que contém o nome e o tipo de variável ou argumento e seu valor. Essa cadeia de caracteres é exibida na janela do IDE correspondente.
 
 ## <a name="implementation"></a>Implementação
  As expressões são avaliadas quando um programa é interrompido em um ponto de interrupção. A própria expressão é representada por uma interface [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) , que representa uma expressão analisada que está pronta para associação e avaliação dentro do contexto de avaliação de expressão fornecido. O registro de ativação determina o contexto de avaliação da expressão, que o mecanismo de depuração (DE) fornece implementando a interface [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) .

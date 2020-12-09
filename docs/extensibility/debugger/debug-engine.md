@@ -1,5 +1,7 @@
 ---
 title: Mecanismo de depuração | Microsoft Docs
+description: Saiba como um mecanismo de depuração funciona com o intérprete ou o sistema operacional para fornecer serviços como controle de execução, pontos de interrupção e avaliação de expressão.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4cb00796f8db23a43cd81a06d80d0fac40f075e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c31d095a3e340bf7e8f7a61a8db5bcbed53f0d5f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739059"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914212"
 ---
 # <a name="debug-engine"></a>Mecanismo de depuração
 Um mecanismo DE depuração (DE) funciona com o interpretador ou o sistema operacional para fornecer serviços de depuração, como controle de execução, pontos de interrupção e avaliação de expressão. O DE é responsável por monitorar o estado de um programa que está sendo depurado. Para fazer isso, o DE usa quaisquer métodos disponíveis no tempo de execução com suporte, seja da CPU ou das APIs fornecidas pelo tempo de execução.

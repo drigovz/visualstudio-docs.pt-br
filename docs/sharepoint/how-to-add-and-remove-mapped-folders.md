@@ -1,5 +1,7 @@
 ---
 title: 'Como: Adicionar e remover pastas mapeadas | Microsoft Docs'
+description: Adicionar e remover pastas mapeadas para um projeto no SharePoint.  Alterar o local de implantação de uma pasta mapeada. Renomear ou remover pastas mapeadas.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80fbd3e18b8d440eae2873c73013ad7468073640
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4d29be9b008bfaa9ad6694725b03e25bf6847df
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014643"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914798"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Como: Adicionar e remover pastas mapeadas
   Algumas pastas comumente usadas no SharePoint, como imagens e layouts, estão profundamente inseridas na hierarquia de arquivos. Você pode mapear essas pastas em um projeto do SharePoint para acessá-las com mais facilidade. Pastas mapeadas são pastas no projeto do SharePoint que correspondem ao local físico dos arquivos na instalação do SharePoint Server.
@@ -39,7 +41,7 @@ Você pode adicionar pastas mapeadas a um projeto usando comandos na barra de me
 
 3. Na lista de modelos de projeto, escolha o modelo de **Web Part Visual do SharePoint 2013** .
 
-4. Na caixa **nome** , digite **TestProject1**e, em seguida, escolha o botão **OK** .
+4. Na caixa **nome** , digite **TestProject1** e, em seguida, escolha o botão **OK** .
 
 5. No **Assistente para personalização do SharePoint**, escolha o botão **concluir** para manter as configurações padrão.
 
@@ -76,7 +78,7 @@ Você pode adicionar pastas mapeadas a um projeto usando comandos na barra de me
 
      Como alternativa, você pode escolher a pasta mapeada que deseja renomear, abrir a janela **Propriedades** e, em seguida, definir o valor da propriedade **nome da pasta** como o novo nome.
 
-3. Para remover uma pasta mapeada do projeto, abra o menu de atalho, escolha **excluir**e, em seguida, escolha o botão **OK** na caixa de diálogo para confirmar a remoção.
+3. Para remover uma pasta mapeada do projeto, abra o menu de atalho, escolha **excluir** e, em seguida, escolha o botão **OK** na caixa de diálogo para confirmar a remoção.
 
 ## <a name="see-also"></a>Confira também
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)

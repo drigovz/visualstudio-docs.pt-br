@@ -1,5 +1,7 @@
 ---
 title: Componentes do depurador | Microsoft Docs
+description: Saiba mais sobre os elementos que compõem uma sessão de depuração, que é gerenciada pelo depurador do Visual Studio, implementada como um VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03c400fd03c5ee0f2629e9f436b65f53f8f2ac8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2fa0a7feb85437cc8173d52695ddb1ba0d2c06b7
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739015"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914095"
 ---
 # <a name="debugger-components"></a>Componentes do depurador
 O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador é implementado como um VSPackage e gerencia toda a sessão de depuração. A sessão de depuração compreende os seguintes elementos:

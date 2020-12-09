@@ -1,5 +1,7 @@
 ---
 title: Contexto de avaliação | Microsoft Docs
+description: 'Quando o mecanismo de depuração chama o avaliador de expressão, os argumentos determinam o contexto para localizar e avaliar símbolos: pSymbolProvider, pAddress e pBinder.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e3d02bd652d6c46b5aabe00e049e425f0921c27
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a021d5dfdff5058211f5bafdfd7854611f977c27
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738806"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914511"
 ---
 # <a name="evaluation-context"></a>Contexto de avaliação
 > [!IMPORTANT]

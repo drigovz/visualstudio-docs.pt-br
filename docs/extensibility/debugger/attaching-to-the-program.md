@@ -1,5 +1,7 @@
 ---
 title: Anexando ao programa | Microsoft Docs
+description: Saiba como o Visual Studio implementa a anexação do depurador a um programa depois que o programa é registrado com a porta apropriada.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00b9780d0d302b9e067feed057d1a8d49c5f9fc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 030ee19e7e9e9e52140fb41da78f766978e18d3f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903213"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913757"
 ---
 # <a name="attach-to-the-program"></a>Anexar ao programa
 Depois de registrar seus programas com a porta apropriada, você deve anexar o depurador ao programa que deseja depurar.

@@ -1,6 +1,8 @@
 ---
 title: 'Gerenciador de Servidores: estendendo o nó conexões do SharePoint'
 titleSuffix: ''
+description: Neste tutorial, consulte como chamar o modelo de objeto de cliente do SharePoint de uma extensão para o nó conexões do SharePoint no Gerenciador de Servidores.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7f1ac5b0fb1f25d04139d76efa816ebd059d7da
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: c323f05d341af810eecafae43e8d04d3cba29054
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585570"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913939"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Walkthrough: chamando o modelo de objeto de cliente do SharePoint em uma extensão Gerenciador de Servidores
   Este tutorial demonstra como chamar o modelo de objeto do cliente do SharePoint de uma extensão para o nó **conexões do SharePoint** no **Gerenciador de servidores**. Para obter mais informações sobre como usar o modelo de objeto de cliente do SharePoint, consulte [chamar os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -78,13 +80,13 @@ O conhecimento dos seguintes conceitos é útil, mas não é necessário, para c
 
 5. Escolha o modelo de **projeto VSIX** .
 
-6. Na caixa **nome** , digite **WebPartNode**e, em seguida, escolha o botão **OK** .
+6. Na caixa **nome** , digite **WebPartNode** e, em seguida, escolha o botão **OK** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **WebPartNode** ao **Gerenciador de soluções**.
 
 #### <a name="to-create-the-extension-project"></a>Para criar o projeto de extensão
 
-1. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução, escolha **Adicionar**e, em seguida, escolha **novo projeto**.
+1. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução, escolha **Adicionar** e, em seguida, escolha **novo projeto**.
 
 2. Na caixa de diálogo  **novo projeto** , expanda os nós **Visual C#** ou **Visual Basic** e, em seguida, escolha **Windows**.
 
@@ -92,7 +94,7 @@ O conhecimento dos seguintes conceitos é útil, mas não é necessário, para c
 
 4. Na lista de modelos de projeto, escolha **biblioteca de classes**.
 
-5. Na caixa **nome** , digite **WebPartNodeExtension**e, em seguida, escolha o botão **OK** .
+5. Na caixa **nome** , digite **WebPartNodeExtension** e, em seguida, escolha o botão **OK** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **WebPartNodeExtension** à solução e abre o arquivo de código de Class1 padrão.
 
@@ -146,7 +148,7 @@ O conhecimento dos seguintes conceitos é útil, mas não é necessário, para c
 
 6. Abra o menu de atalho da versão 32x32 do ícone e escolha **excluir tipo de imagem**.
 
-7. Repita as etapas de 3 a 7 para adicionar um segundo ícone aos recursos do projeto e nomeie esta **WebPart**de ícone.
+7. Repita as etapas de 3 a 7 para adicionar um segundo ícone aos recursos do projeto e nomeie esta **WebPart** de ícone.
 
 8. No **Gerenciador de soluções**, na pasta de **recursos** do projeto **WebPartNodeExtension** , escolha *WebPartsNode. ico*.
 
@@ -210,9 +212,9 @@ O conhecimento dos seguintes conceitos é útil, mas não é necessário, para c
 
 7. Na lista **origem** , escolha **um projeto na solução atual**.
 
-8. Na lista **projeto** , escolha **WebPartNodeExtension**e, em seguida, escolha o botão **OK** .
+8. Na lista **projeto** , escolha **WebPartNodeExtension** e, em seguida, escolha o botão **OK** .
 
-9. Na barra de menus, escolha **criar**  >  **solução de compilação**e, em seguida, certifique-se de que a solução seja compilada sem erros.
+9. Na barra de menus, escolha **criar**  >  **solução de compilação** e, em seguida, certifique-se de que a solução seja compilada sem erros.
 
 10. Verifique se a pasta de saída da compilação do projeto WebPartNode agora contém o arquivo WebPartNode. vsix.
 
@@ -237,7 +239,7 @@ O conhecimento dos seguintes conceitos é útil, mas não é necessário, para c
 
 2. Verifique se o site do SharePoint que você deseja usar para teste aparece no nó **conexões do SharePoint** no **Gerenciador de servidores**. Se não estiver listado, siga estas etapas:
 
-    1. Abra o menu de atalho para **conexões do SharePoint**e, em seguida, escolha **Adicionar conexão**.
+    1. Abra o menu de atalho para **conexões do SharePoint** e, em seguida, escolha **Adicionar conexão**.
 
     2. Na caixa de diálogo **Adicionar conexão do SharePoint** , digite a URL do site do SharePoint ao qual você deseja se conectar e escolha o botão **OK** .
 
@@ -270,7 +272,7 @@ O conhecimento dos seguintes conceitos é útil, mas não é necessário, para c
 
      A caixa de diálogo **Extensões e Atualizações** é aberta.
 
-2. Na lista de extensões, escolha **nó da Galeria de Web Parts para Gerenciador de servidores**e, em seguida, escolha o botão **desinstalar** .
+2. Na lista de extensões, escolha **nó da Galeria de Web Parts para Gerenciador de servidores** e, em seguida, escolha o botão **desinstalar** .
 
 3. Na caixa de diálogo exibida, escolha o botão **Sim** .
 

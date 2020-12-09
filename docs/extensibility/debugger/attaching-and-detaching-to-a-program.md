@@ -1,5 +1,7 @@
 ---
 title: Anexando e desanexando a um programa | Microsoft Docs
+description: Saiba como enviar a sequência correta de métodos e eventos com os atributos adequados para anexar um depurador.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a751e6aa70c1aacd5df598e0c0e62da3b9d14b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b71a78dcee62f89dee4c54b53c1026f42895793
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903157"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913783"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Anexando e desanexando a um programa
 Anexar o depurador requer o envio da sequência correta de métodos e eventos com os atributos adequados.

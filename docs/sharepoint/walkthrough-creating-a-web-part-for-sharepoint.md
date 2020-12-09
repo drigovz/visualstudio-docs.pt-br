@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: criando uma Web Part para SharePoint | Microsoft Docs'
+description: Crie uma Web Part para o SharePoint. As Web Parts permitem que os usuários alterem diretamente o conteúdo, a aparência e o comportamento das páginas do site do SharePoint usando um navegador.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98e0c21fa4e3f119b32e19dd1be6e7d9148a17f4
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247653"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914654"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Walkthrough: criar uma Web Part para o SharePoint
 
@@ -58,7 +60,7 @@ Primeiro, crie um projeto do SharePoint vazio. Posteriormente, você adicionará
 
 3. Na caixa de diálogo **novo projeto** , expanda o nó do **SharePoint** sob o idioma que você deseja usar e escolha o nó **2010** .
 
-4. No painel **modelos** , escolha **projeto do SharePoint 2010**e, em seguida, escolha o botão **OK** .
+4. No painel **modelos** , escolha **projeto do SharePoint 2010** e, em seguida, escolha o botão **OK** .
 
      O **Assistente para personalização do SharePoint** é exibido. Este assistente permite que você selecione o site que será usado para depurar o projeto e o nível de confiança da solução.
 
@@ -178,7 +180,7 @@ Quando você executa o projeto, o site do SharePoint é aberto. A Web Part é ad
 
 8. Na página **criar** , escolha o tipo de **página de Web Part** e, em seguida, escolha o botão **criar** .
 
-9. Na página **nova página de Web Parts** , nomeie a página **SampleWebPartPage. aspx**e, em seguida, escolha o botão **criar** .
+9. Na página **nova página de Web Parts** , nomeie a página **SampleWebPartPage. aspx** e, em seguida, escolha o botão **criar** .
 
      A página Web Part é exibida.
 

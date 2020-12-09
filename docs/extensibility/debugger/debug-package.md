@@ -1,5 +1,7 @@
 ---
 title: Depurar pacote | Microsoft Docs
+description: Saiba como o pacote de depuração é executado no Shell do Visual Studio e manipula a interface do usuário consumindo as interfaces de depuração e se comunicando com o Gerenciador de depuração de sessão.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de6240ea5d938d02f8415009203962e124ff049e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad62a487d38500617999a276aa3ae15a75089736
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739024"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914121"
 ---
 # <a name="debug-package"></a>Pacote de depuração
 O pacote de depuração é executado no Shell do Visual Studio e manipula toda a interface do usuário. Ele consome as interfaces de depuração do Visual Studio e se comunica com o SDM (Session Debug Manager).

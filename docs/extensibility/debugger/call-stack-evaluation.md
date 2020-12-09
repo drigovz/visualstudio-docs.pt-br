@@ -1,5 +1,7 @@
 ---
 title: Avaliação da pilha de chamadas | Microsoft Docs
+description: Saiba mais sobre o método EnumFrameInfo e como implementá-lo para exibir os quadros de pilha da pilha de chamadas durante o modo de interrupção.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5557d7eae0ffe54b0f01f1f9e95935d71455229
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc637ff3ce2fe596eed48684523da7114fe0a03a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739184"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914667"
 ---
 # <a name="call-stack-evaluation"></a>Avaliação da pilha de chamadas
 Para exibir os quadros de pilha da pilha de chamadas durante o modo de interrupção, você deve implementar o método [EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .

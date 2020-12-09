@@ -1,5 +1,7 @@
 ---
 title: Escolhendo uma estratégia de implementação do mecanismo de depuração | Microsoft Docs
+description: Saiba como a arquitetura de tempo de execução ajuda a escolher entre várias estratégias para a implementação do mecanismo de depuração.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05e66975a2d41108d3d9fb469da9e4a36a10d8d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b87d61586fb4acc360b5f5202b1219199c6a24b
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739132"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914290"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>Escolher uma estratégia de implementação do mecanismo de depuração
 Use a arquitetura de tempo de execução para determinar sua estratégia DE implementação do mecanismo DE depuração. Você pode criar o mecanismo de depuração em processo para o programa que você está depurando. Crie o mecanismo de depuração em processo para o SDM (Gerenciador de depuração de sessão) do Visual Studio. Ou crie o mecanismo de depuração fora do processo para ambos. As diretrizes a seguir devem ajudá-lo a escolher entre essas três estratégias.

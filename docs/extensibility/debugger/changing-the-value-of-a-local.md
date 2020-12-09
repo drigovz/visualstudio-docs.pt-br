@@ -1,5 +1,7 @@
 ---
 title: Alterando o valor de um local | Microsoft Docs
+description: Saiba mais sobre o processo de alterar o valor de um local quando um novo valor é digitado no campo valor da janela locais.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 565ae9f27b9f5a113e51520724f525599ad5eda7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08f366162f4031b9cc7aa651bf9eca7aab55a15a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904270"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914329"
 ---
 # <a name="change-the-value-of-a-local"></a>Alterar o valor de um local
 > [!IMPORTANT]

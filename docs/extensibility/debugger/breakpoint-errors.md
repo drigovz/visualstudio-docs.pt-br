@@ -1,5 +1,7 @@
 ---
 title: Erros de ponto de interrupção | Microsoft Docs
+description: Saiba mais sobre o processo quando um ponto de interrupção tenta se associar ao código, mas falha e como solucionar problemas de erros de ponto de interrupção.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0766792f19faf7c1933c6576ab41f65ec1b31ae9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88a5003ce8abe79fcba9f9604047d2265810fda2
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739222"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914485"
 ---
 # <a name="breakpoint-errors"></a>Erros de ponto de interrupção
 O a seguir descreve o processo quando um ponto de interrupção tenta se associar ao código, mas falha.

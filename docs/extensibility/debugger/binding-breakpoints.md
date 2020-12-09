@@ -1,5 +1,7 @@
 ---
 title: Pontos de interrupção de associação | Microsoft Docs
+description: Saiba como o IDE formula a solicitação de um ponto de interrupção e solicita que a sessão de depuração crie o ponto de interrupção quando um usuário definir um ponto de interrupção.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e839b6e0e7967c4802bee5617da3334c5d4033c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 606c1f4cb5559722028b78ef4ef21c41c0ba5556
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903233"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914706"
 ---
 # <a name="bind-breakpoints"></a>Associar pontos de interrupção
 Se o usuário definir um ponto de interrupção, talvez pressionando **F9**, o IDE formula a solicitação e solicita que a sessão de depuração crie o ponto de interrupção.

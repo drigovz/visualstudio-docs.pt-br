@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: criar um projeto básico de definição de site | Microsoft Docs'
+description: Neste passo a passo do SharePoint, consulte como criar uma definição de site básica que contém uma Web Part Visual com alguns controles.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1c06f4df5d1efe06ad2537bd2e65f2c239f3be2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0411f027b105622d806e123bd80f38c4b05281ca
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016768"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913848"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Walkthrough: criar um projeto de definição de site básico
   Este tutorial mostra como criar uma definição de site básica que contém uma Web Part Visual com alguns controles. Para fins de clareza, a Web Part Visual que você cria tem apenas alguns controles. No entanto, você pode criar definições de site do SharePoint mais sofisticadas que incluem mais funcionalidade.
@@ -55,7 +57,7 @@ ms.locfileid: "86016768"
 
 3. Na lista **modelos** , escolha o modelo de **projeto do SharePoint 2010** .
 
-4. Na caixa **nome** , digite **TestSiteDef**e, em seguida, escolha o botão **OK** .
+4. Na caixa **nome** , digite **TestSiteDef** e, em seguida, escolha o botão **OK** .
 
     O **Assistente para personalização do SharePoint** é exibido.
 
@@ -73,7 +75,7 @@ ms.locfileid: "86016768"
 
 9. Em **Visual C#** ou **Visual Basic**, expanda o nó do **SharePoint** e escolha o nó **2010** .
 
-10. No painel **modelos** , escolha o modelo **definição de site** , deixe o **nome** como **SiteDefinition1**e, em seguida, escolha o botão **Adicionar** .
+10. No painel **modelos** , escolha o modelo **definição de site** , deixe o **nome** como **SiteDefinition1** e, em seguida, escolha o botão **Adicionar** .
 
 ## <a name="create-a-visual-web-part"></a>Criar uma Web Part Visual
  Em seguida, crie uma Web Part Visual para aparecer na página principal da definição de site.

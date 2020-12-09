@@ -1,5 +1,7 @@
 ---
 title: Conceitos do depurador | Microsoft Docs
+description: Saiba mais sobre os conceitos de arquitetura usados na criação do pacote de depuração do Visual Studio para ajudá-lo a se basear nesse pacote.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ad8a450f9e79c1d44b8e098c8a00bb4b816e1af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7caecc9c3434afd90462757c9cb544f387df88d3
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738988"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914030"
 ---
 # <a name="debugger-concepts"></a>Conceitos do depurador
 Para criar o pacote de depuração do Visual Studio, você precisa estar familiarizado com os conceitos arquitetônicos usados na criação do pacote.

@@ -1,6 +1,8 @@
 ---
 title: Criar Web Part do Silverlight exibindo OData para SharePoint
 titleSuffix: ''
+description: Crie uma Web Part do Silverlight que exibe o OData para SharePoint. Personalize o aplicativo do Silverlight e modifique e teste a Web Part do Silverlight.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 652f34e6a062d2c8129266a10c859c8d24abd83e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fdfd510aaea8d09ac20546344f4bbba18bd5f99b
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298498"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914784"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Walkthrough: criar uma Web Part do Silverlight que exibe o OData para SharePoint
   O SharePoint 2010 expõe seus dados de lista por meio do OData. No SharePoint, o serviço OData é implementado pelo serviço RESTful ListData. svc. Este tutorial mostra como criar uma Web Part do SharePoint que hospeda um aplicativo do Silverlight. O aplicativo do Silverlight exibe informações da lista de anúncios do SharePoint usando ListData. svc. Para obter mais informações, consulte [interface REST do SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) e [protocolo Open Data](https://www.odata.org/).
@@ -42,7 +44,7 @@ ms.locfileid: "92298498"
 
 1. Na barra de menus, escolha **arquivo**  >  **novo**  >  **projeto** para exibir a caixa de diálogo **novo projeto** .
 
-2. Expanda o nó **do SharePoint** sob o **Visual C#** ou **Visual Basic**e escolha o nó **2010** .
+2. Expanda o nó **do SharePoint** sob o **Visual C#** ou **Visual Basic** e escolha o nó **2010** .
 
 3. No painel modelos, escolha o modelo de **Web Part do Silverlight do SharePoint 2010** .
 
@@ -71,7 +73,7 @@ ms.locfileid: "92298498"
 
 1. Adicione uma referência de assembly a System. Windows. Data no aplicativo do Silverlight. Para obter mais informações, consulte [como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência](/previous-versions/wkze6zky(v=vs.140)).
 
-2. Em **Gerenciador de soluções**, abra o menu de atalho para **referências**e, em seguida, escolha **Adicionar referência de serviço**.
+2. Em **Gerenciador de soluções**, abra o menu de atalho para **referências** e, em seguida, escolha **Adicionar referência de serviço**.
 
     > [!NOTE]
     > Se você estiver usando Visual Basic, deverá escolher o ícone **Mostrar todos os arquivos** na parte superior da **Gerenciador de soluções** para exibir o nó **referências** .
@@ -82,9 +84,9 @@ ms.locfileid: "92298498"
 
 4. Escolha o botão **OK** para adicionar a referência de serviço ao projeto e use o nome do serviço padrão, ServiceReference1.
 
-5. Na barra de menus, escolha **Compilar**compilar  >  **solução**.
+5. Na barra de menus, escolha **Compilar** compilar  >  **solução**.
 
-6. Adicione uma nova fonte de dados ao projeto com base no serviço do SharePoint. Para fazer isso, na barra de menus, escolha **Exibir**  >  **outras**  >  **fontes de dados**do Windows.
+6. Adicione uma nova fonte de dados ao projeto com base no serviço do SharePoint. Para fazer isso, na barra de menus, escolha **Exibir**  >  **outras**  >  **fontes de dados** do Windows.
 
      A janela **fontes de dados** mostra todos os dados de lista do SharePoint disponíveis, como tarefas, anúncios e calendário.
 

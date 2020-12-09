@@ -1,5 +1,7 @@
 ---
 title: Criar Web Part para o SharePoint usando o designer
+description: Neste tutorial, crie uma Web Part visualmente usando o modelo de projeto de Web Part Visual do SharePoint no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 732bd9fe3d34a768e0c6f71315f212c49bdf02af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc214e98b2ec0ed6feb31c9aaa6e8170b3ddd2c8
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016387"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913978"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Walkthrough: criar uma Web Part para o SharePoint usando um designer
 
@@ -53,7 +55,7 @@ Primeiro, crie um projeto de Web Part usando o modelo de projeto de **Web Part V
 
      A caixa de diálogo **Novo Projeto** aparecerá.
 
-3. Na caixa de diálogo **novo projeto** , em **Visual C#** ou **Visual Basic**, expanda **Office/SharePoint**e, em seguida, escolha a categoria **soluções do SharePoint** .
+3. Na caixa de diálogo **novo projeto** , em **Visual C#** ou **Visual Basic**, expanda **Office/SharePoint** e, em seguida, escolha a categoria **soluções do SharePoint** .
 
 4. Na lista de modelos, escolha o modelo **SharePoint 2013-Web Part Visual** e, em seguida, escolha o botão **OK** .
 
@@ -75,7 +77,7 @@ Projete a Web Part adicionando controles da caixa de **ferramentas** à superfí
 
     - Abra o menu de atalho para o controle **CheckBoxList** , escolha **copiar**, abra o menu de atalho da primeira linha no designer e, em seguida, escolha **colar**.
 
-    - Arraste o controle **CheckBoxList** da **caixa de ferramentas**e conecte o controle à primeira linha no designer.
+    - Arraste o controle **CheckBoxList** da **caixa de ferramentas** e conecte o controle à primeira linha no designer.
 
 4. Repita a etapa anterior, mas mova um botão para a próxima linha do designer.
 
@@ -95,7 +97,7 @@ Adicione o código que permite ao usuário adicionar calendários à exibição 
 
    - No designer, clique duas vezes no botão **Atualizar** .
 
-   - Na janela **Propriedades** do botão **Atualizar** , escolha o botão **eventos** . Na propriedade de **clique** , digite **Button1_Click**e, em seguida, escolha a tecla Enter.
+   - Na janela **Propriedades** do botão **Atualizar** , escolha o botão **eventos** . Na propriedade de **clique** , digite **Button1_Click** e, em seguida, escolha a tecla Enter.
 
      O arquivo de código de controle de usuário é aberto no editor de código e o `Button1_Click` manipulador de eventos é exibido. Posteriormente, você adicionará código a esse manipulador de eventos.
 
@@ -147,13 +149,13 @@ Quando você executa o projeto, o site do SharePoint é aberto. A Web Part é ad
 
 3. Na página calendário, escolha um dia e, em seguida, escolha o link **Adicionar** no dia selecionado para adicionar um evento.
 
-4. Na caixa **título** , digite **evento no calendário padrão**e, em seguida, escolha o botão **salvar** .
+4. Na caixa **título** , digite **evento no calendário padrão** e, em seguida, escolha o botão **salvar** .
 
 5. Escolha o link **conteúdo do site** e, em seguida, escolha o bloco **Adicionar um aplicativo** .
 
 6. Na página **criar** , escolha o tipo de **calendário** , nomeie o calendário e, em seguida, escolha o botão **criar** .
 
-7. Adicione um evento ao novo calendário, nomeie o evento de evento **no calendário personalizado**e, em seguida, escolha o botão **salvar** .
+7. Adicione um evento ao novo calendário, nomeie o evento de evento **no calendário personalizado** e, em seguida, escolha o botão **salvar** .
 
 ### <a name="to-add-the-web-part-to-a-web-part-page"></a>Para adicionar a Web Part a uma página de Web Parts
 
@@ -161,7 +163,7 @@ Quando você executa o projeto, o site do SharePoint é aberto. A Web Part é ad
 
 2. Na faixa de seleção, escolha a guia **arquivos** , abra o menu **novo documento** e escolha o comando **página da Web Part** .
 
-3. Na página **nova página de Web Parts** , nomeie a página **SampleWebPartPage. aspx**e, em seguida, escolha o botão **criar** .
+3. Na página **nova página de Web Parts** , nomeie a página **SampleWebPartPage. aspx** e, em seguida, escolha o botão **criar** .
 
      A página Web Part é exibida.
 

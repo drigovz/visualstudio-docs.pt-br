@@ -1,5 +1,7 @@
 ---
 title: Chamando eventos do depurador | Microsoft Docs
+description: Eventos em sessões de depuração ocorrem em uma ordem específica. Este artigo lista a ordem de chamada dos eventos que ocorrem em uma sessão de depuração típica.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3deef418620ab17297b4ef7e824a0d95c25e439e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 832b42e62731a087048b4aa50e19b74c408343c5
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904327"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914382"
 ---
 # <a name="call-debugger-events"></a>Chamar eventos do depurador
 Eventos em sessões de depuração ocorrem em uma ordem específica.
@@ -35,7 +37,7 @@ Eventos em sessões de depuração ocorrem em uma ordem específica.
 
 6. [Erros de ponto de interrupção](../../extensibility/debugger/breakpoint-errors.md)
 
-7. [Atingindo um ponto de interrupção](../../extensibility/debugger/hitting-a-breakpoint.md)
+7. [Atingir um ponto de interrupção](../../extensibility/debugger/hitting-a-breakpoint.md)
 
 8. [Excluindo um ponto de interrupção](../../extensibility/debugger/deleting-a-breakpoint.md)
 

@@ -1,5 +1,7 @@
 ---
-title: Métodos relacionados ao ponto de interrupção | Microsoft Docs
+title: Métodos de Breakpoint-Related | Microsoft Docs
+description: A depuração do Visual Studio dá suporte a pontos de interrupção associados, que são associados com êxito a um local no código e pontos de interrupção pendentes, que ainda não estão associados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c72ec63e500ac86a4a5bd66a2956fe0fb06c8834
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9472f1ff4105790951ddd687d7e71c3e57fa39da
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739201"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914459"
 ---
 # <a name="breakpoint-related-methods"></a>Métodos relacionados ao ponto de interrupção
 Um mecanismo de depuração (DE) deve dar suporte à configuração de pontos de interrupção. A depuração do Visual Studio dá suporte aos seguintes tipos de pontos de interrupção:
@@ -45,7 +47,7 @@ Um mecanismo de depuração (DE) deve dar suporte à configuração de pontos de
 |[Habilitar](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Alterna o estado habilitado de um ponto de interrupção pendente.|
 |[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Enumera todos os pontos de interrupção associados a um ponto de interrupção pendente.|
 |[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Enumera todos os pontos de interrupção de erro resultantes de um ponto de interrupção pendente.|
-|[Delete (excluir)](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Exclui um ponto de interrupção pendente e todos os pontos de interrupção associados a ele.|
+|[Excluir](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Exclui um ponto de interrupção pendente e todos os pontos de interrupção associados a ele.|
 
  Para enumerar os pontos de interrupção e os pontos de interrupção de erro associados, você deve implementar todos os métodos de [IEnumDebugBoundBreakpoints2](../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) e de [IEnumDebugErrorBreakpoints2](../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md).
 
@@ -57,7 +59,7 @@ Um mecanismo de depuração (DE) deve dar suporte à configuração de pontos de
 |[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Obtém o estado de um ponto de interrupção associado.|
 |[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|Obtém a resolução do ponto de interrupção que descreve um ponto de interrupção.|
 |[Habilitar](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|Habilita ou desabilita um ponto de interrupção.|
-|[Delete (excluir)](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Exclui um ponto de interrupção associado.|
+|[Excluir](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Exclui um ponto de interrupção associado.|
 
  A resolução e as informações de solicitação exigem a implementação dos seguintes métodos [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) .
 

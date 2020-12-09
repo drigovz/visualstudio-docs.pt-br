@@ -1,5 +1,7 @@
 ---
 title: Controle de execução | Microsoft Docs
+description: Saiba mais sobre como parar eventos, o que significa que o DE espera por uma resposta do usuário por meio do IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c59831efb2fc97ad1bb2891fd93a67fe79f8eff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88adaad3092e084841c40b5e04d45f94985a2ee8
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386999"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913874"
 ---
 # <a name="control-of-execution"></a>Controle de execução
 O mecanismo de depuração (DE) normalmente envia um dos seguintes eventos como o último evento de inicialização:
@@ -39,11 +41,11 @@ O mecanismo de depuração (DE) normalmente envia um dos seguintes eventos como 
 
 5. Se o usuário optar por entrar, acima ou fora de uma função, o IDE solicitará que a sessão de depuração chame o método do programa `Step` . Em seguida, o IDE passa a unidade de etapa (instrução, instrução ou linha) e o tipo de etapa (se deseja entrar, acima ou fora da função). Quando a etapa for concluída, o DE enviará um evento DE conclusão de etapa para a sessão de depuração, que é um evento de parada.
 
-    - ou -
+    -ou-
 
     Se o usuário optar por continuar executando a partir do ponteiro de instrução atual, o IDE solicitará a sessão de depuração para chamar o método **Execute** do programa. O programa retoma a execução até encontrar a próxima condição de interrupção.
 
-    - ou -
+    -ou-
 
     Se a sessão de depuração for ignorar um evento de interrupção específico, a sessão de depuração chamará o método **continue** do programa. Se o programa estava passando para cima ou para fora de uma função quando ele encontrou a condição de interrupção, ele continua a etapa.
 
@@ -57,7 +59,7 @@ O mecanismo de depuração (DE) normalmente envia um dos seguintes eventos como 
 
    Se o pacote de depuração for ignorar um evento de interrupção específico, o pacote de depuração chamará o SDM, que chama [IDebugProgram2:: Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md). Se o programa estava passando para cima ou para fora de uma função quando ele encontrou a condição de interrupção, ele continua a etapa. Isso implica que o programa mantém um estado de depuração, para que ele saiba como continuar.
 
-   As chamadas que o SDM faz `Step` , **executam**e **continuam** assíncronas, o que significa que o SDM espera que a chamada retorne rapidamente. Se o DE enviar o evento do SDM a parar no mesmo thread antes `Step` , **Execute**ou **continue** retorna, o SDM para de responder.
+   As chamadas que o SDM faz `Step` , **executam** e **continuam** assíncronas, o que significa que o SDM espera que a chamada retorne rapidamente. Se o DE enviar o evento do SDM a parar no mesmo thread antes `Step` , **Execute** ou **continue** retorna, o SDM para de responder.
 
 ## <a name="see-also"></a>Confira também
 - [Tarefas de depuração](../../extensibility/debugger/debugging-tasks.md)

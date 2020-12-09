@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: criar uma atividade de fluxo de trabalho de site personalizada | Microsoft Docs'
+description: Neste tutorial, consulte como criar uma atividade personalizada para um fluxo de trabalho do SharePoint no nível do site usando o Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc7eef8b0924be745de436e06acc36785b1cb99b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86302a0b8eef4344a909ae3b8fb2c513c86c4ad6
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016536"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913950"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Walkthrough: criar uma atividade de fluxo de trabalho de site personalizada
   Este tutorial demonstra como criar uma atividade personalizada para um fluxo de trabalho de nível de site usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . (Os fluxos de trabalho de nível de site se aplicam a todo o site, não apenas a uma lista no site.) A atividade personalizada cria uma lista de anúncios de backup e, em seguida, copia o conteúdo da lista de anúncios para ela.
@@ -54,11 +56,11 @@ ms.locfileid: "86016536"
 
 1. Na barra de menus, escolha **arquivo**  >  **novo**  >  **projeto** para exibir a caixa de diálogo **novo projeto** .
 
-2. Expanda o nó **do SharePoint** sob o **Visual C#** ou **Visual Basic**e escolha o nó **2010** .
+2. Expanda o nó **do SharePoint** sob o **Visual C#** ou **Visual Basic** e escolha o nó **2010** .
 
 3. No painel **modelos** , escolha o modelo de **projeto do SharePoint 2010** .
 
-4. Na caixa **nome** , digite **AnnouncementBackup**e, em seguida, escolha o botão **OK** .
+4. Na caixa **nome** , digite **AnnouncementBackup** e, em seguida, escolha o botão **OK** .
 
      O **Assistente para personalização do SharePoint** é exibido.
 
@@ -74,7 +76,7 @@ ms.locfileid: "86016536"
 
      O **Assistente para personalização do SharePoint** é exibido.
 
-9. Na página **especificar o nome do fluxo de trabalho para depuração** , aceite o nome padrão (AnnouncementBackup-Workflow1). Altere o tipo de modelo de fluxo de trabalho para **fluxo de trabalho do site**e, em seguida, escolha o botão **Avançar** .
+9. Na página **especificar o nome do fluxo de trabalho para depuração** , aceite o nome padrão (AnnouncementBackup-Workflow1). Altere o tipo de modelo de fluxo de trabalho para **fluxo de trabalho do site** e, em seguida, escolha o botão **Avançar** .
 
 10. Escolha o botão **concluir** para aceitar as configurações padrão restantes.
 
