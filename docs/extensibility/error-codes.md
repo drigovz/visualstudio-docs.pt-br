@@ -1,5 +1,7 @@
 ---
 title: Códigos de erro | Microsoft Docs
+description: Este artigo contém uma lista de códigos de erro, valores e descrições para funções de API de plug-in de controle do código-fonte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34072f6ddbd632f83dd308c6cb63427e02bb110b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a77f869936531dbc41cc3bd1d9b510bf44c35cec
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711838"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994713"
 ---
 # <a name="error-codes"></a>Códigos do Erro
 Quando uma função de API de plug-in de controle do código-fonte retorna um erro, espera-se que seja um dos seguintes códigos de erro. Todos os erros são negativos, avisos ou códigos de erro informativos são positivos e o sucesso é 0.
 
-|Código do Erro|Valor|Descrição|
+|Código de erro|Valor|Descrição|
 |----------------|-----------|-----------------|
 |`SCC_I_SHARESUBPROJOK`|7|O plug-in dá suporte à adição de arquivos do controle do código-fonte em duas etapas. Para obter mais informações, consulte [SccSetOption](../extensibility/sccsetoption-function.md).|
 |`SCC_I_FILEDIFFERS`|6|O arquivo local é diferente do arquivo no banco de dados de controle do código-fonte (por exemplo, [SccDiff](../extensibility/sccdiff-function.md) pode retornar esse valor).|

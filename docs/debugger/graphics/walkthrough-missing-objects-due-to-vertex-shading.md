@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: objetos ausentes devido a sombreamento de vértice | Microsoft Docs'
+description: Siga uma investigação que localize um erro de sombreador de vértice. Ele mostra a lista de eventos de elementos gráficos, estágios de pipeline de gráficos, depurador de HLSL e pilha de chamadas de eventos gráficos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc3bd288044c9fea1da648b64cabc87148b8463a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a7e4c01a990ce4d3fff6769ba016c168b190687f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838668"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994989"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Passo a passo: Objetos ausentes devido ao sombreamento de vértice
 Este tutorial demonstra como usar as [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ferramentas de diagnóstico de gráficos para investigar um objeto ausente devido a um erro que ocorre durante o estágio do sombreador de vértice.

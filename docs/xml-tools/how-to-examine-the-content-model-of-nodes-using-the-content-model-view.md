@@ -1,5 +1,5 @@
 ---
-title: Examinar nós usando a exibição de modelo de conteúdo no designer de esquema XML
+title: Examinar o modelo de conteúdo de nós
 description: Saiba como usar a exibição de modelo de conteúdo no designer de esquema XML para examinar o modelo de conteúdo dos nós em um esquema XML.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef330e6e189b9cee1126d5de48d55622fe8d9046
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: f3ce3d1a47125c446521ceb60a851322c37209d0
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399503"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995272"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Como examinar o modelo de conteúdo de nós usando a exibição do modelo de conteúdo
+# <a name="how-to-examine-the-content-model-of-nodes-by-using-the-content-model-view"></a>Como examinar o modelo de conteúdo de nós usando a exibição de modelo de conteúdo
 
-Este tópico descreve como explorar seus nós usando a [exibição de modelo de conteúdo](../xml-tools/content-model-view.md).
+Este tópico descreve como explorar seus nós usando o modo de [exibição de modelo de conteúdo](../xml-tools/content-model-view.md).
 
 ## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Para criar um novo arquivo XSD e exibir o elemento raiz no modo do modelo de conteúdo
 

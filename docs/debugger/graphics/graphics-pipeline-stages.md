@@ -1,5 +1,7 @@
 ---
 title: Estágios de pipeline de gráficos | Microsoft Docs
+description: Solucionar problemas de renderização vendo como uma chamada de desenho é transformada em cada estágio do pipeline de gráficos do Direct3D.
+ms.custom: SEO-VS-2020
 ms.date: 02/09/2017
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d697313289bbf00234764cc04603b7bc256f174
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 150c61e271e7951332848a601aaddc619a1c37e5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735476"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993920"
 ---
 # <a name="graphics-pipeline-stages"></a>Estágios de Pipeline Gráficos
 A janela estágios de pipeline de gráficos ajuda você a entender como uma chamada de desenho individual é transformada por cada estágio do pipeline de gráficos do Direct3D.

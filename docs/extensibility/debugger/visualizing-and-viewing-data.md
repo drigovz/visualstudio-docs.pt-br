@@ -1,5 +1,7 @@
 ---
 title: Visualizando e exibindo dados | Microsoft Docs
+description: Saiba como os visualizadores de tipo e os espectadores personalizados apresentam dados a um desenvolvedor. O avaliador de expressão dá suporte a visualizadores de tipo de terceiros.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b5f984e6c6a3c1c8f3835dfa93a8679ae16680a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 856788546e10e69a8bb7e2787558505937f9effd
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712372"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995441"
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualizando e exibindo dados
 Visualizeres de tipo e visualizadores personalizados apresentam dados de uma maneira que é rapidamente significativa para um desenvolvedor. O avaliador de expressão (EE) pode dar suporte a visualizadores de tipo de terceiros, bem como fornecer seus próprios visualizadores personalizados.

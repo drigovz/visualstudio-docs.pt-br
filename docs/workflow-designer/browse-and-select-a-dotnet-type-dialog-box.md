@@ -1,6 +1,6 @@
 ---
-title: Designer de Fluxo de Trabalho – procurar e selecionar uma caixa de diálogo de tipo .NET
-description: Saiba como você pode usar a caixa de diálogo Procurar e selecionar um tipo .NET para escolher um tipo de um modo de exibição de árvore de assemblies e projetos.
+title: Procurar e selecione uma caixa de diálogo de tipo do .NET
+description: Saiba como você pode usar a caixa de diálogo Procurar e selecionar um tipo .NET para escolher um tipo de um modo de exibição de árvore de assemblies e projetos no Designer de Fluxo de Trabalho.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e887cf339647df9bca7fdc3d07a45dd44901c42
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9c479cbad884a8a21197c945f8f6f1ae13947991
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438172"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995480"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Procurar e selecione uma caixa de diálogo de tipo do .NET
 
@@ -57,7 +57,7 @@ Esta caixa de diálogo é empregada em um número de cenários do usuário, incl
 
 ## <a name="types-displayed-in-the-type-browser"></a>Tipos exibidos no navegador de tipo
 
-Os tipos exibidos no navegador do tipo podem variar dependendo de como o navegador de tipo foi iniciado. Se o navegador de tipos foi iniciado a partir de um projeto de fluxo de trabalho dentro de **VS2010** , por padrão, todos os tipos nos assemblies referenciados e nos projetos referenciados são mostrados. Se o navegador de tipos tiver sido iniciado fora de um sistema de projeto **VS2010** (como em um aplicativo de fluxo de trabalho rehospedado ou em um arquivo de fluxo de trabalho autônomo), por padrão, os tipos de todos os assemblies carregados no AppDomain serão mostrados.
+Os tipos exibidos no navegador do tipo podem variar dependendo de como o navegador de tipo foi iniciado. Se o navegador de tipos foi iniciado a partir de um projeto de fluxo de trabalho dentro de **VS2010**, por padrão, todos os tipos nos assemblies referenciados e nos projetos referenciados são mostrados. Se o navegador de tipos tiver sido iniciado fora de um sistema de projeto **VS2010** (como em um aplicativo de fluxo de trabalho rehospedado ou em um arquivo de fluxo de trabalho autônomo), por padrão, os tipos de todos os assemblies carregados no AppDomain serão mostrados.
 
 No navegador de tipo pode ser filtro por desenvolvedores do designer de atividade. Para quaisquer atividades determinada, você pode ver apenas um subconjunto dos tipos. Por exemplo, na atividade de <xref:System.Activities.Statements.TryCatch> , somente os tipos derivados de <xref:System.Exception> são mostrados no navegador do tipo.
 

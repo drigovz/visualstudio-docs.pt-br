@@ -1,5 +1,7 @@
 ---
 title: Obtendo propriedades do projeto | Microsoft Docs
+description: Saiba como exibir as propriedades do projeto em uma janela de ferramentas. Este exemplo mostra o controle de árvore na janela de ferramentas.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ddfd48827bc762c9189f9b7600cfe9200e5c866
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd8e23b859577301d28cf23ac59462d08ad9a447
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711409"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994453"
 ---
 # <a name="get-project-properties"></a>Obter propriedades do projeto
 
@@ -30,7 +32,7 @@ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a part
 
 1. Cada extensão do Visual Studio começa com um projeto de implantação VSIX, que conterá os ativos de extensão. Crie um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto VSIX denominado `ProjectPropertiesExtension` . Você pode encontrar o modelo de projeto VSIX na caixa de diálogo **novo projeto** pesquisando por "VSIX".
 
-2. Adicione uma janela de ferramentas adicionando um modelo de item de janela de ferramenta personalizada chamado `ProjectPropertiesToolWindow` . Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item**. Na **caixa de diálogo Adicionar novo item**, vá para extensibilidade de **itens do Visual C#**  >  **Extensibility** e selecione **janela de ferramenta personalizada**. No campo **nome** na parte inferior da caixa de diálogo, altere o nome do arquivo para `ProjectPropertiesToolWindow.cs` . Para obter mais informações sobre como criar uma janela de ferramentas personalizada, consulte [criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md).
+2. Adicione uma janela de ferramentas adicionando um modelo de item de janela de ferramenta personalizada chamado `ProjectPropertiesToolWindow` . Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item**. Na **caixa de diálogo Adicionar novo item**, vá para extensibilidade de **itens do Visual C#**  >   e selecione **janela de ferramenta personalizada**. No campo **nome** na parte inferior da caixa de diálogo, altere o nome do arquivo para `ProjectPropertiesToolWindow.cs` . Para obter mais informações sobre como criar uma janela de ferramentas personalizada, consulte [criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 3. Compile a solução e verifique se ela é compilada sem erros.
 

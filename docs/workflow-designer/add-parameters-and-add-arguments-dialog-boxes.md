@@ -1,6 +1,6 @@
 ---
-title: 'Designer de Fluxo de Trabalho: adicionar parâmetros & caixas de diálogo Adicionar argumentos'
-description: Saiba como os elementos da interface do usuário da caixa de diálogo Adicionar parâmetros são usados pelo designer do InvokeMethod.
+title: Adicionar parâmetros & caixas de diálogo Adicionar argumentos
+description: Saiba como os elementos da interface do usuário da caixa de diálogo Adicionar parâmetros são usados pelo designer do InvokeMethod no Designer de Fluxo de Trabalho.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 2038e56770a7d671a25b3982f865926c29697b13
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f29ee2aeedc971fc25654b6681c87b5dab71e386
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435684"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995506"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Adicionar parâmetros e adicionar caixas de diálogo de argumentos
 

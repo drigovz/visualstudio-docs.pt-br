@@ -1,6 +1,6 @@
 ---
-title: 'Designer de Fluxo de Trabalho: definir e consumir delegados de atividade'
-description: Saiba como .NET Framework 4,5 inclui um designer pronto para a atividade InvokeDelegate que você pode usar para definir e consumir delegados de atividade.
+title: Definir e consumir delegados de atividade
+description: Em Designer de Fluxo de Trabalho, saiba como o .NET Framework 4,5 inclui um designer pronto para a atividade InvokeDelegate que você pode usar para definir e consumir delegados de atividade.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: c59c828f380e47a06f8feb7b72788e76ad7ee08f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 48cab69de11ce006792e0fda72245048c6897acf
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437912"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993270"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Como: Defina e consumir representantes de atividade em Designer de Fluxo de Trabalho
 
@@ -62,7 +62,7 @@ O .NET Framework 4,5 inclui um designer pronto para a <xref:System.Activities.St
 
 18. Na grade de **Propriedades** da <xref:System.Activities.Statements.InvokeDelegate> atividade, clique no botão **...** na propriedade de **argumentos de representante** .
 
-19. Na coluna **valor** do argumento chamado **argumento** , insira **itens [índice]**. Clique em **OK** para fechar a caixa de diálogo **DelegateArguments** .
+19. Na coluna **valor** do argumento chamado **argumento**, insira **itens [índice]**. Clique em **OK** para fechar a caixa de diálogo **DelegateArguments** .
 
 20. Arraste uma atividade de <xref:System.Activities.Statements.Assign> na linha horizontal abaixo de atividade de <xref:System.Activities.Statements.InvokeDelegate> . A  <xref:System.Activities.Statements.Assign> atividade é criada e uma <xref:System.Activities.Statements.Sequence> atividade é criada automaticamente para conter as duas atividades na seção **corpo** da atividade **myforeach** . A sequência é necessária, pois a seção **Body** só pode conter uma única atividade. A criação automática de uma nova <xref:System.Activities.Statements.Sequence> atividade é um novo recurso do .NET Framework 4,5.
 
@@ -74,7 +74,7 @@ O .NET Framework 4,5 inclui um designer pronto para a <xref:System.Activities.St
 
 1. Crie o projeto pressionando **Ctrl** + **Shift** + **B**.
 
-2. No **Gerenciador de soluções** , abra **Workflow1. XAML** no designer.
+2. No **Gerenciador de soluções**, abra **Workflow1. XAML** no designer.
 
 3. Arraste uma atividade **myforeach** da caixa de ferramentas para a superfície do designer. A atividade está em uma seção da caixa de ferramentas com o mesmo nome que o projeto.
 

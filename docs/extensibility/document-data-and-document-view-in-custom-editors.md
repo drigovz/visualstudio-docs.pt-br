@@ -1,5 +1,7 @@
 ---
 title: Dados de documento e exibição de documento em editores personalizados | Microsoft Docs
+description: Saiba mais sobre os componentes de um editor personalizado, que são o objeto de dados de documento e o objeto de exibição de documento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d4b14558a435d6ad9da32726508d81185961410
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 576b195663f379b1f2fd327ce6a8806ddb43deda
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414458"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994869"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dados de documento e exibição de documento em editores personalizados
 Um editor personalizado consiste em duas partes: um objeto de dados de documento e um objeto de exibição de documento. Como os nomes sugerem, o objeto de dados do documento representa os dados de texto a serem exibidos. Da mesma forma, o objeto de exibição de documento (ou "exibição") representa uma ou mais janelas nas quais exibir o objeto de dados do documento.

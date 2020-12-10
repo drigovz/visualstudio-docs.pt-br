@@ -1,5 +1,7 @@
 ---
 title: Estendendo o Janela de Saída | Microsoft Docs
+description: Saiba como estender a janela de saída no SDK do Visual Studio e criar e gerenciar seus próprios painéis personalizados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 800b443b079111d1d09fffdd900b246a020578f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39ee69f934a9962d2beefb83b1ada08b920ce53d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711651"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994648"
 ---
 # <a name="extend-the-output-window"></a>Estender a janela de saída
 A janela de **saída** é um conjunto de painéis de texto de leitura/gravação. O Visual Studio tem esses painéis internos: **Build**, nos quais os projetos comunicam mensagens sobre compilações e **geral**, em que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o comunica mensagens sobre o IDE. Os projetos obtêm uma referência ao painel de **compilação** automaticamente por meio dos <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> métodos de interface, e o Visual Studio oferece acesso direto ao painel **geral** por meio do <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> serviço. Além dos painéis internos, você pode criar e gerenciar seus próprios painéis personalizados.

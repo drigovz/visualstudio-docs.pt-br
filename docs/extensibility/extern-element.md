@@ -1,5 +1,7 @@
 ---
 title: Elemento externo | Microsoft Docs
+description: O elemento externo faz referência a quaisquer arquivos de cabeçalho externo (. h) para mesclar com o arquivo. vsct no momento da compilação.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cf6f9db77abaa7034af8d074b9833a4c1560f07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e975c3f721d65b64fc7994824406b0c9af13022
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711493"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994518"
 ---
 # <a name="extern-element"></a>Elemento externo
 O elemento externo faz referência a quaisquer arquivos de cabeçalho externo (*. h*) para mesclar com o arquivo *. vsct* no momento da compilação. Os arquivos a serem mesclados devem estar no caminho de inclusão fornecido ao compilador VSCT ou referenciados por um [elemento include](../extensibility/include-element.md). Os arquivos podem ser outros arquivos *. vsct* ou arquivos de cabeçalho do C++.

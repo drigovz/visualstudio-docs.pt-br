@@ -1,5 +1,7 @@
 ---
 title: Estendendo o filtro de Gerenciador de Soluções | Microsoft Docs
+description: Saiba como estender Gerenciador de Soluções funcionalidade de filtro para mostrar ou ocultar arquivos diferentes no SDK do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af0824edd4188481bec8c0703d71043354f5dbcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cde3377582c3bac0c27371e25f28e5151d641db1
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711566"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994557"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Estender o filtro de Gerenciador de Soluções
 Você pode estender **Gerenciador de soluções** funcionalidade de filtro para mostrar ou ocultar arquivos diferentes. Por exemplo, você pode criar um filtro que mostra somente arquivos de fábrica de classes C# no **Gerenciador de soluções**, como demonstra este passo a passos.
@@ -54,7 +56,7 @@ Você pode estender **Gerenciador de soluções** funcionalidade de filtro para 
 
 4. No campo **origem** , escolha **um projeto na solução atual**.
 
-5. No campo **projeto** , escolha **FileFilter**e, em seguida, escolha o botão **OK** .
+5. No campo **projeto** , escolha **FileFilter** e, em seguida, escolha o botão **OK** .
 
 ### <a name="add-the-filter-code"></a>Adicionar o código do filtro
 

@@ -1,5 +1,7 @@
 ---
 title: 'Como: adicionar uma dependência a um pacote VSIX | Microsoft Docs'
+description: Saiba como configurar uma implantação de pacote VSIX que instala quaisquer dependências que ainda não estão presentes no computador de destino.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7ee7cbc4dee800351689386056389d274e07f4f
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: d7ef19bafd0788ed15094979141679625e4e992f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012224"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993829"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Como: adicionar uma dependência a um pacote VSIX
 
@@ -34,7 +36,7 @@ Você pode configurar uma implantação de pacote VSIX que instala quaisquer dep
 
 ## <a name="require-a-specific-visual-studio-release"></a>Exigir uma versão específica do Visual Studio
 
-Se sua extensão exigir uma versão específica do Visual Studio 2017, por exemplo, depende de um recurso lançado em 15,3, você poderá especificar o número de Build em seu **INSTALLATIONTARGET**VSIX. Por exemplo, a versão 15,3 tem um número de Build de ' 15.0.26730.3 '. Você pode ver o mapeamento de liberações para criar números [aqui](../install/visual-studio-build-numbers-and-release-dates.md). Observe que o uso do número de versão ' 15,3 ' não funcionará corretamente.
+Se sua extensão exigir uma versão específica do Visual Studio 2017, por exemplo, depende de um recurso lançado em 15,3, você poderá especificar o número de Build em seu **INSTALLATIONTARGET** VSIX. Por exemplo, a versão 15,3 tem um número de Build de ' 15.0.26730.3 '. Você pode ver o mapeamento de liberações para criar números [aqui](../install/visual-studio-build-numbers-and-release-dates.md). Observe que o uso do número de versão ' 15,3 ' não funcionará corretamente.
 
 Se sua extensão exigir 15,3 ou superior, você declararia a **versão InstallationTarget** como [15.0.26730.3, 16,0):
 
@@ -46,7 +48,7 @@ Se sua extensão exigir 15,3 ou superior, você declararia a **versão Installat
 
 O VSIXInstaller irá detectar versões anteriores do Visual Studio e informar ao usuário que uma atualização posterior é necessária.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência do esquema de extensão do VSIX 1,0](/previous-versions/dd393700(v=vs.110))
 - [Anatomia de um pacote VSIX](../extensibility/anatomy-of-a-vsix-package.md)

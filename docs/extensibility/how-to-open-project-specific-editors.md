@@ -1,5 +1,7 @@
 ---
-title: 'Como: abrir editores específicos do projeto | Microsoft Docs'
+title: Como abrir editores de Project-Specific | Microsoft Docs
+description: Saiba como implementar o método OpenItem com um editor específico de projeto para que um projeto possa abrir um arquivo associado a um editor para esse projeto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22106ea09f86e3d61fe7aaa6e86e6e99c002f32d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4cbba1f4d6cf0a2a5a45dd2999afa5bbf3443fca
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905806"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993777"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Como: abrir editores específicos do projeto
 Se um arquivo de item que está sendo aberto por um projeto estiver associado intrinsecamente ao editor específico desse projeto, o projeto deverá abrir o arquivo usando um editor específico do projeto. Não é possível delegar o arquivo para o mecanismo do IDE para selecionar um editor. Por exemplo, em vez de usar um editor de bitmap padrão, você pode usar essa opção de editor específica do projeto para especificar um editor de bitmap específico que reconheça as informações no arquivo que é exclusivo para seu projeto.

@@ -1,5 +1,7 @@
 ---
 title: Como anexar exibições a dados de documentos | Microsoft Docs
+description: Talvez você possa anexar uma nova exibição de documento a um objeto de dados de documento existente. Use este procedimento para determinar se você pode anexar a exibição.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5437e3a5d4fb0d6d33d570eb4d8923245cb287b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e044ecbf2309d4d858c16afbdddc130b4661005
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905895"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994180"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Como anexar exibições aos dados do documento
 Se você tiver uma nova exibição de documento, poderá anexá-la a um objeto de dados de documento existente.

@@ -1,5 +1,7 @@
 ---
 title: 'Como: solucionar problemas de serviços | Microsoft Docs'
+description: Saiba como solucionar vários problemas comuns que podem ocorrer quando você tenta obter um serviço no SDK do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bfbe4b11c22d6cfd147783f9fb662843cf57fe9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0fe538a7efd884ef87ba815a6300dfa80a94dc3b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234946"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993686"
 ---
 # <a name="how-to-troubleshoot-services"></a>Como: solucionar problemas de serviços
 Há vários problemas comuns que podem ocorrer quando você tenta obter um serviço:

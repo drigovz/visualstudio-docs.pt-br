@@ -1,5 +1,7 @@
 ---
 title: Introdução com o modelo de projeto VSIX | Microsoft Docs
+description: Saiba como usar o modelo de projeto VSIX para criar uma extensão ou para empacotar uma extensão existente para implantação.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18ca9672b22120718f63638d8668812d0e42e41f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6c7c2e12f01b008be6937a8c974f2eea183d594
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905884"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994336"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>Introdução ao modelo de projeto VSIX
 
@@ -43,7 +45,7 @@ Você pode usar o modelo de projeto VSIX para criar uma extensão ou para empaco
 
 3. Adicione o arquivo *. zip* ao projeto. Defina sua propriedade **copiar para diretório de saída** como `Copy Always` .
 
-4. Em **Gerenciador de soluções**, clique duas vezes no arquivo *Source. Extension. vsixmanifest* para abri-lo no **Designer de manifesto do VSIX**e faça as seguintes alterações:
+4. Em **Gerenciador de soluções**, clique duas vezes no arquivo *Source. Extension. vsixmanifest* para abri-lo no **Designer de manifesto do VSIX** e faça as seguintes alterações:
 
     - Defina o campo **nome do produto** como **meu modelo de projeto**.
 
@@ -83,7 +85,7 @@ Você pode usar o modelo de projeto VSIX para criar uma extensão ou para empaco
 
 1. As pastas de modelo estão localizadas nos diretórios *{caminho de instalação do Visual Studio} \Common7\IDE\ProjectTemplates* e *{caminho de instalação do Visual Studio} \Common7\IDE\ItemTemplates* . Os nomes das seções de nível superior na caixa de diálogo **novo projeto** não correspondem exatamente aos nomes das pastas de modelo. Quando forem diferentes, use o nome da pasta de modelos.
 
-    Altere a extensão de arquivo *. vsix* para *. zip*e, em seguida, abra o arquivo.
+    Altere a extensão de arquivo *. vsix* para *. zip* e, em seguida, abra o arquivo.
 
 2. Crie uma nova pasta com o mesmo nome que a seção da caixa de diálogo **novo projeto** em que o modelo deve aparecer.
 

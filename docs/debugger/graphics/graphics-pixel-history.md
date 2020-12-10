@@ -1,5 +1,7 @@
 ---
 title: Histórico de pixels de gráficos | Microsoft Docs
+description: Solucionar problemas de renderização, vendo o histórico de um pixel específico. O histórico de pixels de gráficos mostra os efeitos dos eventos do Direct3D.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb1b7a869915eebc561e1baf47082dd5dbc00df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b12264c610d291ff49be0524663141a59082e9e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735480"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995298"
 ---
 # <a name="graphics-pixel-history"></a>Histórico de pixel gráfico
 A janela Histórico de pixels de gráficos no Analisador de Gráficos do Visual Studio ajuda a entender como um pixel específico é afetado pelos eventos do Direct3D que ocorrem durante um quadro de seu jogo ou aplicativo.

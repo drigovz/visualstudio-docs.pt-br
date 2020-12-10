@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: objetos ausentes devido ao estado do dispositivo | Microsoft Docs'
+description: Siga uma investigação que localize um estado de dispositivo configurado incorretamente. Ele mostra o uso de lista de eventos gráficos, estágios de pipeline de gráficos e histórico de pixels gráficos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c29e240d4be2f66fb0684bf5372d59fe5d4d825a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62895436"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995051"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Passo a passo: Objetos ausentes devido ao estado do dispositivo
 Este tutorial demonstra como usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnóstico de gráficos para investigar um objeto ausente devido ao estado do dispositivo configurado incorretamente.
@@ -94,7 +96,7 @@ Este tutorial demonstra como usar [!INCLUDE[vsprvs](../../code-quality/includes/
 
 1. Abra a janela **tabela de objetos gráficos** . Na barra de ferramentas **diagnóstico de gráficos** , escolha **tabela de objetos**.
 
-2. Localize o objeto de **dispositivo d3d10** na **tabela de objetos gráficos**e, em seguida, abra o objeto de **dispositivo d3d10** . Uma nova guia **dispositivo d3d10** é aberta no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Para tornar isso mais fácil, você pode classificar a **tabela de objetos gráficos** por **tipo**:
+2. Localize o objeto de **dispositivo d3d10** na **tabela de objetos gráficos** e, em seguida, abra o objeto de **dispositivo d3d10** . Uma nova guia **dispositivo d3d10** é aberta no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Para tornar isso mais fácil, você pode classificar a **tabela de objetos gráficos** por **tipo**:
 
     ![Tabela de objetos gráficos e estado de dispositivo relacionado](media/vsg_walkthru1_objtable.png "vsg_walkthru1_objtable")
 

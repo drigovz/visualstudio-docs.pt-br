@@ -1,5 +1,6 @@
 ---
 title: Objetos ausentes devido a pipeline configurado incorretamente
+description: Siga uma investigação que localize um pipeline configurado incorretamente. Ele mostra a lista de eventos de elementos gráficos, estágios de pipeline de gráficos e pilha de chamadas de eventos gráficos.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c00c10b8b7207e1162aa0041145000126fde87
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: e099d94479183e795a2ad3c8fc8db03fa969111c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189843"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994986"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Passo a passo: Objetos ausentes devido a configuração incorreta do pipeline
 Este tutorial demonstra como usar as [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ferramentas de diagnóstico de gráficos para investigar um objeto ausente devido a um sombreador de pixel de desdefinição.

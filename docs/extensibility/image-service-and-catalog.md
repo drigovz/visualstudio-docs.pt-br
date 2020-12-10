@@ -1,5 +1,7 @@
 ---
 title: Serviço de imagem e catálogo | Microsoft Docs
+description: Este artigo contém orientações e práticas recomendadas para adotar o serviço de imagem do Visual Studio e o catálogo de imagens.
+ms.custom: SEO-VS-2020
 ms.date: 04/01/2019
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a098e78e8895aea72d830a88e436a06f15de6133
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 41adcbe97f9d0779fbad465bac673a3f7cf086c7
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584536"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993530"
 ---
 # <a name="image-service-and-catalog"></a>Serviço de imagem e catálogo
 Este manual contém diretrizes e práticas recomendadas para adotar o serviço de imagem do Visual Studio e o catálogo de imagens introduzidos no Visual Studio 2015.
@@ -42,7 +44,7 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 
   ![Serviço de imagem antes e depois](../extensibility/media/image-service-before-and-after.png "Serviço de imagem antes e depois")
 
-## <a name="how-it-works"></a>Como ele funciona
+## <a name="how-it-works"></a>Como isso funciona
  O serviço de imagem pode fornecer uma imagem de bitmap adequada para qualquer estrutura de interface do usuário com suporte:
 
 - WPF: BitmapSource
@@ -106,7 +108,7 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 |Importar|Importa os símbolos do arquivo de manifesto fornecido para uso no manifesto atual|
 |Guid|O símbolo representa um GUID e deve corresponder à formatação do GUID|
 |ID|O símbolo representa uma ID e deve ser um inteiro não negativo|
-|Cadeia de caracteres|O símbolo representa um valor de cadeia de caracteres arbitrária|
+|String|O símbolo representa um valor de cadeia de caracteres arbitrária|
 
  Os símbolos diferenciam maiúsculas de minúsculas e são referenciados usando a sintaxe $ (Symbol-Name):
 
@@ -160,7 +162,7 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 |**Atributo**|**Definição**|
 |-|-|
 |Uri|Necessária Um URI que define de onde a imagem pode ser carregada. Pode ser um dos seguintes:<br /><br /> -Um [pacote URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) usando a autoridade Application:///<br />-Uma referência de recurso de componente absoluto<br />-Um caminho para um arquivo que contém um recurso nativo|
-|Tela de fundo|Adicional Indica em que tipo de plano de fundo a origem deve ser usada.<br /><br /> Pode ser um dos seguintes:<br /><br /> *Luz:* A origem pode ser usada em um plano de fundo claro.<br /><br /> *Escuro:* A origem pode ser usada em um plano de fundo escuro.<br /><br /> *HighContrast:* A origem pode ser usada em qualquer plano de fundo no modo de Alto Contraste.<br /><br /> *HighContrastLight:* A origem pode ser usada em um plano de fundo claro no modo de Alto Contraste.<br /><br /> *HighContrastDark:* A origem pode ser usada em um plano de fundo escuro no modo de Alto Contraste.<br /><br /> Se o atributo de plano de fundo for omitido, a origem poderá ser usada em qualquer plano de fundo.<br /><br /> Se o plano de fundo for *claro*, *escuro*, *HighContrastLight*ou *HighContrastDark*, as cores da fonte nunca serão invertidas. Se o plano de fundo for omitido ou definido como *HighContrast*, a inversão das cores da origem será controlada pelo atributo **AllowColorInversion** da imagem.|
+|Segundo plano|Adicional Indica em que tipo de plano de fundo a origem deve ser usada.<br /><br /> Pode ser um dos seguintes:<br /><br /> *Luz:* A origem pode ser usada em um plano de fundo claro.<br /><br /> *Escuro:* A origem pode ser usada em um plano de fundo escuro.<br /><br /> *HighContrast:* A origem pode ser usada em qualquer plano de fundo no modo de Alto Contraste.<br /><br /> *HighContrastLight:* A origem pode ser usada em um plano de fundo claro no modo de Alto Contraste.<br /><br /> *HighContrastDark:* A origem pode ser usada em um plano de fundo escuro no modo de Alto Contraste.<br /><br /> Se o atributo de plano de fundo for omitido, a origem poderá ser usada em qualquer plano de fundo.<br /><br /> Se o plano de fundo for *claro*, *escuro*, *HighContrastLight* ou *HighContrastDark*, as cores da fonte nunca serão invertidas. Se o plano de fundo for omitido ou definido como *HighContrast*, a inversão das cores da origem será controlada pelo atributo **AllowColorInversion** da imagem.|
 
 Um \<Source> elemento pode ter exatamente um dos seguintes subelementos opcionais:
 
@@ -179,7 +181,7 @@ Um \<Source> elemento pode ter exatamente um dos seguintes subelementos opcionai
 
 |**Atributo**|**Definição**|
 |-|-|
-|Tipo|Necessária O tipo do recurso nativo, XAML ou PNG|
+|Type|Necessária O tipo do recurso nativo, XAML ou PNG|
 |ID|Necessária A parte da ID de número inteiro do recurso nativo|
 
  **ImageList**
@@ -208,7 +210,7 @@ Um \<Source> elemento pode ter exatamente um dos seguintes subelementos opcionai
 
 - *Microsoft.VisualStudio.ImageCatalog.dll*
 
-  - Necessário se você usar o **KnownMonikers**do catálogo de imagens interno.
+  - Necessário se você usar o **KnownMonikers** do catálogo de imagens interno.
 
 - *Microsoft.VisualStudio.Imaging.dll*
 
@@ -245,11 +247,11 @@ Um \<Source> elemento pode ter exatamente um dos seguintes subelementos opcionai
 
 - **KnownImageIds. h**
 
-  - Necessário se você usar o **KnownMonikers**do catálogo de imagens interno, mas não puder usar o tipo **ImageMoniker** , como ao retornar valores de chamadas **getguidproperty** ou **GetProperty** .
+  - Necessário se você usar o **KnownMonikers** do catálogo de imagens interno, mas não puder usar o tipo **ImageMoniker** , como ao retornar valores de chamadas **getguidproperty** ou **GetProperty** .
 
 - **KnownMonikers. h**
 
-  - Necessário se você usar o **KnownMonikers**do catálogo de imagens interno.
+  - Necessário se você usar o **KnownMonikers** do catálogo de imagens interno.
 
 - **ImageParameters140. h**
 
@@ -283,7 +285,7 @@ Um \<Source> elemento pode ter exatamente um dos seguintes subelementos opcionai
 
 1. Comece adicionando as referências de assembly necessárias na seção sobre as primeiras etapas acima para o seu projeto. Você não precisa adicionar todos eles, portanto, adicione apenas as referências de que você precisa. (Observação: se você estiver usando ou tiver acesso a **cores** em vez de **pincéis**, poderá ignorar a referência a **utilitários**, já que você não precisará do conversor.)
 
-2. Selecione a imagem desejada e obtenha seu moniker. Use um **KnownMoniker**ou use seu próprio se você tiver suas próprias imagens e monikers personalizados.
+2. Selecione a imagem desejada e obtenha seu moniker. Use um **KnownMoniker** ou use seu próprio se você tiver suas próprias imagens e monikers personalizados.
 
 3. Adicione **CrispImages** ao seu XAML. (Veja o exemplo abaixo.)
 
@@ -576,9 +578,9 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ## <a name="how-do-i-port-a-project-system"></a>Como fazer portar um sistema de projeto?
  **Como fornecer ImageMonikers para um projeto**
 
-1. Implemente **VSHPROPID_SupportsIconMonikers** no **IVsHierarchy**do projeto e retorne true.
+1. Implemente **VSHPROPID_SupportsIconMonikers** no **IVsHierarchy** do projeto e retorne true.
 
-2. Implemente qualquer **VSHPROPID_IconMonikerImageList** (se o projeto original usado **VSHPROPID_IconImgList**) ou **VSHPROPID_IconMonikerGuid**, **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, VSHPROPID_OpenFolderIconMonikerId (se o projeto original usado **VSHPROPID_IconHandle** e **VSHPROPID_OpenFolderIconHandle**). **VSHPROPID_OpenFolderIconMonikerId**
+2. Implemente qualquer **VSHPROPID_IconMonikerImageList** (se o projeto original usado **VSHPROPID_IconImgList**) ou **VSHPROPID_IconMonikerGuid**, **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, VSHPROPID_OpenFolderIconMonikerId (se o projeto original usado **VSHPROPID_IconHandle** e **VSHPROPID_OpenFolderIconHandle**). 
 
 3. Altere a implementação do VSHPROPIDs original para ícones para criar versões "herdadas" dos ícones se os pontos de extensão os solicitarem. O **IVsImageService2** fornece a funcionalidade necessária para obter esses ícones
 
@@ -638,7 +640,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - Recomendado: renomeie o símbolo AssetsGuid e o símbolo da faixa de imagem para se adequar ao seu uso.
 
-   - Substitua o GUID de cada **ContainedImage**por $ (ImageCatalogGuid), substitua cada ID de **ContainedImage**por $ ( \<moniker> ) e adicione o atributo external = "true" a cada **ContainedImage**
+   - Substitua o GUID de cada **ContainedImage** por $ (ImageCatalogGuid), substitua cada ID de **ContainedImage** por $ ( \<moniker> ) e adicione o atributo external = "true" a cada **ContainedImage**
 
        - \<moniker> deve ser substituído pelo **KnownMoniker** que corresponde à imagem, mas com o "KnownMonikers". removido do nome.
 

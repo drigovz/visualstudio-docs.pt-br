@@ -1,5 +1,7 @@
 ---
 title: MIP – variante de geração de mapa | Microsoft Docs
+description: Se a geração de mapa MIP mostrar grandes ganhos de desempenho, isso indica que você está usando texturas sem habilitar os mapas MIP e não obter o máximo do cache de textura.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 422a68f4e33733aa2874c639f0dcc799cd3ec795
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d939fb537ac6aed75d9b0f7bda2970a85f9175ad
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72734896"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994961"
 ---
 # <a name="mip-map-generation-variant"></a>Variante de geração de Mip-map
 Habilita mapas mip em texturas que não são destinos de renderização.

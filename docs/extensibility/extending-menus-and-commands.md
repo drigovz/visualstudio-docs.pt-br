@@ -1,5 +1,7 @@
 ---
 title: Estendendo menus e comandos | Microsoft Docs
+description: Saiba mais sobre os comandos, que adicionam ações e processos ao Visual Studio. O modelo de projeto VSPackage mostra como implementar um comando muito básico.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c344d996c70012ef1516fa2bebe52394739bea35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d99b1b0f5ba0f80af3aadcff0404357b57fbe265
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768584"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994596"
 ---
 # <a name="extend-menus-and-commands"></a>Estender menus e comandos
 Os comandos são a maneira como você adiciona ações e processos ao Visual Studio. Na maioria dos casos, os comandos são exibidos em menus ou barras de ferramentas. O modelo de projeto VSPackage mostra como implementar um comando muito básico. Para uma implementação um pouco mais longa, mas ainda básica, consulte [criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md).

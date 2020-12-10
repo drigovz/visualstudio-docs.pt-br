@@ -1,6 +1,6 @@
 ---
-title: Designer de atividade Designer de Fluxo de Trabalho-CancellationScope
-description: Saiba como você pode usar o designer de atividade CancellationScope para criar e configurar uma atividade CancellationScope.
+title: Designer de atividade do CancellationScope
+description: Saiba como você pode usar o designer de atividade CancellationScope no Designer de Fluxo de Trabalho para criar e configurar uma atividade CancellationScope.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 746ed70d0a1a8ae4de2207ea1fdf15280bd44de9
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 175ca46645d55106f18c163c54135316d73ea3ec
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434435"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993231"
 ---
 # <a name="cancellationscope-activity-designer"></a>Designer de atividade de CancellationScope
 
@@ -29,7 +29,7 @@ A atividade de <xref:System.Activities.Statements.CancellationScope> permite que
 
 ### <a name="using-the-cancellationscope-activity-designer"></a>Usando o designer de atividade de CancellationScope
 
-O designer de atividade **CancellationScope** pode ser encontrado na categoria **transação** da **caixa de ferramentas**. Para abrir a **caixa de ferramentas** , selecione a guia caixa de **ferramentas** do designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
+O designer de atividade **CancellationScope** pode ser encontrado na categoria **transação** da **caixa de ferramentas**. Para abrir a **caixa de ferramentas**, selecione a guia caixa de **ferramentas** do designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
 
 O designer de atividade do **CancellationScope** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho onde as atividades são colocadas, como dentro de um <xref:System.Activities.Statements.Sequence> . Descartar o designer de atividade **CancellationScope** cria uma <xref:System.Activities.Statements.CancellationScope> atividade com um padrão <xref:System.Activities.Activity.DisplayName%2A> de CancellationScope. Edite o <xref:System.Activities.Activity.DisplayName%2A> valor no cabeçalho do designer de atividade **CancellationScope** . Você também pode editá-lo na caixa **DisplayName** da grade de propriedades.
 

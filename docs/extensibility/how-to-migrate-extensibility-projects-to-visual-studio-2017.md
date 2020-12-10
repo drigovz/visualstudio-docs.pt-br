@@ -1,6 +1,7 @@
 ---
 title: Migrar projetos de extensibilidade para o Visual Studio 2017
 titleSuffix: ''
+description: Saiba como atualizar projetos de extensibilidade para o Visual Studio 2017 e como atualizar do manifesto de extensão versão 2 para o manifesto VSIX da versão 3.
 ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 9212add38f877e76aa3eaaa98c3d0d863c97d62e
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 58d802ad97018a3d84e2b6a9f5e759db3a7cb2e3
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352277"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993959"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Como migrar projetos de extensibilidade para o Visual Studio 2017
 
@@ -109,7 +110,7 @@ Em vez de editar diretamente o XML do manifesto, você pode usar a nova guia **p
 
 ## <a name="update-debug-settings-for-the-project"></a>Atualizar configurações de depuração para o projeto
 
-Se você quiser depurar sua extensão em uma instância experimental do Visual Studio, certifique-se de que a ação configurações do projeto para início da **depuração**  >  **Start action** tenha o **Iniciar programa externo:** valor definido para o arquivo de *devenv.exe* da instalação do Visual Studio 2017.
+Se você quiser depurar sua extensão em uma instância experimental do Visual Studio, certifique-se de que a ação configurações do projeto para início da **depuração**  >   tenha o **Iniciar programa externo:** valor definido para o arquivo de *devenv.exe* da instalação do Visual Studio 2017.
 
 Ele pode ser semelhante a: *C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
 
@@ -172,7 +173,7 @@ Ao pesquisar suas dependências, você verá que uma dependência pode ser mapea
 
 Para fornecer mais orientações, identificamos alguns tipos de extensão comuns e seus pré-requisitos sugeridos:
 
-Tipo de extensão | Nome de Exibição | ID
+Tipo de extensão | Nome de exibição | ID
 --- | --- | ---
 Editor | Editor do Visual Studio Core | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# e Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
@@ -187,7 +188,7 @@ Se você não tiver certeza de qual componente contém um binário específico, 
 
 ### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017-ComponentBinaryMapping.xlsx
 
-Há quatro colunas na planilha do Excel: **nome do componente**, **ComponentID**, **versão**e **nomes binários/de arquivo**.  Você pode usar os filtros para pesquisar e localizar componentes e binários específicos.
+Há quatro colunas na planilha do Excel: **nome do componente**, **ComponentID**, **versão** e **nomes binários/de arquivo**.  Você pode usar os filtros para pesquisar e localizar componentes e binários específicos.
 
 Para todas as suas referências, primeiro determine quais estão no componente principal do editor (Microsoft. VisualStudio. Component. CoreEditor).  No mínimo, exigimos que o componente principal do editor seja especificado como um pré-requisito para todas as extensões. Das referências que são deixadas que não estão no editor principal, adicione filtros na seção **nomes de binários/arquivos** para localizar componentes que tenham qualquer um dos subconjuntos dessas referências.
 
@@ -198,7 +199,7 @@ Exemplos:
 
 ## <a name="specify-a-visual-studio-2017-release"></a>Especificar uma versão 2017 do Visual Studio
 
-Se sua extensão exigir uma versão específica do Visual Studio 2017, por exemplo, depende de um recurso lançado em 15,3, você deve especificar o número de Build em seu **INSTALLATIONTARGET**VSIX. Por exemplo, a versão 15,3 tem um número de Build de ' 15.0.26730.3 '. Você pode ver o mapeamento de liberações para criar números [aqui](../install/visual-studio-build-numbers-and-release-dates.md). O uso do número de versão ' 15,3 ' não funcionará corretamente.
+Se sua extensão exigir uma versão específica do Visual Studio 2017, por exemplo, depende de um recurso lançado em 15,3, você deve especificar o número de Build em seu **INSTALLATIONTARGET** VSIX. Por exemplo, a versão 15,3 tem um número de Build de ' 15.0.26730.3 '. Você pode ver o mapeamento de liberações para criar números [aqui](../install/visual-studio-build-numbers-and-release-dates.md). O uso do número de versão ' 15,3 ' não funcionará corretamente.
 
 Se sua extensão exigir 15,3 ou superior, você declararia a **versão InstallationTarget** como [15.0.26730.3, 16,0):
 

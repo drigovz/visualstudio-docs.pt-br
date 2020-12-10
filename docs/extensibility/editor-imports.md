@@ -1,5 +1,7 @@
 ---
 title: Importações do editor | Microsoft Docs
+description: Saiba como importar serviços, fábricas e agentes do editor que fornecem sua extensão com diferentes tipos de acesso ao editor central.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6af95b452166aa71950ac1e869d333d12d857b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4e3a128f0f2873ad1946788b34761aadd1e7021
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712006"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994765"
 ---
 # <a name="editor-imports"></a>Importações do editor
 Você pode importar vários serviços de editor, fábricas e agentes que fornecem sua extensão com diferentes tipos de acesso ao editor central. Por exemplo, você pode importar o <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> para fornecer um <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> para um tipo de conteúdo específico. (Esse navegador permite que você execute diferentes tipos de pesquisas em um buffer de texto.)

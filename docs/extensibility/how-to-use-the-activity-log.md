@@ -1,5 +1,7 @@
 ---
 title: 'Como: usar o log de atividades | Microsoft Docs'
+description: VSPackages pode gravar mensagens no log de atividades. Saiba como usar o log de atividades para depurar o VSPackages em ambientes de varejo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 824feee64f928dc837a379aeb539daaa5ba0d1db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2796b8537c0f94c02c91fddc73f6d913ba1b0c4c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905585"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993569"
 ---
 # <a name="how-to-use-the-activity-log"></a>Como: usar o log de atividades
 VSPackages pode gravar mensagens no log de atividades. Esse recurso é especialmente útil para depurar VSPackages em ambientes de varejo.

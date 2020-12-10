@@ -1,5 +1,7 @@
 ---
 title: 'Como: criar um Feed Atom para uma galeria privada | Microsoft Docs'
+description: Você pode criar um Feed Atom (RSS) para um local de intranet que contém extensões e adicionar o feed a extensões e atualizações como uma galeria privada.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 269161e831fdb176dbfea844e951597efb467312
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 833d75d7dfd18e863664e6d3d17d65a4e08b4d77
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905854"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994141"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Como: criar um Feed Atom para uma galeria privada
 Você pode criar um Feed Atom (RSS) para um local de intranet que contém extensões e adicionar o feed a **extensões e atualizações** como uma galeria privada. Saiba mais em [Galerias privadas](../extensibility/private-galleries.md).
@@ -73,4 +75,4 @@ Você pode criar um Feed Atom (RSS) para um local de intranet que contém extens
  Observe que as duas marcas de link se referem a capturas de tela na pasta gerada de imagens.
 
 ## <a name="see-also"></a>Confira também
-- [Galerias particulares](../extensibility/private-galleries.md)
+- [Galerias privadas](../extensibility/private-galleries.md)

@@ -1,5 +1,7 @@
 ---
 title: Adicionando dinamicamente itens de menu | Microsoft Docs
+description: Saiba como usar o sinalizador de comando DynamicItemStart para adicionar itens de menu em tempo de execução. Este artigo mostra como definir o projeto de inicialização em uma solução do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4387c1930e09e49c0ec5c36ccedc1bb83dc273f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81fd495c51eff456f66275f33876038d14e43203
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712060"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994804"
 ---
 # <a name="dynamically-add-menu-items"></a>Adicionar dinamicamente itens de menu
 Você pode adicionar itens de menu em tempo de execução especificando o `DynamicItemStart` sinalizador de comando em uma definição de botão de espaço reservado no arquivo de tabela de comandos do Visual Studio (*. vsct*) e, em seguida, definindo (no código) o número de itens de menu a serem exibidos e manipulando os comandos. Quando o VSPackage é carregado, o espaço reservado é substituído pelos itens de menu dinâmico.
@@ -142,7 +144,7 @@ Você pode adicionar itens de menu em tempo de execução especificando o `Dynam
 ## <a name="implement-the-dynamic-menu-command"></a>Implementar o comando de menu dinâmico
  Você cria uma classe de comando de menu dinâmico que herda de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> . Nessa implementação, o construtor Especifica um predicado a ser usado para comandos correspondentes. Você deve substituir o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> método para usar esse predicado para definir a <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> propriedade, que identifica o comando a ser invocado.
 
-1. Crie um novo arquivo de classe C# chamado *DynamicItemMenuCommand.cs*e adicione uma classe chamada **DynamicItemMenuCommand** que herde de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> :
+1. Crie um novo arquivo de classe C# chamado *DynamicItemMenuCommand.cs* e adicione uma classe chamada **DynamicItemMenuCommand** que herde de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> :
 
     ```csharp
     class DynamicItemMenuCommand : OleMenuCommand

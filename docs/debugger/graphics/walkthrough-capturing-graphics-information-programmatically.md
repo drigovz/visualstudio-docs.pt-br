@@ -1,5 +1,6 @@
 ---
 title: Capturar informações de gráficos programaticamente
+description: Veja como usar o Visual Studio Diagnóstico de Gráficos para capturar informações gráficas programaticamente de um aplicativo do Direct3D.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701ee13beebb388a269197b60ba94aa07406a5a6
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5375ac252d097234cf81d1802be1ab681f90bbcd
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807905"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995003"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Passo a passo: Como capturar informações de gráficos de forma programática
 É possível usar o Diagnóstico de Gráficos do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para capturar de forma programática informações gráficas de um aplicativo Direct3D.

@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: depuração de erros de renderização devido ao sombreamento | Microsoft Docs'
+description: Siga uma investigação que encontre um bug de sombreador. Ele mostra o uso do Visual Studio Diagnóstico de Gráficos, incluindo o histórico de pixel de gráficos e o depurador HLSL.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b42aa5638b668d90fa44335c2d532c9bcddddc2b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849352"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995077"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Passo a passo: Como depurar erros de renderização devido ao sombreamento
 Este tutorial demonstra como usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnóstico de gráficos para investigar um objeto que está colorido incorretamente devido a um bug de sombreador.
@@ -92,7 +94,7 @@ Este tutorial demonstra como usar [!INCLUDE[vsprvs](../../code-quality/includes/
 output.color = float3(0.0f, 0.0f, 0.0f);
 ```
 
- como
+ para
 
 ```hlsl
 output.color = input.color;

@@ -1,5 +1,6 @@
 ---
 title: Usar AsyncPackage para carregar VSPackages em segundo plano
+description: Saiba como usar a classe AsyncPackage que permite o carregamento de pacotes em um thread em segundo plano, o que pode evitar problemas de capacidade de resposta de e/s de disco.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,18 +9,18 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: fef717ba7ec135038dcb35348eff870d9eeb3e33
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e8b5917a42e7083f7357ce76762bf8b51a1b60f9
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037283"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993478"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Como: usar AsyncPackage para carregar VSPackages em segundo plano
 Carregar e inicializar um pacote do VS pode resultar em e/s de disco. Se essa e/s ocorrer no thread da interface do usuário, isso pode levar a problemas de capacidade de resposta. Para resolver isso, o Visual Studio 2015 introduziu a  <xref:Microsoft.VisualStudio.Shell.AsyncPackage> classe que habilita o carregamento do pacote em um thread em segundo plano.
 
 ## <a name="create-an-asyncpackage"></a>Criar um AsyncPackage
- Você pode começar criando um projeto VSIX (**arquivo**  >  **novo**projeto de  >  **Project**  >  VSIX de extensibilidade do**Visual C#**  >  **Extensibility**  >  **VSIX Project**) e adicionando um VSPackage ao projeto (clique com o botão direito do mouse no projeto e **adicione**  >  **novo item**  >  **C# item**  >  **extensibilidade**  >  **Visual Studio Package**). Você pode criar seus serviços e adicionar esses serviços ao seu pacote.
+ Você pode começar criando um projeto VSIX (**arquivo**  >  **novo** projeto de  >    >  VSIX de extensibilidade do **Visual C#**  >    >  ) e adicionando um VSPackage ao projeto (clique com o botão direito do mouse no projeto e **adicione**  >  **novo item**  >  **C# item**  >  **extensibilidade**  >  **Visual Studio Package**). Você pode criar seus serviços e adicionar esses serviços ao seu pacote.
 
 1. Derive o pacote de <xref:Microsoft.VisualStudio.Shell.AsyncPackage> .
 

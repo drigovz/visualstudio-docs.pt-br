@@ -1,5 +1,7 @@
 ---
 title: Expondo Propriedades à janela Propriedades | Microsoft Docs
+description: Saiba mais sobre as propriedades públicas de um objeto. As alterações feitas nessas propriedades são refletidas na janela Propriedades.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f84962628ae550676e2c2eeb10c0f3baeca1bb58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f2668f8410b6e5f18b23c82202c1d33f8c67b4d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711823"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994687"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>Expor propriedades para o janela Propriedades
 
@@ -35,7 +37,7 @@ Nesta seção, você cria uma janela de ferramentas personalizada e exibe as pro
 
 1. Cada extensão do Visual Studio começa com um projeto de implantação VSIX, que conterá os ativos de extensão. Crie um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto VSIX denominado `MyObjectPropertiesExtension` . Você pode encontrar o modelo de projeto VSIX na caixa de diálogo **novo projeto** pesquisando por "VSIX".
 
-2. Adicione uma janela de ferramentas adicionando um modelo de item de janela de ferramenta personalizada chamado `MyToolWindow` . Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item**. Na **caixa de diálogo Adicionar novo item**, vá para extensibilidade de **itens do Visual C#**  >  **Extensibility** e selecione **janela de ferramenta personalizada**. No campo **nome** na parte inferior da caixa de diálogo, altere o nome do arquivo para *MyToolWindow.cs*. Para obter mais informações sobre como criar uma janela de ferramentas personalizada, consulte [criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md).
+2. Adicione uma janela de ferramentas adicionando um modelo de item de janela de ferramenta personalizada chamado `MyToolWindow` . Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item**. Na **caixa de diálogo Adicionar novo item**, vá para extensibilidade de **itens do Visual C#**  >   e selecione **janela de ferramenta personalizada**. No campo **nome** na parte inferior da caixa de diálogo, altere o nome do arquivo para *MyToolWindow.cs*. Para obter mais informações sobre como criar uma janela de ferramentas personalizada, consulte [criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 3. Abra *MyToolWindow.cs* e adicione a seguinte instrução Using:
 
@@ -110,15 +112,15 @@ Nesta seção, você adiciona uma janela de ferramentas e expõe suas propriedad
 
 ### <a name="to-expose-tool-window-properties"></a>Para expor propriedades da janela de ferramentas
 
-1. Abra *MyToolWindow.cs*e adicione a propriedade booliana pública IsChecked à `MyToolWindow` classe.
+1. Abra *MyToolWindow.cs* e adicione a propriedade booliana pública IsChecked à `MyToolWindow` classe.
 
     ```csharp
     [Category("My Properties")]
     [Description("MyToolWindowControl properties")]
-    public bool IsChecked
+    public bool IsChecked
     {
         get {
-            if (base.Content == null)  return false;
+            if (base.Content == null)  return false;
             return (bool)(( MyToolWindowControl) base.Content).checkBox.IsChecked;
         }
         set {
@@ -190,14 +192,14 @@ Nesta seção, você adiciona uma janela de ferramentas e expõe suas propriedad
 1. Abra *MyToolWindow.cs* e adicione uma classe pública chamada `Simple` .
 
     ```csharp
-    public class Simple
+    public class Simple
     {
-        private string someText = "";
+        private string someText = "";
 
         [Category("My Properties")]
         [Description("Simple Properties")]
         [DisplayName("My Text")]
-        public string SomeText
+        public string SomeText
         {
             get { return someText; }
             set { someText = value; }

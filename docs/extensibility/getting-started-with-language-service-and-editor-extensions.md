@@ -1,5 +1,6 @@
 ---
 title: Introdução ao serviço de linguagem e às extensões do editor
+description: Saiba como adicionar recursos de serviço de linguagem a qualquer tipo de conteúdo e personalizar a aparência e o comportamento do editor do Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55d9f018324c32a8b39c96037058593cebf52bc2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 471acaef0145b3bf1a73925b42e17a6343439ea2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037758"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994388"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Introdução ao serviço de linguagem e às extensões do editor
 
@@ -48,7 +49,7 @@ Você pode usar extensões do editor para adicionar recursos de serviço de ling
 
 - Margens e barras de rolagem
 
-- Marcas
+- Marcações
 
 - Adornos
 

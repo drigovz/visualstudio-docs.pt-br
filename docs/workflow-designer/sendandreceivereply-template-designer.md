@@ -1,6 +1,6 @@
 ---
-title: Designer de modelos Designer de Fluxo de Trabalho-SendAndReceiveReply
-description: Saiba como você pode usar o modelo SendAndReceiveReply para criar um par de atividades de envio e ReceiveReply pré-configuradas.
+title: Designer do modelo de SendAndReceiveReply
+description: Saiba como você pode usar o modelo SendAndReceiveReply em Designer de Fluxo de Trabalho para criar um par de atividades de envio e ReceiveReply pré-configuradas.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d853854700463356c457763044b33e3a72494fe0
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 91885371f72c5756ddc026111404f091a2cccf08
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433993"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993257"
 ---
 # <a name="sendandreceivereply-template-designer"></a>Designer do modelo de SendAndReceiveReply
 
