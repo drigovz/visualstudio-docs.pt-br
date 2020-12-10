@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95e35037ba07dcba1f51da7b47b7fca40a447dfb
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: e3633f3084b875974adac17fc27e7ec7a695ed91
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850020"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996377"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -168,7 +168,7 @@ Você pode definir seus próprios níveis de hierarquia e de grupo por **Estado*
 |-|-----------------|
 |**Duration**|Agrupa testes por tempo de execução: **rápido**, **médio** e **lento**.|
 |**State**|Agrupa testes por resultados de execução: **testes com falha**, **testes ignorados**, **testes aprovados**, **não executados**|
-|**Estrutura de destino** | Agrupa testes pela estrutura de seus projetos de destino |
+|**Estrutura de Destino** | Agrupa testes pela estrutura de seus projetos de destino |
 |**Namespace**|Agrupa testes pelo namespace contido.|
 |**Projeto**|Agrupa testes pelo projeto contido.|
 |**Classe**|Agrupa testes pela classe contida.|
@@ -186,7 +186,7 @@ Na estrutura de teste de unidade da Microsoft para aplicativos gerenciados, voc�
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|A categoria do proprietário é definida pela estrutura de teste de unidade e exige que você forneça um valor de cadeia de caracteres do proprietário.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|A categoria Prioridade é definida pela estrutura de teste de unidade e exige que você forneça um valor inteiro da prioridade.|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|O atributo TestCategory permite que você forneça uma categoria sem um valor.|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|O atributo TestCategory permite que você especifique a categoria de um teste de unidade.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|O atributo TestProperty permite que você defina o par de categoria/valor da característica.|
 
 
@@ -212,7 +212,7 @@ Se os testes individuais não tiverem dependências que os impeçam de serem exe
 ::: moniker range=">=vs-2019"
 É possível criar e salvar uma lista de teste que você deseje executar ou exibir como um grupo. Quando você seleciona uma playlist, os testes na lista são exibidos em uma nova guia do Gerenciador de testes. Você pode adicionar um teste a mais de uma lista de reprodução.
 
-**Para criar uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu do clique com o botão direito do mouse, escolha **Adicionar à lista de** reprodução nova lista de reprodução  >  **New Playlist**.
+**Para criar uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu do clique com o botão direito do mouse, escolha **Adicionar à lista de** reprodução nova lista de reprodução  >  .
 
 ![Criar uma playlist](../test/media/vs-2019/test-explorer-playlist-16-2.png)
 
@@ -220,7 +220,7 @@ A lista de reprodução é aberta em uma nova guia do Gerenciador de testes. Voc
 
 ![A playlist é aberta em uma guia separada do Gerenciador de Testes](../test/media/vs-2019/test-explorer-playlist-tab-16-7.png)
 
-**Para criar uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. Clique com o botão direito do mouse e escolha **Adicionar à lista de** reprodução nova lista de reprodução  >  **New playlist**.
+**Para criar uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. Clique com o botão direito do mouse e escolha **Adicionar à lista de** reprodução nova lista de reprodução  >  .
 
 **Para abrir uma playlist**, escolha o ícone da playlist na barra de ferramentas do Visual Studio e selecione no menu um arquivo de playlist salvo anteriormente.
 
@@ -313,7 +313,7 @@ Para filtrar por um critério diferente:
 |**Características**|Procura categoria de característica e valor para correspondência. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
 |**Nome Totalmente Qualificado**|Pesquisa o nome totalmente qualificado de namespaces de teste, classes e métodos para encontrar correspondências.|
 |**Projeto**|Procura os nomes de projeto de teste para correspondências.|
-|**Estrutura de destino**|Procura os nomes de categoria do Gerenciador de Testes para encontrar correspondências: **testes com falha**, **testes ignorados**, **testes aprovados**.|
+|**Estrutura de Destino**|Procura os nomes de categoria do Gerenciador de Testes para encontrar correspondências: **testes com falha**, **testes ignorados**, **testes aprovados**.|
 |**Namespace**|Pesquisa os namespaces de teste para encontrar correspondências.|
 |**Classe**|Pesquisa os nomes de classes de teste para encontrar correspondências.|
 ::: moniker-end

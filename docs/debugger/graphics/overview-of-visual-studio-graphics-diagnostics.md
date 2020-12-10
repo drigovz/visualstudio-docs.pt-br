@@ -1,7 +1,7 @@
 ---
 title: Visão geral do diagnóstico de gráficos | Microsoft Docs
-description: Uma visão geral de alto nível do Visual Studio Diagnóstico de Gráficos
-ms.custom: seodec18
+description: O Visual Studio Diagnóstico de Gráficos é um conjunto de ferramentas para registrar a atividade do Direct3D e analisar os logs para solucionar problemas de desempenho e renderização.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 02/09/2017
 ms.topic: conceptual
 author: mikejo5000
@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f9193555ef3c9c69f494a78ac779a3724417f63
-ms.sourcegitcommit: a1cb4e2025045c2ad79167645c4c0f33b94b1152
+ms.openlocfilehash: 1ccf3b77c9b1f4dee7183aac32e8810417ba69c5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91671400"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996130"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visão geral do diagnóstico de gráficos do Visual Studio
 O Visual Studio *diagnóstico de gráficos* é um conjunto de ferramentas para gravar e analisar problemas de desempenho e renderização em aplicativos Direct3D. Diagnóstico de Gráficos pode ser usado em aplicativos que estão sendo executados localmente no seu computador Windows ou em um computador ou dispositivo remoto.
 
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>Usando o Diagnóstico de Gráficos para depurar problemas de renderização
- Depurar problemas de renderização em um aplicativo cheio de recursos gráficos não é tão simples quanto iniciar um depurador e percorrer alguns códigos. Em cada quadro, centenas de milhares de pixels exclusivos são produzidos, cada um de acordo com um conjunto complexo de estados, dados, parâmetros e códigos, e dentre eles, talvez apenas alguns pixels exibirão o problema que você está tentando diagnosticar. Para complicar ainda mais, o código que gera cada pixel é executado em hardware especializado que processa centenas de pixels paralelamente. As ferramentas e técnicas tradicionais de depuração (cujo aproveitamento é difícil mesmo no código em thread bastante simples) são ineficazes quando se deparam com grandes quantidades de dados.
+ A depuração de problemas de renderização em um aplicativo graficamente rico não é tão simples quanto iniciar um depurador e percorrer alguns códigos. Em cada quadro, centenas de milhares de pixels exclusivos são produzidos, cada um de acordo com um conjunto complexo de estados, dados, parâmetros e códigos, e dentre eles, talvez apenas alguns pixels exibirão o problema que você está tentando diagnosticar. Para complicar ainda mais, o código que gera cada pixel é executado em hardware especializado que processa centenas de pixels paralelamente. As ferramentas e técnicas tradicionais de depuração (cujo aproveitamento é difícil mesmo no código em thread bastante simples) são ineficazes quando se deparam com grandes quantidades de dados.
 
  As ferramentas de Diagnóstico de Gráficos no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] foram desenvolvidas para ajudar a localizar problemas de renderização, a começar pelos artefatos visuais que indicam o problema e rastreiam de volta para a origem do problema focando apenas o código de sombreador, os estágios de pipeline, as chamadas de desenho e o estado do dispositivo que são relevantes, no próprio código-fonte do aplicativo.
 
@@ -122,6 +122,6 @@ O Visual Studio *diagnóstico de gráficos* é um conjunto de ferramentas para g
 
  Mas a análise de quadros não está prestes a ficar rápido. é sobre obter a maior parte do desempenho que você pode, ao mesmo tempo, fornecer a menor quantidade de qualidade visual. Às vezes, um efeito caro que parece ótimo em uma exibição grande não faz o mesmo impacto quando exibido na tela pequena de um telefone, em que um efeito mais simples pode parecer muito bom sem descarregar a bateria. As alterações automáticas e os parâmetros de comparação que a análise gráfica fornece podem ajudá-lo a encontrar o equilíbrio certo para seu aplicativo em uma variedade de dispositivos.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Ferramenta de captura de linha de comando](command-line-capture-tool.md)
 - [Depurador HLSL](hlsl-shader-debugger.md)

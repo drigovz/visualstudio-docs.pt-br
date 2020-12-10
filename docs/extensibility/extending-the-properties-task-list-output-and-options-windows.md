@@ -1,5 +1,6 @@
 ---
 title: Estender Propriedades, Lista de Tarefas, saída, janelas de opções
+description: Saiba como integrar informações sobre sua janela de ferramentas no Visual Studio em uma nova página de opções e uma nova configuração na página Propriedades.
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c968544c6bf52a901052fc7aedbbee66dcc10e62
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 54b78197be71dca9fbabbfded90c4e07660a74db
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038472"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995792"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Estenda as propriedades, Lista de Tarefas, saída e opções do Windows
 Você pode acessar qualquer janela de ferramentas no Visual Studio. Este tutorial mostra como integrar informações sobre a janela da ferramenta em uma nova página **Opções** e uma nova configuração na página **Propriedades** e também como gravar nas janelas **lista de tarefas** e **saída** .
@@ -46,7 +47,7 @@ Você pode acessar qualquer janela de ferramentas no Visual Studio. Este tutoria
 
 2. Na seção **todos os controles do WPF** da **caixa de ferramentas**, arraste um controle **Canvas** para a grade.
 
-3. Arraste uma **caixa de texto**, um **botão**e um **ListBox** para a tela. Organize os elementos para que a caixa de texto e o botão estejam no mesmo nível e a ListBox preencha o restante da janela abaixo deles, como na imagem abaixo.
+3. Arraste uma **caixa de texto**, um **botão** e um **ListBox** para a tela. Organize os elementos para que a caixa de texto e o botão estejam no mesmo nível e a ListBox preencha o restante da janela abaixo deles, como na imagem abaixo.
 
      ![Janela de ferramentas concluída](../extensibility/media/t5-toolwindow.png "T5-ToolWindow")
 
@@ -366,7 +367,7 @@ Você pode acessar qualquer janela de ferramentas no Visual Studio. Este tutoria
 
 8. Teste seu código. Compile o projeto e comece a depuração. A instância experimental deve aparecer.
 
-9. Abra a **Tools**  >  página**Opções** de ferramentas. Você deve ver a categoria ToDo no painel esquerdo. As categorias são listadas em ordem alfabética, portanto, olhe sob o TS.
+9. Abra a **Tools**  >  página **Opções** de ferramentas. Você deve ver a categoria ToDo no painel esquerdo. As categorias são listadas em ordem alfabética, portanto, olhe sob o TS.
 
 10. Na página opções de **tarefas** , você deve ver a `DaysAhead` propriedade definida como **0**. Altere-o para **2**.
 
@@ -483,13 +484,13 @@ Você pode acessar qualquer janela de ferramentas no Visual Studio. Este tutoria
 
 1. Compile o projeto e comece a depuração. A instância experimental é exibida.
 
-2. Abra o **TodoWindow** (**Exibir**  >  **outros**  >  **TodoWindow**do Windows).
+2. Abra o **TodoWindow** (**Exibir**  >  **outros**  >  **TodoWindow** do Windows).
 
 3. Digite algo na caixa de texto e clique em **Adicionar**.
 
      Uma data de vencimento 2 dias depois de hoje é adicionada à caixa de listagem. Nenhum erro é gerado e o **lista de tarefas** (**View**  >  **lista de tarefas**) não deve ter entradas.
 
-4. Agora, altere a configuração na **Tools**  >  **Options**  >  página opções de ferramentas**todo** de **2** volta para **0**.
+4. Agora, altere a configuração na **Tools**  >  **Options**  >  página opções de ferramentas **todo** de **2** volta para **0**.
 
 5. Digite outra coisa no **TodoWindow** e clique em **Adicionar** novamente. Isso dispara um erro e também uma entrada no **lista de tarefas**.
 

@@ -1,5 +1,7 @@
 ---
 title: Escrevendo um avaliador de expressão Common Language Runtime | Microsoft Docs
+description: Saiba mais sobre como escrever um avaliador de expressão para o Common Language Runtime, que avalia as expressões na linguagem de código que está sendo depurada.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e46eaef395a7c66792662b3c5d4b9fbad419dfb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1674ae8345873ede5d1b4afb04774d6ed0469b4c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712318"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996312"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Escrevendo um avaliador de expressão de Common Language Runtime
 > [!IMPORTANT]

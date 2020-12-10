@@ -1,5 +1,7 @@
 ---
 title: Quando um ponto de interrupção associa ou se torna desassociado | Microsoft Docs
+description: Saiba mais sobre pontos de interrupção não associados. Quando um ponto de interrupção não pode ser associado no momento em que uma chamada é feita, a hora de ligação e a hora de criação do ponto de interrupção são diferentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3253841778fe5a07e00b644423495b8ceee1a335
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a48bd7ff011b6e8de6e9321a00b6bc20d54f0f0b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712338"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995909"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Quando um ponto de interrupção associa ou se torna desassociado
 Quando um ponto de interrupção não pode ser associado no momento em que uma chamada é feita ao método [IDebugPendingBreakpoint2:: canbind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) , a hora de ligação e a hora de criação do ponto de interrupção são diferentes.

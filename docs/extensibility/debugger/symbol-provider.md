@@ -1,5 +1,7 @@
 ---
 title: Provedor de símbolos | Microsoft Docs
+description: Saiba mais sobre os provedores de símbolos que o Visual Studio fornece para habilitar um avaliador de expressão para avaliar variáveis e expressões.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31b90846d9494ee046cf9dc4a3e5de9ff033ea3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 043014ebababd990c9cae03f28cb1b642d576071
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712814"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996039"
 ---
 # <a name="symbol-provider"></a>Provedor de símbolos
 Uma implementação do avaliador de expressão deve acessar as informações de depuração simbólicas geradas pelo compilador de linguagem para avaliar variáveis e expressões. Ele faz isso consumindo as interfaces de um provedor de símbolo (SP), também chamado de manipulador de símbolo.

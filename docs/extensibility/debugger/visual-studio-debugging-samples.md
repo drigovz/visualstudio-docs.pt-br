@@ -1,5 +1,7 @@
 ---
 title: Amostras de depuração do Visual Studio | Microsoft Docs
+description: O exemplo do avaliador de expressão do depurador e o exemplo do mecanismo de depuração do Visual Studio mostram como estender o depurador do Visual Studio usando o SDK do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c3ac20f541f83103e0ded8c11881317e8d1aca4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb1afc16dc998adb18108248af4812fe6b173c66
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712412"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995922"
 ---
 # <a name="visual-studio-debugging-samples"></a>Amostras de depuração do Visual Studio
 Dois exemplos mostram como estender o depurador do Visual Studio usando [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .

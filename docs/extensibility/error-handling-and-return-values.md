@@ -1,5 +1,7 @@
 ---
 title: Tratamento de erros e valores de retorno | Microsoft Docs
+description: Saiba como o SDK do Visual Studio fornece assemblies de interoperabilidade para registrar informações de erro avançadas ao receber uma notificação de erro.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30b6b9bff9056360f9ea840f47b1488f05bee872
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8e8385e0b270cd6e359ef03a3060d5eefb97479
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711931"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995844"
 ---
 # <a name="error-handling-and-return-values"></a>Tratamento de erros e valores de retorno
 VSPackages e COM usam a mesma arquitetura para erros. As `SetErrorInfo` `GetErrorInfo` funções e fazem parte da API (interface de programação de aplicativo) do Win32. Qualquer VSPackage no IDE (ambiente de desenvolvimento integrado) pode chamar essas APIs globais do Win32 para registrar informações de erro avançadas ao receber uma notificação de erro. O [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] fornece assemblies de interoperabilidade para gerenciar informações de erro.

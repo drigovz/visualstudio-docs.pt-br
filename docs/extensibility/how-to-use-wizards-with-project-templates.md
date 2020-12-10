@@ -1,5 +1,7 @@
 ---
 title: Como usar assistentes com modelos do projeto
+description: Saiba como usar a interface IWizard no SDK do Visual Studio, que permite que você execute código personalizado quando um usuário cria um projeto a partir de um modelo.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9d36ae9b3a4a4fbbb3c54cc3f3320e9878b6745
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21e0e35b43fc3b94a8d029c97f56bd573ebac95f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905522"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996364"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Como: usar assistentes com modelos de projeto
 
@@ -58,7 +60,7 @@ Este procedimento mostra como criar um assistente personalizado que abre um form
 
 1. Configure o projeto VSIX para permitir que ele crie um assembly.
 
-2. Em **Gerenciador de soluções**, selecione o nó do projeto VSIX. Abaixo **Gerenciador de soluções**, você deverá ver a janela **Propriedades** . Se você não fizer isso, selecione **Exibir**  >  **Propriedades janela**ou pressione **F4**. Na janela **Propriedades** , selecione os seguintes campos para `true` :
+2. Em **Gerenciador de soluções**, selecione o nó do projeto VSIX. Abaixo **Gerenciador de soluções**, você deverá ver a janela **Propriedades** . Se você não fizer isso, selecione **Exibir**  >  **Propriedades janela** ou pressione **F4**. Na janela **Propriedades** , selecione os seguintes campos para `true` :
 
    - **Incluir assembly no contêiner VSIX**
 
@@ -66,11 +68,11 @@ Este procedimento mostra como criar um assistente personalizado que abre um form
 
    - **Incluir símbolos de depuração na implantação do VSIX local**
 
-3. Adicione o assembly como um ativo ao projeto VSIX. Abra o arquivo *Source. Extension. vsixmanifest* e selecione a guia **ativos** . Na janela **Adicionar novo ativo** , para **tipo** , selecione **Microsoft. VisualStudio. assembly**, para **origem** , selecione **um projeto na solução atual**e, para **projeto** , selecione **MyProjectWizard**.
+3. Adicione o assembly como um ativo ao projeto VSIX. Abra o arquivo *Source. Extension. vsixmanifest* e selecione a guia **ativos** . Na janela **Adicionar novo ativo** , para **tipo** , selecione **Microsoft. VisualStudio. assembly**, para **origem** , selecione **um projeto na solução atual** e, para **projeto** , selecione **MyProjectWizard**.
 
 4. Adicione as seguintes referências ao projeto VSIX. (No **Gerenciador de soluções**, no nó do projeto VSIX, selecione **referências**, clique com o botão direito do mouse e selecione **Adicionar referência**.) Na caixa de diálogo **Adicionar referência** , na guia **estrutura** , localize o assembly **System. Windows Forms** e selecione-o. Além disso, encontre e selecione os assemblies **sistema** e **sistema. Drawing** . Agora, selecione a guia **extensões** . Localize o assembly **EnvDTE** e selecione-o. Além disso, encontre o assembly **Microsoft. VisualStudio. TemplateWizardInterface** e selecione-o. Clique em **OK**.
 
-5. Adicione uma classe para a implementação do assistente ao projeto VSIX. (Em **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto VSIX e selecione **Adicionar**, **novo item**e **classe**.) Nomeie a classe **WizardImplementation**.
+5. Adicione uma classe para a implementação do assistente ao projeto VSIX. (Em **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto VSIX e selecione **Adicionar**, **novo item** e **classe**.) Nomeie a classe **WizardImplementation**.
 
 6. Substitua o código no arquivo *WizardImplementationClass.cs* pelo código a seguir:
 
@@ -218,9 +220,9 @@ Para que o modelo de projeto personalizado use seu assistente personalizado, voc
 
 5. Recriar a solução.
 
-6. Agora você pode encontrar o arquivo Key. SNK no diretório do projeto MyProjectWizard (* \<your disk location> \MyProjectTemplate\MyProjectWizard\key.SNK*). Copie o arquivo *Key. SNK* .
+6. Agora você pode encontrar o arquivo Key. SNK no diretório do projeto MyProjectWizard (*\<your disk location> \MyProjectTemplate\MyProjectWizard\key.SNK*). Copie o arquivo *Key. SNK* .
 
-7. Vá para o diretório de saída e localize o assembly (* \<your disk location> \ MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Cole o arquivo *Key. SNK* aqui. (Isso não é absolutamente necessário, mas vai facilitar as etapas a seguir).
+7. Vá para o diretório de saída e localize o assembly (*\<your disk location> \ MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Cole o arquivo *Key. SNK* aqui. (Isso não é absolutamente necessário, mas vai facilitar as etapas a seguir).
 
 8. Abra uma janela de comando e altere para o diretório no qual o assembly foi criado.
 
@@ -246,7 +248,7 @@ Para que o modelo de projeto personalizado use seu assistente personalizado, voc
 
      Anote esse valor.
 
-12. Adicione a referência ao assistente personalizado para o arquivo *. vstemplate* do modelo de projeto. Na **Gerenciador de soluções**, localize o arquivo chamado *MyProjectTemplate. vstemplate*e abra-o. Após o final da \<TemplateContent> seção, adicione a seguinte seção:
+12. Adicione a referência ao assistente personalizado para o arquivo *. vstemplate* do modelo de projeto. Na **Gerenciador de soluções**, localize o arquivo chamado *MyProjectTemplate. vstemplate* e abra-o. Após o final da \<TemplateContent> seção, adicione a seguinte seção:
 
     ```xml
     <WizardExtension>

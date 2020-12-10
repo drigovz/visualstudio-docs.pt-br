@@ -1,6 +1,6 @@
 ---
-title: 'Designer de Fluxo de Trabalho-como: adicionar atividades à caixa de ferramentas'
-description: Adicione atividades à caixa de ferramentas em sua solução adicionando-as de dentro do seu projeto atual ou fazendo referência a elas de um projeto diferente.
+title: Adicionar atividades à caixa de ferramentas
+description: No Designer de Fluxo de Trabalho, saiba como adicionar atividades à caixa de ferramentas em sua solução adicionando-as de dentro do seu projeto atual ou fazendo referência a elas de um projeto diferente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2330392ace27a913870e7c7448976d1cae46958
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0f2ffdb25bfdb359352d62913c984cad07c18aed
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437938"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996299"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Como: Adicione atividades a caixa de ferramentas
 

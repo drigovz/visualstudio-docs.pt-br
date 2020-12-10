@@ -1,5 +1,7 @@
 ---
 title: 'Como: atualizar uma extensão do Visual Studio | Microsoft Docs'
+description: Saiba como atualizar uma extensão do Visual Studio em seu sistema usando extensões e atualizações para instalar a versão atualizada.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee81fe30e10253239bc51dd9d2f199340debc65a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be22ca13fd5af8df88501835c8a030cc6469e179
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905624"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995598"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Como: atualizar uma extensão do Visual Studio
 Você pode atualizar uma extensão do Visual Studio no sistema usando **extensões e atualizações** para instalar a versão atualizada. Se você criar uma versão atualizada de uma extensão, poderá significar que ela foi atualizada incrementando o número de versão no manifesto do VSIX.
@@ -55,10 +57,10 @@ Você pode atualizar uma extensão do Visual Studio no sistema usando **extensõ
 
      Quando um usuário que tem uma versão anterior da extensão abrir **extensões e atualizações**, a nova versão será exibida na lista **atualizações** , desde que a ferramenta esteja definida para procurar atualizações automaticamente.
 
-     Você pode habilitar ou desabilitar a verificação automática de atualizações na parte inferior do painel **atualizações** (**habilitar/desabilitar detecção automática de atualizações disponíveis**), que altera a configuração verificar se há **atualizações** em **ferramentas**  >  **Opções**  >  **Environment**  >  **extensões de ambiente e atualizações**.
+     Você pode habilitar ou desabilitar a verificação automática de atualizações na parte inferior do painel **atualizações** (**habilitar/desabilitar detecção automática de atualizações disponíveis**), que altera a configuração verificar se há **atualizações** em **ferramentas**  >  **Opções**  >    >  **extensões de ambiente e atualizações**.
 
     > [!NOTE]
-    > A partir do Visual Studio 2015 atualização 2, você pode especificar (em **ferramentas**  >  **Opções**  >  **Environment**  >  **extensões de ambiente e atualizações**) se deseja atualizações automáticas para extensões por usuário, todas as extensões de usuário ou ambas (a configuração padrão).
+    > A partir do Visual Studio 2015 atualização 2, você pode especificar (em **ferramentas**  >  **Opções**  >    >  **extensões de ambiente e atualizações**) se deseja atualizações automáticas para extensões por usuário, todas as extensões de usuário ou ambas (a configuração padrão).
 
 ## <a name="see-also"></a>Confira também
 - [Anatomia de um pacote VSIX](../extensibility/anatomy-of-a-vsix-package.md)

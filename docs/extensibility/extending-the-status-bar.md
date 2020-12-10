@@ -1,5 +1,7 @@
 ---
 title: Estendendo a barra de status | Microsoft Docs
+description: Saiba como estender a barra de status do Visual Studio na parte inferior do IDE, que exibe informações.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa62326d82d81f7ee4d10a838209364355cc488e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddce0cdf62d803dac1a5981442424a45d6550193
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711540"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995688"
 ---
 # <a name="extend-the-status-bar"></a>Estender a barra de status
 Você pode usar a barra de status do Visual Studio na parte inferior do IDE para exibir informações.
@@ -110,7 +112,7 @@ Você pode usar a barra de status do Visual Studio na parte inferior do IDE para
 
 ### <a name="display-an-animation"></a>Exibir uma animação
 
-1. A barra de status exibe uma animação de loop que indica uma operação de execução longa (por exemplo, a criação de vários projetos em uma solução). Se você não vir essa animação, certifique-se de ter as configurações **Tools**corretas  >  das**Opções** de ferramentas:
+1. A barra de status exibe uma animação de loop que indica uma operação de execução longa (por exemplo, a criação de vários projetos em uma solução). Se você não vir essa animação, certifique-se de ter as configurações **Tools** corretas  >  das **Opções** de ferramentas:
 
      Vá para a guia **ferramentas**  >  **Opções**  >  **geral** e desmarque a opção **ajustar automaticamente a experiência visual com base no desempenho do cliente**. Em seguida, marque a subopção **habilitar experiência visual de cliente avançada**. Agora você deve ser capaz de ver a animação ao compilar o projeto em sua instância experimental do Visual Studio.
 

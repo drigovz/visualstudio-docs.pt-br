@@ -1,5 +1,7 @@
 ---
 title: Definir elemento | Microsoft Docs
+description: O elemento define define um par de nome e valor de símbolo. Esse símbolo pode ser avaliado por atributos condicionais.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc09de1d822f41b25397c7a56c7cce4449a9e551
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a427371afe55b6ea4ee20f658e683b9dcdb8fbe2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712267"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996234"
 ---
 # <a name="define-element"></a>Definir elemento
 Define um par de nome e valor de símbolo. Esse símbolo pode ser avaliado por atributos condicionais. Para obter mais informações, consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md). Consulte também o [elemento Symbols](../extensibility/symbols-element.md).
@@ -39,7 +41,7 @@ Define um par de nome e valor de símbolo. Esse símbolo pode ser avaliado por a
 |Condição|Opcional. Para obter mais informações, consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 

@@ -1,5 +1,7 @@
 ---
 title: Elemento IDSymbol | Microsoft Docs
+description: 'O elemento IDSymbol contém a ID do par GUID: ID que representa um menu, grupo ou comando.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d02a26a6874165738d917a14986d16d142c01915
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4feb477f8507bc3fe57e6db355538ab98ceeeaa
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710369"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995532"
 ---
 # <a name="idsymbol-element"></a>Elemento IDSymbol
 O `IDSymbol` elemento contém a ID do par GUID: ID que representa um menu, grupo ou comando. O GUID vem do elemento pai `GuidSymbol` . O `IDSymbol` elemento tem um `name` atributo que fornece um nome amigável para a ID, que está contido no `value` atributo.
@@ -38,7 +40,7 @@ O `IDSymbol` elemento contém a ID do par GUID: ID que representa um menu, grupo
 |value|Obrigatórios. Valor de ID numérico do símbolo de ID.|
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 

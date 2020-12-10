@@ -1,6 +1,6 @@
 ---
-title: Designer de atividades Designer de Fluxo de Trabalho-ParallelForEach &lt; T &gt;
-description: Saiba como a <T> atividade ParallelForEach enumera os elementos de uma coleção e executa uma instrução inserida para cada elemento da coleção em paralelo.
+title: Designer de atividade do ParallelForEach &lt; T &gt;
+description: Em Designer de Fluxo de Trabalho, saiba como a <T> atividade ParallelForEach enumera os elementos de uma coleção e executa uma instrução inserida para cada elemento da coleção em paralelo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,18 +12,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57c8414637d767a57cf9021d907bfb6e1fe467ef
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: e732c6d9d791d789471c49a319ab9945fdd5dc06
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435554"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996169"
 ---
 # <a name="parallelforeach-activity-designer"></a>Designer de atividade ParallelForEach
 
 A atividade de <xref:System.Activities.Statements.ParallelForEach%601> enumera os elementos de uma coleção e executa uma declaração inserido para cada elemento da coleção paralelamente, que está de forma assíncrona no mesmo segmento. Use esta atividade do controle de fluxo em vez de atividade de <xref:System.Activities.Statements.Sequence> se as atividades filhos desta atividade são esperadas ir ociosa.
 
-A <xref:System.Activities.Statements.ParallelForEach%601> atividade tem uma <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> propriedade que contém uma expressão de Visual Basic especificada pelo usuário. A atividade de <xref:System.Activities.Statements.ParallelForEach%601> avalia essa propriedade após cada ramificação completa. Se for avaliada como **true** , a <xref:System.Activities.Statements.ParallelForEach%601> atividade será concluída sem executar as outras ramificações. Se o <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> não for avaliado como **true** , a <xref:System.Activities.Statements.ParallelForEach%601> atividade será concluída quando todas as suas atividades filhas forem concluídas.
+A <xref:System.Activities.Statements.ParallelForEach%601> atividade tem uma <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> propriedade que contém uma expressão de Visual Basic especificada pelo usuário. A atividade de <xref:System.Activities.Statements.ParallelForEach%601> avalia essa propriedade após cada ramificação completa. Se for avaliada como **true**, a <xref:System.Activities.Statements.ParallelForEach%601> atividade será concluída sem executar as outras ramificações. Se o <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> não for avaliado como **true**, a <xref:System.Activities.Statements.ParallelForEach%601> atividade será concluída quando todas as suas atividades filhas forem concluídas.
 
 ## <a name="the-parallelforeacht-activity"></a>A atividade ParallelForEach<T \>
 

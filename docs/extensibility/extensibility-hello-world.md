@@ -1,5 +1,7 @@
 ---
 title: Tutorial de extensão de Olá, Mundo | Microsoft Docs
+description: Saiba como adicionar um novo comando como uma extensão do Visual Studio, que envolve a criação de um projeto, a adição de um comando e a modificação do código-fonte.
+ms.custom: SEO-VS-2020
 ms.date: 03/14/2019
 ms.topic: tutorial
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 796cb53ea5124662c695cce55241794802f042c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ba4d6cbca8d55cdaceb04a1a773fde376a8670a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905931"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995714"
 ---
 # <a name="tutorial---create-your-first-extension-hello-world"></a>Tutorial – Crie sua primeira extensão: Olá, Mundo
 
@@ -46,7 +48,7 @@ Antes de começar, verifique se você instalou a carga de trabalho de **desenvol
 
 Etapa 1. No menu **Arquivo**, selecione **Novo** > **Projeto**.
 
-Etapa 2. Na caixa de pesquisa no canto superior direito, digite "VSIX" e selecione o **projeto VSIX**do Visual C#. Digite "HelloWorld" para o **nome** na parte inferior da caixa de diálogo e selecione **OK**.
+Etapa 2. Na caixa de pesquisa no canto superior direito, digite "VSIX" e selecione o **projeto VSIX** do Visual C#. Digite "HelloWorld" para o **nome** na parte inferior da caixa de diálogo e selecione **OK**.
 
 ![novo projeto](media/hello-world-new-project.png)
 
@@ -72,7 +74,7 @@ Agora você deve ver o projeto HelloWorld no **Gerenciador de soluções**.
 
 Etapa 1. Se você selecionar o arquivo de manifesto *. vsixmanifest* , poderá ver quais opções são alteráveis, como descrição, autor e versão.
 
-Etapa 2. Clique com o botão direito do mouse no projeto (não na solução). No menu de contexto, selecione **Adicionar**e **novo item**.
+Etapa 2. Clique com o botão direito do mouse no projeto (não na solução). No menu de contexto, selecione **Adicionar** e **novo item**.
 
 Etapa 3. Selecione a seção **extensibilidade** e, em seguida, escolha **comando**.
 
