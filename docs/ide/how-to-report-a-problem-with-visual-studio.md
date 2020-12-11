@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e0718eb01f422ad435492304e77d73c14b4dee
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 2956372882d4449345d026e691a12afb2988054a
+ms.sourcegitcommit: 6ef4e46c786c5bbcc52cd9c30e5ddfca12ea8b3c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211169"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97050815"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Como relatar um problema com o Visual Studio para Mac ou com o Instalador do Visual Studio
 
@@ -23,7 +23,7 @@ ms.locfileid: "91211169"
 
 Você pode relatar um problema a partir do Visual Studio ou de seu instalador. A ferramenta de comentários interna permite que você adicione facilmente informações de diagnóstico que ajudam as equipes do Visual Studio a diagnosticar e corrigir os problemas. Aqui estão as etapas para relatar um problema.
 
-1. **No Visual Studio**, selecione o ícone de comentários no canto superior direito e selecione Relatar um Problema. Você também pode acessar a ferramenta de comentários no menu **ajudar**a  >  **enviar comentários**para  >  **relatar um problema**.
+1. **No Visual Studio**, selecione o ícone de comentários no canto superior direito e selecione Relatar um Problema. Você também pode acessar a ferramenta de comentários no menu **ajudar** a  >  **enviar comentários** para  >  **relatar um problema**.
 ![Pop-up Relatar um problema na Comunidade de Desenvolvedores do Visual Studio](media/feedback-button.png) Como alternativa, relate um problema no **Instalador do Visual Studio** se você não puder instalar o Visual Studio ou não puder acessar a ferramenta de comentários no Visual Studio.  No Instalador, selecione o ícone de comentários no canto superior direito e selecione Relatar um Problema.
 ![Pop-up Relatar um problema na Comunidade de Desenvolvedores do Visual Studio](media/installer.png)
 
@@ -65,7 +65,7 @@ Você pode relatar um problema a partir do Visual Studio ou de seu instalador. A
 
 Quando faltam informações importantes no problema, atribuímos o estado de **mais informações** . Comentamos o problema com as informações específicas de que precisamos e você receberá uma notificação por email. Se não recebermos as informações dentro de sete dias, enviaremos um lembrete. Depois disso, fechamos o tíquete após 14 dias de inatividade.
 
-1. Siga o link no email para o relatório de problemas ou vá para meus comentários para ver todos os relatórios no estado de **mais informações** .
+1. Siga o link no email para o relatório de problemas ou vá para a home page para ver todos os relatórios no estado de **mais informações** .
 
     ![Meus comentários](../ide/media/feedback-my-feedback.png)
 
@@ -85,7 +85,7 @@ Se você não quiser ou não puder usar o Visual Studio para relatar um problema
 
 Se você não tiver um problema para relatar, mas desejar sugerir um recurso, há um lugar para fazer isso também. Para saber mais, confira a página [Sugerir um recurso](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Diretrizes da comunidade de desenvolvedores](./developer-community-guidelines.md)
 * [Opções de comentários do Visual Studio](../ide/feedback-options.md)

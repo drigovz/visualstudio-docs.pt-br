@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3633f3084b875974adac17fc27e7ec7a695ed91
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 58faf100c61a25ae014bdcc0b09d161e924ad5c9
+ms.sourcegitcommit: 21ac4a0c8ffac3964b75604678b12e0955e0159b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996377"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098521"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -234,7 +234,16 @@ Você também pode marcar ou desmarcar as caixas dos grupos pai na hierarquia. E
 
 ![Arquivo XML de playlist](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
 
-Se você quiser fazer uma lista de reprodução para características, use o formato abaixo. Verifique se há um espaço entre o seu `TestCategory` nome e o `[Value]` .
+Se você quiser fazer uma lista de reprodução para características, use o formato a seguir para MSTest.
+```xml
+<Playlist Version="2.0">
+    <Rule Name="Includes" Match="Any">
+        <Property Name="Trait" Value="SchemaUpdateBasic" />
+    </Rule>
+</Playlist>
+```
+
+Use o formato a seguir para xUnit. Verifique se há um espaço entre o seu `TestCategory` nome e o `[Value]` .
 ```xml
 <Playlist Version="2.0">
   <Rule Name="Includes" Match="Any">
