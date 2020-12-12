@@ -1,5 +1,7 @@
 ---
 title: Validar o código com diagramas de dependência
+description: Saiba que, para garantir que o código não entre em conflito com seu design, você deve validar seu código com diagramas de dependência no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,12 +21,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 975fe8eac5657e245027a4811e50bbc93528cfe5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc8b36768cbac4249b964b167988119b5700d5c7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80759707"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362542"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validar o código com diagramas de dependência
 
@@ -42,7 +44,7 @@ Para garantir que o código não entre em conflito com seu design, valide seu c�
 
    Encontre o código ou as dependências que exijam trabalho quando você move o código para uma arquitetura diferente.
 
-**Requisitos**
+**Requirements**
 
 - Visual Studio
 
@@ -157,16 +159,16 @@ Durante o processo de desenvolvimento, você talvez queira suprimir alguns dos c
 
 #### <a name="create-a-work-item-for-a-validation-error"></a>Criar um item de trabalho para um erro de validação
 
-- Na janela **lista de erros** , clique com o botão direito do mouse no erro, aponte para **Criar item de trabalho**e clique no tipo de item de trabalho que você deseja criar.
+- Na janela **lista de erros** , clique com o botão direito do mouse no erro, aponte para **Criar item de trabalho** e clique no tipo de item de trabalho que você deseja criar.
 
 Use estas tarefas para gerenciar erros de validação na janela de **lista de erros** :
 
 |**Para**|**Siga estas etapas**|
 |-|-|
-|Suprimir erros selecionados durante a validação|Clique com o botão direito do mouse em um ou vários erros selecionados, aponte para **Gerenciar erros de validação**e clique em **suprimir erros**.<br /><br /> Os erros suprimidos são exibidos com formatação de tachado. Quando você executar a validação da próxima vez, esses erros não serão exibidos.<br /><br /> Erros suprimidos são rastreados em um arquivo. supressões para o arquivo de diagrama de dependência correspondente.|
-|Parar a supressão de erros selecionados|Clique com o botão direito do mouse no erro ou erros suprimidos selecionados, aponte para **Gerenciar erros de validação**e clique em **parar de suprimir erros**.<br /><br /> Os erros suprimidos selecionados serão exibidos quando você executar a validação na próxima vez.|
-|Restaurar todos os erros suprimidos na janela de **lista de erros**|Clique com o botão direito do mouse em qualquer lugar na janela **lista de erros** , aponte para **Gerenciar erros de validação**e clique em **Mostrar todos os erros suprimidos**.|
-|Ocultar todos os erros suprimidos da janela de **lista de erros**|Clique com o botão direito do mouse em qualquer lugar na janela **lista de erros** , aponte para **Gerenciar erros de validação**e clique em **ocultar todos os erros suprimidos**.|
+|Suprimir erros selecionados durante a validação|Clique com o botão direito do mouse em um ou vários erros selecionados, aponte para **Gerenciar erros de validação** e clique em **suprimir erros**.<br /><br /> Os erros suprimidos são exibidos com formatação de tachado. Quando você executar a validação da próxima vez, esses erros não serão exibidos.<br /><br /> Erros suprimidos são rastreados em um arquivo. supressões para o arquivo de diagrama de dependência correspondente.|
+|Parar a supressão de erros selecionados|Clique com o botão direito do mouse no erro ou erros suprimidos selecionados, aponte para **Gerenciar erros de validação** e clique em **parar de suprimir erros**.<br /><br /> Os erros suprimidos selecionados serão exibidos quando você executar a validação na próxima vez.|
+|Restaurar todos os erros suprimidos na janela de **lista de erros**|Clique com o botão direito do mouse em qualquer lugar na janela **lista de erros** , aponte para **Gerenciar erros de validação** e clique em **Mostrar todos os erros suprimidos**.|
+|Ocultar todos os erros suprimidos da janela de **lista de erros**|Clique com o botão direito do mouse em qualquer lugar na janela **lista de erros** , aponte para **Gerenciar erros de validação** e clique em **ocultar todos os erros suprimidos**.|
 
 ## <a name="validate-code-automatically"></a>Validar código automaticamente
 
@@ -234,7 +236,7 @@ A seção a seguir descreve a sintaxe usada nesses erros, explica o significado 
 | DV3001: **link ausente** | A camada '*LayerName*' vincula-se ao '*artefato*', que não foi encontrado. Você não tem uma referência de assembly? |
 | DV9001: **análise de arquitetura encontrou erros internos** | Os resultados talvez não estejam completos. Para obter mais informações, consulte o log de eventos da compilação detalhado ou a janela de saída. |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Validação de dependência ao vivo no Visual Studio](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [Validar o sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md)

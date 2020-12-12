@@ -1,5 +1,7 @@
 ---
 title: T4 Diretiva de saída
+description: Saiba que, nos modelos de texto do Visual Studio, a diretiva output é usada para definir a extensão de nome de arquivo e a codificação do arquivo transformado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9849a326549aa534d9cd558337b825b7e0b8d1f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591808"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363634"
 ---
 # <a name="t4-output-directive"></a>T4 Diretiva de saída
 

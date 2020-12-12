@@ -1,5 +1,7 @@
 ---
 title: Personalizando o armazenamento de arquivos e a serialização XML
+description: Saiba mais sobre o arquivo XML criado ou atualizado quando você salva uma instância, ou modelo, de uma DSL (linguagem específica de domínio) no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07592247e0afb870f3c4774c6f2023a6e8141cd1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e889bb81b4c13d003beb15f733d053ef159b197f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542734"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362932"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personalizar o armazenamento de arquivos e a serialização XML
 
@@ -27,7 +29,7 @@ Você pode personalizar o esquema de serialização ajustando as configurações
 Você também pode escrever o código do programa para personalização mais avançada.
 
 > [!NOTE]
-> Se você quiser salvar o modelo em um formato específico, mas não precisar recarregá-lo a partir desse formulário, considere usar modelos de texto para gerar a saída do modelo, em vez de um esquema de serialização personalizado. Para obter mais informações, consulte [gerando código de uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md).
+> Se você quiser salvar o modelo em um formato específico, mas não precisar recarregá-lo a partir desse formulário, considere usar modelos de texto para gerar a saída do modelo, em vez de um esquema de serialização personalizado. Para obter mais informações, consulte [gerando código a partir de um idioma Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ## <a name="model-and-diagram-files"></a>Arquivos de modelo e diagrama
 
@@ -138,7 +140,7 @@ Os moniker de chave qualificados são mais fáceis de ler do que os monikers de 
 
 - Set **é a chave do moniker** para uma propriedade de domínio de uma classe de domínio existente. O tipo da propriedade deve ser `string` .
 
-    1. No Gerenciador de DSL, expanda **XML serialização Behavior\Class data \\ \<the domain class> \Element data**e, em seguida, selecione a propriedade domínio.
+    1. No Gerenciador de DSL, expanda **XML serialização Behavior\Class data \\ \<the domain class> \Element data** e, em seguida, selecione a propriedade domínio.
 
     2. Na janela Propriedades, defina **é a chave do moniker** para `true` .
 
@@ -166,7 +168,7 @@ Há vários métodos que ajudam a evitar essa situação:
 
      Há um método de validação gerado automaticamente que verifica se há ambiguidades. O método está na `Load` categoria validação. Isso garante que o usuário será avisado de que talvez não seja possível reabrir o arquivo.
 
-     Para obter mais informações, consulte [validação em uma linguagem específica de domínio](../modeling/validation-in-a-domain-specific-language.md).
+     Para obter mais informações, consulte [validação em um idioma de Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
 ### <a name="moniker-paths-and-qualifiers"></a>Caminhos e qualificadores do moniker
 
@@ -230,7 +232,7 @@ Para fazer as personalizações a seguir, expanda o nó **comportamento de seria
     </familyTreeModel>
     ```
 
-- Defina **Representation**  =  o**elemento** de representação para ter uma propriedade de domínio salva como um elemento em vez de como um valor de atributo.
+- Defina   =  o **elemento** de representação para ter uma propriedade de domínio salva como um elemento em vez de como um valor de atributo.
 
     ```xml
     <person name="Elizabeth I" birthYear="1533">
@@ -304,7 +306,7 @@ Nós de dados de função são encontrados nos nós de classe de origem.
 |Nome do elemento de função|Especifica o nome do elemento XML que é derivado da função de origem. O valor padrão é o nome da propriedade de função.|
 |Usar forma completa|Se for true, cada elemento de destino ou moniker será colocado em um nó XML que representa a relação. Isso deve ser definido como true se a relação tiver suas próprias propriedades de domínio.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Gerando código a partir de uma linguagem específica do domínio](../modeling/generating-code-from-a-domain-specific-language.md)

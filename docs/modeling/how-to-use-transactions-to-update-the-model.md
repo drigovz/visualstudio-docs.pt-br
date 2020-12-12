@@ -1,5 +1,7 @@
 ---
 title: Como usar transações para atualizar o modelo
+description: Saiba que as transações verificam se as alterações feitas no repositório são tratadas como um grupo e como usar transações para atualizar o modelo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33d6c249845c72e25b7201bed5e640ff523c5d81
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69a50ebdc7fff425224a454a491f05846105159d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594598"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363829"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Como usar transações para atualizar o modelo
 As transações verificam se as alterações feitas no repositório são tratadas como um grupo. As alterações que são agrupadas podem ser confirmadas ou revertidas como uma única unidade.

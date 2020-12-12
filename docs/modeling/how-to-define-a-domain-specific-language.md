@@ -1,5 +1,7 @@
 ---
 title: Como definir uma linguagem específica do domínio
+description: Saiba como criar uma solução do Visual Studio a partir de um modelo para definir uma DSL (linguagem específica de domínio).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca9cc6b853ea95cedcb0ce109b9618fc0eb455ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40dcba1cb83e695f2b02468bdd83a5faa8c25a38
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542747"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363309"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Como definir uma linguagem específica do domínio
 Para definir uma DSL (linguagem específica de domínio), você cria uma solução do Visual Studio a partir de um modelo. A parte fundamental da solução é o diagrama de Definição de DSL, que é armazenado em DslDefinition.dsl. A Definição de DSL define as classes e formas da DSL. Depois de modificar e adicionar esses elementos, você pode adicionar o código do programa para personalizar a DSL com mais detalhes.
@@ -38,7 +40,7 @@ Para definir uma DSL, é necessário ter instalados os seguintes componentes:
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Para criar uma nova linguagem específica de domínio, você cria uma nova solução do Visual Studio usando o modelo de projeto de linguagem específica de domínio.
+Para criar uma nova linguagem específica de domínio, você cria uma nova solução do Visual Studio usando o modelo de projeto de Domain-Specific Language.
 
 ### <a name="to-create-a-dsl-solution"></a>Para criar uma solução DSL
 
@@ -66,7 +68,7 @@ Para criar uma nova linguagem específica de domínio, você cria uma nova solu�
 
    - Selecione o **idioma mínimo** em outros casos ou, se você não tiver certeza.
 
-   - Selecione o **designer do WinForm mínimo** ou o **designer do WPF mínimo** para criar uma DSL que é exibida em uma superfície do Windows Forms ou do WPF. Você precisará gravar um código para definir o editor. Para obter mais informações, consulte estes tópicos:
+   - Selecione o **designer do WinForm mínimo** ou o **designer do WPF mínimo** para criar uma DSL que é exibida em uma superfície do Windows Forms ou do WPF. Você precisará gravar um código para definir o editor. Para mais informações, consulte os seguintes tópicos:
 
         [Criando uma linguagem específica do domínio baseada no Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
 
@@ -76,7 +78,7 @@ Para criar uma nova linguagem específica de domínio, você cria uma nova solu�
 
    - Escolha uma extensão de nome de arquivo que não esteja associada a nenhum aplicativo em seu computador ou em nenhum computador que você deseja instalar a DSL. Por exemplo, **docx** e **htm** seriam extensões de nome de arquivo inaceitáveis.
 
-   - O assistente o avisará se a extensão inserida está sendo usada como uma DSL. Considere usar uma extensão de nome de arquivo diferente. Também é possível redefinir a instância Experimental do SDK do Visual Studio para limpar os designers experimentais antigos. Clique em **Iniciar**, **todos os programas**, **Microsoft Visual Studio SDK 2010**, **ferramentas**e, em seguida, **redefina a instância experimental Microsoft Visual Studio 2010**.
+   - O assistente o avisará se a extensão inserida está sendo usada como uma DSL. Considere usar uma extensão de nome de arquivo diferente. Também é possível redefinir a instância Experimental do SDK do Visual Studio para limpar os designers experimentais antigos. Clique em **Iniciar**, **todos os programas**, **Microsoft Visual Studio SDK 2010**, **ferramentas** e, em seguida, **redefina a instância experimental Microsoft Visual Studio 2010**.
 
 4. Você pode ajustar as configurações nas outras páginas ou manter os valores padrão.
 
@@ -88,7 +90,7 @@ Para criar uma nova linguagem específica de domínio, você cria uma nova solu�
 
    ![Designer de DSL](../modeling/media/dsl_designer.png)
 
-   Essa solução define uma linguagem específica de domínio. Para obter mais informações, consulte [visão geral da interface do usuário do ferramentas de linguagem específica de domínio](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
+   Essa solução define uma linguagem específica de domínio. Para obter mais informações, consulte [visão geral da interface do usuário das ferramentas de linguagem de Domain-Specific](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
 ### <a name="test-the-solution"></a>Testar a solução
  A solução de modelo fornece uma DSL de trabalho, que pode ser modificada ou usada da forma como se encontra.
@@ -115,7 +117,7 @@ Para criar uma nova linguagem específica de domínio, você cria uma nova solu�
 
 - A classe raiz aparece no canto superior esquerdo do diagrama de definição de DSL, em **classes e relações**. Renomeie-a com um nome diferente da DSL. Por exemplo, uma DSL chamada **MusicLibrary** pode ter uma classe raiz chamada **Music**.
 
-- A classe de diagrama aparece no canto inferior direito do diagrama de definição de DSL, na coluna **elementos de diagrama** . Talvez seja necessário rolar para a direita para vê-la. Normalmente, ele é chamado de**diagrama** _YourDsl_.
+- A classe de diagrama aparece no canto inferior direito do diagrama de definição de DSL, na coluna **elementos de diagrama** . Talvez seja necessário rolar para a direita para vê-la. Normalmente, ele é chamado de **diagrama** _YourDsl_.
 
 - Se você usou o modelo de **fluxo de tarefas** e deseja criar diagramas com raias, mantenha e renomeie a classe de domínio do ator e a forma ActorSwimlane.
 
@@ -216,7 +218,7 @@ Para criar uma nova linguagem específica de domínio, você cria uma nova solu�
 
 2. **Compile e execute a DSL.** Pressione F5 ou CTRL + F5 para executar uma nova instância do Visual Studio no modo experimental. Na instância experimental do Visual Studio, abra ou crie um arquivo que tenha a extensão de nome de arquivo de sua DSL.
 
-3. **Abra o Gerenciador.** No lado do diagrama está a janela Gerenciador de idiomas, que geralmente é chamada de *YourLanguage* Explorer. Se você não vir essa janela, ela pode estar em uma guia no Gerenciador de Soluções. Se você não conseguir encontrá-lo, no menu **Exibir** , aponte para **outras janelas**e clique em *YourLanguage* **Explorer**.
+3. **Abra o Gerenciador.** No lado do diagrama está a janela Gerenciador de idiomas, que geralmente é chamada de *YourLanguage* Explorer. Se você não vir essa janela, ela pode estar em uma guia no Gerenciador de Soluções. Se você não conseguir encontrá-lo, no menu **Exibir** , aponte para **outras janelas** e clique em *YourLanguage* **Explorer**.
 
      Seu gerenciador apresentará uma exibição em árvore do modelo.
 
@@ -261,13 +263,13 @@ Para criar uma nova linguagem específica de domínio, você cria uma nova solu�
 
    4. Na janela Propriedades, clique na propriedade **imagem** .
 
-   5. Na caixa de diálogo **selecionar imagem** , clique no menu suspenso em nome do **arquivo**e selecione a imagem.
+   5. Na caixa de diálogo **selecionar imagem** , clique no menu suspenso em nome do **arquivo** e selecione a imagem.
 
 4. **Adicione decoradores de texto à forma para exibir as propriedades do domínio.**
 
     Para exibir o nome ou o título do elemento de modelo, você provavelmente precisará de pelo menos um decorador de texto.
 
-    Clique com o botão direito do mouse no cabeçalho da classe Shape, aponte para **Adicionar**e clique em **decorador de texto**. Defina o nome do decorador e, na janela Propriedades defina sua **posição**.
+    Clique com o botão direito do mouse no cabeçalho da classe Shape, aponte para **Adicionar** e clique em **decorador de texto**. Defina o nome do decorador e, na janela Propriedades defina sua **posição**.
 
 5. **Conecte cada forma com um elemento de diagrama mapeado para a classe de domínio que deve ser exibida**.
 
@@ -324,7 +326,7 @@ Para criar uma nova linguagem específica de domínio, você cria uma nova solu�
 
    2. Quando você edita a propriedade na janela Propriedades ou no decorador, a outra exibição é atualizada.
 
-   Depois de testar inicialmente uma forma, talvez você queira ajustar algumas de suas propriedades e adicionar outros recursos mais avançados. Para obter mais informações, consulte [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+   Depois de testar inicialmente uma forma, talvez você queira ajustar algumas de suas propriedades e adicionar outros recursos mais avançados. Para obter mais informações, consulte [Personalizando e estendendo uma linguagem de Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 ## <a name="defining-reference-relationships"></a><a name="references"></a> Definindo relações de referência
  Você pode definir uma relação de referência entre qualquer classe de domínio de origem e qualquer classe de domínio de destino. As relações de referência são geralmente exibidas em um diagrama como conectores, que são linhas entre formas.
@@ -406,7 +408,7 @@ Para criar uma nova linguagem específica de domínio, você cria uma nova solu�
 
    2. Quando você edita a propriedade na janela Propriedades ou no decorador, a outra exibição é atualizada.
 
-   Depois de testar inicialmente um conector, talvez você queira ajustar algumas de suas propriedades e adicionar outros recursos mais avançados. Para obter mais informações, consulte [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+   Depois de testar inicialmente um conector, talvez você queira ajustar algumas de suas propriedades e adicionar outros recursos mais avançados. Para obter mais informações, consulte [Personalizando e estendendo uma linguagem de Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 ## <a name="defining-shapes-that-contain-lists-compartment-shapes"></a><a name="compartments"></a> Definindo formas que contêm listas: formas de compartimento
  Uma forma do compartimento contém uma ou mais listas de itens. Por exemplo, em uma DSL de Biblioteca de Músicas, você poderia usar formas do compartimento para representar os Álbuns de música. Em cada Álbum, há uma lista de Canções.
@@ -445,7 +447,7 @@ Para criar uma nova linguagem específica de domínio, você cria uma nova solu�
 
      Adicione um compartimento e defina seu nome.
 
-5. Para permitir que o usuário oculte os compartimentos de lista, clique com o botão direito do mouse na classe de forma do compartimento, aponte para **Adicionar**e clique em **expandir/recolher decorador**. Na janela Propriedades, configure a posição do decorador.
+5. Para permitir que o usuário oculte os compartimentos de lista, clique com o botão direito do mouse na classe de forma do compartimento, aponte para **Adicionar** e clique em **expandir/recolher decorador**. Na janela Propriedades, configure a posição do decorador.
 
 6. Clique na ferramenta **mapa de elementos de diagrama** , clique na classe de domínio de contêiner e, em seguida, clique na forma de compartimento.
 
@@ -507,7 +509,7 @@ Para criar uma nova linguagem específica de domínio, você cria uma nova solu�
 
    ![Gerenciador de DSL gerado](../modeling/media/music_explorer.png)
 
-   Depois de testar inicialmente uma forma do compartimento, talvez você queira ajustar algumas de suas propriedades e adicionar outros recursos mais avançados. Para obter mais informações, consulte [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+   Depois de testar inicialmente uma forma do compartimento, talvez você queira ajustar algumas de suas propriedades e adicionar outros recursos mais avançados. Para obter mais informações, consulte [Personalizando e estendendo uma linguagem de Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 ### <a name="displaying-a-reference-link-in-a-compartment"></a>Exibindo um vínculo de referência em um compartimento
  Geralmente, um elemento que você exibe em um compartimento é um filho do elemento que é representado pela forma do compartimento. No entanto, algumas vezes, você pode desejar exibir um elemento que esteja vinculado a ele com uma relação de referência.
@@ -522,7 +524,7 @@ Para criar uma nova linguagem específica de domínio, você cria uma nova solu�
 
 ##### <a name="to-display-a-reference-link-in-a-compartment"></a>Para exibir um vínculo de referência em um compartimento
 
-1. **Adicione um compartimento à forma de compartimento**. No diagrama de definição de DSL, clique com o botão direito do mouse na classe forma do compartimento, aponte para **Adicionar**e clique em **compartimento**.
+1. **Adicione um compartimento à forma de compartimento**. No diagrama de definição de DSL, clique com o botão direito do mouse na classe forma do compartimento, aponte para **Adicionar** e clique em **compartimento**.
 
 2. Defina o **caminho da coleção de elementos exibidos** para navegar até o link, em vez de seu elemento de destino. Clique no menu suspenso e use a exibição em árvore para selecionar a relação de referência em vez de seu destino. No exemplo, a relação é **ArtistAppearedOnAlbums**.
 
@@ -593,9 +595,9 @@ Para criar uma nova linguagem específica de domínio, você cria uma nova solu�
 
 1. Ajuste a DSL usando mais recursos da Definição de DSL. Por exemplo, você pode criar uma única ferramenta de conector capaz de criar vários tipos de conectores e você pode controlar as regras com as quais a exclusão de um elemento também exclui elementos relacionados. Essas técnicas são obtidas, em sua maioria, ao configurar valores na Definição de DSL, e alguns deles necessitam de algumas linhas do código do programa.
 
-     Para obter mais informações, consulte [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+     Para obter mais informações, consulte [Personalizando e estendendo uma linguagem de Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-2. Estenda suas ferramentas de modelagem usando o código do programa para obter efeitos mais avançados. Por exemplo, você pode criar comandos de menu que alteram o modelo e você pode criar ferramentas que integram duas ou mais DSLs. O VMSDK foi projetado especificamente para facilitar a integração de suas extensões com o código gerado a partir da Definição de DSL.  Para obter mais informações, consulte [escrevendo código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+2. Estenda suas ferramentas de modelagem usando o código do programa para obter efeitos mais avançados. Por exemplo, você pode criar comandos de menu que alteram o modelo e você pode criar ferramentas que integram duas ou mais DSLs. O VMSDK foi projetado especificamente para facilitar a integração de suas extensões com o código gerado a partir da Definição de DSL.  Para obter mais informações, consulte [escrevendo código para personalizar um idioma de Domain-Specific](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 ### <a name="changing-the-dsl-definition"></a>Alterando a definição de DSL
  Ao criar qualquer item em uma definição de DSL, diversos valores padrão são configurados automaticamente. Depois de configurados, você poderá alterá-los. Isso simplifica o desenvolvimento de uma DSL e ainda permite personalizações avançadas.
@@ -604,7 +606,7 @@ Para criar uma nova linguagem específica de domínio, você cria uma nova solu�
 
  Você deve, portanto, estar ciente de que ao alterar algumas relações em sua Definição de DSL, não é incomum que erros sejam relatados ao salvar a definição ou ao Transformar Todos os Modelos. A maioria dos erros é fácil de corrigir. Clique duas vezes no relatório de erros para ver o local do erro.
 
- Consulte também [como: alterar o namespace de uma linguagem específica de domínio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
+ Consulte também [como alterar o namespace de um idioma de Domain-Specific](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="troubleshooting"></a><a name="trouble"></a> Solução de problemas
  A tabela a seguir lista alguns dos problemas mais comuns encontrados ao projetar uma DSL, junto com as sugestões para sua solução. Mais conselhos estão disponíveis no [Fórum de extensibilidade das ferramentas de visualização](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
@@ -612,15 +614,15 @@ Para criar uma nova linguagem específica de domínio, você cria uma nova solu�
 | Problema | Sugestão |
 |-|-|
 | As alterações feitas no arquivo de Definição de DSL não surtiram efeito. | Clique em **transformar todos os modelos** na barra de ferramentas acima Gerenciador de soluções e recompile a solução. |
-| As formas mostram o nome de um decorador em vez do valor de propriedade. | Configure o mapeamento do decorador. No diagrama de Definição de DSL, clique no mapa do elemento do diagrama, que é a linha cinza entre a classe de domínio e a classe de forma.<br /><br /> Abra a janela **detalhes de DSL** . Se você não puder vê-lo, no menu Exibir, aponte para **outras janelas**e clique em **detalhes de DSL**.<br /><br /> Clique na guia **mapas de decoradores** . Selecione o nome do decorador. Certifique-se de que a caixa ao lado esteja marcada. Em **Exibir Propriedade**, selecione o nome de uma propriedade de domínio.<br /><br /> Para obter mais informações, consulte [formas no diagrama](#shapes). |
+| As formas mostram o nome de um decorador em vez do valor de propriedade. | Configure o mapeamento do decorador. No diagrama de Definição de DSL, clique no mapa do elemento do diagrama, que é a linha cinza entre a classe de domínio e a classe de forma.<br /><br /> Abra a janela **detalhes de DSL** . Se você não puder vê-lo, no menu Exibir, aponte para **outras janelas** e clique em **detalhes de DSL**.<br /><br /> Clique na guia **mapas de decoradores** . Selecione o nome do decorador. Certifique-se de que a caixa ao lado esteja marcada. Em **Exibir Propriedade**, selecione o nome de uma propriedade de domínio.<br /><br /> Para obter mais informações, consulte [formas no diagrama](#shapes). |
 | Não consigo adicionar uma coleção no Gerenciador de DSL. Por exemplo, quando clico com o botão direito do mouse em Ferramentas, não encontro o comando "Adicionar Ferramenta" no menu.<br /><br /> No gerenciador de minha DSL, não consigo adicionar um elemento à lista. | Clique com o botão direito do mouse no item acima do nó ao qual você está tentando adicionar elementos. Quando desejar adicionar elementos a uma lista, o comando Adicionar não estará no nó da lista, mas em seu proprietário. |
 | Criei uma classe de domínio, mas não consigo criar instâncias no gerenciador de linguagens. | Cada classe de domínio, exceto a raiz, deve ser o destino de uma relação de incorporação. |
 | No gerenciador de minha DSL, os elementos são mostrados somente com seus nomes de tipos. | Na definição de DSL, selecione uma propriedade de domínio da classe e, na janela Propriedades, defina **é o nome do elemento** como verdadeiro. |
 | Minha DSL sempre é aberta no editor XML. | Isso pode ocorrer em função de um erro durante a leitura do arquivo. No entanto, mesmo após a correção desse erro, você deve redefinir explicitamente o editor para que seja o designer de DSL.<br /><br /> Clique com o botão direito do mouse no item de projeto, clique em **abrir com** e selecione * YourLanguage ***Designer (padrão)**. |
-| A caixa de ferramentas de minha DSL não aparece após a mudança de nomes do assembly. | Inspecione e atualize o **DslPackage\GeneratedCode\Package.tt** para obter mais informações, consulte [como alterar o namespace de uma linguagem específica de domínio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
-| A caixa de ferramentas de minha DSL não aparece, mas não alterei o nome do assembly.<br /><br /> Ou, uma caixa de mensagens aparece relatando a falha ao carregar uma extensão. | Redefina a instância experimental e recompile sua solução.<br /><br /> 1. no menu Iniciar do Windows, em **todos os programas**, expanda [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] , depois em **ferramentas**e clique em **redefinir a instância experimental Microsoft Visual Studio**.<br />2. no menu **Compilar** , clique em **Recompilar solução**. |
+| A caixa de ferramentas de minha DSL não aparece após a mudança de nomes do assembly. | Inspecione e atualize o **DslPackage\GeneratedCode\Package.tt** para obter mais informações, consulte [como alterar o namespace de um idioma de Domain-Specific](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
+| A caixa de ferramentas de minha DSL não aparece, mas não alterei o nome do assembly.<br /><br /> Ou, uma caixa de mensagens aparece relatando a falha ao carregar uma extensão. | Redefina a instância experimental e recompile sua solução.<br /><br /> 1. no menu Iniciar do Windows, em **todos os programas**, expanda [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] , depois em **ferramentas** e clique em **redefinir a instância experimental Microsoft Visual Studio**.<br />2. no menu **Compilar** , clique em **Recompilar solução**. |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Introdução às linguagens específicas do domínio](../modeling/getting-started-with-domain-specific-languages.md)
 - [Criando uma linguagem específica do domínio baseada no Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)

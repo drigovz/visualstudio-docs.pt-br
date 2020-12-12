@@ -1,5 +1,7 @@
 ---
 title: Regras propagam alterações dentro do modelo
+description: Saiba como você pode criar uma regra de repositório para propagar uma alteração de um elemento para outro no SDK de modelagem e visualização (VMSDK).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2050fe0ea2d1a9bb0bf278c13c2beb587412c643
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4ff2273c8c71582c3ef634eeb398b12e29401d0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542552"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363946"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Regras propagam alterações dentro do modelo
 Você pode criar uma regra de repositório para propagar uma alteração de um elemento para outro no SDK de modelagem e visualização (VMSDK). Quando ocorre uma alteração em qualquer elemento da loja, as regras são agendadas para serem executadas, geralmente quando a transação mais externa é confirmada. Há diferentes tipos de regras para diferentes tipos de eventos, como adicionar um elemento ou excluí-lo. Você pode anexar regras a tipos específicos de elementos, formas ou diagramas. Muitos recursos internos são definidos por regras: por exemplo, as regras garantem que um diagrama seja atualizado quando o modelo for alterado. Você pode personalizar sua linguagem específica de domínio adicionando suas próprias regras.
@@ -207,6 +209,6 @@ namespace Company.TaskRuleExample
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Manipuladores de eventos propagam alterações fora do modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md)

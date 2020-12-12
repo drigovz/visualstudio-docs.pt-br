@@ -1,5 +1,7 @@
 ---
 title: Estruturar a solução de modelagem
+description: Aprenda um esquema de modelagem para dividir o aplicativo em diferentes partes que correspondem às camadas em um diagrama de camadas geral.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc4eba7dc4d185cbd8eb4f1b073fce8b0c9fb07e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d2f865cf66da0bb4496a3d754a49d1f4dcc70ff
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545035"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363725"
 ---
 # <a name="structure-your-modeling-solution"></a>Estruturar a solução de modelagem
 
@@ -72,9 +74,9 @@ Em um projeto médio ou grande, a estrutura da equipe é baseada na estrutura do
 
 #### <a name="use-a-separate-package-for-each-layer"></a>Usar um pacote separado para cada camada
 
-1. Na solução para cada camada, adicione o projeto de modelagem de arquitetura. Em **Gerenciador de soluções**, clique com o botão direito do mouse no nó da solução, aponte para **Adicionar**e clique em **projeto existente**. O único projeto de modelagem agora pode ser acessado a partir de cada solução: o projeto de arquitetura e o projeto de desenvolvimento para cada camada.
+1. Na solução para cada camada, adicione o projeto de modelagem de arquitetura. Em **Gerenciador de soluções**, clique com o botão direito do mouse no nó da solução, aponte para **Adicionar** e clique em **projeto existente**. O único projeto de modelagem agora pode ser acessado a partir de cada solução: o projeto de arquitetura e o projeto de desenvolvimento para cada camada.
 
-2. No modelo compartilhado, crie um pacote para cada camada: em **Gerenciador de soluções**, selecione o projeto de modelagem. No **Gerenciador de modelos UML**, clique com o botão direito do mouse no nó raiz do modelo, aponte para **Adicionar**e clique em **pacote**.
+2. No modelo compartilhado, crie um pacote para cada camada: em **Gerenciador de soluções**, selecione o projeto de modelagem. No **Gerenciador de modelos UML**, clique com o botão direito do mouse no nó raiz do modelo, aponte para **Adicionar** e clique em **pacote**.
 
    Cada pacote conterá diagramas que descrevem os requisitos e o design da camada correspondente.
 
@@ -106,7 +108,7 @@ Por exemplo, se você usa com frequência as soluções que têm camadas de apre
 
 [Organizar e gerenciar seus modelos](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)
 - [Orientação de ferramentas de arquitetura do Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)

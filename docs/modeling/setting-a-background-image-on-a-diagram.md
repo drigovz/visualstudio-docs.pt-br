@@ -1,5 +1,7 @@
 ---
 title: Definindo uma imagem de plano de fundo em um diagrama
+description: Saiba que, no SDK de visualização e modelagem do Visual Studio, você pode definir a imagem de plano de fundo para um designer gerado usando código personalizado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7701bf0ba1467b481f6da64d3c2e229be77a7fe7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f99ce329d4b88037901db2336076bb1d12d411f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542578"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363777"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Definindo uma imagem de plano de fundo em um diagrama
 No SDK de visualização e modelagem do Visual Studio, você pode definir a imagem de plano de fundo para um designer gerado usando código personalizado.
@@ -23,7 +25,7 @@ No SDK de visualização e modelagem do Visual Studio, você pode definir a imag
 
 1. Copie o arquivo de imagem que você deseja usar como plano de fundo do diagrama no diretório Dsl\Resources do projeto atual.
 
-2. Em **Gerenciador de soluções**, clique com o botão direito do mouse na pasta Dsl\Resources, aponte para **Adicionar**e clique em **Item existente**.
+2. Em **Gerenciador de soluções**, clique com o botão direito do mouse na pasta Dsl\Resources, aponte para **Adicionar** e clique em **Item existente**.
 
 3. Na caixa de diálogo **Adicionar item existente** , navegue até a pasta Dsl\Resources.
 
@@ -45,11 +47,11 @@ No SDK de visualização e modelagem do Visual Studio, você pode definir a imag
 
 12. Na janela **Propriedades** , defina a `Custom Tool` propriedade como `ResXFileCodeGenerator` .
 
-13. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto DSL, aponte para **Adicionar**e clique em **nova pasta**.
+13. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto DSL, aponte para **Adicionar** e clique em **nova pasta**.
 
 14. Nomeie a pasta como **personalizada**.
 
-15. Clique com o botão direito do mouse na pasta personalizada, aponte para **Adicionar**e clique em **novo item**.
+15. Clique com o botão direito do mouse na pasta personalizada, aponte para **Adicionar** e clique em **novo item**.
 
 16. Na caixa de diálogo **Adicionar novo item** , na lista **modelos** , clique em **arquivo de código**.
 
@@ -100,7 +102,7 @@ No SDK de visualização e modelagem do Visual Studio, você pode definir a imag
 
      Para obter mais informações sobre como personalizar o modelo com o código do programa, consulte [navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Definindo formas e conectores](../modeling/defining-shapes-and-connectors.md)
 - [Personalizando campos de texto e imagem](../modeling/customizing-text-and-image-fields.md)

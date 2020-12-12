@@ -1,5 +1,7 @@
 ---
 title: Como ... com modelos de texto
+description: Saiba mais sobre as respostas a perguntas comuns encontradas ao usar modelos de texto para gerar texto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ecabc00f37cb199f203bcd71a1b72bdbfbe1a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50844ce8c6943fcf6b2a0b91c7fd2cfcb6184094
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594650"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363179"
 ---
 # <a name="how-to--with-text-templates"></a>Como ... com modelos de texto
 Os modelos de texto no Visual Studio fornecem uma maneira útil de gerar texto de qualquer tipo. Você pode usar modelos de texto para gerar texto em tempo de execução como parte de seu aplicativo e em tempo de design para gerar parte do código do projeto. Este tópico resume as perguntas mais frequentes sobre "Como fazer...?" dúvidas.
@@ -75,7 +77,7 @@ Se você estiver escrevendo os métodos por conta própria:
 
      `foreach (Book book in this.Library) { ... }`
 
-     Para obter mais informações, consulte [introdução com linguagens específicas de domínio](../modeling/getting-started-with-domain-specific-languages.md) e [gerando código de uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md).
+     Para obter mais informações, consulte [introdução com Domain-Specific linguagens](../modeling/getting-started-with-domain-specific-languages.md) e [gerando código de um idioma Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="get-data-from-visual-studio"></a>Obter dados do Visual Studio
  Para usar os serviços fornecidos no Visual Studio, defina o `hostSpecific` atributo e carregue o `EnvDTE` assembly. Por exemplo:

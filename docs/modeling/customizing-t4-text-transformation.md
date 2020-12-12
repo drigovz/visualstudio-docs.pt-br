@@ -1,5 +1,7 @@
 ---
 title: Personalizando transformação de texto T4
+description: Saiba como você pode estender o processo de transformação de modelo padrão Personalizando o processador de diretiva de modelo de texto ou o host de modelo de texto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e35c279f397f1228c17fb6a41a18a2fe583ab88
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b168e0e66b7704c3e78a241f76ee4122278c9ed
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589728"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362906"
 ---
 # <a name="customize-t4-text-transformation"></a>Personalizar a transformação de texto T4
 

@@ -1,5 +1,7 @@
 ---
 title: Mapear métodos na pilha de chamadas ao depurar
+description: Saiba como criar um mapa de código para rastrear visualmente a pilha de chamadas enquanto você estiver depurando. Além disso, saiba que você pode fazer anotações no mapa para controlar o que o código está fazendo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -28,12 +30,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1638b16eea9bfa20962359f0b63a7415915d0fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b3d5c531400ddd88cea17b9172f19bf9711105d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532698"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362425"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapear métodos na pilha de chamadas ao depurar no Visual Studio
 
@@ -200,7 +202,7 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
 
 - [Localizar bugs usando o mapa](#FindBugs)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)
 - [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)

@@ -1,5 +1,7 @@
 ---
 title: Personalizando o Gerenciador de Modelos
+description: Saiba como você pode alterar a aparência e o comportamento do Gerenciador para seu designer de linguagem específica de domínio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b69748ef44ce0ca2e16f431c0d13d99bfa449411
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7d4bdfcea6cbc54fd620e9aacbdc6250493ca426
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807866"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362884"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizando o Gerenciador de Modelos
 Você pode alterar a aparência e o comportamento do Gerenciador para o designer de linguagem específica do domínio da seguinte maneira:
@@ -30,7 +32,7 @@ Você pode alterar a aparência e o comportamento do Gerenciador para o designer
 - Ocultar nós.
 
 ## <a name="changing-the-window-title"></a>Alterando o título da janela
- Para alterar o título da janela do Gerenciador gerado, selecione o **comportamento do Explorer** no Gerenciador de **DSL**e, em seguida, na janela **Propriedades** , defina a propriedade **título** como o título desejado.
+ Para alterar o título da janela do Gerenciador gerado, selecione o **comportamento do Explorer** no Gerenciador de **DSL** e, em seguida, na janela **Propriedades** , defina a propriedade **título** como o título desejado.
 
 ## <a name="changing-the-tab-icon"></a>Alterando o ícone de guia
  Para alterar o ícone de guia do Gerenciador, use um ícone de 16x16 pixels em um arquivo. bmp. Coloque o arquivo de ícone na pasta \DslPackage\Resources\ e altere o nome do arquivo para **ModelExplorerToolWindowBitmaps.bmp**. Por exemplo, você pode alterar o arquivo de ícone Setup. ico do Visual Studio para o formato. bmp e renomeá-lo como **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. O designer gerado exibirá esse ícone na guia do seu Explorer quando ele estiver encaixado junto com **Gerenciador de soluções**.
@@ -48,7 +50,7 @@ Você pode alterar a aparência e o comportamento do Gerenciador para o designer
 
     Um nó **ExplorerNodeSettings** aparece sob o nó **configurações personalizadas do nó** .
 
-4. Selecione **ExplorerNodeSettings**e, em seguida, na janela **Propriedades** , defina **classe** como **ator**.
+4. Selecione **ExplorerNodeSettings** e, em seguida, na janela **Propriedades** , defina **classe** como **ator**.
 
 5. Defina o **ícone para exibir** para o caminho do arquivo de ícone.
 
@@ -68,19 +70,19 @@ Você pode alterar a aparência e o comportamento do Gerenciador para o designer
 
 1. Abra a solução que você criou no procedimento anterior.
 
-2. Certifique-se de que o **Comentário** referencie apenas uma única classe de domínio definindo a multiplicidade da função com o nome da propriedade **Subjects** como 0.. 1. O nome da propriedade deve se tornar **sujeito**e o nome da relação deve se tornar **CommentReferencesSubject**.
+2. Certifique-se de que o **Comentário** referencie apenas uma única classe de domínio definindo a multiplicidade da função com o nome da propriedade **Subjects** como 0.. 1. O nome da propriedade deve se tornar **sujeito** e o nome da relação deve se tornar **CommentReferencesSubject**.
 
 3. No **Gerenciador de DSL**, clique com o botão direito do mouse em **comportamento do Explorer** e clique em **adicionar novas configurações de nó do Explorer**.
 
      Um nó **ExplorerNodeSettings** aparece sob o nó **configurações personalizadas do nó** .
 
-4. Selecione **ExplorerNodeSettings**e, em seguida, na janela **Propriedades** , defina **classe** como **Comentário**.
+4. Selecione **ExplorerNodeSettings** e, em seguida, na janela **Propriedades** , defina **classe** como **Comentário**.
 
 5. Clique com o botão direito do mouse no nó de **Comentário** e clique em **Adicionar novo caminho de propriedade**.
 
      Um novo nó aparece com a **propriedade nomeada exibida**.
 
-6. Selecione a **propriedade exibida**e, em seguida, na janela **Propriedades** , clique no campo valor de **caminho para Propriedade**. Selecione **Comentário**, depois **CommentReferencesSubject**, **fluxoelement**. O caminho resultante deve ser semelhante a **CommentReferencesSubject. Subject/! Assunto**.
+6. Selecione a **propriedade exibida** e, em seguida, na janela **Propriedades** , clique no campo valor de **caminho para Propriedade**. Selecione **Comentário**, depois **CommentReferencesSubject**, **fluxoelement**. O caminho resultante deve ser semelhante a **CommentReferencesSubject. Subject/! Assunto**.
 
 7. No campo valor da **Propriedade**, selecione **nome**.
 
@@ -103,7 +105,7 @@ Você pode alterar a aparência e o comportamento do Gerenciador para o designer
 
      Um nó de **caminho de domínio** aparece sob **nós ocultos**.
 
-3. Selecione **caminho do domínio**e, na janela **Propriedades** , clique no campo valor da **definição do caminho**. Selecione **grafos**, em seguida, **FlowGraphHasComments**. O caminho resultante deve ser semelhante a **FlowGraphHasComments. Comments**
+3. Selecione **caminho do domínio** e, na janela **Propriedades** , clique no campo valor da **definição do caminho**. Selecione **grafos**, em seguida, **FlowGraphHasComments**. O caminho resultante deve ser semelhante a **FlowGraphHasComments. Comments**
 
 4. Transforme todos os modelos e, em seguida, compile e execute sua solução.
 
@@ -111,6 +113,6 @@ Você pode alterar a aparência e o comportamento do Gerenciador para o designer
 
      O Gerenciador deve mostrar apenas um nó **atores** e não deve mostrar o nó de **comentários** .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

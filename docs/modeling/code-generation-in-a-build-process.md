@@ -1,5 +1,7 @@
 ---
 title: Geração de código em um processo de compilação
+description: Saiba como a transformação de texto pode ser chamada como parte do processo de compilação de uma solução do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: af0039fb8c945062bc19fa647b477c40c44d5346
-ms.sourcegitcommit: a876fcc75321f9c30729121cae83f400973f9d9d
+ms.openlocfilehash: 3000a02621f7e2c274522a199cfe499e2335c4c2
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92298200"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363556"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Invocar a transformação de texto no processo de compilação
 
@@ -299,7 +301,7 @@ Se você atualizar um arquivo incluído ou outro arquivo lido pelo modelo, o Vis
 
 - Os [modelos de texto de tempo de execução](../modeling/run-time-text-generation-with-t4-text-templates.md) são transformados em tempo de execução em seu aplicativo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 ::: moniker range="vs-2017"
 

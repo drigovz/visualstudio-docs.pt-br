@@ -1,5 +1,7 @@
 ---
 title: Modelos de compartilhamento e diagramas de exportação
+description: Saiba como você pode usar o Visual Studio para criar e editar modelos, diagramas de dependência e grafos direcionados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2347ad9f01634fe7fee243a7d5e1a24a6d9ba3b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecf972974ff2c84cb47cd93d944aced4758d1cb7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591912"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363738"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Modelos de compartilhamento e diagramas de exportação
 No Visual Studio, você pode compartilhar modelos e diagramas com colegas de várias maneiras.
@@ -41,7 +43,7 @@ No Visual Studio, você pode compartilhar modelos e diagramas com colegas de vá
 
  Para obter mais informações, consulte [exportar diagramas como imagens](../modeling/export-diagrams-as-images.md).
 
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 |Título|Descrição|
 |-|-|
@@ -49,6 +51,6 @@ No Visual Studio, você pode compartilhar modelos e diagramas com colegas de vá
 |[Exportar diagramas como imagens](../modeling/export-diagrams-as-images.md)|Você pode copiar partes de diagramas em aplicativos como o PowerPoint ou o Word, ou imprimir um diagrama em um arquivo XPS.|
 |[Análise e modelagem de arquitetura](../modeling/analyze-and-model-your-architecture.md)|Visão geral de modelos e diagramas.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)

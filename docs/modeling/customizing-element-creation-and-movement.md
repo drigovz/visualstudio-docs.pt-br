@@ -1,5 +1,7 @@
 ---
 title: Personalizando a criação e o movimento de elementos
+description: Saiba como você pode permitir que um elemento seja arrastado para outro, seja na caixa de ferramentas ou em uma operação de colar ou mover.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a94f1e3321d846578ea42c69e50d48713ff618fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96ef956980b08e688970ad0a00d7d1a0804da7c3
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547258"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363114"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizando a criação e o movimento de elementos
 
@@ -300,7 +302,7 @@ Você pode criar uma diretiva de mesclagem direta na solução de modelo de comp
 
 7. Selecione **encaminhar mesclagem para uma classe de domínio diferente**.
 
-8. Na lista seleção de caminho, expanda **ComponentPort**, expanda **ComponentHasPorts**e selecione **componente**.
+8. Na lista seleção de caminho, expanda **ComponentPort**, expanda **ComponentHasPorts** e selecione **componente**.
 
     O novo caminho deve ser semelhante a este:
 
@@ -316,7 +318,7 @@ Você pode criar uma diretiva de mesclagem direta na solução de modelo de comp
 
      Você não verá o ponteiro indisponível e poderá descartar a nova **porta de entrada** no existente. Selecione a nova **porta de entrada** e arraste-a para outro ponto no **componente**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Personalizando ferramentas e a caixa de ferramentas](../modeling/customizing-tools-and-the-toolbox.md)

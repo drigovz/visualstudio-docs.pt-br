@@ -1,5 +1,7 @@
 ---
 title: Visualizar código
+description: Saiba como você pode usar as ferramentas de visualização e modelagem no Visual Studio para entender o código existente e descrever seu aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9886ea905a4997d5735e4dd2cabbfc4798a5c4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b522ae21de3d0ea115bc83446f0585e1dc9ab1e7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535870"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362503"
 ---
 # <a name="visualize-code"></a>Visualizar código
 
@@ -40,7 +42,7 @@ Para ver quais edições do Visual Studio oferecem suporte a cada recurso, consu
 |**Entenda as estruturas de classe:**<br /><br /> Visualize a estrutura de classes em um projeto Criando diagramas de classe do código.|[Como adicionar diagramas de classe a projetos (Designer de Classe)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)|
 |**Descreva o design do sistema de alto nível e valide o código em relação a este design:**<br /><br /> Descreva o design do sistema de alto nível e suas dependências pretendidas Criando diagramas de dependência. Valide o código em relação a esse design para garantir que as dependências no código permaneçam consistentes com o design.|- [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)<br />- [Validar o código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Cenário: alterar o design usando visualização e modelagem](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)
 - [Analisar e modelar a arquitetura](../modeling/analyze-and-model-your-architecture.md)

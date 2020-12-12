@@ -1,5 +1,7 @@
 ---
 title: Criar diagramas de dependência do código
+description: Saiba como você pode criar um diagrama de dependência no Visual Studio para visualizar a arquitetura lógica de alto nível do sistema de software.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 463e73a989deecf90e6bbfb7e8b92409b15695a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea19089fe8660b1169d790e25ed7ccf845404238
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545724"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363517"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Criar diagramas de dependência do código
 
@@ -51,7 +53,7 @@ Antes de criar um diagrama de dependência, verifique se sua solução tem um pr
 
 4. Em **Adicionar ao projeto de modelagem**, navegue até e selecione um projeto de modelagem existente em sua solução.
 
-     - ou -
+     -ou-
 
      Escolha **criar um novo projeto de modelagem** para adicionar um novo projeto de modelagem à solução.
 
@@ -70,7 +72,7 @@ Antes de criar um diagrama de dependência, verifique se sua solução tem um pr
 
 4. Criar um novo diagrama de dependência para a solução usando o menu **arquitetura**
 
-5. Selecione todos os nós no mapa de códigos (use _Ctrl_  +  _a_ou use a seleção de banda de borracha pressionando a tecla _Shift_ antes de clicar, arrastar e liberar.
+5. Selecione todos os nós no mapa de códigos (use _Ctrl_  +  _a_ ou use a seleção de banda de borracha pressionando a tecla _Shift_ antes de clicar, arrastar e liberar.
 
 6. Arrastar e soltar, ou copiar e colar, os elementos selecionados para o novo diagrama de validação de dependência.
 
@@ -91,8 +93,8 @@ Antes de criar um diagrama de dependência, verifique se sua solução tem um pr
 |Criar uma única camada para todos os artefatos selecionados|Arraste todos os artefatos para o diagrama de dependência ao mesmo tempo.<br /><br /> Uma camada é exibida no diagrama e está vinculada a todos os artefatos.|
 |Criar uma camada para cada artefato selecionado|Pressione e segure a tecla **Shift** enquanto arrasta todos os artefatos para o diagrama de dependência ao mesmo tempo. **Observação:**  Se você usar a tecla **Shift** para selecionar um intervalo de itens, libere a chave depois de selecionar os artefatos. Mantenha-o pressionado novamente ao arrastar os artefatos para o diagrama. <br /><br /> Uma camada para cada artefato é exibida no diagrama e está vinculada a cada artefato.|
 |Adicionar um artefato a uma camada|Arraste o artefato à camada.|
-|Criar uma nova camada desvinculada|Na **caixa de ferramentas**, expanda a seção **diagrama de dependência** e arraste uma **camada** para o diagrama de dependência.<br /><br /> Para adicionar várias camadas, clique duas vezes na ferramenta. Quando tiver terminado, escolha a ferramenta **ponteiro** ou pressione a tecla **ESC** .<br /><br /> - ou -<br /><br /> Abra o menu de atalho para o diagrama de dependência, escolha **Adicionar**e, em seguida, escolha **camada**.|
-|Criar camadas aninhadas|Arraste uma camada existente para outra camada.<br /><br /> - ou -<br /><br /> Abra o menu de atalho para uma camada, escolha **Adicionar**e, em seguida, escolha **camada**.|
+|Criar uma nova camada desvinculada|Na **caixa de ferramentas**, expanda a seção **diagrama de dependência** e arraste uma **camada** para o diagrama de dependência.<br /><br /> Para adicionar várias camadas, clique duas vezes na ferramenta. Quando tiver terminado, escolha a ferramenta **ponteiro** ou pressione a tecla **ESC** .<br /><br /> - ou -<br /><br /> Abra o menu de atalho para o diagrama de dependência, escolha **Adicionar** e, em seguida, escolha **camada**.|
+|Criar camadas aninhadas|Arraste uma camada existente para outra camada.<br /><br /> - ou -<br /><br /> Abra o menu de atalho para uma camada, escolha **Adicionar** e, em seguida, escolha **camada**.|
 |Criar uma nova camada que contém duas ou mais camadas existentes|Selecione as camadas, abra o menu de atalho para sua seleção e escolha **grupo**.|
 |Alterar a cor de uma camada|Defina sua propriedade **Color** para a cor desejada.|
 |Especificar que os artefatos associados a uma camada não devem pertencer aos namespaces especificados|Digite os namespaces na propriedade de **namespaces proibidos** da camada. Use um ponto-e-vírgula (**;**) para separar os namespaces.|
@@ -156,7 +158,7 @@ Antes de criar um diagrama de dependência, verifique se sua solução tem um pr
 
 - [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Suporte de edição para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Vídeo: valide suas dependências de arquitetura em tempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

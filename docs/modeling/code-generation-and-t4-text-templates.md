@@ -1,5 +1,7 @@
 ---
 title: Geração de código e modelos de texto T4
+description: Saiba como um modelo de texto T4 é uma mistura de blocos de texto e lógica de controle que pode gerar um arquivo de texto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbcd41461ab57e3bbb5fb48849ddde8593c587fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 871aa20fe4fc95ea1641b7f478cb9b01d71284aa
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548233"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363569"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Geração de código e modelos de texto T4
 
@@ -56,7 +58,7 @@ Para obter mais informações, consulte [geração de texto em tempo de execuç�
 
 ## <a name="design-time-t4-text-templates"></a>Modelos de texto T4 de tempo de design
 
-Os modelos de tempo de design definem parte do código-fonte e outros recursos do seu aplicativo. Normalmente, você usa vários modelos que lêem os dados em um único arquivo de entrada ou banco de dado e geram alguns dos seus arquivos *. cs*, *. vb*ou outros. Cada modelo gera um arquivo. Eles são executados dentro do Visual Studio ou do MSBuild.
+Os modelos de tempo de design definem parte do código-fonte e outros recursos do seu aplicativo. Normalmente, você usa vários modelos que lêem os dados em um único arquivo de entrada ou banco de dado e geram alguns dos seus arquivos *. cs*, *. vb* ou outros. Cada modelo gera um arquivo. Eles são executados dentro do Visual Studio ou do MSBuild.
 
 Por exemplo, os dados de entrada podem ser um arquivo XML de dados de configuração. Sempre que você editar o arquivo XML durante o desenvolvimento, os modelos de texto regenerarão parte do código do aplicativo. Um dos modelos pode ser semelhante ao exemplo a seguir:
 
@@ -90,10 +92,10 @@ Para criar um modelo de tempo de design, adicione um arquivo de **modelo de text
 Para obter mais informações, consulte [geração de código em tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Para obter mais informações sobre a sintaxe de modelos, consulte [escrevendo um modelo de texto T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
-> O termo *modelo* é, às vezes, usado para descrever os dados lidos por um ou mais modelos. O modelo pode estar em qualquer formato, em qualquer tipo de arquivo ou banco de dados. Ele não precisa ser um modelo UML ou um modelo de linguagem específico de domínio. ' Model ' indica apenas que os dados podem ser definidos em termos dos conceitos comerciais, em vez de se lembrar do código.
+> O termo *modelo* é, às vezes, usado para descrever os dados lidos por um ou mais modelos. O modelo pode estar em qualquer formato, em qualquer tipo de arquivo ou banco de dados. Não precisa ser um modelo UML ou um modelo de linguagem Domain-Specific. ' Model ' indica apenas que os dados podem ser definidos em termos dos conceitos comerciais, em vez de se lembrar do código.
 
 O recurso de transformação de modelo de texto se chama *T4*.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Gerar código com base em uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)

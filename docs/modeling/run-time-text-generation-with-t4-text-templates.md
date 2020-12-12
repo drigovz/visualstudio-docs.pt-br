@@ -1,5 +1,7 @@
 ---
 title: Geração de texto de tempo de execução com modelos de texto T4
+description: Saiba como você pode gerar cadeias de caracteres de texto em seu aplicativo em tempo de execução usando modelos de texto de tempo de execução do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344e15b69bf3e8308c62c6fa1074720b0cd7618d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fcb7048b4319d1edb46911a74e96f440540e4299
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520829"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363933"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Geração de texto de tempo de execução com modelos de texto T4
 
@@ -49,7 +51,7 @@ Observe que o modelo é uma página HTML na qual as partes variáveis foram subs
 
 Usar um modelo em seu aplicativo torna mais fácil ver a forma final da saída do que você poderia, por exemplo, uma longa série de instruções Write. Fazer alterações na forma da saída é mais fácil e confiável.
 
-## <a name="creating-a-run-time-text-template-in-any-application"></a>Criando um modelo de texto de tempo de execução em qualquer aplicativo
+## <a name="creating-a-run-time-text-template-in-any-application"></a>Criando um modelo de texto de Run-Time em qualquer aplicativo
 
 ### <a name="to-create-a-run-time-text-template"></a>Para criar um modelo de texto de tempo de execução
 
@@ -74,7 +76,7 @@ Usar um modelo em seu aplicativo torna mais fácil ver a forma final da saída d
     <#@ import namespace="System.Collections.Generic" #>
     ```
 
-## <a name="converting-an-existing-file-to-a-run-time-template"></a>Convertendo um arquivo existente em um modelo de tempo de execução
+## <a name="converting-an-existing-file-to-a-run-time-template"></a>Convertendo um arquivo existente em um modelo de Run-Time
 
 Uma boa maneira de criar um modelo é converter um exemplo existente da saída. Por exemplo, se seu aplicativo gerar arquivos HTML, você poderá começar criando um arquivo HTML simples. Verifique se ele funciona corretamente e se sua aparência está correta. Em seguida, inclua-o em seu projeto do Visual Studio e converta-o em um modelo.
 
@@ -95,7 +97,7 @@ Uma boa maneira de criar um modelo é converter um exemplo existente da saída. 
 
     `<#@ template language="C#" #>`
 
-## <a name="the-content-of-the-run-time-template"></a>O conteúdo do modelo de tempo de execução
+## <a name="the-content-of-the-run-time-template"></a>O conteúdo do modelo de Run-Time
 
 ### <a name="template-directive"></a>Diretiva de modelo
 
@@ -294,7 +296,7 @@ O conteúdo incluído pode conter qualquer mistura de código do programa e text
 
 A diretiva include pode ser usada em qualquer lugar dentro do texto de um arquivo de modelo ou de um arquivo incluído.
 
-### <a name="inheritance-between-run-time-text-templates"></a>Herança entre modelos de texto de tempo de execução
+### <a name="inheritance-between-run-time-text-templates"></a>Herança entre modelos de texto de Run-Time
 
 Você pode compartilhar conteúdo entre modelos de tempo de execução escrevendo um modelo de classe base, que pode ser abstrato. Use o `inherits` parâmetro da `<@#template#>` diretiva para fazer referência a outra classe de modelo de tempo de execução.
 
@@ -427,13 +429,13 @@ End of common template.
 End material for DerivedTemplate1.
 ```
 
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 Modelos de tempo de design: se você quiser usar um modelo para gerar código que se torne parte de seu aplicativo, consulte [geração de código em tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
 Os modelos de tempo de execução podem ser usados em qualquer aplicativo em que os modelos e seu conteúdo sejam determinados no momento da compilação. Mas se você quiser escrever uma extensão do Visual Studio que gere texto de modelos que são alterados em tempo de execução, consulte [invocando a transformação de texto em uma extensão do vs](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md)
 - [Gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md)

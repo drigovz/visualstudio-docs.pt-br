@@ -1,5 +1,7 @@
 ---
 title: Noções básicas sobre modelos, classes e relações
+description: Saiba como uma DSL (linguagem específica de domínio) é definida por seu arquivo de definição de DSL e que a maior parte do código do programa na solução de DSL é gerada a partir desse arquivo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08981e4f63c84d19d4086c75fe33a8b19a515ccf
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d912e98d01448a378acbed79e2278f70f62436e7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809970"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362685"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Noções básicas sobre modelos, classes e relações
 Uma DSL (linguagem específica de domínio) é definida por seu arquivo de definição de DSL, junto com qualquer código de programa personalizado que você possa escrever. A maior parte do código do programa na solução de DSL é gerada a partir desse arquivo.
@@ -77,7 +79,7 @@ Uma DSL (linguagem específica de domínio) é definida por seu arquivo de defin
 ## <a name="domain-relationships"></a>Relações de domínio
  Elementos de modelo podem ser vinculados por relações. Os links são sempre binários; Eles vinculam exatamente dois elementos. No entanto, qualquer elemento pode ter muitos links para outros objetos e pode até mesmo ser mais de um link entre o mesmo par de elementos.
 
- Assim como você pode definir diferentes classes de elementos, você pode definir diferentes classes de links. A classe de um link é chamada de *relação de domínio*. Um relacionamento de domínio especifica quais classes de elemento suas instâncias podem se conectar. Cada extremidade de uma relação é chamada de *função*e o relacionamento de domínio define nomes para as duas funções, bem como para a própria relação.
+ Assim como você pode definir diferentes classes de elementos, você pode definir diferentes classes de links. A classe de um link é chamada de *relação de domínio*. Um relacionamento de domínio especifica quais classes de elemento suas instâncias podem se conectar. Cada extremidade de uma relação é chamada de *função* e o relacionamento de domínio define nomes para as duas funções, bem como para a própria relação.
 
  Há dois tipos de relações de domínio: inserindo relações e relações de referência. No diagrama de definição de DSL, as relações de inserção têm linhas sólidas em cada função e as relações de referência têm linhas tracejadas.
 
@@ -148,6 +150,6 @@ Uma DSL (linguagem específica de domínio) é definida por seu arquivo de defin
 
  Uma relação derivada especializa sua relação de base. As classes de domínio para as quais ele se vincula devem ser derivadas ou iguais às classes vinculadas pela relação base. Quando um link da relação derivada é criado em um modelo, ele é uma instância de relações derivadas e base. No código do programa, você pode navegar até a extremidade oposta do link usando as propriedades geradas pelo base ou pela classe derivada.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

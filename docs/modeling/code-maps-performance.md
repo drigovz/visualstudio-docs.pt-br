@@ -1,5 +1,7 @@
 ---
 title: Os mapas de código estão lentos
+description: Saiba como melhorar o desempenho do mapa de código e como você pode minimizar o tempo necessário para concluir a renderização.
+ms.custom: SEO-VS-2020
 ms.date: 05/16/2018
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28cb2c4fd74716aa876c57517bb440fda513de5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edcc12b5bd2cb741374acfe44f05c1f9043ebcaa
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590534"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363504"
 ---
 # <a name="improve-performance-for-code-maps"></a>Melhorar o desempenho para mapas de código
 

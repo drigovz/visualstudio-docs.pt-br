@@ -1,5 +1,7 @@
 ---
 title: Diretiva de importação T4
+description: Saiba que, em um modelo de texto T4 do Visual Studio, a diretiva de importação permite que você faça referência a elementos em outro namespace sem fornecer um nome totalmente qualificado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a28bedd01e3a4f6a7a87b025ac9a9a6184da9b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2dbd42f42213e475452185475a69b1dd9fe5f8e0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591860"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363686"
 ---
 # <a name="t4-import-directive"></a>Diretiva de importação T4
 
@@ -49,6 +51,6 @@ The file contains: <#=  fileContent #>
 
 - Namespace de sua DSL
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Diretiva de assembly T4](../modeling/t4-assembly-directive.md)

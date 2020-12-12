@@ -1,5 +1,7 @@
 ---
 title: Como definir atributos CLR em um elemento
+description: Saiba como você pode adicionar qualquer atributo que herda da classe System. Attribute.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49551a5e96e3c354b54b6b2ba7cedf1ba2ab4470
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: df9f8b16edcbe575ebac67f4acde9111a9511b85
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811195"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363842"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>Como definir atributos CLR em um elemento
 Atributos personalizados são atributos especiais que podem ser adicionados a elementos de domínio, formas, conectores e diagramas. Você pode adicionar qualquer atributo que herda da `System.Attribute` classe.
@@ -41,6 +43,6 @@ Atributos personalizados são atributos especiais que podem ser adicionados a el
 
      `[`*AttributeName* `(` *ParameterName* `=` *Tipo* de`)]`
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

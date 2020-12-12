@@ -1,5 +1,7 @@
 ---
 title: Diretrizes para escrever modelos de texto T4
+description: Conheça as diretrizes gerais que são úteis se você estiver gerando código de programa ou outros recursos de aplicativo no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,18 +9,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5f7be4ce9b8beb7699844397de3e1fc206d017c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596535"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363400"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Diretrizes para escrever modelos de texto T4
 
 Essas diretrizes gerais podem ser úteis se você estiver gerando código de programa ou outros recursos de aplicativo no Visual Studio. Elas não são regras fixas.
 
-## <a name="guidelines-for-design-time-t4-templates"></a>Diretrizes para modelos T4 de tempo de design
+## <a name="guidelines-for-design-time-t4-templates"></a>Diretrizes para modelos Design-Time T4
 
 Modelos T4 de tempo de design são modelos que geram código em seu projeto do Visual Studio em tempo de design. Para obter mais informações, consulte [geração de código em tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
@@ -91,7 +93,7 @@ MyProject
    AnotherClass.cs
 ```
 
-## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Diretrizes para modelos T4 em tempo de execução (pré-processados)
+## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Diretrizes para modelos T4 de Run-Time (pré-processados)
 
 Mova o material comum para modelos herdados.
 
@@ -169,7 +171,7 @@ No entanto, para alguns tipos de requisitos de negócios, é importante esclarec
 
 Você também pode criar seu próprio tipo de diagrama como uma DSL (linguagem específica de domínio). O código pode ser gerado de UML e DSLs. Para obter mais informações, consulte [análise e modelagem de arquitetura](../modeling/analyze-and-model-your-architecture.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Geração de código na hora de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Geração de texto de tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md)

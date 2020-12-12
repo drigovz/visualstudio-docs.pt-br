@@ -1,5 +1,7 @@
 ---
 title: Como criar uma solução de linguagem específica do domínio
+description: Saiba como criar uma DSL (linguagem específica de domínio) usando uma solução especializada do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c47b16bbb9fe5eb352171e6e1cf4c13890890265
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c913f3015c56f7872dfe5ef3471578de7075b7d0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298662"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363270"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Como criar uma solução de linguagem específica do domínio
 Uma DSL (linguagem específica do domínio) é criada usando uma solução especializada do Visual Studio.
@@ -89,7 +91,7 @@ Digite uma nova extensão de arquivo.
 
      \- ou –
 
-- Redefina a instância experimental do Visual Studio. Isso cancelará o registro de todas as DSLs que você criou anteriormente. No menu **Iniciar** , clique em **todos os programas**, **Microsoft Visual Studio SDK 2010**, **ferramentas**e, em seguida, **redefina a instância experimental Microsoft Visual Studio 2010**. Você pode recompilar todas as outras DSLs que deseja usar novamente.
+- Redefina a instância experimental do Visual Studio. Isso cancelará o registro de todas as DSLs que você criou anteriormente. No menu **Iniciar** , clique em **todos os programas**, **Microsoft Visual Studio SDK 2010**, **ferramentas** e, em seguida, **redefina a instância experimental Microsoft Visual Studio 2010**. Você pode recompilar todas as outras DSLs que deseja usar novamente.
 
      \- ou –
 
@@ -116,7 +118,7 @@ O padrão é um nome composto por seus nomes de produtos e da empresa.
 
  Para obter mais informações sobre nomes fortes, consulte [criando e usando assemblies de Strong-Named](/dotnet/standard/assembly/create-use-strong-named).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

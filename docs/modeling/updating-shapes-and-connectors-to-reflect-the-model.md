@@ -1,5 +1,7 @@
 ---
 title: Atualizando formas e conectores para refletir o modelo
+description: Saiba que, em uma linguagem específica de domínio no Visual Studio, você pode fazer com que a aparência de uma forma reflita o estado do modelo subjacente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a43e8570ea65373b8cac0bd3e3e7a8dc1f5791
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3d16cbc35c468c0101db479799215bcccf64ef6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115032"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362594"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Atualizar formas e conectores para refletir o modelo
 
@@ -27,11 +29,11 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Definir propriedades de mapa de formas para controlar a visibilidade de um decorador
 
-Você pode controlar a visibilidade de um decorador sem escrever o código do programa, configurando o mapeamento entre a forma e a classe de domínio na definição de DSL. Para obter mais informações, consulte [como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md).
+Você pode controlar a visibilidade de um decorador sem escrever o código do programa, configurando o mapeamento entre a forma e a classe de domínio na definição de DSL. Para obter mais informações, consulte [como definir um idioma de Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md).
 
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Expor a cor e o estilo de uma forma como propriedades
 
-Na definição de DSL, clique com o botão direito do mouse na classe Shape, aponte para **Adicionar exposto**e clique em um dos itens como **cor de preenchimento**.
+Na definição de DSL, clique com o botão direito do mouse na classe Shape, aponte para **Adicionar exposto** e clique em um dos itens como **cor de preenchimento**.
 
 A forma agora tem uma propriedade Domain que pode ser definida no código do programa ou como um usuário. Por exemplo, para defini-lo no código do programa de um comando ou regra, você poderia escrever:
 

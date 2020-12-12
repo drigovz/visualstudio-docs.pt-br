@@ -1,5 +1,7 @@
 ---
 title: 'Como: adicionar um comando ao menu de atalho'
+description: Saiba como você pode adicionar comandos de menu à sua DSL (linguagem específica de domínio) para que os usuários possam executar tarefas específicas para sua DSL.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aac779a3c165d10262c078ff431731d9d248f3a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7dc51de28162471262d8c4bd35ddd09bc156896e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545711"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363335"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Como: adicionar um comando ao menu de atalho
 
@@ -357,7 +359,7 @@ O **método OnStatus não é chamado**:
 
 - Certifique-se de que você tenha desinstalado as versões anteriores do pacote.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Escrevendo código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Como modificar um comando de menu padrão](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)

@@ -1,5 +1,7 @@
 ---
 title: Trabalhando com o diagrama de definição de DSL
+description: Saiba que o diagrama de uma definição de ferramentas DSL é uma ferramenta importante para definir uma linguagem específica de domínio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec9e6fa7262fd389be7f1bb66ed2ed7005d6811
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d489bfde8b095e35bc652f1cdb7588b07458e48e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810790"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362828"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Trabalhando com o diagrama de definição de DSL
 O diagrama de uma [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definição é uma ferramenta importante para definir a linguagem específica do domínio. É possível adicionar elementos ao seu modelo de domínio e definir as relações no diagrama e é possível modificar o layout do diagrama para torná-lo mais legível.
@@ -70,6 +72,6 @@ O diagrama de uma [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definição é
 ### <a name="show-as-class"></a>Show As Class
  Se uma relação de domínio tiver relações derivadas, ou se tiver uma incorporação ou relações de referência com outras relações de domínio, você poderá exibir a relação como uma classe clicando com o botão direito do mouse na relação e, em seguida, clicando em **mostrar como classe**. A relação será exibida com um compartimento de **Propriedades de domínio** e mostrará as árvores de herança e relações.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

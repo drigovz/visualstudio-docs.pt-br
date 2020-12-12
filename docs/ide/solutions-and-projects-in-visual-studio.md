@@ -2,7 +2,7 @@
 title: Soluções e projetos
 description: Saiba mais sobre os projetos e soluções do Visual Studio e saiba como criar um novo projeto com a ferramenta de Gerenciador de Soluções.
 ms.custom: SEO-VS-2020
-ms.date: 06/26/2020
+ms.date: 12/11/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 949da02ac074e9740038fef7917655ca552a12f6
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 42250d4b60cf272f041fea6f44abd24f99645b93
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480701"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363452"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
 
@@ -55,10 +55,14 @@ Um projeto está contido dentro de uma *solução*. Apesar do nome, uma soluçã
 
 O Visual Studio usa dois tipos de arquivos (*.sln* e *.suo*) para armazenar configurações de soluções:
 
-|Extensão|Nome|Descrição|
+|Extensão|Name|Descrição|
 |---------------|----------|-----------------|
 |.sln|Solução do Visual Studio|Organiza projetos, itens de projeto e itens de solução na solução.|
 |.suo|Opções do usuário da solução|Armazena configurações e personalizações no nível do usuário, como pontos de interrupção.|
+
+### <a name="solution-folder"></a>Pasta da solução
+
+Nesse contexto, uma "pasta de solução" é uma pasta virtual que só está em **Gerenciador de soluções**, onde você pode usá-la para agrupar projetos em uma solução. Se você quiser localizar onde os projetos são armazenados em seu computador, vá para **ferramentas**  >  **Opções**  >  **projetos e soluções**  >  **locais**.
 
 ## <a name="create-new-projects"></a>Criar novos projetos
 
@@ -77,13 +81,13 @@ Depois de criar um novo projeto, você pode usar o **Gerenciador de Soluções**
 Muitos comandos de menu estão disponíveis no menu do botão direito em vários itens no **Gerenciador de Soluções**. Esses comandos incluem criar um projeto, gerenciar pacotes do NuGet, adicionar uma referência, renomear um arquivo e executar testes, apenas para citar alguns. A barra de ferramentas na parte superior do **Gerenciador de Soluções** possui botões para alternar de uma exibição de solução para uma exibição de pasta, mostrar arquivos ocultos, recolher todos os nós e muito mais.
 
 > [!TIP]
-> Se você fechou Gerenciador de soluções e deseja abri-lo novamente, escolha **Window**  >  o **layout da janela de redefinição** de janela na barra de menus.
+> Se você fechou Gerenciador de soluções e deseja abri-lo novamente, escolha   >  o **layout da janela de redefinição** de janela na barra de menus.
 
 Para projetos ASP.NET Core, você pode personalizar como os arquivos são aninhados no **Gerenciador de Soluções**. Para saber mais, confira [Personalizar o aninhamento de arquivos no Gerenciador de Soluções](file-nesting-solution-explorer.md).
 
 E, para exibir uma lista de alguns ícones que aparecem no Gerenciador de Soluções, consulte os [ícones modo de exibição de classe e pesquisador de objetos](class-view-and-object-browser-icons.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Portar, migrar e atualizar projetos](../porting/port-migrate-and-upgrade-visual-studio-projects.md)

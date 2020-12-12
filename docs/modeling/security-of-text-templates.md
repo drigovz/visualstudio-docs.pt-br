@@ -1,5 +1,7 @@
 ---
 title: Segurança de modelos de texto
+description: Saiba mais sobre modelos de segurança e de texto, incluindo tópicos como código arbitrário e processadores de diretiva maliciosas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25815bcb7f027501fb849dcd29d14b040c24d7fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d54421ea4df9c54fd4ec8c1804a1a292061996ab
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591964"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363790"
 ---
 # <a name="security-of-text-templates"></a>Segurança de modelos de texto
 Os modelos de texto têm as seguintes preocupações de segurança:

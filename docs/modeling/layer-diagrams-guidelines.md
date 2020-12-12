@@ -1,5 +1,7 @@
 ---
 title: 'Diagramas de dependência: diretrizes'
+description: Saiba como descrever a arquitetura do aplicativo em um alto nível Criando diagramas de dependência no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f8ec90d045259cd5d10533db6096154376d48fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5bfef2f9397fbe8dfeceaa8789cf8d118315b26d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594624"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363959"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramas de dependência: diretrizes
 
@@ -172,7 +174,7 @@ Durante o processo de desenvolvimento, você talvez queira suprimir alguns dos c
 
 Para garantir que as alterações futuras no código estejam em conformidade com os diagramas de dependência, inclua a validação de camada no processo de compilação padrão da solução. Sempre que outros membros da equipe criarem a solução, quaisquer diferenças entre as dependências no código e no diagrama de dependência serão relatadas como erros de compilação. Para obter mais informações sobre como incluir a validação de camada no processo de compilação, consulte [validar código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)
 - [Criar diagramas de dependência do código](../modeling/create-layer-diagrams-from-your-code.md)

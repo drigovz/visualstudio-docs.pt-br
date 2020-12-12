@@ -1,5 +1,7 @@
 ---
 title: Personalizando campos de texto e imagem
+description: Saiba mais sobre como personalizar arquivos de texto e imagem. Além disso, saiba que quando você define um decorador de texto em uma forma, ele é representado por um TextField.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29210ec667bffd6b632bcfbee0b87c0cbb2d5f38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6effda90580a184bb8ebfb8c4f4830dc6cb844d5
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542708"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362848"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personalizando campos de texto e imagem
 Quando você define um decorador de texto em uma forma, ele é representado por um TextField. Para obter exemplos de inicialização de TextFields e outros ShapeFields, inspecione Dsl\GeneratedCode\Shapes.cs em sua solução de DSL.
@@ -261,7 +263,7 @@ partial class ExampleShape
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Definindo formas e conectores](../modeling/defining-shapes-and-connectors.md)
 - [Definindo uma imagem de plano de fundo em um diagrama](../modeling/setting-a-background-image-on-a-diagram.md)

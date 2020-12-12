@@ -1,5 +1,7 @@
 ---
 title: Implantando um processador de diretiva personalizada
+description: Saiba mais sobre os métodos disponíveis para implantar um processador de diretiva personalizada no Visual Studio ou em qualquer computador.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4762ad21f117bebe22ecfce1c846f15d154b1bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 638367f2c3a1238edc257a255280c5197e11d3f0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536013"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363920"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implantando um processador de diretiva personalizada
 
@@ -124,7 +126,7 @@ Há várias maneiras de criar um arquivo .vsix. O procedimento a seguir descreve
 
 - O método `IsDirectiveSupported` deve retornar `true` quando o nome de seu `CustomDirective` é aprovado.
 
-- Se você não conseguir ver a extensão no Gerenciador de extensões, mas o sistema não permitirá que você a instale, exclua a extensão de **%LocalAppData%\Microsoft\VisualStudio \\ \* 0 \ extensões \\ **.
+- Se você não conseguir ver a extensão no Gerenciador de extensões, mas o sistema não permitirá que você a instale, exclua a extensão de **%LocalAppData%\Microsoft\VisualStudio \\ \* 0 \ extensões \\**.
 
 - Abra o arquivo .vsix e inspecione seu conteúdo. Para abri-lo, altere a extensão do nome do arquivo para .zip. Verifique se contém os arquivos .dll, .pkgdef e extension.vsixmanifest. O arquivo extension.vsixmanifest deve conter a lista apropriada no nó SupportedProducts e deve conter também um nó VsPackage, sob o nó Conteúdo:
 
@@ -164,17 +166,17 @@ Há várias maneiras de criar um arquivo .vsix. O procedimento a seguir descreve
 
 2. Em regedit, navegue até
 
-    **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ \* . 0 \ TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ \* . 0 \ TextTemplating\DirectiveProcessors**
 
     Se você quiser instalar o processador de diretiva na versão experimental do Visual Studio, insira "exp" após "11,0".
 
 3. Adicione uma chave do Registro que tenha o mesmo nome da classe do processador de diretriz.
 
-   - Na árvore do registro, clique com o botão direito do mouse no nó **DirectiveProcessors** , aponte para **novo**e clique em **chave**.
+   - Na árvore do registro, clique com o botão direito do mouse no nó **DirectiveProcessors** , aponte para **novo** e clique em **chave**.
 
 4. No novo nó, adicione valores de cadeia de caracteres para Class e CodeBase ou Assembly, de acordo com as tabelas a seguir.
 
-   1. Clique com o botão direito do mouse no nó que você criou, aponte para **novo**e clique em **valor da cadeia de caracteres**.
+   1. Clique com o botão direito do mouse no nó que você criou, aponte para **novo** e clique em **valor da cadeia de caracteres**.
 
    2. Edite o nome do valor.
 
@@ -196,6 +198,6 @@ Há várias maneiras de criar um arquivo .vsix. O procedimento a seguir descreve
 |Classe|REG_SZ|\<**Your Fully Qualified Class Name**>|
 |Assembly|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Criando processadores de diretiva de modelo de texto T4 personalizados](../modeling/creating-custom-t4-text-template-directive-processors.md)

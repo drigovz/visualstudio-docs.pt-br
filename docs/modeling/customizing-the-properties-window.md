@@ -1,5 +1,7 @@
 ---
 title: Personalizando a janela de propriedades
+description: Saiba como você pode personalizar a aparência e o comportamento da janela Propriedades em sua DSL (linguagem específica de domínio) no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dac40177c3df2a346039a08cf557b6083ed9fc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f7d4ac76b8b10fde0c193e3eda73cec611c1441
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548272"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362868"
 ---
 # <a name="customize-the-properties-window"></a>Personalizar o janela Propriedades
 
@@ -38,15 +40,15 @@ Quando você define o nome de uma propriedade na definição de DSL, seu nome de
 
 Alguns dos recursos dinâmicos de elementos gráficos podem ser representados ou *expostos* como propriedades de domínio. Um recurso que foi exposto dessa maneira pode ser atualizado pelo usuário e pode ser atualizado com mais facilidade pelo código do programa.
 
-Clique com o botão direito do mouse em uma classe Shape na definição de DSL, aponte para **Adicionar exposto**e escolha um recurso.
+Clique com o botão direito do mouse em uma classe Shape na definição de DSL, aponte para **Adicionar exposto** e escolha um recurso.
 
-Em formas, você pode expor as propriedades **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** e **FillGradientMode** . Em conectores, você pode expor as propriedades **Color** `,` **TextColor**, **DashStyle**e **espessura** . Em diagramas, você pode expor as propriedades **FillColor** e **TextColor** .
+Em formas, você pode expor as propriedades **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** e **FillGradientMode** . Em conectores, você pode expor as propriedades **Color** `,` **TextColor**, **DashStyle** e **espessura** . Em diagramas, você pode expor as propriedades **FillColor** e **TextColor** .
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>Encaminhamento: Exibir Propriedades de elementos relacionados
 
 Quando o usuário de sua DSL seleciona um elemento em um modelo, as propriedades desse elemento são exibidas na janela Propriedades. No entanto, você também pode exibir as propriedades de elementos relacionados especificados. Isso será útil se você tiver definido um grupo de elementos que funciona em conjunto. Por exemplo, você pode definir um elemento principal e um elemento de plug-in opcional. Se o elemento principal for mapeado para uma forma e o outro não for, será útil ver todas as suas propriedades como se estivessem em um elemento.
 
-Esse efeito é chamado de *encaminhamento de propriedade*e acontece automaticamente em vários casos. Em outros casos, você pode obter o encaminhamento de propriedade definindo um descritor de tipo de domínio.
+Esse efeito é chamado de *encaminhamento de propriedade* e acontece automaticamente em vários casos. Em outros casos, você pode obter o encaminhamento de propriedade definindo um descritor de tipo de domínio.
 
 ### <a name="default-property-forwarding-cases"></a>Casos de encaminhamento de propriedades padrão
 

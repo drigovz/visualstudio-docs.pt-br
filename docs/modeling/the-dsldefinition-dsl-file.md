@@ -1,5 +1,7 @@
 ---
 title: O arquivo DslDefinition.dsl
+description: Saiba mais sobre a estrutura do arquivo DslDefinition. DSL no projeto DSL de uma solução de ferramentas DSL, que define uma linguagem específica de domínio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 893f39149a9000f3672c5b3043551bcbd53e6b87
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c5db379447f39ed3d0c2b82aee23c1ac94aad34d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808949"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362776"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>O arquivo DslDefinition.dsl
 
@@ -22,7 +24,7 @@ Este tópico descreve a estrutura do arquivo DslDefinition. DSL no projeto DSL d
 
 Geralmente, você usa o *Designer de linguagem específica de domínio* para editar o arquivo DslDefinition. DSL. No entanto, seu formato bruto é XML e você pode abrir um arquivo DslDefinition.dsl em um editor XML. Você pode achá-lo útil para entender quais informações o arquivo contém e como elas são organizadas para fins de depuração e de extensão.
 
-Os exemplos neste tópico são obtidos a partir do modelo de solução Diagrama de Componente. Para ver um exemplo, crie uma solução de linguagem específica do domínio baseada no modelo de solução Modelos de Componente. Depois de criar a solução, o arquivo DslDefinition.dsl aparece no Designer de Linguagem Específica do Domínio. Feche o arquivo, clique com o botão direito do mouse no **Gerenciador de soluções**, aponte para **abrir com**, clique em **Editor de XML**e em **OK**.
+Os exemplos neste tópico são obtidos a partir do modelo de solução Diagrama de Componente. Para ver um exemplo, crie uma solução de linguagem específica do domínio baseada no modelo de solução Modelos de Componente. Depois de criar a solução, o arquivo DslDefinition.dsl aparece no Designer de Linguagem Específica do Domínio. Feche o arquivo, clique com o botão direito do mouse no **Gerenciador de soluções**, aponte para **abrir com**, clique em **Editor de XML** e em **OK**.
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>Seções do Arquivo DslDefinition.dsl
 
@@ -267,7 +269,7 @@ Além disso, para os atributos e nós filho que estão disponíveis para todas a
 
 ## <a name="designer-and-toolbox-tabs"></a>Guias Designer e Caixa de Ferramentas
 
-A parte principal da seção de **Designer** do arquivo DslDefinition. DSL é **ToolboxTab** elementos. Um designer pode ter vários desses elementos, cada um representando uma seção de pontas na **caixa de ferramentas**do designer gerado. Cada elemento **ToolboxTab** pode conter um ou mais elementos **ElementTool** , elementos **ConnectionTool** ou ambos.
+A parte principal da seção de **Designer** do arquivo DslDefinition. DSL é **ToolboxTab** elementos. Um designer pode ter vários desses elementos, cada um representando uma seção de pontas na **caixa de ferramentas** do designer gerado. Cada elemento **ToolboxTab** pode conter um ou mais elementos **ElementTool** , elementos **ConnectionTool** ou ambos.
 
 As ferramentas de elementos podem criar instâncias de uma classe de domínio específica. Quando o usuário arrasta uma ferramenta de elemento no diagrama, o resultado é determinado pelas diretivas de mesclagem de elementos, conforme descrito na seção sobre diretivas de mesclagem de elementos mais adiante neste tópico.
 
@@ -296,7 +298,7 @@ Neste exemplo, InPort é uma subclasse de ComponentPort e possui uma relação C
 Ao gravar C# com relação a este modelo, você pode pular um link em uma etapa usando a propriedade que a relação gera em cada uma das classes relacionada a ela:
 
 ```
-     InPort port; ...  Component c = port.Component;
+     InPort port; ...  Component c = port.Component;
 ```
 
 No entanto, você deve executar ambos os saltos explicitamente na Sintaxe de Caminho. Em função desse requisito, você pode acessar o link intermediário com mais facilidade. O seguinte código completa o salto do link para o Componente:
@@ -480,7 +482,7 @@ O arquivo DslDefinition.dsl é por si só um arquivo serializado e em conformida
 
 - **DSL** é o nó RootClass e a classe do diagrama. DomainClass, DomainRelationship e outros elementos são inseridos em `Dsl`.
 
-- **Classes** é o **RoleElementName** da relação entre a linguagem específica do domínio e o DomainClass.
+- **Classes** é o **RoleElementName** da relação entre Domain-Specific Language e DomainClass.
 
 ```xml
 <Dsl Name="CmptDsl5" ...>
@@ -577,7 +579,7 @@ O mapa do conector mínimo faz referência a um conector e a um relacionamento:
 
 Os mapas do conector também podem conter mapas do decorador.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))
 - [Como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md)

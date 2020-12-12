@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: de5027024956c03341ac3e2d851bf85430f48f18
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 69fb3d8b5e8af13ec8781e65e60bd060ad69d365
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878290"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362386"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novidades no Visual Studio 2019
 
@@ -114,7 +114,7 @@ Para saber mais, confira a postagem no blog [Better multi-monitor experience wit
 
 Para obter mais informações, consulte a postagem no blog [anunciando o .NET Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
 
-## <a name="collaborate"></a>Colaborar
+## <a name="collaborate"></a>Colaboração
 
 Veja o vídeo a seguir para saber mais sobre como trabalhar em equipe para resolver problemas. <br><br>*Tamanho do vídeo: 4,22 minutos*
 
@@ -136,9 +136,9 @@ Para obter mais informações, consulte a postagem de blog [obter código: como 
 
 ### <a name="git-productivity"></a>Produtividade do git
 
-**Novidades no 16,8** O Git agora é a experiência de controle de versão padrão no Visual Studio 2019. Criamos o conjunto de recursos e iteramos com base nos seus comentários durante as duas versões anteriores. A nova experiência agora foi ativada por padrão para todos. No novo menu git, você pode clonar, criar ou abrir repositórios. Use as janelas de ferramenta do git integradas para confirmar e enviar por push as alterações para seu código, gerenciar branches, manter-se atualizado com seus repositórios remotos e resolver conflitos de mesclagem.
+**Novidade no 16,8**: o Git agora é a experiência de controle de versão padrão no Visual Studio 2019. Criamos o conjunto de recursos e iteramos com base nos seus comentários durante as duas versões anteriores. A nova experiência agora foi ativada por padrão para todos. No novo menu git, você pode clonar, criar ou abrir repositórios. Use as janelas de ferramenta do git integradas para confirmar e enviar por push as alterações para seu código, gerenciar branches, manter-se atualizado com seus repositórios remotos e resolver conflitos de mesclagem.
 
-Para obter mais informações, consulte a página [produtividade do git no Visual Studio](git-with-visual-studio.md) .
+Para obter mais informações, consulte a página [experiência do git no Visual Studio](git-with-visual-studio.md) .
 
 ### <a name="live-share"></a>Live Share
 
@@ -226,7 +226,7 @@ Enquanto isso, aqui estão alguns dos nossos novos recursos atualmente no Works.
 
    Embora a nova experiência de controle de versão do git agora esteja ativada por padrão no Visual Studio 2019 [versão 16,8](/visualstudio/releases/2019/release-notes/), continuamos a adicionar recursos para aprimorar a experiência na versão de visualização mais recente.
 
-   Para obter mais informações, consulte a página [produtividade do git no Visual Studio](git-with-visual-studio.md) .
+   Para obter mais informações, consulte a página [experiência do git no Visual Studio](git-with-visual-studio.md) .
 
 Para obter mais informações sobre a versão de visualização &mdash; e um link de download, se você quiser experimentá-lo, &mdash; consulte a página de **[visualização do Visual Studio](https://aka.ms/vspreview/)** .
 
@@ -240,6 +240,7 @@ Por que enviar comentários à equipe do Visual Studio? Porque nós levamos a s�
 
 ## <a name="see-also"></a>Veja também
 
+* [O que há de novo nos documentos do Visual Studio](whats-new-visual-studio-docs.md)
 * [Notas de versão do Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Notas de versão do Visual Studio 2019 para Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [O que há de novo no SDK do Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)

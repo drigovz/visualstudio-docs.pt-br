@@ -1,5 +1,7 @@
 ---
 title: Como acessar e restringir a seleção atual
+description: Saiba como você pode determinar em qual elemento o usuário clicou com o botão direito do mouse quando escreve um manipulador de comando ou de gesto para a linguagem específica do domínio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1f5aaa106e00f9b10eb88892bcc978b92a01c79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ba656793b630dd55fc2ebc7242e5d45484b0f8e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545685"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363387"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Como acessar e restringir a seleção atual
 
@@ -30,7 +32,7 @@ Dependendo do comando, o manipulador de comandos pode precisar da seleção no d
 
 1. A <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> classe define os membros a seguir que podem ser usados para acessar a seleção atual.
 
-    |Membro|DESCRIÇÃO|
+    |Membro|Descrição|
     |-|-|
     |Método <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A>|Retorna `true` se qualquer um dos elementos selecionados no designer de modelo for uma forma de compartimento; caso contrário, `false` .|
     |Método <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A>|Retorna `true` se o diagrama está selecionado no designer de modelo; caso contrário, `false` .|

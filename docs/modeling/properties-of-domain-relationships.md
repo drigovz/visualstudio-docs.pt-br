@@ -1,5 +1,7 @@
 ---
 title: Propriedades de relacionamentos de domínio
+description: Saiba mais sobre as propriedades que estão associadas a um relationshop de domínio, como modificador de acesso, atributos personalizados e gera derivação dupla.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,15 +11,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e432e9738009c84b6930b0363ae4048c925d0a6
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 88c5db50432947b99a2667280fe7861e7acd95ac
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809996"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362451"
 ---
 # <a name="properties-of-domain-relationships"></a>Propriedades de relacionamentos de domínio
-As propriedades na tabela a seguir são associadas a uma relação de domínio. Para obter informações sobre relações de domínio, consulte [noções básicas sobre modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md). Para obter mais informações sobre como usar essas propriedades, consulte [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+As propriedades na tabela a seguir são associadas a uma relação de domínio. Para obter informações sobre relações de domínio, consulte [noções básicas sobre modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md). Para obter mais informações sobre como usar essas propriedades, consulte [Personalizando e estendendo uma linguagem de Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 |Propriedade|Descrição|Padrão|
 |-|-|-|
@@ -29,13 +31,13 @@ As propriedades na tabela a seguir são associadas a uma relação de domínio. 
 |Permite duplicatas|Se `True` , os links duplicados da relação de domínio poderão ser criados entre os mesmos dois elementos.|`False`|
 |Relações de base|Se a relação de domínio for derivada, a relação base da relação de domínio.|\<none>|
 |Está incorporando|Se `True` , a relação de domínio é uma relação incorporada. Se `False` , a relação é uma relação de referência.|\<both>|
-|Nome|O nome da relação de domínio.|Nome atual|
+|Name|O nome da relação de domínio.|Nome atual|
 |Namespace|O namespace que é afiliado ao relacionamento de domínio.|Namespace atual|
 |Observações|Observações informais que estão associadas à relação de domínio.|\<none>|
 |Descrição|A descrição usada para documentar o código e é usada na interface do usuário do designer gerado.|\<none>|
 |Nome de exibição|O nome que é exibido no designer gerado para a relação de domínio.|\<none>|
 |Palavra-chave de ajuda|A palavra-chave opcional que é usada para indexar a ajuda F1 para a relação de domínio.|\<none>|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

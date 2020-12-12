@@ -1,5 +1,7 @@
 ---
 title: Controlando a visibilidade de um ícone ou decorador
+description: Saiba como você pode controlar a visibilidade de um ícone ou decorador, dependendo do estado das propriedades no modelo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,24 +9,24 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2082f7e26d3e335ed88bbced0f59d6d6c4780c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdf97cc10543f066665506d3e238386dc39f0d4f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546634"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363491"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controlando a visibilidade de um ícone ou decorador
 Um *decorador* é um ícone ou linha de texto que aparece em uma forma em uma DSL (linguagem específica do domínio). Você pode fazer com que o decorador apareça e desapareça, dependendo do estado das propriedades no modelo. Por exemplo, em uma forma que representa uma pessoa, você poderia ter ícones diferentes que aparecem dependendo do sexo da pessoa, do número de filhos e assim por diante.
 
 ## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controlando a visibilidade de um ícone ou decorador
- O procedimento a seguir pressupõe que você já definiu uma forma e seu mapeamento para uma classe de domínio. Para obter mais informações, consulte [como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md).
+ O procedimento a seguir pressupõe que você já definiu uma forma e seu mapeamento para uma classe de domínio. Para obter mais informações, consulte [como definir um idioma de Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md).
 
 #### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Para controlar a visibilidade de um ícone ou decorador de texto
 
 1. No diagrama de definição de DSL, adicione à classe forma os ícones ou decoradores de texto que você deseja exibir.
 
-   1. Clique com o botão direito do mouse na classe Shape, aponte para **Adicionar**e clique no tipo de decorador necessário.
+   1. Clique com o botão direito do mouse na classe Shape, aponte para **Adicionar** e clique no tipo de decorador necessário.
 
    2. Defina a propriedade **Position** do decorador. Mais de um decorador pode ter a mesma posição. Por exemplo, você pode ter ícones para macho e fêmea compartilhando a mesma posição.
 
@@ -103,7 +105,7 @@ Um *decorador* é um ícone ou linha de texto que aparece em uma forma em uma DS
 
 8. Recompile e execute a solução.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Definindo formas e conectores](../modeling/defining-shapes-and-connectors.md)
 - [Definindo uma imagem de plano de fundo em um diagrama](../modeling/setting-a-background-image-on-a-diagram.md)

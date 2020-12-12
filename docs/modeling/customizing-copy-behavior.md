@@ -1,5 +1,7 @@
 ---
 title: Personalizando o comportamento da operação de copiar
+description: Saiba que, em uma DSL criada com o SDK de visualização e modelagem do Visual Studio, você pode alterar o que acontece quando o usuário copia e cola elementos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b189d3dbd5c1872094b0c1be2a64eb2c02bf1e2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8eee81440c0dda7f193d3e37eab700ada3ff259f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547336"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363101"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizando o comportamento da operação de copiar
 Em uma DSL (linguagem específica de domínio) criada com o SDK de visualização e modelagem do Visual Studio, você pode alterar o que acontece quando o usuário copia e cola elementos.
@@ -46,7 +48,7 @@ No Gerenciador de DSL, defina a propriedade **habilitar copiar colar** do nó do
 Defina a propriedade de **cópia propagada** da função para **propagar a cópia somente para vincular**. Para obter mais informações, consulte [Personalizando o comportamento de cópia de link](#customizeLinks).
 
  Copie os elementos vinculados. Por exemplo, quando você copia um novo elemento, cópias de todas as caixas de comentários vinculadas também são feitas.
-Defina a propriedade de **cópia propagada** da função para **propagar a cópia para o link e**o representante da função oposto. Para obter mais informações, consulte [Personalizando o comportamento de cópia de link](#customizeLinks).
+Defina a propriedade de **cópia propagada** da função para **propagar a cópia para o link e** o representante da função oposto. Para obter mais informações, consulte [Personalizando o comportamento de cópia de link](#customizeLinks).
 
  **Duplique com rapidez os elementos copiando e colando.**  Normalmente, o item que você acabou de copiar ainda fica selecionado e você não pode colar o mesmo tipo de elemento nele.
 Adicione uma Diretiva Element Merge à classe de domínio e configure-a para encaminhar mesclagens para a classe pai. Isso terá o mesmo efeito sobre as operações de arrastar. Para obter mais informações, consulte [Personalizando a criação e movimentação do elemento](../modeling/customizing-element-creation-and-movement.md).
@@ -552,7 +554,7 @@ namespace Company.MyDsl
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Personalizando a criação e o movimento de elementos](../modeling/customizing-element-creation-and-movement.md)
 - [Como adicionar um manipulador de evento do tipo "arrastar e soltar"](../modeling/how-to-add-a-drag-and-drop-handler.md)

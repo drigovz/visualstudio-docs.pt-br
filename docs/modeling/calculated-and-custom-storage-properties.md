@@ -1,5 +1,7 @@
 ---
 title: Propriedades calculadas e de armazenamento personalizado
+description: Saiba como todas as propriedades de domínio em uma DSL (linguagem específica de domínio) podem ser exibidas para o usuário no diagrama e no seu Gerenciador de idiomas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52915f0bac2bd172daf909541ecfa86396d90a5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c50d205745917b3af7de638a17921f4bcdca509
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115191"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363543"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propriedades calculadas e de armazenamento personalizado
 Todas as propriedades de domínio em uma DSL (linguagem específica de domínio) podem ser exibidas para o usuário no diagrama e no seu Gerenciador de idiomas e podem ser acessadas pelo código do programa. No entanto, as propriedades são diferentes na forma como os valores são armazenados.
@@ -43,11 +45,11 @@ Todas as propriedades de domínio em uma DSL (linguagem específica de domínio)
 
 4. No menu **Compilar**, clique em **Compilar Solução**.
 
-     Você recebe a seguinte mensagem de erro: "*yourClass* não contém uma definição para obter*suaproperty*."
+     Você recebe a seguinte mensagem de erro: "*yourClass* não contém uma definição para obter *suaproperty*."
 
 5. Clique duas vezes na mensagem de erro.
 
-     Dsl\GeneratedCode\DomainClasses.cs ou DomainRelationships.cs é aberto. Acima da chamada do método realçado, um comentário solicita que você forneça uma implementação para obter*suaproperty*().
+     Dsl\GeneratedCode\DomainClasses.cs ou DomainRelationships.cs é aberto. Acima da chamada do método realçado, um comentário solicita que você forneça uma implementação para obter *suaproperty*().
 
     > [!NOTE]
     > Esse arquivo é gerado de DslDefinition. DSL. Se você editar esse arquivo, suas alterações serão perdidas na próxima vez que você clicar em **transformar todos os modelos**. Em vez disso, adicione o método necessário em um arquivo separado.
@@ -107,7 +109,7 @@ void SetAgeValue(int value)
 
  Para obter mais informações sobre transações, consulte [navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Propriedades das propriedades de domínio](../modeling/properties-of-domain-properties.md)
