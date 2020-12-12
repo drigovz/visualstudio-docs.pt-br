@@ -1,5 +1,7 @@
 ---
 title: Personalizando ferramentas e a caixa de ferramentas
+description: Saiba como você deve definir itens da caixa de ferramentas para os elementos que deseja permitir que os usuários adicionem aos seus modelos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 685da1184706e106f3bdd2088b4d937e0aa7cc9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f02254cc1229ab069277b0fe46a6b825393f682f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548285"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361554"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizando ferramentas e a caixa de ferramentas
 
@@ -69,7 +71,7 @@ A propriedade do **Construtor de conexões** de uma ferramenta de conexão refer
 
 3. Defina a propriedade do **ícone da caixa de ferramentas** como referência a um bitmap de 16x16.
 
-     Se você quiser definir um novo ícone, crie um arquivo de bitmap em Gerenciador de Soluções na pasta **Dsl\Resources** O arquivo deve ter os seguintes valores de propriedade: **criar**  =  **conteúdo**de ação; **Copiar para diretório**  =  de saída Não **copiar**.
+     Se você quiser definir um novo ícone, crie um arquivo de bitmap em Gerenciador de Soluções na pasta **Dsl\Resources** O arquivo deve ter os seguintes valores de propriedade: **criar**  =  **conteúdo** de ação; **Copiar para diretório**  =  de saída Não **copiar**.
 
 4. **Para uma ferramenta de elemento:** Defina a propriedade **Class** da ferramenta como referência a uma classe de domínio concreto mapeada para uma forma.
 
@@ -154,12 +156,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  Os construtores de conexão contêm um ou mais diretivas de conexão de link, que especificam a relação de domínio e os elementos de fonte e de destino. Por exemplo, no modelo de solução de fluxo de tarefas, você pode ver o **CommentReferencesSubjectsBuilder** no **Gerenciador de DSL**. Esse construtor de conexões contém uma diretiva de conexão de link chamada **CommentReferencesSubjects**, que é mapeada para a relação de domínio **CommentReferencesSubjects**. Essa diretiva de conexão de link contém uma diretiva da função de fonte que indica a classe de domínio `Comment` e uma diretiva de função de destino que indica a classe de domínio `FlowElement`.
 
 ### <a name="using-connection-builders-to-restrict-source-and-target-roles"></a>Uso dos construtores de conexão para restringir as funções da fonte e do destino
- É possível usar os construtores de conexão para restringir a ocorrência de determinadas classes na função de fonte ou de destino de uma determinada relação de domínio. Por exemplo, você pode ter uma classe de domínio de base que tenha uma relação de domínio com outra classe de domínio, mas pode não desejar que todas as classes derivadas da classe base tenham as mesmas funções nessa relação. Na solução de fluxo de tarefas, há quatro classes de domínio concretos (**StartPoint**, **Endpoint**, **MergeBranch**e **Synchronization**) que herdam diretamente do **fluxo**de classe de domínio abstrato e duas classes de domínio concretos (**Task** e **objectinst**) que herdam indiretamente dela. Há também uma relação de referência de **fluxo** que usa classes de domínio **flowelement** em ambas as funções de origem e de destino. No entanto, uma instância de uma classe de domínio de **ponto de extremidade** não deve ser a origem de uma instância de uma relação de **fluxo** , nem uma instância de uma classe **StartPoint** é o destino de uma instância de uma relação de **fluxo** . O construtor de conexões do **FlowBuilder** tem uma diretiva de conexão de link chamada **Flow** que especifica quais classes de domínio podem reproduzir a função de origem (**Task**, **MergeBranch**, **StartPoint**e **Synchronization**) e que pode reproduzir a função de destino (**MergeBranch**, **Endpoint**e **Synchronization**).
+ É possível usar os construtores de conexão para restringir a ocorrência de determinadas classes na função de fonte ou de destino de uma determinada relação de domínio. Por exemplo, você pode ter uma classe de domínio de base que tenha uma relação de domínio com outra classe de domínio, mas pode não desejar que todas as classes derivadas da classe base tenham as mesmas funções nessa relação. Na solução de fluxo de tarefas, há quatro classes de domínio concretos (**StartPoint**, **Endpoint**, **MergeBranch** e **Synchronization**) que herdam diretamente do **fluxo** de classe de domínio abstrato e duas classes de domínio concretos (**Task** e **objectinst**) que herdam indiretamente dela. Há também uma relação de referência de **fluxo** que usa classes de domínio **flowelement** em ambas as funções de origem e de destino. No entanto, uma instância de uma classe de domínio de **ponto de extremidade** não deve ser a origem de uma instância de uma relação de **fluxo** , nem uma instância de uma classe **StartPoint** é o destino de uma instância de uma relação de **fluxo** . O construtor de conexões do **FlowBuilder** tem uma diretiva de conexão de link chamada **Flow** que especifica quais classes de domínio podem reproduzir a função de origem (**Task**, **MergeBranch**, **StartPoint** e **Synchronization**) e que pode reproduzir a função de destino (**MergeBranch**, **Endpoint** e **Synchronization**).
 
 ### <a name="connection-builders-with-multiple-link-connect-directives"></a>Construtores de conexão com diversas diretivas de conexão de link
  É possível adicionar mais de uma diretiva de conexão de link a um construtor de conexão. Isso pode ajudá-lo a ocultar algumas das complexidades do modelo de domínio dos usuários e impedir que a **caixa de ferramentas** fique muito obstruída. É possível adicionar diretivas de conexão de link de várias relações de domínio diferentes a um único construtor de conexão. No entanto, é necessário combinar as relações de domínio quando elas realizam aproximadamente a mesma função.
 
- Na solução de fluxo de tarefas, a ferramenta de conexão de **fluxo** é usada para desenhar instâncias do **fluxo** e das relações de domínio do **objectflow** . O construtor de conexões do **FlowBuilder** tem, além da diretiva de conexão de link de **fluxo** descrita anteriormente, duas diretivas de conexão de link chamadas **objectflow**. Essas diretivas especificam que uma instância de uma relação de **objectflow** pode ser desenhada entre instâncias da classe de domínio **objectinstr** ou de uma instância de um **objectinst** para uma instância de uma **tarefa**, mas não entre duas instâncias de uma **tarefa**ou de uma instância de uma **tarefa** para uma instância de um **objectinst**. No entanto, uma instância de uma relação de **fluxo** pode ser desenhada entre duas instâncias de uma **tarefa**. Se você compilar e executar a solução de fluxo de tarefas, poderá ver que desenhar **um fluxo** de uma instância de um **objectinstr** para uma instância de uma **tarefa** cria uma instância de um **objectflow**, mas o desenho de um **fluxo** entre duas instâncias de uma **tarefa** cria uma instância de um **fluxo**.
+ Na solução de fluxo de tarefas, a ferramenta de conexão de **fluxo** é usada para desenhar instâncias do **fluxo** e das relações de domínio do **objectflow** . O construtor de conexões do **FlowBuilder** tem, além da diretiva de conexão de link de **fluxo** descrita anteriormente, duas diretivas de conexão de link chamadas **objectflow**. Essas diretivas especificam que uma instância de uma relação de **objectflow** pode ser desenhada entre instâncias da classe de domínio **objectinstr** ou de uma instância de um **objectinst** para uma instância de uma **tarefa**, mas não entre duas instâncias de uma **tarefa** ou de uma instância de uma **tarefa** para uma instância de um **objectinst**. No entanto, uma instância de uma relação de **fluxo** pode ser desenhada entre duas instâncias de uma **tarefa**. Se você compilar e executar a solução de fluxo de tarefas, poderá ver que desenhar **um fluxo** de uma instância de um **objectinstr** para uma instância de uma **tarefa** cria uma instância de um **objectflow**, mas o desenho de um **fluxo** entre duas instâncias de uma **tarefa** cria uma instância de um **fluxo**.
 
 ### <a name="custom-code-for-connection-builders"></a>Código personalizado para construtores de conexão
  Existem quatro caixas de seleção na interface do usuário que definem diferentes tipos de personalização dos construtores de conexão:
@@ -232,7 +234,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  Você usa código personalizado para aplicar restrições "rígidas", mas deve considerar se os usuários devem ser capazes de fazer conexões inválidas temporariamente. Se o devem, é possível modificar as restrições para que as conexões não são validadas até que os usuários tentem salvar as alterações.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Personalizando a criação e o movimento de elementos](../modeling/customizing-element-creation-and-movement.md)
 - [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md)

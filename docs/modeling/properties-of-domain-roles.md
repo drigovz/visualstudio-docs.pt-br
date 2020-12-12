@@ -1,5 +1,7 @@
 ---
 title: Propriedades de funções de domínio
+description: Saiba mais sobre as propriedades que estão associadas a uma função de domínio, como tipo de coleção, atributos personalizados e propriedade navegável.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,15 +9,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c1c62126d65107bb25e3c4a475a794116c47193
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dda8e7c5538b0517c181a451072c4f8a9544965
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544138"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362334"
 ---
 # <a name="properties-of-domain-roles"></a>Propriedades de funções de domínio
-As propriedades na tabela a seguir são associadas a uma função de domínio. Para obter informações sobre funções de domínio, consulte [noções básicas sobre modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md). Para obter mais informações sobre como usar essas propriedades, consulte [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+As propriedades na tabela a seguir são associadas a uma função de domínio. Para obter informações sobre funções de domínio, consulte [noções básicas sobre modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md). Para obter mais informações sobre como usar essas propriedades, consulte [Personalizando e estendendo uma linguagem de Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 |Propriedade|Descrição|Padrão|
 |-|-|-|
@@ -41,6 +43,6 @@ As propriedades na tabela a seguir são associadas a uma função de domínio. P
 > [!NOTE]
 > O valor padrão de um nome de exibição é baseado no valor da propriedade associada inserindo espaços antes de cada caractere maiúsculo que é precedido por um caractere minúsculo e que não é seguido por outro caractere em maiúsculas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Propriedades de relacionamentos de domínios](../modeling/properties-of-domain-relationships.md)

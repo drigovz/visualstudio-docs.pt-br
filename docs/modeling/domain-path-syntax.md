@@ -1,5 +1,7 @@
 ---
 title: Sintaxe do caminho de domínio
+description: Saiba mais sobre a sintaxe do caminho de domínio e como as definições de DSL usam uma sintaxe semelhante a XPath para localizar elementos específicos em um modelo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d7ab5f080328338e40bed080ec8a4c7a85eabdb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a24e2c9bcbecb095282c0914fa09f93e5c21e699
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114631"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361737"
 ---
 # <a name="domain-path-syntax"></a>Sintaxe do caminho de domínio
 As definições de DSL usam uma sintaxe semelhante a XPath para localizar elementos específicos em um modelo.
@@ -35,6 +37,6 @@ As definições de DSL usam uma sintaxe semelhante a XPath para localizar elemen
 
  O nome que você usa para o salto do elemento ao link é o valor de `Property Name` da função. O nome que você usa para o salto do link ao elemento é o nome da função de destino.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Noções básicas sobre modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md)

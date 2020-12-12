@@ -1,5 +1,7 @@
 ---
 title: Encontrar possíveis problemas usando analisadores de mapa de códigos
+description: Saiba como você pode executar analisadores em mapas de código para ajudá-lo a identificar o código que pode ser excessivamente complexo ou que pode precisar de aperfeiçoamento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd20d3c40a4fbe80ac1578275ccd8614eb018d7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f31aeb933150f31f4ef9d6a3fbe695dcb5ef174
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596587"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362178"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Encontrar possíveis problemas usando analisadores de mapa de códigos
 
@@ -32,20 +34,20 @@ Execute analisadores em mapas de código para ajudá-lo a identificar o código 
 
 ## <a name="analyze-code-maps"></a>Analisar mapas de código
 
-Na barra de ferramentas do mapa **Layout**, escolha  >  **analisadores**de layout e, em seguida, o analisador que você deseja executar:
+Na barra de ferramentas do mapa , escolha  >  **analisadores** de layout e, em seguida, o analisador que você deseja executar:
 
-|**Analisador**|**Para identificar os nós que**|
+|**Analyz**|**Para identificar os nós que**|
 |-|-|
 |**Analisador de referências circulares**|Ter dependências circulares entre si. **Observação:**  As dependências circulares que estão no grupo **genéricos** não são mostradas no mapa quando você expande o grupo.|
 |**Localizar analisador de hubs**|Estão nos 25% principais de nós altamente conectados<br /><br /> **Para ocultar todos os outros nós no mapa**<br /><br /> -Abra o menu de atalho para o mapa, escolha **avançado**, **selecionar**, **ocultar não selecionado**.<br />     O mapa oculta os nós não selecionados e o analisador identifica novos nós como hubs.|
 |**Analisador de nós não referenciados**|Não há referências de nenhum outro nó. **Cuidado:**  Verifique cada um desses casos antes de presumir que o código não seja usado. Determinadas dependências, como dependências XAML e dependências em tempo de execução, não podem ser encontradas estaticamente no código.|
 
-Os analisadores de mapa de código continuarão a ser executados depois que você os aplicar. Se você alterar o mapa, todos os analisadores aplicados reprocessarão automaticamente o mapa atualizado. Para interromper a execução de um analisador, na barra de **Layout**ferramentas do mapa, escolha  >  **analisadores**de layout. Desative o analisador selecionado.
+Os analisadores de mapa de código continuarão a ser executados depois que você os aplicar. Se você alterar o mapa, todos os analisadores aplicados reprocessarão automaticamente o mapa atualizado. Para interromper a execução de um analisador, na barra de ferramentas do mapa, escolha  >  **analisadores** de layout. Desative o analisador selecionado.
 
 > [!TIP]
 > Se você tiver um mapa muito grande, a execução de um analisador poderá causar uma exceção de memória insuficiente. Se isso ocorrer, edite o mapa para reduzir seu escopo ou gere um menor e, em seguida, execute o analisador.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)
 - [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)

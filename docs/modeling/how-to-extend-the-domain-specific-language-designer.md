@@ -1,5 +1,7 @@
 ---
 title: Como estender o Designer de Linguagem Específica do Domínio
+description: Saiba como você pode fazer extensões para o designer que você usa para Editar definições de DSL (linguagem específica de domínio).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa5b3166606312bb74560f207e6e1d0e6065bb2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a7a48c5a314dd52893bc7f0675915f0d68297ab
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532580"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361502"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Como estender o Designer de Linguagem Específica do Domínio
 
@@ -36,7 +38,7 @@ Configure um projeto que contém o código de sua extensão e um projeto VSIX qu
 
 3. Acima do campo conteúdo, clique em **adicionar conteúdo**.
 
-4. Na caixa de diálogo **adicionar conteúdo** , defina **selecionar um tipo de conteúdo** para **componente MEF**e defina **projeto** como seu projeto de biblioteca de classes.
+4. Na caixa de diálogo **adicionar conteúdo** , defina **selecionar um tipo de conteúdo** para **componente MEF** e defina **projeto** como seu projeto de biblioteca de classes.
 
 5. Clique em **selecionar edições** e verifique se **Visual Studio Enterprise** está marcado.
 

@@ -1,5 +1,7 @@
 ---
 title: Navegando e atualizando um modelo no código do programa
+description: Saiba como você pode escrever código para criar e excluir elementos de modelo, definir suas propriedades e criar e excluir links entre elementos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 521ad703b92133f56d38e061123bf13db13d6375
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb7c78351ccd03247d458ca403c81d379ec18d29
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566170"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362204"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Navegar e atualizar um modelo no código do programa
 
@@ -288,7 +290,7 @@ Em alguns casos, a exclusão é impedida pela existência de um bloqueio, seja n
 ## <a name="locks"></a><a name="locks"></a> Bloquea
  Suas alterações podem ser impedidas por um bloqueio. Os bloqueios podem ser definidos em elementos individuais, em partições e na loja. Se qualquer um desses níveis tiver um bloqueio que impeça o tipo de alteração que você deseja fazer, uma exceção poderá ser gerada quando você tentar. Você pode descobrir se os bloqueios são definidos usando o elemento. Getlocks (), que é um método de extensão definido no namespace <xref:Microsoft.VisualStudio.Modeling.Immutability> .
 
- Para obter mais informações, consulte [definindo uma política de bloqueio para criar segmentos somente leitura](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).
+ Para obter mais informações, consulte [definindo uma política de bloqueio para criar Read-Only segmentos](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).
 
 ## <a name="copy-and-paste"></a><a name="copy"></a> Copiar e colar
  Você pode copiar elementos ou grupos de elementos para um <xref:System.Windows.Forms.IDataObject> :
@@ -328,7 +330,7 @@ using (Transaction t = targetDiagram.Store.
 |Classe de domínio|<xref:Microsoft.VisualStudio.Modeling.ModelElement>|
 |Relação de domínio|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|
 |Forma|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|
-|Conector|<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>|
+|Connector|<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>|
 |Diagrama|<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>|
 
  Um elemento em um diagrama geralmente representa um elemento de modelo. Normalmente (mas nem sempre), um <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> representa uma instância de classe de domínio e um <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape> representa uma instância de relação de domínio. A <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> relação vincula um nó ou forma de link ao elemento de modelo que ele representa.
@@ -482,7 +484,7 @@ partial class MyDiagram
 ## <a name="store-partitions"></a>Armazenar partições
  Quando um modelo é carregado, o diagrama que o acompanha é carregado ao mesmo tempo. Normalmente, o modelo é carregado em Store. DefaultPartition e o conteúdo do diagrama é carregado em outra partição. Normalmente, o conteúdo de cada partição é carregado e salvo em um arquivo separado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [Validação em uma linguagem específica do domínio](../modeling/validation-in-a-domain-specific-language.md)

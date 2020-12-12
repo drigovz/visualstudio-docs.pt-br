@@ -1,5 +1,7 @@
 ---
 title: Inserindo um diagrama em um formulário do Windows Forms
+description: Saiba como você pode inserir um diagrama de DSL em um controle do Windows, que aparece na janela do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e81a5ff10cd6e309ffbf17e40ffbaa9ec88f185
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4338bfa824b511ee0be40516e1396a75901188a1
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547622"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361697"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Inserir um diagrama em um Windows Form
 
@@ -141,7 +143,7 @@ Você pode inserir um diagrama de DSL em um controle do Windows, que aparece na 
 
      Observe que a caixa de listagem mostra uma lista dos elementos no modelo e que ele está correto após qualquer adição ou exclusão, e após desfazer e refazer.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Escrevendo código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

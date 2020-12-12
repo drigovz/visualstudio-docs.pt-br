@@ -1,5 +1,7 @@
 ---
 title: Manipuladores de eventos propagam alterações fora do modelo
+description: Saiba que, no SDK de visualização e modelagem, você pode definir manipuladores de eventos de armazenamento para propagar alterações para recursos fora da loja.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76234eea6c689459728e0da876b6a9cce7c290a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b0780007361115aa485b91db70cc413029a6f8f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114598"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361671"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Manipuladores de eventos propagam alterações fora do modelo
 
@@ -184,7 +186,7 @@ Cada tipo de evento corresponde a uma coleção em Store. EventManagerDirectory.
 |TransactionCommitted||
 |TransactionRolledBack||
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Respondendo a alterações e propagando-as](../modeling/responding-to-and-propagating-changes.md)
 - [Código de exemplo: diagramas de circuito](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

@@ -1,5 +1,7 @@
 ---
 title: Validar o sistema durante o desenvolvimento
+description: Saiba como o Visual Studio pode ajudar a manter seu software consistente com os requisitos do usuário e com a arquitetura do seu sistema.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae2b7d81b1f166e6cc97debc3291661d59ee6960
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a803b2fb7eb7c682e29ae0d17698ef673927d751
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594026"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361398"
 ---
 # <a name="validate-your-system-during-development"></a>Validar o sistema durante o desenvolvimento
 
@@ -38,7 +40,7 @@ Use as seguintes tarefas para validar o software:
 |**Vídeos**|![link para o canal de vídeo ](../data-tools/media/playvideo.gif) [9: Doug sete: compreensão de código e design de sistemas com o Visual Studio 2010](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![link para ](../data-tools/media/playvideo.gif) [o canal de vídeo 9: Arquitetando um aplicativo](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application))|
 |**Fóruns**|- [Ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Extensibilidade do Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Requisitos de usuário do modelo](../modeling/model-user-requirements.md)
 - [Analisar e modelar a arquitetura](../modeling/analyze-and-model-your-architecture.md)

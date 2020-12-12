@@ -1,5 +1,7 @@
 ---
 title: Substituindo e estendendo as classes geradas
+description: Saiba como sua definição de DSL é uma plataforma na qual você pode criar um conjunto avançado de ferramentas baseadas em uma linguagem específica de domínio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1b36a7524530df7f9a18ce9abe1de2d430156d6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595885"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362087"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Substituir e estender as classes geradas
 
@@ -46,7 +48,7 @@ public partial class Book
 
 Para descobrir quais métodos você pode substituir, digite **override** na classe, seguida por um espaço. A dica de ferramenta do IntelliSense informará quais métodos podem ser substituídos.
 
-### <a name="double-derived-classes"></a>Classes derivadas de duas vezes
+### <a name="double-derived-classes"></a>Classes de Double-Derived
 
 A maioria dos métodos em classes geradas é herdada de um conjunto fixo de classes nos namespaces de modelagem. No entanto, alguns métodos são definidos no código gerado. Normalmente, isso significa que você não pode substituí-los; Não é possível substituir em uma classe parcial os métodos que são definidos em outra definição parcial da mesma classe.
 

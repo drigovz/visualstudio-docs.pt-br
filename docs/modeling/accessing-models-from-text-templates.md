@@ -1,5 +1,7 @@
 ---
 title: Acessando modelos a partir de modelos (templates) de texto
+description: Saiba como você pode usar modelos de texto para criar arquivos de relatório, arquivos de código-fonte e outros arquivos de texto baseados em modelos de linguagem específicos de domínio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,19 +11,19 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a66f160d25ccacbdaaaf2238dfc738ade4a4200f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64d937f9a63207e16664bbd9254ae60470caeb41
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531463"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362282"
 ---
 # <a name="access-models-from-text-templates"></a>Acessar modelos de modelos de texto
 
 Usando modelos de texto, você pode criar arquivos de relatório, arquivos de código-fonte e outros arquivos de texto baseados em modelos de linguagem específicos de domínio. Para obter informações básicas sobre modelos de texto, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md). Os modelos de texto funcionarão no modo experimental quando você estiver Depurando sua DSL e também funcionará em um computador no qual você implantou a DSL.
 
 > [!NOTE]
-> Quando você cria uma solução de DSL, os arquivos de exemplo de modelo de texto ** \* . tt** são gerados no projeto de depuração. Quando você alterar os nomes das classes de domínio, esses modelos deixarão de funcionar. No entanto, eles incluem as diretivas básicas de que você precisa e fornecem exemplos que você pode atualizar para corresponder à sua DSL.
+> Quando você cria uma solução de DSL, os arquivos de exemplo de modelo de texto **\* . tt** são gerados no projeto de depuração. Quando você alterar os nomes das classes de domínio, esses modelos deixarão de funcionar. No entanto, eles incluem as diretivas básicas de que você precisa e fornecem exemplos que você pode atualizar para corresponder à sua DSL.
 
  Para acessar um modelo de um modelo de texto:
 

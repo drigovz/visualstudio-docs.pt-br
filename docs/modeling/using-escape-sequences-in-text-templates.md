@@ -1,5 +1,7 @@
 ---
 title: Usando sequências de escape em modelos de texto
+description: Saiba como você pode usar sequências de escape em modelos de texto para gerar marcas de modelo de texto e para escapar caracteres de controle e aspas apenas em código C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83e6e5cf163037077d0517e5f7ea460f9124f27c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b007a9b5ccf41a27cda7d9833064eb60394c4dc
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594039"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361320"
 ---
 # <a name="use-escape-sequences-in-text-templates"></a>Usar sequências de escape em modelos de texto
 
@@ -36,6 +38,6 @@ Se um bloco de texto incluir cadeias de caracteres usadas para escapar marcas de
 
 - Se um caractere de escape ( \\ ) aparecer em qualquer lugar em qualquer sequência diferente de onde ele sai de um caractere de controle ou de uma aspa (somente em C#), o caractere será impresso diretamente.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Como gerar modelos a partir de modelos usando sequências de escape](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

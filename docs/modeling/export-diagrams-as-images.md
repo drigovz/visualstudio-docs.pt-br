@@ -1,5 +1,7 @@
 ---
 title: Exportar diagramas como imagens
+description: Saiba que você pode salvar diagramas de modelagem em formatos somente leitura para que você possa compartilhá-los com pessoas que não usam a mesma versão do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e433e47d04a2beb1521aba65be664f7c7efd44f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12e0036377ed5b67e092ff0cf4588acc39c23525
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547596"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361632"
 ---
 # <a name="export-diagrams-as-images"></a>Exportar diagramas como imagens
 
@@ -36,11 +38,11 @@ Para ver quais edições do Visual Studio oferecem suporte a esse recurso, consu
 
 1. No menu **arquivo** , clique em **Imprimir** para abrir a caixa de diálogo **Imprimir** .
 
-2. Na lista **nome** , selecione **Microsoft XPS Document Writer**e clique em **OK**.
+2. Na lista **nome** , selecione **Microsoft XPS Document Writer** e clique em **OK**.
 
 3. Na caixa de diálogo **salvar o arquivo como** , salve o arquivo como um arquivo de **documento XPS ( \* . XPS)** .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)
 - [Modelos de compartilhamento e diagramas de exportação](../modeling/share-models-and-exporting-diagrams.md)

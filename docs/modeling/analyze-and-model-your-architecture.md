@@ -1,5 +1,7 @@
 ---
 title: Analisar e modelar a sua arquitetura
+description: Saiba como você pode usar as ferramentas de arquitetura e modelagem do Visual Studio para criar e modelar seu aplicativo para garantir que seu aplicativo atenda aos requisitos de arquitetura.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -17,12 +19,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1db28867ea47752aa74b7898c44e797c0704594
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71296b9ccb2e442d1bd9bc13865e0086821bf030
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544216"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361151"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analisar e modelar a sua arquitetura
 
@@ -43,7 +45,7 @@ Consulte [cenário: alterar o design usando visualização e modelagem](../model
 |**Visualizar código**:<br /><br />-Consulte a organização do código e as relações Criando mapas de código. Visualize dependências entre assemblies, namespaces, classes, métodos e assim por diante.<br />-Consulte a estrutura de classe e os membros de um projeto específico Criando diagramas de classe do código.<br />-Encontre conflitos entre seu código e seu design criando diagramas de dependência para validar o código.|- [Visualizar código](../modeling/visualize-code.md)<br />- [Trabalhando com classes e outros tipos (Designer de Classe)](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />- [Vídeo: entenda o design do código com os mapas de código do Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />- [Vídeo: valide suas dependências de arquitetura em tempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
 |**Defina a arquitetura**:<br /><br />-Definir e impor restrições em dependências entre os componentes do seu código Criando diagramas de dependência.|- [Vídeo: validar dependências de arquitetura com o Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
 |**Valide seu sistema com os requisitos e o design pretendido:**<br /><br />– Valide dependências de código com diagramas de dependência que descrevem a arquitetura desejada e evite alterações que possam entrar em conflito com o design.|- [Vídeo: validar dependências de arquitetura com o Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
-|**Personalizar modelos e diagramas**:<br /><br />-Crie suas próprias linguagens específicas de domínio.|- [SDK de modelagem para Visual Studio-linguagens específicas de domínio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
+|**Personalizar modelos e diagramas**:<br /><br />-Crie suas próprias linguagens específicas de domínio.|- [SDK de modelagem para Visual Studio-linguagens de Domain-Specific](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
 |**Gerar texto usando modelos T4**:<br /><br />-Use blocos de texto e lógica de controle dentro de modelos para gerar arquivos baseados em texto.<br /> -Compilação de modelo T4 com MSBuild incluído no Visual Studio|- [Geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md)|
 |**Compartilhe modelos, diagramas e mapas de código usando o controle de versão do Team Foundation**:<br /><br />-Coloque mapas de código, projetos e diagramas de dependência sob o controle de versão do Team Foundation para que você possa compartilhá-los.| |
 
@@ -93,7 +95,7 @@ Uma DSL é uma notação que você cria para uma finalidade específica. No Visu
 
 - [SDK de Modelagem para Visual Studio - linguagens específicas ao domínio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [O que há de novo para modelagem no Visual Studio 2017](../modeling/what-s-new-for-design-in-visual-studio.md)
 - [DevOps e gerenciamento de ciclo de vida do aplicativo](/azure/devops/user-guide/devops-alm-overview)

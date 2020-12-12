@@ -1,5 +1,7 @@
 ---
 title: Personalizar uma Linguagem Específica de Domínio
+description: Saiba como usar o código personalizado para acessar, modificar ou criar um modelo em uma DSL (linguagem específica de domínio).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b67a50623eb1924c4a18b57524c409f7eba6ab20
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31b97b113b763a8f294386d4fa5fe66233a3f980
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546868"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360449"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>Escrever o código para personalizar uma Linguagem Específica de Domínio
 
@@ -24,11 +26,11 @@ Há vários contextos nos quais você pode escrever código que funciona com uma
 
 - **Comandos personalizados.** Você pode criar um comando que os usuários podem invocar clicando com o botão direito do mouse no diagrama e que podem modificar o modelo. Para obter mais informações, consulte [como: adicionar um comando ao menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
-- **Confirmação.** Você pode escrever código que verifica se o modelo está em um estado correto. Para obter mais informações, consulte [validação em uma linguagem específica de domínio](../modeling/validation-in-a-domain-specific-language.md).
+- **Confirmação.** Você pode escrever código que verifica se o modelo está em um estado correto. Para obter mais informações, consulte [validação em um idioma de Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
 - **Substituindo o comportamento padrão.** Você pode modificar muitos aspectos do código que é gerado a partir de DslDefinition. DSL. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).
 
-- **Transformação de texto.** Você pode escrever modelos de texto que contenham código que acesse um modelo e gere um arquivo de texto, por exemplo, para gerar código de programa. Para obter mais informações, consulte [gerando código de uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md).
+- **Transformação de texto.** Você pode escrever modelos de texto que contenham código que acesse um modelo e gere um arquivo de texto, por exemplo, para gerar código de programa. Para obter mais informações, consulte [gerando código a partir de um idioma Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md).
 
 - **Outras extensões do Visual Studio.** Você pode gravar extensões VSIX separadas que lêem e modificam modelos. Para obter mais informações, consulte [como: abrir um modelo do arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
@@ -72,6 +74,6 @@ manter os objetos na loja (em vez de objetos comuns) fornece vários benefícios
 
 - **Serialização**. O repositório fornece uma maneira padrão de serializar os objetos que ele contém em um arquivo. Você pode personalizar as regras para serialização e desserialização. Para obter mais informações, consulte [Personalizando o armazenamento de arquivos e a serialização de XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md)

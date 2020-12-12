@@ -1,5 +1,7 @@
 ---
 title: Adicionar comandos e gestos a diagramas de dependência
+description: Saiba como você pode definir comandos de menu de clique com o botão direito do mouse e manipuladores de gestos em diagramas de dependência no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc91e2c160d2081db868daf8d8dbaeb041172297
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531385"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362217"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Adicionar comandos e gestos a diagramas de dependência
 
@@ -261,6 +263,6 @@ Observe os seguintes pontos sobre manipuladores de gestos:
 
 - Os manipuladores para alguns tipos de itens arrastados já estão definidos. Por exemplo, o usuário pode arrastar itens do Gerenciador de Soluções para um diagrama de dependência. Você não pode definir um manipulador de arrastar para esses tipos de item. Nesses casos, seus `DragDrop` métodos não serão invocados.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Adicionar validação de arquitetura personalizada a diagramas de dependência](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)

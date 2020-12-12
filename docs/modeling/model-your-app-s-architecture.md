@@ -1,5 +1,7 @@
 ---
 title: Modele a arquitetura do seu aplicativo &apos;
+description: Saiba como você pode criar modelos no Visual Studio como parte de sua descrição da estrutura geral e do comportamento do seu aplicativo ou sistema de software.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 449f528264f2101a45bc809a5002ce4e88659d05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c284532a1e7f6407ebea987873665edb4e940019
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711723"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361021"
 ---
 # <a name="model-your-app39s-architecture"></a>Modele a arquitetura de seu aplicativo&#39;s
 Para ajudar a garantir que o seu sistema de software ou aplicativo atenda às necessidades de seus usuários, você pode criar modelos no Visual Studio como parte da sua descrição da estrutura geral e do comportamento do seu aplicativo ou sistema de software. Usando modelos, você também pode descrever padrões que são usados em todo o design. Esses modelos ajudam você a entender a arquitetura existente, a discutir alterações e a comunicar suas intenções claramente.
@@ -102,7 +104,7 @@ Para ajudar a garantir que o seu sistema de software ou aplicativo atenda às ne
 
 - Descrição das variações que os desenvolvedores podem adotar.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Visualizar código](../modeling/visualize-code.md)
 - [Requisitos de usuário do modelo](../modeling/model-user-requirements.md)

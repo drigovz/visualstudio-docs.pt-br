@@ -1,5 +1,6 @@
 ---
 title: Usar ModelBus em um modelo de texto
+description: Saiba como resolver referências para acessar modelos de destino se você escrever modelos de texto que lêem um modelo que contém referências de Visual Studio ModelBus.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +8,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a6c9cb035637347ffd501b5cf3b1038cd09369
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1025e7d35c20dc18c87942e23cf71b598d85637a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535935"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361359"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Usando o Visual Studio ModelBus em um modelo de texto
 
@@ -53,7 +54,7 @@ Para resolver uma referência de ModelBus em um modelo de texto, a DSL de destin
 
     2. Renomeie o arquivo de projeto (por exemplo, para **T4ModelBusAdapter. csproj**).
 
-    3. Em **Gerenciador de soluções**, clique com o botão direito do mouse no nó da solução, aponte para **Adicionar**e clique em **projeto existente**. Localize o novo projeto de adaptador, **T4ModelBusAdapter. csproj**.
+    3. Em **Gerenciador de soluções**, clique com o botão direito do mouse no nó da solução, aponte para **Adicionar** e clique em **projeto existente**. Localize o novo projeto de adaptador, **T4ModelBusAdapter. csproj**.
 
     4. Em cada `*.tt` arquivo do novo projeto, altere o namespace.
 
@@ -181,7 +182,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
    Se você não vir **habilitar ModelBus**, baixe e instale a extensão VMSDK ModelBus.
 
-3. Na caixa de diálogo **habilitar ModelBus** , selecione **expor essa DSL para o ModelBus**e clique em **OK**.
+3. Na caixa de diálogo **habilitar ModelBus** , selecione **expor essa DSL para o ModelBus** e clique em **OK**.
 
     Um novo projeto, `ModelBusAdapter` , é adicionado à solução.
 
@@ -195,7 +196,7 @@ Agora você tem uma DSL que pode ser acessada por modelos de texto por meio de M
 
     Renomeie o arquivo de projeto *T4ModelBusAdapter. csproj*.
 
-2. Em Gerenciador de Soluções, adicione T4ModelBusAdapter à solução MBProvider. Clique com o botão direito do mouse no nó da solução, aponte para **Adicionar**e clique em **projeto existente**.
+2. Em Gerenciador de Soluções, adicione T4ModelBusAdapter à solução MBProvider. Clique com o botão direito do mouse no nó da solução, aponte para **Adicionar** e clique em **projeto existente**.
 
 3. Clique com o botão direito do mouse no nó do projeto T4ModelBusAdapter e clique em Propriedades. Na janela Propriedades do projeto, altere o **nome do assembly** e o **namespace padrão** para `Company.MBProvider.T4ModelBusAdapters` .
 
@@ -285,13 +286,13 @@ Agora você tem uma DSL que pode ser acessada por modelos de texto por meio de M
 
 2. Adicione uma cópia de exemplo. forneça ao projeto **MBConsumer\Debugging** . Isso é necessário porque uma referência de ModelBus deve se referir a um arquivo na mesma solução.
 
-   1. Clique com o botão direito do mouse no projeto de depuração, aponte para **Adicionar**e clique em **Item existente**.
+   1. Clique com o botão direito do mouse no projeto de depuração, aponte para **Adicionar** e clique em **Item existente**.
 
    2. Na caixa de diálogo **Adicionar item** , defina o filtro para **todos os arquivos ( \* . \* )**.
 
    3. Navegue até `MBProvider\Debugging\Sample.provide` e clique em **Adicionar**.
 
-3. Abra o `Sample.consume`.
+3. Abra `Sample.consume`.
 
 4. Clique em um exemplo de forma e, na janela Propriedades, clique em **[...]** na propriedade MBR. Na caixa de diálogo, clique em **procurar** e selecione `Sample.provide` . Na janela elementos, expanda a tarefa tipo e selecione um dos elementos.
 
@@ -396,7 +397,7 @@ Agora você tem uma DSL que pode ser acessada por modelos de texto por meio de M
 
     Se você tiver definido o MBR nesse elemento, o modelo referenciado será aberto e o elemento referenciado será selecionado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Integrando modelos por meio do Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [Geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md)

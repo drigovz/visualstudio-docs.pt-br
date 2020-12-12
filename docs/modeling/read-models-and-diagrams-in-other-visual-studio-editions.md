@@ -1,5 +1,7 @@
 ---
 title: Ler modelos e diagramas em outras edições do Visual Studio
+description: Saiba mais sobre como ler modelos e diagramas no Visual Studio, bem como o comportamento somente leitura ao usar uma versão do Visual Studio que não oferece suporte à criação de modelo.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe4cdcefb7b823090cca8976055de5a3ebb9b1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffbf39421f507338d14a6b05a667ec4301375067
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595404"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360683"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Ler modelos e diagramas em outras edições do Visual Studio
 
@@ -45,7 +47,7 @@ Para ler um diagrama de dependência, o conjunto mínimo de arquivos de que voc�
 
 - Os arquivos de pacote para qualquer pacote referenciado no diagrama (**ModelDefinition\MyPackage.Uml**)
 
-## <a name="changes-that-you-can-make-in-read-only-mode"></a>Alterações que você pode fazer no modo somente leitura
+## <a name="changes-that-you-can-make-in-read-only-mode"></a>Alterações que você pode fazer no modo de Read-Only
 
 Se você abrir um modelo e seus diagramas em uma versão do Visual Studio que não ofereça suporte à criação de modelo, não será possível alterar o modelo. Ou seja, você não pode alterar os elementos e as relações que são exibidos nos diagramas ou no Gerenciador de modelos. No entanto, você pode fazer algumas alterações no layout dos diagramas:
 
@@ -55,7 +57,7 @@ Se você abrir um modelo e seus diagramas em uma versão do Visual Studio que n�
 
 Você pode salvar essas alterações. Se você quiser tornar as alterações visíveis para outros usuários, será necessário pelo menos enviar os arquivos **. layout** atualizados.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)
 - [Criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)

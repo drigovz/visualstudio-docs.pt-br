@@ -1,5 +1,7 @@
 ---
 title: Mapas de código
+description: Saiba como os mapas de código ajudam você a ver como o código se encaixa sem ler arquivos e linhas de código.
+ms.custom: SEO-VS-2020
 ms.date: 05/16/2018
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 771a6ccf4749a3464204d3da75f4d403d1ab2dd5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39b34bb124d663d81769c6d3086d6b36803d60eb
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532711"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362230"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapear dependências com mapas de código
 
@@ -43,7 +45,7 @@ Você pode mapear as dependências para o código nestes idiomas:
 - Projetos e assemblies do X++ feitos com base nos módulos do .NET para Microsoft AX Dynamics
 
 > [!NOTE]
-> Para projetos diferentes de C# ou Visual Basic, há menos opções para iniciar um mapa de código ou adicionar itens a um mapa de código existente. Por exemplo, você não pode clicar com o botão direito do mouse em um objeto no editor de texto de um projeto C++ e adicioná-lo a um mapa de código. No entanto, você pode arrastar e soltar elementos de código individuais ou arquivos de **Gerenciador de soluções**, **modo de exibição de classe**e **pesquisador de objetos**.
+> Para projetos diferentes de C# ou Visual Basic, há menos opções para iniciar um mapa de código ou adicionar itens a um mapa de código existente. Por exemplo, você não pode clicar com o botão direito do mouse em um objeto no editor de texto de um projeto C++ e adicioná-lo a um mapa de código. No entanto, você pode arrastar e soltar elementos de código individuais ou arquivos de **Gerenciador de soluções**, **modo de exibição de classe** e **pesquisador de objetos**.
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>Instalar mapa de código e validação de dependência ao vivo
 
@@ -164,7 +166,7 @@ Suponha que você tenha uma revisão de código para executar em alguns arquivos
 
 1. Na barra de ferramentas **Gerenciador de soluções** , escolha **Mostrar no mapa de códigos** ![ criar novo grafo a partir do botão nós selecionados ](../modeling/media/createnewgraphfromselectedbutton.gif) . Ou abra o menu de atalho para um ou um grupo de itens e escolha **Mostrar no mapa de códigos**.
 
-   Você também pode arrastar itens de **Gerenciador de soluções**, **modo de exibição de classe**ou **pesquisador de objetos**, em um mapa de código [novo](#add-a-code-map) ou existente. Para incluir a hierarquia pai de seus itens, pressione e segure a tecla **Ctrl** enquanto arrasta os itens ou use o botão **incluir pais** na barra de ferramentas do mapa de códigos para especificar a ação padrão. Você também pode arrastar arquivos de assembly de fora do Visual Studio, como no **Windows Explorer**.
+   Você também pode arrastar itens de **Gerenciador de soluções**, **modo de exibição de classe** ou **pesquisador de objetos**, em um mapa de código [novo](#add-a-code-map) ou existente. Para incluir a hierarquia pai de seus itens, pressione e segure a tecla **Ctrl** enquanto arrasta os itens ou use o botão **incluir pais** na barra de ferramentas do mapa de códigos para especificar a ação padrão. Você também pode arrastar arquivos de assembly de fora do Visual Studio, como no **Windows Explorer**.
 
    > [!NOTE]
    > Quando você adiciona itens de um projeto que é compartilhado entre vários aplicativos, como Windows Phone ou Microsoft Store, esses itens aparecem no mapa com o projeto de aplicativo ativo no momento. Se você alterar o contexto para outro projeto de aplicativo e adicionar mais itens do projeto compartilhado, esses itens agora serão exibidos com o projeto de aplicativo recém-ativo. Operações realizadas com um item no mapa se aplicam apenas aos itens que compartilham o mesmo contexto.
@@ -177,7 +179,7 @@ Suponha que você tenha uma revisão de código para executar em alguns arquivos
 
    ![Expandir um nó em um mapa de código](../modeling/media/dependencygraph_containment.png)
 
-   Para expandir todos os itens, selecione-os usando **Ctrl** + **A**e, em seguida, abra o menu de atalho para o mapa e escolha **Agrupar**  >  **expandir**. No entanto, essa opção não estará disponível se a expansão de todos os grupos criar um mapa inutilizável ou problemas de memória.
+   Para expandir todos os itens, selecione-os usando **Ctrl** + **A** e, em seguida, abra o menu de atalho para o mapa e escolha **Agrupar**  >  **expandir**. No entanto, essa opção não estará disponível se a expansão de todos os grupos criar um mapa inutilizável ou problemas de memória.
 
 5. Continue a expandir os itens nos quais você está interessado, logo abaixo do nível de classe e de membro, se necessário.
 
@@ -236,7 +238,7 @@ Suponha que você tenha uma revisão de código para executar em alguns arquivos
 
    ![Use o painel de filtro para simplificar a exibição](../modeling/media/almcodemapfilterpane.png)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Vídeo: entenda o design do código com os mapas de código do Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)

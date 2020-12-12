@@ -1,5 +1,7 @@
 ---
 title: Adicionar propriedades personalizadas a diagramas de dependência
+description: Saiba como você pode armazenar valores com qualquer elemento em um diagrama de dependência ao escrever o código de extensão para diagramas de dependência.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3073a42faf0dcc6fbf586847382ba3a83d88ed4
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546907"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360761"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Adicionar propriedades personalizadas a diagramas de dependência
 
@@ -38,7 +40,7 @@ Se você quiser apenas que seu código anexe valores a qualquer elemento em um d
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. Na seção **Ferramentas do Visual Studio** do menu Iniciar do aplicativo do Visual Studio, abra **prompt de comando do desenvolvedor**. Insira:
+> 3. Na seção **Ferramentas do Visual Studio** do menu Iniciar do aplicativo do Visual Studio, abra **prompt de comando do desenvolvedor**. Digite:
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
@@ -160,6 +162,6 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Estender diagramas de dependência](../modeling/extend-layer-diagrams.md)

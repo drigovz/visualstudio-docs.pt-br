@@ -1,5 +1,7 @@
 ---
 title: Visão geral das Ferramentas de Linguagem Específica do Domínio
+description: Saiba como as ferramentas de DSL permitem projetar uma linguagem específica de domínio e, em seguida, gerar tudo o que os usuários devem ter para criar modelos baseados no idioma.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -9,15 +11,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d9f2446aa793fcd80c3c6786bf1b2002a7ccbc0
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e88a6157e5c9db7914ac6f7470d793be11dfdfc8
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808071"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362022"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Visão geral das Ferramentas de Linguagem Específica do Domínio
-Ferramentas de Linguagem Específica de Domínio (ferramentas DSL), que são hospedadas no Visual Studio, permitem que você projete uma linguagem específica de domínio e, em seguida, gere tudo o que os usuários devem ter para criar modelos baseados no idioma.
+As ferramentas de linguagem Domain-Specific (ferramentas DSL), que são hospedadas no Visual Studio, permitem que você projete uma linguagem específica de domínio e, em seguida, gere tudo o que os usuários devem ter para criar modelos baseados no idioma.
 
  As ferramentas a seguir estão incluídas nas Ferramentas DSL:
 
@@ -64,7 +66,7 @@ Ferramentas de Linguagem Específica de Domínio (ferramentas DSL), que são hos
 ## <a name="validation-in-dsl-tools"></a>Validação nas Ferramentas DSL
  As DSL fornecem um nível de validação para verificar se o modelo de domínio atende aos requisitos básicos para geração de código. Normalmente, ao criar sua própria linguagem específica de domínio, você adicionaria sua própria validação para expressar suas regras de lógica de negócios. Para obter mais informações sobre a validação personalizada, confira [Validação em uma linguagem específica de domínio](../modeling/validation-in-a-domain-specific-language.md).
 
- É recomendável que você valide a linguagem específica de domínio com frequência durante sua criação. Se sua linguagem específica de domínio tiver erros de validação, você não poderá gerar o código-fonte. O processo de geração de código-fonte usando modelos é executado clicando em **Transformar Todos os Modelos** na barra de ferramentas do Gerenciador de Soluções. Sempre que você modificar a definição de linguagem, clique em **Transformar Todos os Modelos**. Para obter mais informações, consulte [como: criar uma solução de linguagem específica de domínio](../modeling/how-to-create-a-domain-specific-language-solution.md).
+ É recomendável que você valide a linguagem específica de domínio com frequência durante sua criação. Se sua linguagem específica de domínio tiver erros de validação, você não poderá gerar o código-fonte. O processo de geração de código-fonte usando modelos é executado clicando em **Transformar Todos os Modelos** na barra de ferramentas do Gerenciador de Soluções. Sempre que você modificar a definição de linguagem, clique em **Transformar Todos os Modelos**. Para obter mais informações, consulte [como: criar uma solução de linguagem de Domain-Specific](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="customization-of-dsl-tools"></a>Personalização das Ferramentas DSL
  Você pode fornecer código adicional para refinar o comportamento do modelo e definir restrições em seu idioma. Se necessário, você pode fazer alterações significativas modificando os modelos de texto.
@@ -74,7 +76,7 @@ Ferramentas de Linguagem Específica de Domínio (ferramentas DSL), que são hos
 
  Quando você cria e executa a solução de ferramentas DSL no Visual Studio, uma segunda instância do Visual Studio mostra como a linguagem específica do domínio procura o usuário do idioma. Depois de verificar se tudo está funcionando corretamente, você poderá distribuir o arquivo `.vsix` que encontrará na pasta de build do projeto DslPackage. Esse arquivo pode ser usado para instalar a DSL como uma extensão do Visual Studio em outros computadores.  Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](msi-and-vsix-deployment-of-a-dsl.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [A instância experimental](../extensibility/the-experimental-instance.md)
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

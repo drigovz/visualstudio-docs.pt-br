@@ -1,5 +1,7 @@
 ---
 title: Respondendo a alterações e propagando-as
+description: Saiba que, quando um elemento é criado, excluído ou atualizado, você pode escrever um código que propaga a alteração para outras partes do modelo ou para recursos externos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c51aeea4a1637e5b1b9d2de0d8b92920334e2fc
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 9e44def032854e46b00638cff77c8bea91eb0f09
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414510"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360606"
 ---
 # <a name="respond-to-and-propagate-changes"></a>Responder e propagar alterações
 
@@ -52,7 +54,7 @@ Use armazenar eventos para sincronizar o modelo com objetos fora da loja e regra
 
 - **Passando argumentos de evento para regras e eventos** Os eventos e as regras passam um `EventArgs` parâmetro que tem informações sobre como o modelo foi alterado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Como interceptar um clique em uma forma ou um decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
 - [Escrevendo código para personalizar um idioma Domain-Specific](../modeling/writing-code-to-customise-a-domain-specific-language.md)

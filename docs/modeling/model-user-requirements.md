@@ -1,5 +1,7 @@
 ---
 title: Requisitos de usuário do modelo
+description: Saiba como o Visual Studio ajuda você a entender, discutir e comunicar as necessidades dos usuários por meio de diagramas de desenho sobre suas atividades.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40418b2d188ac5482a12dd4ffdddd221bf5d2f97
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590235"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361957"
 ---
 # <a name="model-user-requirements"></a>Requisitos de usuário do modelo
 
@@ -96,7 +98,7 @@ Se um restaurante excluir um item de menu enquanto um cliente estiver solicitand
 
 Consulte [modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md) para saber como desenvolver código que atenda aos requisitos de qualidade de serviço.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)
 - [Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)

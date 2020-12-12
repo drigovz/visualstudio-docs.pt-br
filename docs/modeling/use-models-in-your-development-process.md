@@ -1,5 +1,7 @@
 ---
 title: Usar modelos no processo de desenvolvimento
+description: Saiba que, no Visual Studio, você pode usar um modelo para ajudá-lo a entender e alterar um sistema, aplicativo ou componente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4a15a6cd0d38ca06b1a0ae25be69a24d42ba8cb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dbc817ca7bdf08c4e5ceee79a1e1113b4dd26e0c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298103"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361424"
 ---
 # <a name="use-models-in-your-development-process"></a>Usar modelos no processo de desenvolvimento
 
@@ -136,7 +138,7 @@ Tipos diferentes de diagrama são úteis para descrever o design em diferentes n
 |**Blogs**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**Artigos técnicos e diários**|[Centro de arquitetura do MSDN](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Orientação de ferramentas de arquitetura do Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Usar modelos no desenvolvimento ágil](/previous-versions/ff398061(v=vs.140))
 - [Criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)

@@ -1,5 +1,7 @@
 ---
 title: Noções básicas do código de DSL
+description: Saiba como a solução de DSL (linguagem de Domain-Specific) gera uma API que você pode usar para ler e atualizar instâncias do DSL no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +11,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd739a7780a2a2c858efc14aa72205e9be161900
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565936"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361450"
 ---
 # <a name="understanding-the-dsl-code"></a>Noções básicas do código de DSL
 
-Uma solução de DSL (linguagem específica de domínio) gera uma API que você pode usar para ler e atualizar instâncias do DSL no Visual Studio. Essa API é definida no código que é gerado na definição da DSL. Este tópico descreve a API gerada.
+Uma solução de DSL (linguagem de Domain-Specific) gera uma API que você pode usar para ler e atualizar instâncias do DSL no Visual Studio. Essa API é definida no código que é gerado na definição da DSL. Este tópico descreve a API gerada.
 
 ## <a name="the-example-solution-component-diagrams"></a>A solução do exemplo: Diagramas de Componente
 
@@ -66,7 +68,7 @@ Pressione **F5** e experimente se você não estiver familiarizado com este mode
 
  `ConnectionBuilders.cs`
 
- Um compilador de conexão é uma classe que cria relações. É o código por trás de uma ferramenta de conexão. Esse arquivo contém um par de classes para cada ferramenta de conexão. Seus nomes são derivados dos nomes da relação de domínio e da ferramenta de conexão: *relationship*Builder e *ConnectorTool*connectaction.
+ Um compilador de conexão é uma classe que cria relações. É o código por trás de uma ferramenta de conexão. Esse arquivo contém um par de classes para cada ferramenta de conexão. Seus nomes são derivados dos nomes da relação de domínio e da ferramenta de conexão: *relationship* Builder e *ConnectorTool* connectaction.
 
  (No exemplo de solução de componente, um dos compiladores de conexão é chamado ConnectionBuilder, isso é uma coincidência porque o nome da relação do domínio é Connection.)
 
@@ -102,7 +104,7 @@ Pressione **F5** e experimente se você não estiver familiarizado com este mode
 
  Esse processador de diretriz ajuda os usuários a gravar modelos de texto que fazem a leitura de uma instância da DSL. O processador de diretriz carrega os assemblies (DLLs) da DSL e, efetivamente insere instruções `using` para o namespace. Isso permite ao código nos modelos de texto usar as classes e relações definidas na DSL.
 
- Para obter mais informações, consulte [gerando código de uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md) e [criando processadores de diretiva de modelo de texto T4 personalizados](../modeling/creating-custom-t4-text-template-directive-processors.md).
+ Para obter mais informações, consulte [gerando código de uma linguagem de Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md) e [criando processadores de diretiva de texto de T4 personalizados](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
  `DomainClasses.cs`
 
@@ -153,7 +155,7 @@ Pressione **F5** e experimente se você não estiver familiarizado com este mode
 
  Em funções de relação em que é especificada uma multiplicidade de 1..1 ou 1..*, o usuário deve ser advertido de que será necessária ao menos uma instância da relação. Esse arquivo fornece restrições de validação que implementam essas advertências. O link 1..1 a um pai de inserção não é verificado.
 
- Para que essas restrições sejam executadas, você deve ter definido uma das opções **use...** no nó **Editor\Validation** no Gerenciador de DSL. Para obter mais informações, consulte [validação em uma linguagem específica de domínio](../modeling/validation-in-a-domain-specific-language.md).
+ Para que essas restrições sejam executadas, você deve ter definido uma das opções **use...** no nó **Editor\Validation** no Gerenciador de DSL. Para obter mais informações, consulte [validação em um idioma de Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
  `PropertiesGrid.cs`
 
@@ -344,9 +346,9 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  Esse arquivo controla como a DSL é empacotada em uma Extensão de Integração do Visual Studio (VSIX). Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](msi-and-vsix-deployment-of-a-dsl.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Noções básicas sobre modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md)
 - [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md)
-- [Escrevendo código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Escrevendo código para personalizar um idioma Domain-Specific](../modeling/writing-code-to-customise-a-domain-specific-language.md)

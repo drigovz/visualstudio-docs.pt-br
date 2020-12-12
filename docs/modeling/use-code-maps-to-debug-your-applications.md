@@ -1,5 +1,7 @@
 ---
 title: Usar mapas de códigos para depurar aplicativos
+description: Saiba como usar mapas de código para ajudá-lo a evitar a perda em grandes bases de código, código desconhecido ou código herdado.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e01857878f927c619529d3bbfc63728f84f0b81d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7af24dbbb510fb1d5c9c62b40d5986ea5c74d35b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594104"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361645"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Usar mapas de códigos para depurar aplicativos
 
@@ -140,7 +142,7 @@ Para obter detalhes dos comandos e ações que você pode usar ao trabalhar com 
 
  Agora você concluiu sua investigação. Você encontrou e corrigiu o problema com êxito mapeando o código. Você também tem um mapa que ajuda a navegar no código, lembrar o que aprendeu e mostra as etapas que você seguiu para corrigir o problema.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Mapear métodos na pilha de chamadas ao depurar](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Visualizar código](../modeling/visualize-code.md)

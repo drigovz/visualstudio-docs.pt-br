@@ -1,5 +1,7 @@
 ---
 title: 'Instruções passo a passo: gerenciando código usando modelos de texto'
+description: Saiba que a geração de código permite que você produza um código de programa fortemente tipado e, ainda assim, possa ser facilmente alterado quando o modelo de origem for alterado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 181c1ccbeaff0aadee1b3d5ebd255b854b915277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a39630f8a12ad2c1d7d2bc89f6830fc694e89087
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532054"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360982"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Passo a passo: gerar código usando modelos de texto
 
@@ -131,7 +133,7 @@ Um teste mais abrangente pode verificar a saída dessa função de teste em rela
 
 Adicione um arquivo de modelo de texto e defina a extensão de saída para *. cs*.
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto, clique em **Adicionar**e em **novo item**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto, clique em **Adicionar** e em **novo item**.
 
 2. Na caixa de diálogo **Adicionar novo item** , selecione **modelo de texto** no painel **modelos** .
 
@@ -428,7 +430,7 @@ Neste tutorial, o código do programa é realmente gerado a partir de uma instâ
 
 Se você tiver visto o modelo de transformação ou erros de compilação no **lista de erros**, ou se o arquivo de saída não tiver sido gerado corretamente, você poderá solucionar o problema do modelo de texto com as técnicas descritas em [gerando arquivos com o utilitário TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Geração de código na hora de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md)

@@ -1,5 +1,7 @@
 ---
 title: Processando modelos de texto usando um host personalizado
+description: Saiba que o processo de transformação de modelo de texto usa um arquivo de modelo de texto como a entrada e produz um arquivo de texto como a saída.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f7ecd6508df780f570d10b3d615094fae15209d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3dbaa7cf80ba281f085590802127e3ab96776aa6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591678"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360579"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Processar modelos de texto usando um host personalizado
 
@@ -48,7 +50,7 @@ string output = engine.ProcessTemplate(templateString, host);
 
  O host deve ser capaz de registrar erros, resolver referências ao assembly e arquivos de inclusão, fornecer um domínio de aplicativo no qual o modelo pode executar e chamar o processador adequado para cada diretiva.
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> é definido em **Microsoft. VisualStudio. TextTemplating. \*.0.dll**e [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) é definido em **Microsoft. VisualStudio. TextTemplating. interfaces. \*.0.dll**.
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> é definido em **Microsoft. VisualStudio. TextTemplating. \*.0.dll** e [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) é definido em **Microsoft. VisualStudio. TextTemplating. interfaces. \*.0.dll**.
 
 ## <a name="in-this-section"></a>Nesta seção
  [Walkthrough: Criando um host de modelo de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md) Mostra como criar um host de modelo de texto personalizado que torna a funcionalidade de modelo de texto disponível fora do Visual Studio.

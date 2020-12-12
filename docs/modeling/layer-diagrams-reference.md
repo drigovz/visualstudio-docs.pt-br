@@ -1,5 +1,7 @@
 ---
 title: Referência de diagramas de dependência
+description: Saiba que, no Visual Studio, você pode usar um diagrama de dependência para visualizar a arquitetura lógica de alto nível do seu sistema.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 774716dff6562b7792c6fa885c40db2a0a133136
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 265bb31dd95aa3a84bdb497a3306278acfd8838e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594559"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360566"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramas de dependência: referência
 
@@ -96,6 +98,6 @@ O **Gerenciador de camadas** é aberto e mostra os artefatos que estão vinculad
 |**Dá suporte à validação**|Se **for true**, o processo de validação de camada poderá verificar se o projeto está de acordo com as dependências de ou para esse elemento.<br /><br /> Se **for false**, o link não participará do processo de validação de camada.<br /><br /> Para obter mais informações, consulte [diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md).|
 |**Identificador**|A referência ao artefato vinculado|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)

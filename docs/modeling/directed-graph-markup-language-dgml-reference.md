@@ -1,5 +1,7 @@
 ---
 title: Referência DGML
+description: Saiba como o DGML (direcionamento do Graph Markup Language) descreve informações usadas para visualização e para executar a análise de complexidade.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bef53e9288f04c9ed7fce6ff7e5ddd69020798f
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 0812cee6555ecc576f7fb78f3069a0ae69f5a16c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099278"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361788"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referência DGML
 

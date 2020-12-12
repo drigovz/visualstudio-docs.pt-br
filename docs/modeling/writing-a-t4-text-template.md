@@ -1,5 +1,7 @@
 ---
 title: Gravando um modelo de texto T4
+description: Saiba mais sobre os modelos de texto T4 e como escrever um modelo de texto que inclua diretivas, blocos de texto e blocos de controle.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1990377bffe0c663a70520c07bd3ab60b91f8bbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 086e7ecf568d043142cdc80f020897ed1793b86c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593480"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361216"
 ---
 # <a name="writing-a-t4-text-template"></a>Gravando um modelo de texto T4
 Um modelo de texto contém o texto que será gerado a partir dele. Por exemplo, um modelo que cria uma página da Web conterá " \<html> ..." e todas as outras partes padrão de uma página HTML. Inseridos no modelo são *blocos de controle*, que são fragmentos de código do programa. Os blocos de controle fornecem valores variáveis​e permitem que partes do texto sejam condicionadas e repetidas.
@@ -238,7 +240,7 @@ private void WriteSquareLine(int i)
 
  **Carregar um arquivo como um modelo navegável**. Um método mais eficiente é ler os dados como um modelo, pelo qual o código do modelo de texto pode navegar. Por exemplo, você pode carregar um arquivo XML e navegá-lo com expressões XPath. Você também pode usar [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) para criar um conjunto de classes com os quais você pode ler os dados XML.
 
- **Edite o arquivo de modelo em um diagrama ou formulário.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornece ferramentas que permitem editar um modelo como um diagrama ou um formulário do Windows. Isso facilita discutir o modelo com os usuários do aplicativo gerado. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] também cria um conjunto de classes fortemente tipadas que refletem a estrutura do modelo. Para obter mais informações, consulte [gerando código de uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md).
+ **Edite o arquivo de modelo em um diagrama ou formulário.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornece ferramentas que permitem editar um modelo como um diagrama ou um formulário do Windows. Isso facilita discutir o modelo com os usuários do aplicativo gerado. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] também cria um conjunto de classes fortemente tipadas que refletem a estrutura do modelo. Para obter mais informações, consulte [gerando código a partir de um idioma Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Caminhos de arquivo relativos em modelos de tempo de design
  Em um [modelo de texto de tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), se você quiser fazer referência a um arquivo em um local relativo ao modelo de texto, use `this.Host.ResolvePath()` . Você também pode definir `hostspecific="true"` na diretiva `template`:
@@ -264,7 +266,7 @@ Você também pode obter outros serviços fornecidos pelo host. Para obter mais 
  (Isso não é verdade de um [modelo de texto de tempo de execução](../modeling/run-time-text-generation-with-t4-text-templates.md), que fornece código que é compilado junto com o restante do seu código.)
 
 ## <a name="editing-templates"></a>Editando modelos
- Editores de modelo de texto especializados podem ser baixados da Galeria Online do Gerenciador de Extensões. No menu **ferramentas** , clique em **Gerenciador de extensões**. Clique em **galeria online**e, em seguida, use a ferramenta de pesquisa.
+ Editores de modelo de texto especializados podem ser baixados da Galeria Online do Gerenciador de Extensões. No menu **ferramentas** , clique em **Gerenciador de extensões**. Clique em **galeria online** e, em seguida, use a ferramenta de pesquisa.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

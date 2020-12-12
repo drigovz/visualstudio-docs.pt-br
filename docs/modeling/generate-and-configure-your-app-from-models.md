@@ -1,5 +1,7 @@
 ---
 title: Gerar e configurar o aplicativo por meio de modelos
+description: Saiba o que um modelo representa e como você pode gerar ou configurar partes do seu aplicativo a partir de um modelo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ea3fe0027827396a49eec4c6b245a9ea59652b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25a0b83d3ac7be95c42ca0c4e53a188569bb5770
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114891"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361866"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Gerar e configurar o aplicativo por meio de modelos
 Você pode gerar ou configurar partes do seu aplicativo a partir de um modelo.
@@ -70,7 +72,7 @@ Você pode gerar ou configurar partes do seu aplicativo a partir de um modelo.
 
      Por exemplo, um diagrama de classes UML é uma coleção de caixas e setas; com essa notação, você pode, teoricamente, definir qualquer coisa. Mas não recomendamos que você use o diagrama de classe, exceto onde você está, na verdade, descrevendo um conjunto de tipos. Por exemplo, você poderia adaptar os diagramas de classe para descrever diferentes tipos de páginas da Web.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Gerando código a partir de uma linguagem específica do domínio](../modeling/generating-code-from-a-domain-specific-language.md)
 - [Como abrir um modelo a partir de um arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)

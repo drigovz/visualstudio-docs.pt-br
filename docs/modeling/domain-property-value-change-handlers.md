@@ -1,5 +1,7 @@
 ---
 title: Manipuladores de alterações nos valores de propriedades de domínio
+description: Saiba mais sobre manipuladores de alteração de valor de propriedade de domínio que podem ser usados em uma linguagem específica de domínio do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f23984d6c4723b020b361e1da30363442966ea7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34f7dcf97498895f841f2a68fd3bc1abac224824
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594702"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361720"
 ---
 # <a name="domain-property-value-change-handlers"></a>Manipuladores de alteração de valor de propriedade de domínio
 
@@ -22,7 +24,7 @@ Em uma linguagem específica de domínio do Visual Studio, quando o valor de uma
 
 ## <a name="override-the-property-handler-methods"></a>Substituir os métodos do manipulador de propriedades
 
-Cada propriedade de domínio de sua linguagem específica do domínio é manipulada por uma classe que está aninhada em sua classe de domínio pai. Seu nome segue o formato *PropertyName*PropertyHandler. Você pode inspecionar essa classe de manipulador de propriedade no arquivo **Dsl\Generated Code\DomainClasses.cs**. Na classe, `OnValueChanging()` é chamado imediatamente antes de o valor ser alterado, e `OnValueChanged()` é chamado imediatamente após o valor ser alterado.
+Cada propriedade de domínio de sua linguagem específica do domínio é manipulada por uma classe que está aninhada em sua classe de domínio pai. Seu nome segue o formato *PropertyName* PropertyHandler. Você pode inspecionar essa classe de manipulador de propriedade no arquivo **Dsl\Generated Code\DomainClasses.cs**. Na classe, `OnValueChanging()` é chamado imediatamente antes de o valor ser alterado, e `OnValueChanged()` é chamado imediatamente após o valor ser alterado.
 
 Por exemplo, suponha que você tenha uma classe de domínio denominada `Comment` que tenha uma propriedade de domínio de cadeia de caracteres denominada `Text` e uma propriedade de número inteiro chamada `TextLengthCount` . Para fazer com que o `TextLengthCount` sempre contenha o comprimento da `Text` cadeia de caracteres, você pode escrever o seguinte código em um arquivo separado no projeto DSL:
 

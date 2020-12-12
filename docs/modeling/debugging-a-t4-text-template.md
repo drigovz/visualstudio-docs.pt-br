@@ -1,5 +1,7 @@
 ---
 title: Depurando um modelo de texto T4
+description: Para depurar um modelo de texto de tempo de design, salve o arquivo de modelo de texto e escolha Depurar modelo T4 no menu de atalho do arquivo em Gerenciador de Soluções.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1570061feb5da034e2e8fab7168658577f6f990d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26ad1545918a02fbcf530b439e801a656a425864
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589676"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361463"
 ---
 # <a name="debugging-a-t4-text-template"></a>Depurando um modelo de texto T4
 Você pode definir pontos de interrupção em modelos de texto. Para depurar um modelo de texto de tempo de design, salve o arquivo de modelo de texto e escolha **depurar modelo T4** no menu de atalho do arquivo em Gerenciador de soluções. Para depurar um modelo de texto de tempo de execução, basta depurar o aplicativo ao qual ele pertence.

@@ -1,5 +1,7 @@
 ---
 title: Propriedades de formas de imagem
+description: Saiba mais sobre as formas de imagem e como você pode usar formas de imagem para especificar como as classes de domínio aparecem em um designer gerado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d05b82a74fba4273838d378bc52822653bb6bfa
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 50785a4f37b4f3e9e6eaae1bb2a58dcf206af672
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811169"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361908"
 ---
 # <a name="properties-of-image-shapes"></a>Propriedades de formas de imagem
 
@@ -39,13 +41,13 @@ Você pode usar formas de imagem para especificar como as classes de domínio ap
 
 Por padrão, os arquivos de recursos do designer, como arquivos de imagem, estão localizados na pasta **recursos** no projeto **DSL** .
 
-Para obter mais informações, consulte [como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Para obter mais informações, consulte [como definir um idioma de Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [Personalizando e estendendo uma linguagem de Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 As formas de imagem têm as propriedades listadas na tabela a seguir.
 
 |Propriedade|Descrição|Padrão|
 |-|-|-|
-|Cor de Preenchimento|A cor de preenchimento desta forma.|Branca|
+|Cor de Preenchimento|A cor de preenchimento desta forma.|Branco|
 |Preencher modo de gradiente|O modo de gradiente de preenchimento desta forma.|Horizontal|
 |Tem pontos de conexão padrão|Se `True` , a forma usará os pontos de conexão superior, inferior, esquerdo e direito no designer gerado.|Falso|
 |Cor do contorno|A cor da estrutura de tópicos desta forma.|Preto|
@@ -58,7 +60,7 @@ As formas de imagem têm as propriedades listadas na tabela a seguir.
 |Tem Construtor personalizado|Se `True` , um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Modificador de herança|Descreve o tipo de herança da classe de código-fonte gerada a partir da forma de imagem `none` ( `abstract` ou `sealed` ).|nenhum|
 |Forma da imagem base|A classe base dessa forma.|(nenhum)|
-|Nome|O nome desta forma.|Nome atual|
+|Name|O nome desta forma.|Nome atual|
 |Namespace|O namespace que é afiliado a esta forma.|Namespace atual|
 |Tipo de dica de ferramenta|O local em que a dica de ferramenta é definida (fixa, variável ou nenhuma). Se for corrigido, o valor da `Fixed Tooltip Text` propriedade será usado como dica de ferramenta; se for variável, a dica de ferramenta será definida no código personalizado.|nenhum|
 |Observações|Observações informais associadas a esta forma.|\<none>|
@@ -71,6 +73,6 @@ As formas de imagem têm as propriedades listadas na tabela a seguir.
 |Palavra-chave de ajuda|A palavra-chave usada para indexar a ajuda F1 para este elemento.|\<none>|
 |Imagem|O caminho para o arquivo de imagem usado para esta forma.|\<none>|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

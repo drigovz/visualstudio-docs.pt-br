@@ -1,5 +1,7 @@
 ---
 title: Propriedades de formas geométricas
+description: Saiba como você pode usar formas geométricas para especificar como as instâncias de classes de domínio são exibidas em uma linguagem específica de domínio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,21 +13,21 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee1b9ad1d7a75b0e4d3514bb3397f850d6704c24
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 6e66f68079ae97f0a2514a77acab4d779561ed86
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811182"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360657"
 ---
 # <a name="properties-of-geometry-shapes"></a>Propriedades de formas geométricas
-Você pode usar formas de geometria para especificar como as instâncias de classes de domínio são exibidas em uma linguagem específica de domínio. Para obter mais informações, consulte [como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Você pode usar formas de geometria para especificar como as instâncias de classes de domínio são exibidas em uma linguagem específica de domínio. Para obter mais informações, consulte [como definir um idioma de Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [Personalizando e estendendo uma linguagem de Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
  As formas de geometria têm as propriedades listadas na tabela a seguir.
 
 |Propriedade|Descrição|Padrão|
 |-|-|-|
-|Cor de Preenchimento|A cor de preenchimento desta forma.|Branca|
+|Cor de Preenchimento|A cor de preenchimento desta forma.|Branco|
 |Preencher modo de gradiente|O modo de gradiente de preenchimento desta forma (horizontal, vertical, diagonal para frente, diagonal para trás ou nenhum).|Horizontal|
 |Geometria|A geometria desta forma (retângulo, retângulo arredondado, elipse ou círculo).|Retângulo|
 |Tem pontos de conexão padrão|Se `True` , a forma usará os pontos de conexão superior, inferior, esquerdo e direito no designer gerado.|Falso|
@@ -39,7 +41,7 @@ Você pode usar formas de geometria para especificar como as instâncias de clas
 |Tem Construtor personalizado|Se `True` , um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Modificador de herança|Descreve o tipo de herança da classe de código-fonte que é gerada a partir da forma ( `none` `abstract` ou `sealed` ).|nenhum|
 |Forma geométrica base|A classe base dessa forma.|(nenhum)|
-|Nome|O nome desta forma.|Nome atual|
+|Name|O nome desta forma.|Nome atual|
 |Namespace|O namespace que é afiliado a esta forma.|Namespace atual|
 |Tipo de dica de ferramenta|Como a dica de ferramenta é definida (fixa, variável ou nenhuma). Se for corrigido, o valor da `Fixed Tooltip Text` propriedade será usado como dica de ferramenta; se for variável, a dica de ferramenta será definida no código personalizado.|Nenhum|
 |Observações|Observações informais que estão associadas a este elemento.|\<none>|
@@ -51,6 +53,6 @@ Você pode usar formas de geometria para especificar como as instâncias de clas
 |Texto de dica de ferramenta fixo|O texto que é usado para uma dica de ferramenta fixa.|\<none>|
 |Palavra-chave de ajuda|A palavra-chave usada para indexar a ajuda F1 para essa forma.|\<none>|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

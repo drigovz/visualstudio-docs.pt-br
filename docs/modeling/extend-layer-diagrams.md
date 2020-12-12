@@ -1,5 +1,7 @@
 ---
 title: Estender diagramas de dependência
+description: Saiba como você pode escrever código para criar e atualizar diagramas de dependência e como validar a estrutura do código do programa em diagramas de dependência no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 305c562c7600dc6955ce0307db92f4e257fc1c21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d78b7005875f0544354c845cd27d187bdbf40d6d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92298428"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361619"
 ---
 # <a name="extend-dependency-diagrams"></a>Estender diagramas de dependência
 
@@ -35,7 +37,7 @@ Você deve ter o seguinte instalado no computador em que deseja desenvolver suas
 
 Você deve ter uma edição adequada do Visual Studio instalada no computador em que deseja executar suas extensões de camada. Para ver quais edições do Visual Studio dão suporte a diagramas de dependência, consulte [suporte de edição para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)
 - [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)

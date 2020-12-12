@@ -1,5 +1,7 @@
 ---
 title: Propriedades de diagramas
+description: Saiba mais sobre diagramas e como você pode definir propriedades que especificam como os diagramas serão exibidos no designer gerado.
+ms.custom: SEO-VS-2020
 ms.date: 10/31/2018
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fd1ab781fd838c8e5379e38fdcb3a6fddd65230
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fe27eb7dcfb8a984fceaee0700e1df44b6de4ef1
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810035"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361944"
 ---
 # <a name="properties-of-diagrams"></a>Propriedades de diagramas
 Você pode definir propriedades que especificam como os diagramas serão exibidos no designer gerado. Por exemplo, você pode especificar uma cor padrão para texto no diagrama.
@@ -27,7 +29,7 @@ Você pode definir propriedades que especificam como os diagramas serão exibido
 
 |Propriedade|Descrição|Padrão|
 |-|-|-|
-|Cor de Preenchimento|A cor de preenchimento do diagrama.|Branca|
+|Cor de Preenchimento|A cor de preenchimento do diagrama.|Branco|
 |Cor do texto|A cor do texto que é exibido no diagrama.|Preto|
 |Modificador de acesso|O modificador de acesso da classe (público ou interno).|Público|
 |Atributos personalizados|Usado para adicionar atributos à classe de código gerada.|\<none>|
@@ -35,7 +37,7 @@ Você pode definir propriedades que especificam como os diagramas serão exibido
 |Tem Construtor personalizado|Se `True` , um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituir e estender as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Modificador de herança|Descreve o tipo de herança da classe de código-fonte gerada a partir do diagrama ( `none` , `abstract` ou `sealed` ).|Nenhum|
 |Diagrama base|A classe base deste diagrama.|(nenhum)|
-|Nome|O nome deste diagrama.|Nome atual|
+|Name|O nome deste diagrama.|Nome atual|
 |Namespace|O namespace afiliado a este diagrama.|Namespace atual|
 |Classe representada|A classe de domínio raiz que este diagrama representa.|Classe raiz atual, se aplicável|
 |Observações|Observações informais que estão associadas a este elemento.|\<none>|
@@ -45,6 +47,6 @@ Você pode definir propriedades que especificam como os diagramas serão exibido
 |Nome de exibição|O nome que será exibido no designer gerado para este diagrama.|\<none>|
 |Palavra-chave de ajuda|A palavra-chave usada para indexar a ajuda F1 para este diagrama.|\<none>|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 [Glossário de ferramentas de linguagem específica de domínio](/previous-versions/bb126564(v=vs.100))
