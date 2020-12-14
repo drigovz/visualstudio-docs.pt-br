@@ -1,6 +1,7 @@
 ---
 title: Descubra quem está passando um valor de parâmetro errado | Microsoft Docs
-ms.custom: seodec18
+Description: Você pode descobrir qual código está chamando sua função e passando um valor de parâmetro incorreto. Saiba como usar um ponto de interrupção condicional para fazer isso.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd6aaa912a384acbb41c42bfa4785eda52ae78a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: de87da994dfab59d5df618671737003beea9678b
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599876"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398305"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Como posso descobrir quem está passando um valor de parâmetro incorreto?
 ## <a name="problem-description"></a>Descrição do problema
@@ -51,7 +52,7 @@ ms.locfileid: "89599876"
 
 7. Use a janela Pilha de Chamadas para localizar a função de chamada e navegar até seu código-fonte. Para obter mais informações, consulte [como: usar a janela pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md).
 
-## <a name="see-also"></a>Confira também
-- [Perguntas frequentes de depuração do código nativo](../debugger/debugging-native-code-faqs.md)
+## <a name="see-also"></a>Consulte também
+- [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md)
 - [Pontos de Interrupção](/previous-versions/ktf38f66(v=vs.100))
 - [Depurando código nativo](../debugger/debugging-native-code.md)

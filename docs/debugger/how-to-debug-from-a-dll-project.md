@@ -1,5 +1,7 @@
 ---
 title: Depurar de um projeto de DLL | Microsoft Docs
+Description: Você pode iniciar a depuração de um projeto de DLL do projeto em si, especificando o aplicativo de chamada nas propriedades do projeto. Consulte este artigo para obter detalhes.
+ms.custom: SEO-VS-2020
 ms.date: 10/10/2018
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1102eb61f6cfda42f6e4e879f5c592c0c064ce0
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 723f35142ec125c016caa3653be450b61fb05d02
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852133"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398552"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Como: Depurar de um projeto de DLL no Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -37,9 +39,9 @@ Os projetos DLL nativos e gerenciados têm configurações diferentes para espec
 
 1. Selecione o projeto de DLL C++ em **Gerenciador de soluções**. Selecione o ícone **Propriedades** , pressione **ALT** + **Enter**, ou clique com o botão direito do mouse e escolha **Propriedades**.
 
-1. Na caixa de diálogo ** \<Project> páginas de propriedades** , verifique se o campo de **configuração** na parte superior da janela está definido como **depurar**.
+1. Na caixa de diálogo **\<Project> páginas de propriedades** , verifique se o campo de **configuração** na parte superior da janela está definido como **depurar**.
 
-1. Selecione depuração de **Propriedades de configuração**  >  **Debugging**.
+1. Selecione depuração de **Propriedades de configuração**  >  .
 
 1. Na lista **depurador a ser iniciado** , escolha o **depurador local do Windows** ou o **depurador remoto do Windows**.
 
@@ -59,7 +61,7 @@ Os projetos DLL nativos e gerenciados têm configurações diferentes para espec
 
 1. Em **ação inicial**:
 
-   - Para .NET Framework DLLs, selecione **Iniciar programa externo**e adicione o caminho totalmente qualificado e o nome do aplicativo de chamada.
+   - Para .NET Framework DLLs, selecione **Iniciar programa externo** e adicione o caminho totalmente qualificado e o nome do aplicativo de chamada.
 
    - Ou selecione **Iniciar navegador com URL** e preencha a URL de um aplicativo ASP.net local.
 
@@ -79,10 +81,10 @@ Os projetos DLL nativos e gerenciados têm configurações diferentes para espec
 
 1. Verifique se o campo de **configuração de soluções** está definido como **depurar**. Pressione **F5**, clique na seta de **início** verde ou selecione **depurar**  >  **Iniciar Depuração**.
 
-Se a depuração não atingir seus pontos de interrupção, verifique se a saída da DLL (por padrão, a pasta * \<project> \debug* ) é o local que o aplicativo de chamada está chamando.
+Se a depuração não atingir seus pontos de interrupção, verifique se a saída da DLL (por padrão, a pasta *\<project> \debug* ) é o local que o aplicativo de chamada está chamando.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Depuração de projetos de DLL](../debugger/debugging-dll-projects.md)
-- [Configurações de projeto para configurações de depuração em C#](../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Configurações de projeto para uma configuração de depuração de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Configurações do projeto para configurações de depuração do C#](../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Definições do projeto para uma configuração de depuração do Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Configurações do projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)

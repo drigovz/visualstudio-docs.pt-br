@@ -1,6 +1,7 @@
 ---
 title: Aplicar edições no modo de interrupção com editar e continuar | Microsoft Docs
-ms.custom: seodec18
+Description: Consulte como usar editar e continuar para editar seu código de Visual Basic quando estiver no modo de interrupção. Há várias maneiras de entrar no modo de interrupção.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acdd5b85c77b177dfb5f6d8129594967e902337c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b8e6ef8c41fbaf5aafa6b1fc9ef4216c773e75e
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350292"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398682"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Como aplicar edições no modo de interrupção com editar e continuar (Visual Basic)
 Você pode usar Editar e Continuar para editar o código no modo de interrupção e, depois, continuar sem interromper e reiniciar a execução.
@@ -41,11 +42,11 @@ Para obter limitações sobre como usar editar e continuar durante a depuração
 
     - Defina um ponto de interrupção no código e escolha **Iniciar Depuração** no menu **Depurar** e aguarde até que o aplicativo atinja o ponto de interrupção.
 
-         - ou -
+         -ou-
 
     - Inicie a depuração e, em seguida, selecione **Interromper Tudo** no menu **Depurar**.
 
-         - ou -
+         -ou-
 
     - Quando ocorrer uma exceção, escolha **Habilitar edição** no **Assistente de exceção**.
 
@@ -60,6 +61,6 @@ Para obter limitações sobre como usar editar e continuar durante a depuração
 
      O código agora é executado com as edições aplicadas incorporadas ao projeto.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Alterações de código com suporte (C# e Visual Basic)](../debugger/supported-code-changes-csharp.md)
 - [Editar e Continuar (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

@@ -1,5 +1,7 @@
 ---
 title: Depurar origem de .NET Framework | Microsoft Docs
+Description: Saiba como depurar .NET Framework origem. Você deve configurar para ele e baixar símbolos de depuração.
+ms.custom: SEO-VS-2020
 ms.date: 11/19/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f054564ff36c538b18525ec9d8adf9b6f3d060b9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 13a575ec2e77f1b715ec5f17324a6933d8cf0805
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852120"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398617"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Como depurar o código-fonte do .NET Framework
 
@@ -39,7 +41,7 @@ Para depurar .NET Framework origem, você deve:
 
 ### <a name="to-set-or-change-symbol-source-locations-and-loading-behavior"></a>Para definir ou alterar os locais de origem do símbolo e o comportamento do carregamento
 
-1. Selecione a categoria **símbolos** em **ferramentas** (ou **depurar**) > **Options**  >  **depuração**de opções.
+1. Selecione a categoria **símbolos** em **ferramentas** (ou **depurar**) >   >  **depuração** de opções.
 
 1. Na página **símbolos** , em **locais de arquivo de símbolo (. pdb)**, selecione **servidores de símbolos da Microsoft** para acessar símbolos dos servidores de símbolos públicos da Microsoft. Selecione os botões da barra de ferramentas para adicionar outros locais de símbolo e alterar a ordem de carregamento.
 
@@ -53,7 +55,7 @@ Para depurar .NET Framework origem, você deve:
 
 ### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>Para carregar símbolos de módulos ou janelas de pilha de chamadas
 
-1. Durante a depuração, abra a janela selecionando **depurar**  >  **Windows**  >  **módulos** do Windows (ou pressione **Ctrl + Alt + U**) ou **depurar**  >  **Windows**  >  **pilha de chamadas** do Windows (**Ctrl + Alt + C**).
+1. Durante a depuração, abra a janela selecionando **depurar**  >    >  **módulos** do Windows (ou pressione **Ctrl + Alt + U**) ou **depurar**  >    >  **pilha de chamadas** do Windows (**Ctrl + Alt + C**).
 
 1. Clique com o botão direito do mouse em um módulo para o qual os símbolos não foram carregados. Na janela **módulos** , o status de carregamento de símbolos está na coluna **status de símbolos** . Na janela **pilha de chamadas** , status está na coluna **status do quadro** e o quadro está esmaecido.
 
@@ -63,6 +65,6 @@ Para depurar .NET Framework origem, você deve:
 
    - Selecione **configurações de símbolo** para abrir a página **símbolos** . Na página **símbolos** , em **locais de arquivo de símbolo (. pdb)**, selecione **servidores de símbolos da Microsoft** para acessar símbolos dos servidores de símbolos públicos da Microsoft. Selecione os botões da barra de ferramentas para adicionar outros locais de símbolo e alterar a ordem de carregamento. Selecione **OK** para fechar a caixa de diálogo.
 
-### <a name="see-also"></a>Confira também
+### <a name="see-also"></a>Consulte também
 - [Depuração de código gerenciado](../debugger/debugging-managed-code.md)
 - [Especificar o símbolo (. pdb) e os arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

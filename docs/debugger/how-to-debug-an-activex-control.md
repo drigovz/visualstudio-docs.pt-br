@@ -1,5 +1,7 @@
 ---
 title: Depurar um controle ActiveX | Microsoft Docs
+Description: Saiba como depurar um controle ActiveX. Você deve especificar um executável de contenção, que pode ser feito nas páginas de propriedades do projeto ou quando você começa a depuração.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc15d42aa2984a7257687eeb051ce754bace9e81
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a0458fb4981642d3f8386edd4c3605ae7b902a14
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852159"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398669"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Como depurar um controle ActiveX
 
@@ -56,10 +58,10 @@ Para depurar seu controle ActiveX, você deverá especificar um contêiner (exec
 
      Se você não especificar um contêiner na caixa de diálogo **Páginas de Propriedades do Projeto**, poderá especificar o contêiner quando iniciar a depuração. Quando você selecionar um comando de execução para iniciar a depuração, a [caixa de diálogo Executável para Sessão de Depuração](../debugger/executable-for-debugging-session-dialog-box.md) é exibida. Especifique o nome do caminho do contêiner na caixa de diálogo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Controles ActiveX](/cpp/mfc/activex-controls)
 - [Testando Propriedades e eventos com contêiner de teste](/cpp/mfc/testing-properties-and-events-with-test-container)
-- [Depuração de COM e ActiveX](../debugger/com-and-activex-debugging.md)
+- [Depuração COM e ActiveX](../debugger/com-and-activex-debugging.md)
 - [Depurando no Visual Studio](../debugger/index.yml)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

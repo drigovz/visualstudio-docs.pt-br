@@ -1,6 +1,7 @@
 ---
 title: Depurar violações de acesso ao executar o aplicativo fora do Visual Studio
 titleSuffix: ''
+description: Use o depurador just-in-time para depurar uma violação de acesso que ocorra fora do ambiente do Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bbc129c4f5f4aa4d3ed1c6e346f9f8ab0395230
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 49d1fb2b24488692031c647139aa1f1076f0dd6f
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852172"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398478"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Como posso depurar violações de acesso ao executar meu programa fora do depurador?
 
@@ -35,6 +36,6 @@ ms.locfileid: "90852172"
 ## <a name="solution"></a>Solução
  Defina a opção [depuração Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md) e execute o programa autônomo, até que ocorra a violação de acesso. Em seguida, na caixa de diálogo **Violação de Acesso**, clique em **Cancelar** para iniciar o depurador.
 
-## <a name="see-also"></a>Confira também
-- [Perguntas frequentes de depuração do código nativo](../debugger/debugging-native-code-faqs.md)
+## <a name="see-also"></a>Consulte também
+- [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md)
 - [Depurando código nativo](../debugger/debugging-native-code.md)

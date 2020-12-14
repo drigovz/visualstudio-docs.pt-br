@@ -1,5 +1,7 @@
 ---
 title: Depuração do sombreador de computação usando o diagnóstico de gráficos
+description: Siga um exemplo de solução de problemas de um sombreador de computação. Você vê o uso da lista de eventos gráficos, da pilha de chamadas de evento de gráficos e dos estágios de pipeline de gráficos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19ae8472aaafbad1a04485ff2e3a2637f345bc00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939b1906a32c48aa1ad32f2fb03372a74afc43ec
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66262861"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398708"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Passo a passo: Como usar o Diagnóstico de Gráficos para depurar um sombreador de computação
 Este tutorial demonstra como usar as ferramentas de Diagnóstico de Gráficos do Visual Studio para investigar um sombreador de computação que gera resultados incorretos.

@@ -1,5 +1,7 @@
 ---
-title: Depurar um serviço WCF auto-hospedado | Microsoft Docs
+title: Depurar um serviço WCF do Self-Hosted | Microsoft Docs
+Description: Saiba como depurar um serviço WCF auto-hospedado. A maneira mais fácil (mas nem sempre possível) é configurar o Visual Studio para iniciar o cliente e o servidor.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac58c187e147040c5ef82320a3b44e86912ed5b8
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 983c053ca6bd1370cf67cb04eeb2626c2b1217aa
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852185"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398721"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>Como depurar um serviço WCF auto-hospedado
 Um *serviço auto-hospedado* é um serviço WCF que não é executado dentro do IIS, do Host de Serviço WCF ou do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server. A maneira mais fácil de depurar um WCF auto-hospedado é configurar o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar o cliente e o servidor quando você escolher **Iniciar Depuração** no menu **Depurar**.
@@ -45,7 +47,7 @@ Um *serviço auto-hospedado* é um serviço WCF que não é executado dentro do 
 
    2. Clique em **Definir Projetos de Inicialização**.
 
-   3. Na caixa de diálogo ** \<name> Propriedades da solução** , selecione **vários projetos de inicialização**.
+   3. Na caixa de diálogo **\<name> Propriedades da solução** , selecione **vários projetos de inicialização**.
 
    4. Na grade **Vários Projetos de Inicialização**, na linha que corresponde ao projeto do servidor, clique em **Ação** e escolha **Iniciar**.
 
@@ -53,7 +55,7 @@ Um *serviço auto-hospedado* é um serviço WCF que não é executado dentro do 
 
    6. Clique em **OK**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Depurando serviços WCF](../debugger/debugging-wcf-services.md)
-- [Limitações da depuração WCF](../debugger/limitations-on-wcf-debugging.md)
+- [Limitações na depuração do WCF](../debugger/limitations-on-wcf-debugging.md)
 - [Como: entrar em serviços WCF](../debugger/how-to-step-into-wcf-services.md)

@@ -1,6 +1,7 @@
 ---
 title: Manter o foco ao percorrer meu aplicativo | Microsoft Docs
-ms.custom: seodec18
+Description: Use a depuração remota para impedir que o seu programa perca o foco quando você depurar um problema de ativação de janela.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d41a1bf5f71624751fc94f4a72f06e6da5c39630
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d533d524effe5ba055116d926d7cc5ba9632a6b
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350375"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398318"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>Como posso manter o foco ao percorrer meu aplicativo?
 ## <a name="description"></a>Descrição
@@ -35,7 +36,7 @@ ms.locfileid: "85350375"
 ## <a name="solution"></a>Solução
  Se você tiver um segundo computador, use a depuração remota. Você pode operar seu programa no computador remoto quando executar o depurador no host. Para obter mais informações, consulte [como: selecionar um computador remoto](/previous-versions/visualstudio/visual-studio-2010/w8wtw2f3(v=vs.100)).
 
-## <a name="see-also"></a>Confira também
-- [Perguntas frequentes de depuração do código nativo](../debugger/debugging-native-code-faqs.md)
+## <a name="see-also"></a>Consulte também
+- [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md)
 - [Anexar aos processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Depurando código nativo](../debugger/debugging-native-code.md)

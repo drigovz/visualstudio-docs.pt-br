@@ -1,6 +1,7 @@
 ---
 title: Depurar funções da API do Windows | Microsoft Docs
-ms.custom: seodec18
+Description: Saiba como depurar uma função da API do Windows que tenha símbolos do NT carregados. No código de 32 bits, você usa a forma decorada do nome da função para definir o ponto de interrupção.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/03/2020
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f7b293270facbbfa0d2174121ff6a3ac736b75a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 7ab50205d1ade2447b85ad7eee2ffb6aaf38363d
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599886"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398384"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Como depurar funções de API do Windows?
 Se você desejar depurar uma função de API do Windows que tenha os símbolos do NT carregados, deverá fazer o seguinte.
@@ -50,6 +51,6 @@ Se você desejar depurar uma função de API do Windows que tenha os símbolos d
     {,,USER32.DLL}MessageBeep
     ```
 
-## <a name="see-also"></a>Confira também
-- [Perguntas frequentes de depuração do código nativo](../debugger/debugging-native-code-faqs.md)
+## <a name="see-also"></a>Consulte também
+- [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md)
 - [Depurando código nativo](../debugger/debugging-native-code.md)

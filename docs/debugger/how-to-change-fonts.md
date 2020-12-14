@@ -1,5 +1,7 @@
 ---
 title: Alterar fontes | Microsoft Docs
+Description: Consulte como definir a fonte, o estilo da fonte e o tamanho da fonte para o Spy + + Windows. Você pode salvar suas escolhas como os padrões para futuros Spy + + Windows.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77789ed5d262be87076631e978fbc46e972158ae
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 93a3a0c536e9f3cfc13d2372038651c0765149cf
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851483"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398397"
 ---
 # <a name="how-to-change-fonts"></a>Como alterar fontes
 Você pode alterar a fonte, o estilo da fonte e o tamanho da fonte para o Spy + + Windows.
@@ -30,7 +32,7 @@ Você pode alterar a fonte, o estilo da fonte e o tamanho da fonte para o Spy + 
 
    A seleção de **salvar fonte como padrão** fará com que todas as outras janelas do Spy + + usem essa fonte.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Usando Spy++](../debugger/using-spy-increment.md)
 - [Exibições do Spy++](../debugger/spy-increment-views.md)
 - [Referência de Spy++](../debugger/spy-increment-reference.md)

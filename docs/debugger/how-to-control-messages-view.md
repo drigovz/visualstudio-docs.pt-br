@@ -1,5 +1,7 @@
 ---
 title: Exibir mensagens de controle | Microsoft Docs
+Description: Você pode escolher os tipos de mensagens e do Windows mostrados em uma janela de exibição de mensagens e o formato de exibição para linhas de mensagem. Consulte este artigo para obter detalhes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 917fc2af5ab09544201a6aa35c34611a89d7a277
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 58c99f0db1686a9f1dd8dcb13949eb6fe47f3fdc
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90850963"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398630"
 ---
 # <a name="how-to-control-messages-view"></a>Como controlar a exibição de mensagens
 Com o Spy + +, você tem um controle considerável sobre o conteúdo de uma janela de [exibição de mensagens](../debugger/messages-view.md) . Você pode [Iniciar e parar](../debugger/how-to-start-and-stop-the-message-log-display.md) de exibir as mensagens a qualquer momento e pode especificar:

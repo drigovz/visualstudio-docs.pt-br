@@ -1,5 +1,7 @@
 ---
 title: Inspecione seu aplicativo com a depuração histórica | Microsoft Docs
+description: Siga uma investigação que usa a depuração histórica do IntelliTrace para rastrear um bug em um aplicativo de console em C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efabc8cd185daed4f018e3e4209e391b5bc39f44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d51327f67429071d08f6dfd02c0ec0a1fc55822f
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350440"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398695"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Inspecione seu aplicativo com a depuração histórica do IntelliTrace no Visual Studio (C#, Visual Basic, C++)
 
@@ -51,7 +53,7 @@ private static int AddInt(int add)
 }
 ```
 
-Vamos pressupor que o valor esperado de `resultInt` após a chamada `AddAll()` seja 20 (o resultado de incrementos `testInt` 20 vezes). (Também vamos supor que você não consiga ver o bug no `AddInt()` ). Mas o resultado é, na verdade, 44. Como podemos encontrar o bug sem passar por `AddAll()` 10 vezes? Podemos usar a depuração histórica para encontrar o bug com mais rapidez e facilidade. Este é o procedimento:
+Vamos pressupor que o valor esperado de `resultInt` após a chamada `AddAll()` seja 20 (o resultado de incrementos `testInt` 20 vezes). (Também vamos supor que você não consiga ver o bug no `AddInt()` ). Mas o resultado é, na verdade, 44. Como podemos encontrar o bug sem passar por `AddAll()` 10 vezes? Podemos usar a depuração histórica para encontrar o bug com mais rapidez e facilidade. Aqui está como:
 
 1. Em **ferramentas > opções > intellitrace > geral**, verifique se o IntelliTrace está habilitado e selecione **eventos do IntelliTrace e informações de chamada**. Se você não selecionar essa opção, não será possível ver a medianiz de navegação (conforme explicado abaixo).
 
@@ -71,7 +73,7 @@ Vamos pressupor que o valor esperado de `resultInt` após a chamada `AddAll()` s
 
     ![janela de código no modo de depuração histórica](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")
 
-6. Agora você pode entrar no `AddAll()` método (**F11**ou no botão entrar **Step Into** na medianiz de navegação. Avançar (**F10**ou **ir para próxima chamada** na medianiz de navegação. A linha rosa está agora na `j = AddInt(j);` linha. O **F10** , nesse caso, não faz a etapa para a próxima linha de código. Em vez disso, ele percorre a próxima chamada de função. A depuração histórica navega da chamada para chamada e ignora as linhas de código que não incluem uma chamada de função.
+6. Agora você pode entrar no `AddAll()` método (**F11** ou no botão entrar  na medianiz de navegação. Avançar (**F10** ou **ir para próxima chamada** na medianiz de navegação. A linha rosa está agora na `j = AddInt(j);` linha. O **F10** , nesse caso, não faz a etapa para a próxima linha de código. Em vez disso, ele percorre a próxima chamada de função. A depuração histórica navega da chamada para chamada e ignora as linhas de código que não incluem uma chamada de função.
 
 7. Agora, percorra o `AddInt()` método. Você deve ver o bug neste código imediatamente.
 
