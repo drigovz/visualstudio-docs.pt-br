@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: criar menus de atalho para indicadores'
+description: Saiba como criar menus de atalho para controles de indicadores em uma personalização em nível de documento para o Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b4b412d2e9456142c1be1af388e2803634d15c0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8b018687ec10eb725ece7d776277ea1c699dbbec
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "91146913"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524216"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Walkthrough: criar menus de atalho para indicadores
   Este tutorial demonstra como criar menus de atalho para <xref:Microsoft.Office.Tools.Word.Bookmark> controles em uma personalização em nível de documento para o Word. Quando um usuário clica com o botão direito do mouse no texto em um indicador, um menu de atalho é exibido e fornece ao usuário as opções para formatar o texto.

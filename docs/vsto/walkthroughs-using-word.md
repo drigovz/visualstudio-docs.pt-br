@@ -1,5 +1,7 @@
 ---
 title: Passo a passos usando o Word
+description: Saiba como você pode usar as personalizações em nível de documento e os suplementos do VSTO para automatizar o Microsoft Word e personalizar a interface do usuário.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6d3b4ece92bf278ef8d43dca7e449272982381c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd2685b7fee0534e56c55e2c865d1d7f16423de5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254989"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522584"
 ---
 # <a name="walkthroughs-using-word"></a>Passo a passos usando o Word
   As instruções a seguir demonstram maneiras de usar as personalizações em nível de documento e os suplementos do VSTO para automatizar Microsoft Office Word e personalizar a interface do usuário.
@@ -51,7 +53,7 @@ ms.locfileid: "71254989"
 
 - [Walkthrough: criar uma guia personalizada usando o XML da faixa de uma](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md) Demonstra como criar uma guia de faixa de bits personalizada usando um arquivo de descritor XML em um suplemento do VSTO.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Passo a passos usando o Excel](../vsto/walkthroughs-using-excel.md)
 - [Orientações sobre os dados nas soluções do Office](../vsto/data-in-office-solutions-walkthroughs.md)
 - [Passo a passos de personalização da interface do usuário do Office](../vsto/office-ui-customization-walkthroughs.md)

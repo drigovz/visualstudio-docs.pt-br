@@ -1,5 +1,7 @@
 ---
 title: 'Como: imprimir documentos do Visio programaticamente'
+description: Saiba como você pode imprimir um documento completo do Microsoft Visio ou apenas imprimir uma página específica nesse documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e31a55e49d42311b5ec5fff82769584cc55ce09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46babb5c989f647706bcbe87412adcdeeb0476d7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537794"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523773"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>Como: imprimir documentos do Visio programaticamente
   Você pode imprimir um documento completo Microsoft Office Visio ou apenas uma página específica.
@@ -47,7 +49,7 @@ ms.locfileid: "85537794"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#9](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#9)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#9)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Soluções do Visio](../vsto/visio-solutions.md)
 - [Visão geral do modelo de objeto do Visio](../vsto/visio-object-model-overview.md)
 - [Como criar programaticamente novos documentos do Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)

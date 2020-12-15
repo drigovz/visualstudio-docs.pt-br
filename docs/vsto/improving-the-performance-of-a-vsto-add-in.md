@@ -1,5 +1,7 @@
 ---
 title: Melhorar o desempenho de um suplemento do VSTO
+description: Saiba como otimizar os suplementos do VSTO que você cria para aplicativos do Office para que eles sejam inicializados rapidamente, desligados, abram itens e executem outras tarefas.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7529c69270b5f33cde32e8a7907f1b80589c43b7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 83ba2e9cc2cd55b3e3f6362250ffc1e9489b1626
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298520"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524443"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Melhorar o desempenho de um suplemento do VSTO
   Você pode dar aos seus usuários uma experiência melhor otimizando os suplementos do VSTO criados para aplicativos do Office para que eles sejam iniciados rapidamente, desligados, abram itens e executem outras tarefas. Se o suplemento do VSTO for para Outlook, você também poderá reduzir a chance de o suplemento do VSTO ser desabilitado devido ao mau desempenho. Você pode aumentar o desempenho do suplemento do VSTO implementando as seguintes estratégias:
@@ -51,13 +53,13 @@ ms.locfileid: "92298520"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>Para configurar uma solução de Windows Installer para carregar os suplementos do VSTO sob demanda
 
-1. No registro, defina a `LoadBehavior` entrada da chave de **ID do \\ \\ _suplemento_ \Software\Microsoft\Office_ApplicationName_\Addins _raiz_** como **0x10**.
+1. No registro, defina a `LoadBehavior` entrada da chave de **ID do \\ \\ _suplemento_ \Software\Microsoft\Office _ApplicationName_\Addins _raiz_** como **0x10**.
 
      Para obter mais informações, consulte [entradas do registro para suplementos do VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>Para configurar uma solução para carregar os suplementos do VSTO sob demanda enquanto você depura a solução
 
-1. Crie um script que defina a `LoadBehavior` entrada da chave de ** \\ ID do \\ _suplemento_ \Software\Microsoft\Office_ApplicationName_\Addins _raiz_** para **0x10**.
+1. Crie um script que defina a `LoadBehavior` entrada da chave de **\\ ID do \\ _suplemento_ \Software\Microsoft\Office _ApplicationName_\Addins _raiz_** para **0x10**.
 
      O código a seguir mostra um exemplo desse script.
 
@@ -113,7 +115,7 @@ ms.locfileid: "92298520"
 > [!NOTE]
 > Todo o código que chama para o modelo de objeto do Office deve ser executado no thread principal.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Suplementos do VSTO de carregamento por demanda](/archive/blogs/andreww/demand-loading-vsto-add-ins)
 - [Atraso ao carregar o CLR nos suplementos do Office](/archive/blogs/andreww/delay-loading-the-clr-in-office-add-ins)

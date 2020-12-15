@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: importar uma região de formulário projetada no Outlook'
+description: Saiba como criar uma região de formulário no Microsoft Outlook e, em seguida, importar a região de formulário para um projeto de suplemento do VSTO do Outlook usando o assistente de nova região de formulário.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a0de1a25a5309e99193b7be8bce2819808665b8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9b65502bbf29f6e0df7435f6a27d3c51e8082e41
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584970"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522676"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Walkthrough: importar uma região de formulário projetada no Outlook
   Este tutorial demonstra como criar uma região de formulário no Microsoft Office Outlook e, em seguida, importar a região de formulário para um projeto de suplemento do VSTO do Outlook usando o assistente de **nova região de formulário** . A criação da região de formulário no Outlook possibilita que você adicione controles nativos do Outlook à região do formulário que se associam aos dados do Outlook. Depois de importar a região do formulário, você pode manipular os eventos de cada controle.
@@ -57,7 +59,7 @@ ms.locfileid: "91584970"
 
 2. No Outlook, na guia **desenvolvedor** , clique em **criar um formulário**. Para obter mais informações, consulte [como: mostrar a guia Desenvolvedor na faixa de faixas](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-3. Na caixa **formulário de design** , clique em **tarefa**e, em seguida, clique em **abrir**.
+3. Na caixa **formulário de design** , clique em **tarefa** e, em seguida, clique em **abrir**.
 
 4. No Outlook, na guia **desenvolvedor** , no grupo **design** , clique em **nova região de formulário**.
 
@@ -71,31 +73,31 @@ ms.locfileid: "91584970"
 
 8. Clique com o botão direito do mouse no rótulo e clique em **Propriedades avançadas**.
 
-9. Na janela **Propriedades** , defina a propriedade **legenda** como **esta tarefa depende das seguintes tarefas**, defina a propriedade **largura** como **200**e clique em **aplicar**.
+9. Na janela **Propriedades** , defina a propriedade **legenda** como **esta tarefa depende das seguintes tarefas**, defina a propriedade **largura** como **200** e clique em **aplicar**.
 
 10. Arraste um controle ListBox da **caixa de ferramentas** para a região do formulário. Posicionar a caixa de listagem abaixo **dessa tarefa depende do rótulo de tarefas a seguir** .
 
 11. Selecione a caixa de listagem que você acabou de adicionar.
 
-12. Na janela **Propriedades** , defina **largura** como **300**e clique em **aplicar**.
+12. Na janela **Propriedades** , defina **largura** como **300** e clique em **aplicar**.
 
 13. Arraste um rótulo da **caixa de ferramentas** para a região do formulário. Posicione o rótulo abaixo da caixa de listagem.
 
 14. Selecione o rótulo que você acabou de adicionar.
 
-15. Na janela **Propriedades** , defina a propriedade **legenda** para **selecionar uma tarefa a ser adicionada à lista de tarefas dependentes**, defina a **Propriedade largura** como **200**e clique em **aplicar**.
+15. Na janela **Propriedades** , defina a propriedade **legenda** para **selecionar uma tarefa a ser adicionada à lista de tarefas dependentes**, defina a **Propriedade largura** como **200** e clique em **aplicar**.
 
 16. Arraste um controle ComboBox da **caixa de ferramentas** para a região do formulário. Posicione a caixa de combinação sob a **seleção selecionar uma tarefa a ser adicionada ao rótulo lista de tarefas dependentes** .
 
 17. Selecione a caixa de combinação que você acabou de adicionar.
 
-18. Na janela **Propriedades** , defina a propriedade **largura** como **300**e clique em **aplicar**.
+18. Na janela **Propriedades** , defina a propriedade **largura** como **300** e clique em **aplicar**.
 
 19. Arraste um controle CommandButton da **caixa de ferramentas** para a região do formulário. Posicione o botão de comando ao lado da caixa de combinação.
 
 20. Selecione o botão de comando que você acabou de adicionar.
 
-21. Na janela **Propriedades** , defina **nome** como **AddDependentTask**, defina **legenda** para **Adicionar tarefa dependente**, defina **largura** como **100**e clique em **aplicar**.
+21. Na janela **Propriedades** , defina **nome** como **AddDependentTask**, defina **legenda** para **Adicionar tarefa dependente**, defina **largura** como **100** e clique em **aplicar**.
 
 22. No **seletor de campo**, clique em **novo**.
 
@@ -103,7 +105,7 @@ ms.locfileid: "91584970"
 
 24. Arraste o campo **HiddenField** do **seletor de campo** para a região de formulário.
 
-25. Na janela **Propriedades** , defina **visível** como **0-falso**e clique em **aplicar**.
+25. Na janela **Propriedades** , defina **visível** como **0-falso** e clique em **aplicar**.
 
 26. No Outlook, na guia **desenvolvedor** , no grupo **design** , clique no botão **salvar** e, em seguida, clique em **Salvar região de formulário como**.
 
@@ -131,23 +133,23 @@ ms.locfileid: "91584970"
 
 ### <a name="to-import-the-form-region-into-the-outlook-vsto-add-in-project"></a>Para importar a região de formulário para o projeto de suplemento do VSTO do Outlook
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto **TaskAddIn** , aponte para **Adicionar**e clique em **novo item**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto **TaskAddIn** , aponte para **Adicionar** e clique em **novo item**.
 
-2. No painel **modelos** , selecione **região de formulário do Outlook**, nomeie o arquivo **TaskFormRegion**e clique em **Adicionar**.
+2. No painel **modelos** , selecione **região de formulário do Outlook**, nomeie o arquivo **TaskFormRegion** e clique em **Adicionar**.
 
      O assistente de **região de formulário NewOutlook** é iniciado.
 
 3. Na página **Selecione como você deseja criar a região do formulário** , clique em **importar um arquivo de armazenamento de formulário do Outlook (. ofs)** e, em seguida, clique em **procurar**.
 
-4. Na caixa de diálogo **local do arquivo de região de formulário do Outlook existente** , navegue até o local de *TaskFormRegion. OFS*, selecione **TaskFormRegion. OFS**, clique em **abrir**e, em seguida, clique em **Avançar**.
+4. Na caixa de diálogo **local do arquivo de região de formulário do Outlook existente** , navegue até o local de *TaskFormRegion. OFS*, selecione **TaskFormRegion. OFS**, clique em **abrir** e, em seguida, clique em **Avançar**.
 
-5. Na página **Selecione o tipo de região de formulário que você deseja criar** , clique em **substituir**e em **Avançar**.
+5. Na página **Selecione o tipo de região de formulário que você deseja criar** , clique em **substituir** e em **Avançar**.
 
      Uma região de formulário *substituir tudo* substitui todo o formulário do Outlook. Para obter mais informações sobre tipos de região de formulário, consulte [criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md).
 
 6. No **texto descritivo do fornecimento e selecione sua página preferências de exibição** , clique em **Avançar**.
 
-7. Na página **identificar as classes de mensagem que exibirão esta região de formulário** , no campo as **classes de mensagens personalizadas que exibirão este formulário de região** , digite **IPM. Task. TaskFormRegion**e clique em **concluir**.
+7. Na página **identificar as classes de mensagem que exibirão esta região de formulário** , no campo as **classes de mensagens personalizadas que exibirão este formulário de região** , digite **IPM. Task. TaskFormRegion** e clique em **concluir**.
 
      Um arquivo *TaskFormRegion.cs* ou *TaskFormRegion. vb* é adicionado ao seu projeto.
 
@@ -158,7 +160,7 @@ ms.locfileid: "91584970"
 
 ### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>Para manipular os eventos de controles na região do formulário
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em *TaskFormRegion.cs* ou *TaskFormRegion. vb*e clique em **Exibir código**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em *TaskFormRegion.cs* ou *TaskFormRegion. vb* e clique em **Exibir código**.
 
     O *TaskFormRegion.cs* ou o *TaskFormRegion. vb* é aberto no editor de códigos.
 
@@ -212,21 +214,21 @@ ms.locfileid: "91584970"
 
      O Outlook é iniciado.
 
-2. No Outlook, na guia **início** , clique em **novos itens**e em **tarefa**.
+2. No Outlook, na guia **início** , clique em **novos itens** e em **tarefa**.
 
 3. No formulário tarefa, digite **tarefa dependente** no campo **assunto** .
 
 4. Na guia **tarefa** da faixa de, no grupo **ações** , clique em **salvar & fechar**.
 
-5. No Outlook, na guia **início** , clique em **novos itens**, clique em **mais itens**e, em seguida, clique em **escolher formulário**.
+5. No Outlook, na guia **início** , clique em **novos itens**, clique em **mais itens** e, em seguida, clique em **escolher formulário**.
 
-6. Na caixa de diálogo **escolher formulário** , clique em **TaskFormRegion**e em **abrir**.
+6. Na caixa de diálogo **escolher formulário** , clique em **TaskFormRegion** e em **abrir**.
 
      A região de formulário **TaskFormRegion** é exibida. Esse formulário substitui todo o formulário de tarefa. A caixa de combinação **selecionar uma tarefa a ser adicionada à lista de tarefas dependentes** é preenchida com outras tarefas na pasta tarefas.
 
 7. No formulário de tarefas, no campo **assunto** , digite **tarefa principal**.
 
-8. Na caixa de combinação **selecionar uma tarefa a ser adicionada à lista de tarefas dependentes** , selecione **tarefa dependente**e clique em **Adicionar tarefa dependente**.
+8. Na caixa de combinação **selecionar uma tarefa a ser adicionada à lista de tarefas dependentes** , selecione **tarefa dependente** e clique em **Adicionar tarefa dependente**.
 
      **0% concluído--a tarefa dependente** aparece na caixa de listagem **esta tarefa depende da seguinte lista de tarefas** . Isso demonstra que você tratou com êxito o `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` evento do botão.
 
@@ -251,7 +253,7 @@ ms.locfileid: "91584970"
 
 - Para saber mais sobre como adicionar um painel de tarefas personalizado ao Outlook, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Acessar uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md)
 - [Criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)
 - [Diretrizes para criar regiões de formulário do Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)

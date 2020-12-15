@@ -1,5 +1,7 @@
 ---
 title: Orientações de segurança e implantação
+description: Saiba como você pode definir a política de segurança para permitir que sua solução seja executada e como você pode implantar sua solução do Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 014b59efb945f6390877a2e9764e24b6c4cd639b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0a750aa97c371ce25c7b6797ee773e82d8ab8eb6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810935"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524377"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>Orientações de segurança e implantação
   Os tópicos a seguir demonstram como você pode definir a política de segurança para permitir que sua solução seja executada e como você pode implantar sua solução do Office.
@@ -58,5 +60,5 @@ ms.locfileid: "90810935"
 
 - [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md) Fornece links para informações sobre como criar soluções do Word e do Excel e a função de assemblies em sua solução.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Exemplos e orientações de desenvolvimento do Office](../vsto/office-development-samples-and-walkthroughs.md)

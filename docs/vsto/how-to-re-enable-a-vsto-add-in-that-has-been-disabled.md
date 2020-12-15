@@ -1,5 +1,7 @@
 ---
 title: 'Como: reabilitar um suplemento do VSTO que foi desabilitado'
+description: Saiba como você pode usar o Visual Studio para reabilitar um suplemento do VSTO que foi desabilitado em um aplicativo Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3575e119f4da3ca3050a28243104fb4773089cf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d03a03494b149a761910ddbdaa1d41592704f969
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541252"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524475"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Como: reabilitar um suplemento do VSTO que foi desabilitado
   Microsoft Office aplicativos podem desabilitar os suplementos do VSTO que se comportam inesperadamente. Se um aplicativo não carregar seu suplemento do VSTO quando você tentar depurá-lo, o aplicativo poderá ter o disco rígido desabilitado ou desabilitado por software do seu suplemento do VSTO.
@@ -43,11 +45,11 @@ ms.locfileid: "85541252"
 
      A coluna **nome** especifica o nome do assembly e a coluna **local** especifica o caminho completo do manifesto do aplicativo.
 
-5. Na caixa **gerenciar** , clique em **itens desabilitados**e, em seguida, clique em **ir**.
+5. Na caixa **gerenciar** , clique em **itens desabilitados** e, em seguida, clique em **ir**.
 
 6. Selecione o suplemento do VSTO e clique em **habilitar**.
 
-7. Clique em **Fechar**.
+7. Clique em **fechar**
 
 ## <a name="soft-disabled-vsto-add-ins"></a>Suplementos do VSTO desabilitados por software
  A desabilitação flexível pode ocorrer quando um suplemento do VSTO produz um erro que não faz com que o aplicativo feche inesperadamente. Por exemplo, um aplicativo pode desabilitar um suplemento do VSTO de maneira flexível se ele lançar uma exceção sem tratamento enquanto o <xref:Microsoft.Office.Tools.AddIn.Startup> manipulador de eventos estiver em execução.
@@ -67,13 +69,13 @@ ms.locfileid: "85541252"
 
      A coluna **nome** especifica o nome do assembly e a coluna **local** especifica o caminho completo do manifesto do aplicativo.
 
-5. Na caixa **gerenciar** , clique em **suplementos de com**e, em seguida, clique em **ir**.
+5. Na caixa **gerenciar** , clique em **suplementos de com** e, em seguida, clique em **ir**.
 
 6. Na caixa de diálogo **suplementos de com** , marque a caixa de seleção ao lado do suplemento do VSTO desabilitado.
 
 7. Clique em **OK**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Criar soluções do Office](../vsto/building-office-solutions.md)
 - [Depurar projetos do Office](../vsto/debugging-office-projects.md)
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)

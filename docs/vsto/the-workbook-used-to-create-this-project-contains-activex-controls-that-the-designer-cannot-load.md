@@ -1,5 +1,7 @@
 ---
 title: A pasta de trabalho contém controles ActiveX que não podem ser carregados
+description: Saiba como você pode resolver o erro que ocorre quando uma pasta de trabalho contém controles ActiveX que não podem ser carregados.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: error-reference
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 09182fb354ad3ae8937b66952a0acd376d54fe0a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7257e3940af72f344906642adc51a1dd98cb3f25
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584445"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524183"
 ---
 # <a name="the-workbook-contains-activex-controls-that-cannot-be-loaded"></a>A pasta de trabalho contém controles ActiveX que não podem ser carregados
 
@@ -34,6 +36,6 @@ ms.locfileid: "91584445"
 
 3. Crie uma solução de nível de documento com base no documento ou na pasta de trabalho.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)

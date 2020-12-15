@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: criar uma região de formulário do Outlook'
+description: Saiba como você pode criar uma região de formulário personalizada do Microsoft Outlook que aparece como uma nova página na janela Inspetor de um item de contato.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01cfe55964a1d61c2ad200c9538ced9ff0aa5599
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e306814512c6cab2d331a26128f22bb94d7dbbf4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985467"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524199"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Walkthrough: criar uma região de formulário do Outlook
   As regiões de formulário personalizadas estendem formulários do Outlook Microsoft Office padrão ou personalizados. Neste tutorial, você criará uma região de formulário personalizada que aparece como uma nova página na janela Inspetor de um item de contato. Essa região de formulário exibe um mapa de cada endereço listado para o contato, enviando as informações de endereço para o site de pesquisa local do Windows Live. Para obter informações sobre regiões de formulário, consulte [criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md).
@@ -70,13 +72,13 @@ ms.locfileid: "72985467"
 
 2. No menu **Projeto** , clique em **Adicionar Novo Item**.
 
-3. Na caixa de diálogo **Adicionar novo item** , selecione **região de formulário do Outlook**, nomeie o arquivo como **MapIt**e clique em **Adicionar**.
+3. Na caixa de diálogo **Adicionar novo item** , selecione **região de formulário do Outlook**, nomeie o arquivo como **MapIt** e clique em **Adicionar**.
 
      O assistente de **região de formulário NewOutlook** é iniciado.
 
-4. Na página **Selecione como você deseja criar a região de formulário** , clique em **criar uma nova região de formulário**e em **Avançar**.
+4. Na página **Selecione como você deseja criar a região de formulário** , clique em **criar uma nova região de formulário** e em **Avançar**.
 
-5. Na página **Selecione o tipo de região de formulário que você deseja criar** , clique em **separado**e, em seguida, clique em **Avançar**.
+5. Na página **Selecione o tipo de região de formulário que você deseja criar** , clique em **separado** e, em seguida, clique em **Avançar**.
 
      Uma região de formulário *separada* adiciona uma nova página a um formulário do Outlook. Para obter mais informações sobre tipos de região de formulário, consulte [criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md).
 
@@ -84,9 +86,9 @@ ms.locfileid: "72985467"
 
      Esse nome aparece na faixa de da janela do Inspetor quando o item de contato está aberto.
 
-7. Selecione os **inspetores que estão no modo de redação** e **nos inspetores que estão no modo de leitura**e clique em **Avançar**.
+7. Selecione os **inspetores que estão no modo de redação** e **nos inspetores que estão no modo de leitura** e clique em **Avançar**.
 
-8. Na página **identificar as classes de mensagem que exibirão esta região de formulário** , desmarque a **mensagem de email**, selecione **contato**e clique em **concluir**.
+8. Na página **identificar as classes de mensagem que exibirão esta região de formulário** , desmarque a **mensagem de email**, selecione **contato** e clique em **concluir**.
 
      Um arquivo *MapIt.cs* ou *MapIt. vb* é adicionado ao seu projeto.
 
@@ -114,7 +116,7 @@ ms.locfileid: "72985467"
 
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>Para personalizar o comportamento da região do formulário
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em *MapIt.cs* ou *MapIt. vb*e clique em **Exibir código**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em *MapIt.cs* ou *MapIt. vb* e clique em **Exibir código**.
 
     *MapIt.cs* ou *MapIt. vb* é aberto no editor de código.
 
@@ -147,7 +149,7 @@ ms.locfileid: "72985467"
 
      O Outlook é aberto.
 
-2. No Outlook, na guia **início** , clique em **novos itens**e, em seguida, em **contato**.
+2. No Outlook, na guia **início** , clique em **novos itens** e, em seguida, em **contato**.
 
 3. No formulário de contato, digite **Ana Beebe** como o nome do contato e, em seguida, especifique os três endereços a seguir.
 
@@ -165,14 +167,14 @@ ms.locfileid: "72985467"
 
 6. No grupo **Mostrar** da faixa de mapa do item, clique em **mapeá-lo** para abrir a região de formulário mapear ti.
 
-     A região do formulário de mapa é exibida e exibe o site de pesquisa local. Os endereços **comercial**, **residencial**e **outros** são exibidos no bloco de rascunho. No bloco de rascunho, selecione um endereço que você deseja mapear.
+     A região do formulário de mapa é exibida e exibe o site de pesquisa local. Os endereços **comercial**, **residencial** e **outros** são exibidos no bloco de rascunho. No bloco de rascunho, selecione um endereço que você deseja mapear.
 
 ## <a name="next-steps"></a>Próximas etapas
  Você pode aprender mais sobre como personalizar a interface do usuário de um aplicativo do Outlook a partir destes tópicos:
 
 - Para saber mais sobre como personalizar a faixa de visualização de um item do Outlook, confira [personalizar uma faixa de visualização para o Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Acessar uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md)
 - [Criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)
 - [Diretrizes para criar regiões de formulário do Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)

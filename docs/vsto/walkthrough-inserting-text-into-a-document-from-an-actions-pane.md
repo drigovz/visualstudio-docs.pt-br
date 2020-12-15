@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: inserir texto em um documento a partir de um painel Ações'
+description: Crie um painel Ações em um documento do Microsoft Word. Saiba que o painel Ações contém dois controles que coletam entrada e, em seguida, enviam o texto para o documento.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c65027d7670c4d6789f32eb4d9080df061d904a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 44fd876dfad99e1a1320a5e5d743ea8e30dfdb98
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584957"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524166"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Walkthrough: inserir texto em um documento a partir de um painel Ações
   Este tutorial demonstra como criar um painel Ações em um Microsoft Office documento do Word. O painel Ações contém dois controles que coletam entrada e enviam o texto ao documento.
@@ -76,14 +78,14 @@ ms.locfileid: "91584957"
 
      A caixa de diálogo **Adicionar controle de indicadores** é exibida.
 
-2. Selecione o **nome**da palavra, sem selecionar a marca de parágrafo e clique em **OK**.
+2. Selecione o **nome** da palavra, sem selecionar a marca de parágrafo e clique em **OK**.
 
     > [!NOTE]
     > A marca de parágrafo deve estar fora do indicador. Se as marcas de parágrafo não estiverem visíveis no documento, clique no menu **ferramentas** , aponte para **Microsoft Office ferramentas do Word** e clique em **Opções**. Clique na guia **Exibir** e marque a caixa de seleção **marcas de parágrafo** na seção marcas de **formatação** da caixa de diálogo **Opções** .
 
-3. Na janela **Propriedades** , altere a propriedade **Name** de **Bookmark1** para **nome**do servidor.
+3. Na janela **Propriedades** , altere a propriedade **Name** de **Bookmark1** para **nome** do servidor.
 
-4. Selecione o **endereço**da palavra, sem selecionar a marca de parágrafo.
+4. Selecione o **endereço** da palavra, sem selecionar a marca de parágrafo.
 
 5. Na guia **Inserir** da faixa de faixas, no grupo **links** , clique em **indicador**.
 
@@ -180,7 +182,7 @@ ms.locfileid: "91584957"
 
 - Associar dados a controles em um painel Ações. Para obter mais informações, consulte [Walkthrough: associar dados a controles em um painel de ações do Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Visão geral do painel Ações](../vsto/actions-pane-overview.md)
 - [Como: adicionar um painel de ações a documentos do Word ou a pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Como: adicionar um painel de ações a pastas de trabalho do Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))

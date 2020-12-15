@@ -1,5 +1,7 @@
 ---
 title: Exibir texto na caixa de texto no documento usando o botão
+description: Saiba como você pode usar botões e caixas de texto em uma personalização em nível de documento para o Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f3c467abcee8fb4faafd2da06ba261e7f3039fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cda1fe3e7430ff30dcc3b3921eb2bcd4d31b699
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328746"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522746"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Walkthrough: exibir texto em uma caixa de texto em um documento usando um botão
   Este tutorial demonstra como usar botões e caixas de texto em uma personalização em nível de documento para Microsoft Office Word.
@@ -80,7 +82,7 @@ ms.locfileid: "67328746"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Para gravar na caixa de texto quando o botão é clicado
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **ThisDocument**e clique em **Exibir código** no menu de atalho.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **ThisDocument** e clique em **Exibir código** no menu de atalho.
 
 2. Adicione o código a seguir ao <xref:System.Windows.Forms.Control.Click> manipulador de eventos do botão.
 
@@ -109,7 +111,7 @@ ms.locfileid: "67328746"
 
 - Usando botões de opção para selecionar estilos de gráfico. Para obter mais informações, consulte [Walkthrough: atualizar um gráfico em um documento usando botões de opção](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Visão geral dos controles de Windows Forms em documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Passo a passos usando o Word](../vsto/walkthroughs-using-word.md)
 - [Exemplos e orientações de desenvolvimento do Office](../vsto/office-development-samples-and-walkthroughs.md)

@@ -1,5 +1,7 @@
 ---
 title: Exibir painéis de tarefas personalizados com mensagens de email no Outlook
+description: Saiba como exibir uma instância exclusiva de um painel de tarefas personalizado com cada mensagem de email no Microsoft Outlook que é criada ou aberta.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 00a8eae3f0beea7482c5fd7a1ac1ebd1994b9c35
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ac14eff05c6f776181c20acde4cff4e2ed7a87b6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584276"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522714"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Walkthrough: Exibir painéis de tarefas personalizados com mensagens de email no Outlook
   Este tutorial demonstra como exibir uma instância exclusiva de um painel de tarefas personalizado com cada mensagem de email que é criada ou aberta. Os usuários podem exibir ou ocultar o painel de tarefas personalizado usando um botão na faixa de de cada mensagem de email.
@@ -76,7 +78,7 @@ ms.locfileid: "91584276"
 
 2. No menu **projeto** , clique em **Adicionar controle de usuário**.
 
-3. Na caixa de diálogo **Adicionar novo item** , altere o nome do controle de usuário para **TaskPaneControl**e clique em **Adicionar**.
+3. Na caixa de diálogo **Adicionar novo item** , altere o nome do controle de usuário para **TaskPaneControl** e clique em **Adicionar**.
 
      O controle de usuário é aberto no designer.
 
@@ -91,7 +93,7 @@ ms.locfileid: "91584276"
 
 2. Na caixa de diálogo **Adicionar novo item** , selecione **faixa de opções (designer visual)**.
 
-3. Altere o nome da nova faixa de forma para **ManageTaskPaneRibbon**e clique em **Adicionar**.
+3. Altere o nome da nova faixa de forma para **ManageTaskPaneRibbon** e clique em **Adicionar**.
 
      O arquivo *ManageTaskPaneRibbon.cs* ou *ManageTaskPaneRibbon. vb* é aberto no designer de faixa de faixas e exibe uma guia e um grupo padrão.
 
@@ -99,7 +101,7 @@ ms.locfileid: "91584276"
 
 5. Na janela **Propriedades** , defina a propriedade **rótulo** como **Gerenciador de painéis de tarefas**.
 
-6. Na guia **controles da faixa** de **ferramentas**do Office, arraste um controle ToggleButton para o grupo **Gerenciador de painéis de tarefas** .
+6. Na guia **controles da faixa** de **ferramentas** do Office, arraste um controle ToggleButton para o grupo **Gerenciador de painéis de tarefas** .
 
 7. Clique em **toggleButton1**.
 
@@ -112,7 +114,7 @@ ms.locfileid: "91584276"
 
 1. No designer de faixa de faixas, clique na faixa de **ManageTaskPaneRibbon** .
 
-2. Na janela **Propriedades** , clique na lista suspensa ao lado de **RibbonType**e selecione **Microsoft. Outlook. mail. Compose** e **Microsoft. Outlook. mail. Read**.
+2. Na janela **Propriedades** , clique na lista suspensa ao lado de **RibbonType** e selecione **Microsoft. Outlook. mail. Compose** e **Microsoft. Outlook. mail. Read**.
 
 ## <a name="create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Criar uma classe para gerenciar janelas de inspetores e painéis de tarefas personalizados
  Há vários casos em que o suplemento do VSTO deve identificar qual painel de tarefas personalizado está associado a uma mensagem de email específica. Esses casos incluem o seguinte:
@@ -242,7 +244,7 @@ ms.locfileid: "91584276"
 
 6. Clique no botão **Mostrar painel de tarefas** novamente.
 
-    Verifique se o painel de tarefas é aberto e se a caixa de texto ainda contém o **primeiro painel de tarefas**cadeia de caracteres.
+    Verifique se o painel de tarefas é aberto e se a caixa de texto ainda contém o **primeiro painel de tarefas** cadeia de caracteres.
 
 7. No Outlook, clique em **novo** para criar uma segunda mensagem de email.
 
@@ -267,7 +269,7 @@ ms.locfileid: "91584276"
 
 - Crie um botão da faixa de medida no Excel que possa ser usado para ocultar ou exibir um painel de tarefas personalizado. Para obter mais informações, consulte [Walkthrough: sincronizar um painel de tarefas personalizado com um botão Ribbon](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Painéis de tarefas personalizados](../vsto/custom-task-panes.md)
 - [Como: adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [Walkthrough: automatizar um aplicativo de um painel de tarefas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

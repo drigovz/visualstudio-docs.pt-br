@@ -1,5 +1,7 @@
 ---
 title: Copiar e colar formas no documento do Visio programaticamente
+description: Saiba como você pode copiar formas programaticamente em uma página de um documento e colá-las em uma nova página no mesmo documento.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f54f98a055ef834100c5c58274d72f92568b7c4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 4643d1527d078639e2f2f09add42fff96e345091
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585269"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523208"
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Como: copiar e colar formas programaticamente em um documento do Visio
   Você pode copiar formas programaticamente em uma página de um documento e colá-las em uma nova página no mesmo documento. Você pode optar por colá-los no local padrão (o centro da janela ativa) ou nos mesmos locais de coordenadas que tinham na página original.
@@ -46,7 +48,7 @@ ms.locfileid: "91585269"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#15)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#15)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Soluções do Visio](../vsto/visio-solutions.md)
 - [Visão geral do modelo de objeto do Visio](../vsto/visio-object-model-overview.md)
 - [Trabalhar com formas do Visio](../vsto/working-with-visio-shapes.md)

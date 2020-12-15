@@ -1,5 +1,7 @@
 ---
 title: Solucionar erros em soluções do Office
+description: Saiba como você pode solucionar problemas de erros que podem ocorrer durante o desenvolvimento de Microsoft Office soluções no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd12c3dd9cd3c90564351dd1c64cebfe5df6e99d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234686"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523040"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Solucionar erros em soluções do Office
   Você pode encontrar problemas ao executar as seguintes tarefas ao desenvolver soluções do Office no Visual Studio:
@@ -111,11 +113,11 @@ ms.locfileid: "87234686"
 ### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Alguns eventos de objetos do Office não estão acessíveis ao usar o C\#
  Em alguns casos, você pode ver um erro do compilador como o seguinte quando tenta acessar um evento específico de uma instância de um tipo de módulo de interoperabilidade primária do Office (PIA) em um projeto do Visual C#.
 
- "Ambiguidade entre ' Microsoft. Office. Interop. Excel. _Application. NewWorkbook ' e ' Microsoft. Office. Interop. Excel. AppEvents_Event. NewWorkbook '"
+ "Ambiguidade entre ' Microsoft.Office.Interop.Excel._Application. NewWorkbook ' e ' Microsoft.Office.Interop.Excel.AppEvents_Event. NewWorkbook '"
 
  Esse erro significa que você está tentando acessar um evento que tem o mesmo nome de outra propriedade ou método do objeto. Para acessar o evento, você deve converter o objeto em sua *interface de evento*.
 
- Os tipos de PIA do Office que têm eventos implementam duas interfaces: uma interface principal com todas as propriedades e métodos e uma interface de evento que contém os eventos expostos pelo objeto. Essas interfaces de evento usam a Convenção de nomenclatura *objectname*eventos*n*_Event, como <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> e <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . Se você não puder acessar um evento que você espera encontrar em um objeto, converta o objeto em sua interface de evento.
+ Os tipos de PIA do Office que têm eventos implementam duas interfaces: uma interface principal com todas as propriedades e métodos e uma interface de evento que contém os eventos expostos pelo objeto. Essas interfaces de evento usam a Convenção de nomenclatura *objectname* eventos *n* _Event, como <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> e <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . Se você não puder acessar um evento que você espera encontrar em um objeto, converta o objeto em sua interface de evento.
 
  Por exemplo, os <xref:Microsoft.Office.Interop.Excel.Application> objetos têm um <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> evento e uma <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A> propriedade. Para manipular o <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> evento, converta o <xref:Microsoft.Office.Interop.Excel.Application> para a <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> interface. O exemplo de código a seguir demonstra como fazer isso em um projeto de nível de documento para o Excel.
 
@@ -124,7 +126,7 @@ ms.locfileid: "87234686"
  Para obter mais informações sobre interfaces de evento nos PIAs do Office, consulte [visão geral de classes e interfaces nos assemblies de interoperabilidade primária do Office](/previous-versions/office/office-12//ms247299(v=office.12)).
 
 ### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>Não é possível fazer referência a classes do PIA do Office em projetos direcionados ao [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou ao [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
- Em projetos que se destinam ao [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou ao [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] , o código que faz referência a uma classe que é definida em um pia do Office não será compilado por padrão. As classes nos PIAs usam a classe *objectname*da Convenção de nomenclatura, como <xref:Microsoft.Office.Interop.Word.DocumentClass> e <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . Por exemplo, o código a seguir de um projeto de suplemento do VSTO do Word não será compilado.
+ Em projetos que se destinam ao [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou ao [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] , o código que faz referência a uma classe que é definida em um pia do Office não será compilado por padrão. As classes nos PIAs usam a classe *objectname* da Convenção de nomenclatura, como <xref:Microsoft.Office.Interop.Word.DocumentClass> e <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . Por exemplo, o código a seguir de um projeto de suplemento do VSTO do Word não será compilado.
 
 ```vb
 Dim document As Word.DocumentClass = Globals.ThisAddIn.Application.ActiveDocument
@@ -213,7 +215,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Se você clicar em **Sim** ou **não** na caixa de diálogo, o Visual Studio encerrará o processo do Excel ou do Word e interromperá o depurador. Para interromper a depuração do projeto sem exibir essa caixa de diálogo, saia do Excel ou do Word diretamente em vez de parar o depurador no Visual Studio.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Solucionar problemas de soluções do Office](../vsto/troubleshooting-office-solutions.md)
 - [Solucionar problemas de segurança da solução do Office](../vsto/troubleshooting-office-solution-security.md)
 - [Solucionar problemas de implantação de solução do Office](../vsto/troubleshooting-office-solution-deployment.md)

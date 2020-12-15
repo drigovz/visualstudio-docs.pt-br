@@ -1,5 +1,7 @@
 ---
 title: Adicionar controles à planilha em tempo de execução no projeto de suplemento do VSTO
+description: Saiba como usar a faixa de faixas para permitir que os usuários adicionem um botão, um NamedRange e um ListObject a uma planilha.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ec1d1361d7ca58d4292cbbb7bc4ea3b707a748ff
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9987e9427c0fe982cf3ddcb88ce8071caab04b0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584341"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522777"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Walkthrough: adicionar controles a uma planilha em tempo de execução no projeto de suplemento do VSTO
   Você pode adicionar controles a qualquer planilha aberta usando um suplemento do VSTO do Excel. Este tutorial demonstra como usar a faixa de faixas para permitir que os usuários adicionem um <xref:Microsoft.Office.Tools.Excel.Controls.Button> , um <xref:Microsoft.Office.Tools.Excel.NamedRange> e um <xref:Microsoft.Office.Tools.Excel.ListObject> a uma planilha. Para obter informações, consulte [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -65,7 +67,7 @@ ms.locfileid: "91584341"
 
      Um arquivo chamado **Ribbon1.cs** ou **Ribbon1. vb** é aberto no designer de faixa de faixas e exibe uma guia e um grupo padrão.
 
-3. Na guia **controles da faixa** de **ferramentas**do Office, arraste um controle de caixa de seleção para o **grupo1**.
+3. Na guia **controles da faixa** de **ferramentas** do Office, arraste um controle de caixa de seleção para o **grupo1**.
 
 4. Clique em **checkBox1** para selecioná-lo.
 
@@ -76,14 +78,14 @@ ms.locfileid: "91584341"
     |**Nome**|**Botão**|
     |**Rotular**|**Botão**|
 
-6. Adicione uma segunda caixa de seleção a **grupo1**e, em seguida, altere as propriedades a seguir.
+6. Adicione uma segunda caixa de seleção a **grupo1** e, em seguida, altere as propriedades a seguir.
 
     |Propriedade|Valor|
     |--------------|-----------|
     |**Nome**|**NamedRange**|
     |**Rotular**|**NamedRange**|
 
-7. Adicione uma terceira caixa de seleção a **grupo1**e, em seguida, altere as propriedades a seguir.
+7. Adicione uma terceira caixa de seleção a **grupo1** e, em seguida, altere as propriedades a seguir.
 
     |Propriedade|Valor|
     |--------------|-----------|
@@ -187,7 +189,7 @@ ms.locfileid: "91584341"
 
 - Para saber mais sobre como salvar controles em uma planilha, confira o exemplo de controles dinâmicos do suplemento VSTO do Excel em [exemplos de desenvolvimento do Office e passo a passos](../vsto/office-development-samples-and-walkthroughs.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Soluções do Excel](../vsto/excel-solutions.md)
 - [Visão geral dos controles do Windows Forms em documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Controles em documentos do Office](../vsto/controls-on-office-documents.md)

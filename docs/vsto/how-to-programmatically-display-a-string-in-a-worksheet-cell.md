@@ -1,5 +1,7 @@
 ---
 title: Como exibir programaticamente uma cadeia de caracteres em uma célula de planilha
+description: Saiba como você pode exibir programaticamente uma cadeia de caracteres em uma célula de planilha do Microsoft Excel usando um controle NamedRange ou um objeto Range nativo do Excel.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb3dbaec2efd95f63428e8494598720953f791e7
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a97534b8ac43c9a05cfb59fb911442a87d51c767
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585217"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523939"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Como exibir programaticamente uma cadeia de caracteres em uma célula de planilha
   Este exemplo demonstra como exibir texto em uma célula programaticamente. Para exibir o texto na célula, use um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle ou um objeto Range nativo do Excel.
@@ -46,7 +48,7 @@ ms.locfileid: "91585217"
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
      [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Walkthrough: coletar dados usando um formulário do Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
 - [Solucionar problemas de soluções do Office](../vsto/troubleshooting-office-solutions.md)
 - [Controle NamedRange](../vsto/namedrange-control.md)

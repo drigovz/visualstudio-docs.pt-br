@@ -1,5 +1,7 @@
 ---
 title: 'Como: Pesquisar por programação de texto em intervalos de planilhas'
+description: Saiba como você pode usar o Visual Studio para Pesquisar texto de forma programática em intervalos de planilha do Microsoft Excel.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f69a0b2c7191f608e4d18c6c3990c1ce19f1ed7e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 01ce01e76aa56a834f4f63cd2bd0f6f16c4ab03a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584749"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524552"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Como: Pesquisar por programação de texto em intervalos de planilhas
   O <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> método do <xref:Microsoft.Office.Interop.Excel.Range> objeto permite Pesquisar texto dentro do intervalo. Esse texto também pode ser qualquer uma das cadeias de caracteres de erro que podem aparecer em uma célula de planilha, como `#NULL!` ou `#VALUE!` . Para obter mais informações sobre cadeias de caracteres de erro, consulte [valores de erro de célula](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).

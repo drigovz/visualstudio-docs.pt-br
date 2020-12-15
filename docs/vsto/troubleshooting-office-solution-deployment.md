@@ -1,5 +1,7 @@
 ---
 title: Solucionar problemas de implantação de solução do Office
+description: Saiba como você pode resolver problemas comuns que podem ser encontrados ao implantar soluções do Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c7db4a699fcc8b28e4f2f423f612738de6a6836
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b70b03e8342564de828059d1a335f6347c19b5a3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90806727"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522970"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Solucionar problemas de implantação de solução do Office
   Este tópico contém informações sobre como resolver problemas comuns que você pode encontrar ao implantar soluções do Office.
@@ -45,7 +47,7 @@ ms.locfileid: "90806727"
 
 1. No registro, navegue até a seguinte chave:
 
-     **HKEY_CURRENT_USER \Software\Microsoft\VSTA**
+     **HKEY_CURRENT_USER\Software\Microsoft\VSTA**
 
 2. Na subchave **AddInTimeout** , defina o valor de tempo limite em milissegundos.
 
@@ -69,7 +71,7 @@ ms.locfileid: "90806727"
 
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Para baixar assemblies em vez de carregar cópias armazenadas em cache
 
-1. Na barra de menus, escolha **Project**, _ProjectName_**Propriedades**ProjectName.
+1. Na barra de menus, escolha **Project**, **Propriedades** ProjectName.
 
 2. Na página do **aplicativo** , escolha **informações do assembly**.
 
@@ -125,7 +127,7 @@ ms.locfileid: "90806727"
 
  Defina a extensão para **. vsto** e o tipo MIME como **Application/x-MS-VSTO**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Solucionar problemas de implantações do ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
 - [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Como: pesquisar programaticamente por um contato específico'
+description: Saiba como você pode usar o Visual Studio para pesquisar programaticamente um contato específico no Microsoft Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d8b2302586fc09fcfec6420d97374197eae7e67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6813a137558a245c66d4b24deac07b1a6a77796a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547063"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524609"
 ---
 # <a name="how-to-programmatically-search-for-a-specific-contact"></a>Como: pesquisar programaticamente por um contato específico
   Este exemplo pesquisa uma pasta contatos do Outlook para um contato específico pelo nome e sobrenome. O exemplo supõe que exista um contato chamado **John Evans** na pasta Contacts.

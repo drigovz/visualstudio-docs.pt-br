@@ -1,5 +1,7 @@
 ---
 title: Como executar cálculos do Excel programaticamente
+description: Saiba como você pode usar o Visual Studio para executar cálculos de forma programática em uma pasta de trabalho do Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a02e86864065d2c626de2f6e7fea7528554f1391
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9f385e7c58972844c30320c680f42d8394580d8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547375"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524700"
 ---
 # <a name="how-to-programmatically-run-excel-calculations"></a>Como executar cálculos do Excel programaticamente
   Você usa um processo semelhante para executar cálculos em um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle ou em um objeto Range do Excel nativo.
@@ -56,7 +58,7 @@ ms.locfileid: "85547375"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#31)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#31)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Trabalhar com intervalos](../vsto/working-with-ranges.md)
 - [Controle NamedRange](../vsto/namedrange-control.md)
 - [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)

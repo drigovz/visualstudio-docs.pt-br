@@ -1,5 +1,7 @@
 ---
 title: Localizar e substituir texto em documentos programaticamente
+description: Saiba como você pode usar o Visual Studio para pesquisar e substituir texto de forma programática em um documento do Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18a50d6d4ef52a0c50be0b72b4cab5706da4e2db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad77da419f70a8e513bf152ced41cccdd0474a8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547037"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524592"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Como: Pesquisar e substituir texto de forma programática em documentos
   O <xref:Microsoft.Office.Interop.Word.Find> objeto é um membro dos <xref:Microsoft.Office.Interop.Word.Selection> objetos e e <xref:Microsoft.Office.Interop.Word.Range> você pode usar qualquer um para pesquisar texto em Microsoft Office documentos do Word. O comando Replace é uma extensão do comando find.
@@ -116,7 +118,7 @@ ms.locfileid: "85547037"
 
     - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> Substitui o primeiro item encontrado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Como: definir opções de pesquisa de forma programática no Word](../vsto/how-to-programmatically-set-search-options-in-word.md)
 - [Como fazer loops programaticamente por meio de itens encontrados em documentos](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
 - [Como: definir e selecionar intervalos de forma programática em documentos](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)

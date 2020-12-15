@@ -1,5 +1,7 @@
 ---
 title: Trabalhar com planilhas
+description: Saiba que as classes de planilha e planilha contêm os métodos e as propriedades que você usa para executar tarefas com planilhas.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f518a3d6e271c4f457e50ad6f9affcc3afccdf9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d58576c999d11441122bb0b2115d2367b7ce04ce
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62814583"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522539"
 ---
 # <a name="work-with-worksheets"></a>Trabalhar com planilhas
   As <xref:Microsoft.Office.Tools.Excel.Worksheet> <xref:Microsoft.Office.Interop.Excel.Worksheet> classes e contêm os métodos e as propriedades que você usa para executar tarefas com planilhas.
@@ -47,7 +49,7 @@ ms.locfileid: "62814583"
 
  Em alguns casos, as maneiras de executar essas tarefas nos suplementos do VSTO são diferentes das maneiras que você as executa em personalizações em nível de documento.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [Trabalhar com pastas de trabalho](../vsto/working-with-workbooks.md)
 - [Trabalhar com intervalos](../vsto/working-with-ranges.md)

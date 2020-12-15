@@ -1,5 +1,7 @@
 ---
 title: Popular tabelas do Word com propriedades de documento programaticamente
+description: Saiba como você pode usar o Visual Studio para preencher programaticamente uma tabela com propriedades de documento em um documento do Microsoft Word.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ce4fbdb69aae55bb5b79b6af17a0516a0b8786a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 78e9968970406cd176a2f5f27305ca0346cf85bf
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585478"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523785"
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Como: preencher programaticamente tabelas do Word com propriedades do documento
   O exemplo a seguir cria uma tabela do Word Microsoft Office na parte superior do documento e a popula com as propriedades do documento host.
@@ -94,7 +96,7 @@ ms.locfileid: "91585478"
    [!code-vb[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#89)]
    [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Como: criar tabelas do Word programaticamente](../vsto/how-to-programmatically-create-word-tables.md)
 - [Como: adicionar texto e formatação programaticamente a células em tabelas do Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
 - [Como: adicionar linhas e colunas programaticamente a tabelas do Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)

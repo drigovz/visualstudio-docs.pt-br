@@ -1,5 +1,7 @@
 ---
 title: Trabalhar com texto em documentos
+description: Saiba mais sobre os procedimentos passo a passo e exemplos de código para usar o modelo de objeto do Microsoft Word para trabalhar com texto em projetos do Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cdb38bcb8a86900cae7eb596c48b5765bc247eac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8314752b5d1be6d1d86dcf35cf78851bcb45cb3c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815080"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523384"
 ---
 # <a name="work-with-text-in-documents"></a>Trabalhar com texto em documentos
   Os tópicos nesta seção fornecem procedimentos passo a passo e exemplos de código para usar o modelo de objeto do Microsoft Office Word para trabalhar com texto em projetos do Office.
@@ -46,6 +48,6 @@ ms.locfileid: "62815080"
 |Ocultar o texto em um indicador antes de imprimir um documento.|[Como: Ocultar texto de forma programática em documentos](../vsto/how-to-programmatically-hide-text-in-documents.md)|
 |Adicione um comentário ao texto.|[Como: adicionar comentários ao texto de forma programática em documentos](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)
 - [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)

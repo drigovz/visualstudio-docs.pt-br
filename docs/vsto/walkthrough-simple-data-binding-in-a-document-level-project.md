@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: vinculação de dados simples em um projeto de nível de documento'
+description: Aprenda os conceitos básicos da ligação de dados em um projeto de nível de documento e que um único campo de dados em um SQL Server banco de dado está associado a um intervalo nomeado no Microsoft Excel.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c22947e572a29c2b49a5ce9bb808c3cf2fe2902
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 868a120baa8207d922d3dee55e10c8e903381e19
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584918"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524099"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Walkthrough: vinculação de dados simples em um projeto de nível de documento
   Este tutorial demonstra os conceitos básicos da vinculação de dados em um projeto de nível de documento. Um único campo de dados em um banco de dado SQL Server está associado a um intervalo nomeado no Microsoft Office Excel. O Walkthrough também mostra como adicionar controles que permitem percorrer todos os registros na tabela.
@@ -64,7 +66,7 @@ ms.locfileid: "91584918"
 
 ### <a name="to-create-the-data-source"></a>Para criar a fonte de dados
 
-1. Se a janela **fontes de dados** não estiver visível, exiba-a por, na barra de menus, escolhendo **Exibir**  >  **outras**  >  **fontes de dados**do Windows.
+1. Se a janela **fontes de dados** não estiver visível, exiba-a por, na barra de menus, escolhendo **Exibir**  >  **outras**  >  **fontes de dados** do Windows.
 
 2. Escolha **Adicionar nova fonte de dados** para iniciar o **Assistente de configuração de fonte de dados**.
 
@@ -103,7 +105,7 @@ ms.locfileid: "91584918"
 
 6. Clique em **NamedRange** na lista suspensa e arraste a coluna **CustomerID** para a célula **B1**.
 
-7. Outro <xref:Microsoft.Office.Tools.Excel.NamedRange> controle chamado `customerIDNamedRange` é criado na célula **B1**e associado a <xref:System.Windows.Forms.BindingSource> .
+7. Outro <xref:Microsoft.Office.Tools.Excel.NamedRange> controle chamado `customerIDNamedRange` é criado na célula **B1** e associado a <xref:System.Windows.Forms.BindingSource> .
 
 ### <a name="to-add-four-buttons"></a>Para adicionar quatro botões
 
@@ -126,7 +128,7 @@ ms.locfileid: "91584918"
 
 ### <a name="to-initialize-the-controls"></a>Para inicializar os controles
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Plan1. vb** ou **Sheet1.cs**e clique em **Exibir código** no menu de atalho.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Plan1. vb** ou **Sheet1.cs** e clique em **Exibir código** no menu de atalho.
 
 2. Adicione o código a seguir ao `Sheet1_Startup` método para definir o texto para cada botão.
 
@@ -192,7 +194,7 @@ ms.locfileid: "91584918"
 
 - Use um <xref:System.Windows.Forms.BindingNavigator> controle para percorrer os registros. Para obter mais informações, consulte [como navegar dados com o controle BindingNavigator Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dados em soluções do Office](../vsto/data-in-office-solutions.md)
 - [Walkthrough: ligação de dados complexa em um projeto de nível de documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)

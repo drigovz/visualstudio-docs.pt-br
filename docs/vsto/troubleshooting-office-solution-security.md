@@ -1,5 +1,7 @@
 ---
 title: Solucionar problemas de segurança da solução do Office
+description: Conheça algumas dicas para resolver problemas comuns que podem ser encontrados quando você trabalha com a proteção de soluções de Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8825f1f4393d93df6a621fd71b6782c6652a9c0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89ca980b378ee71d1db9b373459c8b7309f0ecc2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234803"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522897"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Solucionar problemas de segurança da solução do Office
   Este tópico contém dicas para resolver problemas comuns que podem ser encontrados quando você trabalha com a proteção das soluções do Office.
@@ -48,6 +50,6 @@ ms.locfileid: "87234803"
 
  Para gerenciar o efeito do IEESC e do Internet Explorer 7 e superior, identifique sites e caminhos UNC (Convenção de nomenclatura universal) nos quais você confia e adicione-os a uma das zonas de segurança confiáveis (intranet local ou sites confiáveis). Para obter informações sobre como gerenciar zonas, consulte [Configurar editores confiáveis do ClickOnce](/previous-versions/dotnet/articles/ms996418(v=msdn.10)).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Proteger soluções do Office](../vsto/securing-office-solutions.md)
 - [Solução de problemas do Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

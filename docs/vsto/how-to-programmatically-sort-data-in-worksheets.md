@@ -1,5 +1,7 @@
 ---
 title: 'Como: classificar dados de forma programática em planilhas'
+description: Saiba como você pode usar o Visual Studio para classificar programaticamente dados contidos em intervalos de planilha e listas em tempo de execução.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08fa461dc55bf42857e21a5419cab6a0ff147173
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f09fed7f1caff68a485d9d0d98789555ec30889c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546972"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523679"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Como: classificar dados de forma programática em planilhas
   Você pode classificar os dados contidos em intervalos de planilha e listas em tempo de execução. O código a seguir classifica um intervalo de várias colunas nomeado `Fruits` pelos dados na primeira coluna e, em seguida, pelos dados na segunda coluna.
@@ -61,7 +63,7 @@ ms.locfileid: "85546972"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#24](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#24)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#24](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#24)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Trabalhar com planilhas](../vsto/working-with-worksheets.md)
 - [Como: preencher intervalos de forma programática automaticamente com dados em alteração incremental](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)
 - [Como fazer referência programaticamente a intervalos de planilha no código](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: criar seu primeiro suplemento do VSTO para Outlook'
+description: Crie um suplemento de nível de aplicativo para o Microsoft Outlook. Esse recurso está disponível para o próprio aplicativo, independentemente de qual item do Outlook está aberto.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: baedd24b7eba14b3f2fa6496a7a681773b81cb9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7950858d3205cf910eb09e5b0a99b5f67c71c4bd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69547980"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524235"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Walkthrough: criar seu primeiro suplemento do VSTO para Outlook
   Este tutorial mostra como criar um suplemento do VSTO para Microsoft Office Outlook. Os recursos que você cria nesse tipo de solução estão disponíveis para o próprio aplicativo, independentemente de qual item do Outlook está aberto. Para obter mais informações, consulte [visão geral do desenvolvimento de soluções do Office &#40;&#41;do VSTO ](../vsto/office-solutions-development-overview-vsto.md).
@@ -54,9 +56,9 @@ ms.locfileid: "69547980"
 
 1. Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. No menu **Arquivo** , aponte para **Novo**e clique em **Projeto**.
+2. No menu **Arquivo** , aponte para **Novo** e clique em **Projeto**.
 
-3. No painel modelos, expanda **Visual C#** ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.
+3. No painel modelos, expanda **Visual C#** ou **Visual Basic** e, em seguida, expanda **Office/SharePoint**.
 
 4. No nó do **Office/SharePoint** expandido, selecione o nó **suplementos do Office** .
 
@@ -137,7 +139,7 @@ ms.locfileid: "69547980"
 
 - Implantando suplementos do VSTO para Outlook. Para obter mais informações, consulte [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)
 - [Soluções do Outlook](../vsto/outlook-solutions.md)
 - [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)

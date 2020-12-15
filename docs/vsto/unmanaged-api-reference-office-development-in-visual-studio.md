@@ -1,5 +1,7 @@
 ---
 title: Referência de API não gerenciada (desenvolvimento do Office no Visual Studio)
+description: A referência de API não gerenciada é usada para ajudar a carregar suplementos do VSTO gerenciados por carga. Você também pode criar seu próprio componente de carregador de suplemento do VSTO implementando essa interface.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79f48e7771b3e62c0c58fbc59bd9f9b534069d71
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9dbb64b54d9b0dd9a244d9a614fbce211d1edfc5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584419"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522682"
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Referência de API não gerenciada (desenvolvimento do Office no Visual Studio)
 

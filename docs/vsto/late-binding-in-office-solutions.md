@@ -1,5 +1,7 @@
 ---
 title: Associação tardia em soluções do Office
+description: Saiba como alguns tipos em modelos de objeto dentro de Microsoft Office aplicativos fornecem funcionalidade disponível por meio de recursos de ligação tardia.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62224006d04e0a1e7447053e868dd9946f00c97e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 201b850d8a577f8cc76aff97e2370998b6f885ed
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62583933"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523572"
 ---
 # <a name="late-binding-in-office-solutions"></a>Associação tardia em soluções do Office
   Alguns tipos nos modelos de objeto dos aplicativos do Office fornecem funcionalidade que está disponível por meio de recursos de ligação tardia. Por exemplo, alguns métodos e propriedades podem retornar tipos diferentes de objetos, dependendo do contexto do aplicativo do Office, e alguns tipos podem expor diferentes métodos ou propriedades em diferentes contextos.
@@ -61,7 +63,7 @@ ms.locfileid: "62583933"
 
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)
 - [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)
 - [Use o guia de programação do tipo &#40;C&#35; dinâmico&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)

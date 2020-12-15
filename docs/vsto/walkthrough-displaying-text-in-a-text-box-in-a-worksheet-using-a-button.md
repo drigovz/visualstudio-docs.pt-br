@@ -1,5 +1,7 @@
 ---
 title: Exibir texto na caixa de texto na planilha usando o botão
+description: Aprenda as noções básicas do uso de botões e caixas de texto em planilhas do Microsoft Excel. Além disso, crie projetos do Excel usando as ferramentas de desenvolvimento do Office no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b30eea0152b75cdd0869ececac674ee5aeee7933
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c499800efa783ce252dbf925f307bc64e814420f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328712"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522647"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Walkthrough: exibir texto em uma caixa de texto em uma planilha usando um botão
   Este tutorial mostra as noções básicas de como usar botões e caixas de texto em Microsoft Office planilhas do Excel e como criar projetos do Excel usando as ferramentas de desenvolvimento do Office no Visual Studio. Para ver o resultado como um exemplo completo, consulte o exemplo de controles do Excel em [exemplos de desenvolvimento do Office e passo a passos](../vsto/office-development-samples-and-walkthroughs.md).
@@ -81,7 +83,7 @@ ms.locfileid: "67328712"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Para gravar na caixa de texto quando o botão é clicado
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Plan1**e clique em **Exibir código** no menu de atalho.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Plan1** e clique em **Exibir código** no menu de atalho.
 
 2. Adicione o seguinte código ao <xref:System.Windows.Forms.Control.Click> manipulador de eventos do botão:
 
@@ -110,7 +112,7 @@ ms.locfileid: "67328712"
 
 - Usando as caixas de seleção para alterar a formatação. Para obter mais informações, consulte [Walkthrough: alterar a formatação da planilha usando controles CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Como: adicionar controles de Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
 - [Passo a passos usando o Excel](../vsto/walkthroughs-using-excel.md)
 - [Limitações de controles de Windows Forms em documentos do Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

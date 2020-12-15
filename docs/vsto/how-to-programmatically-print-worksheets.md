@@ -1,5 +1,7 @@
 ---
 title: 'Como: imprimir planilhas programaticamente'
+description: Saiba como você pode usar o Visual Studio para imprimir programaticamente qualquer planilha em uma pasta de trabalho do Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b0affdd34ad1cb302beacdc1abc9d02275878afd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 356c47ec3275c1442082f367dd08fe6901f9c0a3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537885"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523757"
 ---
 # <a name="how-to-programmatically-print-worksheets"></a>Como: imprimir planilhas programaticamente
 
@@ -63,7 +65,7 @@ Você pode imprimir qualquer planilha em uma pasta de trabalho.
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#15)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#15)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Trabalhar com planilhas](../vsto/working-with-worksheets.md)
 - [Como: verificar a ortografia em planilhas programaticamente](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)

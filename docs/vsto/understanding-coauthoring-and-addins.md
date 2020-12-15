@@ -1,5 +1,7 @@
 ---
 title: Entender a coautoria e os suplementos
+description: Saiba mais sobre a coautoria e como é um recurso do Excel para área de trabalho do Windows que permite editar uma pasta de trabalho hospedada na nuvem simultaneamente com outros usuários.
+ms.custom: SEO-VS-2020
 ms.date: 07/20/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 96d83bbe34e0510ccf14204eb83fa1ed2da2d173
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c0d4c513da403b02454055dadf6d0fd70eef81c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978179"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522836"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>Entender a coautoria e os suplementos
 
@@ -25,5 +27,5 @@ A coautoria é um recurso do Excel para Windows desktop que permite que você ed
 
 Observação: a coautoria do Windows Desktop Excel foi introduzida no 2017 e está disponível para assinantes do Office365 no momento. Atualmente, os usuários que compraram uma licença perpétua para o Office 2016 ou anterior não têm acesso ao recurso de coautoria. (O Excel online, o Excel para Android, o Excel para iOS e o Excel Mobile na Windows Store também dão suporte à coautoria).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Soluções do Excel](./excel-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Como: pesquisar programaticamente em uma pasta específica'
+description: Saiba como você pode usar o Visual Studio para pesquisar programaticamente em uma pasta específica do Microsoft Outlook.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f33b56da08fcd05706ac7681740cea04574d0070
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fa569a2c301cb495f109a612d817937159c257c6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584736"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524542"
 ---
 # <a name="how-to-programmatically-search-within-a-specific-folder"></a>Como: pesquisar programaticamente em uma pasta específica
   Este exemplo de código usa `Find` os `FindNext` métodos e para Pesquisar texto no campo assunto das mensagens de email que estão na **caixa de entrada**. Esse método usa um filtro de cadeia de caracteres para verificar a letra T como a letra inicial do `Subject` texto.

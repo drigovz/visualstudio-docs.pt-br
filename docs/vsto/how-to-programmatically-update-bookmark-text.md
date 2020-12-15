@@ -1,5 +1,7 @@
 ---
 title: 'Como: atualizar o texto do indicador programaticamente'
+description: Saiba como você pode usar o Visual Studio para inserir texto programaticamente em um marcador de espaço reservado em um documento do Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b76c239606a4bf0d6da203bd4eea45a11162706
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b9fa4b5ef19fdcaae38ef477952580f6568fcc0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546946"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523558"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Como: atualizar o texto do indicador programaticamente
   Você pode inserir texto em um marcador de espaço reservado em um Microsoft Office documento do Word para que você possa recuperar o texto mais tarde ou substituir o texto em um indicador. Se você estiver desenvolvendo uma personalização em nível de documento, também poderá atualizar o texto em um <xref:Microsoft.Office.Tools.Word.Bookmark> controle associado aos dados. Para obter mais informações, consulte [associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md).
@@ -79,7 +81,7 @@ ms.locfileid: "85546946"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#66)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#66](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#66)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Como: inserir texto de forma programática em documentos do Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
 - [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)
 - [Controle de indicador](../vsto/bookmark-control.md)

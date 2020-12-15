@@ -1,5 +1,7 @@
 ---
 title: 'Como: pastas de trabalho abertas programaticamente'
+description: Saiba como você pode usar o Visual Studio para abrir programaticamente uma pasta de trabalho do Microsoft Excel ou trabalhar com uma pasta de trabalho existente.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10a849d8545565e450cd099b32a9e3e8f7f11b56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7de4072df177bd9a7c6ae23bf59e44e50d56e32
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537898"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523889"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>Como: pastas de trabalho abertas programaticamente
   A <xref:Microsoft.Office.Interop.Excel.Workbooks> coleção no Microsoft Office Excel torna possível trabalhar com todas as pastas de trabalho abertas e abrir pastas de trabalho.
@@ -37,7 +39,7 @@ ms.locfileid: "85537898"
 
 - Uma pasta de trabalho chamada `YourWorkbook.xls` deve existir em um diretório chamado `Test` na unidade C.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Trabalhar com pastas de trabalho](../vsto/working-with-workbooks.md)
 - [Como: abrir arquivos de texto programaticamente como pastas de trabalho](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)
 - [Como criar programaticamente novas pastas de trabalho](../vsto/how-to-programmatically-create-new-workbooks.md)

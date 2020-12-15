@@ -1,5 +1,7 @@
 ---
 title: Gerenciamento de direitos de informação & extensões de código gerenciado
+description: Saiba mais sobre o Information Rights Management (IRM), um recurso que pode ajudá-lo a impedir que pessoas não autorizadas exibam ou alterem informações confidenciais.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 06b55855184aaef57ec0a3425abed7d235ec837b
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fc300ac83674b8faf2bd4c0fc6128f60c28ee92b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298064"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523051"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>Visão geral do gerenciamento de direitos de informação e extensões de código gerenciado
   Microsoft Office Word e Microsoft Office Excel fornecem informações Rights Management (IRM), um recurso que pode ajudá-lo a impedir que pessoas não autorizadas exibam ou alterem informações confidenciais. Para obter detalhes sobre como as informações Rights Management funcionam, consulte a ajuda no aplicativo específico do Office.
@@ -40,7 +42,7 @@ ms.locfileid: "92298064"
 
  Para corrigir o problema, alguém com acesso de controle total ao documento ou pasta de trabalho deve alterar as configurações de permissão padrão para permitir o acesso programático ao modelo de objeto. Para obter mais informações, consulte [como: permitir que o código execute por trás de documentos com permissões restritas](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Proteção de documentos em soluções de nível de documento](../vsto/document-protection-in-document-level-solutions.md)
 - [Proteção por senha em documentos do Office](../vsto/password-protection-on-office-documents.md)
 - [Proteger soluções do Office](../vsto/securing-office-solutions.md)

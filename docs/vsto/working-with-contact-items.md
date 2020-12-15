@@ -1,5 +1,7 @@
 ---
 title: Trabalhar com itens de contato
+description: Saiba que a classe ContactItem contém os métodos e as propriedades que você usa para executar tarefas com contatos.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 325f6b1b7ee489102d1ed4d2ef72350b3a6f5f3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b84d91f2a89a5cf648aaa13f18e404dab2ec138c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63008632"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524781"
 ---
 # <a name="work-with-contact-items"></a>Trabalhar com itens de contato
   A <xref:Microsoft.Office.Interop.Outlook.ContactItem> classe contém os métodos e as propriedades que você usa para executar tarefas com contatos.
@@ -35,7 +37,7 @@ ms.locfileid: "63008632"
 
  Para obter mais informações sobre tarefas do Outlook e o modelo de objeto do Outlook, consulte [visão geral do modelo de objeto do Outlook](../vsto/outlook-object-model-overview.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Trabalhar com itens de email](../vsto/working-with-mail-items.md)
 - [Trabalhar com pastas](../vsto/working-with-folders.md)
 - [Trabalhar com itens de calendário](../vsto/working-with-calendar-items.md)
