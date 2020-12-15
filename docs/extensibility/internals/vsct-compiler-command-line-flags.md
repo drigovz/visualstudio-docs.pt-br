@@ -1,5 +1,7 @@
 ---
-title: Sinalizadores de linha de comando do compilador VSCT | Microsoft Docs
+title: Sinalizadores de Command-Line do compilador VSCT | Microsoft Docs
+description: O compilador de tabela de comandos do Visual Studio fornece opções de linha de comando para garantir a compilação bem-sucedida de arquivos. vsct.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4ee29710049453c3163c366eccf96e257b6028d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d60b248a4941d176ac6ba4e808a94dbc67efbe7
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703965"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488005"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Sinalizadores de linha de comando do compilador VSCT
 O compilador de tabela de comando do Visual Studio (VSCT) fornece opções de linha de comando para garantir a compilação bem-sucedida de arquivos. vsct.
@@ -59,7 +61,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-d|Especifique quaisquer símbolos definidos adicionais.|
 |-I|Indique os caminhos de inclusão adicionais que devem ser usados ao resolver referências de arquivo.|
 |-l|Especifique o <xref:System.Globalization.CultureInfo> nome da cultura, por exemplo, "en-US".|
-|-E|Emita objetos C# no namespace especificado para itens de comando, seguidos de [C&#124;H&#124;N]:*nome de arquivo*em que C = C#, h = cabeçalho C++, N = namespace. O namespace é necessário para C#.|
+|-E|Emita objetos C# no namespace especificado para itens de comando, seguidos de [C&#124;H&#124;N]:*nome de arquivo* em que C = C#, h = cabeçalho C++, N = namespace. O namespace é necessário para C#.|
 |-v|Saída detalhada.|
 
  A opção-L instrui o compilador a selecionar um grupo de cadeias de caracteres para produzir o arquivo binário. CTO que corresponde ao <xref:System.Globalization.CultureInfo> nome de cultura fornecido. O nome de cultura especificado deve corresponder ao atributo de idioma de um ou mais [elementos de cadeia de caracteres](../../extensibility/strings-element.md) no arquivo. vsct. Se um elemento de cadeia de caracteres não tiver nenhum atributo language, ele será herdado do [elemento commandtable](../../extensibility/commandtable-element.md)que o contém.
@@ -74,7 +76,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 
  O compilador VSCT também pode descompilar um arquivo binário compilado anteriormente. Para fazer isso, forneça um arquivo binário para o \<infile> .   Se o arquivo binário foi produzido pelo compilador VSCT, ele terá seus símbolos já inseridos e produzirá a saída com os nomes simbólicos em uma \<Symbols> seção da saída. Se o binário foi produzido pelo compilador CTC, a saída conterá os GUIDs e as IDs reais. Se o arquivo *. ctsym produzido pelas versões atuais do Ctc.exe estiver na mesma pasta que o arquivo de entrada binário, os símbolos serão carregados desse arquivo e usados para saída.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Arquivos .Vsct (Visual Studio Command Table)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Referência do esquema XML do VSCT](../../extensibility/vsct-xml-schema-reference.md)
 - [Como os VSPackages adicionam elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

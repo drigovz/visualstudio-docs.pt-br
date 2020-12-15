@@ -1,5 +1,7 @@
 ---
 title: Estrutura VSPackage (controle do código-fonte VSPackage) | Microsoft Docs
+description: Saiba mais sobre o SDK do pacote de controle do código-fonte, que fornece diretrizes para um VSPackage com um implementador de controle do código-fonte para integração com o Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3f09b189e1e4b47187586e66c74315ee32495c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5850dfb2448364124c8f1778eac48ac9c653269
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703804"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487953"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Estrutura do VSPackage (VSPackage de controle do código-fonte)
 
@@ -72,7 +74,7 @@ O VSPackage de controle do código-fonte implementa <xref:Microsoft.VisualStudio
 
 Para obter uma lista completa das interfaces que um VSPackage de controle do código-fonte deve considerar, consulte [serviços e interfaces relacionadas](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Elementos de design](../../extensibility/internals/source-control-vspackage-design-elements.md)
 - [Interfaces e serviços relacionados](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)

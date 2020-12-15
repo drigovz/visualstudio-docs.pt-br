@@ -1,5 +1,7 @@
 ---
 title: IntelliSenseHostFlags | Microsoft Docs
+description: A enumeração IntelliSenseHostFlags especifica sinalizadores de host IntelliSense. Este artigo descreve os valores de enumeração.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0df05e7363db01bd4f16fee5d75141dc93df1c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b206cc4aa7c1ff388d6868fa8a0533d15da094ff
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710264"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487498"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 Especifica os sinalizadores de host IntelliSense.

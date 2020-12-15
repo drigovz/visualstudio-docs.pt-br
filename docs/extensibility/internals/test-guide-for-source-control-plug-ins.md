@@ -1,5 +1,7 @@
 ---
 title: Guia de teste para plug-ins de controle do código-fonte | Microsoft Docs
+description: Saiba mais sobre como testar seu plug-in de controle do código-fonte com o Visual Studio. Esta visão geral inclui áreas de teste comuns.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321d61175068f135aae87bff73f13ac800f4793c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a288beb618b0b539f53270928366349f47aee9e9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905158"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487719"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guia de teste para plug-ins de controle do código-fonte
 Esta seção fornece diretrizes para testar seu plug-in de controle do código-fonte com o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Uma visão geral abrangente das áreas de teste mais comuns, bem como algumas das áreas mais complexas que podem ser problemáticas é fornecida. Esta visão geral não deve ser uma lista completa de casos de teste.
@@ -51,7 +53,7 @@ Esta seção fornece diretrizes para testar seu plug-in de controle do código-f
 
 ## <a name="test-areas-covered-in-this-section"></a>Áreas de teste abordadas nesta seção
 
-- [Área de teste 1: adicionar a/abrir do controle do código-fonte](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
+- [Área de teste 1: Adicionar/abrir do controle do código-fonte](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
   - Caso 1a: Adicionar solução ao controle do código-fonte
 
@@ -61,7 +63,7 @@ Esta seção fornece diretrizes para testar seu plug-in de controle do código-f
 
 - [Área de teste 2: Obter do controle do código-fonte](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
-- [Área de teste 3: fazer check-out/desfazer checkout](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
+- [Área de teste 3: Fazer/desfazer check-out](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
   - Caso 3: fazer check-out/desfazer check-out
 
@@ -101,5 +103,5 @@ Esta seção fornece diretrizes para testar seu plug-in de controle do código-f
 
   - Cenário 8B: alteração baseada em solução
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Plug-ins de controle do código-fonte](../../extensibility/source-control-plug-ins.md)

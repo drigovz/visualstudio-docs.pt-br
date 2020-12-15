@@ -1,5 +1,7 @@
 ---
 title: Dentro do editor
+description: Saiba mais sobre os subsistemas e recursos do editor. Você pode estender os recursos do editor do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bba0b5192df53b6ec837b0030c7b236bf8e08dea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14193c0806c4b45f721ee97b101969de8437448d
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710321"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487524"
 ---
 # <a name="inside-the-editor"></a>Dentro do editor
 
@@ -266,7 +268,7 @@ Adornos de pop-up são elementos gráficos que aparecem em uma pequena janela ac
 
 A projeção é uma técnica para construir um tipo diferente de buffer de texto que, na verdade, não armazena texto, mas combina texto de outros buffers de texto. Por exemplo, um buffer de projeção pode ser usado para concatenar o texto de dois outros buffers e apresentar o resultado como se ele estiver em apenas um buffer ou para ocultar partes do texto em um buffer. Um buffer de projeção pode atuar como um buffer de origem para outro buffer de projeção. Um conjunto de buffers relacionados por projeção pode ser construído para reorganizar o texto de várias maneiras diferentes. (Esse conjunto também é conhecido como grafo de *buffer*.) O recurso de estrutura de texto do Visual Studio é implementado usando um buffer de projeção para ocultar o texto recolhido e o editor do Visual Studio para páginas ASP.NET usa projeção para dar suporte a idiomas incorporados, como Visual Basic e C#.
 
-Um <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> é criado usando o <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService> . Um buffer de projeção é representado por uma sequência ordenada de <xref:Microsoft.VisualStudio.Text.ITrackingSpan> objetos que são conhecidos como *spans de origem*. O conteúdo dessas extensões é apresentado como uma sequência de caracteres. Os buffers de texto dos quais as extensões de origem são desenhadas são os *buffers de origem*nomeados. Os clientes de um buffer de projeção não precisam estar cientes de que diferem de um buffer de texto comum.
+Um <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> é criado usando o <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService> . Um buffer de projeção é representado por uma sequência ordenada de <xref:Microsoft.VisualStudio.Text.ITrackingSpan> objetos que são conhecidos como *spans de origem*. O conteúdo dessas extensões é apresentado como uma sequência de caracteres. Os buffers de texto dos quais as extensões de origem são desenhadas são os *buffers de origem* nomeados. Os clientes de um buffer de projeção não precisam estar cientes de que diferem de um buffer de texto comum.
 
 O buffer de projeção escuta os eventos de alteração de texto nos buffers de origem. Quando o texto em um span de origem é alterado, o buffer de projeção mapeia as coordenadas de texto alteradas para suas próprias coordenadas e gera eventos de alteração de texto apropriados. Por exemplo, considere os buffers de origem A e B que têm o conteúdo:
 
@@ -318,7 +320,7 @@ O IntelliSense dá suporte à conclusão de instrução, à ajuda da assinatura 
 
 A conclusão da instrução fornece listas pop-up de possíveis conclusões para nomes de métodos, elementos XML e outros elementos de codificação ou marcação. Em geral, um gesto de usuário invoca uma sessão de conclusão. A sessão exibe a lista de possíveis conclusões e o usuário pode selecionar uma ou ignorar a lista. O <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> é responsável por criar e disparar o <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession> . O <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> computa os <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> itens de conclusão para a sessão.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Pontos de extensão do serviço de linguagem e do editor](../extensibility/language-service-and-editor-extension-points.md)
 - [Importações do editor](../extensibility/editor-imports.md)

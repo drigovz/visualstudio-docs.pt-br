@@ -1,5 +1,7 @@
 ---
 title: Assistente (. Arquivo de vsz) | Microsoft Docs
+description: Saiba mais sobre os arquivos. vsz que o IDE usa para iniciar os assistentes. Os arquivos contêm informações sobre qual assistente deve ser chamado e o que passar para o assistente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fedf409c0ca320c054ddf1cc16318d08d25463a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fe32028f271d02dd518509bb86906197e6acb4e
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703317"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487732"
 ---
 # <a name="wizard-vsz-file"></a>Arquivo do assistente (.Vsz)
 
@@ -46,7 +48,7 @@ Os parâmetros permitem que o arquivo. vsz passe parâmetros personalizados adic
 
 Para adicionar uma ID de localidade padrão ao seu arquivo. vsz, especifique `FALLBACK_LCID` = xxxx, onde xxxx é a ID de localidade, por exemplo, 1033 para inglês. Quando `FALLBACK_LCID` o parâmetro for definido, o assistente usará a ID de localidade de fallback fornecida se a ID atual não for encontrada.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Parâmetros personalizados](../../extensibility/internals/custom-parameters.md)
 - [Assistentes](../../extensibility/internals/wizards.md)

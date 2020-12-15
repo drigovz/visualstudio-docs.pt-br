@@ -1,5 +1,7 @@
 ---
 title: 'Área de teste 6: excluir | Microsoft Docs'
+description: Essa área de teste do controle do código-fonte abrange ações de exclusão em Gerenciador de Soluções para o plug-in de controle do código-fonte do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9902ab9d1cb9c28ddf67b83590a4cccd5f6562f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1371472a4dec265b5e476d96a32cb725e91ce7fe
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704505"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487550"
 ---
 # <a name="test-area-6-delete"></a>Área de teste 6: Excluir
 Esta área de teste de plug-in de controle de origem abrange ações de exclusão.
@@ -29,7 +31,7 @@ Esta área de teste de plug-in de controle de origem abrange ações de exclusã
 
 - Pastas
 
-- Projeto
+- Project
 
   Dependendo do tipo de projeto, você pode ter a opção de **remover** o projeto (deixa os arquivos em disco) ou **excluir** o projeto (remove os arquivos em disco). Qualquer ação remove o projeto ou item de **Gerenciador de soluções**.
 
@@ -52,5 +54,5 @@ Esta área de teste de plug-in de controle de origem abrange ações de exclusã
 |Excluir um projeto Web do sistema de arquivos|1. Crie um projeto Web do sistema de arquivos (use o botão procurar para especificar um caminho UNC).<br />2. Adicione a solução ao controle do código-fonte.<br />3. Remova todo o projeto da solução.<br />4. Repita as etapas de 1 a 3 para um projeto Web local (exercita caminhos diferentes por meio do código, mas tem a mesma interface e comportamento externos).|Comportamento esperado comum.|
 |Excluir um arquivo de um projeto Web do sistema de arquivos|1. criar um projeto Web do sistema de arquivos.<br />2. Adicione a solução ao controle do código-fonte.<br />3. exclua um arquivo do projeto.<br />4. Repita as etapas de 1 a 3 para um projeto Web local (exercita caminhos diferentes por meio do código, mas tem a mesma interface e comportamento externos).|Comportamento esperado comum.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Guia de teste para plug-ins de controle do código-fonte](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

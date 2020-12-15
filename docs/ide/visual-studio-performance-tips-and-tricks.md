@@ -2,19 +2,19 @@
 title: Dicas para melhorar o desempenho
 description: Saiba como otimizar determinados recursos do Visual Studio que você talvez não esteja usando para ajudar a melhorar o desempenho.
 ms.custom: SEO-VS-2020
-ms.date: 08/13/2020
+ms.date: 12/14/2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f4c36987e198be576d843b984be14ddea824919
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: b3655407ce94395f74ebe5362e7006075ef1e790
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479609"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488174"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Dicas e truques de desempenho do Visual Studio
 
@@ -37,7 +37,7 @@ O Visual Studio notifica você em uma barra amarela quando a restauração autom
 
 1. Selecione **ferramentas**  >  **Opções** para abrir a caixa de diálogo **Opções** .
 
-1. Na página geral de **projetos e soluções**  >  **General** , desmarque **reabrir documentos na carga da solução**.
+1. Na página geral de **projetos e soluções**  >   , desmarque **reabrir documentos na carga da solução**.
 
 Caso você desabilite a restauração automática de arquivos, uma maneira rápida de navegar para os arquivos que deseja abrir é usar um dos comandos [Ir para](../ide/go-to.md):
 
@@ -61,7 +61,7 @@ Se você tem ficado com pouca memória durante as sessões de depuração normal
 
     Para a depuração nativa, carregar arquivos de símbolo (*. pdb*) é caro em termos de recursos de memória. Você pode definir as configurações de símbolo de depuração para economizar memória. Normalmente, você pode configurar a solução para carregar somente os módulos do seu projeto.
 
-    Para especificar o carregamento de símbolos, escolha **ferramentas**  >  **Opções**  >  **Debugging**  >  **símbolos** de depuração.
+    Para especificar o carregamento de símbolos, escolha **ferramentas**  >  **Opções**  >    >  **símbolos** de depuração.
 
     Defina as opções para **Somente os módulos especificados** em vez de **Todos os módulos** e, em seguida, especifique quais módulos você deseja carregar. Durante a depuração, você também pode clicar com o botão direito do mouse em módulos específicos na janela **Módulos** para incluir explicitamente um módulo no carregamento de símbolo. (Para abrir a janela durante a depuração, escolha **depurar**  >  **Windows**  >  **Módulos**.)
 
@@ -71,7 +71,7 @@ Se você tem ficado com pouca memória durante as sessões de depuração normal
 
     É recomendável desabilitar a criação de perfil de CPU após o uso. Esse recurso pode consumir grandes quantidades de recursos. Quando a criação de perfil de CPU está habilitada, esse estado é mantido nas sessões de depuração subsequentes, por isso vale a pena desativá-lo explicitamente após terminar. Você pode economizar alguns recursos desabilitando as ferramentas de diagnóstico durante a depuração se você não precisar dos recursos fornecidos.
 
-    Para desabilitar as **Ferramentas de Diagnóstico**, inicie uma sessão de depuração, escolha **Ferramentas** > **Opções** > **Habilitar Ferramentas de Diagnóstico** e desmarque a opção.
+    Para desabilitar o **ferramentas de diagnóstico**, inicie uma sessão de depuração, selecione **ferramentas**  >  **Opções**  >  **depuração**  >  **geral** e, em seguida, desmarque a opção **habilitar ferramentas de diagnóstico ao depurar** .
 
     Para obter mais informações, consulte [Ferramentas de Criação de Perfil](../profiling/profiling-feature-tour.md).
 
@@ -129,9 +129,9 @@ Para obter mais informações sobre as considerações de desempenho do .NET Com
 
     [**Quebra automática**](./reference/how-to-manage-word-wrap-in-the-editor.md) de linha exibe a parte de um longo trecho de código que se estende além da largura atual da janela do editor de código. A quebra automática de texto está ativada por padrão.
 
-    Para desabilitar a quebra automática de texto de um projeto no qual você está trabalhando no momento, vá para **Editar**  >  **Advanced**  >  **quebra automática de palavra** avançada. (Você pode alternar essa configuração usando os mesmos comandos de menu.)
+    Para desabilitar a quebra automática de texto de um projeto no qual você está trabalhando no momento, vá para **Editar**  >    >  **quebra automática de palavra** avançada. (Você pode alternar essa configuração usando os mesmos comandos de menu.)
 
-    Para desabilitar a quebra automática de palavra para todos os projetos, vá para **ferramentas**  >  **Opções**  >  **General**  >  **Editor de texto** geral  >  **todos os idiomas**  >  **geral** e, na seção **configurações** , desmarque a opção **quebra automática de palavra** .
+    Para desabilitar a quebra automática de palavra para todos os projetos, vá para **ferramentas**  >  **Opções**  >    >  **Editor de texto** geral  >  **todos os idiomas**  >  **geral** e, na seção **configurações** , desmarque a opção **quebra automática de palavra** .
 
 - **Desabilitar o XAML Designer**
 
@@ -153,7 +153,7 @@ Se forçar a coleta de lixo de forma confiável faz seu cenário funcionar, rela
 
 Para ver uma descrição detalhada do coletor de lixo CLR, consulte [Noções básicas da coleta de lixo](/dotnet/standard/garbage-collection/fundamentals).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Otimizar o desempenho do Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Load solutions faster (Carregar soluções mais rapidamente) (blog do Visual Studio)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

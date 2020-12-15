@@ -1,5 +1,7 @@
 ---
 title: Interface do assistente (IDTWizard) | Microsoft Docs
+description: O IDE usa a interface IDTWizard para se comunicar com os assistentes. Os assistentes devem implementar essa interface para ser instalada no IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb1c8d728a76097321e4e1f16640cab97599d6ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e87759a979d0c680018d99a1e18a12e645f430c6
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703271"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487758"
 ---
 # <a name="wizard-interface-idtwizard"></a>Interface do assistente (IDTWizard)
 O IDE (ambiente de desenvolvimento integrado) usa a <xref:EnvDTE.IDTWizard> interface para se comunicar com os assistentes. Os assistentes devem implementar essa interface para serem instalados no IDE.
@@ -63,7 +65,7 @@ STDMETHOD(Execute)(THIS_
     wizardResultBackout = 2
     ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Parâmetros de contexto](../../extensibility/internals/context-parameters.md)
 - [Parâmetros personalizados](../../extensibility/internals/custom-parameters.md)
 - [Assistentes](../../extensibility/internals/wizards.md)

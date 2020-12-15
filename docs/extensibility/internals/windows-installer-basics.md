@@ -1,5 +1,7 @@
 ---
 title: Noções básicas do Windows Installer | Microsoft Docs
+description: Saiba mais sobre o Windows Installer para uso na instalação de um VSPackage, incluindo a organização de recursos do VSPackage em componentes do Windows Installer.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeea0b17a3c234bb7670642fb9ae0a442c9d60cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f4ca1908fbd54c0e8d12212bed19fc77e1dff51
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703415"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487771"
 ---
 # <a name="windows-installer-basics"></a>Noções básicas do Windows Installer
 O Windows Installer instala e desinstala aplicativos ou produtos de software no computador de um usuário, executando essas tarefas em unidades chamadas Windows Installer componentes (às vezes chamados de WICs ou apenas componentes). Um GUID identifica cada WIC, que é a unidade básica de instalação e a contagem de referência para as configurações usando Windows Installer.
@@ -55,17 +57,17 @@ O Windows Installer instala e desinstala aplicativos ou produtos de software no 
 > [!NOTE]
 > A imposição de regras de Windows Installer ocorrerá somente se você executar uma validação do seu arquivo. msi. No entanto, você é cauteloso a tratar essas regras como práticas recomendadas. Para obter mais informações, consulte [Validando um banco de dados de instalação e uma](/windows/desktop/Msi/validating-an-installation-database) validação de [pacote](/windows/desktop/Msi/package-validation).
 
-#### <a name="installer-enforced-rules"></a>Regras impostas pelo instalador
+#### <a name="installer-enforced-rules"></a>Regras de Installer-Enforced
 
 - Todos os arquivos em um determinado componente devem ser instalados no mesmo diretório. Por outro lado, os arquivos instalados em pastas separadas devem pertencer a componentes separados.
 
 - Pode haver apenas um caminho de chave por componente. O caminho da chave é simplesmente um arquivo ou uma chave do registro que representa o componente inteiro.
 
-#### <a name="component-provider-responsibilities"></a>Responsabilidades do provedor de componentes
+#### <a name="component-provider-responsibilities"></a>Responsabilidades de Component-Provider
 
 - Quaisquer dois recursos que possam ser fornecidos separadamente em versões subsequentes devem existir em componentes separados. Os recursos devem ser agrupados no mesmo componente somente quando você tiver certeza de que esses recursos nunca serão enviados separadamente. Na verdade, é recomendável que todos os recursos primários (DLLs, por exemplo) sempre existam em WICs separados. Para obter mais informações, consulte [definindo componentes do instalador](/windows/desktop/Msi/defining-installer-components).
 
 - Nenhum recurso com controle de versão já deve ser fornecido em mais de um WIC.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [O que acontece se as regras de componente forem interrompidas?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

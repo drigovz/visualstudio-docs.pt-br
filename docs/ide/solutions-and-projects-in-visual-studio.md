@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42250d4b60cf272f041fea6f44abd24f99645b93
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: d2889729ae539d640bb9d43c64956edc04b74f26
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363452"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488187"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
 
@@ -55,14 +55,14 @@ Um projeto está contido dentro de uma *solução*. Apesar do nome, uma soluçã
 
 O Visual Studio usa dois tipos de arquivos (*.sln* e *.suo*) para armazenar configurações de soluções:
 
-|Extensão|Name|Descrição|
+|Extensão|Nome|Descrição|
 |---------------|----------|-----------------|
 |.sln|Solução do Visual Studio|Organiza projetos, itens de projeto e itens de solução na solução.|
 |.suo|Opções do usuário da solução|Armazena configurações e personalizações no nível do usuário, como pontos de interrupção.|
 
 ### <a name="solution-folder"></a>Pasta da solução
 
-Nesse contexto, uma "pasta de solução" é uma pasta virtual que só está em **Gerenciador de soluções**, onde você pode usá-la para agrupar projetos em uma solução. Se você quiser localizar onde os projetos são armazenados em seu computador, vá para **ferramentas**  >  **Opções**  >  **projetos e soluções**  >  **locais**.
+Nesse contexto, uma "pasta de solução" é uma pasta virtual que só está em **Gerenciador de soluções**, onde você pode usá-la para agrupar projetos em uma solução. Se você quiser localizar um arquivo de solução em um computador, vá para **ferramentas**  >  **Opções**  >  **projetos e soluções**  >  **locais**. Para obter mais informações, consulte [caixa de diálogo opções: projetos e soluções > locais](./reference/projects-solutions-locations-options.md)
 
 ## <a name="create-new-projects"></a>Criar novos projetos
 
@@ -70,7 +70,7 @@ A maneira mais fácil de criar um novo projeto é começar de um modelo de proje
 
 Se você geralmente personaliza seus projetos de uma determinada maneira, pode criar um modelo de projeto personalizado que você pode usar para criar novos projetos do. Para obter mais informações, confira [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md).
 
-Quando você cria um novo projeto, ele é salvo por padrão em *%USERPROFILE%\source\repos*. Você pode alterar esse local na configuração **Locais do projeto** em **Ferramentas** > **Opções** > **Projetos e Soluções** > **Locais**. Para obter mais informações, consulte a [página Projetos e Soluções, caixa de diálogo Opções](../ide/reference/projects-and-solutions-options-dialog-box.md).
+Quando você cria um novo projeto, ele é salvo por padrão em *%USERPROFILE%\source\repos*. Você pode alterar esse local na configuração **Locais do projeto** em **Ferramentas** > **Opções** > **Projetos e Soluções** > **Locais**. Para obter mais informações, consulte a [página Projetos e Soluções, caixa de diálogo Opções](./reference/projects-and-solutions-options-dialog-box.md).
 
 ## <a name="solution-explorer"></a>Gerenciador de Soluções
 
@@ -87,7 +87,7 @@ Para projetos ASP.NET Core, você pode personalizar como os arquivos são aninha
 
 E, para exibir uma lista de alguns ícones que aparecem no Gerenciador de Soluções, consulte os [ícones modo de exibição de classe e pesquisador de objetos](class-view-and-object-browser-icons.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Portar, migrar e atualizar projetos](../porting/port-migrate-and-upgrade-visual-studio-projects.md)

@@ -1,5 +1,7 @@
 ---
 title: Atualizando projetos | Microsoft Docs
+description: Saiba mais sobre as interfaces que o SDK do Visual Studio fornece para implementar o suporte de atualização em seus projetos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a99207fc14cf9f462bc1abc88d6fed166ea6523f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d42a912761f04fb122551dc14ec077f1869f6bf
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704261"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487576"
 ---
 # <a name="upgrading-projects"></a>Atualizando projetos
 
@@ -179,6 +181,6 @@ Normalmente, os implementadores de item de projeto desejam aproveitar um projeto
 
 2. No momento em que o item do projeto recebe uma notificação da atualização do projeto, o **Assistente de conversão do Visual Studio** ainda é exibido. Portanto, você deve usar os métodos da <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> interface para fornecer mensagens de atualização para a interface do usuário do assistente.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Projetos](../../extensibility/internals/projects.md)

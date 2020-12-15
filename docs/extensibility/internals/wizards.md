@@ -1,5 +1,7 @@
 ---
 title: Assistentes | Microsoft Docs
+description: Saiba como listar o assistente entre os assistentes e modelos disponíveis no Visual Studio e sobre os requisitos que seu assistente deve atender no IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d65cf2dcc10380b0ac750c8e1b0e7fd56eab95b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f367723a3c819635f2d7cf20ed812a36cda12830
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703203"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487745"
 ---
 # <a name="wizards"></a>Assistentes
-Depois de criar um assistente, você normalmente deseja adicioná-lo ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ambiente de desenvolvimento integrado) para que outras pessoas possam usá-lo. O assistente adicionado é exibido nas caixas de diálogo **Adicionar novo projeto** ou **Adicionar novo item** . Para ver as caixas de diálogo **Adicionar novo projeto** ou **Adicionar novo item** , clique com o botão direito do mouse em uma solução aberta no **Gerenciador de soluções**, aponte para **Adicionar**e clique em **novo projeto** ou **novo item**.
+Depois de criar um assistente, você normalmente deseja adicioná-lo ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ambiente de desenvolvimento integrado) para que outras pessoas possam usá-lo. O assistente adicionado é exibido nas caixas de diálogo **Adicionar novo projeto** ou **Adicionar novo item** . Para ver as caixas de diálogo **Adicionar novo projeto** ou **Adicionar novo item** , clique com o botão direito do mouse em uma solução aberta no **Gerenciador de soluções**, aponte para **Adicionar** e clique em **novo projeto** ou **novo item**.
 
  Os assistentes podem ser implementados no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para permitir que os usuários selecionem de um modo de exibição de árvore de valores disponíveis quando abrirem a caixa de diálogo **Adicionar novo projeto** ou a caixa de diálogo **Adicionar novo item** ou quando clicarem com o botão direito do mouse em um item no **Gerenciador de soluções**.
 

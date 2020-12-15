@@ -1,5 +1,7 @@
 ---
 title: Suporte a site | Microsoft Docs
+description: Saiba mais sobre os sistemas de projeto de site, que são criados pela adição de modelos e atributos de registro a um sistema de projeto existente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22047ad1b0709cefa200656e61f8e0d39ace94c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06f8ffdd504182dd82b11d4b5ce5f57e0a7629c3
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703438"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487836"
 ---
 # <a name="web-site-support"></a>Suporte a site
 Um sistema de projeto de site é um sistema de projeto que cria projetos Web. Os projetos da Web, por sua vez, criam aplicativos Web. Um projeto de site gera um arquivo executável para cada página da Web com código associado. Arquivos executáveis adicionais são gerados a partir dos arquivos de código-fonte na pasta/App_Code.
@@ -25,7 +27,7 @@ Um sistema de projeto de site é um sistema de projeto que cria projetos Web. Os
  O compilador de linguagem usado para compilar páginas da Web deve ser registrado com [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] . Você pode usar o [ \<compiler> elemento](/dotnet/framework/configure-apps/file-schema/compiler/compiler-element) em um arquivo de Web.config para registrar o compilador, como no exemplo a seguir:
 
 ```
-<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>
+<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>
 ```
 
 ## <a name="in-this-section"></a>Nesta seção

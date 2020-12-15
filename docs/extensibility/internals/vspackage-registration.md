@@ -1,5 +1,7 @@
 ---
 title: Registro de VSPackage | Microsoft Docs
+description: Saiba mais sobre o registro do VSPackage, em que os pacotes aconselham o Visual Studio de que eles estão instalados e devem ser carregados escrevendo informações no registro.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5941a0bc5d9f9f983a616dcc22cf1260d0911fa8
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 88c8294042bb61939a52f4053f5b27ae915e01df
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012120"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487979"
 ---
 # <a name="vspackage-registration"></a>Registro do VSPackage
 VSPackages deve informar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que eles estão instalados e devem ser carregados. Esse processo é realizado com a gravação de informações no registro. Esse é um trabalho típico de um instalador.
@@ -40,7 +42,7 @@ VSPackages deve informar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md
 > [!NOTE]
 > A ferramenta RegPkg não é redistribuível e não pode ser usada para registrar um VSPackage no sistema de um usuário.
 
-## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Por que VSPackages não deve se registrar automaticamente no momento da instalação
+## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Por que VSPackages não deve Self-Register no momento da instalação
  Os instaladores do VSPackage não devem confiar no auto-registro. À primeira vista, manter os valores de registro de um VSPackage apenas na VSPackage em si parece uma boa ideia. Considerando que os desenvolvedores precisam dos valores de registro disponíveis para seu trabalho e teste de rotina, faz sentido evitar a manutenção de uma cópia separada dos dados do registro no instalador. O instalador pode contar com o próprio VSPackage para gravar valores de registro.
 
  Embora seja bom, o Autoregistro tem várias falhas que o tornam inadequado para a instalação do VSPackage:
@@ -55,6 +57,6 @@ VSPackages deve informar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md
 
 - O código de Autoregistro pode ter o acesso negado aos recursos de rede, como bibliotecas de tipos, se um componente for especificado como execução da fonte e estiver listado na tabela SelfReg. Isso pode fazer com que a instalação do componente falhe durante uma instalação administrativa.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
 - [Registro de pacote gerenciado](/previous-versions/bb166783(v=vs.100))

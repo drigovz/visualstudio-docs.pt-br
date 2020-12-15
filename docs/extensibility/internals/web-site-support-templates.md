@@ -1,5 +1,7 @@
 ---
 title: Modelos de suporte do site | Microsoft Docs
+description: Saiba mais sobre modelos de suporte de site. Os modelos de projeto e item de site do Visual Studio fornecem projeto de site e stubs de item reutilizáveis e personalizáveis.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e3c139ae6f2f9ec618e6382a1551a9e35eee7ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7bb3d669dadf7c33fa81231adf26ae30e999c51
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703461"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487849"
 ---
 # <a name="web-site-support-templates"></a>Modelos de suporte a site
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Os modelos de projeto e item de site fornecem um projeto de site e stubs de item reutilizáveis e personalizáveis que aceleram o processo de desenvolvimento removendo a necessidade de criar novos projetos de site e itens do zero. Para obter mais informações sobre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modelos, consulte [Creating Project and item templates](../../ide/creating-project-and-item-templates.md).
@@ -184,5 +186,5 @@ ms.locfileid: "80703461"
 
      O arquivo de modelo que determina o conteúdo da nova página mestra e seu arquivo dependente, se houver.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Suporte a site](../../extensibility/internals/web-site-support.md)

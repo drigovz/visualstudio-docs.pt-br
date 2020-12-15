@@ -1,5 +1,7 @@
 ---
 title: O que há de novo no controle do código-fonte no SDK do Visual Studio 2015 | Microsoft Docs
+description: Saiba mais sobre os recursos do VSPackages de controle do código-fonte e examine uma visão geral das etapas de implementação.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f90ae3e1d327b10e99713ad28aa2d5a06c0be34b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2af2c321eb91407808e71f4c0126b86d79980c53
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703405"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487810"
 ---
 # <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>O que há de novo no controle do código-fonte para o SDK do Visual Studio 2015
 
@@ -45,7 +47,7 @@ As etapas a seguir fornecem uma visão geral do que é necessário para implemen
 
 6. O VSPackage de controle do código-fonte deve escutar eventos como aqueles que implementam a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> interface, bem como controlar os eventos de documento do projeto (TPD) (conforme implementado pela <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> interface) e tomar a ação necessária.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>

@@ -1,5 +1,7 @@
 ---
 title: Cenários de instalação do VSPackage | Microsoft Docs
+description: Saiba mais sobre as práticas recomendadas para dar suporte a instalações lado a lado do Visual Studio com instalações compartilhadas ou lado a lado do seu VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2095087451ded8858382323aabc4048582a6db43
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 97538be6c174f76072a6ca006db6443aa3fcdb57
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012107"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487966"
 ---
 # <a name="vspackage-setup-scenarios"></a>Cenários de instalação do VSPackage
 
@@ -76,7 +78,7 @@ Nesse caso, o VSPackage é um VSPackage gerenciado instalado no GAC (cache de as
 
 Para obter mais informações sobre a implantação de assemblies lado a lado, consulte [simplificando a implantação e resolvendo a dll inferno com o .NET Framework](/previous-versions/dotnet/articles/ms973843(v=msdn.10)).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
 - [Fornecer suporte à várias versões do Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)
