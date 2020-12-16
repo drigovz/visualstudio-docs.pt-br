@@ -1,5 +1,7 @@
 ---
 title: Atualizar as regiões de formulário do Outlook quando migradas para o .NET Framework 4,5
+description: Você deve modificar seu código se a estrutura de destino de um projeto de suplemento do VSTO do Outlook com uma região de formulário for alterada para o .NET Framework 4 ou posterior.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d8978703630e99ecb930e18e7d128eddff8792f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 507132a28526e4ce008957fa0b988c23c09d686f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584393"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526581"
 ---
 # <a name="update-outlook-form-regions-when-migrated-to-net-framework-45"></a>Atualizar as regiões de formulário do Outlook quando migradas para o .NET Framework 4,5
 
@@ -198,6 +200,6 @@ ms.locfileid: "91584393"
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionInitializingEventArgs%2A>|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionManifest%2A>|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Migrar soluções do Office para o .NET Framework 4 ou posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)

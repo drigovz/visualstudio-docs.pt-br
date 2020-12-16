@@ -1,5 +1,7 @@
 ---
 title: Criar relação de detalhes mestre usando conjunto de armazenamento em cache
+description: Saiba como criar uma relação mestre/detalhes em uma planilha e armazenar em cache os dados para que a solução possa ser usada offline.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0acf84dd983a8c10f2af526ae0bb904eaa90a360
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de7bf3ba34a2a7dd3e7db9ff549e4a839800d524
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328359"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524874"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Walkthrough: criar uma relação de detalhes mestre usando um conjunto de um DataSet armazenado em cache
   Este tutorial demonstra como criar uma relação mestre/detalhes em uma planilha e armazenar em cache os dados para que a solução possa ser usada offline.
@@ -63,7 +65,7 @@ ms.locfileid: "67328359"
 
 ### <a name="to-create-the-data-source"></a>Para criar a fonte de dados
 
-1. Se a janela **fontes de dados** não estiver visível, exiba-a por, na barra de menus, escolhendo **Exibir**  >  **outras**  >  **fontes de dados**do Windows.
+1. Se a janela **fontes de dados** não estiver visível, exiba-a por, na barra de menus, escolhendo **Exibir**  >  **outras**  >  **fontes de dados** do Windows.
 
 2. Escolha **Adicionar nova fonte de dados** para iniciar o **Assistente de configuração de fonte de dados**.
 
@@ -102,7 +104,7 @@ ms.locfileid: "67328359"
 
 6. Clique em **ListObject** na lista suspensa e arraste a tabela **OrderDetails** para a célula **a6**.
 
-7. Um <xref:Microsoft.Office.Tools.Excel.ListObject> controle chamado **Order_DetailsListObject** é criado na célula **a6**e associado ao <xref:System.Windows.Forms.BindingSource> .
+7. Um <xref:Microsoft.Office.Tools.Excel.ListObject> controle chamado **Order_DetailsListObject** é criado na célula **a6** e associado ao <xref:System.Windows.Forms.BindingSource> .
 
 ### <a name="to-add-two-buttons"></a>Para adicionar dois botões
 
@@ -136,7 +138,7 @@ ms.locfileid: "67328359"
 
 ### <a name="to-initialize-the-data-and-the-controls"></a>Para inicializar os dados e os controles
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Plan1. vb** ou **Sheet1.cs**e clique em **Exibir código** no menu de atalho.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Plan1. vb** ou **Sheet1.cs** e clique em **Exibir código** no menu de atalho.
 
 2. Adicione o código a seguir ao `Sheet1_Startup` método para definir o texto para os botões.
 
@@ -188,7 +190,7 @@ ms.locfileid: "67328359"
 
 - Implante a solução. Para obter mais informações, consulte [implantar uma solução do Office](../vsto/deploying-an-office-solution.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dados em soluções do Office](../vsto/data-in-office-solutions.md)
 - [Dados de cache](../vsto/caching-data.md)

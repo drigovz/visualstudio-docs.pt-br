@@ -1,5 +1,7 @@
 ---
 title: Entradas de registro para suplementos do VSTO
+description: Saiba como você pode criar um conjunto específico de entradas de registro ao implantar suplementos do VSTO que são criados usando o Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b02b50c42692ec2fd455358df5157e0b8481562b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d90b341fb4233c10c54947a6349480ea0c33b23a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416517"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524997"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Entradas de registro para suplementos do VSTO
   Você deve criar um conjunto específico de entradas de registro ao implantar suplementos do VSTO que são criados usando o Visual Studio. Essas entradas de registro fornecem informações que permitem que o aplicativo Microsoft Office descubra e carregue o suplemento do VSTO.
@@ -54,13 +56,13 @@ ms.locfileid: "79416517"
 
 |Aplicativo do Office|Caminho de configuração|
 |------------------|------------------|
-|Visio|*Root* \\ *Visio* \\ *ID do suplemento \Software\Microsoft do* Visio \Addins|
+|Visio| \\  \\ *ID do suplemento \Software\Microsoft do* Visio \Addins|
 |Todos os outros|*Raiz*\Software\Microsoft\Office \\ *nome do aplicativo do Office*\Addins \\ *ID do suplemento*|
 
 > [!NOTE]
-> Se o instalador estiver direcionado a todos os usuários no Windows de 64 bits, é recomendável que ele inclua duas entradas do registro, uma na HKEY_LOCAL_MACHINE \Software\Microsoft e outra no HKEY_LOCAL_MACHINE \Software \\ **WOW6432Node**\Microsoft Hive. Isso ocorre porque é possível que os usuários usem versões de 32 bits ou 64 bits do Office no computador.
+> Se o instalador estiver direcionado a todos os usuários no Windows de 64 bits, é recomendável que ele inclua duas entradas do registro, uma na HKEY_LOCAL_MACHINE\Software\Microsoft e outra no hive HKEY_LOCAL_MACHINE\Software\\ **WOW6432Node**\Microsoft. Isso ocorre porque é possível que os usuários usem versões de 32 bits ou 64 bits do Office no computador.
 >
->Se o instalador estiver direcionando para o usuário atual, ele não precisará ser instalado no WOW6432Node porque o caminho de HKEY_CURRENT_USER \Software é compartilhado.
+>Se o instalador estiver direcionando para o usuário atual, ele não precisará instalar no WOW6432Node porque o caminho de HKEY_CURRENT_USER\Software é compartilhado.
 >
 >Para obter mais informações, consulte [dados de aplicativos de 32 bits e de 64 bits no registro](/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry)
 
@@ -76,14 +78,14 @@ ms.locfileid: "79416517"
 ### <a name="registry-entries-for-outlook-form-regions"></a><a name="OutlookEntries"></a> Entradas de registro para regiões de formulário do Outlook
  Se você criar uma região de formulário personalizada em um suplemento do VSTO para o Outlook, as entradas adicionais do registro serão usadas para registrar a região do formulário com o Outlook. Essas entradas são criadas sob uma chave de registro diferente para cada classe de mensagem à qual a região de formulário dá suporte. Essas chaves do registro estão no seguinte local, onde a *raiz* é **HKEY_CURRENT_USER** ou **HKEY_LOCAL_MACHINE**.
 
- *Root*Classe de \\ *mensagem* \Software\Microsoft\Office\Outlook\FormRegions raiz
+ Classe de \\ *mensagem* \Software\Microsoft\Office\Outlook\FormRegions raiz
 
  Assim como as outras entradas de registro compartilhadas por todos os suplementos do VSTO, o Visual Studio cria as entradas do registro de região de formulário no computador de desenvolvimento quando você cria seu projeto. Se você usar o ClickOnce para implantar seu suplemento do VSTO, as entradas do registro serão criadas automaticamente no computador do usuário final. Se você usar Windows Installer para implantar o suplemento do VSTO, deverá configurar o projeto do InstallShield Limited Edition para criar as entradas do registro no computador do usuário final.
 
  Para obter mais informações sobre as entradas de registro de região de formulário, consulte [especificar o local de uma região de formulário em um formulário personalizado](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form). Para obter mais informações sobre as regiões de formulário do Outlook, consulte [criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md).
 
 ## <a name="loadbehavior-values"></a><a name="LoadBehavior"></a> Valores de LoadBehavior
- A entrada **LoadBehavior** sob a *Root*chave de \\ ID do suplemento \Addins do*nome do aplicativo*\Software\Microsoft\Office raiz \\ *add-in ID* contém uma combinação bit-a-ponto de valores que especificam o comportamento de tempo de execução do suplemento do VSTO. O menor bit de ordem (valores 0 e 1) indica se o suplemento do VSTO está atualmente descarregado ou carregado. Outros bits indicam quando o aplicativo tenta carregar o suplemento do VSTO.
+ A entrada **LoadBehavior** sob a chave de \\ ID do suplemento \Addins do *nome do aplicativo*\Software\Microsoft\Office raiz \\  contém uma combinação bit-a-ponto de valores que especificam o comportamento de tempo de execução do suplemento do VSTO. O menor bit de ordem (valores 0 e 1) indica se o suplemento do VSTO está atualmente descarregado ou carregado. Outros bits indicam quando o aplicativo tenta carregar o suplemento do VSTO.
 
  Normalmente, a entrada **LoadBehavior** deve ser definida como 0, 3 ou 16 (em decimal) quando o suplemento do VSTO é instalado nos computadores dos usuários finais. Por padrão, o Visual Studio define a entrada **LoadBehavior** de seu suplemento do VSTO como 3 quando você o compila ou publica.
 
@@ -99,7 +101,7 @@ ms.locfileid: "79416517"
 |9|Carregado|Carregar sob demanda|O suplemento do VSTO será carregado somente quando o aplicativo exigir, como quando um usuário clicar em um elemento da interface do usuário que usa a funcionalidade no suplemento do VSTO (por exemplo, um botão personalizado na faixa de bits).<br /><br /> Se o aplicativo carregar o suplemento do VSTO com êxito, o valor **LoadBehavior** permanecerá em 9, mas o status do suplemento do VSTO na caixa de diálogo **suplementos do com** será atualizado para indicar que o suplemento do VSTO está carregado no momento. Se ocorrer um erro ao carregar o suplemento do VSTO, o valor **LoadBehavior** será alterado para 8.|
 |16|Carregado|Carregar pela primeira vez e carregar sob demanda|Defina esse valor se desejar que seu suplemento do VSTO seja carregado sob demanda. O aplicativo carrega o suplemento do VSTO quando o usuário executa o aplicativo pela primeira vez. Na próxima vez que o usuário executar o aplicativo, o aplicativo carregará todos os elementos da interface do usuário que são definidos pelo suplemento do VSTO, mas o suplemento do VSTO não será carregado até que o usuário clique em um elemento de interface de usuário associado ao suplemento do VSTO.<br /><br /> Quando o aplicativo carrega o suplemento do VSTO com êxito pela primeira vez, o valor **LoadBehavior** permanece 16 enquanto o suplemento do VSTO é carregado. Depois que o aplicativo é fechado, o valor **LoadBehavior** muda para 9.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Arquitetura de soluções do Office no Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Criar soluções do Office](../vsto/building-office-solutions.md)

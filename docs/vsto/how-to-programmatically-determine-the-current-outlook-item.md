@@ -1,5 +1,7 @@
 ---
 title: 'Como: determinar programaticamente o item atual do Outlook'
+description: Saiba como você pode determinar programaticamente o item atual do Microsoft Outlook. Este exemplo usa o evento Explorer. SelectionChange.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 428dccf09235e2feea528bcdaef0a447e02ef58d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 10b8bd8103e80040519b9e3c5546f892da326202
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585230"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526786"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Como: determinar programaticamente o item atual do Outlook
   Este exemplo usa o `Explorer.SelectionChange` evento para exibir o nome da pasta atual e algumas informações sobre o item selecionado. Em seguida, o código exibe o item selecionado.
@@ -37,7 +39,7 @@ ms.locfileid: "91585230"
 
 - Itens de compromisso, contato e email no Microsoft Office Outlook.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Visão geral do modelo de objeto do Outlook](../vsto/outlook-object-model-overview.md)
 - [Como: recuperar programaticamente uma pasta por nome](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
 - [Como: pesquisar programaticamente por um contato específico](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

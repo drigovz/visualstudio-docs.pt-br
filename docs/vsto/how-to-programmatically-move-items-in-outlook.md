@@ -1,5 +1,7 @@
 ---
 title: 'Como: mover itens programaticamente no Outlook'
+description: Saiba como você pode mover itens programaticamente no Microsoft Outlook. Este exemplo move as mensagens de email não lidas da caixa de entrada para uma pasta chamada test.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97f686a47d18fa91909de489f12f9c7a8c1306d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b247df68827767a53d8d066f4750dfa9da52ac7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519906"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525569"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Como: mover itens programaticamente no Outlook
   Este exemplo move as mensagens de email não lidas da **caixa de entrada** para uma pasta chamada **Test**. O exemplo move apenas as mensagens que têm a palavra **Test** no `Subject` campo.
@@ -34,7 +36,7 @@ ms.locfileid: "85519906"
 
 - Uma mensagem de email que chega com a palavra **Test** no `Subject` campo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Trabalhar com pastas](../vsto/working-with-folders.md)
 - [Como: recuperar programaticamente uma pasta por nome](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
 - [Como: pesquisar programaticamente em uma pasta específica](../vsto/how-to-programmatically-search-within-a-specific-folder.md)

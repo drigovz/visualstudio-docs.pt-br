@@ -1,5 +1,7 @@
 ---
 title: Visão geral de usar arquivos de banco de dados local em soluções do Office
+description: Saiba como você pode incluir um arquivo de banco de dados, como um arquivo SQL Server Express (. MDF) ou um arquivo Microsoft Office Access (. mdb) em sua solução do Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea260a6286c8a923d56ab7a5088b55de57004489
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a3166a88080eaee1042187c171c4938d236058a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982245"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526561"
 ---
 # <a name="use-local-database-files-in-office-solutions-overview"></a>Visão geral de usar arquivos de banco de dados local em soluções do Office
   Você pode incluir um arquivo de banco de dados, como um arquivo SQL Server Express (*. MDF*) ou um arquivo Microsoft Office Access (*. mdb*), em sua solução do Office. Isso permite que os usuários finais mantenham um banco de dados local em situações em que a manutenção de um banco de dados centralizado não seja necessária, por exemplo, em uma solução de inventário local que é usada somente em um único computador.
@@ -37,7 +39,7 @@ ms.locfileid: "62982245"
 ## <a name="local-database-files-and-caching-the-dataset"></a>Arquivos de banco de dados local e armazenando em cache o DataSet
  Em soluções de nível de documento para Microsoft Office Excel e Microsoft Office Word, você pode armazenar em cache os conjuntos de armazenamento no documento marcando a instância do conjunto de linhas com o atributo <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> . Quando você adiciona o arquivo de banco de dados ao seu projeto usando o **Assistente de configuração de fonte de dados**, um dataset tipado é adicionado automaticamente ao seu projeto. Raramente é necessário aplicar <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> a esse conjunto de dados, pois eles já são locais no computador do usuário. Para obter mais informações, consulte [armazenar dados em cache](../vsto/caching-data.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Como: popular documentos com dados de um banco de dado](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 - [Como: atualizar uma fonte de dados com dados de um controle de host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Como: agrupar linhas programaticamente em uma planilha'
+description: Saiba como você pode agrupar programaticamente uma ou mais linhas inteiras no Microsoft Excel usando um controle NamedRange ou um objeto Range do Excel nativo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 759ba8c6e0796b25a87e8bf0b08795aed5bade05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 203ea7d17a02a224c290e5dd3c6070c06a1d26e4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537872"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525714"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Como: agrupar linhas programaticamente em uma planilha
   Você pode agrupar uma ou mais linhas inteiras. Para criar um grupo em uma planilha, use um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle ou um objeto Range do Excel nativo.
@@ -58,7 +60,7 @@ ms.locfileid: "85537872"
     > [!NOTE]
     > Para desagrupar linhas, chame o <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> método.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Trabalhar com planilhas](../vsto/working-with-worksheets.md)
 - [Controle NamedRange](../vsto/namedrange-control.md)
 - [Como: adicionar controles NamedRange a planilhas](../vsto/how-to-add-namedrange-controls-to-worksheets.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: criar uma guia personalizada usando o XML da faixa de uma'
+description: Saiba como você pode adicionar botões à guia Add-Ins e automatizar o Microsoft Word usando a faixa de palavras (XML).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e05bd9173b83ec3303a058dcf61ea48a7ef7675c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e81d20dc179df76b759223c1460ca13bfceb5706
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838319"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524878"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Walkthrough: criar uma guia personalizada usando o XML da faixa de uma
   Este tutorial demonstra como criar uma guia de faixa de forma personalizada usando o item da faixa de para **(XML)** .
@@ -65,11 +67,11 @@ ms.locfileid: "90838319"
 
 2. Na caixa de diálogo **Adicionar novo item** , selecione **faixa de opções (XML)**.
 
-3. Altere o nome da nova faixa de forma para **MyRibbon**e clique em **Adicionar**.
+3. Altere o nome da nova faixa de forma para **MyRibbon** e clique em **Adicionar**.
 
      O arquivo **MyRibbon.cs** ou **MyRibbon. vb** é aberto no designer. Um arquivo XML chamado **MyRibbon.xml** também é adicionado ao seu projeto.
 
-4. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **ThisAddIn.cs** ou em **ThisAddIn. vb**e clique em **Exibir código**.
+4. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **ThisAddIn.cs** ou em **ThisAddIn. vb** e clique em **Exibir código**.
 
 5. Adicione o código a seguir à classe **ThisAddIn** . Esse código substitui o `CreateRibbonExtensibilityObject` método e retorna a classe XML da faixa de forma para o aplicativo do Office.
 
@@ -85,7 +87,7 @@ ms.locfileid: "90838319"
 
 1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **MyRibbon.xml** e clique em **abrir**.
 
-2. Substitua o conteúdo do elemento de **guia** pelo seguinte XML. Esse XML altera o rótulo do grupo de controle padrão para **conteúdo**e adiciona dois novos botões com os rótulos **Inserir texto** e **Inserir Tabela**.
+2. Substitua o conteúdo do elemento de **guia** pelo seguinte XML. Esse XML altera o rótulo do grupo de controle padrão para **conteúdo** e adiciona dois novos botões com os rótulos **Inserir texto** e **Inserir Tabela**.
 
     ```xml
     <tab idMso="TabAddIns">
@@ -105,7 +107,7 @@ ms.locfileid: "90838319"
 
 ### <a name="to-add-callback-methods-for-the-buttons"></a>Para adicionar métodos de retorno de chamada para os botões
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **MyRibbon.cs** ou **MyRibbon. vb**e clique em **abrir**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **MyRibbon.cs** ou **MyRibbon. vb** e clique em **abrir**.
 
 2. Adicione o seguinte código à parte superior do arquivo **MyRibbon.cs** ou **MyRibbon. vb** . Esse código cria um alias para o <xref:Microsoft.Office.Interop.Word> namespace.
 
@@ -154,7 +156,7 @@ ms.locfileid: "90838319"
 
 - Personalize a interface do usuário do Microsoft Office Outlook usando as regiões de formulário do Outlook. Para obter mais informações, consulte [Walkthrough: criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
 - [XML da faixa de opções](../vsto/ribbon-xml.md)
 - [Walkthrough: criar uma guia personalizada usando o designer de faixa de faixas](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)

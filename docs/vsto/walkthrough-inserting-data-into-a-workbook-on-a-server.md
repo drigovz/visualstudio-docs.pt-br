@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: inserir dados em uma pasta de trabalho em um servidor'
+description: Saiba como inserir dados em um DataSet que é armazenado em cache em uma pasta de trabalho do Microsoft Excel sem iniciar o Excel usando a classe ServerDocument.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d9dcd22ca124ee5ea4002277f91071727a3e9e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23acfc79514d034faa6fce5c2c27a8edcaa4c58d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985428"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526219"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Walkthrough: inserir dados em uma pasta de trabalho em um servidor
   Este tutorial demonstra como inserir dados em um DataSet que é armazenado em cache em uma Microsoft Office pasta de trabalho do Excel sem iniciar o Excel usando a <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -65,9 +67,9 @@ ms.locfileid: "72985428"
 
 1. Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. No menu **Arquivo** , aponte para **Novo**e clique em **Projeto**.
+2. No menu **Arquivo** , aponte para **Novo** e clique em **Projeto**.
 
-3. No painel modelos, expanda **Visual C#** ou **Visual Basic**e clique em **Windows**.
+3. No painel modelos, expanda **Visual C#** ou **Visual Basic** e clique em **Windows**.
 
 4. Na lista de modelos de projeto, selecione **biblioteca de classes**.
 
@@ -81,7 +83,7 @@ ms.locfileid: "72985428"
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **AdventureWorksDataSet** para **Gerenciador de soluções** e abre o arquivo de código **Class1.cs** ou **Class1. vb** .
 
-9. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Class1.cs** ou **Class1. vb**e clique em **excluir**. Você não precisa desse arquivo para este passo a passos.
+9. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Class1.cs** ou **Class1. vb** e clique em **excluir**. Você não precisa desse arquivo para este passo a passos.
 
 ## <a name="define-a-dataset-in-the-class-library-project"></a>Definir um conjunto de um DataSet no projeto de biblioteca de classes
  Defina um dataset tipado que contenha dados do AdventureWorksLT para SQL Server 2005. Mais adiante neste tutorial, você fará referência a esse conjunto de aplicativos de um projeto de pasta de trabalho do Excel e um projeto de aplicativo de console.
@@ -92,15 +94,15 @@ ms.locfileid: "72985428"
 
 1. Em **Gerenciador de soluções**, clique no projeto **AdventureWorksDataSet** .
 
-2. Se a janela **fontes de dados** não estiver visível, exiba-a por, na barra de menus, escolhendo **Exibir**  >  **outras**  >  **fontes de dados**do Windows.
+2. Se a janela **fontes de dados** não estiver visível, exiba-a por, na barra de menus, escolhendo **Exibir**  >  **outras**  >  **fontes de dados** do Windows.
 
 3. Escolha **Adicionar nova fonte de dados** para iniciar o **Assistente de configuração de fonte de dados**.
 
-4. Clique em **banco de dados**e em **Avançar**.
+4. Clique em **banco de dados** e em **Avançar**.
 
 5. Se você tiver uma conexão existente com o banco de dados AdventureWorksLT, escolha essa conexão e clique em **Avançar**.
 
-    Caso contrário, clique em **nova conexão**e use a caixa de diálogo **Adicionar conexão** para criar a nova conexão. Para obter mais informações, consulte [How to: Connect to data in a Database](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md).
+    Caso contrário, clique em **nova conexão** e use a caixa de diálogo **Adicionar conexão** para criar a nova conexão. Para obter mais informações, consulte [How to: Connect to data in a Database](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md).
 
 6. Na página **salvar a cadeia de conexão no arquivo de configuração do aplicativo** , clique em **Avançar**.
 
@@ -125,9 +127,9 @@ ms.locfileid: "72985428"
 
 ### <a name="to-create-the-excel-workbook-project"></a>Para criar o projeto de pasta de trabalho do Excel
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução **AdventureWorksDataSet** , aponte para **Adicionar**e clique em **novo projeto**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução **AdventureWorksDataSet** , aponte para **Adicionar** e clique em **novo projeto**.
 
-2. No painel modelos, expanda **Visual C#** ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.
+2. No painel modelos, expanda **Visual C#** ou **Visual Basic** e, em seguida, expanda **Office/SharePoint**.
 
 3. No nó do **Office/SharePoint** expandido, selecione o nó **suplementos do Office** .
 
@@ -156,7 +158,7 @@ ms.locfileid: "72985428"
 
      O **Assistente de configuração de fonte de dados** é aberto.
 
-3. Clique em **objeto**e, em seguida, clique em **Avançar**.
+3. Clique em **objeto** e, em seguida, clique em **Avançar**.
 
 4. Na página **Selecione o objeto que você deseja associar** a, clique em **Adicionar referência**.
 
@@ -197,7 +199,7 @@ ms.locfileid: "72985428"
 
 ### <a name="to-build-and-run-the-project"></a>Para compilar e executar o projeto
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto **AdventureWorksReport** , escolha **depurar**e, em seguida, clique em **Iniciar nova instância**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto **AdventureWorksReport** , escolha **depurar** e, em seguida, clique em **Iniciar nova instância**.
 
      O projeto é criado e a pasta de trabalho é aberta no Excel. O <xref:Microsoft.Office.Tools.Excel.ListObject> em **Sheet1** está vazio, pois o `adventureWorksLTDataSet` objeto no cache de dados ainda não tem dados. Na próxima seção, você usará um aplicativo de console para preencher o `adventureWorksLTDataSet` objeto com dados.
 
@@ -208,9 +210,9 @@ ms.locfileid: "72985428"
 
 ### <a name="to-create-the-console-application-project"></a>Para criar o projeto de aplicativo de console
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução **AdventureWorksDataSet** , aponte para **Adicionar**e clique em **novo projeto**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução **AdventureWorksDataSet** , aponte para **Adicionar** e clique em **novo projeto**.
 
-2. No painel **tipos de projeto** , expanda **Visual C#** ou **Visual Basic**e clique em **Windows**.
+2. No painel **tipos de projeto** , expanda **Visual C#** ou **Visual Basic** e clique em **Windows**.
 
 3. No painel **Modelos**, selecione **Aplicativo de Console**.
 
@@ -233,7 +235,7 @@ ms.locfileid: "72985428"
 
 4. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto **DataWriter** e clique em **Adicionar referência**.
 
-5. Na guia **projetos** , selecione **AdventureWorksDataSet**e clique em **OK**.
+5. Na guia **projetos** , selecione **AdventureWorksDataSet** e clique em **OK**.
 
 6. Abra o arquivo *Program.cs* ou *Module1. vb* no editor de código.
 
@@ -267,7 +269,7 @@ ms.locfileid: "72985428"
      [!code-csharp[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#4)]
      [!code-vb[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#4)]
 
-10. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto **DataWriter** , aponte para **depurar**e clique em **Iniciar nova instância**.
+10. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto **DataWriter** , aponte para **depurar** e clique em **Iniciar nova instância**.
 
      O projeto é criado, e o aplicativo de console exibe várias mensagens de status quando o conjunto de dados local é preenchido e quando o aplicativo salva o dado no DataSet armazenado em cache na pasta de trabalho. Pressione **Enter** para fechar o aplicativo.
 
@@ -292,6 +294,6 @@ Você pode aprender mais sobre como trabalhar com dados armazenados em cache a p
 
 - Alterar os dados em um conjunto de dado armazenado em cache sem iniciar o Excel. Para obter mais informações, consulte [Walkthrough: alterar dados em cache em uma pasta de trabalho em um servidor](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Walkthrough: alterar os dados armazenados em cache em uma pasta de trabalho em um servidor](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)

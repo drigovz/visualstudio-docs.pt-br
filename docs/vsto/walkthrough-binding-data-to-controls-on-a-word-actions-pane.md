@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: associar dados a controles em um painel de ações do Word'
+description: Associar dados a controles em um painel Ações no Microsoft Word. Os controles demonstram uma relação mestre/detalhes entre tabelas em um banco de dados SQL Server.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 05df38bf6056b392c0b991617316ba2c1c657306
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 76dffda9b332b9b76d6c0e0a423073959bcc7a56
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585061"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526201"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Walkthrough: associar dados a controles em um painel de ações do Word
   Este tutorial demonstra a vinculação de dados a controles em um painel Ações no Word. Os controles demonstram uma relação mestre/detalhes entre tabelas em um banco de dados SQL Server.
@@ -72,11 +74,11 @@ ms.locfileid: "91585061"
 
 2. No menu **Projeto** , clique em **Adicionar Novo Item**.
 
-3. Na caixa de diálogo **Adicionar novo item** , selecione **controle do painel Ações**, nomeie-o **ActionsControl**e clique em **Adicionar**.
+3. Na caixa de diálogo **Adicionar novo item** , selecione **controle do painel Ações**, nomeie-o **ActionsControl** e clique em **Adicionar**.
 
 ### <a name="to-add-a-data-source-to-the-project"></a>Para adicionar uma fonte de dados ao projeto
 
-1. Se a janela **fontes de dados** não estiver visível, exiba-a por, na barra de menus, escolhendo **Exibir**  >  **outras**  >  **fontes de dados**do Windows.
+1. Se a janela **fontes de dados** não estiver visível, exiba-a por, na barra de menus, escolhendo **Exibir**  >  **outras**  >  **fontes de dados** do Windows.
 
    > [!NOTE]
    > Se **mostrar fontes de dados** não estiver disponível, clique no documento do Word e, em seguida, verifique novamente.
@@ -202,7 +204,7 @@ ms.locfileid: "91585061"
 
 ### <a name="to-show-the-actions-pane"></a>Para mostrar o painel Ações
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **ThisDocument. vb** ou **ThisDocument.cs**e clique em **Exibir código** no menu de atalho.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **ThisDocument. vb** ou **ThisDocument.cs** e clique em **Exibir código** no menu de atalho.
 
 2. Crie uma nova instância do controle na parte superior da `ThisDocument` classe para que ela se pareça com o exemplo a seguir.
 
@@ -236,7 +238,7 @@ ms.locfileid: "91585061"
 
 - Implantando o projeto. Para obter mais informações, consulte [implantar uma solução do Office usando o ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Visão geral do painel Ações](../vsto/actions-pane-overview.md)
 - [Como: adicionar um painel de ações a documentos do Word ou a pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)

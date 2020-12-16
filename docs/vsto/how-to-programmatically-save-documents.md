@@ -1,5 +1,7 @@
 ---
 title: 'Como: salvar documentos programaticamente'
+description: Saiba como você pode usar o Visual Studio para salvar um documento programaticamente sem alterar o nome do documento ou com um novo nome.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 464d131261ecfb0a64a3ca279007ff9332cdb2e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2221ec6576e7ac0de399613a1cda3cdcb8dcea6c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537586"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525468"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Como: salvar documentos programaticamente
 
@@ -88,7 +90,7 @@ Este exemplo de código requer o seguinte:
 
 - Para salvar um documento com um novo nome, um diretório chamado *teste* deve existir na unidade C.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Como: fechar documentos programaticamente](../vsto/how-to-programmatically-close-documents.md)
 - [Como: abrir documentos existentes programaticamente](../vsto/how-to-programmatically-open-existing-documents.md)

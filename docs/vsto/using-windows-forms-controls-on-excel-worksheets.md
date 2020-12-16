@@ -1,5 +1,7 @@
 ---
 title: Usar controles de Windows Forms em planilhas do Excel
+description: Saiba como você pode adicionar controles de Windows Forms às suas pastas de trabalho do Microsoft Excel da mesma maneira que adiciona controles a Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 032ee551ff04590ccdb8744c1274b137dec0b756
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 015fffa51358c3a7a13d98950392d0749560c089
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982313"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526513"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>Usar controles de Windows Forms em planilhas do Excel
   Você pode adicionar Windows Forms controles às suas pastas de trabalho do Microsoft Office Excel da mesma maneira que adiciona controles ao Windows Forms. Para obter informações gerais sobre como trabalhar com controles em documentos, consulte [visão geral dos controles de Windows Forms em documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
@@ -38,7 +40,7 @@ ms.locfileid: "62982313"
 ### <a name="formula-for-embedding-controls"></a>Fórmula para inserir controles
  Ao selecionar um controle no Excel, você verá **= Inserir ("WinForms. Control. host", "")** na **barra de fórmulas**. Esse texto é necessário e não deve ser excluído.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Como: redimensionar controles nas células da planilha](../vsto/how-to-resize-controls-within-worksheet-cells.md)
 - [Como: Ocultar controles em planilhas ao imprimir](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
 - [Walkthrough: alterar a formatação da planilha usando controles CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)

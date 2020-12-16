@@ -1,5 +1,7 @@
 ---
 title: Teclado do Office Excel, configurações, caixa de diálogo opções
+description: Saiba como você pode fazer com que o Microsoft Excel receba comandos de tecla de atalho quando o documento tiver foco, selecionando esquema de teclado dinâmico.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8b590f82d5f28c3a71e86e18dfe16b1c3e6c4c5a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b3422cb53fb454b3585e0b8ba936ce692dfc68a4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584510"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525311"
 ---
 # <a name="microsoft-office-excel-keyboard-settings-options-dialog-box"></a>Microsoft Office o teclado do Excel, configurações, caixa de diálogo opções
   Microsoft Office o Excel e o Visual Studio lidam com teclas de atalho. A mesma combinação de teclas de atalho pode representar comandos diferentes no Excel e no Visual Studio. Quando o Excel é aberto em um projeto de nível de documento no Visual Studio, somente um aplicativo por vez recebe os comandos de tecla de atalho. Por padrão, o Visual Studio recebe todos os comandos de tecla de atalho, mas você pode fazer com que o Excel os receba quando o documento tiver foco, selecionando **esquema de teclado dinâmico**.
@@ -36,5 +38,5 @@ ms.locfileid: "91584510"
 
  **Esquema de teclado dinâmico** O Visual Studio recebe comandos de tecla de atalho somente quando ele tem foco. Quando o Excel tem foco, o Excel recebe todos os comandos de tecla de atalho. Por exemplo, se você pressionar a tecla de função **F5** enquanto o Excel tiver foco, o Excel abrirá a caixa de diálogo **ir para** . Se você pressionar **F5** enquanto o Visual Studio tiver foco, o Visual Studio começará a depurar sua solução.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Microsoft Office o teclado do Word, Microsoft Office configurações do teclado, caixa de diálogo opções](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)

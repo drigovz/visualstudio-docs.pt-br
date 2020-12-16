@@ -1,5 +1,7 @@
 ---
 title: Exemplos de desenvolvimento do Office
+description: Saiba mais sobre os aplicativos do Visual Studio de exemplo que demonstram como usar as ferramentas de desenvolvedor de Microsoft Office para criar soluções do Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b9e20f0d14b2940fdbe8096442848f38183b1db7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d80598033c834e8567ab58368da73350b3cd9ff3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985721"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525171"
 ---
 # <a name="office-development-samples"></a>Exemplos de desenvolvimento do Office
   O Visual Studio inclui aplicativos de exemplo que demonstram como usar as ferramentas de desenvolvedor de Microsoft Office para criar soluções do Office. O código nesses exemplos ilustra a sintaxe, a estrutura e as técnicas usadas para criar soluções do Office.
@@ -40,5 +42,5 @@ ms.locfileid: "72985721"
 |Exemplo do Gerenciador de interface do usuário|Demonstra como criar uma personalização da faixa de forma, um painel de tarefas personalizado e uma região de formulário personalizada para o Outlook implementando interfaces de extensibilidade em um suplemento do VSTO. Cada instância da faixa de tipos, do painel de tarefas e da região de formulário pode se comunicar corretamente entre si.|
 |Exemplo de interoperabilidade do VBA e do VSTO|Demonstra como chamar um método em uma personalização em nível de documento para o Excel a partir do código Visual Basic for Applications (VBA) na pasta de trabalho.<br /><br /> Este exemplo só está disponível online.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Tarefas comuns na programação do Office](../vsto/common-tasks-in-office-programming.md)

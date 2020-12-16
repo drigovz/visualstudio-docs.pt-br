@@ -1,5 +1,7 @@
 ---
 title: Programar suplementos do VSTO
+description: Saiba como você pode usar a classe ThisAddIn para executar tarefas como acessar o modelo de objeto do aplicativo host Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -32,12 +34,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 240995eb744f8107503c108cbcdbbb8522748b79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c3a4b14a1935d1d276f0884234fcd121b838f39
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87115331"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525109"
 ---
 # <a name="program-vsto-add-ins"></a>Programar suplementos do VSTO
   Ao estender um aplicativo Microsoft Office criando um suplemento do VSTO, você escreve o código diretamente `ThisAddIn` na classe em seu projeto. Você pode usar essa classe para executar tarefas como acessar o modelo de objeto do aplicativo host Microsoft Office, personalizar a interface do usuário do aplicativo e expor objetos em seu suplemento do VSTO a outras soluções do Office.
@@ -143,7 +145,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
  Para obter mais informações, consulte [chamar código em suplementos do VSTO de outras soluções do Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)
 - [Estenda documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Chamar código em suplementos do VSTO de outras soluções do Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)

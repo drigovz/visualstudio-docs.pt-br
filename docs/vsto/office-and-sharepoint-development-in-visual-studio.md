@@ -1,5 +1,7 @@
 ---
 title: Desenvolvimento do Office e do SharePoint no Visual Studio
+description: Saiba como você pode estender Microsoft Office e SharePoint criando um aplicativo leve ou suplemento que os usuários baixam da Office Store.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc1241a39707eedc4b34e0ef3531ab65e49b8238
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: abd9d3aac289df702554790673cb6561a6e2488d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811026"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525336"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Desenvolvimento do Office e do SharePoint no Visual Studio
   Você pode estender Microsoft Office e SharePoint criando um aplicativo leve ou suplemento que os usuários baixam da [Office Store](https://store.office.com/) ou de um catálogo organizacional ou criando uma solução baseada em .NET Framework que os usuários instalam em um computador.
@@ -90,7 +92,7 @@ ms.locfileid: "90811026"
 
  **Saiba mais**
 
-|Para|Ler|
+|Para|Leitura|
 |--------|----------|
 |Compare as diferentes maneiras pelas quais você pode estender o Office e decida se deve usar um suplemento do VSTO ou um suplemento do Office.|[Roteiro para suplementos do Office, VSTO e VBA](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 |Crie um suplemento do VSTO.|[Suplementos do VSTO criados com o Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)|

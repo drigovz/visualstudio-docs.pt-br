@@ -1,5 +1,7 @@
 ---
 title: 'Como: redimensionar controles nas células da planilha'
+description: Saiba como você pode usar o Visual Studio para redimensionar controles dentro de células de planilha do Microsoft Excel em tempo de design e em tempo de execução.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2d22973e13ee77b66de303041f8b6a765b4b93a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba2a77dc44618c0415e645718aff3ead542b4b48
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545867"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525347"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Como: redimensionar controles nas células da planilha
   Quando você redimensiona colunas ou linhas em uma planilha, todos os controles de host dentro das células são redimensionados automaticamente para a altura ou largura da célula que foi redimensionada. Os controles de Windows Forms não são redimensionados automaticamente por padrão.
@@ -73,7 +75,7 @@ ms.locfileid: "85545867"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Controles em documentos do Office](../vsto/controls-on-office-documents.md)
 - [Como: adicionar controles de Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
 - [Como: Ocultar controles em planilhas ao imprimir](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)

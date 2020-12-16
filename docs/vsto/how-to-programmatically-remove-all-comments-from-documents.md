@@ -1,5 +1,7 @@
 ---
 title: 'Como: remover programaticamente todos os comentários de documentos'
+description: Saiba como você pode usar o Visual Studio para remover programaticamente todos os comentários de um documento do Microsoft Word.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee30cb7d4083adfff18261e3267dea1d8a96626f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: cdb2d7b61efc1e40bf08b6b38ea6564892a04a33
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584814"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526646"
 ---
 # <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Como: remover programaticamente todos os comentários de documentos
   Use o `DeleteAllComments` método para remover todos os comentários de um Microsoft Office documento do Word.
@@ -42,6 +44,6 @@ ms.locfileid: "91584814"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#119](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#119)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#119)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Como: adicionar comentários ao texto de forma programática em documentos](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)
 - [Item de host do documento](../vsto/document-host-item.md)

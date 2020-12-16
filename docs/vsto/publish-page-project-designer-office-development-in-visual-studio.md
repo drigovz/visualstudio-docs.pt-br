@@ -1,5 +1,7 @@
 ---
 title: Publicar página, designer de projeto (desenvolvimento do Office)
+description: Saiba como a página publicar do designer de projeto no Visual Studio é usada para configurar as propriedades de implantação.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,35 +18,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4dfa575bea4e629c7521cc7f4c5a79707462714c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7f68ab8f0ee9efde903148d4702e85e99aad77d2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810987"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525015"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Publicar página, designer de projeto (desenvolvimento do Office no Visual Studio)
   A página **publicar** do **Designer de projeto** é usada para configurar as propriedades de implantação.
 
- Para acessar essa página, selecione o projeto em **Gerenciador de soluções**e, no menu **projeto** , escolha **Propriedades** *ProjectName* . Se a página **publicar** não for exibida, escolha a guia **publicar** .
+ Para acessar essa página, selecione o projeto em **Gerenciador de soluções** e, no menu **projeto** , escolha **Propriedades** *ProjectName* . Se a página **publicar** não for exibida, escolha a guia **publicar** .
 
 > [!NOTE]
-> Você também pode definir o local de publicação no **Assistente**de publicação. Para obter mais informações, consulte [como publicar uma solução do Office usando o ClickOnce](/previous-versions/bb386095(v=vs.110)).
+> Você também pode definir o local de publicação no **Assistente** de publicação. Para obter mais informações, consulte [como publicar uma solução do Office usando o ClickOnce](/previous-versions/bb386095(v=vs.110)).
 
 ## <a name="uielement-list"></a>Lista de elementos de interface do usuário
  **Local da pasta de publicação (site, servidor FTP ou caminho do arquivo)** Necessário.
 
  O local da pasta de publicação é o diretório no qual o Visual Studio copia os arquivos da solução, como manifestos, assemblies e outros arquivos da compilação. Você deve ter acesso de gravação a esse diretório.
 
- As opções incluem o computador local, um compartilhamento de arquivos UNC ou um site da Web HTTP/HTTPS. O caminho pode ser local (*c:\foldername\publishfolder*), relativo (*publicação \\ *) ou um local totalmente qualificado (* \\ \servername\foldername* ou http://<em>ServerName/nome_da_pasta</em>).
+ As opções incluem o computador local, um compartilhamento de arquivos UNC ou um site da Web HTTP/HTTPS. O caminho pode ser local (*c:\foldername\publishfolder*), relativo (*publicação \\*) ou um local totalmente qualificado (*\\ \servername\foldername* ou http://<em>ServerName/nome_da_pasta</em>).
 
- Por padrão, o local de publicação é *http://localhost/projectname/* se você tiver o IIS instalado ou o diretório de * \\ publicação* se não tiver o IIS instalado.
+ Por padrão, o local de publicação é *http://localhost/projectname/* se você tiver o IIS instalado ou o diretório de *\\ publicação* se não tiver o IIS instalado.
 
  **URL da pasta de instalação** Adicional.
 
  A URL da pasta de instalação é o diretório do qual o usuário final irá instalar a personalização. Ele também é o caminho que será usado pela solução para verificar se há atualizações. O caminho pode ser o mesmo que o local da pasta de publicação, mas isso não é um requisito.
 
- As opções incluem o computador local, um compartilhamento de arquivos UNC ou um site da Web HTTP/HTTPS. O caminho pode ser local (*c:\foldername\publishfolder*), relativo (*publicação \\ *) ou um local totalmente qualificado (* \\ \servername\foldername* ou http://<em>ServerName/nome_da_pasta</em>). Todos os locais HTTP/HTTPS devem ser criados com caracteres US-ASCII. Não há suporte para caracteres Unicode.
+ As opções incluem o computador local, um compartilhamento de arquivos UNC ou um site da Web HTTP/HTTPS. O caminho pode ser local (*c:\foldername\publishfolder*), relativo (*publicação \\*) ou um local totalmente qualificado (*\\ \servername\foldername* ou http://<em>ServerName/nome_da_pasta</em>). Todos os locais HTTP/HTTPS devem ser criados com caracteres US-ASCII. Não há suporte para caracteres Unicode.
 
  Se o caminho de instalação for definido, os arquivos de personalização deverão estar nesse local para que os usuários instalem a personalização. O local deve ser definido somente se você souber o local de implantação final.
 
@@ -92,13 +94,13 @@ ms.locfileid: "90810987"
 
   Para obter mais informações sobre como alterar a **linguagem de publicação**, consulte [como alterar o idioma de publicação para um aplicativo ClickOnce](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md).
 
-  **Versão de publicação** Define o número de versão para a personalização. Quando o número de versão é alterado, o aplicativo é publicado como uma atualização. Uma nova pasta é criada para cada versão durante o processo de compilação para evitar a substituição da versão publicada anteriormente. Cada parte da versão de publicação (**principal**, **secundária**, **compilação**e **revisão**) pode conter até cinco dígitos.
+  **Versão de publicação** Define o número de versão para a personalização. Quando o número de versão é alterado, o aplicativo é publicado como uma atualização. Uma nova pasta é criada para cada versão durante o processo de compilação para evitar a substituição da versão publicada anteriormente. Cada parte da versão de publicação (**principal**, **secundária**, **compilação** e **revisão**) pode conter até cinco dígitos.
 
   **Incrementar a revisão automaticamente com cada versão** Adicional. Quando selecionado (o padrão), a parte de **revisão** do número de versão é incrementada por um sempre que a personalização é publicada. Isso faz com que a personalização seja publicada como uma atualização.
 
   **Publicar agora** Publica o aplicativo usando as configurações atuais. Equivalente ao botão **concluir** no assistente de **publicação**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)
 - [Implantar uma solução do Office usando o ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)

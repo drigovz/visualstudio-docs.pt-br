@@ -1,5 +1,7 @@
 ---
 title: Sincronizar o painel de tarefas personalizado com o botão faixa de das
+description: Saiba como você pode criar um painel de tarefas personalizado que os usuários podem ocultar ou exibir clicando em um botão de alternância na faixa de opção.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad910f94c6b6a4345f6973e84e02c85d4fe1f0e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7453d221cf57188a2c2f589492e4df59817f2cd9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328332"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526088"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Walkthrough: sincronizar um painel de tarefas personalizado com um botão da faixa de das
   Este tutorial demonstra como criar um painel de tarefas personalizado que os usuários podem ocultar ou exibir clicando em um botão de alternância na faixa de opção. Você sempre deve criar um elemento de interface do usuário (IU), como um botão, que os usuários possam clicar para exibir ou ocultar seu painel de tarefas personalizado, pois os aplicativos Microsoft Office não fornecem uma maneira padrão para os usuários mostrarem ou ocultarem painéis de tarefas personalizados.
@@ -73,7 +75,7 @@ ms.locfileid: "67328332"
 
 2. Na caixa de diálogo **Adicionar novo item** , selecione **faixa de opções (designer visual)**.
 
-3. Altere o nome da nova faixa de forma para **ManageTaskPaneRibbon**e clique em **Adicionar**.
+3. Altere o nome da nova faixa de forma para **ManageTaskPaneRibbon** e clique em **Adicionar**.
 
      O arquivo **ManageTaskPaneRibbon.cs** ou **ManageTaskPaneRibbon. vb** é aberto no designer de faixa de faixas e exibe uma guia e um grupo padrão.
 
@@ -81,7 +83,7 @@ ms.locfileid: "67328332"
 
 5. Na janela **Propriedades** , defina a propriedade **rótulo** como **Gerenciador de painéis de tarefas**.
 
-6. Na guia **controles da faixa** de **ferramentas**do Office, arraste um **ToggleButton** para o grupo **Gerenciador de painéis de tarefas** .
+6. Na guia **controles da faixa** de **ferramentas** do Office, arraste um **ToggleButton** para o grupo **Gerenciador de painéis de tarefas** .
 
 7. Clique em **toggleButton1**.
 
@@ -94,7 +96,7 @@ ms.locfileid: "67328332"
 
 1. No menu **projeto** , clique em **Adicionar controle de usuário**.
 
-2. Na caixa de diálogo **Adicionar novo item** , altere o nome do controle de usuário para **TaskPaneControl**e clique em **Adicionar**.
+2. Na caixa de diálogo **Adicionar novo item** , altere o nome do controle de usuário para **TaskPaneControl** e clique em **Adicionar**.
 
      O controle de usuário é aberto no designer.
 
@@ -171,7 +173,7 @@ ms.locfileid: "67328332"
 
 - Crie um painel de tarefas personalizado para cada mensagem de email aberta no Outlook. Para obter mais informações, consulte [Walkthrough: Exibir painéis de tarefas personalizados com mensagens de email no Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Painéis de tarefas personalizados](../vsto/custom-task-panes.md)
 - [Como: adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [Walkthrough: automatizar um aplicativo de um painel de tarefas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

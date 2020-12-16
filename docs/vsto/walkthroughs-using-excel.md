@@ -1,5 +1,7 @@
 ---
 title: Passo a passos usando o Excel
+description: Saiba como você pode usar as personalizações em nível de documento e os suplementos do VSTO para automatizar o Microsoft Excel. Você também pode personalizar a interface do usuário (IU).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b802d61c4e30fa9dd13279c54c2a9bfa343f322f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba8a52e615a8e3d40b5c76be66f4b639aec6c07e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255060"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525964"
 ---
 # <a name="walkthroughs-using-excel"></a>Passo a passos usando o Excel
   As instruções a seguir demonstram maneiras de usar as personalizações em nível de documento e os suplementos do VSTO para automatizar Microsoft Office Excel e personalizar a interface do usuário.

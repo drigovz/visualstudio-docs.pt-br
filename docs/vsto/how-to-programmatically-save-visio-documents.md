@@ -1,5 +1,7 @@
 ---
 title: 'Como: salvar documentos do Visio programaticamente'
+description: Saiba como você pode usar o Visual Studio para salvar programaticamente documentos existentes do Microsoft Visio e novos documentos que ainda não foram salvos.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 891a5c44159d10aacbb767cbc5376ae1d62252b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29f8cbc8aa7b2ea796109a8143d348905df671f7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547050"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525388"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>Como: salvar documentos do Visio programaticamente
   Há várias maneiras de salvar Microsoft Office documentos do Visio:
@@ -74,7 +76,7 @@ ms.locfileid: "85547050"
 
 - Para salvar um documento que tem um novo nome, um diretório chamado `Test` deve estar localizado na pasta *meus documentos* (para o Windows XP e versões anteriores) ou a pasta *documentos* (para o Windows Vista).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Soluções do Visio](../vsto/visio-solutions.md)
 - [Visão geral do modelo de objeto do Visio](../vsto/visio-object-model-overview.md)
 - [Como criar programaticamente novos documentos do Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)

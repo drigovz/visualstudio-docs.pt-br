@@ -1,5 +1,7 @@
 ---
 title: Atualizar o gráfico na planilha usando botões de opção
+description: Aprenda as noções básicas do uso de botões de opção em uma planilha do Microsoft Excel para dar ao usuário uma maneira de alternar rapidamente entre as opções.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e63d7d09a09fe4c051d8137428fdae90490cbae5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e375f394cd3d8be35ace8e3df07920fb824a07e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238810"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526066"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Instruções passo a passo: atualizando um gráfico em uma planilha usando botões de opção
   Este tutorial mostra as noções básicas de como usar botões de opção em uma Microsoft Office planilha do Excel para dar ao usuário uma maneira de alternar rapidamente entre as opções. Nesse caso, as opções alteram o estilo de um gráfico.
@@ -68,7 +70,7 @@ ms.locfileid: "88238810"
 
 ### <a name="to-add-a-chart-in-excel"></a>Para adicionar um gráfico no Excel
 
-1. Na guia **Inserir** , no grupo **gráficos** , clique em **coluna**e em **todos os tipos de gráfico**.
+1. Na guia **Inserir** , no grupo **gráficos** , clique em **coluna** e em **todos os tipos de gráfico**.
 
 2. Na caixa de diálogo **Inserir gráfico** , clique em **OK**.
 
@@ -142,7 +144,7 @@ ms.locfileid: "88238810"
    | Propriedade | Valor |
    |----------|---------------|
    | **Nome** | **barChart** |
-   | **Text** | **Gráfico de barras** |
+   | **Text** | **Gráfico de Barras** |
 
 4. Adicione um terceiro botão de opção ao controle de usuário e altere as propriedades a seguir.
 
@@ -207,7 +209,7 @@ ms.locfileid: "88238810"
 
      O controle de usuário **ChartOptions** é adicionado à **caixa de ferramentas**.
 
-2. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Plan1. vb** ou **Sheet1.cs**e clique em **Designer de exibição**.
+2. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Plan1. vb** ou **Sheet1.cs** e clique em **Designer de exibição**.
 
 3. Arraste o controle **ChartOptions** da **caixa de ferramentas** para a planilha.
 
@@ -249,5 +251,5 @@ ms.locfileid: "88238810"
 
 - Altere a formatação em uma planilha usando as caixas de seleção. Para obter mais informações, consulte [Walkthrough: alterar a formatação da planilha usando controles CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Passo a passos usando o Excel](../vsto/walkthroughs-using-excel.md)

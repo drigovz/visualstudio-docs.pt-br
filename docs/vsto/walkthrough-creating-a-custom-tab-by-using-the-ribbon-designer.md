@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: criar uma guia personalizada usando o designer de faixa de faixas'
+description: Saiba como você pode criar uma guia personalizada e, em seguida, adicionar e posicionar controles nela usando o designer de faixa de faixas.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f311f35ba4a8c443f47941a905ee4cf4d3ebfb2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 539f75b7770abab75e912a28bc62ed51b7fb61d8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585009"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524823"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Walkthrough: criar uma guia personalizada usando o designer de faixa de faixas
   Usando o designer de faixa de faixas, você pode criar uma guia personalizada e, em seguida, adicionar e posicionar controles nela.
@@ -64,7 +66,7 @@ ms.locfileid: "91585009"
 
 1. No menu **Projeto**, escolha **Adicionar Novo Item**.
 
-2. Na caixa de diálogo **Adicionar novo item** , selecione **ActionsPaneControl**e, em seguida, escolha **Adicionar**.
+2. Na caixa de diálogo **Adicionar novo item** , selecione **ActionsPaneControl** e, em seguida, escolha **Adicionar**.
 
      O arquivo **ActionsPaneControl1.cs** ou **ActionsPaneControl1. vb** é aberto no designer.
 
@@ -83,7 +85,7 @@ ms.locfileid: "91585009"
 
 2. Na caixa de diálogo **Adicionar novo item** , selecione **faixa de opções (designer visual)**.
 
-3. Altere o nome da nova faixa de forma para **MyRibbon**e escolha **Adicionar**.
+3. Altere o nome da nova faixa de forma para **MyRibbon** e escolha **Adicionar**.
 
      O arquivo **MyRibbon.cs** ou **MyRibbon. vb** é aberto no designer de faixa de faixas e exibe uma guia e um grupo padrão.
 
@@ -97,15 +99,15 @@ ms.locfileid: "91585009"
 
 8. Na janela **Propriedades** , defina **rótulo** como **Gerenciador do painel de ações**.
 
-9. Na guia **controles da faixa** de **ferramentas**do Office, arraste um botão para o **grupo1**.
+9. Na guia **controles da faixa** de **ferramentas** do Office, arraste um botão para o **grupo1**.
 
 10. Selecione **Button1**.
 
 11. Na janela **Propriedades** , defina **rótulo** para **mostrar o painel de ações 1**.
 
-12. Adicione um segundo botão ao **grupo1**e defina a propriedade **rótulo** para **mostrar o painel de ações 2**.
+12. Adicione um segundo botão ao **grupo1** e defina a propriedade **rótulo** para **mostrar o painel de ações 2**.
 
-13. Na guia **controles da faixa** de **ferramentas**do Office, arraste um controle **ToggleButton** para o **grupo1**.
+13. Na guia **controles da faixa** de **ferramentas** do Office, arraste um controle **ToggleButton** para o **grupo1**.
 
 14. Defina a propriedade **rótulo** para **ocultar o painel Ações**.
 
@@ -114,7 +116,7 @@ ms.locfileid: "91585009"
 
 ### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Para ocultar e mostrar painéis de ações usando botões na guia personalizado
 
-1. No **Gerenciador de soluções**, abra o menu de atalho para *MyRibbon.cs* ou *MyRibbon. vb*e escolha **Exibir código**.
+1. No **Gerenciador de soluções**, abra o menu de atalho para *MyRibbon.cs* ou *MyRibbon. vb* e escolha **Exibir código**.
 
 2. Adicione o código a seguir à parte superior da `MyRibbon` classe. Esse código cria dois objetos do painel Ações.
 
@@ -146,7 +148,7 @@ ms.locfileid: "91585009"
 
 4. Escolha **Mostrar painel de ações 2**.
 
-     O painel Ações é exibido e exibe o **painel Ações**de rótulo 2.
+     O painel Ações é exibido e exibe o **painel Ações** de rótulo 2.
 
 5. Escolha **ocultar painel Ações**.
 
@@ -159,7 +161,7 @@ ms.locfileid: "91585009"
 
 - Estenda um formulário padrão ou personalizado do Microsoft Office Outlook. Para obter mais informações, consulte [Walkthrough: criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Acessar a faixa de faixas em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
 - [Designer da faixa de opções](../vsto/ribbon-designer.md)

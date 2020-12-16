@@ -1,5 +1,7 @@
 ---
 title: Controle ListObject
+description: O controle ListObject é uma lista que expõe eventos e pode ser associada a dados. Além disso, você pode adicionar controles ListObject a uma planilha em tempo de design ou em tempo de execução.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b5286a4bddff2b529abd0a565bb4dbeef7ffaf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a80b56134f59975a39d24e824b6c83b2513b163
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71251863"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526599"
 ---
 # <a name="listobject-control"></a>Controle ListObject
   O <xref:Microsoft.Office.Tools.Excel.ListObject> controle é uma lista que expõe eventos e pode ser associada a dados. Quando você adiciona uma lista a uma planilha, o Visual Studio cria um <xref:Microsoft.Office.Tools.Excel.ListObject> controle que você pode programar diretamente sem precisar atravessar o Microsoft Office modelo de objeto do Excel.
@@ -107,7 +109,7 @@ ms.locfileid: "71251863"
 
 - <xref:Microsoft.Office.Tools.Excel.ListObject.SelectionChange>
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [Como adicionar controles ListObject a planilhas](../vsto/how-to-add-listobject-controls-to-worksheets.md)
 - [Como: redimensionar controles de ListObject](../vsto/how-to-resize-listobject-controls.md)

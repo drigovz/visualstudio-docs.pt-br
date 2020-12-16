@@ -1,5 +1,7 @@
 ---
 title: Atualizar e migrar soluções do Office
+description: Você deve atualizar o projeto para usá-lo em versões atuais do Visual Studio se tiver um projeto Offince que foi criado em uma versão anterior do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13cbf08e5767ec548b9fdba9bd0892e0cf50a63d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b18b61ad6854be654582fe8a8a76da185ec9d89e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808783"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526608"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Atualizar e migrar soluções do Office
   Se você tiver um projeto Microsoft Office que foi criado em uma versão anterior do Visual Studio, deverá atualizar o projeto para usá-lo em versões atuais do Visual Studio. Para atualizar um projeto Microsoft Office, abra-o em uma versão do Visual Studio que inclua as ferramentas de desenvolvedor de Microsoft Office. Para obter mais informações sobre as versões do Visual Studio que incluem as ferramentas de desenvolvedor Microsoft Office, consulte [configurar um computador para desenvolver soluções do Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
@@ -83,7 +85,7 @@ ms.locfileid: "90808783"
 
  Se você quiser usar o ClickOnce para implantar o suplemento do VSTO, poderá excluir totalmente o projeto de instalação ou do InstallShield Limited Edition. Para obter mais informações sobre como implantar suplementos do VSTO usando o ClickOnce, consulte [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Como: atualizar soluções do Office](/previous-versions/4bez6837(v=vs.140))
 - [Migrar soluções do Office para o .NET Framework 4 ou posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Atualização do projeto, caixa de diálogo opções](../vsto/project-upgrade-options-dialog-box.md)

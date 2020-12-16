@@ -1,5 +1,7 @@
 ---
 title: Como programaticamente listar arquivos de pasta de trabalho usados recentemente
+description: Saiba como você pode listar programaticamente os arquivos de pasta de trabalho do Microsoft Excel usados recentemente usando o Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e3d6b57251bb19cfb02849defb157c949f4ce35
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bbcad553ade6234d3a688c8f718a0dd6e6cda509
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585152"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525636"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Como programaticamente listar arquivos de pasta de trabalho usados recentemente
   A <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> propriedade retorna uma coleção que contém os nomes de todos os arquivos que aparecem na lista Microsoft Office Excel de arquivos usados recentemente. O comprimento da lista varia dependendo do número de arquivos que o usuário selecionou para reter. Você pode exibir os resultados em um intervalo.
@@ -35,7 +37,7 @@ ms.locfileid: "91585152"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#9)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#9)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Trabalhar com pastas de trabalho](../vsto/working-with-workbooks.md)
 - [Controle NamedRange](../vsto/namedrange-control.md)
 - [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)

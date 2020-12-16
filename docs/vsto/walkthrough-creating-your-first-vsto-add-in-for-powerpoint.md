@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: criar seu primeiro suplemento do VSTO para PowerPoint'
+description: Crie um suplemento em nível de aplicativo para o Microsoft PowerPoint. Esse recurso está disponível para o próprio aplicativo, independentemente de quais apresentações estão abertas.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a50a47a813891151427707c371f1ebf3f75c336f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3e02da3484ce7c2beb35e643d3d90d8e37225e11
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584302"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524860"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Walkthrough: criar seu primeiro suplemento do VSTO para PowerPoint
   Este tutorial mostra como criar um suplemento do VSTO para Microsoft Office PowerPoint. Os recursos que você cria nesse tipo de solução estão disponíveis para o próprio aplicativo, independentemente de quais apresentações estão abertas. Para obter mais informações, consulte [visão geral do desenvolvimento de soluções do Office &#40;&#41;do VSTO ](../vsto/office-solutions-development-overview-vsto.md).
@@ -53,9 +55,9 @@ ms.locfileid: "91584302"
 
 1. Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. No menu **Arquivo** , aponte para **Novo**e clique em **Projeto**.
+2. No menu **Arquivo** , aponte para **Novo** e clique em **Projeto**.
 
-3. No painel modelos, expanda **Visual C#** ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.
+3. No painel modelos, expanda **Visual C#** ou **Visual Basic** e, em seguida, expanda **Office/SharePoint**.
 
 4. No nó do **Office/SharePoint** expandido, selecione o nó **suplementos do Office** .
 
@@ -76,14 +78,14 @@ ms.locfileid: "91584302"
 
 ### <a name="to-add-a-text-box-to-each-new-slide"></a>Para adicionar uma caixa de texto a cada novo slide
 
-1. No arquivo de código ThisAddIn, adicione o código a seguir à `ThisAddIn` classe. Esse código define um manipulador de eventos para o evento [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) do objeto [Application](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) .
+1. No arquivo de código ThisAddIn, adicione o código a seguir à `ThisAddIn` classe. Esse código define um manipulador de eventos para o evento [Microsoft.Office.Interop.PowerPoint.EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) do objeto [Application](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) .
 
     Quando o usuário adiciona um novo slide à apresentação ativa, esse manipulador de eventos adiciona uma caixa de texto à parte superior do novo slide e adiciona um texto à caixa de texto.
 
     [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
     [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]
 
-2. Se você estiver usando C#, adicione o código a seguir ao `ThisAddIn_Startup` manipulador de eventos. Esse código é necessário para conectar o `Application_PresentationNewSlide` manipulador de eventos com o evento [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) .
+2. Se você estiver usando C#, adicione o código a seguir ao `ThisAddIn_Startup` manipulador de eventos. Esse código é necessário para conectar o `Application_PresentationNewSlide` manipulador de eventos com o evento [Microsoft.Office.Interop.PowerPoint.EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) .
 
     [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]
 
@@ -91,7 +93,7 @@ ms.locfileid: "91584302"
 
 - O `Application` campo da `ThisAddIn` classe. O `Application` campo retorna um objeto [Application](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) , que representa a instância atual do PowerPoint.
 
-- O `Sld` parâmetro do manipulador de eventos para o evento [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) . O `Sld` parâmetro é um objeto de [Slide](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) , que representa o novo slide. Para obter mais informações, consulte [soluções do PowerPoint](../vsto/powerpoint-solutions.md).
+- O `Sld` parâmetro do manipulador de eventos para o evento [Microsoft.Office.Interop.PowerPoint.EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) . O `Sld` parâmetro é um objeto de [Slide](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) , que representa o novo slide. Para obter mais informações, consulte [soluções do PowerPoint](../vsto/powerpoint-solutions.md).
 
 ## <a name="test-the-project"></a>Testar o projeto
  Ao compilar e executar o projeto, verifique se a caixa de texto aparece em novos slides que você adiciona a uma apresentação.
@@ -130,7 +132,7 @@ ms.locfileid: "91584302"
 
 - Implantando suplementos do VSTO para PowerPoint. Para obter mais informações, consulte [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)
 - [Soluções do PowerPoint](../vsto/powerpoint-solutions.md)
 - [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)

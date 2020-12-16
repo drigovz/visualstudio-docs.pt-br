@@ -1,5 +1,7 @@
 ---
 title: 'Como: abrir arquivos de texto programaticamente como pastas de trabalho'
+description: Saiba como você pode usar o Visual Studio para abrir programaticamente um arquivo de texto como uma pasta de trabalho do Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a0f1b384aafb491183a750f17653ab55f2003e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f471161a8563718f69f14ea341ab099fbf138d8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519816"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525536"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Como: abrir arquivos de texto programaticamente como pastas de trabalho
   Você pode abrir um arquivo de texto como uma pasta de trabalho. Você deve passar o nome do arquivo de texto que deseja abrir. Você pode especificar vários parâmetros opcionais, como qual número de linha iniciar a análise e o formato de coluna dos dados no arquivo.
@@ -37,7 +39,7 @@ ms.locfileid: "85519816"
 
 - O arquivo de texto `Test.txt` a ser armazenado na unidade C.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Trabalhar com pastas de trabalho](../vsto/working-with-workbooks.md)
 - [Como: pastas de trabalho abertas programaticamente](../vsto/how-to-programmatically-open-workbooks.md)
 - [Como criar programaticamente novas pastas de trabalho](../vsto/how-to-programmatically-create-new-workbooks.md)

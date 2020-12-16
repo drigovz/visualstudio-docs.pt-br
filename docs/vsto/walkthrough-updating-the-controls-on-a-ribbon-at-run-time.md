@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: atualizar os controles em uma faixa de faixas em tempo de execução'
+description: Saiba como você pode usar o modelo de objeto da faixa de faixas para atualizar os controles em uma faixa de faixas depois que a faixa de faixas é carregada no aplicativo do Office.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c2e870f028b3337fd162adde881281d7050e142
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2246dcdca1e754c885dd610f98986306a256228c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298060"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526055"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Walkthrough: atualizar os controles em uma faixa de faixas em tempo de execução
 
@@ -78,7 +80,7 @@ A faixa de para este exemplo aparecerá quando um usuário compor uma nova mensa
 
 2. Na caixa de diálogo **Adicionar novo item** , selecione **faixa de opções (designer visual)**.
 
-3. Altere o nome da nova faixa de forma para **CustomerRibbon**e clique em **Adicionar**.
+3. Altere o nome da nova faixa de forma para **CustomerRibbon** e clique em **Adicionar**.
 
      O arquivo *CustomerRibbon.cs* ou *CustomerRibbon. vb* é aberto no designer de faixa de faixas e exibe uma guia e um grupo padrão.
 
@@ -92,13 +94,13 @@ A faixa de para este exemplo aparecerá quando um usuário compor uma nova mensa
 
 7. Na janela **Propriedades** , defina **rótulo** como **compras do cliente**.
 
-8. Na guia **controles da faixa** de ferramentas do Office, arraste uma **caixa**de **combinação** para o grupo **compras do cliente** .
+8. Na guia **controles da faixa** de ferramentas do Office, arraste uma **caixa** de **combinação** para o grupo **compras do cliente** .
 
 9. Clique em **comboBox1** para selecioná-lo.
 
 10. Na janela **Propriedades** , defina **rótulo** como **clientes**.
 
-11. Na guia **controles da faixa** de **ferramentas**do Office, arraste um **menu** para o grupo **compras de clientes** .
+11. Na guia **controles da faixa** de **ferramentas** do Office, arraste um **menu** para o grupo **compras de clientes** .
 
 12. Na janela **Propriedades** , defina **rótulo** como **produto comprado**.
 
@@ -136,9 +138,9 @@ Use a janela **Data Sources** para adicionar um conjunto de dados tipado ao seu 
 
      Isso inicia o **Assistente de configuração da fonte de dados**.
 
-2. Selecione **banco de dados**e clique em **Avançar**.
+2. Selecione **banco de dados** e clique em **Avançar**.
 
-3. Selecione **DataSet**e clique em **Avançar**.
+3. Selecione **DataSet** e clique em **Avançar**.
 
 4. Selecione uma conexão de dados com o exemplo Northwind Microsoft SQL Server Compact banco de dado 4,0 ou adicione uma nova conexão usando o botão **nova conexão** .
 
@@ -262,7 +264,7 @@ Para criar uma mensagem de email de acompanhamento do cliente, selecione um clie
 
      O Outlook é iniciado.
 
-2. No Outlook, no menu **arquivo** , aponte para **novo**e clique em mensagem de **email**.
+2. No Outlook, no menu **arquivo** , aponte para **novo** e clique em mensagem de **email**.
 
      As seguintes ações ocorrem:
 
@@ -296,7 +298,7 @@ Você pode aprender mais sobre como personalizar a interface do usuário do Offi
 
 - Adicione um painel de tarefas personalizado ao Outlook. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Acessar a faixa de faixas em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)

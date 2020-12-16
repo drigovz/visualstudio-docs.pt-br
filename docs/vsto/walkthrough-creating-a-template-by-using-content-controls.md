@@ -1,5 +1,6 @@
 ---
 title: 'Walkthrough: criar um modelo usando controles de conteúdo'
+description: Saiba como criar uma personalização em nível de documento que usa controles de conteúdo para criar conteúdo estruturado e reutilizável em um modelo do Microsoft Word.
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30f2443c724d547afe3c510e64f2c50fd9dd4db9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2dd7e75048a84a4e235390b99d17d48dfad039ec
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585022"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524989"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Walkthrough: criar um modelo usando controles de conteúdo
   Este tutorial demonstra como criar uma personalização em nível de documento que usa controles de conteúdo para criar conteúdo estruturado e reutilizável em um modelo do Word Microsoft Office.
@@ -68,7 +69,7 @@ ms.locfileid: "91585022"
 
 1. No modelo do Word hospedado no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Designer, na faixa de palavras, clique na guia **Inserir** .
 
-2. No grupo **tabelas** , clique em **tabela**e insira uma tabela com duas colunas e quatro linhas.
+2. No grupo **tabelas** , clique em **tabela** e insira uma tabela com duas colunas e quatro linhas.
 
 3. Digite o texto na primeira coluna para que seja semelhante à seguinte coluna:
 
@@ -86,7 +87,7 @@ ms.locfileid: "91585022"
    > [!NOTE]
    > Se a guia **desenvolvedor** não estiver visível, você deverá primeiro mostrá-la. Para obter mais informações, consulte [como: mostrar a guia Desenvolvedor na faixa de faixas](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-6. No grupo **controles** , clique no botão **Text** de texto ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para adicionar um <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> à primeira célula.
+6. No grupo **controles** , clique no botão  de texto ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para adicionar um <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> à primeira célula.
 
 7. Clique na segunda célula na segunda coluna (ao lado de **data de contratação**).
 
@@ -109,7 +110,7 @@ ms.locfileid: "91585022"
 
 2. Na faixa de faixas, clique na guia **Inserir** .
 
-3. No grupo **tabelas** , clique em **tabela**e insira uma tabela com duas colunas e três linhas.
+3. No grupo **tabelas** , clique em **tabela** e insira uma tabela com duas colunas e três linhas.
 
 4. Digite o texto na primeira coluna para que seja semelhante à seguinte coluna:
 
@@ -123,7 +124,7 @@ ms.locfileid: "91585022"
 
 6. Na faixa de faixas, clique na guia **desenvolvedor** .
 
-7. No grupo **controles** , clique no botão **Text** de texto ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para adicionar um <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> à primeira célula.
+7. No grupo **controles** , clique no botão  de texto ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para adicionar um <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> à primeira célula.
 
 8. Clique na segunda célula da segunda coluna (ao lado da **classificação de satisfação**).
 
@@ -138,7 +139,7 @@ ms.locfileid: "91585022"
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>Para modificar a interface do usuário dos controles de conteúdo programaticamente
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **ThisDocument.cs** ou **ThisDocument. vb**e clique em **Exibir código**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **ThisDocument.cs** ou **ThisDocument. vb** e clique em **Exibir código**.
 
 2. Adicione o código a seguir à classe `ThisDocument` . Esse código declara vários objetos que você usará posteriormente neste passo a passos.
 
@@ -235,7 +236,7 @@ ms.locfileid: "91585022"
 
 - Associar controles de conteúdo a partes do XML, também nomeadas como partes XML personalizadas, que são inseridas em um documento. Para obter mais informações, consulte [Walkthrough: associar controles de conteúdo a partes XML personalizadas](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Controles de conteúdo](../vsto/content-controls.md)
 - [Como: adicionar controles de conteúdo a documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md)

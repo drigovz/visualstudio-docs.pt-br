@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: programa em relação a eventos de um controle NamedRange'
+description: Saiba como você pode adicionar um controle NamedRange a uma planilha e programa do Microsoft Excel em relação a seus eventos usando as ferramentas de desenvolvimento do Office no Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e5ce12e2de8274afd2c27d4ece36529563a6386
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9e311a567d32ee083bcc13f417c248f5f3d3ee5a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584931"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526131"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Walkthrough: programa em relação a eventos de um controle NamedRange
   Este tutorial demonstra como adicionar um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle a uma Microsoft Office planilha e programa do Excel em relação a seus eventos usando as ferramentas de desenvolvimento do Office no Visual Studio.
@@ -57,13 +59,13 @@ ms.locfileid: "91584931"
      O Visual Studio abre a nova pasta de trabalho do Excel no designer e adiciona o projeto **meus eventos de intervalo nomeado** ao **Gerenciador de soluções**.
 
 ## <a name="add-text-and-named-ranges-to-the-worksheet"></a>Adicionar texto e intervalos nomeados à planilha
- Como os controles de host são objetos estendidos do Office, você pode adicioná-los ao documento da mesma maneira que adicionaria o objeto nativo. Por exemplo, você pode adicionar um controle do Excel <xref:Microsoft.Office.Tools.Excel.NamedRange> a uma planilha abrindo o **menu Inserir** , apontando para **nome**e escolhendo **definir**. Você também pode adicionar um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle arrastando-o da **caixa de ferramentas** para a planilha.
+ Como os controles de host são objetos estendidos do Office, você pode adicioná-los ao documento da mesma maneira que adicionaria o objeto nativo. Por exemplo, você pode adicionar um controle do Excel <xref:Microsoft.Office.Tools.Excel.NamedRange> a uma planilha abrindo o **menu Inserir** , apontando para **nome** e escolhendo **definir**. Você também pode adicionar um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle arrastando-o da **caixa de ferramentas** para a planilha.
 
- Nesta etapa, você adicionará dois controles de intervalo nomeados à planilha usando a **caixa de ferramentas**e, em seguida, adicionará texto à planilha.
+ Nesta etapa, você adicionará dois controles de intervalo nomeados à planilha usando a **caixa de ferramentas** e, em seguida, adicionará texto à planilha.
 
 ### <a name="to-add-a-range-to-your-worksheet"></a>Para adicionar um intervalo à sua planilha
 
-1. Verifique se o *meu intervalo nomeado * pasta de trabalho Events.xlsxestá aberto no designer do Visual Studio, com `Sheet1` exibido.
+1. Verifique se o *meu intervalo nomeado* pasta de trabalho Events.xlsxestá aberto no designer do Visual Studio, com `Sheet1` exibido.
 
 2. Na guia **controles do Excel** da caixa de ferramentas, arraste um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle para a célula **a1** em `Sheet1` .
 
@@ -156,7 +158,7 @@ ms.locfileid: "91584931"
 
 - Implantando o projeto. Para obter mais informações, consulte [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Visão geral de itens de host e controles de host](../vsto/host-items-and-host-controls-overview.md)
 - [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [Controle NamedRange](../vsto/namedrange-control.md)

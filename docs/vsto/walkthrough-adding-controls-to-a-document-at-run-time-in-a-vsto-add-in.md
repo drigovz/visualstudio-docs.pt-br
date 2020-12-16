@@ -1,5 +1,7 @@
 ---
 title: Adicionar controles ao documento em tempo de execução no suplemento do VSTO
+description: Saiba como usar a faixa de faixas para permitir que os usuários adicionem uma classe de botão ou uma interface RichTextContentControl a um documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e8cde57ece3774e94f923387e1a8f7ca71cf797
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbf6313f4788a0bd224d04639d3ab588a6469842
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254169"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526283"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Walkthrough: adicionar controles a um documento em tempo de execução em um suplemento do VSTO
   Você pode adicionar controles a qualquer documento do Word aberto Microsoft Office usando um suplemento do VSTO. Este tutorial demonstra como usar a faixa de faixas para permitir que os usuários adicionem um <xref:Microsoft.Office.Tools.Word.Controls.Button> ou um <xref:Microsoft.Office.Tools.Word.RichTextContentControl> documento.
@@ -64,7 +66,7 @@ ms.locfileid: "71254169"
 
 2. Na caixa de diálogo **Adicionar novo item** , selecione **faixa de opções (designer visual)**.
 
-3. Altere o nome da nova faixa de forma para **MyRibbon**e clique em **Adicionar**.
+3. Altere o nome da nova faixa de forma para **MyRibbon** e clique em **Adicionar**.
 
     O arquivo **MyRibbon.cs** ou **MyRibbon. vb** é aberto no designer de faixa de faixas e exibe uma guia e um grupo padrão.
 
@@ -72,7 +74,7 @@ ms.locfileid: "71254169"
 
 5. Na janela **Propriedades** , altere a propriedade **rótulo** para **grupo1** para **Adicionar controles**.
 
-6. Na guia **controles da faixa** de **ferramentas**do Office, arraste um controle de **caixa de seleção** para o **grupo1**.
+6. Na guia **controles da faixa** de **ferramentas** do Office, arraste um controle de **caixa de seleção** para o **grupo1**.
 
 7. Clique em **checkBox1** para selecioná-lo.
 
@@ -83,7 +85,7 @@ ms.locfileid: "71254169"
    | **Nome** | **addButtonCheckBox** |
    | **Rotular** | **Botão Adicionar** |
 
-9. Adicione uma segunda caixa de seleção a **grupo1**e, em seguida, altere as propriedades a seguir.
+9. Adicione uma segunda caixa de seleção a **grupo1** e, em seguida, altere as propriedades a seguir.
 
    | Propriedade | Valor |
    |-----------|---------------------------|
@@ -178,11 +180,11 @@ ms.locfileid: "71254169"
 ## <a name="next-steps"></a>Próximas etapas
  Você pode saber mais sobre os controles nos suplementos do VSTO a partir destes tópicos:
 
-- Para obter um exemplo que demonstra como adicionar muitos outros tipos de controles a um documento em tempo de execução e recriar os controles quando o documento é reaberto, consulte o exemplo de controles dinâmicos de suplemento do Word em [exemplos de desenvolvimento do Office e passo a passos](../vsto/office-development-samples-and-walkthroughs.md).
+- Para obter um exemplo que demonstra como adicionar muitos outros tipos de controles a um documento em tempo de execução e recriar os controles quando o documento é reaberto, consulte a palavra Add-In exemplo de controles dinâmicos em [exemplos de desenvolvimento do Office e passo a passos](../vsto/office-development-samples-and-walkthroughs.md).
 
 - Para obter instruções que demonstram como adicionar controles a uma planilha usando um suplemento do VSTO para Excel, consulte [passo a passos: adicionar controles a uma planilha em tempo de execução no projeto de suplemento do VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Soluções do Word](../vsto/word-solutions.md)
 - [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Persistir controles dinâmicos em documentos do Office](../vsto/persisting-dynamic-controls-in-office-documents.md)

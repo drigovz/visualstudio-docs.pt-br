@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: vinculação de dados simples no projeto de suplemento do VSTO'
+description: Saiba como você pode adicionar controles a um documento do Microsoft Word e associar os controles aos dados em tempo de execução.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67264800fd2baa1ca685bcc578fb4d400e6538dd
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bc0b4f18e0f9a45f19148fde9e3d289ccad9e73f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584905"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526153"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Walkthrough: vinculação de dados simples no projeto de suplemento do VSTO
 
@@ -72,15 +74,15 @@ Use a janela **Data Sources** para adicionar um conjunto de dados tipado ao seu 
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>Para adicionar um conjunto de um dataset tipado ao projeto
 
-1. Se a janela **fontes de dados** não estiver visível, exiba-a por, na barra de menus, escolhendo **Exibir**  >  **outras**  >  **fontes de dados**do Windows.
+1. Se a janela **fontes de dados** não estiver visível, exiba-a por, na barra de menus, escolhendo **Exibir**  >  **outras**  >  **fontes de dados** do Windows.
 
 2. Escolha **Adicionar nova fonte de dados** para iniciar o **Assistente de configuração de fonte de dados**.
 
-3. Clique em **banco de dados**e em **Avançar**.
+3. Clique em **banco de dados** e em **Avançar**.
 
 4. Se você tiver uma conexão existente com o `AdventureWorksLT` banco de dados, escolha essa conexão e clique em **Avançar**.
 
-    Caso contrário, clique em **nova conexão**e use a caixa de diálogo **Adicionar conexão** para criar a nova conexão. Para obter mais informações, consulte [adicionar novas conexões](../data-tools/add-new-connections.md).
+    Caso contrário, clique em **nova conexão** e use a caixa de diálogo **Adicionar conexão** para criar a nova conexão. Para obter mais informações, consulte [adicionar novas conexões](../data-tools/add-new-connections.md).
 
 5. Na página **salvar a cadeia de conexão no arquivo de configuração do aplicativo** , clique em **Avançar**.
 
@@ -151,7 +153,7 @@ Quando você abre o Word, o controle de conteúdo exibe dados do `AdventureWorks
 
 2. Clique nos botões **Avançar** e **anterior** para percorrer os registros do banco de dados.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Dados em soluções do Office](../vsto/data-in-office-solutions.md)
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)

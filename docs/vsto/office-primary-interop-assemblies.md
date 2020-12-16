@@ -1,5 +1,7 @@
 ---
 title: assemblies de Interoperabilidade primária do Office
+description: Saiba como usar o PIA (assembly de interoperabilidade primária) para obter acesso aos recursos de um aplicativo Microsoft Office de um projeto do Office.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25dad2d4601974e70e80377e634d05b60523318e
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 190c5785be9d17ee0a25d16ad6342368b658f252
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830761"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525226"
 ---
 # <a name="office-primary-interop-assemblies"></a>assemblies de Interoperabilidade primária do Office
 
@@ -127,7 +129,7 @@ Por exemplo, quando uma solução que faz referência ao assembly do [!INCLUDE[o
 
 Para obter mais informações, consulte [como habilitar e desabilitar o redirecionamento de associação automática](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como: direcionar aplicativos do Office por meio de assemblies de interoperabilidade primária](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md)
