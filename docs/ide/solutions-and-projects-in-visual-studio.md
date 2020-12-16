@@ -1,8 +1,8 @@
 ---
 title: Soluções e projetos
-description: Saiba mais sobre os projetos e soluções do Visual Studio e saiba como criar um novo projeto com a ferramenta de Gerenciador de Soluções.
+description: Saiba mais sobre projetos e soluções do Visual Studio, como criar novos projetos de um modelo e como exibir & gerenciar projetos no Gerenciador de Soluções.
 ms.custom: SEO-VS-2020
-ms.date: 12/11/2020
+ms.date: 12/15/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a24f56d94d470ca5ff04a99f524af3c76df3a15
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6504d3e7fe278e8713a897ffacefa1f22cec6a09
+ms.sourcegitcommit: f43e669f3597a4b07975b2bd2dce362a41a2e83f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524064"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97578247"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
 
@@ -53,6 +53,8 @@ Os arquivos de projeto são baseados no [esquema XML do MSBuild](../msbuild/msbu
 
 Um projeto está contido dentro de uma *solução*. Apesar do nome, uma solução não é uma "resposta". Ela é apenas um contêiner de um ou mais projetos relacionados, juntamente com informações de build, configurações de janela do Visual Studio e arquivos diversos que não estão associados a nenhum projeto específico. Uma solução é descrita por um arquivo de texto (extensão *.sln*) com seu próprio formato exclusivo; não se destina à edição manual.
 
+### <a name="solution-file"></a>Arquivo de solução
+
 O Visual Studio usa dois tipos de arquivos (*.sln* e *.suo*) para armazenar configurações de soluções:
 
 |Extensão|Name|Descrição|
@@ -62,7 +64,7 @@ O Visual Studio usa dois tipos de arquivos (*.sln* e *.suo*) para armazenar conf
 
 ### <a name="solution-folder"></a>Pasta da solução
 
-Nesse contexto, uma "pasta de solução" é uma pasta virtual que só está em **Gerenciador de soluções**, onde você pode usá-la para agrupar projetos em uma solução. Se você quiser localizar um arquivo de solução em um computador, vá para **ferramentas**  >  **Opções**  >  **projetos e soluções**  >  **locais**. Para obter mais informações, consulte [caixa de diálogo opções: projetos e soluções > locais](./reference/projects-solutions-locations-options.md).
+Uma "pasta de solução" é uma pasta virtual que só está em **Gerenciador de soluções**, onde você pode usá-la para agrupar projetos em uma solução. Se você quiser localizar um arquivo de solução em um computador, vá para **ferramentas**  >  **Opções**  >  **projetos e soluções**  >  **locais**. Para obter mais informações, consulte [caixa de diálogo opções: projetos e soluções > locais](./reference/projects-solutions-locations-options.md).
 
 ## <a name="create-new-projects"></a>Criar novos projetos
 
