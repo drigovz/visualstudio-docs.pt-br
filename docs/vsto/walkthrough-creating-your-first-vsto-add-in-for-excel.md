@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: criar seu primeiro suplemento do VSTO para Excel'
+description: Crie um suplemento em nível de aplicativo para o Microsoft Excel. Os recursos que você cria estão disponíveis para o próprio aplicativo, independentemente de quais pastas de trabalho estão abertas.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b683b1f75f2967807f171c204fbf02a2e5db69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f04532e627a694e8a234f1842995b92a707e537
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69548008"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527905"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Walkthrough: criar seu primeiro suplemento do VSTO para Excel
   Este guia introdutório mostra como criar um suplemento em nível de aplicativo para Microsoft Office Excel. Os recursos que você cria nesse tipo de solução estão disponíveis para o próprio aplicativo, independentemente de quais pastas de trabalho estão abertas.
@@ -54,9 +56,9 @@ ms.locfileid: "69548008"
 
 1. Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. No menu **Arquivo** , aponte para **Novo**e clique em **Projeto**.
+2. No menu **Arquivo** , aponte para **Novo** e clique em **Projeto**.
 
-3. No painel modelos, expanda **Visual C#** ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.
+3. No painel modelos, expanda **Visual C#** ou **Visual Basic** e, em seguida, expanda **Office/SharePoint**.
 
 4. No nó do **Office/SharePoint** expandido, selecione o nó **suplementos do Office** .
 
@@ -132,7 +134,7 @@ ms.locfileid: "69548008"
 
 - Implantando suplementos do VSTO para Excel: [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluções do Excel](../vsto/excel-solutions.md)
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)

@@ -1,5 +1,7 @@
 ---
 title: Migrar soluções do Office para o .NET Framework 4 ou posterior
+description: Saiba como você pode migrar soluções do Office para o .NET Framework 4 ou posterior para que seu projeto continue a funcionar.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 86b975b7e84c69ff072df06e0a2c7701ab1909e7
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5b7780b6fccef86dfe4a671c0c468e5899adc36c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584484"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528456"
 ---
 # <a name="migrate-office-solutions-to-the-net-framework-4-or-later"></a>Migrar soluções do Office para o .NET Framework 4 ou posterior
   Se a estrutura de destino de um projeto do Office for alterada para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior de uma versão anterior do .NET Framework, algumas etapas adicionais podem ser necessárias para continuar a executar a solução em computadores de usuário final e de desenvolvimento. Para obter mais informações, consulte [as alterações necessárias para executar projetos do Office que você migra para o .NET Framework 4 ou o .NET Framework 4,5](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).
@@ -37,7 +39,7 @@ ms.locfileid: "91584484"
 
   Para obter mais informações sobre por que alguns recursos em projetos do Office têm um modelo de programação diferente quando você visa o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, consulte [alterações no design de projetos do Office direcionados para a .NET Framework 4 ou a .NET Framework 4,5 e a](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md) [visão geral do ferramentas do Visual Studio para Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)
 - [Como definir uma versão do .NET Framework como destino](../ide/visual-studio-multi-targeting-overview.md)
 - [Solucionar erros em soluções do Office](../vsto/troubleshooting-errors-in-office-solutions.md)

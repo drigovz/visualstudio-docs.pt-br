@@ -1,5 +1,7 @@
 ---
 title: Alterar a formatação da planilha usando controles de caixa de seleção
+description: Saiba como você pode usar as ferramentas de desenvolvimento do Office no Visual Studio para criar e adicionar código ao seu projeto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 42d2c46f6fd61d74476933cfda3dea8c62b00c95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28b9f000c2e8517304387e2b203dfa7888b33d64
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328696"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527219"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Walkthrough: alterar a formatação da planilha usando controles CheckBox
   Este tutorial mostra as noções básicas do uso de caixas de seleção em uma Microsoft Office planilha do Excel para alterar a formatação. Você usará as ferramentas de desenvolvimento do Office no Visual Studio para criar e adicionar código ao seu projeto. Para ver o resultado como um exemplo completo, consulte o exemplo de controles do Excel em [exemplos de desenvolvimento do Office e passo a passos](../vsto/office-development-samples-and-walkthroughs.md).
@@ -83,11 +85,11 @@ ms.locfileid: "67328696"
     |Propriedade|Valor|
     |--------------|-----------|
     |**Nome**|**applyUnderlineFont**|
-    |**Text**|**Aplicar**|
+    |**Text**|**Underline**|
 
 7. Selecione todos os três controles de caixa de seleção mantendo a tecla **Ctrl** pressionada.
 
-8. No grupo organizar da guia formato no Excel, clique em **alinhar**e, em seguida, clique em **alinhar à esquerda**.
+8. No grupo organizar da guia formato no Excel, clique em **alinhar** e, em seguida, clique em **alinhar à esquerda**.
 
      Os três controles de caixa de seleção são alinhados no lado esquerdo, na posição do primeiro controle selecionado.
 
@@ -122,7 +124,7 @@ ms.locfileid: "67328696"
 
 ### <a name="to-change-formatting-when-a-check-box-is-selected"></a>Para alterar a formatação quando uma caixa de seleção estiver marcada
 
-1. Clique com o botão direito do mouse em **Plan1**e clique em **Exibir código** no menu de atalho.
+1. Clique com o botão direito do mouse em **Plan1** e clique em **Exibir código** no menu de atalho.
 
 2. Adicione o seguinte código ao <xref:System.Windows.Forms.Control.Click> manipulador de eventos da `applyBoldFont` caixa de seleção:
 
@@ -160,7 +162,7 @@ ms.locfileid: "67328696"
 - Implantando o projeto. Para obter mais informações, consulte [implantar uma solução do Office usando o ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 - Usar um botão para preencher uma caixa de texto. Para obter mais informações, consulte [Walkthrough: exibir texto em uma caixa de texto em uma planilha usando um botão](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Passo a passos usando o Excel](../vsto/walkthroughs-using-excel.md)
 - [Controle NamedRange](../vsto/namedrange-control.md)
 - [Limitações de controles de Windows Forms em documentos do Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: chamar código do VBA em um projeto do Visual C#'
+description: Saiba como chamar um método em uma personalização em nível de documento para o Microsoft Excel do código Visual Basic for Applications (VBA) na pasta de trabalho.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c089a3156d005da7d49976f6c96bb10daac0662
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: daf25a1e2e80d2c5918d0d11c4b31c75a2e40c87
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "92297931"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527302"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Walkthrough: chamar código do VBA em um projeto do Visual C#
   Este tutorial demonstra como chamar um método em uma personalização em nível de documento para Microsoft Office o Excel do código Visual Basic for Applications (VBA) na pasta de trabalho. O procedimento envolve três etapas básicas: adicionar um método à `Sheet1` classe de item de host, expor o método ao código VBA na pasta de trabalho e, em seguida, chamar o método do código VBA na pasta de trabalho.
@@ -97,7 +99,7 @@ ms.locfileid: "92297931"
 
 1. Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. No menu **Arquivo** , aponte para **Novo**e clique em **Projeto**.
+2. No menu **Arquivo** , aponte para **Novo** e clique em **Projeto**.
 
 3. No painel modelos, expanda **Visual C#** e, em seguida, expanda **Office/SharePoint**.
 
@@ -111,7 +113,7 @@ ms.locfileid: "92297931"
 
      O **Assistente de ferramentas do Visual Studio para o Office Project** é aberto.
 
-8. Selecione **copiar um documento existente**e, na caixa **caminho completo do documento existente** , especifique o local da pasta de trabalho **WorkbookWithVBA** que você criou anteriormente. Se você estiver usando sua própria pasta de trabalho habilitada para macro, especifique o local dessa pasta de trabalho.
+8. Selecione **copiar um documento existente** e, na caixa **caminho completo do documento existente** , especifique o local da pasta de trabalho **WorkbookWithVBA** que você criou anteriormente. Se você estiver usando sua própria pasta de trabalho habilitada para macro, especifique o local dessa pasta de trabalho.
 
 9. Clique em **Concluir**.
 
@@ -153,7 +155,7 @@ ms.locfileid: "92297931"
 
 ### <a name="to-add-a-method-to-the-sheet1-class"></a>Para adicionar um método à classe Plan1
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Sheet1.cs**e clique em **Exibir código**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Sheet1.cs** e clique em **Exibir código**.
 
      O arquivo **Sheet1.cs** é aberto no editor de código.
 
@@ -246,7 +248,7 @@ ms.locfileid: "92297931"
 
 - Chame o código em um suplemento do VSTO do VBA. Para obter mais informações, consulte [Walkthrough: chamar código em um suplemento do VSTO do VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Combine personalizações do VBA e no nível do documento](../vsto/combining-vba-and-document-level-customizations.md)
 - [Programar personalizações em nível de documento](../vsto/programming-document-level-customizations.md)
 - [Como: expor código ao VBA em um projeto Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)

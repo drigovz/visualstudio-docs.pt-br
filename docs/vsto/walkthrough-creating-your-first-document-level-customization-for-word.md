@@ -1,5 +1,6 @@
 ---
 title: Crie sua primeira personalização em nível de documento para o Word
+description: Crie uma personalização em nível de documento para o Microsoft Word. Os recursos que você cria nesse tipo de solução estão disponíveis somente quando um documento específico está aberto.
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1f5d1d6d373a5bbcd3f10d600175a88e88823ad
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: c1f827346c30720cefd781dade3039416504b9c0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584983"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527080"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Walkthrough: criar sua primeira personalização em nível de documento para o Word
 
@@ -56,9 +57,9 @@ ms.locfileid: "91584983"
 
 1. Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. No menu **Arquivo** , aponte para **Novo**e clique em **Projeto**.
+2. No menu **Arquivo** , aponte para **Novo** e clique em **Projeto**.
 ::: moniker range="vs-2017"
-3. No painel modelos, expanda **Visual C#** ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.
+3. No painel modelos, expanda **Visual C#** ou **Visual Basic** e, em seguida, expanda **Office/SharePoint**.
 
 4. No nó do **Office/SharePoint** expandido, selecione o nó **suplementos do VSTO** .
 
@@ -68,7 +69,7 @@ ms.locfileid: "91584983"
 
 7. Clique em **OK**.
 
-8. Selecione **criar um novo documento** no **Assistente do ferramentas do Visual Studio para Office Project**e clique em **OK**.
+8. Selecione **criar um novo documento** no **Assistente do ferramentas do Visual Studio para Office Project** e clique em **OK**.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 3. Na caixa de diálogo **criar um novo projeto** , selecione o projeto de **documento do Word VSTO** .
@@ -79,7 +80,7 @@ ms.locfileid: "91584983"
 
 5. Digite **FirstWorkbookCustomization** na caixa **nome** do diálogo **configurar seu novo projeto** e clique em **criar**.
 
-6. Selecione **criar um novo documento** no **Assistente do ferramentas do Visual Studio para Office Project**e clique em **OK**.
+6. Selecione **criar um novo documento** no **Assistente do ferramentas do Visual Studio para Office Project** e clique em **OK**.
 ::: moniker-end
    - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o projeto **FirstDocumentCustomization** e adiciona o documento **FirstDocumentCustomization** e o arquivo de código ThisDocument ao projeto. O documento **FirstDocumentCustomization** é aberto automaticamente no designer.
 
@@ -117,7 +118,7 @@ ms.locfileid: "91584983"
 
 ### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>Para adicionar um segundo parágrafo de texto ao documento usando código
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **ThisDocument**e clique em **Exibir código**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **ThisDocument** e clique em **Exibir código**.
 
      O arquivo de código é aberto no Visual Studio.
 
@@ -171,7 +172,7 @@ ms.locfileid: "91584983"
 
 - Implantando personalizações em nível de documento para [o Word: implante uma solução do Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluções do Word](../vsto/word-solutions.md)

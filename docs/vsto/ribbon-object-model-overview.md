@@ -1,5 +1,7 @@
 ---
 title: Visão geral do modelo de objeto Ribbon
+description: Saiba como a Ferramentas do Visual Studio para o tempo de execução do Office expõe um modelo de objeto fortemente tipado que você pode usar para obter e definir as propriedades dos controles da faixa de tipos em tempo de execução.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ca22704345fefb4944bda7dd9f71942fe8dfb50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f97bbbab4b867f503e5b5befff27844df8a4b4bc
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71256012"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527986"
 ---
 # <a name="ribbon-object-model-overview"></a>Visão geral do modelo de objeto Ribbon
   O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expõe um modelo de objeto fortemente tipado que você pode usar para obter e definir as propriedades dos controles da faixa de tipos em tempo de execução. Por exemplo, você pode preencher dinamicamente controles de menu ou mostrar e ocultar os controles de forma contextual. Você também pode adicionar guias, grupos e controles a uma faixa de faixas, mas somente antes de a faixa de faixas ser carregada pelo aplicativo do Office. Para obter informações, consulte [definir propriedades que se tornam somente leitura](#SettingReadOnlyProperties).
@@ -52,15 +54,15 @@ ms.locfileid: "71256012"
 |**ButtonGroup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|
 |**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|
-|**DropDown**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
+|**Suspenso**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
 |**Edição**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
-|**Clip**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
+|**Galeria**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**Grupo**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
 |**Rotular**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
-|**Caractere**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
+|**Separador**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
 |**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
-|**Guia**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
+|**Tab**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
 |**ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 
  O <xref:Microsoft.Office.Tools.Ribbon> namespace usa o prefixo "Ribbon" para esses tipos para evitar uma colisão de nome com os nomes de classes de controle no <xref:System.Windows.Forms> namespace.
@@ -139,7 +141,7 @@ ms.locfileid: "71256012"
 |**ColumnCount**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**ControlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
 |**DialogLauncher**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
-|**Dinâmicos**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
+|**Dinâmico**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
 |**Global**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
 |**Grupos**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
 |**ImageName**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
@@ -170,7 +172,7 @@ ms.locfileid: "71256012"
 
 |Evento|Descrição|
 |-----------|-----------------|
-|Clique em|Ocorre quando um controle é clicado.|
+|Clique|Ocorre quando um controle é clicado.|
 |TextChanged|Ocorre quando o texto de uma caixa de edição ou caixa de combinação é alterado.|
 |ItemsLoading|Ocorre quando a coleção Items do controle é solicitada pelo Office. O Office armazena em cache a coleção de itens até que seu código altere as propriedades do controle ou chame o <xref:Microsoft.Office.Core.IRibbonUI.InvalidateControl%2A> método.|
 |ButtonClick|Ocorre quando um botão em um <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> ou <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> é clicado.|
@@ -184,11 +186,11 @@ ms.locfileid: "71256012"
 |*Sender*|Um <xref:System.Object> que representa o controle que disparou o evento.|
 |*Oriental*|Um <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> que contém um <xref:Microsoft.Office.Core.IRibbonControl> . Use este controle para acessar qualquer propriedade que não esteja disponível no modelo de objeto da faixa de forma fornecido pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Acessar a faixa de faixas em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
 - [Como: começar a personalizar a faixa de faixas](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [Designer de faixa de das](../vsto/ribbon-designer.md)
+- [Designer da faixa de opções](../vsto/ribbon-designer.md)
 - [Walkthrough: criar uma guia personalizada usando o designer de faixa de faixas](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Walkthrough: atualizar os controles em uma faixa de faixas em tempo de execução](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
 - [Personalizar uma faixa de faixas para o Outlook](../vsto/customizing-a-ribbon-for-outlook.md)

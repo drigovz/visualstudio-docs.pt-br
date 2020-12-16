@@ -1,5 +1,7 @@
 ---
 title: Direcionar aplicativos do Office por meio de assemblies de interoperabilidade primária
+description: Saiba como você pode usar o Visual Studio para direcionar programaticamente Microsoft Office aplicativos por meio de assemblies de interoperabilidade primários.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60e351a15af4994d2bf64a800e3019501cf0571d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81c2852a92124a7cf9fb6078b196982d22100be7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545763"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528109"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Como: direcionar aplicativos do Office por meio de assemblies de interoperabilidade primária
   Quando você cria um novo projeto do Office, o Visual Studio adiciona automaticamente referências ao Microsoft Office PIAs (assemblies de interoperabilidade primária) que são necessários para criar seu projeto. Você deve adicionar referências a outros PIAs nos seguintes cenários:
@@ -51,7 +53,7 @@ ms.locfileid: "85545763"
 
      O nome do assembly aparece na pasta **References** de **Gerenciador de soluções**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Assemblies de interoperabilidade primária do Office](../vsto/office-primary-interop-assemblies.md)
 - [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)
 - [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)

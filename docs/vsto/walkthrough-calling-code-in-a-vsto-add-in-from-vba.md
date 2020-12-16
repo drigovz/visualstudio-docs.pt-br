@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: chamar o código em um suplemento do VSTO do VBA'
+description: Saiba como expor um objeto em um suplemento do VSTO a outras soluções de Microsoft Office, incluindo Visual Basic for Applications (VBA) e suplementos do VSTO COM.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6fdbd2cf85086bac0aa7bb56c128a7ad6fe36f94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cbf03ef234ea6cf4eab790d96082d23b7ed5199
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72650779"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527288"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Walkthrough: chamar o código em um suplemento do VSTO do VBA
   Este tutorial demonstra como expor um objeto em um suplemento do VSTO para outras soluções de Microsoft Office, incluindo Visual Basic for Applications (VBA) e suplementos do VSTO COM.
@@ -67,7 +69,7 @@ ms.locfileid: "72650779"
 
 1. No menu **projeto** , clique em **Adicionar classe**.
 
-2. Na caixa de diálogo **Adicionar novo item** , altere o nome da nova classe para **AddInUtilities**e clique em **Adicionar**.
+2. Na caixa de diálogo **Adicionar novo item** , altere o nome da nova classe para **AddInUtilities** e clique em **Adicionar**.
 
      O arquivo **AddInUtilities.cs** ou **AddInUtilities. vb** é aberto no editor de código.
 
@@ -90,7 +92,7 @@ ms.locfileid: "72650779"
 
 1. Em **Gerenciador de soluções**, expanda **Excel**.
 
-2. Clique com o botão direito do mouse em **ThisAddIn.cs** ou em **ThisAddIn. vb**e clique em **Exibir código**.
+2. Clique com o botão direito do mouse em **ThisAddIn.cs** ou em **ThisAddIn. vb** e clique em **Exibir código**.
 
 3. Adicione o código a seguir à classe `ThisAddIn` .
 
@@ -108,7 +110,7 @@ ms.locfileid: "72650779"
 
 1. Pressione **F5** para executar o projeto.
 
-2. No Excel, salve a pasta de trabalho ativa como uma pasta de trabalho habilitada para macro do Excel (*. xlsm). Salve-o em um local conveniente, como o desktop.
+2. No Excel, salve a pasta de trabalho ativa como uma pasta de trabalho do Excel Macro-Enabled (*. xlsm). Salve-o em um local conveniente, como o desktop.
 
 3. Na faixa de faixas, clique na guia **desenvolvedor** .
 
@@ -150,7 +152,7 @@ ms.locfileid: "72650779"
 
 - Personalize a faixa de bits em um suplemento do VSTO. Para obter mais informações, consulte [visão geral da faixa](../vsto/ribbon-overview.md) de e [como: introdução à personalização da faixa de faixas](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)
 - [Chamar código em suplementos do VSTO de outras soluções do Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
 - [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)

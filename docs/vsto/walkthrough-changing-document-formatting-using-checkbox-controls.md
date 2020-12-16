@@ -1,5 +1,7 @@
 ---
 title: Alterar a formatação do documento usando controles CheckBox
+description: Saiba como usar os controles de Windows Forms em uma personalização em nível de documento para o Microsoft Word alterar a formatação de texto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24c3cb8d76551bb477f9c13cc56c313519f3b617
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 931e9554a10e0e1525d9ee4a10505633b211610b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328721"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527247"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Walkthrough: alterar a formatação do documento usando controles CheckBox
   Este tutorial demonstra como usar Windows Forms controles em uma personalização em nível de documento para Microsoft Office Word para alterar a formatação de texto.
@@ -88,7 +90,7 @@ ms.locfileid: "67328721"
     |Propriedade|Valor|
     |--------------|-----------|
     |**Nome**|**applyUnderlineFont**|
-    |**Text**|**Aplicar**|
+    |**Text**|**Underline**|
 
 ### <a name="add-text-and-a-bookmark-control"></a>Adicionar texto e um controle de indicador
 
@@ -113,7 +115,7 @@ ms.locfileid: "67328721"
 
 ### <a name="change-formatting-when-a-check-box-is-selected"></a>Alterar a formatação quando uma caixa de seleção estiver marcada
 
-1. Clique com o botão direito do mouse `ThisDocument` em **Gerenciador de soluções**e clique em **Exibir código** no menu de atalho.
+1. Clique com o botão direito do mouse `ThisDocument` em **Gerenciador de soluções** e clique em **Exibir código** no menu de atalho.
 
 2. Somente para C#, adicione as constantes a seguir à classe **ThisDocument** .
 
@@ -156,7 +158,7 @@ ms.locfileid: "67328721"
 
 - Usando botões de opção para selecionar estilos de gráfico. Para obter mais informações, consulte [Walkthrough: atualizar um gráfico em um documento usando botões de opção](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Passo a passos usando o Word](../vsto/walkthroughs-using-word.md)
 - [Exemplos e orientações de desenvolvimento do Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Controle NamedRange](../vsto/namedrange-control.md)

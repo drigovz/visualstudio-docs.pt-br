@@ -1,5 +1,7 @@
 ---
 title: 'Como: assinar soluções do Office'
+description: Saiba como você pode conceder confiança à sua solução de Microsoft Office usando um certificado como evidência.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23afc171fd97620b3e6801b8d199da6890198d8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7451630570e6d557dc5d2b635d149ebc07cfb388
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545750"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528118"
 ---
 # <a name="how-to-sign-office-solutions"></a>Como: assinar soluções do Office
   Se você assinar uma solução, poderá conceder confiança à solução usando o certificado como evidência. Você pode usar o mesmo certificado para várias soluções e todas as soluções serão confiáveis sem nenhuma atualização de política de segurança adicional.
@@ -35,7 +37,7 @@ ms.locfileid: "85545750"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Para assinar uma solução do Office usando um certificado
 
-1. No menu **projeto** , clique em _SolutionName_**Propriedades**de SolutionName.
+1. No menu **projeto** , clique em **Propriedades** de SolutionName.
 
 2. Clique na guia **Assinatura** .
 
@@ -45,7 +47,7 @@ ms.locfileid: "85545750"
 
 5. Para verificar se o certificado correto está sendo usado, clique em **mais detalhes** para exibir as informações do certificado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Proteger soluções do Office](../vsto/securing-office-solutions.md)
 - [Conceder confiança às soluções do Office](../vsto/granting-trust-to-office-solutions.md)

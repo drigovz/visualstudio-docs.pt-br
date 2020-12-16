@@ -1,5 +1,7 @@
 ---
 title: 'Como: mostrar a guia Desenvolvedor na faixa de das'
+description: Saiba como você pode usar o Visual Studio para mostrar programaticamente a guia Desenvolvedor na faixa de palavras em um documento do Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41070c92d0c27c1ee8fbf480f7461c22421b8fdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dc38b941d27cab0653b923ddd03ba8b78eeab58
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545841"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528149"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Como: mostrar a guia Desenvolvedor na faixa de das
   Para acessar a guia **desenvolvedor** na faixa de faixas de um aplicativo do Office, você deve configurá-lo para mostrar essa guia porque ela não aparece por padrão. Por exemplo, você deve mostrar essa guia se quiser adicionar um <xref:Microsoft.Office.Tools.Word.GroupContentControl> a uma personalização em nível de documento para o Word.
@@ -52,7 +54,7 @@ ms.locfileid: "85545841"
 
      ![O botão Opções na versão prévia do Outlook 2013](../vsto/media/vsto-office2013-optionsbutton.png "O botão Opções na versão prévia do Outlook 2013")
 
-3. Na caixa de diálogo opções de _ApplicationName_, escolha o botão **Personalizar faixa** de**opção** .
+3. Na caixa de diálogo opções de _ApplicationName_, escolha o botão **Personalizar faixa** de **opção** .
 
      A figura a seguir mostra a caixa de diálogo Options e o botão **Custom Ribbon da faixa** de **opções** no Excel 2010. O local desse botão é semelhante em todos os outros aplicativos listados na seção "aplica-se a", próximo à parte superior deste tópico.
 
@@ -66,5 +68,5 @@ ms.locfileid: "85545841"
 
 5. Escolha o botão **OK** para fechar a caixa de diálogo **Opções** .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)

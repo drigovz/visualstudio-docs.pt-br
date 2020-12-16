@@ -1,5 +1,7 @@
 ---
 title: 'Como: redimensionar controles de ListObject'
+description: Saiba como você pode usar o Visual Studio para redimensionar de forma programática os controles ListObject em uma pasta de trabalho do Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68a9841d8471189538959a311bf9349199d55f78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c401f3938679c72cee3a07c4bff79a5777fcbc1
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545828"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528536"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Como: redimensionar controles de ListObject
   Você define o tamanho de um <xref:Microsoft.Office.Tools.Excel.ListObject> controle ao adicioná-lo a uma Microsoft Office pasta de trabalho do Excel; no entanto, talvez você queira redimensioná-lo posteriormente. Por exemplo, talvez você queira alterar uma lista de duas colunas para três colunas.
@@ -42,7 +44,7 @@ ms.locfileid: "85545828"
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Para redimensionar uma lista usando a caixa de diálogo redimensionar lista
 
-1. Clique em qualquer lugar na  <xref:Microsoft.Office.Tools.Excel.ListObject> tabela. A guia Design das **ferramentas de tabela**  >  **Design** na faixa de faixas é exibida.
+1. Clique em qualquer lugar na  <xref:Microsoft.Office.Tools.Excel.ListObject> tabela. A guia Design das **ferramentas de tabela**  >   na faixa de faixas é exibida.
 
 2. Na seção Propriedades, clique em **redimensionar tabela**.
 
@@ -82,7 +84,7 @@ ms.locfileid: "85545828"
      [!code-csharp[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#13)]
      [!code-vb[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#13)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Estenda documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controles em documentos do Office](../vsto/controls-on-office-documents.md)
 - [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)

@@ -10,17 +10,18 @@ ms.devlang: CSharp
 author: ghogen
 ms.author: ghogen
 manager: jillfra
+monikerRange: '>=vs-2019'
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 4f2d5bf573da940c39790d6868a94d588e5efb7b
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: 55b1e30d214ff85bfc1b7e9c00ebff7e76a95f12
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918136"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527889"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Tutorial: estender um aplicativo de console C# simples
 
@@ -32,21 +33,21 @@ Se você acabou de concluir a [primeira parte](tutorial-console.md) desta série
 
 O código do mundo real envolve muitos projetos trabalhando juntos em uma solução. Agora, vamos adicionar outro projeto ao aplicativo Calculator. Essa será uma biblioteca de classes que fornece algumas das funções de calculadora.
 
-1. No Visual Studio, você pode usar o **arquivo** de comando de menu de nível superior  >  **Adicionar**  >  **novo projeto** para adicionar um novo projeto, mas você também pode clicar com o botão direito do mouse no nome do projeto existente (chamado de "nó do projeto") e abrir o menu de atalho do projeto (ou menu de contexto). Esse menu de atalho contém várias maneiras de adicionar funcionalidade aos seus projetos. Portanto, clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** e escolha **Adicionar**  >  **novo projeto** .
+1. No Visual Studio, você pode usar o **arquivo** de comando de menu de nível superior  >  **Adicionar**  >  **novo projeto** para adicionar um novo projeto, mas você também pode clicar com o botão direito do mouse no nome do projeto existente (chamado de "nó do projeto") e abrir o menu de atalho do projeto (ou menu de contexto). Esse menu de atalho contém várias maneiras de adicionar funcionalidade aos seus projetos. Portanto, clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** e escolha **Adicionar**  >  **novo projeto**.
 
-1. Escolha a biblioteca de classes de modelo de projeto C# **(.net Standard)** .
+1. Escolha a biblioteca de classes de modelo de projeto C# **(.net Standard)**.
 
    ![Captura de tela de seleção de modelo de projeto de biblioteca de classes](media/vs-2019/calculator2-add-project-dark.png)
 
-1. Digite o nome do projeto **CalculatorLibrary** e escolha **criar** . O Visual Studio cria o novo projeto e o adiciona à solução.
+1. Digite o nome do projeto **CalculatorLibrary** e escolha **criar**. O Visual Studio cria o novo projeto e o adiciona à solução.
 
    ![Captura de tela de Gerenciador de Soluções com o projeto de biblioteca de classes CalculatorLibrary adicionado](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
 
-1. Em vez de ter *Class1.cs* , renomeie o arquivo **CalculatorLibrary.cs** . Você pode clicar no nome em **Gerenciador de soluções** para renomeá-lo ou clicar com o botão direito do mouse e escolher **renomear** ou pressionar a tecla **F2** .
+1. Em vez de ter *Class1.cs*, renomeie o arquivo **CalculatorLibrary.cs**. Você pode clicar no nome em **Gerenciador de soluções** para renomeá-lo ou clicar com o botão direito do mouse e escolher **renomear** ou pressionar a tecla **F2** .
 
    Você pode receber uma pergunta se deseja renomear todas as referências a `Class1` no arquivo. Não importa como você responde, já que você substituirá o código em uma etapa futura.
 
-1. Agora, precisamos adicionar uma referência de projeto, para que o primeiro projeto possa usar APIs expostas pela nova biblioteca de classes.  Clique com o botão direito do mouse no nó **referências** no primeiro projeto e escolha **Adicionar referência de projeto** .
+1. Agora, precisamos adicionar uma referência de projeto, para que o primeiro projeto possa usar APIs expostas pela nova biblioteca de classes.  Clique com o botão direito do mouse no nó **referências** no primeiro projeto e escolha **Adicionar referência de projeto**.
 
    ![Captura de tela do item de menu Adicionar referência de projeto](media/vs-2019/calculator2-add-project-reference-dark.png)
 
@@ -54,11 +55,11 @@ O código do mundo real envolve muitos projetos trabalhando juntos em uma soluç
 
    ![Captura de tela da caixa de diálogo Gerenciador de referências](media/vs-2019/calculator2-ref-manager-dark.png)
 
-1. Na caixa de diálogo **Gerenciador de referências** , marque a caixa de seleção do projeto **CalculatorLibrary** e escolha **OK** .  A referência do projeto é exibida em um nó **projetos** no **Gerenciador de soluções** .
+1. Na caixa de diálogo **Gerenciador de referências** , marque a caixa de seleção do projeto **CalculatorLibrary** e escolha **OK**.  A referência do projeto é exibida em um nó **projetos** no **Gerenciador de soluções**.
 
    ![Captura de tela de Gerenciador de Soluções com referência de projeto](media/vs-2019/calculator2-solution-explorer-with-project-reference-dark2.png)
 
-1. Em *Program.cs* , selecione a `Calculator` classe e todo o seu código e pressione **Ctrl + X** para recortá-lo de Program.cs. Em seguida, em **CalculatorLibrary** , em *CalculatorLibrary.cs* , Cole o código no `CalculatorLibrary` namespace. Em seguida, torne a classe Calculator `public` para expô-la fora da biblioteca. O código em *CalculatorLibrary.cs* agora deve ser semelhante ao seguinte código:
+1. Em *Program.cs*, selecione a `Calculator` classe e todo o seu código e pressione **Ctrl + X** para recortá-lo de Program.cs. Em seguida, em **CalculatorLibrary**, em *CalculatorLibrary.cs*, Cole o código no `CalculatorLibrary` namespace. Em seguida, torne a classe Calculator `public` para expô-la fora da biblioteca. O código em *CalculatorLibrary.cs* agora deve ser semelhante ao seguinte código:
 
    ```csharp
    using System;
@@ -204,7 +205,7 @@ O código do mundo real envolve muitos projetos trabalhando juntos em uma soluç
 
 ## <a name="add-a-nuget-package-write-to-a-json-file"></a>Adicionar um pacote NuGet: gravar em um arquivo JSON
 
-1. Agora suponha que desejamos gerar as operações em um formato JSON, um formato popular e portátil para armazenar dados de objeto. Para implementar essa funcionalidade, precisaremos fazer referência ao pacote NuGet Newtonsoft.Jsno. Os pacotes NuGet são o principal veículo para a distribuição de bibliotecas de classes .NET. Em **Gerenciador de soluções** , clique com o botão direito do mouse no nó **referências** para o projeto CalculatorLibrary e escolha **gerenciar pacotes NuGet** .
+1. Agora suponha que desejamos gerar as operações em um formato JSON, um formato popular e portátil para armazenar dados de objeto. Para implementar essa funcionalidade, precisaremos fazer referência ao pacote NuGet Newtonsoft.Jsno. Os pacotes NuGet são o principal veículo para a distribuição de bibliotecas de classes .NET. Em **Gerenciador de soluções**, clique com o botão direito do mouse no nó **referências** para o projeto CalculatorLibrary e escolha **gerenciar pacotes NuGet**.
 
    ![Captura de tela de gerenciar pacotes NuGet no menu de atalho](media/vs-2019/calculator2-manage-nuget-packages-dark2.png)
 
@@ -212,13 +213,13 @@ O código do mundo real envolve muitos projetos trabalhando juntos em uma soluç
 
    ![Captura de tela do Gerenciador de Pacotes NuGet](media/vs-2019/calculator2-nuget-package-manager-dark.png)
 
-1. Procure Newtonsoft.Jsno pacote e escolha **instalar** .
+1. Procure Newtonsoft.Jsno pacote e escolha **instalar**.
 
    ![Captura de tela das informações do pacote NuGet do Newtonsoft](media/vs-2019/calculator2-nuget-newtonsoft-json-dark2.png)
 
-   O pacote é baixado e adicionado ao seu projeto e uma nova entrada é exibida no nó referências em **Gerenciador de soluções** .
+   O pacote é baixado e adicionado ao seu projeto e uma nova entrada é exibida no nó referências em **Gerenciador de soluções**.
 
-1. Adicione uma diretiva using para o System.IO e Newtonsoft.Jsno pacote no início de *CalculatorLibrary.cs* .
+1. Adicione uma diretiva using para o System.IO e Newtonsoft.Jsno pacote no início de *CalculatorLibrary.cs*.
 
    ```csharp
    using Newtonsoft.Json;
@@ -299,7 +300,7 @@ O código do mundo real envolve muitos projetos trabalhando juntos em uma soluç
     }
    ```
 
-1. E, no *Program.cs* , adicione uma chamada para concluir no final.
+1. E, no *Program.cs*, adicione uma chamada para concluir no final.
 
    ```csharp
             // And call to close the JSON writer before return
@@ -333,7 +334,7 @@ O código do mundo real envolve muitos projetos trabalhando juntos em uma soluç
 
 O depurador do Visual Studio é uma ferramenta poderosa que permite executar o código passo a passo para encontrar o ponto exato em que você fez um erro de programação. Em seguida, você entende as correções que precisa fazer em seu código. O Visual Studio permite fazer alterações temporárias para que você possa continuar executando o programa.
 
-1. Em *Program.cs* , clique na margem à esquerda do código a seguir (ou abra o menu de atalho e escolha **ponto** de interrupção de inserção de pontos de interrupção  >  **Insert Breakpoint** ou pressione **F9** ):
+1. Em *Program.cs*, clique na margem à esquerda do código a seguir (ou abra o menu de atalho e escolha **ponto** de interrupção de inserção de pontos de interrupção  >  ou pressione **F9**):
 
    ```csharp
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
@@ -375,11 +376,11 @@ O depurador do Visual Studio é uma ferramenta poderosa que permite executar o c
 
    A janela Autos é semelhante à janela **locais** , mas mostra as variáveis imediatamente precedentes e seguindo a linha de código atual em que seu aplicativo está em pausa.
 
-   Em seguida, você executará o código na instrução do depurador uma por vez, que é chamada de *Stepping* .
+   Em seguida, você executará o código na instrução do depurador uma por vez, que é chamada de *Stepping*.
 
 ## <a name="debug-step-through-code"></a>Depurar: percorrer código
 
-1. Pressione **F11** (ou **depurar**  >  **etapa para dentro** ).
+1. Pressione **F11** (ou **depurar**  >  **etapa para dentro**).
 
    Usando o comando Step Into, o aplicativo executa a instrução atual e avança para a próxima instrução executável (geralmente a próxima linha de código). O ponteiro amarelo à esquerda sempre indica a instrução atual.
 
@@ -387,13 +388,13 @@ O depurador do Visual Studio é uma ferramenta poderosa que permite executar o c
 
    Você acabou de se deparar com o `DoOperation` método na `Calculator` classe.
 
-1. Para obter uma visão hierárquica do fluxo do programa, examine a janela **pilha de chamadas** . (Se estiver fechado, escolha **depurar**  >  **Windows**  >  **Pilha de chamadas** .)
+1. Para obter uma visão hierárquica do fluxo do programa, examine a janela **pilha de chamadas** . (Se estiver fechado, escolha **depurar**  >  **Windows**  >  **Pilha de chamadas**.)
 
    ![Captura de tela da pilha de chamadas](media/vs-2019/calculator-2-debug-call-stack.png)
 
-   Essa exibição mostra o `Calculator.DoOperation` método atual, indicado pelo ponteiro amarelo, e a segunda linha mostra a função que o chamou, do `Main` método em *Program.cs* . A janela **Pilha de Chamadas** mostra a ordem em que os métodos e as funções são chamados. Além disso, ele fornece acesso a vários recursos do depurador, como **ir para código-fonte** , no menu de atalho.
+   Essa exibição mostra o `Calculator.DoOperation` método atual, indicado pelo ponteiro amarelo, e a segunda linha mostra a função que o chamou, do `Main` método em *Program.cs*. A janela **Pilha de Chamadas** mostra a ordem em que os métodos e as funções são chamados. Além disso, ele fornece acesso a vários recursos do depurador, como **ir para código-fonte**, no menu de atalho.
 
-1. Pressione **F10** (ou **depurar**  >  **etapa** ) várias vezes até que o aplicativo pause na `switch` instrução.
+1. Pressione **F10** (ou **depurar**  >  **etapa**) várias vezes até que o aplicativo pause na `switch` instrução.
 
    ```csharp
    switch (op)
@@ -427,7 +428,7 @@ O depurador do Visual Studio é uma ferramenta poderosa que permite executar o c
 
    No C#, `Infinity` é o resultado quando você divide por zero.
 
-1. Pressione **F5** (ou, **debug**  >  **continue Debugging** ).
+1. Pressione **F5** (ou, **debug**  >  **continue Debugging**).
 
    O símbolo de infinito é exibido no console como o resultado da operação matemática.
 

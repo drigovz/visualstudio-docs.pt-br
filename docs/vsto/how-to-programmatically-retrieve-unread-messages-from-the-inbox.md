@@ -1,5 +1,7 @@
 ---
 title: Obter mensagens não lidas da caixa de entrada programaticamente
+description: Saiba como você pode usar o Visual Studio para recuperar programaticamente mensagens não lidas da sua caixa de entrada no Microsoft Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc913379546c80eef70671ea0ecbd441001e6ab5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6dae629c008c04f7ee9fb66b9dbc5f8f31e53d4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537599"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528261"
 ---
 # <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Como: recuperar programaticamente mensagens não lidas da caixa de entrada
   Este exemplo recupera mensagens de email não lidas da **caixa de entrada** do Outlook e exibe o número de itens.

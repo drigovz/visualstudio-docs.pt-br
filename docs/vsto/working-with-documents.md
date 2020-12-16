@@ -1,5 +1,7 @@
 ---
 title: Trabalhar com documentos
+description: Saiba mais sobre os procedimentos passo a passo e exemplos de código para usar o modelo de objeto do Microsoft Word para trabalhar com documentos em projetos do Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b21f8c84082e19c1d9f43d6a2ae36d158a15c01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a8b994ed88c6499d17cc0cf241e60a17f235b97
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63008684"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527023"
 ---
 # <a name="work-with-documents"></a>Trabalhar com documentos
   Os tópicos nesta seção fornecem procedimentos passo a passo e exemplos de código para usar o modelo de objeto do Microsoft Office Word para trabalhar com documentos em projetos do Office.
@@ -42,6 +44,6 @@ ms.locfileid: "63008684"
 |Adicionar um cabeçalho ou rodapé a um documento.|[Como: adicionar cabeçalhos e rodapés programaticamente a documentos](../vsto/how-to-programmatically-add-headers-and-footers-to-documents.md)|
 |Remover todos os comentários de um documento.|[Como: remover programaticamente todos os comentários de documentos](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)
 - [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)

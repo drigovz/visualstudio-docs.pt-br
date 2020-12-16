@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: atualizar um gráfico em um documento usando botões de opção'
+description: Saiba como você pode usar botões de opção em uma personalização em nível de documento para o Microsoft Word para dar aos usuários a opção de selecionar estilos de gráfico no documento.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4b39949deb3bcbf3d9330ca8d820a5841b0f4c4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: df2996d99e752fbe0f7f36bcab537ee8c19d4f06
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584289"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528395"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Walkthrough: atualizar um gráfico em um documento usando botões de opção
   Esse passo a passo demonstra como usar os botões de opção em uma personalização ao nível do documento do Microsoft Office Word para fornecer aos usuários a opção de selecionar estilos de gráficos no documento.
@@ -101,7 +103,7 @@ ms.locfileid: "91584289"
     |Propriedade|Valor|
     |--------------|-----------|
     |**Nome**|**barChart**|
-    |**Text**|**Gráfico de barras**|
+    |**Text**|**Gráfico de Barras**|
 
 4. Adicione um terceiro **botão de opção** ao controle de usuário e altere as propriedades a seguir.
 
@@ -175,7 +177,7 @@ ms.locfileid: "91584289"
 
      O controle de usuário **ChartOptions** é adicionado à **caixa de ferramentas**.
 
-2. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **ThisDocument. vb** ou **ThisDocument.cs**e clique em **Designer de exibição**.
+2. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **ThisDocument. vb** ou **ThisDocument.cs** e clique em **Designer de exibição**.
 
 3. Arraste o `ChartOptions` controle da **caixa de ferramentas** para o documento.
 
@@ -213,7 +215,7 @@ ms.locfileid: "91584289"
 
 - Alterar a formatação selecionando um estilo de uma caixa de combinação. Para obter mais informações, consulte [Walkthrough: alterar a formatação do documento usando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Passo a passos usando o Word](../vsto/walkthroughs-using-word.md)
 - [Exemplos e orientações de desenvolvimento do Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Limitações de controles de Windows Forms em documentos do Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

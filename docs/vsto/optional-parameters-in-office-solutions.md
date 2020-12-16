@@ -1,5 +1,7 @@
 ---
 title: Parâmetros opcionais em soluções do Office
+description: Saiba como você não precisa passar um valor para parâmetros opcionais porque os valores padrão são usados automaticamente para cada parâmetro ausente.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8684ad4b9429a5499660ef4ad6fdd8133dccaa5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7567f43dfa79e6a1e5d92b9ecddbf7918a6edef3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838591"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527575"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Parâmetros opcionais em soluções do Office
   Muitos dos métodos nos modelos de objeto de Microsoft Office aplicativos aceitam parâmetros opcionais. Se você usar Visual Basic para desenvolver uma solução do Office no Visual Studio, não será necessário passar um valor para os parâmetros opcionais, porque os valores padrão são usados automaticamente para cada parâmetro ausente. Na maioria dos casos, você também pode omitir parâmetros opcionais em projetos do Visual C#. No entanto, você não pode omitir os parâmetros **ref** opcionais da `ThisDocument` classe em projetos do Word de nível de documento.
@@ -68,6 +70,6 @@ ms.locfileid: "90838591"
 
   Para obter mais informações sobre parâmetros de tipo de referência e valor, consulte [passar argumentos por valor e por referência &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (para Visual Basic) e [passar parâmetros &#40;guia de programação C&#35;&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)
 - [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)

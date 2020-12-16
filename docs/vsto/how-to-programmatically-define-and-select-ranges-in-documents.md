@@ -1,5 +1,7 @@
 ---
 title: 'Como: definir e selecionar intervalos de forma programática em documentos'
+description: Saiba como você pode definir e selecionar intervalos de forma programática em documentos do Microsoft Word usando o objeto Range.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5af4ceeb37574fef6eb55d80f3c173b71ac090e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1cc0475f7b25550b85018477d7c842f012445e2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545945"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528327"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Como: definir e selecionar intervalos de forma programática em documentos
   Você pode definir um intervalo em um Microsoft Office documento do Word usando um <xref:Microsoft.Office.Interop.Word.Range> objeto. Você pode selecionar o documento inteiro de várias maneiras, por exemplo, usando o <xref:Microsoft.Office.Interop.Word.Range.Select%2A> método do <xref:Microsoft.Office.Interop.Word.Range> objeto ou usando a propriedade content da <xref:Microsoft.Office.Tools.Word.Document> classe (em uma personalização no nível do documento) ou a <xref:Microsoft.Office.Interop.Word.Document> classe (em um suplemento do VSTO).
@@ -125,7 +127,7 @@ ms.locfileid: "85545945"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#24)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)
 - [Como: estender intervalos programaticamente em documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
 - [Como recuperar programaticamente caracteres de início e término em intervalos](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)

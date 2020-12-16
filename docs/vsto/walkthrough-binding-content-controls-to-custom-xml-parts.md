@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: associar controles de conteúdo a partes XML personalizadas'
+description: Saiba como associar controles de conteúdo em uma personalização em nível de documento para dados do Word para XML armazenados no documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a80488408f680530ed3c9b4094b2997e97484ce3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a82a8fd98bbf1a735661f3e1cf01e2452eb7ee58
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544437"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527963"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Walkthrough: associar controles de conteúdo a partes XML personalizadas
   Este tutorial demonstra como associar controles de conteúdo em uma personalização em nível de documento para dados do Word em XML que são armazenados no documento.
@@ -70,7 +72,7 @@ ms.locfileid: "85544437"
 
 1. No documento do Word hospedado no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Designer, na faixa de palavras, escolha a guia **Inserir** .
 
-2. No grupo **tabelas** , escolha **tabela**e insira uma tabela com 2 colunas e 3 linhas.
+2. No grupo **tabelas** , escolha **tabela** e insira uma tabela com 2 colunas e 3 linhas.
 
 3. Digite o texto na primeira coluna para que seja semelhante à seguinte coluna:
 
@@ -87,7 +89,7 @@ ms.locfileid: "85544437"
    > [!NOTE]
    > Se a guia **desenvolvedor** não estiver visível, você deverá primeiro mostrá-la. Para obter mais informações, consulte [como: mostrar a guia Desenvolvedor na faixa de faixas](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-6. No grupo **controles** , escolha o botão **Text** de texto ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para adicionar um <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> à primeira célula.
+6. No grupo **controles** , escolha o botão  de texto ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para adicionar um <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> à primeira célula.
 
 7. Na segunda coluna da tabela, escolha a segunda linha (ao lado da **data de contratação**).
 
@@ -110,7 +112,7 @@ ms.locfileid: "85544437"
 
 2. No painel **modelos** , selecione **arquivo XML**.
 
-3. Nomeie o arquivo **employees.xml**e, em seguida, escolha o botão **Adicionar** .
+3. Nomeie o arquivo **employees.xml** e, em seguida, escolha o botão **Adicionar** .
 
      O arquivo de **employees.xml** é aberto no editor de código.
 
@@ -148,7 +150,7 @@ ms.locfileid: "85544437"
 
      O designer de esquema é aberto.
 
-4. No **Gerenciador de soluções**, abra o menu de atalho para  **Employees. xsd**e escolha  **Exibir código**.
+4. No **Gerenciador de soluções**, abra o menu de atalho para  **Employees. xsd** e escolha  **Exibir código**.
 
 5. Substitua o conteúdo do arquivo **Employees. xsd** pelo esquema a seguir.
 
@@ -225,7 +227,7 @@ ms.locfileid: "85544437"
 
 ### <a name="to-add-a-custom-xml-part-to-the-document"></a>Para adicionar uma parte XML personalizada ao documento
 
-1. No **Gerenciador de soluções**, abra o menu de atalho para  **ThisDocument.cs** ou **ThisDocument. vb**e escolha **Exibir código**.
+1. No **Gerenciador de soluções**, abra o menu de atalho para  **ThisDocument.cs** ou **ThisDocument. vb** e escolha **Exibir código**.
 
 2. Adicione as seguintes declarações à `ThisDocument` classe. Esse código declara vários objetos que serão usados para adicionar uma parte XML personalizada ao documento.
 
@@ -316,7 +318,7 @@ ms.locfileid: "85544437"
 
 - Use controles de conteúdo para proteger partes de um documento. Para obter mais informações, consulte [como: proteger partes de documentos usando controles de conteúdo](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Controles de conteúdo](../vsto/content-controls.md)
 - [Como: adicionar controles de conteúdo a documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md)

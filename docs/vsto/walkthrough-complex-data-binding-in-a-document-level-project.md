@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: ligação de dados complexa em um projeto de nível de documento'
+description: Saiba como você pode associar várias células em uma planilha do Microsoft Excel a campos no banco de dados Northwind SQL Server.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7aba307bcd76cc055e42c11418d42f3dd0cfba1f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 988394595e8aa4710a22e1fedf22a921481c7396
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584315"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527113"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Walkthrough: ligação de dados complexa em um projeto de nível de documento
   Este tutorial demonstra os conceitos básicos da ligação de dados complexa em um projeto de nível de documento. Você pode associar várias células em uma Microsoft Office planilha do Excel a campos no banco de dados Northwind SQL Server.
@@ -65,7 +67,7 @@ ms.locfileid: "91584315"
 
 ### <a name="to-create-the-data-source"></a>Para criar a fonte de dados
 
-1. Se a janela **fontes de dados** não estiver visível, exiba-a por, na barra de menus, escolhendo **Exibir**  >  **outras**  >  **fontes de dados**do Windows.
+1. Se a janela **fontes de dados** não estiver visível, exiba-a por, na barra de menus, escolhendo **Exibir**  >  **outras**  >  **fontes de dados** do Windows.
 
 2. Escolha **Adicionar nova fonte de dados** para iniciar o **Assistente de configuração de fonte de dados**.
 
@@ -115,7 +117,7 @@ ms.locfileid: "91584315"
 
 ### <a name="to-initialize-the-control"></a>Para inicializar o controle
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Plan1. vb** ou **Sheet1.cs**e clique em **Exibir código** no menu de atalho.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Plan1. vb** ou **Sheet1.cs** e clique em **Exibir código** no menu de atalho.
 
 2. Adicione o código a seguir ao `Sheet1_Startup` método para definir o texto para o b `utton` .
 
@@ -151,7 +153,7 @@ ms.locfileid: "91584315"
 
 1. Clique na célula **B7**, que deve conter o nome **Davolio**.
 
-2. Digite o nome **Anderson**e pressione **Enter**.
+2. Digite o nome **Anderson** e pressione **Enter**.
 
 ### <a name="to-modify-a-column-header"></a>Para modificar um cabeçalho de coluna
 
@@ -175,17 +177,17 @@ ms.locfileid: "91584315"
 
 1. Selecione uma célula dentro do objeto de lista.
 
-    Uma nova linha é exibida na parte inferior da lista, com um asterisco ( **\*** ) na primeira célula da nova linha.
+    Uma nova linha é exibida na parte inferior da lista, com um asterisco (* *\** _) na primeira célula da nova linha.
 
 2. Adicione as seguintes informações na linha vazia.
 
-   |IDFuncionário|LastName|Nome|Título|
+   |EmployeeID|LastName|Nome|Título|
    |----------------|--------------|---------------|-----------|
    |10|Ito|Shu|Gerente de Vendas|
 
 ### <a name="to-delete-rows"></a>Para excluir linhas
 
-- Clique com o botão direito do mouse no número 16 (linha 16) no lado esquerdo da planilha e clique em **excluir**.
+- Clique com o botão direito do mouse no número 16 (linha 16) no lado esquerdo da planilha e, em seguida, clique em _ * excluir * *.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>Para classificar as linhas na lista
 
@@ -224,7 +226,7 @@ ms.locfileid: "91584315"
 
 - Crie uma relação mestre/detalhes entre um campo e uma tabela. Para obter mais informações, consulte [Walkthrough: criar uma relação de detalhes mestre usando um conjunto de dados em cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dados em soluções do Office](../vsto/data-in-office-solutions.md)
 - [Walkthrough: vinculação de dados simples em um projeto de nível de documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)

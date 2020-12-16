@@ -1,5 +1,7 @@
 ---
 title: Configurar informações de configuração para uma solução do Office
+description: Saiba como você pode usar arquivos de configuração para definir configurações específicas para suas soluções de Microsoft Office.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e47ad00e3f9e90913784196894d514a755699864
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3cff5e6f559245e361eda0db6623312917891969
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91581033"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528154"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Como definir informações de configuração para uma solução do Office
   Você pode usar arquivos de configuração para definir configurações específicas para suas soluções do Office. Você pode especificar configurações como política de associação de assembly, objetos de comunicação remota, depuração e configurações de rastreamento.
@@ -44,7 +46,7 @@ ms.locfileid: "91581033"
 
    Não há considerações especiais para o uso de arquivos de configuração com projetos do Office.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Esquema do arquivo de configuração para o .NET Framework](/dotnet/framework/configure-apps/file-schema/index)
 - [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)
 - [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)

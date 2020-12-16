@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: criar seu primeiro suplemento do VSTO para Word'
+description: Crie um suplemento de nível de aplicativo para o Microsoft Word. Esse recurso está disponível para o próprio aplicativo, independentemente de quais documentos estão abertos.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed5c5e5b03ce7ee0ffbd361b896f288f6b93a806
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dc136b1c58f9c627787045b1259d07e27a6b8ad
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838303"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527869"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Walkthrough: criar seu primeiro suplemento do VSTO para Word
   Este guia introdutório mostra como criar um suplemento do VSTO para o Microsoft Office Word. Os recursos que você cria nesse tipo de solução estão disponíveis para o próprio aplicativo, independentemente de quais documentos estão abertos.
@@ -52,9 +54,9 @@ ms.locfileid: "90838303"
 
 1. Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. No menu **Arquivo** , aponte para **Novo**e clique em **Projeto**.
+2. No menu **Arquivo** , aponte para **Novo** e clique em **Projeto**.
 
-3. No painel modelos, expanda **Visual C#** ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.
+3. No painel modelos, expanda **Visual C#** ou **Visual Basic** e, em seguida, expanda **Office/SharePoint**.
 
 4. No nó do **Office/SharePoint** expandido, selecione o nó **suplementos do Office** .
 
@@ -133,7 +135,7 @@ ms.locfileid: "90838303"
 
 - Implantando suplementos do VSTO para Word: [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluções do Word](../vsto/word-solutions.md)
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)

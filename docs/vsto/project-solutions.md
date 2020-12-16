@@ -1,5 +1,7 @@
 ---
 title: Soluções de projeto
+description: Saiba como você pode usar os suplementos do VSTO para automatizar o projeto, estender os recursos do projeto ou personalizar a interface do usuário do projeto.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 84dfe7cf86df2139b06a320d1c6441665a08a1b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c44e1208daaef11cb7fd9bd22e3e3ae574ca610d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985631"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527501"
 ---
 # <a name="project-solutions"></a>Soluções de projeto
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] fornece modelos de projeto que você pode usar para criar suplementos do VSTO para Microsoft Office projeto. Você pode usar os suplementos do VSTO para automatizar o projeto, estender os recursos do projeto ou personalizar a interface do usuário do projeto.
@@ -62,7 +64,7 @@ ms.locfileid: "72985631"
 
  Para obter mais informações sobre como personalizar a interface do usuário do Project e de outros aplicativos Microsoft Office, consulte [personalização da interface do usuário do Office](../vsto/office-ui-customization.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Walkthrough: criar seu primeiro suplemento do VSTO para o projeto](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
 - [Introdução à programação de suplementos do VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
 - [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)

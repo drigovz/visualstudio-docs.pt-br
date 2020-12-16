@@ -1,5 +1,7 @@
 ---
 title: Soluções do PowerPoint
+description: Saiba que o Visual Studio fornece modelos de projeto que você pode usar para criar suplementos do VSTO para o Microsoft PowerPoint.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c41b2942b53c97222abf7308b6706a7cdc734df1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e297b0d269d5ff0bff0deeadd6bd346de00a324
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985668"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528045"
 ---
 # <a name="powerpoint-solutions"></a>Soluções do PowerPoint
   O Visual Studio fornece modelos de projeto que você pode usar para criar suplementos do VSTO para Microsoft Office PowerPoint. Você pode usar os suplementos do VSTO para automatizar o PowerPoint, estender recursos do PowerPoint ou personalizar a interface do usuário do PowerPoint.
@@ -70,7 +72,7 @@ ms.locfileid: "72985668"
 
  Para obter mais informações sobre como personalizar a interface do usuário do PowerPoint e de outros aplicativos Microsoft Office, consulte [personalização da interface do usuário do Office](office-ui-customization.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Walkthrough: criar seu primeiro suplemento do VSTO para PowerPoint](walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
 - [Introdução à programação de suplementos do VSTO](getting-started-programming-vsto-add-ins.md)
 - [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](office-solutions-development-overview-vsto.md)

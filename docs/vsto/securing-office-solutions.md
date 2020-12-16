@@ -1,5 +1,7 @@
 ---
 title: Proteger soluções do Office
+description: Saiba como o modelo de segurança para soluções do Office envolve várias tecnologias, incluindo o Ferramentas do Visual Studio para o tempo de execução do Office e o ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31a17fdf51e838405c93efca79d7994cd40ece5c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bedb49a6d5d17e3c9f79a652183c2b4cd748ff6c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978572"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528485"
 ---
 # <a name="secure-office-solutions"></a>Proteger soluções do Office
   O modelo de segurança para soluções do Office envolve várias tecnologias: o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] , a central de confiabilidade em Microsoft Office e a zona de sites restritos do Internet Explorer. As seções a seguir descrevem como os diferentes recursos de segurança funcionam:
@@ -62,7 +64,7 @@ ms.locfileid: "62978572"
 ### <a name="document-level-solutions"></a>Soluções de nível de documento
  O caminho totalmente qualificado de um documento deve ser adicionado à lista de locais confiáveis no aplicativo Microsoft Office se você estiver desenvolvendo os seguintes tipos de projetos:
 
-- Soluções de nível de documento que estão em um compartilhamento de arquivos de rede, como * \\ \Servername\Sharename*.
+- Soluções de nível de documento que estão em um compartilhamento de arquivos de rede, como *\\ \Servername\Sharename*.
 
 - Soluções de nível de documento para o Word que usam arquivos *. doc* ou *. docm* .
 
@@ -100,7 +102,7 @@ ms.locfileid: "62978572"
 
  ![Segurança do VSTO-usando o programa de instalação para instalar o](../vsto/media/setup-vstoinstaller.png "Segurança do VSTO-usando o programa de instalação para instalar o")
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Conceder confiança às soluções do Office](../vsto/granting-trust-to-office-solutions.md)
 - [Conceder confiança aos documentos](../vsto/granting-trust-to-documents.md)

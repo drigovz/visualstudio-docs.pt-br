@@ -1,5 +1,7 @@
 ---
 title: 'Como: proteger pastas de trabalho programaticamente'
+description: Saiba como você pode proteger uma pasta de trabalho do Microsoft Excel para que os usuários não possam adicionar ou excluir planilhas e também desproteger a pasta de trabalho programaticamente.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee7444c63c2d774e9b22ea612049f09429729c79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b35b0fc234c3015275650ddb51e8ea3011c97a6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537625"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528287"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Como: proteger pastas de trabalho programaticamente
   Você pode proteger um Microsoft Office pasta de trabalho do Excel para que os usuários não possam adicionar ou excluir planilhas e também desproteger a pasta de trabalho programaticamente. Opcionalmente, você pode especificar uma senha, indicar se deseja que a estrutura seja protegida (para que os usuários não possam mover as planilhas) e indicar se deseja que o Windows da pasta de trabalho seja protegido.
@@ -65,7 +67,7 @@ ms.locfileid: "85537625"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#7)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#7)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Trabalhar com pastas de trabalho](../vsto/working-with-workbooks.md)
 - [Como: proteger planilhas programaticamente](../vsto/how-to-programmatically-protect-worksheets.md)
 - [Como: ocultar planilhas programaticamente](../vsto/how-to-programmatically-hide-worksheets.md)

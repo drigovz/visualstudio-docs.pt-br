@@ -1,5 +1,7 @@
 ---
 title: Visão geral do modelo de objeto do Visio
+description: Saiba como você pode interagir com o modelo de objeto do Visio para desenvolver soluções do Office para o Microsoft Visio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 88695511d22e38262dc969d66e469441c9c3ac47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9278cede2dc7f105b2741d5d63b01b4cd966c790
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985477"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528376"
 ---
 # <a name="visio-object-model-overview"></a>Visão geral do modelo de objeto do Visio
   Para desenvolver soluções do Office para Microsoft Office Visio, você pode interagir com o modelo de objeto do Visio. Esse modelo de objeto consiste em classes e interfaces que são fornecidas no assembly de interoperabilidade primário para o Visio e são definidas no `Microsoft.Office.Interop.Visio` namespace.
@@ -76,7 +78,7 @@ ms.locfileid: "72985477"
 
  Para obter mais informações, consulte [visão geral de classes e interfaces nos assemblies de interoperabilidade primária do Office](/previous-versions/office/office-12/ms247299(v=office.12)) e assemblies de [interoperabilidade primária do Office](../vsto/office-primary-interop-assemblies.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Soluções do Visio](../vsto/visio-solutions.md)
 - [Trabalhar com documentos do Visio](../vsto/working-with-visio-documents.md)
 - [Trabalhar com formas do Visio](../vsto/working-with-visio-shapes.md)

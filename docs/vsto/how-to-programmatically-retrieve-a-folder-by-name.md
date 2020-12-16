@@ -1,5 +1,7 @@
 ---
 title: 'Como: recuperar programaticamente uma pasta por nome'
+description: Saiba como você pode usar o Visual Studio para recuperar programaticamente uma pasta por nome e, em seguida, exibir o conteúdo da pasta.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 901de848b22f344ded2d71b11e9859917b8382d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4e615897fedcbfa41ad7958e93354718d9ccfbc
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547102"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528574"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Como: recuperar programaticamente uma pasta por nome
   Este exemplo obtém uma referência a uma pasta personalizada nomeada e, em seguida, exibe o conteúdo da pasta.
@@ -32,7 +34,7 @@ ms.locfileid: "85547102"
 
 - Uma pasta chamada TestFolder.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Trabalhar com pastas](../vsto/working-with-folders.md)
 - [Como: pesquisar programaticamente em uma pasta específica](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
 - [Como: pesquisar programaticamente por um contato específico](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

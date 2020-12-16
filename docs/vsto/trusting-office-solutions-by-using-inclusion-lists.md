@@ -1,5 +1,7 @@
 ---
 title: Confiar em soluções do Office usando listas de inclusão
+description: Saiba como as listas de inclusão permitem que os usuários conceda confiança às soluções do Office que são assinadas com um certificado que identifica o Publicador.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a4787831be31e2f91d668d4e3e7ca91496d7595a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3bb5c111b4c75298ee55bc64dfbb2d0dd4b6c8b5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985541"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527470"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>Confiar em soluções do Office usando listas de inclusão
   As listas de inclusão permitem que os usuários conceda confiança às soluções do Office que são assinadas com um certificado que identifica o Publicador. As listas de inclusão são específicas do usuário e podem ser usadas para personalizações em nível de documento e suplementos do VSTO.
@@ -42,6 +44,6 @@ ms.locfileid: "72985541"
 ## <a name="structure-of-the-inclusion-list"></a>Estrutura da lista de inclusão
  Uma entrada de lista de inclusão válida tem duas partes: um caminho para o manifesto de implantação e a chave pública usada para assinar a solução. Depois que uma solução é adicionada à lista de inclusão, ela é considerada confiável. Quando a solução do Office é executada, o aplicativo do Office compara a chave pública na lista de inclusão com a chave de assinatura no manifesto de implantação para verificar se a solução que está em execução no momento é a mesma que a versão confiável original.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Conceder confiança às soluções do Office](../vsto/granting-trust-to-office-solutions.md)
 - [Proteger soluções do Office](../vsto/securing-office-solutions.md)

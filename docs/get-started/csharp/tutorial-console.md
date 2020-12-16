@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 691e6c3b994649a9f0fa2d0e92a990f317a16208
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b28d87cc0842d5a3de8634ae50378915196366ff
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88508172"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527919"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: criar um aplicativo de console C# simples no Visual Studio
 
@@ -49,13 +49,13 @@ Para começar, criaremos um projeto de aplicativo em C#. O tipo de projeto inclu
 2. Na barra de menus superior, escolha **arquivo**  >  **novo**  >  **projeto**.
    (Como alternativa, pressione **Ctrl** + **Shift** + **N**).
 
-3. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **C#** e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo de Console (.NET Core)**. Em seguida, nomeie o arquivo como ***Calculator***.
+3. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **C#** e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo de Console (.NET Core)**. Em seguida, nomeie o arquivo **_Calculator_* _.
 
    ![Modelo de projeto do aplicativo do console (.NET Core) na caixa de diálogo Novo projeto no IDE do Visual Studio](./media/new-project-csharp-calculator-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>Adicionar uma carga de trabalho (opcional)
 
-Se o modelo de projeto **Aplicativo do Console (.NET Core)** não for exibido, você poderá obtê-lo adicionando a carga de trabalho **Desenvolvimento .NET Core de multiplataforma**. Veja como.
+Se você não vir o modelo de projeto _ *aplicativo de console (.NET Core)**, poderá obtê-lo adicionando a carga de trabalho de **desenvolvimento de plataforma cruzada do .NET Core** . Veja como.
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Opção 1: usar a caixa de diálogo Novo Projeto
 
@@ -108,7 +108,7 @@ Se o modelo de projeto **Aplicativo do Console (.NET Core)** não for exibido, v
    
 ::: moniker-end
 
-## <a name="create-the-app"></a>Criar o aplicativo
+## <a name="create-the-app"></a>Crie o aplicativo
 
 Primeiro, exploraremos os cálculos matemáticos básicos de inteiro em C#. Em seguida, adicionaremos o código para criar uma calculadora básica. Depois disso, depuraremos o aplicativo para encontrar e corrigir erros. E, por fim, refinaremos o código para torná-lo mais eficiente.
 
@@ -311,7 +311,7 @@ Vamos alterar o código para tratar esse erro.
 
 Agora, quando você dividir qualquer número por zero, o aplicativo solicitará outro número. Melhor ainda: não irá parar de perguntar até que você forneça um número diferente de zero.
 
-   ![O editor de códigos do Visual Studio mostra o erro de divisão por zero](./media/csharp-console-calculator-dividebyzero.png)
+   ![Correção do erro de divisão por zero](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>Corrigir o erro de "formato"
 
@@ -600,12 +600,27 @@ namespace Calculator
 
 ## <a name="next-steps"></a>Próximas etapas
 
+:::moniker range="vs-2017"
+
+Continue com mais tutoriais:
+
+> [!div class="nextstepaction"]
+> [Tutoriais do C#](/dotnet/csharp/tutorials)
+
+> [!div class="nextstepaction"]
+> [Fazer um tour pelo IDE do Visual Studio](../visual-studio-ide.md)
+
+:::moniker-end
+
+:::moniker range="vs-2019"
+
 Continue com a segunda parte deste tutorial:
 
 > [!div class="nextstepaction"]
 > [Continuar com a parte 2](tutorial-console-part-2.md)
+:::moniker-end
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
 * [Aprenda a depurar o código C# no Visual Studio](tutorial-debugger.md)

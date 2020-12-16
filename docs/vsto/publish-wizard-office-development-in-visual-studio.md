@@ -1,5 +1,7 @@
 ---
 title: Assistente de publicação (desenvolvimento do Office no Visual Studio)
+description: Saiba como você pode usar o assistente de publicação para copiar arquivos de solução para um local especificado, criar os arquivos de manifesto e criar um programa de instalação no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be5742533280ab2ff7da04ee287b0534980d9436
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 25821a0f245f2f0ed30fcbfb10137a772dd0dd01
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810974"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528016"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Assistente de publicação (desenvolvimento do Office no Visual Studio)
   Use o **Assistente de publicação** para copiar arquivos de solução para um local especificado, criar os arquivos de manifesto e criar um programa de instalação.
@@ -39,14 +41,14 @@ ms.locfileid: "90810974"
 
 - Um caminho relativo ou absoluto no formato padrão do Windows, como *C:\deploy\myapplication* ou *\MyApplication*.
 
-- Um caminho UNC (Convenção de nomenclatura universal), como * \\ \ServerName\MyApplication \\ *.
+- Um caminho UNC (Convenção de nomenclatura universal), como *\\ \ServerName\MyApplication \\*.
 
 - Uma URL de um site da Web, como `http://www.contoso.com/MyApplication` .
 
   Por padrão, o local de publicação é *http://localhost/projectname/* se você tiver o IIS instalado ou o diretório Publish \ se não tiver o IIS instalado.
 
 > [!NOTE]
-> Há mais considerações se o computador de destino estiver executando o Windows Vista. Você deve ser um administrador no computador com Windows Vista para usar a opção de publicação local. Além disso, o local padrão é sempre o diretório de *publicação \\ * , independentemente de você ter o IIS instalado.
+> Há mais considerações se o computador de destino estiver executando o Windows Vista. Você deve ser um administrador no computador com Windows Vista para usar a opção de publicação local. Além disso, o local padrão é sempre o diretório de *publicação \\* , independentemente de você ter o IIS instalado.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Qual é o caminho de instalação padrão nos computadores dos usuários finais?
  O caminho de instalação é opcional. Você pode definir o caminho de instalação mais tarde, se preferir. Para obter detalhes, consulte [como alterar o caminho de instalação de uma solução do Office](/previous-versions/bb608626(v=vs.110)).
@@ -61,7 +63,7 @@ ms.locfileid: "90810974"
 
  O Visual Studio não grava o CD ou DVD. Você deve copiar a saída para um CD ou DVD manualmente.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Implantar uma solução do Office usando o ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
 - [Publicar página, designer de projeto &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
 - [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)

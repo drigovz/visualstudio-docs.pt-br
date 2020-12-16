@@ -1,5 +1,7 @@
 ---
 title: Associar a dados do serviço no projeto de suplemento do VSTO
+description: Saiba como adicionar controles a um documento do Microsoft Word, associar os controles aos dados recuperados do serviço de conteúdo do MSDN e responder a eventos em tempo de execução.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75d984617b56525e640a74aa4badd6f520c0b892
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b65308cfc0ba4dee33dd6b20d3fd4028e9ea22e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72381313"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527475"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Walkthrough: associar dados de um serviço em um projeto de suplemento do VSTO
   Você pode associar dados a controles de host em projetos de suplemento do VSTO. Este tutorial demonstra como adicionar controles a um Microsoft Office documento do Word, associar os controles aos dados recuperados do serviço de conteúdo do MSDN e responder a eventos em tempo de execução.
@@ -61,7 +63,7 @@ ms.locfileid: "72381313"
 
 1. No menu **Dados**, clique em **Adicionar Nova Fonte de Dados**.
 
-2. No **Assistente de configuração da fonte de dados**, clique em **serviço**e em **Avançar**.
+2. No **Assistente de configuração da fonte de dados**, clique em **serviço** e em **Avançar**.
 
 3. No campo **endereço** , digite a seguinte URL:
 
@@ -69,7 +71,7 @@ ms.locfileid: "72381313"
 
 4. Clique em **Ir**.
 
-5. No campo **namespace** , digite **ContentService**e clique em **OK**.
+5. No campo **namespace** , digite **ContentService** e clique em **OK**.
 
 6. Na caixa de diálogo **Assistente de adição de referência** , clique em **concluir**.
 
@@ -114,5 +116,5 @@ ms.locfileid: "72381313"
 
      As informações são baixadas do serviço de conteúdo do MTPS e exibidas dentro do controle de conteúdo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)

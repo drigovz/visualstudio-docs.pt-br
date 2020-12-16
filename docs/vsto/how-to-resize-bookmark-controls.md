@@ -1,5 +1,7 @@
 ---
 title: 'Como: redimensionar controles de indicador'
+description: Saiba como você pode usar o Visual Studio para definir o tamanho de um controle de indicador ao adicioná-lo a um documento do Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cc7b26bb767c233ed8699519261d4b5b708306b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d577f825337862de4ef967bb4f92f61ebbb0b45
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545854"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528200"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Como: redimensionar controles de indicador
   Você define o tamanho de um <xref:Microsoft.Office.Tools.Word.Bookmark> controle ao adicioná-lo a um Microsoft Office documento do Word. Você também pode redimensioná-lo em um momento posterior.
@@ -87,7 +89,7 @@ ms.locfileid: "85545854"
 
 3. Na caixa de diálogo **indicador** , selecione o nome do indicador que você deseja redimensionar e clique em **Adicionar**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Como: adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [Automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Visão geral de itens de host e controles de host](../vsto/host-items-and-host-controls-overview.md)

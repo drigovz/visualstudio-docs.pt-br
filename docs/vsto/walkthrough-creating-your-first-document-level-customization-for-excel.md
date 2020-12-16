@@ -1,5 +1,7 @@
 ---
 title: Criar sua primeira personalização em nível de documento para o Excel
+description: Crie uma personalização em nível de documento para o Microsoft Excel. Os recursos que você cria nesse tipo de solução estão disponíveis somente quando uma pasta de trabalho específica está aberta.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b75bf6894bff4e5fa8d6ac17ed537f15041b3ede
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 4183e84a930957b7cf87a6cc1e6fabcb21420785
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584996"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527953"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Walkthrough: criar sua primeira personalização em nível de documento para o Excel
 
@@ -56,9 +58,9 @@ ms.locfileid: "91584996"
 
 1. Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. No menu **Arquivo** , aponte para **Novo**e clique em **Projeto**.
+2. No menu **Arquivo** , aponte para **Novo** e clique em **Projeto**.
 ::: moniker range="vs-2017"
-3. No painel modelos, expanda **Visual C#** ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.
+3. No painel modelos, expanda **Visual C#** ou **Visual Basic** e, em seguida, expanda **Office/SharePoint**.
 
 4. No nó do **Office/SharePoint** expandido, selecione o nó **suplementos do VSTO** .
 
@@ -68,7 +70,7 @@ ms.locfileid: "91584996"
 
 7. Clique em **OK**.
 
-8. Selecione **criar um novo documento** no **Assistente do ferramentas do Visual Studio para Office Project**e clique em **OK**.
+8. Selecione **criar um novo documento** no **Assistente do ferramentas do Visual Studio para Office Project** e clique em **OK**.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 3. Na caixa de diálogo **criar um novo projeto** , selecione o projeto de **pasta de trabalho do VSTO do Excel** .
@@ -79,7 +81,7 @@ ms.locfileid: "91584996"
 
 5. Digite **FirstWorkbookCustomization** na caixa **nome** do diálogo **configurar seu novo projeto** e clique em **criar**.
 
-6. Selecione **criar um novo documento** no **Assistente do ferramentas do Visual Studio para Office Project**e clique em **OK**.
+6. Selecione **criar um novo documento** no **Assistente do ferramentas do Visual Studio para Office Project** e clique em **OK**.
 ::: moniker-end
    - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o projeto **FirstWorkbookCustomization** e adiciona os arquivos a seguir ao projeto.
 
@@ -115,7 +117,7 @@ ms.locfileid: "91584996"
 
 ### <a name="to-add-text-to-a-worksheet-by-using-the-designer"></a>Para adicionar texto a uma planilha usando o designer
 
-1. Na planilha que está aberta no designer, selecione a célula **a1**e digite o texto a seguir.
+1. Na planilha que está aberta no designer, selecione a célula **a1** e digite o texto a seguir.
 
      **Esse texto foi adicionado usando o designer.**
 
@@ -132,7 +134,7 @@ ms.locfileid: "91584996"
 
 ### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>Para adicionar uma segunda linha de texto à planilha usando código
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Plan1**e clique em **Exibir código**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Plan1** e clique em **Exibir código**.
 
      O arquivo de código é aberto no Visual Studio.
 
@@ -183,7 +185,7 @@ ms.locfileid: "91584996"
 
 - Implantando personalizações em nível de documento para [o Excel: implante uma solução do Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluções do Excel](../vsto/excel-solutions.md)

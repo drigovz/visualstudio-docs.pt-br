@@ -1,5 +1,7 @@
 ---
 title: Visão geral do modelo de objeto do Outlook
+description: Saiba como você pode interagir com os objetos que são fornecidos pelo modelo de objeto do Outlook para desenvolver suplementos do VSTO para o Microsoft Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6545815a0a24a3ba8579298151194fdd81edee77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83ada85ba346e83e5bc5ebc01e91b11be0e844e1
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985688"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528049"
 ---
 # <a name="outlook-object-model-overview"></a>Visão geral do modelo de objeto do Outlook
   Para desenvolver suplementos do VSTO para Microsoft Office Outlook, você pode interagir com os objetos que são fornecidos pelo modelo de objeto do Outlook. O modelo de objeto do Outlook fornece classes e interfaces que representam itens na interface do usuário. Por exemplo, o <xref:Microsoft.Office.Interop.Outlook.Application> objeto representa o aplicativo inteiro, o <xref:Microsoft.Office.Interop.Outlook.Folder> objeto representa uma pasta que contém mensagens de email ou outros itens, e o <xref:Microsoft.Office.Interop.Outlook.MailItem> objeto representa uma mensagem de email.
@@ -97,7 +99,7 @@ ms.locfileid: "72985688"
  Para obter um exemplo que mostra como acessar um padrão <xref:Microsoft.Office.Interop.Outlook.Folder> e criar um novo <xref:Microsoft.Office.Interop.Outlook.Folder> , consulte [como: criar programaticamente itens de pasta personalizados](../vsto/how-to-programmatically-create-custom-folder-items.md).
 
 ### <a name="mailitem-object"></a>Objeto MailItem
- O <xref:Microsoft.Office.Interop.Outlook.MailItem> objeto representa uma mensagem de email. <xref:Microsoft.Office.Interop.Outlook.MailItem> Os objetos geralmente estão em pastas, como **inbox**, **Items enviados**e caixa de **saída**. <xref:Microsoft.Office.Interop.Outlook.MailItem> expõe propriedades e métodos que podem ser usados para criar e enviar mensagens de email.
+ O <xref:Microsoft.Office.Interop.Outlook.MailItem> objeto representa uma mensagem de email. <xref:Microsoft.Office.Interop.Outlook.MailItem> Os objetos geralmente estão em pastas, como **inbox**, **Items enviados** e caixa de **saída**. <xref:Microsoft.Office.Interop.Outlook.MailItem> expõe propriedades e métodos que podem ser usados para criar e enviar mensagens de email.
 
  Para obter um exemplo que mostra como criar uma mensagem de email, consulte [como: criar programaticamente um item de email](../vsto/how-to-programmatically-create-an-e-mail-item.md).
 
@@ -127,7 +129,7 @@ ms.locfileid: "72985688"
 ### <a name="vba-object-model-reference"></a>Referência de modelo de objeto VBA
  A referência do modelo de objeto do VBA documenta o modelo de objeto do Outlook conforme ele é exposto ao código Visual Basic for Applications (VBA). Para obter mais informações, consulte [referência de modelo de objeto do Outlook 2010](/office/vba/api/overview/Outlook/object-model).
 
- Todos os objetos e membros na referência do modelo de objeto do VBA correspondem a tipos e membros no PIA do Outlook. Por exemplo, o objeto inspector na referência de modelo de objeto do VBA corresponde ao <xref:Microsoft.Office.Interop.Outlook.Inspector> objeto no pia do Outlook. Embora a referência de modelo de objeto do VBA Forneça exemplos de código para a maioria das propriedades, métodos e eventos, você deve converter o código VBA nesta referência para Visual Basic ou Visual C# se quiser usá-los em um projeto de suplemento do VSTO do Outlook criado usando o Visual Studio.
+ Todos os objetos e membros na referência do modelo de objeto do VBA correspondem a tipos e membros no PIA do Outlook. Por exemplo, o objeto inspector na referência de modelo de objeto do VBA corresponde ao <xref:Microsoft.Office.Interop.Outlook.Inspector> objeto no pia do Outlook. Embora a referência de modelo de objeto do VBA Forneça exemplos de código para a maioria das propriedades, métodos e eventos, você deve converter o código VBA nesta referência para Visual Basic ou Visual C# se quiser usá-los em um projeto do VSTO do Outlook Add-In que você cria usando o Visual Studio.
 
 ### <a name="related-topics"></a>Tópicos relacionados
 

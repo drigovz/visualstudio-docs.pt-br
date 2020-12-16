@@ -1,5 +1,7 @@
 ---
 title: Propriedades em projetos do Office
+description: Saiba mais sobre as propriedades que estão disponíveis para projetos do Office no Visual Studio por meio do janela Propriedades.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9fc2a0774206eac0c9295a425d81555ffdd3cac8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdc54de3935646e36f9d4f09727037de4c373c92
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62561353"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528024"
 ---
 # <a name="properties-in-office-projects"></a>Propriedades em projetos do Office
   Há várias propriedades importantes que estão disponíveis para projetos do Office no Visual Studio. Essas propriedades podem ser acessadas na janela **Propriedades** .
@@ -51,7 +53,7 @@ ms.locfileid: "62561353"
 
  Use a propriedade **value2** na janela **Propriedades** para associar a <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> Propriedade do <xref:Microsoft.Office.Tools.Excel.NamedRange> a um campo em sua fonte de dados.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)
 - [Visão geral dos modelos do Office Project](../vsto/office-project-templates-overview.md)
 - [Eventos em projetos do Office](../vsto/events-in-office-projects.md)

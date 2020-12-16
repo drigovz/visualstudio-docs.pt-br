@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: chamar o código do VBA em um projeto Visual Basic'
+description: Saiba como chamar um método em uma personalização em nível de documento para o Microsoft Word do código Visual Basic for Applications (VBA) no documento.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad50ed0f55a148a05c0fedc6fe0ccb0dd5b890b9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 6016dbf53413f6e55c88edfe930af677472bdaf5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298269"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527372"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Walkthrough: chamar o código do VBA em um projeto Visual Basic
   Este tutorial demonstra como chamar um método em uma personalização em nível de documento para Microsoft Office o Word do código Visual Basic for Applications (VBA) no documento. O procedimento envolve três etapas básicas: adicionar um método à `ThisDocument` classe de item de host, expor o método ao código VBA e, em seguida, chamar o método do código VBA no documento.
@@ -96,9 +98,9 @@ ms.locfileid: "92298269"
 
 1. Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. No menu **Arquivo** , aponte para **Novo**e clique em **Projeto**. Se o IDE estiver definido para usar Visual Basic configurações de desenvolvimento, no menu **arquivo** , clique em **novo projeto**.
+2. No menu **Arquivo** , aponte para **Novo** e clique em **Projeto**. Se o IDE estiver definido para usar Visual Basic configurações de desenvolvimento, no menu **arquivo** , clique em **novo projeto**.
 
-3. No painel modelos, expanda **Visual Basic**e, em seguida, expanda **Office/SharePoint**.
+3. No painel modelos, expanda **Visual Basic** e, em seguida, expanda **Office/SharePoint**.
 
 4. Selecione o nó **suplementos do Office** .
 
@@ -110,7 +112,7 @@ ms.locfileid: "92298269"
 
      O **Assistente de ferramentas do Visual Studio para o Office Project** é aberto.
 
-8. Selecione **copiar um documento existente**e, na caixa **caminho completo do documento existente** , especifique o local do documento **DocumentWithVBA** que você criou anteriormente. Se você estiver usando seu próprio documento habilitado para macro, especifique o local deste documento.
+8. Selecione **copiar um documento existente** e, na caixa **caminho completo do documento existente** , especifique o local do documento **DocumentWithVBA** que você criou anteriormente. Se você estiver usando seu próprio documento habilitado para macro, especifique o local deste documento.
 
 9. Clique em **Concluir**.
 
@@ -152,7 +154,7 @@ ms.locfileid: "92298269"
 
 ### <a name="to-add-a-method-to-the-thisdocument-class"></a>Para adicionar um método à classe ThisDocument
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **ThisDocument. vb**e clique em **Exibir código**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **ThisDocument. vb** e clique em **Exibir código**.
 
      O arquivo **ThisDocument. vb** é aberto no editor de código.
 
@@ -216,7 +218,7 @@ ms.locfileid: "92298269"
 
 - Chame o código em um suplemento do VSTO do VBA. Para obter mais informações, consulte [Walkthrough: chamar código em um suplemento do VSTO do VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Combine personalizações do VBA e no nível do documento](../vsto/combining-vba-and-document-level-customizations.md)
 - [Programar personalizações em nível de documento](../vsto/programming-document-level-customizations.md)
 - [Como: expor código ao VBA em um projeto Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)

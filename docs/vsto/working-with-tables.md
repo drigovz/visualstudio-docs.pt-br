@@ -1,5 +1,7 @@
 ---
 title: Trabalhar com tabelas
+description: Saiba mais sobre os procedimentos passo a passo e exemplos de código para usar o modelo de objeto do Microsoft Word para trabalhar com tabelas em projetos do Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1102a996f06634396f8bec3a02400fa952810e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27fdc776589879af6757967b18a7cac47f9f66df
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815346"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526862"
 ---
 # <a name="work-with-tables"></a>Trabalhar com tabelas
   Os tópicos nesta seção fornecem procedimentos passo a passo e exemplos de código para usar o modelo de objeto do Microsoft Office Word para trabalhar com tabelas em projetos do Office. Em alguns casos, as maneiras de executar essas tarefas nos suplementos do VSTO são diferentes das maneiras que você as executa em personalizações em nível de documento.
@@ -32,6 +34,6 @@ ms.locfileid: "62815346"
 |Adicione uma linha ou coluna a uma tabela.|[Como: adicionar linhas e colunas programaticamente a tabelas do Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)|
 |Adicione texto a uma célula e formate-o.|[Como: adicionar texto e formatação programaticamente a células em tabelas do Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)
 - [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)

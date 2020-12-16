@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: coletar dados usando um formulário do Windows'
+description: Abra um formulário do Windows de uma personalização em nível de documento para o Microsoft Excel, colete informações do usuário e grave essas informações em uma célula de planilha.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 893418ca5eb82e9466ea13a12088b38fd496e695
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58d6f58f732d4a52aade6ff3678842900f1c29cd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838352"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527165"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Walkthrough: coletar dados usando um formulário do Windows
   Este tutorial demonstra como abrir um formulário do Windows de uma personalização em nível de documento para Microsoft Office Excel, coletar informações do usuário e gravar essas informações em uma célula de planilha.
@@ -44,7 +46,7 @@ ms.locfileid: "90838352"
 
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto
 
-1. Crie um projeto de pasta de trabalho do Excel com o nome **WinFormInput**e selecione **criar um novo documento** no assistente. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Crie um projeto de pasta de trabalho do Excel com o nome **WinFormInput** e selecione **criar um novo documento** no assistente. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      O Visual Studio abre a nova pasta de trabalho do Excel no designer e adiciona o projeto **WinFormInput** ao **Gerenciador de soluções**.
 
@@ -71,7 +73,7 @@ ms.locfileid: "90838352"
 
 2. No menu **projeto** , clique em **Adicionar Windows Form**.
 
-3. Nomeie o formulário **GetInputString. vb** ou **GetInputString.cs**e clique em **Adicionar**.
+3. Nomeie o formulário **GetInputString. vb** ou **GetInputString.cs** e clique em **Adicionar**.
 
     O novo formulário é aberto no designer.
 
@@ -86,7 +88,7 @@ ms.locfileid: "90838352"
 
 #### <a name="to-display-the-form-and-collect-information"></a>Para exibir o formulário e coletar informações
 
-1. Clique com o botão direito do mouse em **ThisWorkbook. vb** ou **ThisWorkbook.cs** em **Gerenciador de soluções**e clique em **Exibir código**.
+1. Clique com o botão direito do mouse em **ThisWorkbook. vb** ou **ThisWorkbook.cs** em **Gerenciador de soluções** e clique em **Exibir código**.
 
 2. No <xref:Microsoft.Office.Tools.Excel.Workbook.Open> manipulador de eventos do `ThisWorkbook` , adicione o código a seguir para declarar uma variável para o formulário `GetInputString` e, em seguida, mostrar o formulário.
 
@@ -107,7 +109,7 @@ ms.locfileid: "90838352"
 
 ### <a name="to-send-information-to-the-worksheet"></a>Para enviar informações para a planilha
 
-1. Clique com o botão direito do mouse em **GetInputString** em **Gerenciador de soluções**e, em seguida, clique em **Designer de exibição**.
+1. Clique com o botão direito do mouse em **GetInputString** em **Gerenciador de soluções** e, em seguida, clique em **Designer de exibição**.
 
 2. Clique duas vezes no botão para abrir o arquivo de código com o manipulador de eventos do botão <xref:System.Windows.Forms.Control.Click> adicionado.
 
@@ -136,7 +138,7 @@ ms.locfileid: "90838352"
 
 - Modifique a interface do usuário de um aplicativo Microsoft Office de uma personalização no nível do documento ou um suplemento do VSTO. Para obter mais informações, consulte [personalização da interface do usuário do Office](../vsto/office-ui-customization.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)
 - [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)

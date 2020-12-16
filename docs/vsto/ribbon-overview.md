@@ -1,5 +1,7 @@
 ---
 title: Visão geral da faixa de faixas
+description: Saiba como a faixa de opção é uma maneira de organizar comandos relacionados para que eles sejam mais fáceis de localizar e como os comandos aparecem como controles na faixa de opção.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 668517705caa7ba6baef0b85305bf4470bc3b26b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca7f7757cddf89b97f7a374385ea834728f0e975
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985605"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527976"
 ---
 # <a name="ribbon-overview"></a>Visão geral da faixa de faixas
   A faixa de opção é uma maneira de organizar comandos relacionados para que eles sejam mais fáceis de localizar. Os comandos aparecem como controles na faixa de faixas. Os controles são organizados em *grupos* ao longo de uma faixa horizontal na borda superior de uma janela de aplicativo. Os grupos relacionados são organizados em guias.
@@ -93,7 +95,7 @@ ms.locfileid: "72985605"
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>Adicionar vários itens da faixa de faixas a um projeto
  Você pode adicionar mais de um item da faixa de faixas a um único projeto. Isso será útil se você quiser executar uma das duas tarefas a seguir:
 
-- Crie faixas de faixa para *inspetores*do Outlook. Para obter mais informações, consulte [personalizar uma faixa de visualização para o Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Crie faixas de faixa para *inspetores* do Outlook. Para obter mais informações, consulte [personalizar uma faixa de visualização para o Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
     > Um inspetor é uma janela que é aberta quando os usuários executam determinadas tarefas, como a criação de uma mensagem de email.

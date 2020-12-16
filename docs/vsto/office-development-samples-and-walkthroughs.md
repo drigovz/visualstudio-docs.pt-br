@@ -1,5 +1,7 @@
 ---
 title: Exemplos e orientações de desenvolvimento do Office
+description: Saiba mais sobre aplicativos de exemplo, código de exemplo e instruções passo a passo que mostram a sintaxe, a estrutura e as técnicas usadas para criar soluções do Office.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9a8e71395190647fa7a908949a186c511b24610
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b5b1c34ef295558c42d181032dcf3dd7c456289
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551674"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527729"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Exemplos e orientações de desenvolvimento do Office
   Esta seção contém aplicativos de exemplo, código de exemplo e instruções passo a passo que ilustram a sintaxe, a estrutura e as técnicas usadas para criar Microsoft Office soluções.

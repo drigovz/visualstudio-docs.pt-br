@@ -1,5 +1,7 @@
 ---
 title: XML da faixa de opções
+description: Saiba como usar o item da faixa de opção (XML) se desejar personalizar a faixa de palavras de uma forma que não seja suportada pelo item da faixa de opção (Visual Designer).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c9e1cf4c6af266495b3d85d96aa8cce1697cca7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838369"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528420"
 ---
 # <a name="ribbon-xml"></a>XML da faixa de opções
   O item da faixa de de (XML) permite que você personalize uma faixa de faixas usando XML. Use o item da faixa de opção (XML) se desejar personalizar a faixa de uma forma que não seja suportada pelo item da faixa de opção (Visual Designer). Para obter uma comparação do que você pode fazer com cada item, consulte [visão geral da faixa](../vsto/Ribbon-overview.md)de medida.
@@ -45,7 +47,7 @@ ms.locfileid: "90838369"
   Por padrão, esses arquivos adicionam um grupo personalizado à guia **suplementos** na faixa de bits.
 
 ## <a name="display-the-custom-ribbon-in-a-microsoft-office-application"></a>Exibir a faixa de Ribbon personalizada em um aplicativo Microsoft Office
- Depois de adicionar um item **da faixa (XML)** ao seu projeto, você deve adicionar o código à classe **ThisAddIn**, **ThisWorkbook**ou **ThisDocument** que substitui o `CreateRibbonExtensibilityObject` método e retorna a classe XML da faixa de forma para o aplicativo do Office.
+ Depois de adicionar um item **da faixa (XML)** ao seu projeto, você deve adicionar o código à classe **ThisAddIn**, **ThisWorkbook** ou **ThisDocument** que substitui o `CreateRibbonExtensibilityObject` método e retorna a classe XML da faixa de forma para o aplicativo do Office.
 
  O exemplo de código a seguir substitui o `CreateRibbonExtensibilityObject` método e retorna uma classe XML da faixa de opções chamada MyRibbon.
 
@@ -143,7 +145,7 @@ ms.locfileid: "90838369"
 |`OnLoad`|Atribui o <xref:Microsoft.Office.Core.IRibbonControl> parâmetro ao `Ribbon` campo. Microsoft Office aplicativos chamam esse método quando carregam a faixa de Ribbon personalizada. Você pode usar esse campo para atualizar dinamicamente a faixa de Ribbon personalizada. Para obter mais informações, consulte o artigo técnico [Personalizar a interface do usuário da faixa de forma do Office (2007) para desenvolvedores (parte 1 de 3)](/previous-versions/office/developer/office-2007/aa338202(v=office.12)).|
 |`GetResourceText`|Chamado pelo `GetCustomUI` método para obter o conteúdo do arquivo XML da faixa de faixas.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
 - [Walkthrough: criar uma guia personalizada usando o XML da faixa de uma](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
 - [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)

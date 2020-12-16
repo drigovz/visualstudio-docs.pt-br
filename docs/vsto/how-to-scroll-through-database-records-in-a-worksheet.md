@@ -1,5 +1,7 @@
 ---
 title: Como rolar por registros de banco de dados em uma planilha
+description: Saiba como você pode usar o designer para exibir um único campo de uma tabela de banco de dados em uma planilha do Microsoft Excel
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8127a5f61e292fb777be4854796535bbe01226aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 536a3cca0337e8879e64cbc3ffc15b8411c201b6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545789"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528167"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Como rolar por registros de banco de dados em uma planilha
   O procedimento a seguir mostra como usar o designer para exibir um único campo de uma tabela de banco de dados em uma Microsoft Office planilha do Excel, com controles que permitem ao usuário final percorrer todos os registros.
@@ -43,5 +45,5 @@ ms.locfileid: "85545789"
 
 6. Na guia **Windows Forms** da caixa de **ferramentas**, adicione um <xref:System.Windows.Forms.BindingNavigator> controle à sua planilha e configure os controles que você deseja usar. Para obter mais informações, consulte [visão geral do controle BindingNavigator &#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
