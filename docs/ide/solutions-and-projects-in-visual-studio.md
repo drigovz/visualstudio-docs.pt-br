@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6504d3e7fe278e8713a897ffacefa1f22cec6a09
-ms.sourcegitcommit: f43e669f3597a4b07975b2bd2dce362a41a2e83f
+ms.openlocfilehash: ebe6e5c7479ce4e3cda435c51a883c4d5db8cc45
+ms.sourcegitcommit: 6f37100d4b8c15a21d3858335ded3c26ab275b93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/16/2020
-ms.locfileid: "97578247"
+ms.locfileid: "97599493"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
 
@@ -57,7 +57,7 @@ Um projeto está contido dentro de uma *solução*. Apesar do nome, uma soluçã
 
 O Visual Studio usa dois tipos de arquivos (*.sln* e *.suo*) para armazenar configurações de soluções:
 
-|Extensão|Name|Descrição|
+|Extensão|Nome|Descrição|
 |---------------|----------|-----------------|
 |.sln|Solução do Visual Studio|Organiza projetos, itens de projeto e itens de solução na solução.|
 |.suo|Opções do usuário da solução|Armazena configurações e personalizações no nível do usuário, como pontos de interrupção.|
@@ -68,11 +68,11 @@ Uma "pasta de solução" é uma pasta virtual que só está em **Gerenciador de 
 
 ## <a name="create-new-projects"></a>Criar novos projetos
 
-A maneira mais fácil de criar um novo projeto é começar de um modelo de projeto para um tipo específico de aplicativo ou site. Um modelo de projeto consiste em um conjunto básico de arquivos de código, arquivos de configuração, ativos e configurações gerados previamente. Esses modelos estão disponíveis na caixa de diálogo em que você cria um novo projeto (**arquivo**  >  **novo**  >  **projeto**). Para saber mais, confira [Criar um novo projeto no Visual Studio](create-new-project.md) e [Criar soluções e projetos](../ide/creating-solutions-and-projects.md).
+A maneira mais fácil de criar um novo projeto é começar de um modelo de projeto para um tipo específico de aplicativo ou site. Um modelo de projeto consiste em um conjunto básico de arquivos de código, arquivos de configuração, ativos e configurações gerados previamente. Esses modelos estão disponíveis na caixa de diálogo em que você cria um novo projeto (**arquivo**  >  **novo**  >  **projeto**). Para obter mais informações, consulte [criar um novo projeto](create-new-project.md) e [trabalhar com soluções e projetos](../ide/creating-solutions-and-projects.md).
 
 Se você geralmente personaliza seus projetos de uma determinada maneira, pode criar um modelo de projeto personalizado que você pode usar para criar novos projetos do. Para obter mais informações, confira [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md).
 
-Quando você cria um novo projeto, ele é salvo por padrão em *%USERPROFILE%\source\repos*. Você pode alterar esse local na configuração **Locais do projeto** em **Ferramentas** > **Opções** > **Projetos e Soluções** > **Locais**. Para obter mais informações, consulte a [página Projetos e Soluções, caixa de diálogo Opções](./reference/projects-and-solutions-options-dialog-box.md).
+Quando você cria um novo projeto, ele é salvo por padrão em *%USERPROFILE%\source\repos*. Você pode alterar esse local na configuração **Locais do projeto** em **Ferramentas** > **Opções** > **Projetos e Soluções** > **Locais**. Para obter mais informações sobre essa e outras configurações de projetos e soluções, consulte [página projetos e soluções, caixa de diálogo opções](./reference/projects-and-solutions-options-dialog-box.md).
 
 ## <a name="solution-explorer"></a>Gerenciador de Soluções
 
@@ -89,7 +89,7 @@ Para projetos ASP.NET Core, você pode personalizar como os arquivos são aninha
 
 E, para exibir uma lista de alguns ícones que aparecem no Gerenciador de Soluções, consulte os [ícones modo de exibição de classe e pesquisador de objetos](class-view-and-object-browser-icons.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Portar, migrar e atualizar projetos](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
