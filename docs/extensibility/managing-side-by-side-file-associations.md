@@ -1,5 +1,7 @@
 ---
 title: Gerenciando associações de arquivos lado a lado | Microsoft Docs
+description: Se o seu VSPackage fornece associações de arquivos, decida como lidar com instalações lado a lado nas quais uma versão específica do Visual Studio abre um arquivo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c284fe7ef4c2d07051a8524860583cb634e13bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 477afbd5bc4586d8c46db11b036364f8058133b0
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702754"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616338"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Gerenciar associações de arquivos lado a lado
 
@@ -23,7 +25,7 @@ Se o seu VSPackage fornece associações de arquivos, você deve decidir como li
 
 Os usuários esperam que uma nova versão de um produto seja compatível com as versões anteriores, para que os arquivos existentes possam ser carregados em uma nova versão sem perder dados. O ideal é que seus VSPackage possam carregar e salvar os formatos de arquivo de versões anteriores. Se isso não for verdadeiro, você deverá oferecer para atualizar o formato de arquivo para a nova versão do seu VSPackage. A desvantagem dessa abordagem é que o arquivo atualizado não pode ser aberto na versão anterior.
 
-Para evitar esse problema, você pode alterar as extensões quando os formatos de arquivo se tornarem incompatíveis. Por exemplo, a versão 1 de seu VSPackage poderia usar a extensão, *. mypkg10*e a versão 2 poderia usar a extensão, *. mypkg20*. Essa diferença identifica o VSPackage que abre um arquivo específico. Se você adicionar VSPackages mais recentes à lista de programas associados a uma extensão antiga, os usuários poderão clicar com o botão direito do mouse no arquivo e optar por abri-lo em um VSPackage mais recente. Nesse ponto, seu VSPackage pode oferecer para atualizar o arquivo para o novo formato ou abrir o arquivo e manter a compatibilidade com versões anteriores do VSPackage.
+Para evitar esse problema, você pode alterar as extensões quando os formatos de arquivo se tornarem incompatíveis. Por exemplo, a versão 1 de seu VSPackage poderia usar a extensão, *. mypkg10* e a versão 2 poderia usar a extensão, *. mypkg20*. Essa diferença identifica o VSPackage que abre um arquivo específico. Se você adicionar VSPackages mais recentes à lista de programas associados a uma extensão antiga, os usuários poderão clicar com o botão direito do mouse no arquivo e optar por abri-lo em um VSPackage mais recente. Nesse ponto, seu VSPackage pode oferecer para atualizar o arquivo para o novo formato ou abrir o arquivo e manter a compatibilidade com versões anteriores do VSPackage.
 
 > [!NOTE]
 > Você pode combinar essas abordagens. Por exemplo, você pode oferecer compatibilidade com versões anteriores carregando um arquivo mais antigo e oferecer para atualizar o formato de arquivo quando o usuário salvá-lo.
@@ -65,7 +67,7 @@ Se você quiser que vários VSPackages lado a lado usem a mesma extensão, dever
   |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 E NÃO DEVENV_EXE_2005|420|
   |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|
 
-   Você pode usar a propriedade DEVENV_EXE_LATEST na tabela de registro do pacote Windows Installer para gravar o valor padrão da chave do **HKEY_CLASSES_ROOT*ProgID*ShellOpenCommand** , [DEVENV_EXE_LATEST] "%1"
+   Você pode usar a propriedade DEVENV_EXE_LATEST na tabela de registro do pacote Windows Installer para gravar o valor padrão da chave do **HKEY_CLASSES_ROOT *ProgID* ShellOpenCommand** , [DEVENV_EXE_LATEST] "%1"
 
 - Execute um programa iniciador compartilhado que possa fazer a melhor escolha das versões disponíveis do VSPackage.
 

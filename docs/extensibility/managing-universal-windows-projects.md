@@ -1,5 +1,7 @@
 ---
 title: Gerenciando projetos universais do Windows | Microsoft Docs
+description: Para dar suporte a aplicativos universais do Windows, as extensões do Visual Studio que gerenciam projetos devem estar cientes da estrutura do projeto de aplicativo universal do Windows.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83e3b07bc3373070953709ffe913f37529e74bc7
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: f86edd33e7719dc326aa2c5d252d11322509de64
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012302"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615558"
 ---
 # <a name="manage-universal-windows-projects"></a>Gerenciar projetos universais do Windows
 
@@ -25,7 +27,7 @@ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a part
 
 ### <a name="navigate-the-shared-project"></a>Navegar no projeto compartilhado
 
-1. Crie um projeto VSIX em C# chamado **TestUniversalProject**. (**Arquivo**  >  **Novo**  >  **Projeto** e, em seguida, extensibilidade **C#**  >  **Extensibility**  >  **pacote do Visual Studio**). Adicione um modelo de item de projeto de **comando personalizado** (na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item**e vá para **extensibilidade**). Nomeie o arquivo **TestUniversalProject**.
+1. Crie um projeto VSIX em C# chamado **TestUniversalProject**. (**Arquivo**  >  **Novo**  >  **Projeto** e, em seguida, extensibilidade **C#**  >    >  **pacote do Visual Studio**). Adicione um modelo de item de projeto de **comando personalizado** (na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item** e vá para **extensibilidade**). Nomeie o arquivo **TestUniversalProject**.
 
 2. Adicione uma referência a *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* e *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (na seção **extensões** ).
 
@@ -291,7 +293,7 @@ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a part
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');
     ```
 
-16. Agora experimente. Pressione F5 para iniciar a instância experimental. Crie um projeto de aplicativo de Hub universal do C# na instância experimental (na caixa de diálogo **novo projeto** , aplicativo de **Visual C#**  >  Hub universal do**Windows**  >  **Windows 8**do Visual C#  >  **Universal**  >  **Hub App**). Depois que a solução for carregada, vá para o menu **ferramentas** e clique em **invocar TestUniversalProject**e, em seguida, verifique o texto no painel **saída** . Você verá algo semelhante ao que se segue:
+16. Agora experimente. Pressione F5 para iniciar a instância experimental. Crie um projeto de aplicativo de Hub universal do C# na instância experimental (na caixa de diálogo **novo projeto** , aplicativo de   >  Hub universal do **Windows**  >  **Windows 8** do Visual C#  >    >  ). Depois que a solução for carregada, vá para o menu **ferramentas** e clique em **invocar TestUniversalProject** e, em seguida, verifique o texto no painel **saída** . Você verá algo semelhante ao que se segue:
 
     ```
     Found shared project: HubApp.Shared
@@ -353,7 +355,7 @@ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a part
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));
     ```
 
-4. Agora experimente. Pressione **F5** para iniciar a instância experimental. Crie um projeto de aplicativo de Hub universal do C# na instância experimental (na caixa de diálogo **novo projeto** , aplicativo de **Visual C#**  >  Hub universal do**Windows**  >  **Windows 8**do Visual C#  >  **Universal**  >  **Hub App**) vá para o menu **ferramentas** e clique em **invocar TestUniversalProject**e, em seguida, verifique o texto no painel de **saída** . Você verá algo semelhante ao que se segue:
+4. Agora experimente. Pressione **F5** para iniciar a instância experimental. Crie um projeto de aplicativo de Hub universal do C# na instância experimental (na caixa de diálogo **novo projeto** , aplicativo de   >  Hub universal do **Windows**  >  **Windows 8** do Visual C#  >    >  ) vá para o menu **ferramentas** e clique em **invocar TestUniversalProject** e, em seguida, verifique o texto no painel de **saída** . Você verá algo semelhante ao que se segue:
 
     ```
     Found shared project: HubApp.Shared
@@ -549,7 +551,7 @@ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a part
     this.ModifyFileNameInProject(sharedHier, fullPath);
     ```
 
-11. Compile e execute o projeto. Crie um aplicativo de Hub universal do C# na instância experimental, vá para o menu **ferramentas** e clique em **invocar TestUniversalProject**e verifique o texto no painel saída geral. O nome do primeiro item no projeto compartilhado (esperamos que seja o arquivo *app. XAML* ) deve ser alterado e você verá que o <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> evento foi acionado. Nesse caso, como renomear o *app. XAML* faz com que *app.XAML.cs* seja renomeado também, você verá quatro eventos (dois para cada projeto de plataforma). (Os eventos do DTE não rastreiam os itens no projeto compartilhado.) Você deve ver dois <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventos (um para cada um dos projetos de plataforma), mas nenhum <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> evento.
+11. Compile e execute o projeto. Crie um aplicativo de Hub universal do C# na instância experimental, vá para o menu **ferramentas** e clique em **invocar TestUniversalProject** e verifique o texto no painel saída geral. O nome do primeiro item no projeto compartilhado (esperamos que seja o arquivo *app. XAML* ) deve ser alterado e você verá que o <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> evento foi acionado. Nesse caso, como renomear o *app. XAML* faz com que *app.XAML.cs* seja renomeado também, você verá quatro eventos (dois para cada projeto de plataforma). (Os eventos do DTE não rastreiam os itens no projeto compartilhado.) Você deve ver dois <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventos (um para cada um dos projetos de plataforma), mas nenhum <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> evento.
 
 12. Agora, tente renomear um arquivo em um projeto de plataforma e você pode ver a diferença nos eventos que são acionados. Adicione o seguinte código `ShowMessageBox` ao após a chamada para `ModifyFileName` .
 
@@ -566,4 +568,4 @@ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a part
     this.ModifyFileNameInProject(activePlatformHier, unsharedPath);
     ```
 
-13. Compile e execute o projeto. Crie um projeto universal do C# na instância experimental, vá para o menu **ferramentas** e clique em **invocar TestUniversalProject**e verifique o texto no painel saída geral. Depois que o arquivo no projeto de plataforma for renomeado, você deverá ver um <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> evento e um <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> evento. Uma vez que a alteração do arquivo não fez com que outros arquivos sejam alterados, e como as alterações em itens em um projeto de plataforma não são propagadas em qualquer lugar, há apenas um desses eventos.
+13. Compile e execute o projeto. Crie um projeto universal do C# na instância experimental, vá para o menu **ferramentas** e clique em **invocar TestUniversalProject** e verifique o texto no painel saída geral. Depois que o arquivo no projeto de plataforma for renomeado, você deverá ver um <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> evento e um <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> evento. Uma vez que a alteração do arquivo não fez com que outros arquivos sejam alterados, e como as alterações em itens em um projeto de plataforma não são propagadas em qualquer lugar, há apenas um desses eventos.

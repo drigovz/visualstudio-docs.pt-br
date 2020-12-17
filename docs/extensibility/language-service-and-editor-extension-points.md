@@ -1,5 +1,7 @@
 ---
 title: Pontos de extensão do serviço de linguagem e do editor | Microsoft Docs
+description: Saiba mais sobre os pontos de extensão no editor de código do Visual Studio que você pode estender, incluindo a maioria dos recursos de serviço de linguagem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28bb086eb99e4b8128c04f62f9b370eb2eab8fa3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06329fcfcefe3ea75b772495f6a7e0dd14ced087
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703051"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615545"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Pontos de extensão do serviço de linguagem e do editor
 O Editor fornece pontos de extensão que você pode estender como partes de componente Managed Extensibility Framework (MEF), incluindo a maioria dos recursos de serviço de linguagem. Estas são as principais categorias de ponto de extensão:
@@ -26,7 +28,7 @@ O Editor fornece pontos de extensão que você pode estender como partes de comp
 
 - Margens e barras de rolagem
 
-- Marcas
+- Marcações
 
 - Adornos
 
@@ -412,7 +414,7 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 
   6. Diferencial
 
-  7. Local
+  7. Localidade
 
   8. Paleta
 

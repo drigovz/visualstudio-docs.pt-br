@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 11/09/2020
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 148a72fb13ff34e3fa15f0c56e145a70fa16608d
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: dc865ec593f53149d9c004f252015def32325d18
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493225"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616171"
 ---
 # <a name="working-with-git"></a>Trabalhando com Git
 
@@ -59,13 +59,13 @@ Elas permitem executar as seguintes ações:
 
 ## <a name="switching-branches"></a>Alternar os branches
 
-Por padrão, o primeiro branch criado em um repositório é conhecida como o branch **Mestre**. Tecnicamente não há nada diferente entre o branch mestre e os demais, porém o branch mestre é aquele que geralmente é considerado “dinâmico” ou “produção” pelas equipes de desenvolvimento.
+Por padrão, a primeira ramificação criada em um repositório é conhecida como a ramificação **principal** . Não há tecnicamente nada diferente entre a ramificação principal e qualquer outra, mas a ramificação principal é aquela que costuma ser considerada em equipes de desenvolvimento como o Branch ' Live ' ou ' Production '.
 
-Uma linha independente de desenvolvimento pode ser criada derivando-a do Mestre (ou de qualquer outro branch). Isso fornece uma nova versão pontual do branch mestre, permitindo desenvolvimento independentemente de qual deles é “dinâmico”. É comum usar branches dessa forma para recursos no desenvolvimento de software
+Uma linha independente de desenvolvimento pode ser criada por ramificação fora do principal (ou de qualquer outra ramificação, para esse assunto). Isso fornece uma nova versão da ramificação principal em um ponto no tempo, permitindo o desenvolvimento independentemente do que é "Live". É comum usar branches dessa forma para recursos no desenvolvimento de software
 
 Os usuários podem criar tantos branches quanto desejarem para cada repositório, porém é recomendado que, após terminar de usar um branch, ele seja excluído para manter o repositório organizado.
 
-Branches são exibidos no Visual Studio para Mac navegando para **Controle de versão > Gerenciar branches e remotos...** :
+Branches são exibidos no Visual Studio para Mac navegando para **Controle de versão > Gerenciar branches e remotos...**:
 
 ![Exibição Branches](media/version-control-gitBranch2.png)
 
@@ -85,13 +85,13 @@ Consulte o Branch atual na janela da solução, ao lado do nome do projeto:
 
 Para examinar as alterações nos arquivos, use as guias Alterações, Acusar, Registro em log e Mesclar em cada documento, ilustrado anteriormente neste tópico.
 
-Examine todas as alterações no seu projeto navegando para o item de menu **Controle de versão > Examinar solução e confirmar** :
+Examine todas as alterações no seu projeto navegando para o item de menu **Controle de versão > Examinar solução e confirmar**:
 
 ![Exibição Examinar código](media/version-control-gitReviewCommit.png)
 
 Isso permite exibir todas as alterações em cada arquivo de um projeto com a opção de Reverter, Criar um Patch ou Confirmar.
 
-Para confirmar um arquivo para o repositório remoto, pressione **confirmar** , insira uma mensagem de confirmação e confirme com o botão confirmar:
+Para confirmar um arquivo para o repositório remoto, pressione **confirmar**, insira uma mensagem de confirmação e confirme com o botão confirmar:
 
 ![Confirmando um arquivo](media/version-control-gitCommit.png)
 

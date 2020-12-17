@@ -1,5 +1,7 @@
 ---
 title: Elemento menus | Microsoft Docs
+description: O elemento menus define todos os menus e barras de ferramentas que um VSPackage implementa. Este artigo contém um exemplo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6382abed36aba66087066bf5664ae55682e39e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abc5621784579c295393d77c792013dd0c737871
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702586"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615571"
 ---
 # <a name="menus-element"></a>Elemento menus
 Define todos os menus e barras de ferramentas que um VSPackage implementa.

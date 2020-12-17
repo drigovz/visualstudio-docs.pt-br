@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f7dfa1c79af832cc54d9aee72eeafbf20bbde707
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: ea13fde64f6214cf3c219de45c79458b75e1caf8
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398410"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615519"
 ---
 # <a name="enable-or-install-first-party-net-analyzers"></a>Habilitar ou instalar analisadores de .NET de primeira empresa
 
@@ -31,9 +31,9 @@ Você pode habilitar ou instalar os analisadores de .NET primários de uma das s
 - **Instalar como um pacote NuGet**: se você não quiser migrar para o SDK do .NET 5 + ou se preferir um modelo baseado em pacote NuGet, os analisadores também estarão disponíveis no `Microsoft.CodeAnalysis.NetAnalyzers` [pacote NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers) no Visual Studio 2019.  Você pode preferir um modelo baseado em pacote para atualizações de versão sob demanda. Se você estiver no Visual Studio 2017, instale a versão mais recente `2.9.x` do `Microsoft.CodeAnalysis.FxCopAnalyzers` [pacote NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) .
 
 > [!NOTE]
-> É recomendável que você habilite os analisadores do SDK do .NET em vez de instalar o `Microsoft.CodeAnalysis.NetAnalyzers` [pacote NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers), quando possível. Habilitar os analisadores do SDK do .NET garante que você obtenha automaticamente as correções de bugs do analisador e novos analisadores assim que atualizar o SDK.
+> É recomendável que você habilite os analisadores do SDK do .NET em vez de instalar o `Microsoft.CodeAnalysis.NetAnalyzers` [pacote NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers), quando possível. Habilitar os analisadores do SDK do .NET garante que você obtenha automaticamente as correções de bugs do analisador e novos analisadores assim que atualizar o SDK. No modelo NuGet, você precisa atualizar o pacote NuGet cada vez que desejar as correções de bug mais recentes. O pacote NuGet é atualizado com mais frequência.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral dos analisadores de código no Visual Studio](roslyn-analyzers-overview.md)
 - [Usar analisadores de código no Visual Studio](use-roslyn-analyzers.md)

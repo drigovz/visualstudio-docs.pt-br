@@ -1,5 +1,7 @@
 ---
 title: Suporte do assistente para projetos aninhados | Microsoft Docs
+description: Saiba mais sobre os dois assistentes que um projeto pai pode implementar para projetos aninhados em seu VSPackage no SDK do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7f37700d908167ebef8c071021558822bdce173
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b3c6dee712f79648eba203650cc70f76fcea657
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703202"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615610"
 ---
 # <a name="wizard-support-for-nested-projects"></a>Suporte do assistente para projetos aninhados
 O IDE executa dois assistentes que o projeto pai para projetos aninhados podem implementar: o assistente de **novo projeto** e o assistente para **Adicionar item** .

@@ -1,5 +1,7 @@
 ---
 title: Carregando VSPackages | Microsoft Docs
+description: Saiba mais sobre como carregar VSPackages no Visual Studio, incluindo carregamento atrasado, que é usado sempre que possível para melhorar o desempenho.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1c221bf06ef3b7e37e2afc1856f3e54fe5ad95e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0aeab78a2f64be2df6f601ad8ed224f13071eb8c
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702960"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616098"
 ---
 # <a name="load-vspackages"></a>Carregar VSPackages
 VSPackages são carregados no Visual Studio somente quando sua funcionalidade é necessária. Por exemplo, um VSPackage é carregado quando o Visual Studio usa uma fábrica de projetos ou um serviço que o VSPackage implementa. Esse recurso é chamado de carregamento atrasado, que é usado sempre que possível para melhorar o desempenho.
@@ -35,7 +37,7 @@ VSPackages são carregados no Visual Studio somente quando sua funcionalidade é
     [PackageRegistration(UseManagedResourcesOnly = true)]
     [ProvideAutoLoad(UIContextGuids80.SolutionExists)]
     [Guid("00000000-0000-0000-0000-000000000000")] // your specific package GUID
-    public class MyAutoloadedPackage : Package
+    public class MyAutoloadedPackage : Package
     {. . .}
     ```
 

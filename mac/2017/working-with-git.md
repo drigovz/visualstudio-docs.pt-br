@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 33148c5202251525504864f26177da4497b5fabe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31e38d728eb3c336b1d3160a920ef18055de1b1f
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74983564"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616295"
 ---
 # <a name="working-with-git"></a>Trabalhando com Git
 
@@ -59,9 +59,9 @@ Elas permitem executar as seguintes ações:
 
 ## <a name="switching-branches"></a>Alternar os branches
 
-Por padrão, o primeiro branch criado em um repositório é conhecida como o branch **Mestre**. Tecnicamente não há nada diferente entre o branch mestre e os demais, porém o branch mestre é aquele que geralmente é considerado “dinâmico” ou “produção” pelas equipes de desenvolvimento.
+Por padrão, a primeira ramificação criada em um repositório é conhecida como a ramificação **principal** . Não há tecnicamente nada diferente entre a ramificação principal e qualquer outra, mas a ramificação principal é aquela que costuma ser considerada em equipes de desenvolvimento como o Branch ' Live ' ou ' Production '.
 
-Uma linha independente de desenvolvimento pode ser criada derivando-a do Mestre (ou de qualquer outro branch). Isso fornece uma nova versão pontual do branch mestre, permitindo desenvolvimento independentemente de qual deles é “dinâmico”. É comum usar branches dessa forma para recursos no desenvolvimento de software
+Uma linha independente de desenvolvimento pode ser criada por ramificação fora do principal (ou de qualquer outra ramificação, para esse assunto). Isso fornece uma nova versão da ramificação principal em um ponto no tempo, permitindo o desenvolvimento independentemente do que é "Live". É comum usar branches dessa forma para recursos no desenvolvimento de software
 
 Os usuários podem criar tantos branches quanto desejarem para cada repositório, porém é recomendado que, após terminar de usar um branch, ele seja excluído para manter o repositório organizado.
 

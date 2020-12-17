@@ -1,5 +1,7 @@
 ---
 title: Localizando o Visual Studio | Microsoft Docs
+description: Você pode instalar várias instâncias da mesma versão do Visual Studio. Saiba como usar uma API de consulta COM para localizar a instância desejada.
+ms.custom: SEO-VS-2020
 ms.date: 08/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93a6f39a9240002cd8008c9368799e10ab63b78d
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 8935af62b16ed6dd6d0d5d61412f347a95f32f23
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012471"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616282"
 ---
 # <a name="locate-visual-studio"></a>Localizar o Visual Studio
 
@@ -25,7 +27,7 @@ Essa é uma API rápida e somente leitura com pacotes NuGet disponíveis para c�
 | Código | Pacote |
 | ---- | --- |
 | Nativo | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
-| Gerenciados | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| Gerenciado | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
 Você pode localizar uma única instância, dado um caminho ou o processo atual, ou enumerar todas as instâncias. Consulte [nossos exemplos](https://github.com/Microsoft/vs-setup-samples) para obter exemplos completos de como localizar o Visual Studio.
 
@@ -39,7 +41,7 @@ Para encontrar o Visual Studio e outras ferramentas em ambientes de compilação
 | [Cmdlets do VSSetup](https://github.com/Microsoft/vssetup.powershell) | Os cmdlets do PowerShell com suporte 2,0 e mais recentes que retornam informações ricas como objetos que você pode usar para localizar instâncias com base nos mesmos critérios que _vswhere_ e descobrir ainda mais propriedades sobre instâncias. Consulte o [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) para obter exemplos. |
 | [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | Localiza automaticamente _VSIXInstaller_ e passa a linha de comando para a instalação de um arquivo **. vsix* . Esse recurso pode ser útil em instaladores que não têm suporte direto para as APIs de consulta. Consulte o [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) para obter exemplos. |
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Alterações na instalação do Visual Studio 2017](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
 * [Iniciar o Visual Studio usando DTE](launch-visual-studio-dte.md)
