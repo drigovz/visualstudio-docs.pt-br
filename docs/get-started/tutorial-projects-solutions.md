@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b22695dac3f75b9e90950ee5428bb906436d661
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 48fb0f1c22b2f7055005640baff2239a0ad4a32a
+ms.sourcegitcommit: fed8782b2fb2ca18a90746b6e7e0b33f3fde10f1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903930"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97646405"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Saiba mais sobre projetos e soluções
 
@@ -201,6 +201,8 @@ Vamos adicionar um projeto de teste de unidade em nossa solução. Desta vez, co
 
 Vamos usar o novo projeto de teste de unidade para testar nosso método no projeto **QuickDate**. Portanto, precisamos adicionar uma referência a esse projeto. Isso cria uma *dependência de build* entre os dois projetos, o que significa que quando a solução é criada, **QuickDate** é criado antes dependência **QuickTest**.
 
+::: moniker range="vs-2017"
+
 1. Escolha o nó **Dependências** no projeto **QuickTest** e, ao clicar com o botão direito do mouse ou no menu de contexto, escolha **Adicionar Referência**.
 
    A caixa de diálogo **Gerenciador de Referências** é aberta.
@@ -210,6 +212,22 @@ Vamos usar o novo projeto de teste de unidade para testar nosso método no proje
    Uma referência ao projeto **QuickDate** será adicionada.
 
    ![Gerenciador de Soluções do Visual Studio 2019 mostrando a referência do projeto](media/vs-2019/tutorial-projects-solution-explorer-reference.png "Gerenciador de Soluções mostrando uma referência de projeto no Visual Studio.")
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Escolha o nó **dependências** no projeto **QuickTest** e, no menu de contexto ou clique com o botão direito do mouse, escolha **Adicionar referência de projeto...**.
+
+   A caixa de diálogo **Gerenciador de Referências** é aberta.
+
+1. No painel esquerdo, expanda **Projetos** e escolha **Solução**. No painel central, escolha a caixa de seleção ao lado de **QuickDate** e escolha **OK**.
+
+   Uma referência ao projeto **QuickDate** será adicionada.
+
+   ![Gerenciador de Soluções do Visual Studio 2019 mostrando a referência do projeto](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+   
+::: moniker-end
 
 ## <a name="add-test-code"></a>Adicionar código de teste
 
@@ -279,7 +297,7 @@ Se você quiser verificar se o teste de unidade está funcionando, escolha **tes
 
 ::: moniker-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criar projetos e soluções](../ide/creating-solutions-and-projects.md)
 - [Gerenciar propriedades do projeto e da solução](../ide/managing-project-and-solution-properties.md)
