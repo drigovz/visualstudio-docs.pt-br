@@ -7,12 +7,12 @@ ms.author: madsk
 manager: jillfra
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 1567e75d5e0a6f27aee68cd783b9ebd4a70815f4
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 57009326857672ea648bdf8f531f9509cf8487ff
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211182"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668438"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Como aumentar as chances de um problema de desempenho ser corrigido
 
@@ -28,7 +28,7 @@ Procure assinaturas distintas para o problema que está sendo relatado e inclua 
 
 **Em caso de dúvida, registre um novo relatório de problema**
 
-Muitos problemas podem não ter nenhuma assinatura ou etapa distinta para reproduzir. Nesses casos, um novo relatório é melhor do que um voto ou um comentário em outro relatório, que está relatando um *sintoma*de fora semelhante. Dependendo do tipo de relatório, inclua arquivos de diagnóstico adicionais para o relatório, conforme descrito posteriormente neste documento.
+Muitos problemas podem não ter nenhuma assinatura ou etapa distinta para reproduzir. Nesses casos, um novo relatório é melhor do que um voto ou um comentário em outro relatório, que está relatando um *sintoma* de fora semelhante. Dependendo do tipo de relatório, inclua arquivos de diagnóstico adicionais para o relatório, conforme descrito posteriormente neste documento.
 
 **Práticas recomendadas específicas do problema**
 
@@ -193,10 +193,10 @@ O que torna esses tipos de problemas mais acionáveis é fornecer logs adicionai
 2. Baixe a ferramenta de coleta de log de Microsoft Visual Studio e .NET Framework [aqui](https://www.microsoft.com/download/details.aspx?id=12493).
 3. Execute a ferramenta. Isso gera um arquivo zip para **% Temp%/vslogs.zip**. Anexe esse arquivo aos seus comentários.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Opções de comentários do Visual Studio](../ide/feedback-options.md)
 * [Relatar um problema com o Visual Studio para Mac](/visualstudio/mac/report-a-problem)
 * [Relatar um problema com C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Comunidade de desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/)
+* [Comunidade de desenvolvedores do Visual Studio](https://aka.ms/feedback/suggest?space=8)
 * [Privacidade de dados da Comunidade de Desenvolvedores](developer-community-privacy.md)

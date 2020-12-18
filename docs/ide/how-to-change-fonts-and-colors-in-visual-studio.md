@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfe2b73f7f2ba771875355279043558f3c4cf105
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801432"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667904"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Como alterar fontes, cores e temas no Visual Studio
 
@@ -61,7 +61,7 @@ Você pode alterar a fonte e o tamanho do texto para todas as janelas de ferrame
 
 1. Na barra de menus, escolha **ferramentas**  >  **Opções**.
 
-1. Na lista opções, escolha **Environment**  >  **fontes e cores**do ambiente.
+1. Na lista opções, escolha   >  **fontes e cores** do ambiente.
 
 1. Na lista **Mostrar configurações de** , escolha **ambiente**.
 
@@ -78,7 +78,7 @@ Você pode alterar a fonte e o tamanho do texto para todas as janelas de ferrame
 
 1. Na barra de menus, escolha **ferramentas**  >  **Opções**.
 
-1. Na lista opções, escolha **Environment**  >  **fontes e cores**do ambiente.
+1. Na lista opções, escolha   >  **fontes e cores** do ambiente.
 
 1. Na lista **Mostrar configurações de** , selecione **Editor de texto**.
 
@@ -98,7 +98,7 @@ Há opções de tema de cores para você se tiver uma visão baixa. Você pode u
 
 Use qualquer um dos procedimentos a seguir para alternar a opção de alto contraste do Windows:
 
-- No Windows ou em qualquer aplicativo da Microsoft, pressione a tecla **ALT**esquerda + **Shift** + **PrtScn** teclas.
+- No Windows ou em qualquer aplicativo da Microsoft, pressione a tecla **ALT** esquerda + **Shift** + **PrtScn** teclas.
 
 - No Windows, escolha **Iniciar**  >  **configurações**  >  **facilidade de acesso de**  >  **alto contraste**.
 
@@ -109,20 +109,20 @@ Use qualquer um dos procedimentos a seguir para alternar a opção de alto contr
 
 Use os procedimentos a seguir para alternar a opção de contraste extra do Visual Studio:
 
-1. Na barra de menus no Visual Studio, escolha **ferramentas**  >  **Opções**e, em seguida, na lista opções, escolha **ambiente**  >  **geral**.
+1. Na barra de menus no Visual Studio, escolha **ferramentas**  >  **Opções** e, em seguida, na lista opções, escolha **ambiente**  >  **geral**.
 
 1. Na lista suspensa **tema de cores** , escolha o tema **azul (contraste adicional)** e escolha **OK**.
 
 Para saber mais sobre outras opções de acessibilidade do Visual Studio disponíveis, consulte a página [recursos de acessibilidade do Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) .
 
 > [!TIP]
-> Se houver uma opção de acessibilidade para cores ou fontes que você ache que pode ser útil, mas que não está disponível atualmente no Visual Studio, informe-nos selecionando **sugerir um recurso** na [comunidade de desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/). Para obter mais informações sobre esse fórum e como ele funciona, consulte a página [sugerir um recurso](../ide/suggest-a-feature.md) .
+> Se houver uma opção de acessibilidade para cores ou fontes que você ache que pode ser útil, mas que não está disponível atualmente no Visual Studio, informe-nos selecionando **sugerir um recurso** na [comunidade de desenvolvedores do Visual Studio](https://aka.ms/feedback/suggest?space=8). Para obter mais informações sobre esse fórum e como ele funciona, consulte a página [sugerir um recurso](../ide/suggest-a-feature.md) .
 
 ## <a name="next-steps"></a>Próximas etapas
 
 Para saber mais detalhes sobre todos os elementos da interface do usuário para os quais você pode alterar os esquemas de fontes e cores, consulte a página da [caixa de diálogo fontes e cores, ambiente, opções](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como: alterar fontes e cores para o editor no Visual Studio](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
 - [Recursos do editor de código do Visual Studio](../ide/writing-code-in-the-code-and-text-editor.md)

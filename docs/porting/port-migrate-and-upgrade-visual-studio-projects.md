@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: f13500c4d65287dfbafdb681a3fc47ffcd2c397e
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ca13ff5263ab43fd6fbdf5764b506091dd9aa3bd
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414315"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667982"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Referência de migração e atualização de projeto do Visual Studio
 
@@ -32,7 +32,7 @@ ms.locfileid: "93414315"
 
 Cada versão do Visual Studio geralmente oferece suporte à maioria dos tipos de projetos, arquivos e outros ativos anteriores. Você pode trabalhar com eles [como sempre tem](../ide/solutions-and-projects-in-visual-studio.md), e desde que não dependa de recursos mais recentes, o Visual Studio tenta preservar a compatibilidade com versões anteriores, como o visual Studio 2015, o Visual Studio 2013 e o visual Studio 2012. (Consulte as [Notas de versão](/visualstudio/releasenotes/vs2017-relnotes/) para saber quais recursos são específicos a quais versões.)
 
-O suporte para alguns tipos de projeto também muda ao longo do tempo. É possível que uma versão mais recente do Visual Studio já não dê mais suporte a determinados projetos ou exija que eles sejam atualizados, fazendo com que eles deixem de ser compatíveis com versões anteriores. Para obter o status atual de problemas de migração, consulte o [site Developer Community (Comunidade do Desenvolvedor) do Visual Studio](https://developercommunity.visualstudio.com).
+O suporte para alguns tipos de projeto também muda ao longo do tempo. É possível que uma versão mais recente do Visual Studio já não dê mais suporte a determinados projetos ou exija que eles sejam atualizados, fazendo com que eles deixem de ser compatíveis com versões anteriores. Para obter o status atual de problemas de migração, consulte o [site Developer Community (Comunidade do Desenvolvedor) do Visual Studio](https://aka.ms/feedback/suggest?space=8).
 
 Este artigo fornece detalhes somente para os tipos de projeto que o Visual Studio 2017 pode migrar. O artigo exclui os tipos de projeto para os quais não há mais suporte no Visual Studio 2017 e, portanto, não podem ser migrados. O artigo também exclui os tipos de projeto compatíveis que não têm nenhum problema de migração. A lista desses tipos é encontrada em [Direcionamento e compatibilidade da plataforma](/visualstudio/productinfo/vs2017-compatibility-vs).
 
@@ -91,7 +91,7 @@ O engenheiro responsável pelo tipo de projeto em questão examina esses critér
 
 Se tal compatibilidade não for possível, no entanto, como ocorre com alguns dos tipos de projeto descritos neste artigo, o Visual Studio abrirá o assistente de atualização para fazer as alterações unidirecionais necessárias.
 
-Essas alterações unidirecionais podem envolver a alteração a propriedade `ToolsVersion` no arquivo de projeto, que indica exatamente qual versão do MSBuild pode transformar o código-fonte do projeto em artefatos executáveis e implantáveis que você deseja. Ou seja, o que torna um projeto incompatível com versões anteriores do Visual Studio não é a versão do *Visual Studio* , mas a versão do *MSBuild* , conforme determinado por `ToolsVersion`. Desde que sua versão do Visual Studio contenha a cadeia de ferramentas do MSBuild correspondente a `ToolsVersion` em um projeto, o Visual Studio poderá invocar essa cadeia de ferramentas para compilar o projeto.
+Essas alterações unidirecionais podem envolver a alteração a propriedade `ToolsVersion` no arquivo de projeto, que indica exatamente qual versão do MSBuild pode transformar o código-fonte do projeto em artefatos executáveis e implantáveis que você deseja. Ou seja, o que torna um projeto incompatível com versões anteriores do Visual Studio não é a versão do *Visual Studio*, mas a versão do *MSBuild*, conforme determinado por `ToolsVersion`. Desde que sua versão do Visual Studio contenha a cadeia de ferramentas do MSBuild correspondente a `ToolsVersion` em um projeto, o Visual Studio poderá invocar essa cadeia de ferramentas para compilar o projeto.
 
 Para manter a compatibilidade máxima com projetos criados em versões mais antigas, o Visual Studio 2017 inclui as cadeias de ferramentas do MSBuild necessárias para dar suporte a `ToolsVersion` 14, 15, 12 e 4. Projetos que usam qualquer um desses valores `ToolsVersion` devem resultar em um build bem-sucedido. (Sujeito, novamente, ao suporte do Visual Studio 2017 ao tipo de projeto, conforme descrito em [Direcionamento e compatibilidade de plataformas](/visualstudio/productinfo/vs2017-compatibility-vs).)
 
@@ -104,7 +104,7 @@ Consulte os seguintes artigos para uma discussão mais detalhada:
 - [Diretrizes de ToolsVersion](../msbuild/msbuild-toolset-toolsversion.md)
 - [Diretrizes de direcionamento de estrutura](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de migração e atualização de projeto do Visual Studio 2019](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019&preserve-view=true)
 - [Ciclo de vida do produto Visual Studio e manutenção](/visualstudio/releases/2019/servicing/)
@@ -118,7 +118,7 @@ Cada nova versão do Visual Studio dá suporte à maioria dos tipos de projetos,
 Tentamos preservar a compatibilidade com versões anteriores, como o Visual Studio 2017, o Visual Studio 2015, o Visual Studio 2013 e o Visual Studio 2012. No entanto, o suporte para alguns tipos de projeto muda ao longo do tempo. Uma versão mais recente do Visual Studio pode não dar suporte a determinados projetos ou pode exigir que você atualize um projeto para que ele não seja mais compatível com versões anteriores.
 
 > [!NOTE]
-> Para obter o status atual de problemas de migração, veja a [Comunidade do Desenvolvedor do Visual Studio](https://developercommunity.visualstudio.com). E para saber mais sobre quais recursos são específicos para a versão do Visual Studio, consulte as [notas de versão](/visualstudio/releases/2019/release-notes/).
+> Para obter o status atual de problemas de migração, veja a [Comunidade do Desenvolvedor do Visual Studio](https://aka.ms/feedback/suggest?space=8). E para saber mais sobre quais recursos são específicos para a versão do Visual Studio, consulte as [notas de versão](/visualstudio/releases/2019/release-notes/).
 
 > [!IMPORTANT]
 > Alguns tipos de projeto exigem cargas de trabalho específicas. Se a carga de trabalho não estiver instalada, o Visual Studio relatará um tipo de projeto desconhecido ou incompatível. Nesse caso, verifique as [Opções de instalação no instalador do Visual Studio](../install/modify-visual-studio.md) e tente novamente. Para obter mais informações sobre o suporte a projetos no Visual Studio 2019, consulte a página [direcionamento e compatibilidade de plataforma](/visualstudio/releases/2019/compatibility) .
@@ -157,7 +157,7 @@ Se você não vir um projeto ou tipo de arquivo listado aqui que deveria ser, co
 | SQL – Redgate | O SQL Change Automation Core (anteriormente chamado ReadyRoll Core), o SQL Prompt Core e o SQL Search do Redgate não são mais fornecidos no Instalador do Visual Studio.<br/><br/>Você pode continuar usando o Visual Studio 2017 para essas funcionalidades. No Visual Studio 2019, você pode fazer a atualização para os produtos pagos SQL Change Automation e SQL Prompt pagos que estão disponíveis no SQL Toolbelt do Redgate.|
 | SQL Server Reporting Services e SQL Server Analysis Services (SSRS, SSDT, SSAS, MSAS) | O suporte para esses tipos de projeto é fornecido por meio de duas extensões na Galeria do Visual Studio: [Projetos de Modelagem do Microsoft Analysis Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) e [Projetos do Microsoft Reporting Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). Suporte do SSDT também está incluso com a carga de trabalho de Processamento e Armazenamento de Dados no Visual Studio 2019. Para saber mais, confira a página [Baixar e instalar o SQL Server Data Tools (SSDT) para Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt). |
 | SQL Server Integration Services (SSIS) | O suporte ao Visual Studio 2019 está disponível. Para saber mais, confira a página [Baixar e instalar o SQL Server Data Tools (SSDT) para Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt), o blog da equipe [SQL Server Integration Services (SSIS)](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS) e a página [Projetos do SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects&ssr=false#overview) no Marketplace. |
-| Extensão da Janela de Teste | No Visual Studio 2019, algumas APIs de janela de teste que foram marcadas como públicas anteriormente, mas nunca foram documentadas oficialmente, foram removidas. As APIs amplamente visíveis foram marcadas como preteridas no Visual Studio 2017 para fornecer um aviso antecipado aos mantenedores de extensão. Para o nosso conhecimento, poucas extensões haviam criado uma dependência dessas APIs. Para obter mais informações e atualizações, veja a [lista completa de APIs relacionadas a teste preteridas](https://github.com/Microsoft/vstest/issues/1830). Se isso afetar o seu cenário, informe-nos na [comunidade de desenvolvedores](https://developercommunity.visualstudio.com). |
+| Extensão da Janela de Teste | No Visual Studio 2019, algumas APIs de janela de teste que foram marcadas como públicas anteriormente, mas nunca foram documentadas oficialmente, foram removidas. As APIs amplamente visíveis foram marcadas como preteridas no Visual Studio 2017 para fornecer um aviso antecipado aos mantenedores de extensão. Para o nosso conhecimento, poucas extensões haviam criado uma dependência dessas APIs. Para obter mais informações e atualizações, veja a [lista completa de APIs relacionadas a teste preteridas](https://github.com/Microsoft/vstest/issues/1830). Se isso afetar o seu cenário, informe-nos na [comunidade de desenvolvedores](https://aka.ms/feedback/suggest?space=8). |
 | Visual C++ | Você pode usar o Visual Studio 2019 para trabalhar em projetos criados em versões anteriores do Visual Studio no Visual Studio 2010. Quando você abre o projeto pela primeira vez, tem a opção de atualizar para o compilador e o conjunto de ferramentas mais recentes, ou continuar usando os originais. Se você optar por continuar usando os originais, o Visual Studio 2019 não modificará o arquivo de projeto e usará o conjunto de ferramentas da instalação anterior do Visual Studio para compilar o projeto. Manter as opções originais significa que você ainda pode abrir o projeto na versão original do Visual Studio, se for necessário. Para obter mais informações, consulte [Usar a multiplataforma nativa no Visual Studio para compilar projetos antigos](/cpp/porting/use-native-multi-targeting). |
 | Extensibilidade/VSIX do Visual Studio | Os projetos com o MinimumVersion 14.0 ou inferior serão atualizados para declarar a MinimumVersion 15.0, que impede que o projeto seja aberto em versões anteriores do Visual Studio. Para permitir que um projeto seja aberto em versões anteriores, defina MinimumVersion como `$(VisualStudioVersion)`. Consulte também [Como migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | É possível usar o Microsoft Test Manager ou o Visual Studio 2010 SP1 e posterior para abrir ambientes criados em qualquer uma dessas versões. No entanto, para o Visual Studio 2010 SP1, a versão do Microsoft Test Manager deve corresponder à versão do Team Foundation Server para que você possa criar ambientes. |
@@ -166,7 +166,7 @@ Se você não vir um projeto ou tipo de arquivo listado aqui que deveria ser, co
 | Windows Communication Foundation, Windows Workflow Foundation | Abra esse projeto no Visual Studio 2019, Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 e Visual Studio 2012. |
 | Windows Presentation Foundation | Você pode abrir este projeto no Visual Studio 2019, Visual Studio 2017, Visual Studio 2013, Visual Studio 2012 e Visual Studio 2010 SP1. |
 | Aplicativos do Windows Phone | Não há suporte para projetos do Windows Phone no Visual Studio 2019. <br/><br/>Para manter os aplicativos do Windows Phone 8.x, use o Visual Studio 2015. Para manter os projetos do Windows Phone 7. x, use o Visual Studio 2012. |
-| Aplicativos da Windows Store | Não há suporte para Projetos Universais do Windows de JavaScript no Visual Studio 2019. Para manter esses projetos, use o Visual Studio 2017. <br/><br/>Os SDKs do Windows 10 anteriores ao Windows 10 Fall Creators Update (build 16299) foram removidos do instalador do Visual Studio 2019. Baixe os SDKs mais antigos manualmente ou redirecione seus projetos para que eles usem os SDKs mais recentes.<br/><br/>Não há suporte para Projetos Universais do Windows usando project.json. Recomendamos atualizar esses projetos para usar referências de pacote. Como alternativa, adicione uma referência ao Microsoft.NET.Test.Sdk versão 16.0.0.0 no arquivo project.json.<br/><br/>Não há suporte para projetos da Windows Store 8.1 e 8.0 no Visual Studio 2019. Para manter esses aplicativos, continue a usar o Visual Studio 2015. |
+| aplicativos da Windows Store | Não há suporte para Projetos Universais do Windows de JavaScript no Visual Studio 2019. Para manter esses projetos, use o Visual Studio 2017. <br/><br/>Os SDKs do Windows 10 anteriores ao Windows 10 Fall Creators Update (build 16299) foram removidos do instalador do Visual Studio 2019. Baixe os SDKs mais antigos manualmente ou redirecione seus projetos para que eles usem os SDKs mais recentes.<br/><br/>Não há suporte para Projetos Universais do Windows usando project.json. Recomendamos atualizar esses projetos para usar referências de pacote. Como alternativa, adicione uma referência ao Microsoft.NET.Test.Sdk versão 16.0.0.0 no arquivo project.json.<br/><br/>Não há suporte para projetos da Windows Store 8.1 e 8.0 no Visual Studio 2019. Para manter esses aplicativos, continue a usar o Visual Studio 2015. |
 | Xamarin | A extensão Xamarin Live Player para Visual Studio e Visual Studio para Mac foi removida. Isso remove qualquer integração e a tela de emparelhamento. Em vez disso, use o Visualizador do Xamarin.Forms interno.<br/><br/>O Emulador do Visual Studio para Android foi removido do Instalador do Visual Studio. Em vez disso, use o novo suporte do Hyper-V no Google Android Emulator. |
 
 ## <a name="migrate-a-project"></a>Migrar um projeto
@@ -198,7 +198,7 @@ Consulte os seguintes artigos para uma discussão mais detalhada:
 - [Diretrizes de ToolsVersion](../msbuild/msbuild-toolset-toolsversion.md)
 - [Diretrizes de direcionamento de estrutura](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de atualização e de migração de projeto para o Visual Studio 2017](?view=vs-2017&preserve-view=true)
 - [Ciclo de vida do produto Visual Studio e manutenção](/visualstudio/releases/2019/servicing/)

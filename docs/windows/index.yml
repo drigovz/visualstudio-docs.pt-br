@@ -11,12 +11,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 01fee6752bbbc5512e78f3daa313846300a77ca9
-  ms.sourcegitcommit: 62f91179f2c3a51c85dd7b0e6172a3a53393fb7e
-  ms.translationtype: HT
+  ms.openlocfilehash: d6683909bae824e10d37ab029a0a2d4110488ae8
+  ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+  ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/12/2020
-  ms.locfileid: "94567127"
+  ms.lasthandoff: 12/18/2020
+  ms.locfileid: "97668619"
 highlightedContent:
   items:
   - title: Instalação e configuração
@@ -205,4 +205,4 @@ additionalContent:
     - title: Desenvolver com contêineres do Docker
       summary: Use contêineres do Docker para isolar componentes modulares e melhorar a escalabilidade.
       url: ../containers/index.yml
-  footer: '[Blogs](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Relatório de Problemas](../ide/feedback-options.md) - [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html) - [Solução de Problemas](/troubleshoot/visualstudio/welcome-visual-studio)'
+  footer: '[Blogs](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Relatório de Problemas](../ide/feedback-options.md) - [Developer Community](https://aka.ms/feedback/suggest?space=8) - [Solução de Problemas](/troubleshoot/visualstudio/welcome-visual-studio)'

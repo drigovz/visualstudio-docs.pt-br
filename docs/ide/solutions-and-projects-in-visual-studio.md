@@ -1,5 +1,5 @@
 ---
-title: Visão geral de soluções e projetos
+title: Saiba mais sobre soluções e projetos
 description: Saiba mais sobre projetos e soluções do Visual Studio, como criar novos projetos de um modelo e como exibir & gerenciar projetos no Gerenciador de Soluções.
 ms.custom: SEO-VS-2020
 ms.date: 12/15/2020
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1981bc5c9d1c2589607f355528c332d01284917e
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 19d0d2fc862572fdf7226a78e0b34d0af0d57541
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615747"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668086"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
 
@@ -51,7 +51,7 @@ Os arquivos de projeto são baseados no [esquema XML do MSBuild](../msbuild/msbu
 
 ## <a name="solutions"></a>Soluções
 
-Um projeto está contido dentro de uma *solução*. Apesar do nome, uma solução não é uma "resposta". Ela é apenas um contêiner de um ou mais projetos relacionados, juntamente com informações de build, configurações de janela do Visual Studio e arquivos diversos que não estão associados a nenhum projeto específico. Uma solução é descrita por um arquivo de texto (extensão *.sln*) com seu próprio formato exclusivo; não se destina à edição manual.
+Um projeto está contido dentro de uma *solução*. Apesar do nome, uma solução não é uma "resposta". Ela é apenas um contêiner de um ou mais projetos relacionados, juntamente com informações de build, configurações de janela do Visual Studio e arquivos diversos que não estão associados a nenhum projeto específico.
 
 ### <a name="solution-file"></a>Arquivo de solução
 
@@ -61,6 +61,9 @@ O Visual Studio usa dois tipos de arquivos (*.sln* e *.suo*) para armazenar conf
 |---------------|----------|-----------------|
 |.sln|Solução do Visual Studio|Organiza projetos, itens de projeto e itens de solução na solução.|
 |.suo|Opções do usuário da solução|Armazena configurações e personalizações no nível do usuário, como pontos de interrupção.|
+
+> [!IMPORTANT]
+> Uma solução é descrita por um arquivo de texto (extensão *.sln*) com seu próprio formato exclusivo; não se destina à edição manual. Por outro lado, o arquivo *. suo* é um arquivo oculto que não é exibido sob as configurações padrão do explorador de arquivos. Para mostrar arquivos ocultos, no menu **Exibir** do Explorador de Arquivos, marque a caixa de seleção **Itens Ocultos**.
 
 ### <a name="solution-folder"></a>Pasta da solução
 
@@ -89,7 +92,7 @@ Para projetos ASP.NET Core, você pode personalizar como os arquivos são aninha
 
 E, para exibir uma lista de alguns ícones que aparecem no Gerenciador de Soluções, consulte os [ícones modo de exibição de classe e pesquisador de objetos](class-view-and-object-browser-icons.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Portar, migrar e atualizar projetos](../porting/port-migrate-and-upgrade-visual-studio-projects.md)

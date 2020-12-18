@@ -12,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c89f2f6ec2a1a9bc6c87a600c355226b2f3da4
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: dccf962aef39227388f86134a9dd1f8c96440a3c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95005932"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668541"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidade de dados da Comunidade de Desenvolvedores
 
-Por padrão, todas as informações nos relatórios de problema na [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com/), inclusive todos os comentários e as respostas, ficam visíveis publicamente. Isso é útil porque permite que toda a comunidade veja os problemas, as soluções e as soluções alternativas que outros usuários descobriram. No entanto, se você está preocupado com a privacidade dos dados ou da identidade, há opções para isso.
+Por padrão, todas as informações nos relatórios de problema na [Comunidade de Desenvolvedores](https://aka.ms/feedback/suggest?space=8), inclusive todos os comentários e as respostas, ficam visíveis publicamente. Isso é útil porque permite que toda a comunidade veja os problemas, as soluções e as soluções alternativas que outros usuários descobriram. No entanto, se você está preocupado com a privacidade dos dados ou da identidade, há opções para isso.
 
 ## <a name="identity-privacy"></a>Privacidade da identidade
 
@@ -90,7 +90,7 @@ Quando a ação **Relatar um problema** é iniciada com o Visual Studio, nós co
   > ![Relatar um problema-Resumo dos logs coletados](media/report-a-problem-logs-collected.png)
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como relatar um problema com o Visual Studio](how-to-report-a-problem-with-visual-studio.md)
 - [Privacidade de dados do relatório de problema do C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

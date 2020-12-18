@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfcdcfc309fb951b2f7e490f0d03dcfe9d381b83
-ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
+ms.openlocfilehash: 3e30dcb6a9d65cb562851ed90e350530759975d2
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116144"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668554"
 ---
 # <a name="developer-community-guidelines"></a>Diretrizes do Developer Community
 
@@ -21,7 +21,7 @@ A comunidade de desenvolvedores rastreia problemas e sugestões de recursos para
 
 ## <a name="submitting-problems-and-suggestions"></a>Enviando problemas e sugestões
 
-A [comunidade de desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/) rastreia problemas e sugestões de recursos para o Visual Studio.
+A [comunidade de desenvolvedores do Visual Studio](https://aka.ms/feedback/suggest?space=8) rastreia problemas e sugestões de recursos para o Visual Studio.
 
 ### <a name="before-submitting-an-issue"></a>Antes de enviar um problema
 
@@ -36,7 +36,7 @@ Se você não encontrar um problema existente que descreva seu bug ou recurso, e
 - Arquivo apenas um problema ou solicitação de recurso por problema.
 
   - A combinação de vários problemas ou de solicitações de recursos em um único problema dificulta nosso diagnóstico e dificulta a votação do seu problema.
-  - Não adicione seu problema como um comentário a um problema existente, a menos que ele seja para a entrada idêntica. Muitos problemas parecem semelhantes, mas têm causas diferentes, o que torna mais difícil diagnosticar seu problema.
+  - Não adicione seu problema como um comentário a um problema existente, a menos que seja para uma entrada idêntica. Muitos problemas parecem semelhantes, mas têm causas diferentes, o que torna mais difícil diagnosticar seu problema.
 
 - Quanto mais informações você puder fornecer, mais fácil será para nós reproduzir e corrigir o problema.
 - Inclua as etapas a seguir com cada problema.
@@ -49,7 +49,7 @@ Se você não encontrar um problema existente que descreva seu bug ou recurso, e
 
   - Pesquise para ver se existe uma duplicata. Nesse caso, vote no problema existente, fornecendo comentários adicionais ou esclarecimentos, conforme necessário.
   - Recrie o problema depois de desabilitar todas as extensões. Se você achar que o problema é causado por uma extensão que você instalou, execute um problema na extensão, respectivamente.
-  - Simplifique seu código em relação ao problema para que possamos isolar melhor o problema.
+  - Simplifique seu código em relação ao problema para que possamos isolá-lo de uma forma melhor.
 
 Mesmo com problemas que incluem detalhes avançados, talvez não seja possível reproduzir o problema e pode pedir mais informações!
 
@@ -117,4 +117,4 @@ Comentários e respostas são visíveis publicamente, mas todos os arquivos anex
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Acesse a comunidade de [desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/) para relatar problemas, sugerir recursos ou navegar pelos tíquetes existentes. Aproveite!
+Acesse a comunidade de [desenvolvedores do Visual Studio](https://aka.ms/feedback/suggest?space=8) para relatar problemas, sugerir recursos ou navegar pelos tíquetes existentes. Aproveite!

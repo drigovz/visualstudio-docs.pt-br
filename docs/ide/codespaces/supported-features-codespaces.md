@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: f253ba9b7e46f809bc107aa2b3e26f635d778770
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 84be6698c62e3a2a205ceb9d404673ee1d0c6f64
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928548"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668606"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Recursos do Visual Studio com suporte (versão prévia)
 
@@ -27,7 +27,7 @@ Na [versão beta pública](https://github.com/features/codespaces)Codespaces do 
 Isso **não deve ser uma lista exaustiva**, mas para explicar os recursos gerais do Visual Studio quando conectados a um codespace.
 
 > [!NOTE]
-> Se houver um recurso que você está perdendo ao usar o codespaces com o Visual Studio, informe-nos abrindo um problema em https://developercommunity.visualstudio.com/ . Isso nos ajuda a priorizar os recursos mais desejados.
+> Se houver um recurso que você está perdendo ao usar o codespaces com o Visual Studio, informe-nos abrindo um problema na [comunidade de desenvolvedores do Visual Studio](https://aka.ms/feedback/suggest?space=8). Isso nos ajuda a priorizar os recursos mais desejados.
 
 > [!NOTE]
 > Os recursos descritos abaixo são para o Visual Studio e não para os dois outros clientes do GitHub Codespaces; Visual Studio Code e o editor no navegador.
@@ -109,7 +109,7 @@ Ainda não disponível:
 Ao trabalhar com o Visual Studio conectado a um codespace, você obtém os mesmos recursos de acessibilidade que ao trabalhar localmente.
 
 * Controle do código-fonte-suporte completo do git por meio da nova [janela do git](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/).
-* Acessibilidade – há um problema conhecido com a tecnologia assistencial que não consegue acessar o appcasting de um aplicativo depurado. Além dessa limitação, não acreditamos que haja outros problemas de compatibilidade que ainda não existam na experiência do Visual Studio local. Informe-nos se detectar bugs ao arquivar um problema na [comunidade de desenvolvedores](https://developercommunity.visualstudio.com/).
+* Acessibilidade – há um problema conhecido com a tecnologia assistencial que não consegue acessar o appcasting de um aplicativo depurado. Além dessa limitação, não acreditamos que haja outros problemas de compatibilidade que ainda não existam na experiência do Visual Studio local. Informe-nos se detectar bugs ao arquivar um problema na [comunidade de desenvolvedores](https://aka.ms/feedback/suggest?space=8).
 * Publicação – publicar no Azure por meio de ações do GitHub tem suporte.
 * Serviços conectados-não há suporte parcial para o app insights, o keyvault, o armazenamento, o SQL, o Redis, o cosmos, o openAPI e o gRPC.
 * Gerenciador de testes *-com suporte na maioria das vezes.
@@ -121,7 +121,7 @@ Ainda não disponível:
 * Recursos de teste empresarial-Live Unit Testing, falsificações da Microsoft, cobertura de código e IntelliTest não têm suporte.
 * Cenários de publicação avançada-publicação seletiva, publicação de FTP, alterações de visualização, barra de ferramentas de publicação rápida, etc.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [O que é o GitHub Codespaces?](codespaces-overview.md)
 * [Como usar o Visual Studio com um codespace](use-visual-studio-with-codespaces.md)

@@ -1,5 +1,6 @@
 ---
 title: Texto e ajuda da interface do usuário para o Visual Studio | Microsoft Docs
+description: Saiba mais sobre o texto da interface do usuário e a terminologia usada nas informações de ajuda do Visual Studio.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3247aeaa702b59722471c7d28e98957f04f3e07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2795d766c43d6119fa50a12c4dcd1e2c72d79186
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698291"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668593"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texto de interface do usuário e Ajuda para Visual Studio
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> Texto e terminologia da interface do usuário
@@ -60,11 +61,11 @@ ms.locfileid: "80698291"
 #### <a name="supplemental-instructions"></a>Instruções complementares
  As instruções complementares fornecem informações adicionais que ajudam o usuário a entender controles ou controlar agrupamentos. Isso também pode incluir o texto de dica necessário para entender o formato esperado pelo controle de entrada. Use instruções suplementares com moderação. Reserve-los para casos em que é provável que o usuário não entenda totalmente as ramificações da escolha que estão fazendo.
 
- ![Texto complementar no Visual Studio](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")
+ ![Captura de tela mostrando o botão Opções do Internet Explorer com texto suplementar abaixo dele que descreve o impacto da alteração das configurações de opção.](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")
 
  **Texto complementar no Visual Studio**
 
- ![Texto complementar no Visual Studio](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
+ ![Captura de tela da caixa de diálogo escolher controle do código-fonte no Visual Studio mostrando texto suplementar que descreve cada uma das opções do sistema de controle do código-fonte.](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
 
  **Texto complementar no Visual Studio**
 
@@ -136,15 +137,15 @@ ms.locfileid: "80698291"
 
 - No lugar do rótulo de controle:
 
-     ![Texto de dica no Visual Studio](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")
+     ![Captura de tela de um controle suspenso com texto de dica no lugar do rótulo de controle que lê "Pesquisar Gerenciador de Soluções (Ctrl +;)".](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")
 
 - Com um verbo, fornecendo instruções:
 
-     ![Texto de dica no Visual Studio](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")
+     ![Captura de tela de uma caixa de texto com texto de dica no controle que lê "Insira seu nome".](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")
 
 - Com texto indicando uma entrada necessária:
 
-     ![Texto de dica no Visual Studio](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601-h_HintText3")
+     ![Captura de tela de uma caixa de texto com texto de dica no controle que lê " \< obrigatório \> ".](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601-h_HintText3")
 
 #### <a name="watermark-text"></a>Texto da marca d' água
  Em uma superfície de design vazia, o texto deve indicar o que fazer, bem como fornecer links para abrir outras janelas relacionadas, se apropriado:
@@ -247,7 +248,7 @@ ms.locfileid: "80698291"
 
 - **Educado.** Não tenha culpado o usuário nem faça com que eles se sintam estúpidos. Evite a linguagem hostil ou ofensiva (Kill, execute, Terminate, fatal, ilegal). Evite texto em maiúsculas, que geralmente é visto como gritar e não é tão legível. Não use humor.
 
-- **Corrigi.** Use a grafia e a gramática corretas (mesmo em Alfas). Erros de grafia são constrangedoras e incorretas.
+- **Correto.** Use a grafia e a gramática corretas (mesmo em Alfas). Erros de grafia são constrangedoras e incorretas.
 
 - **Contextual apropriado.** Use o texto do botão apropriado. Evite o botão "OK" e, em vez disso, use "Continue" ou "yes/no".
 
@@ -420,7 +421,7 @@ public class HelpForm : Form
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Fontes e formatação para Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)
 - [Layout para Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)
 - [Notificações e progresso do Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)

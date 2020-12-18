@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 901a5a5eea7835720ab9d5963f0ab1be36df3685
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168730"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668853"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK do Microsoft Help Viewer
 
@@ -302,7 +302,7 @@ Defina os valores de registro a seguir para habilitar o fallback F1 para o conte
 
    - Para sistemas operacionais de 64 bits:
 
-        HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
+        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
         "VendorContent" = DWORD: 00000001
 
@@ -310,13 +310,13 @@ Defina os valores de registro a seguir para habilitar o fallback F1 para o conte
 
    - Para sistemas operacionais de 32 bits:
 
-      <em> \\ Namespace \> </em> do HKEY_LOCAL_MACHINE \software\microsoft\help\v2.3\partner<
+      <em> \\ Namespace \> de<</em> de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Partner
 
       "local" = "offline"
 
    - Para sistemas operacionais de 64 bits:
 
-      <em> \\ Namespace \> </em> do HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\help\v2.3\partner<
+      <em> \\ Namespace \> de<</em> de HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner
 
       "local" = "offline"
 
@@ -324,7 +324,7 @@ Defina os valores de registro a seguir para habilitar o fallback F1 para o conte
 
 Para ativar a análise de namespace nativo base, no registro, adicione um novo DWORD com o nome de: BaseNativeNamespaces e defina seu valor como 1 (na chave de catálogo para a qual deseja oferecer suporte).  Por exemplo, se você quiser usar o catálogo do Visual Studio, poderá adicionar a chave ao caminho:
 
-HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
 Quando for encontrada uma palavra-chave F1 no formato de cabeçalho/método, o caractere '/' será analisado, resultando na seguinte construção:
 
@@ -342,13 +342,13 @@ Adicione a seguinte chave do registro e valor:
 
 ::: moniker range="vs-2017"
 
-**HKEY_CURRENT_USER ajuda do \Software\Microsoft\VisualStudio\15.0\Dynamic**
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help**
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-**HKEY_CURRENT_USER ajuda do \Software\Microsoft\VisualStudio\16.0\Dynamic**
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Dynamic Help**
 
 ::: moniker-end
 
@@ -469,7 +469,7 @@ Observação: as variáveis indicadas por "{n}" têm dependências de código-a 
 | LogoTitle | [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] |
 | LogoFileName | vs_logo_bk.gif |
 | LogoFileNameHC | vs_logo_wh.gif |
-| Recurso: | **Isenção de responsabilidade** |
+| Recurso: | **Enção** |
 | Use: | Um conjunto de isenções específicas do caso para conteúdo traduzido por computador. |
 | **Element** | **Valor** |
 | MT_Editable | Este artigo foi traduzido por máquina. Se você tiver uma conexão com a Internet, selecione "exibir este tópico online" para exibir essa página no modo editável com o conteúdo original em inglês ao mesmo tempo. |
@@ -698,7 +698,7 @@ Usar e estender as etapas acima permitirá que o VSPs implante seus conjuntos de
 
 Este tutorial demonstra como incorporar o conteúdo da ajuda em um aplicativo de shell do Visual Studio e, em seguida, implantá-lo.
 
-**Requisitos**
+**Requirements**
 
 1. [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]
 
@@ -741,11 +741,11 @@ Defina o repositório de conteúdo no registro. Para o Shell integrado, altere V
 
 Para criar uma extensão de shell isolada:
 
-1. No Visual Studio, em **arquivo**, escolha **novo projeto**, em **outros tipos de projeto** , escolha **extensibilidade**e, em seguida, escolha  **shell do Visual Studio isolado**. Nomeie o projeto `ContosoHelpShell` para criar um projeto de extensibilidade com base no modelo de shell isolado do Visual Studio.
+1. No Visual Studio, em **arquivo**, escolha **novo projeto**, em **outros tipos de projeto** , escolha **extensibilidade** e, em seguida, escolha  **shell do Visual Studio isolado**. Nomeie o projeto `ContosoHelpShell` para criar um projeto de extensibilidade com base no modelo de shell isolado do Visual Studio.
 
 2. No Gerenciador de Soluções, no projeto ContosoHelpShellUI, na pasta arquivos de recursos, abra ApplicationCommands. vsct. Verifique se essa linha foi comentada (pesquise por "No_Help"): `<!-- <define name="No_HelpMenuCommands"/> -->`
 
-3. Escolha a tecla F5 para compilar e executar a **depuração**. Na instância experimental do IDE do Shell isolado, escolha o menu **ajuda** . Verifique se a **exibição ajuda**, **adicione e remova o conteúdo da ajuda**e **defina** os comandos de preferência da ajuda.
+3. Escolha a tecla F5 para compilar e executar a **depuração**. Na instância experimental do IDE do Shell isolado, escolha o menu **ajuda** . Verifique se a **exibição ajuda**, **adicione e remova o conteúdo da ajuda** e **defina** os comandos de preferência da ajuda.
 
 4. No Gerenciador de Soluções, no projeto ContosHelpShell, na pasta personalização do Shell, abra ContosoHelpShell. pkgdef. Para definir o catálogo de ajuda da Contoso, adicione as seguintes linhas:
 
@@ -785,7 +785,7 @@ Para testar isso como se fosse implantado:
 
 3. Copie o conteúdo da pasta ContosoHelpShell Release para \\ \Program Files (x86) \Contoso\ Folder.
 
-4. Inicie o editor do registro escolhendo  **executar** no menu **Iniciar** e inserindo `Regedit` . No editor do registro, escolha **arquivo**e **importar**. Navegue até a pasta do projeto ContosoHelpShell. Na subpasta ContosoHelpShell, escolha ContosoHelpShell. reg.
+4. Inicie o editor do registro escolhendo  **executar** no menu **Iniciar** e inserindo `Regedit` . No editor do registro, escolha **arquivo** e **importar**. Navegue até a pasta do projeto ContosoHelpShell. Na subpasta ContosoHelpShell, escolha ContosoHelpShell. reg.
 
 5. Criar um repositório de conteúdo:
 
@@ -822,7 +822,7 @@ Para testar isso como se fosse implantado:
 
 10. Inicie o aplicativo contoso (da raiz do aplicativo contoso). No Shell ISO, escolha o item de menu **ajuda** e altere a **preferência de ajuda definir** para **usar a ajuda local**.
 
-11. No Shell, escolha o item de menu **ajuda** e, em seguida, **exiba a ajuda**. O Visualizador da ajuda local deve ser iniciado. Escolha a guia **gerenciar conteúdo** . Em **origem da instalação**, escolha o botão de opção **disco** . Escolha o botão **...** e navegue até a pasta local que contém o conteúdo da Contoso (copiado para a pasta local na etapa acima). Escolha o arquivo HelpContentSetup. msha. Agora, a Contoso deve aparecer como um livro nas seleções do livro. Escolha **Adicionar**e, em seguida, escolha o botão **Atualizar** (canto inferior direito).
+11. No Shell, escolha o item de menu **ajuda** e, em seguida, **exiba a ajuda**. O Visualizador da ajuda local deve ser iniciado. Escolha a guia **gerenciar conteúdo** . Em **origem da instalação**, escolha o botão de opção **disco** . Escolha o botão **...** e navegue até a pasta local que contém o conteúdo da Contoso (copiado para a pasta local na etapa acima). Escolha o arquivo HelpContentSetup. msha. Agora, a Contoso deve aparecer como um livro nas seleções do livro. Escolha **Adicionar** e, em seguida, escolha o botão **Atualizar** (canto inferior direito).
 
 12. No IDE contoso, escolha a tecla F1 para testar a funcionalidade F1.
 
@@ -832,4 +832,4 @@ Para a API de tempo de execução, consulte [API de ajuda do Windows](/previous-
 
 Para obter mais informações sobre como aproveitar a API de ajuda, consulte [exemplos de código do Help Viewer](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples).
 
-Você pode enviar sugestões de recursos na [comunidade de desenvolvedores](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Você pode enviar sugestões de recursos na [comunidade de desenvolvedores](https://aka.ms/feedback/suggest?space=8).

@@ -1,5 +1,6 @@
 ---
 title: Cores compartilhadas para o Visual Studio | Microsoft Docs
+description: Saiba como usar elementos e temas comuns do shell do Visual Studio para criar sua própria interface do usuário personalizada consistente com o ambiente do Visual Studio.
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e31e5d9c3d1dc284694bd2db2a9f37d863462ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939a327100b1fcf0908c56a4fc67540e646eac7e
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699937"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668905"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Cores compartilhadas para o Visual Studio
 Quando você está projetando a interface do usuário que usa elementos do shell do Visual Studio comuns ou deseja que seu elemento de interface seja consistente com recursos semelhantes, use nomes de token existentes em arquivos de definição de pacote para escolher e atribuir cores. Isso garante que sua interface do usuário permaneça consistente com o ambiente do Visual Studio geral e que seja atualizada automaticamente quando os temas forem adicionados ou atualizados.
@@ -1333,7 +1334,7 @@ Um grupo de barras de comando consiste em um conjunto relacionado de controles d
 
  **Botão suspenso da barra de comandos: estado de foco**
 
-![Botão suspenso da barra de comandos ao focalizar](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br />Botão suspenso da barra de comandos ao focalizar
+![Botão suspenso da caixa de combinação da barra de comandos ao focalizar](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br />Botão suspenso da barra de comandos ao focalizar
 
 | Elemento | Nome do token: categoria. cor |
 | --- | --- |
@@ -1342,7 +1343,7 @@ Um grupo de barras de comando consiste em um conjunto relacionado de controles d
 
 **Lista suspensa da barra de comandos: estado de foco**
 
- ![Lista suspensa da barra de comandos ao focalizar](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br />Lista suspensa da barra de comandos ao focalizar
+ ![Lista suspensa da caixa de combinação da barra de comandos ao focalizar](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br />Lista suspensa da barra de comandos ao focalizar
 
 | Elemento | Nome do token: categoria. cor |
 | --- | --- |
@@ -1383,7 +1384,7 @@ Um grupo de barras de comando consiste em um conjunto relacionado de controles d
 
 **Botão suspenso da barra de comandos: estado pressionado**
 
-![Botão suspenso da barra de comandos pressionado](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br />Botão suspenso da barra de comandos pressionado
+![Botão suspenso da caixa de combinação da barra de comandos pressionada](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br />Botão suspenso da barra de comandos pressionado
 
 | Elemento | Nome do token: categoria. cor |
 | --- | --- |
@@ -1403,7 +1404,7 @@ Um grupo de barras de comando consiste em um conjunto relacionado de controles d
 
 **Botão suspenso da barra de comandos: estado desabilitado**
 
-![Botão suspenso da barra de comandos desabilitado](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br />Botão suspenso da barra de comandos desabilitado
+![Botão suspenso da caixa de combinação da barra de comandos desabilitada](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br />Botão suspenso da barra de comandos desabilitado
 
 | Elemento | Nome do token: categoria. cor |
 | --- | --- |
@@ -1867,7 +1868,7 @@ O Visual Studio dá suporte à marcação, que permite que um usuário declare p
 | --- | --- |
 | ... para a interface do usuário que dá suporte à marcação. | ... para qualquer outro tipo de interface do usuário. |
 
-#### <a name="tags"></a>Marcas
+#### <a name="tags"></a>Marcações
 
 **Marca: estado padrão**
 

@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: ef6c6bf3cedcccd156e7ae9ae02c2e5f70805521
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: b69274058ea939251a772dfb30ddf7b42861542c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330167"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668580"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Perguntas frequentes sobre o Gerenciador de Testes do Visual Studio
 
@@ -97,13 +97,13 @@ Os ícones ao lado dos agrupamentos Projeto, Namespace e Classe mostram o estado
 
 **Não existe mais um filtro de "caminho do arquivo" na caixa de pesquisa do Gerenciador de Testes.**
 
-O filtro do caminho de arquivo na caixa de pesquisa do **Gerenciador de Testes** foi removida do Visual Studio 2017 versão 15.7. Essa funcionalidade tinha pouco uso e o Gerenciador de Testes pode recuperar métodos de teste com mais rapidez excluindo essa funcionalidade. Se essa alteração interromper seu fluxo de desenvolvimento, informe-nos enviando comentários na [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com/).
+O filtro do caminho de arquivo na caixa de pesquisa do **Gerenciador de Testes** foi removida do Visual Studio 2017 versão 15.7. Essa funcionalidade tinha pouco uso e o Gerenciador de Testes pode recuperar métodos de teste com mais rapidez excluindo essa funcionalidade. Se essa alteração interromper seu fluxo de desenvolvimento, informe-nos enviando comentários na [Comunidade de Desenvolvedores](https://aka.ms/feedback/suggest?space=8).
 
 ## <a name="remove-undocumented-interfaces"></a>Remover interfaces não documentadas
 
 **Algumas APIs relacionadas a teste não estão mais presentes no Visual Studio 2019. O que mudou?**
 
-No Visual Studio 2019, serão removidas algumas APIs de janela de teste que foram marcadas como públicas anteriormente, mas nunca foram documentadas oficialmente. Elas foram marcadas como "preteridas" no Visual Studio 2017 para fornecer um aviso antecipado aos mantenedores de extensão. Para o nosso conhecimento, muito poucas extensões haviam encontrado essas APIs e criado uma dependência delas. Elas incluem `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` e `SearchFilterTokenType`. Se essa alteração afetar sua extensão, fale conosco enviando um bug na [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com).
+No Visual Studio 2019, serão removidas algumas APIs de janela de teste que foram marcadas como públicas anteriormente, mas nunca foram documentadas oficialmente. Elas foram marcadas como "preteridas" no Visual Studio 2017 para fornecer um aviso antecipado aos mantenedores de extensão. Para o nosso conhecimento, muito poucas extensões haviam encontrado essas APIs e criado uma dependência delas. Elas incluem `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` e `SearchFilterTokenType`. Se essa alteração afetar sua extensão, fale conosco enviando um bug na [Comunidade de Desenvolvedores](https://aka.ms/feedback/suggest?space=8).
 
 ## <a name="test-adapter-nuget-reference"></a>Referência ao NuGet do adaptador de teste
 
@@ -117,7 +117,7 @@ Em vez de usar extensões do adaptador de teste, os projetos são solicitados a 
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> Se você estiver usando o adaptador de teste do NUnit 2 e não puder migrar para o adaptador de teste do NUnit 3, poderá desativar esse novo comportamento de descoberta no Visual Studio versão 15,8 no teste de opções de **ferramentas**  >  **Options**  >  **Test**.
+> Se você estiver usando o adaptador de teste do NUnit 2 e não puder migrar para o adaptador de teste do NUnit 3, poderá desativar esse novo comportamento de descoberta no Visual Studio versão 15,8 no teste de opções de **ferramentas**  >    >  .
 
 ![Comportamento do Adaptador do Gerenciador de Testes nas opções de ferramentas](media/testex-adapterbehavior.png)
 ::: moniker-end
@@ -126,7 +126,7 @@ Em vez de usar extensões do adaptador de teste, os projetos são solicitados a 
 
 **Meus testes do UWP não estão mais sendo executados no Visual Studio 2017 versão 15.7 e posterior.**
 
-Projetos de teste do UWP recentes especificam uma propriedade de build da plataforma de teste que permite um melhor desempenho para identificar aplicativos de teste. Se você tiver um projeto de teste UWP que foi inicializado antes do Visual Studio versão 15,7, poderá ver esse erro nos testes de **saída**  >  **Tests**:
+Projetos de teste do UWP recentes especificam uma propriedade de build da plataforma de teste que permite um melhor desempenho para identificar aplicativos de teste. Se você tiver um projeto de teste UWP que foi inicializado antes do Visual Studio versão 15,7, poderá ver esse erro nos testes de **saída**  >  :
 
 **System.AggregateException: Um ou mais erros ocorreram. ---> System.InvalidOperationException: O seguinte TestContainer não foi encontrado {} em Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()**
 
@@ -166,7 +166,7 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 > [!NOTE]
 > Você pode desativar o sinalizador com o mesmo comando, usando o valor 0 em vez de 1 após dword.
 ::: moniker-end
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
 - [Criar e executar testes de unidade para código existente](/previous-versions/dd293546(v=vs.110))

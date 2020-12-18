@@ -15,12 +15,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f06b72673ea73e68f6c224ec9734568d70e25a
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 4cded3bfdb6adc206f02ef54402964f4e7276f93
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852251"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668775"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Solucionando problemas de erros de ponto de interrupção de dados
 Esta página orientará você na resolução de erros comuns vistos ao usar "interromper quando o valor for alterado"
@@ -81,9 +81,9 @@ A arquitetura (configuração de plataforma) em que seu programa é executado te
 
 ## <a name="provide-feedback"></a>Fornecer comentários
 
-Para quaisquer problemas ou sugestões sobre esse recurso, informe-nos por meio da ajuda > enviar comentários > [relatar um problema](../ide/how-to-report-a-problem-with-visual-studio.md) no IDE ou na [comunidade de desenvolvedores](https://developercommunity.visualstudio.com/).
+Para quaisquer problemas ou sugestões sobre esse recurso, informe-nos por meio da ajuda > enviar comentários > [relatar um problema](../ide/how-to-report-a-problem-with-visual-studio.md) no IDE ou na [comunidade de desenvolvedores](https://aka.ms/feedback/suggest?space=8).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Usando "interromper quando o valor for alterado" no .NET Core 3,0](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus).
 - [DevBlog: quebra quando o valor é alterado: pontos de interrupção de dados para .NET Core no Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/break-when-value-changes-data-breakpoints-for-net-core-in-visual-studio-2019/)

@@ -17,20 +17,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 52eee3535590842db53cd80ac761286fb4a23fa9
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1fc40c826499b36d5d713d0842a2c0e8dae462d1
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398989"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668359"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy
 
 Se você ou sua organização usa medidas de segurança como um firewall ou um servidor proxy, há URLs de domínio que você talvez queira adicionar a uma "lista de permissões" e portas e protocolos que talvez você queira abrir para que tenha a melhor experiência ao instalar e usar o Visual Studio e os Serviços do Azure.
 
-* **[Instalar o Visual Studio](#install-visual-studio)** : essas tabelas incluem as URLs de domínio a serem adicionadas a uma lista de permissões para que você tenha acesso a todos os componentes e cargas de trabalho desejados.
+* **[Instalar o Visual Studio](#install-visual-studio)**: essas tabelas incluem as URLs de domínio a serem adicionadas a uma lista de permissões para que você tenha acesso a todos os componentes e cargas de trabalho desejados.
 
-* **[Usar o Visual Studio e os serviços do Azure](#use-visual-studio-and-azure-services)** : essa tabela inclui as URLs de domínio a serem adicionadas a uma lista de permissões e as portas e protocolos a serem abertos para que você tenha acesso a todos os recursos e serviços desejados.
+* **[Usar o Visual Studio e os serviços do Azure](#use-visual-studio-and-azure-services)**: essa tabela inclui as URLs de domínio a serem adicionadas a uma lista de permissões e as portas e protocolos a serem abertos para que você tenha acesso a todos os recursos e serviços desejados.
 
 > [!NOTE]
 > Este artigo foi escrito para o Visual Studio no Windows, mas determinadas informações também são aplicáveis à [instalação do Visual Studio para Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) por trás de um firewall ou de um servidor proxy.
@@ -120,7 +120,7 @@ Para garantir que você tenha acesso a tudo o que desejar quando usar o Visual S
 | Informações de ponto de extremidade de criação <br>de Recurso do Azure atualizadas | \*.blob.core.windows.net | https/443 | Usada para atualizar os pontos de extremidade usados para a criação de Recursos do Azure para determinados Serviços do Azure. Se desabilitada, as últimas localizações de ponto de extremidade baixadas ou inseridas são usadas |
 | Depuração remota e <br>Criação de perfil remota de <br>Websites do Azure | &#42;.cloudapp.net <br> &#42;.azurewebsites.net | 4022 | Usada para anexar o depurador remoto a sites do Azure. Se desabilitada, a anexação do depurador remoto a sites do Azure não funcionará |
 | Active Directory <br>Grafo | graph.windows.net | https/443 | Usada para provisionar novos aplicativos do Azure Active Directory. Também usado pelo provedor de serviços Microsoft 365 MSGraph-conectado |
-| Azure Functions <br>Atualização de CLI do <br>Verificação | functionscdn.azureedge.net | https/443 | Usada para verificar as versões atualizadas da CLI do Azure Functions. Se desabilitada, uma cópia armazenada em cache (ou a cópia carregada pelo componente do Azure Functions) da CLI será usada |
+| Funções do Azure <br>Atualização de CLI do <br>Verificação | functionscdn.azureedge.net | https/443 | Usada para verificar as versões atualizadas da CLI do Azure Functions. Se desabilitada, uma cópia armazenada em cache (ou a cópia carregada pelo componente do Azure Functions) da CLI será usada |
 | Cordova | npmjs.org<br>gradle.org | & de http/80<br/>https/443 | O HTTP é usado para downloads de Gradle durante o build. O HTTPS é usado para incluir plug-ins do Cordova nos projetos |
 | Gerenciador de Nuvem | 1. &#60;ponto de extremidade do cluster&#62; <br>Service Fabric <br>2. &#60;ponto de extremidade de gerenciamento&#62;<br>General Cloud Exp <br>3. &#60;ponto de extremidade do grafo&#62;<br>General Cloud Exp<br>4. &#60;ponto de extremidade da conta de armazenamento&#62;<br>Nós de Armazenamento <br>5. &#60;Azure portal URLs&#62;<br>General Cloud Exp <br>6. &#60;pontos de extremidade do key vault&#62; <br>Nós de VM do Azure Resource Manager<br>7. &#60;Endereço de IP pública do cluster&#62;<br>Depuração remota do Service Fabric e Rastreamentos de ETW | <br>1. https/19080<br>2. https/443<br>3. https/443<br>4. https/443<br>5. https/443<br>6. https/443<br>7. TCP/dinâmico | 1. exemplo: test12.eastus.cloudapp.com<br>2. recupera assinaturas e recupera/gerencia recursos do Azure<br>3. recupera Azure Stack assinaturas<br>4. gerencia recursos de armazenamento (por exemplo: mystorageaccount.blob.core.windows.net)<br>5. opção de menu de contexto "abrir no portal" (abre um recurso no portal do Azure)<br>6. cria e usa cofres de chaves para depuração de VM (exemplo: myvault.vault.azure.net) <br><br>7. o aloca dinamicamente o bloco de portas com base no número de nós no cluster e nas portas disponíveis. <br><br>Um bloco de portas tentará obter três vezes o número dos nós com um mínimo de 10 portas.<br><br>Para rastreamentos de Streaming, é feita uma tentativa para obter o bloco de portas de 810. Se qualquer um dos blocos de portas já estiver em uso, será feita uma tentativa de obter o próximo bloco e assim por diante. (O balanceador de carga está vazio, então as portas de 810 provavelmente serão usadas) <br><br>Da mesma forma para depuração, quatro conjuntos de blocos de portas são reservados: <br>- connectorPort: 30398, <br>- forwarderPort: 31398, <br>- forwarderPortx86: 31399,<br>- fileUploadPort: 32398<br> |
 | Serviços de Nuvem | 1. RDP<br><br>2. core.windows.net <br><br>3. management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;serviço de nuvem do usuário&#62;.cloudapp.net <br> &#60;VM do usuário&#62;.&#60;região&#62;.azure.com | 1. rdp/3389 <br><br> 2. https/443 <br><br> 3. https/443 <br><br> 4. https/443 <br><br> 5. https/443 <br><br>6. tcp <br>a) 30398 <br>b) 30400 <br>c) 31398 <br>d) 31400 <br>e) 32398 <br>f) 32400 | 1. Área de Trabalho Remota à VM de serviços de nuvem <br><br> 2. componente de conta de armazenamento da configuração de diagnóstico particular <br><br> 3. portal do Azure <br><br> 4. Gerenciador de Servidores-&#42; de armazenamento do Azure é a conta de armazenamento nomeada do cliente  <br><br> 5. links para abrir o portal &#47; baixar o certificado de assinatura &#47; arquivo de configurações de publicação <br><br>6. a) Porta local do conector para depuração remota para serviço de nuvem e VM<br> 6. b) Porta pública do conector para depuração remota para serviço de nuvem e VM <br> 6. c) Porta local do encaminhador para depuração remota para serviço de nuvem e VM <br> 6. d) Porta pública do encaminhador para depuração remota para serviço de nuvem e VM  <br> 6. e) Porta local do carregador de arquivos para depuração remota para serviço de nuvem e VM <br> 6. f) Porta pública do carregador de arquivos para depuração remota para serviço de nuvem e VM |
@@ -148,17 +148,17 @@ Para garantir que você tenha acesso a tudo o que desejar quando usar o Visual S
 
 Às vezes, você pode encontrar erros relacionados à rede ou ao proxy ao instalar ou usar o Visual Studio atrás de um firewall ou servidor proxy. Para obter mais informações sobre as soluções para essas mensagens de erro, consulte a página [Solução de erros relacionados à rede ao instalar ou usar o Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).
 
-## <a name="get-support"></a>Obter suporte
+## <a name="get-support"></a>Obtenha suporte
 
 Oferecemos uma opção de suporte de [**chat de instalação**](https://visualstudio.microsoft.com/vs/support/#talktous) (somente em inglês) para problemas relacionados à instalação.
 
 Aqui estão algumas outras opções de suporte:
 
 * Relate problemas do produto para nós por meio da ferramenta [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio.md), exibida no Instalador do Visual Studio e no IDE do Visual Studio.
-* Sugira um recurso, acompanhe os problemas do produto e encontre respostas na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/).
+* Sugira um recurso, acompanhe os problemas do produto e encontre respostas na [Comunidade de Desenvolvedores do Visual Studio](https://aka.ms/feedback/suggest?space=8).
 * Use sua conta do [GitHub](https://github.com/) para falar conosco e com outros desenvolvedores do Visual Studio nas [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [Requisitos de conectividade do Live Share](/visualstudio/liveshare/reference/connectivity/)
 * [Criar uma instalação de rede do Visual Studio](create-a-network-installation-of-visual-studio.md)

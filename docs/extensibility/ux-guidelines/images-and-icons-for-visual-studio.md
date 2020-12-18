@@ -1,5 +1,6 @@
 ---
 title: Imagens e ícones do Visual Studio | Microsoft Docs
+description: Saiba mais sobre os conceitos de design usados para criar imagens e ícones para o Visual Studio.
 ms.date: 04/26/2017
 ms.topic: overview
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edbf1542277189f37565e7ff415a52025094e595
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f29fd0a69ceafa33c00593b67f6775a723780c26
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906110"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668645"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Imagens e ícones para o Visual Studio
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Uso de imagem no Visual Studio
@@ -258,7 +259,7 @@ ms.locfileid: "85906110"
 ### <a name="base-palette"></a>Paleta de base
  Todos os ícones padrão contêm três cores de base. Os ícones não contêm gradientes ou sombras projetadas, com uma ou duas exceções para ícones de ferramenta 3D.
 
-|Uso|Name|Valor (tema claro)|Essas|Exemplo|
+|Uso|Nome|Valor (tema claro)|Essas|Exemplo|
 |-----------|----------|---------------------------|------------|-------------|
 |Plano de fundo/escuro|VS BG|424242/66, 66, 66|![Amostra 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Exemplo de paleta de base](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405-02_BasePaletteExample")|
 |Primeiro plano/luz|VS FG|F0EFF1/240.239.241|![F0EFF1 de amostra](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
@@ -271,7 +272,7 @@ ms.locfileid: "85906110"
 #### <a name="action-modifiers"></a>Modificadores de ação
  As quatro cores abaixo indicam os tipos de ações exigidas pelos modificadores de ação:
 
-|Uso|Name|Valor (todos os temas)|Essas|
+|Uso|Nome|Valor (todos os temas)|Essas|
 |-----------|----------|--------------------------|------------|
 |Positivo|Ação VS verde|388A34/56138, 52|![388A34 de amostra](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |Negativo|Ação VS vermelho|A1260D/161, 38, 13|![A1260D de amostra](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
@@ -293,7 +294,7 @@ ms.locfileid: "85906110"
 
  O azul é aplicado aos modificadores de ação neutros mais comumente representados como setas, como "abrir", "Avançar", "anterior", "importar" e "exportar".
 
-|Ir para o campo|Check-in em lote|Editor de endereço|Editor de associação|
+|Ir para o campo|Check-In em lote|Editor de endereço|Editor de associação|
 |-|-|-|-|
 |![Ir para o ícone de campo](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405-11_GoToField")|![&#45;de verificação em lote no ícone](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405-12_BatchedCheckIn")|![Ícone do editor de endereços](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405-13_AddressEditor")|![Ícone do editor de associação](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405-14_AssociationEditor")|
 
@@ -306,22 +307,22 @@ ms.locfileid: "85906110"
 #### <a name="special-cases"></a>Casos especiais
  Em casos especiais, um modificador de ação colorida pode ser usado independentemente como um ícone autônomo. A cor usada para o ícone reflete as ações com as quais o ícone está associado. Esse uso é limitado a um pequeno subconjunto de ícones, incluindo:
 
-|Executar|Stop|Excluir|Salvar|Navegação Regressiva|
+|Executar|Parar|Excluir|Salvar|Navegação Regressiva|
 |-|-|-|-|-|
-|![Ícone de execução](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![Ícone parar](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")|![Ícone excluir](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")|![Ícone Salvar](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")|![Ícone navegar para trás](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")|
+|![Ícone de execução](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![Ícone de parada – quadrado vermelho sólido.](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")|![Ícone excluir](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")|![Ícone Salvar](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")|![Ícone navegar para trás](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")|
 
 ### <a name="code-hierarchy-palette"></a>Paleta de hierarquia de código
 
 #### <a name="folder"></a>Pasta
 
-|Uso|Name|Valor (todos os temas)|Essas|Exemplo|
+|Uso|Nome|Valor (todos os temas)|Essas|Exemplo|
 |-----------|----------|--------------------------|------------|-------------|
 |Pastas|Pasta|DCB67A/220.182.122|![DCB67A de amostra](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Ícone de cor da pasta](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Linguagens do Visual Studio
  Cada um dos idiomas ou plataformas comuns disponíveis no Visual Studio tem uma cor associada. Essas cores são usadas no ícone base ou em modificadores de idioma que aparecem no canto superior direito dos ícones compostos.
 
-|Uso|Name|Valor (todos os temas)|Essas|
+|Uso|Nome|Valor (todos os temas)|Essas|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|HTML ASP WPF azul|0095D7/0149.215|![0095D7 de amostra](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|
 |C++|CPP roxo|9B4F96/155, 79150|![9B4F96 de amostra](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
@@ -346,7 +347,7 @@ ms.locfileid: "85906110"
 #### <a name="intellisense"></a>IntelliSense
  Os ícones do IntelliSense usam uma paleta de cores exclusiva. Essas cores são usadas para ajudar os usuários a distinguir rapidamente entre os diferentes itens na lista de pop-ups do IntelliSense.
 
-|Uso|Name|Valor (todos os temas)|Essas|
+|Uso|Nome|Valor (todos os temas)|Essas|
 |-----------|----------|--------------------------|------------|
 |Classe, evento|Ação do VS laranja|C27D1A/194125, 26|![C27D1A de amostra](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 |Método de extensão, método, módulo, delegado|Ação VS roxa|652D90/101, 45144|![652D90 de amostra](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
@@ -367,7 +368,7 @@ ms.locfileid: "85906110"
 ### <a name="notifications"></a>Notificações
  As notificações no Visual Studio são usadas para indicar o status. A paleta de notificação usa as quatro cores a seguir, bem como opções de preenchimento de primeiro plano preto ou branco, para definir notificações com os seguintes níveis de status.
 
-|Uso|Name|Valor (todos os temas)|Essas|
+|Uso|Nome|Valor (todos os temas)|Essas|
 |-----------|----------|--------------------------|------------|
 |Status: neutro|Notificação azul (VS. azul)|1BA1E2/27.161.226|![1BA1E2 de amostra](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |Status: positivo|Notificação verde (VS verde)|339933/51153, 51|![Amostra 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|
@@ -378,6 +379,6 @@ ms.locfileid: "85906110"
 
 #### <a name="examples-of-notification-icons"></a>Exemplos de ícones de notificação
 
-|Alerta|Aviso|Concluir|Stop|
+|Alerta|Aviso|Concluir|Parar|
 |-|-|-|-|
-|![Ícone de alerta](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405-45_Alert")|![Ícone de aviso:](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405-48_Warning")|![Ícone concluir](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405-46_Complete")|![Ícone parar](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405-47_Stop")|
+|![Ícone de alerta](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405-45_Alert")|![Ícone de aviso:](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405-48_Warning")|![Ícone concluir](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405-46_Complete")|![Ícone de parada – círculo vermelho sólido com um quadrado branco no centro.](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405-47_Stop")|

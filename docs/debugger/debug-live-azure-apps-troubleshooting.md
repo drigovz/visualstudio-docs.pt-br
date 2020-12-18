@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64ea7f1ea1f665f5180851e42814ad4e8c12c8c5
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84182866"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668515"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Solução de problemas e problemas conhecidos da depuração de instantâneos no Visual Studio
 
-Se as etapas descritas neste artigo não resolverem o problema, procure o problema na [comunidade de desenvolvedores](https://developercommunity.visualstudio.com/spaces/8/index.html) ou informe um novo problema, escolhendo **ajudar**  >  **enviar comentários**para  >  **relatar um problema** no Visual Studio.
+Se as etapas descritas neste artigo não resolverem o problema, procure o problema na [comunidade de desenvolvedores](https://aka.ms/feedback/suggest?space=8) ou informe um novo problema, escolhendo **ajudar**  >  **enviar comentários** para  >  **relatar um problema** no Visual Studio.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problema: "Attach Depurador de Instantâneos" encontra um erro de código de status HTTP
 
@@ -34,7 +34,7 @@ Esse erro indica que a chamada REST emitida pelo Visual Studio para o Azure usa 
 
 Siga estas etapas:
 
-* Certifique-se de que sua conta de personalização do Visual Studio tenha permissões para a assinatura do Azure e o recurso ao qual você está anexando. Uma maneira rápida de determinar isso é verificar se o recurso está disponível na caixa de diálogo do **debug**  >  **Attach depurador de instantâneos...**  >  **Recurso**  >  do Azure **Selecione existente**ou no Cloud Explorer.
+* Certifique-se de que sua conta de personalização do Visual Studio tenha permissões para a assinatura do Azure e o recurso ao qual você está anexando. Uma maneira rápida de determinar isso é verificar se o recurso está disponível na caixa de diálogo do **debug**  >  **Attach depurador de instantâneos...**  >  **Recurso**  >  do Azure **Selecione existente** ou no Cloud Explorer.
 * Se esse erro continuar a persistir, use um dos canais de comentários descritos no início deste artigo.
 
 Se você tiver habilitado a autenticação/autorização (EasyAuth) em seu serviço de aplicativo, poderá encontrar um erro 401 com LaunchAgentAsync na mensagem de erro da pilha de chamadas. Verifique se a **ação a ser tomada quando a solicitação não está autenticada** está definida para **Permitir solicitações anônimas (nenhuma ação)** no portal do Azure e forneça um authorization.jsno D:\Home\sites\wwwroot com o conteúdo a seguir em vez disso. 
@@ -67,7 +67,7 @@ Esse erro indica que a permissão foi negada. Isso pode ser causado por muitos p
 
 Siga estas etapas:
 
-* Verifique se sua conta do Visual Studio tem uma assinatura válida do Azure com as permissões de RBAC (controle de acesso baseado em função) necessárias para o recurso. Para AppService, verifique se você tem permissões para [consultar](/rest/api/appservice/appserviceplans/get) o plano do serviço de aplicativo que hospeda seu aplicativo.
+* Verifique se sua conta do Visual Studio tem uma assinatura válida do Azure com as permissões de RBAC (controle de acesso Role-Based) necessárias para o recurso. Para AppService, verifique se você tem permissões para [consultar](/rest/api/appservice/appserviceplans/get) o plano do serviço de aplicativo que hospeda seu aplicativo.
 * Verifique se o carimbo de data/hora do computador cliente está correto e atualizado. Os servidores com carimbos de data/hora em mais de 15 minutos do carimbo de hora da solicitação geralmente produzem esse erro.
 * Se esse erro continuar a persistir, use um dos canais de comentários descritos no início deste artigo.
 
@@ -223,7 +223,7 @@ Logs de instrumentação podem ser encontrados nos seguintes locais:
   - Logs de mecanismo de instrumentação em /tmp/diag/log.txt /tmp/diag/log.txt (defina MicrosoftInstrumentationEngine_FileLogPath no DockerFile)
   - Log de ponto de interrupção de produção em /tmp/diag/shLog.txt
 
-## <a name="known-issues"></a>Problemas Conhecidos
+## <a name="known-issues"></a>Problemas conhecidos
 
 - Atualmente, não há suporte para a depuração de instantâneos com vários clientes do Visual Studio no mesmo Serviço de Aplicativo.
 - Otimizações Roslyn IL não têm suporte total em projetos ASP.NET Core. Para alguns projetos ASP.NET Core, talvez não seja possível ver algumas variáveis ou usar algumas variáveis em instruções condicionais.
@@ -242,7 +242,7 @@ A depuração de instantâneos e o Application Insights dependem de um ICorProfi
 - Inicie o site do Slot. Recomendamos que você visite o site para aquecê-lo novamente.
 - Troque o Slot com a produção.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando no Visual Studio](../debugger/index.yml)
 - [Depurar aplicativos ASP.NET dinâmicos usando o Depurador de Instantâneos](../debugger/debug-live-azure-applications.md)

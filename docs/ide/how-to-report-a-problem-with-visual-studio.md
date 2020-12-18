@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2956372882d4449345d026e691a12afb2988054a
-ms.sourcegitcommit: 6ef4e46c786c5bbcc52cd9c30e5ddfca12ea8b3c
+ms.openlocfilehash: 5c6c09bbf74cca803156842d185b5bf86ff52439
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97050815"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668814"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Como relatar um problema com o Visual Studio para Mac ou com o Instalador do Visual Studio
 
@@ -25,7 +25,7 @@ Você pode relatar um problema a partir do Visual Studio ou de seu instalador. A
 
 1. **No Visual Studio**, selecione o ícone de comentários no canto superior direito e selecione Relatar um Problema. Você também pode acessar a ferramenta de comentários no menu **ajudar** a  >  **enviar comentários** para  >  **relatar um problema**.
 ![Pop-up Relatar um problema na Comunidade de Desenvolvedores do Visual Studio](media/feedback-button.png) Como alternativa, relate um problema no **Instalador do Visual Studio** se você não puder instalar o Visual Studio ou não puder acessar a ferramenta de comentários no Visual Studio.  No Instalador, selecione o ícone de comentários no canto superior direito e selecione Relatar um Problema.
-![Pop-up Relatar um problema na Comunidade de Desenvolvedores do Visual Studio](media/installer.png)
+![Relatar um pop-up de problema na Comunidade de desenvolvedores do Visual Studio no instalador](media/installer.png)
 
 1. Ao clicar em **relatar um problema** , você abrirá o navegador padrão e entrará usando a mesma conta usada para entrar no Visual Studio
 
@@ -71,7 +71,7 @@ Quando faltam informações importantes no problema, atribuímos o estado de **m
 
 1. A seleção do link fornecer mais informações no relatório de problemas o leva para uma nova tela. A partir daqui, você pode ver quais informações estão sendo solicitadas.
 
-   ![Meus comentários](../ide/media/feedback-need-more-info.png)
+   ![Detalhes das informações a serem enviadas à Microsoft](../ide/media/feedback-need-more-info.png)
 
 1. Você pode fornecer mais informações adicionando comentários, anexos ou gravando as etapas. Essa experiência é semelhante a relatar um novo problema ou fornecer informações adicionais ao votar em um problema.
 
@@ -81,15 +81,15 @@ Você pode ver essas solicitações na tela **meus comentários** junto com todo
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Pesquisar soluções ou fornecer comentários
 
-Se você não quiser ou não puder usar o Visual Studio para relatar um problema, há a possibilidade de que o problema já tenha sido relatado e uma solução tenha sido postada na página da [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/).
+Se você não quiser ou não puder usar o Visual Studio para relatar um problema, há a possibilidade de que o problema já tenha sido relatado e uma solução tenha sido postada na página da [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity2.visualstudio.com/search?space=8).
 
-Se você não tiver um problema para relatar, mas desejar sugerir um recurso, há um lugar para fazer isso também. Para saber mais, confira a página [Sugerir um recurso](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Se você não tiver um problema para relatar, mas desejar sugerir um recurso, há um lugar para fazer isso também. Para saber mais, confira a página [Sugerir um recurso](https://aka.ms/feedback/suggest?space=8).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [Diretrizes da comunidade de desenvolvedores](./developer-community-guidelines.md)
 * [Opções de comentários do Visual Studio](../ide/feedback-options.md)
 * [Relatar um problema com o Visual Studio para Mac](/visualstudio/mac/report-a-problem)
 * [Relatar um problema com C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Comunidade de desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/)
+* [Comunidade de desenvolvedores do Visual Studio](https://aka.ms/feedback/suggest?space=8)
 * [Privacidade de dados da Comunidade de Desenvolvedores](developer-community-privacy.md)

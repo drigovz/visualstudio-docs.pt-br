@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d8106463f306ddbc3fe6aefb337935cbe0d316c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a17f196f48b053f8b834b8fd25b8c0295e42b547
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88114198"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668892"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Sugerir uma funcionalidade para o Visual Studio
 
-Introduzimos uma nova experiência para envio de sugestão de funcionalidades, juntamente com a capacidade atual de relatar problemas na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com). Essa é uma nova maneira que você pode ser capacitada a se envolver diretamente com o fluxo de trabalho de engenharia do Visual Studio.
+Introduzimos uma nova experiência para envio de sugestão de funcionalidades, juntamente com a capacidade atual de relatar problemas na [Comunidade de Desenvolvedores do Visual Studio](https://aka.ms/feedback/suggest?space=8). Essa é uma nova maneira que você pode ser capacitada a se envolver diretamente com o fluxo de trabalho de engenharia do Visual Studio.
 
 ![Botão Sugerir uma Funcionalidade na Comunidade de Desenvolvedores](media/suggest-a-feature/suggest-feature-button.png)
 
@@ -25,7 +25,7 @@ Envie também uma sugestão de funcionalidade diretamente no Visual Studio escol
 
 ![Menu Enviar uma Sugestão no Visual Studio](media/suggest-a-feature/provide-suggestion.png)
 
-Ao escolher **Enviar uma Sugestão**, você será levado à [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com), na qual poderá inserir sua sugestão.
+Ao escolher **Enviar uma Sugestão**, você será levado à [Comunidade de Desenvolvedores](https://aka.ms/feedback/suggest?space=8), na qual poderá inserir sua sugestão.
 
 ## <a name="user-voice"></a>Voz do Usuário
 
@@ -134,6 +134,6 @@ Estamos totalmente empenhados em ouvir suas sugestões de funcionalidades e toma
 
 O tempo de resposta depende do status em que estão seus comentários. Examine a explicação dos status neste documento para entender os tempos de resposta.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introducing 'Suggest a Feature' in Developer Community (Apresentação de 'Sugerir uma Funcionalidade' na Comunidade de Desenvolvedores) (blog do Visual Studio)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

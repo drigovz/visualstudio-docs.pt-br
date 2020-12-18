@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cba3c19ae939396132af8bb3c2ffee318b7007e
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: c46ad7630717ca6500ddbedf284125e085ddb780
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006517"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668165"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Criar um novo projeto no Visual Studio
 
@@ -101,6 +101,6 @@ Clique em **Criar** para criar o projeto.
 
 Se quiser adicionar um projeto adicional a uma solução, clique com o botão direito do mouse no nó Solução no **Gerenciador de Soluções** e escolha **Adicionar** > **Novo Projeto**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Criar soluções e projetos](creating-solutions-and-projects.md)
+- [Trabalhar com soluções e projetos](creating-solutions-and-projects.md)

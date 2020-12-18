@@ -8,12 +8,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: d213a7add358c46f7088f504d8c54352cda44a1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 964b360806f6f834aa57c475d2117c124f2cf8af
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905977"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668632"
 ---
 # <a name="open-folder-extensibility"></a>Abrir extensibilidade de pasta
 
@@ -51,7 +51,7 @@ Os recursos que usam os seguintes tipos precisarão adotar novas APIs para dar s
 
 ## <a name="feedback-comments-issues"></a>Comentários, comentários, problemas
 
-Abra a pasta e as `Microsoft.VisualStudio.Workspace.*` APIs estão em desenvolvimento ativo. Se você vir um comportamento inesperado, consulte os problemas conhecidos para o lançamento de interesse. A [comunidade de desenvolvedores](https://developercommunity.visualstudio.com) é o lugar recomendado para votar e criar problemas. Para cada comentário, é altamente recomendável uma descrição detalhada do seu problema. Inclua a versão do Visual Studio para a qual você está desenvolvendo, as APIs que você está usando (tanto o que você implementou e o que está interagindo), o resultado esperado e o resultado real. Se possível, inclua um despejo do processo de devenv.exe. Use o rastreamento de problemas do GitHub para fornecer comentários sobre este e sobre a documentação relacionada.
+Abra a pasta e as `Microsoft.VisualStudio.Workspace.*` APIs estão em desenvolvimento ativo. Se você vir um comportamento inesperado, consulte os problemas conhecidos para o lançamento de interesse. A [comunidade de desenvolvedores](https://aka.ms/feedback/suggest?space=8) é o lugar recomendado para votar e criar problemas. Para cada comentário, é altamente recomendável uma descrição detalhada do seu problema. Inclua a versão do Visual Studio para a qual você está desenvolvendo, as APIs que você está usando (tanto o que você implementou e o que está interagindo), o resultado esperado e o resultado real. Se possível, inclua um despejo do processo de devenv.exe. Use o rastreamento de problemas do GitHub para fornecer comentários sobre este e sobre a documentação relacionada.
 
 ## <a name="next-steps"></a>Próximas etapas
 
