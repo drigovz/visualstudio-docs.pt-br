@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Saiba mais sobre as opções de publicação para seu aplicativo usando a ferramenta de publicação.
 ms.custom:
 - SEO-VS-2020
-- contperfq1
+- contperf-fy21q1
 ms.date: 08/21/2020
 ms.topic: troubleshooting
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45fc0a58262a533416f630ede795d0060f9fc909
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 86a771b1eae096227a46378c8146e6aa5d9e2a06
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434487"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97683926"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Implantar seu aplicativo em uma pasta, IIS, Azure ou outro destino
 
@@ -181,7 +181,7 @@ Para obter ajuda adicional para escolher suas configurações, consulte o seguin
 
 Um servidor FTP/FTPS permite implantar seu aplicativo em um servidor diferente do Azure. Ele pode ser implantado em um sistema de arquivos ou qualquer outro servidor (Internet ou Intranet) ao qual você tem acesso, inclusive aqueles em outros serviços de nuvem. Ele pode funcionar com a Implantação da Web (arquivos ou .ZIP) e FTP.
 
-Ao escolher um servidor FTP/FTPS, o Visual Studio solicita um nome de perfil e, em seguida, coleta informações de **conexão** adicionais, incluindo o servidor de destino ou o local, um nome de site e credenciais. É possível controlar os seguintes comportamentos na guia **Configurações** :
+Ao escolher um servidor FTP/FTPS, o Visual Studio solicita um nome de perfil e, em seguida, coleta informações de **conexão** adicionais, incluindo o servidor de destino ou o local, um nome de site e credenciais. É possível controlar os seguintes comportamentos na guia **Configurações**:
 
 - A configuração que você deseja implantar.
 - Se os arquivos existentes serão removidos do destino.
@@ -200,7 +200,7 @@ Você pode criar qualquer número de perfis de implantação de FTP/FTPS no Visu
 
 Um servidor Web do IIS permite que você implante seu aplicativo em um servidor Web diferente do Azure. Ele pode implantar em um servidor IIS (Internet ou intranet) ao qual você tem acesso, incluindo aqueles em outros serviços de nuvem. Ele pode funcionar com Implantação da Web ou um pacote Implantação da Web.
 
-Ao escolher um servidor Web do IIS, o Visual Studio solicita um nome de perfil e, em seguida, coleta informações de **conexão** adicionais, incluindo o servidor de destino ou o local, um nome de site e credenciais. É possível controlar os seguintes comportamentos na guia **Configurações** :
+Ao escolher um servidor Web do IIS, o Visual Studio solicita um nome de perfil e, em seguida, coleta informações de **conexão** adicionais, incluindo o servidor de destino ou o local, um nome de site e credenciais. É possível controlar os seguintes comportamentos na guia **Configurações**:
 
 - A configuração que você deseja implantar.
 - Se os arquivos existentes serão removidos do destino.
@@ -221,7 +221,7 @@ Para obter ajuda com a solução de problemas ASP.NET Core no IIS, consulte [sol
 
 ## <a name="import-profile"></a>Importar Perfil
 
-Você pode importar um perfil ao publicar no IIS ou no serviço Azure App. Você pode configurar a implantação usando um *arquivo de configurações de publicação* ( *\* . publishsettings* ). Um arquivo de configurações de publicação é criado pelo IIS ou pelo Serviço de Aplicativo do Azure ou pode ser criado manualmente e, em seguida, pode ser importado para o Visual Studio.
+Você pode importar um perfil ao publicar no IIS ou no serviço Azure App. Você pode configurar a implantação usando um *arquivo de configurações de publicação* (*\* . publishsettings*). Um arquivo de configurações de publicação é criado pelo IIS ou pelo Serviço de Aplicativo do Azure ou pode ser criado manualmente e, em seguida, pode ser importado para o Visual Studio.
 
 O uso de um arquivo de configurações de publicação pode simplificar a configuração da implantação e funciona melhor em um ambiente de equipe versus configurar manualmente cada perfil de implantação.
 

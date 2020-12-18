@@ -3,7 +3,7 @@ title: Usar o MSBuild
 description: Conheça as várias partes de um arquivo de projeto do MSBuild, incluindo itens, metadados do item, propriedades, destinos e tarefas.
 ms.date: 10/19/2020
 ms.topic: conceptual
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b26c13765daf5a82a9961e6509b36e24e18f4e0c
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: adc1a191e8fe3869273df546191f7701956018dd
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298531"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684018"
 ---
 # <a name="walkthrough-use-msbuild"></a>Passo a passo: usar o MSBuild
 
@@ -41,7 +41,7 @@ Se você tiver o Visual Studio, então você já tem o MSBuild instalado. Para i
 ::: moniker range="vs-2019"
 Se você tiver o Visual Studio, então você já tem o MSBuild instalado. Com o Visual Studio 2019, ele é instalado na pasta de instalação do Visual Studio. Para uma instalação padrão típica no Windows 10, MSBuild.exe está na pasta de instalação do *MSBuild\Current\Bin*.
 
-Para instalar o MSBuild em um sistema que não tem o Visual Studio, vá para [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) e role para baixo até **todos os downloads**e, em seguida, expanda **ferramentas para Visual Studio 2019**. Instale as **ferramentas de Build para o Visual Studio 2019**, que inclui o MSBuild, ou instale o [SDK do .NET Core](/dotnet/core/sdk#acquiring-the-net-core-sdk).
+Para instalar o MSBuild em um sistema que não tem o Visual Studio, vá para [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) e role para baixo até **todos os downloads** e, em seguida, expanda **ferramentas para Visual Studio 2019**. Instale as **ferramentas de Build para o Visual Studio 2019**, que inclui o MSBuild, ou instale o [SDK do .NET Core](/dotnet/core/sdk#acquiring-the-net-core-sdk).
 
 No instalador, verifique se as ferramentas do MSBuild para as cargas de trabalho que você usa estão selecionadas e escolha **instalar**.
 
@@ -167,7 +167,7 @@ Execute o MSBuild no **Prompt de Comando do Desenvolvedor** para o Visual Studio
 
    (Windows 10) Na caixa de pesquisa na barra de tarefas, comece a digitar o nome da ferramenta, como `dev` ou `developer command prompt`. Isso abre uma lista de aplicativos instalados que correspondem ao seu padrão de pesquisa.
 
-   Se você precisar encontrá-lo manualmente, o arquivo será *LaunchDevCmd.bat* na pasta * \> \<version> \Common7\Tools<de instalação do VisualStudio* .
+   Se você precisar encontrá-lo manualmente, o arquivo será *LaunchDevCmd.bat* na pasta *\> \<version> \Common7\Tools<de instalação do VisualStudio* .
 
 2. Na janela de comando, navegue até a pasta que contém o arquivo de projeto, neste caso, *D:\BuildApp\BuildApp*.
 
@@ -212,7 +212,7 @@ Execute o MSBuild no **Prompt de Comando do Desenvolvedor** para o Visual Studio
 
  define a propriedade chamada TargetFrameworkVersion, dando a ela o valor de cadeia de caracteres "v 4.5".
 
- As propriedades de build podem ser redefinidas a qualquer momento. Se
+ As propriedades de build podem ser redefinidas a qualquer momento. If
 
 ```xml
 <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>

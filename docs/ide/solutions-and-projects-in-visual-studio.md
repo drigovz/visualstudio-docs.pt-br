@@ -1,8 +1,8 @@
 ---
 title: Saiba mais sobre soluções e projetos
 description: Saiba mais sobre projetos e soluções do Visual Studio, como criar novos projetos de um modelo e como exibir & gerenciar projetos no Gerenciador de Soluções.
-ms.custom: SEO-VS-2020
-ms.date: 12/15/2020
+ms.custom: SEO-VS-2020, contperf-fy21q2
+ms.date: 12/17/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19d0d2fc862572fdf7226a78e0b34d0af0d57541
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 51a2f9683dd2285cc71dfff67020687f0c48afa4
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668086"
+ms.locfileid: "97683909"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
 
@@ -77,11 +77,14 @@ Você também pode criar um modelo de projeto personalizado que pode ser usado p
 
 Quando você cria um novo projeto, o Visual Studio o salva em seu local padrão, *%USERPROFILE%\source\repos*. Para alterar esse local, vá para **ferramentas**  >  **Opções**  >  **projetos e soluções**  >  **locais**. Para obter mais informações, consulte [caixa de diálogo opções: projetos e soluções > locais](./reference/projects-solutions-locations-options.md).
 
+> [!TIP]
+> Para obter um exemplo de um projeto e uma solução criados a partir do zero, conclua com instruções passo a passo e código de exemplo, consulte [introdução aos projetos e soluções](../get-started/tutorial-projects-solutions.md).
+
 ## <a name="solution-explorer"></a>Gerenciador de Soluções
 
 Depois de criar um novo projeto, você pode usar o **Gerenciador de Soluções** para exibir e gerenciar o projeto, a solução e seus itens associados. A ilustração a seguir mostra o **Gerenciador de Soluções** com uma solução C# que contém dois projetos:
 
-![Gerenciador de Soluções](../ide/media/vs2015_solution_explorer.png)
+![Captura de tela de Gerenciador de Soluções.](../ide/media/vs2015_solution_explorer.png)
 
 Muitos comandos de menu estão disponíveis no menu do botão direito em vários itens no **Gerenciador de Soluções**. Esses comandos incluem criar um projeto, gerenciar pacotes do NuGet, adicionar uma referência, renomear um arquivo e executar testes, apenas para citar alguns. A barra de ferramentas na parte superior do **Gerenciador de Soluções** possui botões para alternar de uma exibição de solução para uma exibição de pasta, mostrar arquivos ocultos, recolher todos os nós e muito mais.
 
@@ -92,7 +95,7 @@ Para projetos ASP.NET Core, você pode personalizar como os arquivos são aninha
 
 E, para exibir uma lista de alguns ícones que aparecem no Gerenciador de Soluções, consulte os [ícones modo de exibição de classe e pesquisador de objetos](class-view-and-object-browser-icons.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Portar, migrar e atualizar projetos](../porting/port-migrate-and-upgrade-visual-studio-projects.md)

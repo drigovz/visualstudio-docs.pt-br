@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Saiba como modificar o Visual Studio, passo a passo.
 ms.date: 10/12/2020
 ms.topic: how-to
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: dad71e4f52350357106ee9a9ef9ce90d18204bfb
-ms.sourcegitcommit: 4eb8fe6eb7f1dc639f1d213db05a7a3007e8087e
+ms.openlocfilehash: 17a02fb8c05c6f1720aa1b352e30c46e04a8b69d
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92157369"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684091"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modificar o Visual Studio adicionando ou removendo cargas de trabalho e componentes
 
@@ -93,7 +93,7 @@ Veja como.
      ![Escolha a edição do Visual Studio e modifique](media/vs-2019/vs-installer-modify.png "Escolha a edição do Visual Studio 2019 e modifique")
 
      > [!IMPORTANT]
-     > Se houver uma atualização pendente, o botão Modificar estará em um local diferente. Dessa forma, você pode modificar o Visual Studio sem atualizá-lo, caso queira. Escolha **mais**e, em seguida, escolha **Modificar**.
+     > Se houver uma atualização pendente, o botão Modificar estará em um local diferente. Dessa forma, você pode modificar o Visual Studio sem atualizá-lo, caso queira. Escolha **mais** e, em seguida, escolha **Modificar**.
      >
      > ![Atualizar ou modificar o Visual Studio](media/vs-2019/modify-update-visual-studio.png "Atualizar ou modificar o Visual Studio 2019")
 

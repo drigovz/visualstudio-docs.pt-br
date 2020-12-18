@@ -1,7 +1,7 @@
 ---
 title: Trabalhar com soluções e projetos
 description: Saiba mais sobre a diferença entre soluções e projetos e como usá-los no Visual Studio.
-ms.custom: SEO-VS-2020
+ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 02/06/2018
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bbfa16273dc323d2ad175e965a19a22ad0d17ce
-ms.sourcegitcommit: 6f37100d4b8c15a21d3858335ded3c26ab275b93
+ms.openlocfilehash: c6649b313d4ab03c1f096a6bcbc466cb338f427c
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97599473"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684034"
 ---
 # <a name="work-with-solutions-and-projects"></a>Trabalhar com soluções e projetos
 
@@ -48,18 +48,18 @@ Para obter informações sobre como criar um projeto com base em um modelo, veja
 
 Se você tem uma coleção de arquivos de origem de código, é possível adicioná-los facilmente a um projeto.
 
-1. No menu, escolha **arquivo**  >  **novo**  >  **projeto do código existente**.
+1. No menu, selecione **arquivo**  >  **novo**  >  **projeto do código existente**.
 
-1. No assistente **Criação de Projeto de Arquivos de Código Existentes**, escolha o tipo de projeto que você deseja na caixa de listagem suspensa **Que tipo de projeto deseja criar?** e, em seguida, escolha o botão **Avançar**.
+1. No Assistente para **criar projeto a partir de arquivos de código existentes** , selecione o tipo de projeto desejado na caixa de listagem suspensa **que tipo de projeto você deseja criar?** e, em seguida, selecione o botão **Avançar** .
 
-1. No assistente, navegue até o local dos arquivos e, em seguida, insira um nome para o novo projeto na caixa **Nome**. Quando terminar, escolha o botão **Concluir**.
+1. No assistente, navegue até o local dos arquivos e, em seguida, insira um nome para o novo projeto na caixa **Nome**. Quando terminar, selecione o botão **concluir** .
 
 > [!NOTE]
 > Essa opção funciona melhor para uma coleção relativamente simples de arquivos. Atualmente, há suporte apenas para os tipos de projeto C++, Apache Cordova, Visual Basic e C#.
 
 ## <a name="add-files-to-a-solution"></a>Adicionar arquivos a uma solução
 
-Se você tem um arquivo que se aplica a vários projetos, como um arquivo Leiame para a solução ou outros arquivos que pertençam de forma lógica ao nível da solução e não a um projeto específico, é possível adicioná-los à própria solução. Para adicionar um item a uma solução, no menu de contexto (clicar com o botão direito do mouse) do nó da solução no **Gerenciador de Soluções**, escolha **Adicionar** > **Novo Item** ou **Adicionar** > **Item existente**.
+Se você tem um arquivo que se aplica a vários projetos, como um arquivo Leiame para a solução ou outros arquivos que pertençam de forma lógica ao nível da solução e não a um projeto específico, é possível adicioná-los à própria solução. Para adicionar um item a uma solução, no menu de contexto (clique com o botão direito do mouse) do nó da solução no **Gerenciador de soluções**, selecione **Adicionar**  >  **novo item** ou **Adicionar**  >  **Item existente**.
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Criar um projeto .NET que direciona uma versão específica do .NET Framework
 
@@ -67,7 +67,7 @@ Ao criar um projeto .NET Framework, você pode determinar uma versão específic
 
 ::: moniker range="vs-2017"
 
-Para especificar uma versão do .NET Framework, escolha o menu suspenso **Framework** na caixa de diálogo **Novo Projeto**.
+Para especificar uma versão .NET Framework, selecione o menu suspenso **estrutura** na caixa de diálogo **novo projeto** .
 
 ![A lista suspensa Estrutura na caixa de diálogo Novo Projeto](./media/vside-newproject-framework.png)
 
@@ -78,7 +78,7 @@ Para especificar uma versão do .NET Framework, escolha o menu suspenso **Framew
 
 ::: moniker range=">=vs-2019"
 
-Para especificar uma versão .NET Framework, escolha o menu suspenso **estrutura** na página **criar um novo projeto** .
+Para especificar uma versão .NET Framework, selecione o menu suspenso **estrutura** na página **criar um novo projeto** .
 
 ![Seletor de Framework em configurar um novo projeto](media/vs-2019/configure-new-project-framework.png)
 
@@ -90,15 +90,15 @@ Você também pode criar soluções vazias que não tenham projetos. Isso é pre
 
 ### <a name="to-create-an-empty-solution"></a>Para criar uma solução vazia
 
-1. Na barra de menus, escolha **arquivo**  >  **novo**  >  **projeto**.
+1. Na barra de menus, selecione **arquivo**  >  **novo**  >  **projeto**.
 
 ::: moniker range="vs-2017"
 
-2. No painel esquerdo (**Modelos**), escolha **Outros Tipos de Projetos** > **Soluções do Visual Studio** na lista expandida.
+2. No painel esquerdo (**modelos**), selecione **outros tipos de projeto** > **soluções do Visual Studio** na lista expandida.
 
 3. No painel central, selecione **Solução em Branco**.
 
-4. Insira os valores **Nome** e **Local** da sua solução e, em seguida, clique em **OK**.
+4. Insira os valores de **nome** e **local** para sua solução e, em seguida, selecione **OK**.
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ Você também pode criar soluções vazias que não tenham projetos. Isso é pre
 
 3. Selecione o modelo **solução em branco** e clique em **Avançar**.
 
-4. Insira os valores **Nome** e **Local** da sua solução e, em seguida, clique em **Criar**.
+4. Insira os valores de **nome** e **local** para sua solução e, em seguida, selecione **criar**.
 
 ::: moniker-end
 
@@ -137,11 +137,11 @@ Você pode excluir as soluções e seu conteúdo permanentemente, mas não usand
 
 ### <a name="permanently-delete-a-solution"></a>Excluir uma solução permanentemente
 
-1. No **Gerenciador de Soluções**, no menu do clique com o botão direito (menu de contexto) da solução que deseja excluir, escolha **Abrir pasta no Explorador de Arquivos**.
+1. No **Gerenciador de soluções**, no menu do botão direito do mouse (menu de contexto) da solução que você deseja excluir, selecione **abrir pasta no explorador de arquivos**.
 
 1. No Gerenciador de Arquivos, navegue um nível acima.
 
-1. Escolha a pasta que contém a solução e pressione a tecla **Delete**.
+1. Selecione a pasta que contém a solução e pressione a tecla **delete** .
 
 ## <a name="see-also"></a>Confira também
 
