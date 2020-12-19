@@ -3,7 +3,7 @@ title: Alterar temas, fontes, texto e contraste para acessibilidade
 description: Saiba como alterar os temas de cores do Visual Studio, as cores de fonte, os tamanhos de texto e as cores de contraste extra para facilitar o uso e as preocupações de acessibilidade.
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe2b73f7f2ba771875355279043558f3c4cf105
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 7c52be25c007a16d7e6221663c434767c02d8d50
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/18/2020
-ms.locfileid: "97667904"
+ms.locfileid: "97683896"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Como alterar fontes, cores e temas no Visual Studio
 
@@ -122,7 +122,7 @@ Para saber mais sobre outras opções de acessibilidade do Visual Studio dispon�
 
 Para saber mais detalhes sobre todos os elementos da interface do usuário para os quais você pode alterar os esquemas de fontes e cores, consulte a página da [caixa de diálogo fontes e cores, ambiente, opções](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Como: alterar fontes e cores para o editor no Visual Studio](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
 - [Recursos do editor de código do Visual Studio](../ide/writing-code-in-the-code-and-text-editor.md)
