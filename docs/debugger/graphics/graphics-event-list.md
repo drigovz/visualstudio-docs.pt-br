@@ -1,5 +1,7 @@
 ---
 title: Lista de eventos de gráficos | Microsoft Docs
+description: Use a lista de eventos gráficos no Analisador de Gráficos do Visual Studio para explorar os eventos do Direct3D que foram registrados durante a renderização de um quadro de seu jogo ou aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7f987d8dc6decf90e44eef0123f6ad4fc194805
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312724"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727757"
 ---
 # <a name="graphics-event-list"></a>Lista de eventos do gráfico
 Use a lista de eventos gráficos no Analisador de Gráficos do Visual Studio para explorar os eventos do Direct3D que foram registrados durante a renderização de um quadro de seu jogo ou aplicativo.
@@ -32,7 +34,7 @@ Use a lista de eventos gráficos no Analisador de Gráficos do Visual Studio par
 ### <a name="color-coded-events-in-direct3d-12"></a>Eventos codificados por cores no Direct3D 12
  O Direct3D 12 expõe várias filas que correspondem a uma funcionalidade de hardware diferente. Para ajudar a identificar a fila associada a um evento de gráficos específico no Direct3D 12, os eventos são codificados por cores na lista de eventos de acordo com sua fila quando você está trabalhando com uma captura de um aplicativo do Direct3D 12.
 
-|Fila do Direct3D 12|Cor|
+|Fila do Direct3D 12|Color|
 |-----------------------|-----------|
 |Processar fila|Verde|
 |Fila de computação|Amarelo|
@@ -113,5 +115,5 @@ Esta janela permite que você exiba o histórico do item selecionado na lista de
 
 <!-- /VERSIONLESS -->
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Passo a passo: Objetos ausentes devido ao estado do dispositivo](walkthrough-missing-objects-due-to-device-state.md)

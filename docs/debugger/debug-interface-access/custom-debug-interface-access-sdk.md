@@ -1,5 +1,7 @@
 ---
 title: Personalizado (debug interface Access SDK) | Microsoft Docs
+description: Encontre informações de referência sobre tipos de símbolo personalizados (identificados com a marca SymTagCustom) no SDK de acesso à interface de depuração do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 420090cb0b93d274517950982cd8f7fea07d250c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4bec65f766eee8bdf2c4ca34a2a801f26b7d69c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462214"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728730"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Custom (SDK de Acesso à Interface de Depuração)
 Alguns compiladores apresentam símbolos que não são identificados por nenhum dos tipos de símbolo léxicos padrão. Esses símbolos são identificados por uma `SymTagCustom` marca.
@@ -31,5 +33,5 @@ Alguns compiladores apresentam símbolos que não são identificados por nenhum 
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID do índice do símbolo.|
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retorna `SymTagCustom` (um dos valores de [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) ).|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Hierarquia lexical de tipos de símbolo](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

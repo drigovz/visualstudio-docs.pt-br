@@ -1,5 +1,7 @@
 ---
 title: BeginCapture | Microsoft Docs
+description: Use o método BeginCapture da classe VsgDbg para iniciar um intervalo de captura que terminará com endcapture.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9edbb52d-ee0b-4cc4-a382-972bcee067d3
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9521288b27b1f9b11a2fdb8cbbd613f1a77f857d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 931e7ab05442a429c0b9e6468d42aadca942c1ee
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72736152"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727959"
 ---
 # <a name="begincapture"></a>BeginCapture
 Inicia um intervalo de captura que terminará com `EndCapture` .
@@ -29,6 +31,6 @@ void BeginCapture();
 
  Para capturar um intervalo, você deve preparar seu aplicativo para capturar e gravar informações gráficas — ou seja, você deve ter chamado [init](init.md) por meio de uma instância da `VsgDbg` classe antes de chamar `BeginCapture` ou `EndCapture` .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [EndCapture](endcapture.md)
 - [CaptureCurrentFrame](capturecurrentframe.md)

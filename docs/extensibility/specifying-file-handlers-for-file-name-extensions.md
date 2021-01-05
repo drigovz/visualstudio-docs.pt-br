@@ -1,5 +1,7 @@
 ---
 title: Especificando manipuladores de arquivo para extensões de nome de arquivo | Microsoft Docs
+description: Saiba como determinar qual aplicativo manipula uma extensão de arquivo no SDK do Visual Studio usando OpenWithList e OpenWithProgids.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af195aea09c91696843c6be42c20053bb8c095a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 421244cd88af43e7602298e7384a632c8aa51833
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699750"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715594"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Especificando identificadores de arquivo para extensões de nome de arquivo
 Há várias maneiras de determinar o aplicativo que manipula um arquivo que tem uma extensão de arquivo específica. Os verbos OpenWithList e OpenWithProgids são duas maneiras de especificar manipuladores de arquivo na entrada do registro para a extensão de arquivo.
@@ -34,7 +36,7 @@ HKEY_CLASSES_ROOT\
 ```
 
 > [!NOTE]
-> As chaves que especificam aplicativos são da lista em HKEY_CLASSES_ROOT \Applications.
+> As chaves que especificam aplicativos são da lista em HKEY_CLASSES_ROOT\Applications.
 
  Ao adicionar uma chave OpenWithList, você declara que seu aplicativo oferece suporte a uma extensão de arquivo, mesmo que outro aplicativo assuma a propriedade da extensão. Isso pode ser uma versão futura do seu aplicativo ou outro aplicativo.
 
@@ -52,7 +54,7 @@ HKEY_CLASSES_ROOT\
 > [!NOTE]
 > A `OpenWithProgids` chave só tem suporte no Windows XP. Como outros sistemas operacionais ignoram essa chave, não a use como o único registro para manipuladores de arquivos. Use essa chave para fornecer uma melhor experiência do usuário no Windows XP.
 
- Adicione as ProgIDs desejadas como valores do tipo REG_NONE. O código a seguir fornece um exemplo de registro de ProgIDs para uma extensão de arquivo (.* ext*).
+ Adicione as ProgIDs desejadas como valores do tipo REG_NONE. O código a seguir fornece um exemplo de registro de ProgIDs para uma extensão de arquivo (.*ext*).
 
 ```
 HKEY_CLASSES_ROOT\
@@ -77,6 +79,6 @@ HKEY_CLASSES_ROOT\
 
  Se o ProgID antigo tiver verbos associados a ele, esses verbos também serão exibidos em **abrir com** o *nome do produto* no menu de atalho.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Sobre as extensões de nome de arquivo](../extensibility/about-file-name-extensions.md)
 - [Registrar verbos para extensões de nome de arquivo](../extensibility/registering-verbs-for-file-name-extensions.md)

@@ -1,5 +1,7 @@
 ---
 title: Documento de log de gráficos | Microsoft Docs
+description: Entenda o documento de log de gráficos no Visual Studio, que registra eventos gráficos que ocorreram enquanto um aplicativo estava em execução em uma sessão de diagnóstico de gráficos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d9bdfdb23d199c50b8d7ec6520964043dee8aa6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38dc7452493ebcd39bee5ee55c59fc70e0a6493c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735527"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727652"
 ---
 # <a name="graphics-log-document"></a>Documentos de log de gráfico
 O documento de log de gráficos é o registro de eventos gráficos que ocorreram enquanto seu aplicativo estava em execução em uma sessão de diagnóstico de gráficos. Depois de ser registrado, você pode examinar o log em Analisador de Gráficos do Visual Studio para diagnosticar problemas de desempenho e renderização.
@@ -82,7 +84,7 @@ O documento de log de gráficos é o registro de eventos gráficos que ocorreram
 |Propriedade|Descrição|
 |--------------|-----------------|
 |**Memória**|A quantidade de memória instalada no computador.|
-|**Arquitetura do SO**|A arquitetura da CPU de destino do sistema operacional.|
+|**Arquitetura do so**|A arquitetura da CPU de destino do sistema operacional.|
 |**Versão do sistema operacional**|A versão do sistema operacional.|
 |**Processador**|O processador instalado no computador.|
 |**Arquitetura do aplicativo de destino**|A arquitetura da CPU de destino do aplicativo. As informações presentes nesse campo podem ser diferentes das do campo **Arquitetura do SO**.|
@@ -104,6 +106,6 @@ O documento de log de gráficos é o registro de eventos gráficos que ocorreram
 | **Hora de início da sessão** | A data e hora em que a sessão de captura começou. |
 | **Tamanho** | O tamanho do documento de log de gráficos. |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Passo a passo: Objetos ausentes devido ao sombreamento de vértice](walkthrough-missing-objects-due-to-vertex-shading.md)
 - [Passo a passo: Como depurar erros de renderização devido ao sombreamento](walkthrough-debugging-rendering-errors-due-to-shading.md)

@@ -1,5 +1,7 @@
 ---
 title: CV_CFL_LANG | Microsoft Docs
+description: Obtenha informações sobre o tipo de enumeração CV_CFL_LANG, que especifica o idioma do código do aplicativo ou do módulo vinculado no SDK de acesso à interface de depuração.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,17 +14,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8910ebe012e1edbaa6c26695027214db4e66c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07fff0b927fcc271c7671ab98683571adfa9830f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462130"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728585"
 ---
 # <a name="cv_cfl_lang"></a>CV_CFL_LANG
 Especifica o idioma do código-fonte do aplicativo ou módulo vinculado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```C++
 typedef enum CV_CFL_LANG {
@@ -87,6 +89,6 @@ Os valores nessa enumeração são retornados por uma chamada para o método [ID
 ## <a name="requirements"></a>Requisitos
 Cabeçalho: cvconst. h
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)

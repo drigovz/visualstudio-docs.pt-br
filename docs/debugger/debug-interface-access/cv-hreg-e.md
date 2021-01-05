@@ -1,5 +1,7 @@
 ---
 title: CV_HREG_e | Microsoft Docs
+description: Obtenha informações de referência sobre o tipo de enumeração CV_HREG_e, que especifica um registro de destino no SDK de acesso à interface de depuração.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee15d5b4d6a0959397d8d62753455c7a26f01f78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f24476bc00293f204dfa28d57ca2d961c2d55d9d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462103"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728551"
 ---
 # <a name="cv_hreg_e"></a>CV_HREG_e
 Especifica um registro de destino.
@@ -25,7 +27,7 @@ Especifica um registro de destino.
 > [!NOTE]
 > Como a `CV_HREG_e` enumeração é muito grande para duplicar em sua totalidade, uma versão abreviada é fornecida como uma referência. As entradas ausentes são distatedas em itálico. A enumeração completa está disponível no arquivo de cabeçalho cvconst. h.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```C++
 enum CV_HREG_e {
@@ -449,7 +451,7 @@ Os valores nessa enumeração são passados para os seguintes métodos:
 ## <a name="requirements"></a>Requisitos:
 Cabeçalho: cvconst. h
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)
 - [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)

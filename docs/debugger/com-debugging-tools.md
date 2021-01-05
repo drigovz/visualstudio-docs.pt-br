@@ -1,5 +1,7 @@
 ---
 title: Ferramentas de depuração COM | Microsoft Docs
+description: Obtenha descrições das ferramentas de depuração que podem ajudá-lo a testar e inspecionar programas COM, como o Visualizador de objetos OLE/COM.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6a3c0961d541aaac1f2fd81fee7a0a8e06583dd
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 216d820e455ad9902f19fe3c48caa927b21a2f0f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600171"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728983"
 ---
 # <a name="com-debugging-tools"></a>Ferramentas de depuração COM
 
@@ -40,9 +42,9 @@ Exemplos de classe do Microsoft Foundation
 
 Os exemplos MFC ActiveX, OCLIENT e SUPERPAD, também estão disponíveis para testar com seus aplicativos. O código-fonte completo para esses exemplos está incluído.
 
-### <a name="see-also"></a>Confira também
+### <a name="see-also"></a>Consulte também
 
-- [Depuração de COM e ActiveX](../debugger/com-and-activex-debugging.md)
+- [Depuração COM e ActiveX](../debugger/com-and-activex-debugging.md)
 - [Ferramentas de depuração COM](../debugger/com-debugging-tools.md)
 - [Depurando no Visual Studio](../debugger/index.yml)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

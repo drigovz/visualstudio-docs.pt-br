@@ -1,5 +1,7 @@
 ---
 title: Enviar mensagens para a janela de saída | Microsoft Docs
+description: Gravar mensagens de tempo de execução na janela de saída no Visual Studio usando a classe Debug ou a classe Trace, que fazem parte da biblioteca de classes System. Diagnostics.
+ms.custom: SEO-VS-2020
 ms.date: 11/08/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d3c146775ac06b3118186738ee74932a4c452a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 345efabedca63187fd9f16b4ed9622de8e320e89
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350466"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728077"
 ---
 # <a name="send-messages-to-the-output-window"></a>Enviar mensagens para a Janela de Saída
 
@@ -51,7 +53,7 @@ A janela **saída** também pode exibir informações sobre:
 
 - Threads encerrados.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [janela Saída](../ide/reference/output-window.md)
 - [Rastrear e instrumentar aplicativos](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)

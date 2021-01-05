@@ -13,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ef956980b08e688970ad0a00d7d1a0804da7c3
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b84f638876270658be2f08a7e375540f0329a1d6
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363114"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729334"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizando a criação e o movimento de elementos
 
@@ -40,7 +40,7 @@ Embora as operações de criação possam parecer diferentes das operações de 
 
 A responsabilidade de um EMD é decidir como um objeto ou grupo de objetos deve ser mesclado em um local específico no modelo. Em particular, ele decide quais relações devem ser instanciadas para vincular o grupo mesclado ao modelo. Você também pode personalizá-lo para definir propriedades e criar objetos adicionais.
 
-![EMD DSL&#45;&#95;mesclar](../modeling/media/dsl-emd_merge.png)
+![Diagrama mostrando uma aparência de antes e depois de uma árvore de elementos e suas relações de referência quando um E M D determina como um novo elemento é adicionado.](../modeling/media/dsl-emd_merge.png)
 
 Um EMD é gerado automaticamente quando você define uma relação de incorporação. Esse EMD padrão cria uma instância da relação quando os usuários adicionam novas instâncias filho ao pai. Você pode modificar esses EMDs padrão, por exemplo, adicionando código personalizado.
 
@@ -50,7 +50,7 @@ Você também pode adicionar seu próprio EMDs na definição de DSL, para permi
 
 Você pode adicionar diretivas de mesclagem de elementos a classes de domínio, relações de domínio, formas, conectores e diagramas. Você pode adicioná-los ou localizá-los no Gerenciador de DSL na classe de domínio de recebimento. A classe de recebimento é a classe de domínio do elemento que já está no modelo e para o qual o elemento novo ou copiado será mesclado.
 
-![Detalhes de&#45;de DSL&#95;EMD](../modeling/media/dsl-emd_details.png)
+![Captura de tela do Gerenciador de DSL que mostra um E M D sendo adicionado com o Exemploelement selecionado como a classe de indexação e a opção aplica-se a subclasses marcada.](../modeling/media/dsl-emd_details.png)
 
 A **classe de indexação** é a classe de domínio dos elementos que podem ser mesclados em membros da classe de recebimento. As instâncias de subclasses da classe de indexação também serão mescladas por esse EMD, a menos que você defina **aplica-se a subclasses** como false.
 
@@ -318,7 +318,7 @@ Você pode criar uma diretiva de mesclagem direta na solução de modelo de comp
 
      Você não verá o ponteiro indisponível e poderá descartar a nova **porta de entrada** no existente. Selecione a nova **porta de entrada** e arraste-a para outro ponto no **componente**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Personalizando ferramentas e a caixa de ferramentas](../modeling/customizing-tools-and-the-toolbox.md)

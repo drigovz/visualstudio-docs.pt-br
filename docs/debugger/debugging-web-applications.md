@@ -1,5 +1,7 @@
 ---
 title: Depurando aplicativos Web | Microsoft Docs
+description: Encontre links para ajudá-lo a depurar diferentes tipos de aplicativos Web, como aplicativos ASP.NET, aplicativos JavaScript e TypeScript ou aplicativos de script AJAX.
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f54e80059896345abb00e955a827a00b5a35a5
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 63c5409f14fde2805e80f35f498cb57d68b1f58b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600127"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728129"
 ---
 # <a name="debugging-web-applications"></a>Depurando aplicativos Web
 
@@ -44,8 +46,8 @@ Este artigo fornece links para ajudá-lo a depurar diferentes tipos de aplicativ
 
   Os aplicativos da Web com AJAX ativado fazem uso intenso de códigos de script e desafios especiais de depuração de representação. Para obter informações sobre técnicas de depuração AJAX, consulte [visão geral de depuração e rastreamento de aplicativos AJAX](/previous-versions/bb398817(v=vs.140)).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)
+- [Configurações e preparação do depurador](../debugger/debugger-settings-and-preparation.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Depurando no Visual Studio](../debugger/index.yml)

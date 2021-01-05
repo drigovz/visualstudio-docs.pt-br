@@ -1,5 +1,7 @@
 ---
 title: Capturando informações de gráficos | Microsoft Docs
+description: Capture informações de gráficos do seu aplicativo do Direct3D para que você possa usar Analisador de Gráficos do Visual Studio para diagnosticar problemas de processamento e desempenho.
+ms.custom: SEO-VS-2020
 ms.date: 02/09/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b38dd994eca30bfee071f00431f3b111c2ea444a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a11a5dc3a02959ff7bec4cfaac9aac2ca231b2ba
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72736176"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727918"
 ---
 # <a name="capturing-graphics-information"></a>Capturando informações de gráficos
 Capture informações de gráficos do seu aplicativo do Direct3D para que você possa usar Analisador de Gráficos do Visual Studio para diagnosticar problemas de processamento e desempenho.
@@ -27,7 +29,7 @@ Capture informações de gráficos do seu aplicativo do Direct3D para que você 
 
 ### <a name="to-run-your-app-under-graphics-diagnostics"></a>Para executar o aplicativo em Diagnóstico de Gráficos
 
-- Na barra de menus, escolha **depurar**, **gráficos**e **Iniciar Depuração de gráficos**. (Teclado: pressione Alt+F5)
+- Na barra de menus, escolha **depurar**, **gráficos** e **Iniciar Depuração de gráficos**. (Teclado: pressione Alt+F5)
 
 - Na barra de ferramentas de **gráficos** , escolha o botão **Iniciar Depuração de gráficos** .
 
@@ -79,5 +81,5 @@ Capture informações de gráficos do seu aplicativo do Direct3D para que você 
 ## <a name="capturing-graphics-information-from-the-command-line"></a>Captura de informações de elementos gráficos da linha de comando
  Informações de gráficos poderão ser capturadas em um aplicativo usando uma ferramenta de linha de comando. Essa ferramenta, DXCap.exe, pode capturar e reproduzir rapidamente informações de gráficos sem usar o Visual Studio ou a captura programática. Em específico, você pode usar o DXCap.exe para automação ou em um ambiente de teste. Para obter mais informações sobre DXCap.exe, consulte [ferramenta de captura de linha de comando](command-line-capture-tool.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Passo a passo: Capturando informações de gráficos](walkthrough-capturing-graphics-information.md)

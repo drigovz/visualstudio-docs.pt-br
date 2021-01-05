@@ -1,5 +1,7 @@
 ---
 title: Bloquear | Microsoft Docs
+description: Encontre informações sobre o tipo de símbolo de bloco (SymTagBlock), que identifica escopos aninhados em funções no SDK de acesso à interface de depuração do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45e1d97c694806857d9ee7920e6d4fd640db4582
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a3b7e4430c2bbfb6e1372a750608d4105b3d3e18
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462263"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728863"
 ---
 # <a name="block"></a>Bloquear
 Cada bloco de código é identificado por um `SymTagBlock` símbolo. Os símbolos de bloco são usados para identificar escopos aninhados dentro de funções.
@@ -41,7 +43,7 @@ Cada bloco de código é identificado por um `SymTagBlock` símbolo. Os símbolo
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retorna `SymTagBlock` (um dos valores de [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) ).|
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Retorna o endereço virtual deste bloco no executável.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Hierarquia lexical de tipos de símbolo](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [Enumeração LocationType](../../debugger/debug-interface-access/locationtype.md)
 - [Locais de símbolos](../../debugger/debug-interface-access/symbol-locations.md)

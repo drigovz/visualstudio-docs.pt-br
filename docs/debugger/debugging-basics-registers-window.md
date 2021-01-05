@@ -1,5 +1,7 @@
 ---
 title: Sobre a janela de registros | Microsoft Docs
+description: Saiba mais sobre a janela de registros no Visual Studio, que está disponível somente se a depuração no nível de endereço estiver habilitada na caixa de diálogo opções, Depurando o nó.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b370b653590dd5061dc98d31d74d3351180dc6
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: f62425913e65207953554a35054399fb8a6d2af4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600313"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728467"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Sobre a janela de registros no Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -57,7 +59,7 @@ Para processadores Intel x86, você pode ver os seguintes sinalizadores na janel
 |Sinalizador|Definir valor|
 |-|-|
 |Estouro|OV = 1|
-|Direction|PARA CIMA = 1|
+|Direção|PARA CIMA = 1|
 |Atividades|EI = 1|
 |Assinar|PL = 1|
 |Zero|ZR = 1|
@@ -65,6 +67,6 @@ Para processadores Intel x86, você pode ver os seguintes sinalizadores na janel
 |Parity|PE = 1|
 |Carry|CY = 1|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Como usar a janela Registros](../debugger/how-to-use-the-registers-window.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

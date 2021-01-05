@@ -1,5 +1,7 @@
 ---
-title: Ferramenta de captura de linha de comando | Microsoft Docs
+title: Ferramenta de captura de Command-Line | Microsoft Docs
+description: Saiba mais sobre o DXCap.exe, uma ferramenta de linha de comando para captura e reprodução de diagnóstico de gráficos que dá suporte ao Direct3D 10 por meio do Direct3D 12 em todos os níveis de recursos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4d88e62b1520677ddac3ff66a6891eb805af30d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3618c1d6e929d40108abd5fd0b0cc3a3361964bf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64808460"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727871"
 ---
 # <a name="command-line-capture-tool"></a>Ferramenta de captura de linha de comando
 O DXCap.exe é uma ferramenta de linha de comando para reprodução e captura de diagnóstico de gráficos. Ele dá suporte a Direct3D 10 através de Direct3D 12 em todos os níveis do recurso.
@@ -137,7 +139,7 @@ DXCap.exe -e map
 
  O comando acima enumera os aplicativos UWP que correspondem a "Map"; Aqui está a saída:
 
- **Package "Microsoft. BingMaps":** **diretóriodeinstalação: C:\Program files\windowsapps\microsoft. BingMaps_2.1.2914.1734_X64__8wekyb3d8bbwe** **FullName: Microsoft. BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **userid: S-1-5-21-2127521184-1604012920-1887927527-5603533** **Name: Microsoft. BingMaps** **Publisher: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = versão US** **: 2.1.2914.1734** **aplicativos inicializáveis:** **ID: AppexMaps** **exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA: no** **AppSpec (para iniciar): DXCap.exe-C Microsoft. BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe, AppexMaps** a última linha de saída para cada aplicativo enumerado exibe o comando que você pode usar para capturar informações de elementos gráficos.
+ **Package "Microsoft. BingMaps":** **diretóriodeinstalação: C: \ Arquivos de programas \ WindowsApps \ Microsoft. BingMaps_2.1.2914.1734_X64__8wekyb3d8bbwe** **FullName: Microsoft. BingMaps_2.1.2914.1734 _x64__8wekyb3d8bbwe** **userid: S-1-5-21-2127521184-1604012920-1887927527-5603533** **Name: Microsoft. BingMaps** **Publisher: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = versão US** **: 2.1.2914.1734** **aplicativos inicializáveis:** **ID: AppexMaps** **exe: c: \ Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA: no** **AppSpec (para iniciar): DXCap.exe-c Microsoft. BingMaps_2.1.2914.1734 _x64__8wekyb3d8bbwe, AppexMaps** a última linha de saída para cada aplicativo enumerado exibe o comando que você pode usar para capturar informações de elementos gráficos.
 
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Capturar quadros específicos ou quadros entre horários específicos.
  Use `-frame` para especificar os quadros que você deseja capturar usando vírgulas e intervalos:

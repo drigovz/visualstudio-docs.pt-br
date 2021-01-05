@@ -1,5 +1,7 @@
 ---
 title: Configurar o Firewall do Windows para depuração remota | Microsoft Docs
+description: Configurar o Firewall do Windows para depuração remota. Configurar portas para depuração remota. Solucionar problemas de conexão de depuração remota.
+ms.custom: SEO-VS-2020
 ms.date: 10/31/2018
 ms.topic: how-to
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fa5d60d7fe662cff31b54bf3a13c203f4b6d8c9
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: be73b8392f6b92bf48bd9150197be9bf8fe380dd
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970086"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728944"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configurar o Firewall do Windows para depuração remota
 
@@ -121,7 +123,7 @@ Se você não puder anexar ao seu aplicativo com o depurador remoto, verifique s
   - Para exibir ou alterar as configurações de regra, clique com o botão direito do mouse no aplicativo do **depurador remoto** na lista e selecione **Propriedades**. Use as guias **Propriedades** para habilitar ou desabilitar a regra, ou alterar os números de porta, protocolos ou tipos de rede.
   - Se o aplicativo do depurador remoto não aparecer na lista de regras, [adicione e configure as portas corretas](#configure-ports-for-remote-debugging).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depuração remota](../debugger/remote-debugging.md)
 - [Atribuições de porta do depurador remoto do Visual Studio](../debugger/remote-debugger-port-assignments.md)

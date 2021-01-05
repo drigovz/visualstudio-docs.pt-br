@@ -1,5 +1,7 @@
 ---
 title: Asserções de C/C++ | Microsoft Docs
+description: Leia sobre como as asserções C/C++ funcionam na depuração do Visual Studio. Uma asserção especifica uma condição que você espera que seja verdadeira em um ponto em seu programa.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -28,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abea0f45609c74e02cd95d6c21bbe8879d46eea1
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 0b585ce001692ab5b4451acc8d2938741bfacd78
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600217"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729061"
 ---
 # <a name="cc-assertions"></a>Asserções C/C++
 Uma instrução de declaração especifica uma condição que você espera ser verdadeira em um ponto específico em seu programa. Se essa condição não for verdadeira, a asserção falhará, a execução do programa será interrompida e a [caixa de diálogo Falha na Asserção](../debugger/assertion-failed-dialog-box.md) será exibida.
@@ -63,7 +65,7 @@ O Visual Studio dá suporte a instruções de declaração C++ baseadas nas segu
 
 - [MFC ASSERT_VALID e CObject:: AssertValid](#BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid)
 
-- [Limitações do AssertValid](#BKMK_Limitations_of_AssertValid)
+- [Limitações de AssertValid](#BKMK_Limitations_of_AssertValid)
 
   [Usando asserções](#BKMK_Using_assertions)
 
@@ -337,7 +339,7 @@ Esse código depende da instrução de declaração para tratar a condição de 
 
 [Neste tópico](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Depurando código nativo](../debugger/debugging-native-code.md)

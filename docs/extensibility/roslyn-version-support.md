@@ -1,5 +1,7 @@
 ---
 title: Mapeamentos de versão do pacote Roslyn com suporte
+description: Este artigo mostra quais versões de pacote do Roslyn (plataforma de compilador .NET) têm suporte para diferentes versões do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/29/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd268dadd03ee5d648075ccea1763e949719c90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c787188fa727692bf11035c00562f7a6e26e81b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701330"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715737"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>Referência de versão do pacote da plataforma de compilador .NET
 
@@ -43,7 +45,7 @@ Por exemplo, para garantir que o analisador personalizado funcione em todas as v
 > [!TIP]
 > Para pacotes Roslyn em que a versão mínima com suporte do Visual Studio é uma versão do Visual Studio 2017, todas as versões do Visual Studio 2019 também têm suporte porque foram fornecidas mais tarde.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [SDK da Plataforma do Compilador .NET](/dotnet/csharp/roslyn-sdk/)
 - [Introdução aos analisadores do Roslyn](getting-started-with-roslyn-analyzers.md)

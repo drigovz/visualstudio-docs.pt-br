@@ -1,5 +1,7 @@
 ---
 title: ArrayType | Microsoft Docs
+description: Encontre informações de referência sobre o tipo de símbolo ArrayType (SymTagArray) no SDK de acesso à interface de depuração do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cc60a27e220620fa4e3e222e1ef9bf0aa00be63
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca89747bc2c3826df4ac2893d4d2edf92449379e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462368"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728891"
 ---
 # <a name="arraytype"></a>ArrayType
 Uma matriz é identificada por um `SymTagArray` símbolo.
@@ -42,6 +44,6 @@ Uma matriz é identificada por um `SymTagArray` símbolo.
 |[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` se a matriz não estiver alinhada|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` se a matriz estiver marcada como volátil.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Hierarquia de classes de tipos de símbolo](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [Dimensão](../../debugger/debug-interface-access/dimension.md)

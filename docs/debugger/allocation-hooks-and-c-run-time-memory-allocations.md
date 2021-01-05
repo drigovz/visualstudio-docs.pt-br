@@ -1,5 +1,7 @@
 ---
 title: Ganchos de alocação e alocações de memória de tempo de execução do C
+description: Entenda os ganchos de alocação e as alocações de memória de tempo de execução C na depuração do Visual Studio. As funções de gancho de alocação devem ignorar explicitamente os blocos de _CRT_BLOCK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be75b4d3e83ed297f31e9015c7ba082c0611206d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: f2c9225281952700b118f13b20a11f7619307b8e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851613"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729165"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Ganchos de alocação e alocações de memória de tempo de execução do C
 Uma restrição muito importante nas funções de gancho de alocação é que elas devem ignorar `_CRT_BLOCK` blocos explicitamente. Esses blocos são as alocações de memória feitas internamente pelas funções de biblioteca de tempo de execução do C se fizerem chamadas para as funções de biblioteca de tempo de execução C que alocam memória interna. Você pode ignorar `_CRT_BLOCK` blocos incluindo o seguinte código no início da função de seu gancho de alocação:
@@ -39,5 +41,5 @@ Se o gancho de alocação não ignorar os `_CRT_BLOCK` blocos, qualquer função
 
 Se você examinar os arquivos de origem da biblioteca em tempo de execução, verá que a função padrão de gancho de alocação, **CrtDefaultAllocHook** (que retorna apenas **TRUE**), está localizada em um arquivo separado, DBGHOOK.C. Se você quiser que o gancho de alocação seja chamado mesmo para as alocações feitas pelo código de inicialização de tempo de execução que é executado antes da função **principal** de seu aplicativo, você poderá substituir essa função padrão por um de seus próprios, em vez de usar [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook).
 
-## <a name="see-also"></a>Confira também
-- [Gravação da função de gancho de depuração](../debugger/debug-hook-function-writing.md)
+## <a name="see-also"></a>Consulte também
+- [Depurar a gravação da função do gancho](../debugger/debug-hook-function-writing.md)

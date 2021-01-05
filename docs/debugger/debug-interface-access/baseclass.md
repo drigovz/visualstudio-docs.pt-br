@@ -1,5 +1,7 @@
 ---
 title: BaseClass | Microsoft Docs
+description: Localize informações de referência sobre o tipo de símbolo BaseClass. Uma classe base para símbolos de tipo definido pelo usuário (UDT) é identificada por um filho com uma marca SymTagBaseClass.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48fcf4e7db87ecf8f0b1041dd013e4b1d8571533
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d813955c8b61965b41cd252aaa35cb7ca323234
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462298"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728884"
 ---
 # <a name="baseclass"></a>BaseClass
 Cada classe base para um símbolo de tipo definido pelo usuário (UDT) é identificada por um filho com uma `SymTagBaseClass` marca. A propriedade [IDiaSymbol:: get_Type](../../debugger/debug-interface-access/idiasymbol-get-type.md) contém o símbolo para o UDT subjacente, e todas as propriedades do UDT subjacente estão disponíveis como parte desse símbolo BaseClass.
@@ -61,6 +63,6 @@ Cada classe base para um símbolo de tipo definido pelo usuário (UDT) é identi
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|`DWORD`|ID do símbolo da forma da tabela virtual.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` se a classe base estiver marcada como volátil.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Hierarquia de classes de tipos de símbolo](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [UDT](../../debugger/debug-interface-access/udt.md)

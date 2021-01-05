@@ -7,14 +7,14 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 0fa7d186623b69fd83c3ed7e4ab9cc12128847d2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 93f9d5ba8bd84341e1b314c1fabca07690114e39
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037205"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729282"
 ---
-# <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Tutorial: criar um aplicativo de vários contêineres com Docker Compose
+# <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Tutorial: Criar um aplicativo de vários contêineres com o Docker Compose
 
 Neste tutorial, você aprenderá como gerenciar mais de um contêiner e se comunicar entre eles ao usar as ferramentas de contêiner no Visual Studio.  O gerenciamento de vários contêineres requer *orquestração de contêiner* e requer um orquestrador como Docker Compose, Kubernetes ou Service Fabric. Aqui, usaremos Docker Compose. Docker Compose é excelente para depuração local e testes no decorrer do ciclo de desenvolvimento.
 
@@ -22,7 +22,7 @@ Neste tutorial, você aprenderá como gerenciar mais de um contêiner e se comun
 
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) com o **desenvolvimento**para a Web, carga de trabalho das **Ferramentas do Azure** ou carga de trabalho de **desenvolvimento de plataforma cruzada do .NET Core** instalada
+* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) com o **desenvolvimento** para a Web, carga de trabalho das **Ferramentas do Azure** ou carga de trabalho de **desenvolvimento de plataforma cruzada do .NET Core** instalada
 ::: moniker-end
 
 ::: moniker range=">= vs-2019"
@@ -46,11 +46,11 @@ Não selecione **Habilitar Suporte ao Docker**. Você adicionará suporte do Doc
 
 ::: moniker range="vs-2019"
 
-![Captura de tela da criação do projeto Web](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
+![Captura de tela de configurar seu novo projeto para um aplicativo Web ASP.NET Core, os campos nome do projeto e nome da solução são definidos como "WebFrontEnd".](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
 
 Não selecione **Habilitar Suporte ao Docker**. Você adicionará suporte do Docker mais tarde.
 
-![Captura de tela da criação do projeto Web](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
+![Captura de tela do site criar um novo ASP.NET Core aplicativo Web com o aplicativo Web selecionado. A opção para habilitar o suporte ao Docker não está selecionada.](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
 
 ::: moniker-end
 
@@ -153,7 +153,7 @@ Adicione um projeto à mesma solução e chame-o de *MyWebAPI*. Selecione **API*
 
    Examine a seção **ferramentas de contêiner** do painel de saída para obter detalhes dos comandos que estão sendo executados.  Você pode ver a ferramenta de linha de comando Docker-Compose é usada para configurar e criar os contêineres de tempo de execução.
 
-1. No projeto de API Web, clique com o botão direito do mouse no nó do projeto e escolha **Adicionar**  >  **suporte ao orquestrador de contêiner**. Escolha **Docker Compose**e, em seguida, selecione o mesmo so de destino.  
+1. No projeto de API Web, clique com o botão direito do mouse no nó do projeto e escolha **Adicionar**  >  **suporte ao orquestrador de contêiner**. Escolha **Docker Compose** e, em seguida, selecione o mesmo so de destino.  
 
     > [!NOTE]
     > Nesta etapa, o Visual Studio oferecerá a criação de um Dockerfile. Se você fizer isso em um projeto que já tem o suporte do Docker, será perguntado se deseja substituir o Dockerfile existente. Se você tiver feito alterações em seu Dockerfile que deseja manter, escolha não.
@@ -179,7 +179,7 @@ Adicione um projeto à mesma solução e chame-o de *MyWebAPI*. Selecione **API*
 
 1. Execute o site localmente agora (F5 ou CTRL + F5) para verificar se ele funciona conforme o esperado. Se tudo estiver configurado corretamente com a versão do .NET Core 2. x, você verá a mensagem "Olá de WebFrontEnd e webAPI (com valor 1)".  Com o .NET Core 3, você vê dados de previsão do tempo.
 
-   O primeiro projeto que você usa ao adicionar orquestração de contêiner é configurado para ser iniciado quando você executa ou depura. Você pode configurar a ação de inicialização nas **Propriedades do projeto** para o projeto Docker-Compose.  No nó do projeto Docker-Compose, clique com o botão direito do mouse para abrir o menu de contexto e escolha **Propriedades**ou use Alt + Enter.  A captura de tela a seguir mostra as propriedades que você deseja para a solução usada aqui.  Por exemplo, você pode alterar a página que é carregada Personalizando a propriedade de **URL de serviço** .
+   O primeiro projeto que você usa ao adicionar orquestração de contêiner é configurado para ser iniciado quando você executa ou depura. Você pode configurar a ação de inicialização nas **Propriedades do projeto** para o projeto Docker-Compose.  No nó do projeto Docker-Compose, clique com o botão direito do mouse para abrir o menu de contexto e escolha **Propriedades** ou use Alt + Enter.  A captura de tela a seguir mostra as propriedades que você deseja para a solução usada aqui.  Por exemplo, você pode alterar a página que é carregada Personalizando a propriedade de **URL de serviço** .
 
    ![Captura de tela das propriedades do projeto Docker-Compose](media/tutorial-multicontainer/launch-action.png)
 
@@ -193,7 +193,7 @@ Adicione um projeto à mesma solução e chame-o de *MyWebAPI*. Selecione **API*
 
 Examine as opções para implantar seus [contêineres no Azure](/azure/containers).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
   
 [Docker Compose](https://docs.docker.com/compose/)  
 [Ferramentas de contêiner](./index.yml)

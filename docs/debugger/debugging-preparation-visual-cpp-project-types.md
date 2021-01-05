@@ -1,6 +1,7 @@
 ---
 title: Preparar para depurar projetos C++ | Microsoft Docs
-ms.custom: seodec18
+description: Obtenha informações sobre como se preparar para depurar os tipos de projeto básicos criados pelos modelos de projeto Visual C++ no Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc663115e98d7553e03a186874d59b75eb68cb90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e399b28d3ddce07cae263550b536c21ad1db028
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916316"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728298"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Preparação da depuração: tipos de projeto C++
 Esta seção descreve como depurar os tipos de projeto básicos criados pelos modelos de projeto do [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].
@@ -101,7 +102,7 @@ Esta seção descreve como depurar os tipos de projeto básicos criados pelos mo
 
  Depurar esse tipo de aplicativo no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] é semelhante a depurar em aplicativos gerenciados do Windows Forms.
 
- Quando você cria um projeto do Windows Forms com o modelo de projeto, o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cria automaticamente as configurações necessárias para as configurações de depuração e versão. Se necessário, você pode alterar essas configurações na caixa de diálogo ** \<project name> páginas de propriedades** . Para obter mais informações, confira [Configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md).
+ Quando você cria um projeto do Windows Forms com o modelo de projeto, o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cria automaticamente as configurações necessárias para as configurações de depuração e versão. Se necessário, você pode alterar essas configurações na caixa de diálogo **\<project name> páginas de propriedades** . Para obter mais informações, confira [Configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md).
 
  Para obter mais informações, consulte [configurações de projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
@@ -109,9 +110,9 @@ Esta seção descreve como depurar os tipos de projeto básicos criados pelos mo
 
  [Neste tópico](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
-- [Definições do projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Configurações do projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Anexando a um programa ou a vários programas em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md)
 - [Como Criar um Projeto de Aplicativo do Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))

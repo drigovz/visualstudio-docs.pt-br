@@ -9,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 178fef548bc52346a78c7f9e4607aad7b1c56f65
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 2d145e1383e8f6c0d7c25ae72232fdbe2a8d703d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598400"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727535"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Como gravar testes de unidade para DLLs em C++
 
@@ -40,7 +40,7 @@ Este passo a passo descreve como desenvolver uma DLL nativa em C++ usando a meto
 
 1. No menu **Arquivo**, escolha **Novo** > **Projeto**.
 
-     **Visual Studio 2017 e anterior**: expanda os modelos **instalados**  >  **Templates**  >  **Visual C++**  >  **teste**.
+     **Visual Studio 2017 e anterior**: expanda os modelos **instalados**  >    >  **Visual C++**  >  **teste**.
      **Visual Studio 2019**: defina o **idioma** como C++ e digite "teste" na caixa de pesquisa.
 
      Escolha o modelo de **Projeto de Teste de Unidade Nativo** ou qualquer estrutura instalada de sua preferência. Se você escolher outro modelo, como Google Test ou Boost.Test, os princípios básicos são os mesmos, embora alguns detalhes serão diferentes.
@@ -328,7 +328,7 @@ As etapas a seguir mostram como criar um projeto de DLL no Visual Studio 2017.
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o botão de alternância ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
+> Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste paralela com a ![ captura de tela do botão de alternância de execução de teste paralelo na barra de ferramentas do Gerenciador de testes. Quando esse botão é selecionado, os testes serão executados em paralelo.](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
 
 ::: moniker-end
 
@@ -368,7 +368,7 @@ As etapas a seguir mostram como criar um projeto de DLL no Visual Studio 2017.
 
    Você também pode exigir um nível mínimo de cobertura de código.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Adicionar testes de unidade a aplicativos C++ existentes](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Usando Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)

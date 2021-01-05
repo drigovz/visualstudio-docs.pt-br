@@ -7,12 +7,12 @@ ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: d2ba7f5d044b82c44d719b251a7d803212cf7b07
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: b9aa9b718ad4618502a58185c27333d689c74300
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860561"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729373"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Conexão com o Controle de Versão do Team Foundation
 
@@ -21,7 +21,7 @@ ms.locfileid: "91860561"
 >
 > Se a versão prévia da extensão do TFVC para o Visual Studio para Mac foi usada anteriormente, ela não é mais compatível ao atualizar para o Visual Studio 2019 para Mac.
 
-Azure Repos fornece dois modelos de controle de versão: [git](/azure/devops/repos/git/?view=azure-devops), um sistema de controle de versão distribuído e [controle de versão do Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), um sistema de controle de versão centralizado.
+Azure Repos fornece dois modelos de controle de versão: [git](/azure/devops/repos/git/?view=azure-devops&preserve-view=true), um sistema de controle de versão distribuído e [controle de versão do Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops&preserve-view=true) (TFVC), um sistema de controle de versão centralizado.
 
 O Visual Studio para Mac fornece suporte completo para repositórios Git, mas requer algumas soluções alternativas para trabalhar com o TFVC. Se você estiver usando o TFVC para o controle de versão hoje, veja abaixo algumas soluções que você poderá usar para acessar seu código-fonte hospedado no TFVC:
 
@@ -69,7 +69,7 @@ Para **configurar manualmente o TEE-CLC**:
 
 Depois que o TEE-CLC estiver instalado, você poderá executar o comando `tf eula` para visualizar e aceitar o contrato de licença do cliente.
 
-Por fim, para autenticar com seu ambiente TFS/Azure DevOps, você precisará criar um token de acesso pessoal no servidor. Saiba mais sobre [autenticação com tokens de acesso pessoal](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Ao criar um token de acesso pessoal para usar com o TFVC, certifique-se de fornecer acesso completo ao configurar o token.
+Por fim, para autenticar com seu ambiente TFS/Azure DevOps, você precisará criar um token de acesso pessoal no servidor. Saiba mais sobre [autenticação com tokens de acesso pessoal](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops&preserve-view=true). Ao criar um token de acesso pessoal para usar com o TFVC, certifique-se de fornecer acesso completo ao configurar o token.
 
 ### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Usar o TEE-CLC para se conectar ao seu repositório
 
@@ -247,11 +247,11 @@ Para usar a autenticação Básica é necessário habilitar **Credenciais de aut
 
 2. Na barra de ferramentas da organização, selecione o ícone de engrenagem e escolha **Política**:
 
-    ![Opção de configurações de política selecionada](media/tfvc-auth2.png)
+    ![Captura de tela da barra de ferramentas da organização do Azure DevOps com o ícone de engrenagem selecionado e a política selecionada no menu suspenso.](media/tfvc-auth2.png)
 
 3. Examine as configurações de conexão do aplicativo. Altere essas configurações, com base em suas políticas de segurança:
 
-    ![Opção de configurações de política selecionada](media/tfvc-auth.png)
+    ![Captura da tela da política no Azure DevOps Services, mostrando as configurações para políticas de conexão do aplicativo.](media/tfvc-auth.png)
 
 #### <a name="i-do-not-see-anything-in-tfvc"></a>Não vejo nada no TFVC
 
@@ -273,6 +273,6 @@ Ao tentar [criar um workspace](#creating-a-new-workspace), verifique se as segui
 - O nome deve ter menos de 64 caracteres.
 - O caminho local não pode ser usado por outros workspaces.
 
-### <a name="see-also"></a>Confira também
+### <a name="see-also"></a>Consulte também
 
 - [Desenvolver e compartilhar seu código no TFVC usando o Visual Studio (no Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

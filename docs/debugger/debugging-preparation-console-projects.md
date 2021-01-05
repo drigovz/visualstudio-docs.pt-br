@@ -1,6 +1,7 @@
 ---
 title: Preparar-se para depurar projetos de console | Microsoft Docs
-ms.custom: seodec18
+description: 'Obtenha informações sobre como se preparar para depurar projetos de console (C#, C++, Visual Basic, F #) no Visual Studio.'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e612228bf5440936c336d286962820a02d6bd071
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9de54feeb77f1bff31fc0b41e385e5a10393aba2
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916282"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728259"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparação da depuração: projetos de console (C#, C++, Visual Basic, F #)
 
@@ -41,7 +42,7 @@ A preparação para depurar um projeto de console é semelhante à preparação 
 
 Talvez seja preciso especificar argumentos de linha de comando para o aplicativo de console. Para obter mais informações, consulte [configurações de projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [configurações de projeto para uma Visual Basic configuração de depuração](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)ou [configurações de projeto para configurações de depuração em C#](../debugger/project-settings-for-csharp-debug-configurations.md).
 
-Como todas as propriedades do projeto, esses argumentos persistem entre sessões de depuração e entre sessões do Visual Studio. Portanto, se o aplicativo de console for aquele que você depurau anteriormente, lembre-se de que pode haver argumentos de sessões anteriores inseridas na caixa de diálogo ** \<Project> páginas de propriedades** .
+Como todas as propriedades do projeto, esses argumentos persistem entre sessões de depuração e entre sessões do Visual Studio. Portanto, se o aplicativo de console for aquele que você depurau anteriormente, lembre-se de que pode haver argumentos de sessões anteriores inseridas na caixa de diálogo **\<Project> páginas de propriedades** .
 
 ## <a name="start-the-application"></a>Iniciar o aplicativo
 
@@ -49,7 +50,7 @@ Como todas as propriedades do projeto, esses argumentos persistem entre sessões
 
 - Defina um ponto de interrupção em seu código e inicie seu aplicativo.
 
-- Inicie seu aplicativo usando **F10** (**depurar depuração**  >  **Step Over**) ou **F11** (**depurar**  >  **etapa em**) e, em seguida, navegue pelo código usando outras opções, como **Executar para clicar em**.
+- Inicie seu aplicativo usando **F10** (**depurar depuração**  >  ) ou **F11** (**depurar**  >  **etapa em**) e, em seguida, navegue pelo código usando outras opções, como **Executar para clicar em**.
 
 - No editor de código, clique com o botão direito do mouse em uma linha e selecione **executar até o cursor**.
 
@@ -57,10 +58,10 @@ Como todas as propriedades do projeto, esses argumentos persistem entre sessões
 
   Quando você inicia um aplicativo de console do Visual Studio, a janela **Console** às vezes aparece por trás da janela do Visual Studio. Se você tentar iniciar o aplicativo de console do Visual Studio e nada acontecer, tente mover a janela do Visual Studio.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Depurando código nativo](../debugger/debugging-native-code.md)
 - [Depurando código gerenciado](../debugger/debugging-managed-code.md)
 - [Preparar para depurar projetos C++](../debugger/debugging-preparation-visual-cpp-project-types.md)
-- [Tipos de projeto C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
-- [Definições do projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Tipos de projeto do Visual Basic, C# e F#](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
+- [Configurações do projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Segurança do depurador](../debugger/debugger-security.md)

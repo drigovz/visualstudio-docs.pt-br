@@ -1,5 +1,7 @@
 ---
 title: Padrões de composição para o Visual Studio | Microsoft Docs
+description: Saiba mais sobre padrões de composição importantes para consistência no Visual Studio. Padrões de composição combinam elementos de interação e design.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebc8f4f6c17af54f4dfdcfc0d0d05c5da9d2d88b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 719ce0ac88761599fbed7da90643fd8a9d79db69
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88114070"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715815"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Padrões de composição para Visual Studio
 Padrões de composição combinam elementos de interação e design em configurações distintas. Alguns dos padrões de composição mais importantes no Visual Studio em relação à consistência incluem:
@@ -68,7 +70,7 @@ Padrões de composição combinam elementos de interação e design em configura
 
 ### <a name="other-charting-considerations"></a>Outras considerações sobre gráficos
 
-#### <a name="color"></a>Cor
+#### <a name="color"></a>Color
  Há uma paleta específica de cores de gráfico definida para uso no Visual Studio. A paleta pode ser acessada para os principais tipos de cegueira de cor e as cores podem ser diferenciadas mesmo quando usadas como fatias muito estreitas de cor. Você pode usar essas cores em qualquer combinação para qualquer tipo de gráfico ou grafo na sua interface do usuário. Você não precisará usar todas as sete cores se não precisar de muitas cores distintas. Essas cores não foram projetadas para serem usadas com elementos de primeiro plano, portanto, não coloque texto nem glifos sobre essas cores. Esses matizes devem ser embutidos em código e expostos à personalização do usuário em **ferramentas > opções** (consulte [expondo cores para usuários finais](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)).
 
 |Essas|Hex|RGB|
@@ -310,7 +312,7 @@ Padrões de composição combinam elementos de interação e design em configura
  **Seleção de região (caixa) no Visual Studio**
 
 #### <a name="text-selection-appearance"></a>Aparência da seleção de texto
- As cores usadas para seleção ativa e inativa no editor podem ser personalizadas. Para personalizar a aparência visual do editor, um usuário pode ir para **ferramentas > opções**e, em seguida, examinar o **ambiente > fontes e cores > editor de texto**.
+ As cores usadas para seleção ativa e inativa no editor podem ser personalizadas. Para personalizar a aparência visual do editor, um usuário pode ir para **ferramentas > opções** e, em seguida, examinar o **ambiente > fontes e cores > editor de texto**.
 
 ### <a name="graphical-selection"></a>Seleção gráfica
 
@@ -342,7 +344,7 @@ Padrões de composição combinam elementos de interação e design em configura
 
 |Entrada|Result|
 |-----------|------------|
-|Guia|Move o indicador de foco entre a ordem lógica dos objetos no editor. Isso pode ser da esquerda para a direita ou de cima para baixo, dependendo do valor da propriedade **TabIndex** (ou equivalente), da ordem de criação do objeto e da finalidade geral do editor. Shift + Tab inverte a direção do indicador de foco.|
+|Tab|Move o indicador de foco entre a ordem lógica dos objetos no editor. Isso pode ser da esquerda para a direita ou de cima para baixo, dependendo do valor da propriedade **TabIndex** (ou equivalente), da ordem de criação do objeto e da finalidade geral do editor. Shift + Tab inverte a direção do indicador de foco.|
 |Barra de espaços|Ativa o modo panorâmico enquanto a tecla é mantida. A entrada adicional do mouse é necessária para deslocar a posição do visor.|
 |Ctrl+Barra de espaços|Ativa o modo de zoom enquanto a tecla é mantida. A entrada adicional do mouse é necessária para aumentar e diminuir o fator de zoom.|
 |CTRL + ALT + sinal de subtração|Diminui o fator de zoom em um nível.|
@@ -481,7 +483,7 @@ Padrões de composição combinam elementos de interação e design em configura
 |Objeto selecionável (por exemplo, uma linha de código)|Um ponto de interrupção em uma linha de código<br /><br /> Um atalho de usuário associado à linha de código|Quando o projeto é salvo|O arquivo de **Opções do usuário (. suo)** para o projeto|
 |caixa de diálogo|O local da caixa de diálogo, se tiver sido movido<br /><br /> A exibição que o usuário usou pela última vez na caixa de diálogo|Quando a caixa de diálogo fechar<br /><br /> Quando a sessão do Visual Studio termina|Na memória<br /><br /> Registro no **HKEY_CURRENT_USER**|
 |Janela|O tamanho e o local da janela|Quando a janela for fechada<br /><br /> Quando o modo do Visual Studio é alterado<br /><br /> Quando a sessão do Visual Studio termina|O arquivo de **Opções do usuário (. suo)** para o projeto<br /><br /> Arquivo de opções personalizadas para configurações de janela|
-|Document|A seleção atual no documento<br /><br /> A exibição do documento<br /><br /> Os últimos vários locais que o usuário visitou|Quando o documento é salvo|O arquivo de **Opções do usuário (. suo)** para o projeto|
+|Documento|A seleção atual no documento<br /><br /> A exibição do documento<br /><br /> Os últimos vários locais que o usuário visitou|Quando o documento é salvo|O arquivo de **Opções do usuário (. suo)** para o projeto|
 |Projeto|Referências a arquivos<br /><br /> Referências a diretórios em disco<br /><br /> Referências a outros softwares<br /><br /> Componentes<br /><br /> Informações de estado sobre o projeto em si|Quando o projeto é salvo|O arquivo de projeto|
 |Solução|Referências a projetos<br /><br /> Referências a arquivos|Quando o projeto ou a solução é salva|O arquivo da **solução (. sln)**|
 |Configurações em **ferramentas > opções**|Personalizações do teclado<br /><br /> Personalizações da barra de ferramentas<br /><br /> Esquemas de cor|Quando a caixa de diálogo **ferramentas > opções** for fechada<br /><br /> Quando a sessão do Visual Studio termina|Registro no **HKEY_CURRENT_USER**|

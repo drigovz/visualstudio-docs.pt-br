@@ -1,5 +1,7 @@
 ---
 title: CompilandEnv | Microsoft Docs
+description: Encontre informações de referência sobre o tipo de símbolo CompilandEnv (SymTagCompilandEnv) no SDK de acesso à interface de depuração do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94a27ada5f56d4525824335faebf1e19426241ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e71dd47c75b7cfcef9580119563a7c8f2227268a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462242"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728758"
 ---
 # <a name="compilandenv"></a>CompilandEnv
 O compilador pode incluir variáveis de ambiente adicionais com símbolos. Há um `SymTagCompilandEnv` símbolo para cada uma dessas variáveis.
@@ -34,6 +36,6 @@ O compilador pode incluir variáveis de ambiente adicionais com símbolos. Há u
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retorna `SymTagCompilandEnv` (um dos valores de [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) ).|
 |[IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)|`VARIANT`|Conteúdo com valor de cadeia de caracteres da variável ( `VT_BSTR` ).|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Compiland](../../debugger/debug-interface-access/compiland.md)
 - [Hierarquia lexical de tipos de símbolo](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

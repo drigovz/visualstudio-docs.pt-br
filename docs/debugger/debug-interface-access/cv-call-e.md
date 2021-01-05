@@ -1,5 +1,7 @@
 ---
 title: CV_call_e | Microsoft Docs
+description: Obtenha informações de referência sobre o tipo de enumeração CV_call_e, que especifica a Convenção de chamada para uma função no SDK de acesso à interface de depuração.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afab1aef58616bfa925fd9f37aacf195eb569c96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 521d5640f001fa0bc190e1869a6568328e864f5a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462137"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728618"
 ---
 # <a name="cv_call_e"></a>CV_call_e
 Especifica a Convenção de chamada para uma função.
@@ -25,7 +27,7 @@ Especifica a Convenção de chamada para uma função.
 > [!NOTE]
 > Somente os valores de enumeração mais comuns são documentados aqui. A enumeração completa está disponível no arquivo de cabeçalho cvconst. h.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```C++
 typedef enum CV_call_e {
@@ -57,6 +59,6 @@ Os valores nessa enumeração são retornados por uma chamada para o método [ID
 ## <a name="requirements"></a>Requisitos
 Cabeçalho: cvconst. h
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)

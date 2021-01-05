@@ -1,5 +1,7 @@
 ---
 title: Hierarquia de classes de tipos de símbolo | Microsoft Docs
+description: Examine uma lista de tipos de símbolo na hierarquia de classes do SDK de acesso à interface de depuração do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed6817c5c01b66143739b2f81899f2b58886d8e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 36f97702f41f72efab970617da2a40a70f339e2a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462269"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728791"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Hierarquia de classes de tipos de símbolos
 A tabela a seguir descreve os tipos de símbolo na hierarquia de classes.
@@ -45,7 +47,7 @@ A tabela a seguir descreve os tipos de símbolo na hierarquia de classes.
 > [!NOTE]
 > Cada símbolo pode ter propriedades que contêm informações sobre o símbolo, bem como referências a outros símbolos. Essas propriedades são listadas nos tópicos de símbolos individuais.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Enumeração CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)
 - [Hierarquia lexical de tipos de símbolo](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [Símbolos e marcações de símbolos](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

@@ -1,5 +1,7 @@
 ---
 title: Fornecendo suporte de desfazer para designers | Microsoft Docs
+description: Saiba como fornecer suporte para desfazer em designers, seja automaticamente ou usando recursos no SDK do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0580f974c362a71c3e400946f2ad34f565ad1232
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4108e259fb0a2e60c2719df8a7fb76f273634799
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699668"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715569"
 ---
 # <a name="supply-undo-support-to-designers"></a>Fornecer suporte de desfazer para designers
 
@@ -29,7 +31,7 @@ Implementações de designer que precisam fornecer suporte para o recurso de des
 
 - Forneça suporte a persistência e CodeDOM implementando <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> as  <xref:System.ComponentModel.Design.IComponentChangeService> classes e.
 
-Para obter mais informações sobre como escrever designers usando .NET Framework, consulte [estender o suporte ao tempo de design](/previous-versions/37899azc(v=vs.140)).
+Para obter mais informações sobre como escrever designers usando .NET Framework, consulte [estender Design-Time support](/previous-versions/37899azc(v=vs.140)).
 
 O [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] fornece uma infraestrutura de desfazer padrão por:
 
@@ -99,8 +101,8 @@ Os designers que implementam um <xref:Microsoft.VisualStudio.Shell.Design.OleUnd
 
 - O designer opta por criar explicitamente unidades de desfazer usando a unidade de desfazer padrão fornecida por uma implementação <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> ou a implementação específica do Visual Studio <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> , que deriva de <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> e também fornece uma implementação de <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> e <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ComponentModel.Design.UndoEngine>
 - <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>
-- [Estender o suporte ao tempo de design](/previous-versions/37899azc(v=vs.140))
+- [Estender suporte Design-Time](/previous-versions/37899azc(v=vs.140))

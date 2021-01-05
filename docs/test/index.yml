@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 03/23/2020
-  ms.openlocfilehash: b2b60b7208fe06aa7e2c2e327174e7536941f204
-  ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
-  ms.translationtype: HT
+  ms.openlocfilehash: 8967405f3b743b2449a90817a700fec092319245
+  ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+  ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 10/08/2020
-  ms.locfileid: "91830698"
+  ms.lasthandoff: 12/23/2020
+  ms.locfileid: "97756572"
 landingContent:
 - title: Sobre ferramentas de teste
   linkLists:
@@ -23,36 +23,44 @@ landingContent:
     links:
     - text: Introdução às ferramentas de teste
       url: improve-code-quality.md
-    - text: Visão geral das ferramentas de teste de unidade
+    - text: Ferramentas de teste de unidade & tarefas
       url: unit-test-your-code.md
-    - text: Visão geral do Live Unit Testing
+    - text: Visão geral de Live Unit Testing (.NET)
       url: live-unit-testing-intro.md
-- title: Teste de unidade
+- title: Introdução
   linkLists:
   - linkListType: tutorial
     links:
     - text: Introdução ao teste de unidade
       url: getting-started-with-unit-testing.md
-    - text: Criar e executar testes de unidade para código gerenciado
-      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
     - text: Executar testes de unidade com o Gerenciador de Testes
       url: run-unit-tests-with-test-explorer.md
+  - linkListType: how-to-guide
+    links:
+    - text: Noções básicas de teste de unidade
+      url: unit-test-basics.md
+    - text: Cobertura de código para – Determinar quanto do código está sendo testado
+      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
+- title: Teste de unidade .NET
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Criar e executar testes de unidade para código gerenciado
+      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
     - text: Introdução ao Live Unit Testing
       url: live-unit-testing-start.md
     - text: Gerar testes de unidade (IntelliTest)
       url: generate-unit-tests-for-your-code-with-intellitest.md
-- title: Mais ferramentas de teste
-  linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Cobertura de código para – Determinar quanto do código está sendo testado
-      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
     - text: Microsoft Fakes – Isolar o código em teste
       url: isolating-code-under-test-with-microsoft-fakes.md
-    - text: Interface do usuário codificada (preterida)
-      url: use-ui-automation-to-test-your-code.md
-    - text: Teste de carga (preterido)
-      url: quickstart-create-a-load-test-project.md
+- title: Teste de unidade de C++
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Escrever testes de unidade para C/C++
+      url: writing-unit-tests-for-c-cpp.md
 - title: Ferramentas relacionadas (Azure DevOps)
   linkLists:
   - linkListType: how-to-guide
@@ -63,3 +71,11 @@ landingContent:
       url: /azure/devops/test/load-test/getting-started-with-performance-testing?view=azure-devops&preserve-view=true
     - text: Testes contínuos (Azure Pipelines)
       url: /azure/devops/pipelines/?view=azure-devops&preserve-view=true
+- title: Mais ferramentas de teste
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Interface do usuário codificada (preterida)
+      url: use-ui-automation-to-test-your-code.md
+    - text: Teste de carga (preterido)
+      url: quickstart-create-a-load-test-project.md

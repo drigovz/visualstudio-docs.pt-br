@@ -11,20 +11,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8afbc73e8c778829a9a1ce5a59d30df6de2f0daa
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c9bdbd545a3509927dd13a800e22b9aaaab2cb2b
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441853"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756624"
 ---
-# <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Criar stubs de método de teste de unidade com o comando Criar Testes de Unidade
+# <a name="create-unit-test-method-stubs-from-code"></a>Criar stubs de método de teste de unidade a partir do código
 
 O comando **Criar Testes de Unidade** cria os stubs de método de teste de unidade. Esse recurso permite a configuração fácil de um projeto de teste, da classe de teste e do stub do método de teste dentro dele.
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> O comando de menu **criar testes de unidade** só está disponível para código C# destinado a .NET Framework (mas não ao .NET Core).
+> O comando de menu **criar testes de unidade** só está disponível para código C# destinado a .NET Framework (mas não ao .NET Core ou .net Standard).
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
@@ -38,6 +38,8 @@ O comando de menu **Criar Testes de Unidade** é extensível e pode ser usado pa
 Para começar, selecione um método, um tipo ou um namespace no editor de código no projeto que você deseja testar, clique com o botão direito do mouse e escolha **Criar Testes de Unidade**. A caixa de diálogo **Criar Testes de Unidade** se abre e, nela, você pode configurar como você deseja que os testes sejam criados.
 
 ![Usando o comando Criar testes de unidade](media/createunittestcommand.png)
+
+Se você não vir as opções de estrutura de teste para NUnit ou xUnit, consulte [usar estruturas de teste de unidade](#use-third-party-unit-test-frameworks)de terceiros.
 
 ## <a name="set-unit-test-traits"></a>Configurar características do teste de unidade
 
@@ -58,7 +60,7 @@ Use esse recurso sempre que precisar criar testes de unidade, mas especialmente 
 
 No entanto, esse recurso é igualmente aplicável quando um desenvolvedor começa escrevendo um pouco de código e o usa para inicializar testes de unidade. Dentro do fluxo de codificação, o desenvolvedor talvez queira criar rapidamente um stub de método de teste de unidade (com uma classe de teste adequada e um projeto de teste adequado) para uma determinada parte do código.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como criar stubs de método de teste de unidade com "Criar Testes de Unidade"](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
 - [Postagens no blog sobre testes de unidade](https://devblogs.microsoft.com/devops/?s=unit+testing)

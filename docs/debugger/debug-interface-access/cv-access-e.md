@@ -1,5 +1,7 @@
 ---
 title: CV_access_e | Microsoft Docs
+description: Obtenha informações sobre o tipo de enumeração CV_access_e, que especifica o escopo de visibilidade (nível de acesso) de membros no SDK de acesso à interface de depuração.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,17 +14,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00be9f52b8cac067e1d8482fe0378737c68909c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39b2cfea273d0b98c178c3cf9bcf3894042f760f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462144"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728691"
 ---
 # <a name="cv_access_e"></a>CV_access_e
 Especifica o escopo de visibilidade (nível de acesso) de funções e variáveis de membro.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```C++
 typedef enum CV_access_e {
@@ -45,7 +47,7 @@ O `friend` especificador de acesso não está incluído aqui porque normalmente 
 ## <a name="requirements"></a>Requisitos
 Cabeçalho: cvconst. h
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)
 - [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

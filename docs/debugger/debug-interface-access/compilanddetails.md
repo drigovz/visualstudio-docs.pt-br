@@ -1,5 +1,7 @@
 ---
 title: CompilandDetails | Microsoft Docs
+description: Encontre informações de referência sobre o tipo de símbolo CompilandDetails (SymTagCompilandDetails) no SDK de acesso à interface de depuração do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da102a8968bc3e29091f6b4b58ee6ef78c6c3fb3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04687eb58ecee2211f098c0f432afc28e0465305
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462249"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728777"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 As informações de compiland são divididas entre os símbolos com uma `SymTagCompiland` marca (baixo detalhe) e uma `SymTagCompilandDetails` marca (alta detalhes). `SymTagCompilandDetails` fornece uma infinidade de informações sobre o compiland que não está disponível com um `SymTagCompiland` símbolo.
@@ -53,6 +55,6 @@ As informações de compiland são divididas entre os símbolos com uma `SymTagC
 ## <a name="remarks"></a>Comentários
  Os compiladores geralmente vêm em um formato conhecido como um compilador de duas passagens; em algumas versões do compilador, cada passagem é tratada por um programa separado. Eles são conhecidos como compiladores de front-end e back-end, respectivamente, por isso as propriedades de símbolo para números de versão de back-end e front-end.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Compiland](../../debugger/debug-interface-access/compiland.md)
 - [Hierarquia lexical de tipos de símbolo](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

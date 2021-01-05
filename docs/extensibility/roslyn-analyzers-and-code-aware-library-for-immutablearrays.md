@@ -1,7 +1,8 @@
 ---
 title: Analisadores de Roslyn e bibliotecas com reconhecimento de código para ImmutableArrays
-titleSuffix: ''
+description: Saiba como criar um analisador de Roslyn do mundo real para capturar erros comuns ao usar o pacote NuGet System. Collections. imutável.
 ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db3ebbd289feb227506d8c188ade9261dfb53da2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 04b65ae8c81f381ee996da5f20ec15588b9180de
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037641"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715763"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analisadores de Roslyn e biblioteca com reconhecimento de código para ImmutableArrays
 
@@ -26,8 +27,8 @@ O [.net Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") ajuda vo
 Você precisa do seguinte para compilar este exemplo:
 
 * Visual Studio 2015 (não é uma edição Express) ou uma versão posterior. Você pode usar o [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/) gratuito
-* [SDK do Visual Studio](../extensibility/visual-studio-sdk.md). Você também pode, ao instalar o Visual Studio, verificar **ferramentas de extensibilidade do Visual Studio** em **ferramentas comuns** para instalar o SDK ao mesmo tempo. Se você já tiver instalado o Visual Studio, também poderá instalar esse SDK indo até o **arquivo**de menu principal  >  **novo**  >  **projeto**, escolhendo **C#** no painel de navegação à esquerda e escolhendo **extensibilidade**. Quando você escolhe o modelo de projeto de navegação estrutural "**instalar o ferramentas de extensibilidade do Visual Studio**", ele solicita que você baixe e instale o SDK.
-* [SDK do .net Compiler Platform ("Roslyn")](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK). Você também pode instalar esse SDK indo até o **arquivo**de menu principal  >  **novo**  >  **projeto**, escolhendo **C#** no painel de navegação esquerdo e, em seguida, escolhendo **extensibilidade**. Quando você escolhe "**baixar o modelo de projeto breadcrumb do SDK do .net Compiler Platform**", ele solicita que você baixe e instale o SDK. Este SDK inclui o [Syntax Visualizer Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Syntax-Visualizer.md). Essa ferramenta útil ajuda a descobrir quais tipos de modelo de código você deve procurar em seu analisador. A infraestrutura do analisador chama seu código para tipos de modelo de código específicos, para que seu código seja executado somente quando necessário e possa se concentrar apenas na análise de código relevante.
+* [SDK do Visual Studio](../extensibility/visual-studio-sdk.md). Você também pode, ao instalar o Visual Studio, verificar **ferramentas de extensibilidade do Visual Studio** em **ferramentas comuns** para instalar o SDK ao mesmo tempo. Se você já tiver instalado o Visual Studio, também poderá instalar esse SDK indo até o **arquivo** de menu principal  >  **novo**  >  **projeto**, escolhendo **C#** no painel de navegação à esquerda e escolhendo **extensibilidade**. Quando você escolhe o modelo de projeto de navegação estrutural "**instalar o ferramentas de extensibilidade do Visual Studio**", ele solicita que você baixe e instale o SDK.
+* [SDK do .net Compiler Platform ("Roslyn")](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK). Você também pode instalar esse SDK indo até o **arquivo** de menu principal  >  **novo**  >  **projeto**, escolhendo **C#** no painel de navegação esquerdo e, em seguida, escolhendo **extensibilidade**. Quando você escolhe "**baixar o modelo de projeto breadcrumb do SDK do .net Compiler Platform**", ele solicita que você baixe e instale o SDK. Este SDK inclui o [Syntax Visualizer Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Syntax-Visualizer.md). Essa ferramenta útil ajuda a descobrir quais tipos de modelo de código você deve procurar em seu analisador. A infraestrutura do analisador chama seu código para tipos de modelo de código específicos, para que seu código seja executado somente quando necessário e possa se concentrar apenas na análise de código relevante.
 
 ## <a name="whats-the-problem"></a>Qual é o problema?
 
@@ -57,13 +58,13 @@ O erro com inicializadores de coleção ocorre porque o `ImmutableArray.Add` mé
 
 ## <a name="find-relevant-syntax-node-types-to-trigger-your-analyzer"></a>Localizar tipos de nó de sintaxe relevantes para disparar seu analisador
 
- Para começar a criar o analisador, primeiro descubra o tipo de SyntaxNode que você precisa procurar. Inicie o **Syntax Visualizer** no menu **Exibir**  >  **outros**  >  **Roslyn**do Windows Syntax Visualizer.
+ Para começar a criar o analisador, primeiro descubra o tipo de SyntaxNode que você precisa procurar. Inicie o **Syntax Visualizer** no menu **Exibir**  >  **outros**  >  **Roslyn** do Windows Syntax Visualizer.
 
 Coloque o cursor do editor na linha que declara `b1` . Você verá a Syntax Visualizer mostra que você está em um `LocalDeclarationStatement` nó da árvore de sintaxe. Esse nó tem um `VariableDeclaration` , que, por sua vez, tem um `VariableDeclarator` , que por sua vez tem um `EqualsValueClause` , e finalmente há um `ObjectCreationExpression` . À medida que você clica na árvore de Syntax Visualizer de nós, a sintaxe na janela do editor é destacada para mostrar o código representado por esse nó. Os nomes dos subtipos SyntaxNode correspondem aos nomes usados na gramática do C#.
 
 ## <a name="create-the-analyzer-project"></a>Criar o projeto do analisador
 
-No menu principal, escolha **arquivo**  >  **novo**  >  **projeto**. Na caixa de diálogo **novo projeto** , em projetos **C#** na barra de navegação à esquerda, escolha **extensibilidade**e, no painel direito, escolha o **analisador com** o modelo de projeto de correção de código. Insira um nome e confirme a caixa de diálogo.
+No menu principal, escolha **arquivo**  >  **novo**  >  **projeto**. Na caixa de diálogo **novo projeto** , em projetos **C#** na barra de navegação à esquerda, escolha **extensibilidade** e, no painel direito, escolha o **analisador com** o modelo de projeto de correção de código. Insira um nome e confirme a caixa de diálogo.
 
 O modelo abre um arquivo *DiagnosticAnalyzer.cs* . Escolha essa guia buffer do editor. Esse arquivo tem uma classe do analisador (formada pelo nome que você deu ao projeto) derivado de `DiagnosticAnalyzer` (um tipo de API Roslyn). Sua nova classe tem um `DiagnosticAnalyzerAttribute` declarando que o analisador é relevante para a linguagem C# para que o compilador descubra e carregue seu analisador.
 
@@ -141,11 +142,11 @@ Você ainda verá ondulados vermelhos em `ImmutableArray` , portanto, coloque o 
 
 Na primeira instância do Visual Studio, defina um ponto de interrupção no início do `AnalyzeObjectCreation` método pressionando **F9** com o cursor na primeira linha.
 
-Inicie o analisador novamente com **F5**e, na segunda instância do Visual Studio, abra novamente o aplicativo de console que você criou na última vez.
+Inicie o analisador novamente com **F5** e, na segunda instância do Visual Studio, abra novamente o aplicativo de console que você criou na última vez.
 
 Você retorna à primeira instância do Visual Studio no ponto de interrupção porque o compilador Roslyn viu uma expressão de criação de objeto e se chamou em seu analisador.
 
-**Obtenha o nó de criação do objeto.** Percorra a linha que define a `objectCreation` variável pressionando **F10**e, na **janela imediata** , avalie a expressão `"objectCreation.ToString()"` . Você verá que o nó de sintaxe que a variável aponta é o código `"new ImmutableArray<int>()"` , apenas o que você está procurando.
+**Obtenha o nó de criação do objeto.** Percorra a linha que define a `objectCreation` variável pressionando **F10** e, na **janela imediata** , avalie a expressão `"objectCreation.ToString()"` . Você verá que o nó de sintaxe que a variável aponta é o código `"new ImmutableArray<int>()"` , apenas o que você está procurando.
 
 **Obter ImmutableArray<\> objeto de tipo T.** Você precisa verificar se o tipo que está sendo criado é ImmutableArray. Primeiro, você obtém o objeto que representa esse tipo. Você verifica os tipos usando o modelo semântico para garantir que tem exatamente o tipo correto e não compara a cadeia de caracteres de `ToString()` . Insira a seguinte linha de código no final da função:
 
@@ -308,7 +309,7 @@ Você pode ver este exemplo desenvolvido e abordado mais adiante nesta [conversa
 
 Você pode ver todo o código concluído [aqui](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers). As subpastas *DoNotUseImmutableArrayCollectionInitializer* e *DoNotUseImmutableArrayCtor* têm um arquivo c# para encontrar problemas e um arquivo c# que implementa as correções de código que aparecem na interface do usuário da lâmpada do Visual Studio. Observe que o código concluído tem um pouco mais de abstração para evitar buscar o \<T> objeto do tipo ImmutableArray repetidamente. Ele usa ações registradas aninhadas para salvar o objeto de tipo em um contexto que está disponível sempre que as subações (analisar criação de objeto e as inicializações de coleção de análise) são executadas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [\\\Build 2015 Talk](https://channel9.msdn.com/events/Build/2015/3-725)
 * [Código concluído no GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)

@@ -1,5 +1,7 @@
 ---
 title: API de gráficos e estatísticas de memória | Microsoft Docs
+description: Examine as ferramentas estatísticas de API de gráficos e estatísticas de memória, que mostram informações sobre o uso da API do Direct3D e o consumo de memória de GPU de vários recursos.
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa808e76e6655c5d57108c923b19794d0398b80c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e0ad2bc48e1e15e1b061cdb600ce65773523e70
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735569"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727884"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>Estatísticas de memória e API de gráficos
 <!-- VERSIONLESS -->
@@ -40,7 +42,7 @@ A coluna **alocação de GPU** exibe a quantidade de memória usada pelo evento 
 
 Assim como acontece com a ferramenta de estatísticas de API, você pode clicar com o botão direito do mouse na janela para copiar todos os dados como CSV, que podem ser colados em algo como o Excel para análise posterior.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Diagnóstico de gráficos (depuração de gráficos DirectX)](visual-studio-graphics-diagnostics.md)
 - [Histórico de recursos](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

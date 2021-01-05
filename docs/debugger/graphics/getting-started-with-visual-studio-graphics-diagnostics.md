@@ -1,6 +1,7 @@
 ---
 title: Introdução ao diagnóstico de gráficos | Microsoft Docs
-ms.custom: seodec18
+description: Prepare-se para usar Diagnóstico de Gráficos pela primeira vez e, em seguida, capturar quadros de um aplicativo do Direct3D e examiná-los no analisador de gráficos.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/08/2020
 ms.topic: how-to
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00a802c0083a9e67a145077ff8ec5842b30eb607
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 88b22364c92a17c7200ddb261d154c7896cd1696
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600096"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727858"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Introdução ao Diagnóstico de Gráficos do Visual Studio
 Nesta seção, você se preparará para usar Diagnóstico de Gráficos pela primeira vez e, em seguida, capturará quadros de um aplicativo do Direct3D e os examinará no analisador de gráficos.
@@ -46,7 +47,7 @@ Nesta seção, você se preparará para usar Diagnóstico de Gráficos pela prim
    O recurso ferramentas de gráficos também é instalado automaticamente quando você instala o SDK do Windows 10.
 
 > [!TIP]
-> O recurso ferramentas gráficas opcionais do Windows 10 fornece funcionalidade leve de captura e reprodução, como a **dxcap.exe**do programa de captura de linha de comando, que pode ser usado em cenários de suporte, teste e diagnóstico em computadores em que as ferramentas de desenvolvedor não estão instaladas. Para obter mais informações, consulte o tópico [ferramenta de captura de linha de comando](command-line-capture-tool.md) .
+> O recurso ferramentas gráficas opcionais do Windows 10 fornece funcionalidade leve de captura e reprodução, como a **dxcap.exe** do programa de captura de linha de comando, que pode ser usado em cenários de suporte, teste e diagnóstico em computadores em que as ferramentas de desenvolvedor não estão instaladas. Para obter mais informações, consulte o tópico [ferramenta de captura de linha de comando](command-line-capture-tool.md) .
 
 ## <a name="using-graphics-diagnostics-for-the-first-time"></a>Usando Diagnóstico de Gráficos pela primeira vez
  Agora que você tem tudo o que precisa, você está pronto para começar a usar Diagnóstico de Gráficos. Basta seguir estas etapas.
@@ -63,10 +64,10 @@ Baixe um exemplo do [exemplo de jogo do Direct3D](/samples/microsoft/windows-uni
 - [Exemplo do Direct3D 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) para Windows 10.
 ::: moniker-end
 
-Verifique se você pode compilar e executar o aplicativo antes de prosseguir. Escolha **Compilar**compilar  >  **solução** para garantir que ela seja compilada sem erros. Em seguida, escolha **depurar**  >  **Iniciar sem depuração** (**Ctrl + F5**) para certificar-se de que ele seja executado corretamente. Dependendo de qual computador você está testando com a ferramenta, talvez seja necessário ajustar a plataforma e o destino de depuração para o exemplo. Por exemplo, para testar a plataforma x64 em seu computador host do Visual Studio, escolha **x64** como a plataforma da solução e o **computador local** como seu destino de depuração. 
+Verifique se você pode compilar e executar o aplicativo antes de prosseguir. Escolha **Compilar** compilar  >  **solução** para garantir que ela seja compilada sem erros. Em seguida, escolha **depurar**  >  **Iniciar sem depuração** (**Ctrl + F5**) para certificar-se de que ele seja executado corretamente. Dependendo de qual computador você está testando com a ferramenta, talvez seja necessário ajustar a plataforma e o destino de depuração para o exemplo. Por exemplo, para testar a plataforma x64 em seu computador host do Visual Studio, escolha **x64** como a plataforma da solução e o **computador local** como seu destino de depuração. 
 
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2-iniciar uma sessão de Diagnóstico de Gráficos
- Agora você está pronto para iniciar sua primeira sessão de diagnóstico de gráficos. No Visual Studio, no menu principal, escolha **depurar, gráficos, iniciar depuração de gráficos**ou apenas pressione **ALT + F5**. Isso inicia seu aplicativo em Diagnóstico de Gráficos e exibe as janelas de sessão de diagnóstico no Visual Studio.
+ Agora você está pronto para iniciar sua primeira sessão de diagnóstico de gráficos. No Visual Studio, no menu principal, escolha **depurar, gráficos, iniciar depuração de gráficos** ou apenas pressione **ALT + F5**. Isso inicia seu aplicativo em Diagnóstico de Gráficos e exibe as janelas de sessão de diagnóstico no Visual Studio.
 
 > [!IMPORTANT]
 > Se você estiver executando seu aplicativo no Windows 10 e ainda não tiver instalado o recurso de ferramentas gráficas opcionais, você será solicitado a fazer isso agora. Você deve instalá-lo antes de poder usar Diagnóstico de Gráficos no Windows 10.
@@ -93,5 +94,5 @@ Verifique se você pode compilar e executar o aplicativo antes de prosseguir. Es
 
  Para saber mais sobre como usar as ferramentas do analisador de gráficos juntas, consulte os [exemplos](graphics-diagnostics-examples.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Elementos gráficos do Direct3D 12](/windows/desktop/direct3d12/direct3d-12-graphics)

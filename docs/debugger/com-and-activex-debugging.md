@@ -1,5 +1,7 @@
 ---
 title: Depuração COM e ActiveX | Microsoft Docs
+description: Descubra dicas sobre como depurar aplicativos COM e controles ActiveX no Visual Studio. Saiba mais sobre a depuração de contêiner e servidor COM. Encontre ferramentas de depuração COM.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a818cfde2996b26bd9d5f31b128e41f2a9fe2e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1df80e8486cb8f8667494137392fadb0a9754e8b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188688"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728996"
 ---
 # <a name="com-and-activex-debugging"></a>Depuração de COM e ActiveX
 Essa seção fornece dicas sobre depuração de aplicativos COM e controles ActiveX.
@@ -41,7 +43,7 @@ Essa seção fornece dicas sobre depuração de aplicativos COM e controles Acti
 ## <a name="related-sections"></a>Seções relacionadas
  [Primeira olhada no depurador](../debugger/debugger-feature-tour.md) Fornece links para as seções maiores da documentação de depuração. As informações incluem: novidades no depurador, configurações e preparação, pontos de interrupção, tratamento de exceções, edição e continuação, depuração de código gerenciado, depuração de projetos C++, depuração de COM e ActiveX, depuração de DLLs, depuração de SQL e referências de interface do usuário.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Introdução ao COM](/cpp/atl/introduction-to-com)

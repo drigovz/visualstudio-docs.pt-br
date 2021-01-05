@@ -1,5 +1,7 @@
 ---
 title: Restrições em comprimentos de cadeia de caracteres | Microsoft Docs
+description: Saiba mais sobre os limites de comprimentos das cadeias de caracteres usados por várias funções impostas pela API de plug-in de controle do código-fonte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df6e068ba612d5e8876e4fa01fbc0751759d5a80
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5412e930937d029f803f5c6c2b4ddc9d396d9485
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701484"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715516"
 ---
 # <a name="restrictions-on-string-lengths"></a>Restrições em comprimentos de cadeia de caracteres
 A API de plug-in de controle do código-fonte limita os comprimentos das cadeias de caracteres usadas em várias funções.
@@ -39,5 +41,5 @@ A API de plug-in de controle do código-fonte limita os comprimentos das cadeias
 |SCC_USER_SIZE|32|
 |SCC_PRJPATH_SIZE|301|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md)

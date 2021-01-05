@@ -1,5 +1,7 @@
 ---
 title: Depurar vários processos | Microsoft Docs
+description: Depurar vários processos no Visual Studio. Iniciar e alternar entre processos, interromper, continuar, percorrer a origem e terminar ou desanexar de processos individuais.
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2018
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94a61e0083b17fa095b419a2066a4f8b9c39dfb7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 214025c2d128443223594fdb00fcf730e5a8091a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350596"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728625"
 ---
 # <a name="debug-multiple-processes-c-visual-basic-c"></a>Depurar vários processos (C#, Visual Basic, C++)
 
@@ -42,15 +44,15 @@ Para iniciar a depuração de um projeto do **Gerenciador de soluções** sem to
 
 1. Selecione a solução em **Gerenciador de soluções** e, em seguida, selecione o ícone **Propriedades** na barra de ferramentas ou clique com o botão direito do mouse na solução e selecione **Propriedades**.
 
-1. Na página **Propriedades** , selecione o projeto de inicialização **Propriedades comuns**  >  **Startup Project**.
+1. Na página **Propriedades** , selecione o projeto de inicialização **Propriedades comuns**  >  .
 
    ![Alterando o tipo de inicialização de um projeto](../debugger/media/dbg_execution_startmultipleprojects.png "DBG_Execution_StartMultipleProjects")
 
 1. Selecione **seleção atual**, **projeto de inicialização única** e um arquivo de projeto ou **vários projetos de inicialização**.
 
-   Se você selecionar **vários projetos de inicialização**, poderá alterar a ordem de inicialização e a ação a ser tomada para cada projeto: **Iniciar**, **Iniciar sem depuração**ou **nenhum**.
+   Se você selecionar **vários projetos de inicialização**, poderá alterar a ordem de inicialização e a ação a ser tomada para cada projeto: **Iniciar**, **Iniciar sem depuração** ou **nenhum**.
 
-1. Selecione **aplicar**ou **OK** para aplicar e fechar a caixa de diálogo.
+1. Selecione **aplicar** ou **OK** para aplicar e fechar a caixa de diálogo.
 
 ### <a name="attach-to-a-process"></a><a name="BKMK_Attach_to_a_process"></a> Anexar a um processo
 
@@ -75,11 +77,11 @@ Para obter mais informações, consulte [anexar a processos em execução](../de
 
 1. Inicie o editor do registro do Windows executando *regedit.exe*.
 
-1. No editor do registro, navegue até **HKEY_LOCAL_MACHINE \Software\microsoft\windows NT\CurrentVersion\Image opções de execução de arquivo**.
+1. No editor do registro, navegue até **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options**.
 
 1. Selecione a pasta do aplicativo que você deseja iniciar o depurador.
 
-   Se o aplicativo não estiver listado como uma pasta filho, clique com o botão direito do mouse em **Opções de execução do arquivo de imagem**, selecione **nova**  >  **chave**e digite o nome do aplicativo. Ou clique com o botão direito do mouse na nova chave na árvore, selecione **renomear**e, em seguida, insira o nome do aplicativo.
+   Se o aplicativo não estiver listado como uma pasta filho, clique com o botão direito do mouse em **Opções de execução do arquivo de imagem**, selecione **nova**  >  **chave** e digite o nome do aplicativo. Ou clique com o botão direito do mouse na nova chave na árvore, selecione **renomear** e, em seguida, insira o nome do aplicativo.
 
 1. Clique com o botão direito do mouse na nova chave na árvore e selecione **novo**  >  **valor de cadeia de caracteres**.
 
@@ -106,12 +108,12 @@ Ao depurar um aplicativo com vários processos, os comandos de depuração de in
 
 A tabela a seguir descreve os comportamentos dos comandos de depuração quando a caixa de seleção **interromper todos os processos quando um processo é interrompido** está marcada ou desmarcada:
 
-|**Comando**|Selecionada|Desmarcado|
+|**Comando**|Selecionado|Desmarcado|
 |-|-|-|
 |**Depurar**   >  **Interromper tudo**|Todos os processos são interrompidos.|Todos os processos são interrompidos.|
 |**Depurar**  >  **Continuar**|Todos os processos são retomados.|Todos os processos suspensos são retomados.|
-|**Depurar**  >  **Intervir**, **intervir**ou **percorrer**|Todos os processos estão em execução durante as etapas de processo atual. <br />Em seguida, todos os processos são interrompidos.|Etapas de processo atual. <br />Retomada de processos suspensos. <br />Executando a continuação dos processos.|
-|**Depurar**  >  **Passe para o processo atual**, **Percorra o processo atual**ou **Percorra o processo atual**|N/D|Etapas de processo atual.<br />Outros processos mantém o estado existente (suspenso ou em execução).|
+|**Depurar**  >  **Intervir**, **intervir** ou **percorrer**|Todos os processos estão em execução durante as etapas de processo atual. <br />Em seguida, todos os processos são interrompidos.|Etapas de processo atual. <br />Retomada de processos suspensos. <br />Executando a continuação dos processos.|
+|**Depurar**  >  **Passe para o processo atual**, **Percorra o processo atual** ou **Percorra o processo atual**|N/D|Etapas de processo atual.<br />Outros processos mantém o estado existente (suspenso ou em execução).|
 |Ponto de **interrupção** da janela de origem|Todos os processos são interrompidos.|Somente quebras do processo da janela de origem.|
 |Execução da janela **de origem até o cursor**<br />A janela de origem deve estar no processo atual.|Todos os processos estão em execução enquanto o processo da janela de origem executa ao cursor e depois interrompe.<br />Em seguida, todos os outros processos não interrompidos.|O processo da janela de origem é executado para o cursor.<br />Outros processos mantém o estado existente (suspenso ou em execução).|
 |Janela de **processos** > **processo de interrupção**|N/D|Quebras selecionadas do processo.<br />Outros processos mantém o estado existente (suspenso ou em execução).|
@@ -136,7 +138,7 @@ Você pode anexar a vários processos quando estiver Depurando, mas apenas um pr
 
 **Para definir o processo atual na janela processos:**
 
-1. Para abrir a janela **processos** , durante a depuração, selecione **depurar**  >  **Windows**  >  **processos**do Windows.
+1. Para abrir a janela **processos** , durante a depuração, selecione **depurar**  >    >  **processos** do Windows.
 
 1. Na janela **processos** , o processo atual é marcado por uma seta amarela. Clique duas vezes no processo que você deseja definir como o processo atual.
 
@@ -172,10 +174,10 @@ A tabela a seguir descreve os comportamentos dos comandos parar, encerrar e desa
 |Janela de **processos** > **encerrar processo**|O processo selecionado foi encerrado.<br />Outros processos mantém o estado existente (suspenso ou em execução).|
 |Janela de **processos** > **desanexar quando a depuração parar**|Se selecionado, **depurar**  >  **parar depuração** desanexará do processo selecionado. <br />Se não for selecionado, **depurar**  >  **parar depuração** finalizará o processo selecionado. |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Especificar o símbolo (. pdb) e os arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [Anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Navegando pelo código com o depurador](../debugger/navigating-through-code-with-the-debugger.md)
 - [Depuração Just-in-time](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [Depurar aplicativos multissegmentados](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)

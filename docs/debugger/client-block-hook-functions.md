@@ -1,5 +1,7 @@
 ---
 title: Funções de gancho de bloco de cliente | Microsoft Docs
+description: Escreva uma função de gancho de bloco de cliente para validar ou relatar o conteúdo dos dados armazenados em blocos de _CLIENT_BLOCK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881809dda7e8254f9d337b68f0c317eccfd9093d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 720087e3c109c6dec4db06d993d0357dc1eddcd4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600201"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729009"
 ---
 # <a name="client-block-hook-functions"></a>Funções de gancho do bloco de clientes
 Se você quiser validar ou reportar o conteúdo dos dados armazenados em blocos `_CLIENT_BLOCK`, poderá escrever uma função especificamente para essa finalidade. A função que você escreve deverá ter um protótipo semelhante ao seguinte, conforme definido em CRTDBG.H:
@@ -46,8 +48,8 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)
    (void *, size_t);
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Gravação da função de gancho de depuração](../debugger/debug-hook-function-writing.md)
+- [Depurar a gravação da função do gancho](../debugger/debug-hook-function-writing.md)
 - [Amostra de crt_dbg2](/previous-versions/b31tft51(v=vs.100))
 - [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)

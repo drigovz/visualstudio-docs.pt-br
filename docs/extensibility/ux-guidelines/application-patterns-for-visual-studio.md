@@ -1,5 +1,7 @@
 ---
 title: Padrões de aplicativo para o Visual Studio | Microsoft Docs
+description: Saiba mais sobre a diferença entre janelas de documentos, janelas de ferramentas e caixas de diálogo sem janela restrita, incluindo padrões de uso de janelas para novos recursos para o Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 036c95951fe3dc9e65a0f3338f75ae9867d721c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 709daa641e898f9d75f4bab340c8e5fd00d28a88
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698589"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716114"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Padrões de aplicativo para Visual Studio
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Interações com a janela
@@ -33,7 +35,7 @@ Pense atentamente sobre qual tipo de contêiner você precisa. As consideraçõe
 ||Janela do documento|Janela de ferramentas|Caixa de diálogo sem janela restrita|
 |-|---------------------|-----------------|---------------------|
 | **Posição** | Sempre posicionado dentro do documento bem e não se encaixa em todas as bordas do IDE. Pode ser "retirada" para que ele flutue separadamente do Shell principal. | Em geral, é encaixado em volta das bordas do IDE, mas pode ser personalizado para ser flutuante, ocultado automaticamente (não fixado) ou encaixado dentro do compartimento do documento.|Janela flutuante grande separada do IDE. |
-| **Confirmar modelo** | *Confirmação atrasada*<br /><br /> Para salvar os dados em um documento, o usuário deve emitir o comando **arquivo &gt; salvar**, **salvar como**ou **salvar todos** . Uma janela de documento tem o conceito dos dados em que ele está sendo "sujos", em seguida, confirmado em um dos comandos Save. Ao fechar uma janela de documento, todo o conteúdo é salvo em disco ou perdido. | *Confirmação imediata*<br /><br /> Não há nenhum modelo de salvamento. Para janelas de ferramenta de inspetor que auxiliam na edição de um arquivo, o arquivo deve ser aberto no editor ou designer ativo, e o editor ou Designer possui a gravação. | *Confirmação atrasada ou imediata*<br /><br /> Geralmente, uma caixa de diálogo com janela restrita grande requer uma ação para confirmar as alterações e permite uma operação "Cancelar", que reverte as alterações feitas na sessão de diálogo.  Isso diferencia uma caixa de diálogo sem-modo de uma janela de ferramentas no que as janelas de ferramentas sempre têm um modelo de confirmação imediata. |
+| **Confirmar modelo** | *Confirmação atrasada*<br /><br /> Para salvar os dados em um documento, o usuário deve emitir o comando **arquivo &gt; salvar**, **salvar como** ou **salvar todos** . Uma janela de documento tem o conceito dos dados em que ele está sendo "sujos", em seguida, confirmado em um dos comandos Save. Ao fechar uma janela de documento, todo o conteúdo é salvo em disco ou perdido. | *Confirmação imediata*<br /><br /> Não há nenhum modelo de salvamento. Para janelas de ferramenta de inspetor que auxiliam na edição de um arquivo, o arquivo deve ser aberto no editor ou designer ativo, e o editor ou Designer possui a gravação. | *Confirmação atrasada ou imediata*<br /><br /> Geralmente, uma caixa de diálogo com janela restrita grande requer uma ação para confirmar as alterações e permite uma operação "Cancelar", que reverte as alterações feitas na sessão de diálogo.  Isso diferencia uma caixa de diálogo sem-modo de uma janela de ferramentas no que as janelas de ferramentas sempre têm um modelo de confirmação imediata. |
 | **Visibilidade** | *Abrir/criar (arquivo) e fechar*<br /><br /> Abrir uma janela de documentos é feito por meio da abertura de um documento existente ou do uso de um modelo para criar um novo documento. Não há nenhum comando "Open \<specific editor> ". | *Ocultar e mostrar*<br /><br /> Janelas de ferramentas de instância única podem ser ocultadas ou mostradas. O conteúdo e os Estados dentro da janela de ferramentas persistem se estão na exibição ou ocultos. As janelas de ferramentas de várias instâncias podem ser fechadas e ocultas. Quando uma janela de ferramenta de várias instâncias é fechada, o conteúdo e o estado dentro da janela de ferramentas são descartados. | *Iniciado a partir de um comando*<br /><br /> As caixas de diálogo são iniciadas de um comando baseado em tarefa. |
 | **Instâncias** | *Várias instâncias*<br /><br /> Vários editores podem ser abertos ao mesmo tempo e editar arquivos diferentes, enquanto alguns editores também permitem que o mesmo arquivo seja aberto em mais de um editor (usando o comando **janela &gt; nova janela** ).<br /><br /> Um único editor pode estar editando um ou vários arquivos ao mesmo tempo (Designer de projeto). | *Instância única ou múltipla*<br /><br /> O conteúdo é alterado para refletir o contexto (como no navegador de propriedades) ou o foco/contexto de push para outras janelas (Lista de Tarefas Gerenciador de Soluções).<br /><br /> As janelas de ferramentas de instância única e várias instâncias devem ser associadas à janela do documento ativo, a menos que haja um motivo convincente para não. | *Instância única* |
 | **Exemplos** | **Editores de texto**, como o editor de código<br /><br /> **Superfícies de design**, como um designer de formulário ou uma superfície de modelagem<br /><br /> **Layouts de controle semelhantes a caixas de diálogo**, como o designer de manifesto | O **Gerenciador de soluções** fornece uma solução e projetos contidos na solução<br /><br /> O **Gerenciador de servidores** fornece uma exibição hierárquica de servidores e conexões de dados que o usuário escolhe abrir na janela. Abrir um objeto da hierarquia de banco de dados, como uma consulta, abre uma janela de documento e permite que o usuário edite a consulta.<br /><br /> O **navegador de propriedades** exibe as propriedades do objeto selecionado em uma janela de documento ou em outra janela de ferramenta. As propriedades são apresentadas em uma exibição de grade hierárquica ou em controles complexos semelhantes a caixas de diálogo e permitem que o usuário defina os valores para essas propriedades. | |
@@ -77,7 +79,7 @@ As janelas de ferramentas são de instância única ou várias instâncias. Algu
 
 ![Janela de ferramentas habilitando o comando ' nova janela ' quando uma instância da janela estiver ativa](../../extensibility/ux-guidelines/media/0702-02_toolwindowenablingcommand.png "0702-02_ToolWindowEnablingCommand")<br />Janela de ferramentas habilitando o comando ' nova janela ' quando uma instância da janela estiver ativa
 
-As janelas de ferramentas de instância única podem ser ocultadas ou mostradas, enquanto as janelas de ferramentas de várias instâncias podem ser fechadas e ocultas. Todas as janelas de ferramentas podem ser encaixadas, vinculadas à guia, flutuantes ou definidas como uma janela filho MDI (interface de documentos múltiplos) (semelhante a uma janela de documento). Todas as janelas de ferramentas devem responder aos comandos de gerenciamento de janela apropriados no menu janela:
+As janelas de ferramentas de instância única podem ser ocultadas ou mostradas, enquanto as janelas de ferramentas de várias instâncias podem ser fechadas e ocultas. Todas as janelas de ferramentas podem ser encaixadas, vinculadas à guia, flutuantes ou definidas como uma janela filho de MDI (interface de Multiple-Document) (semelhante a uma janela de documento). Todas as janelas de ferramentas devem responder aos comandos de gerenciamento de janela apropriados no menu janela:
 
 ![Comandos de gerenciamento de janelas no menu da janela do Visual Studio](../../extensibility/ux-guidelines/media/0702-03_windowmanagementcontrols.png "0702-03_WindowManagementControls")<br />Comandos de gerenciamento de janelas no menu da janela do Visual Studio
 
@@ -176,7 +178,7 @@ A edição de documentos requer uma experiência de usuário consistente. Para p
 
 - Atualize a funcionalidade relacionada em janelas e menus relacionados quando a janela do documento for aberta.
 
-- Os comandos de menu são adequadamente integrados a menus comuns, como menus de **edição**, **formatação**e **exibição** . Se uma quantidade significativa de comandos especializados estiver disponível, um novo menu poderá ser criado. Esse novo menu deve ser visível somente quando o documento tiver foco.
+- Os comandos de menu são adequadamente integrados a menus comuns, como menus de **edição**, **formatação** e **exibição** . Se uma quantidade significativa de comandos especializados estiver disponível, um novo menu poderá ser criado. Esse novo menu deve ser visível somente quando o documento tiver foco.
 
 - Uma barra de ferramentas incorporada pode ser colocada na parte superior do editor. É preferível ter uma barra de ferramentas separada que aparece fora do editor.
 
@@ -337,7 +339,7 @@ As caixas de diálogo em camadas incluem guias, painéis e árvores incorporadas
 
 No caso mais direto, o mecanismo para alternar entre agrupamentos é um controle guia. Há várias alternativas disponíveis. Consulte priorização e disposição em camadas para saber como escolher o estilo mais apropriado.
 
-A caixa de diálogo ** &gt; Opções de ferramentas** é um exemplo de uma caixa de diálogo em camadas usando uma árvore incorporada:
+A caixa de diálogo **&gt; Opções de ferramentas** é um exemplo de uma caixa de diálogo em camadas usando uma árvore incorporada:
 
 ![Ferramentas > opções é um exemplo de uma caixa de diálogo em camadas no Visual Studio.](../../extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704-02_ToolsOptions")<br />Ferramentas > opções é um exemplo de uma caixa de diálogo em camadas no Visual Studio.
 
@@ -398,7 +400,7 @@ Seja consistente com as configurações de controle existentes que realizam a me
   ![Especificações de diretrizes para barras de título em caixas de diálogo do Visual Studio](../../extensibility/ux-guidelines/media/0704-03_titlebarspecs.png "0704-03_TitleBarSpecs")<br />Especificações de diretrizes para barras de título em caixas de diálogo do Visual Studio
 
 #### <a name="control-buttons"></a>Botões de controle
-Em geral, os botões **OK**, **Cancelar**e **ajuda** devem ser organizados horizontalmente no canto inferior direito da caixa de diálogo. A pilha vertical alternativa será permitida se uma caixa de diálogo tiver vários outros botões na parte inferior da caixa de diálogo que apresentaria uma confusão visual com os botões de controle.
+Em geral, os botões **OK**, **Cancelar** e **ajuda** devem ser organizados horizontalmente no canto inferior direito da caixa de diálogo. A pilha vertical alternativa será permitida se uma caixa de diálogo tiver vários outros botões na parte inferior da caixa de diálogo que apresentaria uma confusão visual com os botões de controle.
 
 ![Configurações aceitáveis para botões de controle em caixas de diálogo do Visual Studio](../../extensibility/ux-guidelines/media/0704-04_controlbuttonconfig.png "0704-04_ControlButtonConfig")<br />Configurações aceitáveis para botões de controle em caixas de diálogo do Visual Studio
 
@@ -411,7 +413,7 @@ A caixa de diálogo deve incluir um botão de controle padrão. Para determinar 
 Evite escolher uma ação destrutiva permanentemente para o comando padrão. Se esse comando estiver presente, escolha um comando mais seguro como o padrão.
 
 #### <a name="access-keys"></a>Chaves de acesso
-Não use chaves de acesso para botões **OK**, **Cancelar**ou **ajuda** . Esses botões são mapeados para teclas de atalho por padrão:
+Não use chaves de acesso para botões **OK**, **Cancelar** ou **ajuda** . Esses botões são mapeados para teclas de atalho por padrão:
 
 | Nome do botão | Atalho de teclado |
 | --- | --- |

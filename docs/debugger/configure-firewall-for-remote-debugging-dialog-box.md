@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo Configurar firewall para depuração remota | Microsoft Docs
+description: Leia sobre a caixa de diálogo Configurar o firewall para depuração remota, que aparece quando o Firewall do Windows interrompe o recebimento do depurador de dados pela rede.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2511fc2adfa63ff28f8459f48cbdf4b4623ff5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86a0cac2e42e1271e689f2b1880eef8ca6d14644
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745659"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728957"
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>Caixa de diálogo Configurar Firewall para Depuração Remota
 Essa caixa de diálogo aparece quando o Firewall do Windows bloqueia o depurador de receber informações sobre a rede. Para continuar a depuração remota, você deverá abrir um buraco no firewall para que o depurador possa receber informações.
@@ -40,7 +42,7 @@ Essa caixa de diálogo aparece quando o Firewall do Windows bloqueia o depurador
 
  **Desbloquear a depuração remota de qualquer computador** Habilita a depuração remota de máquinas em qualquer lugar na rede. Essa configuração é a menos segura.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Depuração remota](../debugger/remote-debugging.md)

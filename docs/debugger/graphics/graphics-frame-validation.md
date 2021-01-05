@@ -1,5 +1,7 @@
 ---
 title: Validação de quadro de gráficos | Microsoft Docs
+description: Saiba mais sobre a ferramenta de validação de quadro para gráficos no Visual Studio. Essa ferramenta exibe erros e avisos associados à lista de eventos.
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49248c6209f9e56e51551f6cd3d4af66ecac8b56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0fe9b1ed3acbe588b342ba6550bc45558a2070d2
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735491"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727639"
 ---
 # <a name="graphics-frame-validation"></a>Validação de quadro de gráficos
 <!-- VERSIONLESS -->
@@ -28,11 +30,11 @@ Clique no botão **executar validação** no canto superior esquerdo para inicia
 | **Coluna** | **Descrição** |
 |------------| - |
 | ID do evento | ID que mapeia para uma entrada na janela de [lista de eventos](graphics-event-list.md) . |
-| Severidade | Corrupção, erro, aviso, informações ou mensagem. |
+| Severity | Corrupção, erro, aviso, informações ou mensagem. |
 | Categoria | Aplicativo definido, diversos, inicialização, limpeza, compilação, criação de estado, configuração de estado, obtenção de estado, execução, manipulação de recursos, sombreador, redundante e não utilizado. |
 | Mensagem | A mensagem associada ao evento. |
 | Evento | O evento associado ao erro ou aviso. |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 [Diagnóstico de gráficos (depuração de gráficos DirectX)](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->

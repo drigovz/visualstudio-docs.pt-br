@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: f971237ecc829fcc4ab660263a1b66c701f86f62
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5155c37a89f566841fc342bbd8213f5a38eb399d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583951"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727561"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Instalar o Visual Studio 2019 para Mac
 
@@ -49,7 +49,7 @@ Para criar aplicativos Xamarin para iOS ou macOS, você também precisará de:
 
 6. A lista de cargas de trabalho disponíveis é exibida. Selecione os componentes que você deseja usar:
 
-    [![Escolha quais recursos de carga de trabalho opcionais você deseja instalar](media/install-selection.png)](media/install-selection.png#lightbox)
+    [![Captura de tela de "o que você deseja instalar?" no instalador do Mac do Visual Studio, mostrando uma lista de componentes disponíveis para instalação.](media/install-selection.png)](media/install-selection.png#lightbox)
 
    Se você não quiser instalar todas as plataformas, use o guia abaixo como ajuda para decidir quais plataformas serão instaladas:
 
@@ -67,7 +67,7 @@ Para criar aplicativos Xamarin para iOS ou macOS, você também precisará de:
 7. Após você ter feito suas seleções, pressione o botão **Instalar**.
 8. O instalador exibirá o andamento conforme o download acontece e instalará o Visual Studio para Mac e as cargas de trabalho selecionadas. Você será solicitado a inserir sua senha para conceder os privilégios necessários para a instalação.:
 
-    [![Escolha quais recursos de carga de trabalho opcionais você deseja instalar](media/installation-progress.png)](media/installation-progress.png#lightbox)
+    [![Captura de tela do instalador do Mac do Visual Studio mostrando uma tela de progresso da instalação para o .NET Developer Toolkit para Mac.](media/installation-progress.png)](media/installation-progress.png#lightbox)
 
 9. Uma vez instalado, o Visual Studio para Mac solicitará que você personalize sua instalação entrando e selecionando as associações de chave que você gostaria de usar:
 
@@ -113,6 +113,6 @@ Para outras cargas de trabalho, confira a página [Cargas de trabalho](workloads
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instalar o Visual Studio (no Windows)](/visualstudio/install/install-visual-studio)

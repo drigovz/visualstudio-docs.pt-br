@@ -15,16 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d6b9bb2eb6169de2bbbf41b6d4e96a5960e40fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5cd7bb050204d65bb78a597c1ae3c7eea36ac184
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348243"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729347"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navegar pelo código com o depurador do Visual Studio
 
-O depurador do Visual Studio pode ajudá-lo a navegar pelo código para inspecionar o estado de um aplicativo e mostrar seu fluxo de execução. Você pode usar atalhos de teclado, comandos de depuração, pontos de interrupção e outros recursos para obter rapidamente o código que você deseja examinar. A familiaridade com os comandos e atalhos de navegação do depurador torna mais rápida e fácil localizar e resolver problemas do aplicativo.  Se esta for a primeira vez que você tentou depurar o código, talvez você queira ler [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [ferramentas e técnicas de depuração antes de](../debugger/write-better-code-with-visual-studio.md) passar por este artigo.
+O depurador do Visual Studio pode ajudá-lo a navegar pelo código para inspecionar o estado de um aplicativo e mostrar seu fluxo de execução. Você pode usar atalhos de teclado, comandos de depuração, pontos de interrupção e outros recursos para obter rapidamente o código que você deseja examinar. A familiaridade com os comandos e atalhos de navegação do depurador torna mais rápida e fácil localizar e resolver problemas do aplicativo.
+
+> [!NOTE]
+> Se esta for a primeira vez que você tentou depurar o código, talvez você queira ler [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [ferramentas e técnicas de depuração antes de](../debugger/write-better-code-with-visual-studio.md) passar por este artigo.
 
 ## <a name="get-into-break-mode"></a>Entrar em "modo de interrupção"
 
@@ -51,7 +54,7 @@ Os comandos de etapa do depurador ajudam a inspecionar o estado do aplicativo ou
 
 ### <a name="step-into-code-line-by-line"></a><a name="BKMK_Step_into__over__or_out_of_the_code"></a> Passar para o código linha por linha
 
-Para parar em cada instrução durante a depuração, use **depurar**  >  **etapa para**ou pressione **F11**.
+Para parar em cada instrução durante a depuração, use **depurar**  >  **etapa para** ou pressione **F11**.
 
 O depurador percorre instruções de código, não linhas físicas. Por exemplo, uma cláusula `if` pode ser escrita em uma linha:
 
@@ -89,7 +92,7 @@ Você pode preferir executar diretamente em um local ou uma função específica
 
 ### <a name="run-to-a-breakpoint-in-code"></a>Executar para um ponto de interrupção no código
 
-Para definir um ponto de interrupção simples em seu código, clique na margem esquerda extrema ao lado da linha de código em que você deseja suspender a execução. Você também pode selecionar a linha e pressionar **F9**, selecionar **Debug**  >  **ponto de interrupção de alternância**de depuração, ou clicar com o botão direito do mouse e selecionar **ponto de**interrupção  >  **Inserir ponto**de interrupção. O ponto de interrupção aparece como vermelho na margem esquerda ao lado da linha de código. O depurador suspende a execução logo antes da execução da linha.
+Para definir um ponto de interrupção simples em seu código, clique na margem esquerda extrema ao lado da linha de código em que você deseja suspender a execução. Você também pode selecionar a linha e pressionar **F9**, selecionar   >  **ponto de interrupção de alternância** de depuração, ou clicar com o botão direito do mouse e selecionar **ponto de** interrupção  >  **Inserir ponto** de interrupção. O ponto de interrupção aparece como vermelho na margem esquerda ao lado da linha de código. O depurador suspende a execução logo antes da execução da linha.
 
 ![Definir um ponto de interrupção](../debugger/media/dbg_basics_setbreakpoint.png "Definir um ponto de interrupção")
 
@@ -101,7 +104,7 @@ Você pode instruir o depurador a ser executado até atingir uma função especi
 
 **Para especificar um ponto de interrupção de função por nome**
 
-1. Selecione **depurar**novo ponto de interrupção da função de ponto de  >  **interrupção**  >  **Function Breakpoint**
+1. Selecione **depurar** novo ponto de interrupção da função de ponto de  >  **interrupção**  >  
 
 1. Na caixa de diálogo **novo ponto de interrupção de função** , digite o nome da função e selecione seu idioma.
 
@@ -115,15 +118,15 @@ Se a função estiver sobrecarregada ou em mais de um namespace, você poderá e
 
 **Para selecionar um ponto de interrupção de função da pilha de chamadas**
 
-1. Durante a depuração, abra a janela **pilha de chamadas** selecionando **depurar**  >  pilha de chamadas do**Windows**  >  **Call Stack**.
+1. Durante a depuração, abra a janela **pilha de chamadas** selecionando **depurar**  >  pilha de chamadas do **Windows**  >  .
 
-1. Na janela **pilha de chamadas** , clique com o botão direito do mouse em uma função e selecione **executar até o cursor**ou pressione **Ctrl** + **F10**.
+1. Na janela **pilha de chamadas** , clique com o botão direito do mouse em uma função e selecione **executar até o cursor** ou pressione **Ctrl** + **F10**.
 
 Para rastrear visualmente a pilha de chamadas, consulte [métodos de mapeamento na pilha de chamadas durante a depuração](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
 ### <a name="run-to-a-cursor-location"></a>Executar em um local de cursor
 
-Para executar o local do cursor, no código-fonte ou na janela **pilha de chamadas** , selecione a linha que você deseja interromper, clique com o botão direito do mouse e selecione **executar até o cursor**ou pressione **Ctrl** + **F10**. Selecionar **executar até o cursor** é como definir um ponto de interrupção temporário.
+Para executar o local do cursor, no código-fonte ou na janela **pilha de chamadas** , selecione a linha que você deseja interromper, clique com o botão direito do mouse e selecione **executar até o cursor** ou pressione **Ctrl** + **F10**. Selecionar **executar até o cursor** é como definir um ponto de interrupção temporário.
 
 ### <a name="run-to-click"></a>Executar com um Clique
 
@@ -136,7 +139,7 @@ Enquanto estiver em pausa no depurador, você pode focalizar uma instrução no 
 
 ### <a name="manually-break-into-code"></a>Interromper manualmente o código
 
-Para interromper a próxima linha de código disponível em um aplicativo em execução, selecione **depurar**  >  **quebra de tudo**ou pressione **Ctrl** + **ALT** + **Break**.
+Para interromper a próxima linha de código disponível em um aplicativo em execução, selecione **depurar**  >  **quebra de tudo** ou pressione **Ctrl** + **ALT** + **Break**.
 
 ## <a name="move-the-pointer-to-change-the-execution-flow"></a><a name="BKMK_Set_the_next_statement_to_execute"></a> Mover o ponteiro para alterar o fluxo de execução
 
@@ -163,7 +166,7 @@ O contador de programa salta diretamente para o novo local e as instruções ent
 
 Por padrão, o depurador tenta Depurar apenas o código do aplicativo, habilitando uma configuração chamada *apenas meu código*. Para obter mais detalhes sobre como esse recurso funciona para diferentes tipos de projeto e linguagens, e como você pode personalizá-lo, consulte [apenas meu código](../debugger/just-my-code.md).
 
-Para examinar o código de estrutura, o código de biblioteca de terceiros ou as chamadas do sistema durante a depuração, você pode desabilitar Apenas Meu Código. Em **ferramentas** (ou **depurar**) > **Options**  >  **depuração**de opções, desmarque a caixa de seleção **habilitar apenas meu código** . Quando Apenas Meu Código está desabilitado, o código que não é do usuário aparece nas janelas do depurador e o depurador pode entrar no código que não é do usuário.
+Para examinar o código de estrutura, o código de biblioteca de terceiros ou as chamadas do sistema durante a depuração, você pode desabilitar Apenas Meu Código. Em **ferramentas** (ou **depurar**) >   >  **depuração** de opções, desmarque a caixa de seleção **habilitar apenas meu código** . Quando Apenas Meu Código está desabilitado, o código que não é do usuário aparece nas janelas do depurador e o depurador pode entrar no código que não é do usuário.
 
 > [!NOTE]
 > Apenas Meu Código não é suportada para projetos de dispositivo.
@@ -176,14 +179,14 @@ Para carregar os símbolos da Microsoft, consulte [Configurar locais de símbolo
 
 **Para carregar símbolos para um componente do sistema específico:**
 
-1. Enquanto estiver Depurando, abra a janela **módulos** selecionando **depurar**  >  **Windows**  >  **módulos**do Windows ou pressionando **Ctrl** + **ALT** + **U**.
+1. Enquanto estiver Depurando, abra a janela **módulos** selecionando **depurar**  >    >  **módulos** do Windows ou pressionando **Ctrl** + **ALT** + **U**.
 
 1. Na janela **módulos** , você pode saber quais módulos têm símbolos carregados na coluna **status do símbolo** . Clique com o botão direito do mouse no módulo para o qual você deseja carregar símbolos e selecione **carregar símbolos**.
 
 ## <a name="step-into-properties-and-operators-in-managed-code"></a><a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Intervir em propriedades e operadores no código gerenciado
- O depurador considera propriedades e operadores no código gerenciado por padrão. Na maioria dos casos, isso proporciona uma melhor experiência de depuração. Para habilitar a depuração em Propriedades ou operadores, escolha opções de **depuração**  >  **Options**. Na página **depuração**  >  **geral** , desmarque a caixa de seleção **passar por propriedades e operadores (somente gerenciados)** .
+ O depurador considera propriedades e operadores no código gerenciado por padrão. Na maioria dos casos, isso proporciona uma melhor experiência de depuração. Para habilitar a depuração em Propriedades ou operadores, escolha opções de **depuração**  >  . Na página **depuração**  >  **geral** , desmarque a caixa de seleção **passar por propriedades e operadores (somente gerenciados)** .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [O que é depuração?](../debugger/what-is-debugging.md)
 - [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md)
 - [Primeira olhada na depuração](../debugger/debugger-feature-tour.md)

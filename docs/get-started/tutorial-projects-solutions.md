@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cdc30b34c85a799827519af3cd2bba2c9f1735a
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 3aa347b7f789e24e7cdd3baa19a6267f0ecdf2e5
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668801"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727509"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>Introdução a projetos e soluções
 
@@ -279,7 +279,17 @@ A linha no arquivo *Calendar.cs* que contém o atributo <xref:System.Runtime.Com
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Se você quiser verificar se o teste de unidade está funcionando, selecione **testar**  >  **executar**  >  **todos os testes** na barra de menus. Uma janela chamada **Gerenciador de Testes** será aberta e você verá que o teste **TestGetCurrentDate** será aprovado.
+::: moniker range="vs-2017"
+
+Se você quiser verificar se o teste de unidade está funcionando, escolha **testar**  >  **executar**  >  **todos os testes** na barra de menus. Uma janela chamada **Gerenciador de Testes** será aberta e você verá que o teste **TestGetCurrentDate** será aprovado.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Se você quiser verificar se o teste de unidade está funcionando, escolha **testar**  >  **executar todos os testes** na barra de menus. Uma janela chamada **Gerenciador de Testes** será aberta e você verá que o teste **TestGetCurrentDate** será aprovado.
+
+::: moniker-end
 
 ![Gerenciador de Testes no Visual Studio mostrando a aprovação no teste](media/tutorial-projects-test-explorer.png "Gerenciador de testes no Visual Studio mostrando um teste aprovado.")
 

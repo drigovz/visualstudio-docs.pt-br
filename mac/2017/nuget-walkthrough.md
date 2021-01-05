@@ -7,12 +7,12 @@ ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 58d749a1d014288754dcd9eb7e620730933d742a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 274e8defe25fa78c30aee72834e486b302a9af4e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950403"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729425"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Incluir um pacote NuGet em seu projeto
 
@@ -24,7 +24,7 @@ Este artigo descreve como incluir um pacote NuGet em um projeto e demonstra a ca
 
 Para demonstrar a funcionalidade do pacote NuGet, primeiro veremos como criar um aplicativo e como adicionar um pacote nele. Em seguida, abordaremos os recursos do IDE que ajudam a gerenciar pacotes.
 
-## <a name="create-a-new-project"></a>Criar um novo projeto
+## <a name="create-a-new-project"></a>Criar um projeto
 
 Primeiro, crie um projeto chamado `HelloNuget` conforme ilustrado abaixo. Este exemplo mostra o modelo de Aplicativo de exibição única do iOS, mas funcionaria com qualquer tipo de projeto compatível:
 
@@ -76,7 +76,7 @@ As atualizações de pacote podem ser feitas ao mesmo tempo, clicando com o bot�
 
 Clique com o botão direito do mouse em **Pacotes** para acessar o menu de contexto:
 
-![Menu Pacotes](media/nuget-walkthrough-PackagesMenu.png)
+![Captura de tela mostrando o nó pacotes selecionado e o menu de contexto de clique com o botão direito do mouse em abrir com comandos para adicionar pacotes, atualizar, restaurar e atualizar.](media/nuget-walkthrough-PackagesMenu.png)
 
 * **Adicionar pacotes** –Abre a janela para adicionar mais pacotes ao projeto.
 * **Atualizar** – Verifica o servidor de origem de cada pacote e baixa as versões mais recentes.
@@ -86,7 +86,7 @@ As opções Atualizar e Restaurar também estão disponíveis no nível da Solu�
 
 Também é possível clicar com o botão direito do mouse em pacotes individuais para acessar um menu de contexto:
 
-![Menu Pacotes](media/nuget-walkthrough-PackageMenu.png)
+![Captura de tela mostrando um pacote individual selecionado e o menu de contexto de clique com o botão direito do mouse em abrir com comandos para atualizar, remover e atualizar.](media/nuget-walkthrough-PackageMenu.png)
 
 * **Número de versão** – O número de versão é um item de menu desabilitado, sendo informado apenas para fins informativos.
 * **Atualizar** – Verifica o servidor de origem e baixa uma versão mais recente (se houver).
@@ -102,11 +102,11 @@ Em Visual Studio para Mac, navegue até **Visual Studio > preferências > NuGet 
 
 Clique em **Adicionar** para configurar uma nova origem. Insira um nome amigável e a URL (ou caminho de arquivo) para a origem do pacote. Se a origem for um servidor Web seguro, insira também o nome de usuário e a senha, caso contrário, deixe essas entradas em branco:
 
-![Adicionar origens de pacotes](media/nuget-walkthrough-PackageSource2.png)
+![Captura de tela da caixa de diálogo Adicionar origem do pacote, contendo campos para nome, local, nome de usuário e senha.](media/nuget-walkthrough-PackageSource2.png)
 
 É possível selecionar diferentes origens ao procurar pacotes:
 
-![Adicionar origens de pacotes](media/nuget-walkthrough-PackageSource3.png)
+![Instantâneo da tela adicionar pacotes, mostrando uma lista suspensa das fontes que podem ser selecionadas durante a pesquisa de pacotes.](media/nuget-walkthrough-PackageSource3.png)
 
 ## <a name="version-control"></a>Controle de versão
 
@@ -120,6 +120,6 @@ Consulte a documentação do controle do código-fonte específico para ver deta
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Using-NuGet/player]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [Instalar e usar um pacote no Visual Studio (no Windows)](/nuget/quickstart/install-and-use-a-package-in-visual-studio)

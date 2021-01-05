@@ -1,5 +1,7 @@
 ---
 title: Depuração de servidor COM e contêiner | Microsoft Docs
+description: Saiba mais sobre a depuração de contêiner e servidor COM. Depurar um servidor COM e um contêiner na mesma solução, um aplicativo de servidor sem informações de contêiner ou um aplicativo SDI.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec5ed51c72ad7fd64bbdfd0135f53a13bb8c6e4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b1d4ceecae385ac6e5444c60f6634b260f2e887
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745676"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728970"
 ---
 # <a name="com-server-and-container-debugging"></a>Depuração de servidor COM e contêiner
 Os aplicativos COM executam um número de tarefas fora do controle direto do programador. A comunicação entre DLL, as contagens de uso em objetos e as operações da área de transferência são apenas algumas das áreas onde você pode encontrar comportamento inesperado. Quando isso acontece, a primeira etapa é rastrear a origem do problema.
@@ -54,6 +56,6 @@ Os aplicativos COM executam um número de tarefas fora do controle direto do pro
 
  Para acessar a caixa de diálogo Páginas de Propriedades de *Projeto*, clique com o botão direito do mouse no projeto no Gerenciador de Soluções e escolha Propriedades no menu de atalho. Para localizar a propriedade Argumentos de linha de comando, expanda a categoria Propriedades de Configuração e clique na página Depuração.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Depuração de COM e ActiveX](../debugger/com-and-activex-debugging.md)
+- [Depuração COM e ActiveX](../debugger/com-and-activex-debugging.md)

@@ -1,5 +1,7 @@
 ---
 title: Padrões comuns de controle para o Visual Studio | Microsoft Docs
+description: Saiba mais sobre como os controles comuns do Visual Studio seguem as diretrizes de interação da área de trabalho do Windows e sobre situações especiais que aumentam essas diretrizes.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0b5a1904c01f5688a00e45de7feed7ae326d9b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1caccebf1dc14146bef214a4d33e1216243780
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698707"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715880"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Padrões de controle comuns para Visual Studio
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> Controles comuns
@@ -152,7 +154,7 @@ Em uma caixa de diálogo onde existem outras áreas agrupadas e o confinamento d
 
 Isso permite que o usuário selecione o texto dentro do campo, mas não o edite. Essas caixas de texto são preenchidas pelo cinzel tradicional de 3D com um `ButtonShadow` preenchimento.
 
-Uma caixa de texto pode se tornar ativa (editável) quando um usuário altera um controle associado, como marcar/desmarcar uma caixa de seleção ou selecionar/desmarcar um botão de opção. Por exemplo, na página ** &gt; Opções de ferramentas** mostrada abaixo, a caixa de texto **página inicial** fica ativa quando a caixa de seleção **usar padrão** está desmarcada.
+Uma caixa de texto pode se tornar ativa (editável) quando um usuário altera um controle associado, como marcar/desmarcar uma caixa de seleção ou selecionar/desmarcar um botão de opção. Por exemplo, na página **&gt; Opções de ferramentas** mostrada abaixo, a caixa de texto **página inicial** fica ativa quando a caixa de seleção **usar padrão** está desmarcada.
 
 ![Caixa de texto somente leitura, mostrando Estados inativos e ativos](../../extensibility/ux-guidelines/media/ReadOnlyTextBox.png "ReadOnlyTextBox.png")<br />Caixa de texto somente leitura, mostrando Estados inativos e ativos
 
@@ -363,7 +365,7 @@ Um nó de exibição de árvore pode revelar as opções de submenu em um menu d
 
 ![O item que gerou o menu de contexto ganha foco para notificar o usuário qual item foi selecionado.](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705-5_ContextMenu")<br />O item que gerou o menu de contexto ganha foco para notificar o usuário qual item foi selecionado.
 
-#### <a name="keyboard"></a>Keyboard
+#### <a name="keyboard"></a>Teclado
 O modo de exibição de árvore deve fornecer a capacidade de selecionar itens e expandir/recolher nós usando o teclado. Isso garante que a navegação atenda aos nossos requisitos de acessibilidade.
 
 ##### <a name="tree-view-control"></a>Controle de exibição de árvore

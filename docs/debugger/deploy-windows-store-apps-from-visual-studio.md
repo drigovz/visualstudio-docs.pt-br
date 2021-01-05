@@ -1,6 +1,7 @@
 ---
 title: Implantar aplicativos UWP | Microsoft Docs
-ms.custom: seodec18
+description: Implantar aplicativos Plataforma Universal do Windows (UWP) do Visual Studio. Especifique um dispositivo de destino local ou remoto para implantação. Entenda as opções de implantação.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 01/16/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4c58dbb32ef0a476ac7e22a840e27e389c710f97
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70b4d862b69eeb34028fb0f782cc5c8d6acbdbce
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188284"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728194"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implantar aplicativos UWP usando o Visual Studio
 
@@ -98,7 +99,7 @@ Você pode definir as opções de implantação a seguir na página de proprieda
 
 **Permitir loopback de rede**
 
-Por motivos de segurança, um UWP ou um [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplicativo que é instalado da maneira padrão não é permitido para fazer chamadas de rede para o dispositivo no qual ele está instalado. Por padrão, a implantação do Visual Studio cria uma isenção dessa regra para o aplicativo implantado. Essa isenção permite que você teste procedimentos de comunicação em um único computador. Antes de enviar seu aplicativo para [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], você deve testá-lo sem a isenção.
+Por motivos de segurança, um UWP ou um [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplicativo que é instalado da maneira padrão não é permitido para fazer chamadas de rede para o dispositivo no qual ele está instalado. Por padrão, a implantação do Visual Studio cria uma isenção da regra para o aplicativo implantado. Esse isolamento permite que você teste procedimentos de comunicação em uma única máquina. Antes de enviar seu aplicativo para [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], você deve testá-lo sem a isenção.
 
 Para remover a isenção de loopback de rede do aplicativo:
 
@@ -108,14 +109,14 @@ Para remover a isenção de loopback de rede do aplicativo:
 
 **Não iniciar, mas depurar meu código quando ele for iniciado (C# e Visual Basic)/iniciar aplicativo (C++)**
 
-Para configurar a implantação para iniciar automaticamente uma sessão de depuração quando o aplicativo é iniciado:
+Para configurar a implantação para iniciar uma sessão de depuração quando o aplicativo for iniciado automaticamente:
 
 - Na página de propriedades depurar do C# e Visual Basic, marque a caixa de seleção não **Iniciar, mas depurar meu código ao iniciar** .
 
 - Na página de propriedades de depuração do C++, defina o valor do **aplicativo de inicialização** como **Sim**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Opções avançadas de implantação remota](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
+- [Opções de implementação remota avançadas](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [Depurar um pacote do aplicativo instalado](../debugger/debug-installed-app-package.md)
 - [Executar aplicativos do Visual Studio](debugging-windows-store-and-windows-universal-apps.md)

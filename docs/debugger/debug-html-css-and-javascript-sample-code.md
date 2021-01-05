@@ -1,5 +1,7 @@
 ---
 title: Depurar HTML e código de exemplo CSS | Microsoft Docs
+description: Localize o código de exemplo HTML e CSS que é usado com um artigo de depuração de início rápido. Os erros presentes por design no guia de início rápido são corrigidos neste artigo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 460419d976211747c44f156a5821b88b75aa2e6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 245676d084485ee46647112f5409cdb1854d6913
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745541"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728905"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Depurar o código de exemplo HTML e CSS
 
@@ -101,5 +103,5 @@ O exemplo de código a seguir mostra o código JavaScript completo no default.js
 })();
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

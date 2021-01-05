@@ -1,5 +1,7 @@
 ---
 title: Solucionar problemas de descoberta de modelo no Visual Studio | Microsoft Docs
+description: Saiba como habilitar o log de diagnóstico para solucionar problemas de implantação de projetos e modelos personalizados no SDK do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
 author: acangialosi
@@ -7,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ff5b9974f20841378f367c3cb631a8d4cf7787
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff864e1a244d058b2c5ec1de33d116cfdcfe22db
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235037"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716040"
 ---
 # <a name="troubleshooting-template-installation"></a>Solução de problemas de instalação do modelo
 
@@ -70,7 +72,7 @@ O arquivo de log contém as seguintes colunas:
 > [!NOTE]
 > Para desabilitar o registro em log, remova o arquivo pkgdef ou altere o valor de `EnableTemplateDiscoveryLog` para `dword:00000000` e execute `devenv /updateConfiguration` novamente.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criando modelos personalizados de projeto e item](creating-custom-project-and-item-templates.md)
 - [Solução de problemas do Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

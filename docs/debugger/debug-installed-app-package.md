@@ -1,6 +1,7 @@
 ---
 title: Depurar um pacote de aplicativo UWP instalado | Microsoft Docs
-ms.custom: ''
+description: Depure um pacote de aplicativo UWP (Plataforma Universal do Windows instalado) no Visual Studio em computadores com Windows 10, Xbox e dispositivos de Internet das Coisas (IoT).
+ms.custom: SEO-VS-2020
 ms.date: 11/07/2018
 ms.topic: how-to
 f1_keywords:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: eabc694665bede7d193a360a01c42366568e33c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04ed043dbcb09c862fcdfc5f34d77fd938bd24dc
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350726"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728918"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Depurar um pacote de aplicativo UWP instalado no Visual Studio
 
@@ -42,14 +43,14 @@ Para obter mais informações sobre como depurar aplicativos UWP, consulte as po
 
 1. Na caixa de diálogo **depurar pacote do aplicativo instalado** , em **tipo de conexão**, selecione **computador local**.
 
-1. Em **pacotes de aplicativos instalados**, selecione o aplicativo que você deseja depurar ou digite seu nome na caixa de pesquisa. Os pacotes de aplicativos instalados sem execução aparecem em **não em execução**e os aplicativos em execução estão em **execução**.
+1. Em **pacotes de aplicativos instalados**, selecione o aplicativo que você deseja depurar ou digite seu nome na caixa de pesquisa. Os pacotes de aplicativos instalados sem execução aparecem em **não em execução** e os aplicativos em execução estão em **execução**.
 
    ![DebugInstalledAppPackage](../debugger/media/debug-installed-app-pkg.png "DebugInstalledAppPackage")
 
-1. Se necessário, altere o tipo de código em **depurar este tipo de código**e selecione outras opções.
+1. Se necessário, altere o tipo de código em **depurar este tipo de código** e selecione outras opções.
    - Selecione não **Iniciar, mas depurar meu código quando começar** a iniciar a depuração quando o aplicativo for iniciado. Iniciar a depuração quando o aplicativo é iniciado é uma maneira eficaz de depurar caminhos de controle de [diferentes métodos de inicialização](/windows/uwp/xbox-apps/automate-launching-uwp-apps), como a ativação de protocolo com parâmetros personalizados.
 
-1. Selecione **Iniciar**ou, se o aplicativo estiver em execução, selecione **anexar**.
+1. Selecione **Iniciar** ou, se o aplicativo estiver em execução, selecione **anexar**.
 
 > [!NOTE]
 > Você também pode se conectar a qualquer UWP em execução ou a outro processo de aplicativo selecionando a **depuração**  >  **anexar para processar** no Visual Studio. Você não precisa do projeto original do Visual Studio para anexar a um processo em execução, mas carregar os símbolos do aplicativo ajudará significativamente ao depurar um processo para o qual você não tenha o código original. Consulte [especificar o símbolo e os arquivos de origem no depurador](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
@@ -80,12 +81,12 @@ Na primeira vez que o Visual Studio decorre bugs em um aplicativo UWP instalado 
       Para a maioria dos aplicativos, mantenha o valor padrão, **Universal (protocolo não criptografado)**.
    1. Selecione **Selecionar**.
 
-1. Em **pacotes de aplicativos instalados**, selecione o aplicativo que você deseja depurar ou digite seu nome na caixa de pesquisa. Os pacotes de aplicativos instalados sem execução aparecem em **não em execução**e os aplicativos em execução estão em **execução**.
+1. Em **pacotes de aplicativos instalados**, selecione o aplicativo que você deseja depurar ou digite seu nome na caixa de pesquisa. Os pacotes de aplicativos instalados sem execução aparecem em **não em execução** e os aplicativos em execução estão em **execução**.
 
-1. Se necessário, altere o tipo de código em **depurar este tipo de código**e selecione outras opções.
+1. Se necessário, altere o tipo de código em **depurar este tipo de código** e selecione outras opções.
    - Selecione não **Iniciar, mas depurar meu código quando começar** a iniciar a depuração quando o aplicativo for iniciado. Iniciar a depuração quando o aplicativo é iniciado é uma maneira eficaz de depurar caminhos de controle de [diferentes métodos de inicialização](/windows/uwp/xbox-apps/automate-launching-uwp-apps), como a ativação de protocolo com parâmetros personalizados.
 
-1. Selecione **Iniciar**ou, se o aplicativo estiver em execução, selecione **anexar**.
+1. Selecione **Iniciar** ou, se o aplicativo estiver em execução, selecione **anexar**.
 
 Quando você inicia a depuração de um pacote do aplicativo instalado em um dispositivo Xbox, HoloLens ou IoT conectado pela primeira vez, o Visual Studio instala a versão correta do depurador remoto para seu dispositivo de destino. A instalação do depurador remoto pode levar algum tempo e a mensagem **iniciando o depurador remoto** é exibida enquanto ele está acontecendo.
 
@@ -94,7 +95,7 @@ Quando você inicia a depuração de um pacote do aplicativo instalado em um dis
 
 Para obter mais informações sobre a implantação remota de aplicativos UWP, consulte [implantar e depurar aplicativos UWP](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) e [depurar aplicativos UWP em computadores remotos](run-windows-store-apps-on-a-remote-machine.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando no Visual Studio](../debugger/index.yml)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

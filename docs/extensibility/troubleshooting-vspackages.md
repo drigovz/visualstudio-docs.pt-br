@@ -1,5 +1,7 @@
 ---
 title: Solucionando problemas de VSPackages | Microsoft Docs
+description: Saiba mais sobre os problemas comuns que você pode ter com suas VSPackage e dicas de solução de problemas para resolver os problemas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f79bfcb73749992365b167bae84a15de17d2440d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c1e85c59d49f4079172cfb098701b09d461bdf3
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235024"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716036"
 ---
 # <a name="troubleshooting-vspackages"></a>Solucionando problemas de VSPackages
 Veja a seguir os problemas comuns que você pode ter com seu VSPackage e dicas para resolver os problemas.
@@ -123,6 +125,6 @@ Veja a seguir os problemas comuns que você pode ter com seu VSPackage e dicas p
 
    Verifique se a entrada InprocServer32 tem o caminho correto da dll VSPackage.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [VSPackages](../extensibility/internals/vspackages.md)
 - [Solução de problemas do Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

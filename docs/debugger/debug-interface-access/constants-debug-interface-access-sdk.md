@@ -1,5 +1,7 @@
 ---
 title: Constantes (debug interface Access SDK) | Microsoft Docs
+description: Consulte uma lista de constantes de cadeia de caracteres que podem ser usadas para identificar várias seções de um arquivo de banco de dados de depuração de programa (PDB) por meio do SDK do DIA (debug interface Access).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fa6037253141df1111ef3bc57fac9c718d826dc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 806eb9207fa60b7147d1e0d7df75871b23f8850d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462235"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728750"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Constantes (SDK de Acesso à Interface de Depuração)
 Essas constantes de cadeia de caracteres podem ser usadas para identificar várias seções de um arquivo PDB (banco de dados de depuração de programa) por meio do DIA SDK.
@@ -55,7 +57,7 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 ## <a name="requirements"></a>Requisitos
 Cabeçalho: dia2. h
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Referência](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
 - [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [Interfaces (SDK de Acesso à Interface de Depuração)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

@@ -1,5 +1,7 @@
 ---
 title: Depurando código nativo | Microsoft Docs
+description: Saiba mais sobre problemas comuns de depuração e técnicas de alto nível para aplicativos nativos no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/11/2017
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f98b99a31d9215d661879aa7fa52d4b671024496
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fee3044e4eaa1e7dd3549923082f9b843951b28
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738161"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728311"
 ---
 # <a name="debugging-native-code"></a>Depurando código nativo
 A seção aborda alguns problemas comuns de depuração e técnicas para aplicativos nativos. As técnicas abordadas nesta seção são de alto nível. Para obter a mecânica de uso do depurador do Visual Studio, consulte [primeira olhada no depurador](../debugger/debugger-feature-tour.md)).
@@ -41,7 +43,7 @@ A seção aborda alguns problemas comuns de depuração e técnicas para aplicat
 
  [Técnicas de depuração do MFC](../debugger/mfc-debugging-techniques.md) Vincula você à depuração de técnicas para programas MFC, incluindo: afxDebugBreak, a macro TRACE, detectar vazamentos de memória no MFC, asserções do MFC e reduzir o tamanho das compilações de depuração do MFC.
 
- [Técnicas de depuração CRT](../debugger/crt-debugging-techniques.md) Vincula você a técnicas de depuração para a biblioteca de tempo de execução C, incluindo o uso da biblioteca de depuração CRT, macros para relatórios, diferenças entre malloc e _malloc_dbg, gravação de funções de gancho de depuração e heap de depuração CRT.
+ [Técnicas de depuração CRT](../debugger/crt-debugging-techniques.md) Vincula você a técnicas de depuração para a biblioteca de Run-Time do C, incluindo o uso da biblioteca de depuração CRT, macros para relatórios, diferenças entre malloc e _malloc_dbg, gravação de funções de gancho de depuração e heap de depuração CRT.
 
  [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md) Fornece respostas para perguntas frequentes sobre a depuração de programas em C++
 
@@ -58,7 +60,7 @@ A seção aborda alguns problemas comuns de depuração e técnicas para aplicat
 
  [Primeira olhada no depurador](../debugger/debugger-feature-tour.md) Fornece links para as seções maiores da documentação de depuração. A informação inclui: novidades no depurador, configurações e preparação, pontos de interrupção, tratamentos de exceção, edição e continuação, depuração de código gerenciado, depuração de código nativo, depuração de SQL e referências à interface do usuário.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Depurando no Visual Studio](../debugger/index.yml)

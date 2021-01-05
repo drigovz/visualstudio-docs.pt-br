@@ -1,5 +1,7 @@
 ---
 title: Pilha de chamadas de evento de gráficos | Microsoft Docs
+description: Examine a pilha de chamadas de evento de gráficos em Analisador de Gráficos do Visual Studio, para mapear a relação entre eventos de gráficos problemáticos e o código-fonte do seu aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c221a572264bf6a6aaed9edbec66fb3c0c3ff4b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85712f2b8971b2b5284dab89d90eecec9010e9b4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735508"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727744"
 ---
 # <a name="graphics-event-call-stack"></a>Pilha de chamadas de gráfico
 A pilha de chamadas de evento de gráficos no Analisador de Gráficos do Visual Studio ajuda a mapear a relação entre eventos gráficos problemáticos e o código-fonte do seu aplicativo.
@@ -36,10 +38,10 @@ A pilha de chamadas de evento de gráficos no Analisador de Gráficos do Visual 
 |------------|-----------------|
 |**Nome**|Um símbolo que identifica a função que contém o site de chamada. O símbolo de depuração da função é exibido quando ela está disponível. Caso contrário, o deslocamento de função é exibido.|
 |**Arquivo**|O nome do arquivo do código-fonte ou arquivo de biblioteca que contém o site de chamada.|
-|**Localidade**|O número de linha do site de chamada.|
+|**Localização**|O número de linha do site de chamada.|
 
 ### <a name="links-to-graphics-objects"></a>Links a objetos de gráficos
  Para entender o evento de gráficos selecionado, talvez seja necessário obter informações sobre os objetos do Direct3D associados a ele. A janela **pilha de chamadas de evento de gráficos** fornece links para essas informações.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Passo a passo: Objetos ausentes devido ao sombreamento de vértice](walkthrough-missing-objects-due-to-vertex-shading.md)

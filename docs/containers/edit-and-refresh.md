@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 32f6535e92f41d8030b6e060960940339da91fc9
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: de7065ebdf5426077418e50d2c03118de9f9d68f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92298212"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729295"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Depurar aplicativos em um contêiner do Docker local
 
@@ -120,7 +120,7 @@ As alterações foram aplicadas.
 Geralmente, as alterações exigem uma inspeção mais detalhada. Você pode usar os recursos de depuração do Visual Studio para essa tarefa.
 
 1. No Visual Studio, abra *index.cshtml.cs*.
-2. Substitua o conteúdo do `OnGet` método pelo código a seguir:
+2. Substitua o conteúdo do método `OnGet` pelo seguinte código:
 
    ```csharp
        ViewData["Message"] = "Your application description page from within a container";
@@ -130,7 +130,7 @@ Geralmente, as alterações exigem uma inspeção mais detalhada. Você pode usa
 4. Para iniciar a depuração e atingir o ponto de interrupção, pressione F5.
 5. Alterne para o Visual Studio para exibir o ponto de interrupção. Inspecione os valores.
 
-   ![Ponto de interrupção](media/edit-and-refresh/breakpoint.png)
+   ![Captura de tela mostrando parte do código para Index.cshtml.cs no Visual Studio com um ponto de interrupção definido à esquerda de uma linha de código que é realçada em amarelo.](media/edit-and-refresh/breakpoint.png)
 
 ## <a name="create-a-net-framework-console-app"></a>Criar um aplicativo de console .NET Framework
 
@@ -142,7 +142,7 @@ Quando você usa .NET Framework projetos de aplicativo de console, não há supo
 ### <a name="debug-with-breakpoints"></a>Depurar com pontos de interrupção
 
 1. Em Gerenciador de Soluções, abra *Program.cs*.
-2. Substitua o conteúdo do `Main` método pelo código a seguir:
+2. Substitua o conteúdo do método `Main` pelo seguinte código:
 
    ```csharp
        System.Console.WriteLine("Hello, world!");
@@ -152,7 +152,7 @@ Quando você usa .NET Framework projetos de aplicativo de console, não há supo
 4. Pressione F5 para iniciar a depuração e atingir o ponto de interrupção.
 5. Alterne para o Visual Studio para exibir os valores de ponto de interrupção e inspecionar.
 
-   ![Ponto de interrupção](media/edit-and-refresh/breakpoint-console.png)
+   ![Captura de tela da janela de código para Program.cs no Visual Studio com um ponto de interrupção definido à esquerda de uma linha de código que é realçada em amarelo.](media/edit-and-refresh/breakpoint-console.png)
 
 ## <a name="container-reuse"></a>Reutilização de contêiner
 

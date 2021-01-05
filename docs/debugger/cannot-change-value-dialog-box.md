@@ -1,5 +1,7 @@
 ---
 title: Não é possível alterar a caixa de diálogo valor | Microsoft Docs
+description: Examine a caixa de diálogo não é possível alterar o valor, que aparece no Visual Studio se você tentar alterar uma variável para um valor ilegal em uma janela do depurador ou QuickWatch.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97f057edefefd590c37b49d709ecf8a6e029b905
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf4181d7ff56bd1a5cf3f195bcea5b02aa023629
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745735"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729048"
 ---
 # <a name="cannot-change-value-dialog-box"></a>Caixa de diálogo Não é Possível Alterar o Valor
 ## <a name="error"></a>Erro
@@ -34,6 +36,6 @@ ms.locfileid: "72745735"
 ## <a name="solution"></a>Solução
  Certifique-se que o valor inserido na janela do depurador ou na caixa de diálogo QuickWatch representa um valor válido para a variável que você está tentando definir.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Expressões no depurador](../debugger/expressions-in-the-debugger.md)

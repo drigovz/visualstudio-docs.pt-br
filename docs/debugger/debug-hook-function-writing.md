@@ -1,5 +1,7 @@
 ---
 title: Depurar a gravação da função do gancho | Microsoft Docs
+description: Leia sobre várias funções de gancho de depuração personalizadas que você pode escrever para permitir que você insira seu código em pontos predefinidos dentro do processamento normal do depurador.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 038c976380ff1e1f0a1a7c4c150fc462f6b1d1db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5e2f05005d0b43d526936bfbc8018739cb1ed88
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350713"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728931"
 ---
 # <a name="debug-hook-function-writing"></a>Gravação da função de gancho de depuração
 Esta seção descreve várias funções de gancho de depuração personalizadas que você pode escrever que permitem inserir seu código em alguns pontos predefinidos no processamento normal do depurador.
@@ -42,4 +44,4 @@ Esta seção descreve várias funções de gancho de depuração personalizadas 
 
 ## <a name="related-sections"></a>Seções relacionadas
 
-- [Técnicas de depuração do CRT](../debugger/crt-debugging-techniques.md) – links para técnicas de depuração para a biblioteca de tempo de execução do C, incluindo o uso da biblioteca de depuração do CRT, macros para relatórios, diferenças entre o `malloc` e `_malloc_dbg` o, gravando funções de gancho de depuração e o heap de depuração do CRT.
+- [Técnicas de depuração de CRT](../debugger/crt-debugging-techniques.md) – links para técnicas de depuração para a biblioteca de Run-Time do C, incluindo o uso da biblioteca de depuração CRT, macros para relatórios, diferenças entre `malloc` e `_malloc_dbg` , gravação de funções de gancho de depuração e heap de depuração CRT.

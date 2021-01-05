@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 626666fc912fcff85fcfcc49425d59018778d1f6
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: fd876e86cefcd0ce50aab02de8e7f4cf37d3ab51
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742790"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729217"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Como exibir e diagnosticar contêineres e imagens no Visual Studio
 
@@ -25,11 +25,11 @@ Você pode exibir o que está acontecendo dentro dos contêineres que hospedam s
 
 ## <a name="view-information-about-your-containers"></a>Exibir informações sobre seus contêineres
 
-A janela **contêineres** é aberta automaticamente quando você inicia um projeto .net em contêiner. Para exibir seus contêineres no Visual Studio a qualquer momento, use **Ctrl** + **Q** para ativar a caixa de pesquisa do Visual Studio e digite `Containers` e escolha o primeiro item. Você também pode abrir a janela **contêineres** no menu principal. Use o menu caminho **Exibir**  >  **outros**  >  **contêineres**do Windows.  
+A janela **contêineres** é aberta automaticamente quando você inicia um projeto .net em contêiner. Para exibir seus contêineres no Visual Studio a qualquer momento, use **Ctrl** + **Q** para ativar a caixa de pesquisa do Visual Studio e digite `Containers` e escolha o primeiro item. Você também pode abrir a janela **contêineres** no menu principal. Use o menu caminho **Exibir**  >  **outros**  >  **contêineres** do Windows.  
 
-![Captura de tela da guia ambiente na janela contêineres](media/view-and-diagnose-containers/container-window.png)
+![Captura de tela da janela contêineres no Visual Studio com um contêiner selecionado no painel esquerdo e a guia ambiente selecionada no painel direito.](media/view-and-diagnose-containers/container-window.png)
 
-No lado esquerdo, você verá a lista de contêineres em seu computador local. Os contêineres associados à sua solução são mostrados em **contêineres de solução**. À direita, você vê um painel com guias de **ambiente**, **portas**, **logs**e **arquivos**.
+No lado esquerdo, você verá a lista de contêineres em seu computador local. Os contêineres associados à sua solução são mostrados em **contêineres de solução**. À direita, você vê um painel com guias de **ambiente**, **portas**, **logs** e **arquivos**.
 
 > [!TIP]
 > Você pode personalizar facilmente onde a janela de ferramenta **contêineres** está encaixada no Visual Studio. Consulte [Personalizando layouts de janela no Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). Por padrão, a janela **contêineres** é encaixada com a janela **Watch** quando o depurador está em execução.
@@ -38,7 +38,7 @@ No lado esquerdo, você verá a lista de contêineres em seu computador local. O
 
 A guia **ambiente** mostra as variáveis de ambiente no contêiner. Para o contêiner do seu aplicativo, você pode definir essas variáveis de várias maneiras, por exemplo, no Dockerfile, em um arquivo. env ou usando a opção-e quando você inicia um contêiner usando um comando do Docker.
 
-![Captura de tela da guia ambiente na janela contêineres](media/view-and-diagnose-containers/containers-environment-vars.png)
+![Captura de tela da janela contêineres no Visual Studio mostrando as variáveis de ambiente para o contêiner WebApplication11.](media/view-and-diagnose-containers/containers-environment-vars.png)
 
 > [!NOTE]
 > As alterações nas variáveis de ambiente não são refletidas em tempo real. Além disso, as variáveis de ambiente nessa guia são as variáveis de ambiente do sistema no contêiner e não refletem as variáveis de ambiente do usuário locais para o aplicativo.
@@ -102,13 +102,13 @@ Você pode anexar a processos gerenciados no contêiner. Para procurar um proces
 
 Você também pode exibir imagens no computador local usando a guia **imagens** na janela **contêineres** . As imagens extraídas de repositórios externos são agrupadas em um TreeView. Selecione uma imagem para inspecionar os detalhes da imagem.
 
-Para remover uma imagem, clique com o botão direito do mouse na imagem no modo de exibição de árvore e escolha **remover**ou selecione a imagem e use o botão **remover** na barra de ferramentas.
+Para remover uma imagem, clique com o botão direito do mouse na imagem no modo de exibição de árvore e escolha **remover** ou selecione a imagem e use o botão **remover** na barra de ferramentas.
 
 ## <a name="next-steps"></a>Próximas etapas
 
 Saiba mais sobre as ferramentas de contêiner disponíveis no Visual Studio lendo a [visão geral das ferramentas de contêiner](overview.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 [Desenvolvimento de contêiner no Visual Studio](./index.yml)
 

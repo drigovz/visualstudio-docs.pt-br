@@ -1,5 +1,7 @@
 ---
 title: Depurando LINQ | Microsoft Docs
+description: Linguagem de depuração de consulta integrada (LINQ) no Visual Studio. Exibir resultados do LINQ. Entenda as diferenças comportamentais ao passar pelo código LINQ.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 146519b33be19da1103aed958e42ec5ffaee8bd0
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 903ffb5d3187da3bda961caca42cf7436a816b6d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509764"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728351"
 ---
 # <a name="debugging-linq"></a>Depurando LINQ
 O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dá suporte à depuração de código de consulta integrada à linguagem (LINQ), com algumas restrições. A maioria dos recursos de depuração funcionam com instruções LINQ, incluindo a depuração, definição de pontos de interrupção e exibição de resultados em janelas de depuração. Este tópico descreve as principais limitações da depuração LINQ.
@@ -107,7 +109,7 @@ End Function
 ## <a name="edit-and-continue-not-supported-for-linq"></a><a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Editar e continuar não compatível com LINQ
  Editar e continuar dá suporte a alterações em consultas LINQ com limitações. Para obter detalhes, consulte [alterações com suporte do ENC](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando SQL](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6\(v\=vs.100\))
 - [Gerenciando exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md)
