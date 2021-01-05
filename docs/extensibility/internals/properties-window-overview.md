@@ -1,5 +1,7 @@
 ---
 title: Visão geral da janela Propriedades | Microsoft Docs
+description: Saiba mais sobre as interfaces usadas para interagir com o janela Propriedades no IDE do Visual Studio nesta visão geral.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 445a43cec976f363873c89dfe9b8e05429aebaf2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 712c3c5b5c0b94932abba602a841977e0601d3b3
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706026"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875889"
 ---
 # <a name="properties-window-overview"></a>Visão geral da janela Propriedades
 A janela **Propriedades** é usada para exibir propriedades de objetos selecionados nos dois tipos principais de Windows disponíveis no ambiente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] desenvolvimento integrado (IDE). Esses dois tipos de janelas são:
@@ -48,6 +50,6 @@ A janela **Propriedades** é usada para exibir propriedades de objetos seleciona
 
  Para obter mais informações sobre `IDispatch` o, consulte a biblioteca MSDN.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Estendendo propriedades](../../extensibility/internals/extending-properties.md)
 - [Interfaces e campos da janela Propriedades](../../extensibility/internals/properties-window-fields-and-interfaces.md)

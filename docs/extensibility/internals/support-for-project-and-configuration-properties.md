@@ -1,5 +1,7 @@
 ---
 title: Suporte para propriedades de projeto e configuração | Microsoft Docs
+description: Saiba como fornecer uma página de propriedades para seu próprio tipo de projeto no IDE do Visual Studio, que pode exibir o projeto e as propriedades estendidas de configuração.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be9d9a6e0976ab1ff336fc6754fa44d26c031378
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fd5f15f16894faf6d47700e34db4d99a1fa3cb5a
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012016"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876578"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Suporte para propriedades do projeto e de configuração
 A janela **Propriedades** no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE) pode exibir o projeto e as propriedades de configuração. Você pode fornecer uma página de propriedades para seu próprio tipo de projeto para que o usuário possa definir propriedades para seu aplicativo.
@@ -75,7 +77,7 @@ A janela **Propriedades** no [!INCLUDE[vsprvs](../../code-quality/includes/vsprv
 
  O VSPackage ao qual o atributo está anexado não é importante. Quando um VSPackage é registrado com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , a ID de classe (CLSID) de qualquer objeto que pode ser criado é registrada para que uma chamada para <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry.CreateInstance%2A> possa criá-lo.
 
- O caminho do registro de um objeto que pode ser criado é determinado pela combinação da <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> palavra, do CLSID e do GUID do tipo de objeto. Se `MyProjectPropertyPage` a classe tiver um GUID de {3c693da2-5bca-49B3-bd95-ffe0a39dd723} e UserRegistryRoot for HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp, o caminho do registro será HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp\clsid \\ {3c693da2-5bca-49B3-bd95-ffe0a39dd723}.
+ O caminho do registro de um objeto que pode ser criado é determinado pela combinação da <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> palavra, do CLSID e do GUID do tipo de objeto. Se `MyProjectPropertyPage` a classe tiver um GUID de {3c693da2-5bca-49B3-bd95-ffe0a39dd723} e o UserRegistryRoot for HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp, o caminho do registro será HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\CLSID\\ {3c693da2-5bca-49B3-bd95-ffe0a39dd723}.
 
 ## <a name="project-and-configuration-property-attributes-and-layout"></a>Layout e atributos de propriedade de configuração e projeto
  Os <xref:System.ComponentModel.CategoryAttribute> <xref:System.ComponentModel.DisplayNameAttribute> atributos,, e <xref:System.ComponentModel.DescriptionAttribute> determinam o layout, a rotulação e a descrição do projeto e das propriedades de configuração em uma página de propriedades genérica. Esses atributos determinam a categoria, o nome de exibição e a descrição da opção, respectivamente.
@@ -90,7 +92,7 @@ A janela **Propriedades** no [!INCLUDE[vsprvs](../../code-quality/includes/vsprv
 
  A `MyConfigProp` propriedade de configuração é exibida na página de propriedades de configuração como **minha propriedade** de configuração na categoria, **minha categoria**. Se a opção for selecionada, a descrição, **minha descrição**, aparecerá no painel Descrição.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Adicionar e remover páginas de propriedade](../../extensibility/adding-and-removing-property-pages.md)
 - [Projetos](../../extensibility/internals/projects.md)
 - [Arquivos de descrição do diretório de modelo (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

@@ -1,5 +1,7 @@
 ---
 title: Suporte para configurações de usuário | Microsoft Docs
+description: Saiba como habilitar a persistência de categorias de configurações usando as APIs de configurações no SDK do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02bb2450196de76917e9cffc2f5f5acc6c8ee7b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9f6ee52e9ba87eb2f570a6e388dc98c050989c9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704786"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876513"
 ---
 # <a name="support-for-user-settings"></a>Suporte para configurações de usuário
 Um VSPackage pode definir uma ou mais categorias de configurações, que são grupos de variáveis de estado que persistem quando um usuário escolhe o comando **configurações de importação/exportação** no menu **ferramentas** . Para habilitar essa persistência, use as APIs de configurações no [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
@@ -34,7 +36,7 @@ Um VSPackage pode definir uma ou mais categorias de configurações, que são gr
  Os pontos de configuração personalizados são criados em uma entrada de registro no seguinte local: HKLM\Software\Microsoft\VisualStudio \\ *\<Version>* \UserSettings \\ `<CSPName>` , em que `<CSPName>` é o nome do ponto de configurações personalizado ao qual o VSPackage dá suporte e *\<Version>* é a versão do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , por exemplo, 8,0.
 
 > [!NOTE]
-> O caminho raiz de HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *\<Version>* pode ser substituído por uma raiz alternativa quando o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ambiente de desenvolvimento integrado) é inicializado. Para obter mais informações, consulte [Opções de linha de comando](../../extensibility/command-line-switches-visual-studio-sdk.md).
+> O caminho raiz de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* pode ser substituído por uma raiz alternativa quando o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ambiente de desenvolvimento integrado) é inicializado. Para obter mais informações, consulte [Opções de linha de comando](../../extensibility/command-line-switches-visual-studio-sdk.md).
 
  A estrutura da entrada do registro está ilustrada abaixo:
 

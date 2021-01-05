@@ -1,5 +1,6 @@
 ---
 title: Barra de navegação de suporte em um serviço de linguagem herdada
+description: Saiba como dar suporte à barra de navegação em um serviço de linguagem herdado. A barra de navegação na exibição do editor exibe os tipos e membros no arquivo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0011e9dac5438715571d1df76ba379fb9ed122df
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 325789c3b7210c87d5c1b0414434af27c266c31c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036555"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876521"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Suporte para a barra de navegação em um serviço de linguagem herdado
 A barra de navegação na parte superior da exibição do editor exibe os tipos e membros no arquivo. Os tipos são mostrados na lista suspensa à esquerda e os membros são mostrados no menu suspenso à direita. Quando o usuário seleciona um tipo, o cursor é colocado na primeira linha do tipo. Quando o usuário seleciona um membro, o cursor é colocado na definição do membro. As caixas suspensas são atualizadas para refletir o local atual do cursor.

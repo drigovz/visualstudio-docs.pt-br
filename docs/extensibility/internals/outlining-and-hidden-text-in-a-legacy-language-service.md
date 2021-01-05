@@ -1,5 +1,7 @@
 ---
 title: Estrutura de tópicos e texto oculto em um serviço de linguagem herdada | Microsoft Docs
+description: Este artigo fornece links para recursos para implementar a estrutura de tópicos e o texto oculto em um serviço de linguagem herdado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1f05d42de0201a7556046d19baf55830fa62c22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bd0b48292a448d70b266e598df561fdff2e8ab4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706819"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877397"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Estrutura de tópicos e texto oculto em um serviço de linguagem herdado
 A estrutura de tópicos torna possível recolher uma sequência de linhas de texto em uma única linha. Por exemplo, em C++, todos os métodos podem ser recolhidos para uma única linha, mostrando apenas a assinatura do método. Texto oculto é a sequência de linhas de texto que podem ser mostradas ou ocultas.

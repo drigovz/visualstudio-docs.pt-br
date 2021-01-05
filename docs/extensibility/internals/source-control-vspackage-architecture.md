@@ -1,5 +1,7 @@
 ---
 title: Arquitetura de VSPackage de controle do código-fonte | Microsoft Docs
+description: Saiba mais sobre a arquitetura de um pacote de controle de origem, que é um VSPackage que fornece funcionalidade para o Visual Studio como um serviço de controle do código-fonte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +12,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6e62aa9e2d725e982f0605e2721f0bfeb3cc5ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c03482ff489c356ddcbe28ccc26c69c5936be6c5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705081"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877670"
 ---
 # <a name="source-control-vspackage-architecture"></a>Arquitetura do VSPackage de controle do código-fonte
 Um pacote de controle de origem é um VSPackage que usa os serviços que o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE fornece. Em retorno, um pacote de controle de origem fornece sua funcionalidade como um serviço de controle do código-fonte. Além disso, um pacote de controle de origem é uma alternativa mais versátil do que um plug-in de controle do código-fonte para integrar o controle do código-fonte no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
  Um plug-in de controle do código-fonte que implementa a API de plug-in de controle do código-fonte obedece a um contrato estrito. Por exemplo, um plug-in não pode substituir a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interface do usuário padrão. Além disso, a API de plug-in de controle do código-fonte não permite que um plug-in implemente seu próprio modelo de controle do código-fonte. Um pacote de controle de origem, no entanto, supera essas duas limitações. Um pacote de controle de origem tem controle total sobre a experiência de controle do código-fonte de um [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usuário. Além disso, um pacote de controle de origem pode usar seu próprio modelo de controle do código-fonte e lógica e pode definir todas as interfaces do usuário relacionadas ao controle do código-fonte.
 
-## <a name="source-control-package-components"></a>Componentes do pacote de controle de origem
+## <a name="source-control-package-components"></a>Componentes do pacote Source-Control
  Conforme mostrado no diagrama de arquitetura, um [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] componente chamado stub de controle do código-fonte é um VSPackage que integra um pacote de controle de origem com o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
  O stub de controle do código-fonte lida com as tarefas a seguir.
@@ -37,7 +39,7 @@ Um pacote de controle de origem é um VSPackage que usa os serviços que o [!INC
 
   O pacote do adaptador de controle do código-fonte é um pacote de controle de origem especial que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornece. Este pacote é o componente central para dar suporte aos plug-ins de controle do código-fonte com base na API de plug-in de controle do código-fonte. Quando um plug-in de controle do código-fonte é o plug-in ativo, o stub de controle do código-fonte envia seus eventos para o pacote do adaptador de controle do código-fonte. Por sua vez, o pacote do adaptador de controle do código-fonte se comunica com o plug-in de controle do código-fonte usando a API de plug-in de controle do código-fonte e também fornece uma interface do usuário padrão que é comum para todos os plug-ins de controle do
 
-  Quando um pacote de controle de origem é o pacote ativo, por outro lado, o stub de controle do código-fonte se comunica diretamente com o pacote usando as [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] interfaces do pacote de controle de origem. O pacote de controle de origem é responsável por hospedar sua própria interface do usuário de controle do código-fonte.
+  Quando um pacote de controle de origem é o pacote ativo, por outro lado, o stub de controle do código-fonte se comunica diretamente com o pacote usando as [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] interfaces de pacote Source-Control. O pacote de controle de origem é responsável por hospedar sua própria interface do usuário de controle do código-fonte.
 
   ![Gráfico de arquitetura de controle do código-fonte](../../extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")
 
@@ -47,6 +49,6 @@ Um pacote de controle de origem é um VSPackage que usa os serviços que o [!INC
 
   Escrever um pacote de controle de origem baseado em VSPackage requer uma experiência de programação mais avançada do que escrever um plug-in baseado em API de plug-in de controle do código-fonte.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>
 - [Introdução](../../extensibility/internals/getting-started-with-source-control-vspackages.md)

@@ -1,5 +1,7 @@
 ---
 title: Registro e seleção (VSPackage de controle do código-fonte) | Microsoft Docs
+description: Saiba como registrar um VSPackage de controle do código-fonte com o Visual Studio e como selecionar qual pacote carregar de vários pacotes de controle do código-fonte registrados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 973eb19916a737dfa775fe79ee62cb3d11fe0123
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76f0bd737eff52706cf73c9a1105b79e08c556f0
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705716"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877345"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registro e seleção (VSPackage do controle do código-fonte)
 Um VSPackage de controle do código-fonte deve ser registrado para expô-lo ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Se mais de um VSPackage de controle do código-fonte estiver registrado, o usuário poderá selecionar qual VSPackage carregar nos horários apropriados. Consulte [VSPackages](../../extensibility/internals/vspackages.md) para obter mais detalhes sobre o VSPackages e como registrá-los.
@@ -24,7 +26,7 @@ Um VSPackage de controle do código-fonte deve ser registrado para expô-lo ao [
 ## <a name="registering-a-source-control-package"></a>Registrando um pacote de controle do código-fonte
  O pacote de controle do código-fonte é registrado para que o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente possa encontrá-lo e consultar seus recursos com suporte. Isso é de acordo com um esquema de carregamento de atraso no qual uma instância de um pacote é criada somente quando seus recursos ou comandos são necessários ou são solicitados explicitamente.
 
- VSPackages Coloque as informações em uma chave de Registro específica da versão, HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *x. Y*, em que *X* é o número de versão principal e *Y* é o número de versão secundária. Essa prática fornece a capacidade de dar suporte à instalação lado a lado de várias versões do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
+ VSPackages Coloque as informações em uma chave de Registro específica da versão, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *X. Y*, em que *x* é o número de versão principal e *Y* é o número de versão secundária. Essa prática fornece a capacidade de dar suporte à instalação lado a lado de várias versões do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
  A [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interface do usuário (IU) dá suporte à seleção entre vários plug-ins de controle do código-fonte instalados (por meio do pacote do adaptador de controle do código-fonte), bem como o controle do código-fonte Pode haver apenas um plug-in de controle do código-fonte ativo ou VSPackage de cada vez. No entanto, conforme descrito abaixo, o IDE permite alternar entre plug-ins de controle do código-fonte e VSPackages por meio de um mecanismo de troca de pacotes baseado em soluções automático. Há alguns requisitos na parte do VSPackage de controle do código-fonte para habilitar esse mecanismo de seleção.
 
@@ -79,7 +81,7 @@ Um VSPackage de controle do código-fonte deve ser registrado para expô-lo ao [
 
   Ao contrário das versões anteriores do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , uma reinicialização do IDE não é mais a única maneira de alternar o controle do código-fonte VSPackages. A seleção de VSPackage é automática. A alternância de pacotes requer privilégios de usuário do Windows (não administrador ou usuário avançado).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>
 - [Recursos](../../extensibility/internals/source-control-vspackage-features.md)
 - [Criando um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md)

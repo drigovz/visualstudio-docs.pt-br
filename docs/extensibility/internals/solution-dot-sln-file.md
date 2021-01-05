@@ -1,5 +1,7 @@
 ---
 title: Solução (. Sln) arquivo
+description: Saiba mais sobre o arquivo. sln, que é um dos arquivos que mantém informações de estado de um projeto no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/15/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f4eee1f0a5e8371d239b3c33d10e1d9d7998095
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 903b33d72d3a97eb4ed3f7ad0bc865999bee54cf
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705324"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877501"
 ---
 # <a name="solution-sln-file"></a>Arquivo de solução (. sln)
 
@@ -160,7 +162,7 @@ Cada VSPackage carregada é enumerada para ver se há algo a ser salvo no arquiv
 
 Somente o arquivo. sln contém entradas nas `preSolution` seções e `postSolution` . Não há seções semelhantes no arquivo. suo, pois a solução precisa que essas informações sejam carregadas corretamente. O arquivo. suo contém opções específicas do usuário, como notas particulares, que não devem ser compartilhadas ou colocadas sob controle do código-fonte.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>
 - [Arquivo .Suo (Solution User Options)](../../extensibility/internals/solution-user-options-dot-suo-file.md)

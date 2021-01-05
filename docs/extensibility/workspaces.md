@@ -1,5 +1,7 @@
 ---
 title: Espaços de trabalho no Visual Studio | Microsoft Docs
+description: Saiba como o Visual Studio usa um espaço de trabalho para representar uma coleção de arquivos na pasta aberta, incluindo provedores de espaço de trabalho e serviços.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ed660a5f52aba548d087b28f7caea4d1966fe45
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952757"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876942"
 ---
 # <a name="workspaces"></a>Workspaces
 
@@ -76,7 +78,7 @@ O resultado é uma instância do <xref:Microsoft.VisualStudio.Workspace.Settings
 }
 ```
 
-Supondo que essas configurações estavam em um _VSWorkspaceSettings.js_do usuário em, os dados podem ser acessados como:
+Supondo que essas configurações estavam em um _VSWorkspaceSettings.js_ do usuário em, os dados podem ser acessados como:
 
 ```csharp
 using System.Collections.Generic;
@@ -179,13 +181,13 @@ A extensibilidade do espaço de trabalho é muito baseada em MEF e os erros de c
 
 ::: moniker range="vs-2017"
 
-Os detalhes do erro podem ser encontrados em _%localappdata%\microsoft\visualstudio\15.0_id \componentmodelcache\microsoft.VisualStudio.default.err_. Resolva quaisquer erros de tipos implementados por sua extensão.
+Os detalhes do erro podem ser encontrados em _%localappdata%\microsoft\visualstudio\ 15.0_Id \componentmodelcache\microsoft.VisualStudio.default.err_. Resolva quaisquer erros de tipos implementados por sua extensão.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Os detalhes do erro podem ser encontrados em _%localappdata%\microsoft\visualstudio\16.0_id \componentmodelcache\microsoft.VisualStudio.default.err_. Resolva quaisquer erros de tipos implementados por sua extensão.
+Os detalhes do erro podem ser encontrados em _%localappdata%\microsoft\visualstudio\ 16.0_Id \componentmodelcache\microsoft.VisualStudio.default.err_. Resolva quaisquer erros de tipos implementados por sua extensão.
 
 ::: moniker-end
 

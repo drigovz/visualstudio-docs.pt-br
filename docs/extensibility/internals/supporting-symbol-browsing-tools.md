@@ -1,5 +1,7 @@
 ---
-title: Símbolo de suporte-ferramentas de navegação | Microsoft Docs
+title: Suporte a ferramentas de Symbol-Browsing | Microsoft Docs
+description: O Visual Studio fornece recursos de navegação de símbolos no Visual Studio. Saiba como estender esses recursos com bibliotecas para os símbolos em seus componentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,17 +20,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4998e47ccd6f99df2710833c18975d57e3bb92f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0adf586831e21c2448931215d4ef4a89d16a63f8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704774"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876435"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Suporte a ferramentas de navegação de símbolo
 As ferramentas **pesquisador de objetos**, **modo de exibição de classe**, **pesquisador de chamadas** e **Localizar resultados de símbolos** fornecem recursos de navegação de símbolos no Visual Studio. Essas ferramentas exibem modos de exibição de árvore hierárquica de símbolos e mostram as relações entre os símbolos na árvore. Os símbolos podem representar namespaces, objetos, classes, membros de classe e outros elementos de linguagem contidos em vários componentes. Os componentes incluem projetos do Visual Studio, componentes de .NET Framework externos e bibliotecas de tipo (. tlb). Para obter mais informações, consulte [exibindo a estrutura do código](../../ide/viewing-the-structure-of-code.md).
 
-## <a name="symbol-browsing-libraries"></a>Bibliotecas de navegação de símbolos
+## <a name="symbol-browsing-libraries"></a>Bibliotecas de Symbol-Browsing
  Como um implementador de linguagem, você pode estender os recursos de navegação de símbolo do Visual Studio criando bibliotecas que acompanham os símbolos em seus componentes e fornecem as listas de símbolos para o Gerenciador de objetos do Visual Studio por meio de um conjunto de interfaces. Uma biblioteca é descrita pela <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> interface. O Gerenciador de objetos do Visual Studio responde a solicitações de novos dados das ferramentas de navegação de símbolos, obtendo os dados das bibliotecas e organizando-os. Em seguida, ele preenche ou atualiza as ferramentas com os dados solicitados. Para obter uma referência ao Gerenciador de objetos do Visual Studio, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> , passe a <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> ID do serviço para o `GetService` método.
 
  Cada biblioteca deve ser registrada com o Gerenciador de objetos do Visual Studio, que coleta as informações em todas as bibliotecas. Para registrar uma biblioteca, chame o <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> método. Dependendo de qual ferramenta inicia a solicitação, o Gerenciador de objetos do Visual Studio localiza os dados de biblioteca e solicitações apropriados. Os dados trafegam entre as bibliotecas e o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gerenciador de objetos em listas de símbolos descritos pela <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface.
@@ -48,7 +50,7 @@ As ferramentas **pesquisador de objetos**, **modo de exibição de classe**, **p
 > [!NOTE]
 > Para implementar um provedor de símbolo de código nativo, use as <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfaces e.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Como registrar uma biblioteca com o Gerenciador de Objetos](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
 - [Como expor listas de símbolos fornecidos pela biblioteca ao Gerenciador de Objetos](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
 - [Como identificar símbolos em uma biblioteca](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

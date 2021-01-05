@@ -1,5 +1,7 @@
 ---
 title: Indexação de espaço de trabalho no Visual Studio | Microsoft Docs
+description: Saiba mais sobre a indexação de espaço de trabalho, que é a coleção e o armazenamento persistente de dados para dar suporte a recursos avançados de IDE para um espaço de trabalho de pasta aberta.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bf7df777d27003fa5763debc772a8804ec28ef5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b5c069ce3ae993f2d2371bffae3ac58b286fa70
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952682"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877046"
 ---
 # <a name="workspace-indexing"></a>Indexação de espaço de trabalho
 

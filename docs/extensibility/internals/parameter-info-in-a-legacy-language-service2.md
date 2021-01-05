@@ -1,5 +1,7 @@
 ---
 title: Informações de parâmetro em um idioma herdado Service2 | Microsoft Docs
+description: Saiba como dar suporte à operação de informações de parâmetro do IntelliSense para exibir uma assinatura de método, pois o método é digitado em um serviço de linguagem herdado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dff6e871320d0727ed2fbec4188e8f7af2e5c5fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc239d5b0d580d420683c6940ac2bbd5198335d7
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88237952"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875941"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-2"></a>Informações de parâmetro em um serviço de linguagem herdado 2
 As informações de parâmetro do IntelliSense são uma dica de ferramenta que exibe a assinatura de um método quando o usuário digita o caractere inicial da lista de parâmetros (normalmente um parêntese de abertura) para a lista de parâmetros do método. À medida que cada parâmetro é inserido e o separador de parâmetro (normalmente uma vírgula) é digitado, a dica de ferramenta é atualizada para mostrar o próximo parâmetro em negrito.

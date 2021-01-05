@@ -1,5 +1,7 @@
 ---
 title: Consulta editar consulta salvar (controle do código-fonte VSPackage) | Microsoft Docs
+description: Saiba mais sobre a função de eventos de Query-Edit Query-Save e como eles são manipulados pelo VSPackage de controle do código-fonte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c09ac0cb4f51b8f2484b95d403ff6d0445631479
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed1bb5d1f805f81ba4f124f425fbd93f706eb830
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705967"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875876"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Editar e salvar consulta (VSPackage de controle do código-fonte)
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] os editores podem difundir eventos de salvamento de consulta de edição de consulta (QEQS). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] O stub de controle do código-fonte implementa o serviço QEQS, para que ele seja o destinatário de eventos de QEQS. Esses eventos são então delegados para o VSPackage de controle do código-fonte ativo no momento. O controle do código-fonte ativo VSPackage implementa o <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> e seus métodos. Os métodos da `IVsQueryEditQuerySave2` interface são normalmente chamados imediatamente antes de um documento ser editado pela primeira vez e imediatamente antes de um documento ser salvo.

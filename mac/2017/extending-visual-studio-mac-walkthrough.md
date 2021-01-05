@@ -1,16 +1,18 @@
 ---
 title: 'Passo a passo: estendendo o Visual Studio para Mac'
+description: Saiba como criar um pacote de extensão simples para Visual Studio para Mac, que cria um novo comando no menu Editar.
+ms.custom: SEO-VS-2020
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: c5b3b759b32acfc86b4b584b3f3d52298c138a2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9274f86e8ade5b49b5db0c7f4773cf6fd57ea353
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74985032"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876188"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Passo a passo: estendendo o Visual Studio para Mac
 
@@ -136,6 +138,6 @@ Este exemplo usa o Criador de Suplementos. O Criador de Suplementos cria um novo
 
     ![Inserir captura de tela de data](media/extending-visual-studio-mac-addin12.png)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criar sua primeira extensão (Visual Studio no Windows)](/visualstudio/extensibility/extensibility-hello-world)

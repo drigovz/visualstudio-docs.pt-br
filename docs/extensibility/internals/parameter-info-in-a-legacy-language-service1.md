@@ -1,5 +1,7 @@
 ---
 title: Informações de parâmetro em um Service1 de linguagem herdada | Microsoft Docs
+description: Saiba como implementar a dica de ferramenta de informações de parâmetro do IntelliSense, que fornece aos usuários dicas, em um serviço de linguagem herdado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f8e5664634d189e8463376761d8fb59543740df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cd49644e670df42f4630af987a5e9152b4f6c95
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238069"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876799"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-1"></a>Informações de parâmetro em um serviço de idioma herdado 1
 A dica de ferramenta de informações de parâmetro do IntelliSense fornece aos usuários dicas sobre onde eles estão em uma construção de linguagem.

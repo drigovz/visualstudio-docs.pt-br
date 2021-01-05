@@ -1,5 +1,7 @@
 ---
 title: Otimizando os comandos de menu e barra de ferramentas | Microsoft Docs
+description: Saiba como o Visual Studio pode minimizar a confusão do comando causada pela adição de VSPackages e seus comandos correspondentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4932a4404c3d76b089468864f84d011524e9cfa0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b35f3a87f819885685b54888031883f4c2776d04
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706913"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877592"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Otimizando os comandos do menu e da barra de ferramentas
 A adição de VSPackages e seus comandos correspondentes a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podem causar uma interface do usuário lotada. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornece maneiras de ajudar a minimizar a confusão do comando da interface do usuário.

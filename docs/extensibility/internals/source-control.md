@@ -1,5 +1,7 @@
 ---
 title: Controle do código-fonte | Microsoft Docs
+description: Estes artigos discutem opções para implementar o controle do código-fonte como um recurso integrado do Visual Studio, seja por meio de um plug-in ou um VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ff7904e9abc3df8ed36f8c196ce4c1175b4d9af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33437994770ee78327d130f288d9d2e9689774fe
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704993"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876097"
 ---
 # <a name="source-control"></a>Controle do código-Fonte
 Esta seção aborda as opções para implementar o controle do código-fonte como um recurso integrado do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , seja por meio de um plug-in de controle do código-fonte ou de um VSPackage de controle do código-fonte.

@@ -1,5 +1,7 @@
 ---
 title: Noções básicas de integração de controle do código-fonte | Microsoft Docs
+description: 'Saiba mais sobre os dois tipos de integração de controle do código-fonte com suporte do Visual Studio: um plug-in de controle do código-fonte e uma solução de controle do código-fonte baseada em VSPackage.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e56658d644720f1563d71d3d08bf35268119112f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4dd5186b20dfac4ad5a027e4519700ff8ac1f77
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705234"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876019"
 ---
 # <a name="source-control-integration-essentials"></a>Conceitos básicos da integração do controle do código-fonte
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dá suporte a dois tipos de integração de controle de origem: um plug-in de controle do código-fonte que fornece funcionalidade básica e é criado usando a API de plug-in de controle do código-fonte (anteriormente conhecida como API MSSCCI) e uma solução de integração de controle do código-fonte baseada em VSPackage que fornece funcionalidade mais robusta.
@@ -50,7 +52,7 @@ ms.locfileid: "80705234"
 
    Para obter mais informações, consulte [criando um controle do código-fonte VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Visão geral](../../extensibility/internals/source-control-integration-overview.md)
 - [Criando um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [Criar um VSPackage de controle do código-fonte](../../extensibility/internals/creating-a-source-control-vspackage.md)

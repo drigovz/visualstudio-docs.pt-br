@@ -1,5 +1,7 @@
 ---
 title: Modelo para pacotes de controle do código-fonte | Microsoft Docs
+description: Esse modelo representa uma implementação de controle do código-fonte. O artigo mostra os nomes das classes para facilitar a visualização de como o controle do código-fonte é executado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46845be1bc22a67d6703af12933945bdfcfa7f4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ece2a7df1aeb2ec44f7b21075d2945a93d51838
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707064"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876683"
 ---
 # <a name="model-for-source-control-packages"></a>Modelo de pacotes de controle do código-fonte
 O modelo a seguir representa um exemplo de uma implementação de controle do código-fonte. No modelo, você vê as interfaces que você deve implementar e os serviços de ambiente que você deve chamar. Como todos os serviços, você realmente chama os métodos de uma interface específica que você obtém por meio do serviço. Os nomes das classes são identificados para facilitar a visualização de como o controle do código-fonte é executado.
@@ -25,7 +27,7 @@ O modelo a seguir representa um exemplo de uma implementação de controle do c�
 ## <a name="interfaces"></a>Interfaces
  Você pode implementar o controle do código-fonte para seus novos tipos de projeto no Visual Studio usando a lista de interfaces mostrada na tabela a seguir.
 
-|Interface|Uso|
+|Interface|Use|
 |---------------|---------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Chamado por projetos e editores antes que eles salvem ou alterem arquivos (sujos). Essa interface é acessada usando o <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> serviço do.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Chamado por projetos para solicitar permissão para adicionar, remover ou renomear um arquivo ou diretório. Essa interface também é chamada por projetos para informar o ambiente quando uma ação de adição, remoção ou renomeação aprovada for concluída. Ele é acessado usando o <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> serviço.|
@@ -33,7 +35,7 @@ O modelo a seguir representa um exemplo de uma implementação de controle do c�
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Chamado por projetos para registrar com o pacote de controle do código-fonte e obter informações sobre o status do controle do código-fonte. Essa interface é acessada usando o <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> serviço do.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Implementado pelo projeto para responder às solicitações de controle do código-fonte de informações sobre arquivos e obter as configurações de controle do código-fonte necessárias para o arquivo de projeto.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>

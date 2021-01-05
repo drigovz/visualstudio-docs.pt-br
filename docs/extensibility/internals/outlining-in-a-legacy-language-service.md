@@ -1,5 +1,7 @@
 ---
 title: Estrutura de tópicos em um serviço de linguagem herdada | Microsoft Docs
+description: Saiba como dar suporte à estrutura de tópicos por meio da implementação de regiões ocultas em um serviço de linguagem herdado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be485a0e7406d49c4dcce77958c720e0b62504b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca457c32751fb1f9179a9c09b624c444efab627d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706806"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876825"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Estrutura de tópicos em um serviço de linguagem herdado
 A estrutura de tópicos torna possível recolher um programa complexo em uma visão geral ou uma estrutura de tópicos. Por exemplo, em C#, todos os métodos podem ser recolhidos para uma única linha, mostrando apenas a assinatura do método. Além disso, estruturas e classes podem ser recolhidas para mostrar apenas os nomes das estruturas e classes. Dentro de um único método, a lógica complexa pode ser recolhida para mostrar o fluxo geral, mostrando apenas a primeira linha de instruções, como `foreach` , `if` e `while` .
@@ -117,6 +119,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Recursos do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-features1.md)
 - [Registrar um serviço de linguagem herdado](../../extensibility/internals/registering-a-legacy-language-service1.md)

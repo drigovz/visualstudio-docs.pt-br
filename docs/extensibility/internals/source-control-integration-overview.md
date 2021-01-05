@@ -1,5 +1,7 @@
 ---
 title: Visão geral da integração de controle do código-fonte | Microsoft Docs
+description: 'Saiba mais sobre as diferenças entre as duas maneiras de integrar o controle do código-fonte no Visual Studio: um plug-in de controle do código-fonte e um VSPackage.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d80363286f5f0cac9a5ceb2e8ac9d20345df9e6f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bbd385c7089504949d2437091b0a2ea002fafdd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705117"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876006"
 ---
 # <a name="source-control-integration-overview"></a>Visão geral da integração do controle do código-fonte
 Esta seção compara as duas maneiras de integrar-se ao controle do código-fonte do Visual Studio; um plug-in de controle de origem e um VSPackage que fornece uma solução de controle do código-fonte e realça os novos recursos de controle do código-fonte. O Visual Studio permite a alternância manual entre o controle do código-fonte VSPackages e os plug-ins de controle do código-fonte, bem como a alternância automática baseada em soluções.
@@ -73,7 +75,7 @@ Esta seção compara as duas maneiras de integrar-se ao controle do código-font
 
 - O VSPackage não é confinado para um modelo de controle do código-fonte específico.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Controle do código-fonte](../../extensibility/internals/source-control.md)
 - [Criando um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [Criar um VSPackage de controle do código-fonte](../../extensibility/internals/creating-a-source-control-vspackage.md)

@@ -1,5 +1,7 @@
 ---
 title: Persistência e a tabela de documentos em execução | Microsoft Docs
+description: Saiba como os projetos coordenam a abertura, a gravação e a renomeação de documentos na tabela de documentos em execução, que controla o estado do documento no IDE do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba698f20b83d1a7af42aeca046aa2a8c943838ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfc480c8b4a41fe29900681289ad08c54d3c1f31
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706714"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875954"
 ---
 # <a name="persistence-and-the-running-document-table"></a>Persistência e a tabela de documentos em execução
 No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, os projetos são totalmente responsáveis por gerenciar a persistência de seus itens de projeto, que são realizados usando o serviço, <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> . Os documentos são a unidade básica de persistência no ambiente do Visual Studio. Os projetos coordenam a abertura, o salvamento e a renomeação de documentos com a tabela de documentos em execução (RDT), um recurso que controla o estado de todos os documentos abertos.
@@ -28,6 +30,6 @@ No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, os projetos
 
  O ambiente global mantém o RDT. O ambiente mantém entradas para todas as janelas e documentos abertos no RDT, o que torna possível que eles recebam notificações especiais, como quando uma solução é fechada. Além disso, o RDT possibilita que o ambiente acompanhe seus nós correspondentes no **Gerenciador de soluções**. O RDT mantém um registro por objeto aberto e persistente, incluindo arquivos de projeto e documentos de item de projeto.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Tabela de documento em execução](../../extensibility/internals/running-document-table.md)
 - [Seleção e moeda no IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)

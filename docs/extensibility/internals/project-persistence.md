@@ -1,5 +1,7 @@
 ---
 title: Persistência do projeto | Microsoft Docs
+description: Saiba mais sobre a persistência no design do seu projeto, incluindo o uso de IPersistFileFormat para manter objetos de projeto com base em arquivo e não em arquivo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10a9cde91c0181fbfefbaa353c7c3702f4b36819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6ffa60508eba02a4442bacb63b05abb39202ab9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706453"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877436"
 ---
 # <a name="project-persistence"></a>Persistência de projeto
 A persistência é uma consideração de design importante para seu projeto. A maioria dos projetos usa itens de projeto que representam arquivos; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] também dá suporte a projetos cujos dados não são baseados em arquivo. Os arquivos pertencentes ao projeto e ao arquivo de projeto devem ser persistidos. O IDE instrui o projeto a salvar a si mesmo ou um item de projeto.
@@ -42,6 +44,6 @@ A persistência é uma consideração de design importante para seu projeto. A m
 
  Os métodos na `IVsPersistHierarchyItem2` interface são usados para determinar se um item pode ser recarregado e, se o item puder ser, recarregá-lo. Além disso, o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> método pode ser implementado para fazer com que os itens alterados sejam descartados sem serem salvos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Lista de verificação: Criando tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Criando instâncias de projeto por meio de fábricas de projeto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

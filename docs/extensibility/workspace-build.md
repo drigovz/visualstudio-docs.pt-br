@@ -1,5 +1,7 @@
 ---
 title: Build do espaço de trabalho no Visual Studio | Microsoft Docs
+description: Saiba mais sobre o extensor que fornece dados de contexto de arquivo e indexados para um espaço de trabalho para dar suporte a um cenário de pasta aberta.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82660ee772280563b91830aaf1a18da0bc742b28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e44c2398b873bbca95c971ae1b44ac3de831b2ae
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62553322"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877098"
 ---
 # <a name="workspace-build"></a>Build do espaço de trabalho
 

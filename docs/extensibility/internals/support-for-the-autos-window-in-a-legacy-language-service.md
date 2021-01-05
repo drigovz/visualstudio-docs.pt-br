@@ -1,5 +1,6 @@
 ---
 title: Dar suporte à janela Autos em um serviço de linguagem herdada
+description: Saiba como implementar o suporte para a janela automáticos, que exibe as expressões que estão no escopo quando o programa que está sendo depurado é pausado.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5eb4a7201888dc52dfe2f801ebc446786ec3274
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: c97ab4db9b71c91689abe0afb85230e5b0242962
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038290"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876500"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Suporte para a janela de automóveis em um serviço de linguagem herdado
 

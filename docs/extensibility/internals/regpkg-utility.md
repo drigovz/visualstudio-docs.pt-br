@@ -1,5 +1,7 @@
 ---
 title: Utilitário RegPkg | Microsoft Docs
+description: Saiba como o utilitário de RegPkg.exe registra um VSPackage com o Visual Studio e o prepara para implantação.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cebfd7a9782a2760eb33f7e56bfe16b126fc6251
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad66f963250dfc272506096f8932442a35d11dc7
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705645"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877319"
 ---
 # <a name="regpkg-utility"></a>Utilitário RegPkg
 > [!NOTE]
@@ -54,6 +56,6 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
 
  com/regfile ou/vrgfile ou/rgsfile ou/wixfile.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [VSPackages](../../extensibility/internals/vspackages.md)
 - [Solucionando problemas de registro de pacote RegPkg](../../extensibility/internals/troubleshooting-regpkg-package-registration.md)

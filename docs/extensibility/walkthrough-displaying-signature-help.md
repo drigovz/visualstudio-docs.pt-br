@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: exibindo a ajuda da assinatura | Microsoft Docs'
+description: Saiba como exibir a ajuda de assinatura para tipo de conteúdo de texto usando este passo a passos. A ajuda da assinatura exibe a assinatura de um método em uma dica de ferramenta.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b88c8555904bb31c2804579459ad3096d640b0c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be324ab48d42e859678ccf01d8c75faae6cea381
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904816"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876240"
 ---
 # <a name="walkthrough-display-signature-help"></a>Walkthrough: exibir a ajuda da assinatura
 A ajuda da assinatura (também conhecida como *informações do parâmetro*) exibe a assinatura de um método em uma dica de ferramenta quando um usuário digita o caractere de início da lista de parâmetros (normalmente um parêntese de abertura). Como um separador de parâmetro e parâmetro (normalmente uma vírgula) são digitados, a dica de ferramenta é atualizada para mostrar o próximo parâmetro em negrito. Você pode definir a ajuda da assinatura das seguintes maneiras: no contexto de um serviço de idioma, defina sua própria extensão de nome de arquivo e tipo de conteúdo e exiba a ajuda da assinatura apenas para esse tipo, ou exiba a ajuda da assinatura para um tipo de conteúdo existente (por exemplo, "texto"). Este tutorial mostra como exibir a ajuda da assinatura para o tipo de conteúdo "texto".
@@ -31,7 +33,7 @@ A ajuda da assinatura (também conhecida como *informações do parâmetro*) exi
 
 #### <a name="to-create-a-mef-project"></a>Para criar um projeto do MEF
 
-1. Crie um projeto VSIX em C#. (Na caixa de diálogo **novo projeto** , selecione **Visual C#/extensibilidade**e, em seguida, **projeto VSIX**.) Nomeie a solução `SignatureHelpTest` .
+1. Crie um projeto VSIX em C#. (Na caixa de diálogo **novo projeto** , selecione **Visual C#/extensibilidade** e, em seguida, **projeto VSIX**.) Nomeie a solução `SignatureHelpTest` .
 
 2. Adicione um modelo de item de classificação do editor ao projeto. Para obter mais informações, consulte [criar uma extensão com um modelo de item do editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
@@ -244,5 +246,5 @@ A ajuda da assinatura (também conhecida como *informações do parâmetro*) exi
 
 4. Depois de digitar o parêntese de abertura, você deverá ver uma dica de ferramenta que exibe uma lista das duas assinaturas do `add()` método.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Walkthrough: vincular um tipo de conteúdo a uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

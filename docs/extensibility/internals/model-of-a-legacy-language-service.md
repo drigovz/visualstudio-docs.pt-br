@@ -1,5 +1,7 @@
 ---
 title: Modelo de um serviço de linguagem herdado | Microsoft Docs
+description: Use esse modelo de um serviço de linguagem mínimo para o editor principal do Visual Studio como um guia para criar seu próprio serviço de linguagem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f024a02641902843f673ce3ff8583a4bce3b135
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2928d3c09a54ea8e9548f7751381279f153643e5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707042"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876734"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modelo de um serviço de linguagem herdado
 Um serviço de linguagem define os elementos e recursos para um idioma específico e é usado para fornecer ao editor informações específicas para esse idioma. Por exemplo, o editor precisa saber os elementos e as palavras-chave do idioma para dar suporte à cor da sintaxe.
@@ -47,5 +49,5 @@ Um serviço de linguagem define os elementos e recursos para um idioma específi
 | Gerenciador de texto | Gerenciado pelo <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> serviço, do qual você obtém um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> ponteiro | Um componente que mantém informações comuns compartilhadas por todos os componentes descritos anteriormente. |
 | Serviço de linguagem | Dependente de implementação; implementa <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | Um objeto que fornece ao editor informações específicas de idioma, como realce de sintaxe, conclusão de instrução e correspondência de chaves. |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Dados de documentos e exibição de documentos em editores personalizados](../../extensibility/document-data-and-document-view-in-custom-editors.md)

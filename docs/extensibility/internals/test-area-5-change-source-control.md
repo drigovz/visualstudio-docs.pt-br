@@ -1,5 +1,7 @@
 ---
 title: 'Área de teste 5: alterar controle do código-fonte | Microsoft Docs'
+description: Esta área de teste de plug-in de controle de origem aborda a alteração do controle do código-fonte usando o comando alterar controle do código-fonte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1c0df31fbecd532e6a5f7f317730cd995cd8225
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c4b0f33f0c898d4b9992acad6ed4035e350df2b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704519"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876266"
 ---
 # <a name="test-area-5-change-source-control"></a>Área de teste 5: Alterar controle do código-fonte
 Esta área de teste de plug-in de controle de origem aborda a alteração do controle do código-fonte por meio do comando **alterar controle do código-fonte** .
@@ -72,5 +74,5 @@ Esta área de teste de plug-in de controle de origem aborda a alteração do con
 |Reassociar solução somente sem fechar a caixa de diálogo **alterar controle do código-fonte**|1. Crie um projeto.<br />2. Adicione apenas a solução ao controle do código-fonte usando (**arquivo**, **controle do código-fonte**, **adicionar projetos selecionados ao controle do código-fonte**.<br />3. Abra a caixa de diálogo **alterar controle do código-fonte** .<br />4. desassociar somente a solução (não feche a caixa de diálogo **alterar controle do código-fonte** .)<br />5. associar apenas a solução.<br />6. clique em **OK** para fechar a caixa de diálogo.<br />7. Confira os itens da solução e da solução (se houver)|A solução permanece controlada.<br /><br /> O projeto permanece sem controle.|
 |Reassociar solução/projeto somente quando estiver no mesmo diretório|1. Crie um projeto.<br />2. Adicione apenas o projeto ao controle do código-fonte usando (**arquivo**, **controle do código-fonte**, **adicione projetos selecionados ao controle do código-fonte**.<br />3. Feche a solução.<br />4. Crie uma nova solução com pelo menos dois projetos.<br />5. Adicione a solução ao controle do código-fonte.<br />6. Adicione o projeto criado na etapa 1 do controle do código-fonte.<br />7. aceite o check-out da solução, se solicitado.<br />8. faça o check-in de toda a solução.<br />9. Abra a caixa de diálogo **alterar controle do código-fonte** .<br />10. Selecione o projeto adicionado (na etapa 6) e clique em **desassociar**.<br />11. clique em **OK** para fechar a caixa de diálogo.<br />12. aceite o check-out, se solicitado.<br />13. abrir novamente a caixa de diálogo **alterar controle do código-fonte** .<br />14. Selecione o projeto adicionado (da etapa 6) e clique em **associar**.<br />15. Selecione o local original.|A solução e os projetos permanecem controlados.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Guia de teste para plug-ins de controle do código-fonte](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

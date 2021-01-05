@@ -1,5 +1,6 @@
 ---
 title: Usar uma tecla de atalho com uma extensão do editor
+description: Saiba como adicionar um Adornment de exibição a uma exibição de texto usando uma tecla de atalho. Este passo a passos é baseado no modelo do editor de Adornment do visor.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78bbf84f6b11451c8b1a09e6883ba76b19cec757
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4c939328e1ef8e517821db8622e7383cab90c384
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037452"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875837"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Walkthrough: usar uma tecla de atalho com uma extensão do editor
 Você pode responder às teclas de atalho na extensão do editor. A instrução a seguir mostra como adicionar uma exibição Adornment a uma exibição de texto usando uma tecla de atalho. Este passo a passos é baseado no modelo do editor de Adornment do visor e permite que você adicione o Adornment usando o caractere +.
@@ -26,7 +27,7 @@ Você pode responder às teclas de atalho na extensão do editor. A instrução 
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Criar um projeto Managed Extensibility Framework (MEF)
 
-1. Crie um projeto VSIX em C#. (Na caixa de diálogo **novo projeto** , selecione **Visual C#/extensibilidade**e, em seguida, **projeto VSIX**.) Nomeie a solução `KeyBindingTest` .
+1. Crie um projeto VSIX em C#. (Na caixa de diálogo **novo projeto** , selecione **Visual C#/extensibilidade** e, em seguida, **projeto VSIX**.) Nomeie a solução `KeyBindingTest` .
 
 2. Adicione um modelo de item Adornment de texto do editor ao projeto e nomeie-o `KeyBindingTest` . Para obter mais informações, consulte [criar uma extensão com um modelo de item do editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
@@ -78,7 +79,7 @@ Antes do Visual Studio 2017 versão 15,6, a única maneira de manipular comandos
 3. A classe denominada KeyBindingCommandFilter deve herdar de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> .
 
     ```csharp
-    internal class KeyBindingCommandFilter : IOleCommandTarget
+    internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
 4. Adicione campos particulares para a exibição de texto, o próximo comando na cadeia de comandos e um sinalizador para representar se o filtro de comando já foi adicionado.
@@ -86,8 +87,8 @@ Antes do Visual Studio 2017 versão 15,6, a única maneira de manipular comandos
     ```csharp
     private IWpfTextView m_textView;
     internal IOleCommandTarget m_nextTarget;
-    internal bool m_added;
-    internal bool m_adorned;
+    internal bool m_added;
+    internal bool m_adorned;
     ```
 
 5. Adicione um construtor que define a exibição de texto.

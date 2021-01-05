@@ -1,5 +1,7 @@
 ---
 title: Abrindo e salvando itens de projeto | Microsoft Docs
+description: Saiba mais sobre abordagens diferentes para abrir e salvar arquivos para o novo tipo de projeto no IDE do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbb89d99e401be6bae7d8ee9be8ee33fa7574723
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 971fef7939c91bdcdea9098da530c7ecb2daf9ec
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706963"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877618"
 ---
 # <a name="opening-and-saving-project-items"></a>Abrindo e salvando itens de projeto
 Ao adicionar um novo tipo de projeto, você deve gerenciar a abertura e o salvamento de seus arquivos de projetos no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE). Os tópicos a seguir discutem as diferentes abordagens para abrir e salvar arquivos.
@@ -45,11 +47,11 @@ Ao adicionar um novo tipo de projeto, você deve gerenciar a abertura e o salvam
 
 - [Salvando um documento padrão](../../extensibility/internals/saving-a-standard-document.md)
 
- Fornece uma explicação detalhada de como o IDE manipula os comandos **salvar**, **salvar como**e **salvar todos** para um documento aberto em um editor padrão.
+ Fornece uma explicação detalhada de como o IDE manipula os comandos **salvar**, **salvar como** e **salvar todos** para um documento aberto em um editor padrão.
 
 - [Salvando um documento personalizado](../../extensibility/internals/saving-a-custom-document.md)
 
- Fornece um diagrama e uma explicação detalhada de como o IDE manipula os comandos **salvar**, **salvar como**e **salvar todos os** documentos abertos em um editor personalizado.
+ Fornece um diagrama e uma explicação detalhada de como o IDE manipula os comandos **salvar**, **salvar como** e **salvar todos os** documentos abertos em um editor personalizado.
 
 - [Determinando qual editor abre um arquivo em um projeto](../../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)
 

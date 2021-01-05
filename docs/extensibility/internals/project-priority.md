@@ -1,5 +1,7 @@
 ---
 title: Prioridade do projeto | Microsoft Docs
+description: Saiba mais sobre o esquema de prioridade que o IDE do Visual Studio usa para determinar o melhor projeto para abrir um item se o item for membro de mais de um projeto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a75c1c333d88e1bf5524281bee8b2a683ca6c98e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1389668bbcd1239fbb1ae0e865478bf0e0f6a7e8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706416"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877371"
 ---
 # <a name="project-priority"></a>Prioridade do projeto
 Um item de projeto geralmente é um membro de apenas um projeto na solução. Portanto, o IDE pode determinar facilmente qual projeto é usado para abrir o item. No entanto, se um item for membro de mais de um projeto, o IDE usará um esquema de prioridade para determinar o melhor projeto para abrir o item.
@@ -32,7 +34,7 @@ Um item de projeto geralmente é um membro de apenas um projeto na solução. Po
 
 - O projeto que especifica a prioridade mais alta recebe o contexto para abrir o documento. Se dois projetos retornarem valores de prioridade iguais, o projeto ativo é preferencial. Se nenhum projeto na solução responder que pode abrir o documento, o IDE colocará o documento no projeto de arquivos diversos. Para obter mais informações, consulte [Miscellaneous Files Project](../../extensibility/internals/miscellaneous-files-project.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Projeto arquivos diversos](../../extensibility/internals/miscellaneous-files-project.md)
 - [Como abrir editores para documentos abertos](../../extensibility/how-to-open-editors-for-open-documents.md)
 - [Adicionando o projeto e os modelos de item do projeto](../../extensibility/internals/adding-project-and-project-item-templates.md)

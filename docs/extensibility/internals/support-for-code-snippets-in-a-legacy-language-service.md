@@ -1,5 +1,7 @@
 ---
 title: Suporte para trechos de código em um serviço de linguagem herdada | Microsoft Docs
+description: Saiba como um serviço de linguagem herdado dá suporte a trechos de código. Um trecho de código é uma parte do código que é inserido no arquivo de origem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad871eb73341f6ab87229687e2a6df898ffda32d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 781633a995027ee9938a0c579af32373c06207c2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704907"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876604"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Suporte para snippets de código em um serviço de linguagem herdado
 Um trecho de código é uma parte do código que é inserido no arquivo de origem. O trecho em si é um modelo baseado em XML com um conjunto de campos. Esses campos são realçados após o trecho de código ser inserido e podem ter valores diferentes, dependendo do contexto no qual o trecho de código é inserido. Imediatamente após a inserção do trecho de código, o serviço de linguagem pode formatar o trecho de código.
@@ -388,7 +390,7 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Recursos do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-features1.md)
 - [Registrar um serviço de linguagem herdado](../../extensibility/internals/registering-a-legacy-language-service1.md)
 - [Snippets de código](../../ide/code-snippets.md)

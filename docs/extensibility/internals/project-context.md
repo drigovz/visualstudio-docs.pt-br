@@ -1,5 +1,7 @@
 ---
 title: Contexto do projeto | Microsoft Docs
+description: Saiba como o IDE do Visual Studio usa o contexto do projeto para determinar como executar operações quando o usuário adiciona ou trabalha com projetos e itens de projeto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51e411f0bca361f96cdffcfd89498908fd21d441
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc4234481023592595de2df482d5ff6c2227a95e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706592"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877657"
 ---
 # <a name="project-context"></a>Contexto do projeto
 Quando o usuário adiciona ou trabalha com projetos e itens de projeto, o IDE usa a noção do contexto do projeto para determinar como várias operações devem ser executadas.
@@ -26,6 +28,6 @@ Quando o usuário adiciona ou trabalha com projetos e itens de projeto, o IDE us
 
  Em outras ocasiões, o contexto do projeto de um item não é especificado explicitamente. Por exemplo, o contexto de um item não está disponível quando o usuário abre um arquivo selecionando o comando **Abrir arquivo existente** no menu **arquivo** , quando o depurador opera em um arquivo ou quando o usuário clica no comando **localizar nos arquivos** na caixa de diálogo **Localizar e substituir** . Para lidar com essas situações, o IDE chama <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> para gerenciar o processo de localização do melhor projeto para abrir um documento.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Prioridade do projeto](../../extensibility/internals/project-priority.md)
 - [Adicionando o projeto e os modelos de item do projeto](../../extensibility/internals/adding-project-and-project-item-templates.md)

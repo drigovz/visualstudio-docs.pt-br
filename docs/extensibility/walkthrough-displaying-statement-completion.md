@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: exibindo a conclusão da instrução | Microsoft Docs'
+description: Saiba como implementar a conclusão de instrução baseada em linguagem para conteúdo de texto não criptografado usando este passo a passos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,17 +15,17 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 472ff8c10e1346f25e7bc72ed5fd4ee9f31bbafa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d05d33074f48e59e365792fda63897b1d38cd585
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904791"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877150"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Passo a passo: exibir preenchimento de declaração
 Você pode implementar a conclusão da instrução baseada em linguagem definindo os identificadores para os quais você deseja fornecer a conclusão e, em seguida, disparando uma sessão de conclusão. Você pode definir a conclusão da instrução no contexto de um serviço de idioma, definir sua própria extensão de nome de arquivo e tipo de conteúdo e, em seguida, exibir a conclusão apenas para esse tipo. Ou, você pode disparar a conclusão para um tipo de conteúdo existente — por exemplo, "texto sem formatação". Este tutorial mostra como disparar a conclusão da instrução para o tipo de conteúdo "texto não criptografado", que é o tipo de conteúdo dos arquivos de texto. O tipo de conteúdo "text" é o ancestral de todos os outros tipos de conteúdo, incluindo arquivos de código e XML.
 
- A conclusão da instrução é normalmente disparada digitando-se determinados caracteres — por exemplo, digitando o início de um identificador, como "usando". Normalmente, é Descartado pressionando-se a **barra de espaços**, a **guia**ou a tecla **Enter** para confirmar uma seleção. Você pode implementar os recursos do IntelliSense que disparam ao digitar um caractere usando um manipulador de comando para os pressionamentos de tecla (a <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface) e um provedor de manipulador que implementa a <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interface. Para criar a origem de conclusão, que é a lista de identificadores que participam da conclusão, implemente a <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> interface e um provedor de origem de conclusão (a <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> interface). Os provedores são partes de componente Managed Extensibility Framework (MEF). Eles são responsáveis por exportar as classes de origem e controlador e importar serviços e agentes — por exemplo, o <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> , que permite a navegação no buffer de texto e o <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> , que dispara a sessão de conclusão.
+ A conclusão da instrução é normalmente disparada digitando-se determinados caracteres — por exemplo, digitando o início de um identificador, como "usando". Normalmente, é Descartado pressionando-se a **barra de espaços**, a **guia** ou a tecla **Enter** para confirmar uma seleção. Você pode implementar os recursos do IntelliSense que disparam ao digitar um caractere usando um manipulador de comando para os pressionamentos de tecla (a <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface) e um provedor de manipulador que implementa a <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interface. Para criar a origem de conclusão, que é a lista de identificadores que participam da conclusão, implemente a <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> interface e um provedor de origem de conclusão (a <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> interface). Os provedores são partes de componente Managed Extensibility Framework (MEF). Eles são responsáveis por exportar as classes de origem e controlador e importar serviços e agentes — por exemplo, o <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> , que permite a navegação no buffer de texto e o <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> , que dispara a sessão de conclusão.
 
  Este tutorial mostra como implementar a conclusão de uma instrução para um conjunto embutido de identificadores. Em implementações completas, o serviço de idioma e a documentação do idioma são responsáveis por fornecer esse conteúdo.
 
@@ -34,7 +36,7 @@ Você pode implementar a conclusão da instrução baseada em linguagem definind
 
 #### <a name="to-create-a-mef-project"></a>Para criar um projeto do MEF
 
-1. Crie um projeto VSIX em C#. (Na caixa de diálogo **novo projeto** , selecione **Visual C#/extensibilidade**e, em seguida, **projeto VSIX**.) Nomeie a solução `CompletionTest` .
+1. Crie um projeto VSIX em C#. (Na caixa de diálogo **novo projeto** , selecione **Visual C#/extensibilidade** e, em seguida, **projeto VSIX**.) Nomeie a solução `CompletionTest` .
 
 2. Adicione um modelo de item de classificação do editor ao projeto. Para obter mais informações, consulte [criar uma extensão com um modelo de item do editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
@@ -172,7 +174,7 @@ Você pode implementar a conclusão da instrução baseada em linguagem definind
 
    - Permitir que o caractere seja gravado no buffer e, em seguida, disparar ou filtrar a conclusão. (Imprimir caracteres faça isso.)
 
-   - Confirme a conclusão, mas não permita que o caractere seja gravado no buffer. (Espaço em branco, **guia**e **digite** fazer isso quando uma sessão de conclusão for exibida.)
+   - Confirme a conclusão, mas não permita que o caractere seja gravado no buffer. (Espaço em branco, **guia** e **digite** fazer isso quando uma sessão de conclusão for exibida.)
 
    - Permitir que o comando seja passado para o próximo manipulador. (Todos os outros comandos).
 
@@ -202,7 +204,7 @@ Você pode implementar a conclusão da instrução baseada em linguagem definind
 
 3. Crie um arquivo de texto e digite algum texto que inclua a palavra "Adicionar".
 
-4. Conforme você digita o primeiro "a" e, em seguida, "d", uma lista que contém "adição" e "adaptação" deve aparecer. Observe que a adição está selecionada. Quando você digita outro "d", a lista deve conter apenas "adição", que agora é selecionada. Você pode confirmar "adição" pressionando a **barra de espaços**, a **guia**ou a tecla **Enter** , ou descartar a lista digitando ESC ou qualquer outra chave.
+4. Conforme você digita o primeiro "a" e, em seguida, "d", uma lista que contém "adição" e "adaptação" deve aparecer. Observe que a adição está selecionada. Quando você digita outro "d", a lista deve conter apenas "adição", que agora é selecionada. Você pode confirmar "adição" pressionando a **barra de espaços**, a **guia** ou a tecla **Enter** , ou descartar a lista digitando ESC ou qualquer outra chave.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Walkthrough: vincular um tipo de conteúdo a uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

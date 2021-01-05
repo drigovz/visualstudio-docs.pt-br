@@ -1,5 +1,7 @@
 ---
 title: Recursos de VSPackage de controle do código-fonte | Microsoft Docs
+description: Saiba mais sobre os recursos de um VSPackage de controle do código-fonte, incluindo detalhes de registro/seleção e sobre alguns dos principais recursos relacionados ao controle do código-fonte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a01b9d8fbf5f8d0645b5245d21b05aba9e7dacea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8dd887488adc5813ad51c9fa2a25648e25ab4876
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705006"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876214"
 ---
 # <a name="source-control-vspackage-features"></a>Recursos do VSPackage do controle do código-fonte
-Esta seção descreve os vários recursos de um VSPackage de controle do código-fonte. Ele descreve os detalhes de registro e seleção de tal VSPackage e discute três dos principais recursos relacionados ao controle do código-fonte: tratamento de eventos de QEQS (consulta-edição de consulta-salvamento), substituição de glifo e interface do usuário personalizada para as funções de controle do código-fonte.
+Esta seção descreve os vários recursos de um VSPackage de controle do código-fonte. Ele descreve os detalhes de registro e seleção de tal VSPackage e discute três dos principais recursos relacionados ao controle do código-fonte: tratamento de eventos de Query-Edit Query-Save (QEQS), substituição de glifo e interface do usuário personalizada para as funções de controle do código-fonte.
 
 ## <a name="in-this-section"></a>Nesta seção
 - [Registro e seleção](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)
@@ -27,7 +29,7 @@ Esta seção descreve os vários recursos de um VSPackage de controle do código
 
 - [Editar consulta salvar consulta](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)
 
- Explica a função de consulta-editar consultas-salvar eventos e como eles são manipulados pelo VSPackage de controle do código-fonte.
+ Explica a função de eventos de Query-Edit Query-Save e como eles são manipulados pelo VSPackage de controle do código-fonte.
 
 - [Controle de glifo](../../extensibility/internals/glyph-control-source-control-vspackage.md)
 

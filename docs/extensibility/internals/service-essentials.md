@@ -1,5 +1,7 @@
 ---
 title: Service Essentials | Microsoft Docs
+description: Saiba mais sobre os serviços, que são interfaces para o consumo de outro VSPackage. Os serviços em um VSPackage podem substituir serviços internos ou outros.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e2947cb4cd6a347d8e010340f8689eb1907a28a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54d785d665122fd5c5fa1709aa9348777e3c730b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705496"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875798"
 ---
 # <a name="service-essentials"></a>Conceitos básicos do serviço
 Um serviço é um contrato entre duas VSPackages. Um VSPackage fornece um conjunto específico de interfaces para que outro VSPackage consuma. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] é, em si, uma coleção de VSPackages que fornece serviços para outros VSPackages.
@@ -92,7 +94,7 @@ Felizmente, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> o fu
 
     Esse código obtém um serviço SVsActivityLog e o converte em uma interface IVsActivityLog, que pode ser usada para gravar no log de atividades. Para obter um exemplo, consulte [como: usar o log de atividades](../../extensibility/how-to-use-the-activity-log.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Lista de serviços disponíveis](../../extensibility/internals/list-of-available-services.md)
 - [Usando e fornecendo serviços](../../extensibility/using-and-providing-services.md)

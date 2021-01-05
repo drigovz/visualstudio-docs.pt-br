@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: salvando configurações de usuário em uma página inicial | Microsoft Docs'
+description: Saiba como manter as configurações de usuário para a página inicial salvando uma configuração no registro usando este passo a passos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8dd20513defd1db8848cf6a80a29e04c127c9dd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17dfb844733a15b1607d2daa2ce24a8f6e0be420
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903159"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876175"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Walkthrough: salvar as configurações do usuário em uma página inicial
 
@@ -77,7 +79,7 @@ Para obter mais informações sobre como persistir configurações, consulte [es
 
 1. No painel XAML, clique com o botão direito do mouse no `Click` atributo do <xref:System.Windows.Controls.Button> elemento e clique em **navegar até manipulador de eventos**.
 
-     Essa etapa abre *myControl.XAML.cs*e cria um manipulador de stub para o `Button_Click` evento.
+     Essa etapa abre *myControl.XAML.cs* e cria um manipulador de stub para o `Button_Click` evento.
 
 2. Adicione as seguintes `using` diretivas à parte superior do arquivo.
 
@@ -166,7 +168,7 @@ Para obter mais informações sobre como persistir configurações, consulte [es
 
 2. Na instância experimental, no menu **ferramentas** , clique em **Opções**.
 
-3. No nó **ambiente** , clique em **inicialização**e, em seguida, na lista **Personalizar página inicial** , selecione **[extensão instalada] salvar minha página inicial de configurações**.
+3. No nó **ambiente** , clique em **inicialização** e, em seguida, na lista **Personalizar página inicial** , selecione **[extensão instalada] salvar minha página inicial de configurações**.
 
      Clique em **OK**.
 
@@ -174,7 +176,7 @@ Para obter mais informações sobre como persistir configurações, consulte [es
 
 5. Na página inicial, clique na guia **MyControl** .
 
-6. Na caixa de texto, digite **Cat**e clique em **salvar minha configuração**.
+6. Na caixa de texto, digite **Cat** e clique em **salvar minha configuração**.
 
 7. Feche a página inicial e abra-a novamente.
 
@@ -196,7 +198,7 @@ Para obter mais informações sobre como persistir configurações, consulte [es
 
 Você pode modificar esse controle de usuário para salvar e recuperar qualquer número de configurações personalizadas usando diferentes valores de manipuladores de eventos diferentes para obter e definir a `SettingsStore` propriedade. Contanto que você use um `propertyName` parâmetro diferente para cada chamada para <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A> , os valores não substituem um ao outro no registro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:EnvDTE80.DTE2?displayProperty=fullName>
 - [Adicionando comandos do Visual Studio a uma página inicial](../extensibility/adding-visual-studio-commands-to-a-start-page.md)

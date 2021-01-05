@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: implementando trechos de código | Microsoft Docs'
+description: Você pode criar trechos de código e incluí-los em uma extensão de editor. Saiba como criar/registrar trechos de código usando este passo a passos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
@@ -11,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: e06e97acc77b4701e02b0ca54de589830a768669
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a36590c0e56f1e1a2c01f8e084f0b95442607a5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904710"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877111"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Walkthrough: implementar trechos de código
 Você pode criar trechos de código e incluí-los em uma extensão de editor para que os usuários da extensão possam adicioná-los ao seu próprio código.
@@ -198,7 +200,7 @@ Você pode criar trechos de código e incluí-los em uma extensão de editor par
      [!code-csharp[VSSDKCompletionTest#31](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_10.cs)]
      [!code-vb[VSSDKCompletionTest#31](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_10.vb)]
 
-7. Se um trecho de código tiver campos que possam ser navegados, a sessão de expansão será mantida aberta até que a expansão seja explicitamente aceita; Se o trecho de código não tiver campos, a sessão será fechada e retornada como `null` pelo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> método. No <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> método, após o código da interface do usuário do seletor de trecho que você adicionou na etapa anterior, adicione o seguinte código para manipular a navegação do trecho (quando o usuário pressiona **Tab** ou **Shift** + **Tab** SHIFT após a inserção do trecho de código).
+7. Se um trecho de código tiver campos que possam ser navegados, a sessão de expansão será mantida aberta até que a expansão seja explicitamente aceita; Se o trecho de código não tiver campos, a sessão será fechada e retornada como `null` pelo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> método. No <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> método, após o código da interface do usuário do seletor de trecho que você adicionou na etapa anterior, adicione o seguinte código para manipular a navegação do trecho (quando o usuário pressiona **Tab** ou  + **Tab** SHIFT após a inserção do trecho de código).
 
      [!code-csharp[VSSDKCompletionTest#32](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_11.cs)]
      [!code-vb[VSSDKCompletionTest#32](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_11.vb)]

@@ -1,5 +1,7 @@
 ---
 title: Configuração da solução | Microsoft Docs
+description: Saiba como implementar as configurações de solução com suporte pelo tipo de projeto, que direcionam o comportamento da chave inicial (F5) e os comandos de compilação.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c96b73747ef8b136a74a7256cde7fef8d1c42de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad298a44eedea0681a554add74bd67ed22cad41
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705386"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876022"
 ---
 # <a name="solution-configuration"></a>Configuração da solução
 As configurações da solução armazenam propriedades no nível da solução. Eles direcionam o comportamento da chave **Start** (F5) e os comandos de **Build** . Por padrão, esses comandos criam e iniciam a configuração de depuração. Ambos os comandos são executados no contexto de uma configuração de solução. Isso significa que o usuário pode esperar F5 para iniciar e compilar qualquer que seja a solução ativa configurada por meio das configurações. O ambiente foi projetado para otimizar soluções em vez de projetos quando se trata de criar e executar.
@@ -45,7 +47,7 @@ As configurações da solução armazenam propriedades no nível da solução. E
 
    Se um projeto não oferecer suporte a plataformas, a coluna plataforma para esse projeto exibirá nenhum e será desabilitada.
 
-- Compilação
+- Build
 
    Especifica se o projeto é ou não compilado pela configuração da solução atual. Projetos não selecionados não são criados quando os comandos de compilação no nível da solução são invocados, apesar de quaisquer dependências de projeto que eles contêm. Os projetos não selecionados para serem criados ainda estão incluídos na depuração, execução, empacotamento e implantação da solução.
 
@@ -55,7 +57,7 @@ As configurações da solução armazenam propriedades no nível da solução. E
 
   Depois que uma nova configuração de solução for adicionada, o usuário poderá selecioná-la na caixa de listagem suspensa configuração de solução na barra de ferramentas padrão para criar e/ou iniciar essa configuração.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Gerenciando opções de configuração](../../extensibility/internals/managing-configuration-options.md)
 - [Configuração de projeto para compilar](../../extensibility/internals/project-configuration-for-building.md)
 - [Objeto de configuração de projeto](../../extensibility/internals/project-configuration-object.md)
