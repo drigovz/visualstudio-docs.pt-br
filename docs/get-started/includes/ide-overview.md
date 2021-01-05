@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 03e5f806b428b7ecf08038ef34d6b1dddcd92f9e
-ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
+ms.openlocfilehash: fbbd2278a59197601afe02e777e89245fc6bb421
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92210814"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97844778"
 ---
 O *ambiente de desenvolvimento integrado* do Visual Studio é um painel de inicialização criativo que você pode usar para editar, depurar e compilar o código e, em seguida, publicar um aplicativo. Um IDE (ambiente de desenvolvimento integrado) é um programa repleto de recursos que pode ser usado por muitos aspectos do desenvolvimento de software. Além do editor e do depurador padrão fornecidos pela maioria dos IDEs, o Visual Studio inclui compiladores, ferramentas de preenchimento de código, designers gráficos e muitos outros recursos para facilitar o processo de desenvolvimento de software.
 
@@ -171,7 +171,7 @@ Vamos nos aprofundar e criar um programa simples.
 
    ![Arquivo > Novo projeto na barra de menus](../media/file-new-project-menu.png)
 
-   A caixa de diálogo **novo projeto** mostra vários *modelos*de projeto. Um modelo contém as configurações e os arquivos básicos necessários para um tipo de projeto fornecido.
+   A caixa de diálogo **novo projeto** mostra vários *modelos* de projeto. Um modelo contém as configurações e os arquivos básicos necessários para um tipo de projeto fornecido.
 
 1. Escolha a categoria de modelo **.NET Core** em **Visual C#** e escolha o modelo **Aplicativo de Console (.NET Core)**. Na caixa de texto **Nome**, digite **HelloWorld** e, em seguida, selecione o botão **OK**.
 
@@ -198,7 +198,7 @@ Vamos nos aprofundar e criar um programa simples.
 
    O Visual Studio compila o aplicativo e uma janela do console é aberta com a mensagem **Olá, Mundo!**. Agora você tem um aplicativo em execução.
 
-   ![Janela do console](../media/overview-console-window.png)
+   ![Captura de tela da janela do console cmd.exe mostrando a saída ' Olá Word! ' e ' pressione qualquer tecla para continuar '.](../media/overview-console-window.png)
 
 1. Para fechar a janela do console, pressione qualquer tecla do teclado.
 
@@ -267,7 +267,7 @@ Vamos nos aprofundar e criar um programa simples.
 
    O Visual Studio compila o aplicativo e uma janela do console é aberta com a mensagem **Olá, Mundo!**. Agora você tem um aplicativo em execução.
 
-   ![Janela do console](../media/vs-2019/overview-console-window.png)
+   ![Captura de tela da janela do console de depuração Microsoft Visual Studio mostrando a saída ' Olá Word! ' e ' pressione qualquer tecla para fechar esta janela '.](../media/vs-2019/overview-console-window.png)
 
 1. Para fechar a janela do console, pressione qualquer tecla do teclado.
 
@@ -292,7 +292,7 @@ Vamos nos aprofundar e criar um programa simples.
 
 1. Insira seu nome na janela do console e pressione **Enter**.
 
-   ![Janela do console](../media/vs-2019/overview-console-input.png)
+   ![Captura de tela da janela do console de depuração Microsoft Visual Studio mostrando o prompt para um nome, a entrada e a saída ' Olá Georgette! '.](../media/vs-2019/overview-console-input.png)
 
 1. Pressione qualquer tecla para fechar a janela do console e interromper o programa em execução.
 
@@ -366,7 +366,7 @@ Primeiro, vamos renomear a variável `name`:
 
 10. Execute o programa novamente pressionando **Ctrl** + **F5**. A saída é parecida com esta:
 
-    ![Janela do console com saída do programa](../media/overview-console-final.png)
+    ! Captura de tela da janela do console cmd.exe mostrando o prompt para um nome, a entrada e a saída ' Olá Georgette! Dia do ano: 151 '.] (.. overview-console-final.png/Media/)
 
 ::: moniker-end
 
@@ -374,7 +374,7 @@ Primeiro, vamos renomear a variável `name`:
 
 10. Execute o programa novamente pressionando **Ctrl** + **F5**. A saída é parecida com esta:
 
-    ![Janela do console com saída do programa](../media/vs-2019/overview-console-final.png)
+    ![Captura de tela da janela do console de depuração Microsoft Visual Studio mostrando o prompt para um nome, a entrada e a saída ' Olá Georgette! Dia do ano: 43 '.](../media/vs-2019/overview-console-final.png)
 
 ::: moniker-end
 

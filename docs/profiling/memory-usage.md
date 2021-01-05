@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e1e6951aebac63494aada4e64c5c072eb79c6a9
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 3d259c6fa69821d1fecd26944227bff86cc82104
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074976"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815848"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Medir o uso de memória no Visual Studio
 
@@ -124,7 +124,7 @@ Para analisar o uso da memória, clique em um dos links que abre um relatório d
 
  Para exibir as instâncias de um tipo selecionado no painel superior, escolha o ícone do ![ícone de instância](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") .
 
- ![O modo de instâncias](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
+ ![Captura de tela da exibição de instâncias na ferramenta de uso de memória do Visual Studio, mostrando o painel instâncias e os caminhos para o painel objetos de referência e raiz.](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
 
  O modo de exibição **Instâncias** exibe as instâncias do objeto selecionado no instantâneo no painel superior. O painel **Caminhos para Raiz** e **Objetos Referenciados** exibe os objetos que referenciam a instância selecionada e os tipos de que a instância selecionada referencia. Quando o depurador é interrompido no ponto em que o instantâneo foi tirado, você pode passar o mouse sobre a célula **Valor** para exibir os valores do objeto em uma dica de ferramenta.
 
@@ -139,7 +139,7 @@ Para analisar o uso da memória, clique em um dos links que abre um relatório d
 
      O modo de exibição **Instâncias** mostra cada instância do tipo selecionado. A seleção de uma instância exibe a pilha de chamadas resultou na criação da instância no painel **Pilha de Chamadas de Alocação**.
 
-     ![O modo de instâncias](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
+     ![Captura de tela da exibição de instâncias na ferramenta de uso de memória do Visual Studio, mostrando o painel instâncias e o painel de pilha de chamadas de alocação.](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
 - Escolha **Exibição de Pilhas** na lista **Exibir Modo** para ver a pilha de alocação do tipo selecionado.
 

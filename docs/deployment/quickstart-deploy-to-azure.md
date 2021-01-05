@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 83446ab87af07e3ac46594beeecec781f596ecff
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: cf32e0aa1f19bb4398bc5600ae7fc9fbf151c76c
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349575"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815588"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publicar um aplicativo Web no Serviço de Aplicativo do Azure usando o Visual Studio
 
@@ -51,13 +51,13 @@ Este artigo descreve como usar a ferramenta **Publicar** para uma implantação 
 
     ![Link para criar uma nova instância do serviço de Azure App](../deployment/media/quickstart-publish-windows-create-new-link.png)
 
-1. Na caixa de diálogo **criar Azure app serviço (Windows)** , os campos **nome do aplicativo** , **grupo de recursos** e entrada do plano do **serviço de aplicativo** são preenchidos. Você pode manter esses nomes ou alterá-los. Quando estiver pronto, selecione **criar**.
+1. Na caixa de diálogo **criar Azure app serviço (Windows)** , os campos **nome do aplicativo**, **grupo de recursos** e entrada do plano do **serviço de aplicativo** são preenchidos. Você pode manter esses nomes ou alterá-los. Quando estiver pronto, selecione **criar**.
 
-    ![Escolher serviço de Azure App](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
+    ![Captura de tela da caixa de diálogo Criar Azure App do serviço (Windows) com os campos nome, assinatura, grupo de recursos e plano de hospedagem preenchidos.](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
 
 1. Na caixa de diálogo **publicar** , a instância recém-criada foi selecionada automaticamente. Quando estiver pronto, selecione **concluir**.
 
-    ![Escolher serviço de Azure App](../deployment/media/quickstart-publish-windows-select-instance.png)
+    ![Captura de tela da janela de publicação acessada a partir do Visual Studio Gerenciador de Soluções. O Azure está selecionado como o destino de publicação.](../deployment/media/quickstart-publish-windows-select-instance.png)
 
 1. Selecione **Publicar**. O Visual Studio implanta o aplicativo em seu Serviço de Aplicativo do Azure e o aplicativo Web é carregado em seu navegador. O painel **Publicar** das propriedades do projeto mostra a URL e outros detalhes do site.
 
@@ -68,7 +68,7 @@ Este artigo descreve como usar a ferramenta **Publicar** para uma implantação 
 Nas etapas anteriores, você criou os recursos do Azure em um grupo de recursos. Se você não espera precisar desses recursos no futuro, poderá excluí-los ao excluir o grupo de recursos.
 No menu à esquerda no portal do Azure, selecione **Grupos de recursos** e, em seguida, selecione **myResourceGroup**.
 Na página do grupo de recursos, certifique-se de que os recursos listados são aqueles que deseja excluir.
-Selecione **Excluir** , digite **myResourceGroup** na caixa de texto e selecione **Excluir**.
+Selecione **Excluir**, digite **myResourceGroup** na caixa de texto e selecione **Excluir**.
 
 ## <a name="next-steps"></a>Próximas etapas
 

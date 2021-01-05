@@ -1,5 +1,7 @@
 ---
 title: POPLISTFUNC | Microsoft Docs
+description: Saiba mais sobre a função de retorno de chamada POPLISTFUNC, que é usada pelo plug-in de controle do código-fonte para atualizar uma lista de arquivos ou diretórios.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c5f8c1683a993915476ff23f1f5d5f2c2aba462
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 239f1aa5a55c3a5ce3a0f2a3ec9145f3cdb0630e
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702069"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863166"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 Esse retorno de chamada é fornecido para o [SccPopulateList](../extensibility/sccpopulatelist-function.md) pelo IDE e é usado pelo plug-in de controle do código-fonte para atualizar uma lista de arquivos ou diretórios (também fornecidos para a `SccPopulateList` função).
@@ -58,7 +60,7 @@ typedef BOOL (*POPLISTFUNC) (
 > [!NOTE]
 > O `SCC_CAP_POPULATELIST` bit de funcionalidade é necessário para o Visual Studio.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Funções de retorno de chamada implementadas pelo IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)

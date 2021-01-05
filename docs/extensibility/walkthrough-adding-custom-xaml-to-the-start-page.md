@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: adicionando XAML personalizado à página inicial | Microsoft Docs'
+description: Saiba como criar uma página inicial personalizada do Visual Studio que contenha um navegador da Web usando este passo a passos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 85cc6520ea86db664de676232e8d61a643483ca4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 8f23b1331b2c083a38f6b11d9a4a3647474b2f04
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012068"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862786"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Walkthrough: Adicionar XAML personalizado à página inicial
 
@@ -87,7 +89,7 @@ Para aplicar a página inicial personalizada, em **ferramentas**  >  **Opções*
 
 A página inicial do Visual Studio agora contém uma guia que exibe uma guia de navegador da Web e uma guia MyButton. Você pode criar páginas iniciais personalizadas que têm outras funcionalidades usando o modelo *code-behind* para adicionar um. dll personalizado, conforme mostrado em [adicionando controle de usuário à página inicial](../extensibility/adding-user-control-to-the-start-page.md). Você pode compartilhar páginas iniciais personalizadas com outros usuários publicando o arquivo. vsix resultante no site da [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou em outro compartilhamento de rede ou site da Web. Para obter mais informações, consulte [implantando páginas iniciais personalizadas](../extensibility/deploying-custom-start-pages.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Personalizar a página inicial](../ide/customizing-the-start-page-for-visual-studio.md)
 - [Controles de contêiner do WPF](/previous-versions/bb675291(v=vs.110))

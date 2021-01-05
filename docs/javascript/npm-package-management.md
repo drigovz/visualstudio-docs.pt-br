@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: fed525f62466d096aa7868cc57c7fd7c75bf46f8
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: d2c7ec425767e432105bfcec493599197e2fd5ec
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781033"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815679"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gerenciar pacotes de npm no Visual Studio
 
@@ -42,7 +42,7 @@ Esses recursos funcionam juntos e são sincronizados com o sistema de projeto e 
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
-Você precisa da carga de trabalho de ** desenvolvimentoNode.js** e o tempo de execução do Node.js instalado para adicionar suporte a NPM ao seu projeto. Para obter etapas detalhadas, consulte [criar um projeto de Node.js](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json).
+Você precisa da carga de trabalho de **desenvolvimentoNode.js** e o tempo de execução do Node.js instalado para adicionar suporte a NPM ao seu projeto. Para obter etapas detalhadas, consulte [criar um projeto de Node.js](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json).
 
 > [!NOTE]
 > Para projetos de Node.js existentes, use o modelo **de solução de código de Node.js existente** ou o tipo de projeto de [pasta aberta (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md) para habilitar o NPM em seu projeto.
@@ -55,7 +55,7 @@ Para projetos Node.js, a maneira mais fácil de instalar pacotes NPM é por meio
 
 Nessa janela, você pode procurar por um pacote, especificar as opções e instalar.
 
-![Pesquisar pacote do npm](../javascript/media/search-package.png)
+![Captura de tela da caixa de diálogo instalar novos pacotes NPM. O pacote 2.2.1-preview do Azure é selecionado e os detalhes e as opções desse pacote são mostrados.](../javascript/media/search-package.png)
 
 * **Tipo de dependência** – escolha entre os pacotes **Padrão**, **Desenvolvimento** e **Opcional**. Padrão especifica que o pacote é uma dependência de runtime, enquanto Desenvolvimento especifica que o pacote só é necessário durante o desenvolvimento.
 * **Adicione a package.json** -recomendado. Esta opção configurável foi preterida.
@@ -73,7 +73,7 @@ Você pode ver o progresso da instalação na saída do **NPM** na janela de **s
 
 Os pacotes do npm são mostrados no Gerenciador de Soluções. As entradas no nó **npm** imitam as dependências do arquivo *package.json*.
 
-![Pesquisar pacote do npm](../javascript/media/solution-explorer-status.png)
+![Captura de tela do nó NPM no Gerenciador de Soluções mostrando o status da instalação dos pacotes NPM.](../javascript/media/solution-explorer-status.png)
 
 ### <a name="package-status"></a>Status do pacote
 
@@ -86,12 +86,12 @@ Clique com o botão direito do mouse no nó **NPM** para executar uma das seguin
 
 * **Instalar novos pacotes do NPM** Abre a interface do usuário para instalar novos pacotes.
 * **Instalar pacotes do NPM** Executa o comando NPM install para instalar todos os pacotes listados em *package.jsem*. (É executado `npm install` .)
-* **Atualizar pacotes NPM** Atualiza pacotes para as versões mais recentes, de acordo com o intervalo de controle de versão semântico (semver) especificado no *package.jsem*. (Executa `npm update --save` .). Os intervalos de Semver normalmente são especificados usando "~" ou "^". Para obter mais informações, [package.jsna configuração](../javascript/configure-packages-with-package-json.md).
+* **Atualizar pacotes NPM** Atualiza pacotes para as versões mais recentes, de acordo com o intervalo de controle de versão semântico (SemVer) especificado no *package.jsem*. (Executa `npm update --save` .). Os intervalos de SemVer normalmente são especificados usando "~" ou "^". Para obter mais informações, [package.jsna configuração](../javascript/configure-packages-with-package-json.md).
 
 Clique com o botão direito do mouse em um nó de pacote para executar uma das seguintes ações:
 
 * **Instalar pacote (s) NPM** Executa o comando NPM install para instalar a versão do pacote listada em *package.jsem*. (É executado `npm install` .)
-* **Atualizar pacote (s) NPM** Atualiza o pacote para a versão mais recente, de acordo com o intervalo de semver especificado em *package.jsem*. (Executar `npm update --save` .) Os intervalos de Semver normalmente são especificados usando "~" ou "^".
+* **Atualizar pacote (s) NPM** Atualiza o pacote para a versão mais recente, de acordo com o intervalo de SemVer especificado em *package.jsem*. (Executar `npm update --save` .) Os intervalos de SemVer normalmente são especificados usando "~" ou "^".
 * **Desinstalar pacote (s) NPM** Desinstala o pacote e o Remove do *package.jsem* (executado `npm uninstall --save` .)
 ::: moniker-end
 ::: moniker range="vs-2017"
@@ -140,7 +140,7 @@ Se o projeto ainda não incluir um *package.jsno* arquivo, você poderá adicion
 
    ![Adicionar package.jsao seu projeto](../javascript/media/npm-add-package-json.png)
 
-   Se você não vir o arquivo de configuração NPM listado, as ferramentas de desenvolvimento Node.js não serão instaladas. Você pode usar o Instalador do Visual Studio para adicionar a carga de trabalho de ** desenvolvimento deNode.js** . Em seguida, repita a etapa anterior.
+   Se você não vir o arquivo de configuração NPM listado, as ferramentas de desenvolvimento Node.js não serão instaladas. Você pode usar o Instalador do Visual Studio para adicionar a carga de trabalho de **desenvolvimento deNode.js** . Em seguida, repita a etapa anterior.
 
 1. Inclua um ou mais pacotes NPM na `dependencies` seção ou `devDependencies` do *package.jsem*. Por exemplo, você pode adicionar o seguinte ao arquivo:
 
@@ -160,11 +160,11 @@ Quando você salva o arquivo, o Visual Studio adiciona o pacote no nó **Depende
 
 Para projetos com NPM incluídos, você pode configurar pacotes do NPM usando o `package.json` . Clique com o botão direito do mouse no nó NPM em Gerenciador de Soluções e escolha **abrir package.jsem**.
 
-![Pesquisar pacote do npm](../javascript/media/npm-add-package.png)
+![Captura de tela da Gerenciador de Soluções com o nó NPM selecionado. Um menu de contexto de clique com o botão direito do mouse está aberto e abrir package.jsem está selecionado.](../javascript/media/npm-add-package.png)
 
 O IntelliSense no *package.jsno* ajuda a selecionar uma versão específica de um pacote NPM.
 
-:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Instalar o novo pacote do npm usando o Gerenciador de Soluções" border="true":::
+:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Selecione a versão do pacote NPM" border="true":::
 
 Quando você salva o arquivo, o Visual Studio adiciona o pacote no nó **Dependencies/NPM** em Gerenciador de soluções. Se você não vir o nó, clique com o botão direito do mouse em **package.js** e escolha **restaurar pacotes**.
 
@@ -176,7 +176,7 @@ Pode levar vários minutos para instalar um pacote. Verifique o andamento na ins
 
 * NPM requer Node.js se você não tiver o Node.js instalado, recomendamos que instale a versão LTS do site [Node.js](https://nodejs.org/en/download/) para obter melhor compatibilidade com estruturas e bibliotecas externas.
 
-* Para projetos Node.js, você deve ter a carga de trabalho de ** desenvolvimentoNode.js** instalada para suporte NPM.
+* Para projetos Node.js, você deve ter a carga de trabalho de **desenvolvimentoNode.js** instalada para suporte NPM.
 
 * Em alguns cenários, Gerenciador de Soluções pode não mostrar o status correto dos pacotes NPM instalados devido a um problema conhecido descrito [aqui](https://github.com/aspnet/Tooling/issues/479). Por exemplo, o pacote pode aparecer como não instalado quando instalado. Na maioria dos casos, você pode atualizar Gerenciador de Soluções excluindo *package.js*, reiniciando o Visual Studio e adicionando novamente o *package.jsno* arquivo, conforme descrito anteriormente neste artigo. Ou, ao instalar pacotes, você pode usar a janela saída do NPM para verificar o status da instalação.
 

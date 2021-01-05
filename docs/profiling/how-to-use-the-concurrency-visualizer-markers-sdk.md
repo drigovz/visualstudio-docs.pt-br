@@ -1,5 +1,6 @@
 ---
 title: Usar o SDK de Marcadores da Visualização Simultânea | Microsoft Docs
+description: Saiba como usar o SDK de marcadores do Visualizador de simultaneidade no Visual Studio para criar intervalos e sinalizadores de gravação, mensagens e alertas.
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cf33ad094716ee0f8f4c8cc4bb06220db1237e5
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 24659a101da59ed3a8ca6389debfde6c08a038ed
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851574"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815601"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Como usar o SDK de marcadores de Visualização Simultânea
 Este tópico mostra como usar o SDK da Visualização Simultânea para criar intervalos e gravar sinalizadores, mensagens e alertas.
@@ -70,7 +71,7 @@ Este tópico mostra como usar o SDK da Visualização Simultânea para criar int
 
 6. Inicie o projeto atual para exibir Visualização Simultânea. As duas séries de marcador aparecem em suas próprias pistas na Exibição de Threads. A ilustração a seguir mostra os dois novos intervalos.
 
-     ![Visualizador de simultaneidade com 3 séries de marcador personalizado](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
+     ![Captura de tela da exibição threads no Visualizador de simultaneidade, mostrando um marcador, um sinalizador e uma série de mensagens, com um intervalo de sinalizador e um intervalo de mensagens.](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>Para usar o Visual Basic ou o C\#
 
@@ -164,7 +165,7 @@ Este tópico mostra como usar o SDK da Visualização Simultânea para criar int
 
 6. Inicie o projeto atual para exibir Visualização Simultânea. As três séries de marcador aparecem em suas próprias pistas na Exibição de Threads. A ilustração a seguir mostra os três novos intervalos.
 
-     ![Visualizador de simultaneidade com 3 séries de marcador personalizado](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
+     ![Captura de tela da exibição threads no Visualizador de simultaneidade, mostrando um marcador, um sinalizador e uma série de mensagens, com uma mensagem, alerta e intervalo de sinalizador.](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [SDK do Visualizador de Simultaneidade](../profiling/concurrency-visualizer-sdk.md)

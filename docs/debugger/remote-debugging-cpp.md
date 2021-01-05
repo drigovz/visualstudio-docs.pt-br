@@ -1,5 +1,6 @@
 ---
 title: Depuração remota de um projeto C++ | Microsoft Docs
+description: Saiba como depurar um aplicativo do Visual Studio C++ de um computador remoto seguindo estas instruções passo a passo.
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8d3b578e62b917a7553b42a04e53062c406c4fd
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92298731"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815796"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Depuração remota de um projeto C++ no Visual Studio
 Para depurar um aplicativo do Visual Studio em um computador diferente, instale e execute as ferramentas remotas no computador em que você implantará seu aplicativo, configure seu projeto para se conectar ao computador remoto do Visual Studio e, em seguida, implante e execute seu aplicativo.
@@ -63,11 +64,11 @@ O depurador remoto tem suporte no Windows 7 e em versões mais recentes (não de
 
 4. Defina o **depurador para iniciar** o **depurador remoto do Windows**.
 
-    ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")
+    ![Captura de tela da guia depuração no Visual Studio Gerenciador de Soluções Propriedades. O depurador para iniciar a propriedade está definido como depurador remoto do Windows.](../debugger/media/remotedebuggingcplus.png)
 
 5. Faça as seguintes alterações nas propriedades:
 
-   |Setting|Valor|
+   |Configuração|Valor|
    |-|-|
    |Comando remoto|C:\remotetemp\mymfc.exe|
    |Diretório de trabalho|C:\remotetemp|
@@ -83,9 +84,9 @@ O depurador remoto tem suporte no Windows 7 e em versões mais recentes (não de
 
 7. Para a configuração de **Depuração**, selecione a caixa de seleção **Implantar**.
 
-    ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")
+    ![Captura de tela da Configuration Manager no Gerenciador de Soluções do Visual Studio. A configuração de depuração é selecionada e a opção implantar está marcada.](../debugger/media/remotedebugcplusdeploy.png)
 
-8. Iniciar Depuração (**Debug > iniciar depuração**ou **F5**).
+8. Iniciar Depuração (**Debug > iniciar depuração** ou **F5**).
 
 9. O executável é implantado automaticamente no computador remoto.
 
@@ -106,7 +107,7 @@ O depurador remoto tem suporte no Windows 7 e em versões mais recentes (não de
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Depurando no Visual Studio](../debugger/index.yml)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Configurar o Firewall do Windows para depuração remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md)

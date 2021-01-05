@@ -1,5 +1,7 @@
 ---
 title: Registrando verbos para extensões de nome de arquivo | Microsoft Docs
+description: Saiba como registrar um verbo associado a um identificador programático para uma extensão de nome de arquivo usando uma chave de Shell.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac2854f1799075cc14d9beb557335be5228be21d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df0dfe90bd5e3bccbb6bb0f9dab400082f539fbf
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701526"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863050"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Registrar verbos para extensões de nome de arquivo
 A associação de uma extensão de nome de arquivo com um aplicativo geralmente tem uma ação preferida que ocorre quando um usuário clica duas vezes em um arquivo. Essa ação preferencial é vinculada a um verbo, por exemplo, abrir, que corresponde à ação.
@@ -29,9 +31,9 @@ A associação de uma extensão de nome de arquivo com um aplicativo geralmente 
 
 - Editar
 
-- Reproduzir
+- Play
 
-- Impressão
+- Imprimir
 
 - Versão Prévia
 
@@ -111,5 +113,5 @@ A associação de uma extensão de nome de arquivo com um aplicativo geralmente 
 > [!NOTE]
 > Se você planeja alterar o verbo padrão para uma extensão em uma implantação lado a lado, considere o impacto na instalação e remoção. Durante a instalação, o valor padrão original é substituído.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Gerenciar associações de arquivos lado a lado](../extensibility/managing-side-by-side-file-associations.md)

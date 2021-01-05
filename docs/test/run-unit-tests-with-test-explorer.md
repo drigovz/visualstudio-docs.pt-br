@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58faf100c61a25ae014bdcc0b09d161e924ad5c9
-ms.sourcegitcommit: 21ac4a0c8ffac3964b75604678b12e0955e0159b
+ms.openlocfilehash: b934c6cb7c2a6ba98113a5e68091ab53f54b1423
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098521"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833358"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -62,7 +62,7 @@ Você pode executar a maior parte do trabalho de encontrar, organizar e executar
 ### <a name="run-tests"></a>Executar testes
 
 ::: moniker range="vs-2017"
-Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize uma destas ações:
+Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize um dos seguintes procedimentos:
 
 - Para executar todos os testes em uma solução, escolha **Executar Todos**.
 
@@ -70,12 +70,12 @@ Você pode executar todos os testes na solução, todos os testes em um grupo ou
 
 - Selecione os testes individuais que deseja executar, abra o menu do clique com o botão direito para o teste selecionado e, em seguida, escolha **Executar Testes Selecionados**.
 
-- Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
+- Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![Captura de tela do botão de alternância de execução de teste paralelo na barra de ferramentas do Gerenciador de testes do Visual Studio. Quando esse botão é selecionado, os testes serão executados em paralelo.](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
 
 A **barra de aprovação/reprovação** na parte superior da janela do **Gerenciador de Testes** é animada conforme os testes são executados. Na conclusão da execução de teste, a **barra de aprovação/reprovação** ficará verde se todos os testes forem aprovados ou vermelha se algum deles for reprovado.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize uma destas ações:
+Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize um dos seguintes procedimentos:
 
 - Para executar todos os testes de uma solução, escolha o ícone **Executar Todos**.
 
@@ -150,7 +150,7 @@ O Gerenciador de Testes permite agrupar os testes em uma hierarquia. O agrupamen
 
 Você pode definir seus próprios níveis de hierarquia e de grupo por **Estado** e, em seguida, **Classe**, por exemplo, selecionando as opções Agrupar por em sua ordem preferida.
 
-![Agrupar por Estado e, em seguida, Classe](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
+![Captura de tela do Visual Studio Test Explorer mostrando uma hierarquia de teste em um painel e o menu agrupar por no outro com as opções de classe e estado marcadas.](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
 ::: moniker-end
 
 ### <a name="test-explorer-groups"></a>Grupos de Gerenciador de Testes
@@ -207,7 +207,7 @@ Consulte [Como usar o Microsoft Unit Testing Framework para C++](how-to-use-micr
 
 **Para abrir uma playlist**, escolha **Teste** > **Playlist** no menu do Visual Studio e escolha uma opção na lista de playlists usadas recentemente ou escolha **Abrir Playlist** para especificar o nome e o local da playlist.
 
-Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
+Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![Captura de tela do botão de alternância de execução de teste paralelo na barra de ferramentas do Gerenciador de testes do Visual Studio.](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 É possível criar e salvar uma lista de teste que você deseje executar ou exibir como um grupo. Quando você seleciona uma playlist, os testes na lista são exibidos em uma nova guia do Gerenciador de testes. Você pode adicionar um teste a mais de uma lista de reprodução.
@@ -264,7 +264,7 @@ Use o formato a seguir para xUnit. Verifique se há um espaço entre o seu `Test
 
 Os [grupos](#test-explorer-groups) também estão disponíveis como colunas no Gerenciador de Testes, com a Característica, Rastreamento de Pilha, Mensagem de Erro e Nome Totalmente Qualificado. A maioria das colunas não fica visível por padrão, e você pode personalizar quais colunas verá e a ordem de exibição.
 
-![Agrupar por Estado e, em seguida, Classe](../test/media/vs-2019/test-explorer-columns-16-2.png)
+![Captura de tela do Visual Studio Test Explorer mostrando um menu com colunas selecionadas e um submenu com duração, características e mensagem de erro selecionada.](../test/media/vs-2019/test-explorer-columns-16-2.png)
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>Filtrar, classificar e reorganizar colunas de testes
 
@@ -377,7 +377,7 @@ Os testes podem ser executados no Gerenciador de testes clicando com o botão di
 > [!NOTE]
 > Não é possível executar um teste em uma classe abstrata, porque os testes são apenas definidos nas classes abstratas e não instanciados. Para executar testes em classes abstratas, crie uma classe que deriva da classe abstrata.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Teste de unidade em seu código](../test/unit-test-your-code.md)
 - [Depurar testes de unidade com o Gerenciador de Testes](../test/debug-unit-tests-with-test-explorer.md)

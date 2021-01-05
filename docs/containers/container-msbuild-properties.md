@@ -1,17 +1,17 @@
 ---
 title: Propriedades de compilação das ferramentas de contêiner do Visual Studio
 author: ghogen
-description: Visão geral do processo de Build das ferramentas de contêiner
+description: Saiba como editar as propriedades de Build das ferramentas de contêiner para personalizar como o Visual Studio compila e executa um projeto de contêiner.
 ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 427a70d9bc4f6ef326ffb16e7d26df9d8fae2365
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e8675bd0ea12b30ce678ce454bcedee457ddacd
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283197"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846740"
 ---
 # <a name="container-tools-build-properties"></a>Propriedades de compilação das ferramentas de contêiner
 
@@ -80,7 +80,7 @@ O arquivo de projeto a seguir mostra exemplos de algumas dessas configurações.
 
 Para obter informações sobre propriedades do MSBuild em geral, consulte [Propriedades do MSBuild](../msbuild/msbuild-properties.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 [Docker Compose Propriedades de compilação](docker-compose-properties.md)
 

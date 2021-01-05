@@ -1,6 +1,6 @@
 ---
 title: Expressões no depurador | Microsoft Docs
-description: Editar e continuar está disponível para projetos do Visual C#. Saiba quais edições têm suporte e como pode controlar se, e quando, suas edições são aplicadas.
+description: Saiba quais expressões de linguagem não são suportadas pelos avaliadores de expressão no depurador do Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 03/02/2020
 ms.topic: conceptual
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d04ce836316024eb4aef9f1b4a9955d98dbba8
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 5b05af635ba7774cdb31291ad7c2b7eb52686bcf
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862861"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846718"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expressões no depurador do Visual Studio
 O depurador do Visual Studio inclui os avaliadores de expressão que funcionam quando você insere uma expressão na caixa de diálogo **QuickWatch**, na janela **Inspeção** ou na janela **Imediato**. Os avaliadores de expressão também estão no trabalho na janela **Pontos de interrupção** e em muitos outros locais no depurador.
@@ -206,7 +206,7 @@ Você não pode declarar novas variáveis explícitas nas janelas do depurador. 
 
 - Palavras-chave de namespace ou nível de módulo, como `End Sub` ou `Module` .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Especificadores de formato em C++](../debugger/format-specifiers-in-cpp.md)
 - [Operador de contexto (C++)](../debugger/context-operator-cpp.md)
 - [Especificadores de formato em C #](../debugger/format-specifiers-in-csharp.md)

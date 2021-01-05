@@ -1,17 +1,17 @@
 ---
 title: Configurando um Repositório do Subversion
-description: Usando o Subversion no Visual Studio para Mac.
+description: Saiba como instalar e configurar a subversão como um sistema de controle de versão centralizado no Visual Studio para Mac.
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
 ms.topic: how-to
-ms.openlocfilehash: 78a5dd2abbef177e2eb949d25d779a46ecc65bda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5230958fa1624acf7609d6cad7d885e43c013d0
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950690"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847070"
 ---
 # <a name="set-up-a-subversion-repository"></a>Configurar um repositório do Subversion
 
@@ -57,6 +57,6 @@ Após instalar o Subversion no computador, siga as etapas a seguir para publicar
 
 8. Todos os comandos de controle de versão disponíveis agora devem estar visíveis no menu de controle de versão.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Trabalhando com o Subversion](working-with-subversion.md)

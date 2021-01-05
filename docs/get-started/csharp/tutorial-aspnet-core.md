@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a6b089309ca7202c01028b3323ccabfd3668e909
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 15fcc5981c5711c7c3ddcf7262649a9d3473ee55
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780980"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833319"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutorial: Introdução ao C# e ao ASP.NET Core no Visual Studio
 
@@ -154,7 +154,7 @@ Esta solução segue o padrão de design da **Página do Razor**. Ele é diferen
 
  1. Visualize o arquivo **About.cshtml** no editor de códigos.
 
-     ![Visualizar o arquivo About.cshtml no editor de códigos do Visual Studio](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
+     ![Captura de tela mostrando as dez primeiras linhas do arquivo about. cshtml no editor de código do Visual Studio.](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
 
  1. Escolha o arquivo **About.cshtml.cs**.
 
@@ -162,7 +162,7 @@ Esta solução segue o padrão de design da **Página do Razor**. Ele é diferen
 
  1. Visualize o arquivo **About.cs** no editor de códigos.
 
-     ![Visualizar o arquivo About.cshtml no editor de códigos do Visual Studio](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
+     ![Captura de tela mostrando as primeiras 18 linhas do arquivo About.cshtml.cs no editor de código do Visual Studio. ](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
 
  1. O projeto também contém a pasta **wwwroot** que é a raiz do site. Expanda a pasta para exibir seu conteúdo.
 
@@ -288,7 +288,7 @@ Esta solução segue o padrão de design da **Página do Razor**. Ele é diferen
      >
      > Você também pode obter uma mensagem perguntando se deseja aceitar um certificado SSL do IIS Express. Para exibir o código em um navegador da Web, escolha **Sim** e, em seguida, escolha **Sim** se você receber uma mensagem de aviso de segurança de acompanhamento.
 
-1. O Visual Studio abre uma janela do navegador. Em seguida, você deve ver as páginas **página inicial**e **privacidade** na barra de menus.
+1. O Visual Studio abre uma janela do navegador. Em seguida, você deve ver as páginas **página inicial** e **privacidade** na barra de menus.
 
 1. Escolha **privacidade** na barra de menus.
 
@@ -368,6 +368,6 @@ Parabéns por concluir este tutorial. Esperamos que você tenha aprendido um pou
 > [!div class="nextstepaction"]
 > [Criar um aplicativo Web Razor Pages com ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 [Publicar seu aplicativo Web no Serviço de Aplicativo do Azure usando o Visual Studio](../../deployment/quickstart-deploy-to-azure.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f563d37e6456ec775b2e70d59e07b0627c82994b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5660d67ac2c8c3bff589c34dd4303d36a3e20cff
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330193"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833306"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 
@@ -24,17 +24,17 @@ Verifique se seu código está funcionando conforme o esperado criando e executa
 
 O teste de unidade tem o maior efeito sobre a qualidade do código quando é parte integrante do fluxo de trabalho de desenvolvimento de software. Assim que você escrever uma função ou outro bloco de código do aplicativo, crie testes de unidade que verifique o comportamento do código em resposta a casos padrão, limite e incorretos de dados de entrada e verifique se não houve nenhuma suposição explícita ou implícita feita pelo código. Com o *desenvolvimento orientado por testes*, você cria os testes de unidade antes de escrever o código e, portanto, os testes de unidade são usados tanto como documentação de design quando especificações funcionais.
 
-Você pode gerar os projetos de teste e métodos de teste rapidamente do seu código ou criar os testes manualmente conforme a necessidade. Quando você usar o IntelliTest para explorar seu código .NET, poderá gerar dados de teste e um conjunto de testes de unidade. Para cada instrução no código, é gerada uma entrada de teste para executar essa instrução. Descubra como [gerar testes de unidade para seu código](generate-unit-tests-for-your-code-with-intellitest.md).
-
 O Gerenciador de Testes também pode executar estruturas de teste de unidade de código aberto e de terceiros que implementaram interfaces de complemento do Gerenciador de Testes. Você pode adicionar muitas dessas estruturas por meio do gerenciador de extensões do Visual Studio e da galeria do Visual Studio. Para obter mais informações, consulte [instalar estruturas de teste de unidade de](../test/install-third-party-unit-test-frameworks.md)terceiros.
+
+Você pode gerar os projetos de teste e métodos de teste rapidamente do seu código ou criar os testes manualmente conforme a necessidade. Ao usar o IntelliTest para explorar o código .NET, você pode gerar dados de teste e um conjunto de testes de unidade. Para cada instrução no código, é gerada uma entrada de teste para executar essa instrução. Descubra como [gerar testes de unidade para o código .net](generate-unit-tests-for-your-code-with-intellitest.md).
 
 ## <a name="get-started"></a>Introdução
 
 Para obter uma introdução ao teste de unidade que leva você diretamente para a parte de codificação, confira um destes tópicos:
 
-- [Passo a passo: Criar e executar testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Walkthrough: criar e executar testes de unidade para código .NET](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [Início Rápido: Desenvolvimento orientado por testes com o Gerenciador de Testes](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Walkthrough: desenvolvimento controlado por testes com o Gerenciador de testes](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [Gravar testes de unidade para C/C++ no Visual Studio](../test/writing-unit-tests-for-c-cpp.md)
 
@@ -85,7 +85,7 @@ Agora que temos alguns códigos, é hora de testar.
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>Criar projetos de teste de unidade e métodos de teste
 
-Geralmente é mais rápido gerar o projeto de teste de unidade e os stubs de teste de unidade no seu código. Ou você pode optar por criar o projeto de teste de unidade e os testes manualmente, dependendo dos seus requisitos. Se você quiser criar testes de unidade com uma estrutura de terceiros, precisará de uma dessas extensões instaladas: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) ou [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
+Para o C#, geralmente é mais rápido gerar o projeto de teste de unidade e os stubs de teste de unidade do seu código. Ou você pode optar por criar o projeto de teste de unidade e os testes manualmente, dependendo dos seus requisitos. Se você quiser criar testes de unidade a partir do código com uma estrutura de terceiros, precisará de uma dessas extensões instaladas: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) ou [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator). Se você não estiver usando o C#, pule esta seção e vá para [criar o projeto de teste de unidade e os testes de unidade manualmente](#create-the-unit-test-project-and-unit-tests-manually).
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Gerar o projeto de teste de unidade e os stubs de teste de unidade
 
@@ -101,7 +101,7 @@ Geralmente é mais rápido gerar o projeto de teste de unidade e os stubs de tes
    ![Na janela do editor, exiba o menu de contexto](../test/media/vs-2019/basics-create-unit-tests.png)
 
    > [!NOTE]
-   > O comando de menu **criar testes de unidade** só está disponível para código gerenciado.
+   > O comando de menu **criar testes de unidade** só está disponível para código C#.
    ::: moniker-end
 
 2. Clique em **OK** para aceitar os padrões e criar os testes de unidade ou altere os valores usados para criar e nomear o projeto de teste de unidade e os testes de unidade. Você pode selecionar o código que é adicionado por padrão aos métodos de teste de unidade.
@@ -264,7 +264,7 @@ Você pode escolher **executar tudo** para executar todos os seus testes ou esco
 
 ::: moniker range="vs-2017"
 
-Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
+Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![Captura de tela do botão de alternância de execução de teste paralelo na barra de ferramentas do Gerenciador de testes do Visual Studio.](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
 
 ::: moniker-end
 
@@ -310,7 +310,7 @@ Quando houver um grande número de testes, você poderá digitar na caixa de pes
 
 Para obter mais informações, consulte [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md).
 
-## <a name="qa"></a>Perguntas e respostas
+## <a name="qa"></a>P e R
 
 **P: como posso depurar testes de unidade?**
 
@@ -338,7 +338,7 @@ Obter mais detalhes sobre [como depurar testes de unidade](../debugger/debugger-
 
 **P: posso criar testes de unidade que usam vários conjuntos de dados como entrada para executar o teste?**
 
-**R:** Sim. Os *métodos de teste voltados para dados* permitem que você teste um intervalo de valores com um método de teste de unidade. Use um atributo `DataSource` para o método de teste que especifica a fonte de dados e a tabela que contém os valores de variáveis que você deseja testar.  No corpo do método, você atribui os valores de linha a variáveis usando o `TestContext.DataRow[` *ColumnName* `]` indexador ColumnName.
+**R:** Sim. Os *métodos de teste voltados para dados* permitem que você teste um intervalo de valores com um método de teste de unidade. Use um atributo `DataSource` para o método de teste que especifica a fonte de dados e a tabela que contém os valores de variáveis que você deseja testar.  No corpo do método, você atribui os valores de linha a variáveis usando o `TestContext.DataRow[`  `]` indexador ColumnName.
 
 > [!NOTE]
 > Esses procedimentos se aplicam somente ao teste de métodos que você escreve usando o Microsoft Unit Test Framework para código gerenciado. Se você estiver usando uma estrutura diferente, consulte a documentação dela para ver a funcionalidade equivalente.

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 6badbb7723bf4d8ed0c9385558204c2dc4907574
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 3f90a3d42eb1390adbb242242172aea152a0a54f
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441242"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833228"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Como configurar testes de unidade para usar uma versão anterior do .NET Framework como destino
 
@@ -62,7 +62,7 @@ As seguintes limitações se aplicam quando você redireciona projetos de teste 
 
 4. Use a lista suspensa **Estrutura de destino (todas as configurações)** para alterar a estrutura de destino para **.NET Framework 3.5** ou uma versão posterior, conforme mostrado no texto explicativo B na ilustração a seguir. Não especifique uma versão de cliente.
 
-     ![Lista suspensa da estrutura de destino](../test/media/howtoconfigureunitest35frameworkstepb.png)
+     ![Captura de tela da caixa de diálogo Configurações avançadas do compilador. A lista suspensa estrutura de destino é realçada e o valor é definido como ' .NET Frameowrk 3,5 '.](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="retargeting-for-c-unit-test-projects"></a>Redirecionando para projetos de teste de unidade do C#
 
@@ -74,7 +74,7 @@ As seguintes limitações se aplicam quando você redireciona projetos de teste 
 
 3. Na guia **Aplicativo**, escolha **Estrutura de destino**. Na lista suspensa, escolha **.NET Framework 3.5** ou uma versão posterior, conforme mostra a ilustração a seguir. Não especifique uma versão de cliente.
 
-   ![Lista suspensa da estrutura de destino](../test/media/howtoconfigureunittest35frameworkcsharp.png)
+   ![Ilustração da guia aplicativo no painel Propriedades de Gerenciador de Soluções que realça o local da lista suspensa estrutura de destino.](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="retargeting-for-ccli-unit-test-projects"></a>Redirecionando para projetos de teste de unidade do C++/CLI
 
@@ -106,7 +106,7 @@ As seguintes limitações se aplicam quando você redireciona projetos de teste 
 
 6. No **Gerenciador de Soluções**, escolha **Recarregar Projeto** no menu aberto ao clicar com o botão direito do mouse do novo projeto de teste do C++.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criar soluções do SharePoint](../sharepoint/create-sharepoint-solutions.md)
 - [Compilar e depurar soluções do SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

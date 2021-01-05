@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1873c11d8f2e6243a0dc0f867e579f1927cd1607
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e7c6eec178d0ba3b2934e390cc02310044c4dfa
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579968"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833345"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Início rápido: Usar o Visual Studio para criar seu primeiro aplicativo Web ASP.NET Core
 
@@ -124,7 +124,7 @@ Logo depois, o Visual Studio abre o arquivo de projeto.
 
 1. No **Gerenciador de Soluções**, expanda a pasta **Páginas** e, em seguida, escolha **About.cshtml**.
 
-   ![Escolha o arquivo About.cshtml no Gerenciador de Soluções](../ide/media/csharp-aspnet-about-page-html-file.png)
+   ![Captura de tela do Visual Studio Gerenciador de Soluções mostrando os arquivos no projeto HelloWorld. A pasta páginas é expandida e About. cshtml é selecionado.](../ide/media/csharp-aspnet-about-page-html-file.png)
 
    Este arquivo corresponde a uma página chamada **Sobre** no aplicativo web, que é executada no navegador da web.
 
@@ -140,7 +140,7 @@ Logo depois, o Visual Studio abre o arquivo de projeto.
 
 1. No **Gerenciador de Soluções**, expanda **About.cshtml** e, em seguida, escolha **About.cshtml.cs**. (Esse arquivo também corresponde à página **Sobre** em um navegador da Web.)
 
-   ![Escolha o arquivo About.cshtml no Gerenciador de Soluções](../ide/media/csharp-aspnet-about-page-code-file.png)
+   ![Captura de tela do Visual Studio Gerenciador de Soluções mostrando os arquivos no projeto HelloWorld. About. cshtml é expandido e About.cshtml.cs está selecionado.](../ide/media/csharp-aspnet-about-page-code-file.png)
 
    No editor, você verá o código de C# que inclui o texto para a área "Descrição do aplicativo" da página **sobre**.
 
@@ -213,6 +213,6 @@ Para saber mais, continue com o tutorial a seguir:
 > [!div class="nextstepaction"]
 > [Introdução a C# e ASP.NET no Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 [Publicar seu aplicativo Web no Serviço de Aplicativo do Azure usando o Visual Studio](../deployment/quickstart-deploy-to-azure.md)

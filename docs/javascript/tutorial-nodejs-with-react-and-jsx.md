@@ -1,6 +1,6 @@
 ---
 title: Criar um aplicativo Node.js e React
-description: Neste tutorial, você cria um aplicativo usando ferramentas Node.js para Visual Studio
+description: Saiba como criar um projeto de aplicativo Web Node.js de um modelo do Visual Studio.
 ms.custom: ''
 ms.date: 4/21/2020
 ms.topic: tutorial
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c6813e0ad482bb211269c9da3950842dda7f6abd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08e04407c5fc25a2835bd3209ffcd60fdc86d0b1
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81760087"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815770"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e React no Visual Studio
 
@@ -60,10 +60,10 @@ O webpack empacota arquivos JavaScript para que eles possam ser executados em um
 * Você precisa ter o Visual Studio instalado e a carga de trabalho de desenvolvimento de Node.js.
 
     ::: moniker range=">=vs-2019"
-    Se você ainda não instalou o Visual Studio 2019, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)   para instalá-lo gratuitamente.
+    Se você ainda não instalou o Visual Studio 2019, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalá-lo gratuitamente.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Se você ainda não instalou o Visual Studio 2017, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)   para instalá-lo gratuitamente.
+    Se você ainda não tiver instalado o Visual Studio 2017, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalá-lo gratuitamente.
     ::: moniker-end
 
     Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, vá para **ferramentas**  >  **obter ferramentas e recursos...**, que abre o instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
@@ -76,7 +76,7 @@ O webpack empacota arquivos JavaScript para que eles possam ser executados em um
 
     Se você não o tiver instalado, recomendamos que instale a versão LTS do site [Node.js](https://nodejs.org/en/download/) para obter a melhor compatibilidade com estruturas e bibliotecas externas. Node.js é compilado para arquiteturas de 32 bits e 64 bits. As ferramentas de Node.js no Visual Studio, incluídas na carga de trabalho do Node.js, dão suporte a ambas as versões. Apenas um é necessário e o instalador do Node.js dá suporte apenas a uma instalação de cada vez.
     
-    Em geral, o Visual Studio detecta automaticamente o runtime do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar seu projeto para fazer referência ao tempo de execução instalado na página Propriedades (depois de criar um projeto, clique com o botão direito do mouse no nó do projeto, escolha **Propriedades**e defina o **Node.exe caminho**). Você pode usar uma instalação global do Node.js ou pode especificar o caminho para um intérprete local em cada um de seus projetos de Node.js. 
+    Em geral, o Visual Studio detecta automaticamente o runtime do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar seu projeto para fazer referência ao tempo de execução instalado na página Propriedades (depois de criar um projeto, clique com o botão direito do mouse no nó do projeto, escolha **Propriedades** e defina o **Node.exe caminho**). Você pode usar uma instalação global do Node.js ou pode especificar o caminho para um intérprete local em cada um de seus projetos de Node.js. 
 
 ## <a name="create-a-project"></a>Criar um projeto
 
@@ -87,14 +87,14 @@ Primeiro, crie um projeto de aplicativo Web Node.js.
 1. Criar um novo projeto.
 
     ::: moniker range=">=vs-2019"
-    Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **Node.js**e, em seguida, escolha **em branco Node.js aplicativo Web-JavaScript**. (Embora este tutorial use o compilador TypeScript, as etapas exigem que você comece com o modelo **JavaScript** .)
+    Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **Node.js** e, em seguida, escolha **em branco Node.js aplicativo Web-JavaScript**. (Embora este tutorial use o compilador TypeScript, as etapas exigem que você comece com o modelo **JavaScript** .)
     
     Na caixa de diálogo que aparece, escolha **Criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na barra de menus superior, escolha **arquivo**  >  **novo**  >  **projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Web Node.js em Branco**, digite o nome **NodejsWebAppBlank** e escolha **OK**.
     ::: moniker-end
-    Se você não vir o modelo de projeto de **aplicativo Web Node.js em branco** , deverá adicionar a carga de trabalho de ** desenvolvimento deNode.js** . Confira instruções detalhadas nos [Pré-requisitos](#prerequisites).
+    Se você não vir o modelo de projeto de **aplicativo Web Node.js em branco** , deverá adicionar a carga de trabalho de **desenvolvimento deNode.js** . Confira instruções detalhadas nos [Pré-requisitos](#prerequisites).
 
     O Visual Studio cria a nova solução e abre seu projeto.
 
@@ -117,7 +117,7 @@ Este aplicativo requer um número de módulos npm para ser executado corretament
 * react
 * react-dom
 * express
-* caminho
+* path
 * ts-loader
 * typescript
 * webpack
@@ -180,7 +180,7 @@ Para este aplicativo simples, você pode adicionar novos arquivos de projeto à 
 
 1. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto **NodejsWebAppBlank** e escolha **Adicionar** > **Novo Item**.
 
-1. Na caixa de diálogo **Adicionar novo item** , escolha **arquivo TypeScript JSX**, digite o nome *app. TSX*e selecione **Adicionar** ou **OK**.
+1. Na caixa de diálogo **Adicionar novo item** , escolha **arquivo TypeScript JSX**, digite o nome *app. TSX* e selecione **Adicionar** ou **OK**.
 
 1. Repita essas etapas para adicionar *webpack-config.js*. Em vez de um arquivo JSX TypeScript, escolha **Arquivo JavaScript**.
 
@@ -369,7 +369,7 @@ Do Visual Studio 2019 em diante, é necessário um script de build. Em vez de tr
 
 1. Em *server.js*, clique na medianiz à esquerda da declaração `staticPath` para definir um ponto de interrupção:
 
-    ![Definir um ponto de interrupção](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
+    ![Captura de tela da janela do Visual Studio Code para server.js. Um ponto vermelho na medianiz à esquerda indica que uma interrupção está definida para a declaração staticPath.](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
     Pontos de interrupção são o recurso mais básico e essencial da depuração confiável. Um ponto de interrupção indica quando o Visual Studio deve suspender o código em execução para que você possa examinar os valores das variáveis ou o comportamento de memória ou se uma ramificação de código está sendo executada ou não.
 
@@ -407,7 +407,7 @@ Para este cenário, use o Chrome.
 2. Inicie seu navegador com a depuração habilitada.
 
     ::: moniker range=">=vs-2019"
-    A partir do Visual Studio 2019, você pode definir o `--remote-debugging-port=9222` sinalizador na inicialização do navegador selecionando **procurar com...** > na barra de ferramentas de **depuração** , escolhendo **Adicionar**e, em seguida, definindo o sinalizador no campo **argumentos** . Use um nome amigável diferente para o navegador, como **borda com depuração** ou **Chrome com depuração**. Para obter detalhes, confira [Notas sobre a versão](/visualstudio/releases/2019/release-notes-v16.2).
+    A partir do Visual Studio 2019, você pode definir o `--remote-debugging-port=9222` sinalizador na inicialização do navegador selecionando **procurar com...** > na barra de ferramentas de **depuração** , escolhendo **Adicionar** e, em seguida, definindo o sinalizador no campo **argumentos** . Use um nome amigável diferente para o navegador, como **borda com depuração** ou **Chrome com depuração**. Para obter detalhes, confira [Notas sobre a versão](/visualstudio/releases/2019/release-notes-v16.2).
 
     ![Definir o navegador para abrir com a depuração habilitada](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
@@ -436,13 +436,13 @@ Para este cenário, use o Chrome.
 
     Para *app-bundle.js*, defina o ponto de interrupção na `render()` função, conforme mostrado na ilustração a seguir:
 
-    ![Definir um ponto de interrupção](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+    ![Captura de tela da janela do Visual Studio Code para app-bundle.js. Um ponto vermelho na medianiz à esquerda indica que uma interrupção está definida na função render.](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Para localizar a `render()` função no arquivo de *app-bundle.js* transcompilado, use **Ctrl** + **F** (**Editar**  >  **Localizar e substituir**  >  **localização rápida**).
 
     Para *app. TSX*, defina o ponto de interrupção dentro da `render()` função, na `return` instrução.
 
-    ![Definir um ponto de interrupção](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
+    ![Captura de tela da janela do Visual Studio Code para app. TSX. Um ponto vermelho na medianiz à esquerda indica que uma interrupção está definida na instrução return da função render.](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
 
 2. Se você estiver definindo o ponto de interrupção no arquivo *. TSX* (em vez de *app-bundle.js*), precisará atualizar *webpack-config.js*. Substitua o código a seguir:
 
@@ -514,7 +514,7 @@ Para este cenário, use o Chrome.
       * Você fechou todas as instâncias de navegador, incluindo as extensões Chrome (usando o Gerenciador de tarefas), para que você possa executar o navegador no modo de depuração. Certifique-se de iniciar o navegador no modo de depuração.
 
       * Verifique se o arquivo de mapa de origem inclui uma referência a *./app.TSX* e não *webpack:///./app.TSX*, o que impede que o depurador do Visual Studio localize o *app. TSX*.
-       Como alternativa, se você precisar dividir o código em *app. TSX* e não puder fazê-lo, tente usar a `debugger;` instrução em *app. TSX*ou defina os pontos de interrupção no Chrome ferramentas para desenvolvedores (ou as ferramentas F12 para Microsoft Edge) em seu lugar.
+       Como alternativa, se você precisar dividir o código em *app. TSX* e não puder fazê-lo, tente usar a `debugger;` instrução em *app. TSX* ou defina os pontos de interrupção no Chrome ferramentas para desenvolvedores (ou as ferramentas F12 para Microsoft Edge) em seu lugar.
 
    * Se você precisar dividir o código em *app-bundle.js* e não puder fazê-lo, remova o arquivo do mapa de origem, *app-bundle.js. map*.
 

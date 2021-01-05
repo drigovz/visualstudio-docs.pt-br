@@ -1,17 +1,17 @@
 ---
 title: Configurações de inicialização das ferramentas de contêiner do Visual Studio
 author: ghogen
-description: Visão geral do processo de Build das ferramentas de contêiner
+description: Saiba mais sobre as configurações de inicialização para ferramentas de contêiner relacionadas ao modo como o Visual Studio lida com aplicativos em contêineres.
 ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: a1fdfbd3bf1f0969061365cd592f6054c7116b67
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 24a36bdbe0d3c6ac57b7595883301841ffa138e1
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780870"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846713"
 ---
 # <a name="container-tools-launch-settings"></a>Configurações de inicialização das ferramentas de contêiner
 
@@ -87,6 +87,6 @@ A configuração commandName identifica que esta seção se aplica a ferramentas
 
 Configure seu projeto definindo as [ferramentas de contêiner Propriedades de compilação](container-msbuild-properties.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 [Docker Compose Propriedades de compilação](docker-compose-properties.md)

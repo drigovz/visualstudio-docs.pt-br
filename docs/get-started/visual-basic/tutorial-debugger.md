@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Depurar Visual Basic código'
-description: Saiba como iniciar o depurador do Visual Studio, executar o código em etapas e inspecionar os dados.
+description: Conheça os recursos do depurador do Visual Studio e como iniciar o depurador, percorrer o código e inspecionar dados em um aplicativo Visual Basic.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 02/03/2020
 ms.technology: vs-ide-debug
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84ed0de3542822597c64e0866c04f719ed6c2ab7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 000b46223811490695562159822f61240d0cea66
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77027232"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847007"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Tutorial: aprenda a depurar código do Visual Basic usando o Visual Studio
 
@@ -280,7 +280,7 @@ Os recursos que permitem que você inspecione variáveis são uns dos mais útei
 
 1. Durante a pausa no loop `For`, clique na janela **Pilha de Chamadas** que fica aberta por padrão no painel inferior direito.
 
-    Se ele estiver fechado, abra-o enquanto estiver em pausa no depurador escolhendo **depurar**  >  **Windows**  >  **pilha de chamadas**do Windows.
+    Se ele estiver fechado, abra-o enquanto estiver em pausa no depurador escolhendo **depurar**  >    >  **pilha de chamadas** do Windows.
 
 2. Clique em **F11** algumas vezes até ver a pausa do depurador no `SendMessage` método. Examine a janela **Pilha de Chamadas**.
 

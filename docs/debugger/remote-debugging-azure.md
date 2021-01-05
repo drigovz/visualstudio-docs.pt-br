@@ -1,5 +1,6 @@
 ---
 title: ASP.NET Core de depuração remota no IIS e no Azure | Microsoft Docs
+description: Saiba como configurar e configurar um aplicativo ASP.NET Core do Visual Studio, implantá-lo no IIS usando o Azure e anexar o depurador remoto do Visual Studio.
 ms.custom: remotedebugging
 ms.date: 05/06/2020
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 926bd4a6630d9d99726ee6c1479d04c476756c18
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: b6535bb52221de780b9a8862be22a6a4deb79b57
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "92298742"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815835"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>ASP.NET Core de depuração remota no IIS no Azure no Visual Studio
 
@@ -29,13 +30,13 @@ A maneira recomendada para a depuração remota no Azure depende do seu cenário
 
     Nesse cenário, você deve implantar seu aplicativo do Visual Studio no Azure, mas não é necessário instalar ou configurar manualmente o IIS ou o depurador remoto (esses componentes são representados com linhas pontilhadas), conforme mostrado na ilustração a seguir.
 
-    ![Componentes do depurador remoto](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
+    ![Diagrama que mostra a relação entre o Visual Studio, Azure App Service e um aplicativo ASP.NET. O IIS e o depurador remoto são representados com linhas pontilhadas.](../debugger/media/remote-debugger-azure-app-service.png)
 
 * Para depurar o IIS em uma VM do Azure, siga as etapas neste tópico (consulte a seção [depuração remota em uma VM do Azure](#remote_debug_azure_vm)). Isso permite que você use uma configuração personalizada do IIS, mas as etapas de instalação e implantação são mais complicadas.
 
     Para uma VM do Azure, você deve implantar seu aplicativo do Visual Studio no Azure e também precisa instalar manualmente a função IIS e o depurador remoto, conforme mostrado na ilustração a seguir.
 
-    ![Componentes do depurador remoto](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
+    ![Diagrama mostrando a relação entre o Visual Studio, uma VM do Azure e um aplicativo ASP.NET. O IIS e o depurador remoto são representados com linhas sólidas.](../debugger/media/remote-debugger-azure-vm.png)
 
 * Para depurar ASP.NET Core no Service Fabric do Azure, consulte [depurar um aplicativo de Service Fabric remoto](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
@@ -60,7 +61,7 @@ Não há suporte para a depuração entre dois computadores conectados por meio 
 1. Crie um novo aplicativo ASP.NET Core.
 
     ::: moniker range=">=vs-2019"
-    No Visual Studio 2019, digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **ASP.net**, escolha **modelos**e, em seguida, escolha **criar novo ASP.NET Core aplicativo Web**. Na caixa de diálogo que aparece, nomeie o projeto **MyASPApp**e, em seguida, escolha **criar**. Em seguida, escolha **aplicativo Web (Model-View-Controller)** e, em seguida, escolha **criar**.
+    No Visual Studio 2019, digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **ASP.net**, escolha **modelos** e, em seguida, escolha **criar novo ASP.NET Core aplicativo Web**. Na caixa de diálogo que aparece, nomeie o projeto **MyASPApp** e, em seguida, escolha **criar**. Em seguida, escolha **aplicativo Web (Model-View-Controller)** e, em seguida, escolha **criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     No Visual Studio 2017, escolha **arquivo > novo projeto de >** e, em seguida, selecione **Visual C# > Web > ASP.NET Core aplicativo Web**. Na seção modelos de ASP.NET Core, selecione **aplicativo Web (Model-View-Controller)**. Certifique-se de que ASP.NET Core 2,1 está selecionado, que **habilitar o suporte ao Docker** não está selecionado e que a **autenticação** está definida como **sem autenticação**. Nomeie o projeto **MyASPApp**.
@@ -78,7 +79,7 @@ No Visual Studio, você pode publicar e depurar rapidamente seu aplicativo para 
 
     Se você já tiver configurado anteriormente quaisquer perfis de publicação, o painel **Publicar** será exibido. Clique em **novo perfil**.
 
-1. Escolha **Azure app serviço** na caixa de diálogo **publicar** , selecione **criar novo**e siga os prompts para criar um perfil.
+1. Escolha **Azure app serviço** na caixa de diálogo **publicar** , selecione **criar novo** e siga os prompts para criar um perfil.
 
     Para obter instruções detalhadas, confira [Implantar um aplicativo Web do ASP.NET Core no Azure usando o Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
@@ -96,7 +97,7 @@ No Visual Studio, você pode publicar e depurar rapidamente seu aplicativo para 
 
     O ponto de interrupção deve ser atingido no Visual Studio.
 
-    É isso! O restante das etapas neste tópico se aplica à depuração remota em uma VM do Azure.
+    Pronto! O restante das etapas neste tópico se aplica à depuração remota em uma VM do Azure.
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-vm"></a><a name="remote_debug_azure_vm"></a> ASP.NET Core de depuração remota em uma VM do Azure
 
@@ -201,13 +202,13 @@ Se você estiver importando configurações de publicação, poderá ignorar est
 
 3. Defina o campo **alias** como **MyASPApp** e o campo pool de aplicativos como **sem código gerenciado**. Defina o **caminho físico** para **C:\Publish** (em que, posteriormente, você implantará o projeto ASP.NET Core).
 
-4. Com o site selecionado no Gerenciador do IIS, escolha **Editar permissões**e verifique se IUSR, IIS_IUSRS ou o usuário configurado para o pool de aplicativos é um usuário autorizado com direitos de execução de leitura &.
+4. Com o site selecionado no Gerenciador do IIS, escolha **Editar permissões** e verifique se IUSR, IIS_IUSRS ou o usuário configurado para o pool de aplicativos é um usuário autorizado com direitos de execução de leitura &.
 
     Se você não vir um desses usuários com acesso, siga as etapas para adicionar IUSR como um usuário com direitos de execução de leitura &.
 
 ### <a name="optional-publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>Adicional Publicar e implantar o aplicativo publicando em uma pasta local do Visual Studio
 
-Se você não estiver usando Implantação da Web, deverá publicar e implantar o aplicativo usando o sistema de arquivos ou outras ferramentas. Você pode começar criando um pacote usando o sistema de arquivos e, em seguida, implantar o pacote manualmente ou usar outras ferramentas, como PowerShell, RoboCopy ou XCopy. Nesta seção, presumimos que você esteja copiando o pacote manualmente se não estiver usando Implantação da Web.
+Se você não estiver usando Implantação da Web, deverá publicar e implantar o aplicativo usando o sistema de arquivos ou outras ferramentas. Você pode começar criando um pacote usando o sistema de arquivos e, em seguida, implantar o pacote manualmente ou usar outras ferramentas, como PowerShell, Robocopy ou XCopy. Nesta seção, presumimos que você esteja copiando o pacote manualmente se não estiver usando Implantação da Web.
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
@@ -234,13 +235,13 @@ Baixe a versão das ferramentas remotas que corresponde à sua versão do Visual
 
 3. Defina o campo qualificador como **\<remote computer name>** e pressione **Enter**.
 
-    Verifique se o Visual Studio adiciona a porta necessária ao nome do computador, que aparece no formato: ** \<remote computer name> :p classificar**
+    Verifique se o Visual Studio adiciona a porta necessária ao nome do computador, que aparece no formato: **\<remote computer name> :p classificar**
 
     ::: moniker range=">=vs-2019"
-    No Visual Studio 2019, você deve ver ** \<remote computer name> : 4024**
+    No Visual Studio 2019, você deve ver **\<remote computer name> : 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    No Visual Studio 2017, você deve ver ** \<remote computer name> : 4022**
+    No Visual Studio 2017, você deve ver **\<remote computer name> : 4022**
     ::: moniker-end
     A porta é necessária. Se você não vir o número da porta, adicione-o manualmente.
 
@@ -270,7 +271,7 @@ Baixe a versão das ferramentas remotas que corresponde à sua versão do Visual
 
 7. Clique em **Anexar**.
 
-8. Abra o site do computador remoto. Em um navegador, acesse **http:// \<remote computer name> **.
+8. Abra o site do computador remoto. Em um navegador, acesse **http:// \<remote computer name>**.
 
     Você deve ver a página da Web do ASP.NET.
 9. No aplicativo ASP.NET em execução, clique no link para a página **sobre** .

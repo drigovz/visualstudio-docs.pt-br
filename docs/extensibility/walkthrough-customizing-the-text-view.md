@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: Personalizando a exibição de texto | Microsoft Docs'
+description: Saiba como personalizar uma exibição de texto modificando qualquer uma das várias propriedades em seu mapa de formato de editor usando este passo a passos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b7a62ee2b55bf2b56ae1d8e28fc1910ed444c29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 057e2a68e1d9a130f69441d8aec4b6a7fe0249e9
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904935"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862964"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Walkthrough: personalizar a exibição de texto
 Você pode personalizar uma exibição de texto modificando qualquer uma das seguintes propriedades em seu mapa de formato de editor:
@@ -37,7 +39,7 @@ Você pode personalizar uma exibição de texto modificando qualquer uma das seg
 
 ## <a name="create-a-mef-project"></a>Criar um projeto do MEF
 
-1. Crie um projeto VSIX em C#. (Na caixa de diálogo **novo projeto** , selecione **Visual C#/extensibilidade**e, em seguida, **projeto VSIX**.) Nomeie a solução `ViewPropertyTest` .
+1. Crie um projeto VSIX em C#. (Na caixa de diálogo **novo projeto** , selecione **Visual C#/extensibilidade** e, em seguida, **projeto VSIX**.) Nomeie a solução `ViewPropertyTest` .
 
 2. Adicione um modelo de item de classificação do editor ao projeto. Para obter mais informações, consulte [criar uma extensão com um modelo de item do editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
@@ -91,5 +93,5 @@ Você pode personalizar uma exibição de texto modificando qualquer uma das seg
 
 5. Ative o espaço em branco visível. (No menu **Editar** , aponte para **avançado** e clique em **Exibir espaço em branco**). Digite algumas guias no texto. As setas vermelhas que representam as guias devem ser exibidas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Pontos de extensão do serviço de linguagem e do editor](../extensibility/language-service-and-editor-extension-points.md)

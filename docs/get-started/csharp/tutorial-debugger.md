@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: depurar código C#'
-description: Saiba como iniciar o depurador do Visual Studio, executar o código em etapas e inspecionar os dados.
+description: Conheça os recursos do depurador do Visual Studio e como iniciar o depurador, percorrer o código e inspecionar dados em um aplicativo C#.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 04/23/2020
 ms.technology: vs-ide-debug
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d6e9ee79602f3a0db8f68d701120c450bfee721
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 435564a9bf4e90dd25ed5fee3a44d0578c201a99
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82153051"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846948"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: aprenda a depurar código C# usando o Visual Studio
 
@@ -187,7 +187,7 @@ Geralmente, usamos atalhos de teclado aqui porque essa é uma boa maneira de exe
 
 1. Expanda a `letters` variável para ver suas propriedades, que incluem todos os elementos que a variável contém.
 
-     ![Exibir uma dica de dados](../csharp/media/get-started-view-data-tip.png "Exibir uma dica de dados")
+     ![Captura de tela do depurador do Visual Studio com a instrução ' name + = Letters [I] ' realçada e uma lista suspensa que mostra os elementos na matriz de letras.](../csharp/media/get-started-view-data-tip.png)
 
 1. Em seguida, passe o mouse sobre a `name` variável e você verá seu valor atual, uma cadeia de caracteres vazia.
 
@@ -195,9 +195,9 @@ Geralmente, usamos atalhos de teclado aqui porque essa é uma boa maneira de exe
 
      F10 avança o depurador para a próxima instrução sem passar para funções ou métodos no seu código de aplicativo (o código ainda é executado). Ao pressionar F10 na `SendMessage` chamada do método, ignoramos o código de implementação para `SendMessage` (que talvez não estejamos interessados no momento).
 
-1. Pressione **F10** (ou **depure**  >  as**etapas**) algumas vezes para iterar várias vezes pelo `for` loop, pausando novamente no ponto de interrupção e passando o mouse sobre a `name` variável a cada vez para verificar seu valor.
+1. Pressione **F10** (ou **depure**  >  as **etapas**) algumas vezes para iterar várias vezes pelo `for` loop, pausando novamente no ponto de interrupção e passando o mouse sobre a `name` variável a cada vez para verificar seu valor.
 
-     ![Exibir uma dica de dados](../csharp/media/get-started-data-tip.gif "Exibir uma dica de dados")
+     ![Uma captura de tela animada do depurador do Visual Studio mostrando o efeito de pressionar F10 para "percorrer" e iterar por meio de um loop durante a depuração.](../csharp/media/get-started-data-tip.gif)
 
      O valor da variável é alterado com cada iteração do `for` loop, mostrando valores de `f` , então, `fr` `fre` e assim por diante. Para avançar o depurador por meio do loop mais rapidamente neste cenário, você pode pressionar **F5** (ou escolher **depurar**  >  **continuar**) em vez disso, o que o avança para o ponto de interrupção em vez da próxima instrução.
 
@@ -278,7 +278,7 @@ O depurador para novamente no ponto de interrupção que você definiu anteriorm
 
 1. Durante a pausa no loop `for`, clique na janela **Pilha de Chamadas** que fica aberta por padrão no painel inferior direito.
 
-    Se ele estiver fechado, abra-o enquanto estiver em pausa no depurador escolhendo **depurar**  >  **Windows**  >  **pilha de chamadas**do Windows.
+    Se ele estiver fechado, abra-o enquanto estiver em pausa no depurador escolhendo **depurar**  >    >  **pilha de chamadas** do Windows.
 
 2. Clique em **F11** algumas vezes até ver a pausa do depurador no `SendMessage` método. Examine a janela **Pilha de Chamadas**.
 

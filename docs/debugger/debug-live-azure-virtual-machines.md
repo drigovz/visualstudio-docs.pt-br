@@ -1,6 +1,6 @@
 ---
 title: Depurar a VM do Azure ASP.NET e conjuntos de dimensionamento dinâmicos
-description: Saiba como configurar o snappoints e exibir instantâneos com o Depurador de Instantâneos.
+description: Saiba como usar o Depurador de Instantâneos no Visual Studio para definir snappoints e tirar instantâneos ao depurar aplicativos ASP.NET ao vivo em VMs do Azure e conjuntos de dimensionamento.
 ms.custom: SEO-VS-2020
 ms.date: 02/06/2019
 ms.topic: how-to
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 040fdee43262279a834978a4619b62fb62b10345
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9ed85616080859cd69c44c66b442f3f46d81f51a
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809551"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846961"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Depurar aplicativos ASP.NET dinâmicos em máquinas virtuais do Azure e conjuntos de dimensionamento de máquinas virtuais do Azure usando o Depurador de Instantâneos
 

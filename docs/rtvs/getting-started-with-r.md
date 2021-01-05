@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: be0ba7b32af5247bb0dccccb68d900cb6797cc13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8be766e078a04d713ed69aa0b9cc464433dcb73d
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801172"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761388"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Introdução às Ferramentas do R para Visual Studio
 
@@ -62,7 +62,7 @@ Depois de instalar as RTVS (Ferramentas do R para Visual Studio) (consulte [Inst
 
 1. Alguns comandos, como `plot(1:100)`, abrem uma nova janela no Visual Studio quando a saída não pode ser exibida diretamente na janela interativa:
 
-    ![Exibição de um gráfico no Visual Studio](media/getting-started-07-plot-window.png)
+    ![Captura de tela de uma janela de plotagem do Visual Studio R exibindo a saída da plotagem da função de grafo (1:100).](media/getting-started-07-plot-window.png)
 
 A janela interativa também permite que você examine seu histórico, carregue e salve workspaces, anexe a um depurador e interaja com os arquivos de código-fonte em vez de usar os recursos de copiar e colar. Consulte [Trabalhando com a janela do R Interativo](interactive-repl-for-r-in-visual-studio.md) para obter detalhes.
 
@@ -70,7 +70,7 @@ A janela interativa também permite que você examine seu histórico, carregue e
 
 O rápido trabalho com a janela interativa demonstra recursos de edição básicos como o IntelliSense que também funcionam no editor de código. Se inserir o mesmo código que antes, você verá os mesmos prompts de preenchimento automático e do IntelliSense, mas não a saída.
 
-Escrever código em um arquivo *.R* permite que você veja todo o código de uma vez e facilita a realização de pequenas alterações e a rápida visualização do resultado por meio da execução do código na janela interativa. Você também pode ter quantos arquivos desejar em um projeto. Quando o código está em um arquivo, você também pode executá-lo passo a passo no depurador (discutido posteriormente neste artigo). Esses recursos são muito úteis para desenvolver algoritmos computacionais e escrever código para manipular um ou mais conjuntos de dados, principalmente quando se deseja examinar todos os resultados intermediários.
+Escrever código em um arquivo *.R* permite que você veja todo o código de uma vez e facilita a realização de pequenas alterações e a rápida visualização do resultado por meio da execução do código na janela interativa. Você também pode ter quantos arquivos desejar em um projeto. Quando o código estiver em um arquivo, você também poderá executá-lo passo a passo no depurador (discutido posteriormente neste artigo). Esses recursos são muito úteis para desenvolver algoritmos computacionais e escrever código para manipular um ou mais conjuntos de dados, principalmente quando se deseja examinar todos os resultados intermediários.
 
 Por exemplo, as seguintes etapas criam um pequeno código para explorar o [Teorema central do limite](https://en.wikipedia.org/wiki/Central_limit_theorem) (Wikipédia). [Este exemplo é adaptado do *Cookbook do R* (Guia do R) de Paul Teetor.]
 
@@ -86,7 +86,7 @@ Por exemplo, as seguintes etapas criam um pequeno código para explorar o [Teore
 
 1. Para ver rapidamente os resultados, selecione todo o código (**Ctrl** + **a**), pressione **Ctrl** + **Enter** ou clique com o botão direito do mouse e selecione **executar em interativo**. Todo o código selecionado é executado na janela interativa como se você o digitasse diretamente em uma janela de gráficos:
 
-    ![Exibição de um gráfico no Visual Studio](media/getting-started-08-plot1.png)
+    ![Captura de tela de uma janela de plotagem do Visual Studio R exibindo um grafo de densidade da população.](media/getting-started-08-plot1.png)
 
 1. Para uma única linha, basta pressionar **Ctrl** + **Enter** a qualquer momento para executar essa linha na janela interativa.
 
@@ -135,7 +135,7 @@ Há mais coisas que você pode fazer no editor. Para obter detalhes, confira [Ed
 
 Uma das principais vantagens do Visual Studio é sua interface do usuário de depuração. As RTVS incrementam essa base sólida e adicionam uma interface do usuário inovadora como o [Gerenciador de Variáveis](variable-explorer.md). Aqui, vamos apenas dar uma primeira olhada na depuração.
 
-1. Para começar, redefina o espaço de trabalho atual para limpar tudo o que você fez até **R Tools**agora usando o  >  **Session**  >  comando de menu**redefinição** de sessão de ferramentas de R. Por padrão, tudo o que você faz na janela interativa é acumulado para a sessão atual, que também será usado pelo depurador. Ao redefinir a sessão, você garante que a sessão de depuração seja iniciada sem nenhum dado preexistente. O comando **Redefinir**, no entanto, não afeta seu arquivo de origem *script.R*, pois ele é gerenciado e salvo fora do workspace.
+1. Para começar, redefina o espaço de trabalho atual para limpar tudo o que você fez até agora usando o  >    >  comando de menu **redefinição** de sessão de ferramentas de R. Por padrão, tudo o que você faz na janela interativa é acumulado para a sessão atual, que também será usado pelo depurador. Ao redefinir a sessão, você garante que a sessão de depuração seja iniciada sem nenhum dado preexistente. O comando **Redefinir**, no entanto, não afeta seu arquivo de origem *script.R*, pois ele é gerenciado e salvo fora do workspace.
 
 1. Com o arquivo *script.R* criado na seção anterior, defina um ponto de interrupção na linha que começa com `pop <-` colocando o cursor nessa linha e, em seguida, pressionando **F9** ou selecionando o comando de menu **Depurar** > **Alternar Ponto de Interrupção**. Como alternativa, clique na margem esquerda (ou na medianiz) para aquela linha em que o ponto de interrupção vermelho aparece:
 
@@ -163,7 +163,7 @@ Para aprofundar-se, consulte [Depuração](debugging-r-in-visual-studio.md) e [G
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Neste passo a passo, você aprendeu as noções básicos de projetos R, usando a janela interativa, edição de código e depuração no Visual Studio. Para continuar a explorar mais recursos, veja os artigos a seguir, bem como os artigos mostrados no índice:
+Neste passo a passo, você aprendeu as noções básicos de projetos R, usando a janela interativa, edição de código e depuração no Visual Studio. Para continuar a explorar mais recursos, consulte os artigos e artigos a seguir mostrados no Sumário:
 
 - [Projetos de exemplo](getting-started-samples.md)
 - [Editando código](editing-r-code-in-visual-studio.md)

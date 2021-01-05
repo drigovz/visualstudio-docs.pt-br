@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: b28d87cc0842d5a3de8634ae50378915196366ff
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 484cb82a3659e306bd4c6bd14a3133c4677160db
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527919"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833332"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: criar um aplicativo de console C# simples no Visual Studio
 
@@ -108,7 +108,7 @@ Se você não vir o modelo de projeto _ *aplicativo de console (.NET Core)**, po
    
 ::: moniker-end
 
-## <a name="create-the-app"></a>Crie o aplicativo
+## <a name="create-the-app"></a>Criar o aplicativo
 
 Primeiro, exploraremos os cálculos matemáticos básicos de inteiro em C#. Em seguida, adicionaremos o código para criar uma calculadora básica. Depois disso, depuraremos o aplicativo para encontrar e corrigir erros. E, por fim, refinaremos o código para torná-lo mais eficiente.
 
@@ -282,7 +282,7 @@ Vamos examinar alguns erros comuns de entrada do usuário, localizá-los no depu
 
 Quando você tenta dividir um número por zero, o aplicativo de console pode congelar e, em seguida, mostrar o que há de errado no editor de código.
 
-   ![O editor de códigos do Visual Studio mostra o erro de divisão por zero](./media/csharp-console-calculator-dividebyzero-error.png)
+   ![Captura de tela do editor de código do Visual Studio mostrando uma linha realçada em amarelo e um erro sem tratamento de exceção para ' tentativa de dividir por zero '.](./media/csharp-console-calculator-dividebyzero-error.png)
 
 > [!NOTE]
 > Às vezes, o aplicativo não congela e o depurador não mostrará um erro de divisão por zero. Em vez disso, o aplicativo pode retornar um resultado não numérico inesperado, como um símbolo de infinito. A correção de código a seguir ainda se aplica.
@@ -311,7 +311,7 @@ Vamos alterar o código para tratar esse erro.
 
 Agora, quando você dividir qualquer número por zero, o aplicativo solicitará outro número. Melhor ainda: não irá parar de perguntar até que você forneça um número diferente de zero.
 
-   ![Correção do erro de divisão por zero](./media/csharp-console-calculator-dividebyzero.png)
+   ![Captura de tela do editor de código do Visual Studio mostrando o código para a instrução switch com a verificação de entrada de um divisor diferente de zero adicionado.](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>Corrigir o erro de "formato"
 
@@ -620,7 +620,7 @@ Continue com a segunda parte deste tutorial:
 > [Continuar com a parte 2](tutorial-console-part-2.md)
 :::moniker-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
 * [Aprenda a depurar o código C# no Visual Studio](tutorial-debugger.md)

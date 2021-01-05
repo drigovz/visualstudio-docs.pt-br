@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: a7bf174191a6a2fb013aa3d25880b01bc2e7f070
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d11ffcb2c43d2c519d75d43afad6383e0bfaa44a
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801666"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761271"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Início rápido: abrir e executar o código Python em uma pasta
 
@@ -60,7 +60,7 @@ Depois de [instalar o suporte ao Python no Visual Studio 2019](installing-python
 
 1. Para executar o código em um ambiente diferente, selecione o ambiente do controle de lista suspensa na barra de ferramentas e inicie novamente o item de inicialização.
 
-1. Para fechar a pasta no Visual Studio, selecione o comando **arquivo**  >  menu**fechar pasta** .
+1. Para fechar a pasta no Visual Studio, selecione o comando **arquivo**  >  menu **fechar pasta** .
 
 ## <a name="set-a-working-directory"></a>Definir um diretório de trabalho
 
@@ -70,11 +70,11 @@ Nesses casos, você também deve adicionar uma linha ao arquivo JSON de configur
 
 1. Clique com o botão direito do mouse no arquivo de inicialização do Python (*.py*) no **Gerenciador de Soluções** e selecione **Configurações de Depuração e de Inicialização**.
 
-    ![O comando de Configurações de Depuração e de Inicialização para um arquivo Python](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
+    ![Captura de tela da exibição de pasta Gerenciador de Soluções com o arquivo contemplate-koans.py selecionado e configurações de depuração e inicialização selecionadas no menu de contexto.](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
 
 1. Na caixa de diálogo **Selecionar depurador** que aparece, selecione **Padrão** e escolha **Selecionar**.
 
-    ![O comando de Configurações de Depuração e de Inicialização para um arquivo Python](media/quickstart-open-folder/10-select-debugger.png)
+    ![Captura de tela da caixa de diálogo Selecionar um depurador com o depurador padrão selecionado e o botão Selecionar escolhido.](media/quickstart-open-folder/10-select-debugger.png)
 
     > [!Note]
     > Se você não vir o **padrão** como uma opção, certifique-se de escolher um arquivo Python *. py* ao selecionar o comando **configurações de depuração e inicialização** . O Visual Studio usa o tipo de arquivo para determinar quais opções do depurador exibir.
@@ -109,7 +109,7 @@ Nesses casos, você também deve adicionar uma linha ao arquivo JSON de configur
 > [!div class="nextstepaction"]
 > [Tutorial: trabalhar com Python no Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Início Rápido: Criar um projeto do Python com base em código existente](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
 - [Início rápido: criar um projeto Python por meio de um repositório](quickstart-03-python-in-visual-studio-project-from-repository.md)

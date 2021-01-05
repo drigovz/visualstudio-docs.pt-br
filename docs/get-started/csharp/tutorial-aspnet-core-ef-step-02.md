@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 6852ac1148c9a8001476eb9bb68e9e97d66e3eed
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 21052d59205c7ddc14247f180348fea3b8d5652a
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780994"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833241"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Etapa 2: criar seu primeiro aplicativo Web ASP.NET Core
 
@@ -68,9 +68,9 @@ O Host da Web criado no *Program.cs* faz referência à classe Startup e chama o
 
 ### <a name="indexcshtml"></a>Index.cshtml
 
-A home page para o site inclui um pouco de marcação HTML e algum código do Razor do lado servidor. Ele usa o Razor para especificar o modelo de página, `IndexModel`, que está localizado no arquivo *Index.cshtml.cs* associado. Ele também define o título da página, definindo um valor em ViewData. Esse valor ViewData é lido no arquivo * \_ layout. cshtml* , localizado na pasta compartilhada dentro da pasta páginas. O arquivo de Layout é compartilhado por várias Razor Pages e fornece a aparência e experiência comuns para o aplicativo. O conteúdo de cada página é renderizado dentro HTML do arquivo de Layout.
+A home page para o site inclui um pouco de marcação HTML e algum código do Razor do lado servidor. Ele usa o Razor para especificar o modelo de página, `IndexModel`, que está localizado no arquivo *Index.cshtml.cs* associado. Ele também define o título da página, definindo um valor em ViewData. Esse valor ViewData é lido no arquivo *\_ layout. cshtml* , localizado na pasta compartilhada dentro da pasta páginas. O arquivo de Layout é compartilhado por várias Razor Pages e fornece a aparência e experiência comuns para o aplicativo. O conteúdo de cada página é renderizado dentro HTML do arquivo de Layout.
 
-## <a name="run-the-application"></a>Executar o aplicativo
+## <a name="run-the-application"></a>Execute o aplicativo
 
 Agora execute o aplicativo e exiba-o no navegador. Você pode executar o aplicativo usando **Ctrl** + **F5** ou escolhendo **depurar**  >  **Iniciar sem Depurar** no menu do Visual Studio.
 
@@ -94,7 +94,7 @@ Substitua o conteúdo de `<div>` em *Index.cshtml* por esta marcação:
 
 Execute o aplicativo novamente. Você deve ver a página agora exibindo a hora atual, mas é sempre meia-noite! Isso não está certo.
 
-![Projeto do ASP.NET Core no Visual Studio 2019 no navegador](media/vs-2019/vs2019-app-in-browser.png)
+![Captura de tela da home page do aplicativo em uma janela do navegador. O conteúdo da página é lido: "é 12:00 agora mesmo no servidor!".](media/vs-2019/vs2019-app-in-browser.png)
 
 ## <a name="debug-the-application"></a>Depurar o aplicativo
 
@@ -102,7 +102,7 @@ Adicione um ponto de interrupção para o método `OnGet` no local em que estamo
 
 A execução é interrompida na linha e você pode ver que `DateTime.Today` inclui a data, mas a hora sempre é meia-noite, porque ele não inclui dados de horário.
 
-![Projeto do ASP.NET Core no Visual Studio 2019 no navegador](media/vs-2019/vs2019-breakpoint.png)
+![Captura de tela mostrando o código para Index.cshtml.cs no Visual Studio. Um ponto de interrupção é definido na linha, ' time = DateTime. Today. ToShortTimeString (); '.](media/vs-2019/vs2019-breakpoint.png)
 
 Altere-o para usar `DateTime.Now` e continue a executar. O novo código para `OnGet` deve ser:
 
@@ -118,7 +118,7 @@ Agora você deve ver o tempo real do servidor no navegador quando você navega p
 > [!NOTE]
 > Sua saída pode diferir da imagem, já que o formato de saída de ToShortDateTimeString depende da configuração de cultura atual. Consulte <xref:System.DateTime.ToShortTimeString>.
 
-![Projeto do ASP.NET Core no Visual Studio 2019 no navegador](media/vs-2019/vs2019-app-fixed-in-browser.png)
+![Captura de tela da home page do aplicativo em uma janela do navegador. O conteúdo da página é lido: "é 1:46 agora mesmo no servidor!".](media/vs-2019/vs2019-app-fixed-in-browser.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -126,6 +126,6 @@ No próximo vídeo, você aprenderá como adicionar suporte a dados em seu aplic
 
 [Tutorial: trabalhando com dados em seu aplicativo ASP.NET Core](tutorial-aspnet-core-ef-step-03.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Tutorial: criar um aplicativo Web Razor Pages com ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)

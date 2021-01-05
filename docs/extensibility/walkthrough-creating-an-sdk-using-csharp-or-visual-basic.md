@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: Criando um SDK usando C# ou Visual Basic | Microsoft Docs'
+description: Saiba como criar um SDK de biblioteca de matemática simples usando o Visual C# e, em seguida, empacotar o SDK como uma extensão do Visual Studio usando este passo a passos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
@@ -11,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 73cd76445adb798be078461e5b209e35f8b8163c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9000290b146275ca495b49211c9823422b0a32f
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904970"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862951"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Walkthrough: criar um SDK usando C# ou Visual Basic
 Neste tutorial, você aprenderá a criar um SDK de biblioteca de matemática simples usando o Visual C# e, em seguida, empacotará o SDK como uma extensão do Visual Studio (VSIX). Você concluirá os seguintes procedimentos:
@@ -35,7 +37,7 @@ Neste tutorial, você aprenderá a criar um SDK de biblioteca de matemática sim
 
 2. Na lista de modelos, expanda **Visual C#** ou **Visual Basic**, escolha o nó **Windows Store** e, em seguida, escolha o modelo de **componente de Windows Runtime** .
 
-3. Na caixa **nome** , especifique **SimpleMath**e, em seguida, escolha o botão **OK** .
+3. Na caixa **nome** , especifique **SimpleMath** e, em seguida, escolha o botão **OK** .
 
 4. No **Gerenciador de soluções**, abra o menu de atalho para o nó do projeto **SimpleMath** e escolha **Propriedades**.
 
@@ -50,7 +52,7 @@ Neste tutorial, você aprenderá a criar um SDK de biblioteca de matemática sim
 
 7. Na lista **configuração de solução ativa** , escolha **liberar**.
 
-8. Na coluna **configuração** , verifique se **SimpleMath** linha está definida como **liberar**e, em seguida, escolha o botão **fechar** para aceitar a alteração.
+8. Na coluna **configuração** , verifique se **SimpleMath** linha está definida como **liberar** e, em seguida, escolha o botão **fechar** para aceitar a alteração.
 
    > [!IMPORTANT]
    > O SDK para o componente SimpleMath inclui apenas uma configuração. Essa configuração deve ser a compilação de versão ou os aplicativos que usam o componente não passarão na certificação para o [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)] .
@@ -63,7 +65,7 @@ Neste tutorial, você aprenderá a criar um SDK de biblioteca de matemática sim
 
 2. Na lista de modelos, expanda **Visual C#** ou **Visual Basic**, escolha o nó **extensibilidade** e, em seguida, escolha o modelo de **projeto VSIX** .
 
-3. Na caixa **nome** , especifique **SimpleMathVSIX**e, em seguida, escolha o botão **OK** .
+3. Na caixa **nome** , especifique **SimpleMathVSIX** e, em seguida, escolha o botão **OK** .
 
 4. Em **Gerenciador de soluções**, escolha o item **origem. extensão. vsixmanifest** .
 
@@ -77,11 +79,11 @@ Neste tutorial, você aprenderá a criar um SDK de biblioteca de matemática sim
 
 8. Na barra de menus, escolha **projeto**  >  **Adicionar novo item**.
 
-9. Na lista de **itens comuns**, expanda **dados**e, em seguida, escolha **arquivo XML**.
+9. Na lista de **itens comuns**, expanda **dados** e, em seguida, escolha **arquivo XML**.
 
 10. Na caixa **nome** , especifique `SDKManifest.xml` e, em seguida, escolha o botão **Adicionar** .
 
-11. No **Gerenciador de soluções**, abra o menu de atalho para `SDKManifest.xml` , escolha **Propriedades**e, em seguida, altere o valor da propriedade **include in VSIX** para **true**.
+11. No **Gerenciador de soluções**, abra o menu de atalho para `SDKManifest.xml` , escolha **Propriedades** e, em seguida, altere o valor da propriedade **include in VSIX** para **true**.
 
 12. Substitua o conteúdo do arquivo pelo XML a seguir:
 
@@ -111,11 +113,11 @@ Neste tutorial, você aprenderá a criar um SDK de biblioteca de matemática sim
     </FileList>
     ```
 
-13. No **Gerenciador de soluções**, abra o menu de atalho para o projeto **SimpleMathVSIX** , escolha **Adicionar**e, em seguida, escolha **nova pasta**.
+13. No **Gerenciador de soluções**, abra o menu de atalho para o projeto **SimpleMathVSIX** , escolha **Adicionar** e, em seguida, escolha **nova pasta**.
 
 14. Renomeie a pasta como `references` .
 
-15. Abra o menu de atalho para a pasta **referências** , escolha **Adicionar**e, em seguida, escolha **nova pasta**.
+15. Abra o menu de atalho para a pasta **referências** , escolha **Adicionar** e, em seguida, escolha **nova pasta**.
 
 16. Renomeie a subpasta para `commonconfiguration` , crie uma subpasta dentro dela e nomeie a subpasta `neutral` .
 
@@ -140,7 +142,7 @@ Neste tutorial, você aprenderá a criar um SDK de biblioteca de matemática sim
 
 23. Na barra de menus, escolha **Exibir**  >  **Propriedades** (teclado: escolha a tecla **F4** ).
 
-24. Na janela **Propriedades** , altere a propriedade **ação de compilação** para **conteúdo**e, em seguida, altere a propriedade **incluir na VSIX** para **true**.
+24. Na janela **Propriedades** , altere a propriedade **ação de compilação** para **conteúdo** e, em seguida, altere a propriedade **incluir na VSIX** para **true**.
 
 25. Em **Gerenciador de soluções**, repita esse processo para **SimpleMath. pri**.
 
@@ -158,13 +160,13 @@ Neste tutorial, você aprenderá a criar um SDK de biblioteca de matemática sim
 
 1. Na barra de menus, escolha **arquivo**  >  **novo**  >  **projeto**.
 
-2. Na lista de modelos, expanda **Visual C#** ou **Visual Basic**e, em seguida, escolha o nó **Windows Store** .
+2. Na lista de modelos, expanda **Visual C#** ou **Visual Basic** e, em seguida, escolha o nó **Windows Store** .
 
-3. Escolha o modelo de **aplicativo em branco** , nomeie o projeto **ArithmeticUI**e escolha o botão **OK** .
+3. Escolha o modelo de **aplicativo em branco** , nomeie o projeto **ArithmeticUI** e escolha o botão **OK** .
 
 4. No **Gerenciador de soluções**, abra o menu de atalho para o projeto **ArithmeticUI** e escolha **Adicionar**  >  **referência**.
 
-5. Na lista de tipos de referência, expanda **Windows**e, em seguida, escolha **extensões**.
+5. Na lista de tipos de referência, expanda **Windows** e, em seguida, escolha **extensões**.
 
 6. No painel de detalhes, escolha a extensão de **biblioteca matemática do WinRT** .
 
@@ -178,7 +180,7 @@ Neste tutorial, você aprenderá a criar um SDK de biblioteca de matemática sim
 
      Agora você pode explorar o que está no SDK.
 
-10. No **Gerenciador de soluções**, abra **MainPage. XAML**e substitua seu conteúdo pelo XAML a seguir:
+10. No **Gerenciador de soluções**, abra **MainPage. XAML** e substitua seu conteúdo pelo XAML a seguir:
 
     **C#**
 
@@ -245,7 +247,7 @@ Neste tutorial, você aprenderá a criar um SDK de biblioteca de matemática sim
 
     Você criou e usou com êxito um SDK de extensão.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Walkthrough: criar um SDK usando C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [Walkthrough: criar um SDK usando JavaScript](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)
 - [Criar um Software Development Kit](../extensibility/creating-a-software-development-kit.md)

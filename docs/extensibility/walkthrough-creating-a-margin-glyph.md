@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: Criando um glifo de margem | Microsoft Docs'
+description: Saiba como personalizar a aparência das margens do editor usando extensões de editor personalizadas usando este passo a passos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b94ab61f56d74537758c189adc9c104516f67f92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8a2ac481ebf76fc2b34be841cd20d15b97fcfa9
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905053"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863088"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>Walkthrough: criar um glifo de margem
 Você pode personalizar a aparência das margens do editor usando extensões de editor personalizadas. Este passo a passos coloca um glifo personalizado na margem do indicador sempre que a palavra "todo" aparecer em um comentário de código.
@@ -25,7 +27,7 @@ Você pode personalizar a aparência das margens do editor usando extensões de 
 
 ## <a name="create-a-mef-project"></a>Criar um projeto do MEF
 
-1. Crie um projeto VSIX em C#. (Na caixa de diálogo **novo projeto** , selecione **Visual C#/extensibilidade**e, em seguida, **projeto VSIX**.) Nomeie a solução `TodoGlyphTest` .
+1. Crie um projeto VSIX em C#. (Na caixa de diálogo **novo projeto** , selecione **Visual C#/extensibilidade** e, em seguida, **projeto VSIX**.) Nomeie a solução `TodoGlyphTest` .
 
 2. Adicione um item de projeto de classificação do editor. Para obter mais informações, consulte [criar uma extensão com um modelo de item do editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 

@@ -1,6 +1,7 @@
 ---
 title: Anexar a processos em execução com o depurador
-ms.custom: seodec18
+description: Descubra como anexar o depurador do Visual Studio a um processo em execução em um computador local ou remoto.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/12/2020
 ms.topic: conceptual
 f1_keywords:
@@ -28,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a33af839406497a2a30fba2f5103a64a1da36ed7
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 1fd1ff5ff0f8c7510185236c425ddd870f8b500f
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671440"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97760920"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar a processos em execução com o depurador do Visual Studio
 
@@ -58,7 +59,7 @@ Para reanexar rapidamente a um processo que você anexou anteriormente, consulte
 
 1. Defina o **destino da conexão com** o nome do computador local.
 
-   ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process")
+   ![Captura de tela da caixa de diálogo anexar ao processo, com o destino de conexão definido como o nome do computador local.](../debugger/media/DBG_Basics_Attach_To_Process.png)
 
 1. Na lista **processos disponíveis** , localize e selecione o processo ou os processos aos quais você deseja anexar.
 
@@ -197,7 +198,7 @@ Para selecionar rapidamente um processo em execução para anexar ao, no Visual 
 |Depurar script do lado do cliente em um servidor IIS local, para tipos de aplicativos com suporte |Usar **anexar ao processo**|*chrome.exe*, *MicrosoftEdgeCP.exe* ou *iexplore.exe*|A depuração de script deve ser habilitada. Para o Chrome, você também deve executar o Chrome no modo de depuração (tipo `chrome.exe --remote-debugging-port=9222` de uma linha de comando) e selecionar **JavaScript (Chrome)** no campo **anexar a** .|
 |Depurar um aplicativo em C#, Visual Basic ou C++ no computador local|Usar a depuração padrão (**F5**) ou **anexar ao processo**|*\<appname>. exe*|Na maioria dos cenários, use a depuração padrão e não **anexe ao processo**.|
 |Depuração remota de um aplicativo de área de trabalho do Windows|Ferramentas remotas|N/D| Consulte [depuração remota de um aplicativo C# ou Visual Basic](../debugger/remote-debugging-csharp.md) ou [depuração remota de um aplicativo C++](../debugger/remote-debugging-cpp.md)|
-|Depurar o .NET Core no Linux|Usar **anexar ao processo**|*dotnet.exe* ou um nome de processo exclusivo|Para usar o SSH, consulte [depuração remota do .NET Core em execução no Linux usando SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Para aplicativos em contêineres, consulte [anexar a um processo em execução em um contêiner do Docker](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container).|
+|Depuração do .NET Core no Linux|Usar **anexar ao processo**|*dotnet.exe* ou um nome de processo exclusivo|Para usar o SSH, consulte [depuração remota do .NET Core em execução no Linux usando SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Para aplicativos em contêineres, consulte [anexar a um processo em execução em um contêiner do Docker](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container).|
 |Depurar um aplicativo em contêineres|*dotnet.exe* ou um nome de processo exclusivo|Veja [anexar a um processo em execução em um contêiner do Docker](../debugger/attach-to-process-running-in-docker-container.md)|
 |Python de depuração remota no Linux|Usar **anexar ao processo**|*debugpy*|Consulte [anexar remotamente de ferramentas do Python](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools)|
 |Depurar um aplicativo ASP.NET no computador local depois de iniciar o aplicativo sem o depurador|Usar **anexar ao processo**|*iiexpress.exe*|Isso pode ser útil para fazer com que seu aplicativo seja carregado mais rapidamente, como (por exemplo) durante a criação de perfil. |
@@ -248,7 +249,7 @@ Se você quiser obter informações mais específicas sobre por que o depurador 
 
     Desta vez, o anexo falhará completamente e você receberá uma mensagem de erro específica.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depurar vários processos](../debugger/debug-multiple-processes.md)
 - [Depuração Just-in-time](../debugger/just-in-time-debugging-in-visual-studio.md)

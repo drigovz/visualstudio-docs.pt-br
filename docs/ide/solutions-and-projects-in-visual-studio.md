@@ -2,7 +2,7 @@
 title: Saiba mais sobre soluções e projetos
 description: Saiba mais sobre projetos e soluções do Visual Studio, como criar novos projetos de um modelo e como exibir & gerenciar projetos no Gerenciador de Soluções.
 ms.custom: SEO-VS-2020, contperf-fy21q2
-ms.date: 12/17/2020
+ms.date: 12/31/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51a2f9683dd2285cc71dfff67020687f0c48afa4
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: 3b34d96f49370a71a63e986a79584caffbc00adf
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97683909"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847034"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
 
@@ -49,6 +49,14 @@ Os arquivos de projeto são baseados no [esquema XML do MSBuild](../msbuild/msbu
 > [!NOTE]
 > Você não precisa usar soluções ou projetos no Visual Studio para editar, compilar e depurar código. Você pode simplesmente abrir a pasta que contém os arquivos de origem no Visual Studio e começar a editá-los. Para obter mais informações, consulte [Desenvolver código no Visual Studio sem projetos nem soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
+### <a name="create-new-projects"></a>Criar novos projetos
+
+A maneira mais fácil de criar um novo projeto é usar um modelo de projeto para o tipo de projeto desejado. Um modelo de projeto inclui um conjunto básico de arquivos de código gerados previamente, arquivos de configuração, ativos e configurações. Use **arquivo**  >  **novo**  >  **projeto** para selecionar um modelo de projeto. Para obter mais informações, consulte [criar um novo projeto](create-new-project.md).
+
+Você também pode criar um modelo de projeto personalizado que pode ser usado para criar novos projetos do. Para obter mais informações, confira [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md).
+
+Quando você cria um novo projeto, o Visual Studio o salva em seu local padrão, *%USERPROFILE%\source\repos*. Para alterar esse local, vá para **ferramentas**  >  **Opções**  >  **projetos e soluções**  >  **locais**. Para obter mais informações, consulte [caixa de diálogo opções: projetos e soluções > locais](./reference/projects-solutions-locations-options.md).
+
 ## <a name="solutions"></a>Soluções
 
 Um projeto está contido dentro de uma *solução*. Apesar do nome, uma solução não é uma "resposta". Ela é apenas um contêiner de um ou mais projetos relacionados, juntamente com informações de build, configurações de janela do Visual Studio e arquivos diversos que não estão associados a nenhum projeto específico.
@@ -69,14 +77,6 @@ O Visual Studio usa dois tipos de arquivos (*.sln* e *.suo*) para armazenar conf
 
 Uma "pasta de solução" é uma pasta virtual que só está em **Gerenciador de soluções**, onde você pode usá-la para agrupar projetos em uma solução. Se você quiser localizar um arquivo de solução em um computador, vá para **ferramentas**  >  **Opções**  >  **projetos e soluções**  >  **locais**. Para obter mais informações, consulte [caixa de diálogo opções: projetos e soluções > locais](./reference/projects-solutions-locations-options.md).
 
-## <a name="create-new-projects"></a>Criar novos projetos
-
-A maneira mais fácil de criar um novo projeto é usar um modelo de projeto para o tipo de projeto desejado. Um modelo de projeto inclui um conjunto básico de arquivos de código gerados previamente, arquivos de configuração, ativos e configurações. Use **arquivo**  >  **novo**  >  **projeto** para selecionar um modelo de projeto. Para obter mais informações, consulte [criar um novo projeto](create-new-project.md).
-
-Você também pode criar um modelo de projeto personalizado que pode ser usado para criar novos projetos do. Para obter mais informações, confira [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md).
-
-Quando você cria um novo projeto, o Visual Studio o salva em seu local padrão, *%USERPROFILE%\source\repos*. Para alterar esse local, vá para **ferramentas**  >  **Opções**  >  **projetos e soluções**  >  **locais**. Para obter mais informações, consulte [caixa de diálogo opções: projetos e soluções > locais](./reference/projects-solutions-locations-options.md).
-
 > [!TIP]
 > Para obter um exemplo de um projeto e uma solução criados a partir do zero, conclua com instruções passo a passo e código de exemplo, consulte [introdução aos projetos e soluções](../get-started/tutorial-projects-solutions.md).
 
@@ -84,19 +84,34 @@ Quando você cria um novo projeto, o Visual Studio o salva em seu local padrão,
 
 Depois de criar um novo projeto, você pode usar o **Gerenciador de Soluções** para exibir e gerenciar o projeto, a solução e seus itens associados. A ilustração a seguir mostra o **Gerenciador de Soluções** com uma solução C# que contém dois projetos:
 
-![Captura de tela de Gerenciador de Soluções.](../ide/media/vs2015_solution_explorer.png)
+::: moniker range="vs-2017"
 
-Muitos comandos de menu estão disponíveis no menu do botão direito em vários itens no **Gerenciador de Soluções**. Esses comandos incluem criar um projeto, gerenciar pacotes do NuGet, adicionar uma referência, renomear um arquivo e executar testes, apenas para citar alguns. A barra de ferramentas na parte superior do **Gerenciador de Soluções** possui botões para alternar de uma exibição de solução para uma exibição de pasta, mostrar arquivos ocultos, recolher todos os nós e muito mais.
+![Captura de tela de Gerenciador de Soluções com dois projetos.](../ide/media/vs2015_solution_explorer.png)
+
+A barra de ferramentas na parte superior do **Gerenciador de Soluções** possui botões para alternar de uma exibição de solução para uma exibição de pasta, mostrar arquivos ocultos, recolher todos os nós e muito mais.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+![Captura de tela de Gerenciador de Soluções com dois projetos no Visual Studio 2019.](../ide/media/solution-explorer.png)
+
+A barra de ferramentas na parte superior de **Gerenciador de soluções** tem botões para alternar de uma exibição de solução para uma exibição de pasta, filtrar alterações pendentes, mostrar todos os arquivos, recolher todos os nós, exibir páginas de [Propriedades](managing-project-and-solution-properties.md) , Visualizar código no [Editor de códigos](writing-code-in-the-code-and-text-editor.md)e muito mais.
+
+::: moniker-end
+
+Muitos comandos de menu estão disponíveis no menu de contexto de clique com o botão direito do mouse em vários itens em **Gerenciador de soluções**. Esses comandos incluem criar um projeto, gerenciar pacotes do NuGet, adicionar uma referência, renomear um arquivo e executar testes, apenas para citar alguns.
 
 > [!TIP]
 > Se você fechou Gerenciador de soluções e deseja abri-lo novamente, escolha   >  o **layout da janela de redefinição** de janela na barra de menus.
 
 Para projetos ASP.NET Core, você pode personalizar como os arquivos são aninhados no **Gerenciador de Soluções**. Para saber mais, confira [Personalizar o aninhamento de arquivos no Gerenciador de Soluções](file-nesting-solution-explorer.md).
 
-E, para exibir uma lista de alguns ícones que aparecem no Gerenciador de Soluções, consulte os [ícones modo de exibição de classe e pesquisador de objetos](class-view-and-object-browser-icons.md).
+## <a name="see-also"></a>Consulte também
 
-## <a name="see-also"></a>Confira também
-
-- [Visual Studio IDE](../get-started/visual-studio-ide.md)
+- [Introdução a projetos e soluções](../get-started/tutorial-projects-solutions.md)
+- [Gerenciar propriedades do projeto e da solução](managing-project-and-solution-properties.md)
+- [Soluções filtradas no Visual Studio](filtered-solutions.md)
 - [Portar, migrar e atualizar projetos](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
+- [Recursos para solução de problemas de erros do IDE do Visual Studio](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
 - [Projetos e soluções (Visual Studio para Mac)](/visualstudio/mac/projects-and-solutions)

@@ -1,6 +1,7 @@
 ---
 title: Inspecionar variáveis – Janelas automáticas e locais Microsoft Docs
-ms.custom: seodec18
+description: Inspecione as variáveis nas janelas automáticas e locais enquanto estiver depurando no Visual Studio. O Autos e Locals windows mostram valores de variáveis durante a depuração.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/18/2018
 ms.topic: how-to
 f1_keywords:
@@ -15,16 +16,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ae67fadf5d9710f2088f47617b74eeeb8212826
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b57c27d038193a5c73bee48814a2aa457a94b6a6
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350739"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97760907"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecionar variáveis nas janelas automáticas e locais
 
-O **Autos** e **Locals** windows mostram valores de variáveis durante a depuração. As janelas só estão disponíveis durante uma sessão de depuração. O **Autos** janela mostra as variáveis usadas em torno do ponto de interrupção atual. A janela **Locals** mostra as variáveis definidas no escopo local, que geralmente é o método ou a função atual. Se esta for a primeira vez que você tentou depurar o código, talvez você queira ler [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [ferramentas e técnicas de depuração antes de](../debugger/write-better-code-with-visual-studio.md) passar por este artigo.
+O **Autos** e **Locals** windows mostram valores de variáveis durante a depuração. As janelas só estão disponíveis durante uma sessão de depuração. O **Autos** janela mostra as variáveis usadas em torno do ponto de interrupção atual. A janela **Locals** mostra as variáveis definidas no escopo local, que geralmente é o método ou a função atual.
+
+> [!NOTE]
+> Se esta for a primeira vez que você tentou depurar o código, talvez você queira ler [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [ferramentas e técnicas de depuração antes de](../debugger/write-better-code-with-visual-studio.md) passar por este artigo.
 
  O **Autos** janela está disponível para C#, código do Visual Basic, C++ e Python, mas não para JavaScript ou F#.
 
@@ -39,7 +43,7 @@ Para abrir a janela **Locals**, durante a depuração, selecione **Debug** > **W
 
 Matrizes e objetos mostram na **Autos** e **locais** windows como controles de árvore. Selecione a seta à esquerda de um nome de variável para expandir a exibição para mostrar campos e propriedades. Aqui está um exemplo de uma <xref:System.IO.FileStream?displayProperty=fullName> do objeto na janela **Locals**:
 
-![Locais-FileStream](../debugger/media/locals-filestream.png "Locais-FileStream")
+![Captura de tela da janela locais, com o arquivo definido como um valor de System. IO. FileStream.](../debugger/media/locals-filestream.png)
 
 Um valor de vermelho na janela **Locals** ou **Autos** significa que o valor foi alterado desde a última avaliação. A alteração pode ser de uma sessão de depuração anterior ou porque você alterou o valor na janela.
 
@@ -116,7 +120,7 @@ Linguagens de código diferentes exibem variáveis diferentes nos **Autos** jane
 
    Defina um ponto de interrupção na linha `c = 3;` e inicie o depurador. Quando a execução pausa, o **Autos** janela será exibida:
 
-   ![Auto-CSharp](../debugger/media/autos-csharp.png "Auto-CSharp")
+   ![Captura de tela da janela automáticos, com o valor de c definido como 0.](../debugger/media/autos-csharp.png)
 
    O valor de `c` é 0, porque a linha `c = 3` ainda não foi executada.
 
@@ -136,7 +140,7 @@ Linguagens de código diferentes exibem variáveis diferentes nos **Autos** jane
 
     Defina um ponto de interrupção na linha `e = 5;` e execute o depurador. Quando a execução for interrompida, o **Autos** janela será exibida:
 
-    ![Auto-C + +](../debugger/media/autos-cplus.png "Auto-C + +")
+    ![Captura de tela da janela automáticos, com a linha realçada que mostra a int c com um valor de 3.](../debugger/media/autos-cplus.png)
 
     A variável `e` não foi inicializada, pois a linha `e = 5` ainda não foi executada.
 
@@ -175,7 +179,7 @@ Para ver os valores de retorno das `sumVars()` `subtractVars()` chamadas de mét
 
   ![Valor de retorno automático C #](../debugger/media/autosreturnvaluecsharp2.png "Valor de retorno automático C #")
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [O que é depuração?](../debugger/what-is-debugging.md)
 - [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md)

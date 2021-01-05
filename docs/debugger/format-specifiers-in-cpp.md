@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64166768dea1da015c223a74c74440ae09a0d106
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 74b6b6b6a8f7a9f5f234a9b46c799e6e0580536f
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863030"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761323"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Especificadores de formato para C++ no depurador do Visual Studio
 Você pode alterar o formato no qual um valor é exibido nas janelas de **inspeção**, **automáticos** e **locais** usando especificadores de formato.
@@ -54,7 +54,7 @@ int main() {
 
 Adicione a `my_var1` variável à janela **Watch** durante a depuração, **depure** o  >  **Windows**  >  **Watch**  >  **Watch 1**. Em seguida, clique com o botão direito do mouse na variável e selecione **exibição hexadecimal**. Agora, a janela **Watch** mostra o valor 0x0065. Para ver esse valor expresso como um caractere em vez de um inteiro, primeiro clique com o botão direito do mouse e desmarque a **exibição hexadecimal**. Em seguida, adicione o especificador de formato de caractere **, c** na coluna **Name** após o nome da variável. A coluna **valor** agora mostra **101 ' e '**.
 
-![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
+![Captura de tela do janela Inspeção do Visual Studio com uma linha selecionada que mostra my_var1. c com um valor de 101 ' e ' e um tipo de int.](../debugger/media/watchformatcplus1.png)
 
 ::: moniker range=">= vs-2019" 
 Você pode exibir e selecionar em uma lista de especificadores de formato disponíveis acrescentando uma vírgula (,) ao valor na janela de **inspeção** . 
@@ -68,7 +68,7 @@ As tabelas a seguir descrevem os especificadores de formato que você pode usar 
 
 ::: moniker range=">= vs-2019" 
 
-|Especificador|Formato|Valor de inspeção original|Valor exibido|
+|Especificador|Formatar|Valor de inspeção original|Valor exibido|
 |---------------|------------|--------------------------|---------------------|
 |d|inteiro decimal|0x00000066|102|
 |o|inteiro octal não assinado|0x00000066|000000000146|
@@ -106,7 +106,7 @@ As tabelas a seguir descrevem os especificadores de formato que você pode usar 
 
 ::: moniker range="vs-2017" 
 
-|Especificador|Formato|Valor de inspeção original|Valor exibido|
+|Especificador|Formatar|Valor de inspeção original|Valor exibido|
 |---------------|------------|--------------------------|---------------------|
 |d|inteiro decimal|0x00000066|102|
 |o|inteiro octal não assinado|0x00000066|000000000146|
@@ -140,7 +140,7 @@ As tabelas a seguir descrevem os especificadores de formato que você pode usar 
 ### <a name="size-specifiers-for-pointers-as-arrays"></a><a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Especificadores de tamanho para ponteiros como matrizes
 Se você tiver um ponteiro para um objeto que queira exibir como uma matriz, poderá usar um inteiro ou uma expressão para especificar o número de elementos da matriz.
 
-|Especificador|Formato|Valor de inspeção original|Valor exibido|
+|Especificador|Formatar|Valor de inspeção original|Valor exibido|
 |---------------|------------|---------------------------|---------------------|
 |n|Inteiro decimal ou inteiro **hexadecimal**|pBuffer,[32]<br /><br /> pBuffer,**[0x20]**|Exibe `pBuffer` como uma matriz de elementos 32.|
 |**exp**|Uma expressão C++ válida que é avaliada como um inteiro.|pBuffer,[bufferSize]|Exibe pBuffer como uma matriz de `bufferSize` elementos.|
@@ -149,7 +149,7 @@ Se você tiver um ponteiro para um objeto que queira exibir como uma matriz, pod
 ## <a name="format-specifiers-for-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Especificadores de formato para depuração de interoperabilidade com C++/CLI
 Não há suporte para especificadores em **negrito** apenas para depuração de código nativo e C++/CLI.
 
-|Especificador|Formato|Valor de inspeção original|Valor exibido|
+|Especificador|Formatar|Valor de inspeção original|Valor exibido|
 |---------------|------------|--------------------------|---------------------|
 |**d**<br /><br />**i**|inteiro decimal assinado|0xF000F065|-268373915|
 |**u**|inteiro decimal não assinado|0x0065|101|
@@ -172,7 +172,7 @@ Não há suporte para especificadores em **negrito** apenas para depuração de 
 ### <a name="format-specifiers-for-memory-locations-in-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Especificadores de formato para locais de memória na depuração de interoperabilidade com C++/CLI
 A tabela a seguir descreve os símbolos de formatação usados para locais de memória. Você pode usar um especificador de local da memória com qualquer valor ou expressão que seja avaliada como um local.
 
-|Símbolo|Formato|Valor de inspeção original|Valor exibido|
+|Símbolo|Formatar|Valor de inspeção original|Valor exibido|
 |------------|------------|--------------------------|---------------------|
 |**Massachusetts**|Caracteres ASCII na base 64|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|
 |**m**|16 bytes em hexadecimal, seguidos caracteres ASCII na base 16|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|
@@ -185,6 +185,6 @@ A tabela a seguir descreve os símbolos de formatação usados para locais de me
 ### <a name="size-specifier-for-pointers-as-arrays-in-interop-debugging-with-ccli"></a><a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Especificador de tamanho para ponteiros como matrizes na depuração de interoperabilidade com C++/CLI
 Se você tiver um ponteiro para um objeto que você deseja exibir como uma matriz, poderá usar um inteiro para especificar o número de elementos da matriz.
 
-|Especificador|Formato|Expressão|Valor exibido|
+|Especificador|Formatar|Expression|Valor exibido|
 |---------------|------------|----------------|---------------------|
 |n|Inteiro decimal|pBuffer[32]|Exibe `pBuffer` como uma matriz de elemento 32.|

@@ -1,6 +1,6 @@
 ---
 title: Compilar e compilar código TypeScript usando o NuGet
-description: Saiba como compilar e compilar TypeScript no Visual Studio.
+description: Saiba como adicionar suporte ao typescript a seus projetos do Visual Studio usando o pacote NuGet.
 ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 16ff335fdf8ca76889562cfd94807ec1adc516d2
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 929c17c9cbd2a0987bebca02c70b3b751c19fc9a
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927920"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846832"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>Compilar código TypeScript (ASP.NET Core)
 
@@ -31,7 +31,7 @@ Se o Visual Studio estiver instalado, o node.exe agrupado com ele será automati
 
 1. Abra seu projeto de ASP.NET Core no Visual Studio.
 
-1. Na Gerenciador de Soluções (painel direito). Clique com o botão direito do mouse no nó do projeto e escolha **gerenciar pacotes NuGet**. Na guia **procurar** , procure **Microsoft. TypeScript. MSBuild**e clique em **instalar** à direita para instalar o pacote.
+1. Na Gerenciador de Soluções (painel direito). Clique com o botão direito do mouse no nó do projeto e escolha **gerenciar pacotes NuGet**. Na guia **procurar** , procure **Microsoft. TypeScript. MSBuild** e clique em **instalar** à direita para instalar o pacote.
 
    ![Adicionar pacote NuGet](../javascript/media/aspnet-core-ts-nuget.png)
 
@@ -44,7 +44,7 @@ Se o Visual Studio estiver instalado, o node.exe agrupado com ele será automati
    </PackageReference>
    ```
 
-1. Clique com o botão direito do mouse no nó do projeto e escolha **adicionar > novo item**. Escolha o **arquivo de configuração JSON do TypeScript**e clique em **Adicionar**.
+1. Clique com o botão direito do mouse no nó do projeto e escolha **adicionar > novo item**. Escolha o **arquivo de configuração JSON do TypeScript** e clique em **Adicionar**.
 
    O Visual Studio adiciona o *tsconfig.jsno* arquivo à raiz do projeto. Você pode usar esse arquivo para [Configurar opções](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) para o compilador TypeScript.
 
@@ -163,7 +163,7 @@ Se você estiver usando o pacote NuGet para suporte do MSBuild para um projeto, 
 
 1. Clique com o botão direito do mouse no projeto e escolha **descarregar projeto**.
 
-1. Clique com o botão direito do mouse no projeto e escolha **Editar \<*project file name*\> **.
+1. Clique com o botão direito do mouse no projeto e escolha **Editar \<*project file name*\>**.
 
    O arquivo de projeto é aberto.
 

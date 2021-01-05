@@ -1,5 +1,6 @@
 ---
 title: Método embutido
+description: Saiba como usar o menu ações rápidas e refatoração no Visual Studio para refatorar declarações de método embutidas e fornecer uma sintaxe mais clara.
 ms.date: 11/03/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0cc619ea61a7fd4d7f4bc542b946e298933a8f73
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 655c6dad03b05b257aec3d92199321a0e0e93d22
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93402229"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761414"
 ---
 # <a name="inline-method"></a>Método embutido
 
@@ -41,12 +42,12 @@ Esta refatoração aplica-se a:
     
    Selecione **Embutir `<QualifiedMethodName>`** para remover a declaração de método embutido: 
 
-    ![Tornar a classe abstrata](media/inline-method-remove-declaration.png)
+    ![Screeenshot do menu ações rápidas e refatoração no Visual Studio com a conversão das alterações de código ' embutido ' createwidget () ' selecionadas e C# mostradas.](media/inline-method-remove-declaration.png)
 
    Selecione **Embutir e manter `<QualifiedMethodName>`** para preservar a declaração de método original: 
 
-    ![Tornar a classe abstrata](media/inline-method-preserve-declaration.png)
+    ![Screeenshot do menu ações rápidas e refatoração no Visual Studio com a conversão de ' embutido e manter ' createwidget () ' selecionado e alterações de código em C# mostradas.](media/inline-method-preserve-declaration.png)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Refatoração](../refactoring-in-visual-studio.md)

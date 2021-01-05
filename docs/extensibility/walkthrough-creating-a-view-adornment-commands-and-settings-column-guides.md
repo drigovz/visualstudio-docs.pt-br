@@ -1,5 +1,7 @@
 ---
 title: Criando uma exibição Adornment, comandos e configurações | Microsoft Docs
+description: Saiba como estender o editor de código do Visual Studio com guias de coluna usando este passo a passos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 392c4be60f2285edb986d5ca7a1cf4a2202e03c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2108abe89a47fa276da53a14439a52451d936eea
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905033"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863074"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Walkthrough: criar uma exibição Adornment, comandos e configurações (guias de coluna)
 Você pode estender o editor de texto/código do Visual Studio com comandos e efeitos de exibição. Este artigo mostra como começar com um recurso de extensão popular, guias de coluna. Os guias de coluna são linhas visualmente claras desenhadas na exibição do editor de texto para ajudá-lo a gerenciar seu código para larguras de coluna específicas. Especificamente, o código formatado pode ser importante para os exemplos incluídos em documentos, Postagens de blog ou relatórios de bugs.
@@ -47,7 +49,7 @@ Primeiro, você cria um projeto VSIX, adiciona uma exibição de editor Adornmen
 
   Você pode ver que esse modelo de item adicionou dois arquivos ao projeto (bem como referências, e assim por diante): **ColumnGuideAdornment.cs** e **ColumnGuideAdornmentTextViewCreationListener.cs**. Os modelos desenham um retângulo roxo na exibição. Na seção a seguir, você altera algumas linhas no ouvinte de criação de exibição e substitui o conteúdo de **ColumnGuideAdornment.cs**.
 
-  **Comandos**. Em **Gerenciador de soluções**, pressione o botão de ponteiro à direita no nó do projeto. Escolha o comando **adicionar &#124; novo item...** para adicionar um novo modo de exibição Adornment item. Escolha **extensibilidade &#124; VSPackage** no painel de navegação esquerdo e escolha **comando personalizado** no painel direito. Insira o nome **ColumnGuideCommands** como o nome do item e escolha **Adicionar**. Além de várias referências, adicionar os comandos e o pacote também adicionou **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**e **ColumnGuideCommandsPackage. vsct**. Na seção a seguir, você substitui o conteúdo do primeiro e do último arquivos para definir e implementar os comandos.
+  **Comandos**. Em **Gerenciador de soluções**, pressione o botão de ponteiro à direita no nó do projeto. Escolha o comando **adicionar &#124; novo item...** para adicionar um novo modo de exibição Adornment item. Escolha **extensibilidade &#124; VSPackage** no painel de navegação esquerdo e escolha **comando personalizado** no painel direito. Insira o nome **ColumnGuideCommands** como o nome do item e escolha **Adicionar**. Além de várias referências, adicionar os comandos e o pacote também adicionou **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs** e **ColumnGuideCommandsPackage. vsct**. Na seção a seguir, você substitui o conteúdo do primeiro e do último arquivos para definir e implementar os comandos.
 
 ## <a name="set-up-the-text-view-creation-listener"></a>Configurar o ouvinte de criação de exibição de texto
 Abra *ColumnGuideAdornmentTextViewCreationListener.cs* no editor. Esse código implementa um manipulador para sempre que o Visual Studio cria exibições de texto. Há atributos que controlam quando o manipulador é chamado, dependendo das características da exibição.
@@ -1339,7 +1341,7 @@ Em breve, haverá um projeto GitHub de exemplos de extensibilidade do Visual Stu
 
 Você pode experimentar uma versão do recurso de guias de coluna com esta[extensão](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)da galeria do Visual Studio.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Dentro do editor](../extensibility/inside-the-editor.md)
 - [Estenda os serviços de editor e linguagem](../extensibility/extending-the-editor-and-language-services.md)
 - [Pontos de extensão do serviço de linguagem e do editor](../extensibility/language-service-and-editor-extension-points.md)

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3da0a3868b410fbb78ed98265eb8f0920e6482b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 68d6d2823a4944ec74aaa477fb7b3913943a7296
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330102"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833267"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Use o teste de IU codificado para testar seu código
 
@@ -217,7 +217,7 @@ Se o controle que você deseja selecionar perde o foco e desaparece quando você
 
 Às vezes, ao adicionar controles e validar suas propriedades, talvez você precise usar o teclado. Por exemplo, quando você tentar gravar um teste de IU codificado que usa um controle de menu de clique com o botão direito do mouse, a lista de itens de menu no controle perderá o foco e desaparecerá se você tentar selecionar a ferramenta **Adicionar Declarações** no **Construtor de Teste de IU Codificado**. Isso é mostrado na ilustração a seguir, em que o menu de clique com o botão direito do mouse no Internet Explorer perde o foco e desaparece quando você tenta selecioná-lo com a ferramenta **Adicionar Declarações**.
 
-![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
+![Captura de tela mostrando a ferramenta Adicionar asserções no construtor de teste de interface do usuário codificado sobrepondo o menu de atalho do Internet Explorer.](../test/media/codeduitest_selectcontrolkeyboard.png)
 
 Para usar o teclado e selecionar um controle de interface de usuário, focalize o controle usando o mouse. Em seguida, mantenha as teclas **Ctrl** e **I** pressionadas simultaneamente. Solte as teclas. O controle é registrado pelo **Construtor de Teste de IU Codificado**.
 
@@ -229,7 +229,7 @@ Em algumas circunstâncias, um determinado controle usado em um teste de IU codi
 
 Ao realizar o teste de IU codificado, focalize o controle. Em seguida, pressione e segure a **tecla CTRL**, enquanto pressiona e pressiona as teclas **Shift** e **R** no teclado. Solte as teclas. Um evento de passagem do mouse é gravado pelo **Construtor de Teste de IU Codificado**.
 
-![CodedUI&#95;Hover](../test/media/codedui_hover.png)
+![Captura de tela da barra de comandos do construtor de teste de IU codificado com o ícone de pausa selecionado. Uma janela de dica de ferramenta mostra o local de um evento de foco do mouse.](../test/media/codedui_hover.png)
 
 Depois que você gerar o método de teste, um código semelhante ao seguinte exemplo será adicionado ao arquivo *UIMap.Designer.cs*:
 
@@ -458,7 +458,7 @@ Você pode analisar testes de IU codificados usando logs de teste de IU codifica
 
 Os testes de IU codificados costumam ser usados para automatizar testes manuais. Para obter mais informações sobre testes automatizados, confira [Ferramentas de teste no Visual Studio](../test/improve-code-quality.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Gravar e reproduzir testes manuais](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts&preserve-view=true)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)

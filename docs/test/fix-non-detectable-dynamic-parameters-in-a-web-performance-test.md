@@ -12,12 +12,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 713d711847d798c617074d2d620e09f914c1a147
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 9f670c9cf543ae209ebed63ce185fadfbbe253d0
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190221"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815718"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Corrigir parâmetros dinâmicos não detectáveis em um teste de desempenho para Web
 
@@ -190,13 +190,13 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
 
 3. Retorne ao Visualizador dos Resultados de Teste de Desempenho na Web e selecione a página *JScriptQuery.aspx* que falhou. Em seguida, escolha a guia de solicitação, verifique se a caixa de seleção de dados brutos de apresentação está desmarcada, role para baixo e escolha a localização rápida no CustomQueryString.
 
-     ![Usar a localização rápida para isolar o parâmetro dinâmico](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
+     ![Captura de tela da guia solicitação no Visualizador de resultados de texto de desempenho da Web. Um parâmetro QueryString é selecionado e operações é realçado em um menu de contexto.](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
 4. Nós sabemos, ao examinar o editor de teste, que a solicitação *JScriptQuery.aspx* do CustomQueryString recebeu um valor de: `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl` e que a parte dinâmica suspeita é “1v0yhyiyr0raa2w4j4pwf5zl”. Na lista suspensa localizar, remova a parte suspeita da cadeia de caracteres de pesquisa. A cadeia de caracteres deve ser "CustomQueryString=jScriptQueryString___".
 
      Os parâmetros dinâmicos obtêm seus valores de uma das solicitações que precedem a solicitação com o erro. Portanto, marque a caixa de seleção de pesquisa anterior e escolha Localizar próximo até você vir a solicitação anterior para *Querystring.aspx* realçado no painel de solicitação. Isso deve ocorrer depois que você escolhe localizar nas próximas três vezes.
 
-     ![Usar a localização rápida para isolar o parâmetro dinâmico](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
+     ![Captura de tela do Visualizador de resultados de texto de desempenho da Web. Uma cadeia de caracteres de consulta é selecionada e uma caixa de diálogo Localizar é mostrada com SearchUp e localiza Next selecionado.](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
 
      Conforme mostrado no guia de resposta, e no JavaScript implementado anteriormente mostrado abaixo, um valor de “jScriptQueryString_” é atribuído ao parâmetro CustomQueryString de cadeia de caracteres de consulta que também é concatenado com o valor retornado da variável sessionId.
 
@@ -249,7 +249,7 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
 
 11. Execute o teste. Agora é executado sem falhas.
 
-## <a name="qa"></a>Perguntas e respostas
+## <a name="qa"></a>P e R
 
 ### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>P: Posso executar novamente a detecção de parâmetro dinâmico se meu aplicativo Web for modificado?
 

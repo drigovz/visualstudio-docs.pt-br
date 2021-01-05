@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0fb7e6f5ae71cf336f9fe206bc7b0208566b615
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 1786085e2f68a1d1196158ac56a62b87b80858be
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398564"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761362"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>Como posso depurar uma violação de acesso de C++?
 
@@ -76,7 +76,7 @@ int main() {
 
 Se você executar esse código no Visual Studio 2015 atualização 1, verá a seguinte caixa de diálogo de exceção:
 
-![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")
+![Captura de tela de uma caixa de diálogo de exceção Microsoft Visual Studio, mostrando uma violação de acesso de leitura para ' A->B foi nullptr '. O botão de interrupção é selecionado.](../debugger/media/accessviolationcplus.png)
 
 Se você não puder determinar por que o ponteiro causou uma violação de acesso, rastreie o código para certificar-se de que o ponteiro que está causando o problema tenha sido atribuído corretamente.  Se ele for passado como um parâmetro, verifique se ele foi passado corretamente e se você não está criando acidentalmente uma [cópia superficial](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Em seguida, verifique se os valores não estão sendo acidentalmente alterados em algum lugar no programa criando um ponto de interrupção de dados para o ponteiro em questão para verificar se ele não está sendo modificado em outro lugar no programa. Para obter mais informações sobre pontos de interrupção de dados, consulte a seção ponto de interrupção de dados em [usando pontos de interrupção](../debugger/using-breakpoints.md).
 

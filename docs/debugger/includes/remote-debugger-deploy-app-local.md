@@ -8,20 +8,20 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d049bc8b74b83028e04fe92e7ce96f45907d042
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89325086"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97762584"
 ---
 1. Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **publicar** (para Web Forms, **publicar aplicativo Web**).
 
     Se você já tiver configurado anteriormente quaisquer perfis de publicação, o painel **Publicar** será exibido. Clique em **novo perfil**.
 
-1. Na caixa de diálogo **publicar** , selecione **pasta**, clique em **procurar**e crie uma nova pasta, **C:\Publish**.
+1. Na caixa de diálogo **publicar** , selecione **pasta**, clique em **procurar** e crie uma nova pasta, **C:\Publish**.
 
-    ![RemoteDBG_Publish_Local](../media/remotedbg_publish_local.png "RemoteDBG_Publish_Local")
+    ![Captura de tela da caixa de diálogo escolher um destino de publicação no Visual Studio com a pasta ' bin\Release\Publish ' selecionada como o destino de publicação.](../media/remotedbg_publish_local.png)
 
     Para um aplicativo Web Forms, escolha **personalizado** na caixa de diálogo publicar, insira um nome de perfil e escolha **OK**.
 
@@ -29,14 +29,14 @@ ms.locfileid: "89325086"
 
 1. Na caixa de diálogo **publicar** , clique no link **configurações** e, em seguida, selecione a guia **configurações** .
 
-1. Defina a configuração a ser **depurada**, selecione **excluir todos os arquivos existentes antes de publicar**e clique em **salvar**.
+1. Defina a configuração a ser **depurada**, selecione **excluir todos os arquivos existentes antes de publicar** e clique em **salvar**.
 
     > [!NOTE]
     > Se você usar uma compilação de versão, desabilite a depuração no arquivo de web.config quando publicar.
 
 1. Clique em **Publicar**.
 
-    ![RemoteDBG_Publish_Debug_Config](../media/remotedbg_publish_debug_config.png "RemoteDBG_Publish_Debug_Config")
+    ![Captura de tela da guia configurações na caixa de diálogo publicar. A configuração está definida como depurar e o botão Publicar está selecionado.](../media/remotedbg_publish_debug_config.png)
 
     O aplicativo publica uma configuração de **depuração** do projeto na pasta local. O progresso é mostrado na janela saída.
 

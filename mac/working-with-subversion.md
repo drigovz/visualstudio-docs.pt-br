@@ -1,16 +1,16 @@
 ---
 title: Trabalhando com o Subversion
-description: Usando o Subversion no Visual Studio para Mac.
+description: Saiba como trabalhar com o Subversion como o sistema de controle de versão centralizado no Visual Studio para Mac.
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 909da0bcb1ad3ca080d6bf4ba4e5184c1c2da98f
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 512432a7210999e1d432494ec67bb2bf7a0e6a11
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402633"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846850"
 ---
 # <a name="working-with-subversion"></a>Trabalhando com o Subversion
 
@@ -54,6 +54,6 @@ Para confirmar um arquivo para o repositório remoto, pressione Confirmar..., di
 
 Isso enviará as alterações ao repositório em que elas criarão a nova revisão de todas as suas modificações.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Configurar um repositório do Subversion](set-up-subversion-repository.md)

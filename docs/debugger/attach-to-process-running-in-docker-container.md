@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b32b402e2bbf85cf5c028ec2dc94821ec463644
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94674772"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761258"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>Anexar a um processo em execução em um contêiner do Docker 
 
@@ -34,7 +34,7 @@ Você pode anexar o depurador do Visual Studio a um processo em execução em um
 
 1. No Visual Studio, selecione **depurar > anexar ao processo (CTRL + ALT + P)** para abrir a caixa de diálogo **anexar ao processo** .
 
-![Anexar ao menu processar](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
+![Captura de tela da caixa de diálogo anexar ao processo no Visual Studio mostrando um tipo de conexão do Docker (contêiner do Linux).](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
 
 2. Defina o **tipo de conexão** como **Docker (contêiner do Linux)**.
 3. Selecione **Localizar...** para definir o **destino de conexão** por meio da caixa de diálogo **selecionar contêiner do Docker** .
@@ -63,7 +63,7 @@ Você pode anexar o depurador do Visual Studio a um processo em execução em um
 
 4. Escolha o processo de contêiner correspondente na lista de **processos disponíveis** e selecione **anexar** para iniciar a depuração do processo de contêiner do C# no Visual Studio!
 
-    ![Menu de anexo do Docker concluído](../debugger/media/docker-attach-complete.png "Menu de anexação do Docker do Linux concluído")
+    ![Captura de tela da caixa de diálogo anexar ao processo no Visual Studio. O tipo de conexão é definido como Docker (contêiner do Linux) e o processo dotnet é selecionado.](../debugger/media/docker-attach-complete.png "Menu de anexação do Docker do Linux concluído")
 
 ## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a>Anexar a um processo em execução em um contêiner do Docker do Windows
 
@@ -76,7 +76,7 @@ Você pode anexar o depurador do Visual Studio a um processo em execução em um
 
 1. No Visual Studio, selecione **depurar > anexar ao processo** (ou **Ctrl + Alt + P**) para abrir a caixa de diálogo **anexar ao processo** .
 
-   ![Anexar ao menu processar](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
+   ![Captura de tela da caixa de diálogo anexar ao processo no Visual Studio mostrando um tipo de conexão do Docker (contêiner do Windows).](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
 
 2. Defina o **tipo de conexão** como **Docker (contêiner do Windows)**.
 3. Selecione **Localizar...** para definir o **destino de conexão** usando a caixa de diálogo **selecionar contêiner do Docker** .
@@ -93,6 +93,6 @@ Você pode anexar o depurador do Visual Studio a um processo em execução em um
 
 4. Escolha o processo de contêiner correspondente na lista de **processos disponíveis** e selecione **anexar** para iniciar a depuração do processo de contêiner do C#.
 
-    ![Menu de anexo do Docker concluído](../debugger/media/docker-attach-complete-windows.png "Menu de anexação do Docker do Windows concluído")
+    ![Captura de tela da caixa de diálogo anexar ao processo no Visual Studio. O tipo de conexão é definido como Docker (contêiner do Windows) e o processo de dotnet.exe está selecionado.](../debugger/media/docker-attach-complete-windows.png "Menu de anexação do Docker do Windows concluído")
 
-5.  Escolha o processo de contêiner correspondente na lista de processos disponíveis e escolha **anexar** para iniciar a depuração do processo de contêiner do C#.
+5. Escolha o processo de contêiner correspondente na lista de processos disponíveis e escolha **anexar** para iniciar a depuração do processo de contêiner do C#.

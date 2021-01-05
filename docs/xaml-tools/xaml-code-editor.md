@@ -7,12 +7,12 @@ monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29fa854ab00764fc0166a53d8b48989f2c74f036
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329183"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833293"
 ---
 # <a name="xaml-code-editor"></a>Editor de código XAML
 
@@ -103,20 +103,20 @@ Você pode usar [ações rápidas](../ide/quick-actions.md) para refatorar, gera
 
 Por exemplo, uma tarefa útil que você pode executar usando ações rápidas é remover o **uso desnecessário** do código C# na guia **MainWindow.XAML.cs** .
 
-Este é o procedimento:
+Aqui está como:
 
 1. Passe o mouse sobre uma instrução using, escolha o ícone de lâmpada e, em seguida, escolha **Remover usos desnecessários** na lista suspensa.
 
     ![A opção "remover using desnecessários" do editor de IDE no menu de ações rápidas](media/xaml-code-editor-remove-usings.png "Captura de tela da opção remover uso desnecessário do editor do IDE do menu ações rápidas")
 
-1. Escolha se deseja corrigir todas as ocorrências no **documento**, no **projeto**ou na **solução**.
+1. Escolha se deseja corrigir todas as ocorrências no **documento**, no **projeto** ou na **solução**.
 1. Exiba a caixa de diálogo **Visualizar** e, em seguida, escolha **aplicar**.
 
-Você também pode acessar esse recurso na barra de menus. Para fazer isso, escolha **Editar**o  >  **IntelliSense**  >  **remover e classificar usando**.
+Você também pode acessar esse recurso na barra de menus. Para fazer isso, escolha **Editar** o  >  **IntelliSense**  >  **remover e classificar usando**.
 
 Para obter mais informações sobre como usar configurações, consulte a página [classificar usando](../ide/reference/sort-usings.md) . Para obter mais informações sobre o IntelliSense, consulte a página [IntelliSense no Visual Studio](../ide/using-intellisense.md) . E, para obter mais informações sobre algumas das maneiras típicas de os desenvolvedores usarem ações rápidas, consulte a página [ações rápidas comuns](../ide/common-quick-actions.md) .
 
-#### <a name="change-tracking"></a>controle de alterações
+#### <a name="change-tracking"></a>Change tracking
 
 A cor da margem esquerda permite que você mantenha o controle das alterações feitas em um arquivo. Veja como as cores se relacionam às ações tomadas:
 
@@ -136,7 +136,7 @@ Para obter mais informações sobre o controle de alterações &mdash; para incl
 
 Quando você está editando seu código no editor de código XAML, há vários recursos que você pode acessar usando o menu de contexto de clique com o botão direito do mouse. A maioria desses recursos está disponível universalmente no IDE do Visual Studio, enquanto outros são específicos ao uso de um editor de código junto com uma janela de design.
 
-![O menu de contexto de clique com o botão direito do mouse no editor de código XAML no Visual Studio](media/xaml-code-editor-right-click-menu.png "Captura de tela do menu de contexto de clique com o botão direito do mouse no editor de código XAML no Visual Studio 2019")
+![Captura de tela do menu de contexto de clique com o botão direito do mouse no editor de código XAML no Visual Studio 2019.](media/xaml-code-editor-right-click-menu.png)
 
 Veja o que cada recurso faz e como ele é útil:
 
@@ -163,7 +163,7 @@ A barra de rolagem pode fazer mais do que rolar pelo código. Você também pode
 
 Na barra de rolagem do editor de código, há um botão de **divisão** no canto superior direito. Ao escolher, você pode abrir outro painel do editor de código. Isso é útil porque eles operam independentemente um do outro, para que você possa usá-los para trabalhar em código em locais diferentes.
 
-![O editor de código XAML, somente painel central, no Visual Studio](media/code-editor-split-window-button.png "Captura de tela do editor de código XAML, somente painel central, no Visual Studio 2019")
+![Captura de tela mostrando o painel central do editor de código XAML no Visual Studio 2019 com o botão dividir realçado na parte superior direita do painel.](media/code-editor-split-window-button.png)
 
 Para obter mais informações sobre como dividir uma janela do editor, consulte a página [gerenciar o editor do Windows](../ide/how-to-manage-editor-windows.md) .
 
@@ -230,7 +230,7 @@ Aqui estão alguns exemplos de como eles podem beneficiar sua experiência de co
 
   ![A opção remover namespaces desnecessários do editor de código XAML da lâmpada de ações rápidas](media/xaml-code-editor-dimmed-namespaces-preview.png "Captura de tela da opção remover namespaces desnecessários do editor de código XAML que aparece usando a lâmpada de ações rápidas")
 
-- **Renomear namespace**. Esse recurso, disponível no menu de contexto do clique com o botão direito do mouse depois de realçar um namespace, facilita a alteração de várias instâncias de uma configuração ao mesmo tempo. Você também pode acessar esse recurso usando a barra de menus, **Editar**  >  **refatoração**  >  **renomear**ou pressionando **Ctrl** + **r**e, em seguida, **Ctrl** + **r** novamente.
+- **Renomear namespace**. Esse recurso, disponível no menu de contexto do clique com o botão direito do mouse depois de realçar um namespace, facilita a alteração de várias instâncias de uma configuração ao mesmo tempo. Você também pode acessar esse recurso usando a barra de menus, **Editar**  >  **refatoração**  >  **renomear** ou pressionando **Ctrl** + **r** e, em seguida, **Ctrl** + **r** novamente.
 
   ![A opção renomear namespace do editor de código XAML no menu de contexto de clique com o botão direito do mouse](media/code-editor-rename-namespace.png "Captura de tela da opção namespace de renomeação do editor de código XAML que aparece usando o menu de contexto de clique com o botão direito do mouse")
 
@@ -269,7 +269,7 @@ Você pode usar a caixa de diálogo [Opções](../ide/reference/options-dialog-b
 ![A lista de opções para o editor de texto XAML](media/xaml-tools-options.png "Captura de tela da lista de opções para o editor de texto XAML")
 
 > [!NOTE]
-> Você também pode usar atalhos de teclado para acessar a caixa de diálogo opções. Veja como: pressione **Ctrl** + **Q** para pesquisar o IDE, digite **Options**e pressione **Enter**. Em seguida, **pressione CTRL** + **E** para pesquisar a caixa de diálogo opções, digite **Editor de texto**, pressione **Enter**, digite **XAML**e pressione **Enter**.
+> Você também pode usar atalhos de teclado para acessar a caixa de diálogo opções. Veja como: pressione **Ctrl** + **Q** para pesquisar o IDE, digite **Options** e pressione **Enter**. Em seguida, **pressione CTRL** + **E** para pesquisar a caixa de diálogo opções, digite **Editor de texto**, pressione **Enter**, digite **XAML** e pressione **Enter**.
 >  
 > Para obter mais informações sobre atalhos de teclado, consulte a página [dicas de atalho para o Visual Studio](../ide/productivity-shortcuts.md#code-editor) .
 
@@ -277,7 +277,7 @@ Você pode usar a caixa de diálogo [Opções](../ide/reference/options-dialog-b
 
 Na caixa de diálogo [Opções](../ide/reference/options-text-editor-xaml-formatting.md) para XAML, os três primeiros itens a seguir são universais para todas as linguagens de programação às quais o IDE do Visual Studio dá suporte. Visite as informações vinculadas na tabela a seguir para saber mais sobre essas opções e como usá-las.
 
-|Name  |Obter mais informações  |
+|Nome  |Mais informações  |
 |---------|---------|
 |Geral  | [Caixa de diálogo opções: editor de texto > todos os idiomas](../ide/reference/options-text-editor-all-languages.md) |
 |Barras de rolagem | [Opções, Editor de Texto, Todas as Linguagens, Barras de Rolagem](../ide/reference/options-text-editor-all-languages-scroll-bars.md) |
@@ -287,7 +287,7 @@ Na caixa de diálogo [Opções](../ide/reference/options-text-editor-xaml-format
 
 A tabela a seguir lista as configurações na caixa de diálogo [Opções](../ide/reference/options-text-editor-xaml-formatting.md) que podem aprimorar sua experiência de edição quando você desenvolve aplicativos baseados em XAML. Visite as informações vinculadas para saber mais sobre essas opções e como usá-las.
 
-|Name  |Obter mais informações  |
+|Nome  |Mais informações  |
 |---------|---------|
 |Formatação | [Opções, Editor de Texto, XAML, Formatação](../ide/reference/options-text-editor-xaml-formatting.md) |
 |Diversos |  [Opções, Editor de texto, XAML, Diversos](../ide/reference/options-text-editor-xaml-miscellaneous.md) |
@@ -299,7 +299,7 @@ A tabela a seguir lista as configurações na caixa de diálogo [Opções](../id
 
 Para saber mais sobre como editar seu código em tempo real enquanto você estiver executando seu aplicativo no modo de depuração, consulte a página de [Hot recarregamento de XAML](xaml-hot-reload.md) .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Recursos do editor de código do Visual Studio](../ide/writing-code-in-the-code-and-text-editor.md)
 - [XAML em aplicativos UWP](/windows/uwp/xaml-platform/xaml-overview/)

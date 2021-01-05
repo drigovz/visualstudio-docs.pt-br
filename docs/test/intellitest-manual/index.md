@@ -11,16 +11,19 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 6317f7a1f81e6eb6916c10b2f8ce0df91f57a7de
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
-ms.translationtype: HT
+ms.openlocfilehash: 6853ef6040df943ac3050621a5b3a2528d599d9f
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329946"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756611"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Visão geral do Microsoft IntelliTest
 
 O IntelliTest permite localizar bugs no início e reduz os custos de manutenção de teste. Usando uma abordagem de teste transparente e automatizada, o IntelliTest pode gerar um conjunto de testes candidato para seu código .NET. A geração de conjunto de testes pode ser ainda mais orientada por *propriedades de correção* especificadas por você. O IntelliTest até mesmo evoluirá o conjunto de testes automaticamente à medida que o código em teste evolui.
+
+> [!NOTE]
+> O IntelliTest está disponível somente no Enterprise Edition. Há suporte para código C# destinado ao .NET Framework. No momento, não há suporte para .NET Core e .NET Standard.
 
 **Testes de caracterização** O IntelliTest permite que você determine o comportamento do código em termos de um pacote de testes de unidade tradicionais.
 Esse conjunto de testes pode ser usado como um pacote de regressão, formando a base para lidar com a complexidade associados à refatoração do código herdado ou desconhecido.

@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: adicionando recursos a um editor personalizado | Microsoft Docs'
+description: Saiba como adicionar mais recursos a um editor personalizado depois de criar o editor usando este passo a passos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12f585a3e7dd4a8182d7ed80cf65a20d0a82da83
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: c08af63eaf68701f1a6703ac41fec20368d78931
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414016"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863203"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Walkthrough: adicionar recursos a um editor personalizado
 Depois de criar um editor personalizado, você pode adicionar mais recursos a ele.
@@ -69,7 +71,7 @@ Depois de criar um editor personalizado, você pode adicionar mais recursos a el
 
     2. Ligue `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> para o serviço para obter um ponteiro <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> .
 
-9. Permita que os usuários arrastem e soltem itens entre o editor e a **caixa de ferramentas** , ou entre editores externos (como o Microsoft Word) e a **caixa de ferramentas**. Siga estas etapas:
+9. Permita que os usuários arrastem e soltem itens entre o editor e a **caixa de ferramentas**, ou entre editores externos (como o Microsoft Word) e a **caixa de ferramentas**. Siga estas etapas:
 
     1. Implemente `IDropTarget` em seu editor para alertar o IDE de que seu editor é um destino de soltura.
 
@@ -138,7 +140,7 @@ Depois de criar um editor personalizado, você pode adicionar mais recursos a el
   > [!NOTE]
   > A `IOleInPlaceComponent` interface é usada para evitar a mesclagem de menus OLE 2.
 
-   Sua `IOleCommandTarget` implementação manipula comandos como **recortar** , **copiar** e **colar**. Ao implementar `IOleCommandTarget` , decida se o seu editor exige seu próprio arquivo *. vsct* para definir sua própria estrutura de menu de comando ou se ele pode implementar comandos padrão definidos pelo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Normalmente, os editores usam e estendem os menus do IDE e definem suas próprias barras de ferramentas. No entanto, muitas vezes é necessário que um editor defina seus próprios comandos específicos além de usar o conjunto de comandos padrão do IDE. O editor deve declarar os comandos padrão que ele usa e, em seguida, definir novos comandos, menus de contexto, menus de nível superior e barras de ferramentas em um arquivo *. vsct* . Se você criar um editor de ativação in-loco, implemente <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> e defina os menus e as barras de ferramentas para o editor em um arquivo *. vsct* em vez de usar a mesclagem de menu OLE 2.
+   Sua `IOleCommandTarget` implementação manipula comandos como **recortar**, **copiar** e **colar**. Ao implementar `IOleCommandTarget` , decida se o seu editor exige seu próprio arquivo *. vsct* para definir sua própria estrutura de menu de comando ou se ele pode implementar comandos padrão definidos pelo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Normalmente, os editores usam e estendem os menus do IDE e definem suas próprias barras de ferramentas. No entanto, muitas vezes é necessário que um editor defina seus próprios comandos específicos além de usar o conjunto de comandos padrão do IDE. O editor deve declarar os comandos padrão que ele usa e, em seguida, definir novos comandos, menus de contexto, menus de nível superior e barras de ferramentas em um arquivo *. vsct* . Se você criar um editor de ativação in-loco, implemente <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> e defina os menus e as barras de ferramentas para o editor em um arquivo *. vsct* em vez de usar a mesclagem de menu OLE 2.
 
 - Para evitar a distorcida de comando de menu na interface do usuário, você deve usar os comandos existentes no IDE antes de inventar novos comandos. Os comandos compartilhados são definidos em *SharedCmdDef. vsct* e *ShellCmdDef. vsct*. Esses arquivos são instalados por padrão no subdiretório VisualStudioIntegration\Common\Inc da [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] instalação do.
 
@@ -152,6 +154,6 @@ Depois de criar um editor personalizado, você pode adicionar mais recursos a el
 
   - `Window.Object`
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Contribuir para o modelo de automação](../extensibility/internals/contributing-to-the-automation-model.md)

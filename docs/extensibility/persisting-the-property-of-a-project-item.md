@@ -1,5 +1,7 @@
 ---
 title: Persistindo a propriedade de um item de projeto | Microsoft Docs
+description: Saiba como manter uma propriedade que você adiciona a um item de projeto armazenando a propriedade no arquivo de projeto em seu tipo de projeto estendido.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 224a1e4f5f5d56022ae7c1e0572ca648b9a5aa6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 72de98e08581b105322b07390d85b95c06b1083c
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906195"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862697"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Persistir a propriedade de um item de projeto
 Talvez você queira manter uma propriedade adicionada a um item de projeto, como o autor de um arquivo de origem. Você pode fazer isso armazenando a propriedade no arquivo de projeto.
 
  A primeira etapa para manter uma propriedade em um arquivo de projeto é obter a hierarquia do projeto como uma <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interface. Você pode obter essa interface usando a automação ou usando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> . Depois de obter a interface, você pode usá-la para determinar qual item de projeto está selecionado no momento. Quando tiver a ID de item do projeto, você poderá usar <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> para adicionar a propriedade.
 
- Nos procedimentos a seguir, você mantém a *VsPkg.cs* Propriedade VsPkg.cs `Author` com o valor `Tom` no arquivo de projeto.
+ Nos procedimentos a seguir, você mantém a  Propriedade VsPkg.cs `Author` com o valor `Tom` no arquivo de projeto.
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Para obter a hierarquia do projeto com o objeto DTE
 
@@ -67,7 +69,7 @@ Talvez você queira manter uma propriedade adicionada a um item de projeto, como
     uint itemid;
 
     // Retrieve shell interface in order to get current selection
-    IVsMonitorSelection monitorSelection =     Package.GetGlobalService(typeof(SVsShellMonitorSelection)) as     IVsMonitorSelection;
+    IVsMonitorSelection monitorSelection =     Package.GetGlobalService(typeof(SVsShellMonitorSelection)) as     IVsMonitorSelection;
     if (monitorSelection == null)
         throw new InvalidOperationException();
 
@@ -132,6 +134,6 @@ Talvez você queira manter uma propriedade adicionada a um item de projeto, como
    </Compile>
    ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Ferramentas personalizadas](../extensibility/internals/custom-tools.md)

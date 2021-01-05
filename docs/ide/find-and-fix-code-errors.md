@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d743749ebf1c31c25345c89922fee2434c3284bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49da1f46ee5e182741d3aaa56432faac39bfe0f1
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386726"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833280"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Fazer o código funcionar no Visual Studio
 
@@ -44,7 +44,7 @@ A menos que não tenha feito nenhuma modificação no código compilado com êxi
 
 ![Lista de Erros e Saída do Visual Studio](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-Clique na linha de erro na janela **Lista de Erros** e vá para a linha em que ocorre o erro. (Ou ative os números de linha pressionando **Ctrl** + **P**, digitando **números de linha**e, em seguida, escolhendo **Ativar ou desativar números de linha** dos resultados. Essa é a maneira mais rápida para acessar a caixa de diálogo **Opções**, em que é possível ativar os números de linha.
+Clique na linha de erro na janela **Lista de Erros** e vá para a linha em que ocorre o erro. (Ou ative os números de linha pressionando **Ctrl** + **P**, digitando **números de linha** e, em seguida, escolhendo **Ativar ou desativar números de linha** dos resultados. Essa é a maneira mais rápida para acessar a caixa de diálogo **Opções**, em que é possível ativar os números de linha.
 
 ![Editor do Visual Studio com números de linha](../ide/media/vs_ide_gs_debug_line_numbers.png)
 
@@ -146,13 +146,13 @@ Para obter mais informações sobre como usar pontos de interrupção, leia [Usa
 
 Quando seu código em execução atinge um ponto de interrupção e pausa, a linha de código marcada em amarelo (a instrução atual) não foi executada ainda. Neste ponto, pode ser útil executar a instrução atual e, em seguida, inspecionar os valores alterados. Você pode usar vários comandos *step* para executar o código no depurador. Se o código marcado for uma chamada de método, você poderá entrar nele pressionando **F11**. Você também pode *percorrer* a linha de código pressionando **F10**. Para obter detalhes sobre como percorrer o código e comandos adicionais, leia [Navegar pelo código com o depurador](../debugger/navigating-through-code-with-the-debugger.md).
 
-![Inspeção de valor de tempo de execução do Visual Studio](../ide/media/vs_ide_gs_debug_hit_breakpoint.png)
+![Captura de tela da janela do Visual Studio Code. Um ponto vermelho na medianiz à esquerda indica uma interrupção na linha de código marcada em amarelo.](../ide/media/vs_ide_gs_debug_hit_breakpoint.png)
 
 Na ilustração anterior, você pode avançar uma instrução do depurador pressionando **F10** ou **F11** (como não há nenhuma chamada de método, os dois comandos têm o mesmo resultado).
 
 Quando o depurador entra em pausa, você pode inspecionar suas variáveis e pilhas de chamadas para determinar o que está acontecendo. Os valores estão nos intervalos que você espera ver? As chamadas estão sendo feitas na ordem correta?
 
-![Inspeção de valor de tempo de execução do Visual Studio](../ide/media/vs_ide_gs_debug_inspect_value.png)
+![Captura de tela da janela do Visual Studio Code. Na linha de código marcada em amarelo, uma variável é selecionada e uma lista suspensa mostra seu valor e suas referências atuais.](../ide/media/vs_ide_gs_debug_inspect_value.png)
 
 Focalize uma variável para ver seu valor atual e suas referências. Se você observar um valor que não esperava, provavelmente, haverá um bug no código anterior ou de chamada. Para obter informações mais detalhadas sobre depuração, [saiba mais](../debugger/debugger-feature-tour.md) sobre como usar o depurador.
 
@@ -166,7 +166,7 @@ Para começar, leia [Gerar testes de unidade para seu código com IntelliTest](.
 
 Para saber mais sobre testes de unidade no Visual Studio e como eles podem ajudá-lo a criar código de melhor qualidade, leia [Noções básicas de teste de unidade](../test/unit-test-basics.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Saiba mais sobre como usar o depurador](../debugger/index.yml)

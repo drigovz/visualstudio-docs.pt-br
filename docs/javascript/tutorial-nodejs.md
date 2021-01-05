@@ -1,6 +1,6 @@
 ---
 title: Criar um aplicativo Node.js e Express
-description: Neste tutorial, você cria um aplicativo usando ferramentas Node.js para Visual Studio
+description: Neste tutorial, saiba como criar um aplicativo simples de Node.js usando a estrutura de aplicativo Web expresso no Visual Studio.
 ms.date: 04/20/2020
 ms.topic: tutorial
 ms.devlang: javascript
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3d91f20dec22379d79b5f295fccf49aae0733a24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ce7b4af783149a53e0eacadaa5753d596f69563
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81744893"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846916"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e Express no Visual Studio
 
@@ -63,10 +63,10 @@ O Express é uma estrutura de aplicativo Web, usada como uma estrutura de servid
 * Você precisa ter o Visual Studio instalado e a carga de trabalho de desenvolvimento de Node.js.
 
     ::: moniker range=">=vs-2019"
-    Se você ainda não instalou o Visual Studio 2019, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)   para instalá-lo gratuitamente.
+    Se você ainda não instalou o Visual Studio 2019, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalá-lo gratuitamente.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Se você ainda não instalou o Visual Studio 2017, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)   para instalá-lo gratuitamente.
+    Se você ainda não tiver instalado o Visual Studio 2017, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalá-lo gratuitamente.
     ::: moniker-end
 
     Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, vá para **ferramentas**  >  **obter ferramentas e recursos...**, que abre o instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
@@ -77,7 +77,7 @@ O Express é uma estrutura de aplicativo Web, usada como uma estrutura de servid
 
     Se você não o tiver instalado, recomendamos que instale a versão LTS do site [Node.js](https://nodejs.org/en/download/) para obter a melhor compatibilidade com estruturas e bibliotecas externas. Node.js é compilado para arquiteturas de 32 bits e 64 bits. As ferramentas de Node.js no Visual Studio, incluídas na carga de trabalho do Node.js, dão suporte a ambas as versões. Apenas um é necessário e o instalador do Node.js dá suporte apenas a uma instalação de cada vez.
     
-    Em geral, o Visual Studio detecta automaticamente o runtime do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar seu projeto para fazer referência ao tempo de execução instalado na página Propriedades (depois de criar um projeto, clique com o botão direito do mouse no nó do projeto, escolha **Propriedades**e defina o **Node.exe caminho**). Você pode usar uma instalação global do Node.js ou pode especificar o caminho para um intérprete local em cada um de seus projetos de Node.js. 
+    Em geral, o Visual Studio detecta automaticamente o runtime do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar seu projeto para fazer referência ao tempo de execução instalado na página Propriedades (depois de criar um projeto, clique com o botão direito do mouse no nó do projeto, escolha **Propriedades** e defina o **Node.exe caminho**). Você pode usar uma instalação global do Node.js ou pode especificar o caminho para um intérprete local em cada um de seus projetos de Node.js. 
 
     Este tutorial foi testado com o Node.js 8.10.0.
 
@@ -216,7 +216,7 @@ Em seguida, você executará o aplicativo com o depurador do Visual Studio anexa
 
     ![Definir um ponto de interrupção](../javascript/media/tutorial-nodejs-set-breakpoint.png)
 
-## <a name="run-the-application"></a>Executar o aplicativo
+## <a name="run-the-application"></a>Execute o aplicativo
 
 1. Selecione o destino de depuração na barra de ferramentas de depuração, como **servidor Web (Google Chrome)** ou **servidor Web (Microsoft Edge)**.
 

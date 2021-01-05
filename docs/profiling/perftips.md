@@ -1,5 +1,6 @@
 ---
 title: PerfTips | Microsoft Docs
+description: Saiba como usar o PerfTips do depurador do Visual Studio e o Ferramentas de Diagnóstico integrado para monitorar e analisar o desempenho do aplicativo durante a depuração.
 ms.date: 9/11/2020
 ms.topic: how-to
 ms.assetid: 509d2d4f-48a5-4cdf-acad-6f7b75421303
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f260307b677046be54e6d80b0d8fe122b13292e4
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 481113e9f5e2f5b66aec5f4dad29f581462165ca
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075464"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815822"
 ---
 # <a name="perftips"></a>PerfTips
 
@@ -33,7 +34,7 @@ Os pontos de interrupção e os dados de tempo associados são registrados na ja
 
 A ilustração a seguir mostra a janela **ferramentas de diagnóstico** .
 
-![DiagnosticTools&#45;Atualização1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Atualização1")
+![Captura de tela da janela de Ferramentas de Diagnóstico no depurador do Visual Studio, mostrando a linha do tempo de eventos e grafos para uso de memória e CPU.](../profiling/media/diagnostictools-update1.png)
 
 - A linha do tempo **Eventos de Interrupção** marca os pontos de interrupção atingidos na sessão de depuração. Clique em um evento para selecioná-lo na lista de detalhes do **Depurador**.
 
@@ -59,7 +60,7 @@ Para habilitar ou desabilitar a janela de Ferramentas de Diagnóstico:
 
 2. Marque ou desmarque **Habilitar ferramentas de diagnóstico durante a depuração**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criação de perfis no Visual Studio](../profiling/index.yml)
 - [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

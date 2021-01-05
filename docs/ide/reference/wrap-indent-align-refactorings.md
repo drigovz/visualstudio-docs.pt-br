@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d801f052cb02e6a5b53189eeae342b9015d30f9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8a98ebd1fa1e8a9ec937cf4e0965d804a8a9387
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79093879"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761219"
 ---
 # <a name="wrap-indent-and-align-refactorings"></a>Encapsular, recuar e alinhar refatoração
 
@@ -40,7 +40,7 @@ Esta refatoração aplica-se a:
 2. Pressione **Ctrl** + **.** para acionar o menu **Ações e Refatorações Rápidas**.
 3. Selecione **Encapsular cadeia de chamadas** ou **Encapsular e alinhar cadeia de chamadas** para aceitar a refatoração.
 
-   ![Encapsular e alinhar cadeias de chamadas](media/wrap-call-chain.png)
+   ![Screeenshot do menu ações rápidas e refatoração no Visual Studio com cadeia de chamadas do Warap selecionadas e alterações de código C# mostradas.](media/wrap-call-chain.png)
 
 ## <a name="wrap-indent-and-align-parameters-or-arguments"></a>Encapsular, recuar e alinhar parâmetros ou argumentos
 
@@ -85,8 +85,8 @@ Esta refatoração aplica-se a:
 2. Pressione **Ctrl** + **.** para acionar o menu **Ações e Refatorações Rápidas**.
 3. Selecione a **expressão de encapsulamento** para aceitar a refatoração.
 
-   ![Encapsular e alinhar cadeias de chamadas](media/wrap-binary-expression.png)
+   ![Screeenshot do menu ações rápidas e refatoração no Visual Studio com a expressão Warap selecionada e as alterações de código em C# mostradas.](media/wrap-binary-expression.png)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Refatoração](../refactoring-in-visual-studio.md)

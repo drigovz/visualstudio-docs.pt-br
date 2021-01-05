@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c6c09bbf74cca803156842d185b5bf86ff52439
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: a6f0d126853c518692725d495586b3adfa57c9aa
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668814"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761349"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Como relatar um problema com o Visual Studio para Mac ou com o Instalador do Visual Studio
 
@@ -24,8 +24,9 @@ ms.locfileid: "97668814"
 Você pode relatar um problema a partir do Visual Studio ou de seu instalador. A ferramenta de comentários interna permite que você adicione facilmente informações de diagnóstico que ajudam as equipes do Visual Studio a diagnosticar e corrigir os problemas. Aqui estão as etapas para relatar um problema.
 
 1. **No Visual Studio**, selecione o ícone de comentários no canto superior direito e selecione Relatar um Problema. Você também pode acessar a ferramenta de comentários no menu **ajudar** a  >  **enviar comentários** para  >  **relatar um problema**.
-![Pop-up Relatar um problema na Comunidade de Desenvolvedores do Visual Studio](media/feedback-button.png) Como alternativa, relate um problema no **Instalador do Visual Studio** se você não puder instalar o Visual Studio ou não puder acessar a ferramenta de comentários no Visual Studio.  No Instalador, selecione o ícone de comentários no canto superior direito e selecione Relatar um Problema.
-![Relatar um pop-up de problema na Comunidade de desenvolvedores do Visual Studio no instalador](media/installer.png)
+![Captura de tela mostrando o ícone de comentários selecionado no canto superior direito da janela do Visual Studio e relatar um problema selecionado no menu de contexto.](media/feedback-button.png)
+Como alternativa, relate um problema no **instalador do Visual Studio** se você não puder instalar o Visual Studio ou não conseguir acessar a ferramenta de comentários no Visual Studio.  No Instalador, selecione o ícone de comentários no canto superior direito e selecione Relatar um Problema.
+![Captura de tela mostrando o ícone de comentários selecionado no canto superior direito do Instalador do Visual Studio e reportar um problema selecionado no menu de contexto.](media/installer.png)
 
 1. Ao clicar em **relatar um problema** , você abrirá o navegador padrão e entrará usando a mesma conta usada para entrar no Visual Studio
 
@@ -67,11 +68,11 @@ Quando faltam informações importantes no problema, atribuímos o estado de **m
 
 1. Siga o link no email para o relatório de problemas ou vá para a home page para ver todos os relatórios no estado de **mais informações** .
 
-    ![Meus comentários](../ide/media/feedback-my-feedback.png)
+    ![Captura de tela da Home Page da janela de comentários do Visual Studio. Um item de comentário é listado e está marcado com um rótulo "precisa de mais informações" em vermelho.](../ide/media/feedback-my-feedback.png)
 
 1. A seleção do link fornecer mais informações no relatório de problemas o leva para uma nova tela. A partir daqui, você pode ver quais informações estão sendo solicitadas.
 
-   ![Detalhes das informações a serem enviadas à Microsoft](../ide/media/feedback-need-more-info.png)
+   ![Captura de tela da janela de comentários do Visual Studio mostrando as informações solicitadas pela Microsoft para a resolução do problema.](../ide/media/feedback-need-more-info.png)
 
 1. Você pode fornecer mais informações adicionando comentários, anexos ou gravando as etapas. Essa experiência é semelhante a relatar um novo problema ou fornecer informações adicionais ao votar em um problema.
 

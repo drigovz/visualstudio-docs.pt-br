@@ -1,5 +1,6 @@
 ---
 title: Uso de GPU | Microsoft Docs
+description: Saiba como usar a ferramenta de uso de GPU no criador de perfil de desempenho para entender melhor o uso de hardware de alto nível de seu aplicativo do Direct3D.
 ms.date: 11/01/2018
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a738490933c6f2d1cdf89e7e974a268540af991
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: a6b143cc0b3001f0a182de43f1b6eea554025eda
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074963"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815645"
 ---
 # <a name="gpu-usage"></a>Uso de GPU
 
@@ -62,11 +63,11 @@ Para gerar e exibir o relatório de uso de GPU:
 
 1. Na parte inferior da janela de sessão de diagnóstico, escolha o link **parar coleção** ou selecione **parar** no canto superior esquerdo.
 
-   ![Captura de tela da janela de sessão de diagnóstico](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")
+   ![Captura de tela de uma janela de sessão de diagnóstico na ferramenta de uso de GPU, mostrando quadros por segundo, utilização de GPU, o botão parar e o link parar coleção.](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")
 
 2. Na parte superior do relatório, selecione uma seção de um dos gráficos que mostra o problema que você deseja investigar. Sua seleção pode ter até 3 segundos de comprimento. As seções mais longas são truncadas em direção ao início.
 
-   ![Captura de tela da janela de sessão de diagnóstico](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
+   ![Captura de tela de uma janela de sessão de diagnóstico na ferramenta de uso da GPU com parte da linha do tempo da sessão de diagnóstico selecionada.](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
 
 3. Para exibir uma linha do tempo detalhada da sua seleção, na parte inferior do relatório, na seção **... Clique aqui para exibir detalhes do uso de GPU para essa** mensagem de intervalo, selecione **Exibir detalhes**.
 
@@ -84,7 +85,7 @@ Começando com o Visual Studio 2017, é possível abrir esses dados com [GPUView
 
 ## <a name="use-the-gpu-usage-report"></a>Usar o relatório uso de GPU
 
-A parte superior do relatório uso de GPU mostra linhas do tempo para a atividade de processamento da CPU, atividade de renderização da GPU e atividade de cópia de GPU. Essas linhas do tempo são divididas por barras verticais de cinza claro que indicam o vsync de exibição. A frequência das barras corresponde à taxa de atualização de uma das exibições (selecionadas usando a lista suspensa **exibição** ) da qual os dados de uso da GPU foram coletados.
+A parte superior do relatório uso de GPU mostra linhas do tempo para a atividade de processamento da CPU, atividade de renderização da GPU e atividade de cópia de GPU. Essas linhas do tempo são divididas por barras verticais de cinza claro que indicam a sincronização vertical da tela (Vsync). A frequência das barras corresponde à taxa de atualização de uma das exibições (selecionadas usando a lista suspensa **exibição** ) da qual os dados de uso da GPU foram coletados.
 
 Como a exibição pode ter uma taxa de atualização mais alta do que a meta de desempenho do aplicativo, talvez não haja uma relação um para um entre o vsync e a taxa de quadros que você deseja que o aplicativo atinja. Para atender a seu destino de desempenho, um aplicativo deve concluir todo o processamento, fazer a renderização e fazer uma `Present()` chamada na taxa de quadros de destino. No entanto, o quadro renderizado não será exibido até o próximo vsync `Present()` .
 

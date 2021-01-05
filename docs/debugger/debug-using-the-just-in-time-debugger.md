@@ -1,5 +1,7 @@
 ---
 title: Depurar usando o depurador just-in-time | Microsoft Docs
+description: Depurar usando o depurador just-in-time no Visual Studio. A depuração Just-in-time pode iniciar o Visual Studio automaticamente quando um aplicativo ocorre ou falha.
+ms.custom: SEO-VS-2020
 ms.date: 09/24/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b6a0e43a8d0980615087c946e5dd14deef1b0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a03afa64d19e3ccd0efbb170b4305049f6bfee30
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350570"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761336"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Depurar usando o depurador just-in-time no Visual Studio
 
@@ -31,7 +33,7 @@ A depuração Just-in-time funciona para aplicativos da área de trabalho do Win
 >[!NOTE]
 >Para habilitar ou desabilitar a depuração Just-in-time, você deve estar executando o Visual Studio como administrador. Habilitar ou desabilitar a depuração Just-in-time define uma chave do registro e privilégios de administrador podem ser necessários para alterar essa chave. Para abrir o Visual Studio como administrador, clique com o botão direito do mouse no aplicativo do Visual Studio e escolha **Executar como administrador**.
 
-Você pode configurar a depuração Just-in-time na caixa de diálogo opções de **ferramentas**do Visual Studio  >  **Options** (ou opções de **depuração**  >  **Options**).
+Você pode configurar a depuração Just-in-time na caixa de diálogo opções de **ferramentas** do Visual Studio  >   (ou opções de **depuração**  >  ).
 
 **Para habilitar ou desabilitar a depuração Just-in-time:**
 
@@ -39,7 +41,7 @@ Você pode configurar a depuração Just-in-time na caixa de diálogo opções d
 
    ![Habilitar ou desabilitar a depuração JIT](../debugger/media/dbg-jit-enable-or-disable.png "Habilitar ou desabilitar a depuração JIT")
 
-1. Na caixa de seleção **Habilitar depuração Just-in-time para esses tipos de código** , selecione os tipos de código que você deseja depuração Just-in-time para depurar: **gerenciado**, **nativo**e/ou **script**.
+1. Na caixa de seleção **Habilitar depuração Just-in-time para esses tipos de código** , selecione os tipos de código que você deseja depuração Just-in-time para depurar: **gerenciado**, **nativo** e/ou **script**.
 
 1. Selecione **OK**.
 
@@ -79,7 +81,7 @@ Por padrão, os aplicativos do Windows Form têm um manipulador de exceção de 
 
 Para habilitar a depuração Just-in-time em vez da manipulação de erros padrão do Windows Form, adicione estas configurações:
 
-- Na `system.windows.forms` seção do arquivo *machine.config* ou * \<app name>.exe.config* , defina o `jitDebugging` valor como `true` :
+- Na `system.windows.forms` seção do arquivo *machine.config* ou *\<app name>.exe.config* , defina o `jitDebugging` valor como `true` :
 
     ```xml
     <configuration>
@@ -100,11 +102,11 @@ Este exemplo o orienta na depuração Just-in-time quando um aplicativo gera um 
 
 - Você deve ter o Visual Studio instalado para seguir estas etapas. Se você não tiver o Visual Studio, poderá baixar o [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)gratuito.
 
-- Verifique se a depuração Just-in-time está [habilitada](#BKMK_Enabling) em **ferramentas**  >  **Opções**de  >  **depuração**  >  **just-in-time**.
+- Verifique se a depuração Just-in-time está [habilitada](#BKMK_Enabling) em **ferramentas**  >  **Opções** de  >  **depuração**  >  **just-in-time**.
 
 Para este exemplo, você criará um aplicativo de console em C# no Visual Studio que gera uma [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. No Visual Studio, crie um aplicativo de console em C# (**arquivo**  >  **novo**  >  **projeto**de console do  >  **Visual C#**  >  **Console Application**) chamado *ThrowsNullException*. Para obter mais informações sobre como criar projetos no Visual Studio, consulte [instruções passo a passo: criar um aplicativo simples](../get-started/csharp/tutorial-wpf.md).
+1. No Visual Studio, crie um aplicativo de console em C# (**arquivo**  >  **novo**  >  **projeto** de console do  >  **Visual C#**  >  ) chamado *ThrowsNullException*. Para obter mais informações sobre como criar projetos no Visual Studio, consulte [instruções passo a passo: criar um aplicativo simples](../get-started/csharp/tutorial-wpf.md).
 
 1. Quando o projeto for aberto no Visual Studio, abra o arquivo *Program.cs* . Substitua o método Main () pelo código a seguir, que imprime uma linha no console e, em seguida, gera uma NullReferenceException:
 
@@ -128,19 +130,19 @@ Para este exemplo, você criará um aplicativo de console em C# no Visual Studio
 
    Você deverá ver a seguinte janela de comando:
 
-   ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")
+   ![Captura de tela do console do para ThrowsNullException.exe, que gera uma exceção de referência nula sem tratamento (System. NullReferenceException).](../debugger/media/throwsnullexceptionconsole.png)
 
 1. A caixa de diálogo **escolher depurador just-in-time** é aberta.
 
-   ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
+   ![Captura de tela da caixa de diálogo escolher depurador just-in-time, que aparece depois que a exceção é exibida na janela do console do ThrowsNullException.exe.](../debugger/media/justintimedialog.png)
 
-   Em **depuradores disponíveis**, selecione **nova instância \<your preferred Visual Studio version/edition> do **, se ainda não tiver selecionado.
+   Em **depuradores disponíveis**, selecione **nova instância \<your preferred Visual Studio version/edition> do**, se ainda não tiver selecionado.
 
 1. Selecione **OK**.
 
    O projeto ThrowsNullException é aberto em uma nova instância do Visual Studio, com a execução interrompida na linha que gerou a exceção:
 
-   ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")
+   ![Captura de tela do projeto ThrowsNullException no Visual Studio, com realce da linha de código-fonte que gerou a exceção.](../debugger/media/nullreferencesecondinstance.png)
 
 Você pode iniciar a depuração neste ponto. Se você estivesse Depurando um aplicativo real, precisaria descobrir por que o código está lançando a exceção.
 
@@ -157,7 +159,7 @@ Se a depuração Just-in-time não iniciar quando um aplicativo falhar, mesmo qu
 
   - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows Error Reporting**
 
-  - (Para computadores de 64 bits): **HKEY_LOCAL_MACHINE relatório de erros \software\wow6432node\microsoft\windows\windows**
+  - (Para computadores de 64 bits): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows Error Reporting**
 
   Para obter mais informações, consulte [. Configurações do WER](/windows/desktop/wer/wer-settings).
 
@@ -167,7 +169,7 @@ Se a depuração Just-in-time não iniciar quando um aplicativo falhar, mesmo qu
 
   - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
-  - (Para computadores de 64 bits): **HKEY_LOCAL_MACHINE \Software\wow6432node\microsoft\windows NT\CurrentVersion\AeDebug**
+  - (Para computadores de 64 bits): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
 Você poderá ver as seguintes mensagens de erro durante a depuração Just-in-time:
 
@@ -175,7 +177,7 @@ Você poderá ver as seguintes mensagens de erro durante a depuração Just-in-t
 
     O depurador tentou anexar a um processo em execução em outro usuário.
 
-    Para contornar esse problema, no Visual Studio, abra **Debug**a  >  **anexação de depuração a ser processada**e localize o processo que você deseja depurar na lista de **processos disponíveis** . Se você não souber o nome do processo, localize a ID do processo na caixa de diálogo do **depurador just-in-time do Visual Studio** . Selecione o processo na lista **processos disponíveis** e selecione **anexar**. Selecione **não** para ignorar a caixa de diálogo do depurador just-in-time.
+    Para contornar esse problema, no Visual Studio, abra a  >  **anexação de depuração a ser processada** e localize o processo que você deseja depurar na lista de **processos disponíveis** . Se você não souber o nome do processo, localize a ID do processo na caixa de diálogo do **depurador just-in-time do Visual Studio** . Selecione o processo na lista **processos disponíveis** e selecione **anexar**. Selecione **não** para ignorar a caixa de diálogo do depurador just-in-time.
 
 - **Não foi possível iniciar o depurador porque não há usuário conectado.**
 
@@ -189,7 +191,7 @@ Você poderá ver as seguintes mensagens de erro durante a depuração Just-in-t
 
     Para corrigir esse problema, use o Instalador do Visual Studio para reinstalar ou reparar a instalação do Visual Studio.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

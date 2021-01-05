@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a033c0fe1fd80edc7959c5f49993714982ecc805
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd1b12be2dba1526301cd0ea9a4356fb9cc14c14
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238174"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815731"
 ---
 # <a name="learn-to-use-the-code-editor-for-javascript"></a>Aprenda a usar o editor de código para JavaScript
 
@@ -40,11 +40,11 @@ Você pode usar o IDE para adicionar novos arquivos ao projeto.
 
 O IntelliSense é um recurso muito útil durante a codificação. Ele pode mostrar informações sobre membros disponíveis de um tipo ou detalhes de parâmetros para sobrecargas diferentes de um método. No código a seguir, ao digitar `Router()`, você verá os tipos de argumento que podem ser passados. Isso é chamado de ajuda da assinatura.
 
-![Usar o IntelliSense](../javascript/media/write-code-signature-checking.png)
+![Captura de tela de uma janela do Visual Studio Code com código JavaScript sendo inserido. As informações do IntelliSense são mostradas para a função router ().](../javascript/media/write-code-signature-checking.png)
 
 Você também pode usar o IntelliSense para completar uma palavra depois que você digitar caracteres suficientes para desambiguá-la. Se você colocar o cursor após a cadeia de caracteres `data` no código a seguir e digitar `get`, o IntelliSense mostrará as funções definidas anteriormente no código ou definidas em uma biblioteca de terceiros adicionada ao projeto.
 
-![Usar o IntelliSense](../javascript/media/write-code-intellisense.png)
+![Captura de tela de uma janela do Visual Studio Code com a palavra ' Get ' inserida. As informações do IntelliSense são mostradas para todas as funções que começam com ' Get '.](../javascript/media/write-code-intellisense.png)
 
 O IntelliSense também pode mostrar informações sobre tipos quando você focaliza elementos de programação.
 
@@ -52,7 +52,7 @@ Para fornecer informações do IntelliSense, o serviço de linguagem pode usar a
 
 ## <a name="check-syntax"></a>Verificar sintaxe
 
-O serviço de linguagem usa o ESLint para fornecer verificação de sintaxe e linting. Se você precisar definir opções para a verificação de sintaxe no editor, selecione **ferramentas**  >  **Opções**de  >  **JavaScript/TypeScript**  >  **refiapoção**de JavaScript/TypeScript. As opções de linting apontarão para o arquivo de configuração global do ESLint.
+O serviço de linguagem usa o ESLint para fornecer verificação de sintaxe e linting. Se você precisar definir opções para a verificação de sintaxe no editor, selecione **ferramentas**  >  **Opções** de  >    >  **refiapoção** de JavaScript/TypeScript. As opções de linting apontarão para o arquivo de configuração global do ESLint.
 
 No código a seguir, você verá um realce de sintaxe verde (rabiscos verdes) na expressão. Passe o mouse sobre o realce de sintaxe.
 
@@ -116,9 +116,9 @@ for (var i = 0; i < length; i++) {
 }
 ```
 
-Você pode examinar os trechos de código disponíveis para a sua linguagem escolhendo **Editar**  >  **IntelliSense**  >  **trecho**do IntelliSense INSERT e, em seguida, escolhendo a pasta do seu idioma.
+Você pode examinar os trechos de código disponíveis para a sua linguagem escolhendo **Editar**  >    >  **trecho** do IntelliSense INSERT e, em seguida, escolhendo a pasta do seu idioma.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Snippets de código](../ide/code-snippets.md)
 - [Navegue pelos códigos](../ide/navigating-code.md)

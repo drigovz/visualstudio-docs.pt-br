@@ -9,35 +9,35 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7b36b7e2469aa5d4ef6e11cff2580e0fb0c8ff03
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 76224ce191354e05c2220af23aabe010403b35cb
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441398"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815757"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar testes de IU codificado dos controles
 
 Implemente o suporte à estrutura de teste de IU codificado para que seu controle possa ser testado. É possível adicionar níveis crescentes de suporte incrementalmente. Comece com o suporte ao registro e reprodução e à validação de propriedade. Em seguida, baseie-se nele para habilitar o construtor de teste de IU codificado a reconhecer as propriedades personalizadas do controle. Forneça classes personalizadas para acessar essas propriedades do código gerado. Você também pode ajudar o construtor de teste de IU codificado a capturar ações da maneira mais próxima à intenção da ação que está sendo registrada.
 
-![CUIT&#95;Full](../test/media/cuit_full.png)
+! Diagrama mostrando como as classes em ChartControl são estendidas por meio da classe CreateAccessabilityInstance para classes em ChartControlExtensionPackage.] (.. cuit_full.png/Test/Media/)
 
-[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+[!INCLUDE[coded-ui-test-deprecation](../test/includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Suporte ao registro, reprodução e validação de propriedade com a implementação de acessibilidade
 
 O construtor de teste de IU codificado captura informações sobre os controles que ele encontra durante uma gravação e, em seguida, gera código para repetir essa sessão. Se o controle não der suporte à acessibilidade, o teste de IU codificado capturará ações (como cliques do mouse) usando coordenadas da tela. Quando o teste é executado, o código gerado emite as ações nas mesmas coordenadas de tela. Se o controle for exibido em um local diferente na tela quando o teste for reproduzido, o código gerado falhará ao executar a ação. Se não implementar a acessibilidade para o controle, talvez você veja falhas de teste se o teste for reproduzido em configurações de tela diferentes, em ambientes diferentes ou quando o layout da IU for alterada.
 
-![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png)
+![Captura de tela da janela de gravação no construtor de teste de interface do usuário codificado. O botão Pausar é realçado e o cliente ' ChartControl ' aparece em uma dica de ferramenta.](../test/media/cuit_recordnosupport.png)
 
 Se você implementar a acessibilidade, o construtor de teste de IU codificado usará isso para capturar informações sobre seu controle quando registrar um teste. Em seguida, quando você executar o teste, o código gerado reproduzirá esses eventos em relação ao seu controle, mesmo que ele esteja em outro lugar na interface do usuário. Os autores do teste também podem criar asserções usando as propriedades básicas do controle.
 
-![CUIT&#95;Record](../test/media/cuit_record.png)
+![Captura de tela da janela de gravação no construtor de teste de interface do usuário codificado. O botão Pausar é realçado e o rótulo ' A ' é exibido em uma dica de ferramenta.](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Para dar suporte à gravação e reprodução, validação de propriedade e navegação para controle do Windows Forms
 Implemente a acessibilidade para seu controle conforme descrito no procedimento a seguir e explicado em detalhes em <xref:System.Windows.Forms.AccessibleObject>.
 
-![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
+![Diagrama de classes em ChartControl mostrando a relação entre CreateAccessabilityInstance e a classe ChartControl. CurveLegend.](../test/media/cuit_accessible.png)
 
 1. Implemente uma classe que seja derivada de <xref:System.Windows.Forms.Control.ControlAccessibleObject> e substitua a propriedade <xref:System.Windows.Forms.Control.AccessibilityObject%2A> para retornar um objeto da sua classe.
 
@@ -77,11 +77,11 @@ Implemente a acessibilidade para seu controle conforme descrito no procedimento 
 
 Depois de implementar o suporte básico para registro e reprodução e validação de propriedade, você poderá disponibilizar as propriedades personalizadas do controle para testes de IU codificados implementando um plug-in <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>. Por exemplo, o procedimento a seguir cria um provedor de propriedade que permite que os testes de IU codificados acessem a propriedade State dos controles filho de CurveLegend do controle do gráfico:
 
-![CUIT&#95;CustomProps](../test/media/cuit_customprops.png)
+![Captura de tela da janela principal do construtor de teste de interface do usuário codificado parcialmente coberta por uma janela Adicionar asserções com a propriedade State de um controle de texto selecionado.](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>Para dar suporte à validação de propriedade personalizada
 
-![CUIT&#95;Props](../test/media/cuit_props.png)
+![Diagrama de classes em ChartControl e ChartControlExtension com as classes ChartControlExtensionPackage e ChartControlIPropertyProvider realçadas.](../test/media/cuit_props.png)
 
 1. Substitua a propriedade <xref:System.Windows.Forms.AccessibleObject.Description%2A> do objeto acessível da curva de legenda para passar valores de propriedade avançada na cadeia de caracteres de descrição. Separe vários valores com ponto-e-vírgula (;).
 
@@ -149,7 +149,7 @@ Se você já implementou um provedor de propriedade para conceder acesso às pro
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>Para adicionar uma classe especializada para acessar seu controle
 
-![CUIT&#95;CodeGen](../test/media/cuit_codegen.png)
+![Diagrama de classes em ChartControl e ChartControlExtension com a classe CurveLegend realçada em ChartControlExtensionPackage.](../test/media/cuit_codegen.png)
 
 1. Implemente uma classe que seja derivada de <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> e adicione o tipo do controle à coleção de propriedades de pesquisa no construtor.
 
@@ -165,7 +165,7 @@ Quando o Visual Studio registra um teste, ele captura cada evento do mouse e do 
 
 ### <a name="to-support-intent-aware-actions"></a>Para dar suporte a ações com reconhecimento de intenção
 
-![CUIT&#95;Actions](../test/media/cuit_actions.png)
+![Diagrama das classes ChartControl e ChartControlExtensionPackage com a classe ChartControlActionFilter realçada em ChartControlExtensionPackage.](../test/media/cuit_actions.png)
 
 1. Implemente uma classe de filtro de ação derivada de [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)), substituindo as propriedades [ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29), [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110)), [Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110)), [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110)), [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110)) e [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110)).
 
@@ -198,7 +198,7 @@ O provedor da propriedade e o filtro de ação são implementados em um pacote d
 
 6. No construtor de teste de IU codificado, crie asserções para exercitar seu provedor de propriedade e registrar ações para exercitar seus filtros de ação.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Windows.Forms.AccessibleObject>
 - [Usar a automação da interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)

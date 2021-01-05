@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: Criando um editor personalizado | Microsoft Docs'
+description: Saiba como o modelo de projeto VSPackage pode criar um editor personalizado simples em C++ usando este passo a passos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4713931d70fd91dd57b85bc6fc749e62e03eb20b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 188c02471e8921e66faefe9668ec3f54c935b50b
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905916"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863126"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>Walkthrough: criar um editor personalizado
 O modelo de projeto VSPackage pode criar um editor personalizado simples em C++. O modelo de projeto VSPackage não dá mais suporte a projetos C# ou Visual Basic. Para obter mais informações, consulte [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
@@ -46,5 +48,5 @@ O modelo de projeto VSPackage pode criar um editor personalizado simples em C++.
 
      O editor oferece suporte a operações de recortar e colar, localizar e substituir e abrir e carregar.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [VSPackages](../extensibility/internals/vspackages.md)

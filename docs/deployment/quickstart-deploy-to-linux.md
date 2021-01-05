@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 4e474cc96e4b950aee2f509a8e2879b0c31f912a
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 27002d9360d36330249167b2cc8b75b7cd832135
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350714"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815627"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publicar um aplicativo ASP.NET Core no Serviço de Aplicativo no Linux usando o Visual Studio
 
@@ -32,7 +32,7 @@ Este artigo descreve como usar a ferramenta **Publicar** para uma implantação 
 
 ## <a name="publish-to-azure-app-service-on-linux"></a>Publicar no serviço de Azure App no Linux
 
-1. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar** (ou use o item de menu **Criar** > **Publicar** ).
+1. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar** (ou use o item de menu **Criar** > **Publicar**).
 
     ![O comando publicar no menu de contexto do projeto no Gerenciador de Soluções](../deployment/media/quickstart-publish.png "Escolha Publicar")
 
@@ -50,13 +50,13 @@ Este artigo descreve como usar a ferramenta **Publicar** para uma implantação 
 
     ![Link para criar uma nova instância do serviço de Azure App](../deployment/media/quickstart-publish-linux-create-new-link.png)
 
-1. Na caixa de diálogo **criar Azure app serviço (Linux)** , os campos **nome do aplicativo** , **grupo de recursos** e entrada do plano do **serviço de aplicativo** são preenchidos. Você pode manter esses nomes ou alterá-los. Quando estiver pronto, selecione **criar**.
+1. Na caixa de diálogo **criar Azure app serviço (Linux)** , os campos **nome do aplicativo**, **grupo de recursos** e entrada do plano do **serviço de aplicativo** são preenchidos. Você pode manter esses nomes ou alterá-los. Quando estiver pronto, selecione **criar**.
 
-    ![Escolher serviço de Azure App](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
+    ![Captura de tela da caixa de diálogo Criar Azure App serviço (Linux) com os campos nome, assinatura, grupo de recursos e plano de hospedagem preenchidos.](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
 
 1. Na caixa de diálogo **publicar** , a instância recém-criada foi selecionada automaticamente. Quando estiver pronto, clique em **concluir**.
 
-    ![Escolher serviço de Azure App](../deployment/media/quickstart-publish-linux-select-instance.png)
+    ![Captura de tela da caixa de diálogo de publicação com o serviço MyASpCoreWebAppOnAzure recém-criado selecionado como o serviço de aplicativo para publicação.](../deployment/media/quickstart-publish-linux-select-instance.png)
 
 1. Selecione **Publicar**. O Visual Studio implanta o aplicativo em seu Serviço de Aplicativo do Azure e o aplicativo Web é carregado em seu navegador. O painel **Publicar** das propriedades do projeto mostra a URL e outros detalhes do site.
 
@@ -67,7 +67,7 @@ Este artigo descreve como usar a ferramenta **Publicar** para uma implantação 
 Nas etapas anteriores, você criou os recursos do Azure em um grupo de recursos. Se você não espera precisar desses recursos no futuro, poderá excluí-los ao excluir o grupo de recursos.
 No menu à esquerda no portal do Azure, selecione **Grupos de recursos** e, em seguida, selecione **myResourceGroup**.
 Na página do grupo de recursos, certifique-se de que os recursos listados são aqueles que deseja excluir.
-Selecione **Excluir** , digite **myResourceGroup** na caixa de texto e selecione **Excluir**.
+Selecione **Excluir**, digite **myResourceGroup** na caixa de texto e selecione **Excluir**.
 
 ## <a name="next-steps"></a>Próximas etapas
 

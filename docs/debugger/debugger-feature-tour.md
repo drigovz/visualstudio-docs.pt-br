@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffaeff850c739cd81569a88ae980acf837c413c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6d451735042374f0e3c6fb2154cd54520a069fc
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184205"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761427"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Introdução ao Depurador do Visual Studio
 
@@ -64,17 +64,17 @@ Como mencionado anteriormente, por padrão, o depurador ignora propriedades gere
 
 Clique com o botão direito do mouse em uma propriedade ou um campo e escolha **Intervir Específico** e, em seguida, escolha uma das opções disponíveis.
 
-![Entrar em específico](../debugger/media/dbg-tour-step-into-specific.png "Entrar em específico")
+![Captura de tela do depurador do Visual Studio com uma linha de código realçada. A etapa em específico está selecionada no menu de contexto e o método Path. Set é selecionado.](../debugger/media/dbg-tour-step-into-specific.png)
 
 Neste exemplo, **Intervir Específico** nos leva ao código de `Path.set`.
 
-![Entrar em específico](../debugger/media/dbg-tour-step-into-specific-2.png "Entrar em específico")
+![Captura de tela do depurador do Visual Studio mostrando o código para Path. set. As chaves que circundam a função Set são realçadas em amarelo.](../debugger/media/dbg-tour-step-into-specific-2.png)
 
 ## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>Executar rapidamente até um ponto no código usando o mouse
 
-No depurador, passe o mouse sobre uma linha de código até que o botão **Executar para clicar** (executar a execução aqui) ![Execute para clicar à](../debugger/media/dbg-tour-run-to-click.png "RunToClick") esquerda.
+Enquanto estiver no depurador, passe o mouse sobre uma linha de código até que a captura de tela **Executar para clicar** (executar a execução aqui) ![ do botão Executar para clicar no depurador do Visual Studio. O botão indica que a execução deve ser executada na linha em que o botão é colocado.](../debugger/media/dbg-tour-run-to-click.png) aparece à esquerda.
 
-![Executar com um Clique](../debugger/media/dbg-tour-run-to-click-2.png "Executar com um Clique")
+![Captura de tela do depurador do Visual Studio mostrando o botão Executar para clicar à esquerda de uma chamada para a função Update.](../debugger/media/dbg-tour-run-to-click-2.png)
 
 > [!NOTE]
 > O botão **Executar com um Clique** (Realizar a execução até aqui) está disponível no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] em diante.
@@ -116,7 +116,7 @@ Se você quiser interromper o depurador e voltar para o editor de código, poder
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>Editar seu código e continuar a depuração (C#, VB, C++, XAML)
 
-Na maioria dos idiomas com suporte no Visual Studio, você pode editar seu código no meio de uma sessão de depuração e continuar a depuração. Para usar esse recurso, clique em seu código com o cursor enquanto estiver em pausa no depurador, faça edições e pressione **F5**, **F10**ou **F11** para continuar a depuração.
+Na maioria dos idiomas com suporte no Visual Studio, você pode editar seu código no meio de uma sessão de depuração e continuar a depuração. Para usar esse recurso, clique em seu código com o cursor enquanto estiver em pausa no depurador, faça edições e pressione **F5**, **F10** ou **F11** para continuar a depuração.
 
 ![Editar e continuar a depuração](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 

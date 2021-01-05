@@ -1,9 +1,9 @@
 ---
 title: Introdução ao teste de unidade
-description: Use o Visual Studio para definir e executar testes de unidade para manter a integridade de código, assegurar a cobertura de código e localizar erros e falhas antes de seus clientes.
+description: Use o Visual Studio para definir e executar testes de unidade para manter a integridade do código e para encontrar erros e falhas antes que seus clientes façam.
 ms.custom: SEO-VS-2020
 ms.date: 04/07/2020
-ms.topic: conceptual
+ms.topic: tutorial
 helpviewer_keywords:
 - unit testing, create unit test plans
 author: mikejo5000
@@ -11,16 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3daff1a7b7c2e62b4ca4a508c5c8dd31261a40dd
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 31314a669815d38ed408a28e033e4943df0f75d3
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441775"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756650"
 ---
 # <a name="get-started-with-unit-testing"></a>Introdução ao teste de unidade
 
 Use o Visual Studio para definir e executar testes de unidade para manter a integridade de código, assegurar a cobertura de código e localizar erros e falhas antes de seus clientes. Execute os testes de unidade frequentemente para ter certeza de que seu código está funcionando corretamente.
+
+Neste artigo, o código e as ilustrações usam C#, mas os conceitos e recursos se aplicam às linguagens .NET, C++, Python, JavaScript e TypeScript.
 
 ## <a name="create-unit-tests"></a>Criar testes de unidade
 
@@ -28,7 +30,7 @@ Esta seção descreve como criar um projeto de teste de unidade.
 
 1. Abra o projeto que você deseja testar no Visual Studio.
 
-   Para fins de demonstração de um exemplo de teste de unidade, este artigo testa um projeto simples de "Olá, Mundo" chamado **HelloWorldCore**. O código do exemplo para um projeto desse tipo é o seguinte:
+   Para fins de demonstração de um exemplo de teste de unidade, este artigo testa um projeto C# "Olá, Mundo" simples chamado **HelloWorldCore**. O código do exemplo para um projeto desse tipo é o seguinte:
 
    ```csharp
    namespace HelloWorldCore
@@ -44,7 +46,14 @@ Esta seção descreve como criar um projeto de teste de unidade.
 
 1. No **Gerenciador de Soluções**, selecione o nó da solução. Em seguida, na barra de menus superior, selecione **arquivo**  >  **Adicionar**  >  **novo projeto**.
 
-1. Na caixa de diálogo Novo Projeto, localize um modelo de projeto de teste de unidade para a estrutura de teste que você deseja usar e selecione-o.
+1. Na caixa de diálogo novo projeto, localize um modelo de projeto de teste de unidade para a estrutura de teste que você deseja usar, como MSTest e selecione-o.
+
+   A partir do Visual Studio 2017 versão 14,8, as linguagens .NET incluem modelos internos para NUnit e xUnit. Para o C++, você precisará selecionar uma estrutura de teste com suporte no idioma. Para o Python, consulte [Configurar o teste de unidade no código Python](../python/unit-testing-python-in-visual-studio.md) para configurar seu projeto de teste.
+
+   > [!TIP]
+   > Para o C#, você pode criar projetos de teste de unidade a partir do código usando um método mais rápido. Para obter mais informações, consulte [criar projetos de teste de unidade e métodos de teste](../test/unit-test-basics.md#create-unit-test-projects-and-test-methods). Para usar esse método com .NET Core ou .NET Standard, o Visual Studio 2019 é necessário.
+
+   A ilustração a seguir mostra um teste de unidade MSTest, que tem suporte no .NET.
 
    ::: moniker range=">=vs-2019"
 
@@ -58,7 +67,7 @@ Esta seção descreve como criar um projeto de teste de unidade.
 
    ![Modelo de projeto de teste de unidade no Visual Studio 2019](media/mstest-test-project-template.png)
 
-   Escolha um nome para o projeto de teste e clique em **OK**.
+   Escolha um nome para o projeto de teste, como HelloWorldTests e clique em **OK**.
 
    ::: moniker-end
 
@@ -74,7 +83,9 @@ Esta seção descreve como criar um projeto de teste de unidade.
 
 1. Adicione código ao método de teste de unidade.
 
-   Por exemplo, para um projeto MSTest, você pode usar o código a seguir.
+   Por exemplo, você pode usar o código a seguir selecionando a guia de documentação correta que corresponde à estrutura de teste: MSTest, NUnit ou xUnit (com suporte somente no .NET).
+
+   # <a name="mstest"></a>[MSTest](#tab/mstest)
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -103,7 +114,7 @@ Esta seção descreve como criar um projeto de teste de unidade.
    }
    ```
 
-   Ou, para um projeto NUnit, você pode usar o código a seguir.
+   # <a name="nunit"></a>[NUnit](#tab/nunit)
 
    ```csharp
    using NUnit.Framework;
@@ -136,8 +147,33 @@ Esta seção descreve como criar um projeto de teste de unidade.
    }
    ```
 
-> [!TIP]
-> Para obter mais detalhes sobre como criar testes de unidade, consulte [criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+    # <a name="xunit"></a>[xUnit](#tab/xunit)
+
+    ```csharp
+    using System;
+    using Xunit;
+    using System.IO;
+    
+    namespace HelloWorldTests
+    {
+        public class UnitTest1
+        {
+            private const string Expected = "Hello World!";
+            [Fact]
+            public void Test1()
+            {
+                using (var sw = new StringWriter())
+                {
+                    Console.SetOut(sw);
+                    HelloWorldCore.Program.Main();
+    
+                    var result = sw.ToString().Trim();
+                    Assert.Equal(Expected, result);
+                }
+            }
+        }
+    }
+    ```
 
 ## <a name="run-unit-tests"></a>Executar testes de unidade
 
@@ -147,7 +183,7 @@ Esta seção descreve como criar um projeto de teste de unidade.
    Para abrir o Gerenciador de testes, escolha **testar** > **Gerenciador** de testes na barra de menus superior.
    ::: moniker-end
    ::: moniker range="vs-2017"
-   Para abrir o Gerenciador de testes, escolha **testar** o > **Windows** > **Gerenciador de testes** do Windows na barra de menus superior.
+   Para abrir o Gerenciador de testes, escolha **testar** o >  > **Gerenciador de testes** do Windows na barra de menus superior.
    ::: moniker-end
 
 1. Execute seus testes de unidade clicando em **Executar Tudo**.
@@ -161,12 +197,12 @@ Esta seção descreve como criar um projeto de teste de unidade.
 > [!TIP]
 > Você pode usar o [Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md) para executar testes de unidade do framework de testes interno (MSTest) ou de estruturas de teste de terceiros. Você pode agrupar os testes em categorias, filtrar a lista de testes, criar, salvar e executar playlists de testes. Você também pode depurar testes e analisar um teste de desempenho e cobertura de código.
 
-## <a name="view-live-unit-test-results"></a>Exibir resultados de teste de unidade em tempo real
+## <a name="view-live-unit-test-results-visual-studio-enterprise"></a>Exibir resultados de teste de unidade em tempo real (Visual Studio Enterprise)
 
 Se estiver usando a estrutura de teste do MSTest, do xUnit ou do NUnit no Visual Studio de 2017 ou posterior, você poderá ver os resultados em tempo real de seus testes de unidade.
 
 > [!NOTE]
-> O Live Unit Testing está disponível somente no Enterprise Edition.
+> Para seguir essas etapas, Visual Studio Enterprise é necessário.
 
 1. Ative o Live Unit Testing do menu **Teste**, escolhendo **Teste** > **Live Unit Testing** > **Iniciar**.
 
@@ -192,30 +228,25 @@ Se estiver usando a estrutura de teste do MSTest, do xUnit ou do NUnit no Visual
 
 Para obter mais informações sobre o Live Unit Testing, veja [Live Unit Testing](../test/live-unit-testing-intro.md).
 
-## <a name="generate-unit-tests-with-intellitest"></a>Gerar testes de unidade com IntelliTest
-
-Quando executa o IntelliTest, você pode ver quais testes estão falhando e adicionar o código que for necessário para corrigi-los. É possível selecionar quais dos testes gerados serão salvos em um projeto de teste para oferecer um pacote de regressão. Conforme você alterar seu código, execute novamente o IntelliTest para manter os testes gerados em sincronia com as alterações do código. Para saber como, confira [Gerar testes de unidade para seu código com o IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
-
-> [!TIP]
-> O IntelliTest está disponível somente para código gerenciado direcionado ao .NET Framework.
-
-![Gerando testes de unidade com IntelliTest](media/intellitest.png)
-
-## <a name="analyze-code-coverage"></a>Analisar a cobertura de código
-
-Para determinar que proporção do código do projeto está sendo testada de fato por testes codificados, como os testes de unidade, você pode usar o recurso de cobertura de código do Visual Studio. Para se proteger efetivamente contra bugs, os testes devem usar uma grande proporção do seu código. Para saber como, consulte [usar a cobertura de código para determinar a quantidade de código que está sendo testada](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
-
 ## <a name="use-a-third-party-test-framework"></a>Usar uma estrutura de teste de terceiros
 
-Você pode executar testes de unidade no Visual Studio usando estruturas de teste de terceiros, como Boost, Google e NUnit. Use o **Gerenciador de Pacotes NuGet** para instalar o pacote do NuGet para a estrutura de sua escolha. Ou, para estruturas de teste NUnit e xUnit, o Visual Studio inclui modelos de projeto de teste pré-configurados que incluem os pacotes NuGet necessários.
+Você pode executar testes de unidade no Visual Studio usando estruturas de teste de terceiros, como Boost, Google e NUnit, dependendo da linguagem de programação. Para usar uma estrutura de terceiros:
 
-Para criar testes de unidade que usam [NUnit](https://nunit.org/):
+- Use o **Gerenciador de Pacotes NuGet** para instalar o pacote do NuGet para a estrutura de sua escolha.
+
+- Studio.net A partir do Visual Studio 2017 versão 14,6, o Visual Studio inclui modelos de projeto de teste pré-configurados para estruturas de teste NUnit e xUnit. Os modelos também incluem os pacotes NuGet necessários para habilitar o suporte.
+
+- C No Visual Studio 2017 e versões posteriores, algumas estruturas, como Boost, já estão incluídas. Para obter mais informações, consulte [gravar testes de unidade para C/C++ no Visual Studio](../test/writing-unit-tests-for-c-cpp.md).
+
+Para adicionar um projeto de teste de unidade:
 
 1. Abra a solução que contém o código que você deseja testar.
 
 2. Clique com o botão direito do mouse na solução no **Gerenciador de Soluções** e escolha **Adicionar** > **Novo Projeto**.
 
-3. Selecione o modelo de projeto **Projeto de Teste do NUnit**.
+3. Selecione um modelo de projeto de teste de unidade.
+
+   Neste exemplo, selecione [NUnit](https://nunit.org/)
 
    ::: moniker range=">=vs-2019"
 
@@ -245,10 +276,10 @@ Para criar testes de unidade que usam [NUnit](https://nunit.org/):
 
 6. Execute o teste do **Gerenciador de Testes** ou clicando com o botão direito do mouse no código de teste e escolhendo **Executar Testes**.
 
-## <a name="see-also"></a>Confira também
+## <a name="next-steps"></a>Próximas etapas
 
-* [Passo a passo: Criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-* [Criar comando de testes de unidade](create-unit-tests-menu.md)
-* [Gerar testes com o IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
-* [Executar testes com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md)
-* [Analisar a cobertura de código](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+> [!div class="nextstepaction"]
+> [Noções básicas de teste de unidade](../test/unit-test-basics.md)
+
+> [!div class="nextstepaction"]
+> [Criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)

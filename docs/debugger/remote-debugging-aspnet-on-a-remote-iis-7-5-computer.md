@@ -1,5 +1,6 @@
 ---
 title: Depuração remota do ASP.NET em um computador com IIS
+description: Saiba como configurar e configurar um aplicativo do Visual Studio ASP.NET MVC 4.5.2, implantá-lo no IIS e anexar o depurador remoto do Visual Studio.
 ms.custom:
 - remotedebugging
 - seodec18
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: cd2b787fe546b9c53332fcdc548d3da829759755
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a3520220da15ef771c8cecbd7962e4448727910
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173909"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815705"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Depuração remota do ASP.NET em um computador remoto IIS
 Para depurar um aplicativo ASP.NET que foi implantado no IIS, instale e execute as ferramentas remotas no computador em que você implantou seu aplicativo e, em seguida, anexe ao seu aplicativo em execução no Visual Studio.
@@ -60,10 +61,10 @@ Este artigo inclui etapas sobre como configurar uma configuração básica do II
 1. Crie um novo aplicativo MVC ASP.NET.
 
     ::: moniker range=">=vs-2019"
-    No Visual Studio 2019, digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **ASP.net**, escolha **modelos**e, em seguida, escolha **criar novo aplicativo Web ASP.net (.NET Framework)**. Na caixa de diálogo que aparece, nomeie o projeto **MyASPApp**e, em seguida, escolha **criar**. Selecione **MVC** e escolha **criar**.
+    No Visual Studio 2019, digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **ASP.net**, escolha **modelos** e, em seguida, escolha **criar novo aplicativo Web ASP.net (.NET Framework)**. Na caixa de diálogo que aparece, nomeie o projeto **MyASPApp** e, em seguida, escolha **criar**. Selecione **MVC** e escolha **criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Para fazer isso no Visual Studio 2017, escolha **arquivo > novo > projeto**e, em seguida, selecione **Visual C# > Web > ASP.NET aplicativo Web**. Na seção modelos do **ASP.NET 4.5.2** , selecione **MVC**. Verifique se a **caixa de seleção Habilitar suporte do Docker** não está selecionada e se a **autenticação** está definida como **sem autenticação**. Nomeie o projeto **MyASPApp**.)
+    Para fazer isso no Visual Studio 2017, escolha **arquivo > novo > projeto** e, em seguida, selecione **Visual C# > Web > ASP.NET aplicativo Web**. Na seção modelos do **ASP.NET 4.5.2** , selecione **MVC**. Verifique se a **caixa de seleção Habilitar suporte do Docker** não está selecionada e se a **autenticação** está definida como **sem autenticação**. Nomeie o projeto **MyASPApp**.)
     ::: moniker-end
 
 2. Abra o arquivo  *HomeController.cs* e defina um ponto de interrupção no `About()` método.
@@ -91,7 +92,7 @@ Se você quiser informações mais detalhadas para instalar o ASP.NET no IIS, co
 
 1. Use o Web Platform Installer (WebPI) para instalar o ASP.NET 4,5 (do nó do servidor no Windows Server 2012 R2, escolha **obter novos componentes da Web Platform** e, em seguida, pesquise por ASP.net)
 
-    ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg_iis_aspnet_45.png "RemoteDBG_IIS_AspNet_45")
+    ![Captura de tela do Web Platform Installer 5,0 mostrando os resultados da pesquisa para asp.net com o componente de plataforma da Web IIS: ASP.NET 4,5 circulado em vermelho.](../debugger/media/remotedbg_iis_aspnet_45.png)
 
     > [!NOTE]
     > Se você estiver usando o Windows Server 2008 R2, instale o ASP.NET 4, em vez disso, usando este comando:
@@ -148,7 +149,7 @@ Você pode usar essa opção para implantar seu aplicativo se quiser copiar o ap
 
 3. Em **conexões** no painel esquerdo, vá para **sites**.
 
-4. Selecione o **site da Web padrão**, escolha **configurações básicas**e defina o **caminho físico** como **C:\Publish**.
+4. Selecione o **site da Web padrão**, escolha **configurações básicas** e defina o **caminho físico** como **C:\Publish**.
 
 5. Clique com o botão direito do mouse no nó do **site da Web padrão** e selecione **Adicionar aplicativo**.
 
@@ -156,7 +157,7 @@ Você pode usar essa opção para implantar seu aplicativo se quiser copiar o ap
 
 7. Em **conexões**, selecione **pools de aplicativos**. Abra **DefaultAppPool** e defina o campo pool de aplicativos como **ASP.NET v 4.0** (ASP.NET 4,5 não é uma opção para o pool de aplicativos).
 
-8. Com o site selecionado no Gerenciador do IIS, escolha **Editar permissões**e verifique se IUSR, IIS_IUSRS ou o usuário configurado para o pool de aplicativos é um usuário autorizado com direitos de execução de leitura &. Se nenhum desses usuários estiver presente, adicione IUSR como um usuário com direitos de execução de leitura &.
+8. Com o site selecionado no Gerenciador do IIS, escolha **Editar permissões** e verifique se IUSR, IIS_IUSRS ou o usuário configurado para o pool de aplicativos é um usuário autorizado com direitos de execução de leitura &. Se nenhum desses usuários estiver presente, adicione IUSR como um usuário com direitos de execução de leitura &.
 
 ### <a name="publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>Publicar e implantar o aplicativo publicando em uma pasta local do Visual Studio
 
@@ -204,13 +205,13 @@ Para obter informações sobre como executar o depurador remoto como um serviço
 
 3. Defina o campo qualificador como **\<remote computer name>** e pressione **Enter**.
 
-    Verifique se o Visual Studio adiciona a porta necessária ao nome do computador, que aparece no formato: ** \<remote computer name> :p classificar**
+    Verifique se o Visual Studio adiciona a porta necessária ao nome do computador, que aparece no formato: **\<remote computer name> :p classificar**
 
     ::: moniker range=">=vs-2019"
-    No Visual Studio 2019, você deve ver ** \<remote computer name> : 4024**
+    No Visual Studio 2019, você deve ver **\<remote computer name> : 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    No Visual Studio 2017, você deve ver ** \<remote computer name> : 4022**
+    No Visual Studio 2017, você deve ver **\<remote computer name> : 4022**
     ::: moniker-end
     A porta é necessária. Se você não vir o número da porta, adicione-o manualmente.
 
@@ -234,7 +235,7 @@ Para obter informações sobre como executar o depurador remoto como um serviço
 
 7. Clique em **anexar**
 
-8. Abra o site do computador remoto. Em um navegador, acesse **http:// \<remote computer name> **.
+8. Abra o site do computador remoto. Em um navegador, acesse **http:// \<remote computer name>**.
 
     Você deve ver a página da Web do ASP.NET.
 9. No aplicativo ASP.NET em execução, clique no link para a página **sobre** .
@@ -261,7 +262,7 @@ Portas obrigatórias:
 
 1. Para abrir uma porta no Windows Server, abra o menu **Iniciar** , procure por **Firewall do Windows com segurança avançada**.
 
-2. Em seguida, escolha **regras de entrada > nova regra > porta**. Escolha **Avançar** e, em **portas locais específicas**, insira o número da porta, clique em **Avançar**e, em seguida, **permitir a conexão**, clique em avançar e adicione o nome (**IIS**, **implantação da Web**ou **msvsmon**) para a regra de entrada.
+2. Em seguida, escolha **regras de entrada > nova regra > porta**. Escolha **Avançar** e, em **portas locais específicas**, insira o número da porta, clique em **Avançar** e, em seguida, **permitir a conexão**, clique em avançar e adicione o nome (**IIS**, **implantação da Web** ou **msvsmon**) para a regra de entrada.
 
     Se você quiser obter mais detalhes sobre como configurar o Firewall do Windows, consulte [Configurar o Firewall do Windows para depuração remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
 

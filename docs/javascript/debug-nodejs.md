@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 801ea23430d13dbefd9498c57b07881235275961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 369fa3c080705f552aed25ecef6bd87a3db43a64
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285186"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815614"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depurar um aplicativo JavaScript ou TypeScript no Visual Studio
 
@@ -29,7 +29,7 @@ Depure o código JavaScript e TypeScript usando o Visual Studio. Defina e atinja
 
 1. Com o projeto aberto no Visual Studio, abra um arquivo JavaScript do servidor (como *server.js*), clique na medianiz da medianiz esquerda para definir um ponto de interrupção:
 
-    ![Definir um ponto de interrupção](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
+    ![Captura de tela da janela do Visual Studio Code mostrando o código JavaScript. Um ponto vermelho na medianiz à esquerda indica que um pontos de interrupção está definido.](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
     Pontos de interrupção são o recurso mais básico e essencial da depuração confiável. Um ponto de interrupção indica quando o Visual Studio deve suspender o código em execução para que você possa examinar os valores das variáveis ou o comportamento de memória ou se uma ramificação de código está sendo executada ou não.
 
@@ -78,7 +78,7 @@ Para este cenário, use o Chrome.
 2. Inicie seu navegador com a depuração habilitada.
 
     ::: moniker range=">=vs-2019"
-    A partir do Visual Studio 2019, você pode definir o `--remote-debugging-port=9222` sinalizador na inicialização do navegador selecionando **procurar com...** > na barra de ferramentas de **depuração** , escolhendo **Adicionar**e, em seguida, definindo o sinalizador no campo **argumentos** . Use um nome amigável diferente para o navegador, como **borda com depuração** ou **Chrome com depuração**. Para obter detalhes, confira [Notas sobre a versão](/visualstudio/releases/2019/release-notes-v16.2).
+    A partir do Visual Studio 2019, você pode definir o `--remote-debugging-port=9222` sinalizador na inicialização do navegador selecionando **procurar com...** > na barra de ferramentas de **depuração** , escolhendo **Adicionar** e, em seguida, definindo o sinalizador no campo **argumentos** . Use um nome amigável diferente para o navegador, como **borda com depuração** ou **Chrome com depuração**. Para obter detalhes, confira [Notas sobre a versão](/visualstudio/releases/2019/release-notes-v16.2).
 
     ![Definir o navegador para abrir com a depuração habilitada](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
@@ -107,11 +107,11 @@ Para anexar o depurador do Visual Studio e clicar em pontos de interrupção no 
 
 1. Alterne para o Visual Studio e defina um ponto de interrupção no código-fonte, que pode ser um arquivo JavaScript, um arquivo TypeScript ou um arquivo JSX. (Defina o ponto de interrupção em uma linha de código que permite pontos de interrupção, como uma instrução de retorno ou uma declaração var.)
 
-    ![Definir um ponto de interrupção](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+    ![Captura de tela da janela do Visual Studio Code. Uma instrução de retorno é selecionada e um ponto vermelho na medianiz à esquerda indica que um pontos de interrupção está definido.](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Para localizar o código específico em um arquivo transcompilado, use **Ctrl** + **F** (**Editar**  >  **Localizar e substituir**  >  **localização rápida**).
 
-    Para o código do lado do cliente, para atingir um ponto de interrupção em um arquivo TypeScript, *. Vue*ou JSX normalmente requer o uso de [mapas de origem](#generate_source_maps). Um mapa de origem deve ser configurado corretamente para dar suporte à depuração no Visual Studio.
+    Para o código do lado do cliente, para atingir um ponto de interrupção em um arquivo TypeScript, *. Vue* ou JSX normalmente requer o uso de [mapas de origem](#generate_source_maps). Um mapa de origem deve ser configurado corretamente para dar suporte à depuração no Visual Studio.
 
 2. Selecione o navegador de destino como o destino de depuração no Visual Studio e pressione **Ctrl** + **F5** (**depurar**  >  **Iniciar sem depuração**) para executar o aplicativo no navegador.
 

@@ -1,5 +1,6 @@
 ---
 title: Padrões comuns para aplicativos multithread com mau desempenho
+description: Saiba mais sobre os padrões comuns para aplicativos multithread com mau desempenho que estão incluídos na ferramenta do Visualizador de simultaneidade do Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f45c22684ef737de7235caebd4ad0b1b4189155
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 36e14640da4d66134ca961607f66f6a355f6b9d9
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808936"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815783"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Padrões comuns para aplicativos multi-threaded com mau comportamento
 
@@ -37,17 +38,17 @@ Para obter mais informações, veja a seção "Começar com o problema" no artig
 
 ## <a name="uneven-workload-distribution"></a>Distribuição de carga de trabalho não uniforme
 
-![Carga de trabalho irregular](../profiling/media/unevenworkload_1.png "UnevenWorkLoad_1")
+![Captura de tela de um grafo de carga de trabalho para threads paralelos no Visualizador de simultaneidade. Os threads terminam em momentos diferentes, mostrando um padrão de etapa de escada.](../profiling/media/unevenworkload_1.png)
 
 Quando ocorre uma distribuição irregular de trabalho entre vários threads paralelos em um aplicativo, um padrão típico de serrilha é exibido à medida que cada thread conclui seu trabalho, conforme mostrado na ilustração anterior. O Visualizador de Simultaneidade geralmente mostra horários de início muito próximos para cada thread simultâneo. No entanto, esses threads normalmente terminam de maneira irregular em vez de terminar simultaneamente. Esse padrão indica uma distribuição irregular de trabalho entre um grupo de threads paralelos, o que pode levar à redução do desempenho. A melhor abordagem para esse problema é reavaliar o algoritmo pelo qual o trabalho foi dividido entre os threads paralelos.
 
 Conforme mostrado na ilustração a seguir, a Visualização Simultânea também pode expor esse sintoma no Modo de Exibição de Utilização da CPU como um uma etapa decrescente gradual na utilização da CPU.
 
-![Carga de trabalho irregular](../profiling/media/unevenworkload_2.png "UnevenWorkload_2")
+![Captura de tela da exibição de utilização da CPU no Visualizador de simultaneidade mostrando um padrão de etapa de escada no final do grafo de utilização da CPU.](../profiling/media/unevenworkload_2.png)
 
 ## <a name="oversubscription"></a>Excesso de assinatura
 
-![Excesso de assinatura](../profiling/media/oversubscription.png "Excesso de assinatura")
+![Captura de tela de um grafo de carga de trabalho para todos os threads ativos no Visualizador de simultaneidade. Uma legenda mostra a quantidade de tempo gasto na execução e na preempção.](../profiling/media/oversubscription.png)
 
 No caso do excesso de assinatura, o número de threads ativos em um processo é maior que o número de núcleos lógicos disponíveis no sistema. A ilustração anterior mostra os resultados do excesso de assinatura, com faixas de preempção significativa em todos os threads ativos. Além disso, a legenda mostra que uma grande percentual de tempo é gasta em preempção (84 por cento neste exemplo). Isso pode indicar que o processo está solicitando que o sistema execute mais threads simultâneos do que o número de núcleos lógicos. No entanto, isso também pode indicar que outros processos no sistema estão usando recursos que deveriam estar disponíveis para esse processo.
 
@@ -69,6 +70,6 @@ O uso excessivo ou incorreto de E/S é uma causa comum de ineficiências em apli
 
 Comboios de bloqueio ocorrem quando o aplicativo adquire bloqueios em ordem de chegada e quando a taxa de chegada no bloqueio é maior que a taxa de aquisição. A combinação dessas duas condições faz com que as solicitações do bloqueio comecem a fazer backup. Uma maneira de combater esse problema é usar bloqueios “desleais” ou bloqueios que dão acesso ao primeiro thread para localizá-los em estados desbloqueados. A ilustração anterior mostra o comportamento desse comboio. Para resolver o problema, experimente reduzir a contenção dos objetos de sincronização e usar bloqueios desleais.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 [Modo de Exibição de Threads](../profiling/threads-view-parallel-performance.md)
