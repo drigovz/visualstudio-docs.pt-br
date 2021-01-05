@@ -1,5 +1,7 @@
 ---
 title: Modelo de projeto VSIX | Microsoft Docs
+description: Saiba como usar o modelo de projeto VSIX para encapsular as extensões do Visual Studio em um projeto VSIX e, em seguida, publicar o pacote no Visual Studio Marketplace.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74791a77ee1c720fb60876a1efa6bd58fa94f68b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76e4301843cc318b60940948fee4b618860e7bae
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697931"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863878"
 ---
 # <a name="vsix-project-template"></a>Modelo de projeto VSIX
 
@@ -82,7 +84,7 @@ Você pode empacotar uma extensão existente ou uma extensão que ainda não tem
 
     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Cria um arquivo *. vsix* que contém um arquivo de manifesto do VSIX, um arquivo [Content_Types]*. xml* e todos os ativos de extensão que você adicionou ao projeto.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência do esquema de extensão do VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md)
 - [Localizar e usar extensões do Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)

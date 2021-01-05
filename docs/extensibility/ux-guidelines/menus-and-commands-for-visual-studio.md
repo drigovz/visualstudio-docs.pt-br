@@ -1,5 +1,7 @@
 ---
 title: Menus e comandos para o Visual Studio | Microsoft Docs
+description: Saiba como as barras de comando permitem flexibilidade na interface do usuário quando você cria novos recursos para o Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1f22b7ac4377b600208c079b6af1eff7fc3cbfc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7abb0249efc1a8da5d7e65572777e192e72c25e7
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698383"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863538"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menus e comandos para Visual Studio
 ## <a name="command-usage"></a>Uso do comando
@@ -49,13 +51,13 @@ ms.locfileid: "80698383"
  É útil posicionar os comandos em proximidade com a área do foco do usuário. Uma maneira de fazer isso é criar uma barra de ferramentas inserida na parte superior da janela de ferramentas ou do editor de documentos. Os comandos colocados na barra de ferramentas devem ser específicos para a região de conteúdo dentro da janela. Não duplique os comandos compartilhados nessas barras de ferramentas. Por exemplo, nunca coloque um ícone "salvar" dentro de uma barra de ferramentas inserida.
 
 ### <a name="content-and-command-visibility"></a>Visibilidade de conteúdo e comando
- Os comandos existem nos seguintes escopos: **ambiente**, **hierarquia**e **documento**. Conheça cada escopo para ter confiança no posicionamento do comando.
+ Os comandos existem nos seguintes escopos: **ambiente**, **hierarquia** e **documento**. Conheça cada escopo para ter confiança no posicionamento do comando.
 
- Os comandos no escopo do **ambiente** estabelecem o contexto primário e são compartilhados entre vários contextos. Eles alteram a visibilidade ou a organização de documentos e janelas de ferramentas. Entre os comandos no escopo do ambiente estão **novos projetos**, **Conecte-se ao servidor**, **anexe processo**, **recortar**, **copiar**, **colar**, **Localizar**, **Opções**, **Personalizar**, **nova janela**e **Exibir ajuda**.
+ Os comandos no escopo do **ambiente** estabelecem o contexto primário e são compartilhados entre vários contextos. Eles alteram a visibilidade ou a organização de documentos e janelas de ferramentas. Entre os comandos no escopo do ambiente estão **novos projetos**, **Conecte-se ao servidor**, **anexe processo**, **recortar**, **copiar**, **colar**, **Localizar**, **Opções**, **Personalizar**, **nova janela** e **Exibir ajuda**.
 
- Os comandos no escopo da **hierarquia** gerenciam hierarquias no Visual Studio, incluindo **projeto**, **equipe**e **dados**. Eles estão relacionados ao subcontexto de um projeto, por exemplo, **depuração**, **compilação**, **teste**, **arquitetura**ou **análise**. Entre os comandos no escopo da hierarquia estão **adicionados novo item**, **nova consulta**, **configurações do projeto**, **Adicionar nova fonte de dados**, assistente de inicialização de **desempenho**e **novo diagrama**.
+ Os comandos no escopo da **hierarquia** gerenciam hierarquias no Visual Studio, incluindo **projeto**, **equipe** e **dados**. Eles estão relacionados ao subcontexto de um projeto, por exemplo, **depuração**, **compilação**, **teste**, **arquitetura** ou **análise**. Entre os comandos no escopo da hierarquia estão **adicionados novo item**, **nova consulta**, **configurações do projeto**, **Adicionar nova fonte de dados**, assistente de inicialização de **desempenho** e **novo diagrama**.
 
- Os comandos no escopo do **documento** agem sobre o conteúdo de um documento, como código, design ou uma wiq (consulta de item de trabalho). Eles também atuam na exibição de uma janela de ferramentas ou, de outra forma, são específicos para essa janela de ferramentas. Os comandos de escopo do documento também agem nos objetos de arquivo que são específicos da hierarquia, como **remover do projeto**. Entre os comandos no escopo do documento estão **refatorar > renomear**, **criar cópia do item de trabalho**, **expandir tudo**, **recolher tudo**e **criar tarefa do usuário**.
+ Os comandos no escopo do **documento** agem sobre o conteúdo de um documento, como código, design ou uma wiq (consulta de item de trabalho). Eles também atuam na exibição de uma janela de ferramentas ou, de outra forma, são específicos para essa janela de ferramentas. Os comandos de escopo do documento também agem nos objetos de arquivo que são específicos da hierarquia, como **remover do projeto**. Entre os comandos no escopo do documento estão **refatorar > renomear**, **criar cópia do item de trabalho**, **expandir tudo**, **recolher tudo** e **criar tarefa do usuário**.
 
 ### <a name="command-placement-decisions"></a>Decisões de posicionamento de comando
  Depois de decidir criar um comando, você precisará determinar seu posicionamento apropriado e se deseja criar um atalho de teclado. Siga este caminho de decisão para estabelecer onde posicionar o comando:

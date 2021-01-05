@@ -1,5 +1,7 @@
 ---
 title: Fornecendo automação para VSPackages | Microsoft Docs
+description: Saiba mais sobre como fornecer automação para seu VSPackages implementando objetos específicos do VSPackage e implementando objetos de automação padrão.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6364f9cbaf3409e076eeb77365e5d793c7be96cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939de72d672b750d2f2fc61a6c412368df5523d8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705956"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875395"
 ---
 # <a name="providing-automation-for-vspackages"></a>Fornecendo automação para VSPackages
 Há duas maneiras principais de fornecer automação para seu VSPackages: implementando objetos específicos do VSPackage e implementando objetos de automação padrão. Em geral, eles são usados juntos para estender o modelo de automação do ambiente.
 
-## <a name="vspackage-specific-objects"></a>Objetos específicos do VSPackage
+## <a name="vspackage-specific-objects"></a>Objetos VSPackage-Specific
  Determinados locais dentro do modelo de automação exigem que você forneça objetos de automação exclusivos para seu VSPackage. Por exemplo, novos projetos exigem objetos distintos que apenas seu VSPackage fornece. Os nomes desses objetos são inseridos no registro e obtidos por meio de chamadas para o `DTE` objeto de ambiente.
 
  Os objetos específicos do VSPackage também podem ser obtidos quando um consumidor de automação usa o objeto fornecido por meio da propriedade Object de um objeto padrão. Por exemplo, o `Window` objeto padrão tem uma `Object` propriedade, normalmente conhecida como a `Windows.Object` propriedade. Quando os consumidores chamam o `Window.Object` em uma janela implementada em seu VSPackage, você passa um objeto de automação específico de seu próprio design.

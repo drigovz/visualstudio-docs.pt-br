@@ -1,5 +1,7 @@
 ---
 title: Seleção e moeda no IDE | Microsoft Docs
+description: Saiba como o VSPackages faz parte do controle de moeda. O IDE do Visual Studio mantém informações sobre os objetos selecionados no momento usando o contexto de seleção.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f580b7c8e1651dcbcd053476ae756399a0ac3482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2d745619be8bff77503bc14a1d7a87d84cc7864
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705578"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875590"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Seleção e moeda no IDE
-O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ambiente de desenvolvimento integrado) mantém informações sobre os objetos selecionados no momento usando o *contexto*de seleção. Com o contexto de seleção, VSPackages pode participar do controle de moeda de duas maneiras:
+O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ambiente de desenvolvimento integrado) mantém informações sobre os objetos selecionados no momento usando o *contexto* de seleção. Com o contexto de seleção, VSPackages pode participar do controle de moeda de duas maneiras:
 
 - Propagando informações de moeda sobre o VSPackages para o IDE.
 
@@ -62,6 +64,6 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ambiente de 
 
 - Eventos que alteram os elementos rastreados dentro do contexto de seleção do quadro da janela. Os exemplos incluem alterar a seleção em um DocObject ou alterar a seleção em uma janela de tipo de projeto.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Objetos de contexto da seleção](../../extensibility/internals/selection-context-objects.md)
 - [Comentários para o usuário](../../extensibility/internals/feedback-to-the-user.md)

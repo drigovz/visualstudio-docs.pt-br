@@ -1,5 +1,7 @@
 ---
 title: Diretrizes de experiência do usuário do Visual Studio | Microsoft Docs
+description: As diretrizes de experiência do usuário do Visual Studio contêm modelos de usuário e padrões de interação comuns para ajudar a criar experiências de usuário consistentes para novos recursos.
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 994d0029e7dfdc3559adae0e1c022acd38d7f5a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c8200d5d0dbb18240f67214abecca4d066ce6270
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698199"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863936"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Diretrizes da experiência do usuário do Visual Studio
 Siga as diretrizes de experiência do usuário do Visual Studio se você criar novos recursos para o Visual Studio. Essas diretrizes contêm informações sobre modelos de usuário comuns e padrões de interação para que os designers de novas interfaces de usuário (IU) possam criar experiências de usuário que são diretas e consistentes no ambiente de desenvolvimento.

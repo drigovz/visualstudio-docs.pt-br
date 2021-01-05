@@ -1,5 +1,7 @@
 ---
 title: Elemento pai | Microsoft Docs
+description: O elemento pai especifica que um elemento é um pai de um botão, caixa de combinação, menu ou grupo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c018505ba06762bf8426f266b24ee1835313c29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03f1709184126d31845bfe1145afdebfeffcd1d1
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702224"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863330"
 ---
 # <a name="parent-element"></a>Elemento pai
 O pai de um botão ou caixa de combinação pode ser apenas um grupo. O pai de um menu ou grupo pode ser qualquer outro menu ou grupo. Em um [elemento CommandPlacement](../extensibility/commandplacement-element.md), esse elemento é necessário; em todas as outras instâncias, é opcional. Se esse elemento for omitido, o pai de `Group_Undefined:0` será implícito.
@@ -49,5 +51,5 @@ O pai de um botão ou caixa de combinação pode ser apenas um grupo. O pai de u
 |[Elemento menus](../extensibility/menus-element.md)|Define todos os menus que um VSPackage implementa.|
 |[Elemento groups](../extensibility/groups-element.md)|Contém entradas que definem os grupos de comandos de um VSPackage.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Arquivos de tabela de comando do Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

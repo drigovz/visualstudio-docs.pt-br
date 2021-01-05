@@ -1,5 +1,7 @@
 ---
 title: Registrando um idioma herdado Service2 | Microsoft Docs
+description: Este artigo lista as entradas do registro para as várias opções de serviço de linguagem disponíveis no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +14,20 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a41f3f507579cbd2649e33e81d1368fb5404799
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08b9e88440fcb7b488e479e4188279d82a526e4c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238836"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875155"
 ---
 # <a name="registering-a-legacy-language-service-2"></a>Registrando um serviço de idioma herdado 2
 As seções a seguir fornecem listas de entradas de registro para as várias opções de serviço de linguagem disponíveis no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
- Na lista de entradas de registro a seguir, a *raiz do vs reg* é igual a HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ *X. y*, em que *x. y* é o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] número de versão.
+ Na lista de entradas de registro a seguir, a *raiz do vs reg* é igual a HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *x. y*, em que *x. y* é o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] número de versão.
 
 ## <a name="registry-entries-for-language-service-options"></a>Entradas de registro para opções de serviço de idioma
- A chave do nome do idioma dos serviços \Languages\Languages *raiz vs reg* \\ *Language Name* pode conter os valores a seguir.
+ A chave do nome do idioma dos serviços \Languages\Languages *raiz vs reg* \\  pode conter os valores a seguir.
 
 |Nome|Tipo|Intervalo|Descrição|
 |----------|----------|-----------|-----------------|
@@ -62,11 +64,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-debugger-languages-options"></a>Entradas de registro para opções de idiomas do depurador
- O nome do idioma dos serviços \Languages\Languages *raiz vs reg* \\ \Debugger*Languages* \\ *GUID*\ Key pode incluir os valores a seguir.
+ O nome do idioma dos serviços \Languages\Languages *raiz vs reg* \\ \Debugger *Languages* \\ *GUID*\ Key pode incluir os valores a seguir.
 
 |Nome|Tipo|Intervalo|Descrição|
 |----------|----------|-----------|-----------------|
-|(Padrão)|REG_SZ|texto|O valor padrão pode ser usado para documentar o nome do idioma. O nome dessa chave é um GUID de um avaliador de expressão que tem uma entrada correspondente no *\<VS Reg Root>* avaliador \AD7Metrics\Expression.|
+|(Padrão)|REG_SZ|text|O valor padrão pode ser usado para documentar o nome do idioma. O nome dessa chave é um GUID de um avaliador de expressão que tem uma entrada correspondente no *\<VS Reg Root>* avaliador \AD7Metrics\Expression.|
 
 ### <a name="example"></a>Exemplo
 
@@ -132,7 +134,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-editor-options"></a>Entradas do registro para opções do editor
- A chave \Editors do *vs reg raiz*pode conter os seguintes valores:
+ A chave \Editors do *vs reg raiz* pode conter os seguintes valores:
 
 |Nome|Tipo|Intervalo|Descrição|
 |----------|----------|-----------|-----------------|
@@ -179,7 +181,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-editor-extension-options"></a>Entradas de registro para opções de extensão do editor
- A chave \Extensions do GUID do editor \Editors do *vs reg raiz* \\ *Editor GUID*pode conter os valores a seguir. A extensão de nome de arquivo não inclui o período à esquerda.
+ A chave \Extensions do GUID do editor \Editors do *vs reg raiz* \\ pode conter os valores a seguir. A extensão de nome de arquivo não inclui o período à esquerda.
 
 |Nome|Tipo|Intervalo|Descrição|
 |----------|----------|-----------|-----------------|
@@ -237,5 +239,5 @@ ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
         MaxRegions            = reg_dword:0x0000000a
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Desenvolvendo um serviço de linguagem herdado](../../extensibility/internals/developing-a-legacy-language-service.md)

@@ -1,5 +1,7 @@
 ---
 title: Notificações e progresso do Visual Studio | Microsoft Docs
+description: Saiba mais sobre várias maneiras de informar aos usuários o que está acontecendo no Visual Studio sobre suas tarefas de desenvolvimento de software.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f6a7ddd5d1a5a7257617b03098722e1341017b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56acfd96f8d9be575f6e13c727a294f28301bef4
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699876"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863780"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Notificações e progresso do Visual Studio
 ## <a name="notification-systems"></a><a name="BKMK_NotificationSystems"></a> Sistemas de notificação
@@ -256,7 +258,7 @@ ms.locfileid: "80699876"
 
  **Barra de progresso global indeterminado Team Explorer**
 
-##### <a name="dialogs"></a>Diálogos
+##### <a name="dialogs"></a>Caixas de diálogo
  As caixas de diálogo podem conter qualquer um dos tipos de carregador de progresso. Os indicadores de progresso podem ser emparelhados com mensagens, bem como combinados com vários níveis de indicação de progresso para representar granular e subprocessos.
 
  ![Caixa de diálogo com vários tipos de indicador de progresso](../../extensibility/ux-guidelines/media/0903-11_dialog.png "0903-11_Dialog")

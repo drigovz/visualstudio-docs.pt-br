@@ -1,5 +1,7 @@
 ---
 title: Galerias particulares | Microsoft Docs
+description: Saiba como compartilhar os controles, modelos e ferramentas que você desenvolve no SDK do Visual Studio postando-os em uma galeria privada.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +13,14 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ec7390acf753af20bc0edbe20194ba17c2d9d80
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444642"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863500"
 ---
-# <a name="private-galleries"></a>Galerias particulares
+# <a name="private-galleries"></a>Galerias privadas
 Você pode compartilhar os controles, modelos e ferramentas que você desenvolve postando-os em uma *galeria privada* na intranet para sua organização, da seguinte maneira:
 
 - Crie um Feed Atom (RSS) para um local central configurado adequadamente (repositório) em sua intranet. Para obter mais informações, consulte [como: criar um Feed Atom para uma galeria privada](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).
@@ -51,7 +53,7 @@ Você pode compartilhar os controles, modelos e ferramentas que você desenvolve
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
-@={URI}  (REG_SZ)
+@={URI}  (REG_SZ)
 Disabled=0 | 1 (DWORD)
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)
 Protocol=Atom|Sharepoint (REG_SZ)
@@ -72,7 +74,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 1. Na barra de menus, escolha **ferramentas**  >  **extensões e atualizações**.
 
-2. No painel esquerdo, selecione **extensões online**e, em seguida, selecione **minha galeria**.
+2. No painel esquerdo, selecione **extensões online** e, em seguida, selecione **minha galeria**.
 
 3. No painel direito, selecione uma extensão e, em seguida, escolha o botão **baixar** .
 
@@ -85,10 +87,10 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 1. Na barra de menus, escolha **ferramentas**  >  **extensões e atualizações**.
 
-2. No painel esquerdo, selecione **atualizações**e, em seguida, selecione **meu repositório**.
+2. No painel esquerdo, selecione **atualizações** e, em seguida, selecione **meu repositório**.
 
 3. No painel direito, selecione uma extensão e, em seguida, escolha o botão **Atualizar** .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Localizar e usar extensões do Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)
 - [Enviar extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

@@ -1,5 +1,7 @@
 ---
 title: Fontes e formatação para o Visual Studio | Microsoft Docs
+description: Saiba mais sobre fontes e formatação para novos recursos que você projeta para o Visual Studio, incluindo como usar a fonte de ambiente.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd2e8a41ef4b9708df079e94bcac8b8c06189116
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15ba4307cc2941f0d978674eb224b717fdd8aaba
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536104"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863531"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fontes e formatação para Visual Studio
 ## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> A fonte do ambiente
@@ -71,7 +73,7 @@ internal partial class WebConfigModificationWindow : DialogWindow
 
  Para exibir a caixa de diálogo, chame " `ShowModal()` " na classe `ShowDialog()` . `ShowModal()` define o estado modal correto no Shell, garante que a caixa de diálogo esteja centralizada na janela pai e assim por diante.
 
- O código é o seguinte:
+ O código será o seguinte:
 
 ```csharp
 MyWindow window = new MyWindow();
@@ -120,16 +122,16 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 **Código de procedimento:** Em que `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);
 ```
 
 **XAML:** Defina o estilo do TextBlock ou do rótulo, conforme mostrado.
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey}}">Label: 375 Percent Scaling</Label>
 ```
 
@@ -139,16 +141,16 @@ label.SetResourceReference(Label.StyleProperty,  
  **Código de procedimento:** Em que `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);
 ```
 
  **XAML:** Defina o estilo do TextBlock ou do rótulo, conforme mostrado.
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey}}">Label: 310 Percent Scaling</Label>
 ```
 
@@ -158,16 +160,16 @@ label.SetResourceReference(Label.StyleProperty,  
  **Código de procedimento:** Em que `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);
 ```
 
  **XAML:** Defina o estilo do TextBlock ou do rótulo, conforme mostrado:
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey}}">Label: 200 Percent Scaling</Label>
 ```
 
@@ -177,16 +179,16 @@ label.SetResourceReference(Label.StyleProperty,  
  **Código de procedimento:** Em que `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);
 ```
 
  **XAML:** Defina o estilo do TextBlock ou do rótulo, conforme mostrado:
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey}}">Label: 155 Percent Scaling</Label>
 ```
 
@@ -196,16 +198,16 @@ label.SetResourceReference(Label.StyleProperty,  
  **Código de procedimento:** Em que `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);
 ```
 
  **XAML:** Defina o estilo do TextBlock ou do rótulo, conforme mostrado:
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey}}">Label: 133 Percent Scaling</Label>
 ```
 
@@ -215,16 +217,16 @@ label.SetResourceReference(Label.StyleProperty,  
  **Código de procedimento:** Em que `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);
 ```
 
  **XAML:** Defina o estilo do TextBlock ou do rótulo, conforme mostrado:
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>
 ```
 
@@ -234,16 +236,16 @@ label.SetResourceReference(Label.StyleProperty,  
  **Código de procedimento:** Em que `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironmentBoldStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironmentBoldStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironmentBoldStyleKey);
 ```
 
  **XAML:** Defina o estilo do TextBlock ou do rótulo, conforme mostrado:
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironmentBoldStyleKey}}"> Bold Label</Label>
 ```
 
@@ -337,7 +339,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
   Ao usar o caso de título, essas são as diretrizes para quando colocar palavras em maiúsculas e quando deixá-las em minúsculas:
 
-|Letras Maiúsculas|Comentários e exemplos|
+|Maiúsculas|Comentários e exemplos|
 |---------------|---------------------------|
 |Todos os substantivos||
 |Todos os verbos|Incluindo "is" e outras formas de "a ser"|
@@ -347,9 +349,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |Primeira e última palavras, independentemente de partes da fala||
 |Preposições que fazem parte de uma frase verbal|"Fechar todas as janelas" ou "desligar o sistema"|
 |Todas as letras de um acrônimo|HTML, XML, URL, IDE, RGB|
-|A segunda palavra em uma palavra composta, se for um substantivo ou um adjetivo apropriado, ou se as palavras tiverem um peso igual|Referência cruzada, software anterior da Microsoft, acesso de leitura/gravação, tempo de execução|
+|A segunda palavra em uma palavra composta, se for um substantivo ou um adjetivo apropriado, ou se as palavras tiverem um peso igual|Referência cruzada, software anterior da Microsoft, acesso de leitura/gravação Run-Time|
 
-|Letras minúsculas|Exemplos|
+|Minúsculas|Exemplos|
 |---------------|--------------|
 |A segunda palavra em uma palavra composta se ela for outra parte da fala ou de um particípio modificando a primeira palavra|Como fazer, tirar|
 |Artigos, a menos que uma seja a primeira palavra no título|um, uma, o, a|
@@ -389,7 +391,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="italics"></a>Itálico
  O Visual Studio não usa texto em itálico itálico ou negrito.
 
-#### <a name="color"></a>Cor
+#### <a name="color"></a>Color
 
 - O azul é reservado para hiperlinks (navegação e comando) e nunca deve ser usado para orientação.
 
@@ -481,7 +483,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - O texto da fonte do ambiente em negrito deve seguir o espaçamento e o preenchimento da altura de linha padrão.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Fontes (Windows)](/windows/desktop/uxguide/vis-fonts)
 - [Texto da interface do usuário (Windows)](/windows/desktop/uxguide/text-ui)

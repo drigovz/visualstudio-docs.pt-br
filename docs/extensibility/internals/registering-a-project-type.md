@@ -1,5 +1,7 @@
 ---
 title: Registrando um tipo de projeto | Microsoft Docs
+description: Saiba mais sobre como criar entradas de registro que permitem que o Visual Studio reconheça e trabalhe com o novo tipo de projeto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7267060f2207b0842885dc3001c3926874be30a9
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 9a34f5c7f1ae3a214a0a72932ae80dbc44845a45
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407725"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875181"
 ---
 # <a name="registering-a-project-type"></a>Registrando um tipo de projeto
 Ao criar um novo tipo de projeto, você deve criar entradas de registro que habilitam [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o para reconhecer e trabalhar com o tipo de projeto. Normalmente, você cria essas entradas de registro usando um arquivo de script do registro (. rgs).
@@ -264,7 +266,7 @@ Ao criar um novo tipo de projeto, você deve criar entradas de registro que habi
 
  Isso significa que se você incluir uma entrada PROJECT_TYPE = EF no arquivo. vsz, o ambiente localizará os arquivos. vsz no diretório ProductDir especificado anteriormente.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Lista de verificação: Criando tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Elementos de um modelo de projeto](../../extensibility/internals/elements-of-a-project-model.md)
 - [Criando instâncias de projeto por meio de fábricas de projeto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

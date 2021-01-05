@@ -1,5 +1,7 @@
 ---
 title: Registrando geradores de arquivo único | Microsoft Docs
+description: Saiba como registrar uma ferramenta personalizada no Visual Studio para instanciá-la e associá-la a um tipo de projeto específico.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 185e60daac2aef2c8aeeb4f087547984e6fcf510
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 7a0ce4afeddebdec8519467e1f4249095ce98f6b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012029"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875252"
 ---
 # <a name="registering-single-file-generators"></a>Registrando geradores de arquivo único
 Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , você deve registrá-la para que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] possa instanciá-la e o associe a um determinado tipo de projeto.
@@ -36,7 +38,7 @@ Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../code
    "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"
    ```
 
-2. Crie uma chave do registro no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Hive desejado em GUID de geradores, \\ *GUID* em que *GUID* é o GUID definido pelo serviço ou sistema de projeto do idioma específico. O nome da chave se torna o nome programático de sua ferramenta personalizada. A chave de ferramenta personalizada tem os seguintes valores:
+2. Crie uma chave do registro no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Hive desejado em GUID de geradores, \\  em que *GUID* é o GUID definido pelo serviço ou sistema de projeto do idioma específico. O nome da chave se torna o nome programático de sua ferramenta personalizada. A chave de ferramenta personalizada tem os seguintes valores:
 
    - (Padrão)
 
@@ -67,7 +69,7 @@ Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../code
    "GeneratesDesignTimeSource"=dword:00000001
    ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [Implementando geradores de arquivo único](../../extensibility/internals/implementing-single-file-generators.md)
 - [Expondo tipos para designers visuais](../../extensibility/internals/exposing-types-to-visual-designers.md)

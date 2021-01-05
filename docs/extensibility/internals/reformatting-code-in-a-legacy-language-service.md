@@ -1,5 +1,7 @@
 ---
 title: Reformatando código em um serviço de linguagem herdada | Microsoft Docs
+description: Saiba como habilitar o suporte para reformatação de código-fonte para um serviço de linguagem herdada do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3e83c7299298b16a6fb3178b189479a80e1728
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fcd9871cb0eeec69b98ada83af15f0daa624cb4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705918"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875344"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Reformatando o código em um serviço de linguagem herdado
 
@@ -183,6 +185,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Recursos do serviço de linguagem herdado](legacy-language-service-features1.md)

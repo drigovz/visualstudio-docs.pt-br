@@ -1,5 +1,7 @@
 ---
 title: Lista de objetos da janela de propriedades | Microsoft Docs
+description: Saiba mais sobre as interfaces usadas para interagir com a lista de objetos no janela Propriedades no IDE do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffe11ae6ebb4e692686c884b663a4f93d1466535
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 92fcce4dc62cdc84d15ca6dc51420791d4460340
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706143"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875421"
 ---
 # <a name="properties-window-object-list"></a>Lista de objetos de janela Propriedades
 A lista de objetos na janela **Propriedades** é uma lista suspensa que permite alterar a seleção para outros objetos disponíveis em uma ou mais janelas selecionadas. A seleção de um objeto diferente dentro dessa lista dispara uma chamada para <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> para informar ao ambiente que um novo objeto foi selecionado. As informações exibidas na janela **Propriedades** são então alteradas para mostrar as propriedades associadas ao objeto selecionado recentemente.
@@ -29,5 +31,5 @@ A lista de objetos na janela **Propriedades** é uma lista suspensa que permite 
 
  Se o objeto COM não for implementado <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> , a janela **Propriedades** exibirá o nome da interface no lugar do nome do objeto no lado esquerdo da lista.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Estendendo propriedades](../../extensibility/internals/extending-properties.md)

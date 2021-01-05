@@ -1,5 +1,7 @@
 ---
 title: Uso de RDT_ReadLock | Microsoft Docs
+description: Saiba mais sobre o _VSRDTFLAGS. RDT_ReadLock sinalizador, que fornece a lógica para bloquear um documento na tabela de documentos em execução.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb897fab61e1e14b52863b5853748c685200d5ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c946d69cf1aded072d27e7c6ccbdf28f1122571
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705923"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875382"
 ---
 # <a name="rdt_readlock-usage"></a>Uso de RDT_ReadLock
 
@@ -36,7 +38,7 @@ Quando um usuário abre um documento na interface do usuário, <xref:Microsoft.V
 
 ## <a name="rdt_editlock-and-document-modification"></a>RDT_EditLock e modificação de documento
 
-O sinalizador anterior mencionado indica que a abertura invisível do documento produzirá seu `RDT_EditLock` quando o documento for aberto pelo usuário em um **DocumentWindow**visível. Quando isso ocorre, o usuário recebe um aviso de **salvamento** quando o **DocumentWindow** visível é fechado. `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` as implementações que usam o <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> serviço inicialmente funcionam quando apenas um `RDT_ReadLock` é tomado (ou seja, quando o documento é aberto invisivelmente para analisar informações). Posteriormente, se o documento precisar ser modificado, o bloqueio será atualizado para um **RDT_EditLock**fraco. Se o usuário abrir o documento em uma **DocumentWindow**visível, o `CodeModel` será ineficaz `RDT_EditLock` .
+O sinalizador anterior mencionado indica que a abertura invisível do documento produzirá seu `RDT_EditLock` quando o documento for aberto pelo usuário em um **DocumentWindow** visível. Quando isso ocorre, o usuário recebe um aviso de **salvamento** quando o **DocumentWindow** visível é fechado. `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` as implementações que usam o <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> serviço inicialmente funcionam quando apenas um `RDT_ReadLock` é tomado (ou seja, quando o documento é aberto invisivelmente para analisar informações). Posteriormente, se o documento precisar ser modificado, o bloqueio será atualizado para um **RDT_EditLock** fraco. Se o usuário abrir o documento em uma **DocumentWindow** visível, o `CodeModel` será ineficaz `RDT_EditLock` .
 
 Se o usuário fechar a **DocumentWindow** e escolher **não** quando for solicitado a salvar o documento aberto, a `CodeModel` implementação descartará todas as informações no documento e reabrirá o documento do disco de forma invisível na próxima vez em que mais informações forem necessárias para o documento. A sutileza desse comportamento é uma instância em que o usuário abre o **DocumentWindow** do documento aberto invisível, modifica-o, fecha-o e, em seguida, escolhe **não** quando é solicitado a salvar o documento. Nesse caso, se o documento tiver um `RDT_ReadLock` , o documento não será fechado de fato e o documento modificado permanecerá aberto de forma invisível na memória, mesmo que o usuário decida não salvar o documento.
 

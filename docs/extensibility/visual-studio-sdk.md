@@ -1,5 +1,7 @@
 ---
 title: SDK do Visual Studio | Microsoft Docs
+description: O SDK do Visual Studio ajuda a estender recursos ou adicionar novos recursos ao Visual Studio. Saiba mais sobre algumas das maneiras pelas quais você pode estender o Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dbe2832d52d17047795d1898f0e0bfd8a275bb9
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 4be4b07e322b5be148593c70136eb44ec7fcfdf7
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414377"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863856"
 ---
 # <a name="visual-studio-sdk"></a>SDK do Visual Studio
 O SDK do Visual Studio ajuda você a estender recursos do Visual Studio ou integrar novos recursos ao Visual Studio. Você pode distribuir suas extensões para outros usuários, bem como para a Visual Studio Marketplace. A seguir estão algumas das maneiras pelas quais você pode estender o Visual Studio:
@@ -73,7 +75,7 @@ O SDK do Visual Studio ajuda você a estender recursos do Visual Studio ou integ
 
 - [Estendendo o Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Como migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)

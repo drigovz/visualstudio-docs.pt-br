@@ -1,5 +1,7 @@
 ---
 title: Decisões de design de controle do código-fonte | Microsoft Docs
+description: Saiba mais sobre as principais decisões de design a serem consideradas para projetos ao implementar o controle do código-fonte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c36bb2b50a72a52aeaeb7712f4ed711845b5e6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98e84167bc9cbbcad41b897c2de69115c6827ca5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705256"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875512"
 ---
 # <a name="source-control-design-decisions"></a>Decisões de design de controle do código-fonte
 As decisões de design a seguir devem ser consideradas para projetos ao implementar o controle do código-fonte.
@@ -34,7 +36,7 @@ As decisões de design a seguir devem ser consideradas para projetos ao implemen
 
 3. Quando seu projeto ou editor chama <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> um arquivo, os arquivos especiais associados a esse arquivo não são automaticamente submetidos a check-out. Passe os arquivos especiais junto com o arquivo pai. O ambiente detectará a relação entre todos os arquivos passados e ocultará adequadamente os arquivos especiais na interface do usuário de check-out.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>

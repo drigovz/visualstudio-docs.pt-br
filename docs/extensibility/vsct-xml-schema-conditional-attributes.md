@@ -1,5 +1,7 @@
 ---
 title: Atributos condicionais de esquema XML VSCT | Microsoft Docs
+description: Saiba como aplicar atributos condicionais a listas e itens de esquema XML do VSCT. Os atributos são avaliados como true ou false, controlando a saída resultante.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2b1fb3ee1b2cd396f25ec5591a585f8d87648d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5f9f51e9380585d4191c5969d96fbb3a93ea42a
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697941"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863711"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Atributos condicionais de esquema XML VSCT
 Você pode aplicar atributos condicionais a todas as listas e itens. Os operadores lógicos e as expressões de expansão de símbolo são avaliados como verdadeiro ou falso. Se for true, a lista ou o item associado será incluído na saída resultante.

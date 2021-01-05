@@ -1,5 +1,7 @@
 ---
 title: QUERYCHANGESFUNC | Microsoft Docs
+description: A função de retorno de chamada QUERYCHANGESFUNC é usada para enumerar uma coleção de nomes de arquivo e determinar o status de cada arquivo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30864cae95672f4026084a94c5474d165b124cba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7ce5d9fa8e1c3cfc3eaedb55d69ca382e937e45
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701641"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97864021"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 Essa é uma função de retorno de chamada usada pela operação [SccQueryChanges](../extensibility/sccquerychanges-function.md) para enumerar uma coleção de nomes de arquivo e determinar o status de cada arquivo.
@@ -96,7 +98,7 @@ struct QUERYCHANGESDATA_W
 
  lpLatestName o nome do arquivo atual para este item.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Funções de retorno de chamada implementadas pelo IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccQueryChanges](../extensibility/sccquerychanges-function.md)
 - [Códigos de erro](../extensibility/error-codes.md)

@@ -1,5 +1,7 @@
 ---
 title: Registrando manipuladores de comando de assembly de interoperabilidade | Microsoft Docs
+description: Saiba mais sobre o contrato de comando básico usado por todos os VSPackages implementando comandos usando assemblies de interoperabilidade.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfff8e4e6cc8ba3974ec70e6466b25e9ff7432e4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: b45fe06722b190569e067dccd325ba4acac4fb0f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012042"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875148"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrando manipuladores de comando de assembly de interoperabilidade
 Um VSPackage deve se registrar no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para que o IDE (ambiente de desenvolvimento integrado) roteia seus comandos corretamente.
@@ -28,10 +30,10 @@ Um VSPackage deve se registrar no [!INCLUDE[vsprvs](../../code-quality/includes/
 - Os recursos de [referência de formato de tabela de comando](/previous-versions/bb164647(v=vs.100)) estão localizados em DLLs de interface do usuário satélite não gerenciadas.
 
 ## <a name="command-handler-registration-of-a-vspackage"></a>Registro de manipulador de comando de um VSPackage
- Um VSPackage atuando como um manipulador para comandos baseados na interface do usuário requer uma entrada de registro nomeada após o VSPackage `GUID` . Essa entrada de registro especifica o local do arquivo de recurso de interface do usuário do VSPackage e o recurso de menu dentro desse arquivo. A própria entrada do registro está localizada em HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ *\<Version>* \Menus, em que *\<Version>* é a versão do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , por exemplo, 9,0.
+ Um VSPackage atuando como um manipulador para comandos baseados na interface do usuário requer uma entrada de registro nomeada após o VSPackage `GUID` . Essa entrada de registro especifica o local do arquivo de recurso de interface do usuário do VSPackage e o recurso de menu dentro desse arquivo. A própria entrada do registro está localizada em HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ *\<Version>* \Menus, em que *\<Version>* é a versão do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , por exemplo, 9,0.
 
 > [!NOTE]
-> O caminho raiz de HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *\<Version>* pode ser substituído por uma raiz alternativa quando o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell é inicializado. Para obter mais informações sobre o caminho raiz, consulte [Installing VSPackages With Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
+> O caminho raiz de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* pode ser substituído por uma raiz alternativa quando o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell é inicializado. Para obter mais informações sobre o caminho raiz, consulte [Installing VSPackages With Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
 
 ### <a name="the-ctmenu-resource-registry-entry"></a>A entrada do registro de recurso CTMENU
  A estrutura da entrada do registro é:
@@ -66,6 +68,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
     {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Como os VSPackages adicionam elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandos e menus que usam assemblies de interoperabilidade](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

@@ -1,5 +1,7 @@
 ---
 title: Referência de esquema XML VSCT | Microsoft Docs
+description: Os artigos de referência de esquema XML VSCT descrevem elementos de esquema de compilador de tabela de comando, com elementos filho e atributos permitidos para cada um.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 923a0c4b64fcae3a409a2298d6d481f6e1bb14db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56d6c1309dc5b9a52de0bc0b54a764eceaf37d96
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697918"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863981"
 ---
 # <a name="vsct-xml-schema-reference"></a>Referência de esquema XML VSCT
 Fornece uma tabela de elementos de esquema de compilador de tabela de comando, com elementos filho permitidos e atributos para cada um.
@@ -72,6 +74,6 @@ Fornece uma tabela de elementos de esquema de compilador de tabela de comando, c
 
 - [Atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Como VSPackages adicionar elementos da interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Roteamento de comandos em VSPackages](../extensibility/internals/command-routing-in-vspackages.md)

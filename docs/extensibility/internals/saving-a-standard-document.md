@@ -1,5 +1,7 @@
 ---
 title: Salvando um documento padrão | Microsoft Docs
+description: Saiba mais sobre o processo que ocorre para um documento padrão para um tipo de projeto que você adiciona ao IDE do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8d50a9e62e69f925564717020a51f88620f5f3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81c79ece83bc8aaaf7ca4dd28642de5973ad94c1
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705544"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875660"
 ---
 # <a name="saving-a-standard-document"></a>Salvando um documento padrão
-O ambiente manipula os comandos salvar, salvar como e salvar todos. Quando um usuário seleciona **salvar**, **salvar como**ou **salvar tudo** no menu **arquivo** ou fecha a solução, resultando em um **salvamento de tudo**, o processo a seguir ocorre.
+O ambiente manipula os comandos salvar, salvar como e salvar todos. Quando um usuário seleciona **salvar**, **salvar como** ou **salvar tudo** no menu **arquivo** ou fecha a solução, resultando em um **salvamento de tudo**, o processo a seguir ocorre.
 
  ![Editor padrão](../../extensibility/internals/media/public.gif "Público") Salvar, salvar como e salvar todo o tratamento de comandos para um editor padrão
 
@@ -56,6 +58,6 @@ O ambiente manipula os comandos salvar, salvar como e salvar todos. Quando um us
 
 2. Chame o <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> `pszMkDocumentNew` método (, `punkWindowFrame` ) para transferir o documento para a nova hierarquia. A hierarquia que executa o comando Salvar como chama esse método.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Abrindo e salvando itens de projeto](../../extensibility/internals/opening-and-saving-project-items.md)

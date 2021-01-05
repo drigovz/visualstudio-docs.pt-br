@@ -1,5 +1,7 @@
 ---
 title: MSSCCPRJ. Arquivo SCC | Microsoft Docs
+description: Saiba mais sobre o MSSCCPRJ. O arquivo SCC, que é um arquivo local do lado do cliente usado pelo plug-in de controle do código-fonte, que funciona com o SDK do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89511b7c8b69c5793eceef7d58153dde253a4f47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 253482f840350ae1d3cf7ee83e03a88ace15a6cd
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702466"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863474"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Arquivo SCC
 Quando você coloca uma solução ou projeto do Visual Studio no controle do código-fonte usando o IDE, o IDE recebe duas partes principais de informações. As informações são provenientes do plug-in de controle do código-fonte na forma de cadeias de caracteres. Essas cadeias de caracteres, "AuxPath" e "ProjName", são opacas para o IDE, mas elas são usadas pelo plug-in para localizar a solução ou o projeto no controle de versão. Normalmente, o IDE obtém essas cadeias de caracteres pela primeira vez chamando [SccGetProjPath](../extensibility/sccgetprojpath-function.md)e, em seguida, salva-as no arquivo da solução ou do projeto para chamadas futuras para o [SccOpenProject](../extensibility/sccopenproject-function.md). Quando inseridos na solução e nos arquivos de projeto, as cadeias de caracteres "AuxPath" e "ProjName" não são atualizadas automaticamente quando um usuário ramifica, bifurca ou copia arquivos de solução e de projeto que estão no controle de versão. Para garantir que os arquivos de solução e de projeto apontem para o local correto no controle de versão, os usuários devem atualizar manualmente as cadeias de caracteres. Como as cadeias de caracteres são destinadas a serem opacas, talvez nem sempre fique claro como elas devem ser atualizadas.
@@ -72,6 +74,6 @@ Quando você coloca uma solução ou projeto do Visual Studio no controle do có
 
  Não há nenhum delimitador final para esta seção. O nome do arquivo, bem como todos os literais que aparecem no arquivo, são definidos no arquivo de cabeçalho SCC. h. Para obter mais informações, consulte [cadeias de caracteres usadas como chaves para localizar um plug-in de controle do código-fonte](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md)
 - [Cadeias de caracteres usadas como chaves para localizar um plug-in de controle do código-fonte](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)

@@ -1,5 +1,7 @@
 ---
 title: Designer de manifesto do VSIX | Microsoft Docs
+description: Saiba como o designer de manifesto do VSIX modifica um arquivo de manifesto do pacote VSIX, que define o comportamento da instalação para uma extensão do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,19 +16,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30620e0fe91d0e90995d2d2f721950f878c65fdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6323b4330279848bc0453bdc7413904e2582d13a
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697893"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863966"
 ---
 # <a name="vsix-manifest-designer"></a>Designer de manifesto do VSIX
 Modifica um arquivo de manifesto do pacote VSIX, que define o comportamento da instalação para uma extensão do Visual Studio.
 
  O **Designer de manifesto do VSIX** é mapeado para o esquema VSIX subjacente. Cada elemento no esquema pode ser definido usando um controle correspondente no designer. Para obter mais informações sobre o esquema, consulte [referência do esquema de extensão do VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md).
 
- Para abrir o **Designer de manifesto VSIX**, localize um arquivo *Source. Extension. vsixmanifest* em **Gerenciador de soluções**e abra o arquivo. Se o arquivo não contiver um XML válido, o designer de manifesto não será aberto.
+ Para abrir o **Designer de manifesto VSIX**, localize um arquivo *Source. Extension. vsixmanifest* em **Gerenciador de soluções** e abra o arquivo. Se o arquivo não contiver um XML válido, o designer de manifesto não será aberto.
 
 > [!NOTE]
 > O arquivo *Source. Extension. vsixmanifest* é saída para *extension. vsixmanifest* quando o pacote é compilado.
@@ -128,6 +130,6 @@ Modifica um arquivo de manifesto do pacote VSIX, que define o comportamento da i
 
   O identificador deve corresponder ao `ID` atributo dos metadados do pacote de dependência. A origem pode ser um projeto na solução atual, uma extensão atualmente instalada ou um arquivo. A configuração **como a dependência é resolvida** pode ser o caminho relativo de um pacote aninhado ou a URL do local de download para a dependência. A ID, a versão e a resolução do pacote de dependência correspondem aos `Id` `Version` atributos, e `Location` do `Dependency` elemento associado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Referência do esquema de extensão do VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md)
 - [Anatomia de um pacote VSIX](../extensibility/anatomy-of-a-vsix-package.md)

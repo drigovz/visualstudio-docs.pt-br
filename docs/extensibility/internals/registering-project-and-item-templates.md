@@ -1,5 +1,7 @@
 ---
 title: Registrando modelos de projeto e item | Microsoft Docs
+description: Saiba como o Visual Studio usa informações de registro para seus tipos de projeto para determinar o que mostrar nas caixas de diálogo Adicionar novo projeto e adicionar novo item.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b64504c39b1fc3c4a82530b265cfd0e96832b4f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 999b435719113883201b7619daca9a84d095294e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705817"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875265"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrando modelos de projeto e item
 Os tipos de projeto devem registrar os diretórios em que os modelos de projeto e de item de projeto estão localizados. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa as informações de registro associadas aos tipos de projeto para determinar o que mostrar nas caixas de diálogo **Adicionar novo projeto** e **Adicionar novo item** .
@@ -27,7 +29,7 @@ Os tipos de projeto devem registrar os diretórios em que os modelos de projeto 
  Para obter mais informações sobre modelos, consulte [adicionando projeto e modelos de item de projeto](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
 ## <a name="registry-entries-for-projects"></a>Entradas de registro para projetos
- Os exemplos a seguir mostram entradas de registro em HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ < *versão*>. As tabelas que as acompanham explicam os elementos usados nos exemplos.
+ Os exemplos a seguir mostram entradas de registro em HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ < *versão*>. As tabelas que as acompanham explicam os elementos usados nos exemplos.
 
 ```
 [Projects\{ProjectGUID}]
@@ -67,7 +69,7 @@ Os tipos de projeto devem registrar os diretórios em que os modelos de projeto 
 
  **Arquivos do Visual C# ( \* . cs, \* . resx, \* . Settings, \* . xsd, \* . WSDL); \* . CS, \* . resx, \* . Settings, \* . xsd, \* . WSDL)**
 
- Para dar suporte ao registro de vários filtros, cada filtro é registrado em sua própria subchave em HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ < *versão*> \projects \\ { \<*ProjectGUID*> } \Filters \\ < *subchave*>. O nome da subchave é arbitrário; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ignora o nome da subchave e usa apenas seus valores.
+ Para dar suporte ao registro de vários filtros, cada filtro é registrado em sua própria subchave em HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ < *versão*> \\ subchave do \projects { \<*ProjectGUID*> } \Filters \\ < >. O nome da subchave é arbitrário; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ignora o nome da subchave e usa apenas seus valores.
 
  Você pode controlar os contextos nos quais um filtro é usado definindo sinalizadores, mostrados na tabela a seguir. Se um filtro não tiver nenhum sinalizador definido, ele será listado após os filtros comuns na caixa de diálogo **Adicionar item existente** e na caixa de diálogo **Abrir arquivo** , mas não será usado na caixa de diálogo **localizar nos arquivos** .
 
@@ -116,7 +118,7 @@ Os tipos de projeto devem registrar os diretórios em que os modelos de projeto 
 
  \WizardFiles
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Adicionando o projeto e os modelos de item do projeto](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [Assistentes](../../extensibility/internals/wizards.md)

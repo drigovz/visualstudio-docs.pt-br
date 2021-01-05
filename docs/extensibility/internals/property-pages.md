@@ -1,5 +1,7 @@
 ---
 title: Páginas de propriedades | Microsoft Docs
+description: Saiba mais sobre como trabalhar com páginas de propriedades para o novo tipo de projeto no SDK do Visual Studio, que permite que os usuários exibam e alterem as propriedades do projeto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac788f51bcdc52cd39469a272909890333c5016b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d446e731c08b85c2c903c2414528ac2a7370c26
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706051"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875525"
 ---
 # <a name="property-pages"></a>Páginas de propriedade
 Os usuários podem exibir e alterar propriedades dependentes de configuração de projeto e independentes usando páginas de propriedades. Um botão **páginas de propriedades** é habilitado na janela **Propriedades** ou na barra de ferramentas Gerenciador de soluções para objetos que fornecem uma exibição de página de propriedades do objeto selecionado. As páginas de propriedades são criadas pelo ambiente e estão disponíveis para soluções e projetos. No entanto, eles também podem ser disponibilizados para itens de projeto que fazem uso de propriedades dependentes de configuração. Esse recurso pode ser usado quando arquivos dentro de um projeto exigem configurações de comutador de compilador diferentes para serem compilados corretamente.
@@ -77,7 +79,7 @@ Os usuários podem exibir e alterar propriedades dependentes de configuração d
 
    Implemente o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> método para recuperar a hierarquia do projeto e o item do projeto ou itens selecionados. No DTE, você usaria os `SelectedItems.SelectedItem.Project` métodos e `SelectedItems.SelectedItem.ProjectItem` . Há um código de exemplo sob esses cabeçalhos nos documentos principais [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>
 - [Gerenciando opções de configuração](../../extensibility/internals/managing-configuration-options.md)
 - [Objeto de configuração de projeto](../../extensibility/internals/project-configuration-object.md)

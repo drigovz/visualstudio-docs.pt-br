@@ -1,5 +1,7 @@
 ---
 title: POPDIRLISTFUNC | Microsoft Docs
+description: Saiba mais sobre a função de retorno de chamada POPDIRLISTFUNC, que é passada para diretórios de atualização para descobrir quais estão sob controle do código-fonte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52a0c16af0e142bda8527c5244a22e0830ced9e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 805d7a5c9250bc511692c497bc9083852dad2301
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702075"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863452"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Essa é uma função de retorno de chamada fornecida para a função [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) para atualizar uma coleção de diretórios e (opcionalmente) nomes de arquivos para descobrir quais estão sob controle do código-fonte.
@@ -59,7 +61,7 @@ no Caminho local completo para um diretório ou nome de arquivo que está sob co
 ## <a name="remarks"></a>Comentários
  Se o `fOptions` parâmetro da `SccPopulateDirList` função contiver o `SCC_PDL_INCLUDEFILES` sinalizador, a lista provavelmente conterá nomes de arquivo, bem como nomes de diretório.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Funções de retorno de chamada implementadas pelo IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)
 - [Códigos de erro](../extensibility/error-codes.md)

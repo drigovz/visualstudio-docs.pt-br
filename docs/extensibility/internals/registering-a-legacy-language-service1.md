@@ -1,5 +1,7 @@
 ---
 title: Registrando um Service1 de linguagem herdada | Microsoft Docs
+description: Saiba mais sobre o registro de um serviço de linguagem herdado de um VSPackage com o Visual Studio adicionando chaves e entradas do registro.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0076eeee0ebcb0a80925efdde212097a3ec3e7e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e92c831ad3d2f4d75d57c48cfc7ba666d19b7a5e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238875"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875191"
 ---
 # <a name="registering-a-legacy-language-service-1"></a>Registrando um serviço de idioma herdado 1
 Na MPF (estrutura de pacote gerenciada), o serviço de linguagem é proffered por um VSPackage (consulte [VSPackages](../../extensibility/internals/vspackages.md)) e é registrado com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] adicionando chaves e entradas do registro. Esse processo de registro é feito parcialmente durante a instalação e, em parte, no tempo de execução.
@@ -128,7 +130,7 @@ namespace TestLanguagePackage
  Esse atributo registra uma página de propriedades a ser exibida na caixa de diálogo **Opções** na categoria **Editor de texto** . Use um desses atributos para cada página a ser exibida para o serviço de idioma. Se você precisar organizar suas páginas em uma estrutura de árvore, use atributos adicionais para definir cada nó da árvore.
 
 ### <a name="example"></a>Exemplo
- Este exemplo mostra duas páginas de propriedades, **Opções** e **recuo**e um nó que contém a segunda página de propriedades.
+ Este exemplo mostra duas páginas de propriedades, **Opções** e **recuo** e um nó que contém a segunda página de propriedades.
 
 ```csharp
 using Microsoft.VisualStudio.Shell;

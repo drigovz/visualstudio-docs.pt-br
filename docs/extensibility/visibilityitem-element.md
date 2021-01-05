@@ -1,5 +1,7 @@
 ---
 title: Elemento VisibilityItem | Microsoft Docs
+description: O elemento VisibilityItem determina a visibilidade estática de comandos e barras de ferramentas. As entradas identificam um comando ou menu e um contexto de interface do usuário de comando associado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9129d64e430d661bbdd8f7682e64c93650570211
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 637fea7d203e58c59f85794eeb0f8894eb62e777
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698157"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863892"
 ---
 # <a name="visibilityitem-element"></a>Elemento VisibilityItem
 O `VisibilityItem` elemento determina a visibilidade estática de comandos e barras de ferramentas. Cada entrada identifica um comando ou menu e também um contexto de interface do usuário de comando associado. O Visual Studio detecta comandos, menus e barras de ferramentas e sua visibilidade, sem carregar o VSPackages que os define. O IDE usa o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> método para determinar se um contexto de interface do usuário de comando está ativo.
@@ -27,7 +29,7 @@ O `VisibilityItem` elemento determina a visibilidade estática de comandos e bar
 
  O `VisibilityItem` elemento aplica-se somente a comandos, menus e barras de ferramentas, não a grupos. Um elemento que não tem um elemento relacionado `VisibilityItem` é visível sempre que seu menu pai está ativo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <VisibilityItem
@@ -64,12 +66,12 @@ O `VisibilityItem` elemento determina a visibilidade estática de comandos e bar
 
 ```xml
 <VisibilityConstraints>
-  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
+  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
     context="guidNotViewSourceMode"/>
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>
 - <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>
 - <xref:Microsoft.VisualStudio.VSConstants>

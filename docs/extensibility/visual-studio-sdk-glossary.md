@@ -1,5 +1,7 @@
 ---
 title: Glossário do SDK do Visual Studio | Microsoft Docs
+description: Este glossário fornece definições para termos que são usados na documentação do SDK do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 332e606e689e9394f2fcdc8cbc902e2d4a6e5ab5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec8f6508c6b387ec51872f6e5b59b3f72a57d432
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698163"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863902"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glossário do SDK do Visual Studio
 Este glossário fornece definições para termos que são usados na [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] documentação do.
