@@ -13,12 +13,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f5ca27d44e611ab3b541dfb5992ef37d230513c3
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: fc74a556fe6baf21b6270b21951018fc246aa962
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040635"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696633"
 ---
 # <a name="overview"></a>Visão geral
 
@@ -42,7 +42,7 @@ A tabela a seguir mostra as diferentes opções de gravidade:
 
 | Gravidade (Gerenciador de Soluções) | Severidade (arquivo EditorConfig) | Comportamento de tempo de compilação | Comportamento do editor |
 |-|-|-|
-| Erro do | `error` | As violações aparecem como *erros* na lista de erros e na saída da compilação da linha de comando e causam a falha das compilações.| O código incorreto é sublinhado com um ondulado vermelho e marcado por uma pequena caixa vermelha na barra de rolagem. |
+| Erro | `error` | As violações aparecem como *erros* na lista de erros e na saída da compilação da linha de comando e causam a falha das compilações.| O código incorreto é sublinhado com um ondulado vermelho e marcado por uma pequena caixa vermelha na barra de rolagem. |
 | Aviso | `warning` | As violações aparecem como *avisos* no lista de erros e na saída da compilação da linha de comando, mas não causam a falha das compilações. | O código incorreto é sublinhado com um ondulado verde e marcado por uma pequena caixa verde na barra de rolagem. |
 | Info | `suggestion` | As violações aparecem como *mensagens* no lista de erros, e não em uma saída de compilação de linha de comando. | O código incorreto é sublinhado com um rabisco cinza e marcado por uma pequena caixa cinza na barra de rolagem. |
 | Hidden | `silent` | Não visível para o usuário. | Não visível para o usuário. No entanto, o diagnóstico é reportado para o mecanismo de diagnóstico do IDE. |
@@ -261,7 +261,7 @@ dotnet_diagnostic.CA2231.severity = warning
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Definir a severidade da regra de Gerenciador de Soluções
 
-1. Em Gerenciador de soluções, expanda **referências**  >  **analisadores** (ou **Dependencies**  >  **analisadores** de dependências para projetos do .NET Core).
+1. Em Gerenciador de soluções, expanda **referências**  >  **analisadores** (ou   >  **analisadores** de dependências para projetos do .NET Core).
 
 2. Expanda o assembly que contém a regra para a qual você deseja definir a severidade.
 
@@ -286,7 +286,7 @@ dotnet_diagnostic.CA2231.severity = warning
 
 1. Abra o arquivo de conjunto de regras ativo de uma das seguintes maneiras:
 
-- Em **Gerenciador de soluções**, clique duas vezes no arquivo, clique com **References** o botão direito do mouse no  >  nó **analisadores** de referências e selecione **abrir conjunto de regras ativas**.
+- Em **Gerenciador de soluções**, clique duas vezes no arquivo, clique com o botão direito do mouse no  >  nó **analisadores** de referências e selecione **abrir conjunto de regras ativas**.
 - Na página de propriedades de **análise de código** do projeto, selecione **abrir** .
 
   Se esta for a primeira vez que você está editando o conjunto de regras, o Visual Studio faz uma cópia do arquivo de conjunto de regras padrão, nomeia-o *\<projectname> . RuleSet* e o adiciona ao seu projeto. Esse conjunto de regras personalizadas também se torna o conjunto de regras ativo para seu projeto.
@@ -382,7 +382,9 @@ Há várias maneiras de suprimir violações de regra:
 
 Quando você cria seu projeto na linha de comando, violações de regra aparecem na saída da compilação se as seguintes condições forem atendidas:
 
-- Os analisadores são instalados como um pacote NuGet e não como uma extensão VSIX.
+- Os analisadores são instalados com o SDK do .NET ou como um pacote NuGet, e não como uma extensão do VSIX.
+
+  Para analisadores instalados usando o SDK do .NET, talvez seja necessário [habilitar os analisadores](../code-quality/install-net-analyzers.md). Para estilos de código, você também pode [impor estilos de código na compilação](/dotnet/fundamentals/code-analysis/overview#code-style-analysis) definindo uma propriedade do MSBuild.
 
 - Uma ou mais regras são violadas no código do projeto.
 
@@ -411,7 +413,7 @@ Em um projeto do .NET Core, se você adicionar uma referência a um projeto que 
 <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="5.0.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral dos analisadores de código no Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Enviar um bug do analisador de código](https://github.com/dotnet/roslyn-analyzers/issues)

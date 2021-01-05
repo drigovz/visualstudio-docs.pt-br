@@ -1,5 +1,7 @@
 ---
 title: Plug-ins de controle do código-fonte | Microsoft Docs
+description: Os artigos nesta seção descrevem a especificação de interface completa que permite que os sistemas de controle do código-fonte sejam integrados ao Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc5f092e0ae93109d071af0b1a67999947e73e90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 617b06e46bb150026f49af3e23761dfd6cb4e902
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699900"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715828"
 ---
 # <a name="source-control-plug-ins"></a>Plug-ins de controle do código-fonte
 A seção de referência do SDK de controle do código-fonte contém a especificação da interface completa que permite que os sistemas de controle do código-fonte sejam integrados ao [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Ele especifica a sintaxe e a semântica das várias funções e tipos de dados que o plug-in de controle do código-fonte deve implementar para a interface com o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE).

@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 009df6525696405914aeeb224e3817bbfbe27155
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 63793548bd3ea1098cc1113724cd9a3b513adbf5
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189791"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727457"
 ---
 # <a name="introduction-to-azure-functions"></a>Introdução ao Azure Functions
 
@@ -91,12 +91,12 @@ Você pode usar o procedimento acima para adicionar mais funções a seu projeto
 
 ## <a name="publish-to-azure"></a>Publicar no Azure
 
-1. Clique com o botão direito do mouse no nome do projeto e selecione **publicar > publicar no Azure**:  ![ opção de menu publicar no Azure](media/azure-functions-image5.png)
+1. Clique com o botão direito do mouse no nome do projeto e selecione **publicar > publicar no Azure**:  ![ captura de tela de Azure functions, mostrando o projeto AF-httptrigger selecionado e os comandos publicar e publicar no Azure realçados no menu de contexto.](media/azure-functions-image5.png)
 2. Se você já conectou conta do Azure ao Visual Studio para Mac, uma lista de serviços de aplicativo disponíveis é exibida. Se você ainda não tiver feito logon, será solicitado que o faça.
 3. Na caixa de diálogo **Publicar no Serviço de Aplicativo do Azure**, você pode selecionar um serviço de aplicativo existente ou crie um novo clicando em **Novo**.
-4. Na caixa de diálogo **Criar novo serviço de aplicativo**, insira as configurações: ![opção de menu Publicar no Azure](media/azure-functions-image7.png)
+4. Na caixa de diálogo **criar novo serviço de aplicativo** , insira suas configurações:  ![ captura de tela da janela novo serviço de aplicativo em Azure functions, mostrando as configurações para criar um novo serviço de aplicativo no Azure.](media/azure-functions-image7.png)
 
-    |Setting  |Descrição  |
+    |Configuração  |Descrição  |
     |---------|---------|
     |**Nome do serviço de aplicativo**|Um nome exclusivo que identifica seu novo aplicativo de funções.|
     |**Assinatura**|A assinatura do Azure a utilizar.|
@@ -108,13 +108,13 @@ Você pode usar o procedimento acima para adicionar mais funções a seu projeto
 
 5. Crie em **Próximo** para criar uma conta de armazenamento. Uma conta de armazenamento do Azure é requerida pelo runtime do Functions. Clique em **Personalizado** para criar uma conta de armazenamento de uso geral ou use uma já existente:
 
-    ![Opção de menu Publicar no Azure](media/azure-functions-image8.png)
+    ![Captura da tela de configurar conta de armazenamento em Azure Functions. Personalizado é selecionado para conta de armazenamento, e o nome da conta e o tipo de conta são preenchidos.](media/azure-functions-image8.png)
 
 6. Clique em **Criar** para criar um aplicativo de função e recursos relacionados no Azure com essas configurações e implantar seu código de projeto de função.
 
 7. Uma caixa de diálogo será exibida durante a publicação solicitando a você "Atualizar a versão do Functions no Azure". Clique em **Sim**:
 
-    ![Opção de menu Publicar no Azure](media/azure-functions-image12.png)
+    ![Captura de tela da versão das funções de atualização no prompt de diálogo do Azure, solicitando que você "Atualize as configurações do aplicativo do Azure para corresponder às versões de funções locais".](media/azure-functions-image12.png)
 
 > [!CAUTION]
 > Há um bug na versão do Visual Studio para Mac 7.6 em que o `FUNCTIONS_EXTENSION_VERSION` não está definido corretamente como "beta", o que significa que sua função pode não ser executada. Para corrigir isso, vá para as [Configurações do aplicativo de funções](#function-app-settings) e defina `FUNCTIONS_EXTENSION_VERSION` de "-1" para "beta".

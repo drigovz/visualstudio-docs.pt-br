@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: d26b2aa89ad295b63f0115acae11148c505720a5
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 586f503569f7218e78cda79e7a40e33f7ec30ff6
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440506"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696528"
 ---
 # <a name="choco-install"></a>choco-install
 
@@ -26,7 +26,7 @@ A `choco-install` ferramenta pode ser usada para instalar e atualizar pacotes de
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta não fará nada.
 
-| Nome                                             | Type   | Obrigatório  | Valor                                                                                                          |
+| Nome                                             | Tipo   | Obrigatório  | Valor                                                                                                          |
 |--------------------------------------------------|--------|-----------|----------------------------------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No        | Propriedade de comentários opcional. Não usado.                                                                          |
 | [**entrada**](#input)                              | string | Sim       | O pacote a instalar. Consulte a [entrada](#input) abaixo para obter detalhes.                                                 |
@@ -34,11 +34,14 @@ Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a fer
 
 ### <a name="input"></a>Entrada
 
-A `input` propriedade é usada para especificar o nome do pacote a ser instalado (por exemplo, ' MongoDB ') ou o caminho para um arquivo de configuração dos seguintes formatos _packages.config_, _. nuspec_ e _. nupkg_. O valor de `input` será acrescentado a um `choco install` comando (por exemplo `choco install mongodb` ), juntamente com quaisquer argumentos específicos no [`additionalOptions`](#additional-options) e as `choco` Opções internas (definidas [abaixo](#built-in-options)). Os pacotes podem ser encontrados na [Galeria de pacotes de chocolate](https://chocolatey.org/packages). Ao usar um arquivo de configuração, você pode passar o caminho para esse arquivo na `input` propriedade, por exemplo `"input":"packages.config"` .
+A `input` propriedade é usada para especificar o nome do pacote a ser instalado (por exemplo, ' MongoDB ') ou o caminho para um arquivo de configuração dos seguintes formatos _packages.config_, _. nuspec_ e _. nupkg_. O valor de `input` será acrescentado a um `choco install` comando (por exemplo `choco install mongodb` ), juntamente com quaisquer argumentos específicos no [`additionalOptions`](#additional-options) e as `choco` Opções internas (definidas [abaixo](#built-in-options)). Os pacotes são encontrados na [Galeria de pacotes de chocolate](https://chocolatey.org/packages). Ao usar um arquivo de configuração, você pode passar o caminho para esse arquivo na `input` propriedade, por exemplo `"input":"packages.config"` .
 
 ### <a name="additional-options"></a>Opções adicionais
 
 Opções de configuração adicionais podem ser passadas como um valor de `additionalOptions` . Esses argumentos são passagem direta para os argumentos usados pelo [`choco install`](https://chocolatey.org/docs/commands-install) e são definidos na documentação de Chocolatey.
+
+#### <a name="adding-new-feeds-to-chocolatey"></a>Adicionando novos feeds ao Chocolatey
+Se você quiser adicionar um novo feed ao Chocolatey, semelhante a um `choco source add` comando, você pode passar `additionalOptions` para fazer isso. Um exemplo de adição de um novo feed está no [exemplo de uso](#example-usage). Se você quiser adicionar um feed particular, recomendamos executar a ferramenta no prompt de comando, pois ele requer credenciais. Por exemplo,, `devinit run -t choco-install -i {package} -s "{feed link}" -u {user} -p {password}` em que `{package}` ,, `{feed link}` `{user}` e `{password}` se referir ao seu pacote específico, link de feed, nome de usuário e senha. Mais informações estão na documentação do Chocolatey mencionada acima. 
 
 ### <a name="built-in-options"></a>Opções internas
 
@@ -92,6 +95,20 @@ Abaixo estão exemplos de como executar `choco-install` o usando um `.devinit.js
             "tool": "choco-install",
             "input": "mongodb",
             "additionalOptions": "--version 4.2.7"
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-adds-a-new-feed-to-chocolatey"></a>.devinit.jsno que adiciona um novo feed ao Chocolatey:
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
+        {
+            "tool": "choco-install",
+            "input": "packages.config",
+            "additionalOptions": "-s '{feed link}'"
         }
     ]
 }

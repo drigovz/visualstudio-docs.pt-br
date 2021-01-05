@@ -1,5 +1,7 @@
 ---
 title: Depurar versões de funções de alocação de heap | Microsoft Docs
+description: Use as versões de depuração das funções de alocação de heap na biblioteca de tempo de execução do C. Essas funções têm os mesmos nomes que as versões de lançamento com _dbg acrescentadas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0fde776e9f2bd48aca92c7ba6d7f1fe1e23f01a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4be03c96f9c6ffdf8745ab8890e524ca98b4f4f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738366"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727067"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Versões de depuração das funções de alocação da pilha
 A biblioteca em tempo de execução C contém versões especiais de depuração das funções de alocação do heap. Essas funções têm os mesmos nomes que as versões com o _dbg anexado a elas. Este tópico descreve as diferenças entre a versão de lançamento de uma função CRT e a versão de _dbg, usando `malloc` e `_malloc_dbg` como exemplos.
@@ -47,6 +49,6 @@ A biblioteca em tempo de execução C contém versões especiais de depuração 
 
   Quando _DEBUG não é definido, as chamadas para `malloc` não são incomodadas, chamadas para `_malloc_dbg` são resolvidas para `malloc` , a definição de [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc) é ignorada e as informações do arquivo de origem pertencentes à solicitação de alocação não são fornecidas. Como `malloc` não tem um parâmetro de tipo de bloco, as solicitações para tipos de `_CLIENT_BLOCK` são tratadas como alocações padrão.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Técnicas de depuração CRT](../debugger/crt-debugging-techniques.md)

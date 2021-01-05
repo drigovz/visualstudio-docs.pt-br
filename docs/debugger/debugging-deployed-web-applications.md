@@ -1,5 +1,7 @@
 ---
 title: Depurando aplicativos ASP.NET implantados | Microsoft Docs
+description: Use o Visual Studio para depurar um aplicativo ASP.NET implantado anexando-se ao processo de trabalho e garantindo que o depurador tenha acesso a símbolos para o aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 06/30/2018
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8d787e6586a9dcce2ca4d2c840f67e652bfc5714
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e8c99f1988ef1aa2e14c7b0a4d6ed46e10f6f1e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350544"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727041"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>Depurando aplicativos ASP.NET implantados
 Para usar o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para depurar um aplicativo implantado, você deverá anexar ao processo de trabalho do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e verificar se o depurador tem acesso aos símbolos para o aplicativo. Você também deve localizar e abrir os arquivos de origem para o aplicativo. Para obter mais informações, consulte [especificar o símbolo (. pdb) e os arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [como localizar o nome do processo ASP.net](../debugger/how-to-find-the-name-of-the-aspnet-process.md)e [os requisitos do sistema](../debugger/aspnet-debugging-system-requirements.md).
@@ -38,7 +40,7 @@ O processo para anexar ao processo de trabalho do [!INCLUDE[vstecasp](../code-qu
 > [!NOTE]
 > Muitos aplicativos Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] fazem referência às DLLs que contêm a lógica de negócios ou outro código útil. Essa referência copia a DLL do computador local para a pasta \bin do diretório virtual do aplicativo Web quando você implanta seu aplicativo. Quando você estiver depurando, lembre-se de que o aplicativo Web está referenciando essa cópia da DLL e não a cópia em seu computador local.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Depurar aplicativos ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
 - [Instruções: habilitar a depuração para aplicativos ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
 - [Como localizar o nome do processo ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md)

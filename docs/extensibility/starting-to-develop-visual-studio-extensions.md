@@ -1,5 +1,7 @@
 ---
 title: Começando a desenvolver extensões do Visual Studio | Microsoft Docs
+description: Saiba mais sobre algumas das perguntas comuns que você pode ter na primeira vez em que começar a escrever uma extensão do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 812c5b2366e40226011a15acfc1cae2327e4b897
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: da8bd850413d32e5453b7dc312e863832e5f5218
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099382"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715256"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Começar a desenvolver extensões do Visual Studio
 
@@ -49,7 +51,7 @@ Na prática, descobrimos que os recursos que a maioria das pessoas desejam esten
 
 - [Estendendo menus e comandos](../extensibility/extending-menus-and-commands.md): Adicione seus próprios itens aos menus e às barras de ferramentas do Visual Studio. Você pode usá-los para iniciar a nova funcionalidade do Visual Studio ou seus próprios aplicativos auxiliares externos. Você também pode fornecer atalhos personalizados para seus itens de menu.
 
-- [Estendendo e personalizando janelas de ferramentas](../extensibility/extending-and-customizing-tool-windows.md): estenda as janelas de ferramentas existentes ou crie suas próprias janelas de ferramentas. Por exemplo, você pode adicionar novas propriedades às **Propriedades**ou criar uma nova janela de ferramenta para adicionar recursos adicionais.
+- [Estendendo e personalizando janelas de ferramentas](../extensibility/extending-and-customizing-tool-windows.md): estenda as janelas de ferramentas existentes ou crie suas próprias janelas de ferramentas. Por exemplo, você pode adicionar novas propriedades às **Propriedades** ou criar uma nova janela de ferramenta para adicionar recursos adicionais.
 
 - [Extensões de serviço de editor e de linguagem](../extensibility/editor-and-language-service-extensions.md): Adicione suas próprias personalizações ao IntelliSense fornecido para as linguagens do Visual Studio ou crie suporte para novas linguagens de programação. Você pode criar novas instruções de instrução, sugestões e novas dicas de ferramenta QuickInfo. Com lâmpadas leves, você pode adicionar sugestões de refatoração e correções de código para dar suporte a novas linguagens de programação.
 
@@ -93,7 +95,7 @@ Na prática, descobrimos que os recursos que a maioria das pessoas desejam esten
 
  Você também pode publicar sua extensão na Visual Studio Marketplace, o que a torna visível para um grande número de clientes do Visual Studio. Para obter um exemplo de empacotamento de uma extensão para o Marketplace, consulte [passo a passos: publicando uma extensão do Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Para obter mais informações sobre o que você precisa fazer para publicar no Marketplace, consulte [produtos e extensões do Visual Studio](/azure/devops/extend/overview?view=vsts&preserve-view=true).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Estendendo o Visual Studio para Mac](/visualstudio/mac/extending-visual-studio-mac)
 - [Estendendo Visual Studio Code](https://code.visualstudio.com/api)

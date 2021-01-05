@@ -10,18 +10,18 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e6bdae7ef85545d0790782f5ad825b8f27659c
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 303c410bf519561844d95cc13fa036534ddb2aa7
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099239"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726612"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Clonar um repositório de código Python no Visual Studio
 
 Depois de [instalar o suporte às Ferramentas do Visual Studio para IA](installation.md), será possível clonar facilmente um repositório de código Python e criar um projeto com base nele.
 
-1. Para se conectar a repositórios do GitHub, execute o instalador do Visual Studio, selecione **Modificar**e selecione a guia **componentes individuais** . Role para baixo até a seção **ferramentas de código** , selecione **extensão do GitHub para Visual Studio**e selecione **Modificar**.
+1. Para se conectar a repositórios do GitHub, execute o instalador do Visual Studio, selecione **Modificar** e selecione a guia **componentes individuais** . Role para baixo até a seção **ferramentas de código** , selecione **extensão do GitHub para Visual Studio** e selecione **Modificar**.
 
     ![Selecionando a extensão GitHub no instalador do Visual Studio](media/create-project-repo/installation-github-extension.png)
 
@@ -57,8 +57,8 @@ Depois de [instalar o suporte às Ferramentas do Visual Studio para IA](installa
 
 11. É possível visualizar o andamento com o TensorBoard. Clique com botão direito do mouse no seu projeto e em **Executar TensorBoard**. Em seguida, selecione o diretório os seus logs do TensorBoard de saída.
 
-   ![executar tensorboard](media/create-project-repo/run-tensorboard.png)
+   ![Captura de tela da Gerenciador de Soluções do Visual Studio com o projeto MNIST selecionado e a opção executar TensorBoard selecionada no menu de contexto.](media/create-project-repo/run-tensorboard.png)
 
 12. Observe o erro diminuindo com o tempo, o que significa que a qualidade está melhorando.
 
-   ![executar tensorboard](media/create-project-repo/tensorboard.png)
+   ![Captura de tela da janela principal do TensorBoard mostrando quatro gráficos que visualizam os dados dos logs do TensorBoard.](media/create-project-repo/tensorboard.png)

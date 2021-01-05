@@ -1,5 +1,7 @@
 ---
 title: Salvando dados em arquivos de projeto | Microsoft Docs
+description: Saiba mais sobre as interfaces que a estrutura de pacote gerenciada fornece para salvar e recuperar dados específicos de subtipo no arquivo de projeto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fd6cfaa450bc268665ae0f58109c99002da6152
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4746ebb4a92d5c2688063336cb3772de8d72ee1b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701349"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715685"
 ---
 # <a name="save-data-in-project-files"></a>Salvar dados em arquivos de projeto
 Um subtipo de projeto pode salvar e recuperar dados específicos de subtipo no arquivo de projeto. A MPF (estrutura de pacote gerenciada) fornece duas interfaces para realizar essa tarefa:
@@ -208,5 +210,5 @@ Um subtipo de projeto pode salvar e recuperar dados específicos de subtipo no a
 > [!NOTE]
 > Todos os exemplos de código fornecidos neste tópico são partes de um exemplo maior em [exemplos de VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Manter dados no arquivo de projeto do MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

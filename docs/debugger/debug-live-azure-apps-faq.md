@@ -1,5 +1,7 @@
 ---
 title: Perguntas frequentes sobre depuração de instantâneo | Microsoft Docs
+description: Examine uma lista de perguntas frequentes que podem surgir ao depurar aplicativos do Azure em tempo real usando o Depurador de Instantâneos no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/07/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8afc67b92a943dd571847bb1a00fb7e4db4514b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 5276127f0d6755b9fdabdfa965b5c1b8c4d94823
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851093"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727197"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Perguntas frequentes sobre depuração de instantâneo no Visual Studio
 
@@ -196,7 +198,7 @@ Há várias maneiras de desabilitar o Depurador de Instantâneos:
       Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
    ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando no Visual Studio](../debugger/index.yml)
 - [Depurar aplicativos ASP.NET dinâmicos usando o Depurador de Instantâneos](../debugger/debug-live-azure-applications.md)

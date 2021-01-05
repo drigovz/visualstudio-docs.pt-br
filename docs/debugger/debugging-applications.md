@@ -1,5 +1,7 @@
 ---
 title: Depurando aplicativos | Microsoft Docs
+description: Entenda como usar a depuração no Visual Studio para diferentes tipos de aplicativos, como aplicativos UWP, código gerenciado, código nativo, código de GPU e aplicativos Web.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1849d6918c1fd5607c97b82c17e385d3c6521fc4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfe7bb45d2979a62d07e34b2ee44076394ff936c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535155"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727002"
 ---
 # <a name="debugging-applications"></a>Depurando aplicativos
 As seções a seguir lidam com a depuração de tipos específicos de aplicativos. Diferentes tipos de aplicativos e linguagens diferentes exigem configurações e técnicas diferentes e apresentam diferentes problemas que precisam ser depurados.

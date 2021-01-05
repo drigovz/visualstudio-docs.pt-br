@@ -1,5 +1,7 @@
 ---
 title: Variante de compactação de textura BC | Microsoft Docs
+description: Use a variante de compactação de textura BC para permitir a compactação de bloco (BC) em texturas com um formato de pixel que seja uma variação de B8G8R8X8, B8G8R8A8 ou R8G8B8A8.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5faf19632d746105deed3a36af6943627594175
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e767268073f896de590386854a0d2c9ce2803073
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72736155"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726443"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante de compressão de textura BC
 Habilita a compactação do bloco em texturas cujo formato de pixel é uma variação de B8G8R8X8, B8G8R8A8 ou R8G8B8A8.
@@ -60,5 +62,5 @@ Habilita a compactação do bloco em texturas cujo formato de pixel é uma varia
 ## <a name="example"></a>Exemplo
  Essa variante compacta as texturas em blocos no tempo de execução, antes da chamada de `CreateTexture2D`. Essa abordagem não é recomendada para códigos de produção porque as texturas não compactadas consomem mais espaço em disco. Além disso, a etapa adicional necessária pode aumentar consideravelmente o tempo de carregamento no aplicativo porque a compactação em blocos requer muitos recursos computacionais para realizar a codificação. Em vez disso, recomendamos que você faça a compactação das texturas quando não estiver conectado, usando um editor ou processador de imagens que faça parte do pipeline da sua compilação. Essas abordagens diminuem o espaço necessário em disco, eliminam a sobrecarga do tempo de execução no aplicativo e proporcionam mais tempo de processamento para que as imagens tenham a melhor qualidade possível.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Variante de dimensões de textura de semestre/trimestre](half-quarter-texture-dimensions-variant.md)

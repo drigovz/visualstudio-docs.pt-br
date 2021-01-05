@@ -1,5 +1,7 @@
 ---
 title: Erros de depuração e caixas de diálogo de aviso | Microsoft Docs
+description: Veja uma lista de erros e caixas de diálogo de aviso que você pode encontrar ao depurar seu aplicativo no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,38 +23,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: beeba55c873e008b3e096da66f888695d719c882
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 73432c1693db1543095643a998396967b7aa2bdf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599934"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726976"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Caixas de diálogo Depurando Erros e Avisos
 Veja abaixo as caixas de diálogo de erros e avisos que você pode encontrar ao depurar o aplicativo.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Caixa de diálogo Falha de Asserção](../debugger/assertion-failed-dialog-box.md)
+ [Caixa de diálogo Falha na asserção](../debugger/assertion-failed-dialog-box.md)
 
- [Caixa de diálogo Não é Possível Alterar o Valor](../debugger/cannot-change-value-dialog-box.md)
+ [Caixa de diálogo não é possível alterar o valor](../debugger/cannot-change-value-dialog-box.md)
 
  [O depurador não pode exibir o código-fonte ou a desmontagem](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
  
  [Memória insuficiente para os serviços do depurador](../debugger/error-debugger-services-no-memory.md)
 
- [Caixa de diálogo Executável para Sessão de Depuração](../debugger/executable-for-debugging-session-dialog-box.md)
+ [Caixa de diálogo executável para depuração de sessão](../debugger/executable-for-debugging-session-dialog-box.md)
 
  [Caixa de diálogo Falha ao Aplicar Alterações de Código](../debugger/edit-and-continue-dialog-box-cpp.md)
 
- [Caixa de diálogo Depurador do Microsoft Visual Studio (exceção gerada)](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)
+ [Caixa de diálogo Microsoft Visual Studio depurador (exceção gerada)](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)
 
  [Caixa de diálogo Não Há Nenhum Código-Fonte Disponível para a Localização Atual](../debugger/no-source-available.md)
 
  [Caixa de diálogo Não há Informações Simbólicas](/previous-versions/d493t3ew(v=vs.100))
 
- [Caixa de diálogo Resolver Ambiguidade](../debugger/resolve-ambiguity-dialog-box.md)
+ [Caixa de diálogo resolver ambiguidade](../debugger/resolve-ambiguity-dialog-box.md)
 
- [Caixa de diálogo Aviso de Código Obsoleto](../debugger/stale-code-warning-dialog-box.md)
+ [Caixa de diálogo de aviso de código obsoleto](../debugger/stale-code-warning-dialog-box.md)
 
  [Não é possível se conectar ao computador](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 

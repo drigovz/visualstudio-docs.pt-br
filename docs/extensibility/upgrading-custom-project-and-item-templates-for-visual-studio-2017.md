@@ -1,6 +1,8 @@
 ---
 title: Atualizar modelos de projeto e item personalizados para o Visual Studio 2017
 titleSuffix: ''
+description: Saiba como atualizar seu projeto personalizado e modelo de item de versões anteriores do SDK do Visual Studio para uso com o Visual Studio 2017 e versões posteriores.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 5f807e142b376d05e5a44600e8f6b24ddb3593be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 089baadcb60afcc8b32e287095b10ab30196ce17
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698854"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715971"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Atualizar Modelos de Projeto e Item para Visual Studio personalizado 2017
 
@@ -188,7 +190,7 @@ Se sua extensão executar uma implantação baseada em MSI, você precisará ger
 
 Crie manifestos separados para modelos de projeto e item, e eles devem apontar para o diretório de modelo raiz, conforme especificado acima. Crie um manifesto por extensão e localidade.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Solução de problemas de descoberta de modelo](troubleshooting-template-discovery.md)
 - [Criando modelos personalizados de projeto e item](creating-custom-project-and-item-templates.md)

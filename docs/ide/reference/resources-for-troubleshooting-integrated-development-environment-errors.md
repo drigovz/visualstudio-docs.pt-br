@@ -1,8 +1,8 @@
 ---
-title: Recursos para solucionar erros
+title: Recursos para solucionar erros do IDE
 description: Saiba como usar artigos, fóruns ou suporte a produtos da base de dados de conhecimento para solucionar erros de IDE que não são informativos o suficiente para ajudá-lo a resolver um problema.
 ms.custom: SEO-VS-2020
-ms.date: 07/23/2020
+ms.date: 12/18/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -95,16 +95,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3fdf18c67be8188bd03c498778fe8e6ad9409ee
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 081b36767388da4f78e1fd8f1e0f279d7ca201c9
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616571"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696553"
 ---
-# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Recursos para solucionar erros do ambiente de desenvolvimento integrado
+# <a name="resources-for-troubleshooting-ide-errors"></a>Recursos para solucionar erros do IDE
 
-Nem todas as mensagens de erro têm um tópico de Ajuda específico associado. Se as informações na mensagem de erro não ajudarem a resolver o problema, consulte outros recursos, como os artigos da Base de Dados de Conhecimento, os fóruns ou o suporte ao produto.
+Nem todas as mensagens de erro têm um tópico de Ajuda específico associado. Se as informações em uma mensagem de erro não ajudarem a resolver o problema, você poderá consultar outros recursos, como artigos da base de dados de conhecimento, fóruns ou suporte a produtos.
 
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Solucionar problemas do Visual Studio para Mac](/visualstudio/mac/troubleshooting).
@@ -115,15 +115,20 @@ Nem todas as mensagens de erro têm um tópico de Ajuda específico associado. S
 
 ## <a name="developer-forums"></a>Fóruns para desenvolvedores
 
-Os fóruns lhe permitem interagir com outros desenvolvedores e também com funcionários da Microsoft. Se encontrar um erro para o qual não é possível encontrar uma resolução, você pode postar perguntas sobre o problema em um fórum. Também é possível pesquisar grupos de notícias para ver se outras pessoas postaram sobre o mesmo problema.
+Os fóruns lhe permitem interagir com outros desenvolvedores e também com funcionários da Microsoft. Se encontrar um erro para o qual não é possível encontrar uma resolução, você pode postar perguntas sobre o problema em um fórum. Você também pode pesquisar os fóruns para ver se outras pessoas lançaram sobre o mesmo problema.
 
-Você pode acessar fóruns, blogs, chats e outros recursos sobre no site das [Comunidades Técnicas da Microsoft](https://techcommunity.microsoft.com/t5/Communities/ct-p/communities).
+Aqui está uma lista de recursos de Fórum:
+
+- [Visual Studio no Q&A](/answers/products/vs/)
+- [Fórum do MSDN do Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio)
+- [Stack Overflow](https://stackoverflow.com/search?q=%22visual+studio%22)
+- [Reddit](https://www.reddit.com/r/VisualStudio)
 
 ## <a name="product-support"></a>Suporte do produto
 
 Se ainda tiver dúvidas após tentar os outros recursos, você pode contatar os serviços de suporte da Microsoft visitando o site de [Suporte da Microsoft](https://support.microsoft.com/en-us). Para obter informações sobre o suporte do produto disponível em sua área, consulte a página [Opções de comentários do Visual Studio](../../ide/feedback-options.md) .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [Solução de problemas relacionados à rede ou erros de proxy](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
 * [Solução de problemas (Visual Studio para Windows)](/troubleshoot/visualstudio/welcome-visual-studio/)

@@ -1,5 +1,6 @@
 ---
 title: Cadeias de caracteres usadas como chaves para localizar um plug-in de controle do código-fonte
+description: Saiba mais sobre as cadeias de caracteres que são as chaves para acessar o registro para encontrar informações sobre o plug-in de controle do código-fonte.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67e1a9c73c13632cf766b0536f2b7cfc1b456394
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a99d64873018885c35c066f05e6a3a8919868d72
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037127"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715308"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Cadeias de caracteres usadas como chaves para localizar um plug-in de controle do código-fonte
 As cadeias de caracteres a seguir são as chaves para acessar o registro para encontrar informações sobre o plug-in de controle do código-fonte.
@@ -47,7 +48,7 @@ As cadeias de caracteres a seguir são as chaves para acessar o registro para en
 |`STR_UI_LANGUAGE`|UILanguage|
 |`STR_SRCSAFE_ROOT_KEY`|Software\Microsoft\SourceSafe|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md)
 - [Como instalar um plug-in de controle do código-fonte](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [Arquivo MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)

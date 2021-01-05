@@ -1,5 +1,7 @@
 ---
 title: Elemento Symbols | Microsoft Docs
+description: O elemento Symbols define GUIDs e IDs que são usados por outros elementos VSCT. Este artigo contém um exemplo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c24c3f84df23a07b6b16272b66b29e32ad7b911
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e86406c4c10c2f65e8e43d8f3cb67f413ed3c63
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699342"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715555"
 ---
 # <a name="symbols-element"></a>Elemento Symbols
 Define GUIDs e IDs que são usados por outros elementos VSCT. Para código não gerenciado, essas informações normalmente são provenientes dos arquivos de cabeçalho especificados pelo [elemento externo](../extensibility/extern-element.md). O código gerenciado usa os elementos filho do elemento Symbols para definir essas informações.
@@ -25,7 +27,7 @@ Define GUIDs e IDs que são usados por outros elementos VSCT. Para código não 
 
  O elemento Symbols não deve ser confundido com o [elemento define](../extensibility/define-element.md), que define os pares de nome-valor para uso pelo pré-processador.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 <Symbols>
@@ -69,5 +71,5 @@ Define GUIDs e IDs que são usados por outros elementos VSCT. Para código não 
 </Symbols>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Arquivos .Vsct (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

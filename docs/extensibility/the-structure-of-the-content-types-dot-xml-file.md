@@ -1,5 +1,7 @@
 ---
 title: A estrutura do arquivo [Content_types]. xml | Microsoft Docs
+description: Saiba mais sobre a estrutura do arquivo de tipos de conteúdo, que contém informações sobre os tipos de conteúdo em um pacote VSIX.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e96af4936f27d869409a7215c720d9bb64e4128
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 7117845e4756f8b0e09a8fa603e66448e705b903
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012511"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715217"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>A estrutura do arquivo [Content_types].xml
 Contém informações sobre os tipos de conteúdo em um pacote VSIX. O Visual Studio usa o arquivo [Content_Types]. xml para instalar o pacote, mas ele não instala o próprio arquivo.
@@ -99,7 +101,7 @@ Contém informações sobre os tipos de conteúdo em um pacote VSIX. O Visual St
 </Types>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Anatomia de um pacote VSIX](../extensibility/anatomy-of-a-vsix-package.md)
 - [Referência do esquema de extensão do VSIX 1,0](/previous-versions/dd393700(v=vs.110))
 - [OPC: um novo padrão para empacotar seus dados](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data)

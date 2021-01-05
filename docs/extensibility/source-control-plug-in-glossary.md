@@ -1,5 +1,7 @@
 ---
 title: Glossário de plug-in de controle do código-fonte | Microsoft Docs
+description: Este artigo inclui os termos e definições úteis que pertencem à documentação do SDK de plug-in de controle do código-fonte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3835561eb63fa2a4a71174732c07ecd73f1df5d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5b878efd9d937f532526ed3b49ad41228749b47
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699905"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715399"
 ---
 # <a name="source-control-plug-in-glossary"></a>Glossário de plug-in de controle do código-fonte
 Os termos e definições úteis a seguir pertencem à documentação do SDK de plug-in de controle do código-fonte.
@@ -50,5 +52,5 @@ Os termos e definições úteis a seguir pertencem à documentação do SDK de p
 
  Revisar uma alteração confirmada no histórico de um arquivo ou conjunto de arquivos. Uma revisão é um instantâneo em um projeto de alteração contínua.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md)

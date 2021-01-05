@@ -1,5 +1,7 @@
 ---
 title: Depuração de código gerenciado | Microsoft Docs
+description: Consulte problemas comuns de depuração e técnicas no Visual Studio para aplicativos gerenciados ou aplicativos escritos em linguagens direcionadas à Common Language Runtime.
+ms.custom: SEO-VS-2020
 ms.date: 09/23/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 76b841d94aee93a1bc88f6d01161239828dee166
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7dadfbc6a02382165b623aeff9d866e9edc975a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188418"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727015"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Depurar código gerenciado (C#, Visual Basic, F #, C++/CLI)
 
@@ -79,7 +81,7 @@ Discute a depuração de aplicativos .NET e os requisitos de configuração.
 [Depuração de script e aplicativos Web](how-to-enable-debugging-for-aspnet-applications.md)\
 Descreve os problemas comuns de depuração e técnicas que você pode encontrar ao depurar aplicativos de script e Web.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Walkthrough: Depurar controles de Windows Forms personalizados em tempo de design](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [Segurança do depurador](../debugger/debugger-security.md)

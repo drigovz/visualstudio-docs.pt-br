@@ -1,5 +1,7 @@
 ---
 title: Elemento UsedCommands | Microsoft Docs
+description: O elemento UsedCommands agrupa elementos UsedCommand e outros agrupamentos do UsedCommands. O elemento UsedCommands é opcional.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76732b2a9700f1737af495098c8c23aa4b618819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cbc48d305e287fcb77407fbbf5ba52888b25dca6
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698748"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715893"
 ---
 # <a name="usedcommands-element"></a>Elemento UsedCommands
 O elemento UsedCommands agrupa elementos UsedCommand e outros agrupamentos do UsedCommands.
@@ -64,6 +66,6 @@ O elemento UsedCommands agrupa elementos UsedCommand e outros agrupamentos do Us
 </UsedCommands>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Elemento UsedCommand](../extensibility/usedcommand-element.md)
 - [Arquivos .Vsct (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

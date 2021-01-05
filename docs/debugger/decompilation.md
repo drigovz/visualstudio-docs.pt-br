@@ -1,5 +1,7 @@
 ---
 title: Descompilar código .NET durante a depuração | Microsoft Docs
+description: Gerar e inserir o código-fonte de assemblies do .NET durante a depuração no Visual Studio. Extraia e exiba o código-fonte inserido.
+ms.custom: SEO-VS-2020
 ms.date: 2/2/2020
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 87f8fbec389e3735b6f1c39cdd671a391c7334d7
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 8ad919b14642dff98746c194ad8c05bbb3aea529
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600112"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726729"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Gerar código-fonte de assemblies do .NET durante a depuração
 
@@ -57,7 +59,7 @@ Você pode extrair os arquivos de origem inseridos em um arquivo de símbolo usa
 
 ![Captura de tela do menu de contexto do assembly na janela de módulos com o comando extrair fontes.](media/decompilation-extract-source-code.png)
 
-Os arquivos de origem extraídos são adicionados à solução como [arquivos diversos](../ide/reference/miscellaneous-files.md). O recurso de arquivos diversos está desativado por padrão no Visual Studio. Você pode habilitar esse recurso na caixa de seleção **ferramentas**  >  **Options**  >  documentos do**ambiente**  >  **Documents**  >  **Mostrar arquivos diversos na Gerenciador de soluções** . Sem habilitar esse recurso, você não poderá abrir o código-fonte extraído.
+Os arquivos de origem extraídos são adicionados à solução como [arquivos diversos](../ide/reference/miscellaneous-files.md). O recurso de arquivos diversos está desativado por padrão no Visual Studio. Você pode habilitar esse recurso na caixa de seleção **ferramentas**  >    >  documentos do **ambiente**  >    >  **Mostrar arquivos diversos na Gerenciador de soluções** . Sem habilitar esse recurso, você não poderá abrir o código-fonte extraído.
 
 ![Captura de tela da página opção de ferramentas com a opção diversos arquivos habilitada.](media/decompilation-tools-options-misc-files.png)
 
@@ -101,7 +103,7 @@ Mais detalhes podem ser encontrados no problema do GitHub: [status do gerador de
 
 As configurações de [apenas meu código (JMC)](./just-my-code.md) permitem que o Visual Studio Percorra o sistema, a estrutura, a biblioteca e outras chamadas que não são de usuário. Durante uma sessão de depuração, a janela **módulos** mostra quais módulos de código o depurador está tratando como meu código (código do usuário).
 
-A descompilação de módulos otimizados ou de versão produz código que não é de usuário. Se o depurador interromper o código de não-usuário descompilado, por exemplo, a janela **nenhuma fonte** será exibida. Para desabilitar apenas meu código, navegue até **ferramentas**  >  **Opções** (ou **Debug**  >  **Opções**de depuração) > **depuração**  >  **geral**e, em seguida, desmarque **habilitar apenas meu código**.
+A descompilação de módulos otimizados ou de versão produz código que não é de usuário. Se o depurador interromper o código de não-usuário descompilado, por exemplo, a janela **nenhuma fonte** será exibida. Para desabilitar apenas meu código, navegue até **ferramentas**  >  **Opções** (ou   >  **Opções** de depuração) > **depuração**  >  **geral** e, em seguida, desmarque **habilitar apenas meu código**.
 
 ### <a name="extracted-sources"></a>Fontes extraídas
 

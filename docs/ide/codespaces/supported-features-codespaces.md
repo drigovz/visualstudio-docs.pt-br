@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 84be6698c62e3a2a205ceb9d404673ee1d0c6f64
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 68fbdef0e86b125971480ae1bd6a7ba6d3108cd8
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668606"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696543"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Recursos do Visual Studio com suporte (versão prévia)
 
@@ -108,8 +108,8 @@ Ainda não disponível:
 
 Ao trabalhar com o Visual Studio conectado a um codespace, você obtém os mesmos recursos de acessibilidade que ao trabalhar localmente.
 
-* Controle do código-fonte-suporte completo do git por meio da nova [janela do git](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/).
-* Acessibilidade – há um problema conhecido com a tecnologia assistencial que não consegue acessar o appcasting de um aplicativo depurado. Além dessa limitação, não acreditamos que haja outros problemas de compatibilidade que ainda não existam na experiência do Visual Studio local. Informe-nos se detectar bugs ao arquivar um problema na [comunidade de desenvolvedores](https://aka.ms/feedback/suggest?space=8).
+* Controle do código-fonte-suporte completo do git por meio da nova [experiência de git integrada](../git-with-visual-studio.md).
+* Acessibilidade – há um problema conhecido com a tecnologia assistencial que não consegue acessar o appcasting de um aplicativo depurado. Além dessa limitação, não acreditamos que haja outros problemas de compatibilidade que ainda não existam na experiência do Visual Studio local. Informe-nos se detectar bugs ao arquivar um problema na [comunidade de desenvolvedores](https://aka.ms/feedback/report?space=8).
 * Publicação – publicar no Azure por meio de ações do GitHub tem suporte.
 * Serviços conectados-não há suporte parcial para o app insights, o keyvault, o armazenamento, o SQL, o Redis, o cosmos, o openAPI e o gRPC.
 * Gerenciador de testes *-com suporte na maioria das vezes.

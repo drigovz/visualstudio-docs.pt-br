@@ -1,5 +1,7 @@
 ---
 title: Animações para o Visual Studio | Microsoft Docs
+description: Saiba mais sobre as regras que ajudam a garantir estilos de animação consistentes e amigáveis no Visual Studio IDE.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc11eb7bab69728be5ceaa55143f56e93cd1fca4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c86b033986511100415989e76f4f1e6ef7702f10
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698601"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715945"
 ---
 # <a name="animations-for-visual-studio"></a>Animações para Visual Studio
 ## <a name="animation-fundamentals"></a>Conceitos básicos de animação
@@ -43,7 +45,7 @@ Siga estas regras para garantir estilos de animação consistentes e amigáveis 
 
 - **As sutilezas são importantes.** Na maioria dos casos, a animação não precisa exigir a atenção do usuário para atender à sua finalidade. Alterações sutis em tempo, sequenciamento e comportamento podem afetar significativamente a percepção e podem fazer a diferença entre uma animação efetiva e ineficaz.
 
-- Ao usar a animação para chamar a atenção para algo, certifique-se de **que vale a pena interromper o**treinamento de pensamento do usuário.
+- Ao usar a animação para chamar a atenção para algo, certifique-se de **que vale a pena interromper o** treinamento de pensamento do usuário.
 
 - **Ao mostrar o progresso ou o status** por meio de animação:
 
@@ -330,7 +332,7 @@ Como uma transição animada quando um elemento de interface do usuário altera 
 ##### <a name="example"></a>Exemplo
 Reordenação de guias
 
-#### <a name="rotate"></a>Girar
+#### <a name="rotate"></a>Rotate
 Com esse padrão, o elemento de interface do usuário gira.
 
 ![Animação de rotação do elemento da interface do usuário](../../extensibility/ux-guidelines/media/1202-g_rotate.png "1202-g_Rotate")<br />Animação de rotação do elemento da interface do usuário

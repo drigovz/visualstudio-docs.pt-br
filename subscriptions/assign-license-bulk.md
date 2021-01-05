@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 10/22/2020
 ms.topic: how-to
 description: Saiba como os administradores podem atribuir licenças a vários assinantes usando o recurso Adicionar em massa ou grupos de Microsoft Azure Active Directory
-ms.openlocfilehash: 6cb3613d76faca2adc9c6e946f6a8ec2c73770f1
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: e9d4cd5c7e73cdc3b71768a498a7c02546d3e1fc
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92467538"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696605"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Atribuir assinaturas a vários usuários
 O portal de administração de assinaturas permite que você adicione usuários individualmente ou em grupos grandes.  Para adicionar usuários únicos, confira [Adicionar usuários únicos](assign-license.md).
@@ -48,11 +48,11 @@ Para adicionar grandes grupos de usuários, você pode usar o recurso adição e
     - Verifique se todos os campos obrigatórios foram concluídos. 
     - Verifique a coluna **mensagem de erro** .  Se houver erros listados, resolva-os antes de tentar carregar o arquivo. 
 
-1. Retorne ao portal de Administração de Assinaturas do Visual Studio. Na caixa de diálogo **carregar vários assinantes** , selecione **procurar** .
+1. Retorne ao portal de Administração de Assinaturas do Visual Studio. Na caixa de diálogo **carregar vários assinantes** , selecione **procurar**.
    > [!div class="mx-imgBorder"]
    > ![Navegar para o modelo salvo para carregar vários assinantes](media/bulk-add-browse-saved-template.png "Você pode navegar até o local do arquivo ou arrastá-lo e soltá-lo nessa caixa de diálogo.")
 
-1. Navegue até o arquivo do Excel que você salvou e selecione **OK** .
+1. Navegue até o arquivo do Excel que você salvou e selecione **OK**.
    > [!div class="mx-imgBorder"]
    > ![Carregar o modelo do Excel para carregar vários assinantes](media/bulk-upload-subscribers.png "O modelo com seus dados aparecerá aqui.  Selecione OK para iniciar o carregamento.")
 
@@ -65,10 +65,10 @@ Para adicionar grandes grupos de usuários, você pode usar o recurso adição e
    Se você encontrar uma falha, siga estas etapas:
    1. Abra o arquivo do Excel que você criou, corrija os problemas e salve o arquivo.
    0. Retorne ao portal de administração e ignore a mensagem de erro.
-   0. Escolha **Adicionar** .
-   0. Selecione **Adicionar em massa** .
-   0. Como você já tem o arquivo do Excel salvo, não é necessário baixar o modelo.  Selecione **procurar** , localize o arquivo que você acabou de salvar e selecione **abrir** .
-   0. Selecione **OK** .
+   0. Escolha **Adicionar**.
+   0. Selecione **Adicionar em massa**.
+   0. Como você já tem o arquivo do Excel salvo, não é necessário baixar o modelo.  Selecione **procurar**, localize o arquivo que você acabou de salvar e selecione **abrir**.
+   0. Selecione **OK**.
 
 
     Quando o upload for bem-sucedido, você verá a lista de assinantes e uma mensagem de confirmação.
@@ -86,7 +86,7 @@ O uso desse recurso facilita a permanência de suas atribuições de assinatura.
 > - Os grupos devem conter pelo menos um membro.  Não há suporte para grupos vazios.
 > - Os grupos devem ter menos de 1.000 usuários. 
 > - Todos os usuários devem estar no nível superior do grupo.  Não há suporte para grupos aninhados.
-> - Somente contratos confiáveis têm suporte.
+> - Somente contratos confiáveis têm suporte. (Somente os contratos que podem ' superalocar ' assinaturas são confiáveis.)
 > - Todos os membros do grupo devem ter um endereço de email associado à sua conta do Azure AD.
 > - Endereços de email separados para notificações não têm suporte para assinaturas adicionadas usando grupos do Azure AD.  
 
@@ -111,7 +111,7 @@ Assista a este vídeo ou Continue lendo para saber mais sobre como adicionar ass
    > [!div class="mx-imgBorder"]
    > ![Escolha seu grupo do Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png "Escolha o nome do seu grupo do Azure AD para adicionar assinantes desse grupo.")
 
-6. Selecione **Adicionar** e **confirmar** . 
+6. Selecione **Adicionar** e **confirmar**. 
 
 7. Para ver o grupo adicionado, role até a parte inferior da lista de usuários.  
 
@@ -130,10 +130,16 @@ R: não--todos no grupo recebem a mesma assinatura.
 ### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>P: posso editar os detalhes do assinante de indivíduos adicionados em um grupo do Azure AD?  
 R: não--para modificar as informações de um assinante individual, você precisará removê-los do grupo de segurança do Azure AD e atribuir a eles uma assinatura individualmente.  
 
+### <a name="q-why-cant-i-see-the-option-to-use-azure-active-directory-groups-to-add-subscribers"></a>P: por que não consigo ver a opção de usar grupos de Azure Active Directory para adicionar assinantes?
+R: atualmente, o recurso só está disponível para organizações com contratos confiáveis.  Selecione o botão **detalhes** para exibir as informações do seu contrato.
+
+   > [!div class="mx-imgBorder"]
+   > ![Clique no botão detalhes](_img/assign-license-bulk/bulk-add-agreement.png "Clique no botão detalhes para ver qual tipo de contrato você tem")
+
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>P: adicionei alguém ao meu grupo de segurança do Azure AD, mas não os vejo adicionados no portal de administração de assinaturas e eles não têm uma assinatura. Por que não?  
 R: dependendo de como sua organização tiver configurado o Azure AD, você poderá ver atrasos de até 24 horas antes que o usuário seja adicionado. Se tiver sido mais de 24 horas, [entre em contato com o suporte](https://visualstudio.microsoft.com/support/support-overview-vs).  
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

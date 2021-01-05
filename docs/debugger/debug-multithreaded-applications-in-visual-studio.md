@@ -1,6 +1,7 @@
 ---
 title: Depurar aplicativos multithread | Microsoft Docs
-ms.custom: seodec18
+description: Depurar aplicativos multithread no Visual Studio. Reveja as ferramentas e outros artigos sobre como depurar aplicativos multithread.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/06/2018
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b99f7b44168a451e8e927e5e0d2ca1a7f8d0bf93
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 4fed6580219964ab71f5a5010060c1af193375df
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600335"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727132"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Depurar aplicativos multi-threaded no Visual Studio
 Um thread é uma sequência de instruções para as quais o sistema operacional concede o tempo do processador. Cada processo que está em execução no sistema operacional consiste em pelo menos um thread. Os processos que têm mais de um thread são chamados multithread.
@@ -86,7 +87,7 @@ Marque ou sinalize threads aos quais você deseja dar atenção especial durante
 
 Técnicas para depurar um aplicativo executado em um conjunto de alto desempenho.
 
- [Dicas para depurar threads em código nativo](../debugger/tips-for-debugging-threads-in-native-code.md)
+ [Dicas para depurar threads no código nativo](../debugger/tips-for-debugging-threads-in-native-code.md)
 
 Técnicas simples que podem ser úteis para depurar threads nativos.
 
@@ -98,7 +99,7 @@ Atribua ao thread um nome que aparecerá na janela **Threads**.
 
 Atribua ao thread um nome que aparecerá na janela **Threads**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Usar pontos de interrupção](../debugger/using-breakpoints.md)
 - [Threading](/dotnet/standard/threading/index)

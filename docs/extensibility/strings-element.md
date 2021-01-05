@@ -1,5 +1,7 @@
 ---
 title: Elemento Strings | Microsoft Docs
+description: O elemento Strings contém um elemento filho ButtonText e outros elementos filho opcionais. Um e comercial na cadeia de texto especifica um atalho de teclado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db44db8926b523665a21c00b710dcee55749ab89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f517d350f3383dcaeb99d651872ffb8ed09814fe
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699725"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715243"
 ---
 # <a name="strings-element"></a>Elemento Strings
 O elemento Strings deve conter pelo menos um elemento filho **ButtonText** . Todos os outros elementos filho são opcionais. Caracteres XML inválidos, como ' & ' e ' < ', devem ser codificados como entidades (' &amp; ' e ' &lt; ' e assim por diante).
 
  Um e comercial na cadeia de texto especifica o atalho de teclado para o comando.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 <Strings>
@@ -60,5 +62,5 @@ O elemento Strings deve conter pelo menos um elemento filho **ButtonText** . Tod
 |[Elemento Menu](../extensibility/menu-element.md)|Define um único item de menu.|
 |[Elemento Combo](../extensibility/combo-element.md)|Define os comandos que aparecem em uma caixa de combinação.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Arquivos .Vsct (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,5 +1,7 @@
 ---
 title: Usando o repositório de configurações | Microsoft Docs
+description: Saiba como ler dados do repositório de definições de configuração, que são configurações somente leitura do Visual Studio e do VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3bbc09586f883e067e32f525a0331c1a9e253f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aeb147c245f7dc09cf91db8a1b810a7c5f30b46b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698510"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715906"
 ---
 # <a name="using-the-settings-store"></a>Usar o repositório de configurações
 Há dois tipos de armazenamentos de configurações:
@@ -79,9 +81,9 @@ Há dois tipos de armazenamentos de configurações:
 
 1. Abra Regedit.exe.
 
-2. Navegue até HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0Exp_Config \InstalledProducts \\ .
+2. Navegue até HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\ .
 
     > [!NOTE]
-    > Verifique se você está olhando para a chave que contém \ 14.0Exp_Config \ e not \ 14.0_Config \\ . Quando você executa a instância experimental do Visual Studio, as definições de configuração estão no hive do registro "14.0Exp_Config".
+    > Verifique se você está olhando a chave que contém \ 14.0Exp_Config \ e não 14.0_Config \\ . Quando você executa a instância experimental do Visual Studio, as definições de configuração estão no hive do registro "14.0Exp_Config".
 
 3. Expanda o nó \Installed Products \. Se a mensagem nas etapas anteriores for **Microsoft Windows Phone ferramentas para desenvolvedores instalada: true**, os produtos \Installed \ deverão conter um nó de ferramentas para desenvolvedores do Microsoft Windows Phone. Se a mensagem for **Microsoft Windows Phone ferramentas para desenvolvedores instalada: false**, \Installed Products \ não deverá conter um nó Microsoft Windows Phone ferramentas para desenvolvedores.

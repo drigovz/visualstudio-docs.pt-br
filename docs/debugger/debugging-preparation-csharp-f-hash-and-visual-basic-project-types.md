@@ -1,6 +1,7 @@
 ---
 title: 'Prepare-se para depurar projetos em C#, F # e VB | Microsoft Docs'
-ms.custom: seodec18
+description: 'Obtenha informações sobre como se preparar para depurar os tipos de projeto C#, F # e Visual Basic criados pelos modelos de projeto do Visual Studio.'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 90e108ddd64a9b520c8ae1d0c86e416dea64e5be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1536c00f68232bb9e4aa92102b605b59ec58b196
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738129"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726846"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Preparação de depuração: tipos de projeto C#, F# e Visual Basic
 Os tópicos nessa seção descrevem como depurar os tipos de projeto C#, F# e [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] criados pelos modelos de projeto do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -47,5 +48,5 @@ Os tópicos nessa seção descrevem como depurar os tipos de projeto C#, F# e [!
 
  [Depuração de código gerenciado](../debugger/debugging-managed-code.md) Aborda problemas comuns de depuração e técnicas para aplicativos escritos em código gerenciado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Segurança do depurador](../debugger/debugger-security.md)

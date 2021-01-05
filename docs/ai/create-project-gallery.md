@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bcc1932bad5b34d9695257feb163654f6b99514
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6813e834af00330b4018f16d4a19be945be2be9
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371619"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726638"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Criar um projeto de IA da galeria do Azure Machine Learning no Visual Studio
 
@@ -52,12 +52,12 @@ Depois de [instalar as Ferramentas do Visual Studio para IA](installation.md), �
 
 5. O Visual Studio cria o arquivo de projeto (um arquivo `.pyproj` no disco) junto com outros arquivos definidos no exemplo. Como o modelo "MNIST", o projeto contém vários arquivos.
 
-    ![mnist](media/create-project-gallery/azml-mnist.png)
+    ![Captura de tela do Gerenciador de Soluções do Visual Studio mostrando os arquivos para o projeto TensorFlowMNIST. O código para tf_mnist. py é mostrado na janela principal.](media/create-project-gallery/azml-mnist.png)
 
 6. Envie o trabalho ao Azure Machine Learning.
 
-    ![mnist](media/create-project-gallery/submit-azml.png)
+    ![Captura de tela da Gerenciador de Soluções do Visual Studio mostrando o menu de contexto do projeto TensorFlowMNIST com "Enviar trabalho..." Selecione.](media/create-project-gallery/submit-azml.png)
 
 7. Execute em um contêiner do Docker ou no seu computador local
 
-    ![mnist](media/create-project-gallery/azml-local.png)
+    ![Captura de tela da caixa de diálogo Enviar trabalho com o uso de cluster definido como "azureml:/local" e o script de inicialização definido como "tf_mnist. py".](media/create-project-gallery/azml-local.png)

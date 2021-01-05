@@ -1,5 +1,7 @@
 ---
 title: Incorporação simplificada | Microsoft Docs
+description: Saiba mais sobre inserção simplificada, que pode ser habilitada em um editor quando seu objeto de exibição de documento é um filho do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9bc9619ae1ed75aed3656ff014296f7c7d88fa0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99aaf5070646bbbb95c6be98eb8ac2f7a5948ff2
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700080"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715269"
 ---
 # <a name="simplified-embedding"></a>Incorporação simplificada
 A incorporação simplificada é habilitada em um editor quando seu objeto de exibição de documento é pai de (ou seja, tornou-se um filho de) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e a <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interface é implementada para manipular seus comandos de janela. Editores de inserção simplificados não podem hospedar controles ativos. Os objetos usados para criar um editor com inserção simplificada são mostrados na ilustração a seguir.
@@ -27,7 +29,7 @@ A incorporação simplificada é habilitada em um editor quando seu objeto de ex
 
  Todas as interfaces implementadas para criar um editor com incorporação simplificada estão contidas no `CYourEditorDocument` objeto. No entanto, para dar suporte a várias exibições de dados de documento, divida as interfaces em dados separados e exiba objetos conforme indicado na tabela a seguir.
 
-|Interface|Local da interface|Uso|
+|Interface|Local da interface|Use|
 |---------------|---------------------------|---------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Visualizar|Fornece conexão com a janela pai.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Visualizar|Manipula comandos.|

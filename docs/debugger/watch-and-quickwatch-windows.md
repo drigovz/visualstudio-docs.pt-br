@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ab66089de25b7648b13e1ba05f88ab55b7868df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7e2a05fe84b023a60ef75f0cb262a08fc02587a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348022"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727418"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Observar variáveis com janelas de inspeção e QuickWatch
 
@@ -30,7 +30,8 @@ Enquanto estiver Depurando, você pode usar **Watch** Windows e **QuickWatch** p
 
 **Observe** que o Windows pode exibir várias variáveis por vez durante a depuração. A caixa de diálogo **QuickWatch** exibe uma única variável por vez e deve ser fechada antes que a depuração possa continuar.
 
-Se esta for a primeira vez que você tentou depurar o código, talvez você queira ler [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [ferramentas e técnicas de depuração antes de](../debugger/write-better-code-with-visual-studio.md) passar por este artigo.
+> [!NOTE]
+> Se esta for a primeira vez que você tentou depurar o código, talvez você queira ler [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [ferramentas e técnicas de depuração antes de](../debugger/write-better-code-with-visual-studio.md) passar por este artigo.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Observar variáveis com um janela Inspeção
 
@@ -58,13 +59,13 @@ int main()
 
 ```
 
-1. Defina um ponto de interrupção na `c = a + b;` linha clicando na margem esquerda, selecionando ponto de interrupção de alternância de **depuração**  >  **Toggle Breakpoint**ou pressionando **F9**.
+1. Defina um ponto de interrupção na `c = a + b;` linha clicando na margem esquerda, selecionando ponto de interrupção de alternância de **depuração**  >  ou pressionando **F9**.
 
-1. Inicie a depuração selecionando a seta de **início** verde ou **depurar**  >  **Iniciar Depuração**ou pressione **F5**. A execução pausa no ponto de interrupção.
+1. Inicie a depuração selecionando a seta de **início** verde ou **depurar**  >  **Iniciar Depuração** ou pressione **F5**. A execução pausa no ponto de interrupção.
 
-1. Abra uma janela de **inspeção** selecionando **depurar**  >  **Windows**  >  **Watch**  >  **Watch 1**ou pressionando **Ctrl** + **ALT** + **W**  >  **1**.
+1. Abra uma janela de **inspeção** selecionando **depurar**  >  **Windows**  >  **Watch**  >  **Watch 1** ou pressionando **Ctrl** + **ALT** + **W**  >  **1**.
 
-   Você pode abrir janelas de **inspeção** adicionais selecionando Windows **2**, **3**ou **4**.
+   Você pode abrir janelas de **inspeção** adicionais selecionando Windows **2**, **3** ou **4**.
 
 1. Na janela **Watch** , selecione uma linha vazia e digite Variable `a` . Faça o mesmo para `b` e `c` .
 
@@ -217,7 +218,7 @@ Para descobrir o nome do `Person` no `DoSomething()` método, você pode adicion
 
 1. Inicie a depuração.
 
-1. Quando a execução pausa no ponto de interrupção, abra a janela **locais** escolhendo **depurar**  >  **Windows**  >  **locais**do Windows.
+1. Quando a execução pausa no ponto de interrupção, abra a janela **locais** escolhendo **depurar**  >    >  **locais** do Windows.
 
 1. Na janela **locais** , clique com o botão direito do mouse na `Person` variável e selecione **criar ID de objeto**.
 
@@ -255,9 +256,9 @@ Para exibir apenas a **exibição dinâmica** de um objeto, adicione um especifi
 1. Clique com o botão direito do mouse em qualquer filho de uma **exibição dinâmica**.
 1. Escolha **Adicionar inspeção**. O `object.name` se torna `((dynamic) object).name` e aparece em uma nova janela **Watch** .
 
-O depurador também adiciona um nó filho da **exibição dinâmica** do objeto à janela de **automóveis** . Para abrir a janela **automáticos** durante a depuração, selecione **depurar**  >  **Windows**  >  **automáticos**do Windows.
+O depurador também adiciona um nó filho da **exibição dinâmica** do objeto à janela de **automóveis** . Para abrir a janela **automáticos** durante a depuração, selecione **depurar**  >    >  **automáticos** do Windows.
 
-A **exibição dinâmica** também aprimora a depuração de objetos com. Quando o depurador chega a um objeto COM encapsulado em **System. __ComObject**, ele adiciona um nó de **exibição dinâmica** para o objeto.
+A **exibição dinâmica** também aprimora a depuração de objetos com. Quando o depurador chega a um objeto COM encapsulado em **System.__ComObject**, ele adiciona um nó de **exibição dinâmica** para o objeto.
 
 ## <a name="observe-a-single-variable-or-expression-with-quickwatch"></a>Observar uma única variável ou expressão com QuickWatch
 
@@ -286,7 +287,7 @@ Para observar a `a` variável,
 
 1. Selecione a variável `a` no código.
 
-1. Selecione **depurar**  >  **QuickWatch**, pressione **Shift** + **F9**ou clique com o botão direito do mouse e selecione **QuickWatch**.
+1. Selecione **depurar**  >  **QuickWatch**, pressione **Shift** + **F9** ou clique com o botão direito do mouse e selecione **QuickWatch**.
 
    A caixa de diálogo **QuickWatch** é exibida. A `a` variável está na caixa de **expressão** com um **valor** de **1**.
 
@@ -302,7 +303,7 @@ Para observar a `a` variável,
 
 1. Continue a depuração. Você pode observar a variável na janela **Watch** .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [O que é depuração?](../debugger/what-is-debugging.md)
 - [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md)
 - [Primeira olhada na depuração](../debugger/debugger-feature-tour.md)

@@ -1,5 +1,7 @@
 ---
 title: Suporte para o SDK do Visual Studio | Microsoft Docs
+description: Saiba mais sobre as opções de suporte disponíveis para clientes sobre como estender o IDE do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddcdf62fbfe6d683159cccce24280bdb08cedc2a
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 40e2ceb39931ce7779a7e13de6d0f13ee68f32b7
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099369"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715282"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Suporte para o SDK do Visual Studio
 Várias opções de suporte estão disponíveis para clientes que têm dúvidas sobre como estender o IDE (ambiente de desenvolvimento integrado) do Visual Studio.
@@ -62,6 +64,6 @@ Perguntas sobre Suporte Premier ofertas em conjunto com o programa VSIP podem se
 
 Informações sobre solicitações de suporte individual podem ser encontradas em [solicitações de suporte individuais](https://support.microsoft.com/supportforbusiness/productselection).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Fale conosco](../ide/feedback-options.md)

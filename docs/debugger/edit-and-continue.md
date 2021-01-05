@@ -1,6 +1,7 @@
 ---
 title: Editar código e continuar a depuração | Microsoft Docs
-ms.custom: seodec18
+description: Use o comando Editar e continuar durante a depuração no Visual Studio para que você possa fazer alterações no código-fonte enquanto o programa estiver no modo de interrupção.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 05/31/2018
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d3da21a833764745a7b6fc7dd001eeb4995f44d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: c335ce5a394454daacd86338a96ba51d04c88c0e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599638"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726534"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Editar código e continuar a depuração no Visual Studio (C#, VB, C++)
 Editar e Continuar é um recurso que economiza tempo e permite que você faça alterações no seu código-fonte enquanto o programa está no modo de interrupção. Quando você retoma a execução do programa escolhendo um comando de execução como **continue** ou **Step**, Edit and Continue aplica automaticamente as alterações de código com algumas limitações. Isso permite que você faça alterações no código durante uma sessão de depuração, em vez de ter que parar, recompilar o programa inteiro e reiniciar a sessão de depuração.
@@ -43,8 +44,8 @@ Editar e Continuar é um recurso que economiza tempo e permite que você faça a
 
  [Editar e Continuar (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
 
- [Editar e Continuar não suportado para F#](../debugger/edit-and-continue-not-supported-for-f-hash.md)
+ [Editar e continuar não tem suporte para F #](../debugger/edit-and-continue-not-supported-for-f-hash.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

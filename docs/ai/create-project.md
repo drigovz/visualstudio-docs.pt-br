@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 15e788cca7cb27b36e3f3567aff96cd33bf5aaae
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 28eccd9c564b7d368e823288311a823fdff86fb3
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099226"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726392"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Criar um projeto do IA com base em um modelo no Visual Studio
 
@@ -37,10 +37,10 @@ Depois de [instalar as Ferramentas do Visual Studio para IA](installation.md), s
 
 6. Seu projeto também tem algumas propriedades criadas para facilitar a depuração do seu aplicativo passando automaticamente argumentos de linha de comando para esses parâmetros de entrada. **Clique com botão direito do mouse** em seu projeto e selecione **Propriedades**
 
-    ![Propriedades](media/create-project/project-properties.png)
+    ![Captura de tela da Gerenciador de Soluções do Visual Studio mostrando o menu de contexto para TensorFlowApplication1 com propriedades selecionadas.](media/create-project/project-properties.png)
 
 7. Clique na guia **Depurar** para ver os Argumentos de script adicionados automaticamente. você poderá alterá-los conforme necessário para o local em que seus dados de entrada estão localizados e para o local em que você gostaria que a saída fosse armazenada.
 
-    ![Propriedades](media/create-project//project-properties_1.png)
+    ![Captura de tela da guia Depurar nas configurações de propriedades de TensorFlowApplication1 mostrando os argumentos de script para o projeto.](media/create-project//project-properties_1.png)
 
 8. Execute o programa pressionando CTRL + F5 ou selecionando **Depurar > Iniciar Sem Depuração** no menu. Os resultados são exibidos em uma janela do console.

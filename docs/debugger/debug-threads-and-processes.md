@@ -1,5 +1,7 @@
 ---
 title: Ferramentas para depurar threads e processos | Microsoft Docs
+description: Examine as ferramentas para depurar threads e processos no Visual Studio. Threads e processos representam sequências de instruções que devem ser executadas em uma ordem específica.
+ms.custom: SEO-VS-2020
 ms.date: 04/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcdaf083462b75485449cae05894681e2bb5c900
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51917065e8764f7edbebbdb3bfcc7a03cc9723d4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738389"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727145"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Ferramentas para depurar threads e processos no Visual Studio
 *Threads* e *processos* são conceitos relacionados à ciência da computação. Ambos representam sequências de instruções que devem executar em uma ordem específica. Instruções em threads ou processos separados, entretanto, podem ser executados em paralelo.
@@ -62,8 +64,8 @@ As ferramentas que você precisa usar [!INCLUDE[vsprvs](../code-quality/includes
 |Janela **tarefas**|– Exibir informações sobre os objetos de <xref:System.Threading.Tasks.Task>, incluindo ID de tarefa, status de tarefa (agendada, executando, em espera, em deadlock), bem como qual thread está atribuído à tarefa.<br />– Localização atual na pilha de chamadas.<br />– O delegado passado para a tarefa no horário de criação|– Alternar para a tarefa atual<br />– Sinalizar ou remover sinalização de uma tarefa<br />– Congelar ou descongelar uma tarefa|
 |Janela **Threads de GPU**|– A coluna do sinalizador, na qual você pode marcar um thread ao qual deseja prestar atenção especial.<br />-A coluna de thread atual, na qual uma seta amarela indica o thread atual.<br />– A coluna **Contagem de Threads**, que exibe o número de threads na mesma localização.<br />– A coluna **Linha**, que exibe a linha de código na qual cada grupo de threads está localizado.<br />– A coluna de **Endereço**, que exibe o endereço da instrução no qual cada grupo de threads está localizado.<br />– A coluna **Localização**, que é a localização no código do endereço.<br />– A coluna **Status**, que mostra se o thread está ativo ou bloqueado.<br />– A coluna **Lado a lado**, que mostra o índice lado a lado para os threads na linha.|-Alterar para um thread diferente<br />– Exibir um determinado bloco e thread<br />– Exibir ou ocultar uma coluna<br />– Classificar por coluna<br />– Agrupar threads<br />– Congelar ou descongelar threads<br />– Sinalizar ou remover sinalização de um thread<br />– Exibir somente threads sinalizados|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Anexar aos processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-- [Depurar aplicativos multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Depurar aplicativos multissegmentados](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Depurando código de GPU](../debugger/debugging-gpu-code.md)

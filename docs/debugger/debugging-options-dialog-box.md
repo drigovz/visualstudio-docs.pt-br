@@ -1,5 +1,7 @@
 ---
 title: Depuração, caixa de diálogo opções | Microsoft Docs
+description: Encontre links que descrevem a caixa de diálogo opções para depuração geral, depuração Just-in-time, depuração de janela de saída e depuração de símbolo no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -21,25 +23,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 407da10e5a10ea08a75618046189a87a4ad6c5f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae93f22249540da0121472ce07db52e3747abf85
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738144"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726898"
 ---
 # <a name="debugging-options-dialog-box"></a>Depurando, Caixa de Diálogo Opções
 A pasta **Depuração**, na caixa de diálogo **Opções** no menu **Ferramentas**, fornece as seguintes páginas, o que permite especificar as opções de ferramenta do depurador.
 
-- [Caixa de diálogo Geral, Depuração, Opções](../debugger/general-debugging-options-dialog-box.md)
+- [Caixa de diálogo geral, depuração, opções](../debugger/general-debugging-options-dialog-box.md)
 
-- [Caixa de diálogo Just-In-Time, Depuração, Opções](../debugger/just-in-time-debugging-options-dialog-box.md)
+- [Caixa de diálogo just-in-time, Depuration, Options](../debugger/just-in-time-debugging-options-dialog-box.md)
 
-- [Caixa de diálogo Janela de Saída, Depuração, Opções](../debugger/output-window-debugging-options-dialog-box.md)
+- [Caixa de diálogo Janela de Saída, depuração, opções](../debugger/output-window-debugging-options-dialog-box.md)
 
 - [Caixa de diálogo símbolos, depuração, opções](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Depurando no Visual Studio](../debugger/index.yml)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

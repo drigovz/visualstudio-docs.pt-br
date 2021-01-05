@@ -1,5 +1,7 @@
 ---
 title: Enviando extensões do Visual Studio | Microsoft Docs
+description: Saiba como publicar e manter sua extensão do SDK do Visual Studio, incluindo o trabalho com arquivos. vsix, publicação, localização e atualização.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 767bb24bb5cb47f1af1452aa04ebdc91c778e284
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 812fc4f4e2f8dcf54876e2764f0c091f16348496
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700121"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715997"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Enviando extensões do Visual Studio
 Depois de terminar de desenvolver sua extensão, você pode instalá-la em outros computadores, compartilhá-lo com seus amigos e colegas de trabalho ou publicá-lo na Visual Studio Marketplace. Nesta seção, explicaremos todas as coisas que você precisa fazer para publicar e manter sua extensão: trabalhando com arquivos. vsix, publicação, localização e atualização.
@@ -57,6 +59,6 @@ Depois de terminar de desenvolver sua extensão, você pode instalá-la em outro
 |[Como adicionar uma dependência a um pacote VSIX](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|Descreve como adicionar referências a pacotes de implantação VSIX.|
 |[Preparando extensões para a implantação do Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Explica como implantar sua extensão com Windows Installer.|
 |[Assinando pacotes VSIX](../extensibility/signing-vsix-packages.md)|Explica como assinar pacotes VSIX.|
-|[Galerias privadas](../extensibility/private-galleries.md)|Explica como criar galerias particulares para extensões.|
+|[Galerias particulares](../extensibility/private-galleries.md)|Explica como criar galerias particulares para extensões.|
 |[Fornecer suporte à várias versões do Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md)|Mostra como fazer com que sua extensão dê suporte a várias versões do Visual Studio.|
 |[Localizando o Visual Studio](locating-visual-studio.md)|Descreve como localizar instâncias do Visual Studio para implantação de extensão personalizada.|

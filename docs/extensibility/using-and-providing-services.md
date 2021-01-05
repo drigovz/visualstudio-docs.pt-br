@@ -1,5 +1,7 @@
 ---
 title: Usando e fornecendo serviços | Microsoft Docs
+description: Saiba mais sobre os serviços que o IDE do Visual Studio oferece para o VSPackages fornecer e usar. Estes artigos descrevem como obter e fornecer serviços.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8741d8d66af96ad4c6abea44b238393a34c5aa95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a7c1d9f3632d8b710ac238c372ed4456183a8d1
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698735"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715932"
 ---
 # <a name="using-and-providing-services"></a>Usando e fornecendo serviços
 Um serviço é um contrato entre duas VSPackages. Uma VSPackage oferece um conjunto específico de interfaces para que outra VSPackage consuma. Por exemplo, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o oferece o <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> serviço para qualquer VSPackage que ele carrega. Esse serviço fornece a <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, que pode ser usada para gravar no log de atividades. Para obter mais informações, consulte [como: usar o log de atividades](../extensibility/how-to-use-the-activity-log.md).

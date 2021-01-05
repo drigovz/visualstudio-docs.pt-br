@@ -1,6 +1,7 @@
 ---
 title: Depurar aplicativos UWP | Microsoft Docs
-ms.custom: ''
+description: Encontre artigos sobre tarefas de depuração para aplicativos Plataforma Universal do Windows (UWP) no depurador do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/22/2019
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 73b9b78be6a6325a422c945db8c51caa7a11b487
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 111a84471ca20659b9a8a4a00345c1c027a0472e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188274"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726703"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Depurar aplicativos universais do Windows (UWP) no Visual Studio
 
@@ -32,5 +33,5 @@ O depurador do Visual Studio fornece suporte completo para depurar aplicativos U
 | [Inspecione as propriedades XAML durante a depuração](../xaml-tools/xaml-hot-reload.md) | Você pode usar a árvore visual ao vivo para explorar a árvore visual de um objeto XAML do UWP e exibir as propriedades de dependência dos objetos nessa árvore. |
 |Analise o efeito da classe ContentPrefetcher em aplicativos UWP.|[Conteúdo de pré-busca para aplicativos UWP](../debugger/prefetch-content-for-windows-store-apps.md)|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Analisar a qualidade do código usando a análise de código estático](../code-quality/code-analysis-for-managed-code-overview.md)

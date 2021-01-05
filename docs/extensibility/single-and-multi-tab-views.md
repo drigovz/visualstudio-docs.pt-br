@@ -1,5 +1,7 @@
 ---
 title: Exibições únicas e de várias guias | Microsoft Docs
+description: Saiba como implementar exibições de várias guias em editores, como uma janela do editor de código e um designer de formulários.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c308b4d6c7b90456255019ef57c6b9d544aefc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94081af0bfdb85793c092f76d28758f220f4628b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699986"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715204"
 ---
 # <a name="single-and-multi-tab-views"></a>Exibição de guia única e multiguias
 Um editor pode criar diferentes tipos de exibições. Um exemplo é uma janela do editor de código, outra é um designer de formulários.
@@ -112,7 +114,7 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Suporte a várias exibições de documento](../extensibility/supporting-multiple-document-views.md)
 - [Como anexar exibições para dados de documentos](../extensibility/how-to-attach-views-to-document-data.md)
 - [Criar designers e editores personalizados](../extensibility/creating-custom-editors-and-designers.md)
