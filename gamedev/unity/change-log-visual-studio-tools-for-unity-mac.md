@@ -2,7 +2,7 @@
 title: Log de alterações (Ferramentas do Visual Studio para Unity, Mac) | Microsoft Docs
 description: Exiba o log de alterações para Ferramentas do Visual Studio para Unity, Mac. Confira as alterações da versão 1.0.0.0 a 2.7.0.0 e posteriores.
 ms.custom: ''
-ms.date: 11/13/2020
+ms.date: 12/18/2020
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,25 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 2f026c9d33f5aa49ebb7e974a507c85b87073897
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 53aade9880686746d11fb899b377e81174915bfa
+ms.sourcegitcommit: 4976419fae731860295dbcd072e6778832f7255d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672841"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97917903"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Log de alterações (Ferramentas do Visual Studio para Unity, Mac)
 
 Log de alterações de Ferramentas do Visual Studio para Unity.
+
+## <a name="2840"></a>2.8.4.0
+Lançado em 15 de dezembro de 2020
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Integrar**
+
+  - Corrigido um problema de confiabilidade ao fechar o assistente de criação de eventos do Unity.
 
 ## <a name="2830"></a>2.8.3.0
 Lançado em 10 de novembro de 2020

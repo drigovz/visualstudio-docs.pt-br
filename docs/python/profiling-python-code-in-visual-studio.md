@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b47b59c8d45d76fae1e61584510ae39fe5a91784
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 6e6a37301477b43063169143456fc21a3c783968
+ms.sourcegitcommit: 4976419fae731860295dbcd072e6778832f7255d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973810"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97917919"
 ---
 # <a name="profile-python-code"></a>Criar perfil do código do Python
 
@@ -32,7 +32,7 @@ Quando você seleciona **OK**, o criador de perfil é executado e abre um relat�
 ![Relatório de desempenho de criação de perfil](media/profiling-results.png)
 
 > [!Note]
-> No momento, o Visual Studio oferece suporte somente a esse nível de criação de perfil de aplicativo completo, mas certamente queremos ouvir seus comentários sobre recursos futuros. Use o botão **Comentários sobre o produto** no final desta página.
+> Quando você criar o perfil de um aplicativo Python, o Visual Studio coleta dados durante o tempo de vida do processo. No momento, não é possível pausar a criação de perfil. Queremos ouvir seus comentários sobre recursos futuros. Use o botão **Comentários sobre o produto** no final desta página.
 
 ## <a name="profiling-for-ironpython"></a>Criação de perfil do IronPython
 
