@@ -1,5 +1,7 @@
 ---
 title: Depurar no modo misto | Microsoft Docs
+description: Consulte Como habilitar a depuração de modo misto (código gerenciado e nativo juntos) nas páginas de propriedades do projeto do aplicativo de chamada.
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2018
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb563b260175d3385288c4cb6f046af8526069cf
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 123fb61cb223d8db3c447f5925639df33a2b3e11
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852107"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903981"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Como: Depurar no modo misto (C#, C++, Visual Basic)
 
@@ -41,9 +43,9 @@ Se você não tiver acesso a um projeto de aplicativo de chamada, poderá depura
 
 ## <a name="enable-mixed-mode-debugging-for-a-native-calling-app"></a>Habilitar a depuração de modo misto para um aplicativo de chamada nativo
 
-1. Selecione o projeto C++ no **Gerenciador de soluções** e clique no ícone **Propriedades** , pressione **ALT** + **Enter**ou clique com o botão direito do mouse e escolha **Propriedades**.
+1. Selecione o projeto C++ no **Gerenciador de soluções** e clique no ícone **Propriedades** , pressione **ALT** + **Enter** ou clique com o botão direito do mouse e escolha **Propriedades**.
 
-1. Na caixa de diálogo ** \<Project> páginas de propriedades** , expanda **Propriedades de configuração**e, em seguida, selecione **depuração**.
+1. Na caixa de diálogo **\<Project> páginas de propriedades** , expanda **Propriedades de configuração** e, em seguida, selecione **depuração**.
 
 1. Defina **Tipo de Depurador** como **Misto** ou **Automático**.
 
@@ -53,7 +55,7 @@ Se você não tiver acesso a um projeto de aplicativo de chamada, poderá depura
 
 ## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>Habilitar a depuração de modo misto para um aplicativo de chamada gerenciado
 
-1. Selecione o projeto do C# ou do Visual Basic em **Gerenciador de soluções** e selecione o ícone **Propriedades** , pressione **ALT** + **Enter**ou clique com o botão direito do mouse e escolha **Propriedades**.
+1. Selecione o projeto do C# ou do Visual Basic em **Gerenciador de soluções** e selecione o ícone **Propriedades** , pressione **ALT** + **Enter** ou clique com o botão direito do mouse e escolha **Propriedades**.
 
 1. Selecione a guia **depurar** e, em seguida, selecione **Habilitar depuração de código nativo**.
 
@@ -64,6 +66,6 @@ Se você não tiver acesso a um projeto de aplicativo de chamada, poderá depura
 > [!NOTE]
 > Na maioria das versões do Visual Studio começando com o Visual Studio 2017, você precisa usar o arquivo *launchSettings.json* em vez das propriedades do projeto para habilitar a depuração de modo misto de um código nativo em um aplicativo .NET Core. Para obter detalhes, consulte [depurar código gerenciado e nativo](../debugger/how-to-debug-managed-and-native-code.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Como depurar de um projeto de DLL](../debugger/how-to-debug-from-a-dll-project.md)

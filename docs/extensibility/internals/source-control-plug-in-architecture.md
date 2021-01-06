@@ -1,5 +1,7 @@
 ---
 title: Arquitetura de plug-in de controle do código-fonte | Microsoft Docs
+description: Saiba como adicionar suporte ao controle do código-fonte ao IDE do Visual Studio implementando e anexando um plug-in de controle do código-fonte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f549ad2c4ee456860a08fbf20ccda813934a8582
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e154e91ce552df9e54d45ea9210a0679edae5f28
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705103"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878060"
 ---
 # <a name="source-control-plug-in-architecture"></a>Arquitetura do plug-in de controle do código-fonte
-Você pode adicionar suporte de controle do código-fonte ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE) implementando e anexando um plug-in de controle do código-fonte. O IDE conecta-se ao plug-in de controle do código-fonte por meio da API de plug-in de controle do código-fonte bem definida. O IDE expõe os recursos de controle de versão do sistema de controle do código-fonte fornecendo uma interface do usuário (IU) que consiste em barras de ferramentas e comandos de menu. O plug-in de controle do código-fonte implementa a funcionalidade de controle do código-fonte.
+Você pode adicionar suporte de controle do código-fonte ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE) implementando e anexando um plug-in de controle do código-fonte. O IDE conecta-se ao plug-in de controle do código-fonte por meio do controle do código-fonte bem definido Plug-In API. O IDE expõe os recursos de controle de versão do sistema de controle do código-fonte fornecendo uma interface do usuário (IU) que consiste em barras de ferramentas e comandos de menu. O plug-in de controle do código-fonte implementa a funcionalidade de controle do código-fonte.
 
 ## <a name="source-control-plug-in-resources"></a>Recursos de plug-in de controle do código-fonte
  O plug-in de controle do código-fonte fornece recursos para ajudar a criar e conectar seu aplicativo de versionamento ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. O plug-in de controle do código-fonte contém a especificação da API que deve ser implementada por um plug-in de controle do código-fonte para que ele possa ser integrado ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Ele também contém um exemplo de código (escrito em C++) que implementa um esqueleto de controle do código-fonte que demonstra a implementação de funções essenciais em conformidade com a API de plug-in de controle do código-fonte.
@@ -36,7 +38,7 @@ Você pode adicionar suporte de controle do código-fonte ao [!INCLUDE[vsprvs](.
 
  Um plug-in de controle do código-fonte não pode fazer alterações no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell e, consequentemente, no pacote do adaptador de controle do código-fonte ou na interface do usuário do controle do código-fonte fornecido pelo IDE. Ele deve fazer uso máximo da flexibilidade oferecida por meio da implementação das várias funções de API de plug-in de controle do código-fonte que contribuem para uma experiência integrada para o usuário final. A seção de referência da documentação da API de plug-in de controle do código-fonte inclui informações para alguns recursos avançados de plug-in de controle do código-fonte. Para explorar esses recursos, o plug-in de controle do código-fonte deve declarar seus recursos avançados para o IDE durante a inicialização e deve implementar funções avançadas específicas para cada recurso.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Plug-ins de controle do código-fonte](../../extensibility/source-control-plug-ins.md)
 - [Glossário](../../extensibility/source-control-plug-in-glossary.md)
 - [Criando um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md)

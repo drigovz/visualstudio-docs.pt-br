@@ -1,5 +1,7 @@
 ---
 title: Tipo de projeto Essentials | Microsoft Docs
+description: Saiba mais sobre quando você deve criar um tipo de projeto e quando você pode estender um tipo de projeto existente usando subtipos de projeto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7634802899d72eb6abcb0aa837b8fb6a532b966
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: d55a4be044c44567f65e312d013ebdb61314ea00
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012055"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877787"
 ---
 # <a name="project-type-essentials"></a>Conceitos básicos do tipo de projeto
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] inclui vários tipos de projeto para linguagens como [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ou [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] também permite que você crie seus próprios tipos de projeto.
 
- Se você quiser apenas adicionar comandos personalizados, editores ou janelas de ferramentas ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , poderá fazer isso sem criar um novo tipo de projeto. Para obter mais informações, consulte estes tópicos:
+ Se você quiser apenas adicionar comandos personalizados, editores ou janelas de ferramentas ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , poderá fazer isso sem criar um novo tipo de projeto. Para mais informações, consulte os seguintes tópicos:
 
 - [Comandos, menus e barras de ferramentas](../../extensibility/internals/commands-menus-and-toolbars.md)
 
@@ -64,5 +66,5 @@ ms.locfileid: "90012055"
 
 - Os tipos de projeto podem dar suporte a várias configurações, como Debug e Release. Os usuários podem alterar as diferentes configurações de um projeto usando as páginas de propriedades fornecidas por você. Para obter mais informações, consulte [Gerenciando opções de configuração](../../extensibility/internals/managing-configuration-options.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Tipos de projeto de implantação](../../extensibility/internals/deploying-project-types.md)

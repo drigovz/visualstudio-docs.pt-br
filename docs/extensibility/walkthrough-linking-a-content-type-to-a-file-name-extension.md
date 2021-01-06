@@ -1,5 +1,6 @@
 ---
 title: Vincular um tipo de conteúdo a uma extensão de nome de arquivo
+description: Saiba como vincular seu próprio tipo de conteúdo a uma extensão de nome de arquivo usando as extensões de Managed Extensibility Framework do editor neste tutorial.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d59ae0b5eb2411ff9e41466e8b87dbe20b835ba
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 478ecc6c2238703d1cacc8e649072d669a41c590
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034657"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877904"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Walkthrough: vincular um tipo de conteúdo a uma extensão de nome de arquivo
 Você pode definir seu próprio tipo de conteúdo e vincular uma extensão de nome de arquivo a ele usando as extensões de Managed Extensibility Framework do editor (MEF). Em alguns casos, a extensão de nome de arquivo já está definida por um serviço de idioma. Mas, para usá-lo com o MEF, você ainda deve vinculá-lo a um tipo de conteúdo.
@@ -26,9 +27,9 @@ Você pode definir seu próprio tipo de conteúdo e vincular uma extensão de no
 
 ## <a name="create-a-mef-project"></a>Criar um projeto do MEF
 
-1. Crie um projeto VSIX em C#. (Na caixa de diálogo **novo projeto** , selecione **Visual C#/extensibilidade**e, em seguida, **projeto VSIX**.) Nomeie a solução `ContentTypeTest` .
+1. Crie um projeto VSIX em C#. (Na caixa de diálogo **novo projeto** , selecione **Visual C#/extensibilidade** e, em seguida, **projeto VSIX**.) Nomeie a solução `ContentTypeTest` .
 
-2. No arquivo **Source. Extension. vsixmanifest** , vá para a guia **ativos** e defina o campo **tipo** como **Microsoft. VisualStudio. MefComponent**, o campo de **origem** para **um projeto na solução atual**e o campo **projeto** como o nome do projeto.
+2. No arquivo **Source. Extension. vsixmanifest** , vá para a guia **ativos** e defina o campo **tipo** como **Microsoft. VisualStudio. MefComponent**, o campo de **origem** para **um projeto na solução atual** e o campo **projeto** como o nome do projeto.
 
 ## <a name="define-the-content-type"></a>Definir o tipo de conteúdo
 
@@ -102,5 +103,5 @@ Você pode definir seu próprio tipo de conteúdo e vincular uma extensão de no
     [ContentType("hid")]
     ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Pontos de extensão do serviço de linguagem e do editor](../extensibility/language-service-and-editor-extension-points.md)

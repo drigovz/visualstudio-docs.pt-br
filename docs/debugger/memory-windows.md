@@ -1,6 +1,7 @@
 ---
 title: Exibir memória para variáveis no depurador | Microsoft Docs
-ms.custom: ''
+description: Saiba como usar as janelas de memória durante a depuração, para ver o espaço de memória que seu aplicativo está usando. Outras janelas mostram variáveis e onde residem na memória.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 f1_keywords:
@@ -24,18 +25,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51070e06f684c2e873ded76ec8797ed7587745ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c39024e32c899310b88c1b0583d5b292b063937
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348314"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903098"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Usar as janelas de memória no depurador do Visual Studio (C#, C++, Visual Basic, F #)
 
 Durante a depuração, a janela **memória** mostra o espaço de memória que seu aplicativo está usando.
 
-Janelas do depurador como **Watch**, **autoies**, **locais**e a caixa de diálogo **QuickWatch** mostram as variáveis que são armazenadas em locais específicos na memória. A janela **memória** mostra a imagem geral. O modo de exibição de memória é conveniente para examinar grandes partes de dados (buffers ou cadeias de caracteres grandes, por exemplo) que não são exibidos bem nas outras janelas.
+Janelas do depurador como **Watch**, **autoies**, **locais** e a caixa de diálogo **QuickWatch** mostram as variáveis que são armazenadas em locais específicos na memória. A janela **memória** mostra a imagem geral. O modo de exibição de memória é conveniente para examinar grandes partes de dados (buffers ou cadeias de caracteres grandes, por exemplo) que não são exibidos bem nas outras janelas.
 
 A janela de **memória** não está limitada à exibição de dados. Ele exibe tudo no espaço de memória, incluindo dados, código e bits aleatórios de lixo na memória não atribuída.
 
@@ -46,15 +47,15 @@ A janela **memória** não está disponível para depuração de script ou SQL. 
 Assim como outras janelas do depurador, as janelas de **memória** estão disponíveis somente durante uma sessão de depuração.
 
 >[!IMPORTANT]
->Para habilitar as janelas de **memória** , **habilite a depuração de nível de endereço** deve ser selecionada em **ferramentas**  >  **Opções** (ou opções de **depuração**  >  **Options**) > **depuração**  >  **geral**.
+>Para habilitar as janelas de **memória** , **habilite a depuração de nível de endereço** deve ser selecionada em **ferramentas**  >  **Opções** (ou opções de **depuração**  >  ) > **depuração**  >  **geral**.
 
 **Para abrir uma janela de memória**
 
-1. Verifique se **Habilitar depuração no nível de endereço** está selecionado em **ferramentas**  >  **Opções** (ou opções de **depuração**  >  **Options**) > **depuração**  >  **geral**.
+1. Verifique se **Habilitar depuração no nível de endereço** está selecionado em **ferramentas**  >  **Opções** (ou opções de **depuração**  >  ) > **depuração**  >  **geral**.
 
-1. Inicie a depuração selecionando a seta verde, pressionando **F5**ou selecionando **depurar**  >  **Iniciar Depuração**.
+1. Inicie a depuração selecionando a seta verde, pressionando **F5** ou selecionando **depurar**  >  **Iniciar Depuração**.
 
-2. Em **depurar**  >  **Windows**  >  **memória**do Windows, selecione **memória 1**, **memória 2**, **memória 3**ou **memória 4**. (Algumas edições da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oferecem apenas uma janela de **memória** .)
+2. Em **depurar**  >    >  **memória** do Windows, selecione **memória 1**, **memória 2**, **memória 3** ou **memória 4**. (Algumas edições da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oferecem apenas uma janela de **memória** .)
 
 ## <a name="move-around-in-the-memory-window"></a>Mover-se na janela de memória
 
@@ -117,5 +118,5 @@ Em aplicativos de código nativo, você pode usar nomes de registro como express
 
    Quando você usa um comando de depuração como **etapa**, o endereço de memória exibido no campo **endereço** e na parte superior da janela de **memória** é alterado automaticamente conforme o ponteiro é alterado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Exibir dados no depurador](../debugger/viewing-data-in-the-debugger.md)

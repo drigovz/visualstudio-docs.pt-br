@@ -1,5 +1,7 @@
 ---
-title: 'Área de teste 1: adicionar a-abrir do controle do código-fonte | Microsoft Docs'
+title: 'Área de teste 1: Adicionar To-Open do controle do código-fonte | Microsoft Docs'
+description: Esta área de teste de plug-in de controle de origem aborda a colocação de soluções ou projetos sob controle do código-fonte e sua recuperação no controle do código-fonte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +13,20 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ac7b8e5a60fe25ac22272cc28fc3ed6f903b058
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 608d3489f657cf38d310e67a17bdd48a529de3e5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704673"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877735"
 ---
-# <a name="test-area-1-add-toopen-from-source-control"></a>Área de teste 1: adicionar a/abrir do controle do código-fonte
+# <a name="test-area-1-add-toopen-from-source-control"></a>Área de teste 1: Adicionar/abrir do controle do código-fonte
 Esta área de teste de plug-in de controle de origem aborda a colocação de soluções ou projetos sob controle do código-fonte e sua recuperação no controle do código-fonte.
 
 ## <a name="command-menu-access"></a>Acesso ao menu de comando
  Os seguintes [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] caminhos de menu do ambiente de desenvolvimento integrado são usados nos casos de teste:
 
-- Para o [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] , abra do controle do código-fonte: **arquivo**, **abrir**, solução de **projeto** / **Solution**; examine o [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] local.
+- Para o [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] , abra do controle do código-fonte: **arquivo**, **abrir**, solução de **projeto** / ; examine o [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] local.
 
 - Para outros plug-ins de controle de origem, abra do controle do código-fonte: **arquivo**, **controle do código-fonte**, **Abrir do controle do código-** fonte.
 
@@ -83,5 +85,5 @@ Esta área de teste de plug-in de controle de origem aborda a colocação de sol
 |Adicionar à solução com um único projeto — único projeto|1. Crie uma solução com um único projeto.<br />2. Adicione a solução ao controle do código-fonte.<br />3. Feche a solução.<br />4. Crie uma segunda solução vazia.<br />5. Adicione a solução controlada anteriormente do controle do código-fonte (**arquivo**, **controle do código-fonte**, **Adicionar projeto do controle do código-fonte**).|O projeto adicionado aparece na **Gerenciador de soluções** e é feito check-in.|
 |Adicionar à solução — solução adicionada ao controle do código-fonte por seleção|1. Crie uma solução com um projeto.<br />2. Adicione apenas a solução ao controle do código-fonte como seleção. Se essa etapa for concluída com sucesso, continue na próxima etapa.<br />3. Feche a solução.<br />4. Crie uma nova solução.<br />5. Adicione a solução controlada anteriormente do controle do código-fonte (**arquivo**, **controle do código-fonte**, **Adicionar projeto do controle do código-fonte**).|`Result from Step 2:`<br /><br /> O projeto não está no controle do código-fonte.<br /><br /> `Result from Step 5:`<br /><br /> Se a primeira solução tiver itens de solução, eles não poderão ser adicionados do controle do código-fonte, portanto, eles não aparecerão.<br /><br /> O projeto da primeira solução aparece como indisponível.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Guia de teste para plug-ins de controle do código-fonte](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

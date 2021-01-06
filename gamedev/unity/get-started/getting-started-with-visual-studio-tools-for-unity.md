@@ -13,12 +13,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: ba95e15be083e0bb1274e01a986f4139d9443240
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1f8cbe1629aab6a177a46888fe25cf8e3565d91d
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341479"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903747"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Introdução ao Visual Studio e ao Unity
 
@@ -34,7 +34,7 @@ Ferramentas do Visual Studio para Unity é uma extensão gratuita que fornece su
 > [!NOTE]
 > Este guia de instalação é para o Visual Studio. Se você estiver usando Visual Studio Code, visite a [documentação de desenvolvimento do Unity com vs Code](https://code.visualstudio.com/docs/other/unity).
 
-1. [Baixe o instalador do Visual Studio](/docs/install/install-visual-studio.md)ou execute-o se já estiver instalado.
+1. [Baixe o instalador do Visual Studio](/visualstudio/docs/install/install-visual-studio.md)ou execute-o se já estiver instalado.
 2. Clique em **Modificar** (se já estiver instalado) ou em **Instalar** (para novas instalações) para a versão desejada do Visual Studio.
 3. Na guia **cargas de trabalho** , role até a seção **jogos** e selecione o **desenvolvimento de jogos com** carga de trabalho do Unity.
 
@@ -85,7 +85,7 @@ Por padrão, o Unity já deve estar configurado para usar o Visual Studio ou Vis
     ![O menu de preferências de ferramentas externas no editor do Unity no Windows](../media/vs/preferences-external-tools.png)
 
 4. Se **Procurar...** for selecionado, navegue até o diretório **Common7/IDE** dentro do seu diretório de instalação do Visual Studio e selecione **devenv.exe**. Em seguida, clique em **abrir**.
-5. Após a seleção do Visual Studio na lista **Editor de Script Externo** , confirme se a caixa de seleção **Anexo do Editor** está selecionada.
+5. Após a seleção do Visual Studio na lista **Editor de Script Externo**, confirme se a caixa de seleção **Anexo do Editor** está selecionada.
 6. Feche a caixa de diálogo **Preferências** para concluir o processo de configuração.
 
 :::zone-end

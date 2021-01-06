@@ -1,5 +1,7 @@
 ---
 title: Exibir informações de rastreamento do WPF | Microsoft Docs
+description: O Visual Studio pode receber informações de rastreamento de depuração de aplicativos do WPF e exibi-los na janela de saída. Saiba como gerenciar e personalizar o rastreamento do WPF.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 086dc96051323941b25766fb836b5020bca0ec43
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 0e4800c2ca44c2c52b2059685d9c5bc4fe38ed08
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852290"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903968"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Como exibir informações de acompanhamento WPF
 O [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] pode receber informações de rastreamento de depuração de aplicativos do WPF e exibir essas informações na janela de **Saída**. Para exibir informações de rastreamento de depuração, o rastreamento do WPF deve estar habilitado.
@@ -84,5 +86,5 @@ O [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]�
 
 8. Clique em **OK**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Depurando WPF](../debugger/debugging-wpf.md)

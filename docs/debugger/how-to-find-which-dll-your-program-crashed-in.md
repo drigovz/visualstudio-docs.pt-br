@@ -1,5 +1,7 @@
 ---
 title: Descobrir em qual DLL seu programa falhou | Microsoft Docs
+description: Use a janela módulos para identificar qual DLL externa estava ativa quando o aplicativo falhou. Você pode fazer isso para uma DLL do sistema ou para o código de outra pessoa.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4432378e10590c2ba930edf0920b9146e450f96
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6eacc8865b3f531df8651ad77d99b319278e6cd1
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852068"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903384"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Como: descobrir qual DLL seu programa falhou (C#, C++, Visual Basic, F #)
 
@@ -49,6 +51,6 @@ ms.locfileid: "90852068"
 
 6. Examine as colunas **Nome** e **Caminho** para ver o nome e o caminho da DLL.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Depurando projetos de DLL](../debugger/debugging-dll-projects.md)
 - [Como usar a janela Módulos](../debugger/how-to-use-the-modules-window.md)

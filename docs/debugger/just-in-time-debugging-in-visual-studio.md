@@ -1,5 +1,7 @@
 ---
 title: Desabilitar o depurador just-in-time | Microsoft Docs
+description: A caixa de diálogo depurador just-in-time pode ser aberta quando ocorre um erro em um aplicativo. Saiba o que você pode fazer quando isso acontece e maneiras de evitá-lo.
+ms.custom: SEO-VS-2020
 ms.date: 05/23/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3155c2cdc9ea3dc5208a52e5fe37f697a4ad5ef6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7904b4bbf56c0a547d9f7b1e94bb46af8dd48d98
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386115"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903890"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Desabilitar o Depurador Just-In-Time
 
@@ -32,14 +34,14 @@ Se você não tiver o Visual Studio instalado, poderá evitar a depuração Just
 
 - Se você estiver tentando executar um aplicativo Web, desabilite a depuração de script:
 
-  Nas opções de rede e Internet do **painel de controle**do Windows  >  **Network and Internet**  >  **Internet Options**, selecione **Desabilitar depuração de script (Internet Explorer)** e **Desabilitar depuração de script (outros)**. As etapas e configurações exatas dependem da sua versão do Windows e do seu navegador.
+  Nas opções de rede e Internet do **painel de controle** do Windows  >    >  , selecione **Desabilitar depuração de script (Internet Explorer)** e **Desabilitar depuração de script (outros)**. As etapas e configurações exatas dependem da sua versão do Windows e do seu navegador.
 
   ![Opções de Internet JIT](../debugger/media/jitinternetoptions.png "Opções de Internet JIT")
 
 - Se você estiver hospedando um aplicativo Web ASP.NET no IIS, desabilite a depuração no lado do servidor:
 
-  1. Na exibição de **recursos**do Gerenciador do IIS, na seção **ASP.net** , clique duas vezes em **compilação .net**ou selecione-a e, em seguida, selecione **abrir recurso** no painel **ações** .
-  1. Em **Behavior**  >  **depuração**de comportamento, selecione **false**. As etapas são diferentes em versões mais antigas do IIS.
+  1. Na exibição de **recursos** do Gerenciador do IIS, na seção **ASP.net** , clique duas vezes em **compilação .net** ou selecione-a e, em seguida, selecione **abrir recurso** no painel **ações** .
+  1. Em   >  **depuração** de comportamento, selecione **false**. As etapas são diferentes em versões mais antigas do IIS.
 
 Depois de desabilitar a depuração Just-in-time, o aplicativo pode ser capaz de lidar com o erro e executar normalmente.
 

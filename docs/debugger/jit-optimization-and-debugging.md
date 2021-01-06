@@ -1,5 +1,7 @@
 ---
 title: Otimização e depuração JIT | Microsoft Docs
+description: O código otimizado é mais difícil de depurar do que o código que não é. Saiba mais sobre a otimização JIT e sobre quando e como suprimir.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae11860aaa64448cd4d23b5602cf4c2da1575ce3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 66f63c7232b52ebe849722147e007ab70527c311
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916212"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903916"
 ---
 # <a name="jit-optimization-and-debugging"></a>Otimização e depuração JIT
 Se você estiver tentando depurar o código, será mais fácil quando esse código **não** for otimizado. Quando o código é otimizado, o compilador e o tempo de execução fazem alterações no código de CPU emitido para que ele seja executado mais rapidamente, mas tem um mapeamento menos direto para o código-fonte original. Se o mapeamento for menos direto, os depuradores geralmente não poderão informar o valor das variáveis locais, e a depuração de código e os pontos de interrupção talvez não funcionem conforme o esperado.
@@ -37,7 +39,7 @@ No ecossistema do .NET, o código é retirado das instruções de origem para a 
 ## <a name="the-suppress-jit-optimization-on-module-load-managed-only-option"></a>A opção ' suprimir otimização JIT na carga do módulo (somente gerenciado) '
 O depurador expõe uma opção que controla o que acontece quando uma DLL que é compilada com otimizações habilitadas carrega dentro do processo de destino. Se essa opção estiver desmarcada (o estado padrão), quando o tempo de execução do .NET compilar o código MSIL no código de CPU, ele deixará as otimizações habilitadas. Se a opção estiver marcada, o depurador solicitará que as otimizações sejam desabilitadas.
 
-Para localizar a opção **suprimir otimização JIT na carga do módulo (somente gerenciado)** , selecione opções de **ferramentas**  >  **Options**e, em seguida, selecione a página **geral** no nó **depuração** .
+Para localizar a opção **suprimir otimização JIT na carga do módulo (somente gerenciado)** , selecione opções de **ferramentas**  >  e, em seguida, selecione a página **geral** no nó **depuração** .
 
 ![Suprimir otimização JIT](../debugger/media/suppress-jit-tool-options.png "Suprimir otimização JIT")
 
@@ -65,7 +67,7 @@ Há duas situações em que ativar essa opção **não** funcionará:
 
     ![Definir COMPlus_ReadyToRun variável de ambiente](../debugger/media/environment-variables-debug-menu.png "Definir COMPlus_ReadyToRun variável de ambiente")
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Como depurar a origem do DOTNET Framework](../debugger/how-to-debug-dotnet-framework-source.md)
 - [Depurando código gerenciado](../debugger/debugging-managed-code.md)
 - [Navegar pelo Código com o Depurador](../debugger/navigating-through-code-with-the-debugger.md)

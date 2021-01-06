@@ -1,6 +1,7 @@
 ---
 title: Comandos do console do JavaScript | Microsoft Docs
-ms.custom: ''
+description: Use comandos para enviar mensagens e realizar outras tarefas na janela do console do JavaScript. Este artigo se aplica a aplicativos Node.js, aplicativos UWP e Apache Cordova aplicativos.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -14,18 +15,18 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 301461caa15321b5a77f42872c93f52f3ec2c9c1
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 2877b3ca9fb644ae4dae1af27e79e6ee52423b97
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211268"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903903"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandos do console do JavaScript no Visual Studio
 
 Você pode usar comandos para enviar mensagens e executar outras tarefas na janela Console do JavaScript do Visual Studio. Para obter exemplos que mostram como usar essa janela, consulte [início rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true). As informações neste tópico aplicam-se a Node.js aplicativo, aplicativos UWP e aplicativos criados usando Ferramentas do Visual Studio para Apache Cordova.
 
-Se a janela do console do JavaScript estiver fechada, você poderá abri-la enquanto estiver depurando no Visual Studio escolhendo **depurar**  >  console do**Windows**  >  **JavaScript**.
+Se a janela do console do JavaScript estiver fechada, você poderá abri-la enquanto estiver depurando no Visual Studio escolhendo **depurar**  >  console do **Windows**  >  **JavaScript**.
 
 > [!NOTE]
 > Se a janela não estiver disponível durante uma sessão de depuração, verifique se o tipo de depurador está definido para **Script** nas propriedades de depuração do projeto.
@@ -87,7 +88,7 @@ if (console && console.log) {
 ```
 
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Examinando objetos na janela Console do JavaScript
-Você pode interagir com qualquer objeto que esteja no escopo usando a janela Console do JavaScript. Para inspecionar um objeto fora do escopo na janela do console, use `console.log`, `console.dir` ou outros comandos do seu código. Como alternativa, você pode interagir com o objeto da janela do console enquanto ele estiver no escopo definindo um ponto de interrupção em seu código (ponto de interrupção de inserção do**ponto**de interrupção  >  **Insert Breakpoint**).
+Você pode interagir com qualquer objeto que esteja no escopo usando a janela Console do JavaScript. Para inspecionar um objeto fora do escopo na janela do console, use `console.log`, `console.dir` ou outros comandos do seu código. Como alternativa, você pode interagir com o objeto da janela do console enquanto ele estiver no escopo definindo um ponto de interrupção em seu código (ponto de interrupção de inserção do **ponto** de interrupção  >  ).
 
 ## <a name="formatting-consolelog-output"></a><a name="ConsoleLog"></a> Formatando a saída do console.log
 Se você transmitir diversos argumentos para `console.log`, o console os tratará como uma matriz e concatenará a saída.

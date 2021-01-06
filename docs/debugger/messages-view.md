@@ -1,5 +1,7 @@
 ---
 title: Exibição de mensagens | Microsoft Docs
+description: Cada janela, thread e processo tem um fluxo de mensagens associado que pode ser exibido em uma janela de exibição de mensagens. Saiba como abrir e controlar uma exibição de mensagens.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 692902b2d2b612c71c2d1dc0f936c7550f430847
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62845840"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903397"
 ---
 # <a name="messages-view"></a>Exibição de mensagens
 Cada janela tem um fluxo de mensagens associado. Uma janela de exibição de mensagens exibe esse fluxo de mensagens. O identificador de janela, o código de mensagem e a mensagem são mostrados. Você também pode criar uma exibição de mensagens para um thread ou processo. Isso permite exibir mensagens enviadas a todas as janelas de propriedade de um processo ou thread específico, o que é particularmente útil para capturar mensagens de inicialização de janela.

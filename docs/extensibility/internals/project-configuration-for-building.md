@@ -1,5 +1,7 @@
 ---
 title: Configuração de projeto para compilação | Microsoft Docs
+description: Saiba como uma lista de configurações de solução para uma solução específica é gerenciada pela caixa de diálogo Configurações de solução em um novo tipo de projeto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd084053e06206a99298b234b4d51c8504119a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7768de1b57142e201c4108f5ef0c0768c57a8639
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706729"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877995"
 ---
 # <a name="project-configuration-for-building"></a>Configuração de projeto para compilar
 A lista de configurações de solução para uma determinada solução é gerenciada pela caixa de diálogo Configurações de solução.
@@ -55,7 +57,7 @@ A lista de configurações de solução para uma determinada solução é gerenc
 
  Além disso, você pode fornecer uma grade na janela dependências do projeto. Para obter mais informações, consulte [grade de exibição de propriedades](../../extensibility/internals/properties-display-grid.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Gerenciando opções de configuração](../../extensibility/internals/managing-configuration-options.md)
 - [Configuração de projeto para gerenciar a implantação](../../extensibility/internals/project-configuration-for-managing-deployment.md)
 - [Configuração de projeto para saída](../../extensibility/internals/project-configuration-for-output.md)

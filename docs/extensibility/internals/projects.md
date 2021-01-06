@@ -1,5 +1,7 @@
 ---
 title: Projetos | Microsoft Docs
+description: Saiba mais sobre as maneiras como o VSPackages pode estender o sistema de projeto do Visual Studio, incluindo tipos de projeto, subtipos de projeto e ferramentas personalizadas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,15 +16,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b7a9299321d2aa80eebb564bf9b926f07ab0108
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffc2dc28ed3d45194ba7738da58fa36dd022c79f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706207"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878047"
 ---
 # <a name="projects"></a>Projetos
-No Visual Studio, os projetos são os contêineres que os desenvolvedores usam para organizar arquivos de código-fonte e outros recursos que aparecem no **Gerenciador de soluções**. Normalmente, os projetos são arquivos (por exemplo, um arquivo. csproj para um projeto C#) que armazenam referências a arquivos de código-fonte e recursos como arquivos de bitmap. Os projetos permitem organizar, compilar, depurar e implantar código-fonte, referências a serviços Web e bancos de dados e outros recursos. O VSPackages pode estender o sistema de projeto do Visual Studio de três maneiras principais: *tipos de projeto*, *subtipos de projeto*e *ferramentas personalizadas*.
+No Visual Studio, os projetos são os contêineres que os desenvolvedores usam para organizar arquivos de código-fonte e outros recursos que aparecem no **Gerenciador de soluções**. Normalmente, os projetos são arquivos (por exemplo, um arquivo. csproj para um projeto C#) que armazenam referências a arquivos de código-fonte e recursos como arquivos de bitmap. Os projetos permitem organizar, compilar, depurar e implantar código-fonte, referências a serviços Web e bancos de dados e outros recursos. O VSPackages pode estender o sistema de projeto do Visual Studio de três maneiras principais: *tipos de projeto*, *subtipos de projeto* e *ferramentas personalizadas*.
 
 ## <a name="in-this-section"></a>Nesta seção
 - [Tipos de Projeto](../../extensibility/internals/project-types.md)

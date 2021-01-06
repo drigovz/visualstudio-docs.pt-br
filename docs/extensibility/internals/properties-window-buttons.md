@@ -1,5 +1,7 @@
 ---
 title: Botões da janela Propriedades | Microsoft Docs
+description: Saiba mais sobre os botões exibidos por padrão na barra de ferramentas para o janela Propriedades e sobre a implementação dos botões.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aaa4db159ccb0ecf3d0e9c9243e23fcd0dacc455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e99c362904bc40a2937c030f1ee2bb1c4d32a113
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706169"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878008"
 ---
 # <a name="properties-window-buttons"></a>Botões da janela Propriedades
-Dependendo da linguagem de desenvolvimento e do tipo de produto, determinados botões são exibidos por padrão na barra de ferramentas da janela **Propriedades** . Em todos os casos, os botões **Categorizado**, em **ordem alfabética**, **Propriedades**e **páginas de propriedades** são exibidos. No Visual C# e Visual Basic, o botão **eventos** também é exibido. Em determinados projetos de Visual C++, as **mensagens do vc + +** e os botões de **substituições do vc** são exibidos. Botões adicionais podem ser exibidos para outros tipos de projeto. Para obter mais informações sobre os botões na janela **Propriedades** , consulte [janela Propriedades](../../ide/reference/properties-window.md).
+Dependendo da linguagem de desenvolvimento e do tipo de produto, determinados botões são exibidos por padrão na barra de ferramentas da janela **Propriedades** . Em todos os casos, os botões **Categorizado**, em **ordem alfabética**, **Propriedades** e **páginas de propriedades** são exibidos. No Visual C# e Visual Basic, o botão **eventos** também é exibido. Em determinados projetos de Visual C++, as **mensagens do vc + +** e os botões de **substituições do vc** são exibidos. Botões adicionais podem ser exibidos para outros tipos de projeto. Para obter mais informações sobre os botões na janela **Propriedades** , consulte [janela Propriedades](../../ide/reference/properties-window.md).
 
 ## <a name="implementation-of-properties-window-buttons"></a>Implementação de botões da janela Propriedades
  Quando você clica no botão **Categorizado** , o Visual Studio chama a <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> interface no objeto que tem o foco para classificar suas propriedades por categoria. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> é implementado no `IDispatch` objeto que é apresentado à janela **Propriedades** .
@@ -36,5 +38,5 @@ Dependendo da linguagem de desenvolvimento e do tipo de produto, determinados bo
 > [!NOTE]
 > Não é possível adicionar botões da barra de ferramentas à janela **Propriedades** usando código não gerenciado. Para adicionar um botão da barra de ferramentas, você deve criar um objeto gerenciado que derive de <xref:System.Windows.Forms.Design.PropertyTab> .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Estendendo propriedades](../../extensibility/internals/extending-properties.md)

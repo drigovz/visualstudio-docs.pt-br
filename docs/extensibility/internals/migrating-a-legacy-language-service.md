@@ -1,5 +1,7 @@
 ---
 title: Migrando um serviço de linguagem herdada | Microsoft Docs
+description: Saiba como atualizar um serviço de idioma para a versão mais recente do Visual Studio atualizando o projeto e adicionando um arquivo. Extension. vsixmanifest de origem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e2eff3f3a27b7d8a276c8ed776c1e11d5ce332e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ced200ff24b17f312e63642c8083f038a6fc6a4d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707109"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877826"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migrando um serviço de linguagem herdado
 Você pode migrar um serviço de idioma herdado para uma versão posterior do Visual Studio atualizando o projeto e adicionando um arquivo Source. Extension. vsixmanifest ao projeto. O próprio serviço de linguagem continuará a funcionar como antes, porque o editor do Visual Studio o adapta.
@@ -57,7 +59,7 @@ Você pode migrar um serviço de idioma herdado para uma versão posterior do Vi
 
     - Na guia **aplicativo** , altere **estrutura de destino** para **4.6.1**.
 
-    - Na guia **depurar** , na caixa **Iniciar programa externo** , digite ** \<Visual Studio installation path>\Common7\IDE\devenv.exe.**.
+    - Na guia **depurar** , na caixa **Iniciar programa externo** , digite **\<Visual Studio installation path>\Common7\IDE\devenv.exe.**.
 
          Na caixa **argumentos de linha de comando** , digite/**rootsuffix exp**.
 
@@ -83,11 +85,11 @@ Você pode migrar um serviço de idioma herdado para uma versão posterior do Vi
 
 10. Você deve adicionar um arquivo. Extension. vsixmanifest de origem.
 
-    - Copie esse arquivo de uma extensão existente para o diretório do projeto. (Uma maneira de obter esse arquivo é criar um projeto VSIX (em **arquivo**, clique em **novo**e, em seguida, clique em **projeto**. Em Visual Basic ou C#, clique em **extensibilidade**e selecione **projeto VSIX**.)
+    - Copie esse arquivo de uma extensão existente para o diretório do projeto. (Uma maneira de obter esse arquivo é criar um projeto VSIX (em **arquivo**, clique em **novo** e, em seguida, clique em **projeto**. Em Visual Basic ou C#, clique em **extensibilidade** e selecione **projeto VSIX**.)
 
     - Adicione o arquivo ao seu projeto.
 
-    - Nas **Propriedades**do arquivo, defina **ação de compilação** como **nenhum**.
+    - Nas **Propriedades** do arquivo, defina **ação de compilação** como **nenhum**.
 
     - Abra o arquivo com o **Editor de manifesto do VSIX**.
 
@@ -99,13 +101,13 @@ Você pode migrar um serviço de idioma herdado para uma versão posterior do Vi
 
     - **Descrição**: um serviço de linguagem de expressão regular.
 
-    - Em **ativos**, clique **em novo**, selecione o **tipo** para **Microsoft. VisualStudio. VSPackage**, defina a **origem** para **um projeto na solução atual**e, em seguida, defina o **projeto** como **RegExLangServ**.
+    - Em **ativos**, clique **em novo**, selecione o **tipo** para **Microsoft. VisualStudio. VSPackage**, defina a **origem** para **um projeto na solução atual** e, em seguida, defina o **projeto** como **RegExLangServ**.
 
     - Salve e feche o arquivo.
 
-11. Compile a solução. Os arquivos criados são implantados no **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ \\ **.
+11. Compile a solução. Os arquivos criados são implantados no **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ \\**.
 
 12. Inicie a depuração. Uma segunda instância do Visual Studio aberta.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Extensibilidade do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-extensibility.md)

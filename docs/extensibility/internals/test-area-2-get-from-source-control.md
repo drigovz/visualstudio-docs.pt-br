@@ -1,5 +1,7 @@
 ---
 title: 'Área de teste 2: obter do controle do código-fonte | Microsoft Docs'
+description: Essa área de teste abrange os casos de teste para recuperar itens do repositório de versão com Get. Esses casos de teste podem ser aplicados a projetos locais e para a Web.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c213e2774730596db8b8e4f2d0691472495222e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98ed765f78a9e7330e5e1d3864c8a91b63239a3f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704597"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877696"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Área de teste 2: Obter do controle do código-fonte
 Essa área de teste abrange os casos de teste para recuperar itens do repositório de versão por meio do comando Get. Esses casos de teste podem ser aplicados a projetos locais e para a Web.
@@ -53,5 +55,5 @@ Essa área de teste abrange os casos de teste para recuperar itens do repositór
 |Obter um arquivo que existe localmente, igual à versão mais recente no repositório de versão|1. Crie um novo projeto.<br />2. adicionar um item ao projeto.<br />3. Coloque o projeto sob controle do código-fonte.<br />4. obter o item (**arquivo**, **controle do código-fonte**, **Get** \<item> ).|O arquivo local está inalterado.|
 |Obter uma solução com um projeto|1. Crie uma solução com um projeto.<br />2. Coloque a solução sob controle do código-fonte.<br />3. exclua todos os arquivos de projeto localmente.<br />4. Obtenha a solução (**arquivo**, **controle do código-fonte**, **Get**).|Todos os arquivos excluídos são restaurados localmente.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Guia de teste para plug-ins de controle do código-fonte](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

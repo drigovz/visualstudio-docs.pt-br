@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo Propriedades da mensagem | Microsoft Docs
+description: Consulte Propriedades da mensagem para obter mais informações sobre uma mensagem do que é mostrado na exibição de mensagens.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f590f40e4e3361f4dbeb46a3a9b8758b8ab5075
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f58ad7344c7de9a9486fcb3ccefbf263688926f
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62846109"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903058"
 ---
 # <a name="message-properties-dialog-box"></a>Caixa de diálogo Propriedades da Mensagem
 Use essa caixa de diálogo para saber mais sobre uma mensagem específica. Para exibir essa caixa de diálogo, mova o foco para uma janela de [exibição de mensagens](../debugger/messages-view.md) . Selecione qualquer nó de mensagem na árvore e, em seguida, escolha **Propriedades** no menu **Exibir** .

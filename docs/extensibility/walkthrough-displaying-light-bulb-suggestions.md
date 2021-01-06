@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: exibindo sugestões de lâmpada | Microsoft Docs'
+description: Saiba como criar uma lâmpada no editor do Visual Studio que aparece na palavra atual e tem duas ações sugeridas usando este passo a passos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86412b82b291ee395b35d654d3cde6d326e956f0
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 8d8d498c1d9a5e5142672bcd561ac0749bbf8d75
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508945"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877956"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Walkthrough: Exibir sugestões de lâmpada
 Lâmpadas são ícones no editor do Visual Studio que se expandem para exibir um conjunto de ações, por exemplo, correções de problemas identificados pelos analisadores de código internos ou refatoração de código.
@@ -34,14 +36,14 @@ Lâmpadas são ícones no editor do Visual Studio que se expandem para exibir um
 
   ![visualização de lâmpada](../extensibility/media/lightbulbpreview.png "LightBulbPreview")
 
-  Você pode usar lâmpadas leves para fornecer suas próprias ações sugeridas. Por exemplo, você pode fornecer ações para mover chaves de abertura para uma nova linha ou movê-las para o final da linha anterior. A instrução a seguir mostra como criar uma lâmpada que aparece na palavra atual e tem duas ações sugeridas: **converter em maiúsculas** e **converter em**minúsculas.
+  Você pode usar lâmpadas leves para fornecer suas próprias ações sugeridas. Por exemplo, você pode fornecer ações para mover chaves de abertura para uma nova linha ou movê-las para o final da linha anterior. A instrução a seguir mostra como criar uma lâmpada que aparece na palavra atual e tem duas ações sugeridas: **converter em maiúsculas** e **converter em** minúsculas.
 
 ## <a name="prerequisites"></a>Pré-requisitos
  A partir do Visual Studio 2015, você não instala o SDK do Visual Studio do centro de download. Ele está incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Criar um projeto Managed Extensibility Framework (MEF)
 
-1. Crie um projeto VSIX em C#. (Na caixa de diálogo **novo projeto** , selecione **Visual C#/extensibilidade**e, em seguida, **projeto VSIX**.) Nomeie a solução `LightBulbTest` .
+1. Crie um projeto VSIX em C#. (Na caixa de diálogo **novo projeto** , selecione **Visual C#/extensibilidade** e, em seguida, **projeto VSIX**.) Nomeie a solução `LightBulbTest` .
 
 2. Adicione um modelo de item de **classificação do editor** ao projeto. Para obter mais informações, consulte [criar uma extensão com um modelo de item do editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
@@ -222,8 +224,8 @@ Lâmpadas são ícones no editor do Visual Studio que se expandem para exibir um
 2. Crie duas classes, o primeiro nome `UpperCaseSuggestedAction` e o segundo nomeado `LowerCaseSuggestedAction` . Ambas as classes implementam <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> .
 
     ```csharp
-    internal class UpperCaseSuggestedAction : ISuggestedAction
-    internal class LowerCaseSuggestedAction : ISuggestedAction
+    internal class UpperCaseSuggestedAction : ISuggestedAction
+    internal class LowerCaseSuggestedAction : ISuggestedAction
     ```
 
      Ambas as classes são semelhantes, exceto que uma chamada <xref:System.String.ToUpper%2A> e as outras chamadas <xref:System.String.ToLower%2A> . As etapas a seguir abrangem apenas a classe de ação de letras maiúsculas, mas você deve implementar ambas as classes. Use as etapas para implementar a ação em maiúsculas como um padrão para implementar a ação em minúsculas.
@@ -243,8 +245,8 @@ Lâmpadas são ícones no editor do Visual Studio que se expandem para exibir um
 
     ```csharp
     private ITrackingSpan m_span;
-    private string m_upper;
-    private string m_display;
+    private string m_upper;
+    private string m_display;
     private ITextSnapshot m_snapshot;
     ```
 
@@ -288,7 +290,7 @@ Lâmpadas são ícones no editor do Visual Studio que se expandem para exibir um
     {
         get { return false; }
     }
-    public string DisplayText
+    public string DisplayText
     {
         get { return m_display; }
     }
@@ -319,7 +321,7 @@ Lâmpadas são ícones no editor do Visual Studio que se expandem para exibir um
 9. Implemente o <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> método substituindo o texto no span por seu equivalente em maiúsculas.
 
     ```csharp
-    public void Invoke(CancellationToken cancellationToken)
+    public void Invoke(CancellationToken cancellationToken)
     {
         m_span.TextBuffer.Replace(m_span.GetSpan(m_snapshot), m_upper);
     }

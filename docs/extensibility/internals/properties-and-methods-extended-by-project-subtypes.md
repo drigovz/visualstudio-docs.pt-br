@@ -1,5 +1,7 @@
 ---
 title: Propriedades e métodos estendidos por subtipos de projeto | Microsoft Docs
+description: Saiba mais sobre os recursos que os subtipos de projeto podem melhorar ou modificar, o que permite que você personalize o comportamento dos sistemas de projeto do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9963f779055fcf1ed0efd8c47abbe1cce35631a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cff332d7b573bb2fdff886b4206ea1267c091c48
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706203"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878034"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>Propriedades e métodos estendidos por subtipos de projeto
 Um subtipo de projeto tem muita potência para influenciar o comportamento do projeto, pois ele é construído como um agregador de um projeto base. Esta seção resume alguns dos recursos que podem ser aprimorados ou modificados por subtipos de projeto.
@@ -48,5 +50,5 @@ Um subtipo de projeto tem muita potência para influenciar o comportamento do pr
 
  O projeto base fornece uma implementação padrão das propriedades acima. O projeto base Obtém esses dados chamando `QueryInterface` por <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> no subtipo de projeto mais externo, permitindo que o subtipo de projeto substitua a implementação das propriedades.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Design de subtipos de projeto](../../extensibility/internals/project-subtypes-design.md)

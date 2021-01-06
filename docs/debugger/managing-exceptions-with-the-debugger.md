@@ -1,6 +1,7 @@
 ---
 title: Gerenciar exceções com o depurador | Microsoft Docs
-ms.custom: seodec18
+description: Saiba como especificar quais exceções o depurador interrompe, ponto em que você deseja que o depurador interrompa e como as interrupções são tratadas.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/09/2018
 ms.topic: how-to
 f1_keywords:
@@ -33,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff28944a36d338230a17cd533a4832452e42885b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 210f2b2fc3e037f58fed19031d7ae9762185a640
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348451"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903841"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gerenciar exceções com o depurador no Visual Studio
 
@@ -216,11 +217,11 @@ Para adicionar exceções condicionais:
 
    ![Condições adicionais para uma exceção](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Para cada linha de condição, digite o nome do módulo e altere a lista operador de comparação para **Equals** ou **not Equals**. Você pode especificar curingas ( **\\\*** ) no nome para especificar mais de um módulo.
+3. Para cada linha de condição, digite o nome do módulo e altere a lista operador de comparação para **Equals** ou **not Equals**. Você pode especificar curingas (* *\\\** _) no nome para especificar mais de um módulo.
 
-4. Se você precisar excluir uma condição, escolha o **X** no final da linha de condição.
+4. Se você precisar excluir uma condição, escolha o _ *X** no final da linha de condição.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Continuar a execução após uma exceção](../debugger/continuing-execution-after-an-exception.md)<br/>
 - [Como examinar um código de sistema após uma exceção](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>

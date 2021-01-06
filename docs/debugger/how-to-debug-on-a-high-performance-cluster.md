@@ -1,5 +1,7 @@
 ---
-title: Depurar em um cluster de alto desempenho | Microsoft Docs
+title: Depurar em um cluster High-Performance | Microsoft Docs
+description: Saiba o que é peculiar para depurar um programa de multiprocessamento em um cluster de alto desempenho. Duas janelas são especialmente úteis e há técnicas especiais.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5f33fe5fd556830d0276f3e7cbfef3731dfe7db
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6b19f1d919095f30e4408056e49847c3c9ba5671
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852433"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903097"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Como: Depurar em um cluster de alto desempenho (C#, Visual Basic, C++)
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Como: Depurar em um cluster High-Performance (C#, Visual Basic, C++)
 
 A depuração de um programa com vários processamentos em um cluster de alto desempenho é semelhante à depuração de um programa comum em um computador remoto. No entanto, há algumas considerações adicionais. Para requisitos gerais de configuração remota, consulte [depuração remota](../debugger/remote-debugging.md).
 
@@ -96,8 +98,8 @@ A depuração de um programa com vários processamentos em um cluster de alto de
 
 `(MachineName = marvin) & (ThreadName = fourier1)`
 
-## <a name="see-also"></a>Confira também
-- [Depurar aplicativos multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+## <a name="see-also"></a>Veja também
+- [Depurar aplicativos multissegmentados](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Depuração remota](../debugger/remote-debugging.md)
 - [Como: usar a janela de processos](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
 - [Introdução à depuração de aplicativos multithread](../debugger/get-started-debugging-multithreaded-apps.md)

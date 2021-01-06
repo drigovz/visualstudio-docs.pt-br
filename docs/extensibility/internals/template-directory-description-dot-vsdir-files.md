@@ -1,5 +1,7 @@
 ---
 title: Descrição do diretório de modelo (. Arquivos de VSDir) | Microsoft Docs
+description: Saiba como um arquivo de descrição de diretório de modelo permite que o IDE do Visual Studio exiba pastas, arquivos. vsz e modelos associados ao seu projeto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16ba609d5b05d565a12b38bd19e9a777851ced5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edc4b4bcfe1ac1a85524517ba467e207a792e3cd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704697"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877722"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Arquivos de descrição do diretório de modelo (.Vsdir)
 Um arquivo de descrição do diretório de modelo (. vsdir) é um arquivo de texto que permite que o IDE (ambiente de desenvolvimento integrado) exiba pastas, arquivos. vsz e arquivos de modelo associados ao seu projeto em caixas de diálogo. O conteúdo inclui um registro por arquivo ou pasta. Todos os arquivos. vsdir em um local referenciado são mesclados, embora apenas um arquivo. vsdir seja geralmente fornecido para descrever várias pastas, assistentes ou arquivos de modelo.
@@ -62,6 +64,6 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
 - Se você excluir os arquivos. vsz, pastas ou arquivos de modelo, também deverá remover seus registros associados do arquivo. VSDir.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Assistentes](../../extensibility/internals/wizards.md)
 - [Arquivo do assistente (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

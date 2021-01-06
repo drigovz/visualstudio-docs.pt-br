@@ -1,5 +1,7 @@
 ---
 title: Depurar código otimizado | Microsoft Docs
+description: Se possível, não compile um destino de versão do Win32 até que seu programa seja depurado, pois a otimização pode complicar a depuração. Consulte os detalhes neste artigo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da0a9c40a2c4887b2798e908ad0c12d6c9a85b32
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 971ceb59a17788076a1188e42d834f7b4bd704cc
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852381"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903175"
 ---
 # <a name="how-to-debug-optimized-code"></a>Como depurar o código otimizado
 
@@ -58,7 +60,7 @@ ms.locfileid: "90852381"
 
 ## <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>Para ativar a otimização em uma configuração da compilação de Depuração
 
-1. Quando você cria um novo projeto, selecione o destino de `Win32 Debug`. Use o destino `Win32``Debug` até que seu programa seja depurado completamente e você esteja pronto para compilar um destino de `Win32 Release`. O compilador não otimiza o destino de `Win32 Debug`.
+1. Quando você cria um novo projeto, selecione o destino de `Win32 Debug`. Use o destino `Win32 Debug` até que seu programa seja depurado completamente e você esteja pronto para compilar um destino de `Win32 Release`. O compilador não otimiza o destino de `Win32 Debug`.
 
 2. Selecione o projeto no Gerenciador de Soluções.
 
@@ -89,7 +91,7 @@ for (x=0; x<10; x++)
 
  Suponha que você defina um ponto de interrupção nesta linha. Você pode esperar que o ponto de interrupção seja atingido 10 vezes, mas se o código for otimizado, o ponto de interrupção será atingido somente uma vez. Isso ocorre porque a primeira instrução define o valor de `x` como 0. O compilador reconhece que isso somente precisa ser feito uma vez e o move para fora do loop. O ponto de interrupção também será movido. As instruções que comparam e incrementam `x` permanecem dentro do loop. Quando você exibe a janela **Desmontagem**, a [unidade da etapa](/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100)) será definida automaticamente como Instrução para obter maior controle, o que é útil quando você passa por código otimizado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Depurando código nativo](../debugger/debugging-native-code.md)

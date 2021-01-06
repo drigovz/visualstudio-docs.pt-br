@@ -1,5 +1,7 @@
 ---
 title: Decisões de design de tipo de projeto | Microsoft Docs
+description: Saiba mais sobre o item, a persistência de arquivo de projeto e as decisões de design mecânico de compromisso a serem tomadas antes de estender o Visual Studio criando um novo tipo de projeto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e33ac1c4168593b881f799dfdfb94005fb55fc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab29fbe79b474aa7b640faf81de812b7571de861
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706369"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877791"
 ---
 # <a name="project-type-design-decisions"></a>Decisões de design do tipo de projeto
 Antes de criar um novo tipo de projeto, você deve tomar várias decisões de design em relação ao tipo de projeto. Você deve decidir quais tipos de itens seus projetos conterão, como os arquivos de projeto serão persistidos e qual modelo de compromisso será usado.
@@ -56,7 +58,7 @@ Antes de criar um novo tipo de projeto, você deve tomar várias decisões de de
 
  Quando os objetos de dados são abertos usando o modo transacionado, as alterações são salvas em um local temporário na memória e não são confirmadas até que o usuário opte manualmente por salvar o arquivo. Nesse momento, todas as alterações devem ocorrer juntas ou nenhuma alteração será feita.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Lista de verificação: Criando tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Abrindo e salvando itens de projeto](../../extensibility/internals/opening-and-saving-project-items.md)
 - [Persistência de projeto](../../extensibility/internals/project-persistence.md)

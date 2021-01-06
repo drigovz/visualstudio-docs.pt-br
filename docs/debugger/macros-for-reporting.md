@@ -1,5 +1,7 @@
 ---
 title: Macros para relatórios | Microsoft Docs
+description: Saiba mais sobre as macros de depuração _RPTn e _RPTFn fornecidas no CRTDBG. H e sobre como criar suas próprias macros de depuração.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,20 +24,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1920b4eddcbffa5cd51d548ade9af3a3a2f208d0
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731383"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903786"
 ---
 # <a name="macros-for-reporting"></a>Macros para relatórios
-Para depuração, você pode usar as macros **_RPTn** e **_RPTFn** , definidas em CRTDBG. H, para substituir o uso de `printf` instruções. Você não precisa infechá-los em **#ifdef**s, pois eles desaparecerão automaticamente em sua compilação de versão quando **_DEBUG** não estiver definido.
+Para depuração, você pode usar as macros **_RPTn** e **_RPTFn** , definidas em CRTDBG. H, para substituir o uso de `printf` instruções. Você não precisa infechá-los em **#ifdef** s, pois eles desaparecerão automaticamente em sua compilação de versão quando **_DEBUG** não estiver definido.
 
-|Macro|Descrição|
+|Macro|Description|
 |-----------|-----------------|
-|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Gera uma cadeia de caracteres de mensagem e zero a quatro argumentos. Para _RPT1 até **_RPT4**, a cadeia de caracteres de mensagem funciona como uma cadeia de caracteres de formatação de estilo printf para os argumentos.|
-|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF4**|Da mesma forma que **_RPTn**, mas essas macros também geram a saída do nome do arquivo e o número da linha em que a macro está localizada.|
+|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Gera uma cadeia de caracteres de mensagem e zero a quatro argumentos. Por **_RPT1** por meio de **_RPT4**, a cadeia de caracteres de mensagem serve como uma cadeia de caracteres de formatação de estilo printf para os argumentos.|
+|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF3**, **_RPTF4**|Da mesma forma que **_RPTn**, mas essas macros também geram a saída do nome do arquivo e o número da linha em que a macro está localizada.|
 
  Considere o seguinte exemplo:
 
@@ -79,5 +81,5 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
 
  Você pode alterar facilmente uma macro personalizada para relatar mais ou menos informações para destinos diferentes. Essa abordagem é particularmente útil à medida que os requisitos de depuração evoluem.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Técnicas de depuração CRT](../debugger/crt-debugging-techniques.md)

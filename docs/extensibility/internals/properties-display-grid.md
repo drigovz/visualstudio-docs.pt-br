@@ -1,5 +1,7 @@
 ---
 title: Grade de exibição de propriedades | Microsoft Docs
+description: Saiba onde os campos nomes de propriedade e valores de propriedade são encontrados na grade na janela Propriedades e como trabalhar com a grade em Propriedades de extensão.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d094c32ba8a64fc636f3fb6dfb2944dc3955628a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 418501ada340614d084e9796a59a46f8612aa743
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706184"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878021"
 ---
 # <a name="properties-display-grid"></a>Grade de exibição de propriedades
 
@@ -29,7 +31,7 @@ A lista de duas colunas mostra as propriedades independentes de configuração q
 
 2. Defina o `pfHide` parâmetro em <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> para `TRUE` .
 
-Para enviar informações por push para a janela **Propriedades** , o IDE usa <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> . <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> é chamado por VSPackages para cada janela que contém objetos selecionáveis com propriedades relacionadas a serem exibidas na janela **Propriedades** . **Gerenciador de soluções**a implementação de <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> chamadas `GetProperty` usando [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) na hierarquia do projeto para adquirir os objetos navegáveis na hierarquia.
+Para enviar informações por push para a janela **Propriedades** , o IDE usa <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> . <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> é chamado por VSPackages para cada janela que contém objetos selecionáveis com propriedades relacionadas a serem exibidas na janela **Propriedades** . **Gerenciador de soluções** a implementação de <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> chamadas `GetProperty` usando [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) na hierarquia do projeto para adquirir os objetos navegáveis na hierarquia.
 
 Se seu VSPackage não oferecer suporte a [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>), o IDE tenta usar <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> usando o valor para [__VSHPROPID. VSHPROPID_SelContainer](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) que o item de hierarquia ou os itens são fornecidos.
 
@@ -55,6 +57,6 @@ A janela **Propriedades** exibe diferentes tipos de campos, dependendo dos atrib
 
 - Clicar no botão de reticências (...) exibe uma lista de valores de propriedade dos quais o usuário pode selecionar (como um seletor de cores ou uma lista de fontes). <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder> fornece esses valores.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estender Propriedades](../../extensibility/internals/extending-properties.md)

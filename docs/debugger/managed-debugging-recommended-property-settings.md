@@ -1,6 +1,7 @@
 ---
 title: Configurações de Propriedade do depurador recomendadas para C#, VB | Microsoft Docs
-ms.custom: seodec18
+description: Consulte as configurações de propriedade de compilação e compilação que devem ser as mesmas para toda a depuração gerenciada. Outras configurações podem variar dependendo do tipo de projeto.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07c63a70de9d633ccd73d1d0d3bd23196d421543
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57740c05e31bde2ae4e5143735e3bba1f3fc112c
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731379"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903799"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Depuração gerenciada: configurações de propriedade recomendadas
 Certas propriedades devem ser definidas da mesma maneira para todos os cenários gerenciados de depuração.
@@ -50,6 +51,6 @@ Certas propriedades devem ser definidas da mesma maneira para todos os cenários
 |**Definir constante de depuração**|Marque esta caixa de seleção para definir a constante de `DEBUG`, que permite que seu aplicativo use a classe <xref:System.Diagnostics.Debug>.|
 |**Definir a constante TRACE**|Marque esta caixa de seleção para definir a constante de `TRACE`, que permite que seu aplicativo use a classe <xref:System.Diagnostics.Trace>.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Depurando código gerenciado](../debugger/debugging-managed-code.md)
 - [Tipos de projeto do Visual Basic, C# e F#](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)

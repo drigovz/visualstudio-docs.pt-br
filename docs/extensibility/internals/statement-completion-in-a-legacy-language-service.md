@@ -1,5 +1,7 @@
 ---
 title: Conclusão de instrução em um serviço de linguagem herdada | Microsoft Docs
+description: Saiba como a conclusão da instrução funciona e como implementá-la em seu serviço de linguagem herdado em um VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbeb360cf5bc0f74d6b2d9b93086382dd35da988
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1534c6ba029cf47cb637e958422efeecb970f35
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704936"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877761"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Preenchimento de declaração em um serviço de linguagem herdado
 A conclusão da instrução é o processo pelo qual o serviço de idioma ajuda os usuários a concluir uma palavra-chave ou um elemento de linguagem que eles começaram a digitar no editor principal. Este tópico discute como a conclusão da instrução funciona e como implementá-la em seu serviço de idioma.
@@ -36,5 +38,5 @@ A conclusão da instrução é o processo pelo qual o serviço de idioma ajuda o
 
  Quando o gatilho é inserido no editor — especificamente, o buffer de texto — o serviço de linguagem chama o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> método. Isso faz com que o editor traga a interface do usuário para que o usuário possa escolher entre os candidatos de conclusão da instrução. Esse método exige que você implemente <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> e os <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> sinalizadores como parâmetros. A lista de itens de conclusão aparece em uma caixa de listagem de rolagem. À medida que o usuário continua digitando, a seleção dentro da caixa de listagem é atualizada para refletir a correspondência mais próxima com os caracteres mais recentes digitados. O editor central implementa a interface do usuário para conclusão de instrução, mas o serviço de linguagem deve implementar a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> interface para definir um conjunto de itens de conclusão candidatos para a instrução.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Interceptando comandos do serviço de linguagem herdado](../../extensibility/internals/intercepting-legacy-language-service-commands.md)

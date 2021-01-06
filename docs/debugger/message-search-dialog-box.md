@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo pesquisa de mensagem | Microsoft Docs
+description: Use a pesquisa de mensagens para localizar e selecionar o nó de uma mensagem específica no modo de exibição de mensagens. Você pode pesquisar por identificador, tipo de mensagem e ID da mensagem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fed7fe9bf9e10bf893159a11d28f991a255791c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d100b36ff706752f1855939d4c45b5b7793ccfa
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62931293"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903045"
 ---
 # <a name="message-search-dialog-box"></a>Caixa de diálogo Pesquisa de Mensagens
 Use essa caixa de diálogo para localizar e selecionar o nó de uma mensagem específica no [modo de exibição de mensagens](../debugger/messages-view.md). Para exibir essa caixa de diálogo, mova o foco para uma janela de exibição de mensagens. Em seguida, escolha **Localizar mensagem** no menu **Pesquisar** .

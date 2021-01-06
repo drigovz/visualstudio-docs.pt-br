@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: exibindo chaves correspondentes | Microsoft Docs'
+description: Saiba como definir chaves no contexto de um idioma, aplicando marcas de correspondência de chaves ao tipo de conteúdo Text usando este passo a passos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65a0bc2c53d5d6e970b4aaa956170bc06c24e7c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce40f5673a8aba4ab3f7714a3aafdc3de4697cc4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904837"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877943"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Walkthrough: Exibir chaves correspondentes
 Implemente recursos baseados em linguagem, como correspondência de chaves, definindo as chaves que você deseja corresponder e adicionando uma marca de marcador de texto às chaves correspondentes quando o cursor estiver em uma das chaves. Você pode definir chaves no contexto de um idioma, definir sua própria extensão de nome de arquivo e tipo de conteúdo e aplicar as marcas a apenas esse tipo ou aplicar as marcas a um tipo de conteúdo existente (como "texto"). A instrução a seguir mostra como aplicar marcas de correspondência de chaves ao tipo de conteúdo "text".
@@ -122,5 +124,5 @@ Implemente recursos baseados em linguagem, como correspondência de chaves, defi
 
 4. Quando você posiciona o cursor antes de uma chave de abertura, essa chave e a chave de fechamento correspondente devem ser realçadas. Quando você posiciona o cursor logo após a chave de fechamento, essa chave e a chave de abertura correspondente devem ser realçadas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Walkthrough: vincular um tipo de conteúdo a uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

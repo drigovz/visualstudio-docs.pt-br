@@ -1,5 +1,7 @@
 ---
 title: Coloração de sintaxe em um serviço de linguagem herdada | Microsoft Docs
+description: Saiba como dar suporte à colorização de sintaxe em um serviço de linguagem herdado fornecendo um analisador ou um scanner que possa identificar os tipos de elementos léxicos ou tokens.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02723a09254255b98291cb921ae5ec091d8b9859
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c51885e593fabffab80d11c930100f3cc719dff8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704703"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877748"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Coloração de sintaxe em um serviço de linguagem herdado
 A colorização de sintaxe é um recurso que faz com que diferentes elementos de uma linguagem de programação sejam exibidos em um arquivo de origem em diferentes cores e estilos. Para dar suporte a esse recurso, você precisa fornecer um analisador ou scanner que possa identificar os tipos de elementos léxicos ou tokens no arquivo. Muitas linguagens distinguem palavras-chave, delimitadores (como parênteses ou chaves) e comentários, colorando-as de maneiras diferentes.
@@ -144,7 +146,7 @@ namespace TestLanguagePackage
         }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Recursos do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-features1.md)
 - [Analisador e scanner do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
 - [Registrar um serviço de linguagem herdado](../../extensibility/internals/registering-a-legacy-language-service1.md)

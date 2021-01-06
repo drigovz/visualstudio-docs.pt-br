@@ -1,7 +1,7 @@
 ---
 title: Habilitar depuração para aplicativos ASP.NET | Microsoft Docs
-description: Saiba como habilitar a depuração para aplicativos ASP.NET e ASP.NET Core no Visual Studio e executar o processo em um servidor de IIS Express ou em um servidor IIS local.
-ms.custom: ''
+description: Saiba como habilitar a depuração para aplicativos ASP.NET e ASP.NET Core no Visual Studio. Você pode executar o processo em um servidor de IIS Express ou em um servidor IIS local.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2020
 ms.topic: how-to
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: c5256def84f15fae535ac409349ce21cdd5c80ba
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 28f74c449e196d5eb0b3380d0ff1392db17e0b23
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761375"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903591"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Depurar aplicativos ASP.NET ou ASP.NET Core no Visual Studio
 
@@ -187,7 +187,7 @@ Há diferentes maneiras de publicar aplicativos no IIS. Estas etapas mostram com
 > [!IMPORTANT]
 > O modo de depuração reduz consideravelmente o desempenho do seu aplicativo. Para obter o melhor desempenho, defina `debug="false"` na *web.config* e especifique uma compilação de versão ao implantar um aplicativo de produção ou realizar medidas de desempenho.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Depuração do ASP.NET: requisitos do sistema](aspnet-debugging-system-requirements.md)
 - [Como executar o processo de trabalho em uma conta de usuário](how-to-run-the-worker-process-under-a-user-account.md)
 - [Como localizar o nome do processo ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)

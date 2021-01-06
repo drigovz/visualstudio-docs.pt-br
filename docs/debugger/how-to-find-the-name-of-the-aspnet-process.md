@@ -1,5 +1,7 @@
 ---
 title: Localizar o processo ASP.NET em execução | Microsoft Docs
+description: Saiba como depurar um aplicativo ASP.NET em execução. Você anexa o depurador do Visual Studio ao processo ASP.NET por nome.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2018
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: c14067d58289dd0b41fa526937a0553c10934ea7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07d692dac1b5770cdee4682af5184649471c2828
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349601"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903435"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>Localizar o nome do processo do ASP.NET
 

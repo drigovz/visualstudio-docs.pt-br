@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: estrutura de tópicos | Microsoft Docs'
+description: Saiba como definir e exibir regiões de estrutura de tópicos no contexto de um serviço de idioma ou para sua própria extensão de nome de arquivo e tipo de conteúdo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 6e3e60fe873d7bcb512e56c844e76fcbef037d42
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: ea0f16deee17e2cd249c0ee1de0861a936abc75c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508919"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877891"
 ---
 # <a name="walkthrough-outlining"></a>Passo a passo: estrutura de tópicos
 Configure recursos baseados em idioma, como estrutura de tópicos, definindo os tipos de regiões de texto que você deseja expandir ou recolher. Você pode definir regiões no contexto de um serviço de idioma ou definir sua própria extensão de nome de arquivo e tipo de conteúdo e aplicar a definição de região somente a esse tipo, ou aplicar as definições de região a um tipo de conteúdo existente (como "texto"). Este tutorial mostra como definir e exibir regiões de estrutura de tópicos.
@@ -134,5 +136,5 @@ Configure recursos baseados em idioma, como estrutura de tópicos, definindo os 
 
 4. Deve haver uma região de estrutura de tópicos que inclua ambos os colchetes. Você deve ser capaz de clicar no sinal de subtração à esquerda do colchete de abertura para recolher a região de estrutura de tópicos. Quando a região é recolhida, o símbolo de reticências (*...*) deve aparecer à esquerda da região recolhida e um pop-up contendo o **texto de foco** do texto deve aparecer quando você move o ponteiro sobre as reticências.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Walkthrough: vincular um tipo de conteúdo a uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

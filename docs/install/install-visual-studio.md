@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7dee7965d1c98dbdb05f0edc83c6c8799047acde
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: 2c3302499ec44d7a97ca66532428e0af117e3a7e
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97684059"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903773"
 ---
 # <a name="install-visual-studio"></a>Instalar o Visual Studio
 
@@ -259,7 +259,7 @@ Para obter mais informações, consulte a página [Selecionar locais de instala�
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Atualizar o Visual Studio](update-visual-studio.md)
 * [Modificar o Visual Studio](modify-visual-studio.md)
@@ -267,3 +267,4 @@ Para obter mais informações, consulte a página [Selecionar locais de instala�
 * [Criar uma instalação offline do Visual Studio](create-an-offline-installation-of-visual-studio.md)
 * [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Instalar o Visual Studio para Mac](/visualstudio/mac/installation)
+ 
