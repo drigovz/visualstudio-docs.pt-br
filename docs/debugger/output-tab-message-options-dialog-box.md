@@ -1,5 +1,7 @@
 ---
 title: Guia saída, caixa de diálogo opções de mensagem | Microsoft Docs
+description: Use a guia saída das opções de mensagem para especificar quais dados de mensagem aparecem no modo de exibição mensagens. Este artigo descreve as configurações disponíveis.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63268fdbc320e78a697c181112dbeaaf8ad161ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4d965b92a30d8d8a5b998a27bea9651f8669c8f
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62905069"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975076"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Guia Saída, Caixa de diálogo Opções da Mensagem
 Use a guia **saída** para especificar quais dados de cada mensagem listar no [modo de exibição de mensagens](../debugger/messages-view.md). Para exibir a [caixa de diálogo opções de mensagem](../debugger/message-options-dialog-box.md), escolha **registrar mensagens** no menu do **Spy** .

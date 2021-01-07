@@ -1,5 +1,7 @@
 ---
 title: Exibição de processos | Microsoft Docs
+description: Exibição de processos exibe uma árvore de todos os processos ativos em seu sistema. Saiba mais sobre seu conteúdo e usa e siga os links para obter informações adicionais.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ba60021410f1965e05f7c5479231013d53cb71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a52da28d01eac4f04081497888fbbfccaf4495e2
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62904217"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975128"
 ---
 # <a name="processes-view"></a>Exibição de processos
 A exibição processos exibe uma árvore de todos os processos ativos em seu sistema. A ID do processo e o nome do módulo são mostrados. Use a exibição processos se desejar examinar um processo de sistema específico, que geralmente corresponde a um programa em execução. Os processos são identificados por nomes de módulo ou são designados como "processos do sistema".

@@ -1,5 +1,6 @@
 ---
 title: Código misto & informações ausentes na janela pilha de chamadas
+description: Em programas de modo misto (nativos e gerenciados), o depurador nem sempre pode mostrar a pilha de chamadas completa. Aprenda as possíveis discrepâncias quando o código nativo chama código gerenciado.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -24,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32fe52b31daa384718eae629d3051bade93959d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: da8d3a469b957444935150f91567636aef0fb38a
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808149"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975258"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>Código misto e informações ausentes na janela Pilha de Chamadas
 Devido às diferenças entre as pilhas de chamadas para código gerenciado e nativo, o depurador nem sempre pode mostrar a pilha de chamadas completa quando os tipos de código são misturados. Quando o código nativo chama o código gerenciado, você pode observar as seguintes discrepâncias na janela **Pilha de Chamadas**:
@@ -40,5 +41,5 @@ Devido às diferenças entre as pilhas de chamadas para código gerenciado e nat
 
   Ambos os casos são razoavelmente incomuns. Na maioria das chamadas nativas para o código gerenciado, as pilhas de chamadas são exibidas corretamente.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Como usar a janela Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md)

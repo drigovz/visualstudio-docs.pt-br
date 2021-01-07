@@ -1,5 +1,7 @@
 ---
-title: Personalização de verificações de tempo de execução nativa | Microsoft Docs
+title: Personalização de verificações de Run-Time nativa | Microsoft Docs
+description: 'Aprenda maneiras de personalizar a verificação de tempo de execução, incluindo: especificar um destino de mensagem, gravar uma função de relatório de erros e consultar informações de erro.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db7cc513c4c96a8b60cc6471280bb837a7b9a248
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b5f5aa55ac9d8c13da605a09986569c534a30bf
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72730900"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975193"
 ---
 # <a name="native-run-time-checks-customization"></a>Personalização das verificações de tempo de execução nativas
 Quando você compila com **/RTC** (verificações de tempo de execução) ou usa o `runtime_checks` pragma, a biblioteca de tempo de execução do C fornece verificações de tempo de execução nativas. Em alguns casos, você pode personalizar a verificação de tempo de execução:
@@ -40,7 +42,7 @@ Quando você compila com **/RTC** (verificações de tempo de execução) ou usa
 
   Para personalizar a verificação de erro em tempo de execução, você pode:
 
-- Escreva uma função de relatório de erro de tempo de execução. Para obter mais informações, consulte [como: gravar uma função de relatório de erros em tempo de execução](../debugger/how-to-write-a-run-time-error-reporting-function.md).
+- Escreva uma função de relatório de erro de tempo de execução. Para obter mais informações, consulte [como escrever um Run-Time função de relatório de erros](../debugger/how-to-write-a-run-time-error-reporting-function.md).
 
 - Personalize o destino da mensagem de erro.
 
@@ -54,7 +56,7 @@ Quando você compila com **/RTC** (verificações de tempo de execução) ou usa
 ## <a name="query-for-information-about-run-time-checks"></a>Consulte para obter informações sobre verificações de tempo de execução
  `_RTC_NumErrors` retorna o número de tipos de erros detectados por verificações de erros em tempo de execução. Para obter uma breve descrição de cada erro, você poderá executar um loop de 0 para o valor de retorno de `_RTC_NumErrors`, passando o valor da iteração para `_RTC_GetErrDesc` em cada loop. Para obter mais informações, consulte [_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors) e [_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc).
 
-## <a name="see-also"></a>Confira também
-- [Como: usar verificações nativas em tempo de execução](../debugger/how-to-use-native-run-time-checks.md)
+## <a name="see-also"></a>Veja também
+- [Como: usar verificações de Run-Time nativas](../debugger/how-to-use-native-run-time-checks.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)
 - [_CrtDbgReport, _CrtDbgReportW](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)

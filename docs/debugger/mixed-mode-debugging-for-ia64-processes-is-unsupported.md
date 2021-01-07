@@ -1,5 +1,7 @@
 ---
 title: Não há suporte para a depuração de modo misto para processos IA64
+description: O Visual Studio não dá suporte à depuração de modo misto de código gerenciado e nativo em processos IA64 (Itanium). Consulte este artigo para obter soluções alternativas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63a083bd9299570ba2b04a0879d5c9acde24ec4e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 65969e354a5d1ed2dc1cf54ca31e6088cc19de7a
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810673"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975245"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>A depuração de modo misto para processos IA64 não é compatível.
 O Visual Studio não oferece suporte à depuração de modo misto de código gerenciado e nativo em processos IA64. Isso significa que, durante a depuração, você não pode depurar de código gerenciado para código nativo e vice-versa.
@@ -49,5 +51,5 @@ O Visual Studio não oferece suporte à depuração de modo misto de código ger
 
 2. Nas Páginas de Propriedades, clique em **Plataforma** e selecione Win32 na lista de plataformas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Depurar aplicativos de 64 bits](../debugger/debug-64-bit-applications.md)

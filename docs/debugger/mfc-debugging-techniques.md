@@ -1,5 +1,7 @@
 ---
 title: Técnicas de depuração do MFC | Microsoft Docs
+description: 'Aprenda técnicas para depurar programas MFC, incluindo: pontos de interrupção codificados, rastreamento, detecção de vazamento de memória, despejos de memória de objeto e redução de tamanho do programa.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06b42dbf31a8b5f4cb66de047bc1e08a4f840353
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 5cf00191aff408b1133c281e10eea17e3a923215
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600234"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975115"
 ---
 # <a name="mfc-debugging-techniques"></a>Técnicas de depuração MFC
 Se você estiver depurando um programa MFC, essas técnicas de depuração poderão ser úteis.
@@ -430,7 +432,7 @@ Criar os módulos selecionados com as bibliotecas de depuração MFC permite usa
 
 3. Primeiro, você criará uma nova configuração de projeto.
 
-   1. Na caixa de diálogo ** \<Project> páginas de propriedades** , clique no botão **Configuration Manager** .
+   1. Na caixa de diálogo **\<Project> páginas de propriedades** , clique no botão **Configuration Manager** .
 
    2. Na [caixa de diálogo do Configuration Manager](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), localize seu projeto na grade. Na coluna **configuração** , selecione **\<New...>** .
 
@@ -472,7 +474,7 @@ Criar os módulos selecionados com as bibliotecas de depuração MFC permite usa
 
    6. Clique nas configurações de **Formato de Informação de Depuração** e selecione a opção desejada (normalmente **/ZI**) para obter as informações de depuração.
 
-   7. Se você estiver usando um aplicativo gerado por assistente ou se tiver cabeçalhos pré-compilado, será preciso desativar os cabeçalhos pré-compilados ou recompilá-los antes de compilar os outros módulos. Caso contrário, você receberá o aviso C4650 e mensagens de erro C2855. Você pode desativar cabeçalhos pré-compilados alterando a configuração **Criar/usar cabeçalhos pré-compilados** na caixa de diálogo ** \<Project> Propriedades** (pasta**Propriedades de configuração** , subpasta **C/C++** , categoria **cabeçalhos pré-compilados** ).
+   7. Se você estiver usando um aplicativo gerado por assistente ou se tiver cabeçalhos pré-compilado, será preciso desativar os cabeçalhos pré-compilados ou recompilá-los antes de compilar os outros módulos. Caso contrário, você receberá o aviso C4650 e mensagens de erro C2855. Você pode desativar cabeçalhos pré-compilados alterando a configuração **Criar/usar cabeçalhos pré-compilados** na caixa de diálogo **\<Project> Propriedades** (pasta **Propriedades de configuração** , subpasta **C/C++** , categoria **cabeçalhos pré-compilados** ).
 
 7. No menu **Compilar**, selecione **Compilar** para recompilar os arquivos de projeto que estão desatualizados.
 
@@ -480,5 +482,5 @@ Criar os módulos selecionados com as bibliotecas de depuração MFC permite usa
 
    [Neste tópico](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 [Depurando código nativo](../debugger/debugging-native-code.md)

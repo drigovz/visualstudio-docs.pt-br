@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo Propriedades do processo | Microsoft Docs
+description: 'Use as propriedades do processo para saber mais sobre um processo que você seleciona no modo de exibição de processos. Há quatro guias: geral, memória, arquivo de paginação e espaço.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2448659a8725c7e284e12a99d52478144ebec1b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abf4e8c6d1e61441459b0b48adfda4fa8728f44a
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62903750"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975102"
 ---
 # <a name="process-properties-dialog-box"></a>Caixa de diálogo Propriedades do Processo
 Use essa caixa de diálogo para saber mais sobre um processo específico. Para exibir essa caixa de diálogo, mova o foco para uma janela de [exibição de processos](../debugger/processes-view.md) . Selecione qualquer nó de processo na árvore e escolha **Propriedades** no menu **Exibir** .

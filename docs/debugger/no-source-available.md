@@ -1,5 +1,7 @@
 ---
 title: Nenhuma fonte disponível | Microsoft Docs
+description: Saiba o que você pode fazer quando o projeto não tem código-fonte para o código que você deseja exibir.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f08ed499e61e54ffbc6508bc8353ea955d9a20c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8cf7bf067602586d90271eab1f9289a3b6b884ce
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72730869"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975180"
 ---
 # <a name="no-source-available"></a>Nenhuma origem disponível
 O projeto não contém código-fonte para o código que você está tentando exibir. A causa comum é clicar duas vezes em um módulo que não tem código-fonte na **Janela de Pilha de Chamadas** ou **Janela de Threads**. Você pode continuar a depuração, mas não pode usar a janela de origem para definir pontos de interrupção e executar outras ações nesse local. Se você precisar definir um ponto de interrupção, use a **Janela de Desmontagem**.
@@ -35,7 +37,7 @@ O projeto não contém código-fonte para o código que você está tentando exi
 
  **Sempre mostrar desmontagem de arquivos de origem ausentes** Selecione esta opção para exibir a **janela de desmontagem** automaticamente quando nenhuma fonte estiver disponível. Essa configuração também pode ser alterada na caixa de diálogo **Opções**, categoria **Depuração**, página **Geral**, marcando ou desmarcando **Mostrar desmontagem se a fonte não estiver disponível**.
 
-## <a name="see-also"></a>Confira também
-- [Caixa de diálogo Depurar Arquivos de Origem, Propriedades Comuns, Páginas de Propriedades da Solução](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)
+## <a name="see-also"></a>Veja também
+- [Depurar arquivos de origem, propriedades comuns, caixa de diálogo páginas de propriedades da solução](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)
 - [Especificar os arquivos de origem e símbolo (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [SOS.dll (extensão de depuração SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)

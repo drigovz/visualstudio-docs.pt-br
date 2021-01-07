@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo de pesquisa de processo | Microsoft Docs
+description: Use a pesquisa de processo para localizar e selecionar o nó de um processo específico no modo de exibição de processos. Você pode especificar a ID do processo, a cadeia de caracteres do módulo e a direção da pesquisa.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 190ec35d014e6b443a9f80bf79433ac14b8fb8ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 889c6bac2f00041af6578d31bc0c6e036d82afe1
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62903763"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975089"
 ---
 # <a name="process-search-dialog-box"></a>Caixa de diálogo Pesquisa de Processo
 Use essa caixa de diálogo para localizar e selecionar o nó de um processo específico no [modo de exibição de processos](../debugger/processes-view.md). Para exibir essa caixa de diálogo, mova o foco para uma janela de exibição de **processos** . Em seguida, escolha **Localizar processo** no menu **Pesquisar** .

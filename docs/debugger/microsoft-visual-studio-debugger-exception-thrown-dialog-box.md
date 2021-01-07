@@ -1,7 +1,8 @@
 ---
 title: Caixa de diálogo depurador de Microsoft Visual Studio (exceção gerada) | Microsoft Docs
 titleSuffix: ''
-ms.custom: seodec18
+description: 'Saiba o que fazer quando ocorrer uma exceção que o programa precisa manipular. Você pode: 1) entrar no depurador; 2) continuar; ou 3) ignorar.'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8376d0cd82e309c2c8db94e38b8c6a2083bd429a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c86c765ad8ebfbe36dcaca484f7da4121b7e297
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731205"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975271"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Caixa de diálogo Depurador do Microsoft Visual Studio (exceção gerada)
 Ocorreu uma exceção no seu programa. Esta caixa de diálogo relata o tipo de exceção lançada. Seu código precisa tratar essa exceção. Você pode escolher entre as seguintes opções para tratar a exceção:
@@ -41,7 +42,7 @@ Ocorreu uma exceção no seu programa. Esta caixa de diálogo relata o tipo de e
 
  **Ignorar** Permite que a execução continue sem invocar o manipulador de exceção. Como o manipulador de exceção não é invocado, isso poderá resultar em outras consequências, incluindo erros e exceções adicionais. Essa opção não está disponível para determinados tipos de exceções.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Gerenciando exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md)
 - [Práticas recomendadas para exceções](/dotnet/standard/exceptions/best-practices-for-exceptions)
-- [Tratamento de exceção](/cpp/extensions/exception-handling-cpp-component-extensions)
+- [Tratamento de Exceção](/cpp/extensions/exception-handling-cpp-component-extensions)

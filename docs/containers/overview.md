@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: f1473c731dbf9413cf695e1b2331039c3880b8d7
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 4f8c1c265f49b600880cd1278b51095fda9cfb1d
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829871"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975141"
 ---
 # <a name="container-tools-in-visual-studio"></a>Ferramentas de contêiner no Visual Studio
 
@@ -119,9 +119,9 @@ Repita o processo com os outros projetos que você deseja controlar usando o Doc
 Para adicionar o suporte a Kubernetes, instale as [Ferramentas do Visual Studio para Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes).
 ::: moniker-end
 
-Com suporte a Kubernetes, você pode habilitar uma conexão entre seu projeto local e um cluster do Kubernetes em execução no [Serviço de Kubernetes do Azure (AKS)](/azure/aks) e, portanto, modificar e depurar seus serviços em execução no AKS usando o Visual Studio.  Esse serviço é fornecido pelo [Azure Dev Spaces](/azure/dev-spaces/quickstart-netcore-visualstudio). O Azure Dev Spaces também possibilita que você configure ramificações separadas dos seus serviços Kubernetes chamados *espaços de desenvolvimento* para fins de desenvolvimento, portanto, você pode isolar com eficiência os serviços de produção das versões de trabalho em desenvolvimento e manter as modificações distintas claramente separadas entre si.
+Com o suporte do kubernetes, você pode habilitar uma conexão entre seu projeto local e um cluster kubernetes em execução no [AKs (serviço kubernetes do Azure)](/azure/aks)e, assim, modificar e depurar seus serviços em execução usando o Visual Studio.  Esse serviço é fornecido pela [ponte para o kubernetes](overview-bridge-to-kubernetes.md). O Bridge to kubernetes também permite que você configure ramificações separadas de seus serviços de kubernetes para fins de desenvolvimento, para que você possa isolar de forma eficiente os serviços de produção das versões de trabalho em desenvolvimento e manter as modificações distintas completamente separadas umas das outras.
 
-Para adicionar suporte a Kubernetes aos seus projetos, escolha **Kubernetes/Helm** ao adicionar o suporte à orquestração de contêiner. Vários arquivos são adicionados ao seu projeto, incluindo *azds.yaml*, que configura os Azure Dev Spaces e os gráficos do Helm que descrevem a estrutura dos seus serviços Kubernetes.
+Para adicionar suporte a Kubernetes aos seus projetos, escolha **Kubernetes/Helm** ao adicionar o suporte à orquestração de contêiner. Vários arquivos são adicionados ao seu projeto, incluindo gráficos Helm que descrevem a estrutura dos seus serviços do kubernetes. Para começar a usar a ponte para o kubernetes, consulte [use Bridge to kubernetes](bridge-to-kubernetes.md).
 
 ## <a name="service-fabric-support"></a>Suporte ao Service Fabric
 

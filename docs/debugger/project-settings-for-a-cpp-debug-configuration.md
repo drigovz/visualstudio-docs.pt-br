@@ -1,6 +1,7 @@
 ---
 title: Configurações do projeto para uma configuração de depuração do C++
-ms.custom: seodec18
+description: Configure a depuração C e C++ em páginas de propriedades. Este artigo descreve as configurações e informa sua categoria.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/26/2018
 ms.topic: reference
 f1_keywords:
@@ -112,12 +113,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bca39b97f6363d8b8fefcfd691b69baf85c32170
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6130b49beecb3411c275fc5d2005b7aabee262fd
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72450382"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975284"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Configurações do projeto para uma configuração de depuração do C++
 Você pode alterar as configurações do projeto para uma configuração de depuração C ou C++ na caixa de diálogo **páginas de propriedades** , conforme discutido em [como definir as configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram como localizar configurações relacionadas ao depurador na caixa de diálogo **Páginas de Propriedades**.
@@ -185,7 +186,7 @@ Para depurar tipos de projeto como bibliotecas e DLLs estáticas, seu projeto do
 
 Para depurar DLLs que são externas ao seu projeto, consulte [Depurando projetos de dll](../debugger/debugging-dll-projects.md#vxtskdebuggingdllprojectsexternal). Se você precisar depurar seu próprio projeto de DLL, mas não tiver acesso ao projeto para o aplicativo de chamada, consulte [como depurar de um projeto de dll](../debugger/how-to-debug-from-a-dll-project.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Depuração de código nativo](../debugger/debugging-native-code.md)
 - [Configurações e preparação do depurador](../debugger/debugger-settings-and-preparation.md)
 - [Criar e gerenciar projetos C++](/cpp/ide/creating-and-managing-visual-cpp-projects)

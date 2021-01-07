@@ -1,5 +1,7 @@
 ---
 title: Guia arquivo de paginação, caixa de diálogo Propriedades do processo | Microsoft Docs
+description: Use a guia arquivo de página das propriedades do processo para examinar o arquivo de paginação de um processo. Este artigo descreve as configurações disponíveis.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25dc3b0aca1b58c18ae4038540c14fc4dbfe4036
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47f4a2e9215cb2e98fdfefecdf978cb4a442ad84
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62904101"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975050"
 ---
 # <a name="page-file-tab-process-properties-dialog-box"></a>Guia Arquivo de Paginação, Caixa de diálogo Propriedades do Processo
 Use a guia **arquivo de página** para examinar o arquivo de paginação de um processo. Para exibir a [caixa de diálogo Propriedades do processo](../debugger/process-properties-dialog-box.md), mova o foco para uma janela de [exibição de processos](../debugger/processes-view.md) . Selecione qualquer nó de processo na árvore e escolha **Propriedades** no menu **Exibir** .

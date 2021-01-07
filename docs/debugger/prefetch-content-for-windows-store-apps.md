@@ -1,5 +1,7 @@
 ---
 title: Depurar usando conteúdo de pré-busca em aplicativos UWP | Microsoft Docs
+description: Para tornar seu aplicativo UWP mais responsivo, use ContentPrefetcher para solicitar que o Windows faça o prefetch do conteúdo da Web.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 65b889452a23bb970cbee4c65455679a3473abab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33eb7aa0559fc7a6170da658ccc9f00653968bb6
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348061"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975024"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Depurar aplicativos UWP usando conteúdo de pré-busca no Visual Studio
 
@@ -39,5 +41,5 @@ ms.locfileid: "85348061"
 > [!NOTE]
 > Repita estas etapas sempre que adicionarem ou modificar o conteúdo da Web especificado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Postagem no blog: disparando a pré-busca para aplicativos da Windows Store no Visual Studio 2013 atualização 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

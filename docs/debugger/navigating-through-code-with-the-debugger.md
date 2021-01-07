@@ -1,6 +1,7 @@
 ---
 title: Navegar pelo código com o depurador | Microsoft Docs
-ms.custom: seodec18
+description: 'Saiba como usar o depurador do Visual Studio para solucionar problemas de seu código. Os tópicos incluem: entrando em modo de interrupção, percorrendo código e executando para um destino.'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/12/2018
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cd7bb050204d65bb78a597c1ae3c7eea36ac184
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 0ffe163ab567de98161f185ba2f3d2522c505095
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729347"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975206"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navegar pelo código com o depurador do Visual Studio
 
@@ -186,7 +187,7 @@ Para carregar os símbolos da Microsoft, consulte [Configurar locais de símbolo
 ## <a name="step-into-properties-and-operators-in-managed-code"></a><a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Intervir em propriedades e operadores no código gerenciado
  O depurador considera propriedades e operadores no código gerenciado por padrão. Na maioria dos casos, isso proporciona uma melhor experiência de depuração. Para habilitar a depuração em Propriedades ou operadores, escolha opções de **depuração**  >  . Na página **depuração**  >  **geral** , desmarque a caixa de seleção **passar por propriedades e operadores (somente gerenciados)** .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [O que é depuração?](../debugger/what-is-debugging.md)
 - [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md)
 - [Primeira olhada na depuração](../debugger/debugger-feature-tour.md)
