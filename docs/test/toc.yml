@@ -4,17 +4,19 @@
   items:
     - name: Introdução às ferramentas de teste
       href: improve-code-quality.md
-- name: Teste de unidade
-  items:
-    - name: Visão geral das ferramentas de teste de unidade
+    - name: Ferramentas e tarefas de teste de unidade
       href: unit-test-your-code.md
+- name: Tutoriais
+  items:
     - name: Introdução
       href: getting-started-with-unit-testing.md
+- name: Teste de unidade
+  items:
     - name: Noções básicas de teste de unidade
       href: unit-test-basics.md
     - name: Crie um projeto de teste de unidade
       href: create-a-unit-test-project.md
-    - name: Criar comando de testes de unidade
+    - name: Crie testes de unidade do código
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:

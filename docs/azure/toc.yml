@@ -33,6 +33,8 @@
       href: azure-sql-database-add-connected-service.md
     - name: Adicionar Armazenamento do Azure
       href: vs-azure-tools-connected-services-storage.md
+    - name: Adicionar a Configuração de Aplicativos do Azure
+      href: vs-azure-tools-connected-services-app-configuration.md
 - name: Desenvolvimento dos Serviços de Nuvem do Azure
   expanded: false
   items:
