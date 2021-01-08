@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd1ff5ff0f8c7510185236c425ddd870f8b500f
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 6fb2fde5d5629b84ccd0e136c132a200b154ea71
+ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97760920"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031036"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar a processos em execução com o depurador do Visual Studio
 
@@ -199,7 +199,7 @@ Para selecionar rapidamente um processo em execução para anexar ao, no Visual 
 |Depurar um aplicativo em C#, Visual Basic ou C++ no computador local|Usar a depuração padrão (**F5**) ou **anexar ao processo**|*\<appname>. exe*|Na maioria dos cenários, use a depuração padrão e não **anexe ao processo**.|
 |Depuração remota de um aplicativo de área de trabalho do Windows|Ferramentas remotas|N/D| Consulte [depuração remota de um aplicativo C# ou Visual Basic](../debugger/remote-debugging-csharp.md) ou [depuração remota de um aplicativo C++](../debugger/remote-debugging-cpp.md)|
 |Depuração do .NET Core no Linux|Usar **anexar ao processo**|*dotnet.exe* ou um nome de processo exclusivo|Para usar o SSH, consulte [depuração remota do .NET Core em execução no Linux usando SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Para aplicativos em contêineres, consulte [anexar a um processo em execução em um contêiner do Docker](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container).|
-|Depurar um aplicativo em contêineres|*dotnet.exe* ou um nome de processo exclusivo|Veja [anexar a um processo em execução em um contêiner do Docker](../debugger/attach-to-process-running-in-docker-container.md)|
+|Depurar um aplicativo em contêineres|Usar **anexar ao processo**|*dotnet.exe* ou um nome de processo exclusivo|Veja [anexar a um processo em execução em um contêiner do Docker](../debugger/attach-to-process-running-in-docker-container.md)|
 |Python de depuração remota no Linux|Usar **anexar ao processo**|*debugpy*|Consulte [anexar remotamente de ferramentas do Python](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools)|
 |Depurar um aplicativo ASP.NET no computador local depois de iniciar o aplicativo sem o depurador|Usar **anexar ao processo**|*iiexpress.exe*|Isso pode ser útil para fazer com que seu aplicativo seja carregado mais rapidamente, como (por exemplo) durante a criação de perfil. |
 |Depurar outros tipos de aplicativos com suporte em um processo de servidor|Se o servidor for remoto, use as ferramentas remotas e **anexe ao processo**|*chrome.exe*, *iexplore.exe* ou outros processos|Se necessário, use Monitor de Recursos para ajudar a identificar o processo. Consulte [depuração remota](../debugger/remote-debugging.md).|
@@ -249,7 +249,7 @@ Se você quiser obter informações mais específicas sobre por que o depurador 
 
     Desta vez, o anexo falhará completamente e você receberá uma mensagem de erro específica.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Depurar vários processos](../debugger/debug-multiple-processes.md)
 - [Depuração Just-in-time](../debugger/just-in-time-debugging-in-visual-studio.md)
