@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c72e53266eae11fb060ac117c4a6dc0a1c37e2e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 631ce51df5d985e02e8ccabca258c0ef1c1318f4
+ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434786"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98069468"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Como gerar dados de métricas de código
 
@@ -39,15 +39,10 @@ Os analisadores de qualidade de código .NET incluem várias regras do [analisad
 - [CA1505](/dotnet/fundamentals/code-analysis/quality-rules/ca1505)
 - [CA1506](/dotnet/fundamentals/code-analysis/quality-rules/ca1506)
 
-Essas regras são desabilitadas por padrão, mas você pode habilitá-las de [**Gerenciador de soluções**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) ou em um arquivo de [conjunto de regras](using-rule-sets-to-group-code-analysis-rules.md) . Por exemplo, para habilitar a regra CA1502 como um aviso, o arquivo. RuleSet conterá a seguinte entrada:
+Essas regras são desabilitadas por padrão, mas você pode habilitá-las em [**Gerenciador de soluções**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) ou em um arquivo [EditorConfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) . Por exemplo, para habilitar a regra CA1502 como um aviso, o arquivo EditorConfig conterá a seguinte entrada:
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="Rules" Description="Rules" ToolsVersion="16.0">
-  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
-    <Rule Id="CA1502" Action="Warning" />
-  </Rules>
-</RuleSet>
+```cs
+dotnet_diagnostic.CA1502.severity = warning
 ```
 
 ### <a name="configuration"></a>Configuração
@@ -82,7 +77,7 @@ Você pode gerar resultados de métricas de código para uma solução inteira d
 
 - Na barra de menus, selecione **analisar**  >  **calcular métricas**  >  **de código para solução**.
 
-- Em **Gerenciador de soluções** , clique com o botão direito do mouse na solução e selecione **calcular métricas de código**.
+- Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução e selecione **calcular métricas de código**.
 
 - Na janela **resultados de métricas de código** , selecione o botão **calcular métricas de código para solução** .
 
@@ -90,7 +85,7 @@ Os resultados são gerados e a janela **resultados de métricas de código** é 
 
 ### <a name="generate-code-metrics-results-for-one-or-more-projects"></a>Gerar resultados de métricas de código para um ou mais projetos
 
-1. Em **Gerenciador de soluções** , selecione um ou mais projetos.
+1. Em **Gerenciador de soluções**, selecione um ou mais projetos.
 
 1. Na barra de menus, selecione **analisar**  >  **calcular métricas**  >  **de código para projetos selecionados**.
 
@@ -295,7 +290,7 @@ Se você não quiser instalar o pacote NuGet, poderá gerar e usar o *Metrics.ex
 
 #### <a name="metricsexe-usage"></a>Uso de Metrics.exe
 
-Para executar *Metrics.exe* , forneça um projeto ou solução e um arquivo XML de saída como argumentos. Por exemplo:
+Para executar *Metrics.exe*, forneça um projeto ou solução e um arquivo XML de saída como argumentos. Por exemplo:
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -336,7 +331,7 @@ A partir do Visual Studio 2019 versão 16,4 e Microsoft. CodeAnalysis. métricas
 A `LinesOfCode` métrica é mais precisa e confiável na nova ferramenta de métricas de código de linha de comando. Ele é independente de qualquer diferença de CodeGen e não é alterado quando o conjunto de ferramentas ou o tempo de execução é alterado. A nova ferramenta conta as linhas reais de código, incluindo comentários e linhas em branco.
 ::: moniker-end
 
-Outras métricas, como `CyclomaticComplexity` e `MaintainabilityIndex` usam as mesmas fórmulas das versões anteriores do *Metrics.exe* , mas a nova ferramenta conta o número de `IOperations` (instruções de origem lógica) em vez de instruções de Il (linguagem intermediária). Os números serão ligeiramente diferentes daqueles gerados pelo IDE do Visual Studio e por versões anteriores do *Metrics.exe*.
+Outras métricas, como `CyclomaticComplexity` e `MaintainabilityIndex` usam as mesmas fórmulas das versões anteriores do *Metrics.exe*, mas a nova ferramenta conta o número de `IOperations` (instruções de origem lógica) em vez de instruções de Il (linguagem intermediária). Os números serão ligeiramente diferentes daqueles gerados pelo IDE do Visual Studio e por versões anteriores do *Metrics.exe*.
 
 ## <a name="see-also"></a>Confira também
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5e7ee628f5a48f573afed9753f4fad17f85e33a
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 6f843df01059adef3a94bb46501e4e75bd67d5a7
+ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348639"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98069481"
 ---
 # <a name="code-metrics-values"></a>Valores de métricas de código
 
@@ -36,19 +36,19 @@ Para obter informações sobre como gerar dados de métricas de código no Visua
 
 A lista a seguir mostra os resultados de métricas de código que o Visual Studio calcula:
 
-- **Índice de facilidade de manutenção** – calcula um valor de índice entre 0 e 100 que representa a facilidade relativa de manter o código. Um valor alto significa melhor facilidade de manutenção. As Classificações codificadas por cor podem ser usadas para identificar rapidamente os pontos problemáticos em seu código. Uma classificação verde é entre 20 e 100 e indica que o código tem boa facilidade de manutenção. Uma classificação amarela é entre 10 e 19 e indica que o código é de manutenção moderada. Uma classificação vermelha é uma classificação entre 0 e 9 e indica baixa facilidade de manutenção. Para obter mais informações, consulte o [intervalo de índice de manutenção e](/archive/blogs/codeanalysis/maintainability-index-range-and-meaning) o que significa a postagem no blog.
+- **Índice de facilidade de manutenção** – calcula um valor de índice entre 0 e 100 que representa a facilidade relativa de manter o código. Um valor alto significa melhor facilidade de manutenção. As Classificações codificadas por cor podem ser usadas para identificar rapidamente os pontos problemáticos em seu código. Uma classificação verde é entre 20 e 100 e indica que o código tem boa facilidade de manutenção. Uma classificação amarela é entre 10 e 19 e indica que o código é de manutenção moderada. Uma classificação vermelha é uma classificação entre 0 e 9 e indica baixa facilidade de manutenção. Para obter mais informações, consulte [intervalo de índice de manutenção e significado](code-metrics-maintainability-index-range-and-meaning.md).
 
 - **Complexidade ciclomática** – mede a complexidade estrutural do código. Ele é criado calculando o número de caminhos de código diferentes no fluxo do programa. Um programa que tem um fluxo de controle complexo requer mais testes para obter uma boa cobertura de código e é menos passível de manutenção. Para obter mais informações, consulte a [entrada da Wikipédia para complexidade ciclomática](https://wikipedia.org/wiki/Cyclomatic_complexity).
 
 - **Profundidade de herança** – indica o número de classes diferentes que herdam uma da outra, de volta para a classe base. A profundidade da herança é semelhante ao acoplamento de classes, pois uma alteração em uma classe base pode afetar qualquer uma de suas classes herdadas. Quanto maior esse número, mais profunda a herança e maior o potencial para modificações na classe base resultam em uma alteração significativa. Para uma profundidade de herança, um valor baixo é bom e um valor alto é ruim.
 
-- **Acoplamento de classe** – mede o acoplamento para classes exclusivas por meio de parâmetros, variáveis locais, tipos de retorno, chamadas de método, instanciações genéricas ou de modelo, classes base, implementações de interface, campos definidos em tipos externos e decoração de atributo. Um bom design de software determina que os tipos e métodos devem ter alta coesão e acoplamento baixo. O acoplamento alto indica um design que é difícil de reutilizar e manter devido a muitas interdependências em outros tipos. Para obter mais informações, consulte a postagem do blog de [acoplamento de classes](/archive/blogs/zainnab/code-metrics-class-coupling) .
+- **Acoplamento de classe** – mede o acoplamento para classes exclusivas por meio de parâmetros, variáveis locais, tipos de retorno, chamadas de método, instanciações genéricas ou de modelo, classes base, implementações de interface, campos definidos em tipos externos e decoração de atributo. Um bom design de software determina que os tipos e métodos devem ter alta coesão e acoplamento baixo. O acoplamento alto indica um design que é difícil de reutilizar e manter devido a muitas interdependências em outros tipos. Para obter mais informações, consulte [acoplamento de classes](code-metrics-class-coupling.md).
 
 ::: moniker range=">=vs-2019"
 
 - **Linhas de código-fonte** – indica o número exato de linhas de código-fonte que estão presentes no arquivo de origem, incluindo linhas em branco. Essa métrica está disponível a partir do Visual Studio 2019 versão 16,4 e Microsoft. CodeAnalysis. Metrics (2.9.5).
 
-- **Linhas de código executável** – indica o número aproximado de linhas ou operações de código executável. Esta é uma contagem do número de operações no código executável. Essa métrica está disponível a partir do Visual Studio 2019 versão 16,4 e Microsoft. CodeAnalysis. Metrics (2.9.5). O valor normalmente é uma correspondência próxima à métrica anterior, **linhas de código** , que é a métrica baseada em instrução MSIL usada no modo herdado.
+- **Linhas de código executável** – indica o número aproximado de linhas ou operações de código executável. Esta é uma contagem do número de operações no código executável. Essa métrica está disponível a partir do Visual Studio 2019 versão 16,4 e Microsoft. CodeAnalysis. Metrics (2.9.5). O valor normalmente é uma correspondência próxima à métrica anterior, **linhas de código**, que é a métrica baseada em instrução MSIL usada no modo herdado.
 ::: moniker-end
 ::: moniker range="vs-2017"
 

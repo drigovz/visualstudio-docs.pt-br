@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 660fc893eb22d0c40805a8bf7b2efc86fd83c3b1
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: cf02fda50678d9de4eb01dc28b4825844e33063e
+ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350862"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98069494"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;&gt;Elemento InstallChecks (Bootstrapper)
 O `InstallChecks` elemento dá suporte à inicialização de uma variedade de testes em relação ao computador local para garantir que todos os pré-requisitos apropriados para um aplicativo tenham sido instalados.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <InstallChecks>
@@ -177,10 +177,20 @@ O `InstallChecks` elemento dá suporte à inicialização de uma variedade de te
  Por exemplo, para bloquear a instalação em um computador que executa o Windows 95, use um código como o seguinte:
 
 ```xml
-<!-- Block install on Windows 95 -->
+    <!-- Block install on Windows 95 -->
     <FailIf Property="Version9X" Compare="VersionLessThan" Value="4.10" String="InvalidPlatform"/>
 ```
 
-## <a name="see-also"></a>Veja também
+ Para ignorar a execução da instalação verifica se uma condição FailIf ou BypassIf foi atendida, use o atributo BeforeInstallChecks.  Por exemplo:
+
+```xml
+    <!-- Block install and do not evaluate install checks if user does not have admin privileges -->
+    <FailIf Property="AdminUser" Compare="ValueEqualTo" Value="false" String="AdminRequired" BeforeInstallChecks="true"/>
+```
+
+>[!NOTE]
+>O `BeforeInstallChecks` atributo tem suporte a partir da versão do Visual Studio 2019 atualização 9.
+
+## <a name="see-also"></a>Confira também
 - [\<Commands> elementos](../deployment/commands-element-bootstrapper.md)
 - [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)
