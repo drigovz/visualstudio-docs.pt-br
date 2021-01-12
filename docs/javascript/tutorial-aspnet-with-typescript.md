@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 58e3557d260b821055c533fc703a1f47949c5bfb
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: ef287616f5b214566a273817c229d9105bf253c5
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781049"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129478"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Tutorial: criar um aplicativo ASP.NET Core com TypeScript no Visual Studio
 
@@ -47,10 +47,10 @@ Neste tutorial, você aprenderá como:
 * Você deve ter o Visual Studio instalado e a carga de trabalho de desenvolvimento da Web do ASP.NET.
 
     ::: moniker range=">=vs-2019"
-    Se você ainda não instalou o Visual Studio 2019, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)   para instalá-lo gratuitamente.
+    Se você ainda não instalou o Visual Studio 2019, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalá-lo gratuitamente.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Se você ainda não instalou o Visual Studio 2017, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)   para instalá-lo gratuitamente.
+    Se você ainda não tiver instalado o Visual Studio 2017, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalá-lo gratuitamente.
     ::: moniker-end
 
     Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, vá para **ferramentas**  >  **obter ferramentas e recursos...**, que abre o instalador do Visual Studio. Escolha a carga de trabalho **ASP.NET e desenvolvimento para a Web** e, em seguida, selecione **Modificar**.
@@ -69,7 +69,7 @@ Neste tutorial, você começa com um projeto simples contendo código para um ap
 1. Criar um novo projeto.
 
     ::: moniker range=">=vs-2019"
-    Se a janela iniciar não estiver aberta, escolha **arquivo**  >  **Iniciar janela**. Na janela iniciar, escolha **criar um novo projeto**. Na lista suspensa idioma, escolha **C#**. Na caixa de pesquisa, digite **ASP.net**e escolha **ASP.NET Core aplicativo Web**. Escolha **Próxima**.
+    Se a janela iniciar não estiver aberta, escolha **arquivo**  >  **Iniciar janela**. Na janela iniciar, escolha **criar um novo projeto**. Na lista suspensa idioma, escolha **C#**. Na caixa de pesquisa, digite **ASP.net** e escolha **ASP.NET Core aplicativo Web**. Escolha **Próxima**.
 
     Digite um nome para o projeto e escolha **criar**.
     ::: moniker-end
@@ -86,13 +86,13 @@ Neste tutorial, você começa com um projeto simples contendo código para um ap
 
 ## <a name="add-some-code"></a>Adicionar código
 
-1. Na Gerenciador de Soluções (painel direito). Clique com o botão direito do mouse no nó do projeto e escolha **gerenciar pacotes NuGet**. Na guia **procurar** , procure **Microsoft. TypeScript. MSBuild**e clique em **instalar** à direita para instalar o pacote.
+1. Na Gerenciador de Soluções (painel direito). Clique com o botão direito do mouse no nó do projeto e escolha **gerenciar pacotes NuGet**. Na guia **procurar** , procure **Microsoft. TypeScript. MSBuild** e clique em **instalar** à direita para instalar o pacote.
 
    ![Adicionar pacote NuGet](../javascript/media/aspnet-core-ts-nuget.png)
 
    O Visual Studio adiciona o pacote NuGet sob o nó **dependências** em Gerenciador de soluções.
 
-1. Clique com o botão direito do mouse no nó do projeto e escolha **adicionar > novo item**. Escolha o **arquivo de configuração JSON do TypeScript**e clique em **Adicionar**.
+1. Clique com o botão direito do mouse no nó do projeto e escolha **adicionar > novo item**. Escolha o **arquivo de configuração JSON do TypeScript** e clique em **Adicionar**.
 
    O Visual Studio adiciona o *tsconfig.jsno* arquivo à raiz do projeto. Você pode usar esse arquivo para [Configurar opções](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) para o compilador TypeScript.
 
@@ -100,6 +100,7 @@ Neste tutorial, você começa com um projeto simples contendo código para um ap
 
    ```json
    {
+     "compileOnSave": true,
      "compilerOptions": {
        "noImplicitAny": false,
        "noEmitOnError": true,
@@ -190,7 +191,7 @@ Neste tutorial, você começa com um projeto simples contendo código para um ap
 
    Os arquivos de mapa de origem são necessários para depuração.
 
-## <a name="run-the-application"></a>Executar o aplicativo
+## <a name="run-the-application"></a>Execute o aplicativo
 
 1. Pressione **F5** (**Depurar** > **Iniciar Depuração**) para executar o aplicativo.
 
@@ -238,7 +239,7 @@ Neste tutorial, você começa com um projeto simples contendo código para um ap
 
 1. Em Gerenciador de soluções, clique com o botão direito do mouse na pasta scripts e escolha **Adicionar**  >  **novo item**.
 
-1. Escolha o **arquivo TypeScript**, digite *library. TS*e escolha **Adicionar**.
+1. Escolha o **arquivo TypeScript**, digite *library. TS* e escolha **Adicionar**.
 
 1. Em *library. TS*, adicione o código a seguir.
 

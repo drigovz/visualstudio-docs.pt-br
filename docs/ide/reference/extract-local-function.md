@@ -1,6 +1,6 @@
 ---
 title: Extrair função local
-description: Transforme um fragmento de código em seu próprio método selecionando o código e digitando Ctrl + R, Ctrl + M.
+description: Transforme um fragmento de código em sua própria função selecionando o código e digitando Ctrl + R, CTRL + M.
 ms.date: 02/19/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 031fbe22ec61837d489df7a6af923ef0cd2454c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e007246b85671a0f4606bbdb3d1e9c4e0dc83541
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77515326"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129452"
 ---
 # <a name="extract-local-function-refactoring"></a>Extrair refatoração de função local
 
@@ -37,7 +37,7 @@ Esta refatoração aplica-se a:
 
 3. Selecione **Extrair função local**.
 
-    ![Extrair função local](media/extract-local-function.png)
+    ![Captura de tela da janela do Visual Studio Code com uma linha realçada. O menu ações rápidas e refatoração é aberto e a função local de extração é selecionada.](media/extract-local-function.png)
 
 ## <a name="see-also"></a>Confira também
 

@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50f14cc2a7eafe5d65e0c6a6af54bafa2ebb5a1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21f6ac868268c40ea6df837596546f86fd9a3a44
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569693"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129465"
 ---
 # <a name="extract-a-method-refactoring"></a>Refatoração Extrair um método
 
@@ -40,11 +40,11 @@ Esta refatoração aplica-se a:
 
    - C#:
 
-       ![Código realçado – C#](media/extractmethod-highlight-cs.png)
+       ! Captura de tela mostrando o código C# para a classe Program. Na função principal dessa classe, uma linha de código é realçada.] (mídia/extractmethod-highlight-cs.png)
 
    - Visual Basic:
 
-       ![Código realçado – Visual Basic](media/extractmethod-highlight-vb.png)
+       ![Captura de tela mostrando o código Visual Basic para o principal sub. Nessa sub-rotina, uma linha de código é realçada.](media/extractmethod-highlight-vb.png)
 
 2. Depois, siga um destes procedimentos:
 
@@ -63,11 +63,11 @@ Esta refatoração aplica-se a:
 
    - C#:
 
-      ![Renomear método – C#](media/extractmethod-rename-cs.png)
+      ![Captura de tela mostrando o código C# para a classe Program. Um nome de método é realçado e a janela pop-up de renomeação é aberta.](media/extractmethod-rename-cs.png)
 
    - Visual Basic:
 
-      ![Renomear método – Visual Basic](media/extractmethod-rename-vb.png)
+      ![Captura de tela mostrando o código Visual Basic para o principal sub. Um nome de método é realçado e a janela pop-up de renomeação é aberta.](media/extractmethod-rename-vb.png)
 
 3. Quando estiver satisfeito com a alteração, escolha **Aplicar** ou pressione **Enter** e as alterações serão confirmadas.
 
