@@ -1,6 +1,7 @@
 ---
 title: Exibir valores de variáveis em DataTips | Microsoft Docs
-ms.custom: seodec18
+description: Use DataTips para exibir de forma conveniente informações sobre variáveis, incluindo matrizes e estruturas, durante a depuração. Você também pode modificar valores.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 432fd50d30347972d7b1fc8222a430fc90a9e590
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75404276"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149957"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Exibir valores de dados em DataTips no editor de código
 
@@ -71,11 +72,11 @@ Para fechar um DataTip, passe o mouse sobre o DataTip e selecione o ícone fecha
 
 ### <a name="close-all-datatips"></a>Fechar todas as dicas de DataTips
 
-Para fechar todas as dicas de DataTips, no menu **depurar** , selecione **limpar todas as dicas**de data.
+Para fechar todas as dicas de DataTips, no menu **depurar** , selecione **limpar todas as dicas** de data.
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>Fechar todas as dicas de um arquivo específico
 
-Para fechar todas as dicas de seleção de um arquivo específico, no menu **depurar** , selecione **limpar todos os DataTips \<Filename> fixados para **.
+Para fechar todas as dicas de seleção de um arquivo específico, no menu **depurar** , selecione **limpar todos os DataTips \<Filename> fixados para**.
 
 ## <a name="expand-and-edit-information"></a>Expandir e editar informações
 Você pode usar os DataTips para expandir uma matriz, uma estrutura ou um objeto para exibir seus membros. Você também pode editar o valor de uma variável de um DataTip.

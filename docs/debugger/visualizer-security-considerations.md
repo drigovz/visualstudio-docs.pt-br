@@ -1,5 +1,7 @@
 ---
 title: Considerações de segurança do Visualizador | Microsoft Docs
+description: Um visualizador do depurador do Visual Studio deve ser executado com confiança total. Conforme você escreve, esteja atento a possíveis ameaças à segurança e tome as precauções apropriadas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2db18a1443b0c4faaa288a887a22d935d243f678
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187154"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149736"
 ---
 # <a name="visualizer-security-considerations"></a>Considerações de segurança do visualizador
 Gravar um Visualizador envolve possíveis ameaças de segurança. Nenhuma exploração conhecida existe no momento para essas ameaças potenciais, mas os desenvolvedores devem estar atentos a elas e tomar as precauções apropriadas de segurança, conforme descrito aqui, para se proteger contra futuras explorações.
@@ -38,7 +40,7 @@ Gravar um Visualizador envolve possíveis ameaças de segurança. Nenhuma explor
  Para atenuar essa vulnerabilidade, esteja atento às interfaces expostas pelo visualizador.
 
 ## <a name="see-also"></a>Confira também
-- [Arquitetura do visualizador](../debugger/visualizer-architecture.md)
+- [Arquitetura do Visualizador](../debugger/visualizer-architecture.md)
 - [Como escrever um visualizador](create-custom-visualizers-of-data.md)
 - [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)
 - [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)

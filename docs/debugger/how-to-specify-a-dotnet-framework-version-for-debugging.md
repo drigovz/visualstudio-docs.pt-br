@@ -1,6 +1,7 @@
 ---
 title: Especificar uma versão de .NET Framework para depuração | Microsoft Docs
-ms.custom: seodec18
+description: Especifique uma versão de .NET Framework mais antiga para depuração. O depurador do Visual Studio dá suporte à depuração de versões mais antigas do .NET Framework, bem como à versão atual.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ae48670fceb78ff85f395852f0a31414f37e8cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6b536cbfbd1019fc9b55a0113525f37030493f8
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349062"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149411"
 ---
 # <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>Especificar uma versão mais antiga do .NET Framework para depuração (C#, Visual Basic, F #)
 
@@ -52,7 +53,7 @@ Nos casos raros em que esse erro aparece, você pode definir uma chave do regist
 
 5. Depois de navegar até {449EC4CC-30D2-4032-9256-EE18EB41B62B}, examine a coluna **Nome** e localize a chave CLRVersionForDebugging.
 
-   1. Se a chave não existir, clique com o botão direito do mouse em {449EC4CC-30D2-4032-9256-EE18EB41B62B} e clique em **Novo Valor de Cadeia de Caracteres**. Clique com o botão direito do mouse no novo valor de cadeia de caracteres, clique em **renomear**e digite `CLRVersionForDebugging` .
+   1. Se a chave não existir, clique com o botão direito do mouse em {449EC4CC-30D2-4032-9256-EE18EB41B62B} e clique em **Novo Valor de Cadeia de Caracteres**. Clique com o botão direito do mouse no novo valor de cadeia de caracteres, clique em **renomear** e digite `CLRVersionForDebugging` .
 
 6. Clique duas vezes em **CLRVersionForDebugging**.
 
@@ -65,4 +66,4 @@ Nos casos raros em que esse erro aparece, você pode definir uma chave do regist
      Se você ainda receber uma mensagem de erro quando começar a depuração, verifique se inseriu o número de versão corretamente no Registro. Verifique também se você está usando uma versão do .NET Framework com suporte pelo Visual Studio. O depurador é compatível com a versão atual e a anterior do .NET Framework, mas não é compatível com versões futuras.
 
 ## <a name="see-also"></a>Confira também
-- [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)
+- [Configurações e preparação do depurador](../debugger/debugger-settings-and-preparation.md)

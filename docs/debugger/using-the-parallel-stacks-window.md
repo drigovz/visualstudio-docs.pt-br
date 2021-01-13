@@ -1,5 +1,7 @@
 ---
 title: Exibir threads na janela de pilhas paralelas | Microsoft Docs
+description: Use pilhas paralelas para ajudar a depurar aplicativos multithread. Você pode exibir informações de pilha para todos os threads e informações de pilha de chamadas centradas em tarefas.
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2018
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9728346bc4c6d805bb0febd3a0d5bef0ed809a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55a004e65a39f4a2b7bbf972cec36d689bf88d97
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62902247"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150165"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>Exibir threads e tarefas na janela de pilhas paralelas (C#, Visual Basic, C++)
 
@@ -38,7 +40,7 @@ A janela de **pilhas paralelas** é útil para depurar aplicativos multithread. 
 
 ## <a name="use-the-parallel-stacks-window"></a>Usar a janela Pilhas Paralelas
 
-Para abrir a janela de **pilhas paralelas** , você deve estar em uma sessão de depuração. Selecione **depurar**  >  **Windows**  >  **pilhas paralelas**do Windows.
+Para abrir a janela de **pilhas paralelas** , você deve estar em uma sessão de depuração. Selecione **depurar**  >    >  **pilhas paralelas** do Windows.
 
 ### <a name="toolbar-controls"></a>Controles da barra de ferramentas
 
@@ -70,7 +72,7 @@ Os itens de menu de atalho a seguir estão disponíveis quando você clica com o
 
 |Item de menu|Descrição|
 |-|-|
-|**Identificar**|Sinaliza o item selecionado.|
+|**Sinalizador**|Sinaliza o item selecionado.|
 |**Remover Sinalização**|Remove a sinalização do item selecionado.|
 |**Congelamento**|Congela o item selecionado.|
 |**Congelar**|Descongela o item selecionado.|

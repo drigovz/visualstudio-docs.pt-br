@@ -1,5 +1,7 @@
 ---
 title: Usando a janela tarefas | Microsoft Docs
+description: As tarefas são operações assíncronas que podem ser executadas simultaneamente. Várias tarefas podem ser executadas no mesmo thread. Use tarefas para exibir informações de objeto de tarefa e WinJS. Promise.
+ms.custom: SEO-VS-2020
 ms.date: 03/18/2018
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7df43a02dbda1fbcbe93decb58721032cd84d657
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901563"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150061"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>Usando a janela tarefas (C#, Visual Basic, C++)
 
@@ -54,7 +56,7 @@ As colunas na janela **Tarefas** mostram as informações a seguir.
 |**Start Time**|A hora em que a tarefa se tornou ativa.|
 |**Duration**|O número de segundos que a tarefa esteve ativa.|
 |**Tempo de Conclusão**|A hora e conclusão da tarefa.|
-|**Localidade**|O local atual da pilha de chamadas da tarefa. Passe o mouse sobre esta célula para ver a pilha de chamada inteira para a tarefa. As tarefas agendadas não têm um valor nessa coluna.|
+|**Localização**|O local atual da pilha de chamadas da tarefa. Passe o mouse sobre esta célula para ver a pilha de chamada inteira para a tarefa. As tarefas agendadas não têm um valor nessa coluna.|
 |**Tarefa**|O método inicial e quaisquer argumentos que são passados para a tarefa quando ela foi criada.|
 |**AsyncState**|Para código gerenciado, o status da tarefa. Por padrão, essa coluna está ocultada. Para exibir esta coluna, abra o menu de contexto para um dos cabeçalhos de coluna. Escolha **Colunas**, **AsyncState**.|
 |**Pai**|A ID da tarefa que criou essa tarefa. Se estiver em branco, a tarefa não terá pai. Isso é aplicável somente para programas gerenciados.|
@@ -71,7 +73,7 @@ As colunas na janela **Tarefas** mostram as informações a seguir.
  Para classificar as tarefas por critérios da coluna, clique no cabeçalho da coluna. Por exemplo, ao clicar no cabeçalho da coluna **ID** , você pode classificar as tarefas por ID da tarefa: 1, 2, 3, 4, 5 e assim por diante. Para inverter a ordem de classificação, clique no cabeçalho da coluna novamente. A coluna e a ordem de classificação atuais estão indicadas por uma seta na coluna.
 
 ## <a name="grouping-tasks"></a>Agrupando tarefas
- Você pode agrupar tarefas com base em qualquer coluna na exibição de lista. Por exemplo, ao clicar com o botão direito no cabeçalho da coluna **Status** e clicar em **Agrupar por ** > **[*Status*]**, você pode agrupar todas as tarefas que têm o mesmo status. Por exemplo, você poderia ver rapidamente a espera de tarefas para que possa se concentrar no porquê de serem bloqueadas. Você também pode recolher um grupo que não é de interesse durante a sessão de depuração. Da mesma forma, você pode agrupar por outras colunas. Um grupo pode ser sinalizado ou ter a sinalização removida apenas clicando no botão ao lado do cabeçalho do grupo. A ilustração a seguir mostra a janela **Tarefas** no modo agrupado.
+ Você pode agrupar tarefas com base em qualquer coluna na exibição de lista. Por exemplo, ao clicar com o botão direito no cabeçalho da coluna **Status** e clicar em **Agrupar por** > **[*Status*]**, você pode agrupar todas as tarefas que têm o mesmo status. Por exemplo, você poderia ver rapidamente a espera de tarefas para que possa se concentrar no porquê de serem bloqueadas. Você também pode recolher um grupo que não é de interesse durante a sessão de depuração. Da mesma forma, você pode agrupar por outras colunas. Um grupo pode ser sinalizado ou ter a sinalização removida apenas clicando no botão ao lado do cabeçalho do grupo. A ilustração a seguir mostra a janela **Tarefas** no modo agrupado.
 
  ![Modo agrupado na janela tarefas](../debugger/media/parallel_tasks_groupedmode.png "Parallel_Tasks_GroupedMode")
 

@@ -1,5 +1,7 @@
 ---
 title: Alterações de código com suporte (C# e Visual Basic) | Microsoft Docs
+description: Entenda quais alterações de código têm suporte quando você está usando o recurso Editar e continuar durante a depuração de um projeto C# ou Visual Basic no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c480fad064cad602ea3fd19153d53f0276815d30
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 267d9097ebe53b4074bed6c5caf4077006c946eb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509413"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149203"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Alterações de código com suporte (C# e Visual Basic)
 Editar e Continuar trata a maioria dos tipos de alterações de código dentro dos corpos do método. A maioria das alterações fora dos corpos do método e algumas alterações dentro dos corpos do método, no entanto, não podem ser aplicadas durante a depuração. Para aplicar essas alterações sem suporte, você deverá parar a depuração e reinicializar com uma versão atualizada do código.
@@ -56,7 +58,7 @@ A tabela a seguir mostra as alterações que podem ser feitas em C# e Visual Bas
 |Recurso/elemento de linguagem|Operação de edição sem suporte|
 |-|-|
 |Todos os elementos de código|Renomear|
-|Namespaces|Adicionar|
+|Namespaces|Add|
 |Namespaces, tipos, membros|Excluir|
 |Genéricos|Adicionar ou modificar|
 |Interfaces|Modificar|
@@ -74,7 +76,7 @@ A tabela a seguir mostra as alterações que podem ser feitas em C# e Visual Bas
 |Operadores ou indexadores|Modificar um parâmetro de tipo, tipo base, tipo de representante ou tipo de retorno |
 |blocos catch|Modificar quando ele contém uma instrução ativa|
 |blocos try – catch-finally|Modificar quando ele contém uma instrução ativa|
-|usando instruções|Adicionar|
+|usando instruções|Add|
 |métodos/lambdas assíncronos|Modificar um método/Lambda assíncrono em um projeto direcionado .NET Framework 4 e inferior (consulte os [detalhes](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
 |Iterators|Modificar um iterador em um projeto direcionado .NET Framework 4 e inferior (consulte os [detalhes](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
 

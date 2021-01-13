@@ -1,5 +1,7 @@
 ---
 title: Instalar um visualizador | Microsoft Docs
+description: Entenda como instalar um visualizador para que ele fique disponível para a depuração de uso no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 06/10/2020
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6410e9ba1250da5a0a247c786e4aada310186c4a
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 37b2da9418361144c740bed633eb755f7057936c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211359"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148956"
 ---
 # <a name="how-to-install-a-visualizer"></a>Como instalar um visualizador
 Após ter criado um visualizador, você deverá instalar o visualizador de modo que esteja disponível em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalar um visualizador é um processo simples.
@@ -84,6 +86,6 @@ Após ter criado um visualizador, você deverá instalar o visualizador de modo 
 > Se você quiser usar um visualizador gerenciado para a depuração remota, copie a DLL no mesmo caminho no computador remoto.
 ::: moniker-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)
 - [Como escrever um visualizador](create-custom-visualizers-of-data.md)

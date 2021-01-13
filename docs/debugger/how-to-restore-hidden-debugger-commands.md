@@ -1,5 +1,7 @@
 ---
 title: Restaurar comandos do depurador oculto | Microsoft Docs
+description: Aprenda a restaurar comandos do depurador ocultos no Visual Studio. As configurações padrão da IDE para algumas linguagens podem ocultar alguns comandos do depurador.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 295d04aa33f7f6602d536a69baafae9105a51fe5
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e761a9bcbbf2f35555ae30065cd239f4d7587ff4
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852016"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148592"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Como restaurar comandos de depurador ocultos
 Ao configurar o Visual Studio, será solicitado que você escolha um conjunto de configurações padrão da IDE para a sua linguagem de programação principal. As configurações padrão da IDE para algumas linguagens podem ocultar alguns comandos do depurador.
@@ -70,7 +72,7 @@ Ao configurar o Visual Studio, será solicitado que você escolha um conjunto de
 
 8. Na página **Importação Concluída**, revise todos os erros associados à redefinição das configurações em **Detalhes**.
 
-9. Clique em **Fechar**.
+9. Clique em **fechar**
 
 ## <a name="see-also"></a>Confira também
 - [Segurança do depurador](../debugger/debugger-security.md)

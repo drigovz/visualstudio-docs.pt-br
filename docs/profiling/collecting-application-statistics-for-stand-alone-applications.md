@@ -1,5 +1,6 @@
 ---
 title: 'Linha de comando do criador de perfil: coletar estatísticas de aplicativo autônomas'
+description: Coletar estatísticas de aplicativo para aplicativos autônomos usando a linha de comando do profiler no Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 150a1a010a33a3b4fcfe0954ec70db2ff4de7816
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 6567b0116227bf259eb3591bc6880a6841252869
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808910"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148294"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Coletar estatísticas de aplicativo para aplicativos autônomos usando a linha de comando do criador de perfil
 Esta seção descreve os procedimentos e as opções para coletar estatísticas de desempenho para um aplicativo cliente (autônomo) usando o método de amostragem da linha de comando.

@@ -1,5 +1,7 @@
 ---
 title: Instruções Stop em Visual Basic | Microsoft Docs
+description: Examine a instrução Visual Basic stop, que fornece uma alternativa programática para definir um ponto de interrupção no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f9ab4ef453a921371ab7ef4f272cd0e38f4108a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b36f00f628d9551d8e45075d790d8e5d2de294dc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71322528"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149424"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Instruções Stop no Visual Basic
 
@@ -67,5 +69,5 @@ Debug.Fail("a clever output string goes here")
 ## <a name="see-also"></a>Confira também
 
 - [Segurança do depurador](debugger-security.md)
-- [Tipos de projeto do Visual Basic, C# e F#](debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
+- [Tipos de projeto C#, F# e Visual Basic](debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Depurando código gerenciado](debugging-managed-code.md)

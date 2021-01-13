@@ -1,5 +1,7 @@
 ---
 title: Sinalizar e Remover sinalização de threads | Microsoft Docs
+description: Saiba como sinalizar ou remover o sinalizador de threads no Visual Studio. Sinalizar ou desmarcar um thread, vários threads ou todos os threads. Sinalize apenas seu código ou aqueles associados a um módulo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,23 +17,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e381faac8a8e4ae6f45f1fde6e2e20dd9f127a97
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e9b7ce5db863987d530fe9e68d026a94474fc13c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852055"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149489"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Como: sinalizar e remover o sinalizador de threads (C#, Visual Basic, C++)
 
-Você pode sinalizar um thread que deseja dar atenção especial marcando-o com um ícone nas janelas **threads**, **pilhas paralelas** (exibição de thread), **inspeção paralela**e **threads de GPU** . Esse ícone pode ajudá-lo e a outros a distinguir threads sinalizados de outros threads.
+Você pode sinalizar um thread que deseja dar atenção especial marcando-o com um ícone nas janelas **threads**, **pilhas paralelas** (exibição de thread), **inspeção paralela** e **threads de GPU** . Esse ícone pode ajudá-lo e a outros a distinguir threads sinalizados de outros threads.
 
 Threads sinalizados também recebem tratamento especial na lista de **threads** na barra de ferramentas do **local de depuração** e nas outras janelas de depuração multithread. Você pode mostrar todos os threads ou somente threads sinalizados na lista de **threads** ou nas outras janelas.
 
 ### <a name="to-flag-or-unflag-a-thread"></a>Para sinalizar ou remover sinalização de um thread
 
 - Na janela **threads** ou de **inspeção paralela** , localize o thread em que você está interessado e clique no ícone de sinalizador para selecionar ou limpar o sinalizador.
-- Na janela **pilhas paralelas** , clique com o botão direito do mouse em um thread ou grupo de threads e selecione **sinalizar/ \<thread> ** ou não **sinalizar/ \<thread> **.
+- Na janela **pilhas paralelas** , clique com o botão direito do mouse em um thread ou grupo de threads e selecione **sinalizar/ \<thread>** ou não **sinalizar/ \<thread>**.
 
 ### <a name="to-unflag-all-threads"></a>Para remover a sinalização de todos os threads
 
@@ -61,6 +63,6 @@ Threads sinalizados também recebem tratamento especial na lista de **threads** 
 5. Clique em **OK**.
 
 ## <a name="see-also"></a>Confira também
-- [Depurar aplicativos multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Depurar aplicativos multissegmentados](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Introdução à depuração de aplicativos multi-threaded](../debugger/get-started-debugging-multithreaded-apps.md)
 - [Walkthrough: depurar aplicativos multithread usando a janela threads](../debugger/how-to-use-the-threads-window.md)

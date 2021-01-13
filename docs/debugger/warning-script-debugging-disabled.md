@@ -1,5 +1,7 @@
 ---
 title: 'Aviso: depuração de script desabilitada | Microsoft Docs'
+description: Um aviso de "depuração de script desabilitado" ocorre quando você tenta Depurar o script sem habilitar a depuração de script no Internet Explorer. Consulte as etapas para habilitá-lo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15de1a1e516cb3d84c24428ef04dd87baedaed9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7cc2e03a4efcf9a88675fd3c80f374ff78ba35bb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81648496"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149554"
 ---
 # <a name="warning-script-debugging-disabled"></a>Aviso: depuração de script desabilitada
 A depuração de scripts está atualmente desabilitada no Internet Explorer

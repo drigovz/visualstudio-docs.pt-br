@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo Propriedades da janela | Microsoft Docs
+description: Saiba como exibir as propriedades de uma janela listada no modo de exibição do Windows. Este artigo contém links para outros artigos que documentam as propriedades.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c27f10298f3a5621bc68e31bc2b150663955d6c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5bd6c8a7f3b07cdd0667ae8d2c33aeb96d6d7679
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929208"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149216"
 ---
 # <a name="window-properties-dialog-box"></a>Caixa de diálogo Propriedades da Janela
 Use essa caixa de diálogo para saber mais sobre uma janela específica. Para exibir essa caixa de diálogo, mova o foco para a janela [exibição do Windows](../debugger/windows-view.md) . Selecione qualquer nó de janela na árvore e, em seguida, escolha **Propriedades** no menu **Exibir** .

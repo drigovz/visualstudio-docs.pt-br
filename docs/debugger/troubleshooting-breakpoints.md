@@ -1,6 +1,7 @@
 ---
 title: Solucionar problemas de pontos de interrupção no depurador | Microsoft Docs
-ms.custom: seodec18
+description: Se um ponto de interrupção estiver desabilitado ou não puder ser definido, ele será exibido como um círculo vazio. Veja aqui informações sobre problemas que podem ocorrer ao definir pontos de interrupção.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 01/23/2018
 ms.topic: troubleshooting
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c11741cb9bb9a0b0c64b9452b54daa6ac226b92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a07f92eccd7884ea3cc3871d04285a82cb5cb62e
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72535934"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148046"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Solucionar problemas de pontos de interrupção no depurador do Visual Studio
 
@@ -25,7 +26,7 @@ As duas seções a seguir descrevem os avisos proeminentes e como corrigi-los.
 
 ### <a name="no-symbols-have-been-loaded-for-this-document"></a>"Nenhum símbolo foi carregado neste documento."
 
-Vá para a janela **módulos** (**depurar**  >  **Windows**  >  **módulos**do Windows) e verifique se o módulo está carregado.
+Vá para a janela **módulos** (**depurar**  >    >  **módulos** do Windows) e verifique se o módulo está carregado.
 * Se o módulo estiver carregado, verifique a coluna **status do símbolo** para ver se os símbolos foram carregados.
   * Se os símbolos não forem carregados, verifique o status do símbolo para diagnosticar o problema. No menu de contexto de um módulo na janela **módulos** , clique em **informações de carregamento de símbolo...** para ver onde o depurador procurou e carregou símbolos. Para obter mais informações sobre como carregar símbolos, consulte [especificar símbolo (. pdb) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
   * Se os símbolos forem carregados, o PDB não conterá informações sobre seus arquivos de origem. Essas são algumas causas possíveis:
@@ -35,7 +36,7 @@ Vá para a janela **módulos** (**depurar**  >  **Windows**  >  **módulos**do W
 
 * Se o módulo não estiver carregado, verifique o seguinte para encontrar a causa:
   * Confirme que você está depurando o processo correto.
-  * Verifique se você está depurando o tipo certo de código. Você pode descobrir que tipo de código o depurador está configurado para depurar na janela **processos** (**depurar**  >  **Windows**  >  **processos**do Windows). Por exemplo, se você estiver tentando depurar o código C#, confirme se o depurador está configurado para o tipo e a versão apropriados do .NET (por exemplo, gerenciado (v4 \* ) versus gerenciado (v2 \* /v3 \* ) versus gerenciado (CoreCLR)).
+  * Verifique se você está depurando o tipo certo de código. Você pode descobrir que tipo de código o depurador está configurado para depurar na janela **processos** (**depurar**  >    >  **processos** do Windows). Por exemplo, se você estiver tentando depurar o código C#, confirme se o depurador está configurado para o tipo e a versão apropriados do .NET (por exemplo, gerenciado (v4 \* ) versus gerenciado (v2 \* /v3 \* ) versus gerenciado (CoreCLR)).
 
 ### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… o código-fonte atual é diferente da versão interna do... "
 
@@ -45,7 +46,7 @@ Em casos raros, talvez você queira depurar sem ter o código-fonte corresponden
 
 Para desabilitar essas verificações de segurança, siga um destes procedimentos:
 * Para modificar um único ponto de interrupção, passe o mouse sobre o ícone de ponto de interrupção no editor e clique no ícone configurações (engrenagem). Uma janela de inspeção é adicionada ao editor. Na parte superior da janela Peek, há um hiperlink que indica o local do ponto de interrupção. Clique no hiperlink para permitir a modificação do local do ponto de interrupção e marque **permitir que o código-fonte seja diferente do original**.
-* Para modificar essa configuração para todos os pontos de interrupção, **Debug**vá para  >  **Opções de depuração e configurações**. Na página **depuração/geral** , desmarque a opção **exigir arquivos de origem que correspondem exatamente à versão original** . Certifique-se de habilitar novamente essa opção quando terminar a depuração.
+* Para modificar essa configuração para todos os pontos de interrupção, vá para  >  **Opções de depuração e configurações**. Na página **depuração/geral** , desmarque a opção **exigir arquivos de origem que correspondem exatamente à versão original** . Certifique-se de habilitar novamente essa opção quando terminar a depuração.
 
 ## <a name="the-breakpoint-was-successfully-set-no-warning-but-didnt-hit"></a>O ponto de interrupção foi definido com êxito (sem aviso), mas não foi atingido
 

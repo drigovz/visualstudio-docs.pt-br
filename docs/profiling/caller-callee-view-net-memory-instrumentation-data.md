@@ -1,5 +1,7 @@
 ---
 title: Exibição de chamado-computador chamado – Dados de instrumentação da memória do .NET | Microsoft Docs
+description: Examine a exibição Caller/Callee dos dados de criação de perfil de memória do .NET, que mostra a alocação e os dados de tempo para uma função selecionada e as funções pai e filho dela.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c51f4bc1e823f565670bf1f6df77553ff4658d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fa4928f9da81b2141eec76e54bce7887f50a074
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779721"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148072"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Exibição do Chamador/Receptor – dados de instrumentação da memória do .NET
 O modo de exibição de Chamador/Computador Chamado dos dados de criação de perfil de memória do .NET coletados usando o método de instrumentação exibe dados de alocação e de tempo para uma função selecionada e as funções pai e filho da função selecionada. A exibição de Chamador/Computador Chamado contém três grades.
@@ -94,7 +96,7 @@ O modo de exibição de Chamador/Computador Chamado dos dados de criação de pe
 |**Tempo Inclusivo Mínimo do Aplicativo**|O tempo inclusivo mínimo do aplicativo de uma chamada para essa função nesse contexto.|
 
 ## <a name="application-exclusive-values"></a>Valores exclusivos do aplicativo
- Valores exclusivos do aplicativo indicam o tempo gasto na função, excluindo o tempo gasto em funções filho. O tempo indicado também exclui o tempo gasto em chamadas ao sistema operacional, como mudanças de contexto e operações de entrada/saída.
+ Valores exclusivos do aplicativo indicam o tempo gasto na função, excluindo o tempo gasto em funções filho. O tempo indicado também exclui o tempo gasto em chamadas para o sistema operacional, como alternâncias de contexto e operações de entrada/saída.
 
 |Coluna|Descrição|
 |------------|-----------------|

@@ -1,5 +1,7 @@
 ---
 title: Page Up ou down na memória | Microsoft Docs
+description: Consulte Como paginar para cima ou para baixo na memória para exibir o conteúdo da memória em uma janela de memória ou a janela de desmontagem ao depurar no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4e4e2037e39df7ce343143ff64235f1de0364f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1fc586603caf18261654e5ec8ee437c0875616a7
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852042"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148878"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Como subir ou descer a página na memória
 

@@ -1,5 +1,7 @@
 ---
 title: Pesquisar um thread no modo de exibição de threads | Microsoft Docs
+description: Procure um thread específico na exibição threads da ferramenta Spy + + usando sua ID de thread ou cadeia de caracteres de módulo como critérios de pesquisa ao depurar no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99a2b4fe491939b6cf4224c211dcd03ec609be27
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 92864c9d3c66a7547ef52a2694f6307d57a43304
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851977"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148527"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Como procurar um thread na exibição de threads
 Você pode pesquisar um thread específico na exibição Threads usando sua ID de thread ou cadeia de caracteres de módulo como critérios de pesquisa. Você também pode especificar a direção inicial da pesquisa. Os campos na caixa de diálogo mostrarão os atributos do thread selecionado na árvore de thread.

@@ -1,5 +1,7 @@
 ---
 title: Pesquisar um processo na exibição de processos | Microsoft Docs
+description: Procure um processo específico na exibição de processos da ferramenta Spy + + usando sua ID de processo ou cadeia de caracteres de módulo como critérios de pesquisa ao depurar no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b94a052f7cb50df676140b45a43f49b92283903
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 2f6c51276bea76fe77455d13e011aa85efa8f6fd
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851990"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148553"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Como procurar um processo na exibição de processos
 Você pode pesquisar um processo específico na exibição de processos usando sua ID de processo ou cadeia de caracteres de módulo como critérios de pesquisa. Você também pode especificar a direção inicial da pesquisa. Os campos na caixa de diálogo mostrarão os atributos do processo selecionado na árvore de processo.

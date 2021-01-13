@@ -1,5 +1,7 @@
 ---
 title: Informações de log com tracepoints | Microsoft Docs
+description: Defina tracepoints para registrar informações para saída sem modificar ou parar seu código. Basta especificar uma cadeia de caracteres de saída na caixa de seleção ação nas configurações de ponto de interrupção.
+ms.custom: SEO-VS-2020
 ms.date: 10/28/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 144f83b1be0c3a21aa5cb244f8498f61e3ef380a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "89561332"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150087"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Informações de log para a janela de saída usando tracepoints no Visual Studio
 
@@ -53,7 +55,7 @@ Você pode definir tracepoints especificando uma cadeia de caracteres de saída 
 
    ![Caixa condições verificadas](../debugger/media/checkedconditionsbox.png "Caixa condições verificadas")
 
-   Você tem três opções de condições: **expressão condicional** , **filtro** e **contagem de acesso** .
+   Você tem três opções de condições: **expressão condicional**, **filtro** e **contagem de acesso**.
 
 ## <a name="actions-menu"></a>Menu de ações
 
@@ -63,7 +65,7 @@ Por exemplo, se você quiser exibir o valor da `counter` variável no console de
 
 ![Mensagem de saída do contador](../debugger/media/counteroutputmessage.png "Mensagem de saída do contador")
 
-Se você clicar em **fechar** e depurar o programa ( **F5** ), você verá a seguinte saída na janela saída.
+Se você clicar em **fechar** e depurar o programa (**F5**), você verá a seguinte saída na janela saída.
 
 ![Mensagem de ações em Janela de Saída](../debugger/media/actionsmessageinoutputwindow.png "Mensagem de ações em Janela de Saída")
 
@@ -135,7 +137,7 @@ A maneira como as expressões são avaliadas na caixa de mensagem de **ação** 
 
 Se você estiver tentando depurar um aplicativo ao vivo e procurando um recurso semelhante, confira nosso recurso logpoint na Depurador de Instantâneos. O depurador de instantâneo é uma ferramenta usada para investigar problemas em aplicativos de produção. O Logpoints também permite que você envie mensagens para o Janela de Saída sem precisar modificar o código-fonte e não afete o aplicativo em execução. Para obter mais informações, consulte [Depurar aplicativo dinâmico do Azure](../debugger/debug-live-azure-applications.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [O que é depuração?](../debugger/what-is-debugging.md)
 - [Escreva um código C# melhor usando o Visual Studio](../debugger/write-better-code-with-visual-studio.md)

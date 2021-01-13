@@ -1,5 +1,7 @@
 ---
 title: Definir um nome de thread em código nativo | Microsoft Docs
+description: Defina um nome de thread em código nativo durante a depuração de aplicativo multithread no Visual Studio. A nomenclatura de threads é usada para controlar threads na janela threads.
+ms.custom: SEO-VS-2020
 ms.date: 12/17/2018
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00f98e638497622e0e887a421cb08f18de97b9af
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a713b6db074586898ff72cd8595c4cc0d20d99cf
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851925"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149515"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Como definir um nome de thread em código nativo
 A nomeação de thread é possível em qualquer edição do Visual Studio. A nomenclatura de threads é útil para identificar threads de interesse na janela **threads** durante a depuração de um processo em execução. Ter threads com nomes reconhecidos também pode ser útil ao executar a depuração de post-mortem por meio da inspeção de despejo de memória e ao analisar capturas de desempenho usando várias ferramentas.
@@ -109,6 +111,6 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
 ```
 
 ## <a name="see-also"></a>Confira também
-- [Depurar aplicativos multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Depurar aplicativos multissegmentados](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)
 - [Como definir um nome de thread no código gerenciado](../debugger/how-to-set-a-thread-name-in-managed-code.md)

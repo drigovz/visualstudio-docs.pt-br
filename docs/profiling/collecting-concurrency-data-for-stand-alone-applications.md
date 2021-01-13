@@ -1,5 +1,6 @@
 ---
 title: Linha de comando do profiler – obter dados de simultaneidade do aplicativo autônomo
+description: Coletar dados de simultaneidade para aplicativos autônomos usando a linha de comando do profiler no Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d49ffdca054034e1ec08105d2041794714bcdee
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 6a04740bdfd54a23ac1ac4e23e2007e0062ddcd3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811117"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148280"
 ---
 # <a name="collect-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Coletar dados de simultaneidade para aplicativos autônomos usando a linha de comando do criador de perfil
 O método de simultaneidade das Ferramentas de Criação de Perfil [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite coletar dados de contenção de recursos e dados de atividade do thread que mostram a utilização da CPU, contenção e migração do thread, atrasos na sincronização, áreas de ES sobrepostas e outros eventos do sistema.

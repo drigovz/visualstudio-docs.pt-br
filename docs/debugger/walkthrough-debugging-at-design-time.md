@@ -1,6 +1,7 @@
 ---
 title: Depurar em tempo de design | Microsoft Docs
-ms.custom: ''
+description: Use a janela imediata para depurar o código em tempo de design, sem executar o aplicativo. Você pode executar uma função e examinar o estado quando um ponto de interrupção é atingido.
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bc5d08e8b0ae71acb846e1e863e24e8b8def0ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f127c630cec0e0b64ab5602e81f2b314a3896b16
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183555"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148840"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Depurar em tempo de design no Visual Studio (C#, C++/CLI, Visual Basic, F #)
 
 Para depurar o código em tempo de design em vez de enquanto um aplicativo está em execução, você pode usar a janela **imediata** .
 
-Para depurar o código XAML por trás de um aplicativo do designer XAML, como cenários de ligação de dados declarativos, você pode usar **Debug**  >  **a anexação de depuração para processar**.
+Para depurar o código XAML por trás de um aplicativo do designer XAML, como cenários de ligação de dados declarativos, você pode usar   >  **a anexação de depuração para processar**.
 
 ## <a name="use-the-immediate-window"></a>Usar a janela imediata
 
@@ -57,7 +58,7 @@ O exemplo a seguir está em Visual Basic. Você também pode usar a janela **ime
    End Module
    ```
 
-1. Defina um ponto de interrupção na **função de extremidade**de linha.
+1. Defina um ponto de interrupção na **função de extremidade** de linha.
 
 1. Abra a janela **imediata** selecionando **depurar**  >  **janelas**  >  **imediatamente**. Digite `?MyFunction` na janela e pressione **Enter**.
 
@@ -89,7 +90,7 @@ O exemplo a seguir está em Visual Basic. Você também pode usar a janela **ime
 
 1. Na segunda instância do Visual Studio, abra o menu **depurar** e escolha **anexar ao processo...**.
 
-1. Dependendo do tipo de projeto (consulte as etapas anteriores), selecione o *UwpSurface.exe*, *WpfSurface.exe*ou o processo de *XDesProc.exe* na lista de processos disponíveis.
+1. Dependendo do tipo de projeto (consulte as etapas anteriores), selecione o *UwpSurface.exe*, *WpfSurface.exe* ou o processo de *XDesProc.exe* na lista de processos disponíveis.
 
 1. No campo **anexar a** do caixa de diálogo **anexar ao processo** , escolha o tipo de código correto para o controle personalizado que você deseja depurar.
 

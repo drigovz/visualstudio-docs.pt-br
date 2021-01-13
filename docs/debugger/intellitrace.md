@@ -1,5 +1,7 @@
 ---
 title: IntelliTrace | Microsoft Docs
+description: Use o IntelliTrace para registrar e rastrear o histórico de execução do código no Visual Studio. Registre eventos específicos, examine códigos relacionados e erros de depuração.
+ms.custom: SEO-VS-2020
 ms.date: 09/19/2018
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 878c2481164bc87d4af5e79a0a978e822e7baafe
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 518043a38f3a0f6945840a36a1f7fcade5a313d7
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600250"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148995"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace para Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -47,7 +49,7 @@ Você pode usar o IntelliTrace no Visual Studio Enterprise Edition (mas não as 
 
 ## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a> Que aplicativos posso depurar com o IntelliTrace?
 
-| Nível de suporte| Tipos de aplicativos |
+| Nível de suporte| Tipos de aplicativo |
 |---------------------| - |
 | **Suporte completo** | -Visual Basic e aplicativos do Visual C# que usam .NET Framework 2,0 ou versões posteriores.<br/>É possível depurar a maioria dos aplicativos, inclusive ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e aplicativos de 64 bits.<br/>Para depurar aplicativos do SharePoint com o IntelliTrace, consulte [Walkthrough: Depurando um aplicativo do SharePoint usando o IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Para depurar Microsoft Azure aplicativos com o IntelliTrace, consulte [Depurando um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md). |
 | **Suporte limitado** | -Aplicativos C++ voltados para o suporte do Windows exibindo instantâneos usando o passo do IntelliTrace. Somente os eventos Debugger e Exception têm suporte.<br />-.NET Core e ASP.NET Core aplicativos com suporte para determinados eventos somente (eventos do controlador MVC, ADO.NET e HTTPClient) na depuração local. O coletor autônomo não tem suporte para aplicativos .NET Core ou ASP.NET Core.<br />– Aplicativos F# em uma base de avaliação<br />-Aplicativos UWP com suporte somente para eventos |
@@ -106,7 +108,7 @@ Por padrão, o IntelliTrace registra apenas eventos do IntelliTrace: eventos do 
 
   - Valores em DataTips que surgem quando você move o ponteiro do mouse sobre uma variável na janela de origem para ver seu valor. O IntelliTrace não coleta valores em DataTips fixados.
 
-    Quando os eventos do IntelliTrace e o modo de instantâneos estiverem habilitados, o IntelliTrace tirará um instantâneo do processo do aplicativo em cada evento de **etapa** e **ponto de interrupção** do depurador. Isso registrará valores nas janelas **locais**, **automáticos**e **inspecionar** , independentemente de as janelas estarem abertas ou não. Os valores em quaisquer dicas de dados fixados também serão coletados.
+    Quando os eventos do IntelliTrace e o modo de instantâneos estiverem habilitados, o IntelliTrace tirará um instantâneo do processo do aplicativo em cada evento de **etapa** e **ponto de interrupção** do depurador. Isso registrará valores nas janelas **locais**, **automáticos** e **inspecionar** , independentemente de as janelas estarem abertas ou não. Os valores em quaisquer dicas de dados fixados também serão coletados.
 
 - **Exceções**
 

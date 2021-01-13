@@ -1,5 +1,7 @@
 ---
 title: Recursos do IntelliTrace | Microsoft Docs
+description: Saiba mais sobre os recursos do IntelliTrace no Visual Studio. Use o IntelliTrace para registrar eventos e chamadas de método em seu aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 09/19/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ac7ca0e59a479aff3386486d2ceaf061038db68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f5d4603e052cd5968055304290559b8a8d5a56a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536572"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148631"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Recursos do IntelliTrace (C#, Visual Basic, C++)
 
@@ -48,13 +50,13 @@ Se você estiver depurando, pare a depuração. Vá para **ferramentas > opçõe
 
 ## <a name="collect-snapshots-c-visual-basic-c"></a><a name="Snapshots"></a> Coletar instantâneos (C#, Visual Basic, C++)
 
-Isso não é habilitado por padrão, mas o IntelliTrace pode capturar instantâneos do seu aplicativo em cada ponto de interrupção e evento de etapa do depurador, e você pode exibir esses instantâneos em uma sessão de depuração histórica. Um instantâneo fornece uma exibição do estado completo do aplicativo. Para habilitar a captura de instantâneos, vá para **ferramentas > opções > IntelliTrace > geral**e selecione **instantâneos do IntelliTrace (gerenciados e nativos)**. Para saber mais, confira [Inspecionar estados anteriores do aplicativo usando o IntelliTrace](../debugger/view-historical-application-state.md).
+Isso não é habilitado por padrão, mas o IntelliTrace pode capturar instantâneos do seu aplicativo em cada ponto de interrupção e evento de etapa do depurador, e você pode exibir esses instantâneos em uma sessão de depuração histórica. Um instantâneo fornece uma exibição do estado completo do aplicativo. Para habilitar a captura de instantâneos, vá para **ferramentas > opções > IntelliTrace > geral** e selecione **instantâneos do IntelliTrace (gerenciados e nativos)**. Para saber mais, confira [Inspecionar estados anteriores do aplicativo usando o IntelliTrace](../debugger/view-historical-application-state.md).
 
 Os instantâneos estão disponíveis na versão 15,5 e superior do Visual Studio Enterprise 2017 e exigem atualização de aniversário do Windows 10 ou superior.  Para aplicativos .NET Core e ASP.NET Core, Visual Studio Enterprise 2017 versão 15,7 é necessária. Para aplicativos nativos direcionados para o Windows, Visual Studio Enterprise 2017 versão 15,9 Preview 2 é necessário.
 
 ## <a name="collect-intellitrace-events-and-call-information-c-visual-basic"></a><a name="GoingFurther"></a> Coletar eventos do IntelliTrace e chamar informações (C#, Visual Basic)
 
-Isso não é habilitado por padrão, mas o IntelliTrace pode registrar chamadas de método juntamente com eventos. Para habilitar a coleta de chamadas de método, acesse **ferramentas > opções > IntelliTrace > geral**e selecione **eventos do IntelliTrace e chame informações (somente gerenciado)**.
+Isso não é habilitado por padrão, mas o IntelliTrace pode registrar chamadas de método juntamente com eventos. Para habilitar a coleta de chamadas de método, acesse **ferramentas > opções > IntelliTrace > geral** e selecione **eventos do IntelliTrace e chame informações (somente gerenciado)**.
 
 As informações de chamada não estão disponíveis no momento para aplicativos .NET Core e ASP.NET Core.
 
@@ -67,7 +69,7 @@ Isso permite que você veja o histórico da pilha de chamadas e percorra as cham
 
 ### <a name="use-the-navigation-gutter"></a>Usar a medianiz de navegação
 
-Você pode usar a medianiz de navegação que aparece à esquerda da janela de código. Se você não vir a medianiz de navegação, vá para **ferramentas > opções > IntelliTrace > avançado**e selecione **exibir a medianiz de navegação enquanto estiver no modo de depuração**.
+Você pode usar a medianiz de navegação que aparece à esquerda da janela de código. Se você não vir a medianiz de navegação, vá para **ferramentas > opções > IntelliTrace > avançado** e selecione **exibir a medianiz de navegação enquanto estiver no modo de depuração**.
 
 A medianiz de navegação permite que você avance para frente e para trás através de chamadas de método e eventos no modo de depuração histórica. Para obter mais informações sobre depuração histórica, consulte [depuração histórica](../debugger/historical-debugging.md). Ele tem vários comandos:
 
@@ -125,7 +127,7 @@ Ao salvar dados do IntelliTrace no arquivo, você obtém um arquivo. itrace para
 
 [Depurador do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home)
 
-## <a name="videos"></a>vídeos
+## <a name="videos"></a>Vídeos
 
 [Experiência do IntelliTrace](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)
 

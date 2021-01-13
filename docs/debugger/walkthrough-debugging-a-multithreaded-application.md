@@ -1,5 +1,7 @@
 ---
 title: Exibir threads no depurador | Microsoft Docs
+description: Use threads para examinar e controlar threads. Você pode agrupar, classificar, sinalizar, congelar, descongelar e Pesquisar threads, selecionar colunas e exibir pilhas de chamadas.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b02d980292eaed40c7c1598c772b52f695bf23e2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67821582"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149697"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Exibir threads no depurador do Visual Studio usando a janela threads (C#, Visual Basic, C++)
 Na janela **threads** , você pode examinar e trabalhar com threads no aplicativo que está depurando. Para obter orientações passo a passo sobre como usar a janela **threads** , consulte [passo a passos: depurar usando a janela threads](../debugger/how-to-use-the-threads-window.md).
@@ -64,7 +66,7 @@ Na janela **threads** , você pode examinar e trabalhar com threads no aplicativ
 
 ### <a name="to-display-the-threads-window-in-break-mode-or-run-mode"></a>Para exibir a janela de threads no modo de interrupção ou no modo de execução
 
-- Enquanto o Visual Studio estiver no modo de depuração, selecione o menu **depurar** , aponte para **Windows**e, em seguida, selecione **threads**.
+- Enquanto o Visual Studio estiver no modo de depuração, selecione o menu **depurar** , aponte para **Windows** e, em seguida, selecione **threads**.
 
 ### <a name="to-display-or-hide-a-column"></a>Para exibir ou ocultar uma coluna
 
@@ -168,5 +170,5 @@ Em um programa de vários threads, cada thread tem sua própria pilha de chamada
 - Na barra de ferramentas na parte superior da janela **threads** , selecione **Expandir pilhas de chamadas** ou **recolher pilhas de chamadas**.
 
 ## <a name="see-also"></a>Confira também
-- [Depurar aplicativos multissegmentados](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Introdução à depuração de aplicativos multi-threaded](../debugger/get-started-debugging-multithreaded-apps.md)

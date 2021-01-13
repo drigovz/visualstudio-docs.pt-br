@@ -1,5 +1,6 @@
 ---
 title: Coletar estatísticas para serviços do Windows – método de amostragem do criador de perfil
+description: Examine os procedimentos e as opções para coletar estatísticas de desempenho para serviços do Windows usando o método de amostragem de criação de perfil da linha de comando.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 28b614868ad8080f9b4cbe5359a54c814022089c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f4c686de4128d655b5b8146925529e6a280bb754
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809957"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148332"
 ---
 # <a name="collect-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>Coletar estatísticas do aplicativo para serviços usando o método de amostragem do criador de perfil
 Esta seção descreve os procedimentos e as opções para coletar estatísticas de desempenho de serviços Windows usando o método de amostragem da linha de comando.

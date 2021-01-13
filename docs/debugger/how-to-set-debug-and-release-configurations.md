@@ -1,5 +1,7 @@
 ---
 title: Definir configurações de depuração e versão | Microsoft Docs
+description: Definir configurações de depuração e versão no Visual Studio. Você cria a versão de depuração para depuração e a versão de lançamento para a distribuição de versão final.
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: how-to
 f1_keywords:
@@ -31,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e85f7c67f8dc25bb69f7de07a19286b5c63e938a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 51237a9b73825620c77c7f2a10ad1efe367cdd37
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599898"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149541"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Definir configurações de depuração e versão no Visual Studio
 
@@ -54,7 +56,7 @@ Você pode alterar a configuração de Build no menu **Compilar** , na barra de 
 
 Para alterar a configuração da compilação, seja:
 
-* No menu **Compilar** , selecione **Configuration Manager**e, em seguida, selecione **depurar** ou **liberar**.
+* No menu **Compilar** , selecione **Configuration Manager** e, em seguida, selecione **depurar** ou **liberar**.
 
 ou
 
@@ -85,7 +87,7 @@ Para obter informações detalhadas sobre configurações de projeto para config
 
 5. Selecione o botão **avançado** (ou o botão **Opções avançadas de compilação** em Visual Basic).
 
-6. Na lista **informações de depuração** (ou na lista **gerar informações de depuração** no Visual Basic), escolha **completo**, **somente PDB**ou **portátil**.
+6. Na lista **informações de depuração** (ou na lista **gerar informações de depuração** no Visual Basic), escolha **completo**, **somente PDB** ou **portátil**.
 
    O formato portátil é o formato de plataforma cruzada mais recente para o .NET Core. Para obter mais informações sobre opções, consulte [caixa de diálogo Configurações avançadas de compilação (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
 
@@ -103,7 +105,7 @@ Para obter informações detalhadas sobre configurações de projeto para config
 
 3. Na lista **configuração** , escolha **depurar** ou **liberar**.
 
-4. No painel lateral, escolha **vinculador > depuração**e, em seguida, selecione opções para **gerar informações de depuração**.
+4. No painel lateral, escolha **vinculador > depuração** e, em seguida, selecione opções para **gerar informações de depuração**.
 
    Para obter informações detalhadas sobre configurações de projeto para configurações de depuração em C++, consulte [configurações de projeto para uma configuração de depuração do c++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
@@ -123,5 +125,5 @@ Para obter informações detalhadas sobre configurações de projeto para config
 - [Configurações e preparação do depurador](../debugger/debugger-settings-and-preparation.md)<br/>
 - [Configurações do projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
 - [Configurações de projeto para uma configuração de depuração em C#](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
-- [Configurações de projeto para uma configuração de depuração de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
+- [Definições do projeto para uma configuração de depuração do Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
 - [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md)

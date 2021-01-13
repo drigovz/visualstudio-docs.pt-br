@@ -1,6 +1,7 @@
 ---
 title: Exibir valores de registro no depurador | Microsoft Docs
-ms.custom: seodec18
+description: Exiba os valores de registro na janela de registros no Visual Studio. Durante a depuração, os valores de registro mudam conforme o código é executado em seu aplicativo.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/19/2018
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed60b21d7c8e90e18b389a29c3343713ac8ece3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8422738b5c46b5482ac65cd24ccc903acdb4506e
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348568"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148033"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Exibir valores de registro na janela de registros (C#, C++, Visual Basic, F #)
 
@@ -48,9 +49,9 @@ Você pode editar valores do registro. Para obter mais informações, consulte [
 
 **Para abrir a janela de registros**
 
-1. Habilite a depuração no nível de endereço selecionando **Habilitar depuração no nível de endereço** em **ferramentas** (ou **depurar**) > depuração de **Opções**  >  **Debugging**.
+1. Habilite a depuração no nível de endereço selecionando **Habilitar depuração no nível de endereço** em **ferramentas** (ou **depurar**) > depuração de **Opções**  >  .
 
-1. Enquanto a depuração estiver em execução ou em um ponto de interrupção, selecione **depurar**  >  **Windows**  >  **registros**do Windows ou pressione **ALT** + **5**.
+1. Enquanto a depuração estiver em execução ou em um ponto de interrupção, selecione **depurar**  >    >  **registros** do Windows ou pressione **ALT** + **5**.
 
 >[!NOTE]
 >Caixas de diálogo e comandos de menu podem diferir dependendo da edição ou das configurações do Visual Studio. Para alterar as configurações, selecione **importar e exportar configurações** no menu **ferramentas** do Visual Studio. Para obter mais informações, confira [Redefinir as configurações](../ide/environment-settings.md#reset-settings).

@@ -1,5 +1,7 @@
 ---
 title: Alerta de segurança do servidor de origem | Microsoft Docs
+description: Leia sobre o aviso de alerta de segurança do servidor de origem no depurador do Visual Studio. Lembre-se de possíveis ameaças à segurança ao usar o servidor de origem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69511c2f83570abf37ef4bea8b71c8f59431a128
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf62abb91411048f46bfe7240074bd86c119bcd4
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72729569"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149112"
 ---
 # <a name="source-server-security-alert"></a>Alerta de segurança do servidor de origem
 Ao usar o Servidor de Origem, use somente os arquivos de símbolo que forem de um local conhecido e confiável.
 
- Este aviso aparece quando você ativa o suporte do servidor de origem. Os comandos do servidor de origem são inseridos nos arquivos de símbolo de depuração (arquivos** \* . pdb** ). Verifique se você sabe de onde vêm seus arquivos PDB.
+ Este aviso aparece quando você ativa o suporte do servidor de origem. Os comandos do servidor de origem são inseridos nos arquivos de símbolo de depuração (arquivos **\* . pdb** ). Verifique se você sabe de onde vêm seus arquivos PDB.
 
 > [!IMPORTANT]
 > As seguintes riscos de segurança devem ser levadas em consideração ao usar o servidor de origem: os comandos arbitrários podem ser inseridos no arquivo de PDB do aplicativo, de forma que você coloque somente aqueles que você deseja executar no arquivo de srcsrv.ini. Qualquer tentativa de executar um comando que não esteja no arquivo srcsvr.ini fará com que uma caixa de diálogo de confirmação seja exibida. Para obter mais informações, consulte [aviso de segurança: o depurador deve executar o comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Nenhuma validação é feita em parâmetros do comando. Portanto, tenha cuidado com comandos confiáveis. Por exemplo, se você confiar no cmd.exe, um usuário mal-intencionado pode especificar parâmetros que tornariam o comando perigoso.

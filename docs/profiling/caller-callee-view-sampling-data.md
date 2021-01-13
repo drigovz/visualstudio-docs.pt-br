@@ -1,5 +1,7 @@
 ---
 title: Exibição de chamador-computador chamado – Dados de amostragem | Microsoft Docs
+description: Leia como o modo de exibição chamador/receptor exibe informações de criação de perfil para uma função selecionada e suas funções pai e filho no Gerenciador de Desempenho.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 008aa6bd9402cde760ffc61a613aba778c8ec96f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5f01d2b9fbff4864c8e3fa4d96dccdda54da7e0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773264"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148345"
 ---
 # <a name="callercallee-view---sampling-data"></a>Exibição do chamador/receptor – dados de amostragem
 A exibição de Chamador/Computador Chamado exibe informações de perfil para uma função selecionada e suas funções pai e filho. A exibição de Chamador/Computador Chamado contém três grades.

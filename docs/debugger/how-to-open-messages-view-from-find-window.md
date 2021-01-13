@@ -1,5 +1,7 @@
 ---
 title: Abrir o modo de exibição de mensagens em localizar janela | Microsoft Docs
+description: Use a caixa de diálogo localizar janela no Spy + + para selecionar uma janela de destino e, em seguida, abra uma exibição de mensagens para essa janela.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b6240807eb82313182278251b353894545b957d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 0e66e3e1200e1e08776853f2ac8308537e4b4a17
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852264"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148904"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>Como abrir a exibição de mensagens na janela Localizar
 Talvez você ache conveniente usar a caixa de diálogo **localizar janela** para selecionar uma janela de destino e, em seguida, abrir uma exibição de mensagens dessa janela.

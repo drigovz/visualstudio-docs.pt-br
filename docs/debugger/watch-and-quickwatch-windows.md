@@ -1,6 +1,7 @@
 ---
 title: Definir uma inspeção em variáveis | Microsoft Docs
-ms.custom: seodec18
+description: Ao depurar, consulte variáveis e expressões em Watch e QuickWatch. Watch pode exibir várias variáveis, QuickWatch apenas uma, e somente enquanto estiver em Break.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/11/2018
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e2a05fe84b023a60ef75f0cb262a08fc02587a
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: d13ee6163ebe8cf0f706cbe95e7451c2ebc7c411
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727418"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149476"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Observar variáveis com janelas de inspeção e QuickWatch
 
@@ -303,7 +304,7 @@ Para observar a `a` variável,
 
 1. Continue a depuração. Você pode observar a variável na janela **Watch** .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [O que é depuração?](../debugger/what-is-debugging.md)
 - [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md)
 - [Primeira olhada na depuração](../debugger/debugger-feature-tour.md)

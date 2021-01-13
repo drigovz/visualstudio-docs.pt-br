@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo pesquisa de janela | Microsoft Docs
+description: Use a pesquisa de janela para localizar e selecionar o nó de uma janela específica listada no modo de exibição do Windows. Consulte este artigo para obter descrições das configurações.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ca04cadbfce26319a9ed72b85071d7ab139a85a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f83469d6bd97e493a704282aa1fca1fbec96962d
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900917"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148982"
 ---
 # <a name="window-search-dialog-box"></a>Caixa de diálogo Pesquisa de Janela
 Use essa caixa de diálogo para localizar e selecionar o nó de uma janela específica no [modo de exibição do Windows](../debugger/windows-view.md). Para exibir essa caixa de diálogo, mova o foco para a janela exibição do Windows. Em seguida, escolha **localizar janela** no menu **Pesquisar** .

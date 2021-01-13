@@ -1,5 +1,7 @@
 ---
 title: Canais (exibição de threads) | Microsoft Docs
+description: Leia sobre a exibição de threads ao usar canais no Visualizador de simultaneidade do Visual Studio. Exiba canais de thread, canais de disco, canais de marcador e canais de GPU.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f18a636d83210b2329d103b1babdf47e697fd5c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a4ed0a82ad7ddb67cacde2a09f595d0c9250710
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537079"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148605"
 ---
 # <a name="channels-threads-view"></a>Canais (exibição de threads)
 A Visualização Simultânea mostra quatro tipos de canais: canais de thread, canais de disco, canais de marcador e canais da GPU.

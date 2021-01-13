@@ -1,5 +1,7 @@
 ---
 title: Pesquisar uma janela no modo de exibição do Windows | Microsoft Docs
+description: Procure uma janela específica na exibição do Windows da ferramenta Spy + + usando seu identificador, legenda, classe ou uma combinação de sua legenda e classe no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 880f6ec3ea0882d92f5376859ed629e23781f5f9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3449abf5ff1b9bdb4d4873a0cf3beb0b184734fc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851964"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148501"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Como procurar uma janela na exibição de janelas
 Você pode pesquisar uma janela específica no modo de exibição do Windows usando seu identificador, legenda, classe ou uma combinação de sua legenda e classe como critérios de pesquisa. Você também pode especificar a direção inicial da pesquisa. Os campos na caixa de diálogo mostrarão os atributos da janela selecionada na árvore de janelas.

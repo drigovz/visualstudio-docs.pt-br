@@ -1,6 +1,8 @@
 ---
 title: O que há de novo para o depurador no Visual Studio 2017 | Microsoft Docs
 titleSuffix: ''
+description: 'Consulte os novos recursos no depurador versão 15,5. Incluídos são: instantâneos do código selecionado de aplicativos em produção e de retorno do IntelliTrace.'
+ms.custom: SEO-VS-2020
 ms.date: 01/22/2018
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 523867a8f9aa074e9122c74deb8bcd91cddd8bee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 986ebf20cd49569bfcaf471b9bef994dfe774437
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75944223"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149398"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Novidades do depurador no Visual Studio 2017
 

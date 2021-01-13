@@ -1,5 +1,6 @@
 ---
 title: Localizar falha de chamada ao chamar uma função muitas vezes
+description: Consulte uma técnica para definir um ponto de interrupção em uma função de modo que a interrupção ocorra apenas na chamada para a qual a função falha.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -28,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de3d186b7800efc3e807e3f775b48d91b44072b4
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 567450f11572cc998f952117c33992cdba33570d
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810478"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149294"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Durante a chamada de uma função centenas de vezes, como sei qual chamada falhou?
 ## <a name="problem-description"></a>Descrição do problema
@@ -49,6 +50,6 @@ CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)
  Agora você sabe que a função falha na 101a chamada. Se você redefinir o ponto de interrupção com uma contagem de ocorrências de 101 e executar o programa novamente, o programa de chamada parará na chamada para `CnvtV` que causou a falha.
 
 ## <a name="see-also"></a>Confira também
-- [Perguntas frequentes de depuração do código nativo](../debugger/debugging-native-code-faqs.md)
+- [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md)
 - [Configuração dos pontos de interrupção](/previous-versions/ktf38f66(v=vs.100))
 - [Depurando código nativo](../debugger/debugging-native-code.md)

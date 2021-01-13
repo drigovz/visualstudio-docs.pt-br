@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo pesquisa de thread | Microsoft Docs
+description: Saiba mais sobre a caixa de diálogo pesquisa de threads na ferramenta de depuração Spy + +. Use essa caixa de diálogo para localizar e selecionar o nó de um thread específico na exibição threads.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fddbb589a6978f72dc5926a78c9eb13f21b3a4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 895241a99131c31e2fab73b9799f6203db7259e0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901856"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148748"
 ---
 # <a name="thread-search-dialog-box"></a>Caixa de diálogo Pesquisa de Thread
 Use essa caixa de diálogo para localizar e selecionar o nó de um thread específico na [exibição threads](../debugger/threads-view.md). Para exibir essa caixa de diálogo, mova o foco para uma janela de exibição de **threads** . Em seguida, escolha **Localizar thread** no menu **Pesquisar** .

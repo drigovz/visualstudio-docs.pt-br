@@ -1,6 +1,7 @@
 ---
 title: Depurar um formulário da Web | Microsoft Docs
-ms.custom: seodec18
+description: Siga um passo a passos para ver como depurar um aplicativo Web ASP.NET (formulário da Web), incluindo como definir pontos de interrupção e examinar variáveis.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa2632e7d9b8103b5a89c49e5f44464a658fadc3
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 007a63ea16ab044292f451d8d9c427f4358e3f13
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599483"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148215"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Passo a passo: Depurando um Formulário da Web
 As etapas deste passo a passo mostram como depurar um aplicativo Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], também conhecido como um Web Form. Mostra como iniciar e interromper a execução, definir pontos de interrupção e examinar variáveis na janela **Inspeção**.
