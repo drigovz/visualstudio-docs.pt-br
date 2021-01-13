@@ -5,19 +5,19 @@ description: Uma lista com as versões lançadas e números de build do Visual S
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 12/8/2020
+ms.date: 1/12/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: ad594d41c621112fd34f83eba6b5c7a3cd53d938
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 7dee68d791880027ae1dfabfccf58954cd2d5fe1
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915486"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150529"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio
 
@@ -27,8 +27,12 @@ ms.locfileid: "96915486"
 
 A tabela a seguir lista os números de build e as datas de lançamento do Visual Studio 2019 até o momento.
 
-| **Versão**| **Channel** | **Data de lançamento** | **Versão da compilação** |
+| **Versão**| **Channel** | **Data de liberação** | **Versão da compilação** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.8.4 | Versão | 12 de janeiro de 2021 | 16.8.30907.101 |
+| 16.7.10 | Versão | 12 de janeiro de 2021 | 16.7.30816.78 |
+| 16.4.17 | Versão | 12 de janeiro de 2021 | 16.4.30816.121 |
+| 16.0.22 | Versão | 12 de janeiro de 2021 | 16.0.28803.916 |
 | 16.0.21 | Versão | 8 de dezembro de 2020 | 16.0.28803.902 |
 | 16.9.0 | Preview 2 | 8 de dezembro de 2020 | 16.9.30803.129 |
 | 16.8.3 | Versão | 8 de dezembro de 2020 | 16.8.30804.86 |
@@ -197,8 +201,9 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 
 A tabela a seguir relaciona os números de build e as datas de lançamento do Visual Studio 2017 até o momento.
 
-| **Versão**| **Channel** | **Data de lançamento** | **Versão da compilação** |
+| **Versão**| **Channel** | **Data de liberação** | **Versão da compilação** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.31 | Versão | 12 de janeiro de 2021 | 15.9.28307.1342 |
 | 15.9.30 | Versão | 8 de dezembro de 2020 | 15.9.28307.1321 |
 | 15.9.29 | Versão | 10 de novembro de 2020 | 15.9.28307.1300 |
 | 15.9.28 | Versão | 13 de outubro de 2020 | 15.9.28307.1274 |

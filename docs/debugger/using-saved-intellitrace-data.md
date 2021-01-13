@@ -1,5 +1,7 @@
 ---
 title: Usando dados do IntelliTrace salvos | Microsoft Docs
+description: Use um arquivo do IntelliTrace (. iTrace) para iniciar a depuração em um ponto específico de execução. O arquivo contém informações que o IntelliTrace registrou a partir de uma execução do seu aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb79e2f1a9ffd84f48910637deaff85329c3d91e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42f355a0a8d04e48a2b9d14d0d62edf2cd949a87
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911321"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150932"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Usando dados do IntelliTrace salvos (C#, Visual Basic, C++)
 
@@ -36,7 +38,7 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 
     |**Origem**|**Esse**|
     |----------------|-------------|
-    |Uma sessão do IntelliTrace no Visual Studio Enterprise (mas não em edições Professional ou Community)|[funcionalidades do IntelliTrace](../debugger/intellitrace-features.md)|
+    |Uma sessão do IntelliTrace no Visual Studio Enterprise (mas não em edições Professional ou Community)|[Recursos do IntelliTrace](../debugger/intellitrace-features.md)|
     |Microsoft Monitoring Agent, sozinho ou com o System Center 2012 R2 Operations Manager, para aplicativos Web do ASP.NET e aplicativos do SharePoint em execução na implantação|-   [Diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md)<br />-   [Novidades do System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ## <a name="what-do-you-want-to-do"></a><a name="GetStarted"></a> O que você deseja fazer?
@@ -191,7 +193,7 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
     |**ID da categoria**|**ID da categoria**|
     |**Categoria**|**Categoria**|
     |**Área**|**Product**|
-    |**Saída**|**Mensagem**|
+    |**Saída**|**Message**|
     |**ID de Correlação**|**ID de Correlação**|
 
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>Iniciar depuração a partir de uma exceção sem tratamento
@@ -257,7 +259,7 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 ### <a name="where-can-i-get-more-information"></a>Onde posso obter mais informações?
  [Usar o coletor autônomo do IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)
 
- [funcionalidades do IntelliTrace](../debugger/intellitrace-features.md)
+ [Recursos do IntelliTrace](../debugger/intellitrace-features.md)
 
  [Coletar mais dados de diagnóstico em testes manuais](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 

@@ -1,5 +1,7 @@
 ---
 title: Modo de Exibição de Chamador/Receptor - Dados de Contenção | Microsoft Docs
+description: Saiba mais sobre como o modo de exibição chamador/receptor exibe informações de contenção para uma função selecionada e suas funções pai e filho no Gerenciador de Desempenho.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 083386a808f7b91a18b3ea685ae657118c723978
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b51504d029c1e723321c8c92df28a2ecad1fd1a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779734"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150906"
 ---
 # <a name="callercallee-view----contention-data"></a>Exibição do Chamador/Receptor– dados de contenção
 Modo de exibição Chamador/Receptor exibe informações de contenção para uma função selecionada e suas funções pai e filho. A exibição de Chamador/Computador Chamado contém três grades.

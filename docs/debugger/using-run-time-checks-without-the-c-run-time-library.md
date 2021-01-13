@@ -1,5 +1,7 @@
 ---
-title: Usando verificações de tempo de execução sem a biblioteca de tempo de execução do C | Microsoft Docs
+title: Usando verificações de Run-Time sem a biblioteca C Run-Time | Microsoft Docs
+description: Você pode vincular seu programa sem a biblioteca de tempo de execução do C usando/NODEFAULTLIB. Se você fizer isso e quiser usar verificações de tempo de execução, deverá vincular com RunTmChk. lib.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,15 +25,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 029aafa634ba0e6837cdc7d4304d0419420dd912
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfa83533b1ae929bf443dd6c3eb7f7dc3e7db165
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72728658"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150854"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Usando verificações de tempo de execução sem a biblioteca em tempo de execução do C
-Se você vincular seu programa sem a biblioteca de tempo de execução C, usando **/NODEFAULTLIB**e quiser usar verificações de tempo de execução, será necessário vincular com RunTmChk. lib.
+Se você vincular seu programa sem a biblioteca de tempo de execução C, usando **/NODEFAULTLIB** e quiser usar verificações de tempo de execução, será necessário vincular com RunTmChk. lib.
 
 `_RTC_Initialize` Inicializa o programa para verificações de tempo de execução. Se você não se vincular à biblioteca em tempo de execução C, deverá verificar se o programa é compilado com verificações de erro em tempo de execução antes de chamar o `_RTC_Initialize`, do seguinte modo:
 
@@ -64,4 +66,4 @@ extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(
 Depois de instalar a função padrão de relatório de erros, você poderá instalar funções adicionais de relatório de erros com `_RTC_SetErrorFuncW`. Para obter mais informações, confira [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw).
 
 ## <a name="see-also"></a>Confira também
-[Como: usar verificações nativas em tempo de execução](../debugger/how-to-use-native-run-time-checks.md)
+[Como: usar verificações de Run-Time nativas](../debugger/how-to-use-native-run-time-checks.md)

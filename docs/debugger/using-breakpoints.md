@@ -1,6 +1,7 @@
 ---
 title: Usar pontos de interrupção no depurador | Microsoft Docs
-ms.custom: ''
+description: Saiba mais sobre pontos de interrupção, uma das técnicas de depuração mais importantes. O artigo aborda as ações de ponto de interrupção, tracepoints, condições e muito mais.
+ms.custom: SEO-VS-2020
 ms.date: 06/30/2020
 ms.topic: how-to
 f1_keywords:
@@ -34,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52c95749d5d7e2909fbff6da0a3a45bc36cd73c6
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: c8487482b1d87ba87dfc3a8b1e07be1360227a2f
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729321"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150438"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usar pontos de interrupção no depurador do Visual Studio
 
@@ -317,7 +318,7 @@ Para rastrear visualmente pontos de interrupção durante a execução do códig
 
 2. Na janela **desmontagem** , clique na margem esquerda da instrução que você deseja interromper. Você também pode selecioná-lo e pressionar **F9**, ou clicar com o botão direito do mouse **e selecionar ponto** de interrupção de inserção de pontos de interrupção  >  .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [O que é depuração?](../debugger/what-is-debugging.md)
 - [Escreva um código C# melhor usando o Visual Studio](../debugger/write-better-code-with-visual-studio.md)

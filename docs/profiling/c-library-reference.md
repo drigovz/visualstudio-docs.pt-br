@@ -1,5 +1,7 @@
 ---
 title: Referência da Biblioteca C | Microsoft Docs
+description: Leia uma introdução às informações de referência da biblioteca C do SDK do Visualizador de simultaneidade no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9271cce475959e79004fba384d72228f569ad2c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21bc1af4ff62fb9c0b8054898bf724616bbf2921
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331978"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150425"
 ---
 # <a name="c-library-reference"></a>Referência de biblioteca C
 Esta seção contém informações de referência para o SDK da Visualização Simultânea.

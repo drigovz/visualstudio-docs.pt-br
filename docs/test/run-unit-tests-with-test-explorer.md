@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bb738e0e12598fd31c51c6b3cf2fa684badae40
-ms.sourcegitcommit: fdc21fc21d4a05d9ad8627b06aab7f072bfeb0a6
+ms.openlocfilehash: c992a1a4fca536f219a69b9ab629f6f602b4dfb0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98113588"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150503"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -377,6 +377,7 @@ Os testes podem ser executados no Gerenciador de testes clicando com o botão di
 > [!NOTE]
 > Não é possível executar um teste em uma classe abstrata, porque os testes são apenas definidos nas classes abstratas e não instanciados. Para executar testes em classes abstratas, crie uma classe que deriva da classe abstrata.
 
+::: moniker range=">=vs-2019"
 ## <a name="test-audio-cue"></a>Dica de áudio de teste
 O Gerenciador de testes pode tocar um som quando a execução de teste é concluída. Há dois sons: um som para indicar que a execução de teste foi bem-sucedida com todos os testes de passagem e um segundo som para indicar a execução de teste concluída com pelo menos um teste com falha. Você pode configurar esses sons na caixa de diálogo de som padrão do Windows 10. Esse recurso está disponível a partir do Visual Studio 2019 atualização 16,9 Preview 3.
 
@@ -385,6 +386,7 @@ O Gerenciador de testes pode tocar um som quando a execução de teste é conclu
 3. Localize a categoria de **Microsoft Visual Studio** . Escolha a **execução de teste com êxito** ou sons de **execução de teste com falha** para selecionar os sons predefinidos ou navegue até seu próprio arquivo de áudio.  
 ![Caixa de diálogo som do Windows 10](../test/media/default-windows-10-sound-dialog.png)
 
+::: moniker-end
 ## <a name="see-also"></a>Confira também
 
 - [Teste de unidade em seu código](../test/unit-test-your-code.md)

@@ -1,7 +1,8 @@
 ---
 title: Exibir DLLs e executáveis
+description: Exiba DLLs e executáveis (arquivos. exe) que seu aplicativo usa na janela módulos durante uma sessão de depuração no Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 titleSuffix: Visual Studio Modules window
-ms.custom: seodec18
 ms.date: 11/04/2018
 ms.topic: how-to
 f1_keywords:
@@ -25,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa284a44f75503a2890a15981d2b4f9947be2fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0471aa25b14111271e6f9219e8e849eed49f113f
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348672"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150555"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Exibir DLLs e executáveis na janela módulos (C#, C++, Visual Basic, F #)
 
@@ -41,13 +42,13 @@ Durante a depuração do Visual Studio, a janela **módulos** lista e mostra inf
 
 ## <a name="use-the-modules-window"></a>Usar a janela Módulos
 
-Para abrir a janela módulos, enquanto estiver Depurando, selecione **depurar**  >  **Windows**  >  **módulos** do Windows (ou pressione **Ctrl + Alt + U**).
+Para abrir a janela módulos, enquanto estiver Depurando, selecione **depurar**  >    >  **módulos** do Windows (ou pressione **Ctrl + Alt + U**).
 
 Por padrão, a janela **Módulos** classifica os módulos pela ordem de carregamento. Para classificar por qualquer coluna de janela, selecione o cabeçalho na parte superior da coluna.
 
 ## <a name="load-symbols"></a>Carregar símbolos
 
-A coluna **status do símbolo** na janela **módulos** mostra quais módulos têm símbolos de depuração carregados. Se o status for **ignorado ao carregar símbolos**, **não for possível localizar ou abrir o arquivo PDB**ou **carregar desabilitado pela configuração incluir/excluir**, você poderá carregar os símbolos manualmente. Para obter mais informações sobre como carregar e usar símbolos, consulte [especificar símbolo (. pdb) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+A coluna **status do símbolo** na janela **módulos** mostra quais módulos têm símbolos de depuração carregados. Se o status for **ignorado ao carregar símbolos**, **não for possível localizar ou abrir o arquivo PDB** ou **carregar desabilitado pela configuração incluir/excluir**, você poderá carregar os símbolos manualmente. Para obter mais informações sobre como carregar e usar símbolos, consulte [especificar símbolo (. pdb) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 **Para carregar os símbolos manualmente:**
 
@@ -67,7 +68,7 @@ A coluna **status do símbolo** na janela **módulos** mostra quais módulos tê
 
 1. Selecione **configurações de símbolo**.
 
-1. Selecione **carregar todos os símbolos**ou selecione os módulos a serem incluídos ou excluídos.
+1. Selecione **carregar todos os símbolos** ou selecione os módulos a serem incluídos ou excluídos.
 
 1. Selecione **OK**. As alterações entrarão em vigor na próxima sessão de depuração.
 

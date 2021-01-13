@@ -1,5 +1,7 @@
 ---
 title: Exibir tipo personalizado usando o DebuggerTypeProxy | Microsoft Docs
+description: Use uma instância de DebuggerTypeProxyAttribute para especificar um proxy (de reserva) para um tipo, para alterar a forma como o tipo é exibido nas janelas do depurador.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b98481cb1727ecad9289f63136291d500c0d577e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94551605581890692f8a1366fa2235811ccdc5f2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85347957"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150373"
 ---
 # <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Diga ao depurador o tipo a ser mostrado usando o atributo DebuggerTypeProxy (C#, Visual Basic, C++/CLI)
 

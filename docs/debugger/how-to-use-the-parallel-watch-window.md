@@ -1,5 +1,7 @@
 ---
 title: Definir uma inspeção em variáveis em threads paralelos | Microsoft Docs
+description: Defina uma inspeção em variáveis em threads paralelos no Visual Studio. Exiba simultaneamente os valores que uma expressão mantém em vários threads.
+ms.custom: SEO-VS-2020
 ms.date: 04/25/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fb0d5ac60ea5ab89b02a624488b5df4f8a7164b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28aeffb629a44c296fb9a349e165c7ce88f70b0c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348620"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150568"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Definir uma inspeção em variáveis em threads paralelos no Visual Studio (C#, Visual Basic, C++)
 Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que uma expressão mantém em vários threads. Cada linha representa um thread que está sendo executado em um aplicativo, mas um thread pode ser representado em várias linhas. Mais especificamente, cada linha representa uma chamada de função cuja assinatura de função corresponde à função no registro de ativação atual. Você pode classificar, reorganizar, remover e agrupar os itens que estão nas colunas. Você pode sinalizar, remover sinalização, congelar (suspender) e descongelar (retomar) threads. As colunas a seguir são exibidas na janela **Inspeção Paralela**:
@@ -85,6 +87,6 @@ Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que 
 - Insira uma expressão booliana na caixa **Filtrar por Expressão Booliana**. O depurador avalia a expressão para cada contexto de thread. Apenas as linhas nas quais o valor é `true` é exibido.
 
 ## <a name="see-also"></a>Confira também
-- [Depurar aplicativos multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Depurar aplicativos multissegmentados](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Como: usar a janela threads GPU](../debugger/how-to-use-the-gpu-threads-window.md)
 - [Walkthrough: Depurando um aplicativo C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

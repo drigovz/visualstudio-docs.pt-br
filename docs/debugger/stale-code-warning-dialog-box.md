@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo de aviso de código obsoleto | Microsoft Docs
+description: Leia sobre a caixa de diálogo aviso de código obsoleto, que aparece quando você fez alterações no código nativo que o editar e continuar não podiam aplicar imediatamente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dba38e5b5d9f7a2be710cad58d6f2297dd03a412
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5bb2666b3b57c8f84c81e181355f096674543445
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72729542"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150321"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Caixa de diálogo Aviso de Código Obsoleto
 
@@ -37,5 +39,5 @@ Se você marcar essa caixa de seleção, Editar e Continuar aplicará as altera�
 
 ## <a name="see-also"></a>Confira também
 
-- [Alterações de código com suporte (C++)](supported-code-changes-cpp.md)
+- [Alterações de código suportadas (C++)](supported-code-changes-cpp.md)
 - [Caixa de diálogo Editar e Continuar, Depuração, Opções](edit-and-continue.md)

@@ -1,5 +1,7 @@
 ---
 title: Não é possível anexar ao processo | Microsoft Docs
+description: Aprenda o significado de "não é possível anexar ao processo", os dois cenários que causam isso e as soluções.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22d798d30d09cb509f53d093ae61bb1a02b414ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7a90d2e08d16ddfb7ac22baafe58cf76b4895d3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72728882"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150841"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Não é possível anexar ao processo
 Não é possível anexar ao processo. O componente do depurador no servidor recebeu acesso negado ao se conectar a esse computador.
@@ -60,4 +62,4 @@ Não é possível anexar ao processo. O componente do depurador no servidor rece
 7. Feche todas as janelas.
 
 ## <a name="see-also"></a>Confira também
-- [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)
+- [Configurações e preparação do depurador](../debugger/debugger-settings-and-preparation.md)

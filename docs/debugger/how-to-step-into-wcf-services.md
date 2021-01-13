@@ -1,5 +1,7 @@
 ---
 title: Entrar nos serviços WCF | Microsoft Docs
+description: Entrar em um serviço de Windows Communication Foundation (WCF). Se estiver na mesma solução do Visual Studio que o cliente, clique em pontos de interrupção dentro do serviço WCF.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ca1e4d2b7e0349ea5a41c6fc66726226ecab4f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 428f5576b595797605abff2ebc5f4669e2927389
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851886"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150724"
 ---
 # <a name="how-to-step-into-wcf-services"></a>Como intervir em serviços WCF
 No [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], você pode entrar em um serviço WCF. Se o serviço WCF estiver na mesma solução do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que o cliente, você poderá usar pontos de interrupção no serviço WCF.
@@ -42,5 +44,5 @@ No [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], você 
 
 ## <a name="see-also"></a>Confira também
 - [Depurando serviços WCF](../debugger/debugging-wcf-services.md)
-- [Limitações da depuração WCF](../debugger/limitations-on-wcf-debugging.md)
-- [Como depurar um serviço WCF auto-hospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+- [Limitações na depuração do WCF](../debugger/limitations-on-wcf-debugging.md)
+- [Como depurar um serviço WCF Self-Hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

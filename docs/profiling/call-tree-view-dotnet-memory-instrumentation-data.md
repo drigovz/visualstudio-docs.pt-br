@@ -1,5 +1,7 @@
 ---
 title: Modo de exibição de árvore de chamadas – Dados de instrumentação da memória do .NET | Microsoft Docs
+description: Leia sobre a exibição de árvore de chamadas de dados de instrumentação de alocação de memória do .NET no Gerenciador de Desempenho.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2066959578987e358f8c1c91dcbda1eeb6f79f26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe6a56101e7fc00d69ed21240fe5a79b298174f2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773591"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150815"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Modo de exibição de árvore de chamadas – dados de instrumentação de memória do .NET
 O modo de exibição de árvore de chamada dos dados de criação de perfil de alocação de memória .NET que foram coletados usando o método de instrumentação exibe os caminhos de execução de função que foram percorridos no aplicativo com perfil. A raiz da árvore é o ponto de entrada do aplicativo ou componente. Cada nó de função lista todas as funções que ele chamou e os dados de memória e timing do .NET da função.

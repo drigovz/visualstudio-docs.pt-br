@@ -1,5 +1,7 @@
 ---
 title: Exibição de chamador/computador chamado – Dados de amostragem de memória do .NET | Microsoft Docs
+description: Saiba mais sobre como o modo de exibição chamador/receptor exibe dados de amostragem de memória .NET para uma função selecionada e suas funções pai e filho no Gerenciador de Desempenho.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50e278e858ea086c83b29ef4eebf6b48ee8e477e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5f0e3613dc9b122a6fac915f4683d9f7b859ee3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773303"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150893"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Exibição do Chamador/Receptor – dados de amostragem da memória do .NET
 A exibição de Chamador/Computador Chamado exibe dados de criação de perfil de memória do .NET para uma função selecionada e suas funções pai e filho. A exibição de Chamador/Computador Chamado contém três grades.

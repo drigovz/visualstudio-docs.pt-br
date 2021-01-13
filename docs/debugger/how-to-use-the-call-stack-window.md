@@ -1,6 +1,7 @@
 ---
 title: Exibir a pilha de chamadas no depurador | Microsoft Docs
-ms.custom: seodec18
+description: Use a janela pilha de chamadas para exibir as chamadas de função ou de procedimento que estão atualmente na pilha no Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/29/2018
 ms.topic: how-to
 f1_keywords:
@@ -29,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa91807459ea5c2d8f576891d0eafc35336347bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 206c79a47ec59e02206332d80d1afe935fb72bdc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348737"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150620"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Exibir a pilha de chamadas e usar a janela pilha de chamadas no depurador
 
@@ -56,7 +57,7 @@ Quando os [símbolos de depuração](#bkmk_symbols) não estão disponíveis par
 
   ![Janela Pilha de Chamadas](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
-Uma seta amarela identifica o quadro de pilha onde o ponteiro de execução está localizado atualmente. Por padrão, as informações do quadro de pilhas são exibidas nas janelas origem, **locais**, **automáticos**, **inspecionar**e **desmontagem** . Para alterar o contexto do depurador para outro quadro na pilha, [alterne para outro quadro de pilhas](#bkmk_switch).
+Uma seta amarela identifica o quadro de pilha onde o ponteiro de execução está localizado atualmente. Por padrão, as informações do quadro de pilhas são exibidas nas janelas origem, **locais**, **automáticos**, **inspecionar** e **desmontagem** . Para alterar o contexto do depurador para outro quadro na pilha, [alterne para outro quadro de pilhas](#bkmk_switch).
 
 ## <a name="display-non-user-code-in-the-call-stack-window"></a>Exibir código que não seja de usuário na janela pilha de chamadas
 
@@ -108,7 +109,7 @@ Em Visual Studio Enterprise (somente), você pode exibir mapas de código para a
 
 ## <a name="change-the-optional-information-displayed"></a>Alterar as informações opcionais exibidas
 
-- Clique com o botão direito do mouse na janela **pilha de chamadas** e defina ou desmarque **Mostrar \<**_the information that you want_**> **.
+- Clique com o botão direito do mouse na janela **pilha de chamadas** e defina ou desmarque **Mostrar \<**_the information that you want_**>**.
 
 ## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a> Carregar símbolos para um módulo (C#, C++, Visual Basic, F #)
 
@@ -143,4 +144,4 @@ Consulte [especificar símbolo (. pdb) e arquivos de origem](../debugger/specify
 - [Código misto e informações ausentes na janela pilha de chamadas](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
 - [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)
 - [Especificar o símbolo (. pdb) e os arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-- [Usando pontos de interrupção](../debugger/using-breakpoints.md)
+- [Usar pontos de interrupção](../debugger/using-breakpoints.md)

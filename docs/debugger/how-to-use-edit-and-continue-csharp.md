@@ -1,5 +1,7 @@
 ---
 title: Usar editar e continuar (C#) | Microsoft Docs
+description: Use editar e continuar para fazer e aplicar alterações ao seu código no modo de interrupção durante a depuração, sem interromper e reiniciar a sessão de depuração no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -15,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18d11f552d486fd9ebd7a95323e327324de14108
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a0f8126689c0874c984a679da9b6debcb66a3075
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851847"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150646"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Como usar Editar e Continuar (C#)
 Com editar e continuar, você pode fazer e aplicar alterações ao seu código no modo de interrupção durante a depuração, sem precisar parar e reiniciar a sessão de depuração.
 
-Editar e continuar para C# ocorre automaticamente quando você faz alterações de código no modo de interrupção, depois continua a depuração usando **continue**, **Step**ou **Set Next Statement**ou avalia uma função em uma janela do depurador.
+Editar e continuar para C# ocorre automaticamente quando você faz alterações de código no modo de interrupção, depois continua a depuração usando **continue**, **Step** ou **Set Next Statement** ou avalia uma função em uma janela do depurador.
 
 Para obter mais informações, consulte [Editar e continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md).
 
@@ -36,7 +38,7 @@ Para obter mais informações, consulte [Editar e continuar (Visual C#)](../debu
 
 1. Se você estiver em uma sessão de depuração, pare a depuração (**depurar**  >  **parar depuração** ou **Shift** + **F5**).
 
-1. Em **ferramentas**  >  **Opções** (ou **Debug**  >  **Opções**de depuração) > **depuração**  >  **geral**, marque ou desmarque a caixa de seleção **habilitar editar e continuar** .
+1. Em **ferramentas**  >  **Opções** (ou   >  **Opções** de depuração) > **depuração**  >  **geral**, marque ou desmarque a caixa de seleção **habilitar editar e continuar** .
 
 A configuração entra em vigor quando você inicia ou reinicia a sessão de depuração.
 

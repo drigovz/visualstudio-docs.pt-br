@@ -1,6 +1,7 @@
 ---
 title: Exibir o código de desmontagem no depurador | Microsoft Docs
-ms.custom: seodec18
+description: Use a janela de desmontagem no Visual Studio para mostrar o código do assembly correspondente às instruções criadas pelo compilador.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/30/2018
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23f297aa3fc549714a9b6327232a8a0b69c6138f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 733eb439808d6cab2d290615751cf44ccd711022
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808162"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150607"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Exibir o código de desmontagem no depurador do Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -60,7 +61,7 @@ Para exibir as instruções de código do computador em sua forma numérica brut
 
 Para habilitar a janela de **desmontagem** , em **ferramentas**  >  **Opções**  >  **depuração**, selecione **Habilitar depuração no nível de endereço**.
 
-Para abrir a janela de **desmontagem** durante a depuração **Windows**, selecione  >  **desmontagem** do Windows ou pressione **ALT** + **8**.
+Para abrir a janela de **desmontagem** durante a depuração , selecione  >  **desmontagem** do Windows ou pressione **ALT** + **8**.
 
 > [!NOTE]
 > As caixas de diálogo e os comandos de menu encontrados podem diferir daqueles descritos na Ajuda, dependendo das configurações ativas ou edição. Para alterar suas configurações, selecione **Importar e Exportar Configurações** no menu **Ferramentas** . Para obter mais informações, confira [Redefinir as configurações](../ide/environment-settings.md#reset-settings).

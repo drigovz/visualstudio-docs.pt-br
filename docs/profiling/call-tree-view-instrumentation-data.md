@@ -1,5 +1,7 @@
 ---
 title: Modo de exibição de árvore de chamadas – Dados de instrumentação | Microsoft Docs
+description: Saiba mais sobre como o modo de exibição de árvore de chamada exibe informações de instrumentação na árvore de chamada em Gerenciador de Desempenho.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7497f455ad3868f53758555aa28d305b6068e30d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c846910da4dec636c073446ae63cffb7cb2a682
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773505"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150789"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Modo de exibição de árvore de chamadas – dados de instrumentação
 Os valores para uma função na árvore de chamadas indicam a hora para as instâncias de função chamadas pela função pai na árvore de chamadas. Valores de percentual são calculados comparando o valor das instâncias de função com o tempo inclusivo decorrido total de todas as funções na execução de criação de perfil.

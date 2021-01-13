@@ -1,5 +1,7 @@
 ---
 title: Exibindo threads de GPU no depurador | Microsoft Docs
+description: Use a janela threads GPU para examinar e trabalhar com threads em execução na GPU no aplicativo que você está depurando no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbbb49a1017fb0bc65300f3c16050db4954e1103
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5919ac657d828e87e48b8cfb3f4f643e1187f701
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348711"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150581"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Como: usar a janela threads GPU (C++)
 Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão sendo executadas no GPU no aplicativo que você está depurando. Para obter mais informações sobre aplicativos executados na GPU, consulte [C++ amp Visão geral](/cpp/parallel/amp/cpp-amp-overview).
@@ -103,6 +105,6 @@ Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão
 - Escolha o botão de sinalizador na janela Threads da GPU.
 
 ## <a name="see-also"></a>Confira também
-- [Depurar aplicativos multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Depurar aplicativos multissegmentados](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Como: usar a janela de inspeção paralela](../debugger/how-to-use-the-parallel-watch-window.md)
 - [Walkthrough: Depurando um aplicativo C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

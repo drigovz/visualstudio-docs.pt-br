@@ -1,5 +1,7 @@
 ---
 title: Iniciar e parar a exibição do log de mensagem | Microsoft Docs
+description: Entenda como iniciar e parar a exibição do log de mensagens durante a depuração com a ferramenta Spy + + e o Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9676d123828e0659480c532eeb48acf3012ccd4
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ec53c87314b5ba8ebb6f88496189e0ec8c2d4b04
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851912"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150735"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Como iniciar e parar a exibição do log de mensagem
 Quando uma janela de [exibição de mensagens](../debugger/messages-view.md) está ativa, uma opção **Iniciar registro** em log ou **parar registro em log** aparece no menu **mensagens** do Spy + + e o botão de barra de ferramentas **Iniciar registro** em log ou **parar registro** em log se torna ativo.

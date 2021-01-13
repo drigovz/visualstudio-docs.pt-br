@@ -1,5 +1,7 @@
 ---
 title: Especificar configurações do depurador | Microsoft Docs
+description: Especifique várias configurações para o comportamento do depurador no Visual Studio, como exibir variáveis, quais avisos são apresentados e como definir pontos de interrupção.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b831ae0329adc218ba76fc27206e1f47d0ac8f9c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a5034fe887ba221106055a928e67e11076167286
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851938"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150763"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Como especificar configurações do depurador
 No [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode especificar várias configurações para o comportamento de depurador, inclusive como as variáveis são exibidas, se determinados avisos são apresentados, como os pontos de interrupção são definidos e como a interrupção afeta os programas em execução. Você especifica as configurações do depurador na caixa de diálogo **Opções**.
@@ -42,7 +44,7 @@ No [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode especif
 4. Selecionar ou limpar a opção ou as opções desejadas. Pressione F1 para obter ajuda sobre as opções.
 
 ## <a name="see-also"></a>Confira também
-- [Caixa de diálogo Geral, Depuração, Opções](../debugger/general-debugging-options-dialog-box.md)
+- [Caixa de diálogo geral, depuração, opções](../debugger/general-debugging-options-dialog-box.md)
 - [Caixa de diálogo Editar e Continuar, Depuração, Opções](./edit-and-continue.md)
-- [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)
+- [Configurações e preparação do depurador](../debugger/debugger-settings-and-preparation.md)
 - [Macros comuns para comandos e propriedades de compilação](/cpp/build/reference/common-macros-for-build-commands-and-properties)

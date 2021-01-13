@@ -1,5 +1,7 @@
 ---
 title: Alterações de código com suporte (C++) | Microsoft Docs
+description: Entenda quais alterações de código têm suporte quando você está usando o recurso Editar e continuar durante a depuração de um projeto C++ no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/18/2020
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af6c0d88dd230bee768641905e200f1f47749d77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d693753cbcc9844ff602ab4d20e90fdc6de7dae5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77629580"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150490"
 ---
 # <a name="supported-code-changes-c"></a>Alterações de código suportadas (C++)
 Editar e continuar para projetos C++ lida com a maioria dos tipos de alterações de código. Porém, algumas alterações não podem ser aplicadas durante a execução do programa. Para aplicar essas alterações sem suporte, você deverá parar a execução e criar uma versão atualizada do código.
@@ -116,10 +118,10 @@ Editar e continuar para projetos C++ lida com a maioria dos tipos de alteraçõe
 ### <a name="linker-options-that-disable-edit-and-continue"></a><a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Opções de vinculador que desabilitam Editar e Continuar
  As opções de vinculador a seguir desabilitam Editar e Continuar:
 
-- Setting **/OPT: REF**, **/OPT: ICF**ou **/incremental: não** desabilita Edit and Continue com o seguinte aviso:  
+- Setting **/OPT: REF**, **/OPT: ICF** ou **/incremental: não** desabilita Edit and Continue com o seguinte aviso:  
      `LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /OPT specification`
 
-- Definir **/Order**, **/Release**ou **/Force** desabilita editar e continuar com o seguinte aviso:  
+- Definir **/Order**, **/Release** ou **/Force** desabilita editar e continuar com o seguinte aviso:  
      `LINK : warning LNK4075: ignoring /INCREMENTAL due to /option specification`
 
 - Definir qualquer opção que evite a criação de um arquivo de banco de dados do programa (.pdb) desabilita Editar e Continuar sem aviso específico.
@@ -161,7 +163,7 @@ Editar e continuar para projetos C++ lida com a maioria dos tipos de alteraçõe
  2. Execute o comando a seguir:  
      `VsRegEdit.exe set “C:\Program Files (x86)\Microsoft Visual Studio\[Version]\[YOUR EDITION]” HKCU Debugger NativeEncDiagnosticLoggingLevel DWORD 1`
 
- Definir esse valor no início de uma sessão de depuração faz com que os vários componentes do Edit e continuem a Spew log **Output Window**detalhado no painel de  >  **depuração** janela de saída.
+ Definir esse valor no início de uma sessão de depuração faz com que os vários componentes do Edit e continuem a Spew log detalhado no painel de  >  **depuração** janela de saída.
 
 ## <a name="see-also"></a>Confira também
 - [Editar e continuar (C++)](../debugger/edit-and-continue-visual-cpp.md)

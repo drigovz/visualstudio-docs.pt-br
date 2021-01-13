@@ -1,6 +1,7 @@
 ---
 title: Alternar para outro thread durante a depuração
-ms.custom: seodec18
+description: Examine diferentes métodos para alternar para outro thread durante a depuração de um aplicativo multithread no Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 04/27/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9306e68c7d8906c6956eb5e3810327898bc56567
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8df37beafe7a6c8f88631568ea9eb36394c105a5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348906"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150711"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>Como alternar para outro thread durante a depuração no Visual Studio (C#, Visual Basic, C++)
 Ao depurar um aplicativo multithread, você pode usar qualquer um dos vários métodos para alternar do thread com o qual você está trabalhando para outro thread.
@@ -37,7 +38,7 @@ Quando você examina threads no editor de código e as diferentes janelas de dep
 
 ### <a name="to-switch-to-a-thread-in-a-source-window"></a>Para alternar para um thread em uma janela de origem
 
-- Na medianiz à esquerda, clique com o botão direito do mouse em um marcador de thread ícone de marcador de ![thread](../debugger/media/dbg-thread-marker.png "ThreadMarker"), aponte para **alternar para**e, em seguida, clique no nome do thread para o qual você deseja alternar. O menu de atalho mostra apenas os threads nesse local específico.
+- Na medianiz à esquerda, clique com o botão direito do mouse em um marcador de thread ícone de marcador de ![thread](../debugger/media/dbg-thread-marker.png "ThreadMarker"), aponte para **alternar para** e, em seguida, clique no nome do thread para o qual você deseja alternar. O menu de atalho mostra apenas os threads nesse local específico.
 
      Se nenhum marcador de thread aparecer, clique com o botão direito do mouse na janela **threads** e verifique se **Mostrar threads na origem** está selecionado.
 
@@ -48,4 +49,4 @@ Quando você examina threads no editor de código e as diferentes janelas de dep
 2. Na lista, clique no thread para o qual você deseja alternar.
 
 ## <a name="see-also"></a>Confira também
-- [Depurar aplicativos multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Depurar aplicativos multissegmentados](../debugger/debug-multithreaded-applications-in-visual-studio.md)

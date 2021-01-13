@@ -1,5 +1,7 @@
 ---
 title: Não é possível definir o ponto de interrupção de dados | Microsoft Docs
+description: Encontre explicações, soluções e soluções alternativas para "não é possível definir erros de ponto de interrupção de dados" que ocorrem ao usar "interromper quando o valor for alterado".
+ms.custom: SEO-VS-2020
 ms.date: 12/3/2019
 ms.topic: error-reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cded3bfdb6adc206f02ef54402964f4e7276f93
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 4e90c3d4af8e568f1bb2e6987c66c7fbc0856c57
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668775"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150451"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Solucionando problemas de erros de ponto de interrupção de dados
 Esta página orientará você na resolução de erros comuns vistos ao usar "interromper quando o valor for alterado"
@@ -83,7 +85,7 @@ A arquitetura (configuração de plataforma) em que seu programa é executado te
 
 Para quaisquer problemas ou sugestões sobre esse recurso, informe-nos por meio da ajuda > enviar comentários > [relatar um problema](../ide/how-to-report-a-problem-with-visual-studio.md) no IDE ou na [comunidade de desenvolvedores](https://aka.ms/feedback/suggest?space=8).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Usando "interromper quando o valor for alterado" no .NET Core 3,0](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus).
 - [DevBlog: quebra quando o valor é alterado: pontos de interrupção de dados para .NET Core no Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/break-when-value-changes-data-breakpoints-for-net-core-in-visual-studio-2019/)

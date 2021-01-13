@@ -1,5 +1,7 @@
 ---
 title: Não foi possível se conectar ao Monitor de Depuração Remota do Microsoft Visual Studio
+description: Saiba o significado de "não é possível se conectar ao Microsoft Visual Studio Monitor de Depuração Remota", as possíveis causas e as soluções.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 04/14/2020
 ms.topic: reference
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1863caeaa3d3b0457d89913186337fa74ad5d8de
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: dc34a5f58f8bc3c47526cc8ba8516311e94f0631
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852238"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150828"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Não foi possível se conectar ao Monitor de Depuração Remota do Microsoft Visual Studio
 Essa mensagem pode ocorrer porque o monitor de depuração remota não está configurado corretamente no computador remoto ou o computador remoto está inacessível devido a problemas de rede ou à presença de um firewall.
@@ -153,7 +155,7 @@ Você pode resolver isso de uma das seguintes maneiras:
     > [!NOTE]
     > Se você estiver executando o depurador remoto em um servidor remoto, clique com o botão direito do mouse no aplicativo do depurador remoto e escolha **Executar como administrador** (ou, você pode executar o depurador remoto como um serviço). Se você não o estiver executando em um servidor remoto, basta iniciá-lo normalmente.
 
-- Você pode iniciar o depurador remoto a partir da linha de comando com o parâmetro **/Allow \<username> ** : `msvsmon /allow <username@computer>` .
+- Você pode iniciar o depurador remoto a partir da linha de comando com o parâmetro **/Allow \<username>** : `msvsmon /allow <username@computer>` .
 
 - Como alternativa, você pode permitir que qualquer usuário faça a depuração remota. Na janela depurador remoto, vá para a caixa de diálogo **ferramentas > opções** . Quando você   **não seleciona nenhuma autenticação**, pode então verificar **permitir que qualquer usuário depure**. No entanto, você deve tentar esta opção somente se as outras opções falharem ou se você estiver em uma rede privada.
 

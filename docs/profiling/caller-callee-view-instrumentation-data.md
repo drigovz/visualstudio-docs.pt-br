@@ -1,5 +1,7 @@
 ---
 title: Exibição de chamador/computador chamado – Dados de instrumentação | Microsoft Docs
+description: Saiba mais sobre como o modo de exibição chamador/receptor exibe informações de instrumentação na árvore de chamadas em Gerenciador de Desempenho.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 551c183dd9c368b1af16c1fe52b36762f4e71504
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cd9f65fbce6f0326fab89acfef601652c9bc7b9
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773290"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150880"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Exibição do Chamador/Receptor – dados de instrumentação
 A exibição de Chamador/Computador Chamado exibe informações de criação de perfil sobre uma função selecionada e suas funções pai e filho na árvore de chamadas. A exibição de Chamador/Computador Chamado contém três grades.

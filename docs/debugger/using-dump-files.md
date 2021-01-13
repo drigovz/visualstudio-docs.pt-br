@@ -1,6 +1,7 @@
 ---
 title: Usar arquivos de despejo no depurador | Microsoft Docs
-ms.custom: seodec18
+description: Um arquivo de despejo é um instantâneo de um aplicativo em execução e de módulos carregados. Considere a criação de um arquivo de despejo para situações em que você não tenha acesso de depuração ao aplicativo.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/05/2018
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbfd8ac877fce4b1808a76e3bb2a66ac595693de
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 8bcd225bb64096d8a8e58e3cffd15e7bc94bf5cc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970617"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150867"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Arquivos de despejo no depurador do Visual Studio
 
@@ -113,7 +114,7 @@ O Visual Studio pesquisa automaticamente esses locais para arquivos *. exe* que 
 
 Se o Visual Studio não conseguir localizar os arquivos necessários para depurar um módulo no despejo, ele mostrará um **binário não encontrado**, **nenhum símbolo encontrado** ou **nenhuma página de origem encontrada** . Essas páginas fornecem informações detalhadas sobre a causa do problema e fornecem links de ação que podem ajudá-lo a localizar os arquivos. Consulte [especificar símbolo (. pdb) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Depuração Just-in-time](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [Especificar o símbolo (. pdb) e os arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

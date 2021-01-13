@@ -1,6 +1,7 @@
 ---
 title: Iniciar uma sessão de depuração para um aplicativo UWP | Microsoft Docs
-ms.custom: seodec18
+description: Inicie uma sessão de depuração do Visual Studio para um aplicativo Plataforma Universal do Windows (UWP). Configure a sessão de depuração e escolha a maneira de iniciar o aplicativo.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/20/2018
 ms.topic: how-to
 f1_keywords:
@@ -35,12 +36,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c4e025603fef11e278aee21b3c44f8d35d7cd34b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 003eaa7eefffaab9ff2b3c8c25a5ce5c0d41d43b
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536546"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150360"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Iniciar uma sessão de depuração de um aplicativo UWP
 
@@ -66,7 +67,7 @@ A maneira mais fácil de configurar e iniciar a depuração é da barra de ferra
 
 1. No menu suspenso ao lado da seta verde, selecione o destino de depuração. Você pode escolher um computador local, um dispositivo conectado diretamente, um simulador do Visual Studio local, um dispositivo remoto ou um emulador.
 
-1. Para iniciar a depuração, selecione a seta de **início** verde na barra de ferramentas ou selecione **depurar**  >  **Iniciar Depuração**ou pressione **F5**.
+1. Para iniciar a depuração, selecione a seta de **início** verde na barra de ferramentas ou selecione **depurar**  >  **Iniciar Depuração** ou pressione **F5**.
 
    O Visual Studio compila e inicia o aplicativo com o depurador anexado.
 
@@ -76,7 +77,7 @@ A depuração continua até que um ponto de interrupção seja atingido, você s
 
 Você pode definir o destino de depuração na barra de ferramentas do Visual Studio ou na página de propriedades de depuração do projeto. Selecione uma das seguintes opções:
 
-|Name|Descrição|
+|Nome|Descrição|
 |-|-|
 |**Computador local**|Depura o aplicativo na sessão atual no computador local.|
 |**Simulador**|Depure o aplicativo no simulador do Visual Studio para aplicativos UWP. O simulador é uma janela da área de trabalho que simula funções de dispositivo, como gestos de toque e rotação de dispositivo, que podem não existir no computador local. A opção simulador estará disponível somente se a plataforma de destino do aplicativo **min. Version** for menor ou igual ao sistema operacional no computador local. Para obter mais informações, consulte [executar aplicativos UWP no simulador](../debugger/run-windows-store-apps-in-the-simulator.md).|
@@ -114,7 +115,7 @@ Em aplicativos C++, o Visual Studio decorre o código nativo por padrão. Você 
 
 - Para aplicativos C++, selecione um dos seguintes depuradores na lista suspensa **tipo de depurador** na página de propriedades **depuração** .
 
-|Name|Descrição|
+|Nome|Descrição|
 |-|-|
 |**Somente Gerenciado**|Depura o código gerenciado no aplicativo. O código JavaScript e o código C/C++ nativo são ignorados.|
 |**Somente nativo**|Depura o código C/C++ nativo no aplicativo. O código gerenciado e o código JavaScript são ignorados.|
@@ -200,8 +201,8 @@ Para anexar o depurador a um aplicativo [!INCLUDE[win8_appname_long](../debugger
 1. Para especificar o tipo de código que você deseja depurar, ao lado da caixa **anexar a** , selecione **selecionar**.
 
 1. Na caixa de diálogo **Selecionar tipo de código** , selecione:
-   - **Determinar automaticamente o tipo de código a ser depurado**ou
-   - **Depure esses tipos de código**e selecione um ou mais tipos de código na lista.
+   - **Determinar automaticamente o tipo de código a ser depurado** ou
+   - **Depure esses tipos de código** e selecione um ou mais tipos de código na lista.
 
 1. Na lista **processos disponíveis**  , selecione o processo do aplicativo a ser depurado.
 

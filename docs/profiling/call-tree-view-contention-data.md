@@ -1,5 +1,7 @@
 ---
 title: Modo de exibição de árvore de chamadas - Dados de contenção | Microsoft Docs
+description: Revisar exibição de árvore de chamada, que mostra dados de contenção para os caminhos de execução de função percorridos no aplicativo de perfil.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e91e231f72b006d2020c8b4d5d96c7e24fa1dd9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 974eeccbb1f4691c00fafad65fadef7c909a7ed2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779773"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150412"
 ---
 # <a name="call-tree-view---contention-data"></a>Modo de exibição de árvore de chamadas - Dados de contenção
 O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de função que foram percorridos no aplicativo analisado. A raiz da árvore é o ponto de entrada do aplicativo ou do componente. Cada nó de função lista todas as funções que chamou, o número de vezes que a função foi bloqueada e por quanto tempo a função esteve bloqueada porque estava competindo por um recurso com outros threads ou processos.
