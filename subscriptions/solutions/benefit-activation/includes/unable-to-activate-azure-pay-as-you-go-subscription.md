@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure, dev-test
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 25065465cee2239e9f4b5e7febafcf2a01eefc50
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 2a6e02721512d9780cd94d2d9601fe7099eac956
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915872"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147585"
 ---
 ## <a name="im-unable-to-activate-my-azure-dev--test-pay-as-you-go-subscription"></a>Não consigo ativar minha assinatura paga conforme o uso do Azure dev/Test.
 
@@ -27,5 +27,6 @@ Como assinante do Visual Studio, você recebe taxas por hora com desconto exclus
 1. Na página de inscrição do Microsoft Azure, haverá a opção de configurar a oferta Desenvolvimento/Teste Pago Conforme o Uso (PAYG) ou atualizar para a oferta Visual Studio Enterprise. Clique em continuar com a oferta atual (Desenvolvimento/Teste Pago Conforme o Uso) se você não quiser atualizar. 
 1. Adicione um método de pagamento, aceite o contrato de assinatura e você está pronto para começar. No futuro, você pode acessar sua assinatura do Azure em [Portal.Azure.com](https://portal.azure.com/). 
 
-## <a name="more-information"></a>Mais informações 
+## <a name="more-information-about-subscriptions"></a>Mais informações sobre assinaturas
+ 
 [Leia mais informações sobre as assinaturas pagas conforme o uso do desenvolvimento/teste do Azure](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-payg).

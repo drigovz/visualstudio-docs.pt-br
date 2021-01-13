@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, ems
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: df582df95932ae82e9be319f347f79745e1ad277
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 065527c86384e6eef46149ecc7d9606268bc1695
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915825"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147571"
 ---
 ## <a name="im-unable-to-activate-my-enterprise-mobility--security-ems-benefit"></a>Não consigo ativar o benefício do meu Enterprise Mobility + Security (EMS).
 
@@ -40,6 +40,6 @@ Para obter sua nova assinatura de desenvolvedor Microsoft 365 e5, vá para seu p
 
 Depois de excluir sua assinatura do Office 365 E3 e criar sua substituição Microsoft 365 assinatura e5, seu locatário do Office 365 E3 estará disponível por 60 dias para que você possa migrar seus dados. 
 
-## <a name="more-information"></a>Mais informações 
+## <a name="more-information-about-office-365-e3-subscriptions"></a>Mais informações sobre as assinaturas do Office 365 E3
 
 [Leia mais](https://docs.microsoft.com/visualstudio/subscriptions/vs-m365) informações sobre elegibilidade, como migrar do Office 365 E3 para Microsoft 365 e perguntas frequentes.  

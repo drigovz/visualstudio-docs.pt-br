@@ -10,12 +10,12 @@ user.type: subscriber
 tags: billing
 subscription.type: vl, cloud, retail, partner
 sap.id: 2db8f927-5814-835b-cc9d-daab30a7a09e
-ms.openlocfilehash: a7121ac942b074b0414c00ee791ccf37bf8320bd
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: fa95610b98d8731b486392d927452b8d42576f28
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915832"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147471"
 ---
 ## <a name="how-do-i-view-my-bill"></a>Como fazer exibir minha fatura?
 
@@ -34,5 +34,5 @@ O recurso limite de gastos no Azure permite que você defina um limite de gastos
 
 Se você tiver removido o limite de gastos em sua assinatura do Azure, convertido para pré-pago, aproveitando os preços de desenvolvimento/teste Enterprise disponíveis somente para assinantes do Visual Studio ou deseja utilizar serviços fora daqueles usados para desenvolvimento e teste cobertos pelo crédito mensal, você será cobrado mensalmente por serviços.  
 
-## <a name="more-information"></a>Mais informações 
+## <a name="more-information-about-billing"></a>Mais informações sobre cobrança
 Obtenha respostas para perguntas comuns sobre o uso e os encargos. Visite [perguntas frequentes sobre cobrança](https://docs.microsoft.com/azure/cost-management-billing/manage/getting-started). 

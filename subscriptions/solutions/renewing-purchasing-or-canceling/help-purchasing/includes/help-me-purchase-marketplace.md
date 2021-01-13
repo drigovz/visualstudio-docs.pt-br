@@ -10,18 +10,18 @@ user.type: subscriber, admin
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: 21555c11df2671a86d97d6f6c855756cd7e2d3b4
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 2cb74dda511efbed7a204ef11a163097efc2f54b
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915843"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147701"
 ---
 ## <a name="purchase-monthly-subscriptions-through-visual-studio-marketplace"></a>Comprar assinaturas mensais por meio de Visual Studio Marketplace 
 
 Com as assinaturas de nuvem mensais, você pode alugar o Visual Studio e o Azure DevOps sem um contrato de longo prazo. Essas assinaturas podem ser adquiridas por meio do [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions).  
 
-## <a name="visual-studio-marketplace"></a>Visual Studio Marketplace 
+## <a name="billing-in-the-visual-studio-marketplace"></a>Cobrança na Visual Studio Marketplace 
 
 A cobrança é tratada por meio da sua assinatura do Microsoft Azure. Se você ainda não tem uma assinatura do Azure, a instalação é grátis e você pode fazê-la enquanto conclui sua primeira compra.  
 
@@ -30,7 +30,7 @@ A cobrança é tratada por meio da sua assinatura do Microsoft Azure. Se você a
 
 [Leia mais](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq) sobre as assinaturas mensais do Visual Studio cobrança do Azure. 
 
-## <a name="more-information"></a>Mais informações 
+## <a name="more-information-about-subscription-benefits"></a>Mais informações sobre os benefícios da assinatura
 
 [Compare os benefícios e preços das assinaturas](https://visualstudio.microsoft.com/vs/pricing/)  para compreender os benefícios de cada assinatura do Visual Studio. 
 

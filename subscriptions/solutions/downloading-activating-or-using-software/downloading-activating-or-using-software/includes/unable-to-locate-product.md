@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: c862de5bc5006abc60650a26132453f260a51a89
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: e4d24412ab4e3aee22a9184d23ddbefb6ceb35fa
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915834"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147359"
 ---
 ## <a name="im-unable-to-locate-the-product-i-need-to-download"></a>Não consigo localizar o produto que preciso baixar.
 
@@ -30,8 +30,8 @@ Você pode [baixar uma lista extensa](https://download.microsoft.com/download/1/
 1. Aqui você poderá ver uma lista de downloads populares ou pesquisar um produto específico. Observação: se você tiver mais de uma assinatura associada ao mesmo endereço de entrada, você verá os downloads incluídos com a assinatura de nível mais alto, independentemente da assinatura que você está exibindo.
 1. Clique em "obter chave" para ver todas as chaves que estão disponíveis para o produto que você deseja baixar. Em seguida, clique em "chave de declaração" para reivindicar uma chave do produto se o download exigir uma chave para começar. 
 
-## <a name="product-keys-page"></a>Página chaves do produto 
+## <a name="find-available-product-keys"></a>Localizar chaves de produto disponíveis
 Você também pode visitar a página de [chaves do produto](https://my.visualstudio.com/productkeys),   onde todas as chaves estão disponíveis na agregação. Você pode editar a coluna observações para identificar quando e por que a chave foi solicitada. 
 
-## <a name="more-information"></a>Mais informações 
+## <a name="more-information-about-product-keys"></a>Mais informações sobre chaves do produto
 [Leia mais](https://docs.microsoft.com/visualstudio/subscriptions/find-keys) sobre como localizar e reivindicar downloads e chaves de produto.  

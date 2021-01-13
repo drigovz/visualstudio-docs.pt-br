@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure-devops
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 3980e21fd1ac1f96015725c80bb4b5994e30e529
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 7bd0cf67d86062b73bfdfe2461ace98e8ef43639
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915827"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147566"
 ---
 ## <a name="im-unable-to-activate-my-azure-devops-benefit"></a>Não consigo ativar meu benefício do Azure DevOps.
 
@@ -26,5 +26,5 @@ Como assinante do Visual Studio, você pode usar uma variedade de recursos no Az
 1. Você será levado para o Azure DevOps, onde você deve concordar com os termos de serviço. 
 1. Entre no Azure DevOps usando o email que você usa para entrar em sua assinatura do Visual Studio. Se preferir usar um email diferente para fazer logon, você poderá [criar uma conta alternativa](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity) para vincular sua assinatura, permitindo que você acesse o Azure DevOps usando os dois emails. 
 
-## <a name="more-information"></a>Mais informações 
+## <a name="more-information-about-subscription-eligibility"></a>Mais informações sobre a elegibilidade da assinatura 
 [Leia mais](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-devops) informações sobre elegibilidade por nível de assinatura.
