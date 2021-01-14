@@ -12,12 +12,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98d58b745b35870d287b6e81aa0a14fcdaeac921
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 0dc266b43d9a4634fe8cfbc05a3a070ae72cdaa9
+ms.sourcegitcommit: 1ceb58e3a1afa80a3211911ada4e5adaa1b1d439
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598517"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192857"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opções da linha de comando de VSTest.Console.exe
 
@@ -44,7 +44,7 @@ A tabela a seguir lista todas as opções para o *VSTest.Console.exe*, além de 
 |**/InIsolation**|Executa os testes em um processo isolado.<br />Esse isolamento torna o processo *vstest.console.exe* menos suscetível a ser interrompido acidentalmente nos testes. Entretanto, os testes podem ser executados mais lentamente.|
 |**/UseVsixExtensions**|Essa opção faz com que o processo *vstest.console.exe* use ou ignore as extensões VSIX instaladas (se houver) na execução de teste.<br />Essa opção foi preterida. A partir da próxima versão principal do Visual Studio, essa opção poderá ser removida. A migração para o consumo de extensões foi disponibilizada como um pacote NuGet.<br />Exemplo: `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*caminho*]**|Força o processo *vstest.console.exe* a usar adaptadores de teste personalizados de um caminho especificado (se houver) na execução de teste.<br />Exemplo: `/TestAdapterPath:[pathToCustomAdapters]`|
-|**/Platform:[*tipo de plataforma*]**|Arquitetura da plataforma de destino a ser usada para a execução de teste.<br />Os valores válidos são x86, x64 e ARM.|
+|**/Platform:[*tipo de plataforma*]**|Força a utilização da plataforma fornecida, em vez da plataforma determinada do tempo de execução atual. Essa opção é capaz de forçar apenas plataformas x86 e x64 no Windows. A opção ARM é quebrada e resultará em x64 na maioria dos sistemas.<br />Não especifique esta opção para executar em tempos de execução que não estão na lista de valores válidos, como ARM64.<br />Os valores válidos são x86, x64 e ARM.<br /> 
 |**/Framework: [*versão do framework*]**|Versão do .NET de destino a ser usada na execução do teste.<br />Exemplos de valores são `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10` e `.NETCoreApp,Version=v1.1`.<br />TargetFrameworkAttribute é usado para detectar automaticamente essa opção a partir de seu assembly e o padrão `Framework40` é quando o atributo não está presente. Você deve especificar essa opção explicitamente se remover o [TargetFrameworkAttribute](/dotnet/api/system.runtime.versioning.targetframeworkattribute) de seus assemblies do .NET Core.<br />Se a estrutura de destino for especificada como **Framework35**, os testes serão executados no CLR 4,0 "modo de compatibilidade".<br />Exemplo: `/Framework:framework40`|
 |**/TestCaseFilter:[*expressão*]**|Execute testes que correspondam à expressão fornecida.<br /><Expressão\> é do formato <propriedade\>=<valor\>[\|<Expressão\>].<br />Exemplo: `/TestCaseFilter:"Priority=1"`<br />Exemplo: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />A opção de linha de comando **/TestCaseFilter** não pode ser usada com a opção de linha de comando **/Tests**. <br />Para obter informações sobre como criar e usar expressões, confira [Filtro TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Exibe informações de uso.|
