@@ -1,5 +1,7 @@
 ---
 title: Relatório de perfil de tempo de bloqueio | Microsoft Docs
+description: 'Os relatórios de perfil de tempo de bloqueio fornecem dados de tempo de bloqueio agregados. Há seis tipos de relatório: sincronização, suspensão, e/s, memória, preempção e interface do usuário.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3ed24dce0779b9bc7ea9cfd7bedcaa5ca181c68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74cfeb0b93b1819b4491b18b8e455b3c8d49be4d
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926305"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204573"
 ---
 # <a name="blocking-time-profile-report"></a>Relatório de perfil de tempo de bloqueio
 Os Relatórios de Perfil fornecem dados de tempo de bloqueio agregados para pilhas de chamadas específicas para cada categoria de bloqueio (por exemplo, "E/S" ou "Sincronização"). O relatório de Preempção lista os processos que admiram preempção do processo atual junto com o número de instâncias de preempção. Para criar o relatório do perfil de bloqueio, a ferramenta coleta chamadas à API de bloqueio e acumula-as em uma árvore de pilhas de chamadas. Dados mostrados nesses relatórios variam pelo intervalo de tempo atual, por threads ocultos e os dois filtros a seguir que podem ser aplicados:
@@ -40,7 +42,7 @@ Os Relatórios de Perfil fornecem dados de tempo de bloqueio agregados para pilh
 |**Categoria de API/espera**|Mostrado somente para funções do nível mais baixo da pilha de chamadas. Quando a assinatura da chamada de bloqueio é reconhecida, o nome da API do bloqueio é fornecido. Se a assinatura não for reconhecida, as informações relatadas pelo kernel serão fornecidas.|
 |**Detalhes**|O nome totalmente qualificado da função. Isso inclui a contagem de linha, quando disponível.|
 
-### <a name="synchronization"></a>Synchronization
+### <a name="synchronization"></a>Sincronização
  O relatório de sincronização mostra as chamadas responsáveis por segmentos que estão bloqueando na sincronização e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, confira [Tempo de sincronização](../profiling/synchronization-time.md).
 
 ### <a name="sleep"></a>Modo de suspensão

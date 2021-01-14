@@ -1,6 +1,7 @@
 ---
 title: Configurações de propriedade para projetos Web | Microsoft Docs
-ms.custom: seodec18
+description: Saiba como alterar as configurações de propriedade de uma configuração de depuração de site na caixa de diálogo páginas de propriedades do Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7daa58004b118d46a8248428e9a9d242dfccef8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86f15a6fa622bf7938740111705a295e09f3e443
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72730592"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205548"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Configurações das páginas de propriedade para projetos Web
 Você pode alterar as configurações de propriedade de uma configuração de depuração do site na caixa de diálogo **Páginas de Propriedades**, conforme discutido em [Configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram como localizar configurações relacionadas ao depurador na caixa de diálogo **Páginas de Propriedades**.
@@ -53,4 +54,4 @@ Você pode alterar as configurações de propriedade de uma configuração de de
 | **Depuração do Silverlight** | Permite depuração de componentes do Silverlight. |
 
 ## <a name="see-also"></a>Confira também
-- [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)
+- [Configurações e preparação do depurador](../debugger/debugger-settings-and-preparation.md)

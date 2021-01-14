@@ -1,5 +1,7 @@
 ---
 title: Conclusão de membro em um serviço de linguagem herdada | Microsoft Docs
+description: Saiba como a dica da ferramenta de conclusão de membros do IntelliSense funciona em um serviço de linguagem herdado e como ele é compatível com o MPF (estrutura de pacote gerenciado).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6445aec4954590e4d361189f053592eebe7767e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fbf88dab2f1ffad0b4a6e5dc6b2ad516c28afca
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707194"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205795"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Preenchimento de membro em um serviço de linguagem herdado
 

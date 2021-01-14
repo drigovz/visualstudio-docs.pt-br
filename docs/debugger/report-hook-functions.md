@@ -1,5 +1,7 @@
 ---
 title: Funções de Hook de relatório | Microsoft Docs
+description: Examine as funções do gancho de relatório no Visual Studio. Uma função de gancho de relatório, instalada usando _CrtSetReportHook, é chamada sempre que _CrtDbgReport gera um relatório de depuração.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0bb14b47fb17c4d59089aafa123115b85ab9342
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8dea558d2f125c1e64f46bb4fbf738434eda2394
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72729867"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205613"
 ---
 # <a name="report-hook-functions"></a>Funções de gancho do relatório
 Uma função de gancho de relatório, instalada usando [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook), é chamada sempre que [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) gera um relatório de depuração. Você pode usá-la, entre outras coisas, para filtrar relatórios com foco em tipos de alocações específicos. Uma função de gancho de relatório deve ter um protótipo como o seguinte:
@@ -48,5 +50,5 @@ typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);
  Se o gancho tratar completamente a mensagem em questão, de modo que nenhum relatório adicional seja necessário, ele retornará **TRUE**. Se retornar **false**, `_CrtDbgReport` relatará a mensagem normalmente.
 
 ## <a name="see-also"></a>Confira também
-- [Gravação da função de gancho de depuração](../debugger/debug-hook-function-writing.md)
+- [Depurar a gravação da função do gancho](../debugger/debug-hook-function-writing.md)
 - [Amostra de crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)

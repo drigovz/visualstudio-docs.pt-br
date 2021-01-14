@@ -1,6 +1,7 @@
 ---
 title: Guia do iniciante para amostragem de CPU
-ms.custom: seodec18
+description: Saiba como as ferramentas de criação de perfil do Visual Studio revelam quanto tempo é usado pelas funções em seu aplicativo, orientando você a áreas para acelerar o aplicativo.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 02/27/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a58803747e0da411012226325c390352edf4e919
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c61d407247910131deee9585d19a921f8cf76cca
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330599"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205353"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guia do iniciante para amostragem de CPU
 Você pode usar as ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este procedimento mostra como usar dados de **Amostragem**.
@@ -126,7 +127,7 @@ Você pode usar as ferramentas de criação de perfil do Visual Studio para anal
 
 ## <a name="see-also"></a>Confira também
 - [Performance Explorer](../profiling/performance-explorer.md)
-- [Guia de Introdução](../profiling/getting-started-with-performance-tools.md)
+- [Introdução](../profiling/getting-started-with-performance-tools.md)
 - [Visões gerais](../profiling/overviews-performance-tools.md)
 - [Criação de perfis no Visual Studio](../profiling/index.yml)
 - [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

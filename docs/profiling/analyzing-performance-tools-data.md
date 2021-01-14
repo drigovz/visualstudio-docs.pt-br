@@ -1,5 +1,7 @@
 ---
 title: Analisando o dados de ferramentas de desempenho | Microsoft Docs
+description: Saiba mais sobre os relatórios de desempenho e exibições que o Visual Studio Ferramentas de Criação de Perfil fornece para você analisar problemas de desempenho.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 90752fd8e34769530f1b95dd439a46c71fe985a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f11873a3e101c0c37d327d6869ee63fe48f5f42
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779825"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205340"
 ---
 # <a name="analyze-performance-tools-data"></a>Analisar dados de ferramentas de desempenho
 Os relatórios de desempenho de Ferramentas de Criação de Perfil [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permitem exibir e analisar problemas de desempenho do aplicativo. Esta seção apresenta uma visão geral dos relatórios de desempenho e das exibições que podem ser usados para examinar dados de desempenho.

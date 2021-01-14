@@ -1,6 +1,7 @@
 ---
 title: Analisar o uso de memória
-ms.custom: seodec18
+description: Saiba mais sobre as ferramentas que você pode usar para encontrar vazamentos de memória e uso de memória ineficiente, ferramentas como a ferramenta de uso de memória e a ferramenta de alocação de objeto .NET.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/12/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53d8e33555530eacf482f3f99752ea4c42f8d827
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: 675636b7abca10fb2f9f1898d753155235830f86
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918091"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205717"
 ---
 # <a name="analyze-memory-usage"></a>Analisar o uso de memória
 
@@ -31,7 +32,7 @@ Os desenvolvedores de C++ podem usar a ferramenta de uso de memória integrada o
 - [Analisar o uso de memória com o depurador](../profiling/memory-usage.md)
 - [Analisar o uso de memória sem o depurador](../profiling/memory-usage-without-debugging2.md)
 
-Você pode usar as ferramentas de criação de perfil sem o depurador com o Windows 7 e posteriores. O Windows 8 ou posterior é necessário para executar ferramentas de criação de perfil com o depurador (janela **Ferramentas de Diagnóstico** ).
+Você pode usar as ferramentas de criação de perfil sem o depurador com o Windows 7 e posteriores. O Windows 8 ou posterior é necessário para executar ferramentas de criação de perfil com o depurador (janela **Ferramentas de Diagnóstico**).
 
 ## <a name="blogs-and-videos"></a>Blogs e vídeos
 
@@ -39,7 +40,7 @@ Você pode usar as ferramentas de criação de perfil sem o depurador com o Wind
 
 [Blog Visual C++: criação de perfil de memória no Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criação de perfis no Visual Studio](../profiling/index.yml)
 - [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

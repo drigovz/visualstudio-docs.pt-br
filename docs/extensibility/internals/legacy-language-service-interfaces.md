@@ -1,5 +1,7 @@
 ---
 title: Interfaces de serviço de linguagem herdada | Microsoft Docs
+description: Saiba mais sobre as interfaces disponíveis no SDK do Visual Studio que fornecem recursos de serviço de linguagem herdado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89d80d6961f5eaf91721567ccb0efa73bbe31406
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb694389bbf6f913db084dca29f7787c6283d3ad
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707383"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205015"
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfaces de serviço de linguagem herdada
 Para qualquer linguagem de programação específica, pode haver apenas uma instância de um serviço de linguagem por vez. No entanto, um único serviço de linguagem pode servir mais de um editor.

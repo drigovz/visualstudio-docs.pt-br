@@ -1,5 +1,7 @@
 ---
 title: Implementando a cor da sintaxe | Microsoft Docs
+description: Saiba como implementar a cores de sintaxe no Visual Studio usando os recursos de serviço de linguagem da MPF (estrutura de pacote gerenciada).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb3f26f59d7cbc994da1d2537e0ab352ce12205e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 195cf7a26b1615b7c56f3f0d06cfd9e0d44a4384
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905206"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204664"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementando a coloração de sintaxe
 Quando o serviço de linguagem fornece a colorização de sintaxe, o analisador converte uma linha de texto em uma matriz de itens coloráveis e retorna tipos de token correspondentes a esses itens coloráveis. O analisador deve retornar tipos de token que pertençam a uma lista de itens coloráveis. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] exibe cada item colorável na janela de código de acordo com os atributos atribuídos pelo objeto Colorizer ao tipo de token apropriado.

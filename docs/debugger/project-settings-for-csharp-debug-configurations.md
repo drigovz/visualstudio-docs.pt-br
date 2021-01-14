@@ -1,6 +1,7 @@
 ---
 title: Configurações de projeto para uma configuração de depuração em C# | Microsoft Docs
-ms.custom: seodec18
+description: Entenda como alterar as configurações do projeto para uma configuração de depuração em C# no Visual Studio, usando a guia Depurar e a guia compilar das páginas de propriedades do projeto.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/21/2018
 ms.topic: reference
 dev_langs:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5108e195e5df245c72436752316e8ee91781e7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 262e46436f1391ae21df0ccdd3ca308eecb347da
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62903951"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205561"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Configurações do projeto para configurações de depuração do C#
 
@@ -39,11 +40,11 @@ Para obter mais informações, consulte [debug and Release Configurations](how-t
 >[!IMPORTANT]
 >Essas configurações não se aplicam aos aplicativos .NET Core, ASP.NET ou UWP. Para definir configurações de depuração para aplicativos UWP, consulte [iniciar uma sessão de depuração para um aplicativo UWP](start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
-## <a name="debug-tab"></a>Guia Depurar
+## <a name="debug-tab"></a>Guia de depuração
 
 |Configuração|Descrição|
 |-------------------------------------| - |
-| **Configuração** | Define o modo para compilar o aplicativo. Selecione **ativo (depuração)**, **depurar**, **liberar**ou **todas as configurações** na lista suspensa. |
+| **Configuration** | Define o modo para compilar o aplicativo. Selecione **ativo (depuração)**, **depurar**, **liberar** ou **todas as configurações** na lista suspensa. |
 | **Iniciar ação** | Especifica a ação quando você seleciona **Iniciar** em uma configuração de depuração.<br />- **Iniciar projeto** é o padrão e inicia o projeto de inicialização para depuração. Para obter mais informações, consulte [escolher o projeto de inicialização](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />- **Iniciar programa externo** inicia e anexa a um aplicativo que não faz parte de um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto. Para obter mais informações, consulte [anexar a processos em execução com o depurador](attach-to-running-processes-with-the-visual-studio-debugger.md).<br />- **Iniciar navegador com URL** permite depurar um aplicativo Web. |
 | **Opções**  >  de inicialização **Argumentos de linha de comando** | Especifica argumentos de linha de comando para o aplicativo que está sendo depurado. O nome do comando é o nome do aplicativo especificado em **Iniciar programa externo**. |
 | **Opções**  >  de inicialização **Diretório de trabalho** | Especifica o diretório de trabalho do aplicativo que está sendo depurado. No C#, o diretório de trabalho é *\bin\Debug* por padrão.

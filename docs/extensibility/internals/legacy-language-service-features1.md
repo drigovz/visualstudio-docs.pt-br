@@ -1,5 +1,7 @@
 ---
 title: Features1 do serviço de linguagem herdada | Microsoft Docs
+description: Saiba mais sobre os recursos do Visual Studio que têm suporte em um serviço de linguagem MPF (Managed Package Framework).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1f2a4010529d3d9727ceb76d6a34f2cbc41b959
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e099798ff5fcc96e798742b16ba88e522a4bc0b
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238472"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205054"
 ---
 # <a name="legacy-language-service-features-1"></a>Recursos do serviço de linguagem herdada 1
 Um serviço de linguagem MPF (Managed Package Framework) pode dar suporte A um ou mais [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] recursos, como realce de sintaxe, IntelliSense e validação de ponto de interrupção. Cada recurso pode ser implementado independentemente dos outros, mas todos exigem um analisador e um scanner, exceto o realce de sintaxe, que requer apenas um scanner.

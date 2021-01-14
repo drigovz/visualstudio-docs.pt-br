@@ -1,6 +1,7 @@
 ---
 title: ASP.NET Core de depuração remota em um computador IIS remoto | Microsoft Docs
-ms.custom: remotedebugging
+description: Depure um aplicativo ASP.NET Core que foi implantado em um computador Serviços de Informações da Internet remoto (IIS) usando o depurador remoto do Visual Studio.
+ms.custom: remotedebugging, SEO-VS-2020
 ms.date: 05/06/2020
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
@@ -10,12 +11,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 389fe1491a92cacecd772244c2a0facd0d12c887
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: bc746d5139b897d51d4d038f077906f56aa5d552
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "92298766"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205808"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>ASP.NET Core de depuração remota em um computador IIS remoto no Visual Studio
 
@@ -56,7 +57,7 @@ Este artigo inclui etapas sobre como configurar uma configuração básica do II
 1. Crie um novo Aplicativo Web ASP.NET Core.
 
     ::: moniker range=">=vs-2019"
-    No Visual Studio 2019, digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **ASP.net**, escolha **modelos**e, em seguida, escolha **criar novo ASP.NET Core aplicativo Web**. Na caixa de diálogo que aparece, nomeie o projeto **MyASPApp**e, em seguida, escolha **criar**. Em seguida, escolha **aplicativo Web (Model-View-Controller)** e, em seguida, escolha **criar**.
+    No Visual Studio 2019, digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **ASP.net**, escolha **modelos** e, em seguida, escolha **criar novo ASP.NET Core aplicativo Web**. Na caixa de diálogo que aparece, nomeie o projeto **MyASPApp** e, em seguida, escolha **criar**. Em seguida, escolha **aplicativo Web (Model-View-Controller)** e, em seguida, escolha **criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     No Visual Studio 2017, escolha **arquivo > novo projeto de >** e, em seguida, selecione **Visual C# > Web > ASP.NET Core aplicativo Web**. Na seção modelos de ASP.NET Core, selecione **aplicativo Web (Model-View-Controller)**. Certifique-se de que ASP.NET Core 2,1 está selecionado, que **habilitar o suporte ao Docker** não está selecionado e que a **autenticação** está definida como **sem autenticação**. Nomeie o projeto **MyASPApp**.
@@ -145,7 +146,7 @@ Você pode usar essa opção para implantar seu aplicativo se quiser copiar o ap
 
 3. Em **conexões** no painel esquerdo, vá para **sites**.
 
-4. Selecione o **site da Web padrão**, escolha **configurações básicas**e defina o **caminho físico** como **C:\Publish**.
+4. Selecione o **site da Web padrão**, escolha **configurações básicas** e defina o **caminho físico** como **C:\Publish**.
 
 4. Clique com o botão direito do mouse no nó do **site da Web padrão** e selecione **Adicionar aplicativo**.
 
@@ -153,7 +154,7 @@ Você pode usar essa opção para implantar seu aplicativo se quiser copiar o ap
 
 6. Em **conexões**, selecione **pools de aplicativos**. Abra **DefaultAppPool** e defina o campo pool de aplicativos como **sem código gerenciado**.
 
-7. Clique com o botão direito do mouse no novo site no Gerenciador do IIS, escolha **Editar permissões**e certifique-se de que IUSR, IIS_IUSRS ou o usuário configurado para acesso ao aplicativo Web é um usuário autorizado com direitos de execução de leitura &.
+7. Clique com o botão direito do mouse no novo site no Gerenciador do IIS, escolha **Editar permissões** e certifique-se de que IUSR, IIS_IUSRS ou o usuário configurado para acesso ao aplicativo Web é um usuário autorizado com direitos de execução de leitura &.
 
     Se você não vir um desses usuários com acesso, siga as etapas para adicionar IUSR como um usuário com direitos de execução de leitura &.
 
@@ -188,13 +189,13 @@ Para obter informações sobre como executar o depurador remoto como um serviço
 
 3. Defina o campo qualificador como **\<remote computer name>** e pressione **Enter**.
 
-    Verifique se o Visual Studio adiciona a porta necessária ao nome do computador, que aparece no formato: ** \<remote computer name> :p classificar**
+    Verifique se o Visual Studio adiciona a porta necessária ao nome do computador, que aparece no formato: **\<remote computer name> :p classificar**
 
     ::: moniker range=">=vs-2019"
-    No Visual Studio 2019, você deve ver ** \<remote computer name> : 4024**
+    No Visual Studio 2019, você deve ver **\<remote computer name> : 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    No Visual Studio 2017, você deve ver ** \<remote computer name> : 4022**
+    No Visual Studio 2017, você deve ver **\<remote computer name> : 4022**
     ::: moniker-end
     A porta é necessária. Se você não vir o número da porta, adicione-o manualmente.
 
@@ -224,7 +225,7 @@ Para obter informações sobre como executar o depurador remoto como um serviço
 
 7. Clique em **Anexar**.
 
-8. Abra o site do computador remoto. Em um navegador, acesse **http:// \<remote computer name> **.
+8. Abra o site do computador remoto. Em um navegador, acesse **http:// \<remote computer name>**.
 
     Você deve ver a página da Web do ASP.NET.
 
@@ -252,7 +253,7 @@ Portas obrigatórias:
 
 1. Para abrir uma porta no Windows Server, abra o menu **Iniciar** , procure por **Firewall do Windows com segurança avançada**.
 
-2. Em seguida, escolha **regras de entrada > nova regra > porta**e clique em **Avançar**. (Para UDP 3702, escolha **regras de saída** em vez disso.)
+2. Em seguida, escolha **regras de entrada > nova regra > porta** e clique em **Avançar**. (Para UDP 3702, escolha **regras de saída** em vez disso.)
 
 3. Em **portas locais específicas**, insira o número da porta e clique em **Avançar**.
 
@@ -261,7 +262,7 @@ Portas obrigatórias:
 5. Selecione um ou mais tipos de rede para habilitar para a porta e clique em **Avançar**.
 
     O tipo selecionado deve incluir a rede à qual o computador remoto está conectado.
-6. Adicione o nome (por exemplo, **IIS**, **implantação da Web**ou **msvsmon**) para a regra de entrada e clique em **concluir**.
+6. Adicione o nome (por exemplo, **IIS**, **implantação da Web** ou **msvsmon**) para a regra de entrada e clique em **concluir**.
 
     Você deve ver sua nova regra na lista regras de entrada ou regras de saída.
 

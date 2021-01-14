@@ -1,5 +1,7 @@
 ---
 title: Sequência de inicialização de subtipos de projeto | Microsoft Docs
+description: Saiba mais sobre a sequência de inicialização no ambiente do Visual Studio para um sistema de projeto agregado por vários subtipos de projeto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05a3c312f61dd2b2c63c3f38ef8bac2203b326db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea784eae808cbab3a5991651961d3b150b641c04
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707625"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204703"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Sequência de inicialização de subtipos de projeto
 O ambiente constrói um projeto chamando a implementação de fábrica do projeto base do <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> . A construção de um subtipo de projeto é iniciada quando o ambiente determina que a lista de GUIDs do tipo de projeto para a extensão de um arquivo de projeto não está vazia. A extensão de arquivo de projeto e o GUID do projeto especificam se o projeto é um [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] tipo de projeto ou. Por exemplo, a extensão. vbproj e {F184B08F-C81C-45F6-A57F-5ABD9991F28F} identificam um [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projeto.

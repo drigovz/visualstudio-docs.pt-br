@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo Configurações Avançadas (Visualização Simultânea) | Microsoft Docs
+description: Use as configurações avançadas no Visualizador de simultaneidade para controlar o conteúdo do rastreamento. Há guias para símbolos, Apenas Meu Código, buffer e muito mais.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc7d3464fd05b1fe99fcbfa8773e64bca4cb95e7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911216"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205496"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Caixa de diálogo Configurações Avançadas (Visualizador de Simultaneidade)
 Usando a caixa de diálogo **Configurações Avançadas** da Visualização Simultânea, você pode controlar como os rastreamentos são coletados.  A caixa de diálogo tem guias para símbolos, Apenas Meu Código, buffer, filtragem, eventos CLR, marcadores, provedores e arquivos.

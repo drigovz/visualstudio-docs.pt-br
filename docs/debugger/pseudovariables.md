@@ -1,5 +1,7 @@
 ---
 title: Pseudovariables | Microsoft Docs
+description: Examine o pseudovariables no depurador do Visual Studio. Pseudovariables são termos usados para exibir determinados dados em uma janela variável ou a caixa de diálogo QuickWatch.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5b0369a30e69fc69782bbc4a0f5b0c4518cac07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5a76bf799eabd29b778c2dec867cc7e50aa45ee
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75776094"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205522"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariables no depurador do Visual Studio
 As pseudovariáveis são termos usados para exibir determinadas informações em uma janela de variável ou na caixa de diálogo do **QuickWatch**. Você pode inserir um pseudovariável da mesma maneira que incorporaria uma variável normal. As pseudovariáveis não são variáveis, no entanto, e não correspondem aos nomes de variáveis em seu programa.
@@ -64,7 +66,7 @@ As pseudovariáveis são termos usados para exibir determinadas informações em
 |`$exception`|Exibe informações sobre a última exceção. Se nenhuma exceção tiver ocorrido, a avaliação `$exception` exibirá uma mensagem de erro.|
 |`$delete` ou `$$delete`|Exclui uma variável implícita criada na janela **Imediato**. A sintaxe é `$delete,` *variável* ou `$delete,` *variável*`.`|
 |`$objectids` ou `$listobjectids`|Exibe todas as IDs de objetos como filhos da expressão especificada. A sintaxe é `$objectid,` *expressão* ou `$listobjectids,` *expressão*`.`|
-|`$` *N* `#`|Exibe o objeto com a ID de objeto igual a *N*.|
+|`$`*N*`#`|Exibe o objeto com a ID de objeto igual a *N*.|
 |`$dynamic`|Exibe o nó especial **Modo de Exibição Dinâmico** para um objeto que implementa o `IDynamicMetaObjectProvider`. Interface. A sintaxe é `$dynamic,` *objeto*. Esse recurso se aplica somente ao código que usa .NET Framework versão 4 ou posterior.|
 
 ## <a name="see-also"></a>Confira também

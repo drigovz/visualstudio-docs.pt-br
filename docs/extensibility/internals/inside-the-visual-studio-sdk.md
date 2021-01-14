@@ -1,5 +1,7 @@
 ---
 title: Dentro do SDK do Visual Studio | Microsoft Docs
+description: Saiba mais sobre as extensões do SDK do Visual Studio, incluindo arquitetura, componentes, serviços, esquemas e utilitários do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e72020795bc3181e11f0f90eff580a2365d4000
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73bbb1beb30677711b8b517262b48465e7529585
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707581"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205327"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Por dentro do SDK do Visual Studio
 
@@ -47,7 +49,7 @@ Esta seção fornece informações detalhadas sobre as extensões do Visual Stud
  Para obter mais informações, consulte [comandos, menus e barras de ferramentas](../../extensibility/internals/commands-menus-and-toolbars.md).
 
 ## <a name="menus-and-toolbars"></a>Menus e barras de ferramentas
- Menus e barras de ferramentas fornecem uma maneira para os usuários invocarem comandos. Os menus são linhas ou colunas de comandos que normalmente são exibidos como itens de texto individuais na parte superior de uma janela de ferramentas. Os submenus são menus secundários que aparecem quando um usuário clica em comandos que incluem uma pequena seta. Menus de contexto aparecem quando um usuário clica com o botão direito do mouse em determinados elementos da interface do usuário Alguns nomes de menu comuns são **arquivo**, **Editar**, **Exibir**e **janela**. Para obter mais informações, consulte [estendendo menus e comandos](../../extensibility/extending-menus-and-commands.md).
+ Menus e barras de ferramentas fornecem uma maneira para os usuários invocarem comandos. Os menus são linhas ou colunas de comandos que normalmente são exibidos como itens de texto individuais na parte superior de uma janela de ferramentas. Os submenus são menus secundários que aparecem quando um usuário clica em comandos que incluem uma pequena seta. Menus de contexto aparecem quando um usuário clica com o botão direito do mouse em determinados elementos da interface do usuário Alguns nomes de menu comuns são **arquivo**, **Editar**, **Exibir** e **janela**. Para obter mais informações, consulte [estendendo menus e comandos](../../extensibility/extending-menus-and-commands.md).
 
  As barras de ferramentas são linhas ou colunas de botões e outros controles, como caixas de combinação, caixas de listagem e caixas de texto. Os botões da barra de ferramentas normalmente têm imagens de ícone, como um ícone de pasta para um comando de **arquivo aberto** ou uma impressora para um comando **Print** . Todos os elementos da barra de ferramentas são associados a comandos. Quando você clica em um botão da barra de ferramentas, seu comando associado é executado. No caso de um controle suspenso, cada item na lista suspensa é associado a um comando diferente. Alguns controles da barra de ferramentas, como um controle de Splitter, são híbridos. Um lado do controle é um botão da barra de ferramentas e o outro lado é uma seta para baixo que exibe vários comandos quando ele é clicado.
 

@@ -1,5 +1,7 @@
 ---
 title: Depurar JavaScript usando o console | Microsoft Docs
+description: Use a janela do console do JavaScript no Visual Studio para interagir com e depurar Plataforma Universal do Windows aplicativos (UWP) criados usando JavaScript.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aca36c56bfeed4fd5d8b240cce6bea5b55b75d85
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 8a2b2e82e664abea1a53112776dc0ec3ec5f1259
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211070"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205002"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Depurar o JavaScript usando o console no Visual Studio
 
@@ -42,7 +44,7 @@ A janela Console do JavaScript permite que você:
 - Realizar outras tarefas, como limpar a tela. Consulte [comandos do console do JavaScript](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true) para obter a lista completa de comandos.
 
 > [!TIP]
-> Se a janela do console do JavaScript estiver fechada, escolha **depurar** >  **Windows**  >  **console do JavaScript** do Windows para abri-la novamente. A janela só aparece durante uma sessão de depuração de script.
+> Se a janela do console do JavaScript estiver fechada, escolha **depurar** >    >  **console do JavaScript** do Windows para abri-la novamente. A janela só aparece durante uma sessão de depuração de script.
 
 Usando a janela Console do JavaScript, você pode interagir com seu aplicativo sem parar e reiniciar o depurador. Para obter mais informações, consulte [atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md). Para obter informações sobre outros recursos de depuração de JavaScript, como usar o explorador do DOM e definir pontos de interrupção, consulte [início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [depurar aplicativos no Visual Studio](debugging-windows-store-and-windows-universal-apps.md).
 
@@ -56,7 +58,7 @@ As seguintes etapas criam um aplicativo `FlipView` e mostram como depurar intera
 
 1. Crie uma nova solução no Visual Studio escolhendo **arquivo**  >  **novo projeto**.
 
-2. Escolha **JavaScript**  >  **Windows universal**e, em seguida, escolha **aplicativo WinJS**.
+2. Escolha **JavaScript**  >  **Windows universal** e, em seguida, escolha **aplicativo WinJS**.
 
 3. Digite um nome para o projeto, como `FlipViewApp` e escolha **OK** para criar o aplicativo.
 
@@ -199,11 +201,11 @@ Quando um programa está no modo de interrupção, você pode usar a janela Cons
 
 #### <a name="to-set-a-breakpoint-and-debug-the-app"></a>Para definir um ponto de interrupção e depurar o aplicativo
 
-1. No default.htmarquivo l do `FlipView` aplicativo que você criou anteriormente, abra o menu de atalho para a `updateImages()` função e escolha ponto de interrupção **Breakpoint**  >  **Inserir ponto de interrupção**.
+1. No default.htmarquivo l do `FlipView` aplicativo que você criou anteriormente, abra o menu de atalho para a `updateImages()` função e escolha ponto de interrupção   >  **Inserir ponto de interrupção**.
 
 2. Escolha **computador local** na lista suspensa ao lado do botão **Iniciar Depuração** na barra de ferramentas **depurar** .
 
-3. Escolha **depurar**  >  **Iniciar Depuração**ou pressione F5.
+3. Escolha **depurar**  >  **Iniciar Depuração** ou pressione F5.
 
     O aplicativo entra no modo de interrupção quando a execução atinge a função `updateImages()`, e a linha atual de execução do programa é realçada em amarelo.
 
@@ -249,7 +251,7 @@ A ilustração a seguir mostra a lista de destino na janela Console do JavaScrip
 
 Você também pode alternar o contexto de execução usando o comando `cd`, mas você precisa saber o nome do outro contexto de execução e a referência que será usada deve estar no escopo. A lista **Destino** fornece um acesso melhor a outros contextos de execução.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depurar aplicativos no Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Comandos do Console JavaScript](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 - [Atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md)

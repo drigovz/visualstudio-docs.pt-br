@@ -1,5 +1,7 @@
 ---
 title: Disponibilizando comandos | Microsoft Docs
+description: Saiba como controlar a disponibilidade de comandos que são adicionados ao IDE do Visual Studio no VSPackages, usando carregamento, contexto e visibilidade atrasados.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d64df85516e0a1ac326f8d40558755718c4644c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d17fd0b63438183b10b1ecb0e5eb6abb9f5d7f46
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707330"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204527"
 ---
 # <a name="making-commands-available"></a>Disponibilizando comandos
 
@@ -55,7 +57,7 @@ Você pode programar comandos VSPackage para que fiquem visíveis ou ocultos, de
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] monitora alterações que resultam de ações do usuário, como carregar um projeto ou ir da edição para a compilação. À medida que ocorrem alterações, a aparência do IDE é modificada automaticamente. A tabela a seguir mostra quatro contextos principais de alteração do IDE que o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] monitora.
 
-| Tipo de contexto | Descrição |
+| Tipo de contexto | Description |
 |-------------------------| - |
 | Tipo de projeto ativo | Para a maioria dos tipos de projeto, esse `GUID` valor é o mesmo que o GUID do VSPackage que implementa o projeto. No entanto, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] os projetos usam o tipo de projeto `GUID` como o valor. |
 | Janela ativa | Normalmente, esta é a última janela do documento ativo que estabelece o contexto da interface do usuário atual para associações de chave. No entanto, também pode ser uma janela de ferramentas que tem uma tabela de associação de chave que se assemelha ao navegador da Web interno. Para janelas de documentos com várias guias, como o editor de HTML, cada guia tem um contexto de comando diferente `GUID` . |

@@ -1,5 +1,7 @@
 ---
 title: Interceptando comandos do serviço de idioma herdado | Microsoft Docs
+description: Saiba como usar filtros de comando no Visual Studio para interceptar comandos de serviço de idioma herdado e adicionar comportamento específico de idioma.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5206bced8b4bfae32498434765e5c3f61801b386
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b67ffab5935b0e52ee6c403f2e38e7bbafab2d06
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707445"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205184"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Interceptando comandos do serviço de linguagem herdado
 Com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o, você pode fazer com que o serviço de linguagem intercepte os comandos que o modo de exibição de texto manipularia. Isso é útil para o comportamento específico de um idioma que a exibição de texto não gerencia. Você pode interceptar esses comandos adicionando um ou mais filtros de comando à exibição de texto do seu serviço de idioma.

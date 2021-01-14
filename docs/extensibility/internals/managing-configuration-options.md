@@ -1,5 +1,7 @@
 ---
 title: Gerenciando opções de configuração | Microsoft Docs
+description: Saiba como gerenciar definições de configuração de projeto e solução no Visual Studio para controlar como seu projeto será compilado, empacotado, implantado e executado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e18c308d74f8c20267c286c47d0e89bf82cd2850
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a34f772b780cda825861e11e6816d1d88405f74e
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707303"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204521"
 ---
 # <a name="managing-configuration-options"></a>Gerenciando opções de configuração
 Ao criar um novo tipo de projeto, você deve gerenciar definições de configuração de projeto e solução que determinam como seu projeto será compilado, empacotado, implantado e executado. Os tópicos a seguir abordam a configuração de projeto e solução.

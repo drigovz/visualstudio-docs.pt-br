@@ -1,5 +1,7 @@
 ---
 title: Erros de depuração remota e solução de problemas | Microsoft Docs
+description: Exibir links para erros comuns de depuração remota no Visual Studio. Saiba como executar o depurador remoto como administrador.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b413ce193e6761d515de5bc5ef30fae8e18a3a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0260f939c8f6b7e5bed77ec42a4720adf0a4c720
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89316131"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205652"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Erros de depuração remota e solução de problemas
 
@@ -35,7 +37,7 @@ Você pode vir os seguintes erros ao tentar depurar remotamente.
 
 - [Erro: o Monitor de Depuração Remota do Microsoft Visual Studio (MSVSMON.EXE) parece não estar sendo executado no computador remoto.](error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running.md)
 
-- [Não foi possível se conectar ao Monitor de Depuração Remota do Microsoft Visual Studio](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
+- [Não é possível conectar-se ao Microsoft Visual Studio Monitor de Depuração Remota](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
 
 - [Erro: O computador remoto não aparece em uma caixa de diálogo Conexões Remotas](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
 

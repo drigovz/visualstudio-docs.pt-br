@@ -1,8 +1,10 @@
 ---
 title: Depuração remota | Microsoft Docs
+description: Depurar um aplicativo do Visual Studio que foi implantado em um computador diferente usando o depurador remoto do Visual Studio.
 ms.custom:
 - remotedebugging
 - seodec18
+- SEO-VS-2020
 ms.date: 07/02/2018
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8051b83e0022361e4cb1cb61602dfcf8991062e
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: e97fd8979235f8ea89b43c6466b3119debe5b3ca
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "92298698"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205665"
 ---
 # <a name="remote-debugging"></a>Depuração remota
 Você pode depurar um aplicativo do Visual Studio que foi implantado em um computador diferente. Para fazer isso, use o depurador remoto do Visual Studio.
@@ -35,7 +37,7 @@ Para obter instruções detalhadas sobre a depuração remota, consulte estes t�
 
 |Cenário|Link|
 |-|-|-|
-|Serviço de Aplicativo do Azure|[Depuração remota ASP.net no Azure](../debugger/remote-debugging-azure.md) ou, por Visual Studio Enterprise, o [depurador de instantâneos](../debugger/debug-live-azure-applications.md)|
+|Serviço de aplicativo do Azure|[Depuração remota ASP.net no Azure](../debugger/remote-debugging-azure.md) ou, por Visual Studio Enterprise, o [depurador de instantâneos](../debugger/debug-live-azure-applications.md)|
 |VM do Azure|[Depuração remota ASP.NET no Azure](../debugger/remote-debugging-azure.md)|
 |Azure Service Fabric|[Depurar um aplicativo de Service Fabric do Azure](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
 |ASP.NET|[ASP.NET Core de depuração remota](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) ou [depuração remota ASP.net](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
@@ -93,7 +95,7 @@ Você pode alterar alguns aspectos da configuração do depurador remoto depois 
      > [!IMPORTANT]
      > Você pode executar o depurador remoto em uma conta de usuário que seja diferente da conta de usuário que você está usando no computador do Visual Studio, mas você deve adicionar a conta de usuário diferente às permissões do depurador remoto.
 
-     Como alternativa, você pode iniciar o depurador remoto a partir da linha de comando com o parâmetro ** \<username> /Allow** : **msvsmon/Allow \<username@computer> **.
+     Como alternativa, você pode iniciar o depurador remoto a partir da linha de comando com o parâmetro **\<username> /Allow** : **msvsmon/Allow \<username@computer>**.
 
 - Se você precisar alterar o modo de autenticação ou o número da porta, ou especificar um valor de tempo limite para as ferramentas remotas: escolha **ferramentas > opções**.
 
@@ -115,7 +117,7 @@ Para a depuração no ASP.NET e em outros ambientes de servidor, você deve exec
 
 4. Adicione o nome da conta de usuário e a senha.
 
-    Talvez seja necessário adicionar o direito de usuário **fazer logon como um serviço** a essa conta (localizar **política de segurança local** (secpol. msc) na página **inicial** ou na janela (ou digite **secpol** em um prompt de comando). Quando a janela for exibida, clique duas vezes em **atribuição de direitos de usuário**e, em seguida, localize **fazer logon como um serviço** no painel direito. Clique duas vezes nesse item. Adicione a conta de usuário à janela **Propriedades** e clique em **OK**). Clique em **Próximo**.
+    Talvez seja necessário adicionar o direito de usuário **fazer logon como um serviço** a essa conta (localizar **política de segurança local** (secpol. msc) na página **inicial** ou na janela (ou digite **secpol** em um prompt de comando). Quando a janela for exibida, clique duas vezes em **atribuição de direitos de usuário** e, em seguida, localize **fazer logon como um serviço** no painel direito. Clique duas vezes nesse item. Adicione a conta de usuário à janela **Propriedades** e clique em **OK**). Clique em **Próximo**.
 
 5. Selecione o tipo de rede com o qual você deseja que as ferramentas remotas se comuniquem. Pelo menos um tipo de rede deve ser selecionado. Se os computadores estiverem conectados por meio de um domínio, você deverá escolher o primeiro item. Se os computadores estiverem conectados por meio de um grupo de trabalho ou grupos domésticos, você deverá escolher o segundo ou terceiro itens. Clique em **Próximo**.
 

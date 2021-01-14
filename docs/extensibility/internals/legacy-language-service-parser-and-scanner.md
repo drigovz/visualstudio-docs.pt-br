@@ -1,5 +1,7 @@
 ---
 title: Analisador e scanner do serviço de idioma herdado | Microsoft Docs
+description: Saiba mais sobre o analisador e o verificador do serviço de idioma herdado que selecionam informações sobre o código que está sendo exibido.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c87f447a4b8bca804d27aae4967f4adaf389c627
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c8c58a98887e5509026641ba0295fc167435e3
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707320"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204599"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analisador e scanner do serviço de linguagem herdado
 O analisador é o coração do serviço de linguagem. As classes de linguagem MPF (estrutura de pacote gerenciada) exigem um analisador de idioma para selecionar informações sobre o código que está sendo exibido. Um analisador separa o texto em tokens léxicos e, em seguida, identifica esses tokens por tipo e funcionalidade.
@@ -43,7 +45,7 @@ namespace MyNamespace
 |----------------|----------------|
 |namespace, classe, público, void, int|palavra-chave|
 |=|operador|
-|{ } ( ) ;|delimiter|
+|{ } ( ) ;|delimitador|
 |MyNamespace, MyClass, MyFunction, arg1, var1|identificador|
 |MyNamespace|namespace|
 |MyClass|classe|

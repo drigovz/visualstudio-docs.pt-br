@@ -1,6 +1,7 @@
 ---
 title: Atribuições de porta do depurador remoto | Microsoft Docs
-ms.custom: ''
+description: Entenda as atribuições de porta do depurador remoto do Visual Studio em sistemas operacionais de 32 bits, sistemas operacionais de 64 bits e Azure. Saiba mais sobre a porta de descoberta.
+ms.custom: SEO-VS-2020
 ms.date: 05/18/2018
 ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fcd0159e5bd315009c1c468dc7a19b5ba5a9c61
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: 40081f276dc9649cf448bf00e80d11fc80f58f47
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713497"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204820"
 ---
 # <a name="remote-debugger-port-assignments"></a>Atribuições de porta do depurador remoto
 O Depurador Remoto do Visual Studio pode ser executado como um aplicativo ou como um serviço em segundo plano. Quando ele é executado como um aplicativo, ele usa uma porta que é atribuída por padrão da seguinte maneira:
@@ -40,9 +41,9 @@ Em outras palavras, o número da porta atribuída ao depurador remoto é increme
  O TCP 4022 (no Visual Studio 2017) é a porta principal e é necessário para todos os cenários. Você pode configurá-lo na linha de comando ou na janela do depurador remoto.
 ::: moniker-end
 
- Na janela depurador remoto, clique em **ferramentas > opções**e defina o número da porta TCP/IP.
+ Na janela depurador remoto, clique em **ferramentas > opções** e defina o número da porta TCP/IP.
 
- Na linha de comando, inicie o depurador remoto com a opção **/Port** : **msvsmon/Port \<port number> **.
+ Na linha de comando, inicie o depurador remoto com a opção **/Port** : **msvsmon/Port \<port number>**.
 
  Você pode encontrar todas as opções de linha de comando do depurador remoto na ajuda da depuração remota (pressione **F1** ou clique em **ajuda > uso** na janela do depurador remoto).
 
@@ -54,7 +55,7 @@ Em outras palavras, o número da porta atribuída ao depurador remoto é increme
  Quando a versão de 64 bits do depurador remoto é iniciada, ela usa a porta principal (4022) por padrão.  Se você depurar um processo de 32 bits, a versão de 64 bits do depurador remoto iniciará uma versão de 32 bits do depurador remoto na porta 4023 (o número da porta principal é incrementado em 1). Se você executar o depurador remoto de 32 bits, ele usará 4022 e 4023 não será usado.
 :::moniker-end
 
- Essa porta é configurável na linha de comando: **msvsmon/wow64port \<port number> **.
+ Essa porta é configurável na linha de comando: **msvsmon/wow64port \<port number>**.
 
 ## <a name="the-discovery-port"></a>A porta de descoberta
  O UDP 3702 é usado para localizar instâncias em execução do depurador remoto na rede (por exemplo, a caixa de diálogo **Localizar** na caixa de diálogo **anexar ao processo** ). Ele é usado apenas para descobrir um computador que executa o depurador remoto, portanto, é opcional se você tiver alguma outra forma de saber o nome do computador ou o endereço IP de um dos computadores de destino. Essa é uma porta padrão para descoberta, portanto, o número da porta não pode ser configurado.

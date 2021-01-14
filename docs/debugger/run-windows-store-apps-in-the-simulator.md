@@ -1,5 +1,7 @@
 ---
 title: Executar aplicativos UWP no simulador | Microsoft Docs
+description: Entenda como executar aplicativos Plataforma Universal do Windows (UWP) no simulador do Visual Studio, que é um aplicativo de área de trabalho que simula um aplicativo UWP.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9b46abc4d22ddfdc551669d3bcd4cba5acf7cce4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 12d2fed62e1a4762c9b92304ff1acfe8374ab976
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599528"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205626"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Executar aplicativos UWP no simulador
 
@@ -33,7 +35,7 @@ O simulador do Visual Studio para aplicativos UWP não é executado em um ambien
 
 ## <a name="set-the-simulator-as-the-target"></a><a name="BKMK_Set_the_simulator_as_the_target"></a> Definir o simulador como o destino
 
-Para executar seu aplicativo UWP no simulador, selecione **simulador** na lista suspensa ao lado do botão **Iniciar Depuração** na barra de ferramentas **padrão** do depurador. Essa opção estará disponível apenas se a **Versão Mínima da Plataforma de Destino** de seu aplicativo for menor ou igual ao sistema operacional no computador de desenvolvimento.
+Para executar seu aplicativo UWP no simulador, selecione **simulador** na lista suspensa ao lado do botão **Iniciar Depuração** na barra de ferramentas **padrão** do depurador. Essa opção só estará disponível se a **versão mínima da plataforma de destino** do seu aplicativo for inferior ou igual ao sistema operacional em seu computador de desenvolvimento.
 
 ![Executando no simulador](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")
 
@@ -96,7 +98,7 @@ O botão **girar emulação de toque** define o modo de interação com gestos d
 ## <a name="change-the-simulated-screen-size-and-resolution"></a><a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Alterar o tamanho e a resolução de tela simulados
  Para alterar o tamanho e a resolução de tela simulados, escolha o botão **Alterar Resolução** na paleta e escolha um novo tamanho e uma nova resolução na lista.
 
- O tamanho e a resolução da tela são listados como *Largura da tela em polegadas, largura em pixel X altura em pixel*. Observe que tanto o tamanho como a resolução da tela são simulados. As coestações de local no simulador são convertidas para o tamanho e a resolução do dispositivo selecionado.
+ O tamanho e a resolução da tela são listados como *Largura da tela em polegadas, largura em pixel X altura em pixel*. Observe que tanto o tamanho como a resolução da tela são simulados. As coordenadas de local no simulador são traduzidas para o tamanho e a resolução do dispositivo selecionado.
 
 > [!NOTE]
 > Você pode salvar versões dimensionadas de imagens de bitmap em seu aplicativo, e o Windows carregará a imagem correta para a escala atual. Para obter mais informações, consulte [introdução à interface do usuário e design](/windows/uwp/layout/design-and-ui-intro). No entanto, se você alterar a resolução do simulador de modo que o Windows selecione uma imagem diferente para ajustar à resolução, será preciso parar e reiniciar a sessão de depuração para exibir a nova imagem.

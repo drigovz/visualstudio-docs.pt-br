@@ -1,5 +1,7 @@
 ---
 title: Analisar o uso de energia em aplicativos UWP | Microsoft Docs
+description: Use o criador de perfil de consumo de energia do Visual Studio para analisar demandas de energia e energia de aplicativos UWP em execução em dispositivos conectados à bateria.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 2945ef9879e83567f37ebe410ba9f265bfd64760
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: cf55035ba5a05917334b2192067a3273f4930775
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075451"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205782"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analisar o uso de energia em aplicativos UWP
 
@@ -124,9 +126,9 @@ if (performance && performance.mark) {
 
  ![Página de relatório do Energy Profiler](../profiling/media/energyprof_all.png "ENERGYPROF_All")
 
-|Image|Descrição|
+|Imagem|Descrição|
 |-|-|
-|![Etapa 1](../profiling/media/procguid_1.png "ProcGuid_1")|O arquivo de relatório é chamado Report*AAAAMMDD-HHMM*.diagsession. Você poderá alterar o nome se decidir salvar o relatório.|
+|![Etapa 1](../profiling/media/procguid_1.png "ProcGuid_1")|O arquivo de relatório é chamado Report *AAAAMMDD-HHMM*.diagsession. Você poderá alterar o nome se decidir salvar o relatório.|
 |![Etapa 2](../profiling/media/procguid_2.png "ProcGuid_2")|A linha de tempo mostra a duração da sessão de criação de perfil, os eventos de ativação de ciclo de vida do aplicativo e as marcas de usuário.|
 |![Etapa 3](../profiling/media/procguid_3.png "ProcGuid_3")|Você pode restringir o relatório a uma parte da linha do tempo arrastando as barras azuis para selecionar uma região da linha do tempo.|
 |![Etapa 4](../profiling/media/procguid_4.png "ProcGuid_4")|O gráfico **Consumo de Energia** é um gráfico de várias linhas que exibe a alteração na saída de potência causada por um recurso do dispositivo durante uma sessão de criação de perfil. O criador de perfil Consumo de Energia controla a energia usada pela CPU, pela atividade de rede e pelo monitor.|

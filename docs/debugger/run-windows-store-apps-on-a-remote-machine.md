@@ -1,5 +1,7 @@
 ---
 title: Depurar aplicativos UWP em computadores remotos | Microsoft Docs
+description: Examine como usar o Visual Studio para executar, depurar, criar um perfil e testar um aplicativo Plataforma Universal do Windows (UWP) remotamente em outro computador ou dispositivo.
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c8e8305cb454bfc9f0fb0be4b9964ac1a7e4fe96
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: a28769237f0c1b0078e9c9c117695e68e5b521ac
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "92298706"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204950"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Depurar aplicativos UWP em máquinas remotas a partir do Visual Studio
 
@@ -45,7 +47,7 @@ Para depurar um aplicativo UWP em um dispositivo remoto do Visual Studio:
 
 ### <a name="configure-a-c-or-visual-basic-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Configurar um projeto em C# ou Visual Basic para depuração remota
 
-1. Selecione o projeto C# ou Visual Basic no Visual Studio **Gerenciador de soluções** e selecione o ícone **Propriedades** , pressione **ALT** + **Enter**ou clique com o botão direito do mouse e escolha **Propriedades**.
+1. Selecione o projeto C# ou Visual Basic no Visual Studio **Gerenciador de soluções** e selecione o ícone **Propriedades** , pressione **ALT** + **Enter** ou clique com o botão direito do mouse e escolha **Propriedades**.
 
 1. Selecione a guia **Depurar**.
 
@@ -57,7 +59,7 @@ Para depurar um aplicativo UWP em um dispositivo remoto do Visual Studio:
 
 ### <a name="configure-a-c-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Configurar um projeto C++ para depuração remota
 
-1. Selecione o projeto C++ no Visual Studio **Gerenciador de soluções** e selecione o ícone **Propriedades** , pressione **ALT** + **Enter**ou clique com o botão direito do mouse e escolha **Propriedades**.
+1. Selecione o projeto C++ no Visual Studio **Gerenciador de soluções** e selecione o ícone **Propriedades** , pressione **ALT** + **Enter** ou clique com o botão direito do mouse e escolha **Propriedades**.
 
 1. Selecione a guia **depuração** .
 
@@ -100,7 +102,7 @@ A depuração remota funciona da mesma forma que a depuração local.
 
 1. No computador do Visual Studio, verifique se o destino de depuração correto (computador ou **dispositivo****remoto** ) aparece ao lado da seta verde na barra de ferramentas.
 
-1. Inicie a depuração selecionando **depurar**  >  **Iniciar Depuração**, pressionando **F5**ou selecionando a seta verde na barra de ferramentas.
+1. Inicie a depuração selecionando **depurar**  >  **Iniciar Depuração**, pressionando **F5** ou selecionando a seta verde na barra de ferramentas.
 
    O projeto é recompilado e, em seguida, é implantado e iniciado no dispositivo remoto. O depurador suspende a execução em pontos de interrupção, e você pode percorrer, acima e fora de código.
 

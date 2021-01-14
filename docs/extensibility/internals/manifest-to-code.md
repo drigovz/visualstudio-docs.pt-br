@@ -1,5 +1,7 @@
 ---
 title: Manifest to Code | Microsoft Docs
+description: Saiba como usar o manifesto da ferramenta de código que usa um arquivo. imagemanifest para uso com o serviço de imagem do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e21f266cc0dea39cfbaba660ef3557af6023c104
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ca43ac07bbdcec98cd204cb2720ac9f2cdef1f1
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536117"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204547"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 A ferramenta de Manifest to Code é um aplicativo de console que usa um arquivo. imagemanifest para o serviço de imagem do Visual Studio e gera um arquivo ou arquivos de invólucro para referenciar os valores do manifesto da imagem em arquivos C++, C#, VB ou. vsct para extensões do Visual Studio. Essa ferramenta gera arquivos wrapper que podem ser usados para solicitar imagens do serviço de imagem do Visual Studio diretamente, ou para passar os valores de manifesto por meio de APIs se o código não tratar nenhuma de sua própria interface do usuário e renderização.

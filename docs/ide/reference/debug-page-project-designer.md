@@ -1,5 +1,7 @@
 ---
 title: Página de Depuração, Designer de Projeto
+description: Use a página de depuração do designer de projeto para definir propriedades de depuração em um projeto Visual Basic ou C#. Consulte este artigo para obter descrições das configurações.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -14,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 406b3ecdc0e4e3f0d45c22fc9201bd37c6031152
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8567b762e9858205e3ca8d6aafa8a3dba17a90fe
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418737"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205769"
 ---
 # <a name="debug-page-project-designer"></a>Página de Depuração, Designer de Projeto
 
 Use a página **Depurar** do **Designer de Projeto** para definir as propriedades do comportamento de depuração em um projeto do Visual Basic ou C#.
 
-Para acessar a página **Depurar**, selecione um nó do projeto no **Gerenciador de Soluções**. No menu **projeto** , escolha ** \<ProjectName> Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Depurar**.
+Para acessar a página **Depurar**, selecione um nó do projeto no **Gerenciador de Soluções**. No menu **projeto** , escolha **\<ProjectName> Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Depurar**.
 
 > [!NOTE]
 > Este tópico não se aplica a aplicativos UWP. Confira [Iniciar uma sessão de depuração (VB, C#, C++ e XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) para aplicativos UWP.
@@ -34,7 +36,7 @@ Para acessar a página **Depurar**, selecione um nó do projeto no **Gerenciador
 
 As opções a seguir permitem selecionar a configuração e a plataforma a ser exibida ou modificada.
 
-**Configuração**
+**Configuration**
 
 Especifica quais definições de configuração exibir ou modificar. As configurações podem ser **Depurar** (padrão), **Versão** ou **Todas as Configurações**.
 
@@ -85,7 +87,7 @@ Marque ou desmarque esta caixa de seleção para habilitar ou desabilitar a depu
 ## <a name="see-also"></a>Confira também
 
 - [Introdução ao depurador](../../debugger/debugger-feature-tour.md)
-- [Definições do projeto para configurações de depuração do C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Definições do projeto para uma configuração de depuração do Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Configurações de projeto para configurações de depuração em C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Configurações de projeto para uma configuração de depuração de Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Proteger aplicativos ClickOnce](../../deployment/securing-clickonce-applications.md)
 - [Como: criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md)

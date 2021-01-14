@@ -1,5 +1,7 @@
 ---
 title: Visão geral do serviço de linguagem herdada | Microsoft Docs
+description: Saiba mais sobre os serviços de linguagem herdados no Visual Studio e os recursos com suporte pelas classes de serviço de linguagem MPF (Managed Package Framework).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aed653ec200063e72434fc758c7920e6caabafe1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1ec349e38acbdb0271ecfb0c081b4f1aadadcd9
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707353"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204937"
 ---
 # <a name="legacy-language-service-overview"></a>Visão geral do serviço de linguagem herdado
 Um serviço de linguagem fornece suporte ao editor que permite que você implemente determinados [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] recursos. As classes de serviço de linguagem MPF (Managed Package Framework) fornecem suporte completo para recursos usados com frequência e suporte parcial para outros recursos.

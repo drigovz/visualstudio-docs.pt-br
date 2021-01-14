@@ -1,5 +1,7 @@
 ---
 title: Guia Windows, caixa de diálogo Propriedades da janela | Microsoft Docs
+description: Use a guia Windows das propriedades do Windows para mostrar informações sobre as janelas relacionadas à janela selecionada. Consulte este artigo para ver as configurações.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,19 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce1015741b2a1e7ba1608eea7f198b726e808f7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03cbcee265855c0e3ee26f75d5937315d64661a2
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900777"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205392"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Guia Janelas, Caixa de diálogo Propriedades da Janela
 Use a guia **Windows** para mostrar informações sobre o Windows relacionadas à janela selecionada. Para exibir a [caixa de diálogo Propriedades da janela](../debugger/window-properties-dialog-box.md), mova o foco para a janela [exibição do Windows](../debugger/windows-view.md) . Selecione qualquer nó de janela na árvore e, em seguida, escolha **Propriedades** no menu **Exibir** .
 
  As configurações a seguir estão disponíveis na guia **Windows** :
 
-|Entrada|Descrição|
+|Entrada|Description|
 |-----------|-----------------|
 |**Próxima janela**|O identificador da próxima janela irmã na mesma sequência (ordem Z) mostrada no modo de exibição de árvore de janela ("nenhum" se não houver nenhuma janela seguinte). Escolha esta entrada para exibir as propriedades da próxima janela.|
 |**Janela anterior**|O identificador da janela irmã anterior na mesma sequência (ordem Z) mostrada no modo de exibição de árvore de janela ("None" se não houver nenhuma janela anterior). Escolha esta entrada para exibir as propriedades da janela anterior.|

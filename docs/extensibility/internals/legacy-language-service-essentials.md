@@ -1,5 +1,7 @@
 ---
 title: Noções básicas do serviço de linguagem herdada | Microsoft Docs
+description: Saiba mais sobre os recursos essenciais disponíveis em serviços de linguagem herdados que permitem integrar uma linguagem de programação ao Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 501bccf755293e86e8a9dc23fce125a10c882376
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffa21b619ef17be3fa649732a2b6e3bcd700dda6
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707418"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205132"
 ---
 # <a name="legacy-language-service-essentials"></a>Conceitos básicos do serviço de linguagem herdado
 Você deve fornecer um serviço de linguagem para integrar uma linguagem de programação ao Visual Studio. Este tópico explica os recursos disponíveis em serviços de idioma herdados.
@@ -45,4 +47,4 @@ Você deve fornecer um serviço de linguagem para integrar uma linguagem de prog
 | Recurso | Descrição |
 |-----------------------| - |
 | Avaliadores de expressão | Dá suporte ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador Validando pontos de interrupção e fornecendo uma lista de expressões a serem exibidas na janela depurar **automaticamente** .<br /><br /> Para obter mais informações, consulte [suporte ao serviço de linguagem para depuração](../../extensibility/internals/language-service-support-for-debugging.md). |
-| Ferramentas de navegação de símbolos | Dá suporte ao **pesquisador de objetos**, **modo de exibição de classe**, **pesquisador de chamadas**e **resultados de Localizar símbolo**. |
+| Ferramentas de navegação de símbolos | Dá suporte ao **pesquisador de objetos**, **modo de exibição de classe**, **pesquisador de chamadas** e **resultados de Localizar símbolo**. |

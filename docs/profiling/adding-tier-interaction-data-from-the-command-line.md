@@ -1,5 +1,7 @@
 ---
 title: Adicionando dados de interação de camadas da linha de comando | Microsoft Docs
+description: Para aplicativos de várias camadas que se comunicam com um ou mais bancos de dados, use a criação de perfil de interação de camada para obter informações de tempo de execução para chamadas síncronas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5e3dc7fc3ebbb3d06e85f7322237ecb72b22b0e
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779864"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205535"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Adicionar dados de interação de camada por meio da linha de comando
 
@@ -32,7 +34,7 @@ A criação de perfil de interação de camadas pode ser coletada usando qualque
 
 **Coletar dados TIP em um computador remoto**
 
-Para coletar dados de interação de camada em um computador remoto, você deve copiar o arquivo **vs_profiler \_ ** _\<Platform>_ **\_** _\<Language>_ **. exe** da pasta _% VSINSTALLDIR%_**\Team Tools\Performance Tools\Setups** de um computador do Visual Studio para o computador remoto e instalá-lo. Não é possível usar as ferramentas de criação de perfil no pacote de download da [Depuração Remota](../debugger/remote-debugging.md).
+Para coletar dados de interação de camada em um computador remoto, você deve copiar o arquivo **vs_profiler \_** _\<Platform>_ **\_** _\<Language>_ **. exe** da pasta _% VSINSTALLDIR%_**\Team Tools\Performance Tools\Setups** de um computador do Visual Studio para o computador remoto e instalá-lo. Não é possível usar as ferramentas de criação de perfil no pacote de download da [Depuração Remota](../debugger/remote-debugging.md).
 
 **Relatórios TIP**
 

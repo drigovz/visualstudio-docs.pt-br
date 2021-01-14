@@ -1,6 +1,7 @@
 ---
 title: Configurações do projeto para uma configuração de depuração do VB | Microsoft Docs
-ms.custom: seodec18
+description: Saiba como alterar as configurações do projeto para uma configuração de depuração Visual Basic na janela páginas de propriedades do Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcac88c2faf1af7378ce25597789700df61648a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 277d78b225afae13d73e091c1228e181df30e532
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72730612"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205587"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Definições do projeto para uma configuração de depuração do Visual Basic
 Você pode alterar as configurações do projeto para uma configuração de depuração do [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] na janela **Páginas de Propriedades**, conforme discutido em [Configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram onde localizar as configurações relacionadas ao depurador na janela **Páginas de Propriedades**.
@@ -36,11 +37,11 @@ Você pode alterar as configurações do projeto para uma configuração de depu
 > [!WARNING]
 > Este tópico não se aplica a aplicativos UWP. Consulte [iniciar uma sessão de depuração (VB, C#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
-### <a name="debug-tab"></a>Guia Depurar
+### <a name="debug-tab"></a>Guia de depuração
 
 | Configuração | Descrição |
 |------------------------------| - |
-| **Configuração** | Define o modo para compilar o aplicativo. Escolha entre **Ativo (depuração)**, **Depuração**, **Versão**, **Todas as Configurações**. |
+| **Configuration** | Define o modo para compilar o aplicativo. Escolha entre **Ativo (depuração)**, **Depuração**, **Versão**, **Todas as Configurações**. |
 | **Iniciar Ação** | Esse grupo de controles especifica a ação que ocorrerá quando você escolhe Iniciar do menu Depurar.<br /><br /> -   **Iniciar projeto** é o padrão e inicia o projeto de inicialização da depuração. <br />-   **Iniciar programa externo** permite que você inicie e anexe a um programa que não faz parte de um projeto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Para obter mais informações, consulte [anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Iniciar navegador na URL** permite que você depure um aplicativo Web. |
 | **Argumentos de linha de comando** | Especifica argumentos de linha de comando para o programa ser depurado. O nome do comando é o nome do programa especificado em Iniciar programa externo. Se Iniciar Ação for definida para iniciar URL, os argumentos de linha de comando serão ignorados. |
 | **Diretório de trabalho** | Especifica o diretório de trabalho do programa que está sendo depurado. No [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], o diretório de trabalho é o diretório a partir do qual o aplicativo é iniciado. O diretório de trabalho padrão é \bin\Debug ou \bin\Release, dependendo da configuração atual. |
@@ -58,4 +59,4 @@ Você pode alterar as configurações do projeto para uma configuração de depu
 | **Definir constante de rastreamento** | Definir esse símbolo permite compilar de forma condicional as funções de saída da [classe Trace](/dotnet/api/system.diagnostics.trace). Com esse símbolo definido, os métodos da classe Trace geram saída para a [janela de saída](../ide/reference/output-window.md). Sem esse símbolo, os métodos da classe de rastreamento não são compilados e nenhuma saída de rastreamento será gerada. Esse símbolo é definido por padrão para as versões de depuração e lançamento. |
 
 ## <a name="see-also"></a>Confira também
-- [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)
+- [Configurações e preparação do depurador](../debugger/debugger-settings-and-preparation.md)

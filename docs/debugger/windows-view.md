@@ -1,5 +1,7 @@
 ---
 title: Exibição do Windows | Microsoft Docs
+description: A exibição do Windows mostra uma árvore de todas as janelas e controles. Use-o como ponto de partida para obter informações sobre o Windows de interesse.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 717c0f18d5443f712151a2f8318c56a8e738f6d7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900847"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205366"
 ---
 # <a name="windows-view"></a>Exibição de janelas
 Quando você abre o Spy + + pela primeira vez, a exibição do Windows exibe uma árvore de todas as janelas e controles no sistema. O identificador da janela e o nome da classe são mostrados. A janela da área de trabalho atual está na parte superior da árvore. Todas as outras janelas são filhas da área de trabalho e são listadas de acordo com a hierarquia de janela padrão. As janelas irmãos aparecem em listas de expansible recuadas abaixo de seus pais.
