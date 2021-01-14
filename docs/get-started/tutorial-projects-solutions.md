@@ -7,17 +7,19 @@ ms.custom:
 - get-started
 - SEO-VS-2020
 ms.topic: tutorial
+f1_keywords:
+- project.addnewitem
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa347b7f789e24e7cdd3baa19a6267f0ecdf2e5
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 3e27eb0cc102740f7ca344099486b73be41c5412
+ms.sourcegitcommit: 208f75ad89ad91b994701bb5cbc0a251fbaa3604
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727509"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98166830"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>Introdução a projetos e soluções
 
@@ -307,7 +309,7 @@ Se você quiser verificar se o teste de unidade está funcionando, escolha **tes
 
 ::: moniker-end
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Trabalhar com projetos e soluções](../ide/creating-solutions-and-projects.md)
 - [Gerenciar propriedades do projeto e da solução](../ide/managing-project-and-solution-properties.md)
