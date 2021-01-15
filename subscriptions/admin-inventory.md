@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
-ms.date: 10/22/2020
+ms.date: 01/14/2021
 ms.topic: conceptual
 description: Saiba mais sobre a responsabilidade dos administradores de realizar inventários de pré-produção
-ms.openlocfilehash: b464a7d9cfa8c802cd2367c5c7d0e76141583f3a
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: abcb3c8c1213885b5e543b05cf912c418acaa3f5
+ms.sourcegitcommit: 4ee20054afe7bcf5c0aed504dec01e18059fbbd0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467421"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226481"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventário do ambiente de pré-produção
 As assinaturas do Visual Studio simplificam o gerenciamento de ativos ao contar usuários em vez de dispositivos.
@@ -24,6 +24,9 @@ Aqui estão algumas maneiras para simplificar a realização do inventário do a
 - Use seu Active Directory local ou baseado em nuvem para listar os usuários. Se você usa o Active Directory para gerenciar o acesso de usuários, talvez seja possível identificar usuários de desenvolvimento e teste de acordo com as respectivas associações de diretório.
 - Use ferramentas automatizadas para inventariar sistemas. Talvez também seja necessário usar uma ferramenta de inventário de software para ajudá-lo a gerenciar os ativos de software e distinguir ambientes de pré-produção dos ambientes de produção. Muitos clientes com o Microsoft System Center criam convenções de nomenclatura para ajudar a automatizar essa parte do processo de inventário.
 - Obter ajuda com a reconciliação manual. Inscreva a sua equipe para ajudar a reconciliar os usuários de desenvolvimento e teste com seu ambiente de desenvolvimento e teste.
+
+> [!NOTE]
+> O software das assinaturas do Visual Studio não está licenciado para ambientes de produção, incluindo qualquer ambiente acessado por usuários finais para finalidades diferentes de testes de aceitação ou comentários, um ambiente em conexão com um banco de dados de produção, para dar suporte à recuperação de desastres ou backup de produção ou ser usado para a produção durante períodos de pico de atividade. As exceções incluem benefícios específicos para determinados níveis de assinatura, descritos no [White Paper de licenciamento do Visual Studio](https://aka.ms/vslicensing).  
 
 ## <a name="resources"></a>Recursos
 - [White paper de licenciamento do Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
