@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ba3db5b74a415d3736c37f54fdb708fde3436d92
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: dc82d72d7c0a333fc28146746a473ed359857490
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756585"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240277"
 ---
 # <a name="unit-test-tools-and-tasks"></a>Ferramentas e tarefas de teste de unidade
 
@@ -36,7 +36,7 @@ As ferramentas de testes de unidade incluem:
 
 * Estrutura de isolamento de **falsificações da Microsoft** &mdash; A estrutura de isolamento de falsificações da Microsoft pode criar classes e métodos substitutos para produção e código .NET do sistema que criam dependências no código em teste. Ao implementar os delegados falsos para uma função, você controla o comportamento e a saída do objeto de dependência.
 
-Você também pode usar o [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) para explorar seu código .NET para gerar dados de teste e um conjunto de testes de unidade. Para cada instrução no código, é gerada uma entrada de teste para executar essa instrução. Uma análise de caso é realizada para cada branch condicional do código.
+Para o .NET, você também pode usar o [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) para explorar seu código e gerar dados de teste e um conjunto de testes de unidade. Para cada instrução no código, é gerada uma entrada de teste para executar essa instrução. Uma análise de caso é realizada para cada branch condicional do código.
 
 ## <a name="key-tasks"></a>Tarefas-chave
 
@@ -58,6 +58,6 @@ Use os artigos a seguir para ajudar com o entendimento e a criação dos testes 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting> descreve o namespace UnitTesting, que fornece atributos, exceções, asserções e outras classes que oferecem suporte a testes de unidade.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> descreve o namespace UnitTesting.Web, que estende o namespace UnitTesting dando suporte para o ASP.NET e a testes de unidade do serviço Web.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Melhorar a qualidade do código](../test/improve-code-quality.md)

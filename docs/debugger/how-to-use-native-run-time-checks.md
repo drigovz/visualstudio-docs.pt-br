@@ -39,12 +39,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e46e2253c5664fff9cf456250d375993a0a0c9a
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 70f047fa84513821812a13f7dee3136d2d431d9a
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150633"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240238"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Como usar verificações de tempo de execução nativas
 Em um projeto do Visual Studio C++, você pode usar [runtime_checks](/cpp/preprocessor/runtime-checks) nativos para capturar erros comuns de tempo de execução, como:
@@ -68,8 +68,6 @@ Em um projeto do Visual Studio C++, você pode usar [runtime_checks](/cpp/prepro
   Outros tópicos desta seção fornecem informações sobre:
 
 - [Personalizando as verificações de tempo de execução com a biblioteca em tempo de execução C](../debugger/native-run-time-checks-customization.md)
-
-- [Usando verificações de Run-Time sem a biblioteca C Run-Time](../debugger/using-run-time-checks-without-the-c-run-time-library.md)
 
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Para habilitar as verificações de tempo de execução nativas em uma compilação de depuração
 
