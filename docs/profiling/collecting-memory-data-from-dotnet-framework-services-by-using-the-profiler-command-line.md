@@ -1,5 +1,6 @@
 ---
 title: Linha de comando do profiler-obter dados de memória de serviços .NET
+description: Saiba como usar o método de amostragem da linha de comando para coletar dados de alocação de memória e de tempo de vida de objeto para um serviço de .NET Framework.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: f07cb03979baf62d436b4bdb319620364a88ddad
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ef6ec36dc9c0fb0e6431dcb92ee292050c5d25f3
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809395"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533752"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Coletar dados de memória por meio de serviços do .NET Framework usando a linha de comando do criador de perfil
 Esta seção descreve os procedimentos e as opções para coletar dados de alocação de memória e de tempo de vida do objeto para um serviço .NET Framework usando o método de amostragem na linha de comando.

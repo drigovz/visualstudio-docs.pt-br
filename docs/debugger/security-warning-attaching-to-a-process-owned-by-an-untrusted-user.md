@@ -1,6 +1,6 @@
 ---
 title: 'Aviso de segurança: A anexação a um processo pertencente a um usuário não confiável pode ser perigosa. Se as informações a seguir parecerem suspeitas ou se você não tiver certeza, não anexe a este processo | Microsoft Docs'
-ms.date: 11/04/2016
+ms.date: 1/15/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.attachsecuritywarning
@@ -15,21 +15,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05b78ea0ca06a0ba9670e61cc065cf539ea21ebc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44f7df253951d90a29c459bf28e6ff1c2279ee54
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72729770"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533362"
 ---
 # <a name="security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process"></a>Aviso de segurança: A anexação a um processo pertencente a um usuário não confiável pode ser perigosa. Se as informações a seguir parecerem suspeitas ou, se você não tiver certeza, não anexe a esse processo
+
 Essa caixa de diálogo de aviso é exibida quando você anexa a um processo que contém o código parcialmente confiável ou seja de propriedade de um usuário não confiável imediatamente antes de ocorrer a anexação. Um processo não confiável que contém o código mal-intencionado tem o potencial de danificar o computador que faz a depuração. Se você tiver razão para desconfiar do processo, clique em **Cancelar** para evitar a depuração.
 
- Para suprimir esse aviso ao depurar um cenário legítimo, feche o Visual Studio e defina o valor dessa chave do registro como 1: `HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\<version>\Debugger\DisableAttachSecurityWarning` e reinicie o Visual Studio. Depois de concluir a depurar do cenário, redefina o valor como 0 e reinicie o Visual Studio.
+Em cenários do IIS, você poderá ver esse aviso se usar um pool de aplicativos personalizado, que não é confiável.
 
- Os “Usuários confiáveis” incluem você, mais um conjunto de usuários padrão que são definidos normalmente em computadores que têm o .NET Framework instalado, por exemplo, `aspnet`, `localsystem`, `networkservice` e `localservice`.
+Para suprimir este aviso ao depurar um cenário legítimo:
+
+1. Feche o Visual Studio.
+
+1. Defina o valor da `DisableAttachSecurityWarning` chave do registro como 1.
+
+   Localize ou crie a chave em `HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\<version>\Debugger` e defina-a como 1.
+
+   A partir do Visual Studio 2017, se você quiser exibir as configurações completas do registro, será necessário carregar o hive do registro privado. Para obter mais informações, consulte [como examinar o registro do Visual Studio 2017](https://github.com/microsoft/VSProjectSystem/blob/master/doc/overview/examine_registry.md). Certifique-se de descarregar o hive do registro privado antes de iniciar o Visual Studio.
+
+1. Reinicie o Visual Studio.
+
+1. Depois de concluir a depurar do cenário, redefina o valor como 0 e reinicie o Visual Studio.
+
+Os “Usuários confiáveis” incluem você, mais um conjunto de usuários padrão que são definidos normalmente em computadores que têm o .NET Framework instalado, por exemplo, `aspnet`, `localsystem`, `networkservice` e `localservice`.
 
 ## <a name="uielement-list"></a>Lista de elementos de interface do usuário
+
  Nome do nome do assembly solicitado para depurar
 
  Usuário atual usuário

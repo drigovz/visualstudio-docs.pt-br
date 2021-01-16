@@ -1,5 +1,7 @@
 ---
 title: Comparando arquivos de dados de desempenho | Microsoft Docs
+description: Use Ferramentas de Criação de Perfil para comparar dois arquivos de relatório (. vsp ou. vsps). A comparação mostra diferenças, regressões de desempenho e melhorias.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 64842c5b4f622a1f76aa528360f79403ec92cb42
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d1c57c6c3dd8d7d01e37eae374c547e074d62e6
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777849"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533492"
 ---
 # <a name="compare-performance-data-files"></a>Comparar arquivos de dados de desempenho
 
-Ferramentas de Criação de Perfil funcionalidade de comparação de arquivos de dados permite que você selecione dois arquivos de relatório (.* VSP* /ou. *vsps*) arquivos e gerar um relatório que mostra as diferenças, as regressões de desempenho e os aprimoramentos que ocorreram de uma sessão de criação de perfil para a outra.
+Ferramentas de Criação de Perfil funcionalidade de comparação de arquivos de dados permite que você selecione dois arquivos de relatório (.*VSP* ou. *vsps*) arquivos e gerar um relatório que mostra as diferenças, as regressões de desempenho e os aprimoramentos que ocorreram de uma sessão de criação de perfil para a outra.
 
 Um relatório de comparação de arquivos de dados de Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] compara os resultados de uma análise em um arquivo de dados de criação de perfil com os resultados de uma análise de linha de base em outro arquivo de dados. Os dois arquivos de dados devem ter sido gerados usando o mesmo método de criação de perfil. O relatório das comparações analisadas é salvo como um. arquivo *vsps* .
 

@@ -1,5 +1,6 @@
 ---
 title: Coletar alocação de memória do .NET & dados de tempo de vida
+description: Para ajudar a detectar problemas de desempenho relacionados à memória em seu aplicativo .NET, use Ferramentas de Criação de Perfil para coletar dados de alocação de memória e de tempo de vida do objeto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1354fb95b543e73a67d19204871f3b79aec9ece9
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: a9321ce83f65d5a7cac95d793d5f635651bef0e7
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809421"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533791"
 ---
 # <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>Coletar .NET Framework alocação de memória e dados de tempo de vida
 
@@ -53,7 +54,7 @@ Para obter informações sobre como coletar dados de memória do .NET usando as 
 
 ## <a name="common-tasks"></a>Tarefas comuns
 
-Você pode especificar opções adicionais na caixa de diálogo**páginas de propriedades** de _sessão de desempenho_da sessão de desempenho. Para abrir essa caixa de diálogo:
+Você pode especificar opções adicionais na caixa de diálogo **páginas de propriedades** de _sessão de desempenho_ da sessão de desempenho. Para abrir essa caixa de diálogo:
 
 - Em **Gerenciador de desempenho**, clique com o botão direito do mouse no nome da sessão de desempenho e clique em **Propriedades**.
 

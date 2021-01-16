@@ -1,5 +1,7 @@
 ---
 title: Linha de comando do profiler-detalhes de dados de tempo para aplicativo autônomo
+description: Saiba como usar o método de instrumentação da linha de comando para coletar dados de desempenho detalhados para um componente autônomo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f088a0da0e8525189e4e2addf1464b30e1e98d06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d93673080acd36f4195fb9b19382c9f0152f51f5
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331828"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533830"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Coletar dados de tempo detalhados para um aplicativo autônomo usando a linha de comando do criador de perfil
 Esta seção descreve os procedimentos e opções para coletar dados de desempenho detalhados para um componente cliente (autônomo) usando o método de instrumentação da linha de comando.

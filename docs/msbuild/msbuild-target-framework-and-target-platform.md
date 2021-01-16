@@ -10,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d29c4e4659e8e6a5564e3fb41f54615bf29171d2
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 958f33a39126f8f48cf29bad1c25c7d962513ed0
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049107"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533856"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Estrutura de destino e plataforma de destino do MSBuild
 
-Um projeto pode ser compilado para executar tanto em uma *estrutura de destino* , que é uma versão específica do .NET Framework, quanto em uma *plataforma de destino* , que é uma arquitetura de software específico.  Por exemplo, você pode direcionar um aplicativo para ser executado no .NET Framework 2,0 em uma plataforma de 32 bits que seja compatível com a família de processadores 80x86 ("x86"). A combinação de estrutura de destino e plataforma de destino é conhecida como o *contexto de destino* .
+Um projeto pode ser compilado para executar tanto em uma *estrutura de destino*, que é uma versão específica do .NET Framework, quanto em uma *plataforma de destino*, que é uma arquitetura de software específico.  Por exemplo, você pode direcionar um aplicativo para ser executado no .NET Framework 2,0 em uma plataforma de 32 bits que seja compatível com a família de processadores 80x86 ("x86"). A combinação de estrutura de destino e plataforma de destino é conhecida como o *contexto de destino*.
 
 > [!IMPORTANT]
 > Este artigo mostra a maneira antiga de especificar uma estrutura de destino. Os projetos no estilo SDK permitem TargetFrameworks diferentes, como o netstandard. Para obter mais informações, confira [Estruturas de destino](/dotnet/standard/frameworks).
@@ -78,7 +78,7 @@ A estrutura de destino é especificada na propriedade `TargetFrameworkVersion` n
 
 - `x86` designa um sistema operacional Windows de 32 bits em execução em um processador Intel 80x86 ou equivalente.
 
-- `x64` designa um sistema operacional Windows de 64 bits em execução em um processador Intel x64 ou equivalente.
+- `x64` designa um sistema operacional Windows de 64 bits que está sendo executado em um processador Intel x64 ou seu equivalente.
 
 - `Xbox` designa a plataforma Microsoft Xbox 360.
 
@@ -91,7 +91,7 @@ Uma *plataforma de destino* é a plataforma específica na qual seu projeto é c
 
 ```
 
-Uma *configuração de destino* é um subconjunto de uma plataforma de destino. Por exemplo, a configuração `x86` `Debug` não inclui a maioria das otimizações de código. A configuração de destino é especificada na propriedade de build `Configuration` em um arquivo de projeto. Você pode alterar a configuração de destino usando as páginas de propriedades do projeto ou **Gerenciador de Configurações** .
+Uma *configuração de destino* é um subconjunto de uma plataforma de destino. Por exemplo, a configuração `x86` `Debug` não inclui a maioria das otimizações de código. A configuração de destino é especificada na propriedade de build `Configuration` em um arquivo de projeto. Você pode alterar a configuração de destino usando as páginas de propriedades do projeto ou **Gerenciador de Configurações**.
 
 ```xml
 <PropertyGroup>
@@ -101,6 +101,6 @@ Uma *configuração de destino* é um subconjunto de uma plataforma de destino. 
 
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Multidirecionamento](../msbuild/msbuild-multitargeting-overview.md)
+- [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)

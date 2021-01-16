@@ -1,6 +1,6 @@
 ---
 title: Padrões comuns para aplicativos multithread com mau desempenho
-description: Saiba mais sobre os padrões comuns para aplicativos multithread com mau desempenho que estão incluídos na ferramenta do Visualizador de simultaneidade do Visual Studio.
+description: O Visualizador de simultaneidade fornece grafos para aplicativos multi-threaded, e uma galeria de padrões comuns de mal comporta os mesmos.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e14640da4d66134ca961607f66f6a355f6b9d9
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: f6d5139a0327af05f67c2a7429b1055fa80c2175
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815783"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533544"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Padrões comuns para aplicativos multi-threaded com mau comportamento
 
@@ -70,6 +70,6 @@ O uso excessivo ou incorreto de E/S é uma causa comum de ineficiências em apli
 
 Comboios de bloqueio ocorrem quando o aplicativo adquire bloqueios em ordem de chegada e quando a taxa de chegada no bloqueio é maior que a taxa de aquisição. A combinação dessas duas condições faz com que as solicitações do bloqueio comecem a fazer backup. Uma maneira de combater esse problema é usar bloqueios “desleais” ou bloqueios que dão acesso ao primeiro thread para localizá-los em estados desbloqueados. A ilustração anterior mostra o comportamento desse comboio. Para resolver o problema, experimente reduzir a contenção dos objetos de sincronização e usar bloqueios desleais.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Modo de Exibição de Threads](../profiling/threads-view-parallel-performance.md)

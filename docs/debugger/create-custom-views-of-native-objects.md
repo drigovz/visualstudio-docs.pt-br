@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37bfd1ab57fd0e37f32a55d5bfc3787cb0c0cbd2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60d817c3600eaa82eb7f67489d5dadadaba3932f
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248053"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533960"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Criar exibições personalizadas de objetos C++ no depurador usando a estrutura Natvis
 
@@ -72,21 +72,21 @@ Você pode adicionar um arquivo *. natvis* a qualquer projeto C++.
 
 **Para adicionar um novo arquivo *. natvis* :**
 
-1. Selecione o nó do projeto C++ em **Gerenciador de soluções**e selecione **projeto**  >  **Adicionar novo item**ou clique com o botão direito do mouse no projeto e selecione **Adicionar**  >  **novo item**.
+1. Selecione o nó do projeto C++ em **Gerenciador de soluções** e selecione **projeto**  >  **Adicionar novo item** ou clique com o botão direito do mouse no projeto e selecione **Adicionar**  >  **novo item**.
 
-1. Na caixa de diálogo **Adicionar novo item** , selecione **Visual C++**  >  **Utility**  >  **arquivo de visualização do depurador do utilitário (. natvis)**.
+1. Na caixa de diálogo **Adicionar novo item** , selecione **Visual C++**  >    >  **arquivo de visualização do depurador do utilitário (. natvis)**.
 
 1. Nomeie o arquivo e selecione **Adicionar**.
 
-   O novo arquivo é adicionado a **Gerenciador de soluções**e é aberto no painel do documento do Visual Studio.
+   O novo arquivo é adicionado a **Gerenciador de soluções** e é aberto no painel do documento do Visual Studio.
 
 O depurador do Visual Studio carrega arquivos *. natvis* em projetos C++ automaticamente e, por padrão, também os inclui no arquivo *. pdb* quando o projeto é compilado. Se você depurar o aplicativo criado, o depurador carregará o arquivo *. natvis* do arquivo *. pdb* , mesmo que você não tenha o projeto aberto. Se você não quiser que o arquivo *. natvis* seja incluído no *. pdb*, você poderá excluí-lo do arquivo *. pdb* criado.
 
 **Para excluir um arquivo *. natvis* de um *. pdb*:**
 
-1. Selecione o arquivo *. natvis* em **Gerenciador de soluções**e selecione o ícone **Propriedades** ou clique com o botão direito do mouse no arquivo e selecione **Propriedades**.
+1. Selecione o arquivo *. natvis* em **Gerenciador de soluções** e selecione o ícone **Propriedades** ou clique com o botão direito do mouse no arquivo e selecione **Propriedades**.
 
-1. Solte a seta ao lado de **excluído da compilação** e selecione **Sim**e, em seguida, selecione **OK**.
+1. Solte a seta ao lado de **excluído da compilação** e selecione **Sim** e, em seguida, selecione **OK**.
 
 >[!NOTE]
 >Para depurar projetos executáveis, use os itens da solução para adicionar qualquer arquivo *. natvis* que não esteja no *. pdb*, já que não há nenhum projeto do C++ disponível.
@@ -167,6 +167,12 @@ As visualizações do Natvis usam expressões do C++ para especificar os itens d
 
 - Para controlar como uma expressão é exibida, você pode usar qualquer um dos especificadores de formato descritos nos [especificadores de formato em C++](format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers). Os especificadores de formato são ignorados quando a entrada é usada internamente pelo Natvis, como a `Size` expressão em uma [expansão ArrayItems](../debugger/create-custom-views-of-native-objects.md#BKMK_ArrayItems_expansion).
 
+>[!NOTE]
+> Como o documento natvis é XML, suas expressões não podem usar diretamente os operadores de e comercial, maior que, menor que ou Shift. Você deve escapar desses caracteres no corpo do item e nas instruções de condição. Por exemplo:<br>
+> \<Item Name="HiByte"\>minuciosa (_flags \& gt; \& gt 24), x\</Item\><br>
+> \<Item Name="HiByteStatus" Condition="(_flags \&amp; 0xFF000000) == 0"\>None\</Item\><br>
+> \<Item Name="HiByteStatus" Condition="(_flags \&amp; 0xFF000000) != 0"\>Qualquer\</Item\>
+
 ## <a name="natvis-views"></a>Exibições de Natvis
 
 Você pode definir exibições de Natvis diferentes para exibir tipos de maneiras diferentes. Por exemplo, aqui está uma visualização de `std::vector` que define uma exibição simplificada chamada `simple` . O `DisplayString` e os `ArrayItems` elementos são mostrados no modo de exibição padrão e no `simple` modo de exibição, enquanto os `[size]` `[capacity]` itens e não são mostrados na `simple` exibição.
@@ -195,7 +201,7 @@ Quando o depurador encontra erros em uma entrada de visualização, ele os ignor
 
 **Para ativar o diagnóstico de Natvis:**
 
-- Em **ferramentas**  >  **Opções** (ou **Debug**  >  **Opções**de depuração) > **depuração**  >  **janela de saída**, defina **mensagens de diagnóstico de Natvis (somente C++)** para **erro**, **aviso**ou **detalhado**e, em seguida, selecione **OK**.
+- Em **ferramentas**  >  **Opções** (ou   >  **Opções** de depuração) > **depuração**  >  **janela de saída**, defina **mensagens de diagnóstico de Natvis (somente C++)** para **erro**, **aviso** ou **detalhado** e, em seguida, selecione **OK**.
 
 Os erros aparecem na janela **saída** .
 
@@ -508,7 +514,7 @@ Você poderá usar `ArrayItems` a expansão somente se os elementos da matriz fo
 </Type>
 ```
 
-A única diferença entre `ArrayItems` e `IndexListItems` é o `ValueNode` , que espera a expressão completa para o elemento<sup>th</sup> i com o parâmetro implícito `$i` .
+A única diferença entre `ArrayItems` e `IndexListItems` é o `ValueNode` , que espera a expressão completa para o elemento<sup></sup> i com o parâmetro implícito `$i` .
 
 >[!NOTE]
 >Você pode usar o `[]` operador, por exemplo `vector[i]` , com qualquer visualização de matriz unidimensional que usa `IndexListItems` , mesmo que o próprio tipo (por exemplo `CATLArray` ) não permita esse operador.

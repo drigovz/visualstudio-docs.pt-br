@@ -1,5 +1,6 @@
 ---
 title: Coletar dados de simultaneidade do processo de & de thread
+description: Use o método de criação de perfil de simultaneidade Ferramentas de Criação de Perfil para coletar dados sobre cada evento de sincronização que faz com que uma função aguarde o acesso aos recursos.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f44b7785306fc486c8f550c41bcac199825b8ed
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c1f6d0dbc8c10c972957e2bcf8092d145bb3651c
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810712"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533739"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>Coletar dados de simultaneidade de thread e do processo
 
@@ -31,7 +32,7 @@ O método de criação de perfil de simultaneidade das Ferramentas de Criação 
 
 ## <a name="common-tasks"></a>Tarefas comuns
 
-Você pode especificar opções adicionais na caixa de diálogo**páginas de propriedades** de _sessão de desempenho_da sessão de desempenho. Para abrir essa caixa de diálogo:
+Você pode especificar opções adicionais na caixa de diálogo **páginas de propriedades** de _sessão de desempenho_ da sessão de desempenho. Para abrir essa caixa de diálogo:
 
 - Em **Gerenciador de desempenho**, clique com o botão direito do mouse no nome da sessão de desempenho e clique em **Propriedades**.
 

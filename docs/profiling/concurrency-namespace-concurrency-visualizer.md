@@ -1,5 +1,7 @@
 ---
 title: Namespace de simultaneidade (Visualização Simultânea) | Microsoft Docs
+description: Para escrever programas simultâneos em C++, use o namespace Concurrency, que fornece acesso ao Tempo de Execução de Simultaneidade, uma estrutura de simultaneidade para C++.
+custom.ms: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,17 +14,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 258cb5964946d5dbf136463538905d970346b8df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdb9f2cee62c126f7a8b91fb7be57f558c9a7e5c
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63001073"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533427"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Namespace de simultaneidade (Visualização Simultânea)
 O namespace `Concurrency` oferece classes e funções que permitem que você acesse o Runtime de simultaneidade, uma estrutura de programação simultânea para C++. Para obter mais informações, consulte [Runtime de Simultaneidade](/cpp/parallel/concrt/concurrency-runtime).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```cpp
 namespace Concurrency;

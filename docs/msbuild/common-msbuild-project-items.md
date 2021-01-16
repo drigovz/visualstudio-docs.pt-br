@@ -17,16 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 638f67575a7214047cdb917c994179ac144e60b2
-ms.sourcegitcommit: 49c959911128a733ed2858db7c0e3b565f934b1a
+ms.openlocfilehash: ea072cf3e9a236fdc6a4ad66b1c0cf7ddcda1550
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93238617"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533439"
 ---
 # <a name="common-msbuild-project-items"></a>Itens de projeto comuns do MSBuild
 
-No MSBuild, um item é uma referência nomeada para um ou mais arquivos. Itens contêm metadados, como nomes de arquivos, caminhos e números de versão. Todos os tipos de projeto no Visual Studio têm vários itens em comum. Esses itens são definidos no arquivo *Microsoft.Build.CommonTypes.xsd* .
+No MSBuild, um item é uma referência nomeada para um ou mais arquivos. Itens contêm metadados, como nomes de arquivos, caminhos e números de versão. Todos os tipos de projeto no Visual Studio têm vários itens em comum. Esses itens são definidos no arquivo *Microsoft.Build.CommonTypes.xsd*.
 
 ## <a name="common-items"></a>Itens comuns
 
@@ -43,7 +43,7 @@ Representa uma referência de assembly (gerenciado) no projeto.
 |FusionName|Cadeia de caracteres opcional. Especifica o nome de fusão simples ou forte para o item.<br /><br /> Quando esse atributo estiver presente, é possível economizar tempo, pois o arquivo do assembly não precisa ser aberto para obter o nome de fusão.|
 |SpecificVersion|Booliano opcional. Especifica se apenas a versão no nome de fusão deve ser referenciada.|
 |Aliases|Cadeia de caracteres opcional. Quaisquer aliases da referência.|
-|Privados|Booliano opcional. Especifica se a referência deve ser copiada para a pasta de saída. Esse atributo corresponde à propriedade **Copiar Local** da referência que está no Visual Studio IDE.|
+|Privado|Booliano opcional. Especifica se a referência deve ser copiada para a pasta de saída. Esse atributo corresponde à propriedade **Copiar Local** da referência que está no Visual Studio IDE.|
 
 ### <a name="comreference"></a>COMReference
 
@@ -86,11 +86,11 @@ Representa uma referência a outro projeto. `ProjectReference` os itens são tra
 |GlobalPropertiesToRemove|`string[]` opcional. Nomes das propriedades a serem removidas ao criar o projeto referenciado, por exemplo `RuntimeIdentifier;PackOnBuild` . O padrão é vazio.|
 |Project|Cadeia de caracteres opcional. Um GUID para a referência, no formato {12345678-1234-1234-1234-1234567891234}.|
 |OutputItemType|Cadeia de caracteres opcional. Tipo de item para o qual as saídas de destino são emitidas. O padrão está em branco. Se os metadados de referência forem definidos como "true" (padrão), as saídas de destino se tornarão referências para o compilador.|
-|ReferenceOutputAssembly|Booliano opcional. Se estiver definido como `false`, não inclui a saída do projeto referenciado como uma [referência](#reference) deste projeto, mas ainda garante que o outro projeto seja compilado antes desse. Assume o padrão de `true`.|
+|ReferenceOutputAssembly|Booliano opcional. Se estiver definido como `false`, não inclui a saída do projeto referenciado como uma [referência](#reference) deste projeto, mas ainda garante que o outro projeto seja compilado antes desse. O padrão é `true`.|
 |Configuração de|Cadeia de caracteres opcional. Define a propriedade global `Configuration` para o projeto referenciado, por exemplo `Configuration=Release` .|
 |Setplatform|Cadeia de caracteres opcional. Define a propriedade global `Platform` para o projeto referenciado, por exemplo `Platform=AnyCPU` .|
 |SetTargetFramework|Cadeia de caracteres opcional. Define a propriedade global `TargetFramework` para o projeto referenciado, por exemplo `TargetFramework=netstandard2.0` .|
-|SkipGetTargetFrameworkProperties|Booliano opcional. Se `true` , o criará o projeto referenciado sem negociar o valor mais compatível `TargetFramework` . Assume o padrão de `false`.|
+|SkipGetTargetFrameworkProperties|Booliano opcional. Se `true` , o criará o projeto referenciado sem negociar o valor mais compatível `TargetFramework` . O padrão é `false`.|
 |Destinos|`string[]` opcional. Lista de destinos separados por ponto e vírgula nos projetos referenciados que devem ser compilados. Padrão é o valor do `$(ProjectReferenceBuildTargets)` qual o padrão é vazio, indicando os destinos padrão.|
 
 ### <a name="compile"></a>Compilar
@@ -189,5 +189,4 @@ Representa assemblies cujos namespaces devem ser importados pelo compilador Visu
 ## <a name="see-also"></a>Confira também
 
 - [Propriedades de projeto comuns do MSBuild](../msbuild/common-msbuild-project-properties.md)
-- [Propriedades do MSBuild para projetos SDK do .NET Core](/dotnet/core/project-sdk/msbuild-props)
 - [Metadados de itens comuns do MSBuild](common-msbuild-item-metadata.md)
