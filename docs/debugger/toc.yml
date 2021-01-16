@@ -180,8 +180,6 @@
                   href: native-run-time-checks-customization.md
                 - name: Escrever uma função de relatório de erro em tempo de execução
                   href: how-to-write-a-run-time-error-reporting-function.md
-                - name: Usar verificações em tempo de execução sem a biblioteca em tempo de execução do C
-                  href: using-run-time-checks-without-the-c-run-time-library.md
         - name: Especificar o símbolo (.pdb) e arquivos de origem no depurador
           href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
         - name: Depurar o código do usuário
