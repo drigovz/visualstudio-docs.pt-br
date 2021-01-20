@@ -2,17 +2,17 @@
 title: O benefício da revista de código nas assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
-ms.date: 12/02/2020
+ms.date: 01/19/2021
 ms.topic: how-to
 description: Saiba mais sobre o benefício da revista de código incluído na sua assinatura do Visual Studio.
-ms.openlocfilehash: ff65a47df129eaf59d1404335cd8fd98df7474d6
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: a9aabd98fa872846d12e20b3aad3f617d1c97a64
+ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538105"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597397"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Revista de código incluída nas assinaturas do Visual Studio
 
@@ -49,15 +49,16 @@ Depois de concluir sua ordem de assinatura, você verá uma página de confirma�
 ## <a name="eligibility"></a>Qualificação
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Disponível       |  Não          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Disponível       |  Não          |
 | Assinatura Visual Studio Enterprise com o GitHub Enterprise   | VL| Disponível       |  Não          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Disponível                                                            |  Não          |
 | Assinatura Visual Studio Professional com o GitHub Enterprise | VL                                      | Disponível                                                            |  Não          |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Disponível                                             |  Não          |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Disponível                                              |  Não          |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/D |
+| Visual Studio Enterprise NFR<sup>1</sup> | NFR | Não disponível | N/D |
 
-<sup>1</sup>  *inclui: não para revenda (NFR), parceiro do setor do Visual Studio (VSIP), FTE, BizSpark, imagine Premium.  Exclui: Microsoft Partner Network (MPN), profissional mais valioso (MVP), diretor regional (RD), MCT software & Developer Services, MCT software & Services, imagine.*
+<sup>1</sup>  *inclui: não para revenda (NFR), parceiro do setor do Visual Studio (VSIP), FTE, BizSpark, imagine, imagine Premium, Microsoft Partner Network (MPN), profissional mais valioso (MVP), diretor regional (RD), MCT software & Developer Services, MCT software & Services.*
 
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Novos clientes são incentivados a ir para [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a fim de explorar diferentes opções para comprar o Visual Studio.
@@ -76,7 +77,7 @@ R: a revista de código coleta seu endereço, independentemente de a assinatura 
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

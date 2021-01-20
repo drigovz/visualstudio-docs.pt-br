@@ -2,18 +2,18 @@
 title: A experiência do git no Visual Studio
 titleSuffix: ''
 description: Saiba como a nova experiência integrada do git no Visual Studio 2019 pode ajudá-lo a ser mais produtivo.
-ms.date: 11/16/2020
+ms.date: 01/15/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 6092b02f5f8f94b3c87b68afe344fffba96c1a7d
-ms.sourcegitcommit: 987ed5f5adf85771d77c0efafc36d939fb9a356f
+ms.openlocfilehash: 5f93d8c29bcf7e85df04dd364868e65f70482b72
+ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98571980"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597413"
 ---
 # <a name="git-experience-in-visual-studio"></a>Experiência de git no Visual Studio
 
