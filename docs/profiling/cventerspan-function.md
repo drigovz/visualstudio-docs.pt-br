@@ -1,5 +1,7 @@
 ---
 title: Função CvEnterSpan | Microsoft Docs
+description: Consulte informações de referência para a função do SDK do Visualizador de simultaneidade CvEnterSpan (biblioteca C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5bb034d4a2501175d117256364082966a97af8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50a68d58d6a9b2564c732605075811e8bc99721f
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328974"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686513"
 ---
 # <a name="cventerspan-function"></a>Função CvEnterSpan
 Marca o início de um novo intervalo.
@@ -114,7 +116,7 @@ HRESULT CvEnterSpanExVA(
 
  `ppSpan` Endereço da variável que conterá o objeto de período resultante. O endereço não pode ser NULL; a variável pode ter qualquer valor.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  S_OK quando a mensagem é gravada com êxito. Código de erro em caso de erros. Use as macros SUCCEEDED/FAILED para verificar a condição de erro.
 
 ## <a name="requirements"></a>Requisitos
@@ -124,5 +126,5 @@ HRESULT CvEnterSpanExVA(
 
  **ANSI:** CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Referência da biblioteca C++](../profiling/cpp-library-reference.md)

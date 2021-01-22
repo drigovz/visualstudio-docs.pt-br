@@ -1,5 +1,7 @@
 ---
 title: Função CvReleaseMarkerSeries | Microsoft Docs
+description: Consulte informações de referência para a função do SDK do Visualizador de simultaneidade CvReleaseMarkerSeries (biblioteca C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84db5dac77fbbc51c9f1c0e24173dcc8ca1d68c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a69f60a991b9d88e6969992edbfe8eabdb7bd116
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332195"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686448"
 ---
 # <a name="cvreleasemarkerseries-function"></a>Função CvReleaseMarkerSeries
 Libera a série de marcador. Não use um objeto de série de marcador após a liberação; caso contrário, o aplicativo poderá falhar. A falha ao liberar a série de marcador causa uma perda de memória.
@@ -33,11 +35,11 @@ HRESULT CvReleaseMarkerSeries(
 #### <a name="parameters"></a>Parâmetros
  `pMarkerSeries` Endereço da variável de objeto do provedor. O endereço não pode ser NULL; a variável pode ter qualquer valor.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  S_OK quando a série de marcador é liberada com êxito ou código de erro no caso de erros. Use as macros SUCCEEDED/FAILED para verificar a condição de erro.
 
 ## <a name="requirements"></a>Requisitos
  **Cabeçalho:** *cvmarkers.h*
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Referência da biblioteca C++](../profiling/cpp-library-reference.md)

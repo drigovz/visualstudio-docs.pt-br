@@ -1,5 +1,7 @@
 ---
 title: Personalizando exibições de relatório das ferramentas de desempenho | Microsoft Docs
+description: Consulte esta seção para obter maneiras de personalizar relatórios gerados com o Visual Studio Ferramentas de Criação de Perfil.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9479c0dc2af592271bc7f21db1cec0c71cc7e71d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57a3dddbefcf0b5a0220da282674fa781f102030
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777758"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686188"
 ---
 # <a name="customize-performance-tools-report-views"></a>Personalizar exibições de relatório das ferramentas de desempenho
 Esta seção aborda como personalizar relatórios gerados com as Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -33,5 +35,5 @@ Esta seção aborda como personalizar relatórios gerados com as Ferramentas de 
 ## <a name="related-sections"></a>Seções relacionadas
 - [Exibições do relatório de desempenho](../profiling/performance-report-views.md) Descreve as exibições que podem ser usadas para analisar os dados de criação de perfil.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Analisar dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)

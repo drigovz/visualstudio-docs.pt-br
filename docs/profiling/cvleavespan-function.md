@@ -1,5 +1,7 @@
 ---
 title: Função CvLeaveSpan | Microsoft Docs
+description: Consulte informações de referência para a função do SDK do Visualizador de simultaneidade CvLeaveSpan (biblioteca C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 113d6aafbd09f6b726613405a8c1eb82f9e202e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1dcd98a8233f8080d03650c3989805ee9ec7289
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330033"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686578"
 ---
 # <a name="cvleavespan-function"></a>Função CvLeaveSpan
 Marca o fim do intervalo.
@@ -33,11 +35,11 @@ HRESULT CvLeaveSpan(
 #### <a name="parameters"></a>Parâmetros
  `pSpan` Objeto de período retornado pela chamada anterior a CvEnterSpan*. Não pode ser NULL.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  S_OK quando a mensagem é gravada com êxito. Código de erro em caso de erros. Use as macros SUCCEEDED/FAILED para verificar a condição de erro.
 
 ## <a name="requirements"></a>Requisitos
  **Cabeçalho:** *cvmarkers.h*
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Referência da biblioteca C++](../profiling/cpp-library-reference.md)

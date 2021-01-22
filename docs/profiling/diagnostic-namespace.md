@@ -1,5 +1,7 @@
 ---
 title: Namespace diagnostic | Microsoft Docs
+description: Use o namespace de diagnóstico para emitir marcadores de visualizador de simultaneidade. O namespace de diagnóstico é um membro do namespace de simultaneidade.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 680d304a8e4d21365d82f654265ae2f34582b636
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20b25e2974f4b0e4a6bbf6cf02c411fde3f3de1a
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330253"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686539"
 ---
 # <a name="diagnostic-namespace"></a>Namespace de diagnóstico
 O namespace `diagnostics` fornece funcionalidade para emitir marcadores de Visualização Simultânea.
@@ -48,5 +50,5 @@ namespace diagnostic;
 
  **Namespace:** Simultaneidade
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Namespace de simultaneidade (Visualizador de simultaneidade)](../profiling/concurrency-namespace-concurrency-visualizer.md)

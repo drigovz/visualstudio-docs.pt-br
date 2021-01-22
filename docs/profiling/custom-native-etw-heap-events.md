@@ -1,5 +1,7 @@
 ---
 title: Eventos de heap ETW nativo personalizado | Microsoft Docs
+description: Saiba como usar um heap personalizado para reduzir a sobrecarga de alocação, mas ainda fornecer informações de alocação para o criador de perfil de memória para análise de alocação.
+ms.custom: SEO-VS-2020
 ms.date: 02/24/2017
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
@@ -10,12 +12,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61005bf108d0dab16ec419e942e3da97e02cdc7f
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62552925"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686318"
 ---
 # <a name="custom-native-etw-heap-events"></a>Eventos de heap de ETW nativos personalizados
 
@@ -49,7 +51,7 @@ Um instantâneo da ferramenta [Uso de Memória](../profiling/memory-usage.md) se
 
 ![Alocação de heap do Windows](media/heap-example-windows-heap.png)
 
-Ao realizar as etapas a seguir, podemos usar essa mesma ferramenta para acompanhar o uso de memória em nosso heap personalizado.
+Ao executar as etapas a seguir, podemos usar essa mesma ferramenta para rastrear o uso de memória em nosso heap personalizado.
 
 ## <a name="how-to-use"></a>Como usar
 
@@ -155,6 +157,6 @@ Assim como ocorre com o heap padrão do Windows, também é possível usar essa 
 > [!TIP]
 > O Visual Studio também contém uma ferramenta **Uso de Memória** no conjunto de ferramentas **Criação de Perfil de Desempenho**, que é habilitada na opção de menu **Depurar** > **Criador de Perfil de Desempenho** ou na combinação de teclas **Alt**+**F2**.  Esse recurso não inclui o acompanhamento de heap e não exibirá o heap personalizado descrito aqui.  Somente a janela **Ferramentas de Diagnóstico**, que pode ser habilitada com o menu **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico** ou a combinação de teclas **Ctrl**+**Alt**+**F2**, contém essa funcionalidade.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 [Primeiro, veja as ferramentas](../profiling/profiling-feature-tour.md) 
  de criação de perfil [Uso de memória](../profiling/memory-usage.md)

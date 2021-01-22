@@ -5,19 +5,19 @@ description: Uma lista com as versões lançadas e números de build do Visual S
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 1/12/2021
+ms.date: 1/21/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 7dee68d791880027ae1dfabfccf58954cd2d5fe1
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 2cc67c299f11a43c21f7890090415a83587c976f
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150529"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686552"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio
 
@@ -29,6 +29,7 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 
 | **Versão**| **Channel** | **Data de liberação** | **Versão da compilação** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.9.0 | Versão Prévia 3 | 21 de janeiro de 2021 | 16.9.30914.41 |
 | 16.8.4 | Versão | 12 de janeiro de 2021 | 16.8.30907.101 |
 | 16.7.10 | Versão | 12 de janeiro de 2021 | 16.7.30816.78 |
 | 16.4.17 | Versão | 12 de janeiro de 2021 | 16.4.30816.121 |
@@ -385,7 +386,7 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [Roteiro do Visual Studio](/visualstudio/productinfo/vs-roadmap)
 * [Ritmo de lançamento do Visual Studio](/visualstudio/productinfo/release-rhythm)
