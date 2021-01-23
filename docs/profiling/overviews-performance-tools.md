@@ -1,5 +1,6 @@
 ---
 title: Visões gerais (Ferramentas de Desempenho) | Microsoft Docs
+description: Aprenda conceitos e terminologia para o Visual Studio Ferramentas de Criação de Perfil. Use as informações para medir as características de desempenho de um aplicativo em desenvolvimento.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d27f777b660b2ffc94c4b9b6f0b6ba55816d626b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772661"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722822"
 ---
 # <a name="overviews-performance-tools"></a>Visões gerais (ferramentas de desempenho)
 Esta seção fornece visões gerais conceituais e de terminologia para as Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], que você pode usar para medir as características de desempenho de um aplicativo em desenvolvimento.
@@ -58,5 +59,5 @@ Esta seção fornece visões gerais conceituais e de terminologia para as Ferram
 
 ## <a name="see-also"></a>Confira também
 
-- [Guia de Introdução](../profiling/getting-started-with-performance-tools.md)
+- [Introdução](../profiling/getting-started-with-performance-tools.md)
 - [Performance Explorer](../profiling/performance-explorer.md)

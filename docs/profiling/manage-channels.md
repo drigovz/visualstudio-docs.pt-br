@@ -1,5 +1,6 @@
 ---
 title: Gerenciar Canais | Microsoft Docs
+description: Saiba como você pode organizar os canais para seu processo para poder examinar padrões específicos na exibição threads no Visualizador de simultaneidade.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0dd8643f63a7a3e67400f09f00b999fff33f09e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64779246"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721262"
 ---
 # <a name="manage-channels"></a>Gerenciar canais
 Em **Exibição de Threads** na Visualização Simultânea, você pode organizar os canais para o seu processo, de forma que você possa examinar padrões específicos. Você pode classificar os canais, movê-los para cima e para baixo, ocultá-los ou mostrá-los.
@@ -30,7 +31,7 @@ Em **Exibição de Threads** na Visualização Simultânea, você pode organizar
 |Hora de início|Classifica os threads de acordo com os horários de início. Essa é a ordem de classificação padrão.|
 |Hora de término|Classifica os threads de acordo com os horários de término.|
 |Execução|Classifica os threads de acordo com o percentual de tempo gasto na execução.|
-|Synchronization|Classifica os threads de acordo com o percentual de tempo gasto na sincronização.|
+|Sincronização|Classifica os threads de acordo com o percentual de tempo gasto na sincronização.|
 |E/S|Classifica os threads de acordo com o percentual de tempo gasto na entrada/saída (leitura e gravação de dados).|
 |Modo de suspensão|Classifica os threads de acordo com o percentual de tempo gasto no modo de suspensão.|
 |Paginamento|Classifica os threads de acordo com o percentual de tempo gasto na paginação.|

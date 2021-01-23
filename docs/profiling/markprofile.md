@@ -1,5 +1,6 @@
 ---
 title: MarkProfile | Microsoft Docs
+description: O método MarkProfile insere uma marca de perfil no arquivo. vsp. A criação de perfil para o thread que contém a função MarkProfile deve estar ATIVAda para que a marca seja inserida.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f53b51f9e78e2cb5d327abd3a79ebf2faa3a9204
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecf676c58d8850834ec0c3333196dfb7144f885e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778564"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718857"
 ---
 # <a name="markprofile"></a>MarkProfile
 O método `MarkProfile` insere uma marca de perfil no arquivo .*vsp*. A criação de perfil para o thread que contém a função `MarkProfile` deve ser ON para a marca a ser inserida.

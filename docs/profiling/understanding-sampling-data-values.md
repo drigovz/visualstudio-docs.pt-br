@@ -1,5 +1,6 @@
 ---
 title: Noções básicas sobre valores de dados de amostragem | Microsoft Docs
+description: Saiba como o método de criação de perfil de amostragem do Visual Studio Ferramentas de Criação de Perfil interrompe o processador do computador em intervalos definidos e coleta a pilha de chamadas de função.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 289f92deaceca32a44249ed77c17187743a34fa4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81efd0f20ba971555ec8c1333dfc322112f13e17
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778044"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722159"
 ---
 # <a name="understand-sampling-data-values"></a>Noções básicas sobre valores de dados de amostragem
 

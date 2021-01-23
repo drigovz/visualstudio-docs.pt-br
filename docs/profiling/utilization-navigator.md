@@ -1,5 +1,6 @@
 ---
 title: Navegador da Utilização | Microsoft Docs
+description: Saiba como você pode usar o navegador de utilização no Visualizador de simultaneidade para selecionar um intervalo de tempo em um rastreamento.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e2562e86af36d935679916c2bfb9669be1758d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f209098200333e91f0e5baf9c7a2b73b4a3202f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62823473"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723212"
 ---
 # <a name="utilization-navigator"></a>Navegador da utilização
 É possível usar o Navegador da Utilização na Visualização Simultânea para selecionar um intervalo de tempo em um rastreamento. A Visualização Simultânea mostra o uso dos núcleos da CPU pelo processe de destino ao longo do tempo. Assim, fica mais fácil examinar os padrões de uso da CPU e comparar os dados de uso e dados de outras exibições. O Navegador da Utilização aparece na parte superior de cada exibição da Visualização Simultânea. A ilustração a seguir mostra o Navegador da Utilização.

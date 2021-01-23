@@ -1,5 +1,7 @@
 ---
 title: Legenda da exibição de núcleos | Microsoft Docs
+description: Saiba mais sobre a legenda de exibição de núcleos, que fornece dados de alternância de contexto de tabela e seleção de thread. Saiba também sobre alternâncias de contexto e desempenho.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ea3184fbcd3561b88521f7dbdf4bf44c925150d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 043f056587856b5c5774a3a15b3542437e0d4eb7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62553157"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720820"
 ---
 # <a name="cores-view-legend"></a>Legenda da exibição de núcleos
 A legenda da Exibição de Núcleos identifica cada thread pela cor e pelo nome. Ela inclui colunas que mostram contagens de alternâncias de contexto de núcleo cruzado, o total de alternâncias de contexto e o percentual de alternâncias de contexto que cruzam núcleos. As linhas na legenda são classificadas pelo número de alternâncias de contexto de núcleo cruzado, em ordem decrescente.

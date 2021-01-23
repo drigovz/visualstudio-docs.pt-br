@@ -1,5 +1,6 @@
 ---
 title: ProcessOn e ProcessOff | Microsoft Docs
+description: Saiba como os subcomandos VSPerfCmd.exe ProcessOff e Procession pausam e retomam a criação de perfil para o processo especificado em uma sessão de criação de perfil de linha de comando.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae4b5e95636894ddc2d0c4799308afb057145747
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778382"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719442"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn e ProcessOff
 Os subcomandos VSPerfCmd.exe **ProcessOff** e **ProcessOn** pausam e retomam a criação de perfil para o processo especificado em uma sessão de criação de perfil de linha de comando. **ProcessOff** interrompe o processo de criação de perfil e **ProcessOn** inicia o processo de criação de perfil.

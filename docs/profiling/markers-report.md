@@ -1,5 +1,6 @@
 ---
 title: Relatório de Marcadores | Microsoft Docs
+description: Saiba como o relatório de marcadores lista os marcadores no período de tempo exibido e como a panorâmica ou o zoom pode fazer com que os marcadores apareçam ou desapareçam.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9502d2cf0081985cfbee2283af820c06d681ad9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e95cf3b14f804c481ff03ec6fbf72b360efedc7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64808266"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722107"
 ---
 # <a name="markers-report"></a>Relatório de marcadores
 O Relatório de Marcadores lista os marcadores no período de tempo exibido.  A movimentação panorâmica, a aplicação de zoom ou a ocultação de pistas pode fazer com que os marcadores apareçam ou desapareçam. O relatório contém informações sobre cada marcador:

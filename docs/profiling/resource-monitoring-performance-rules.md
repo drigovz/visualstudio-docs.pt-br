@@ -1,5 +1,6 @@
 ---
 title: Regras de Desempenho do Monitoramento de Recurso | Microsoft Docs
+description: Saiba como as mensagens de desempenho na categoria monitoramento de recursos fornecem dados adicionais sobre o desempenho do seu aplicativo.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f0f77faf-0a05-4718-a2c5-47934be40868
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 39df18811a47dfb41c17333121cd9a23d8f46940
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96cad46cd8a42346ab6199bca664cdc885bfc3cd
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544528"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720261"
 ---
 # <a name="resource-monitoring-performance-rules"></a>Regras de desempenho do monitoramento de recurso
 As mensagens de desempenho da categoria Monitoramento de Recurso fornecem dados adicionais sobre o desempenho do aplicativo. É possível utilizar esses dados para analisar problemas de desempenho. Essas regras são informativas e relatadas para todas as execuções de criação de perfil.

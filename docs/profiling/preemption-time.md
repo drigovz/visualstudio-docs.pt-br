@@ -1,5 +1,6 @@
 ---
 title: Tempo de preempção | Microsoft Docs
+description: Saiba mais sobre o Premption tempo e que esses segmentos na linha do tempo estão associados ao tempo de bloqueio Categorizado como preempção.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7a02f7247e09876bc4598d44fc1c395161ebc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a102b11fdc7608b94b97105b061e28860f41a9a1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62935887"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719507"
 ---
 # <a name="preemption-time"></a>Tempo de preempção
 Esses segmentos na linha do tempo estão associados aos tempos de bloqueio categorizados como Preempção. Esta categoria implica que um thread é alternado devido a um destes motivos:

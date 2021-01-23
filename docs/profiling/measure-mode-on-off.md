@@ -1,5 +1,6 @@
 ---
 title: Modo de medida ativado/desativado | Microsoft Docs
+description: Saiba como você pode usar a ferramenta de passagem de modo de medida para medir precisamente um período de tempo na linha do tempo.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbe8ea27f16dc8b120380989c15b1838ea9260d0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62830818"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718987"
 ---
 # <a name="measure-mode-onoff"></a>Ativar/desativar modo de medida
 Com essa ferramenta, é possível medir com precisão um período de tempo na linha do tempo. Para habilitar o modo de medida, clique no botão de medida (que tem um ícone de régua) e, em seguida, arraste a linha do tempo. Ao arrastar, observe que a área abaixo do ponteiro será realçada em amarelo e o tempo medido aparecerá na barra de ferramentas à direita do botão. Esse valor é calculado dinamicamente conforme você arrasta a fim de que seja possível ver imediatamente o quanto um determinado evento está demorando. Quando você soltar o botão do mouse, o valor temporal permanecerá visível.

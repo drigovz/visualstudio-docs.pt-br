@@ -1,5 +1,6 @@
 ---
 title: Noções básicas sobre valores de dados de instrumentação| Microsoft Docs
+description: Saiba como o método de criação de perfil de instrumentação registra informações detalhadas de tempo para as chamadas de função, linhas e instruções no aplicativo de criação de perfil.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dace7b13816c63664ccb4dabfed52d1c5fb7523
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2f049ccb40d2d34c22fddbf841e36bd513db80f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778070"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722341"
 ---
 # <a name="understand-instrumentation-data-values"></a>Noções básicas sobre valores de dados de instrumentação
 

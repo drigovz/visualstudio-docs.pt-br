@@ -1,5 +1,6 @@
 ---
 title: Exibição de detalhes de recurso – Dados de contenção | Microsoft Docs
+description: Saiba como o modo de exibição detalhes do recurso apresenta um gráfico de linha do tempo dos eventos de bloqueio que foram causados por contenções em um recurso selecionado.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e66432fd2f5d8b1532bece9d76e7dfc2a261e4b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45babe50e794e0831fd0e93048b32feaf18be87a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74771567"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720352"
 ---
 # <a name="resource-details-view---contention-data"></a>Exibição de detalhes do recurso – Dados de contenção
 A exibição de Detalhes do Recurso apresenta um gráfico de linha do tempo dos eventos de bloqueio que foram causados por contenções em um recurso selecionado. Um evento de bloqueio ocorre quando um thread é forçado a suspender a execução porque outro thread bloqueou o acesso ao recurso.

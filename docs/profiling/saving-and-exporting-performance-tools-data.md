@@ -1,5 +1,6 @@
 ---
 title: Salvando e Exportando Dados de Ferramentas de Desempenho | Microsoft Docs
+description: Saiba como você pode salvar exibições filtradas ou não filtradas de arquivos de dados de criação de perfil (. vsp) como arquivos de relatório analisado (. vsps).
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 729dc2e28446420dd2590e132b7ec8a5444fcb9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b340abd81cef7183c2ba25af58ae432d8c80e6a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773893"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720145"
 ---
 # <a name="save-and-export-performance-tools-data"></a>Salvar e exportar dados de ferramentas de desempenho
 Este artigo descreve como salvar e exportar arquivos de dados de desempenho.
@@ -34,7 +35,7 @@ Este artigo descreve como salvar e exportar arquivos de dados de desempenho.
 
 #### <a name="to-save-an-analyzed-performance-report-from-the-report-view-window"></a>Salvar um relatório de desempenho analisado da janela Exibição de Relatório
 
-1. Abra os dados de criação de perfil (.* VSP*) no arquivo na janela de exibição de relatório.
+1. Abra os dados de criação de perfil (.*VSP*) no arquivo na janela de exibição de relatório.
 
 2. (Opcional) Aplique um filtro aos dados. Para obter mais informações, consulte [filtro de exibição de relatório de desempenho](../profiling/performance-report-view-filter.md).
 

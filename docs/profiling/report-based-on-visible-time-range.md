@@ -1,5 +1,6 @@
 ---
 title: Relatório com base no intervalo de tempo visível | Microsoft Docs
+description: Saiba como a exibição de perfil exibe relatórios com base no intervalo de tempo e nos canais visíveis no momento.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02dc0e009702b25c2204f0a1302931fe941b5f59
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63002340"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720365"
 ---
 # <a name="report-based-on-visible-time-range"></a>Relatório com base no intervalo de tempo visível
 O modo de exibição de perfil exibe relatórios com base no intervalo de tempo visível no momento e canais. Para ver detalhes de subconjuntos diferentes de dados, clique em itens na legenda.

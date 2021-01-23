@@ -1,5 +1,6 @@
 ---
 title: Exibições de dados do método de amostragem do criador de perfil | Microsoft Docs
+description: Saiba mais sobre os modos de exibição e relatórios de arquivos de dados do profiler que foram gerados usando o método de amostragem.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d845d84d421ca44f5b936df0a7138fefa848d8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b88abc935ca9eaef0a22230d427817756629bcb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772144"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719429"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Exibições de dados do método de amostragem do criador de perfil
 Esta seção contém informações de referência sobre as exibições e os relatórios dos arquivos de dados do criador de perfil que foram gerados por método de amostragem.

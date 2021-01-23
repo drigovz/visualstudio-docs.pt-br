@@ -1,5 +1,6 @@
 ---
 title: ResumeProfile | Microsoft Docs
+description: Saiba como o método ResumeProfile Decrementa o contador suspender/retomar para o nível de criação de perfil especificado.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d65d5fcf8961493c2b780453f2143de788551a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b700359977e13e4664067ef62af4913d41cbabb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778304"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720235"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 O método `ResumeProfile` diminui o contador de suspender/retomar para o nível de criação de perfil especificado.

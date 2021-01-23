@@ -1,5 +1,6 @@
 ---
 title: Especificar comandos pré e pós-instrumento | Microsoft Docs
+description: Saiba como você pode especificar os comandos que são executados antes ou depois que os binários em uma sessão de desempenho são instrumentados.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 904a5086af4fbbd9c1ef174cae63013cb8c96ad9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 172ca7a478dcc34443d2edf15186d9c040a04837
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851795"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721886"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Como especificar comandos de pré e pós-instrumentação
 

@@ -1,5 +1,6 @@
 ---
 title: Exibição Resumo – Dados de amostragem | Microsoft Docs
+description: Saiba como a exibição de resumo exibe informações sobre as funções mais caras de desempenho em uma execução de criação de perfil.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 649d0e9e5b32c124cfa962f45e4d128e4a32210f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5d75574e29118beacb6312d2dd013a19894a176
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778200"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718948"
 ---
 # <a name="summary-view---sampling-data"></a>Exibição Resumo – dados de amostragem
 A exibição Resumo exibe informações sobre as funções mais caras de desempenho em uma execução da criação de perfil. Para obter mais informações, incluindo uma descrição das listas Links de notificação e Relatório, consulte [Exibição Resumo](../profiling/summary-view.md).

@@ -1,5 +1,7 @@
 ---
 title: Counter | Microsoft Docs
+description: Saiba mais sobre a opção de contador de VSPerfCmd.exe. Ele especifica um intervalo de amostragem ou é uma medida de intervalos de eventos na criação de perfil de instrumentação.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c882514d6bcf27de36a6ca4420fbaf671c72f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85ed799cac54d630dfff1b285d3f2257e5eb99b5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331189"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720690"
 ---
 # <a name="counter"></a>Contador
 A opção **Counter** coleta dados de contadores de desempenho do processador (hardware).

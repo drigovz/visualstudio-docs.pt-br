@@ -1,5 +1,6 @@
 ---
 title: Exibições de dados da contenção de recurso | Microsoft Docs
+description: Saiba mais sobre as informações de referência para as exibições e relatórios de arquivos de dados do profiler que contêm dados de criação de perfil de contenção de thread.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25dc334819c4b32bf74822e46dd3251919f621bf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74771524"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720326"
 ---
 # <a name="resource-contention-data-views"></a>Exibições de dados da contenção de recurso
 Esta seção contém informações de referência para as exibições e os relatórios dos arquivos de dados do criador de perfil que contêm os dados de criação de perfil de contenção de thread.

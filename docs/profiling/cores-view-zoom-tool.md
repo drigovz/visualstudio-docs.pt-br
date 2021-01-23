@@ -1,5 +1,7 @@
 ---
 title: Ferramenta de Zoom de Exibição de Núcleos | Microsoft Docs
+description: Saiba mais sobre os núcleos exibir o controle de zoom, que permite ampliar e reduzir a linha do tempo e também conhecer outras maneiras de aplicar zoom.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6862493de844ad8108009a2103752122114ae6c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df2ffebee150ae106003ed5113e4c7354458143c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62553039"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720716"
 ---
 # <a name="cores-view-zoom-tool"></a>Ferramenta de zoom da exibição de núcleos
 O controle de zoom é um controle deslizante que permite ampliar e reduzir a linha do tempo para que seja possível focar em áreas de interesse específico. Esse controle amplia o centro da exibição atual, então, ajuste a exibição antes de aplicar o zoom.

@@ -1,5 +1,6 @@
 ---
 title: Linha de comando de criação de perfil – criar relatórios básicos
+description: Saiba mais sobre as opções Summary e Chamadamal de VSPerfReport.exe, que criam relatórios. csv (valores separados por vírgula) de um arquivo de dados de criação de perfil. vsp ou. vsps.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ee74732c917ee4267e08f7ff1c60715971ed71
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 86c72f0281f459852b878f17687411ce87eb6978
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808845"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718935"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Criar relatórios básicos de criação de perfil por meio da linha de comando
 Este artigo descreve os comandos básicos do VSPerfReport que geram relatórios de valores separados por vírgula (.*csv*) com base em um arquivo de dados de criação de perfil .*vsp* ou .*vsps*. Para obter uma descrição de todas as opções de relatório, consulte [VSPerfReport](../profiling/vsperfreport.md).
@@ -39,7 +40,7 @@ Este artigo descreve os comandos básicos do VSPerfReport que geram relatórios 
 |**CallTree**|Representa os caminhos de execução e os dados de criação de perfil de funções na execução de criação de perfil.|-   [Dados de instrumentação](../profiling/call-tree-view-instrumentation-data.md)<br />-   [Dados de amostragem](../profiling/call-tree-view-sampling-data.md)<br />-   [Dados de amostragem de memória .NET](../profiling/call-tree-view-dotnet-memory-sampling-data.md)<br />-   [Dados de instrumentação de memória do .NET](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)<br />-   [Dados de contenção](../profiling/call-tree-view-contention-data.md)|
 |**Contador**|Lista marcas de criação de perfil e valores de contador de desempenho do Windows que foram coletados durante a execução da criação de perfil.|-   [Exibição de marcas](../profiling/marks-view.md)|
 |**IP**|Lista dados de criação de perfil por instrução.|-   [Dados de amostragem](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [Dados de amostragem de memória .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [Dados de contenção](../profiling/instruction-pointers-ips-view-contention-data.md)|
-|**Vida Útil**|Lista o tempo de vida de objetos alocados.|-   [Exibição do tempo de vida do objeto](../profiling/object-lifetime-view.md)|
+|**Ciclo**|Lista o tempo de vida de objetos alocados.|-   [Exibição do tempo de vida do objeto](../profiling/object-lifetime-view.md)|
 |**Linha**|Lista dados de criação de perfil por linha de código-fonte.|-   [Dados de amostragem](../profiling/lines-view-sampling-data.md)<br />-   [Dados de amostragem de memória .NET](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Dados de contenção](../profiling/lines-view-contention-data.md)|
 |**Cabeçalho**|Informações de cabeçalho do arquivo de dados de criação de perfil.|Específico ao arquivo.|
 |**Marca**|Marcas de criação de perfil coletadas na execução de criação de perfil.|-   [Exibição de marcas](../profiling/marks-view.md)|

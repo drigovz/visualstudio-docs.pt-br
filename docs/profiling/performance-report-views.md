@@ -1,5 +1,6 @@
 ---
 title: Exibições do Relatório de Desempenho | Microsoft Docs
+description: Saiba como as exibições de arquivos de dados de criação de perfil são exibidas no environmentIDE de desenvolvimento integrado do Visual Studio.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cfb0d9ae2d677b1cc9dc828ffaecd5c0f71bfd5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 611c31027bd725d8a1a98e6cb2e76d544743c811
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772282"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722744"
 ---
 # <a name="performance-report-views"></a>Exibições de Relatório de Desempenho
 Essa seção fornece informações de referência sobre os relatórios e as exibições das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Exibições dos arquivos de dados de criação de perfil são exibidas no IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Os relatórios são gerados pela ferramenta de linha de comando [VSPerfReport](../profiling/vsperfreport.md).

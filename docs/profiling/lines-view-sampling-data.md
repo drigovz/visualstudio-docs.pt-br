@@ -1,5 +1,6 @@
 ---
 title: Exibição de Linhas – Dados de Amostragem | Microsoft Docs
+description: Saiba como a exibição de linhas de dados de amostragem lista dados de desempenho para as instruções que estavam sendo executadas quando as amostras foram coletadas na execução da criação de perfil.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ff4d851937111400002de531696b9b69aec20ba9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38ae3e9c40204082ea8791ddea4e92d77a0d311e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778577"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721314"
 ---
 # <a name="lines-view---sampling-data"></a>Exibição de linhas – dados de amostragem
 A visualização Linhas de dados de amostragem lista os dados de desempenho das instruções que estavam em execução quando os exemplos foram coletados na criação de perfil.

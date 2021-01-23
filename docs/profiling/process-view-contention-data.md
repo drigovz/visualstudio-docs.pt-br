@@ -1,5 +1,6 @@
 ---
 title: Exibição de Processo– Dados de Contenção | Microsoft Docs
+description: Saiba como o modo de exibição de processo exibe dados de contenção para os processos e threads que foram executados durante a execução da criação de perfil.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 30c938088538bcecc71e3a7e37d5ae403dd476e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3eb95c5ba8bb9f519623d4b43bc80d37919305d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778395"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719457"
 ---
 # <a name="process-view---contention-data"></a>Exibição Processo – dados de contenção
 A exibição Processo exibe dados de contenção para os processos e threads que foram executados durante o processo de criação de perfil.

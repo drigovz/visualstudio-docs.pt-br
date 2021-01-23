@@ -1,5 +1,7 @@
 ---
 title: Configurando sessões de desempenho | Microsoft Docs
+description: Saiba como configurar o Ferramentas de Criação de Perfil do Visual Studio para coletar os dados de desempenho que você deseja. Este artigo lista as tarefas comuns e fornece links.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,15 +16,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bdf1c372ffcb3ad3a0ebf102827565853947e2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52e2575e034dbabe5e380857edd95e4bc46f56d2
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777857"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721002"
 ---
 # <a name="configure-performance-sessions"></a>Configurar sessões de desempenho
-Usando as Ferramentas de criação de perfil [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], é possível coletar uma grande variedade de dados de desempenho para um grande número de tipos de aplicativos. Esta seção mostra como usar o Assistente de Desempenho, as propriedades da sessão de desempenho e o binário de destino para configurar as Ferramentas de Criação de Perfil para coletar os dados que lhe interessam. As propriedades de configuração das Ferramentas de Criação de Perfil também podem ser usadas para controlar a quantidade de dados coletada em uma execução de criação de perfil. Para saber mais, confira [Controlar a coleta de dados](../profiling/controlling-data-collection.md).
+Usando as Ferramentas de criação de perfil [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], é possível coletar uma grande variedade de dados de desempenho para um grande número de tipos de aplicativos. Esta seção mostra como usar o assistente de desempenho e as propriedades da sessão de desempenho e o binário de destino para configurar o Ferramentas de Criação de Perfil para coletar os dados que lhe interessam. As propriedades de configuração das Ferramentas de Criação de Perfil também podem ser usadas para controlar a quantidade de dados coletada em uma execução de criação de perfil. Para saber mais, confira [Controlar a coleta de dados](../profiling/controlling-data-collection.md).
 
 > [!NOTE]
 > Em muitos casos, usar as propriedades padrão do Assistente de Desempenho é uma maneira eficiente de coletar dados de criação de perfil. Para saber mais, veja o [Guia para iniciantes da criação de perfil de desempenho](../profiling/beginners-guide-to-performance-profiling.md) e a [Introdução](../profiling/getting-started-with-performance-tools.md).

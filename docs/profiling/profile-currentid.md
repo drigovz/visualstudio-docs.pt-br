@@ -1,5 +1,6 @@
 ---
 title: PROFILE_CURRENTID | Microsoft Docs
+description: Saiba como usar o PROFILE_CURRENTID para fazer com que a função opere no processo ou thread atual, em vez de um indicado especificamente.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5639726762359bb8ba2fb374ee8ddc5c78e2f4da
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 5171753ff8ea6722cf1d97e155352e3899fb5562
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407569"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719481"
 ---
 # <a name="profile_currentid"></a>PROFILE_CURRENTID
 O PROFILE_CURRENTID retorna o pseudotoken para a ID do thread ou a ID do processo, em uma chamada para as funções NameProfile StartProfile, StopProfile, SuspendProfile e ResumeProfile. Use-o para fazer com que a função opere no thread atual ou processo, em vez de um especificamente indicado.

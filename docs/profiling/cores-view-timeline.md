@@ -1,5 +1,7 @@
 ---
 title: Linha do tempo da exibição de núcleos | Microsoft Docs
+description: 'Aprenda as noções básicas da linha do tempo: como determinar qual thread foi executado em qual núcleo em qualquer momento e como ampliar e reduzir.'
+custom.ms: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ae006788f2704459de7ef32f01385e196e28c04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64012be03c08f3737f4e57a05217bf46082daeb6
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62553104"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720742"
 ---
 # <a name="cores-view-timeline"></a>Linha do tempo da exibição de núcleos
 Cada linha na linha do tempo representa um núcleo de processador lógico no sistema com perfil sendo criado. Para cada linha, o eixo horizontal mostra qual thread estava sendo executado em um núcleo lógico em um determinado ponto no tempo. É possível focalizar em uma cor de interesse em uma linha do tempo para retornar uma dica de ferramenta que identifica o thread. Para ajudar na identificação do thread, a legenda na parte inferior da janela mostra o que cada cor representa. Use a ferramenta Zoom para ampliar e reduzir, clicando e arrastando ou pressionando CTRL e movendo a roda do mouse. A consistência de zoom é mantida ao mudar entre a Exibição de Núcleos e Exibição de Threads.

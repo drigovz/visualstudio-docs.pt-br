@@ -1,5 +1,7 @@
 ---
 title: Controlando a coleta de dados | Microsoft Docs
+description: Saiba como iniciar e parar Ferramentas de Criação de Perfil coleta de dados e como limitar os objetos para os quais os dados de criação de perfil são coletados. Este artigo é uma visão geral.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 48c7047bdd321943074221c9f09193970d42a247
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b846db263c95f20c6ea4cb6a418973830a5dd8ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777797"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720924"
 ---
 # <a name="control-data-collection"></a>Controlar a coleta de dados
 As Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permitem controlar quando os dados de criação de perfil são coletados durante uma sessão de desempenho e especificar as funções das quais o perfil será criado. Esta seção descreve como iniciar e parar a coleta de dados nas janelas **Gerenciador de Desempenho** e **Controle de Coleta de Dados** e como limitar os objetos para os quais os dados de criação de perfil são coletados.

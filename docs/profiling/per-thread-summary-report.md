@@ -1,5 +1,6 @@
 ---
 title: Relatório de resumo por thread | Microsoft Docs
+description: Exibir um gráfico de barras mostra a proporção de tempo que cada thread não oculto passa em cada categoria de atividade durante o intervalo de tempo visível no momento.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ab5e88db9f539dd79482044ab3834b27a6b1747
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03797190097d3495a315fd0e0343fa9999100147
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62794320"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722783"
 ---
 # <a name="per-thread-summary-report"></a>Relatório de resumo por thread
 Este gráfico de barras mostra a proporção de tempo que cada thread não oculta gasta em cada categoria de atividade durante o intervalo de tempo visível no momento. “Execução” significa que o thread está em execução; todas as outras categorias significam que o thread está aguardando algo.

@@ -1,5 +1,6 @@
 ---
 title: Exibição de Utilização | Microsoft Docs
+description: Saiba que a exibição utilização exibe informações sobre a CPU, a GPU e outros recursos do sistema que são usados pelo processo atual.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 926c67261f91aa8787d9be4a33dadbd3a890c568
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 047c9ef9d5bb03546eb88372ae43a51c7c8e4d32
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62823512"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723199"
 ---
 # <a name="utilization-view"></a>Exibição Utilização
 A **Exibição Utilização** exibe informações sobre a CPU, a GPU e outros recursos do sistema usados pelo processo atual (escolha **Analisar** > **Visualizador de Simultaneidade** para iniciar o visualizador de simultaneidade). Ela mostra a utilização média do núcleo pelo processo analisado, o processo ocioso, o processo do Sistema e outros processos em execução no sistema ao longo do tempo. Ela não mostra qual núcleo específico está ativo em um determinado momento. Por exemplo, se dois núcleos estiverem sendo executados individualmente com capacidade de 50% durante um período específico, essa exibição mostrará um núcleo lógico sendo utilizado. A exibição é gerada pela divisão do tempo de criação de perfil em segmentos de tempo curto. Para cada segmento, o grafo plota o número médio de threads de processos em execução nos núcleos lógicos durante esse intervalo.

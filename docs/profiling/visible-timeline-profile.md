@@ -1,5 +1,6 @@
 ---
 title: Perfil da Linha de Tempo Visível | Microsoft Docs
+description: Saiba que o perfil de linha do tempo visível para a exibição de bloqueio de thread fornece informações estatísticas e links para relatórios.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 352651be28f178272caaad9a01070dc9d7357d79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b4b8725a6336218bdac413b12a20ff201dd0c287
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62823459"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723160"
 ---
 # <a name="visible-timeline-profile"></a>Perfil da linha do tempo visível
 O Perfil da Linha de Tempo Visível para a Exibição de Bloqueio de Thread fornece informações estatísticas e links para relatórios. Conforme você amplia, reduz, rola horizontalmente, oculta ou mostra canais, os números na legenda ativa são alterados para refletir o que está atualmente no modo de exibição. Para exibir um relatório sobre um item na legenda, clique no item.

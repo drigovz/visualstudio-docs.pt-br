@@ -1,5 +1,6 @@
 ---
 title: Definir permissões | Microsoft Docs
+description: Saiba como um administrador de um computador concede as permissões de segurança necessárias para a criação de perfil para um usuário ou grupo que não tem permissões de administrador.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f0a55e5e18829856b913ad01df6f831a2df42863
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 2ab51b317164b8f2e828e0327021fb595574583c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851821"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721990"
 ---
 # <a name="how-to-set-permissions"></a>Como definir permissões
 
@@ -64,13 +65,13 @@ Membros do grupo Usuários podem executar as ferramentas de criação de perfil 
 
 2. Clique com botão direito do mouse na pasta e, em seguida, clique em **Propriedades**.
 
-     A caixa de diálogo ** \<folder name> Propriedades** é exibida.
+     A caixa de diálogo **\<folder name> Propriedades** é exibida.
 
 3. Clique na guia **Segurança** .
 
 4. Clique no nome da conta do usuário na caixa **Nomes de usuário ou grupo**.
 
-5. Na caixa **permissões para \<user name> ** , marque a caixa de seleção para **controle total**.
+5. Na caixa **permissões para \<user name>** , marque a caixa de seleção para **controle total**.
 
 6. Clique em **OK**.
 

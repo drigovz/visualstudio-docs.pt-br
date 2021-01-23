@@ -1,5 +1,6 @@
 ---
 title: Tempo de gerenciamento da memória | Microsoft Docs
+description: Saiba como esse cenário implica que um thread é bloqueado por um evento associado a uma operação de gerenciamento de memória, como paginação.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 442973edb18e75bafda8a9397eac799286c69dfa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23e1dd2868f5b29a12f3f54f46e5cb5833d270af
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62963775"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721197"
 ---
 # <a name="memory-management-time"></a>Tempo de gerenciamento de memória
 Esses segmentos na linha do tempo estão associados os tempos de bloqueio categorizados como Gerenciamento da Memória. Esse cenário significa que um thread está bloqueado por um evento associado a uma operação de gerenciamento de memória, como paginação. Durante esse tempo, um thread foi bloqueado em um estado de API ou kernel que a Visualização Simultânea está contando como gerenciamento de memória. Eles incluem eventos como paginação e alocação de memória.

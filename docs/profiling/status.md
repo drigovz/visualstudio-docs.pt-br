@@ -1,5 +1,6 @@
 ---
 title: Status | Microsoft Docs
+description: Saiba como a opção status de VSPerfCmd.exe exibe informações sobre o estado do criador de perfil e todos os processos que estão sendo analisados no momento.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5e0fdf478e067f61b1d0e259cb1624380e4f02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c77c78258b5ddef486dc35ed6a620003864254cc
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778239"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722705"
 ---
 # <a name="status"></a>Status
 A opção **status** do *VSPerfCmd.exe* exibe informações sobre o estado do criador de perfil e todos os processos que estão sendo analisados no momento.

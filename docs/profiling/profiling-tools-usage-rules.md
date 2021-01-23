@@ -1,5 +1,6 @@
 ---
 title: Regras de uso das ferramentas de criação de perfil | Microsoft Docs
+description: Saiba como as regras de desempenho na categoria de uso de Ferramentas de Criação de Perfil fornecem diretrizes para usar o criador de perfil para coletar dados com mais eficiência.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: afa7db3b-8c1d-473a-81ac-24ede112a17f
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aeeb7e0a9061d72a07b718acde70b00dfcbba89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8eba05a40e108d2fd1ba5107160088c5c30da299
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88144669"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720469"
 ---
 # <a name="profiling-tools-usage-rules"></a>Regras de uso das ferramentas de criação de perfil
 As regras de desempenho na categoria de Uso de Ferramentas de Criação de Perfil fornecem diretrizes para usar o criador de perfil para coletar dados de forma mais eficiente.

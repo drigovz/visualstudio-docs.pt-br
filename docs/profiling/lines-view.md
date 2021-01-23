@@ -1,5 +1,6 @@
 ---
 title: Exibição de Linhas | Microsoft Docs
+description: Saiba como a exibição de linhas está disponível somente para dados do criador de perfil que foram coletados usando o método de amostragem.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 25dbb0beb600f7f043ae006e09ac48b9b64d613b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac0d7785071e5f2928e7eabb4a29b1655b42c5ad
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773975"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721288"
 ---
 # <a name="lines-view"></a>Exibição de linhas
 A exibição de Linhas está disponível somente para dados de criador de perfil coletados por meio do método de amostragem. A exibição não está disponível para dados coletados por meio de instrumentação.

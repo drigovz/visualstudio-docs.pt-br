@@ -1,5 +1,6 @@
 ---
 title: Classe span | Microsoft Docs
+description: Saiba mais sobre a classe span e como ela define uma fase do aplicativo. Além disso, saiba mais sobre os construtores públicos da classe span e a hierarquia de herança.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,17 +13,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d8f31d24dc6c6c2ea20b50c9bf8af1cb4a9f9af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ca1e674b13877ff8a8864c3b7447f15fd0307d7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62979751"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720039"
 ---
 # <a name="span-class"></a>Classe span
 Define uma fase do aplicativo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```cpp
 class span;
@@ -32,7 +33,7 @@ class span;
 
 ### <a name="public-constructors"></a>Construtores públicos
 
-|Name|Descrição|
+|Nome|Descrição|
 |----------|-----------------|
 |[Construtor span::span](../profiling/span-span-constructor.md)|Inicializa uma nova instância da classe `span`.|
 |[Destruidor span::~span](../profiling/span-tilde-span-destructor.md)|Destrói o objeto `span` e libera seus recursos.|

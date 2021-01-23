@@ -1,5 +1,6 @@
 ---
 title: Usando as Ferramentas de Criação de Perfil na Linha de Comando | Microsoft Docs
+description: Use as ferramentas de linha de comando do Visual Studio Ferramentas de Criação de Perfil para criar perfis de aplicativos e para automatizar a criação de perfil usando arquivos em lotes e scripts.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dea893340c038909057dd652472c10c8264786a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d6e159e28a1401548f0cda7b795a5bbe70a257b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328343"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723225"
 ---
 # <a name="use-the-profiling-tools-from-the-command-line"></a>Usar as Ferramentas de Criação de Perfil por meio da linha de comando
 É possível usar as ferramentas da linha de comando das Ferramentas de Criação de Perfil [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para criar perfis de aplicativo no prompt de comando e automatizar a criação de perfil usando arquivos em lote e scripts. Também é possível geral arquivos de relatório em um prompt de comando. Você pode usar o criador de perfil autônomo leve para coletar dados em computadores que não têm o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] instalado.

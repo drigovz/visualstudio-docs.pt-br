@@ -1,5 +1,6 @@
 ---
 title: Especificar o binário para iniciar | Microsoft Docs
+description: Saiba como você deve inserir informações na <Target> caixa de diálogo páginas de propriedades para os binários de perfil, como DLLs.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,16 +15,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b3aec9448c6493350683dc9f0bec0cc2d60fa82
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 715c92a26ae33a4e909ec737c866be1cdc15251e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851327"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721834"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Como especificar o binário a ser iniciado
 
-Para criar perfis de binários, como DLLs, você deve inserir informações na caixa de diálogo ** \<Target> páginas de propriedades** . Essa informação indica onde o projeto DLL pode localizar o aplicativo de chamada.
+Para criar perfis de binários, como DLLs, você deve inserir informações na caixa de diálogo **\<Target> páginas de propriedades** . Essa informação indica onde o projeto DLL pode localizar o aplicativo de chamada.
 
 1. No **Gerenciador de Desempenho**, clique com o botão direito do mouse no binário de destino e, em seguida, clique em **Propriedades**.
 

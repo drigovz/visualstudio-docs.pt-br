@@ -1,5 +1,6 @@
 ---
 title: Tempo de processamento de interface do usuário | Microsoft Docs
+description: Saiba que os segmentos na linha do tempo estão associados a tempos de bloqueio categorizados como processamento da interface do usuário.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 391b4582d03e32e738f0eade823326e72a662a43
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63462aedfb1d7a2c03fe6ff5d59495358c52194e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63004458"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722380"
 ---
 # <a name="ui-processing-time"></a>Tempo de processamento de interface do usuário
 Esses segmentos na linha do tempo estão associados aos tempos de bloqueio categorizados como Processamento de Interface do Usuário. Isso significa que um thread está bombeando mensagens do Windows ou realizando outro trabalho de interface do usuário. Durante esse tempo, um thread foi bloqueado em uma API que a Visualização Simultânea está contando como Processamento de Interface do Usuário. APIs como `GetMessage()` e `MsgWaitForMultipleObjects()` pertencem a esse grupo.

@@ -1,5 +1,6 @@
 ---
 title: Exibição tempo de vida do objeto | Microsoft Docs
+description: Saiba como a exibição do tempo de vida do objeto está disponível quando também coletar dados de vida útil do objeto .NET é verificado nas páginas de propriedades da sessão de desempenho.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d4ea486930d0ea9f266b4ee57b69a50f7c570651
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9405b66c7412d65402a5572dcb5c71b232341b22
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772618"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722861"
 ---
 # <a name="object-lifetime-view"></a>Exibição do tempo de vida do objeto
 A exibição Tempo de Vida do Objeto está disponível quando **Também coletar dados de tempo de vida do objeto .NET** está marcada nas páginas de propriedades da **Sessão de Desempenho**.
@@ -35,7 +36,7 @@ A exibição Tempo de Vida do Objeto está disponível quando **Também coletar 
 
 |Coluna|Descrição|
 |------------|-----------------|
-|**Nome da classe**|O nome de classe do tipo alocado.|
+|**Nome da Classe**|O nome de classe do tipo alocado.|
 |**ID do Processo**|A ID de processo da execução de criação de perfil.|
 |**Nome do processo**|O nome do processo.|
 |**Nome do módulo**|O nome do módulo que contém a função.|

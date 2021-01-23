@@ -1,5 +1,6 @@
 ---
 title: Exibição de Linhas – Dados de Amostragem de Memória do .NET | Microsoft Docs
+description: Saiba como a exibição de linhas para dados de criação de perfil de alocação de memória do .NET lista as instruções que alocaram a memória durante a execução da criação de perfil.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 503b3753f4f4fdc98f39804ec767277d7685d0d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0033b3d50531bebe087f43930324db0431dee03f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74774074"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721327"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Exibição de linhas – dados de amostragem de memória do .NET
 A exibição de Linhas dos dados de criação de perfil de alocação de memória do .NET que usa o método de amostragem lista as instruções que alocaram memória durante o processo de criação de perfil. As colunas também incluem o tamanho e o número de alocações.

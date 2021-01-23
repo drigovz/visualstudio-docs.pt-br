@@ -1,5 +1,6 @@
 ---
 title: Exibição de contenções de recurso – Dados de contenção | Microsoft Docs
+description: Saiba como a exibição de contenção de recursos lista dados de contenção para os recursos que eram a fonte de eventos de contenção.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1607e594b6456d4da4396069d589160230b39680
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc8e6c39efea24ac8a4a493099f3bcdb39dc4fe6
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778330"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720339"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Exibição de contenções de recurso – Dados de contenção
 A exibição Contenção de Recursos lista os dados de contenção para os recursos que estavam na fonte de eventos de contenção. Um evento de contenção ocorre quando uma função em um thread é forçada a aguardar o acesso ao recurso porque uma função em outro thread obteve acesso exclusivo ao recurso. Cada recurso é o nó raiz de uma árvore de chamadas que exibe os caminhos de execução de função que resultaram em eventos de contenção.

@@ -1,5 +1,6 @@
 ---
 title: Linha de comando de criação de perfil – criar arquivos de dados portáteis
+description: Para facilitar o compartilhamento de dados de criação de perfil, use a ferramenta de linha de comando VSPerfReport.exe para inserir os símbolos para uma criação de perfil no arquivo. vsp.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d0584cd2a476a7552beec483dd72ad1e957800ec
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5df9f14fecce23eb72d08dcba87dee360269e078
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808832"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718961"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>Criar arquivos de dados de criação de perfil móveis por meio da linha de comando
 Para facilitar o compartilhamento de dados de criação de perfil, use a ferramenta de linha de comando [VSPerfReport](../profiling/vsperfreport.md) para inserir os símbolos de uma execução de criação de perfil no arquivo .*vsp*.

@@ -1,5 +1,6 @@
 ---
 title: Conector pronto para thread | Microsoft Docs
+description: Saiba que quando você clica em um segmento de bloqueio para ver uma pilha de chamadas e sua pilha de desbloqueios, o conector pronto para thread também pode aparecer.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20842cc277246bba6c9e05c6c59a937a89b5f6bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 789c60be4f31d053c4ff9f95121bf8f0e0d4689e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62943494"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718779"
 ---
 # <a name="thread-ready-connector"></a>Conector pronto para thread
 Ao clicar em um segmento de bloqueio para ver uma pilha de chamadas e sua pilha de desbloqueio, o conector pronto thread também pode aparecer. Se o evento desbloqueio ocorreu em outro thread no processo atual, o conector pronto para thread identificará visualmente o thread e o segmento de execução que habilitou o thread bloqueado para retomar a execução.

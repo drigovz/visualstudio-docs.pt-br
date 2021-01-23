@@ -1,5 +1,6 @@
 ---
 title: VSPerfASPNetCmd | Microsoft Docs
+description: Saiba como a ferramenta de linha de comando VSPerfASPNetCmd.exe permite que você perfile os sites da Web do ASP.Net sem exigir que você defina as variáveis de ambiente ou reinicie o computador.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,17 +13,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b6ddadc15a5e0d53535b82d87aadd31fec65adaf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b594141d6209c8ede9171df880e7523b81a34775
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330480"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719221"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 A ferramenta de linha de comando **VSPerfASPNetCmd.exe** permite que você crie o perfil de sites da Web do ASP.NET sem exigir que você defina variáveis de ambiente ou reinicie o computador. Use **VSPerfASPNetCmd.exe** em vez de [VSPerfCmd](../profiling/vsperfcmd.md) quando estiver criando o perfil de sites do ASP.NET e não precisar da funcionalidade adicional fornecida pelo **VSPerfCmd**. Para obter mais informações sobre o **VSPerfASPNETCmd**, consulte [Rapid Web site profiling with VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md). **VSPerfASPNETCmd** é a ferramenta de linha de comando preferida a ser usada quando você estiver usando o criador de perfil autônomo para fazer o profile de um site da web do ASP.net.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
  **vsperfaspnetcmd** [/*Options*] *Website*
 
 ## <a name="options"></a>Opções
@@ -33,7 +34,7 @@ A ferramenta de linha de comando **VSPerfASPNetCmd.exe** permite que você crie 
 |**/Trace** ou **/t**|Cria perfil de site usando o método de instrumentação. /Trace não pode ser usado com **/Sample**.|
 |**/Memory**[**:** `Type` ] ou **/m**[**:**{**a**&#124;**l**}]|Cria perfil de alocação de memória e, opcionalmente, cria perfil de tempos de vida do objeto (coleta de lixo). **/Memory** pode ser usado com o método de amostragem ou instrumentação.<br /><br /> *Tipo* pode ser um dos seguintes:<br /><br /> -   **alocação** (ou **a**) coleta apenas dados de alocação de memória.<br />-   **tempo de vida** (ou **l**) coleta dados de alocação de memória e de tempo de vida do objeto.<br /><br /> O `Type` padrão é **alocação**.|
 |**/Tip** ou **/i**|Adiciona informações detalhadas de solicitação ASP.NET e de chamada de ADO.NET para os dados de criação de perfil. **/Tip** pode ser usado com o método de amostragem ou instrumentação e pode ser usado com a opção **/Memory**.|
-|**/Output:** `File` ou   **/o:**`File`|Especifica o caminho e o nome do arquivo dos dados de criação de perfil (.* VSP*).|
+|**/Output:** `File` ou   **/o:**`File`|Especifica o caminho e o nome do arquivo dos dados de criação de perfil (.*VSP*).|
 |**/NoWait** ou **/n**|Retorna o prompt de comando imediatamente para que os comandos adicionais possam ser usados na janela do prompt de comando. Você deve digitar **VSPerfASPNETCmd /Shutdown** em uma linha de comando separada para desativar a criação de perfil.|
 |**/PackSymbols**[:{**on**&#124;**off**}ou   **/p**[:{**on**&#124;**off**}|Insere símbolos (nomes de função e parâmetro, etc.) no arquivo de dados de criação de perfil (.*vsp*).|
 |**/Shutdown:** `Website`ou **/d:**`Website`|Desativa a criação de perfil. Use como a única opção na linha de comando depois de usar a opção **/NoWait** para iniciar a criação de perfil ou se o criador de perfil encerrar inesperadamente. Especifique a mesma URL que você usou no comando original **VSPerfASPNETCmd**.|

@@ -1,5 +1,6 @@
 ---
 title: Iniciar | Microsoft Docs
+description: Saiba como a opção Start é uma opção VSPerfCmd.exe que inicializa o criador de perfil para o método de criação de perfil especificado.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: df3ccda9730be02bafb7f7d069a26193a4528d1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aea1032f709d2f8cebf105bce14dc081fe3b74da
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778265"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719988"
 ---
 # <a name="start"></a>Iniciar
 A opção **Start** é uma opção *VSPerfCmd.exe* que inicializa o criador de perfil para o método de criação de perfil especificado.
@@ -53,7 +54,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="invalid-options"></a>Opções inválidas
  As opções a seguir não podem ser usadas com a opção **Start** em uma linha de comando.
 
- **Status O ** **Status** aplica-se aos processos analisados. Ela lista processos e threads e seu estado de perfil atual (Ligado/Desligado). Por exemplo, se um processo for interrompido, **Status** não indicará isso no relatório. **Status** mostrará se perfil do processo foi criado ou não.
+ **Status O** **Status** aplica-se aos processos analisados. Ela lista processos e threads e seu estado de perfil atual (Ligado/Desligado). Por exemplo, se um processo for interrompido, **Status** não indicará isso no relatório. **Status** mostrará se perfil do processo foi criado ou não.
 
  **Shutdown**[**:** `Timeout` ] desativa o criador de perfil.
 

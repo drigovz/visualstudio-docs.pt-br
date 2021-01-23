@@ -1,5 +1,6 @@
 ---
 title: PF | Microsoft Docs
+description: Saiba como a opção VSPerfCmd.exe PF define o evento de criação de perfil que é amostrado para falhas de página e altera o número de falhas de página em um intervalo de amostragem.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: cdc0a094-a986-4629-bd1c-dd5fdca323dc
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ec6d636ec087386fdc9462ae09db55400957a9
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: b920b641a7bfc4583af7b0ec5a9692a25c19adb5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "74778408"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719546"
 ---
 # <a name="pf"></a>PF
 A opção *VSPerfCmd.exe* **PF** define o evento de criação de perfil que é amostrado para falhas de página e, opcionalmente, altera o número de falhas de página em um intervalo de amostragem a partir do padrão de 10.
@@ -63,7 +64,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /PF:20
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

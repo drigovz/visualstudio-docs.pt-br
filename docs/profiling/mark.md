@@ -1,5 +1,6 @@
 ---
 title: Marca | Microsoft Docs
+description: Saiba como a opção VSPerfCmd.exe Mark insere as informações especificadas no arquivo de dados de criação de perfil.
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 1d72cef3-bb09-4bbb-8864-6ea0ab623ff9
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b3049a253dca37090d128748b71f278aa2f7e63
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4554a994fe790d5e0ec46762e830576181b312dd
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330786"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722133"
 ---
 # <a name="mark"></a>Marca
 A opção *VSPerfCmd.exe* **Mark** insere as informações especificadas no arquivo de dados de criação de perfil. Marca pode ser listada em um relatório VSPerfReport separado ou na exibição de Relatório de marca da interface do usuário do criador de perfil. **Marca** pode ser usada para especificar os pontos inicial e final em relatórios e exibir filtros.

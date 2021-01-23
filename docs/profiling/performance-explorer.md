@@ -1,5 +1,6 @@
 ---
 title: Gerenciador de Desempenho | Microsoft Docs
+description: Saiba como o Visual Studio Ferramentas de Criação de Perfil permitir que os desenvolvedores meçam, avaliem e direcionem problemas relacionados ao desempenho em seu código.
 ms.date: 06/19/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 89399d49909e1c9067723e75a1adbaa123865758
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a796ee0791fd96edf1e54954df47f2983df3ee4
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778473"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722770"
 ---
 # <a name="performance-explorer"></a>Performance Explorer
 
@@ -36,7 +37,7 @@ Para obter mais informações sobre tópicos atuais e avançados relacionados ao
 |----------|---------------------|
 |**Técnicas para o Windows 8 e posterior**|[Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|
 |**Compreender os conceitos de criação de perfil:** aprenda os conceitos e termos que você usará para coletar, exibir e analisar o desempenho do código usando as ferramentas de criação de perfil.|[Visões gerais](../profiling/overviews-performance-tools.md)|
-|**Coloque a mão na massa:** aprenda os procedimentos básicos que você usará ao coletar, exibir e analisar o desempenho do código usando as ferramentas de criação de perfil. Experimente com esse passo a passo prático.|[Guia de Introdução](../profiling/getting-started-with-performance-tools.md)|
+|**Coloque a mão na massa:** aprenda os procedimentos básicos que você usará ao coletar, exibir e analisar o desempenho do código usando as ferramentas de criação de perfil. Experimente com esse passo a passo prático.|[Introdução](../profiling/getting-started-with-performance-tools.md)|
 |**Configure a sessão de criação de perfil:** aprenda métodos avançados de como especificar os projetos ou os binários para analisar, selecione um método de criação de perfil, escolha os dados de desempenho para coletar e defina outras opções de sessão de criação de perfil.|[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)|
 |**Controle os dados que o criador de perfil coleta:** saiba como usar propriedades de sessão de desempenho e procedimentos interativos para iniciar e parar a criação de perfil e como limitar os dados de desempenho para coletar apenas as informações que você deseja.|[Controlar a coleta de dados](../profiling/controlling-data-collection.md)|
 |**Localize problemas de desempenho:** saiba como exibir e analisar os dados de desempenho coletados na janela de exibição do relatório de ferramentas de criação de perfil.|[Analisar dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)|

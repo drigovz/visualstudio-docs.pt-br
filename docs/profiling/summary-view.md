@@ -1,5 +1,6 @@
 ---
 title: Exibição de resumo | Microsoft Docs
+description: Saiba como a exibição de resumo exibe informações sobre as funções ou objetos mais caros de desempenho em uma execução de criação de perfil.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a12989004b5bed8601bdda1ec0719eda789ff822
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 154f168044e5395a534b4a79ea44d9eafe6293f6
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546881"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719273"
 ---
 # <a name="summary-view"></a>Exibição de Resumo
 A exibição de resumo exibe informações sobre as funções ou os objetos de desempenho mais caro em uma execução de criação de perfil. Essa exibição fornece um gráfico de linha do tempo e listas de duas ou mais das funções mais caras ou objetos com base nas métricas de desempenho do método de criação de perfil. Os dados nessa exibição dependem do método de criação de perfil que foi usado (amostragem, instrumentação ou simultaneidade) e se a alocação de memória .NET foi coletada.
@@ -32,7 +33,7 @@ A exibição de resumo exibe informações sobre as funções ou os objetos de d
 
 - Você pode clicar em uma função em uma lista de exibição de resumo para abrir a exibição de detalhes da função para a função. Também pode clicar com o botão direito do mouse na função para obter outras opções de exibição.
 
-- Para modificar o número de itens que aparecem na lista de exibição de resumo, abra o menu **Ferramentas**, aponte para **Opções**e, em seguida, clique em **Ferramentas de Desempenho**. Em **Configurações Gerais**, modifique a configuração **Número de Funções na exibição de resumo**.
+- Para modificar o número de itens que aparecem na lista de exibição de resumo, abra o menu **Ferramentas**, aponte para **Opções** e, em seguida, clique em **Ferramentas de Desempenho**. Em **Configurações Gerais**, modifique a configuração **Número de Funções na exibição de resumo**.
 
 ## <a name="notifications-links"></a>Links de notificações
  Você pode clicar em links da lista de notificação para definir opções de exibição para o relatório. A lista está à direita do gráfico de linha do tempo.
@@ -40,7 +41,7 @@ A exibição de resumo exibe informações sobre as funções ou os objetos de d
 |Opção|Descrição|
 |-|-|
 |**Exibir código de não usuário**<br /><br /> **Exibir Apenas Meu Código**|Não disponível para código nativo ou dados que foram coletados usando o método de instrumentação de criação de perfil. Alterna entre exibir somente os dados do código do usuário (**Exibir Apenas Meu Código**) e exibir dados de todo o código, incluindo o código de sistema (**Exibir código de não usuário**). Por padrão, os dados são limitados ao código do usuário. Para alterar a configuração, consulte [como filtrar modos de exibição de relatório de ferramentas de criação de perfil para exibir apenas meu código](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).|
-|**Exibir Diretrizes**|Exibe avisos de regra de desempenho na janela **Lista de Erros**. Para obter mais informações, confira [Usar regras de desempenho para analisar dados](../profiling/using-performance-rules-to-analyze-data.md)|
+|**Exibir diretrizes**|Exibe avisos de regra de desempenho na janela **Lista de Erros**. Para obter mais informações, confira [Usar regras de desempenho para analisar dados](../profiling/using-performance-rules-to-analyze-data.md)|
 
 ## <a name="report"></a>Relatório
  Você pode clicar em links na lista de relatórios para abrir os diferentes modos de exibição e para comparar, salvar ou filtrar o relatório. A lista está à direita do gráfico de linha do tempo.

@@ -1,5 +1,6 @@
 ---
 title: Definir opções de nome de arquivo de dados de desempenho | Microsoft Docs
+description: Saiba como você pode alterar qualquer parâmetro de nomenclatura na página Geral da caixa de diálogo Propriedades da sessão de desempenho.
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bba5677c491e77e6f1c2758e64cec1b598c9b627
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6dce666121214bef7d844bae2735a284589463ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851561"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722042"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Como definir opções de nome do arquivo de dados de desempenho
 
@@ -39,7 +40,7 @@ Você pode alterar qualquer parâmetro de nomeação na página **Geral** da cai
 
 3. Em **Relatório**, altere qualquer uma das seguintes configurações:
 
-    |Name|Descrição|
+    |Nome|Descrição|
     |-|-|
     |**Local do relatório**|Especifica um diretório para armazenar os arquivos de dados de criação de perfil.|
     |**Nome do relatório**|Especifica um nome de base para os arquivos.|

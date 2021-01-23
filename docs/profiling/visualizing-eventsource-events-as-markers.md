@@ -1,5 +1,6 @@
 ---
 title: Visualizando eventos EventSource como marcadores | Microsoft Docs
+description: Saiba que o Visualizador de simultaneidade pode exibir eventos EventSource como marcadores, e você pode controlar como os marcadores são exibidos.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f8fadf9ef97717983c96226d81d43efada65e89
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64811541"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723134"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualizar eventos EventSource como marcadores
 A Visualização Simultânea pode exibir eventos do EventSource como marcadores e você pode controlar como os marcadores são exibidos. Para exibir os marcadores do EventSource, registre o GUID do provedor ETW usando a caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). A Visualização Simultânea tem convenções padrão para representar eventos do EventSource como [Marcadores de Sinalizador](../profiling/flag-markers.md), [Marcadores de Período](../profiling/span-markers.md) e [Marcadores de Mensagem](../profiling/message-markers.md). Você pode personalizar como os eventos EventSource são exibidos, adicionando campos personalizados aos eventos. Para obter mais informações sobre marcadores, consulte [Marcadores da Visualização Simultânea](../profiling/concurrency-visualizer-markers.md). Para obter mais informações sobre eventos do EventSource, consulte <xref:System.Diagnostics.Tracing>.
@@ -39,8 +40,8 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
 |win:Error|Crítico|
 |win:Warning|Alto|
 |win:Informational|Normal|
-|win:Verbose|Baixa|
-|Maior que win:verbose|Baixa|
+|win:Verbose|Baixo|
+|Maior que win:verbose|Baixo|
 
 ### <a name="series-name"></a>Nome da série
  O nome da tarefa do evento é usado para o nome da série. O nome da série está vazio se nenhuma tarefa tiver sido definida para o evento.
@@ -75,8 +76,8 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
 |2|Alto|
 |3|Alto|
 |4|Normal|
-|5|Baixa|
-|Todos os outros valores|Baixa|
+|5|Baixo|
+|Todos os outros valores|Baixo|
 
 ### <a name="series-name"></a>Nome da série
  Use o campo de evento `cvSeries`, uma cadeia de caracteres, para controlar o nome que a Visualização Simultânea dá a um evento do EventSource.

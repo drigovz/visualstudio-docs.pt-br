@@ -1,6 +1,7 @@
 ---
 title: Avisos de VSInstr | Microsoft Docs
 ms.date: 11/04/2016
+description: Saiba mais sobre os avisos emitidos pela ferramenta de VSInstr.exe e como você pode usar a opção nowarn junto com os números de aviso para suprimir a exibição do aviso.
 ms.topic: reference
 helpviewer_keywords:
 - instrumentation, VSInstr tool
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af98372102da49e7553d2f2992f3804cf0a619e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5510c475ab566e65d2bd152136535fde62f257b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330543"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723121"
 ---
 # <a name="vsinstr-warnings"></a>Avisos de VSInstr
 A tabela a seguir lista os avisos emitidos pela ferramenta *VSInstr.exe*. Você pode usar a opção NOWARN junto com os números de aviso para suprimir o aviso seja exibido.

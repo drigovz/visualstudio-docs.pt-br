@@ -1,5 +1,6 @@
 ---
 title: Criação de perfil e segurança do Windows Vista | Microsoft Docs
+description: Dependendo das configurações de permissões de acesso do usuário que estão disponíveis, um usuário individual pode ter permissão de segurança para criar o perfil de um processo nesse computador.
 ms.date: 11/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a74862d59fe402cbfd9e6bfa804d62ca4c8310b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0bfd12808a4639f44a3a5075a4b474012ab2c2fa
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778369"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719403"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Criação de perfil e segurança do Windows Vista
 

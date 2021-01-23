@@ -1,5 +1,6 @@
 ---
 title: Especificando o caminho para a criação de perfil de ferramentas de linha de comando
+description: Especifique o caminho para as ferramentas de linha de comando das ferramentas de criação de perfil quando o caminho de Ferramentas de Criação de Perfil ferramentas de linha de comando não for adicionado à variável de ambiente PATH.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fb445e23b5d507bafb7fece40bf606bbfb76c370
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fa1cb81d46f0977de2db9d78c6db53f542faa70f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809179"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720027"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Especificar o caminho para as ferramentas de linha de comando das Ferramentas de Criação de Perfil
 
