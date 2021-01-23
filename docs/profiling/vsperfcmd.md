@@ -1,5 +1,6 @@
 ---
 title: VSPerfCmd | Microsoft Docs
+description: Saiba como a ferramenta de VSPerfCmd.exe é usada para iniciar e parar a coleta de dados de desempenho. Saiba também sobre várias opções da ferramenta VSPerfCmd.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: caf145213c41215d518cf42d0a69975c8580e817
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 90d263052c543cbf7e0f3207d9980bd04c13e990
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330012"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719182"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 A ferramenta *VSPerfCmd.exe* é usada para iniciar e interromper a coleta de dados de desempenho. Ela usa a seguinte sintaxe:
@@ -39,7 +40,7 @@ VSPerfCmd [/U] [/options]
 |[CrossSession&#124;CS](../profiling/crosssession.md)|Habilita a criação de perfil nas sessões do Windows. Use somente com **Start**, **Attach****ou Launch**.|
 |[Usuário](../profiling/user-vsperfcmd.md) **:**[ `domain\` ]`username`|Permite o acesso da conta especificada ao serviço de criador de perfil. Use somente com **Start**.|
 |[WaitStart](../profiling/waitstart.md)[**:** `n` ]|Aguarda até o agente coletor de dados inicializar. Se `n` for especificado, a **VSPerfCmd** aguardará no máximo `n` segundos. Se `n` não for especificado, a **VSPerfCmd** aguardará indefinidamente. Isso facilita o uso da **VSPerfCmd** como parte de um processo em lote.|
-|[Contador](../profiling/counter.md) **:**`cfg`|Quando o método de criação de perfil de exemplo é usado, ele especifica um contador de CPU e o número de eventos a serem usados como o intervalo de amostragem. Você pode usar apenas o valor de um contador como amostra.<br /><br /> Quando o método de criação de perfil de instrumentação é usado, especifica um contador de CPU a ser coletado em cada ponto de instrumentação. Use somente com **Iniciar:** `Trace` , **anexar**ou **Iniciar**.|
+|[Contador](../profiling/counter.md) **:**`cfg`|Quando o método de criação de perfil de exemplo é usado, ele especifica um contador de CPU e o número de eventos a serem usados como o intervalo de amostragem. Você pode usar apenas o valor de um contador como amostra.<br /><br /> Quando o método de criação de perfil de instrumentação é usado, especifica um contador de CPU a ser coletado em cada ponto de instrumentação. Use somente com **Iniciar:** `Trace` , **anexar** ou **Iniciar**.|
 |[QueryCounters](../profiling/querycounters.md)|Exibe uma lista de contadores de CPU válido para a máquina atual.|
 |[WinCounter](../profiling/wincounter.md) **:** *caminho*|Especifica um evento de contador de desempenho do Windows para incluir com os dados de marca. Use somente com **Start**.|
 |[Automarcar](../profiling/automark.md) **:** *n*|Especifica o intervalo de tempo (em milissegundos) entre os eventos de coleta de dados do contador de desempenho do Windows. Use com **WinCounter**.|

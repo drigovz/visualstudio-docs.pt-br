@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42f355a0a8d04e48a2b9d14d0d62edf2cd949a87
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 070bcc04d79231d074e30d1e87d3ad512ce5dca1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150932"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723030"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Usando dados do IntelliTrace salvos (C#, Visual Basic, C++)
 
@@ -36,7 +36,7 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 
 - Um arquivo .iTrace de uma destas origens:
 
-    |**Origem**|**Esse**|
+    |**Origem**|**Consulte**|
     |----------------|-------------|
     |Uma sessão do IntelliTrace no Visual Studio Enterprise (mas não em edições Professional ou Community)|[Recursos do IntelliTrace](../debugger/intellitrace-features.md)|
     |Microsoft Monitoring Agent, sozinho ou com o System Center 2012 R2 Operations Manager, para aplicativos Web do ASP.NET e aplicativos do SharePoint em execução na implantação|-   [Diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md)<br />-   [Novidades do System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
@@ -193,7 +193,7 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
     |**ID da categoria**|**ID da categoria**|
     |**Categoria**|**Categoria**|
     |**Área**|**Product**|
-    |**Saída**|**Message**|
+    |**Saída**|**Mensagem**|
     |**ID de Correlação**|**ID de Correlação**|
 
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>Iniciar depuração a partir de uma exceção sem tratamento
@@ -261,7 +261,7 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 
  [Recursos do IntelliTrace](../debugger/intellitrace-features.md)
 
- [Coletar mais dados de diagnóstico em testes manuais](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+ [Coletar mais dados de diagnóstico em testes manuais](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
 
  [IntelliTrace](../debugger/intellitrace.md)
 

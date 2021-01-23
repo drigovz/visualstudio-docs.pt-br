@@ -1,5 +1,6 @@
 ---
 title: Analisar o uso de rede em aplicativos UWP
+description: Saiba como a ferramenta de diagnóstico de rede do Visual Studio coleta dados sobre operações de rede executadas usando a API do Windows. Web. http.
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 00fd0c03bf460cd8b72a10d15501994d7a2aa10a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 429bc6c8c2d82e3c18c75132f71e60231b10f10d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541707"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722900"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analisar o uso de rede em aplicativos UWP
 A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as operações de rede executadas usando a [API Windows.Web.Http](/uwp/api/windows.web.http). Analisar os dados pode ajudar a resolver problemas, como problemas de autenticação e acesso, uso incorreto de cache e exibição ruim e desempenho de download.
@@ -53,7 +54,7 @@ A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as 
 
  ![Painel de detalhes da ferramenta de rede](../profiling/media/network_detailsviewpane.png "NETWORK_DetailsViewPane")
 
-|Name|Descrição|
+|Nome|Descrição|
 |-|-|
 |**Cabeçalhos**|Informações sobre os cabeçalhos de solicitação do evento.|
 |**Corpo**|A solicitação e os dados de carga de resposta.|

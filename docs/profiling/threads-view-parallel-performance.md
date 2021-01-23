@@ -1,5 +1,6 @@
 ---
 title: Exibição Threads na Visualização Simultânea | Microsoft Docs
+description: Saiba que, na exibição threads, você pode identificar quais threads estão executando código durante um segmento de execução.
 ms.date: 11/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4382a21a68848a758f3d4cd37a8528722927691c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 619e76b3db67314119782ebc3010465ac7fa622f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62973742"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722718"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>Exibição Threads na Visualização Simultânea
 
@@ -47,7 +48,7 @@ Use a exibição **Threads** para:
 
 ## <a name="use-threads-view"></a>Usar a exibição Threads
 
-Para iniciar o Visualizador de simultaneidade, selecione **analisar**  >  **Visualizador de simultaneidade**e, em seguida, selecione uma opção, como **Iniciar novo processo**.
+Para iniciar o Visualizador de simultaneidade, selecione **analisar**  >  **Visualizador de simultaneidade** e, em seguida, selecione uma opção, como **Iniciar novo processo**.
 
 A Visualização Simultânea inicia o aplicativo e coleta um rastreamento até que você selecione **Parar Coleta**. Em seguida, o visualizador analisa o rastreamento e exibe os resultados na página do relatório de rastreamento.
 

@@ -1,5 +1,6 @@
 ---
 title: TargetCLR | Microsoft Docs
+description: Saiba como a opção TargetCLR especifica a versão do tempo de execução da linguagem comum para o perfil quando mais de uma versão do CLR é carregada em um aplicativo.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f9732480-287f-40f1-a4ff-b112e143b940
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fffcab1d841840c15957e8dae0ff0f87b20de28d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dff098dc5b893ce394698118d53ae6a96fc8b28a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74771575"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719793"
 ---
 # <a name="targetclr"></a>TargetCLR
 A opção **TargetCLR** especifica a versão do CLR (Common Language Runtime) cujo perfil deverá ser criado quando mais de uma versão do CLR for carregada em um aplicativo.

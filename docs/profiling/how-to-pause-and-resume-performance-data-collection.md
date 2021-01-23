@@ -1,5 +1,6 @@
 ---
 title: Pausar e retomar a coleta de dados de desempenho | Microsoft Docs
+description: Saiba como você pode controlar a coleção de dados de criação de perfil interativamente na janela de página da sessão de criação de perfil.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5abdd7f8324e76f452d5e090aba861f8e7cf8301
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3e9cd58eb6563298a0ee38fbad0cbae5d85e57e9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851379"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723342"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Como pausar e retomar a coleta de dados de desempenho
 Você pode controlar interativamente a coleta de dados de criação de perfil na janela da página de sessão de criação de perfil.
@@ -26,7 +27,7 @@ Você pode controlar interativamente a coleta de dados de criação de perfil na
  ![Página de sessão de criação de perfil](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
 
 > [!NOTE]
-> Você também pode iniciar a sessão de desempenho com a criação de perfil em pausa e retomar a criação de perfil em um ponto posterior na execução do programa. Para iniciar a sessão de desempenho com a criação de perfil em pausa, escolha o comando **Iniciar a análise de desempenho com a criação de perfil em pausa ** no menu **Depurar**.
+> Você também pode iniciar a sessão de desempenho com a criação de perfil em pausa e retomar a criação de perfil em um ponto posterior na execução do programa. Para iniciar a sessão de desempenho com a criação de perfil em pausa, escolha o comando **Iniciar a análise de desempenho com a criação de perfil em pausa** no menu **Depurar**.
 
 ### <a name="to-pause--resume-or-stop-profiling"></a>Para pausar, retomar ou interromper a criação de perfil
 

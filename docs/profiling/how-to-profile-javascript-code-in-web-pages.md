@@ -1,5 +1,6 @@
 ---
 title: Analisar código JavaScript em páginas da Web | Microsoft Docs
+description: Saiba como o Visual Studio Ferramentas de Criação de Perfil pode coletar dados de desempenho para código JavaScript usando o método de criação de perfil de instrumentação.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 42355316c33ab9970b07001323502d9337558edc
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 64f0f61cc6afbce2542ac0b3e251764646ab1d97
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851366"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723329"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Como criar perfil de código JavaScript em páginas da Web
 

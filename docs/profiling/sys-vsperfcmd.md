@@ -1,5 +1,6 @@
 ---
 title: Sys (VSPerfCmd) | Microsoft Docs
+description: Saiba como a opção VSPerfCmd.exe sys define o evento de criação de perfil que é amostrado para eventos de chamada do sistema.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 435393ac536eb70f2f3f6d38b16eaab645848704
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e8090a39426455e0f6d877c26a7f0a50f00f10c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778174"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719754"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 A opção *VSPerfCmd.exe* **Sys** define o evento de criação de perfil que é amostrado para eventos de chamada do sistema (chamadas de função do aplicativo criado para o sistema operacional) e, opcionalmente, altera o número de chamadas do sistema em um intervalo de amostragem a partir do padrão de 10.

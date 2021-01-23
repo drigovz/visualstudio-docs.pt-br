@@ -1,5 +1,6 @@
 ---
 title: Inicializar | Microsoft Docs
+description: Saiba como a opção Iniciar inicia o criador de perfil usando o método de amostragem e também inicia o aplicativo especificado.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9834c10c58fb343de0707fa0b805586a6cdebcb3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bec7ebd26cc0522852276627d2c59161b51c809b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778603"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721418"
 ---
 # <a name="launch"></a>Inicializar
 A opção **Inicializar** inicia o criador de perfil usando o método de amostragem e também inicia o aplicativo especificado.

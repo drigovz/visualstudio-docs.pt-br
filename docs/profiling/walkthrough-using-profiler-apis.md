@@ -1,5 +1,6 @@
 ---
 title: 'Passo a passo: Usar APIs do criador de perfil | Microsoft Docs'
+description: Saiba como usar as APIs do criador de perfil para limitar a quantidade de dados coletados durante a criação de perfil de instrumentação.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 81071a44b51b1441782b25741126873fc720ed7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94276e294bfcf342cfc81b14005205a8f1e97949
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779877"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723082"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Passo a passo: Usando APIs do criador de perfil
 
@@ -124,7 +125,7 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Para coletar e exibir dados no IDE do Visual Studio
 
-1. Abra o IDE do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. No menu **analisar** , aponte para criador de **perfil**e selecione **nova sessão de desempenho**.
+1. Abra o IDE do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. No menu **analisar** , aponte para criador de **perfil** e selecione **nova sessão de desempenho**.
 
 2. Adicione o binário compilado à lista **Destinos** na janela **Gerenciador de Desempenho**. Clique com botão direito do mouse em **Destinos** e, em seguida, selecione **Adicionar Binário de Destino**. Localize o binário na caixa de diálogo **Adicionar Binário de Destino** e clique em **Abrir**.
 
@@ -170,5 +171,5 @@ DataCollection.CurrentId);
 
 - [Criador de perfil](/previous-versions/ms242704(v=vs.140))
 - [Referência da API do criador de perfil do Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
-- [Guia de Introdução](../profiling/getting-started-with-performance-tools.md)
+- [Introdução](../profiling/getting-started-with-performance-tools.md)
 - [Criar perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

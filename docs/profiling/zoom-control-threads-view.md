@@ -1,5 +1,6 @@
 ---
 title: Controle de zoom (exibição de threads) | Microsoft Docs
+description: Saiba que o controle de zoom é um controle deslizante que ajuda você a ampliar e reduzir a linha do tempo para que você possa se concentrar em áreas de interesse específico.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb1521623880712211ea04e5c572c7cf4bd85133
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00cf79b23de47c1ac808b9287f387a16b51e5c3e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62960154"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719117"
 ---
 # <a name="zoom-control-threads-view"></a>Controle de zoom (exibição de threads)
 O controle de zoom é um controle deslizante que ajuda você a ampliar e reduzir a linha do tempo para que seja possível focar áreas de interesse específico. Uma vez que esse controle amplia o centro da exibição da linha do tempo, centralize a área de interesse antes de ampliá-la.

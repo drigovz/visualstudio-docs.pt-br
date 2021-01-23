@@ -1,5 +1,6 @@
 ---
 title: Temporizador | Microsoft Docs
+description: Saiba como a opção timer de VSPerfCmd.exe define o evento de criação de perfil que é amostrado para ciclos de relógio do processador.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1971868e-89fa-4452-8ee7-76e4daf31b66
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e1bed2715421948385a5b7eb1ddbbac064f3288b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 908685b49a08b3084c31e768675e64bc087bc727
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778109"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722432"
 ---
 # <a name="timer"></a>Temporizador
 A opção **timer** de *VSPerfCmd.exe* define o evento de criação de perfil que é amostrado para ciclos de relógio do processador e, opcionalmente, altera o número de ciclos em um intervalo de amostragem a partir do padrão de 10 milhões. Em um processador de 1 GHz (um gigahertz), 10.000.000 ciclos de relógio são aproximadamente 100 amostras por segundo. O número mínimo de ciclos que pode ser especificado é 50.000.

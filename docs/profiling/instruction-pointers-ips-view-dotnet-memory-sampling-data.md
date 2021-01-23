@@ -1,5 +1,6 @@
 ---
 title: Exibição de ponteiros de instrução (IPs)-dados de amostragem de memória .NET
+description: A exibição IPs para dados de criação de perfil de alocação de memória do .NET que foi coletada usando o método de amostragem lista as instruções de assembly que alocaram memória.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +12,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6f02c2cea714b6c9688efff217ed546490f61764
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d89ede5d7b58bf2605413d8e0621d81983549f34
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809944"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721574"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Exibição de IPs (ponteiros de instrução) – dados de amostragem da memória do .NET
 A exibição de IPs dos dados de criação de perfil de alocação de memória do .NET que foi coletada ao usar o método de amostragem lista as instruções de assembly que alocaram memória durante o processo de criação de perfil. As colunas da exibição também listam o tamanho e o número de alocações.
 
  Apenas valores exclusivos são listados.
 
-|Column|Descrição|
+|Coluna|Descrição|
 |------------|-----------------|
 |**ID do Processo**|A ID de processo (PID) da criação de perfil.|
 |**Nome do processo**|O nome do processo.|

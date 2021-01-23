@@ -1,5 +1,7 @@
 ---
 title: Contadores de CPU e do Windows | Microsoft Docs
+description: Os contadores CPU (hardware) e Windows (software) fornecem dados de desempenho. Saiba como exibi-los e como coletar dados deles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c3657f3558a688232424b868d0e93b8c056467c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779543"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719155"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de CPU e do Windows
 
@@ -53,27 +55,27 @@ Os eventos portáteis contêm os seguintes eventos:
 
 **Eventos gerais**
 
-|Nome do Evento|Descrição do Evento|
+|Nome do evento|Descrição do evento|
 |----------------|-----------------------|
 |Instruções Desativadas|Indica o número de instruções executadas até a conclusão do evento.|
 |Ciclos Não Interrompidos|Indica apenas os ciclos nos quais o processador não foi interrompido, por exemplo, aguardando E/S.|
 
 **Eventos de front-end**
 
-|Nome do Evento|Descrição do Evento|
+|Nome do evento|Descrição do evento|
 |----------------|-----------------------|
 |Perdas de ITLB|Indica o número de pesquisas de Buffer à Parte de Translação de Instrução que resultaram em uma perda.|
 
 **Eventos de ramificação**
 
-|Nome do Evento|Descrição do Evento|
+|Nome do evento|Descrição do evento|
 |----------------|-----------------------|
 |Ramificações Desativadas|Indica o número de instruções de ramificação executadas até a conclusão do evento.|
 |Ramificações Previstas Incorretamente|Indica ramificações previstas incorretamente que ocorrem devido ao fato de o processador ter previsto um caminho incorreto. Ramificações previstas incorretamente afetam o desempenho, pois o processador deve descartar todo o trabalho feito e começar novamente em um caminho correto.|
 
 **Eventos de memória:**
 
-|Nome do Evento|Descrição do Evento|
+|Nome do evento|Descrição do evento|
 |----------------|-----------------------|
 |Erros de Leitura de Cache L2|Indica o número de perdas de leitura do cache de segundo nível.|
 |Referências de Leitura de Cache L2|Indica o número de referências de leitura do cache de segundo nível. Inclui perdas de carga e perdas e ocorrências de RFO (leitura de propriedade).|
@@ -130,7 +132,7 @@ Com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), é 
 
 ## <a name="see-also"></a>Confira também
 
-[Visões gerais](../profiling/overviews-performance-tools.md) 
- [Como: escolher eventos](../profiling/how-to-choose-sampling-events.md) 
- de amostragem [Como: coletar dados](../profiling/how-to-collect-cpu-counter-data.md) 
- do contador de CPU [Como: coletar dados do contador do Windows](../profiling/how-to-collect-windows-counter-data.md)
+- [Visões gerais](../profiling/overviews-performance-tools.md)
+- [Como: escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md)
+- [Como: coletar dados do contador de CPU](../profiling/how-to-collect-cpu-counter-data.md)
+- [Como: coletar dados do contador do Windows](../profiling/how-to-collect-windows-counter-data.md)

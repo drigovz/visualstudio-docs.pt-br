@@ -1,5 +1,6 @@
 ---
 title: Controle de zoom (exibição de utilização) | Microsoft Docs
+description: Saiba como o controle de zoom ajuda você a ampliar o gráfico de utilização da CPU para se concentrar em áreas de interesse específico.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c7f50a3117daeee0ec1727adbcdcc5ca710be36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f28a0f8bd60ad169715ba72b6fab957e7699a5b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62960101"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723017"
 ---
 # <a name="zoom-control-utilization-view"></a>Controle de zoom (exibição de utilização)
 O controle de zoom ajuda você a ampliar o gráfico de utilização da CPU para focar áreas de interesse específico. Esse controle amplia o centro da exibição. Portanto, você deve centralizar a área de interesse antes de ampliá-la.

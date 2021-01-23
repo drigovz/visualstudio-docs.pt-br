@@ -1,5 +1,7 @@
 ---
 title: SDK da Visualização Simultânea | Microsoft Docs
+description: Saiba como usar o SDK do Visualizador de simultaneidade para instrumentar seu código para exibir marcadores. Os marcadores são ícones que são exibidos no Visualizador de simultaneidade para marcar eventos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1732d62fa20e170825cba5e133a9a44f11a59a34
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f07dbfb0ca193f7bacbf2408fc26e622ffb037e1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037348"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720976"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK do Visualizador de Simultaneidade
 Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Simultânea para exibir informações adicionais na Visualização Simultânea. É possível associar os dados adicionais a fases e eventos em seu código. Estas visualizações adicionais são conhecidas como *marcadores*.  Para ver um passo a passo introdutório, consulte [Apresentando o SDK da Visualização Simultânea](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk).
@@ -121,7 +123,7 @@ Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Si
 
 ## <a name="see-also"></a>Confira também
 
-|Title|Descrição|
+|Título|Descrição|
 |-----------|-----------------|
 |[Referência da biblioteca C++](../profiling/cpp-library-reference.md)|Descreve a API da Visualização Simultânea para C++.|
 |[Referência da biblioteca C](../profiling/c-library-reference.md)|Descreve a API da Visualização Simultânea para C.|

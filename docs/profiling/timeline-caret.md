@@ -1,5 +1,6 @@
 ---
 title: Cursor da linha do tempo | Microsoft Docs
+description: Saiba como o cursor mostra o local exato da pilha de chamadas, que é a pilha de chamadas mais próxima ao local selecionado pelo usuário.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 370e19757890d6d9f56fad4e7b89b2197e515d9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85ead5e0292815e92de587e90e0fd2cab92cb485
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62999663"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722484"
 ---
 # <a name="timeline-caret"></a>Cursor da linha do tempo
 Ao selecionar um ponto na linha do tempo de um segmento de thread em execução, um cursor da Linha do tempo é exibido acima dele. A pilha de chamadas exibida na guia da pilha atual é a mais próxima em tempo ao local em que você clicou no segmento. O cursor é usado para associar a pilha de chamadas, que é exibida sob a guia **Atual**, com o instante em que uma amostra dela foi coletada. O cursor mostra o local exato da pilha de chamadas, que é a pilha de chamadas mais próxima ao local que o usuário selecionou.

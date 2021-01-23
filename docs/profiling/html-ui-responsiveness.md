@@ -1,5 +1,6 @@
 ---
 title: Analisar a capacidade de resposta de interface do usuário HTML em aplicativos UWP | Microsoft Docs
+description: Saiba como isolar problemas de desempenho em seus aplicativos usando o profiler de capacidade de resposta da interface do usuário, uma ferramenta de desempenho disponível para aplicativos universais do Windows.
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 9fdc2b7fc459d655748444759913cab903dfe782
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6545fb206096c7b74a7016b506ae3bcade7f136c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331412"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721873"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analisar a capacidade de resposta de interface do usuário HTML em Aplicativos Universais do Windows
 Este tópico descreve como isolar problemas de desempenho nos aplicativos usando o Criador de Perfil de Capacidade de Resposta da Interface do Usuário, uma ferramenta de desempenho disponível para Aplicativos Universais do Windows.
@@ -80,7 +81,7 @@ Este tópico descreve como isolar problemas de desempenho nos aplicativos usando
 
      Se você encontrar um problema, continue testando para limitar o período em que ocorre o problema ou tente identificar gatilhos que provocam esse comportamento.
 
-3. Alterne para o Visual Studio (pressione a tecla **ALT** + **Tab**) e pare seu aplicativo (**Shift** + **F5**).
+3. Alterne para o Visual Studio (pressione a tecla **ALT** + ) e pare seu aplicativo (**Shift** + **F5**).
 
 4. Opcionalmente, adicione marcas de usuário ao seu código usando [Marcar código para análise](#ProfileMark).
 

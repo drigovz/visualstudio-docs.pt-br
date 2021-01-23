@@ -6,12 +6,12 @@ ms.author: johmil
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.topic: how-to
-ms.openlocfilehash: 7025798689e7541471c56988ef24414005dfe656
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: f423b77f8464b05b81be2ff7cdb08a2d8b007e0d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860550"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723056"
 ---
 # <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Configurar as Ferramentas do Visual Studio para Mac para Unity
 
@@ -45,7 +45,7 @@ Caso você já tenha o Unity 5.6.1 ou superior, mas não tenha o Visual Studio p
 
 * Baixe o Visual Studio para Mac de [visualstudio.microsoft.com](https://visualstudio.microsoft.com/).
 * As Ferramentas do Visual Studio para Mac para Unity são instaladas automaticamente durante o processo de instalação.
-* Siga as etapas no [guia de instalação](./installation.md?view=vsmac-2017) para obter ajuda de instalação adicional.
+* Siga as etapas no [guia de instalação](./installation.md?view=vsmac-2017&preserve-view=true) para obter ajuda de instalação adicional.
 
 > [!NOTE]
 > As Ferramentas do Visual Studio para Mac para Unity requerem o Unity versão 5.6.1 ou superior. Para verificar se as Ferramentas do Visual Studio para Unity estão habilitadas na sua versão do Unity, selecione **Sobre o Unity** no menu do Unity e procure o texto “Ferramentas do Microsoft Visual Studio para Unity habilitadas” na parte inferior esquerda da caixa de diálogo.
@@ -68,7 +68,7 @@ Embora a extensão das Ferramentas do Visual Studio para Mac para Unity devem se
 
 Começando pelo Unity 2018.1, o Visual Studio deve ser o editor de scripts externo padrão no Unity. Confirme isso ou altere o editor de scripts externo para o Visual Studio:
 
-1. Selecione **Preferências... ** no menu do Unity.
+1. Selecione **Preferências...** no menu do Unity.
 
    ![Selecionar preferências](media/setup-vsmac-tools-unity-image4.png)
 

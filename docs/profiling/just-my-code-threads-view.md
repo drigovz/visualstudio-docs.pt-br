@@ -1,5 +1,6 @@
 ---
 title: Apenas Meu Código (Exibição de Threads) | Microsoft Docs
+description: Saiba como você filtrará a pilha de chamadas para mostrar apenas o seu código mais um nível de funções chamadas se você selecionar a opção Apenas Meu Código.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607247c6853c59036d1ab386f7371964265a32b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a3924211d5ec42660357cef45714f672b0bef063
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62995349"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721470"
 ---
 # <a name="just-my-code-threads-view"></a>Apenas meu código (exibição de threads)
 Ao selecionar essa opção, a pilha de chamadas será filtrada para mostrar apenas o seu código e um nível das funções chamadas.

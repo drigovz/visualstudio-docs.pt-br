@@ -1,5 +1,6 @@
 ---
 title: VSInstr | Microsoft Docs
+description: Saiba como a ferramenta VSInstr é usada para instrumentar binários e sobre outras opções da ferramenta VSInstr.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -18,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fc68ad7da06a1710e3c34ddb601155fc3d0b1182
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 576e83e5440607b06aca1b80171f8ca30d716e24
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330503"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723108"
 ---
 # <a name="vsinstr"></a>VSInstr
 A ferramenta VSInstr é usada para instrumentar binários. Ela é chamada usando a seguinte sintaxe:
@@ -39,9 +40,9 @@ VSInstr [/U] filename [/options]
 |**Ajuda** ou **?**|Exibe a ajuda.|
 |**U**|Grava a saída redirecionada do console como Unicode. Deve ser a primeira opção especificada.|
 |`@filename`|Especifica o nome de um arquivo de resposta que contém uma opção de comando por linha.  Não use aspas.|
-|**OutputPath** `:path`|Especifica um diretório de destino para a imagem instrumentada. Se um caminho de saída não for especificado, o binário original será renomeado acrescentando "Orig" ao nome do arquivo no mesmo diretório e uma cópia do binário será instrumentada.|
+|**OutputPath**`:path`|Especifica um diretório de destino para a imagem instrumentada. Se um caminho de saída não for especificado, o binário original será renomeado acrescentando "Orig" ao nome do arquivo no mesmo diretório e uma cópia do binário será instrumentada.|
 |**Excluir:**`funcspec`|Determina uma especificação de função a ser excluída da instrumentação por testes. É útil quando a entrada de teste de criação de perfil em uma função causa resultados imprevisíveis ou indesejados.<br /><br /> Não use as opções **Exclude** e **Include** que se referem a funções no mesmo binário.<br /><br /> Você pode determinar várias especificações de função com opções **Exclude** separadas.<br /><br /> `funcspec` é definida como:<br /><br /> [namespace \<separator1> ] [classe \<separator2> ] funcionamento<br /><br /> \<separator1> é `::` para código nativo e `.` para código gerenciado.<br /><br /> \<separator2> é sempre `::`<br /><br /> **Exclude** tem suporte com a cobertura de código.<br /><br /> Há suporte para o caractere curinga \*. Por exemplo, para excluir todas as funções em um namespace, use:<br /><br /> MyNamespace::\*<br /><br /> Você pode usar **VSInstr /DumpFuncs** para listar os nomes completos de funções no binário especificado.|
-|**Incluir:**`funcspec`|Determina uma especificação de função em um binário para instrumentar com testes. Todas as outras funções nos binários não são instrumentadas.<br /><br /> Você pode determinar várias especificações de função com opções **Include** separadas.<br /><br /> Não use as opções **Include** e **Exclude** que se referem a funções no mesmo binário.<br /><br /> Não há suporte para **Include** com cobertura de código.<br /><br /> `funcspec` é definida como:<br /><br /> [namespace \<separator1> ] [classe \<separator2> ] funcionamento<br /><br /> \<separator1> é `::` para código nativo e `.` para código gerenciado.<br /><br /> \<separator2> é sempre `::`<br /><br /> Há suporte para o caractere curinga \*. Por exemplo, para incluir todas as funções em um namespace, use:<br /><br /> MyNamespace::\*<br /><br /> Você pode usar **VSInstr /DumpFuncs** para listar os nomes completos de funções no binário especificado.|
+|**Inclusão:** `funcspec`|Determina uma especificação de função em um binário para instrumentar com testes. Todas as outras funções nos binários não são instrumentadas.<br /><br /> Você pode determinar várias especificações de função com opções **Include** separadas.<br /><br /> Não use as opções **Include** e **Exclude** que se referem a funções no mesmo binário.<br /><br /> Não há suporte para **Include** com cobertura de código.<br /><br /> `funcspec` é definida como:<br /><br /> [namespace \<separator1> ] [classe \<separator2> ] funcionamento<br /><br /> \<separator1> é `::` para código nativo e `.` para código gerenciado.<br /><br /> \<separator2> é sempre `::`<br /><br /> Há suporte para o caractere curinga \*. Por exemplo, para incluir todas as funções em um namespace, use:<br /><br /> MyNamespace::\*<br /><br /> Você pode usar **VSInstr /DumpFuncs** para listar os nomes completos de funções no binário especificado.|
 |**DumpFuncs**|Lista as funções dentro da imagem especificada. Nenhuma instrumentação é executada.|
 |**ExcludeSmallFuncs**|Exclui funções pequenas, que são funções curtas que não fazem chamadas de função, da instrumentação. A opção **ExcludeSmallFuncs** oferece menos sobrecarga devido à instrumentação, portanto, uma velocidade de instrumentação aprimorada.<br /><br /> A exclusão de funções pequenas também reduz o tamanho do arquivo .*vsp* e o tempo necessário para análise.|
 |**Marca:**{**Antes**\|**Depois**\|**Superior**\|**Inferior**}`,funcname,markid`|Insere uma marca de perfil (um identificador usado para delimitar os dados em relatórios) que você pode usar para identificar o início ou término de um intervalo de dados no arquivo de relatório. vsp.<br /><br /> **Antes** -imediatamente antes da entrada da função de destino.<br /><br /> **After** – Imediatamente depois da saída da função de destino.<br /><br /> **Top** – Imediatamente depois da entrada da função de destino.<br /><br /> **Bottom** – Imediatamente antes de cada retorno na função de destino.<br /><br /> `funcname` – Nome da função de destino<br /><br /> `Markid` – Um inteiro positivo (longo) para usar como o identificador da marca de perfil.|

@@ -1,5 +1,6 @@
 ---
 title: Analisar o uso de memória do JavaScript em aplicativos UWP | Microsoft Docs
+description: Saiba como o analisador de memória JavaScript está disponível para ajudá-lo a entender o uso de memória e encontrar vazamentos de memória em seus aplicativos UWP criados para Windows usando JavaScript.
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -20,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a1b857639d8a58ffc7686569ad8e103674f136
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a29d12a4ca2e6a7a620c5197f76c0ad35ac33a40
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037478"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721678"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analisar o uso de memória do JavaScript em aplicativos UWP
 O analisador de memória do JavaScript está disponível no Visual Studio para ajudar você a entender o uso de memória e a localizar vazamentos de memória em seus aplicativos UWP compilados para o Windows usando JavaScript. Os aplicativos com suporte incluem aplicativos para Aplicativos Universais do Windows.
@@ -75,7 +76,7 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
 
      Interaja com o aplicativo para testar os cenários relevantes do uso de memória e exibir o gráfico de memória, conforme discutido nas seções a seguir.
 
-6. Alterne para o Visual Studio pressionando a **tecla Alt** + **Tab**.
+6. Alterne para o Visual Studio pressionando a **tecla Alt** + .
 
 7. Para exibir os dados reunidos pelo analisador de memória, escolha **Obter uma imagem instantânea do heap**. Consulte [Exibir um resumo de instantâneo](#view-a-snapshot-summary) posteriormente neste tópico.
 
@@ -112,7 +113,7 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
    > [!TIP]
    > Ao repetir o cenário de teste várias vezes, você pode ajudar a garantir que o trabalho de inicialização seja descartado dos resultados.
 
-5. Alterne para o Visual Studio (pressione a tecla **ALT** + **Tab**).
+5. Alterne para o Visual Studio (pressione a tecla **ALT** + ).
 
 6. Obtenha um instantâneo do heap da linha de base escolhendo **Obter uma imagem instantânea do heap**.
 
@@ -255,7 +256,7 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
 
   Para filtrar informações de comparação entre os instantâneos, escolha um dos filtros de **Escopo** na parte superior das exibições de comparação.
 
-- **Objetos restantes do instantâneo # \<number> **. Esse filtro mostra o diferencial entre os objetos adicionados ao heap e removidos do heap em comparação com o instantâneo de linha de base e o instantâneo anterior. Por exemplo, se o resumo de instantâneo mostrar +205 / -195 na contagem de objetos, esse filtro mostrará a você os 10 objetos que foram adicionados, mas não removidos.
+- **Objetos restantes do instantâneo # \<number>**. Esse filtro mostra o diferencial entre os objetos adicionados ao heap e removidos do heap em comparação com o instantâneo de linha de base e o instantâneo anterior. Por exemplo, se o resumo de instantâneo mostrar +205 / -195 na contagem de objetos, esse filtro mostrará a você os 10 objetos que foram adicionados, mas não removidos.
 
   > [!TIP]
   > Para mostrar as informações mais úteis nesse filtro, siga as etapas descritas em [Isolar uma perda de memória](#isolate-a-memory-leak).

@@ -1,5 +1,7 @@
 ---
 title: Gráfico de utilização da CPU | Microsoft Docs
+description: Saiba mais sobre o grafo de utilização da CPU, que mostra o nível de utilização em um aplicativo ao longo do tempo. A utilização é mostrada como o número de núcleos lógicos em uso.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e09526930bf98141ae4f9d4d204b20383763c208
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b310510a87e450c0d6b83a457cd117267ce0c9b8
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62552870"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719013"
 ---
 # <a name="cpu-utilization-graph"></a>Grafo de utilização da CPU
 O gráfico de Utilização da CPU mostra o nível de utilização em um aplicativo ao longo do tempo. O eixo X representa a duração do rastreamento e o eixo Y representa o número de núcleos lógicos no sistema. O gráfico não mostra qual núcleo específico está ativo em determinado momento. Por exemplo, se dois núcleos estiverem sendo executados individualmente com capacidade de 50% durante um período específico, essa exibição mostrará um núcleo lógico sendo utilizado.
@@ -26,7 +28,7 @@ O gráfico de Utilização da CPU mostra o nível de utilização em um aplicati
 
 - Verde indica a utilização dos núcleos lógicos no sistema pelo processo atual.
 
-- Cinza-claro indica a utilização de núcleos lógicos por outros processos no sistema. Um alto percentual de cinza-claro no gráfico da CPU indica que o sistema está muito carregado por outros processos e que o processo provavelmente será impedido por eles. Para reduzir o consumo de núcleos lógicos por outros processos, reduza o número deles em execução no sistema.
+- Cinza-claro indica a utilização de núcleos lógicos por outros processos no sistema. Um alto percentual de cinza claro no grafo de CPU indica que o sistema está muito carregado por outros processos e que seu processo provavelmente será admitido por eles. Para reduzir o consumo de núcleos lógicos por outros processos, reduza o número deles em execução no sistema.
 
 - Cinza-escuro indica o consumo de núcleos lógicos pelo processo do sistema. Não é possível controlar isso diretamente, mas é útil saber quando isso está ocorrendo, pois pode afetar a disponibilidade de núcleos lógicos para o processo.
 

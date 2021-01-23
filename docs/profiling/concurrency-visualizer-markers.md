@@ -1,5 +1,7 @@
 ---
 title: Marcadores da Visualização Simultânea | Microsoft Docs
+description: 'Saiba mais sobre marcadores no Visualizador de simultaneidade. Os marcadores são ícones que representam eventos gerados por um aplicativo. Há três tipos: sinalizadores, mensagens e intervalos.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5e4b65db5c3d96b16a68a7b8e21a2786b9110b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fab8108e15f3cbaf81130c2ce8533d00f2a23c7e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63001056"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720989"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcadores da Visualização Simultânea
 Na Visualização Simultânea, os marcadores são ícones que representam os eventos em um aplicativo.  Normalmente, o aplicativo gera esses eventos para designar fases ou ocorrências em um aplicativo.  Os eventos podem ser gerados pelo aplicativo ou por bibliotecas e runtimes que o aplicativo usa.
@@ -45,7 +47,7 @@ Na Visualização Simultânea, os marcadores são ícones que representam os eve
 
 - [Biblioteca de tarefas paralelas (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)
 
-- [Flow](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)
+- [Fluxo de dados](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)
 
 - [LINQ paralelo (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)
 

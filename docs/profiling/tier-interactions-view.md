@@ -1,5 +1,6 @@
 ---
 title: Exibição de interações de camada | Microsoft Docs
+description: Saiba como a criação de perfil de interação de camada fornece informações sobre os tempos de execução em funções de aplicativos multicamadas que se comunicam com bancos de dados.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,18 +13,18 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9021f814f093151c6d65beaececc0fa99a662d44
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778135"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722510"
 ---
 # <a name="tier-interactions-view"></a>Exibição de interações da camada
 
 A criação de perfil de interação de camada fornece informações adicionais sobre os tempos de execução em funções de aplicativos de várias camadas que se comunicam com os bancos de dados por meio de [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]. Os dados são coletados apenas para chamadas de função síncronas.
 
-**Requisitos**
+**Requirements**
 
 - Visual Studio Enterprise
 

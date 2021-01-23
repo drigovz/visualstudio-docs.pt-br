@@ -11,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 9c078f3500a5a00edadae73f04f04e60d7c199d6
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 3697ac75eb608f6990cb7f8ca976e103f0df8454
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341450"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722978"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps com aplicativos do Unity
 
@@ -61,8 +61,8 @@ Comentário geral: embora esses recursos de design sejam independentes da lingua
 
 |Recurso|Tem suporte com o Unity|Comentários Adicionais|
 |-------------|--------------------------|-------------------------|
-|[Usar o TFVC (Controle de Versão do Team Foundation)](/azure/devops/repos/tfvc/overview?view=vsts) ou o Azure Repos|Sim|Projetos do Unity são simplesmente uma coleção de arquivos que podem ser colocados em sistemas de controle de versão como qualquer outro projeto, mas há algumas considerações especiais descritas após esta tabela.|
-|[Introdução ao GIT no Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|Sim|Consulte as observações após a tabela.|
+|[Usar o TFVC (Controle de Versão do Team Foundation)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) ou o Azure Repos|Sim|Projetos do Unity são simplesmente uma coleção de arquivos que podem ser colocados em sistemas de controle de versão como qualquer outro projeto, mas há algumas considerações especiais descritas após esta tabela.|
+|[Introdução ao GIT no Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&preserve-view=true&tabs=visual-studio)|Sim|Consulte as observações após a tabela.|
 |[Melhorar a qualidade do código](/test/improve-code-quality.md)|Sim||
 |[Localizar alterações de código e outros históricos](/ide/find-code-changes-and-other-history-with-codelens.md)|Sim||
 |[Usar mapas de códigos para depurar aplicativos](/modeling/use-code-maps-to-debug-your-applications.md)|Sim||
@@ -94,7 +94,7 @@ Link de referência: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts
 |Planejando testes, criando casos de teste e organizando conjuntos de testes|Sim||
 |Teste manual|Sim||
 |Gerenciador de Teste (testes de gravação e reprodução)|Somente dispositivos Windows e emuladores Android||
-|Cobertura de código|N/D|Não se aplica, uma vez que o teste de unidade acontece dentro do Unity e não no Visual Studio, consulte abaixo.|
+|Cobertura de código|n/a|Não se aplica, uma vez que o teste de unidade acontece dentro do Unity e não no Visual Studio, consulte abaixo.|
 |[Teste de unidade em seu código](/test/unit-test-your-code.md)|No Unity, mas não no Visual Studio|O Unity fornece sua própria estrutura de teste de unidade como parte das [ferramentas de teste do Unity](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802) (repositório de ativos do Unity). Resultados de teste de unidade são relatados dentro do Unity e não aparecerão no Visual Studio.|
 |[Usar a automação da interface do usuário para testar o código](/test/use-ui-automation-to-test-your-code.md)|Não|Os testes de IU codificados dependem de controles legíveis na interface do usuário do aplicativo. Os aplicativos Unity são gráficos por natureza e, assim, o conteúdo não é legível para ferramentas de teste de IU codificado.|
 

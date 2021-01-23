@@ -12,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: aa1f0505d37059ce65da80fcf483473610cf2f6d
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: ba3baa1ff06da6497ddc663f888e7c93292d5b98
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329530"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719650"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolar o código em teste com elementos fictícios da Microsoft
 
@@ -255,11 +255,11 @@ Você também pode criar shims para instâncias específicas, para construtores 
 ## <a name="using-microsoft-fakes-in-the-ci"></a>Usando falsificações da Microsoft no CI
 
 ### <a name="microsoft-fakes-assembly-generation"></a>Geração de assembly de falsificações da Microsoft
-Como as falsificações da Microsoft exigem Visual Studio Enterprise, a geração de assemblies de falsificações exige que você crie seu projeto usando a [tarefa de compilação do Visual Studio](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops).
+Como as falsificações da Microsoft exigem Visual Studio Enterprise, a geração de assemblies de falsificações exige que você crie seu projeto usando a [tarefa de compilação do Visual Studio](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops&preserve-view=true).
 
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> Uma alternativa para isso é verificar os assemblies de falsificações no CI e usar a [tarefa MSBuild](../msbuild/msbuild-task.md?view=vs-2019). Ao fazer isso, você precisa garantir que você tenha uma referência de assembly para o assembly de falsificações gerado em seu projeto de teste, semelhante ao seguinte trecho de código:
+> Uma alternativa para isso é verificar os assemblies de falsificações no CI e usar a [tarefa MSBuild](../msbuild/msbuild-task.md?view=vs-2019&preserve-view=true). Ao fazer isso, você precisa garantir que você tenha uma referência de assembly para o assembly de falsificações gerado em seu projeto de teste, semelhante ao seguinte trecho de código:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -273,10 +273,10 @@ Essa referência deve ser adicionada em projetos de estilo de SDK especificament
 ::: moniker-end
 
 ### <a name="running-microsoft-fakes-tests"></a>Executando testes de falsificações da Microsoft
-Desde que os assemblies de falsificações da Microsoft estejam presentes no `FakesAssemblies` diretório configurado (o padrão está sendo `$(ProjectDir)FakesAssemblies` ), você pode executar testes usando a [tarefa VSTest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops).
+Desde que os assemblies de falsificações da Microsoft estejam presentes no `FakesAssemblies` diretório configurado (o padrão está sendo `$(ProjectDir)FakesAssemblies` ), você pode executar testes usando a [tarefa VSTest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true).
 
 ::: moniker range=">=vs-2019"
-Os testes distribuídos com a [tarefa VSTest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) projetos do .NET Core usando as falsificações da Microsoft exigem o Visual Studio 2019 atualização 9 Preview `20201020-06` e superior.
+Os testes distribuídos com a [tarefa VSTest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) projetos do .NET Core usando as falsificações da Microsoft exigem o Visual Studio 2019 atualização 9 Preview `20201020-06` e superior.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"

@@ -1,5 +1,6 @@
 ---
 title: Exibições de dados do método de instrumentação | Microsoft Docs
+description: Saiba mais sobre as informações de referência para os modos de exibição e relatórios de arquivos de dados do profiler que foram gerados usando o método de instrumentação.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 18cc473f517e1f2eb03b657a365a33e4e37ff23f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 18d7d2266ec21a3eee983474e433d72245658c43
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74774157"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721535"
 ---
 # <a name="instrumentation-method-data-views"></a>Exibições de dados do método de instrumentação
 Esta seção contém informações de referência sobre as exibições e os relatórios dos arquivos de dados do criador de perfil que foram gerados usando o método de instrumentação.
@@ -50,7 +51,7 @@ Esta seção contém informações de referência sobre as exibições e os rela
 
 - [Exibição de processo](../profiling/process-view.md)
 
- Lista o início e o fim do processo e o tempo de vida de todos os processos cujos perfis foram criados.
+ Lista o início do processo, o término e o tempo de vida útil para todos os processos cujo perfil foi criado.
 
 ## <a name="related-sections"></a>Seções relacionadas
 - [Exibições de dados do método de amostragem](../profiling/profiler-sampling-method-data-views.md)
