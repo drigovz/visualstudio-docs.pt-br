@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b34d96f49370a71a63e986a79584caffbc00adf
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: a2a64b613ca19632a7827686ab0552e6e23620c1
+ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847034"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98773330"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
 
@@ -102,12 +102,15 @@ A barra de ferramentas na parte superior de **Gerenciador de soluções** tem bo
 
 Muitos comandos de menu estão disponíveis no menu de contexto de clique com o botão direito do mouse em vários itens em **Gerenciador de soluções**. Esses comandos incluem criar um projeto, gerenciar pacotes do NuGet, adicionar uma referência, renomear um arquivo e executar testes, apenas para citar alguns.
 
-> [!TIP]
-> Se você fechou Gerenciador de soluções e deseja abri-lo novamente, escolha   >  o **layout da janela de redefinição** de janela na barra de menus.
-
 Para projetos ASP.NET Core, você pode personalizar como os arquivos são aninhados no **Gerenciador de Soluções**. Para saber mais, confira [Personalizar o aninhamento de arquivos no Gerenciador de Soluções](file-nesting-solution-explorer.md).
 
-## <a name="see-also"></a>Consulte também
+> [!TIP]
+> Se você fechou Gerenciador de soluções e deseja abri-lo novamente, escolha **Exibir**  >  **Gerenciador de soluções** na barra de menus ou pressione **Ctrl** + **ALT** + **L**. E, se você fechou as guias laterais e deseja restaurá-las para seus locais padrão, escolha o   >  **layout da janela de redefinição** de janela na barra de menus.
+
+> [!NOTE]
+> Para exibir as imagens e os ícones do aplicativo que aparecem no Visual Studio, baixe a [**biblioteca de imagens do Visual Studio**](https://www.microsoft.com/download/details.aspx?id=35825).
+
+## <a name="see-also"></a>Confira também
 
 - [Introdução a projetos e soluções](../get-started/tutorial-projects-solutions.md)
 - [Gerenciar propriedades do projeto e da solução](managing-project-and-solution-properties.md)

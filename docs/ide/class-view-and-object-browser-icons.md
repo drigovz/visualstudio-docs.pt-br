@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c0cf21d6d9055f183d15728fb63118ffb87e9c
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 9e0348c1f6c51f0a82328814be671d8f44e3d4a7
+ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903995"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98773351"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Ícones do Pesquisador de Objetos e do Modo de Exibição de Classe
 
@@ -42,7 +42,7 @@ ms.locfileid: "94903995"
 |![Símbolo do método de extensão](../ide/media/extensionmethod.gif)|Método de extensão|![Símbolo de declaração](../ide/media/vxmethod_icon.gif)|Declaração externa|
 |![Símbolo de delegado](../ide/media/vxdelegate_icon.gif)|Delegar|![Ícone de erro para Modo de Exibição de Classe e Pesquisador de Objetos](../ide/media/erroricon.gif)|Erro|
 |![Símbolo de exceção](../ide/media/vxexception_icon.gif)|Exceção|![Símbolo de modelo](../ide/media/vxtemplate_icon.gif)|Modelo|
-|![Símbolo de mapa](../ide/media/vxmap_icon.gif)|Mapeamento|![Símbolo de ponto de exclamação de erro](../ide/media/vxerror_icon.gif)|Desconhecido|
+|![Símbolo de mapa](../ide/media/vxmap_icon.gif)|Mapeamento|![Símbolo de ponto de exclamação de erro](../ide/media/vxerror_icon.gif)|Unknown|
 |![Símbolo de encaminhamento de tipo](../ide/media/ob_type_forward.gif)|Encaminhamento de tipo|||
 
 > [!TIP]
@@ -65,6 +65,9 @@ Os ícones de sinal a seguir aplicam-se a todos os ícones anteriores e indicam 
 
 > [!NOTE]
 > Se seu projeto estiver incluído em um banco de dados de controle do código-fonte, ícones de sinal adicionais poderão ser exibidos para indicar o status de controle de origem, como check-in ou check-out.
+
+> [!TIP]
+> Para exibir mais imagens e ícones de aplicativos que aparecem no Visual Studio, baixe a [**biblioteca de imagens do Visual Studio**](https://www.microsoft.com/download/details.aspx?id=35825).
 
 ## <a name="see-also"></a>Confira também
 
