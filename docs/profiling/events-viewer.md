@@ -1,5 +1,7 @@
 ---
 title: Visualizador de eventos | Microsoft Docs
+description: Saiba mais sobre o Visualizador de eventos genéricos, que ajuda você a diagnosticar melhor como seu aplicativo está fazendo dentro do criador de perfil do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 4/30/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,18 +11,18 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 0be00f2333a2e732d9ba4472004c383b132c0bf2
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 6aef8e72f416923aa647a8b3a412ee701ece18dd
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075059"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801403"
 ---
 # <a name="events-viewer"></a>Visualizador de eventos
 
 O Visualizador de eventos genérico mostra a atividade do aplicativo por meio de uma lista de eventos, como carregamento de módulo, início de thread e configuração do sistema. Essa exibição ajuda você a diagnosticar melhor como seu aplicativo está fazendo dentro do criador de perfil do Visual Studio.
 
-## <a name="setup"></a>Instalação
+## <a name="setup"></a>Configuração
 
 1. Selecione **ALT + F2** para abrir o criador de perfil de desempenho no Visual Studio.
 

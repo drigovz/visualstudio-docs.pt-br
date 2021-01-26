@@ -1,5 +1,7 @@
 ---
 title: Filtrando Exibições de Relatório | Microsoft Docs
+description: No Visual Studio, aplique filtros aos arquivos de dados de criação de perfil para limitar os dados de criação de perfil que são exibidos nas exibições do relatório de desempenho e exportados para arquivos de relatório.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: acdfe8f96d30ad881d8c9c0f0a9ff48c3353afee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6ba3e207b180b26ea4b53765926b16fb2e85d48
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779240"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801438"
 ---
 # <a name="filter-report-views"></a>Filtrar exibições de relatório
 Você pode aplicar filtros para arquivos de dados de criação de perfil para limitar os dados de criação de perfil que são exibidos nas exibições de Relatório de Desempenho e exportados para arquivos de relatório. Você pode limitar um relatório aos dados entre os valores de carimbo de data/hora e limitar os dados a processos e threads específicos. Você pode salvar filtros em um arquivo e, em seguida, criar um filtro em um arquivo de dados de criação de perfil diferente importando o filtro salvo.

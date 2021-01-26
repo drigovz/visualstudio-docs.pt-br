@@ -1,5 +1,7 @@
 ---
 title: Marcadores de sinalizador | Microsoft Docs
+description: Saiba mais sobre marcadores de sinalizador no Visualizador de simultaneidade do Visual Studio. Um marcador de sinalizador representa algo que ocorreu em um instante de tempo em um aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc0c7aa3386e906ad13331a596953db70240701
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc7b128915b7fc961b44aa7d70a24a813d432ddf
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62969925"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801469"
 ---
 # <a name="flag-markers"></a>Marcadores de sinalizador
 Um marcador de sinalizador representa algo que ocorreu em um instante de tempo em um aplicativo. Um sinalizador pode representar muitos tipos de eventos de aplicativo. Por exemplo, um sinalizador pode mostrar quando um determinado item de trabalho foi agendado ou quando uma exceção foi lançada. Runtimes, como a Biblioteca de Paralelismo de Tarefas, também podem gerar sinalizadores.

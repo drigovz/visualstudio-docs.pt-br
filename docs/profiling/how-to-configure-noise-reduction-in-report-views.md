@@ -1,5 +1,7 @@
 ---
 title: Configurar redução de ruído em exibições de relatório | Microsoft Docs
+description: Use corte e dobra, ambos habilitados por padrão, para reduzir o ruído e tornar os problemas de desempenho mais proeminentes em seus relatórios.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 71065ac66fff972e5b6e9cf2c397a75b97e4d02f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 324c00c869e335fe6fc9504b461e6fc7f85bab98
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851223"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800429"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Como configurar a redução de ruído em visualizações de relatório
 Os relatórios de desempenho podem ser configurados para redução de ruído, limitando a quantidade de dados que são apresentados no modo de exibição de Árvore de Chamadas e na exibição de Alocação. Ao usar a redução de ruído, os problemas de desempenho serão mais proeminentes. Isso é útil ao analisar relatórios de desempenho.

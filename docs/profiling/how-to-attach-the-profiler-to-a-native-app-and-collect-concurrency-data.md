@@ -1,5 +1,6 @@
 ---
 title: Anexar o criador de perfil ao aplicativo nativo & coletar dados de simultaneidade
+description: Use o Visual Studio Ferramentas de Criação de Perfil ferramentas de linha de comando para anexar o criador de perfil a um aplicativo autônomo em execução nativo (C/C++) e obter dados de contenção de thread.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a853a8ff3d8ecdc89316edafc927ec93096f720f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fd06783f50708e13c97f7bfe00a22be26739fd9c
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811052"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801634"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Como anexar o criador de perfil a um aplicativo independente nativo e coletar dados de simultaneidade usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um aplicativo independente nativo (C/C++) em execução e coletar dados de contenção do thread.

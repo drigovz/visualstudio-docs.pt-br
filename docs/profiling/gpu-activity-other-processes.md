@@ -1,5 +1,7 @@
 ---
 title: Atividade de GPU (outros processos) | Microsoft Docs
+description: Saiba mais sobre os segmentos de atividade de GPU (outros processos) na exibição threads do Visualizador de simultaneidade.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a502590c20fce1455d9259ae681178d9cd48e33
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71ecb1587545120aef8e18ce847d5e957f3e3cdd
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62969496"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801314"
 ---
 # <a name="gpu-activity-other-processes"></a>Atividade de GPU (outros processos)
 Os segmentos **Atividade de GPU (outros processos)** na exibição Threads na Visualização Simultânea representam o tempo durante o qual a GPU estava processando solicitações em nome de outros processos no sistema. Essas solicitações são enviadas à GPU como pacotes de DMA (acesso direto à memória).  O tamanho de um segmento representa o tempo durante o qual o pacote foi processado pela GPU.

@@ -1,6 +1,7 @@
 ---
 title: Anexar criador de perfil ao serviço do .NET para coletar estatísticas do aplicativo
-ms.custom: seodec18
+description: Use o Visual Studio Ferramentas de Criação de Perfil ferramentas de linha de comando para anexar o criador de perfil a um serviço .NET Framework e obter estatísticas de desempenho usando o método de amostragem.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: a0046c47-26c8-4bec-96a0-81da05e5104a
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: ac59e0e08894ca143df6a68c49e5f5f8b24ebc50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c91fef6cc98ae270420354a1287c05e78b38ac3e
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328707"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801125"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Como anexar o criador de perfil a um serviço do .NET para coletar estatísticas do aplicativo usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um serviço do .NET Framework e coletar estatísticas de desempenho usando o método de amostragem.
@@ -115,7 +116,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
     - Parar o serviço.
 
-         - ou -
+         -ou-
 
     - Digite **VSPerfCmd/Detach**
 

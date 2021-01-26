@@ -1,5 +1,7 @@
 ---
 title: Escolher eventos de amostragem | Microsoft Docs
+description: Saiba como definir o evento de exemplo para atender às suas necessidades e definir o número de ciclos entre amostras. Os eventos disponíveis incluem ciclos de relógio e falhas de página.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f28859b1c17c735be405c6c56ebabcbe43903170
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ed97fd205ffc0c969d0cad39d962cd8cdeb4e2eb
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851288"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801577"
 ---
 # <a name="how-to-choose-sampling-events"></a>Como escolher eventos de amostragem
 Por padrão, as ferramentas de criação de perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] coletam dados de desempenho em um intervalo especificado como um número de ciclos de processador que são usados pelo processo analisado. O número padrão de ciclos em um intervalo é de 10.000.000, que é aproximadamente 0,01 segundos em um computador de 1 GH. Você pode alterar o número de ciclos em um intervalo e também pode alterar o evento de amostragem. Os eventos de amostragem a seguir estão disponíveis:

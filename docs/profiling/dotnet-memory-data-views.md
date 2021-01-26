@@ -1,5 +1,7 @@
 ---
 title: Exibições de dados de memória do .NET | Microsoft Docs
+description: Consulte links para informações de referência para os modos de exibição e relatórios de arquivos de dados do profiler que contêm dados de criação de perfil de memória do .NET.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e74027512eba0d64593133a3bbe758570cbf567
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a4a6143127a2e55bf5c13cf6606bfe00de5cd9e
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779266"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801271"
 ---
 # <a name="net-memory-data-views"></a>Exibições de dados da memória do .NET
 Esta seção contém informações de referência para as exibições e os relatórios dos arquivos de dados do criador de perfil que contêm os dados de criação de perfil de memória do .NET.

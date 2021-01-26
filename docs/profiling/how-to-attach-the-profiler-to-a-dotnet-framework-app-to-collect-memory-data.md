@@ -1,5 +1,6 @@
 ---
 title: Anexar o criador de perfil ao .NET para coletar dados de memória
+description: Aprenda a usar o Visual Studio Ferramentas de Criação de Perfil ferramentas de linha de comando para anexar o criador de perfil a um aplicativo de .NET Framework autônomo em execução e obter dados de memória.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 88b3eedf8989b4c7421ecb7504b18997058a0204
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a80e4201f04565aaa163d58bca8e13ae715b09f
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811104"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801106"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Como anexar o criador de perfil a um aplicativo .NET Framework independente para coletar dados da memória usando a linha de comando
 
@@ -97,7 +98,7 @@ Para concluir uma sessão de criação de perfil, o criador de perfil deve ser d
 
     - Digite **VSPerfCmd/Detach**
 
-         - ou -
+         -ou-
 
     - Feche o aplicativo de destino.
 

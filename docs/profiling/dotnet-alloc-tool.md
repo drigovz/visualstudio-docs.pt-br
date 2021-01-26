@@ -1,5 +1,7 @@
 ---
 title: Analisar o uso de memória para objetos .NET | Microsoft Docs
+description: Exiba a quantidade de memória que seu aplicativo usa e quais caminhos de código alocam mais memória usando a ferramenta de alocação de objeto .NET.
+ms.custom: SEO-VS-2020
 ms.date: 12/9/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 563531b6dfbf59e33b63dcb4561612d86cd39acc
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 4c0d8b02f867797317ff762e7a23bec042f93318
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970227"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801499"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analisar o uso de memória usando a ferramenta de alocação de objeto .NET
 
@@ -22,7 +24,7 @@ Você pode ver quanto memória seu aplicativo usa e quais caminhos de código al
 
 Depois de executar a ferramenta, você pode ver os caminhos de execução da função em que os objetos estão sendo alocados. Em seguida, você pode rastrear de volta para a raiz da árvore de chamada que está ocupando a maior parte da memória.
 
-## <a name="setup"></a>Instalação
+## <a name="setup"></a>Configuração
 
 1. Selecione **ALT + F2** para abrir o criador de perfil de desempenho no Visual Studio.
 

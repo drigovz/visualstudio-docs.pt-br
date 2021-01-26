@@ -1,5 +1,7 @@
 ---
 title: Eventos (VSPerfCmd) | Microsoft Docs
+description: Controle o log do ETW (rastreamento de eventos para Windows) usando a opção eventos na ferramenta de linha de comando VSPerfCmd.exe. Examine os parâmetros de sintaxe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: eb139327-4783-4f2a-874c-efad377a7be4
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 46b47f9b615c824d25e931cd3d05f5d2a04257ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 614ac24e38966c1d09df91d6771cab2b3914454d
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777315"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801395"
 ---
 # <a name="events-vsperfcmd"></a>Eventos (VSPerfCmd)
 A opção *VSPerfCmd.exe* **Events** controla o log do ETW (rastreamento de eventos para Windows). Os dados ETW são salvos em um arquivo .etl separado do arquivo de dados do criador de perfil. Os dados podem ser exibidos em um relatório usando o comando [VSPerfReport](../profiling/vsperfreport.md) /summary:etw.

@@ -1,5 +1,7 @@
 ---
 title: Exibição Detalhes da Função | Microsoft Docs
+description: No Gerenciador de Desempenho, saiba mais sobre a janela exibição de detalhes da função, gráfico de barras de distribuição de custo, tabela detalhes de desempenho da função e a janela exibição de código de função.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fa53ba1d2e805f744d6a817c65b77428d757a25
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e812f0fdef46d0ac5ef42788c2f854922a7375c
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536988"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801257"
 ---
 # <a name="function-details-view"></a>Exibição de detalhes da função
 A janela **Exibição Detalhes da Função** exibe as seguintes informações:

@@ -1,5 +1,7 @@
 ---
 title: Comparar arquivos de dados de desempenho | Microsoft Docs
+description: Saiba como comparar os resultados de dois arquivos de dados de criador de perfil diferentes (. vsp ou. vsps) para encontrar diferenças, regressões de desempenho e melhorias de desempenho.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,15 +16,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f42ceaa251b59eae426bfbe52c29b21ae5075077
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 40988d23dd8e9b848ea410aa75f4d4c1f45d524d
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851236"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800461"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Como comparar arquivos de dados de desempenho
-Você pode comparar os resultados de dois arquivos de dados do criador de perfil diferentes (.* VSP* ou. *vsps*) Criando um relatório ou exibição de comparação ("diff"). A comparação mostra as diferenças, regressões de desempenho e as melhorias que ocorreram de uma sessão de criação de perfil para a outra.
+Você pode comparar os resultados de dois arquivos de dados do criador de perfil diferentes (.*VSP* ou. *vsps*) Criando um relatório ou exibição de comparação ("diff"). A comparação mostra as diferenças, regressões de desempenho e as melhorias que ocorreram de uma sessão de criação de perfil para a outra.
 
  O relatório de Comparação apresenta uma exibição de tabela dos dados. A tabela apresenta o delta ou a alteração da linha de base. Isso é calculado determinando a diferença entre o valor antigo, o valor de linha de base e o valor do resultado da nova análise.
 
@@ -54,6 +56,6 @@ Você pode comparar os resultados de dois arquivos de dados do criador de perfil
 
 1. No menu **Analisar**, selecione **Comparar Relatórios de Desempenho**.
 
-2. Na janela **selecionar arquivos de análise para comparação** , procure e selecione o arquivo de análise de **arquivo de linha de base** (.* VSP* ou. *vsps*) e o **arquivo de comparação** (.* VSP* ou. *vsps*).
+2. Na janela **selecionar arquivos de análise para comparação** , procure e selecione o arquivo de análise de **arquivo de linha de base** (.*VSP* ou. *vsps*) e o **arquivo de comparação** (.*VSP* ou. *vsps*).
 
 3. Clique em **OK**.

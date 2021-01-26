@@ -1,5 +1,7 @@
 ---
 title: GlobalOn e GlobalOff | Microsoft Docs
+description: Examine as opções Globalize e GlobalOff em VSPerfCmd.exe. Essas opções pausam e reiniciam a criação de perfil para processos e threads em uma sessão de criação de perfil de linha de comando.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
@@ -9,17 +11,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 518f41557809cdeaaae9f9e1ac79e3797a854395
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaeac096c6bdff77368508bd34276d66530fa739
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74776960"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801339"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn e GlobalOff
 As opções *VSPerfCmd.exe* **GlobalOff** e **GlobalOn** pausam e retomam a criação de perfil de todos os processos e threads em uma sessão de criação de perfil de linha de comando.
 
- Você pode especificar **Globalize** e **GlobalOff** como as únicas opções em uma *VSPerfCmd.exe* linha de comando ou pode incluí-las em linhas de comando que também contêm as opções **Iniciar**, **Iniciar**ou **anexar** .
+ Você pode especificar **Globalize** e **GlobalOff** como as únicas opções em uma *VSPerfCmd.exe* linha de comando ou pode incluí-las em linhas de comando que também contêm as opções **Iniciar**, **Iniciar** ou **anexar** .
 
  **GlobalOn** e **GlobalOff** também podem ser combinados com as opções **ProcessOn**, **ProcessOff**, **ThreadOn** e **ThreadOff**.
 

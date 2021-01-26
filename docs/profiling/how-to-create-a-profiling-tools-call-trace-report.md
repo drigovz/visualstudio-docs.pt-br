@@ -1,5 +1,7 @@
 ---
 title: Criar um relatório de rastreamento de chamada das Ferramentas de Criação de Perfil | Microsoft Docs
+description: Crie um relatório de rastreamento de chamada de ferramentas de desempenho para ver informações de tempo para suas funções e para funções chamadas por suas funções.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d7d315d1931dfa64ce0070790c833651fa4fc11
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: b9c979668cdf24fae7acddd259a82e5c62353084
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851197"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800411"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Como criar um relatório de rastreamento de chamada das ferramentas de criação de perfil
 O *relatório de rastreamento de chamada* para as Ferramentas de criação de perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lista informações de tempo para cada ponto de entrada e de saída para as funções do aplicativo e cada chamada para outras funções por sua função. Relatórios de rastreamento de chamada estão disponíveis para criação de perfil de dados somente se foram coletados com o método de instrumentação.
@@ -36,7 +38,7 @@ O *relatório de rastreamento de chamada* para as Ferramentas de criação de pe
     |Item|Descrição|
     |-|-|
     |*ToolsPath*|O caminho para as ferramentas de linha de comando das Ferramentas de Criação de Perfil. Para saber mais, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
-    |*VSPFile*|Os dados de criação de perfil (.* VSP* ou. *vsps*) Grupo. Caminhos completos e parciais são aceitos.|
+    |*VSPFile*|Os dados de criação de perfil (.*VSP* ou. *vsps*) Grupo. Caminhos completos e parciais são aceitos.|
     |Xml|Gera um relatório XML formatado.|
 
 ## <a name="see-also"></a>Confira também

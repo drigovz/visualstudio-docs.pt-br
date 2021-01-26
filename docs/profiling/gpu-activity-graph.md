@@ -1,5 +1,7 @@
 ---
 title: Gráfico de Atividade de GPU | Microsoft Docs
+description: Entenda o grafo atividade de GPU, que é exibido no Visualizador de simultaneidade o nível de atividade do DirectX no sistema.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5734b9eb1b4307f7c32dcb8a170f7c6c571f46ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bccf4869a1197306017b443b00670cc123300a48
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62969560"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801321"
 ---
 # <a name="gpu-activity-graph"></a>Gráfico de atividade de GPU
 O gráfico de Atividade de GPU na Visualização Simultânea exibe o nível de atividade do DirectX no sistema, medido pelo número de mecanismos do DirectX em uso ao longo do tempo.  O gráfico não mostra quais mecanismos específicos foram usados.  É considerado que um mecanismo está em uso se ele estiver processando qualquer trabalho da GPU.

@@ -1,5 +1,7 @@
 ---
 title: Regras de desempenho de uso do .NET Framework | Microsoft Docs
+description: Entenda as regras de desempenho na categoria de uso de .NET Framework. Identificar métodos específicos que podem ser otimizados e identificar padrões de uso mais gerais.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ac78ffb3455940cf2379af44ff5c2bc5870dc684
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb6bb10f948e7aa9d97491949222c3cb0d15ba66
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531996"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801305"
 ---
 # <a name="net-framework-usage-performance-rules"></a>Regras de desempenho de uso do .NET Framework
 As regras de desempenho na categoria de uso do .NET Framework identificam métodos específicos que podem ser otimizados e também identificam padrões de uso mais gerais, como coleta de lixo e contenção de bloqueio, o que pode ser investigado para problemas de desempenho.

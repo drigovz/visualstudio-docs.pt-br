@@ -1,5 +1,7 @@
 ---
-title: Coletar dados de desempenho de um site | Microsoft Docs
+title: Coletar dados de desempenho para um site | O
+description: Saiba como usar o assistente de desempenho para coletar dados de desempenho para um aplicativo Web ASP.NET. O aplicativo é executado no computador local e pode ser aberto no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea4e3309fc003a4fc4fc73377e8b2bbe12cd567
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 92e70ff7c6d10ad060086230955c27b781dd73be
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851470"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801050"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Como coletar dados de desempenho de um site
 
@@ -58,7 +60,7 @@ Você pode usar o **Assistente de Desempenho** para coletar dados de desempenho 
 
     - Para coletar dados do JavaScript em execução nas páginas da Web, marque a caixa de seleção **perfil JavaScript** .
 
-6. Clique em **Avançar**.
+6. Clique em **Próximo**.
 
 7. Na quarta página do assistente, clique em **Concluir**.
 
@@ -92,7 +94,7 @@ Você pode usar o **Assistente de Desempenho** para coletar dados de desempenho 
 
     - Para coletar dados do JavaScript em execução nas páginas da Web, marque a caixa de seleção **Criar perfil de JavaScript**.
 
-7. Clique em **Avançar**.
+7. Clique em **Próximo**.
 
 8. Na quarta página do assistente, clique em **Concluir**.
 

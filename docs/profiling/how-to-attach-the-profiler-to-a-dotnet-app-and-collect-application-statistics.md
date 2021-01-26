@@ -1,5 +1,6 @@
 ---
 title: Anexar o criador de perfil ao aplicativo autônomo do .NET; obter estatísticas do aplicativo
+description: Aprenda a usar o Visual Studio Ferramentas de Criação de Perfil ferramentas de linha de comando para anexar o criador de perfil a um aplicativo em execução .NET Framework (cliente) autônomo e obter estatísticas.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 89c7f4141459f612f55a2253e37a6e56349fcb6a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 899a74894e34b43f87a7f45b4c4c90fff60088a1
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808045"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801142"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Como anexar o criador de perfil a um aplicativo autônomo do .NET Framework e coletar estatísticas de aplicativo usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um aplicativo (cliente) .NET Framework independente em execução e coletar estatísticas de desempenho usando o método de amostragem.
@@ -59,7 +60,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
    | [/CrossSession](../profiling/crosssession.md) | Habilita a criação de perfil de processos em outras sessões de logon. **/CS** pode ser especificado como uma abreviação de **/crosssession**. Esta opção será necessária se o aplicativo estiver em execução em uma sessão diferente. |
    | [/WinCounter](../profiling/wincounter.md) **:**`WinCounterPath` | Especifica um contador de desempenho do Windows que deve ser coletado durante a criação de perfil. |
    | [/AutoMark](../profiling/automark.md) **:**`Interval` | Use somente com **/wincounter**. Especifica o número de milissegundos entre eventos de coleta do contador de desempenho do Windows. O padrão é 500 ms. |
-   | [/Events](../profiling/events-vsperfcmd.md) **:**`Config` | Especifica um evento de ETW (Rastreamento de Eventos para Windows) a ser coletado durante a criação de perfil. Os eventos ETW são coletados em um separado (.* ETL*). |
+   | [/Events](../profiling/events-vsperfcmd.md) **:**`Config` | Especifica um evento de ETW (Rastreamento de Eventos para Windows) a ser coletado durante a criação de perfil. Os eventos ETW são coletados em um separado (.*ETL*). |
 
 4. Se necessário, inicie o aplicativo de destino normalmente.
 
@@ -102,7 +103,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
     - Digite **VSPerfCmd/Detach**
 
-         - ou -
+         -ou-
 
     - Feche o aplicativo de destino.
 

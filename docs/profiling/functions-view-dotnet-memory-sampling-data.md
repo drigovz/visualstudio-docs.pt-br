@@ -1,5 +1,7 @@
 ---
 title: Exibição de Funções – Dados de Amostragem de Memória do .NET | Microsoft Docs
+description: Obtenha informações sobre a exibição de funções dos dados de criação de perfil de alocação de memória do .NET que foram coletados usando o método de amostragem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: cce13da0c2dfee61d70da8bc288d1f0ff4690deb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2fe4f011a88ab4cf293626fe01f708b3cf5bc68f
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74780033"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801519"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>Exibição Funções – dados de amostragem de memória do .NET
 A exibição Funções dos dados de criação de perfil de alocação de memória do .NET que foram coletados usando o método de amostragem lista as funções que alocaram a memória durante a execução da criação de perfil e reporta o tamanho e quantidade de alocações.

@@ -1,5 +1,7 @@
 ---
 title: Exibição de alocações da memória do .NET | Microsoft Docs
+description: Saiba mais sobre a exibição alocações de memória do .NET, que lista os tipos que foram criados durante a execução da criação de perfil.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ce16f65947fd69b5a54e564ba6bec061bc68e328
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f52a30eef50c783ea96d403c25837f9bf2515a52
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777371"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801293"
 ---
 # <a name="net-memory-allocations-view"></a>Exibição de alocações da memória do .NET
 A exibição de Alocações lista os tipos criados durante a execução de criação de perfil. Cada tipo é o nó raiz de uma árvore de chamadas que exibe os caminhos de execução de função que resultaram em alocações do tipo.

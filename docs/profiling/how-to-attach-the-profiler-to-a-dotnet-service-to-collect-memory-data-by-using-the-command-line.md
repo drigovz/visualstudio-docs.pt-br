@@ -1,5 +1,6 @@
 ---
 title: Anexar o criador de perfil ao serviço .NET para coletar dados de memória
+description: Use o Visual Studio Ferramentas de Criação de Perfil ferramentas de linha de comando para anexar o criador de perfil a um serviço .NET Framework e coletar dados de memória.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50a77d3cc8d2bb3df73542b273ec3697e0a9ccd9
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e31404c07fb7093bb2bd1114340cdb87d3c8558a
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811065"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800582"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-service-to-collect-memory-data-by-using-the-command-line"></a>Como: anexar o criador de perfil a um serviço de .NET Framework para coletar dados de memória usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um serviço .NET Framework e coletar dados de memória. É possível coletar dados sobre o número e tamanho das alocações de memória, bem como sobre o tempo de vida de objetos de memória.
@@ -111,7 +112,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
     - Parar o serviço.
 
-         - ou -
+         -ou-
 
     - Digite **VSPerfCmd/Detach**
 

@@ -1,5 +1,7 @@
 ---
 title: Coletar dados do contador de CPU | Microsoft Docs
+description: Saiba como usar os contadores de eventos de CPU (hardware) para coletar dados de desempenho específicos do hardware. Este artigo lista os vários tipos de eventos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96934250bc00b02630b60e83d50ed4b274db0323
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e59214640ab3048f94b2801ad6b6b2d7e12d2e25
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851275"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801556"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Como coletar dados do contador de CPU
 
@@ -30,9 +32,9 @@ Dois tipos de eventos do contador de CPU ocorrem:
 
 - Eventos de plataforma – eventos de CPU que estão acoplados a uma CPU específica.
 
-  Os eventos portáteis incluem eventos gerais, como Instruções Desativadas e Ciclos Não Interrompidos, eventos de buffer de CPU, eventos de ramificação e eventos de cache L2. Os contadores de evento de plataforma disponíveis são determinados pelo fabricante do processador.
+Os eventos portáteis incluem eventos gerais, como Instruções Desativadas e Ciclos Não Interrompidos, eventos de buffer de CPU, eventos de ramificação e eventos de cache L2. Os contadores de evento de plataforma disponíveis são determinados pelo fabricante do processador.
 
-  Categorias de eventos podem ser compartilhadas entre contadores de plataforma e portáteis. Por exemplo, as seguintes categorias de dados são frequentemente comuns aos dois tipos:
+Categorias de eventos podem ser compartilhadas entre contadores de plataforma e portáteis. Por exemplo, as seguintes categorias de dados são frequentemente comuns aos dois tipos:
 
 - Eventos de memória.
 
@@ -40,7 +42,7 @@ Dois tipos de eventos do contador de CPU ocorrem:
 
 - Eventos de ramificação.
 
-  Colete dados do contador de desempenho de duas formas no criador de perfil:
+Colete dados do contador de desempenho de duas formas no criador de perfil:
 
 - Colete dados de um ou mais contadores ao analisar por instrumentação.
 

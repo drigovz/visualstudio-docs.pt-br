@@ -1,5 +1,7 @@
 ---
 title: Coletar dados do contador do Windows | Microsoft Docs
+description: Os contadores do Windows são usados na criação de perfil de instrumentação. Saiba como coletar dados do contador do Windows e como restringir a análise a um único intervalo de coleta.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ab9869f71fa8630b070c03d21ea4f9a6113622
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ccbdf9afb843c8bdac2d904dc22375a4a69e733a
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852635"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801038"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Como coletar dados do contador do Windows
 

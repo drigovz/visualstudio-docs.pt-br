@@ -1,5 +1,7 @@
 ---
 title: Personalizar as colunas de exibição do relatório | Microsoft Docs
+description: Você pode adicionar, remover e reorganizar colunas nas exibições das ferramentas de desempenho do Visual Studio — por exemplo, no modo de exibição de funções, no modo de exibição de processo e no modo de exibição chamador/receptor.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: edc58c74daf3cdd1e80256f9915936f4cef6d3fa
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 23b12ca396a91fad440dc057b67e258194732236
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851171"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800437"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Como personalizar as colunas de exibição de relatório
 As ferramentas de desempenho no Visual Studio Team System Development Edition são totalmente integradas ao IDE (ambiente de desenvolvimento integrado) para proporcionar uma experiência perfeita para o usuário. A lista a seguir representa as exibições que podem ser personalizadas adicionando, removendo e reorganizando as colunas:

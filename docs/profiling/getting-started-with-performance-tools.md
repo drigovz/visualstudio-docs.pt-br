@@ -1,5 +1,7 @@
 ---
 title: Introdução às ferramentas de desempenho | Microsoft Docs
+description: Saiba mais sobre as diferentes maneiras que o Visual Studio oferece para coletar, exibir e analisar dados de desempenho de código.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: faba7a6d2e698e919c0f0adca6fa574838b8b3c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f168c4c88ba12ff1f1c9bd0543e9d2b74ae095c
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779201"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801506"
 ---
 # <a name="getting-started-with-performance-tools"></a>Introdução às ferramentas de desempenho
 
@@ -27,7 +29,7 @@ O Visual Studio oferece várias maneiras de coletar, exibir e analisar dados de 
 
 - Os relatórios de desempenho fornecem exibições em diferentes níveis da estrutura, linhas de código-fonte e processos do seu aplicativo. Relatórios de desempenho mostram dados de execução do aplicativo, da chamada e funções chamadas de uma função específica à árvore de chamadas de todo o aplicativo.
 
-Para criar um perfil rápido de um projeto, aplicativo ou site do ASP.net, selecione **depurar**  >  **criador de perfil de desempenho**e selecione **Assistente de desempenho**. Para obter instruções detalhadas, confira [Guia do iniciante à criação de perfil do desempenho](../profiling/beginners-guide-to-cpu-sampling.md) e [Como: coletar dados de desempenho de um Site da Web](../profiling/how-to-collect-performance-data-for-a-web-site.md).
+Para criar um perfil rápido de um projeto, aplicativo ou site do ASP.net, selecione **depurar**  >  **criador de perfil de desempenho** e selecione **Assistente de desempenho**. Para obter instruções detalhadas, confira [Guia do iniciante à criação de perfil do desempenho](../profiling/beginners-guide-to-cpu-sampling.md) e [Como: coletar dados de desempenho de um Site da Web](../profiling/how-to-collect-performance-data-for-a-web-site.md).
 
 Para especificar e configurar manualmente uma sessão de criação de perfil de desempenho, selecione **debug**  >  **Profiler**  >  **Gerenciador de desempenho**. Use a pasta **Destinos** e as páginas **Propriedades** no **Gerenciador de Desempenho** para configurar sessões. Para obter instruções, confira [How to: Manually create performance sessions](../profiling/how-to-manually-create-performance-sessions.md) (Como criar sessões de desempenho manualmente).
 

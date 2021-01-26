@@ -1,5 +1,7 @@
 ---
 title: Exibição de Funções – Dados de Amostragem | Microsoft Docs
+description: Leia sobre a exibição de relatório do Functions para o método de perfil de amostragem, que lista as funções que foram amostradas durante a execução da criação de perfil.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 70fda712a29ff07ee34a4ac76a06198cb5ead8a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f30849ff7503d9301ee94408df0cd7b14f65fea
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74780020"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801247"
 ---
 # <a name="functions-view---sampling-data"></a>Exibição Funções – dados de amostragem
 O modo de exibição de relatório de Funções do método de perfil de amostragem lista as funções que foram amostradas durante a criação de perfil.

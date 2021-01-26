@@ -1,5 +1,6 @@
 ---
 title: Filtrar exibições de relatório de criação de perfil para mostrar Apenas Meu Código
+description: Use a opção Apenas Meu Código do Visual Studio para restringir relatórios de desempenho para mostrar apenas o código que você implementou (selecione as opções no menu Depurar).
 ms.custom: SEO-VS-2020
 ms.date: 02/15/2018
 ms.topic: how-to
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ae4f0c6ce0d357d21e4e3acce0559b27e6c7161
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 983bba2f5b802addc1706b7e7d293173e3aaca31
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809369"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801224"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Como filtrar visualizações de relatório das ferramentas de criação de perfil para exibir Apenas Meu Código
 

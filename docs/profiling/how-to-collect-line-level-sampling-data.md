@@ -1,5 +1,7 @@
 ---
 title: Coletar dados de amostragem no nível de linha | Microsoft Docs
+description: Saiba como a amostragem de nível de linha do criador de perfil pode revelar o código que usa grandes quantidades de tempo do processador. Ele funciona com código gerenciado e nativo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4653cf4b8c921a0c464dcb148963d3ab33506c25
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3a760980b16fab17fed7180b0bc74e0271c61e1d
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851249"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801066"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Como coletar dados de amostragem no nível de linha
 A amostragem de nível de linha é a capacidade do criador de perfil para determinar o local no código de uma função de processamento intensivo em que o processador tem que gastar a maior parte de seu tempo, como uma função que tem amostras altamente exclusivas.
@@ -54,7 +56,7 @@ A amostragem de nível de linha é a capacidade do criador de perfil para determ
 
      — ou —
 
-- Ao iniciar um aplicativo, digite **VSPerfCmd/LineOff \<other arguments> **.
+- Ao iniciar um aplicativo, digite **VSPerfCmd/LineOff \<other arguments>**.
 
 ## <a name="see-also"></a>Confira também
 - [Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)

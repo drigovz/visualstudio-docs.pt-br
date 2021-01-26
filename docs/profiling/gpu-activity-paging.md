@@ -1,5 +1,7 @@
 ---
 title: Atividade de GPU (paginação) | Microsoft Docs
+description: Examine os segmentos de atividade da GPU (paginação) na guia threads do Visualizador de simultaneidade. Os segmentos representam as horas em que a GPU estava processando solicitações de paginação.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bd28c7b41a01992ad52fa343b098b0a02460806
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2bdf1fcffad90155baba8f92d11e31d1b316710b
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62969609"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801190"
 ---
 # <a name="gpu-activity-paging"></a>Atividade de GPU (paginação)
 Os segmentos de **Atividade de GPU (paginação)** na guia **Threads** representam o tempo durante o qual a GPU estava processando solicitações de paginação.  O tamanho de um segmento representa o tempo durante o qual a GPU estava processando um pacote de paginação de DMA (acesso direto à memória). Normalmente, pacotes de paginação são associados à transferência de memória entre a CPU e a GPU.

@@ -1,5 +1,7 @@
 ---
 title: Escolher métodos de coleta | Microsoft Docs
+description: O Visual Studio Ferramentas de Criação de Perfil dá suporte a três métodos de coleta de dados de desempenho. Saiba como escolher aquele que você precisa para seu aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b66df2f302790f579891c337b217e76202e79ac
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3fe102c7ebd8ed551a0da4e92c66dfac8acb78ec
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851301"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801583"
 ---
 # <a name="how-to-choose-collection-methods"></a>Como escolher métodos de coleta
 
