@@ -1,5 +1,7 @@
 ---
 title: Limitar a instrumentação a DLLs específicas | Microsoft Docs
+description: Saiba como usar o método de criação de perfil de instrumentação para limitar a coleta de dados de criação de perfil para uma ou mais DLLs em um aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a3584498854e7518e93c4ba00dc019d804b0e8d8
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 7bd781f2c62a313a8e0c0b044103ca5da28021f8
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851015"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883365"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Como limitar a instrumentação a DLLs específicas
 
@@ -51,13 +53,13 @@ Ao usar o método de criação de perfil de instrumentação, é possível limit
 
 4. Na segunda página do assistente, realize as seguintes etapas:
 
-    - Digite o caminho e o nome do arquivo do. arquivo *dll* no qual você deseja criar o perfil no **caminho da dll**. Você também pode clicar no botão de reticências (...) para localizar o arquivo na caixa de diálogo **Biblioteca de Vínculo Dinâmico cujo perfil deve ser criado**. Observe que você deve especificar a cópia do. arquivo *dll* que será iniciado pelo executável (.* exe*) que você selecionar avançar.
+    - Digite o caminho e o nome do arquivo do. arquivo *dll* no qual você deseja criar o perfil no **caminho da dll**. Você também pode clicar no botão de reticências (...) para localizar o arquivo na caixa de diálogo **Biblioteca de Vínculo Dinâmico cujo perfil deve ser criado**. Observe que você deve especificar a cópia do. arquivo *dll* que será iniciado pelo executável (.*exe*) que você selecionar avançar.
 
-    - Digite o caminho e o nome do arquivo do executável (.* exe*) que irá exercitar o. *dll* no **caminho do executável**. Você também pode clicar no botão de reticências (...) para localizar o arquivo na caixa de diálogo **Executável a Ser Iniciado**.
+    - Digite o caminho e o nome do arquivo do executável (.*exe*) que irá exercitar o. *dll* no **caminho do executável**. Você também pode clicar no botão de reticências (...) para localizar o arquivo na caixa de diálogo **Executável a Ser Iniciado**.
 
     - Opcional. Digite todos argumentos de linha de comando que você deseja passar para o arquivo executável em **Argumentos de Linha de Comando**. Se necessário, especifique o diretório de trabalho para o aplicativo em **Diretório de trabalho**.
 
-    - Clique em **Avançar**.
+    - Clique em **Próximo**.
 
 5. Escolha **Instrumentação** como o método de criação de perfil e, em seguida, clique em **Avançar**.
 
@@ -66,7 +68,7 @@ Ao usar o método de criação de perfil de instrumentação, é possível limit
 7. Opcional. Para adicionar mais. arquivos *dll* , clique com o botão direito do mouse em **destinos** e selecione **Adicionar binário de destino**. Selecione os arquivos na caixa de diálogo **Adicionar Binário de Destino**.
 
     > [!NOTE]
-    > Não especifique o executável (.* exe*) que exercita as DLLs.
+    > Não especifique o executável (.*exe*) que exercita as DLLs.
 
 ## <a name="see-also"></a>Confira também
 

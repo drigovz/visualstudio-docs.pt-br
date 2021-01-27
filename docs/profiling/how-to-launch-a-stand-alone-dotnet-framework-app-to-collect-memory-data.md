@@ -1,5 +1,7 @@
 ---
 title: Linha de comando do profiler-abrir aplicativo .NET Framework cliente, obter dados de memória
+description: Saiba como usar as ferramentas de linha de comando do Visual Studio Ferramentas de Criação de Perfil para iniciar um aplicativo .NET Framework autônomo e coletar dados de atividade de memória.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6378ea021d089027c19d28e927d5772ef5f35e0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a0df21a4d34d3d3f889442046b594ff63f01bcb6
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85327694"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883418"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Como iniciar um aplicativo .NET Framework autônomo com o criador de perfil para coletar dados de memória usando a linha de comando
 Este tópico descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar um aplicativo autônomo (cliente) do .NET Framework e coletar dados de memória.
@@ -98,7 +100,7 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
     - Feche o aplicativo de destino.
 
-         - ou -
+         -ou-
 
     - Digite **VSPerfCmd/Detach**
 

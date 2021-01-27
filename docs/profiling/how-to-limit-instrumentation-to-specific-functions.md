@@ -1,5 +1,7 @@
 ---
 title: Limitar a instrumentação a funções específicas | Microsoft Docs
+description: Saiba como limitar a instrumentação e a coleta de dados a uma ou mais funções definindo opções na página avançado ou nas páginas de propriedades binárias de destino.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b2316c0c3fe0b74bbd7b3e80324284f37dff0e64
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 92825f77b1c94a7545b399dbc1cb35ecefb8218d
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90850989"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883326"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Como limitar a instrumentação a funções específicas
 Você pode limitar a instrumentação e a coleta de dados a uma ou mais funções ao definir opções na página **Avançado** da **Sessão de Desempenho** ou nas páginas de propriedades de binário de destino:
@@ -42,10 +44,10 @@ Você pode limitar a instrumentação e a coleta de dados a uma ou mais funçõe
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]**`...`
 
-    `FuncSpec` é o nome do namespace e da função. Ele tem o formato `Namespace` **::** `FunctionName` . Use um ponto e vírgula para separar várias funções. Use um asterisco (\*) para especificar um curinga para um ou mais caracteres. Por exemplo, **/include:MyNS::\\*** especifica todas as funções no namespace MyNS.
+    `FuncSpec` é o nome do namespace e da função. Ele tem o formato `Namespace` **::** `FunctionName` . Use um ponto e vírgula para separar várias funções. Use um asterisco (\*) para especificar um curinga para um ou mais caracteres. Por exemplo, **/include: MyNS:: \\** _ especifica todas as funções no namespace MyNS.
 
    > [!NOTE]
-   > Para listar as funções em um binário, abra uma janela do prompt de comando no diretório de instalação das Ferramentas de Criação de Perfil (confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e, em seguida, digite **vsinstr /DumpFuncs**
+   > Para listar as funções em um binário, abra uma janela de prompt de comando no diretório de instalação do Ferramentas de Criação de Perfil (consulte [especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e digite _ *vsinstr/DumpFuncs**
 
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>Para limitar a instrumentação a funções específicas em um binário
 
@@ -61,10 +63,10 @@ Você pode limitar a instrumentação e a coleta de dados a uma ou mais funçõe
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]**`...`
 
-    `FuncSpec` é o nome do namespace e da função. Ele tem o formato `Namespace` **::** `FunctionName` . Use um ponto e vírgula para separar várias funções. Use um asterisco (\*) para especificar um curinga para um ou mais caracteres. Por exemplo, **/include:MyNS::\\*** especifica todas as funções no namespace MyNS.
+    `FuncSpec` é o nome do namespace e da função. Ele tem o formato `Namespace` **::** `FunctionName` . Use um ponto e vírgula para separar várias funções. Use um asterisco (\*) para especificar um curinga para um ou mais caracteres. Por exemplo, **/include: MyNS:: \\** _ especifica todas as funções no namespace MyNS.
 
    > [!NOTE]
-   > Para listar as funções em um binário, abra uma janela do prompt de comando no diretório de instalação das Ferramentas de Criação de Perfil (confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e, em seguida, digite **vsinstr /DumpFuncs**
+   > Para listar as funções em um binário, abra uma janela de prompt de comando no diretório de instalação do Ferramentas de Criação de Perfil (consulte [especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e digite _ *vsinstr/DumpFuncs**
 
 ## <a name="see-also"></a>Confira também
 - [Controlar a coleta de dados](../profiling/controlling-data-collection.md)
