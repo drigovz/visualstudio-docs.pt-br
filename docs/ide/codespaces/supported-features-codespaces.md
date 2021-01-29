@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 68fbdef0e86b125971480ae1bd6a7ba6d3108cd8
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 20d42b45cc98a64d86306b81f14d781becb8b7a6
+ms.sourcegitcommit: 52742b678233eed1de7a249cf990d072f9758149
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696543"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99049474"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Recursos do Visual Studio com suporte (versão prévia)
 
@@ -73,6 +73,7 @@ Há suporte para a maioria dos tipos de aplicativos e configurações de projeto
 Ainda não disponível:
 
 * Designers de interface do usuário – WinForms, WPF e designers de recursos
+* A conversão de aplicativo WinForms e WPF Projects só está disponível em um sinalizador de recurso
 * Projetos Visual Basic e F #
 * Projetos de .NET Framework de destino
 * Projetos de Docker Compose
@@ -121,7 +122,7 @@ Ainda não disponível:
 * Recursos de teste empresarial-Live Unit Testing, falsificações da Microsoft, cobertura de código e IntelliTest não têm suporte.
 * Cenários de publicação avançada-publicação seletiva, publicação de FTP, alterações de visualização, barra de ferramentas de publicação rápida, etc.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [O que é o GitHub Codespaces?](codespaces-overview.md)
 * [Como usar o Visual Studio com um codespace](use-visual-studio-with-codespaces.md)
