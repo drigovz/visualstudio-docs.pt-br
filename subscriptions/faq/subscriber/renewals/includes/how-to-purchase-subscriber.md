@@ -1,20 +1,21 @@
 ---
 title: Como comprar as assinaturas do Visual Studio?
-description: Saiba mais sobre as várias maneiras de comprar as assinaturas do Visual Studio
-ms.faqid: group4_1
+description: Saiba mais sobre as várias maneiras de comprar assinaturas do Visual Studio
+ms.faqid: q4_1
 ms.topic: include
-ms.assetid: c8dd39de-bf7f-40a2-a203-f2be21b87f5c
+ms.assetid: 5b27454c-f036-4f4d-9d67-54d1fc775f72
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/27/2021
-ms.openlocfilehash: a2dca00b1a7ebea80a883825783785c84c2352cc
+ms.date: 01/12/2021
+ms.openlocfilehash: bb436cfdff0f6783d041858430b4fd9864ceb569
 ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104396"
+ms.locfileid: "99104479"
 ---
 ## <a name="how-do-i-purchase-visual-studio-subscriptions"></a>Como comprar as assinaturas do Visual Studio?
+
 As assinaturas do Visual Studio estão disponíveis para compra por meio de uma série de canais, incluindo o  [Licenciamento por Volume](https://www.microsoft.com/licensing/default), o  [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) e a [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
 
 [Compare os benefícios e preços das assinaturas](https://visualstudio.microsoft.com/vs/pricing/)  para compreender os benefícios de cada assinatura do Visual Studio. Confira a [página de benefícios da assinatura](https://visualstudio.microsoft.com/vs/benefits/) para ajudar você a decidir qual a assinatura mais adequada.   
@@ -35,4 +36,4 @@ Com assinaturas mensais, você pode alugar o Visual Studio e o Azure DevOps sem 
 [Leia mais](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq) sobre a cobrança mensal das Assinaturas do Visual Studio. 
 
 ### <a name="volume-licensing"></a>Licenciamento por volume 
-As assinaturas de licenciamento por volume estão disponíveis quando uma organização precisa comprar um grande número de assinaturas. [Leia mais](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) sobre como comprar por meio do licenciamento por volume.  
+As assinaturas de licenciamento por volume estão disponíveis quando uma organização precisa comprar um grande número de assinaturas. [Leia mais](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) sobre como comprar por meio do licenciamento por volume.
