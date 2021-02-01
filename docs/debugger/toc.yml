@@ -338,8 +338,6 @@
       items:
         - name: Anexar a processos em execução com o depurador
           href: attach-to-running-processes-with-the-visual-studio-debugger.md
-        - name: Depuração do .NET Core no Linux
-          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: Anexar a um processo em execução em um contêiner do Docker
           href: attach-to-process-running-in-docker-container.md
     - name: Depuração de aplicativos multi-threaded
@@ -422,6 +420,14 @@
           href: debug-live-azure-apps-troubleshooting.md
         - name: Depuração de viagem no tempo de um aplicativo dinâmico de máquina virtual do Azure
           href: debug-live-azure-virtual-machines-time-travel-debugging.md
+    - name: Depuração do Linux
+      items:
+        - name: Depurar aplicativos .NET Core no WSL 2
+          href: debug-dotnet-core-in-wsl-2.md
+        - name: Depurar o .NET Core no Linux usando SSH
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
+        - name: Depurar com ferramentas de contêiner >>
+          href: ../containers/edit-and-refresh.md
     - name: Tipos de aplicativo
       items:
         - name: Depurar tipos de aplicativo específicos
