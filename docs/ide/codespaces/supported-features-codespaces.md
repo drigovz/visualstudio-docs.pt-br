@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 20d42b45cc98a64d86306b81f14d781becb8b7a6
-ms.sourcegitcommit: 52742b678233eed1de7a249cf990d072f9758149
+ms.openlocfilehash: 994ac7b759b943a2076c4e8f401d757258e782ab
+ms.sourcegitcommit: 0e91210421974ad08189919495a7327e60be93bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99049474"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99251434"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Recursos do Visual Studio com suporte (versão prévia)
 
@@ -109,7 +109,7 @@ Ainda não disponível:
 
 Ao trabalhar com o Visual Studio conectado a um codespace, você obtém os mesmos recursos de acessibilidade que ao trabalhar localmente.
 
-* Controle do código-fonte-suporte completo do git por meio da nova [experiência de git integrada](../git-with-visual-studio.md).
+* Controle do código-fonte-suporte completo do git por meio da nova [experiência de git integrada](../git-with-visual-studio.md). Para que os submódulos git sejam clonados em um codespace, talvez seja necessário executar `git submodule update` a partir do terminal.
 * Acessibilidade – há um problema conhecido com a tecnologia assistencial que não consegue acessar o appcasting de um aplicativo depurado. Além dessa limitação, não acreditamos que haja outros problemas de compatibilidade que ainda não existam na experiência do Visual Studio local. Informe-nos se detectar bugs ao arquivar um problema na [comunidade de desenvolvedores](https://aka.ms/feedback/report?space=8).
 * Publicação – publicar no Azure por meio de ações do GitHub tem suporte.
 * Serviços conectados-não há suporte parcial para o app insights, o keyvault, o armazenamento, o SQL, o Redis, o cosmos, o openAPI e o gRPC.
