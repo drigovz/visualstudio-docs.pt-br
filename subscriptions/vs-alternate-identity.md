@@ -2,17 +2,17 @@
 title: Identidades para assinantes do Visual Studio
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
-ms.date: 10/21/2019
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: Como adicionar uma identidade alternativa à sua Assinatura do Visual Studio para ser usada com o Azure DevOps e o Azure
-ms.openlocfilehash: d7820707758cd06209a412b2a860de81cb08c054
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 200f299ba4e487e40572e54f1066ed6ac079e7d1
+ms.sourcegitcommit: b0ecf9bb0d887bc0a900578089bf41ab8dddbb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353168"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99488659"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identidades para assinantes do Visual Studio
 Quando você ativar sua assinatura do Visual Studio, será vinculada a identidade (ou o logon) que você usou durante a ativação com a assinatura do Visual Studio. Dessa forma, você poderá ser reconhecido no [portal do assinante do Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), no Azure DevOps e no Azure.
@@ -25,9 +25,10 @@ No Azure, verificamos seu status de assinatura do Visual Studio quando você ati
 No [portal do assinante do Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), talvez você possa adicionar uma **alternativa identidade**, além da identidade usada durante a ativação. É permitido adicionar uma identidade alternativa quando uma conta da Microsoft é usada para ativar a assinatura. Dessa forma, você também pode adicionar uma conta corporativa ou de estudante (que você usa ao fazer logon no Visual Studio, Microsoft 365, ou em sua rede empresarial ou de estudante), permitindo que você acesse o Azure DevOps usando sua conta pessoal e sua conta de trabalho ou escolar.
 
 ## <a name="add-an-alternate-account-to-your-subscription"></a>Adicionar uma conta alternativa à sua assinatura
-Adicionar uma conta alternativa à sua Assinatura do Visual Studio permite que você acesse os benefícios da assinatura, como o Azure DevOps e o Azure, com uma identidade diferente daquela à qual a assinatura está atribuída. No passado, essa funcionalidade estava disponível somente se a sua assinatura do VS (Visual Studio) fosse atribuída a uma conta da Microsoft (MSA). Nós estendemos essa funcionalidade para contas corporativas ou de estudante no Azure AD (Azure Active Directory).
+Adicionar uma conta alternativa à sua assinatura do Visual Studio permite que você acesse determinados benefícios de assinatura, como o Azure DevOps e o Azure, ou entre no IDE do Visual Studio com uma identidade diferente da à qual a assinatura está atribuída. No passado, essa funcionalidade estava disponível somente se a sua assinatura do VS (Visual Studio) fosse atribuída a uma conta da Microsoft (MSA). Nós estendemos essa funcionalidade para contas corporativas ou de estudante no Azure AD (Azure Active Directory).
 
-Isso não fornece uma cópia da assinatura para a outra conta; apenas possibilita acessar os dois benefícios com a conta alternativa.
+> [!NOTE]
+> Uma ID alternativa só permite que você use essa segunda ID para ativar créditos do Azure e DevOps do Azure, e para entrar no IDE do Visual Studio.  Ele não pode ser usado para entrar no portal de assinatura em <https://my.visualstudio.com> .  Você ainda precisa usar a ID à qual a assinatura é atribuída para entrar no Portal. 
 
 Para todas as assinaturas, é possível adicionar uma "conta corporativa ou de estudante" para que você possa usar essa conta com benefícios que exigem um logon (VS IDE, Azure DevOps e Azure).
 
@@ -57,7 +58,7 @@ R: O Azure DevOps deverá reconhecer sua assinatura automaticamente quando você
 
 Se o Azure DevOps ainda não reconhecer sua assinatura, contate o [suporte do Azure DevOps](https://azure.microsoft.com/support/devops/).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)
