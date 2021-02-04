@@ -10,12 +10,12 @@ user.type: subscriber
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: e79c8a818b4e2bf787225342c9ad2c344cfbc74c
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: be2c22f6ea8bb9b6b98823b8adbe763137fdec1a
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915841"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541022"
 ---
 ## <a name="where-to-purchase-subscriptions"></a>Onde comprar assinaturas 
 
@@ -42,8 +42,8 @@ Com assinaturas mensais, você pode alugar o Visual Studio e o Azure DevOps sem 
 * [Assinatura Visual Studio Professional-mensal](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly) 
 * [Assinatura Visual Studio Enterprise-mensal](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly) 
 
-[Leia mais](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq) sobre a cobrança mensal das Assinaturas do Visual Studio. 
+Leia mais sobre a [cobrança mensal das assinaturas do Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq). 
 
 ## <a name="volume-licensing"></a>Licenciamento por volume 
 
-As assinaturas de licenciamento por volume estão disponíveis quando uma organização precisa comprar um grande número de assinaturas. [Leia mais](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) sobre como comprar por meio do licenciamento por volume.
+As assinaturas de licenciamento por volume estão disponíveis quando uma organização precisa comprar um grande número de assinaturas. Leia mais sobre como [comprar por meio do licenciamento por volume](https://www.microsoft.com/licensing/how-to-buy/how-to-buy).

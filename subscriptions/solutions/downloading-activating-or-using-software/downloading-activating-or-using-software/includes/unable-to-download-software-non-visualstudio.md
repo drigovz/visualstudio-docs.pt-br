@@ -1,5 +1,5 @@
 ---
-title: Não consigo baixar ou ativar o software (excluindo a família Visual Studio)
+title: Não é possível baixar ou ativar o software (excluindo a família Visual Studio)
 description: Não consigo baixar ou ativar o software (excluindo a família Visual Studio), incluído na minha assinatura do Visual Studio.
 ms.topic: include
 ms.assetid: 4e67a935-40f9-4c26-b836-e06aa8582bad
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: 81c9013c59ffa8fc503e71202941b044f90b139a
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 477753ab93205aa838389313a0ad2c96487aacc3
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147389"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541305"
 ---
 ## <a name="im-unable-to-download-or-activate-software-excluding-visual-studio-family"></a>Não consigo baixar ou ativar o software (excluindo a família Visual Studio)
 
@@ -34,4 +34,4 @@ Você pode [baixar uma lista extensa](https://download.microsoft.com/download/1/
 Você também pode visitar a página de [chaves do produto](https://my.visualstudio.com/productkeys),   onde todas as chaves estão disponíveis na agregação. Você pode editar a coluna observações para identificar quando e por que a chave foi solicitada. 
 
 ## <a name="more-information-about-downloads"></a>Mais informações sobre downloads 
-[Leia mais](https://docs.microsoft.com/visualstudio/subscriptions/find-keys) sobre como localizar e reivindicar downloads e chaves de produto.  
+Leia mais sobre como [Localizar e reivindicar downloads e chaves de produto](https://docs.microsoft.com/visualstudio/subscriptions/find-keys).  

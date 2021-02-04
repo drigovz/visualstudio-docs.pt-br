@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: ae31e9d40dd0d399a4272eeb3ec28692d01a99b3
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: a5ec356513122752486a197fbe5bb420d6f4a6c9
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147454"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541254"
 ---
 ## <a name="how-do-i-activate-my-monthly-azure-devtest-individual-credit"></a>Como fazer ativar o crédito individual de desenvolvimento/teste do Azure mensal? 
 
@@ -33,6 +33,6 @@ Não há nenhum custo para usar seu crédito individual de desenvolvimento/teste
 As assinaturas do Azure criadas por meio do benefício das assinaturas do Visual Studio podem ser afetadas por restrições que não são impostas em assinaturas pagas. Algumas regiões geográficas podem não estar disponíveis para a criação de VMs e serviços do Azure, e alguns tipos de serviços podem não estar disponíveis. Poderá haver uma cota padrão menor do que nas assinaturas pagas.  
 
 ## <a name="more-information-about-azure-credits"></a>Mais informações sobre os créditos do Azure
-[Leia mais](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure) informações sobre ativação, qualificação e outros recursos de suporte.  
+Leia mais [informações sobre ativação, qualificação e outros recursos de suporte](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure).  
 
-[Saiba como](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits) usar os créditos do Azure que estão incluídos na sua assinatura do Visual Studio.  
+[Saiba como usar os créditos do Azure](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits) que estão incluídos na sua assinatura do Visual Studio.  

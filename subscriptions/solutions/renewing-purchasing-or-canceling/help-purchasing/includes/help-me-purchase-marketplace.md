@@ -10,12 +10,12 @@ user.type: subscriber, admin
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: 2cb74dda511efbed7a204ef11a163097efc2f54b
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 6a4758508c478612b75f51acef6136fde0fab9d3
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147701"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541251"
 ---
 ## <a name="purchase-monthly-subscriptions-through-visual-studio-marketplace"></a>Comprar assinaturas mensais por meio de Visual Studio Marketplace 
 
@@ -28,7 +28,7 @@ A cobrança é tratada por meio da sua assinatura do Microsoft Azure. Se você a
 * [Assinatura Visual Studio Professional-mensal](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly) 
 * [Assinatura Visual Studio Enterprise-mensal](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly) 
 
-[Leia mais](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq) sobre as assinaturas mensais do Visual Studio cobrança do Azure. 
+Leia mais sobre as [assinaturas mensais do Visual Studio cobrança do Azure](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq). 
 
 ## <a name="more-information-about-subscription-benefits"></a>Mais informações sobre os benefícios da assinatura
 

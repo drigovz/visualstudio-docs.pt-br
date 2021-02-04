@@ -1,5 +1,5 @@
 ---
-title: Não consigo ver meu crédito mensal do Azure na portal do Azure.
+title: Não é possível ver meu crédito mensal do Azure no portal do Azure
 description: Não consigo ver meu crédito mensal do Azure depois de fazer logon no portal do Azure
 ms.topic: include
 ms.assetid: 48420a4c-11b4-4bbd-a509-2c939d24e81a
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 48f52f1381bb890942e6f5ed3f1772c0735b1fb8
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 5a5322563be438c734b03c9d834ffd545cb6da43
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147622"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541200"
 ---
 ## <a name="im-unable-to-see-my-azure-monthly-credit-in-the-azure-portal"></a>Não consigo ver meu crédito mensal do Azure na portal do Azure.
 
@@ -46,6 +46,6 @@ As assinaturas do Azure criadas por meio do benefício das assinaturas do Visual
 
 ## <a name="more-information-about-azure-monthly-credits"></a>Mais informações sobre os créditos mensais do Azure
 
-[Leia mais](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure) informações sobre ativação, qualificação e outros recursos de suporte.  
+Leia mais [informações sobre ativação, qualificação e outros recursos de suporte](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure).  
 
-[Saiba como](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits) usar os créditos do Azure que estão incluídos na sua assinatura do Visual Studio. 
+[Saiba como usar os créditos do Azure](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits) que estão incluídos na sua assinatura do Visual Studio. 
