@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27a9c0de35bb6f9944015391c5f933bef28f4b9d
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168743"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99533559"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Atualizar o Visual Studio usando um layout offline mínimo
 
@@ -92,6 +92,8 @@ Antes de criar o layout, você pode descobrir o tamanho total do download e o n�
 
 Vamos examinar alguns exemplos de como Visualizar, gerar e regenerar um layout mínimo:
 
+::: moniker range="vs-2019"
+
 - Primeiro, aqui está um exemplo de como Visualizar um layout para Visual Studio Enterprise versões 16.4.0 para 16.4.4 apenas em inglês.
 
     ```cmd
@@ -123,6 +125,44 @@ Alguns outros exemplos que usam o comando **Generate** :
     ```cmd
     MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
     ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+- Primeiro, aqui está um exemplo de como Visualizar um layout para Visual Studio Enterprise versões 15.0.0 para 15.9.31 apenas em inglês.
+
+    ```cmd
+    MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
+    ```
+
+- Veja como gerar esse mesmo layout com uma carga de trabalho.
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
+    ```
+
+- E aqui está como regenerar um layout mínimo de offline usando um arquivo de resposta existente. 
+
+    ```cmd
+    MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
+    ```
+
+Alguns outros exemplos que usam o comando **Generate** :
+
+- Veja como adicionar uma carga de trabalho adicional e incluir apenas os pacotes recomendados. 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
+    ```
+
+- E, finalmente, aqui está como você incluiria vários idiomas em seu layout mínimo. 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
+    ```
+
+::: moniker-end
 
 ### <a name="how-to-maintain-a-minimal-layout"></a>Como manter um layout mínimo
 
