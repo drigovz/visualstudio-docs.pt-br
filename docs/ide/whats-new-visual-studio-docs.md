@@ -1,8 +1,8 @@
 ---
-title: 'Documentos do Visual Studio: novidades para dezembro de 2021 '
+title: 'Documentos do Visual Studio: novidades para janeiro de 2021'
 titleSuffix: ''
-description: O que há de novo nos documentos do Visual Studio de dezembro de 2021.
-ms.date: 01/11/2021
+description: O que há de novo nos documentos do Visual Studio de janeiro de 2021.
+ms.date: 02/01/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,83 +15,101 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dfa3c6ec4655edf6313bea2e68b995ae8b3f9b0
-ms.sourcegitcommit: fdc21fc21d4a05d9ad8627b06aab7f072bfeb0a6
+ms.openlocfilehash: 8a76222d7424bb32de15c67b72a0c19b929e63f3
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98113561"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572922"
 ---
-# <a name="visual-studio-docs-whats-new-for-december-2021"></a>Documentos do Visual Studio: novidades para dezembro de 2021
+# <a name="visual-studio-docs-whats-new-for-january-2021"></a>Documentos do Visual Studio: novidades para janeiro de 2021
 
-Bem-vindo ao que há de novo nos documentos do Visual Studio de dezembro de 2020. Este artigo lista algumas das principais alterações feitas nos documentos durante esse período. Para obter informações sobre as novidades nos meses anteriores, consulte o artigo novidades [sobre o histórico](whats-new-visual-studio-docs-history.md) .
+Bem-vindo ao que há de novo nos documentos do Visual Studio de janeiro de 2021. Este artigo lista algumas das principais alterações feitas nos documentos durante esse período. Para obter informações sobre as novidades nos meses anteriores, consulte o artigo novidades [sobre o histórico](whats-new-visual-studio-docs-history.md) .
 
 ## <a name="azure"></a>Azure
 
 **Novos artigos**
 
-- [Adicionando configuração de Azure App usando os serviços conectados do Visual Studio](../azure/vs-azure-tools-connected-services-app-configuration.md) -tutorial de configuração de aplicativo serviços conectados
+- [Criar e implantar serviços de nuvem (suporte estendido) no Visual Studio (visualização)](../azure/cloud-services-extended-support.md) -suporte estendido de serviços de nuvem-sem modelo
 
 ## <a name="code-quality"></a>Qualidade do código
 
-**Artigos atualizados**
+**Novos artigos**
 
-- [Visão geral](../code-quality/use-roslyn-analyzers.md) -criando a partir da linha de comando com editorconfig
-- [Habilitar ou instalar analisadores de .NET de primeira empresa](../code-quality/install-net-analyzers.md)
-  - Adicione mais clareza aos documentos de migração para FxCopAnalyzers para netanalyzers
-  - Reorganizar o Sumário para analisadores .NET
-- [Migrar de analisadores do FxCop para analisadores do .net](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) – adicione mais clareza aos documentos de migração para FxCopAnalyzers para netanalyzers
-
-## <a name="containers"></a>Contêineres
-
-**Artigos atualizados**
-
-- Solução de problemas de [desenvolvimento do Visual Studio com](../containers/troubleshooting-docker-errors.md) o Docker – atualizando o Docker para Visual Studio Guia de solução de problemas
+- [Métricas de código – acoplamento de classe](../code-quality/code-metrics-class-coupling.md) – atualizar métricas de código
+- [Métricas de código-intervalo de índice de manutenção e significado](../code-quality/code-metrics-maintainability-index-range-and-meaning.md) -atualização de métricas de código
 
 ## <a name="debugger"></a>Depurador
 
+**Novos artigos**
+
+- [Depurar aplicativos .NET Core no WSL 2 com Visual Studio](../debugger/debug-dotnet-core-in-wsl-2.md) -depuração WSL2 do .NET Core
+
 **Artigos atualizados**
 
-- [Perguntas frequentes-encontre o recurso de depuração de que você precisa no Visual Studio](../debugger/find-your-debugging-task.md) -trabalho de descoberta para localizar sua tarefa de depuração e tópicos de visão geral
+- [Criar exibições personalizadas de objetos C++ no depurador usando a estrutura Natvis](../debugger/create-custom-views-of-native-objects.md) -esclarecimento para formatação XML de caracteres especiais no Natvis
+- [Aviso de segurança: anexar a um processo de propriedade de um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou se você não tiver certeza, não anexe a este processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md) – atualizações de aviso de segurança ao anexar a um processo não confiável
+
+## <a name="deployment"></a>Implantação
+
+**Artigos atualizados**
+
+- [ &lt; &gt; Elemento InstallChecks (Bootstrapper)](../deployment/installchecks-element-bootstrapper.md) -atualizar a documentação do pacote de bootstrapper para incluir o novo elemento BeforeInstallChecks
+
+## <a name="extensibility"></a>Extensibilidade
+
+**Artigos atualizados**
+
+- [Walkthrough: publicar uma extensão do Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md) -[PUBLIC_MOVE] confirmar do PUBLIC PR 6214
 
 ## <a name="get-started"></a>Introdução
 
+**Novos artigos**
+
+- [Tutorial: abrir um projeto de um repositório no Visual Studio 2017](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md) – atualizar abrir um projeto de um tutorial do repositório
+
 **Artigos atualizados**
 
-- [Introdução a projetos e soluções](../get-started/tutorial-projects-solutions.md)
-  - Tópicos de atualizações para soluções & projetos
-  - Atualizar tutorial-projects-solutions.md
-  - opção from ausente no menu
-- [Tutorial: criar um aplicativo de console c# simples no Visual Studio](../get-started/csharp/tutorial-console.md) – tutorial do console C#: parte 2 aplica-se apenas ao vs 2019
+- [Tutorial: abrir um projeto de um repositório](../get-started/tutorial-open-project-from-repo.md) -atualizar abrir um projeto em um tutorial do repositório
 
 ## <a name="ide"></a>IDE
 
+**Novos artigos**
+
+- [Ajuda F1 do JavaScript para Visual Studio](./not-in-toc/default-f1-javascript.md) -adicionadas páginas F1 padrão js e TS
+- [Ajuda F1 do TypeScript para Visual Studio](./not-in-toc/default-f1-typescript.md) -adicionadas páginas F1 padrão js e TS
+
 **Artigos atualizados**
 
-- [Soluções e projetos no Visual Studio](./solutions-and-projects-in-visual-studio.md) – tópicos de atualizações para solução de & projetos
-- [Criar um novo projeto no Visual Studio](./create-new-project.md)
-  - refinar alt-text para capturas de tela e diagramas
-  - Tópicos de mais atualizações para soluções & projetos
-- [Recursos para solução de problemas de erros de IDE](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md) – seção revisar recursos de fórum desatualizados
-- [Trabalhar com soluções e projetos](./creating-solutions-and-projects.md) – mais atualizações para soluções & tópicos de projetos
-- [Como relatar um problema com o Visual Studio para Mac ou com o Instalador do Visual Studio](./how-to-report-a-problem-with-visual-studio.md)
-  - Captura de tela atualizada
-  - Alterações na Comunidade de desenvolvedores
-- [Dicas e truques de desempenho do Visual Studio](./visual-studio-performance-tips-and-tricks.md) – atualizar a seção desabilitar ferramentas de diagnóstico
+- [Soluções e projetos no Visual Studio](./solutions-and-projects-in-visual-studio.md) – adicionar link para a biblioteca de imagens do Visual Studio
+
+## <a name="install"></a>Instalar
+
+**Artigos atualizados**
+
+- [Números de Build do Visual Studio e datas de lançamento](../install/visual-studio-build-numbers-and-release-dates.md) – atualizações de Patch Tuesday
+
+## <a name="msbuild"></a>MSBuild
+
+**Artigos atualizados**
+
+- [Glossário do MSBuild](../msbuild/msbuild-glossary.md) – promover as chaves do glossário para H2
+
+## <a name="profiling"></a>Criação de perfil
+
+**Novos artigos**
+
+- [Visualizar contadores do dotnet do criador de perfil do Visual Studio](../profiling/dotnet-counters-tool.md) – adicionando o documento da ferramenta de contadores do .net
 
 ## <a name="test"></a>Teste
 
 **Artigos atualizados**
 
-- [Introdução ao teste de unidade](../test/getting-started-with-unit-testing.md) – trabalho de descoberta e outros aprimoramentos para ferramentas de teste
-- [Primeiro, veja as ferramentas de teste no Visual Studio](../test/improve-code-quality.md) – trabalho de descoberta e outros aprimoramentos para ferramentas de teste
-- [Ferramentas de teste no Visual Studio # necessárias; título da página exibido nos resultados da pesquisa. Inclua a marca. < caracteres 60.](../test/index.yml) -Trabalho de descoberta e outros aprimoramentos para ferramentas de teste
-- [Executar testes de unidade com o Test Explorer](../test/run-unit-tests-with-test-explorer.md) – Adicionar XML de playlist dinâmica para estruturas diff
+- [Executar testes de unidade com o Test Explorer](../test/run-unit-tests-with-test-explorer.md) – adicionar documento de sinalização de áudio de teste
 
 ## <a name="community-contributors"></a>Colaboradores da Comunidade
 
 As pessoas a seguir contribuíram para os documentos do Visual Studio durante esse período. Obrigado! Saiba como contribuir com os documentos do Visual Studio seguindo as orientações no guia do [colaborador](/contribute/).
 
-- [surlydev](https://github.com/surlydev) -surlydev (2)
-- [nschonni](https://github.com/nschonni) -Nick Schonning (1)
-- [syohex](https://github.com/syohex) -Shohei Yoshida (1)
+- [ericmutta](https://github.com/ericmutta) -Eric Mutta (1)
+- [saip106](https://github.com/saip106) -sai Gudigundla (1)

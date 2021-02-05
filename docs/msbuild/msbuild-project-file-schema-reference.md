@@ -17,18 +17,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 549e78309ef5fc5e9baf4237f9eca8c7484bc198
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 0f861fd9e5c10946c2bfee0235632c005822cbf1
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046163"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572935"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Referência de esquema de arquivos de projeto do MSBuild
 
 Fornece uma tabela de todos os elementos de esquema XML do MSBuild com seus atributos disponíveis e elementos filho.
 
- O MSBuild usa arquivos de projeto para instruir o mecanismo de compilação sobre o que compilar e como compilá-lo. Arquivos de projeto do MSBuild são arquivos XML que aderem ao esquema XML do MSBuild. Esta seção documenta o arquivo de definição de esquema XML ( *. xsd* ) para o MSBuild.
+ O MSBuild usa arquivos de projeto para instruir o mecanismo de compilação sobre o que compilar e como compilá-lo. Arquivos de projeto do MSBuild são arquivos XML que aderem ao esquema XML do MSBuild. Esta seção documenta o arquivo de definição de esquema XML (*. xsd*) para o MSBuild.
 
 O link do esquema em um arquivo de projeto do MSBuild não é necessário no Visual Studio 2017 e posterior. Se presente, ele deve ser ` http://schemas.microsoft.com/developer/msbuild/2003` independente da versão do Visual Studio.
 
@@ -50,18 +50,18 @@ O link do esquema em um arquivo de projeto do MSBuild não é necessário no Vis
 |[Elemento Output (MSBuild)](../msbuild/output-element-msbuild.md)|--|Condição<br /><br /> ItemName<br /><br /> PropertyName<br /><br /> TaskParameter|
 |[Elemento Parameter](../msbuild/parameter-element.md)|--|Saída<br /><br /> ParameterType<br /><br /> Obrigatório|
 |[Elemento ParameterGroup](../msbuild/parametergroup-element.md)|*Parâmetro*|--|
-|[Elemento Project (MSBuild)](../msbuild/project-element-msbuild.md)|Choose<br /><br /> Importar<br /><br /> ItemGroup<br /><br /> ProjectExtensions<br /><br /> PropertyGroup<br /><br /> Destino<br /><br /> UsingTask|DefaultTargets<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|
+|[Elemento Project (MSBuild)](../msbuild/project-element-msbuild.md)|Choose<br /><br /> Importar<br /><br /> ItemGroup<br /><br /> ProjectExtensions<br /><br /> PropertyGroup<br /><br /> Destino<br /><br /> UsingTask|DefaultTargets<br /><br /> InitialTargets<br /><br /> SDK<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|
 |[Elemento ProjectExtensions (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|
 |[Elemento Property (MSBuild)](../msbuild/property-element-msbuild.md)|--|Condição|
 |[Elemento PropertyGroup (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Propriedade*|Condição|
 |[Elemento SDK (MSBuild)](../msbuild/sdk-element-msbuild.md)|--|Nome<br /><br /> Versão|
-|[Elemento de destino (MSBuild)](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Tarefa*|AfterTargets<br /><br /> BeforeTargets<br /><br /> Condição<br /><br /> DependsOnTargets<br /><br /> Entradas<br /><br /> KeepDuplicateOutputs<br /><br /> Name<br /><br /> Saídas<br /><br /> Retornos|
+|[Elemento de destino (MSBuild)](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Tarefa*|AfterTargets<br /><br /> BeforeTargets<br /><br /> Condição<br /><br /> DependsOnTargets<br /><br /> Entradas<br /><br /> KeepDuplicateOutputs<br /><br /> Nome<br /><br /> Saídas<br /><br /> Retornos|
 |[Elemento Task de Target (MSBuild)](../msbuild/task-element-msbuild.md)|Saída|Condição<br /><br /> ContinueOnError<br /><br /> *Parâmetro*|
 |[Elemento Task de UsingTask (MSBuild)](../msbuild/taskbody-element-msbuild.md)|*Dados*|Avaliar|
 |[Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> Tarefa|AssemblyFile<br /><br /> AssemblyName<br /><br /> Condição<br /><br /> TaskFactory<br /><br /> TaskName|
 |[Elemento When (MSBuild)](../msbuild/when-element-msbuild.md)|Choose<br /><br /> ItemGroup<br /><br /> PropertyGroup|Condição|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Condições](../msbuild/msbuild-conditions.md)

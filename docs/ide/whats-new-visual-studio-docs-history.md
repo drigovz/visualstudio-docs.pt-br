@@ -2,7 +2,7 @@
 title: 'Documentos do Visual Studio: histórico das novidades '
 titleSuffix: ''
 description: Histórico de novidades nos documentos do Visual Studio
-ms.date: 01/11/2021
+ms.date: 02/01/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,16 +15,80 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 49c8d18a35cbe4a64585efa9bc16fd8afd250404
-ms.sourcegitcommit: fdc21fc21d4a05d9ad8627b06aab7f072bfeb0a6
+ms.openlocfilehash: 899334e6ac4a952ea2d33f01d95ecfbe0a972653
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98113574"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572961"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Histórico de novidades nos documentos do Visual Studio
 
-Bem-vindo ao histórico das novidades dos documentos do Visual Studio. Este artigo contém as principais alterações no docs antes de dezembro de 2020 (a partir de 2020 de julho). Para obter as novidades mais recentes, consulte [Visual Studio docs: What ' s New in the docs](whats-new-visual-studio-docs.md).
+Bem-vindo ao histórico das novidades dos documentos do Visual Studio. Este artigo contém as principais alterações no docs antes de janeiro de 2021 (a partir de 2020 de julho). Para obter as novidades mais recentes, consulte [Visual Studio docs: What ' s New in the docs](whats-new-visual-studio-docs.md).
+
+## <a name="december-2020"></a>Dezembro de 2020
+### <a name="azure"></a>Azure
+
+**Novos artigos**
+
+- [Adicionando configuração de Azure App usando os serviços conectados do Visual Studio](../azure/vs-azure-tools-connected-services-app-configuration.md) -tutorial de configuração de aplicativo serviços conectados
+
+### <a name="code-quality"></a>Qualidade do código
+
+**Artigos atualizados**
+
+- [Visão geral](../code-quality/use-roslyn-analyzers.md) -criando a partir da linha de comando com editorconfig
+- [Habilitar ou instalar analisadores de .NET de primeira empresa](../code-quality/install-net-analyzers.md)
+  - Adicione mais clareza aos documentos de migração para FxCopAnalyzers para netanalyzers
+  - Reorganizar o Sumário para analisadores .NET
+- [Migrar de analisadores do FxCop para analisadores do .net](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) – adicione mais clareza aos documentos de migração para FxCopAnalyzers para netanalyzers
+
+### <a name="containers"></a>Contêineres
+
+**Artigos atualizados**
+
+- Solução de problemas de [desenvolvimento do Visual Studio com](../containers/troubleshooting-docker-errors.md) o Docker – atualizando o Docker para Visual Studio Guia de solução de problemas
+
+### <a name="debugger"></a>Depurador
+
+**Artigos atualizados**
+
+- [Perguntas frequentes-encontre o recurso de depuração de que você precisa no Visual Studio](../debugger/find-your-debugging-task.md) -trabalho de descoberta para localizar sua tarefa de depuração e tópicos de visão geral
+
+### <a name="get-started"></a>Introdução
+
+**Artigos atualizados**
+
+- [Tutorial: criar um aplicativo de console c# simples no Visual Studio](../get-started/csharp/tutorial-console.md) – tutorial do console C#: parte 2 aplica-se apenas ao vs 2019
+
+### <a name="ide"></a>IDE
+
+**Artigos atualizados**
+
+- [Soluções e projetos no Visual Studio](./solutions-and-projects-in-visual-studio.md) – tópicos de atualizações para solução de & projetos
+- [Criar um novo projeto no Visual Studio](./create-new-project.md)
+  - refinar alt-text para capturas de tela e diagramas
+  - Tópicos de mais atualizações para soluções & projetos
+- [Recursos para solução de problemas de erros de IDE](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md) – seção revisar recursos de fórum desatualizados
+- [Trabalhar com soluções e projetos](./creating-solutions-and-projects.md) – mais atualizações para soluções & tópicos de projetos
+- [Como relatar um problema com o Visual Studio para Mac ou com o Instalador do Visual Studio](./how-to-report-a-problem-with-visual-studio.md)
+  - Captura de tela atualizada
+  - Alterações na Comunidade de desenvolvedores
+- [Dicas e truques de desempenho do Visual Studio](./visual-studio-performance-tips-and-tricks.md) – atualizar a seção desabilitar ferramentas de diagnóstico
+- [Introdução a projetos e soluções](../get-started/tutorial-projects-solutions.md)
+  - Tópicos de atualizações para soluções & projetos
+  - Atualizar tutorial-projects-solutions.md
+  - opção from ausente no menu
+
+### <a name="test"></a>Teste
+
+**Artigos atualizados**
+
+- [Introdução ao teste de unidade](../test/getting-started-with-unit-testing.md) – trabalho de descoberta e outros aprimoramentos para ferramentas de teste
+- [Primeiro, veja as ferramentas de teste no Visual Studio](../test/improve-code-quality.md) – trabalho de descoberta e outros aprimoramentos para ferramentas de teste
+- [Ferramentas de teste no Visual Studio # necessárias; título da página exibido nos resultados da pesquisa. Inclua a marca. < caracteres 60.](../test/index.yml) -Trabalho de descoberta e outros aprimoramentos para ferramentas de teste
+- [Executar testes de unidade com o Test Explorer](../test/run-unit-tests-with-test-explorer.md) – Adicionar XML de playlist dinâmica para estruturas diff
+
 ## <a name="november-2020"></a>Novembro de 2020
 ### <a name="code-quality"></a>Qualidade do código
 
@@ -107,7 +171,7 @@ Bem-vindo ao histórico das novidades dos documentos do Visual Studio. Este arti
 - [Experiência de git no Visual Studio](./git-with-visual-studio.md)
   - Texto alt atualizado & metadados
   - Atualizações para o novo conteúdo de experiência git para 16,8 GA
-- [Novidades no Visual Studio 2019](./whats-new-visual-studio-2019.md)
+- [O que há de novo no Visual Studio 2019](./whats-new-visual-studio-2019.md)
   - Texto alt atualizado & metadados
   - Atualizado o que há de novo na página do Visual Studio 2019 para 16,8 GA
 - [Conecte-se a projetos no Team Explorer](./connect-team-project.md) -atualização da página de Team Explorer com a nova experiência do Git observação & link
@@ -117,7 +181,7 @@ Bem-vindo ao histórico das novidades dos documentos do Visual Studio. Este arti
   - Caractere incorreto removido em C++. exemplo de editorconfig
 - [Converter `typeof` em `nameof` ](./reference/convert-typeof-to-nameof.md) -recursos de produtividade dotnet adicionados
 
-### <a name="install"></a>Instalar o
+### <a name="install"></a>Instalar
 
 **Artigos atualizados**
 
@@ -213,7 +277,7 @@ Bem-vindo ao histórico das novidades dos documentos do Visual Studio. Este arti
 
 - Usar o documento pesquisa do [Visual Studio](./visual-studio-search.md) -vs Search
 
-### <a name="install"></a>Instalar o
+### <a name="install"></a>Instalar
 
 **Artigos atualizados**
 
@@ -302,7 +366,7 @@ Bem-vindo ao histórico das novidades dos documentos do Visual Studio. Este arti
 - [Configurações da Convenção de codificação .net para EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options) atualizadas EditorConfig
 - [Convenções de linguagem](/dotnet/fundamentals/code-analysis/style-rules/language-rules) -exemplos ausentes
 
-### <a name="install"></a>Instalar o
+### <a name="install"></a>Instalar
 
 **Novos artigos**
 
@@ -470,7 +534,7 @@ Bem-vindo ao histórico das novidades dos documentos do Visual Studio. Este arti
 - [Diretrizes da comunidade de desenvolvedores](./developer-community-guidelines.md) – diretrizes de DevCom adicionadas
 - [Conclusão do IntelliSense para tipos não importados e métodos de extensão](./reference/intellisense-completion-unimported-types-extension-methods.md)
 
-### <a name="install"></a>Instalar o
+### <a name="install"></a>Instalar
 
 **Novos artigos**
 

@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 27a9c0de35bb6f9944015391c5f933bef28f4b9d
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: bd2e8c94bbfc24b731a40b2d4d4c298a528c622d
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99533559"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572948"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Atualizar o Visual Studio usando um layout offline mínimo
 
@@ -67,6 +67,8 @@ Essa ferramenta cria layouts de atualização para o Visual Studio 2017 (15,9) e
 * **Verificar**: Use este comando para determinar se a pasta de layout está corrompida.
 * **Correção**: Use esse comando para corrigir uma pasta de layout corrompida, incluindo a substituição de pacotes ausentes da pasta de layout.
 
+::: moniker range="vs-2019"
+
 #### <a name="options"></a>Opções 
 
 |Opções    |Descrição    |Obrigatório/Opcional |Exemplo |
@@ -80,6 +82,26 @@ Essa ferramenta cria layouts de atualização para o Visual Studio 2017 (15,9) e
 |--Adicionar &lt; uma ou mais IDs de carga de trabalho ou componente&gt;    |Especifica uma ou mais cargas de trabalho ou IDs de componente a serem adicionadas. Componentes adicionais podem ser adicionados globalmente usando--includeRecommended e/ou <br> –-includeOptional. Várias cargas de trabalho ou IDs de componentes podem ser especificados, separados por um espaço.    |Opcional    |--adicionar Microsoft. VisualStudio. Workload. ManagedDesktop Microsoft. VisualStudio. Workload. NetWeb Component. GitHub. VisualStudio |
 |--includeRecommended    |Inclui os componentes recomendados para as cargas de trabalho que estão instaladas, mas não os componentes opcionais.    |Opcional    |Para uma carga de trabalho específica: <br> --adicionar Microsoft. VisualStudio. Workload. ManagedDesktop;includeRecommended <br><br> Para aplicar a todas as cargas de trabalho:--includeRecommended |
 |--includeOptional |Inclui os componentes opcionais para todas as cargas de trabalho instaladas, incluindo os componentes recomendados.    |Opcional    |Para uma carga de trabalho específica: <br>--adicionar Microsoft. VisualStudio. Workload. ManagedDesktop;includeOptional <br><br> Para aplicar a todas as cargas de trabalho:--includeOptional |
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+#### <a name="options"></a>Opções 
+
+|Opções    |Descrição    |Obrigatório/Opcional |Exemplo |
+|:----------|:-----------|:------------|:--------------|
+|--targetLocation &lt; dir&gt; |Especifica um diretório no qual criar um layout mínimo de offline.       |Obrigatório        |--targetLocation c:\VSLayout\ |
+|--versão do baseVersion &lt;&gt;|O layout mínimo de offline será gerado começando com esta versão.   |Obrigatório|--baseVersion 15.0.0 |
+|--versão do targetVersion &lt;&gt;|O layout mínimo de offline será gerado até e incluindo esta versão.|Obrigatório|--targetVersion 15.9.31|
+|--idiomas    |Especifica os idiomas a serem incluídos no layout mínimo de offline. Vários valores podem ser especificados, separados por espaços.    |Obrigatório    |--idiomas en-US fr-FR |
+|--ID de productId &lt;&gt;    |A ID do produto do qual o layout mínimo do offline será gerado. <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul>|Obrigatório|--productId Microsoft. VisualStudio. Product. Enterprise |
+|--filePath    |O caminho do arquivo do MinimalLayout.jsno arquivo de um layout já criado. Essa opção só é usada com o comando Regenerate.     |Necessário para regenerar o comando    |--filePath C:\VSLayout\minimalLayout.jsem <br><br> **Observe que o comando regenerar apenas usa--filePath como uma opção.** |
+|--Adicionar &lt; uma ou mais IDs de carga de trabalho ou componente&gt;    |Especifica uma ou mais cargas de trabalho ou IDs de componente a serem adicionadas. Componentes adicionais podem ser adicionados globalmente usando--includeRecommended e/ou <br> –-includeOptional. Várias cargas de trabalho ou IDs de componentes podem ser especificados, separados por um espaço.    |Opcional    |--adicionar Microsoft. VisualStudio. Workload. ManagedDesktop Microsoft. VisualStudio. Workload. NetWeb Component. GitHub. VisualStudio |
+|--includeRecommended    |Inclui os componentes recomendados para as cargas de trabalho que estão instaladas, mas não os componentes opcionais.    |Opcional    |Para uma carga de trabalho específica: <br> --adicionar Microsoft. VisualStudio. Workload. ManagedDesktop;includeRecommended <br><br> Para aplicar a todas as cargas de trabalho:--includeRecommended |
+|--includeOptional |Inclui os componentes opcionais para todas as cargas de trabalho instaladas, incluindo os componentes recomendados.    |Opcional    |Para uma carga de trabalho específica: <br>--adicionar Microsoft. VisualStudio. Workload. ManagedDesktop;includeOptional <br><br> Para aplicar a todas as cargas de trabalho:--includeOptional |
+
+::: moniker-end
 
 ### <a name="generating-a-minimal-layout"></a>Gerando um layout mínimo
 

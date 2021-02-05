@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 10/21/2020
+ms.date: 02/04/2021
 ms.topic: conceptual
 description: Perguntas sobre cobrança para assinaturas de nuvem.
-ms.openlocfilehash: 0140a6250f2c04ad33fec962283e035393a03aae
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a812965a549f2e6e6d6c58366d943f3129d951cd
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353415"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572870"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Perguntas frequentes sobre cobrança de assinaturas de nuvem do Visual Studio
 [Compare os benefícios e os preços das assinaturas de nuvem](https://visualstudio.microsoft.com/vs/pricing/) para entender os benefícios de cada assinatura do Visual Studio, com comparações entre as assinaturas de nuvem e padrão do Visual Studio, detalhes sobre os benefícios do assinante e muito mais.
@@ -28,6 +28,9 @@ Alguns tipos de assinaturas do Azure, incluindo a [avaliação gratuita do Azure
 
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>P: É necessário comprar outros serviços do Azure?
 R: Não. Se você quiser comprar somente assinaturas de nuvem do Visual Studio por meio do Azure, você poderá fazer isso.
+
+### <a name="q-where-can-i-view-my-billing-and-usage-data"></a>P: onde posso exibir meus dados de cobrança e de uso?
+R: Obtenha informações sobre como [exibir sua fatura e uso](https://docs.microsoft.com/azure/cost-management-billing/manage/download-azure-invoice-daily-usage-date).
 
 ## <a name="enterprise-agreement-ea-customers"></a>Clientes do EA (Contrato Enterprise)
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>P: Posso usar um Contrato Enterprise para comprar assinaturas de nuvem do Visual Studio?
@@ -96,7 +99,7 @@ R: Sim, você pode, se o revendedor participar do programa CSP (provedor de solu
 - [Suporte de assinatura do Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 - [Compra de assinatura de nuvem do Visual Studio para CSPs](vscloud-csp.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)
