@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: ed2e7f11a6e36c797bb6c506c19b0fff11fb5ad1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: f734435f93c60ab0b66bd258417d90541575e398
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598543"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99627974"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Passo a passo: Criar e executar testes de unidade para código gerenciado
 
@@ -138,11 +138,11 @@ Este artigo orienta você pela criação, execução e personalização de uma s
 
 6. Renomeie o arquivo como *BankAccount.cs* clicando com o botão direito do mouse e escolha **Renomear** na **Gerenciador de Soluções**.
 
-7. No menu **Compilar**, clique em **Compilar Solução**.
+7. No menu **Compilar** , clique em **Compilar solução** (ou pressione **Ctrl**  +  **Shift**  +  **B**).
 
 Agora você tem um projeto com métodos que você pode testar. Neste artigo, os testes se concentram no método `Debit`. O método `Debit` é chamado quando o dinheiro é retirado de uma conta.
 
-## <a name="create-a-unit-test-project"></a>Crie um projeto de teste de unidade
+## <a name="create-a-unit-test-project"></a>Criar um projeto de teste de unidade
 
 1. No menu **Arquivo**, selecione **Adicionar** > **Novo Projeto**.
 
@@ -187,7 +187,7 @@ Crie uma classe de teste para verificar a classe `BankAccount`. Use o arquivo *U
 
 ### <a name="rename-a-file-and-class"></a>Renomear um arquivo e uma classe
 
-1. Para renomear o arquivo, em **Gerenciador de Soluções**, selecione o arquivo *UnitTest1.cs* no projeto BankTests. No menu do clique com o botão direito, escolha **Renomear** e, em seguida, renomeie o arquivo como *BankAccountTests.cs*.
+1. Para renomear o arquivo, em **Gerenciador de Soluções**, selecione o arquivo *UnitTest1.cs* no projeto BankTests. No menu do clique com o botão direito do mouse, escolha **renomear** (ou pressione **F2**) e renomeie o arquivo para *BankAccountTests.cs*.
 
 ::: moniker range="vs-2017"
 
@@ -197,7 +197,7 @@ Crie uma classe de teste para verificar a classe `BankAccount`. Use o arquivo *U
 
 ::: moniker range=">=vs-2019"
 
-2. Para renomear a classe, posicione o cursor em `UnitTest1` no editor de código, clique com o botão direito do mouse e, em seguida, escolha **Renomear**. Digite **BankAccountTests** e, em seguida, pressione **Enter**.
+2. Para renomear a classe, posicione o cursor sobre `UnitTest1` no editor de códigos, clique com o botão direito do mouse e escolha **renomear** (ou pressione **F2**). Digite **BankAccountTests** e, em seguida, pressione **Enter**.
 
 ::: moniker-end
 
@@ -289,11 +289,11 @@ Um método de teste deve atender aos seguintes requisitos:
 
 ## <a name="build-and-run-the-test"></a>Criar e executar o teste
 
-1. No menu **Compilar**, escolha **Compilar Solução**.
+1. No menu **Compilar** , escolha **Compilar solução** (ou pressione **Ctrl**  +  **Shift**  +  **B**).
 
-2. Se o **Gerenciador de Testes** não estiver aberto, abra-o escolhendo **Teste** > **Windows** > **Gerenciador de Testes** na barra de menus superior.
+2. Se o **Gerenciador de testes** não estiver aberto, abra-o escolhendo **testar** o  >    >  **Gerenciador de testes** do Windows na barra de menus superior (ou pressione **Ctrl**  +  **E**, **T**).
 
-3. Escolha **Executar Todos** para executar o teste.
+3. Escolha **executar tudo** para executar o teste (ou pressione **Ctrl**  +  **R**, **V**).
 
    Durante a execução do teste, a barra de status na parte superior da janela **Gerenciador de Testes** fica animada. Ao final da execução de teste, a barra ficará verde se todos os métodos de teste forem aprovados ou vermelha, se algum teste falhar.
 
@@ -323,7 +323,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Executar o teste novamente
 
-No **Gerenciador de testes**, escolha **executar tudo** para executar novamente o teste. A barra verde/vermelho fica verde para indicar que o teste foi aprovado.
+No **Gerenciador de testes**, escolha **executar tudo** para executar novamente o teste (ou pressione **Ctrl**  +  **R**, **V**). A barra verde/vermelho fica verde para indicar que o teste foi aprovado.
 
 ![Gerenciador de Testes no Visual Studio 2019 mostrando a aprovação no teste](media/test-explorer-banktests-passed.png)
 
@@ -471,6 +471,6 @@ As melhorias no código de teste levaram a métodos de teste mais robustos e inf
 > [!TIP]
 > Este passo a passo usa a estrutura de teste de unidade do Microsoft para código gerenciado. O **Gerenciador de Testes** também pode executar testes em estruturas de teste de unidade de terceiros que têm adaptadores para o **Gerenciador de Testes**. Para obter mais informações, consulte [instalar estruturas de teste de unidade de](../test/install-third-party-unit-test-frameworks.md)terceiros.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 Para obter informações sobre como executar testes em uma linha de comando, confira [Opções de linha de comando de VSTest.Console.exe](vstest-console-options.md).

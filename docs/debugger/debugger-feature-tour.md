@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d451735042374f0e3c6fb2154cd54520a069fc
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 0e136339ae5f34a7e65c19cf14c9ff840c620b25
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761427"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628052"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Introdução ao Depurador do Visual Studio
 
@@ -93,7 +93,7 @@ Este comando retoma a execução do aplicativo (e avança o depurador) até que 
 
 ## <a name="run-to-cursor"></a>Executar até o cursor
 
-Quando você estiver editando código (em vez de pausado no depurador), clique com o botão direito do mouse em uma linha de código em seu aplicativo e escolha **executar até o cursor**. Esse comando inicia a depuração e define um ponto de interrupção temporário na linha de código atual.
+Quando você estiver editando código (em vez de pausado no depurador), clique com o botão direito do mouse em uma linha de código em seu aplicativo e escolha **executar até o cursor** (ou pressione **Ctrl** para **F10**). Esse comando inicia a depuração e define um ponto de interrupção temporário na linha de código atual.
 
 ![Executar até o cursor](../debugger/media/dbg-tour-run-to-cursor.png "Executar até o cursor")
 
@@ -108,7 +108,7 @@ Esse comando é útil quando você está editando o código e deseja definir rap
 
 ## <a name="restart-your-app-quickly"></a>Reinicie o aplicativo rapidamente
 
-Clique no botão **reiniciar** ![aplicativo](../debugger/media/dbg-tour-restart.png "Reiniciar o aplicativo") de reinicialização na barra de ferramentas depurar (**Ctrl + Shift + F5**).
+Clique no botão **reiniciar** ![aplicativo](../debugger/media/dbg-tour-restart.png "Reiniciar o aplicativo") de reinicialização na barra de ferramentas depurar (ou pressione **Ctrl + Shift + F5**).
 
 Ao pressionar **Reiniciar**, você economiza tempo em comparação com a opção de parar o aplicativo e reiniciar o depurador. O depurador é pausado no primeiro ponto de interrupção que é atingido pela execução do código.
 

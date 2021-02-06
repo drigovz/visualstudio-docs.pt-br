@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5660d67ac2c8c3bff589c34dd4303d36a3e20cff
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 5efed99b9934ed91b2194b5a38c99134d6d4b5e5
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833306"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628026"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 
@@ -236,7 +236,7 @@ public void My_Test ()
 
 ## <a name="run-tests-in-test-explorer"></a>Executar testes de unidade no Gerenciador de Testes
 
-Quando você cria o projeto de teste, os testes são exibidos no **Gerenciador de Testes**. Se o **Gerenciador de Testes** não estiver visível, escolha **Teste** no menu do Visual Studio, **Windows** e, em seguida, **Gerenciador de Testes**.
+Quando você cria o projeto de teste, os testes são exibidos no **Gerenciador de Testes**. Se **o Gerenciador de testes** não estiver visível, escolha **testar** no menu do Visual Studio, escolha **Windows** e escolha **Gerenciador de testes** (ou pressione **Ctrl**  +  **E**, **T**).
 
 ::: moniker range="vs-2017"
 ![Gerenciador de Testes de Unidade](../test/media/ute_failedpassednotrunsummary.png)
@@ -260,7 +260,7 @@ A barra de ferramentas do **Gerenciador de Testes** ajuda você a descobrir, org
 ![Executar testes na barra de ferramentas do Gerenciador de Testes](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
 ::: moniker-end
 
-Você pode escolher **executar tudo** para executar todos os seus testes ou escolher **executar** para escolher um subconjunto de testes a serem executados. Selecione um teste para exibir os detalhes no painel de detalhes do teste. Escolha **abrir teste** no menu do botão direito do mouse (teclado: **F12**) para exibir o código-fonte do teste selecionado.
+Você pode escolher **executar tudo** para executar todos os seus testes (ou pressione **Ctrl**  +  **r**, **V**) ou escolher **executar** para escolher um subconjunto de testes a serem executados (**Ctrl**  +  **r**, **T**). Selecione um teste para exibir os detalhes no painel de detalhes do teste. Escolha **abrir teste** no menu do botão direito do mouse (teclado: **F12**) para exibir o código-fonte do teste selecionado.
 
 ::: moniker range="vs-2017"
 
@@ -310,7 +310,7 @@ Quando houver um grande número de testes, você poderá digitar na caixa de pes
 
 Para obter mais informações, consulte [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md).
 
-## <a name="qa"></a>P e R
+## <a name="qa"></a>Perguntas e respostas
 
 **P: como posso depurar testes de unidade?**
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31314a669815d38ed408a28e033e4943df0f75d3
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: 328f7540846f923fe186a76c4dcc03347f9c3214
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756650"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628013"
 ---
 # <a name="get-started-with-unit-testing"></a>Introdução ao teste de unidade
 
@@ -180,13 +180,13 @@ Esta seção descreve como criar um projeto de teste de unidade.
 1. Abra o [Gerenciador de testes](../test/run-unit-tests-with-test-explorer.md).
 
    ::: moniker range=">=vs-2019"
-   Para abrir o Gerenciador de testes, escolha **testar** > **Gerenciador** de testes na barra de menus superior.
+   Para abrir o Gerenciador de testes, escolha **testar** > **Gerenciador** de testes na barra de menus superior (ou pressione **Ctrl** + **E**, **T**).
    ::: moniker-end
    ::: moniker range="vs-2017"
    Para abrir o Gerenciador de testes, escolha **testar** o >  > **Gerenciador de testes** do Windows na barra de menus superior.
    ::: moniker-end
 
-1. Execute seus testes de unidade clicando em **Executar Tudo**.
+1. Execute os testes de unidade clicando em **executar tudo** (ou pressione **Ctrl**  +  **R**, **V**).
 
    ![Executar testes de unidade no Gerenciador de Testes](media/vs-2019/test-explorer-run-all.png)
 
@@ -274,7 +274,7 @@ Para adicionar um projeto de teste de unidade:
 
    ![Adicionar o código ao arquivo de código do teste de unidade](media/vs-2019/unit-test-method.png)
 
-6. Execute o teste do **Gerenciador de Testes** ou clicando com o botão direito do mouse no código de teste e escolhendo **Executar Testes**.
+6. Execute o teste no **Test Explorer** ou clicando com o botão direito do mouse no código de teste e escolhendo **Executar teste (** ou **Ctrl**  +  **R**, **T**).
 
 ## <a name="next-steps"></a>Próximas etapas
 

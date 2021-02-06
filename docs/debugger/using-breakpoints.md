@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8487482b1d87ba87dfc3a8b1e07be1360227a2f
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 3fba148b409d8e2b5b9cbc3b629f9f7116509c74
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150438"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99627987"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usar pontos de interrupção no depurador do Visual Studio
 
@@ -85,7 +85,7 @@ Você pode controlar quando e onde um ponto de interrupção é executado defini
 
 **Para definir uma condição de ponto de interrupção:**
 
-1. Clique com o botão direito do mouse no símbolo do ponto de interrupção e selecione **condições**. Ou passe o mouse sobre o símbolo de ponto de interrupção, selecione o ícone **configurações** e, em seguida, selecione **condições** na janela **configurações de ponto de interrupção** .
+1. Clique com o botão direito do mouse no símbolo de ponto de interrupção e selecione **condições** (ou pressione **ALT**  +  **F9**, **C**). Ou passe o mouse sobre o símbolo de ponto de interrupção, selecione o ícone **configurações** e, em seguida, selecione **condições** na janela **configurações de ponto de interrupção** .
 
    Você também pode definir condições na janela **pontos de interrupção** clicando com o botão direito do mouse em um ponto de interrupção e selecionando **configurações** e, em seguida, selecionando **condições**.
 
@@ -124,7 +124,7 @@ Se você definir uma condição de ponto de interrupção com sintaxe inválida,
 
 1. Defina um ponto de interrupção no código em algum lugar depois que o objeto tiver sido criado.
 
-2. Inicie a depuração e, quando a execução pausa no ponto de interrupção, selecione **depurar**  >    >  **locais** do Windows ou **ALT** + **4** para abrir a janela **locais** .
+2. Inicie a depuração e, quando a execução pausa no ponto de interrupção, selecione **depurar**  >    >  **locais** do Windows (ou pressione **Ctrl**  +  **ALT**  +  **V**, **L**) para abrir a janela **locais** .
 
    Localize a instância de objeto específica na janela **locais** , clique com o botão direito do mouse nela e selecione **criar ID de objeto**.
 
@@ -169,7 +169,7 @@ Você pode interromper a execução quando uma função é chamada. Isso é úti
 
 **Para definir um ponto de interrupção de função:**
 
-1. Selecione **depurar**  >  **novo** ponto de interrupção da  >  **função** de ponto de interrupção ou pressione **ALT** + **F9**  >  **Ctrl** + **B**.
+1. Selecione **depurar**  >  **novo** ponto de interrupção da  >  **função** de ponto de interrupção ou pressione **Ctrl**  +  **K**, **B**.
 
    Você também pode selecionar **novo**  >  **ponto de interrupção de função** na janela **pontos de interrupção** .
 
@@ -206,7 +206,7 @@ Você pode interromper a execução quando uma função é chamada. Isso é úti
 
 2. Localize o endereço da instância (por exemplo, `0xcccccccc` ).
 
-3. Selecione **depurar**  >  **novo** ponto de interrupção da  >  **função** de ponto de interrupção ou pressione **ALT** + **F9**  >  **Ctrl** + **B**.
+3. Selecione **depurar**  >  **novo** ponto de interrupção da  >  **função** de ponto de interrupção ou pressione **Ctrl**  +  **K**, **B**.
 
 4. Adicione o seguinte à caixa **nome da função** e selecione linguagem **C++** .
 
@@ -243,7 +243,7 @@ Os pontos de interrupção de dados no .NET Core não funcionarão para:
 
 **Para definir um ponto de interrupção de dados:**
 
-1. Em um projeto C++, inicie a depuração e aguarde até que um ponto de interrupção seja atingido. No menu **depurar** , escolha **novo** ponto de interrupção de ponto de interrupção de  >  **dados**
+1. Em um projeto C++, inicie a depuração e aguarde até que um ponto de interrupção seja atingido. No menu **depurar** , escolha novo ponto de interrupção de dados de **ponto de interrupção**  >  .
 
     Você também pode selecionar **novo**  >  **ponto de interrupção de dados** na janela **pontos de interrupção** ou clicar com o botão direito do mouse em um item na janela **automáticos**, **inspecionar** ou **locais** e selecionar **interromper quando o valor for alterado** no menu de contexto.
 
@@ -268,7 +268,7 @@ Os pontos de interrupção de dados não funcionam sob as seguintes condições:
 
 Na janela **pontos de interrupção** , você pode pesquisar, classificar, filtrar, habilitar/desabilitar ou excluir pontos de interrupção. Você também pode definir condições e ações ou adicionar um novo ponto de interrupção de função ou de dados.
 
-Para abrir a janela **pontos de interrupção** , selecione **depurar**  >    >  **pontos de interrupção** do Windows ou pressione **ALT** + **F9** ou **Ctrl** + **ALT** + **B**.
+Para abrir a janela **pontos de interrupção** , selecione **depurar**  >    >  **pontos de interrupção** do Windows ou pressione **Ctrl** + **ALT** + **B**.
 
 ![Janela pontos de interrupção](../debugger/media/breakpointswindow.png "Janela Pontos de Interrupção")
 
@@ -314,11 +314,11 @@ Para rastrear visualmente pontos de interrupção durante a execução do códig
 
 ### <a name="set-a-breakpoint-in-the-disassembly-window"></a>Definir um ponto de interrupção na janela de desmontagem
 
-1. Para abrir a janela de **desmontagem** , você deve estar em pausa durante a depuração. Selecione **depurar**  >    >  **desmontagem** do Windows ou pressione **ALT** + **8**.
+1. Para abrir a janela de **desmontagem** , você deve estar em pausa durante a depuração. Selecione **depurar**  >    >  **desmontagem** do Windows ou pressione **Ctrl** + **ALT** + **D**.
 
 2. Na janela **desmontagem** , clique na margem esquerda da instrução que você deseja interromper. Você também pode selecioná-lo e pressionar **F9**, ou clicar com o botão direito do mouse **e selecionar ponto** de interrupção de inserção de pontos de interrupção  >  .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [O que é depuração?](../debugger/what-is-debugging.md)
 - [Escreva um código C# melhor usando o Visual Studio](../debugger/write-better-code-with-visual-studio.md)

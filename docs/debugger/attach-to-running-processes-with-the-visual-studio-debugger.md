@@ -29,16 +29,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fb2fde5d5629b84ccd0e136c132a200b154ea71
-ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
+ms.openlocfilehash: 3250eff2b5691ab344e2fedde80054415ec8ffcd
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031036"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99627961"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar a processos em execução com o depurador do Visual Studio
 
-Você pode anexar o depurador do Visual Studio a um processo em execução em um computador local ou remoto. Depois que o processo estiver em execução, selecione **depuração**  >  **anexar ao processo** ou pressione **Ctrl** + **ALT** + **P** no Visual Studio e use a caixa de diálogo **anexar ao processo** para anexar o depurador ao processo.
+Você pode anexar o depurador do Visual Studio a um processo em execução em um computador local ou remoto. Depois que o processo estiver em execução, selecione **depuração**  >  **anexar ao processo** ou pressione **Ctrl** + **ALT** + **p** no Visual Studio e use a caixa de diálogo **anexar ao processo** para anexar o depurador ao processo.
 
 Você pode usar **anexar ao processo** para depurar a execução de aplicativos em computadores locais ou remotos, depurar vários processos simultaneamente, depurar aplicativos que não foram criados no Visual Studio ou depurar qualquer aplicativo que não tenha sido iniciado no Visual Studio com o depurador anexado. Por exemplo, se você estiver executando um aplicativo sem o depurador e clicar em uma exceção, você poderá anexar o depurador ao processo que executa o aplicativo e iniciar a depuração.
 
@@ -249,7 +249,7 @@ Se você quiser obter informações mais específicas sobre por que o depurador 
 
     Desta vez, o anexo falhará completamente e você receberá uma mensagem de erro específica.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depurar vários processos](../debugger/debug-multiple-processes.md)
 - [Depuração Just-in-time](../debugger/just-in-time-debugging-in-visual-studio.md)

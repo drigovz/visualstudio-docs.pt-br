@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c992a1a4fca536f219a69b9ab629f6f602b4dfb0
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 52a910bddd2f75c631f130dddee22f8b2e05510b
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150503"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628039"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -34,7 +34,7 @@ O Visual Studio instala as estruturas de teste de unidade da Microsoft para cód
 
 ## <a name="run-tests-in-test-explorer"></a>Executar testes de unidade no Gerenciador de Testes
 
-Quando você compila o projeto de teste, os testes são exibidos no Gerenciador de Testes. Se o Gerenciador de Testes não estiver visível, escolha **Teste** no menu do Visual Studio, **Windows** e, em seguida, **Gerenciador de Testes**.
+Quando você compila o projeto de teste, os testes são exibidos no Gerenciador de Testes. Se o Gerenciador de testes não estiver visível, escolha **testar** no menu do Visual Studio, escolha **Windows** e escolha **Gerenciador de testes** (ou pressione **Ctrl**  +  **E**, **T**).
 
 ::: moniker range="vs-2017"
 ![Gerenciador de Testes de Unidade](../test/media/ute_failedpassednotrunsummary.png)
@@ -64,11 +64,11 @@ Você pode executar a maior parte do trabalho de encontrar, organizar e executar
 ::: moniker range="vs-2017"
 Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize um dos seguintes procedimentos:
 
-- Para executar todos os testes em uma solução, escolha **Executar Todos**.
+- Para executar todos os testes em uma solução, escolha **executar tudo** (ou pressione **Ctrl** + **R**, **V**).
 
 - Para executar todos os testes em um grupo padrão, escolha **Executar** e, em seguida, escolha o grupo no menu.
 
-- Selecione os testes individuais que deseja executar, abra o menu do clique com o botão direito para o teste selecionado e, em seguida, escolha **Executar Testes Selecionados**.
+- Selecione os testes individuais que você deseja executar, abra o menu de clique com o botão direito do mouse para um teste selecionado e escolha **executar testes selecionados** (ou pressione **Ctrl** + **R**, **T**).
 
 - Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![Captura de tela do botão de alternância de execução de teste paralelo na barra de ferramentas do Gerenciador de testes do Visual Studio. Quando esse botão é selecionado, os testes serão executados em paralelo.](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
 
@@ -77,11 +77,11 @@ A **barra de aprovação/reprovação** na parte superior da janela do **Gerenci
 ::: moniker range=">=vs-2019"
 Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize um dos seguintes procedimentos:
 
-- Para executar todos os testes de uma solução, escolha o ícone **Executar Todos**.
+- Para executar todos os testes em uma solução, escolha o ícone **executar tudo** (ou pressione **Ctrl** + **R**, **V**).
 
 - Para executar todos os testes de um grupo padrão, escolha o ícone **Executar** e, em seguida, escolha o grupo no menu.
 
-- Selecione os testes individuais que deseja executar, abra o menu do clique com o botão direito para o teste selecionado e, em seguida, escolha **Executar Testes Selecionados**.
+- Selecione os testes individuais que você deseja executar, abra o menu de clique com o botão direito do mouse para um teste selecionado e escolha **executar testes selecionados** (ou pressione **Ctrl** + **R**, **T**).
 
 - Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo no menu de configurações da barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
 ::: moniker-end
@@ -130,7 +130,7 @@ Se o teste falhar, o painel de detalhes também exibe:
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Exibir o código-fonte de um método de teste
 
-Para exibir o código-fonte de um método de teste no editor do Visual Studio, selecione o teste e, em seguida, escolha **abrir teste** no menu do botão direito do mouse (teclado: **F12**).
+Para exibir o código-fonte de um método de teste no editor do Visual Studio, selecione o teste e, em seguida, escolha **abrir teste** no menu do botão direito do mouse (ou pressione **F12**).
 
 ## <a name="group-and-filter-the-test-list"></a>Agrupar e filtrar a lista de testes
 
@@ -387,7 +387,7 @@ O Gerenciador de testes pode tocar um som quando a execução de teste é conclu
 ![Caixa de diálogo som do Windows 10](../test/media/default-windows-10-sound-dialog.png)
 
 ::: moniker-end
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Teste de unidade em seu código](../test/unit-test-your-code.md)
 - [Depurar testes de unidade com o Gerenciador de Testes](../test/debug-unit-tests-with-test-explorer.md)
