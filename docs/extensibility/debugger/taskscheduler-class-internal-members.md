@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 87f1c969-0217-4464-8907-7609c1bf61d3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10528e57137f8605e7f140d4ab8d4a3399029a5f
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: d0ed72efb383e216d5998c2231a472b8d29f9ec4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837444"
 ---
 # <a name="taskscheduler-class---internal-members"></a>Classe TaskScheduler – membros internos
 Este artigo descreve os membros internos da <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> classe que ajudam a implementar um depurador personalizado. Para obter informações gerais sobre essa classe, consulte o <xref:System.Threading.Tasks.TaskScheduler> artigo de referência.
@@ -47,6 +47,6 @@ Este artigo descreve os membros internos da <xref:System.Threading.Tasks.TaskSch
 
 ## <a name="remarks"></a>Comentários
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
 - [Elementos internos de extensão paralela para o .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

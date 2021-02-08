@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b45fe06722b190569e067dccd325ba4acac4fb0f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 67c01aa9ecb3661235670866d92b29d7d8eef543
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875148"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837267"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrando manipuladores de comando de assembly de interoperabilidade
 Um VSPackage deve se registrar no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para que o IDE (ambiente de desenvolvimento integrado) roteia seus comandos corretamente.
@@ -68,6 +68,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
     {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Como os VSPackages adicionam elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandos e menus que usam assemblies de interoperabilidade](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

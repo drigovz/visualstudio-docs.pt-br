@@ -13,15 +13,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], Window Forms controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 015fffa51358c3a7a13d98950392d0749560c089
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f8c79e487e116741c393cef5a6f65b30cc4a8cfb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526513"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838211"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>Usar controles de Windows Forms em planilhas do Excel
   Você pode adicionar Windows Forms controles às suas pastas de trabalho do Microsoft Office Excel da mesma maneira que adiciona controles ao Windows Forms. Para obter informações gerais sobre como trabalhar com controles em documentos, consulte [visão geral dos controles de Windows Forms em documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
@@ -40,7 +40,7 @@ ms.locfileid: "97526513"
 ### <a name="formula-for-embedding-controls"></a>Fórmula para inserir controles
  Ao selecionar um controle no Excel, você verá **= Inserir ("WinForms. Control. host", "")** na **barra de fórmulas**. Esse texto é necessário e não deve ser excluído.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Como: redimensionar controles nas células da planilha](../vsto/how-to-resize-controls-within-worksheet-cells.md)
 - [Como: Ocultar controles em planilhas ao imprimir](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
 - [Walkthrough: alterar a formatação da planilha usando controles CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 8d7ebfc6-7478-4888-b3b0-b14f296096af
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fde6dabb372bfa20f55335008ce91e8de2481a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 234e6c2d0349cf610d9ba22d53ce59e3768ad64e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433577"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838003"
 ---
 # <a name="transactionscope-activity-designer"></a>Designer de atividade de TransactionScope
 
@@ -38,10 +38,10 @@ A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.T
 |Nome da propriedade|Obrigatório|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|O nome amigável opcional de atividade de <xref:System.Activities.Statements.TransactionScope> . O padrão é TransactionScope. Embora o valor de <xref:System.Activities.Activity.DisplayName%2A> não é necessário restrita, é uma prática recomendada usar um.|
-|<xref:System.Activities.Statements.TransactionScope.Body%2A>|Verdadeiro|Especifica a atividade para executar em uma única transação. Para adicionar a <xref:System.Activities.Statements.TransactionScope.Body%2A> atividade, remova uma atividade da caixa de **ferramentas** para o **corpo** de atividade no **TransactionScope** Activity Designer com dica de texto "soltar atividade aqui".|
-|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|Verdadeiro|Especifica <xref:System.Transactions.IsolationLevel> para este <xref:System.Activities.Statements.TransactionScope>.|
+|<xref:System.Activities.Statements.TransactionScope.Body%2A>|True|Especifica a atividade para executar em uma única transação. Para adicionar a <xref:System.Activities.Statements.TransactionScope.Body%2A> atividade, remova uma atividade da caixa de **ferramentas** para o **corpo** de atividade no **TransactionScope** Activity Designer com dica de texto "soltar atividade aqui".|
+|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|True|Especifica <xref:System.Transactions.IsolationLevel> para este <xref:System.Activities.Statements.TransactionScope>.|
 |<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|Falso|Especifica o intervalo de tempo (formatados como o 00:00: 00, que indica horas: minutos: segundos) que a transação precisará concluir. O valor padrão é 1 (00:01 minuto: 00).|
-|<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|Verdadeiro|Especifica o valor que indica se o fluxo de trabalho deve ser anuladas se a transação nulos.|
+|<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|True|Especifica o valor que indica se o fluxo de trabalho deve ser anuladas se a transação nulos.|
 
 ## <a name="see-also"></a>Confira também
 

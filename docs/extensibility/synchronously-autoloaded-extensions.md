@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 506c098f1f385ddf39c5d000f4571a8ee92c09fc
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 460227b1eb5a1e12ca698f649700586b53bc7254
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715438"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839329"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Extensões carregadas automaticamente de modo sincrônico
 
@@ -23,7 +23,7 @@ As extensões autocarregadas de forma síncrona têm um impacto negativo sobre o
 
 ![aviso de compatibilidade de extensão](media/extension-compatibility-warning-16-1.png.png)
 
-Você poderá:
+Você pode:
 
 - Clique em **permitir AutoLoad síncrona** para permitir que as extensões sejam AutoLoad. Para alterar essa configuração nas opções do Visual Studio, clique em ambiente, clique em extensões e marque a caixa de seleção "permitir AutoLoad síncrona de extensões". 
 
@@ -55,5 +55,5 @@ Valor = (DWORD)
 ## <a name="extension-authors"></a>Autores de extensão
 Os autores de extensão podem encontrar instruções para migrar pacotes para AutoLoad assíncrona em [migrar para o AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 Para obter mais informações sobre as configurações de AutoLoad síncronas no Visual Studio 2019, consulte a página [comportamento de AutoLoad síncrona](https://devblogs.microsoft.com/visualstudio/updates-to-synchronous-autoload-of-extensions-in-visual-studio-2019/) .

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7bc79a53b62cf9fb0ca0ba533a2ce0d542b08c72
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3a34774d537348a93308cb992ee8a7500ea242ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528431"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838263"
 ---
 # <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-45"></a>Atualizar projetos do Excel e do Word que você migra para o .NET Framework 4,5
   Se você tiver um projeto do Excel ou do Word que usa qualquer um dos recursos a seguir, você deverá modificar seu código se a estrutura de destino for alterada para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior:
@@ -232,7 +232,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 
  Em projetos direcionados para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, esses tipos de coleção agora são interfaces que não derivam de <xref:System.Collections.CollectionBase> . Alguns membros não estão mais disponíveis nesses tipos de coleção, como <xref:System.Collections.CollectionBase.Capacity%2A> , <xref:System.Collections.CollectionBase.List%2A> e <xref:System.Collections.CollectionBase.InnerList%2A> .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Migrar soluções do Office para o .NET Framework 4 ou posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Controles de conteúdo](../vsto/content-controls.md)
 - [Estenda documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)

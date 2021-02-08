@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 51410569-10f9-4c0a-96b5-d39185edbefc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c3614cd2d4fc0e6a5eebfb8dc6911e6eb183c01
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: f86ed604ae6b893f02da1d4f65a816bd05f34f94
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383216"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837782"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;&gt;elemento assembly (aplicativo ClickOnce)
 O elemento de nível superior para o manifesto do aplicativo.
@@ -71,6 +71,6 @@ O elemento de nível superior para o manifesto do aplicativo.
   xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)
 - [\<assembly> elementos](../deployment/assembly-element-clickonce-deployment.md)

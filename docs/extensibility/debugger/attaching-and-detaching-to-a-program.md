@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 79dcbb9b-c7f8-40fc-8a00-f37fe1934f51
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b71a78dcee62f89dee4c54b53c1026f42895793
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d41f9e3f88f28dbbb83e9c7e00fe8b8afd434c26
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913783"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837743"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Anexando e desanexando a um programa
 Anexar o depurador requer o envio da sequência correta de métodos e eventos com os atributos adequados.
@@ -51,5 +51,5 @@ Anexar o depurador requer o envio da sequência correta de métodos e eventos co
 
 6. O DE envia um [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Chamando eventos do depurador](../../extensibility/debugger/calling-debugger-events.md)

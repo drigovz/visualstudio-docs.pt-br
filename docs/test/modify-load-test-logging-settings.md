@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 9649226a-857d-41ef-8ec7-047b6e498033
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 464429ef516d3f4cd6dadd013f274139eb106a57
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: db84e5be44d70934331d9e7d9c47e78bc669bedb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329192"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838289"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modificar configurações de registro em log de testes de carga
 
@@ -30,6 +30,6 @@ O *controlador de teste* armazena em spool todos os dados de exemplo do teste de
 |**Salvar logs se um teste de carga falhar:** você pode especificar se quer salvar o log de teste sempre que um teste de carga falhar.|-   [Como especificar se as falhas no teste são salvas em logs de teste](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 |**Definir o tamanho máximo de arquivo para o arquivo de log:** você pode editar o arquivo de configuração XML associado ao serviço do controlador de teste para especificar o tamanho de arquivo máximo que deseja usar para o arquivo de log.|Modifique `<add key="LogSizeLimitInMegs" value="20"/>` no arquivo de configuração XML *QTCcontroller.exe.config*.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Definir configurações de execução de teste de carga](../test/configure-load-test-run-settings.md)

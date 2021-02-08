@@ -4,18 +4,18 @@ description: Saiba como Visual Studio Tools for AI é um ambiente de desenvolvim
 ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: overview
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b660881b18efca4ec81b3f8f31e8dd64870d4d0
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 683eba117e78d5e21e1bc2022a68505f35aa35ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099161"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841361"
 ---
 # <a name="overview-of-visual-studio-tools-for-ai"></a>Visão geral do Visual Studio Tools for AI
 
@@ -41,5 +41,5 @@ Procure exemplos no [repositório de exemplos](https://github.com/Microsoft/samp
 
 Para saber mais sobre Visual Studio Tools for AI, incluindo requisitos de sistema e opções de suporte, consulte a página [sobre Visual Studio Tools for ai](about-ai-tools.md) .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 [Extensibilidade do Visual Studio](../extensibility/index.yml?view=vs-2017&preserve-view=true)

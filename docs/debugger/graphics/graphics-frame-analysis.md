@@ -8,15 +8,15 @@ f1_keywords:
 - vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f87686290842e0bbc3c575b5c72e3d1eeb24f351
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 4e97d0c840f6dfd49a0fb94f8f881ed690ef57c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727717"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841114"
 ---
 # <a name="graphics-frame-analysis"></a>Análise de quadro de gráficos
 Use Análise de Quadros de Gráficos no Analisador de Gráficos do Visual Studio para analisar e otimizar o desempenho de renderização do seu jogo ou aplicativo Direct3D.

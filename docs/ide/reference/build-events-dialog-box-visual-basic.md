@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 3a81a7c7-39f9-47a8-ba5a-b351227f380e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 42b7837dd5253d29ecbd0085ae6159a981fcf15c
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 6ce6bb21e00470203c5a47dbb0f102c43d0ac0bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136635"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836404"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>Caixa de diálogo de Eventos de Build (Visual Basic)
 
@@ -48,13 +48,13 @@ Especifica comandos a serem executados após o fim do build. Para digitar comand
 
 Especifica as condições para o evento de pós-build ser executado, conforme mostrado na tabela a seguir.
 
-|Opção|Resultado|
+|Opção|Result|
 |------------|------------|
 |**Always**|O evento de pós-build será executado independentemente de o build ser bem-sucedido.|
 |**Na compilação bem-sucedida**|O evento de pós-build será executado se o build for bem-sucedido. O evento será executado mesmo para um projeto atualizado, desde que o build seja bem-sucedido. Essa é a configuração padrão.|
 |**Quando o build atualizar a saída do projeto**|O evento de pós-build só será executado quando o arquivo de saída do compilador (.exe ou .dll) for diferente do arquivo de saída anterior do compilador. Um evento de pós-build não será executado se um projeto for atualizado.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Página de Compilação, Designer de Projeto (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Como especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)

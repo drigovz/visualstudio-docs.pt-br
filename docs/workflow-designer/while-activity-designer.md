@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: ea008091-2e4c-4f64-bfa5-afb919552446
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e78d4f2e6aa332c9dfd5faebf834e4f5015c454
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9447d32f17283e7123e2f99490acc49c1613360d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433694"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837990"
 ---
 # <a name="while-activity-designer"></a>Quando designer de atividades
 
@@ -31,7 +31,7 @@ A tabela a seguir mostra as propriedades mais úteis de atividade de <xref:Syste
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Especifica o nome amigável do designer de atividade de <xref:System.Activities.Statements.While> no cabeçalho. O valor padrão é quando. O valor pode ser editado na janela **Propriedades** ou diretamente no cabeçalho do designer de atividade.<br /><br /> Embora não seja necessário <xref:System.Activities.Activity.DisplayName%2A> restrita, é uma prática recomendada usar um.|
 |<xref:System.Activities.Statements.While.Body%2A>|Falso|Contém a atividade a ser executada enquanto o <xref:System.Activities.Statements.While.Condition%2A> é avaliado como **true**.|
-|<xref:System.Activities.Statements.While.Condition%2A>|Verdadeiro|Contém a expressão Visual Basic que é avaliada para determinar se a atividade no deve <xref:System.Activities.Statements.While.Body%2A> ser executada.|
+|<xref:System.Activities.Statements.While.Condition%2A>|True|Contém a expressão Visual Basic que é avaliada para determinar se a atividade no deve <xref:System.Activities.Statements.While.Body%2A> ser executada.|
 
 ## <a name="see-also"></a>Confira também
 

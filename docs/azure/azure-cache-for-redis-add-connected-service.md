@@ -2,18 +2,18 @@
 title: Adicionar o cache do Azure para Redis usando os serviços conectados | Microsoft Docs
 description: Adicionar o cache do Azure para suporte do Redis ao seu aplicativo usando o Visual Studio para adicionar um serviço conectado
 author: AngelosP
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: ad233d51e271dfbacb80b7f5f2792d546a8a3e0a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: dd08cc9cc44b0866d718fe03392e99d5fa6467b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903047"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841161"
 ---
 # <a name="add-azure-cache-for-redis-by-using-visual-studio-connected-services"></a>Adicionar o cache do Azure para Redis usando os serviços conectados do Visual Studio
 

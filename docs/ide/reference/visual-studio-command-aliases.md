@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dda564939652a09b64fec65747ca14d1315b3f1
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 54a33d56542065311b2614bad72593132b7908cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96561065"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836196"
 ---
 # <a name="visual-studio-command-aliases"></a>Aliases de comando do Visual Studio
 
@@ -46,7 +46,7 @@ A tabela a seguir contém uma lista de aliases de comando predefinidos do Visual
 |Alternar Ponto de Interrupção|bp|Debug.ToggleBreakPoint|
 |janela de Pilha de Chamadas|CallStack|Debug.CallStack|
 |Limpar Indicadores|ClearBook|Edit.ClearBookmarks|
-|Fechar|Fechar|File.Close|
+|Feche|Feche|File.Close|
 |Fechar Todos os Documentos|CloseAll|Window.CloseAllDocuments|
 |Limpar Tudo|cls|Edit.ClearAll|
 |Modo de comando|cmd|View.CommandWindow|
@@ -80,7 +80,7 @@ A tabela a seguir contém uma lista de aliases de comando predefinidos do Visual
 |Excluir linha|LineDel|Edit.LineDelete|
 |Listar Membros|ListMembers|Edit.ListMembers|
 |Janela Locais|Locais|Debug.Locals|
-|[Comando de saída da janela comando de log](../../ide/reference/log-command-window-output-command.md)|Registro|Tools.LogCommandWindowOutput|
+|[Comando de saída da janela comando de log](../../ide/reference/log-command-window-output-command.md)|Log|Tools.LogCommandWindowOutput|
 |Modo de marca da janela Comando|marca|Tools.CommandWindowMarkMode|
 |Janela Memória|Memória Memory1|Debug.Memory1|
 |Janela Memória 2|Memory2|Debug.Memory2|
@@ -101,7 +101,7 @@ A tabela a seguir contém uma lista de aliases de comando predefinidos do Visual
 |Imprimir arquivo|print|File.Print|
 |Janela Propriedades|props|View.PropertiesWindow|
 |Parar|q|Debug.StopDebugging|
-|Refaz|refazer|Edit.Redo|
+|Refazer|refazer|Edit.Redo|
 |Janela Registros|registros|Debug.Registers|
 |Executar até o cursor|rtc|Debug.RunToCursor|
 |Salvar Itens Selecionados|Salvar|File.SaveSelectedItems|
@@ -127,7 +127,7 @@ A tabela a seguir contém uma lista de aliases de comando predefinidos do Visual
 |Listar Processos|&#124;|Debug.ListProcesses|
 |[Comando listar threads](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela de comando](../../ide/reference/command-window.md)

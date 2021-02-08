@@ -4,18 +4,18 @@ description: Descreve como instalar ferramentas de inteligência artificial do V
 keywords: ia, visual studio
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: ffa8c7634c0d97dd24ff69814ae73ad5ff12928b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdbabcc9288a2f878b4c8cd86dbba97922f471c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800197"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841439"
 ---
 # <a name="installation"></a>Instalação
 

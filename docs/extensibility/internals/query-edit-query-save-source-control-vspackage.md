@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed1bb5d1f805f81ba4f124f425fbd93f706eb830
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: e320d6f7b6126736719eb2a428d47a39a61730ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875876"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837262"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Editar e salvar consulta (VSPackage de controle do código-fonte)
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] os editores podem difundir eventos de salvamento de consulta de edição de consulta (QEQS). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] O stub de controle do código-fonte implementa o serviço QEQS, para que ele seja o destinatário de eventos de QEQS. Esses eventos são então delegados para o VSPackage de controle do código-fonte ativo no momento. O controle do código-fonte ativo VSPackage implementa o <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> e seus métodos. Os métodos da `IVsQueryEditQuerySave2` interface são normalmente chamados imediatamente antes de um documento ser editado pela primeira vez e imediatamente antes de um documento ser salvo.

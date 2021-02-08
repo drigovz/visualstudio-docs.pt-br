@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c647c502-a9f0-48e0-a430-976744a5fa51
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5919ac657d828e87e48b8cfb3f4f643e1187f701
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 04a480daae7f5883cad9fa74e9d51d4df0f4485f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150581"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840958"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Como: usar a janela threads GPU (C++)
 Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão sendo executadas no GPU no aplicativo que você está depurando. Para obter mais informações sobre aplicativos executados na GPU, consulte [C++ amp Visão geral](/cpp/parallel/amp/cpp-amp-overview).

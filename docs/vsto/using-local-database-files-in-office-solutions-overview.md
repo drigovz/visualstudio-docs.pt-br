@@ -13,15 +13,15 @@ helpviewer_keywords:
 - local data [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1a3166a88080eaee1042187c171c4938d236058a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 857038700a29f423250f006e743152bceea43c14
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526561"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838224"
 ---
 # <a name="use-local-database-files-in-office-solutions-overview"></a>Visão geral de usar arquivos de banco de dados local em soluções do Office
   Você pode incluir um arquivo de banco de dados, como um arquivo SQL Server Express (*. MDF*) ou um arquivo Microsoft Office Access (*. mdb*), em sua solução do Office. Isso permite que os usuários finais mantenham um banco de dados local em situações em que a manutenção de um banco de dados centralizado não seja necessária, por exemplo, em uma solução de inventário local que é usada somente em um único computador.
@@ -39,7 +39,7 @@ ms.locfileid: "97526561"
 ## <a name="local-database-files-and-caching-the-dataset"></a>Arquivos de banco de dados local e armazenando em cache o DataSet
  Em soluções de nível de documento para Microsoft Office Excel e Microsoft Office Word, você pode armazenar em cache os conjuntos de armazenamento no documento marcando a instância do conjunto de linhas com o atributo <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> . Quando você adiciona o arquivo de banco de dados ao seu projeto usando o **Assistente de configuração de fonte de dados**, um dataset tipado é adicionado automaticamente ao seu projeto. Raramente é necessário aplicar <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> a esse conjunto de dados, pois eles já são locais no computador do usuário. Para obter mais informações, consulte [armazenar dados em cache](../vsto/caching-data.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Como: popular documentos com dados de um banco de dado](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 - [Como: atualizar uma fonte de dados com dados de um controle de host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

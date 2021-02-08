@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Choose Toolbox Items dialog box, WPF Components tab
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b9727d335607f15101222e40be193de2315b7dc
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: d23418cd784b9e0b7c916c1e5629a6da012b9d0b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871321"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836391"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Escolher itens da Caixa de Ferramentas, Componentes do WPF
 
@@ -83,7 +83,7 @@ Além disso, se os metadados em tempo de design são aplicados ao controle perso
 
 É possível referenciar os controles diretamente no modo de exibição XAML, mapeando o namespace e o assembly do controle.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Caixa de Ferramentas](../../ide/reference/toolbox.md)
 - [Introdução ao WPF](../../designers/getting-started-with-wpf.md)

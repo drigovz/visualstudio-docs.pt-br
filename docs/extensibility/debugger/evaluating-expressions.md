@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b43fc91de129407f2fd01e12951cffee4028186f
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 4a9b8db832207eff93e08f123db57b4beef4eb7f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914589"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840594"
 ---
 # <a name="evaluate-expressions"></a>Avaliar expressões
 As expressões são criadas a partir de cadeias de caracteres passadas das janelas **automáticos**, de **inspeção**, **QuickWatch** ou **imediatas** . Quando uma expressão é avaliada, ela gera uma cadeia de caracteres imprimível que contém o nome e o tipo de variável ou argumento e seu valor. Essa cadeia de caracteres é exibida na janela do IDE correspondente.
@@ -33,7 +33,7 @@ As expressões são criadas a partir de cadeias de caracteres passadas das janel
 
  Para habilitar a avaliação de expressão, um DE deve implementar as interfaces [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) e [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) . A avaliação síncrona e assíncrona requer a implementação do método [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Quadros de pilha](../../extensibility/debugger/stack-frames.md)
 - [Contexto de avaliação da expressão](../../extensibility/debugger/expression-evaluation-context.md)
 - [Tarefas de depuração](../../extensibility/debugger/debugging-tasks.md)

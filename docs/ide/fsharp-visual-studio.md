@@ -9,15 +9,15 @@ f1_keywords:
 - fs.ProjectPropertiesDebug
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: c0ce6e68fa36f3b13474306ddd1d8304d640c0ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a97bd1010a9c739c253f9b5f0a536800fd1f8b69
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507970"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838611"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Desenvolver com o Visual F# no Visual Studio
 
@@ -63,7 +63,7 @@ O **Designer de Projeto** consiste no agrupamento de várias páginas de proprie
 |Página do Designer de Projeto|Links relacionados|Descrição|
 | - |-------------|-----------|
 |Aplicativo|[Página Aplicativo, Designer de Projeto](reference/application-page-project-designer-csharp.md)|Permite que você especifique configurações e propriedades no nível do aplicativo, como se estivesse criando uma biblioteca ou um arquivo executável, qual é a versão de destino do .NET para o aplicativo e informações sobre o local de armazenamento dos arquivos de recurso usados pelo aplicativo.|
-|Build|[Página de build, Designer de Projeto](reference/build-page-project-designer-csharp.md)|Permite que você controle como o código é compilado.|
+|Compilação|[Página de build, Designer de Projeto](reference/build-page-project-designer-csharp.md)|Permite que você controle como o código é compilado.|
 |Eventos de compilação|[Página Eventos de Build, Designer de Projeto](reference/build-events-page-project-designer-csharp.md)|Permite que você especifique os comandos a serem executados antes ou depois de uma compilação.|
 |Depurar|[Página de Depuração, Designer de Projeto](reference/debug-page-project-designer.md)|Permite que você controle como o aplicativo é executado durante a depuração. Isso inclui os comandos a serem usados e o diretório inicial do aplicativo, bem como os modos de depuração especiais que você deseja habilitar, como o código nativo e o SQL.|
 |Pacote (somente SDK do .NET)|N/D|Permite que você defina metadados do Pacote NuGet durante a publicação como um pacote NuGet.|
@@ -76,8 +76,8 @@ A seguinte tabela resume as configurações específicas do F#:
 
 |Página do Designer de Projeto|Configuração|Descrição|
 | - |-------|-----------|
-|Build|Gerar chamadas da parte final|Se ela estiver selecionada, habilitará o uso da instrução MSIL (Microsoft Intermediate Language) da parte final. Isso faz com que o registro de ativação seja reutilizado para funções recursivas da parte final. Equivalente à opção do compilador `--tailcalls`.|
-|Build|Outros sinalizadores|Permite que você especifique opções adicionais de linha de comando do compilador.|
+|Compilação|Gerar chamadas da parte final|Se ela estiver selecionada, habilitará o uso da instrução MSIL (Microsoft Intermediate Language) da parte final. Isso faz com que o registro de ativação seja reutilizado para funções recursivas da parte final. Equivalente à opção do compilador `--tailcalls`.|
+|Compilação|Outros sinalizadores|Permite que você especifique opções adicionais de linha de comando do compilador.|
 
 ## <a name="code-and-text-editor-features"></a>Recursos do editor de código e texto
 

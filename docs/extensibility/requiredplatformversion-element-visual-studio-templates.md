@@ -8,15 +8,15 @@ ms.topic: reference
 ms.assetid: 6f0e4986-3157-4bba-aed3-c28413ebe976
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 811cf013c7337e032f9ee5a37f9bc38329dff240
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d182d308f852dda05f20f4ea30d3536850e20e90
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037732"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837015"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>Elemento RequiredPlatformVersion (modelos do Visual Studio)
 
@@ -36,15 +36,15 @@ Especifica a versão mínima do sistema operacional que o modelo de projeto requ
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
 
- nenhuma.
+ Nenhum.
 
 ### <a name="attributes"></a>Atributos
 
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
 
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 

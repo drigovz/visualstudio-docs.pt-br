@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e9a8a241-cd21-4d4e-999a-283554c288b1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e73c64d17aee48cdb67a110e93aa556f112a1014
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d3ec09994f6998f87daafc690b1908b31e54706b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915226"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840646"
 ---
 # <a name="enter-break-mode"></a>Entrar no modo de interrupção
 As informações a seguir descrevem o processo que ocorre quando um ponto de interrupção é encontrado após a depuração em uma função, em execução na linha de código-fonte que tem o cursor em si ou em execução em um ponto de interrupção.
@@ -43,5 +43,5 @@ As informações a seguir descrevem o processo que ocorre quando um ponto de int
 
     - [IDebugStackFrame2:: GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) para obter informações de memória
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Chamando eventos do depurador](../../extensibility/debugger/calling-debugger-events.md)

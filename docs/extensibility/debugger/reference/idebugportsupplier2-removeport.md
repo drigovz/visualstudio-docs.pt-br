@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f5c1fbf2-9084-46f2-a682-7db963928df2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9a23301395fe875efe66936d737d9b2bad0accb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 192bee4a40adb9f876b4d7c7812b10c357972ace
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840347"
 ---
 # <a name="idebugportsupplier2removeport"></a>IDebugPortSupplier2::RemovePort
 Remove uma porta.
@@ -28,13 +28,13 @@ Remove uma porta.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT RemovePort( 
+HRESULT RemovePort( 
    IDebugPort2* pPort
 );
 ```
 
 ```csharp
-int RemovePort( 
+int RemovePort( 
    IDebugPort2 pPort
 );
 ```
@@ -43,12 +43,12 @@ int RemovePort( 
 `pPort`\
 no Um objeto [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) que representa a porta a ser removida.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
  Esse método remove a porta da lista interna de portas ativas do fornecedor da porta.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

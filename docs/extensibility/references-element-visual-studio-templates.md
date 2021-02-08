@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 1969146d-46bf-422d-8d46-0e9493925003
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2576a56bf223fd1b3a1ba4903595cc25144011ec
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 6a9c2cc5d8827f6419472e5fd84add4d9c9f5228
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903737"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837171"
 ---
 # <a name="references-element-visual-studio-templates"></a>Elemento References (modelos do Visual Studio)
 Agrupa as referências de assembly que o modelo adiciona aos projetos.
@@ -43,7 +43,7 @@ Agrupa as referências de assembly que o modelo adiciona aos projetos.
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
 
@@ -83,6 +83,6 @@ Agrupa as referências de assembly que o modelo adiciona aos projetos.
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)

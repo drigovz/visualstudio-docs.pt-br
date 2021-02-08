@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a646e4f0-767d-4cd1-8e1a-9a2aa210a1b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e099798ff5fcc96e798742b16ba88e522a4bc0b
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: d34ce48d9543107831ec358a9cf7eeed74d2787b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205054"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839658"
 ---
 # <a name="legacy-language-service-features-1"></a>Recursos do serviço de linguagem herdada 1
 Um serviço de linguagem MPF (Managed Package Framework) pode dar suporte A um ou mais [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] recursos, como realce de sintaxe, IntelliSense e validação de ponto de interrupção. Cada recurso pode ser implementado independentemente dos outros, mas todos exigem um analisador e um scanner, exceto o realce de sintaxe, que requer apenas um scanner.

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], VBA compared to
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4d07975061a7b2f5f655bf7f4339671f28fe14c9
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a07711fd854bd0dc035cab776f713701d5d85200
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526414"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838107"
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Soluções do VBA e do Office no Visual Studio comparadas
   O Microsoft Visual Basic for Applications (VBA) usa código não gerenciado que é totalmente integrado aos aplicativos do Office. Microsoft Office projetos criados usando o Visual Studio permitem que você aproveite as ferramentas de design do .NET Framework e do Visual Studio.
@@ -47,7 +47,7 @@ ms.locfileid: "97526414"
 ## <a name="combine-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>Combine soluções do VBA e soluções do Office criadas usando o Visual Studio
  Você pode chamar o código VBA das soluções do Office criadas usando o Visual Studio e também pode chamar o código nas soluções do Office criadas usando o Visual Studio do VBA. A técnica específica difere dependendo se sua solução do Office é um suplemento do VSTO ou uma personalização no nível do documento. Para obter mais informações, consulte [chamar código em suplementos do VSTO de outras soluções do Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md) e [combinar personalizações do VBA e no nível do documento](../vsto/combining-vba-and-document-level-customizations.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)
 - [Chamar código em suplementos do VSTO de outras soluções do Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
 - [Combine personalizações do VBA e no nível do documento](../vsto/combining-vba-and-document-level-customizations.md)

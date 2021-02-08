@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d012908e59be8b82e34ff68cdab1945c5bd2de8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10c04daf8ffea8266c874dfb0fb805e551942bc9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700403"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836755"
 ---
 # <a name="sccrunscc-function"></a>Função SccRunScc
 Essa função invoca a ferramenta de administração do controle do código-fonte.
@@ -50,7 +50,7 @@ no Número de arquivos especificados na `lpFileNames` matriz.
 
 no Matriz de nomes de arquivo selecionados.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
 
 |Valor|Descrição|
@@ -68,7 +68,7 @@ no Matriz de nomes de arquivo selecionados.
 
  Essa função é chamada com uma contagem e uma matriz de nomes de arquivo para os arquivos selecionados no momento. Se a ferramenta de administração oferecer suporte a ela, a lista de arquivos poderá ser usada para preselecionar arquivos na interface de administração; caso contrário, a lista poderá ser ignorada.
 
- Essa função é normalmente invocada quando o usuário seleciona **a \<Source Control Server> inicialização** no **File**  ->  menu**controle de origem** do arquivo. Essa opção de menu **Iniciar** pode ser sempre desabilitada ou até mesmo oculta com a definição de uma entrada de registro. Consulte [como: instalar um plug-in de controle do código-fonte](../extensibility/internals/how-to-install-a-source-control-plug-in.md) para obter detalhes. Essa função será chamada somente se [SccInitialize](../extensibility/sccinitialize-function.md) retornar o `SCC_CAP_RUNSCC` bit de recurso (consulte os [sinalizadores de capacidade](../extensibility/capability-flags.md) para obter detalhes sobre esse e outros bits de funcionalidade).
+ Essa função é normalmente invocada quando o usuário seleciona **a \<Source Control Server> inicialização** no   ->  menu **controle de origem** do arquivo. Essa opção de menu **Iniciar** pode ser sempre desabilitada ou até mesmo oculta com a definição de uma entrada de registro. Consulte [como: instalar um plug-in de controle do código-fonte](../extensibility/internals/how-to-install-a-source-control-plug-in.md) para obter detalhes. Essa função será chamada somente se [SccInitialize](../extensibility/sccinitialize-function.md) retornar o `SCC_CAP_RUNSCC` bit de recurso (consulte os [sinalizadores de capacidade](../extensibility/capability-flags.md) para obter detalhes sobre esse e outros bits de funcionalidade).
 
 ## <a name="see-also"></a>Confira também
 - [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

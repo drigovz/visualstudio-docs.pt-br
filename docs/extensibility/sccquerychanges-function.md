@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec335d808c287decb75bf759d5a3795d98962579
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd69183b290fa194d87dff79d69596dd65ec19ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700492"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836716"
 ---
 # <a name="sccquerychanges-function"></a>Função SccQueryChanges
 Essa função enumera uma determinada lista de arquivos, fornecendo informações sobre alterações de nome para cada arquivo por meio de uma função de retorno de chamada.
@@ -25,7 +25,7 @@ Essa função enumera uma determinada lista de arquivos, fornecendo informaçõe
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-SCCRTN SccQueryChanges(
+SCCRTN SccQueryChanges(
    LPVOID           pContext,
    LONG             nFiles,
    LPCSTR*          lpFileNames,
@@ -55,7 +55,7 @@ no Função de retorno de chamada para chamar cada nome de arquivo na lista (con
 
 no Valor que será passado inalterado para a função de retorno de chamada.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
 
 |Valor|Descrição|

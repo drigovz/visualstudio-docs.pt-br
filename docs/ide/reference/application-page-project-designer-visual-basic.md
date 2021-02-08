@@ -12,21 +12,21 @@ helpviewer_keywords:
 - Application page in Project Designer
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 675c3fbaaf1a3e49648befebca4927299649b057
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 986179e66335403cda85ba48d1652ac95b9f8171
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871412"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836521"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Página de Aplicativo, Designer de Projeto (Visual Basic)
 
 Use a página **Aplicativo** do Designer de Projeto para especificar as propriedades e configurações de aplicativo de um projeto.
 
-Para acessar a página **Aplicativo**, escolha um nó de projeto (não o nó **Solução**) no **Gerenciador de Soluções**. Em seguida, escolha Propriedades do **projeto**  >  **Properties** na barra de menus. Quando o **Designer de Projeto** for exibido, selecione a guia **Aplicativo**.
+Para acessar a página **Aplicativo**, escolha um nó de projeto (não o nó **Solução**) no **Gerenciador de Soluções**. Em seguida, escolha Propriedades do **projeto**  >   na barra de menus. Quando o **Designer de Projeto** for exibido, selecione a guia **Aplicativo**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -94,7 +94,7 @@ Se **Habilitar estrutura de aplicativo** estiver desmarcado, essa lista se torna
 
 **Objeto de inicialização** define o ponto de entrada a ser chamado quando o aplicativo é carregado. Geralmente, isso é definido como o principal formulário em seu aplicativo ou como o procedimento `Sub Main` que deve ser executado quando o aplicativo é iniciado. Como as bibliotecas de classe não têm um ponto de entrada, sua única opção para essa propriedade é **(Nenhum)**. Para obter mais informações, consulte [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
-### <a name="icon"></a>Ícone
+### <a name="icon"></a>ícone
 
 Define o arquivo .ico que você deseja usar como o ícone do programa. Selecione **\<Browse...>** para procurar um gráfico existente. Consulte [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (ou [-win32icon (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)) para obter mais informações. Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
@@ -104,7 +104,7 @@ Clique neste botão para exibir a [Caixa de diálogo de Informações do Assembl
 
 ### <a name="enable-application-framework"></a>Habilitar estrutura do aplicativo
 
-Especifica se um projeto usará a estrutura de aplicativo. A configuração dessa opção afeta as opções disponíveis no objeto de inicialização do **formulário de inicialização** / **Startup object**.
+Especifica se um projeto usará a estrutura de aplicativo. A configuração dessa opção afeta as opções disponíveis no objeto de inicialização do **formulário de inicialização** / .
 
 Se essa caixa de seleção estiver selecionada, seu aplicativo usará o padrão `Sub Main`. Marcar essa caixa de seleção habilita os recursos na seção **Propriedades da estrutura dos aplicativos do Windows** e também exige que você selecione um formulário de inicialização.
 

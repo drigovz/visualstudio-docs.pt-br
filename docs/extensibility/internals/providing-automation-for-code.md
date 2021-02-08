@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 21cb3e63-f25c-404b-bc1d-a32ad0fdd4d5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd8d0745ae971f4039ffccf3431614325236e63f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 41dca5d7a3d2a95ae9b89feb73fb7655b8923eb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875850"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837210"
 ---
 # <a name="providing-automation-for-code"></a>Fornecendo automação de código
 Não é necessário criar um modelo de automação para seu código. O SDK do ambiente não fornece um exemplo para fazer isso. Para obter informações sobre modelos de código, consulte o <xref:EnvDTE.CodeModel> objeto.
@@ -34,5 +34,5 @@ Não é necessário criar um modelo de automação para seu código. O SDK do am
 
  Se você quiser adicionar recursos, como métodos ou propriedades, que não estão disponíveis no padrão `CodeModel` e nas `FileCodeModel` interfaces, crie sua própria interface que herda do padrão. Certifique-se de documentá-lo com seu sistema de projeto para que os usuários finais saibam que procurar por ele. Você retorna a interface padrão, mas o usuário pode chamar o `QueryInterface` método ou converter para sua interface, se for conhecido como existir.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Visão geral do modelo de automação](../../extensibility/internals/automation-model-overview.md)

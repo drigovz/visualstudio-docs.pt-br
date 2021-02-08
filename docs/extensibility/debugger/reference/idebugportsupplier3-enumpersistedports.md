@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1c3dead3-5d6c-4067-8418-4015f0b0dd07
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 92b31a6b6898b0031e4a01d5a6433d0ce77e64f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09b1fabaeb5bf887eedaa53d57bdeb3604bf2257
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840321"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 Esse método recupera um objeto que permite a enumeração da lista de portas persistentes.
@@ -28,16 +28,16 @@ Esse método recupera um objeto que permite a enumeração da lista de portas pe
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT EnumPersistedPorts(
-   BSTR_ARRAY         PortNames,
-   IEnumDebugPorts2** ppEnum
+HRESULT EnumPersistedPorts(
+   BSTR_ARRAY         PortNames,
+   IEnumDebugPorts2** ppEnum
 );
 ```
 
 ```csharp
-int EnumPersistedPorts(
-   BSTR_ARRAY           PortNames,
-   out IEnumDebugPorts2 ppEnum
+int EnumPersistedPorts(
+   BSTR_ARRAY           PortNames,
+   out IEnumDebugPorts2 ppEnum
 );
 ```
 
@@ -48,13 +48,13 @@ no Uma estrutura de [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-
 `ppEnum`\
 fora Um objeto que implementa a interface [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
  As portas persistentes são carregadas quando um fornecedor de porta é instanciado e salvo quando o fornecedor da porta é destruído.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)
 - [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)

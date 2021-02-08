@@ -4,19 +4,19 @@ description: executar um modelo do tensorflow em uma vm de aprendizagem profunda
 keywords: ia, visual studio, máquina virtual de aprendizagem profunda
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd833a687591ba4f49e785746381f9a5d738f5e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f6aef2d0cf8fe727036dda91256ac0330e15d37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80638765"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841309"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Treinar um modelo do TensorFlow na nuvem
 

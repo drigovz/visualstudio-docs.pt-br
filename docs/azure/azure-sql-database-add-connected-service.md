@@ -2,18 +2,18 @@
 title: Adicionar uma conexão ao banco de dados SQL do Azure | Microsoft Docs
 description: Adicionar a conexão de banco de dados SQL do Azure ao seu aplicativo usando os serviços conectados do Visual Studio
 author: AngelosP
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 4d720c51d7245d60d40c286c71976132a119a56f
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 9e4a695a26e17e20fbd19081b863d9f108fc16b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902864"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841192"
 ---
 # <a name="add-a-connection-to-azure-sql-database"></a>Adicionar uma conexão ao banco de dados SQL do Azure
 

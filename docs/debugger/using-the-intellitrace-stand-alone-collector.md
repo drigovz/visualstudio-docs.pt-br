@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1bde9807-8219-4a2a-a440-ac5ee5178159
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cbdd7e948aaafff8e90aa8e67907c9a53471b05c
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 251b15edc838a1231e017d8f23b04f8bbb773692
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150074"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840867"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Usando o coletor autônomo do IntelliTrace (C#, Visual Basic)
 
@@ -72,7 +72,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
 5. [Coletar os dados de um aplicativo da web ou do SharePoint](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     - ou -
+     -ou-
 
      [Coletar dados de um aplicativo gerenciado](#BKMK_Collect_Data_from_Executables)
 
@@ -197,7 +197,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       - ou -
+       -ou-
 
    - Para configurar permissões com o Windows Explorer (ou o Explorador de Arquivos):
 
@@ -402,5 +402,5 @@ Você pode obter dados do IntelliTrace de uma sessão de depuração do IntelliT
 ### <a name="forums"></a>Fóruns
  [Depurador do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home)
 
-### <a name="videos"></a>Vídeos
+### <a name="videos"></a>vídeos
  [Vídeo do Channel 9: coleta e análise de dados do IntelliTrace](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)

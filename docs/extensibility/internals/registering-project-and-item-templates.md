@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 999b435719113883201b7619daca9a84d095294e
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: cc268236a10ab3f6be660b0e69a82a8f656f8910
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875265"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837230"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrando modelos de projeto e item
 Os tipos de projeto devem registrar os diretórios em que os modelos de projeto e de item de projeto estão localizados. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa as informações de registro associadas aos tipos de projeto para determinar o que mostrar nas caixas de diálogo **Adicionar novo projeto** e **Adicionar novo item** .
@@ -39,7 +39,7 @@ Os tipos de projeto devem registrar os diretórios em que os modelos de projeto 
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|Nome|Tipo|Descrição|
+|Nome|Type|Descrição|
 |----------|----------|-----------------|
 |@|REG_SZ|Nome padrão dos projetos deste tipo.|
 |DisplayName|REG_SZ|ID de recurso do nome a ser recuperado da DLL satélite registrada em pacotes.|
@@ -57,7 +57,7 @@ Os tipos de projeto devem registrar os diretórios em que os modelos de projeto 
 "SortPriority"=dword:00000064
 ```
 
-| Nome | Tipo | Descrição |
+| Nome | Type | Descrição |
 |--------------------------|-----------| - |
 | @ | REG_SZ | ID do recurso para adicionar modelos de item. |
 | TemplatesDir | REG_SZ | Caminho dos itens de projeto exibidos na caixa de diálogo para o assistente **Adicionar novo item** . |
@@ -84,7 +84,7 @@ Os tipos de projeto devem registrar os diretórios em que os modelos de projeto 
 "SortPriority"=dword:00000064
 ```
 
-|Nome|Tipo|Descrição|
+|Nome|Type|Descrição|
 |----------|----------|-----------------|
 |CommonFindFilesFilter|REG_DWORD|Torna o filtro um dos filtros comuns na caixa de diálogo **localizar nos arquivos** . Os filtros comuns são listados na lista filtro antes dos filtros não marcados como comuns.|
 |CommonOpenFilesFilter|REG_DWORD|Torna o filtro um dos filtros comuns na caixa de diálogo **Abrir arquivo** . Os filtros comuns são listados na lista filtro antes dos filtros não marcados como comuns.|

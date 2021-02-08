@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d55d5055-7386-4037-bf22-4c3e434a99ca
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: be3f53c12b5562377cd79267d6e216a1435859a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a194797f5959f4a41ec36bc95690c4f677df717
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724660"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840399"
 ---
 # <a name="idebugportsupplier2getport"></a>IDebugPortSupplier2::GetPort
 Obtém uma porta de um fornecedor de porta.
@@ -28,14 +28,14 @@ Obtém uma porta de um fornecedor de porta.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetPort( 
+HRESULT GetPort( 
    REFGUID       guidPort,
    IDebugPort2** ppPort
 );
 ```
 
 ```csharp
-int GetPort( 
+int GetPort( 
    ref Guid        guidPort,
    out IDebugPort2 ppPort
 );
@@ -48,9 +48,9 @@ no GUID (identificador global exclusivo) da porta.
 `ppPort`\
 fora Retorna um objeto [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) que representa a porta.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna `E_PORTSUPPLIER_NO_PORT` se não existir nenhuma porta com o identificador fornecido.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

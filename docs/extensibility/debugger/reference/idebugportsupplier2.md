@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 37067324-2ea6-4a01-8829-a6e9c7a70068
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddce454e6634d8cc177019e9d30b0ffcc7e7f1cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf9cd3cb82e2b14811a8ec52a651248e2990ae27
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724480"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840360"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 Essa interface fornece portas para o SDM (Gerenciador de depuração de sessão).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugPortSupplier2 : IUnknown
@@ -80,8 +80,8 @@ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Confira também
-- [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
+## <a name="see-also"></a>Consulte também
+- [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)
 - [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)
 - [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

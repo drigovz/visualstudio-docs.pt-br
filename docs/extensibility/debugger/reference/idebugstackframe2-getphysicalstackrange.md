@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2f6992e2-ac1c-433f-83b7-a7f83a4ce63d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3df924c6c8a4373082d61575e4ad8a7ec3f161d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c4c4bbc468403aaf94aca1b5133a732e0c050b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719661"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837470"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 Obtém uma representação dependente de computador do intervalo de endereços físicos associados a um quadro de pilha.
@@ -28,14 +28,14 @@ Obtém uma representação dependente de computador do intervalo de endereços f
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetPhysicalStackRange ( 
+HRESULT GetPhysicalStackRange ( 
    UINT64* paddrMin,
    UINT64* paddrMax
 );
 ```
 
 ```csharp
-int GetPhysicalStackRange ( 
+int GetPhysicalStackRange ( 
    out ulong paddrMin,
    out ulong paddrMax
 );
@@ -48,7 +48,7 @@ fora Retorna o endereço físico mais baixo associado a esse quadro de pilha.
 `paddrMax`\
 fora Retorna o endereço físico mais alto associado a esse quadro de pilhas.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
@@ -56,5 +56,5 @@ fora Retorna o endereço físico mais alto associado a esse quadro de pilhas.
 
  Supõe-se que a pilha de chamadas cresce, ou seja, que novos quadros de pilha são adicionados em endereços de memória cada vez mais baixos. Uma arquitetura de tempo de execução deve fornecer intervalos de pilha física que correspondam a essa suposição.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

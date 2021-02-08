@@ -1,24 +1,24 @@
 ---
-title: Usar serviços de nuvem (suporte estendido) (visualização)
+title: Usar Serviços de Nuvem (suporte estendido) (versão prévia)
 description: Aprenda agora a criar e implantar serviços de nuvem (suporte estendido) usando o Azure Resource Manager com o Visual Studio
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 01/25/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: ff45cf05a6811c02881c26f76193d4c1f5a5e735
-ms.sourcegitcommit: 7d34ab111614ae6bde5fb3c2bb91dd79e29a0a78
+ms.openlocfilehash: 39a76f4c76afb2ed0c738adfc477807eebfdbc61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98750271"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841127"
 ---
 # <a name="create-and-deploy-to-cloud-services-extended-support-in-visual-studio-preview"></a>Criar e implantar serviços de nuvem (suporte estendido) no Visual Studio (visualização)
 
-A partir do [Visual Studio 2019 versão 16,9](https://visualstudio.microsoft.com/vs/preview) (atualmente em visualização), você pode trabalhar com os serviços de nuvem usando Azure Resource Manager, o que simplifica bastante e permite a manutenção e o gerenciamento de recursos do Azure. Isso é habilitado por um novo serviço do Azure referido como *serviços de nuvem (suporte estendido)*. Você pode publicar um serviço de nuvem existente em serviços de nuvem (suporte estendido). Para obter informações sobre este serviço do Azure, consulte a [documentação dos serviços de nuvem (suporte estendido)](/azure/cloud-services-extended-support/overview).
+A partir do [Visual Studio 2019 versão 16,9](https://visualstudio.microsoft.com/vs/preview) (atualmente em visualização), você pode trabalhar com os serviços de nuvem usando Azure Resource Manager, o que simplifica bastante e permite a manutenção e o gerenciamento de recursos do Azure. Isso é habilitado por um novo serviço do Azure referido como *serviços de nuvem (suporte estendido)*. Você pode publicar um serviço de nuvem existente nos Serviços de Nuvem (suporte estendido). Para obter informações sobre esse serviço do Azure, confira [Documentação dos Serviços de Nuvem (suporte estendido)](/azure/cloud-services-extended-support/overview).
 
 ## <a name="publish-to-cloud-services-extended-support"></a>Publicar em serviços de nuvem (suporte estendido)
 
@@ -30,7 +30,7 @@ Antes de publicar um serviço de nuvem do Azure clássico para serviços de nuve
 
 ### <a name="to-publish-a-classic-azure-cloud-service-project-to-cloud-services-extended-support"></a>Para publicar um projeto de serviço de nuvem do Azure clássico para serviços de nuvem (suporte estendido)
 
-1. Os serviços de nuvem (suporte estendido) estão atualmente em versão prévia. Registrar recurso para sua assinatura como a seguir:
+1. No momento, os Serviços de Nuvem (suporte estendido) estão em versão prévia. Registrar recurso para sua assinatura como a seguir:
 
    ```azurepowershell-interactive
    Register-AzProviderFeature -FeatureName CloudServices -ProviderNamespace Microsoft.Compute
@@ -48,7 +48,7 @@ Antes de publicar um serviço de nuvem do Azure clássico para serviços de nuve
 
 1. **Escolha sua assinatura** - escolha a assinatura a ser usada na sua implantação.
 
-1. Escolha **Avançar** para ir para a página **configurações** .
+1. Escolha **Avançar** para passar para a página **Configurações**.
 
    ![Configurações Comuns](./media/cloud-services-extended-support/publish-settings.png)
 
@@ -62,23 +62,23 @@ Antes de publicar um serviço de nuvem do Azure clássico para serviços de nuve
 
 1. **Configuração de serviço** - selecione **Nuvem** ou **Local**.
 
-1. **Conta de armazenamento** -selecione a conta de armazenamento a ser usada para essa implantação ou **crie uma nova** para criar uma conta de armazenamento. A região é exibida entre parênteses para cada conta de armazenamento. É recomendável que o local de data center da conta de armazenamento seja o mesmo local de data center do serviço de nuvem (Configurações Comuns).
+1. **Conta de armazenamento** – selecione a conta de armazenamento a ser usada para essa implantação ou **Criar** para criar uma conta de armazenamento. A região é exibida entre parênteses para cada conta de armazenamento. É recomendável que o local de data center da conta de armazenamento seja o mesmo local de data center do serviço de nuvem (Configurações Comuns).
 
    A conta de armazenamento do Azure armazena o pacote para a implantação do aplicativo.
 
 1. **Key Vault** -especifique o cofre de chaves que contém os segredos para esse serviço de nuvem (suporte estendido). Isso será habilitado se a área de trabalho remota estiver habilitada ou se os certificados forem adicionados à configuração.
 
-1. **Habilitar Área de Trabalho Remota para todas as funções** – marque essa opção se desejar se conectar remotamente ao serviço. Você será solicitado a especificar as credenciais.
+1. **Habilitar Área de Trabalho Remota para todas as funções** – marque essa opção se desejar se conectar remotamente ao serviço. Você deverá especificar as credenciais.
 
-   ![Configurações da área de trabalho remota](./media/cloud-services-extended-support/remote-desktop-configuration.png)
+   ![Configurações da Área de Trabalho Remota](./media/cloud-services-extended-support/remote-desktop-configuration.png)
 
-1. Escolha **Avançar** para ir para a página **configurações de diagnóstico** .
+1. Escolha **Avançar** para passar para a página **Configurações de diagnóstico**.
 
    ![Configurações de diagnóstico](./media/cloud-services-extended-support/diagnostics-settings.png)
 
    O diagnóstico permite solucionar problemas de um serviço de nuvem do Azure (suporte estendido). Para saber mais sobre diagnósticos, confira [Configuração do Diagnóstico para os Serviço de Nuvem e as Máquinas Virtuais do Azure](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md). Para saber mais sobre o Application Insights, confira [O que é o Application Insights?](/azure/application-insights/app-insights-overview).
 
-1. Escolha **Avançar** para ir para a página **Resumo** .
+1. Escolha **Avançar** para passar para a página **Resumo**.
 
    ![Resumo](./media/cloud-services-extended-support/publish-summary.png)
 
@@ -87,9 +87,9 @@ Antes de publicar um serviço de nuvem do Azure clássico para serviços de nuve
    > [!Note]
    > O perfil de publicação aparece em Gerenciador de Soluções no Visual Studio, e as configurações de perfil são gravadas em um arquivo com uma extensão *. azurePubxml* . As configurações são salvas como atributos de marcas XML.
 
-1. Depois de definir todas as configurações da implantação do projeto, selecione **Publicar** na parte inferior da caixa de diálogo. Você pode monitorar o status do processo na janela saída do **log de atividades do Azure** no Visual Studio. Escolha o link **abrir no portal** para 
+1. Depois de definir todas as configurações da implantação do projeto, selecione **Publicar** na parte inferior da caixa de diálogo. Você pode monitorar o status do processo na Janela de Saída do **Log de Atividades do Azure** no Visual Studio. Escolha o link **abrir no portal** para 
 
-Parabéns! Você publicou seu projeto de serviço de nuvem (suporte estendido) no Azure. Para publicar novamente com as mesmas configurações, você pode reutilizar o perfil de publicação ou repetir essas etapas para criar um novo. O modelo de Azure Resource Manager (ARM) e os parâmetros que são usados para implantação são salvos na pasta *bin/ \<configuration\> /Publish* .
+Parabéns! Você publicou seu projeto de serviço de nuvem (suporte estendido) no Azure. Para fazer a publicação novamente com as mesmas configurações, você pode reutilizar o perfil de publicação ou repetir essas etapas para criar um. O modelo de Azure Resource Manager (ARM) e os parâmetros que são usados para implantação são salvos na pasta *bin/ \<configuration\> /Publish* .
 
 ## <a name="clean-up-azure-resources"></a>Limpar recursos do Azure
 
@@ -97,4 +97,4 @@ Para limpar os recursos do Azure criados seguindo este tutorial, vá para o [por
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Configure a integração contínua (CI) usando o botão **Configurar** na tela **publicar** . Para obter mais informações, consulte a [documentação do Azure pipelines](/azure/devops/pipelines/?view=azure-devops&preserve-view=true).
+Configure a CI (integração contínua) usando o botão **Configurar** na tela **Publicar**. Para obter mais informações, confira a [documentação do Azure Pipelines](/azure/devops/pipelines/?view=azure-devops&preserve-view=true).

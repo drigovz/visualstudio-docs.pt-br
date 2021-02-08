@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 712c3c5b5c0b94932abba602a841977e0601d3b3
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6a33d393cfd904bdae890f4ead9a4c25a6451460
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837288"
 ---
 # <a name="properties-window-overview"></a>Visão geral da janela Propriedades
 A janela **Propriedades** é usada para exibir propriedades de objetos selecionados nos dois tipos principais de Windows disponíveis no ambiente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] desenvolvimento integrado (IDE). Esses dois tipos de janelas são:
@@ -50,6 +50,6 @@ A janela **Propriedades** é usada para exibir propriedades de objetos seleciona
 
  Para obter mais informações sobre `IDispatch` o, consulte a biblioteca MSDN.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Estendendo propriedades](../../extensibility/internals/extending-properties.md)
 - [Interfaces e campos da janela Propriedades](../../extensibility/internals/properties-window-fields-and-interfaces.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e19d9090126a13b657f53c20d7ec44a793d5376
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 22ce6497b820e1dcd37315f9d74cb97de4cc34e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913887"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837730"
 ---
 # <a name="attach-after-a-launch"></a>Anexar após uma inicialização
 Depois que um programa é iniciado, a sessão de depuração está pronta para anexar o mecanismo DE depuração (DE) ao programa dito.
@@ -45,7 +45,7 @@ Depois que um programa é iniciado, a sessão de depuração está pronta para a
 
  O DE agora está anexado ao programa e pronto para enviar qualquer evento de inicialização.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Anexando diretamente a um programa](../../extensibility/debugger/attaching-directly-to-a-program.md)
 - [Notificando a porta](../../extensibility/debugger/notifying-the-port.md)
 - [Tarefas de depuração](../../extensibility/debugger/debugging-tasks.md)

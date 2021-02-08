@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: 6ccb1269-d55f-49c4-920d-baedf7de2888
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 38dc7452493ebcd39bee5ee55c59fc70e0a6493c
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 0fbf6e002254f10ca983cfaff4198008aaa9724a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727652"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841101"
 ---
 # <a name="graphics-log-document"></a>Documentos de log de gráfico
 O documento de log de gráficos é o registro de eventos gráficos que ocorreram enquanto seu aplicativo estava em execução em uma sessão de diagnóstico de gráficos. Depois de ser registrado, você pode examinar o log em Analisador de Gráficos do Visual Studio para diagnosticar problemas de desempenho e renderização.
@@ -106,6 +106,6 @@ O documento de log de gráficos é o registro de eventos gráficos que ocorreram
 | **Hora de início da sessão** | A data e hora em que a sessão de captura começou. |
 | **Tamanho** | O tamanho do documento de log de gráficos. |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Passo a passo: Objetos ausentes devido ao sombreamento de vértice](walkthrough-missing-objects-due-to-vertex-shading.md)
 - [Passo a passo: Como depurar erros de renderização devido ao sombreamento](walkthrough-debugging-rendering-errors-due-to-shading.md)

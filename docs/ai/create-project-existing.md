@@ -4,18 +4,18 @@ description: Saiba como usar Visual Studio Tools for AI para colocar o código P
 ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: ef62b0a5f3fac00aba0648008a47d35e0adc89f4
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 7746d8dd39bb4400a7779ad43e489cf6e7475fb9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099252"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841621"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>Criar um projeto IA com base no código existente
 
@@ -43,6 +43,6 @@ Depois de [instalar as Ferramentas do Visual Studio para IA](installation.md), �
 > [!div class="nextstepaction"]
 > [Tutorial: trabalhando com o Python no Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Identificar manualmente um ambiente de Python existente](../python/managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)

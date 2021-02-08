@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f015c21f71f064f2302660ebc75ef00a245348c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d45d8d93f26ef01fb184811a87b4f4fcc4483340
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724440"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840230"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 Essa interface permite que um chamador determine se um fornecedor de porta pode preservar portas (gravando-as em disco) entre invocações do depurador e, em seguida, obter uma lista dessas portas preservadas.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugPortSupplier3 : IDebugPortSupplier2
@@ -55,5 +55,5 @@ IDebugPortSupplier3 : IDebugPortSupplier2
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
-- [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

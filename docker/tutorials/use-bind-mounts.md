@@ -4,17 +4,17 @@ description: Descreve como usar montagens de associação para controlar o ponto
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 6474179a0714f2407ac37e724b997139206a91fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57cb56d0d9a93d0f11e4047f6e25b64841c47e93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178174"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841673"
 ---
 # <a name="use-bind-mounts"></a>Usar montagens de associação
 
