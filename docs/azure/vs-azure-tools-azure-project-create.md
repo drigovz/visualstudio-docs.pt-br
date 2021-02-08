@@ -2,17 +2,17 @@
 title: Criar um projeto de serviço de nuvem do Azure
 description: Saiba como criar um projeto de serviço de nuvem do Azure com o Visual Studio
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 667d3a0a4e4642c348f6a0dd6663a30fcf704d14
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d652172bde2ecd3aea4bb027e46173eaa5fe7b17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902786"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844496"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Criar um projeto de serviço de nuvem do Azure com o Visual Studio
 
@@ -58,10 +58,10 @@ Esta seção explica como criar um projeto de serviço de nuvem do Azure no Visu
 
 O projeto do Azure no Visual Studio tem associações aos projetos de função na solução. Ele também inclui o *arquivo de definição de serviço* e o *arquivo de configuração de serviço*:
 
-- **Arquivo de definição de serviço** – define as configurações de tempo de execução para seu aplicativo, incluindo quais funções são necessárias, pontos de extremidade e tamanho da máquina virtual.
+- **Arquivo de definição de serviço** – define as configurações em tempo de execução do aplicativo, incluindo quais funções são necessárias, pontos de extremidade e tamanho da máquina virtual.
 - **Arquivo de configuração de serviço** – configura quantas instâncias de uma função são executadas e os valores das configurações definidas para uma função.
 
-Para obter mais informações sobre esses arquivos, consulte [Configurar as funções para um serviço de nuvem do Azure com o Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md).
+Para obter mais informações sobre esses arquivos, consulte [configurar as funções para um serviço de nuvem do Azure com o Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 - [Gerenciando funções em projetos de serviço de nuvem do Azure com o Visual Studio](./vs-azure-tools-cloud-service-project-managing-roles.md)

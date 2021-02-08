@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b0ee695e1108bf9f1c6069084a0826ee23bf37d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4750b4d1a9c1f972c0445dfcf3ea2f4fa5be328
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737778"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842649"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
 Fornece o motivo pelo qual um ponto de interrupção foi desassociado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```cpp
 enum enum_BP_UNBOUND_REASON {
@@ -69,6 +69,6 @@ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)

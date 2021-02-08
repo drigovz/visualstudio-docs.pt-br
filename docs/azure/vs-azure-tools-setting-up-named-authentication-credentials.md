@@ -2,17 +2,17 @@
 title: Configurando credenciais de autenticação nomeadas | Microsoft Docs
 description: Saiba como fornecer credenciais que o Visual Studio possa usar para autenticar solicitações no Azure, de modo que você possa publicar um aplicativo no Azure do Visual Studio ou monitorar um serviço de nuvem existente.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 059ac654f13ed833e80464e74e18a6cb8b0f8132
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: bd4c1864539d915e34b286debb3f6b2f739049d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901993"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843794"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Configurar credenciais de autenticação nomeadas
 
@@ -36,6 +36,6 @@ Se você deseja criar um certificado por conta própria, pode consultar as instr
 ## <a name="next-steps"></a>Próximas etapas
 
 - [Visão geral de aplicativos Web](/azure/app-service/)
-- [Implantar seu aplicativo no serviço Azure App](/azure/app-service/app-service-deploy-local-git)
+- [Implantar seu aplicativo no Serviço de Aplicativo do Azure](/azure/app-service/app-service-deploy-local-git)
 - [Implantar Trabalhos Web usando o Visual Studio](/azure/app-service/websites-dotnet-deploy-webjobs)
 - [Criar e implantar um serviço de nuvem](/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

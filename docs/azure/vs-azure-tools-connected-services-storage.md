@@ -2,18 +2,18 @@
 title: Adicionar o Armazenamento do Azure usando serviços conectados | Microsoft Docs
 description: Adicionar uma dependência do serviço de armazenamento do Azure ao seu aplicativo usando os serviços conectados do Visual Studio
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: d169940d6deffdf67bcbcb94e9f647631d0f606a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: a2aa5a0453b6a05c261d3cac853ab8265fb4e453
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902630"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844340"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Adicionando armazenamento do Azure usando os serviços conectados do Visual Studio
 
@@ -116,7 +116,7 @@ A funcionalidade do serviço conectado adiciona todas as referências necessári
 1. O serviço conectado de armazenamento aparece sob o nó **Referências de Serviço** do seu projeto.
 :::moniker-end
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Fórum do Armazenamento do Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Documentação do Armazenamento do Azure](/azure/storage/)

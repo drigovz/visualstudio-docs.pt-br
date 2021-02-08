@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 72a8483a-af0b-4403-8b0d-ee9ad71ee435
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 277d78b225afae13d73e091c1228e181df30e532
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 7a1f0e7aa0e6ee7523f8ff7ae1f3c8e34745a3af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205587"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842702"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Definições do projeto para uma configuração de depuração do Visual Basic
 Você pode alterar as configurações do projeto para uma configuração de depuração do [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] na janela **Páginas de Propriedades**, conforme discutido em [Configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram onde localizar as configurações relacionadas ao depurador na janela **Páginas de Propriedades**.
@@ -58,5 +58,5 @@ Você pode alterar as configurações do projeto para uma configuração de depu
 | **Definir a constante DEBUG** | A definição desse símbolo permite compilar de forma condicional as funções de saída da [classe Debug](/dotnet/api/system.diagnostics.debug). Com esse símbolo definido, os métodos da classe Debug geram saída para a [janela de saída](../ide/reference/output-window.md). Sem esse símbolo, os métodos da classe de depuração não são compilados e nenhuma saída será gerada. Esse símbolo deve ser definido na versão de depuração e não na versão de lançamento. Definir esse símbolo em uma versão de lançamento cria código desnecessário que deixa a execução do seu programa mais lenta. |
 | **Definir constante de rastreamento** | Definir esse símbolo permite compilar de forma condicional as funções de saída da [classe Trace](/dotnet/api/system.diagnostics.trace). Com esse símbolo definido, os métodos da classe Trace geram saída para a [janela de saída](../ide/reference/output-window.md). Sem esse símbolo, os métodos da classe de rastreamento não são compilados e nenhuma saída de rastreamento será gerada. Esse símbolo é definido por padrão para as versões de depuração e lançamento. |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Configurações e preparação do depurador](../debugger/debugger-settings-and-preparation.md)

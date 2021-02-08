@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ce08d475c75f197180417dcf94f9d52f59fb2e7b
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: bff5aee4337a464498fc4ac027eb05b2da912b61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93133930"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844886"
 ---
 # <a name="work-with-shaders"></a>Trabalhar com sombreadores
 
@@ -25,7 +25,7 @@ Você pode usar o Designer de Sombreadores baseado em gráfico no Visual Studio 
 
 A *sombreador* é um programa de computador que executa cálculos de gráficos — por exemplo, transformações de vértice ou cor do pixel — e normalmente é executado em uma unidade de processamento gráfico (GPU) em vez da CPU. Porque a maioria dos estágios de pipeline gráfica tradicional, função fixa agora são executados por programas de sombreador, você pode usá-los para criar um pipeline é específico para as necessidades de seu aplicativo.
 
-Os tipos mais comuns de sombreadores são *sombreadores de vértices* , que executam cálculos por vértice e substituir a transformação de função fixa e circuitos de iluminação no hardware de gráficos não programável, e *sombreadores de pixel* , que executam cálculos por pixel que determinam a cor de um pixel e substitua os circuitos de combinador de cores de função fixa em hardware de gráficos não programáveis. O hardware de gráficos moderno tornou ainda mais tipos de sombreadores possíveis — *sombreadores convexos* , *sombreadores de domínio* e *sombreadores de geometria* para cálculos de gráficos e *sombreadores de computação* para cálculos não gráficos. Nenhum desses estágios está disponível no hardware de gráficos não programável. Sombreadores foram criados usando uma linguagem semelhante ao assembly fornecido paralela de dados (SIMD) e instruções centrados em gráficos (produto de ponto). Agora, sombreadores normalmente são criados usando linguagens de alto nível, como C como HLSL (linguagem de sombreador de alto nível).
+Os tipos mais comuns de sombreadores são *sombreadores de vértices*, que executam cálculos por vértice e substituir a transformação de função fixa e circuitos de iluminação no hardware de gráficos não programável, e *sombreadores de pixel*, que executam cálculos por pixel que determinam a cor de um pixel e substitua os circuitos de combinador de cores de função fixa em hardware de gráficos não programáveis. O hardware de gráficos moderno tornou ainda mais tipos de sombreadores possíveis —*sombreadores convexos*, *sombreadores de domínio* e *sombreadores de geometria* para cálculos de gráficos e *sombreadores de computação* para cálculos não gráficos. Nenhum desses estágios está disponível no hardware de gráficos não programável. Sombreadores foram criados usando uma linguagem semelhante ao assembly fornecido paralela de dados (SIMD) e instruções centrados em gráficos (produto de ponto). Agora, sombreadores normalmente são criados usando linguagens de alto nível, como C como HLSL (linguagem de sombreador de alto nível).
 
 Você pode usar o Designer de Sombreadores criar sombreadores de pixel interativamente em vez de inserir e compilar o código. No Designer de Sombreadores, um sombreador é definido por um número de nós que representam conexões entre nós que representam o fluxo de valores de dados e os resultados intermediários por meio do sombreador e operações e dados. Usando essa abordagem e a visualização em tempo real no Designer de Sombreadores, você pode visualizar a execução do sombreador mais facilmente e variações de sombreador interessante por meio de experimentação "descobrir".
 
@@ -37,7 +37,7 @@ Como DGSL é compatível com DGML, você pode usar ferramentas projetadas para a
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Designer de sombreador](../designers/shader-designer.md)|Descreve como usar o Designer de Sombreador do Visual Studio para trabalhar com sombreadores.|
 |[Nós do designer do sombreador](../designers/shader-designer-nodes.md)|Discute os tipos de nós de Designer de Sombreadores que você pode usar para obter efeitos gráficos.|

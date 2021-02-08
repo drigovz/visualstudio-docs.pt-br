@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5c07cc52-6d2d-42df-9d76-9f1f769641db
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7be649a5d65f88d8263bbe8950fda1a157855ed2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 808c2f57d0fdf8f5f629b21d3c02507eecd49bd6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732541"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842414"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 Determina se um atributo personalizado existe por nome.
@@ -28,7 +28,7 @@ Determina se um atributo personalizado existe por nome.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT IsCustomAttributeDefined( 
+HRESULT IsCustomAttributeDefined( 
    LPCOLESTR pszCustomAttributeName
 );
 ```
@@ -43,11 +43,11 @@ int IsCustomAttributeDefined(
 `pszCustomAttributeName`\
 no Uma cadeia de caracteres que contém o nome do atributo personalizado a ser localizado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Retorna S_OK se o atributo personalizado for definido nesse campo; caso contrário, retorna S_FALSE.
 
 ## <a name="remarks"></a>Comentários
  Para obter os bytes de atributo associados ao atributo personalizado, chame o método [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

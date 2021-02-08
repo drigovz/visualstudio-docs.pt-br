@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3fff9ae5-213c-46ea-a660-1d70acb6c922
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5f70557338a48931a3d109f345714d219f428f50
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 51b430a18a3d0934c16de19cbde82177a5f21f12
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136843"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836456"
 ---
 # <a name="build-events-page-project-designer-c"></a>Página Eventos de Build, Designer de Projeto (C#)
 
@@ -57,7 +57,7 @@ Especifica comandos a serem executados após o fim do build. Para digitar comand
 
 Especifica as condições a seguir para o evento de pós-build ser executado, conforme mostrado na tabela a seguir.
 
-|Opção|Resultado|
+|Opção|Result|
 |------------|------------|
 |**Always**|O evento de pós-build será executado independentemente de o build ser bem-sucedido.|
 |**Na compilação bem-sucedida**|O evento de pós-build será executado se o build for bem-sucedido. Assim, o evento será executado mesmo para um projeto atualizado, desde que o build seja bem-sucedido.|

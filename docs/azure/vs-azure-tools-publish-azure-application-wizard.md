@@ -2,17 +2,17 @@
 title: Publicar um serviço de nuvem do Azure
 description: Saiba como definir as diversas configurações no Assistente Publicar Aplicativo do Azure do Visual Studio
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 87082a0d4df4542f36b1ce95cba92d261a2b4d9e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f965d8e7f71ba34be9901d77fa4f0af881805bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844054"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Uso do Assistente Publicar Aplicativo do Azure do Visual Studio
 
@@ -51,7 +51,7 @@ Depois de desenvolver um aplicativo Web no Visual Studio, você poderá publicá
 
 ![Configurações Comuns](./media/vs-azure-tools-publish-azure-application-wizard/settings-common-settings.png)
 
-**Serviço de nuvem** - usando a lista suspensa, selecione um serviço de nuvem existente ou selecione **&lt;Criar Novo>** e crie um serviço de nuvem. O datacenter é exibido entre parênteses para cada serviço de nuvem. É aconselhável que o local do datacenter para o serviço de nuvem seja o mesmo local do datacenter para a conta de armazenamento (Configurações Avançadas).
+**Serviço de nuvem** -usando a lista suspensa, selecione um serviço de nuvem existente ou selecione **&lt; criar novo>** e crie um serviço de nuvem. O datacenter é exibido entre parênteses para cada serviço de nuvem. É aconselhável que o local do datacenter para o serviço de nuvem seja o mesmo local do datacenter para a conta de armazenamento (Configurações Avançadas).
 
 **Ambiente** - selecione **Produção** ou **Preparo**. Escolha o ambiente de preparo se quiser implantar o aplicativo em um ambiente de teste.
 
@@ -97,7 +97,7 @@ O Diagnóstico permite solucionar problemas de um serviço de nuvem do Azure (ou
 
 ![Página Resumo](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
-**Perfil de destino** - você pode optar por criar um perfil de publicação usando as configurações que escolheu. Por exemplo, você pode criar um perfil para um ambiente de teste e outro para produção. Para salvar esse perfil, escolha o ícone **Salvar** . O assistente cria o perfil e o salva no projeto do Visual Studio. Para modificar o nome do perfil, abra a lista **Perfil de destino** e, em seguida, escolha **&lt;Gerenciar…&gt;**.
+**Perfil de destino** - você pode optar por criar um perfil de publicação usando as configurações que escolheu. Por exemplo, você pode criar um perfil para um ambiente de teste e outro para produção. Para salvar esse perfil, escolha o ícone **Salvar** . O assistente cria o perfil e o salva no projeto do Visual Studio. Para modificar o nome do perfil, abra a lista **perfil de destino** e escolha **&lt; gerenciar... &gt;**.
 
    > [!Note]
    > O perfil de publicação aparece no Gerenciador de Soluções no Visual Studio, e as configurações do perfil são gravadas em um arquivo com a extensão .azurePubxml. As configurações são salvas como atributos de marcas XML.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fb100c3c-9c29-4d63-bd1f-a3e531cb395f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b99651811cedbdb8ec0eca5b766e6d75651dd5d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e71085da547b87389a8d787f24580a7610fd33f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723039"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844743"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
 Recupera uma lista de caminhos de código para uma determinada posição em um arquivo de origem.
@@ -28,7 +28,7 @@ Recupera uma lista de caminhos de código para uma determinada posição em um a
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT EnumCodePaths( 
+HRESULT EnumCodePaths( 
    LPCOLESTR            pszHint,
    IDebugCodeContext2*  pStart,
    IDebugStackFrame2*   pFrame,
@@ -39,7 +39,7 @@ HRESULT EnumCodePaths( 
 ```
 
 ```csharp
-int EnumCodePaths( 
+int EnumCodePaths( 
    string                 pszHint,
    IDebugCodeContext2     pStart,
    IDebugStackFrame2      pFrame,
@@ -68,7 +68,7 @@ fora Retorna um objeto [IEnumCodePaths2](../../../extensibility/debugger/referen
 `ppSafety`\
 fora Retorna um objeto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) que representa um contexto de código adicional a ser definido como um ponto de interrupção, caso o caminho de código escolhido seja ignorado. Isso pode acontecer no caso de uma expressão booliana de curto-circuito, por exemplo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

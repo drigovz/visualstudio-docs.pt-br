@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: dae0050a-a50a-4f35-bfbd-e538f537b20f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26387618b320ed56ce754e64698fbb1c4223f2f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9a0958614c8df326c20ad8030bb798447a5e62a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724317"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840152"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
 Fornece suporte para um fornecedor de porta selecionar e interagir com um servidor principal.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugPortSupplierEx2 : IUnknown
@@ -44,6 +44,6 @@ IDebugPortSupplierEx2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
-- [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

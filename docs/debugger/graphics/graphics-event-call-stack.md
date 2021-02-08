@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 8a30168d-8b39-4de1-b094-c7356ba101a3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 85712f2b8971b2b5284dab89d90eecec9010e9b4
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: c7c8d415da1de7be9cafdad6e5dea531dd59a7b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99845133"
 ---
 # <a name="graphics-event-call-stack"></a>Pilha de chamadas de gráfico
 A pilha de chamadas de evento de gráficos no Analisador de Gráficos do Visual Studio ajuda a mapear a relação entre eventos gráficos problemáticos e o código-fonte do seu aplicativo.
@@ -38,7 +38,7 @@ A pilha de chamadas de evento de gráficos no Analisador de Gráficos do Visual 
 |------------|-----------------|
 |**Nome**|Um símbolo que identifica a função que contém o site de chamada. O símbolo de depuração da função é exibido quando ela está disponível. Caso contrário, o deslocamento de função é exibido.|
 |**Arquivo**|O nome do arquivo do código-fonte ou arquivo de biblioteca que contém o site de chamada.|
-|**Localização**|O número de linha do site de chamada.|
+|**Localidade**|O número de linha do site de chamada.|
 
 ### <a name="links-to-graphics-objects"></a>Links a objetos de gráficos
  Para entender o evento de gráficos selecionado, talvez seja necessário obter informações sobre os objetos do Direct3D associados a ele. A janela **pilha de chamadas de evento de gráficos** fornece links para essas informações.

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae9090604a16196c43b80140395eb3401215d665
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: dc0acd64a61acac2cb30b9251bcb4e528c08f227
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761265"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840113"
 ---
 # <a name="image-library-viewer"></a>Visualizador da biblioteca de imagens
 A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carregar e Pesquisar manifestos de imagem, permitindo que o usuário manipule-os da mesma forma que o Visual Studio. O usuário pode alterar o plano de fundo, tamanhos, DPI, alto contraste e outras configurações. A ferramenta também exibe informações de carregamento para cada manifesto de imagem e exibe informações de origem para cada imagem no manifesto da imagem. Essa ferramenta é útil para:
@@ -148,7 +148,7 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
 
 |**Atributo**|**Definição**|
 |-|-|
-|Type|Necessária O tipo do recurso nativo, XAML ou PNG|
+|Tipo|Necessária O tipo do recurso nativo, XAML ou PNG|
 |ID|Necessária A parte da ID de número inteiro do recurso nativo|
 
  **ImageList**

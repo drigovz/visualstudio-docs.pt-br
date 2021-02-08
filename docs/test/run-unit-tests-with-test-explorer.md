@@ -7,15 +7,15 @@ f1_keywords:
 - vs.unittesting.testexplorer.overview
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 52a910bddd2f75c631f130dddee22f8b2e05510b
-ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
+ms.openlocfilehash: 05a850b0c88a39366805ff892fb698f637b3bbe1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99628039"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836326"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -387,7 +387,7 @@ O Gerenciador de testes pode tocar um som quando a execução de teste é conclu
 ![Caixa de diálogo som do Windows 10](../test/media/default-windows-10-sound-dialog.png)
 
 ::: moniker-end
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Teste de unidade em seu código](../test/unit-test-your-code.md)
 - [Depurar testes de unidade com o Gerenciador de Testes](../test/debug-unit-tests-with-test-explorer.md)

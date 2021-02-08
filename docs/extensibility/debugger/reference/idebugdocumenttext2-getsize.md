@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bf515a8f-dcee-4004-8f81-543d547ceaae
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: edc4a209537ca4bd54d3f6d9343d1496ab7c0e90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecb8257d2428222fd18d6cafdfde950cb743f293
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731583"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844860"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
 Recupera o tamanho do texto nesta posição no documento.
@@ -28,14 +28,14 @@ Recupera o tamanho do texto nesta posição no documento.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetSize( 
+HRESULT GetSize( 
    ULONG* pcNumLines,
    ULONG* pcNumChars
 );
 ```
 
 ```csharp
-int GetSize( 
+int GetSize( 
    ref uint pcNumLines,
    ref uint pcNumChars
 );
@@ -48,7 +48,7 @@ fora Retorna o número de linhas de texto.
 `pcNumChars`\
 fora Retorna o número de caracteres de texto.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
@@ -57,5 +57,5 @@ fora Retorna o número de caracteres de texto.
 
  [Somente C#] Ambos os parâmetros devem ser especificados.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

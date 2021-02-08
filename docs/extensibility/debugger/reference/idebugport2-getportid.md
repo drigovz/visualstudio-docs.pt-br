@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 837cb924-c113-4224-aa86-3e02b33dfa70
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 97b0134b083b3f9b4697ce26bc4bd57c0b455a63
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db16bd0f6320f8d6fdecd8592fdbdd4c30b90d15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725408"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844808"
 ---
 # <a name="idebugport2getportid"></a>IDebugPort2::GetPortId
 Obtém o identificador de porta.
@@ -28,13 +28,13 @@ Obtém o identificador de porta.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetPortId( 
+HRESULT GetPortId( 
    GUID* pguidPort
 );
 ```
 
 ```csharp
-int GetPortId( 
+int GetPortId( 
    out Guid pguidPort
 );
 ```
@@ -43,8 +43,8 @@ int GetPortId( 
 `pguidPort`\
 fora Retorna o GUID que identifica a porta.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

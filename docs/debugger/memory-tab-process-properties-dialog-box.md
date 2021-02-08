@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: a70785f2-5997-40ec-a90f-80a52449768b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 10fd47127abfd9cc476ed7029edd0dbbeb5501de
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 4a1bf0409dacdd6cb2f7de65462f637124a5cecd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903721"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99845016"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>Guia Memória, Caixa de diálogo Propriedades do Processo
 Use a guia **memória** para mostrar como um processo usa a memória. Para exibir a [caixa de diálogo Propriedades do processo](../debugger/process-properties-dialog-box.md), mova o foco para uma janela de [exibição de processos](../debugger/processes-view.md) . Selecione qualquer nó de processo na árvore e escolha **Propriedades** no menu **Exibir** .
 
  As configurações a seguir estão disponíveis na guia **memória** :
 
-|Entrada|Description|
+|Entrada|Descrição|
 |-----------|-----------------|
 |**Bytes Virtuais**|O tamanho atual (em bytes) do espaço de endereço virtual que o processo está usando. O uso do espaço de endereço virtual não implica necessariamente o uso correspondente do disco ou das páginas de memória principal. No entanto, o espaço virtual é finito e o uso excessivo pode limitar a capacidade do processo de carregar bibliotecas.|
 |**Bytes virtuais de pico**|O número máximo de bytes de espaço de endereço virtual que o processo usou em qualquer momento.|

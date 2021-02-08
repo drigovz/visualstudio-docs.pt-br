@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 34b2cf99-2e52-4757-8969-1d12ac517ec0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 28ff6065bbe83852b5acc3ffe253a0bdabcc67ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cfaf6dd332f17bd934a55f700e4d28096fba8b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725102"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844769"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 Inicia um arquivo executável.
@@ -28,7 +28,7 @@ Inicia um arquivo executável.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT LaunchSuspended( 
+HRESULT LaunchSuspended( 
    LPCOLESTR        pszExe,
    LPCOLESTR        pszArgs,
    LPCOLESTR        pszDir,
@@ -41,7 +41,7 @@ HRESULT LaunchSuspended( 
 ```
 
 ```csharp
-int LaunchSuspended( 
+int LaunchSuspended( 
    string             pszExe,
    string             pszArgs,
    string             pszDir,
@@ -78,7 +78,7 @@ no Identificador para um fluxo de saída de erro alternativo. Pode ser 0 se o re
 `ppPortProcess`\
 fora Retorna um objeto [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) que representa o processo iniciado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
@@ -90,4 +90,4 @@ fora Retorna um objeto [IDebugPendingBreakpoint2](../../../extensibility/debugge
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)
-- [Inicializando um programa](../../../extensibility/debugger/launching-a-program.md)
+- [Iniciando um programa](../../../extensibility/debugger/launching-a-program.md)

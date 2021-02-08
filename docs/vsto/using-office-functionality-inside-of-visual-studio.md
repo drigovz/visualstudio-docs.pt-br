@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office functionality inside Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c93994b233990e2362c62445909adb66a0eeeb9b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 258ea4529a558c91eb115b82b35def4ca4ab6561
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528398"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838230"
 ---
 # <a name="use-office-functionality-inside-of-visual-studio"></a>Usar a funcionalidade do Office dentro do Visual Studio
   Quando você cria um projeto de nível de documento, o documento e o aplicativo associado são hospedados dentro do Visual Studio para que você possa criar e trabalhar diretamente com o documento. Quando você tem um aplicativo Microsoft Office aberto no Visual Studio, ele geralmente funciona conforme o esperado. No entanto, algumas das funcionalidades do aplicativo são diferentes ou inacessíveis.
@@ -37,7 +37,7 @@ ms.locfileid: "97528398"
 ## <a name="password-protection"></a>Proteção por senha
  Microsoft Office documentos do Word e Microsoft Office pastas de trabalho do Excel podem ser definidos para que não possam ser abertos por alguém que não saiba a senha. A proteção por senha é tratada de forma diferente no Word e no Excel e pode afetar o processo de desenvolvimento. Para obter mais informações, consulte [proteção por senha em documentos do Office](../vsto/password-protection-on-office-documents.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Proteção de documentos em soluções de nível de documento](../vsto/document-protection-in-document-level-solutions.md)
 - [Visão geral do gerenciamento de direitos de informação e extensões de código gerenciado](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [Proteção por senha em documentos do Office](../vsto/password-protection-on-office-documents.md)

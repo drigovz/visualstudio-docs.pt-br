@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 572c15aa-1fd0-468c-b6be-9fa50e170914
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 12b15ed8aa02e53841b85245350735258e7ec11d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: efd053a846a7bf70f475db44788b14152498dc0b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348535"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843716"
 ---
 # <a name="automatic-feature-suspension"></a>Suspensão automática de recursos
 
@@ -67,7 +67,7 @@ Além disso, os caches usados para operações internas do Visual Studio também
 > [!NOTE]
 > O aviso de suspensão de recurso automático ocorre apenas uma vez por solução, não por sessão. Isso significa que, se você alternar de Visual Basic para Visual C# (ou vice-versa) e executar outra condição de memória insuficiente, poderá obter outro aviso de suspensão de recurso automático.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como: configurar o escopo de análise de código ao vivo para código gerenciado](./configure-live-code-analysis-scope-managed-code.md)
 - [Noções básicas sobre a coleta de lixo](/dotnet/standard/garbage-collection/fundamentals)

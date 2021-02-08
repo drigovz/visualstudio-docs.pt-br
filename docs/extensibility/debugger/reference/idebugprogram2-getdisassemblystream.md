@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: beda0da5-267e-4bf3-96c4-b659d29e2254
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2160f963ad1f3f37291519ced30b8096e33a6116
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e499d7b655cb79873b1cd3ef2954f054bba84f60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844691"
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
 Obtém o fluxo de desmontagem para este programa ou uma parte deste programa.
@@ -28,7 +28,7 @@ Obtém o fluxo de desmontagem para este programa ou uma parte deste programa.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetDisassemblyStream( 
+HRESULT GetDisassemblyStream( 
    DISASSEMBLY_STREAM_SCOPE   dwScope,
    IDebugCodeContext2*        pCodeContext,
    IDebugDisassemblyStream2** ppDisassemblyStream
@@ -36,7 +36,7 @@ HRESULT GetDisassemblyStream( 
 ```
 
 ```csharp
-int GetDisassemblyStream( 
+int GetDisassemblyStream( 
    enum_DISASSEMBLY_STREAM_SCOPE  dwScope,
    IDebugCodeContext2             pCodeContext,
    out IDebugDisassemblyStream2   ppDisassemblyStream
@@ -53,13 +53,13 @@ no Um objeto [IDebugCodeContext2](../../../extensibility/debugger/reference/ideb
 `ppDisassemblyStream`\
 fora Retorna um objeto [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) que representa o fluxo de desmontagem.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna `E_DISASM_NOTSUPPORTED` se a desmontagem não for suportada para esta arquitetura específica.
 
 ## <a name="remarks"></a>Comentários
  Se o `dwScopes` parâmetro tiver o `DSS_HUGE` sinalizador do conjunto de enumeração [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) , espera-se que a desmontagem retorne um grande número de instruções de desmontagem, por exemplo, para um arquivo ou módulo inteiro. Se o `DSS_HUGE` sinalizador não estiver definido, espera-se que a desmontagem seja confinada em uma região pequena, normalmente a de uma única função.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 11d26af4-1079-435e-96fa-d5269cbea8eb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8605f1cdd50b6e98d6e30a7b550cce1d22543ff9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f4a87f9cf0bf64378e6dd5acba504d2da7b5d92
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725470"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844795"
 ---
 # <a name="idebugpointerobject3"></a>IDebugPointerObject3
 > [!IMPORTANT]
@@ -23,7 +23,7 @@ ms.locfileid: "80725470"
 
  Representa um ponteiro em uma árvore de análise e estende a interface **IDebugPointerObject** .
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugPointerObject3 : IDebugPointerObject

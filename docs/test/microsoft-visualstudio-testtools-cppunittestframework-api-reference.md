@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 09/27/2019
 ms.topic: reference
 ms.author: corob
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: corob-msft
-ms.openlocfilehash: b552ff667d4b7aef5f982d4fb0cda78d65c98ed6
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 355259f784d496fae574a331382d03d3fbe5bfd6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329179"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844522"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Referência da API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
@@ -640,7 +640,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Teste de unidade em seu código](../test/unit-test-your-code.md)
 - [Escrever testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md)
