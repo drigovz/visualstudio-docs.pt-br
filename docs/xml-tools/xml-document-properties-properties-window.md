@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31098083383b1669e0fe79423c212f1f38208acc
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 1e12118f2f7f5d9189ca768f7be65a35b490eb54
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350225"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875010"
 ---
 # <a name="xml-document-properties-properties-window"></a>Propriedades de documento XML, janela Propriedades
 
@@ -30,7 +30,7 @@ A codificação de caractere para o arquivo. Alterar essa propriedade também al
 
 **Entrada**
 
-O documento de entrada associado com a folha de estilos XSLT. Ele é usado pelos comandos **Start XSLT** , por exemplo, **XML**  >  **Start XSLT sem depuração**. Um documento pode ser selecionado usando o botão procurar ( **...** ).
+O documento de entrada associado com a folha de estilos XSLT. Ele é usado pelos comandos **Start XSLT** , por exemplo, **XML**  >  **Start XSLT sem depuração**. Um documento pode ser selecionado usando o botão procurar (**...**).
 
 Essa propriedade só é visível quando um arquivo XSLT é aberto no editor.
 
@@ -52,6 +52,6 @@ O arquivo XSLT usado para transformar o documento quando os comandos **Iniciar D
 
 Ao editar um arquivo XSLT, essa propriedade pode ser usada para especificar que uma folha de estilos diferente deve ser usada quando o comando **Iniciar Depuração XSLT** ou **Iniciar XSLT sem depuração** está selecionado. Por exemplo, talvez você queira fazer isso quando estiver editando uma folha de estilos que está incluída em uma folha de estilos pai.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Editor de XML](../xml-tools/xml-editor.md)

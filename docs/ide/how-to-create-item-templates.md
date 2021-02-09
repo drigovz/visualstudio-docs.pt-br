@@ -8,13 +8,13 @@ helpviewer_keywords:
 - item templates [Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: abf058526a6ff48a37d4c7585e7deabe1decb14a
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+manager: jmartens
+ms.openlocfilehash: 3f8dc8ddb5cc17f2ac575ea023283f60f579ccbd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597269"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875387"
 ---
 # <a name="how-to-create-item-templates"></a>Como criar modelos de item
 
@@ -85,7 +85,7 @@ Você pode especificar que o modelo deve aparecer apenas para determinados subti
     - Banco de dados
     - Web
 
-Por exemplo: `<ProjectSubType>Database</ProjectSubType>`.
+Por exemplo, `<ProjectSubType>Database</ProjectSubType>`.
 
 O exemplo a seguir mostra um modelo de item para projetos do **Office**.
 

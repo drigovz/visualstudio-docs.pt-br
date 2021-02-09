@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 773dd34e-67d3-4997-8df9-b71e7f880d88
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e8efdc1a35e6129de7e33d28fa7592ead48e17e
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 74b4cfebc7a6160577f1e817c9171f2eae69533c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350121"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874750"
 ---
 # <a name="xslt-default-templates"></a>Modelos padrão XSLT
 
@@ -23,6 +23,6 @@ Um modelo padrão será usado durante XSLT que processa quando não há nenhuma 
 
 O depurador XSLT agora exibe o código de modelos de opção XSLT. Quando você percorre uma transformação XSLT, se um modelo padrão é usado, o depurador exibe o modelo padrão em uma janela. Isso permite que você percorrer o código de modelo padrão e os pontos de interrupção em suas declarações.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Depuração de XSLT](../xml-tools/debugging-xslt.md)

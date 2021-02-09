@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f8aa7daef6e427b7355eb7676db0728a4af4ca42
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 45d0bb8b47162966974499fed20c826b52dcfaa4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875075"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Passo a passo: Usar recursos do editor XML
 
@@ -32,7 +32,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
      Um novo arquivo é aberto no editor. O arquivo contém uma declaração XML padrão, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Na janela Propriedades do documento, clique no botão procurar ( **...** ) no campo **esquemas** .
+3. Na janela Propriedades do documento, clique no botão procurar (**...**) no campo **esquemas** .
 
      A caixa de diálogo **esquemas XSD** é exibida.
 
@@ -98,7 +98,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
 ## <a name="to-format-the-xml-document"></a>Para formatar o documento XML
 
-- Selecione o botão **Formatar documento** na barra de ferramentas do editor de XML ou pressione **Ctrl** + **E** , **D**.
+- Selecione o botão **Formatar documento** na barra de ferramentas do editor de XML ou pressione **Ctrl** + **E**,**D**.
 
    ![Botão Formatar documento XML no Visual Studio](media/format-xml-document.png)
 
@@ -106,7 +106,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
 ## <a name="to-save-the-xml-document"></a>Para salvar o documento XML
 
-1. No menu **arquivo** , selecione **Salvar como**.
+1. No menu **arquivo**, selecione **Salvar como**.
 
      A caixa de diálogo **salvar arquivo como** é exibida. O nome de arquivo padrão é *' xmlarquivo1 '*.
 
@@ -132,6 +132,6 @@ O seguinte arquivo de esquema é usado neste passo a passos:
 </xs:schema>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Editor de XML](../xml-tools/xml-editor.md)

@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 024a8659d95855c8154ed8d9bed231739648719e
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9e5d113718c2ecc73ad942dd58ddf92216fe6c83
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045798"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875114"
 ---
 # <a name="debugger-user-interface-xslt"></a>XSLT (interface do usuário do depurador)
 
@@ -41,7 +41,7 @@ Esta coluna identifica o tipo de dados de cada variável listada na coluna **nom
 
 A janela locais também exibe as variáveis predefinidos de contexto que acompanham o contexto de transformação XSLT. A tabela a seguir descreve as variáveis predefinidos de contexto usados pelo depurador XSLT.
 
-|Name|Descrição|
+|Nome|Descrição|
 |-|-----------------|
 |`last()`|O tamanho do contexto.|
 |`position()`|A posição, ou número de índice, o nó de contexto, relativo ao tamanho do contexto.|
@@ -58,7 +58,7 @@ O **lista de tarefas** lista todos os erros de compilação na folha de estilos.
 O **lista de tarefas** inclui todos os erros que ocorrem nos blocos de script no arquivo XSLT.
 
 > [!NOTE]
-> O depurador XSLT não tem avisos, então eles nunca aparecem na **lista de tarefas** .
+> O depurador XSLT não tem avisos, então eles nunca aparecem na **lista de tarefas**.
 
 ## <a name="breakpoints-window"></a>Janela Pontos de Interrupção
 
@@ -102,7 +102,7 @@ A janela de desmontagem mostra o código do assembly que é gerado pelo compilad
 
 Para obter mais informações, [como: usar a janela de desmontagem](../debugger/how-to-use-the-disassembly-window.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Depuração de XSLT](../xml-tools/debugging-xslt.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

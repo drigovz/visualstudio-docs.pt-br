@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0adf586831e21c2448931215d4ef4a89d16a63f8
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 377cdd9875ebc2fddd80c673e53ecb318d171e47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876435"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875556"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Suporte a ferramentas de navegação de símbolo
 As ferramentas **pesquisador de objetos**, **modo de exibição de classe**, **pesquisador de chamadas** e **Localizar resultados de símbolos** fornecem recursos de navegação de símbolos no Visual Studio. Essas ferramentas exibem modos de exibição de árvore hierárquica de símbolos e mostram as relações entre os símbolos na árvore. Os símbolos podem representar namespaces, objetos, classes, membros de classe e outros elementos de linguagem contidos em vários componentes. Os componentes incluem projetos do Visual Studio, componentes de .NET Framework externos e bibliotecas de tipo (. tlb). Para obter mais informações, consulte [exibindo a estrutura do código](../../ide/viewing-the-structure-of-code.md).

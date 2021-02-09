@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dc79d40c2cb363b79c2064bd71fb23dece04e143
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 330dbdfb6d6db8d33a2b8ea3caa7e1a840d84dd0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350238"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874893"
 ---
 # <a name="xml-editor-intellisense-features"></a>Recursos do IntelliSense o editor XML
 
@@ -89,7 +89,7 @@ Por exemplo, se você selecionar o elemento de `e:Book` de lista do IntelliSense
 
 ## <a name="brace-matching"></a>Correspondência de chaves
 
-O editor XML fornece a chave realçando para fornecer feedback imediato em elementos que apenas se você tiver fechado. Você também pode usar o atalho de teclado ( **Ctrl** + **]** ) para saltar de uma chave para a chave correspondente.
+O editor XML fornece a chave realçando para fornecer feedback imediato em elementos que apenas se você tiver fechado. Você também pode usar o atalho de teclado (**Ctrl** + **]**) para saltar de uma chave para a chave correspondente.
 
 O editor XML faz isso para os seguintes itens:
 
@@ -109,11 +109,11 @@ O editor XML faz isso para os seguintes itens:
 
 ## <a name="modify-the-intellisense-options"></a>Modificar as opções do IntelliSense
 
-Os recursos do IntelliSense e de preenchimento automático são ativados por padrão. No entanto, você pode alterar isso modificando as configurações de opções de **ferramentas**  >  **Options** .
+Os recursos do IntelliSense e de preenchimento automático são ativados por padrão. No entanto, você pode alterar isso modificando as configurações de opções de **ferramentas**  >   .
 
 A seção **inserção automática** da página **diversos** controla o seguinte comportamento:
 
-|Name|Descrição|
+|Nome|Descrição|
 |-|-----------------|
 |Fechar marcas|Insere fechar marcas para novos elementos.|
 |Citações de atributo|O valor do atributo das inserções que quando você digite um novo nome de atributo.|
@@ -123,11 +123,11 @@ A seção **inserção automática** da página **diversos** controla o seguinte
 
 1. Selecione **Opções** no menu **Ferramentas**.
 
-2. Expanda **Editor de texto** , expanda **XML** e selecione **diversos**.
+2. Expanda **Editor de texto**, expanda **XML** e selecione **diversos**.
 
 3. Faça as alterações na seção **inserção automática** e clique em **OK**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Editor de XML](../xml-tools/xml-editor.md)
 - [Usando o IntelliSense](../ide/using-intellisense.md)

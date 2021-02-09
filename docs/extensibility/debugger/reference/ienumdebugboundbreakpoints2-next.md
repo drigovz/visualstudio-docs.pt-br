@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cb3a249f-2282-4bdc-b6d8-a4ee4bfb8365
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 76b79e1bd49f24044a967bd72a52c91735f468ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 356de7a4aebd2cf005c766b46da404184f77a4d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717532"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875608"
 ---
 # <a name="ienumdebugboundbreakpoints2next"></a>IEnumDebugBoundBreakpoints2::Next
 Retorna o próximo conjunto de elementos da enumeração.
@@ -53,7 +53,7 @@ no O número de elementos a serem recuperados. Também especifica o tamanho máx
 `pceltFetched`\
 fora Retorna o número de elementos realmente retornados em `rgelt` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se menos do que o número solicitado de elementos puder ser retornado; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também

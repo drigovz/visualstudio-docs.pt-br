@@ -10,13 +10,13 @@ helpviewer_keywords:
 - item templates, creating multi-file item templates
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: a947d23bd7094e003bae3cfe880299bb3698d92e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+manager: jmartens
+ms.openlocfilehash: b375cf54dfe35928a35f991190c94b3d08685827
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597256"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875374"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Como criar modelos de item multiarquivos
 
@@ -38,7 +38,7 @@ Você pode criar um modelo de item multiarquivos da mesma maneira que se cria um
 
 1. Crie o modelo de item da mesma forma em que você criaria manualmente um modelo de item de arquivo único, mas inclua cada arquivo que constitui o item multiarquivos.
 
-1. No arquivo XML *. vstemplate* , adicione um `ProjectItem` elemento para cada arquivo individual e adicione um `TargetFileName` atributo a esse elemento. Defina o valor do `TargetFileName` atributo para *$fileinputname $. FileExtension*, em que *FileExtension* é a extensão de arquivo do arquivo que está sendo incluído no modelo. Por exemplo: 
+1. No arquivo XML *. vstemplate* , adicione um `ProjectItem` elemento para cada arquivo individual e adicione um `TargetFileName` atributo a esse elemento. Defina o valor do `TargetFileName` atributo para *$fileinputname $. FileExtension*, em que *FileExtension* é a extensão de arquivo do arquivo que está sendo incluído no modelo. Por exemplo:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">

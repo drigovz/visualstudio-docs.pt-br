@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c001b3ce308c9e991cee747bdcab3ad646b226ab
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ef515ce323322dee667dab5690b85b29af97c07d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847109"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875413"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Implantar uma solução do Office usando o Windows Installer
 
@@ -339,7 +339,7 @@ As instalações por usuário exigem apenas um instalador independente do Office
 |--------------|--------|
 |Valor da cadeia de caracteres<br /><br />|**FriendlyName**<br /><br />|
 |Valor DWORD<br /><br />|**LoadBehavior**<br /><br />|
-|Valor da cadeia de caracteres<br /><br />|**Manifesto**<br /><br />|
+|Valor da cadeia de caracteres<br /><br />|**Manifest**<br /><br />|
 
 8. Abra o menu de atalho para o valor **Descrição** e, em seguida, escolha **Modificar**.
 

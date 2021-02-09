@@ -6,13 +6,13 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 68018c625c5e406e2ba0d7fbfb138b05c53fff9c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+manager: jmartens
+ms.openlocfilehash: 94c8a26d75b92f9b8d51e3ca61f761985a5b4959
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351317"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875036"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Walkthrough: usar a hierarquia XSLT
 
@@ -48,7 +48,7 @@ O exemplo neste tópico demonstra a depuração em uma folha de estilos referenc
     </COLLECTION>
     ```
 
-1. Adicione o seguinte *xslincludefile. xsl* :
+1. Adicione o seguinte *xslincludefile. xsl*:
 
     ```xml
     <?xml version='1.0'?>
@@ -111,6 +111,6 @@ O exemplo neste tópico demonstra a depuração em uma folha de estilos referenc
 
 6. Quando o depurador parar na instrução `<xsl:include href="xslincludefile.xsl" />` , pressione o botão **Step Into** . A depuração pode continuar na folha de estilos referenciada. A hierarquia é visível e o designer o caminho correto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criador de perfil XSLT](../xml-tools/xslt-profiler.md)
