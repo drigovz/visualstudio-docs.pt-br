@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 34c0e949-1eb9-4108-9cb8-a3eb87fcf190
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9090c39d85519435d17c940ad21fd55d26904765
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfafb48aea95cd3ea79997fb2c84621396af210c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724978"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919834"
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
 Registra um programa que pode ser depurado com a porta em que está sendo executado.
@@ -28,13 +28,13 @@ Registra um programa que pode ser depurado com a porta em que está sendo execut
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT AddProgramNode( 
+HRESULT AddProgramNode( 
    IDebugProgramNode2* pProgramNode
 );
 ```
 
 ```csharp
-int AddProgramNode( 
+int AddProgramNode( 
    IDebugProgramNode2 pProgramNode
 );
 ```
@@ -43,7 +43,7 @@ int AddProgramNode( 
 `pProgramNode`\
 no Um objeto [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) que representa o programa a ser registrado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

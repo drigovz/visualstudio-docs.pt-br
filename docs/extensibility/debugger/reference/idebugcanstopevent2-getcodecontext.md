@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: eecf08b6-f9b7-4358-941b-3a448a92ac62
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94c129d7d50bc747291d8a178d73c06655e65414
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aefce11ba82cae7529ed1127784d70771add8302
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734567"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919979"
 ---
 # <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
 Obtém o contexto de código que descreve o local desse evento.
@@ -28,13 +28,13 @@ Obtém o contexto de código que descreve o local desse evento.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetCodeContext( 
+HRESULT GetCodeContext( 
    IDebugCodeContext2** ppCodeContext
 );
 ```
 
 ```csharp
-int GetCodeContext( 
+int GetCodeContext( 
    out IDebugCodeContext2 ppCodeContext
 );
 ```
@@ -43,7 +43,7 @@ int GetCodeContext( 
 `ppCodeContext`\
 fora Retorna o objeto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) que representa o local do código atual.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

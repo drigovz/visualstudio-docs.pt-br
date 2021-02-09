@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 38ff61e4-0120-42e8-971a-16be6050b425
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: be33249ef583776f613c6716143249e3ce31bc8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cbe3ecaf681a0fb88dab46b9c2dac2110b7beb4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716855"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919678"
 ---
 # <a name="ienumdebugfieldsreset"></a>IEnumDebugFields::Reset
 Esse método redefine a enumeração para o primeiro elemento.
@@ -38,7 +38,7 @@ int Reset();
 #### <a name="parameters"></a>Parâmetros
  Nenhum
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

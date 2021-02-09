@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cb39f025-66d8-4dc0-bef6-1bdc8e07db92
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 812c77522213791519057d43ca3e725b6660612d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 407bdffbe3a9fd60699692e2c2977159a3724bc9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731408"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919958"
 ---
 # <a name="idebugdocumenttextevents2onreplacetext"></a>IDebugDocumentTextEvents2::onReplaceText
 Notifica o pacote de depuração que o texto foi substituído no documento.
@@ -28,14 +28,14 @@ Notifica o pacote de depuração que o texto foi substituído no documento.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT onReplaceText( 
+HRESULT onReplaceText( 
    TEXT_POSITION pos,
    DWORD         dwNumToReplace
 );
 ```
 
 ```csharp
-int onReplaceText( 
+int onReplaceText( 
    enum_TEXT_POSITION pos,
    uint               dwNumToReplace
 );
@@ -48,7 +48,7 @@ no Um [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md
 `dwNumToReplace`\
 no Especifica o número de caracteres do texto que foram substituídos.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também

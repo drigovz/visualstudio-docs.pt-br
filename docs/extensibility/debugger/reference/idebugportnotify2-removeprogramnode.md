@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 3668157b-66d2-416e-a359-fc04dcd18a48
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c59b80a2c9748dccccd7b1fa1d5217b8e9f4979f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61ee3b8222ed85605958bc467822c495cb0b16e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724953"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919853"
 ---
 # <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
 Cancela o registro de um programa que pode ser depurado a partir da porta em que ele está sendo executado.
@@ -28,13 +28,13 @@ Cancela o registro de um programa que pode ser depurado a partir da porta em que
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT RemoveProgramNode( 
+HRESULT RemoveProgramNode( 
    IDebugProgramNode2* pProgramNode
 );
 ```
 
 ```csharp
-int RemoveProgramNode( 
+int RemoveProgramNode( 
    IDebugProgramNode2 pProgramNode
 );
 ```
@@ -43,7 +43,7 @@ int RemoveProgramNode( 
 `pProgramNode`\
 no Um [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) pesquisador que representa o registro do programa a ser cancelado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

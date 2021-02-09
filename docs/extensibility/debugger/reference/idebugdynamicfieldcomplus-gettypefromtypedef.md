@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 7f6cd3d3-f4da-4893-be91-8dd104be8010
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8e212f53467c25ca6084eaa5a91b37031baedf4a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1af25920f956ca3c5b486003806bd66430fc8b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731241"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919941"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromtypedef"></a>IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
 Recupera um tipo dado seu token.
@@ -57,7 +57,7 @@ no Token que representa o tipo.
 `ppType`\
 fora Retorna um objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que contém o tipo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
