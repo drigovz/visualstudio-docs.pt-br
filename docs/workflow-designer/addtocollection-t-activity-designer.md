@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1592eab528f2312a9ad90dec02354814d6a81c3
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 18811199cce88c5d57332ced99763b4f6233da8d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993244"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920186"
 ---
 # <a name="addtocollectiont-activity-designer"></a>Designer de atividade AddToCollection\<T>
 
@@ -40,9 +40,9 @@ A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.A
 |Nome da propriedade|Obrigatório|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|O nome amigável de atividade de <xref:System.Activities.Statements.AddToCollection%601> . O padrão é AddToCollection<Int32 \> . Embora o valor de <xref:System.Activities.Activity.DisplayName%2A> não é necessário restrita, é uma prática recomendada usar um.|
-|<xref:System.Activities.Statements.AddToCollection%601.Item%2A>|Verdadeiro|O item a ser adicionado à coleção \<T> . Este item é do tipo *T*, que é do tipo *TypeArgument*. Para especificar o item, digite uma expressão do Visual Basic na grade de propriedade.|
-|<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|Verdadeiro|A coleção para que o item deve ser adicionado. Essa coleção é do tipo **ICollection<TypeArgument \>**. Para especificar a coleção, digite uma expressão do Visual Basic na grade de propriedade.|
-|*TypeArgument*|Verdadeiro|O tipo T de itens contidos em <xref:System.Collections.Generic.ICollection%601>. Por padrão, esse tipo de *TypeArgument* é definido como **Int32**. Para alterar o tipo, altere o valor de *TypeArgument* na caixa de combinação na grade de propriedades.|
+|<xref:System.Activities.Statements.AddToCollection%601.Item%2A>|True|O item a ser adicionado à coleção \<T> . Este item é do tipo *T*, que é do tipo *TypeArgument*. Para especificar o item, digite uma expressão do Visual Basic na grade de propriedade.|
+|<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|True|A coleção para que o item deve ser adicionado. Essa coleção é do tipo **ICollection<TypeArgument \>**. Para especificar a coleção, digite uma expressão do Visual Basic na grade de propriedade.|
+|*TypeArgument*|True|O tipo T de itens contidos em <xref:System.Collections.Generic.ICollection%601>. Por padrão, esse tipo de *TypeArgument* é definido como **Int32**. Para alterar o tipo, altere o valor de *TypeArgument* na caixa de combinação na grade de propriedades.|
 
 ## <a name="see-also"></a>Confira também
 

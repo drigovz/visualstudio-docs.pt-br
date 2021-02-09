@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0ddb05a3-8c6b-448b-8488-2751c1e5abcc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 63462aedfb1d7a2c03fe6ff5d59495358c52194e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 809af327fc2bb608647a76575736bd0e2b00c5b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722380"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922029"
 ---
 # <a name="ui-processing-time"></a>Tempo de processamento de interface do usuário
 Esses segmentos na linha do tempo estão associados aos tempos de bloqueio categorizados como Processamento de Interface do Usuário. Isso significa que um thread está bombeando mensagens do Windows ou realizando outro trabalho de interface do usuário. Durante esse tempo, um thread foi bloqueado em uma API que a Visualização Simultânea está contando como Processamento de Interface do Usuário. APIs como `GetMessage()` e `MsgWaitForMultipleObjects()` pertencem a esse grupo.

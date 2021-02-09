@@ -13,15 +13,15 @@ helpviewer_keywords:
 - print preview, worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 356c47ec3275c1442082f367dd08fe6901f9c0a3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 885af73613636b9f6c829393b010c3543f6cea5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523757"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920474"
 ---
 # <a name="how-to-programmatically-print-worksheets"></a>Como: imprimir planilhas programaticamente
 
@@ -65,7 +65,7 @@ Você pode imprimir qualquer planilha em uma pasta de trabalho.
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#15)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#15)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Trabalhar com planilhas](../vsto/working-with-worksheets.md)
 - [Como: verificar a ortografia em planilhas programaticamente](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)

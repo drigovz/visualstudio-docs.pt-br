@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7035b904-b3d7-4d9b-98d9-65714b8a8b9f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eec30783041a1240d8f85815c06f4ca60729a484
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06956af7120b81d93a32c11066744c11ad12f30b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923200"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 Recupera um nome amigável para o servidor.
@@ -28,14 +28,14 @@ Recupera um nome amigável para o servidor.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetServerFriendlyName(
-   BSTR* pbstrName
+HRESULT GetServerFriendlyName(
+   BSTR* pbstrName
 );
 ```
 
 ```csharp
-int GetServerFriendlyName(
-   out string pbstrName
+int GetServerFriendlyName(
+   out string pbstrName
 );
 ```
 
@@ -46,7 +46,7 @@ fora Retorna um nome amigável para o servidor.
 > [!NOTE]
 > O chamador é responsável por liberar a cadeia de caracteres.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna o código de erro.
 
 ## <a name="remarks"></a>Comentários

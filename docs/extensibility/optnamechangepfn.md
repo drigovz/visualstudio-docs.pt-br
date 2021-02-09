@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 147303f3-c7f1-438a-81b7-db891ea3d076
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e18a3e5004a86bb96ad77112f4c81ebca3e59cbf
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: e583c7e19fb6123da06d0ee525abe9c573d8d788
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863439"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922879"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 Essa é uma função de retorno de chamada especificada em uma ligação para o [SccSetOption](../extensibility/sccsetoption-function.md) (usando a opção `SCC_OPT_NAMECHANGEPFN` ) e é usada para comunicar alterações de nome feitas pelo plug-in de controle do código-fonte de volta para o IDE.
@@ -55,6 +55,6 @@ no O nome para o qual o arquivo foi renomeado.
 
  Se o IDE não oferecer suporte a esse retorno de chamada, ele não chamará o [SccSetOption](../extensibility/sccsetoption-function.md) para especificá-lo. Se o plug-in não oferecer suporte a esse retorno de chamada, ele retornará `SCC_E_OPNOTSUPPORTED` da `SccSetOption` função quando o IDE tentar definir o retorno de chamada.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Funções de retorno de chamada implementadas pelo IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccSetOption](../extensibility/sccsetoption-function.md)

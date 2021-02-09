@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ed9a8e71-30ef-414b-9da5-c9a2a251b84e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4803b447ba049fd934d60a41adb5403335029a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0921d2b65aedb94c15c66ad878aa66bff73dbe2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717595"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923051"
 ---
 # <a name="ienumdebugaddressesskip"></a>IEnumDebugAddresses::Skip
 Esse método ignora o número especificado de elementos.
@@ -43,7 +43,7 @@ int Skip(
 `celt`\
 no Número de elementos a serem ignorados.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se `celt` é maior que o número de elementos restantes; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

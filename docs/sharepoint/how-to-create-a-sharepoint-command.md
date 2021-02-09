@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 41e4ab0fd70f4993d148cd5c67cb816bdc92e77a
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 51b80124f7cf550843ad346e9d1e1c0b21ccd0f7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850696"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923349"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Como: criar um comando do SharePoint
   Se você quiser usar o modelo de objeto de servidor em uma extensão de ferramentas do SharePoint, deverá criar um *comando do SharePoint* personalizado para chamar a API. Você define o comando do SharePoint em um assembly que pode chamar diretamente o modelo de objeto de servidor.

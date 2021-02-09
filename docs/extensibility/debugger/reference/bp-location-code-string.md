@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: a4cd71c6-5052-45fe-907b-ebc6ca1df2e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 0fc0d9a053faf69fde500333ab0faafa0e8d3448
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98b85a1b27255902f4cfba9923beda4305ca03d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737989"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923222"
 ---
 # <a name="bp_location_code_string"></a>BP_LOCATION_CODE_STRING
 Usado para definir pontos de interrupção de código com base em uma cadeia de caracteres que o usuário pode inserir do ambiente de desenvolvimento integrado (IDE).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```cpp
 typedef struct _BP_LOCATION_CODE_STRING {

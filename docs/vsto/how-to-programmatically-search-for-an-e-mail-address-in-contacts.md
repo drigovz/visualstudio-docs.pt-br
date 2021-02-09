@@ -13,15 +13,15 @@ helpviewer_keywords:
 - searching contacts
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7fa6578612fb81d9d025e613697c4342bac11bee
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 43baafee82cf38dfd346ebe50e9b348857a3fdc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528225"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920464"
 ---
 # <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Como: pesquisar programaticamente por um endereço de email nos contatos
   Este exemplo pesquisa uma pasta de contato para contatos que têm o nome de domínio **example.com** em seus endereços de email.
@@ -36,7 +36,7 @@ ms.locfileid: "97528225"
 
 - Os contatos que têm o nome de domínio **example.com** em seus endereços de email (por exemplo, `somebody@example.com` ), e que têm nomes e sobrenomes.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Trabalhar com itens de contato](../vsto/working-with-contact-items.md)
 - [Como: enviar emails por meio de programação](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
 - [Como programaticamente acessar contatos do Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)

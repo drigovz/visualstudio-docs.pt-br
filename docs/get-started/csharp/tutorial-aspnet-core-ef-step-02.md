@@ -10,18 +10,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 21052d59205c7ddc14247f180348fea3b8d5652a
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: e560d9028a7c2044964f5a2ec54e8daefea26372
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833241"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922811"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Etapa 2: criar seu primeiro aplicativo Web ASP.NET Core
 
@@ -50,7 +50,7 @@ Na janela do gerenciador de soluções, à direita, você pode exibir os conteú
 
 A pasta *wwwroot* contém arquivos estáticos que estarão publicamente acessíveis do aplicativo Web. Normalmente, ele contém folhas de estilo, arquivos de script do lado do cliente e imagens.
 
-### <a name="pages"></a>Páginas
+### <a name="pages"></a>Pages (Páginas)
 
 A pasta *Pages* contém as Razor Pages do site. O modelo padrão fornece várias páginas, incluindo a página *Index.cshtml* que é a home page do aplicativo, bem como Sobre, Contato e assim por diante.
 
@@ -70,7 +70,7 @@ O Host da Web criado no *Program.cs* faz referência à classe Startup e chama o
 
 A home page para o site inclui um pouco de marcação HTML e algum código do Razor do lado servidor. Ele usa o Razor para especificar o modelo de página, `IndexModel`, que está localizado no arquivo *Index.cshtml.cs* associado. Ele também define o título da página, definindo um valor em ViewData. Esse valor ViewData é lido no arquivo *\_ layout. cshtml* , localizado na pasta compartilhada dentro da pasta páginas. O arquivo de Layout é compartilhado por várias Razor Pages e fornece a aparência e experiência comuns para o aplicativo. O conteúdo de cada página é renderizado dentro HTML do arquivo de Layout.
 
-## <a name="run-the-application"></a>Execute o aplicativo
+## <a name="run-the-application"></a>Executar o aplicativo
 
 Agora execute o aplicativo e exiba-o no navegador. Você pode executar o aplicativo usando **Ctrl** + **F5** ou escolhendo **depurar**  >  **Iniciar sem Depurar** no menu do Visual Studio.
 
@@ -126,6 +126,6 @@ No próximo vídeo, você aprenderá como adicionar suporte a dados em seu aplic
 
 [Tutorial: trabalhando com dados em seu aplicativo ASP.NET Core](tutorial-aspnet-core-ef-step-03.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Tutorial: criar um aplicativo Web Razor Pages com ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)

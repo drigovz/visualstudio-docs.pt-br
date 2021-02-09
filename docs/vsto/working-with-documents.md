@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], document common tasks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8a8b994ed88c6499d17cc0cf241e60a17f235b97
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f04cdd246d95a4d5757ff64851a12cdede36f1b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527023"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920215"
 ---
 # <a name="work-with-documents"></a>Trabalhar com documentos
   Os tópicos nesta seção fornecem procedimentos passo a passo e exemplos de código para usar o modelo de objeto do Microsoft Office Word para trabalhar com documentos em projetos do Office.
@@ -44,6 +44,6 @@ ms.locfileid: "97527023"
 |Adicionar um cabeçalho ou rodapé a um documento.|[Como: adicionar cabeçalhos e rodapés programaticamente a documentos](../vsto/how-to-programmatically-add-headers-and-footers-to-documents.md)|
 |Remover todos os comentários de um documento.|[Como: remover programaticamente todos os comentários de documentos](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)
 - [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)

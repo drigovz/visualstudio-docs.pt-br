@@ -9,15 +9,15 @@ helpviewer_keywords:
 - IManagedAddin interface
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b436d76164b1744cffe16593149f64d219d04bf1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89e705296c6051b8bdec823e523f0a386ff7ff76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541122"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920430"
 ---
 # <a name="imanagedaddin-interface"></a>Interface IManagedAddin
   Implemente a interface IManagedAddin para criar um componente que carregue suplementos do VSTO gerenciados. Essa interface foi adicionada no sistema de Microsoft Office de 2007.
@@ -43,7 +43,7 @@ interface IManagedAddin : IUnknown
 ## <a name="methods"></a>Métodos
  A tabela a seguir lista os métodos que são definidos pela interface IManagedAddin.
 
-|Name|Descrição|
+|Nome|Descrição|
 |----------|-----------------|
 |[IManagedAddin::Load](../vsto/imanagedaddin-load.md)|Chamado quando um aplicativo Microsoft Office carrega um suplemento VSTO gerenciado.|
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Chamado logo antes de um Microsoft Office aplicativo descarrega um suplemento do VSTO gerenciado.|
@@ -56,13 +56,13 @@ interface IManagedAddin : IUnknown
 
 1. O aplicativo descobre os suplementos do VSTO procurando entradas na seguinte chave do registro:
 
-    **HKEY_CURRENT_USER \Software\Microsoft\Office \\ *\<application name>* \Addins\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<application name>* \Addins\\**
 
     Cada entrada nessa chave do registro é uma ID exclusiva do suplemento do VSTO. Normalmente, esse é o nome do assembly do suplemento do VSTO.
 
 2. O aplicativo procura uma `Manifest` entrada sob a entrada de cada suplemento do VSTO.
 
-    Os suplementos do VSTO gerenciados podem armazenar o caminho completo de um manifesto na `Manifest` entrada em **HKEY_CURRENT_USER \Software\Microsoft\Office \\ _\<application name>_ \Addins \\ _\<add-in ID>_ **. Um manifesto é um arquivo (normalmente, um arquivo XML) que fornece informações que são usadas para ajudar a carregar o suplemento do VSTO.
+    Os suplementos do VSTO gerenciados podem armazenar o caminho completo de um manifesto na `Manifest` entrada em **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<application name>_ \Addins \\ _\<add-in ID>_**. Um manifesto é um arquivo (normalmente, um arquivo XML) que fornece informações que são usadas para ajudar a carregar o suplemento do VSTO.
 
 3. Se o aplicativo encontrar uma `Manifest` entrada, o aplicativo tentará carregar um componente de carregador de suplementos do VSTO gerenciado. O aplicativo faz isso tentando criar um objeto COM que implementa a interface IManagedAddin.
 
@@ -84,5 +84,5 @@ interface IManagedAddin : IUnknown
 > [!CAUTION]
 > Esse CLSID também é usado pelo *VSTOLoader.dll* no [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Portanto, se você usar o IManagedAddin para criar seu próprio carregador de suplemento do VSTO e o componente de tempo de execução, não será possível implantar seu componente em computadores que executam suplementos do VSTO que dependem do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Referência de API não gerenciada &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e81d20dc179df76b759223c1460ca13bfceb5706
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 569a3bea98095afebb243c521db02410879b0b59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920357"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Walkthrough: criar uma guia personalizada usando o XML da faixa de uma
   Este tutorial demonstra como criar uma guia de faixa de forma personalizada usando o item da faixa de para **(XML)** .
@@ -156,7 +156,7 @@ ms.locfileid: "97524878"
 
 - Personalize a interface do usuário do Microsoft Office Outlook usando as regiões de formulário do Outlook. Para obter mais informações, consulte [Walkthrough: criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
 - [XML da faixa de opções](../vsto/ribbon-xml.md)
 - [Walkthrough: criar uma guia personalizada usando o designer de faixa de faixas](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)

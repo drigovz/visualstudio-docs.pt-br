@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10de60620bcd0b56f251955f478d4d06c984d021
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: d1d332e3c41a55de8f405f028070fa95f97f6717
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973996"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923274"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>Criar uma janela de ferramentas de várias instâncias
 Você pode programar uma janela de ferramentas para que várias instâncias dela possam ser abertas simultaneamente. Por padrão, as janelas de ferramentas podem ter apenas uma instância aberta.

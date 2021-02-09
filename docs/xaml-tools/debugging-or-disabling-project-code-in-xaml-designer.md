@@ -7,13 +7,13 @@ ms.topic: how-to
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 8a5db556bfc9106bb18a6ef9d4d5e3e1aa893cc3
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+manager: jmartens
+ms.openlocfilehash: e03c33de81727c333db8f662232e669e37e78f59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921764"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Depurar ou desabilitar o código do projeto no Designer XAML
 
@@ -35,7 +35,7 @@ Quando o código do projeto está desabilitado, o Visual Studio mostra espaços 
 
 ## <a name="to-determine-if-project-code-is-causing-an-exception"></a>Para determinar se o código do projeto está causando uma exceção
 
-1. Na caixa de diálogo de exceção sem tratamento, selecione o link **Clique aqui para recarregar o designer** .
+1. Na caixa de diálogo de exceção sem tratamento, selecione o link **Clique aqui para recarregar o designer**.
 
 2. Na barra de menus, escolha **depurar**  >  **Iniciar Depuração** para compilar e executar o aplicativo.
 
@@ -43,7 +43,7 @@ Quando o código do projeto está desabilitado, o Visual Studio mostra espaços 
 
 ## <a name="to-debug-project-code-running-in-the-designer"></a>Para depurar o código de projeto em execução no designer
 
-1. Na caixa de diálogo de exceção sem tratamento, selecione o link **Clique aqui para desabilitar o código do projeto em execução e recarregar o designer** .
+1. Na caixa de diálogo de exceção sem tratamento, selecione o link **Clique aqui para desabilitar o código do projeto em execução e recarregar o designer**.
 
 2. No Gerenciador de tarefas do Windows, selecione o botão **Finalizar Tarefa** para fechar todas as instâncias do Designer XAML do Visual Studio que estão sendo executadas.
 
@@ -55,23 +55,23 @@ Quando o código do projeto está desabilitado, o Visual Studio mostra espaços 
 
 5. Defina um ponto de interrupção no código do projeto.
 
-6. Na nova instância do Visual Studio, na barra de menus, escolha **depurar**  >  **anexar para processar** .
+6. Na nova instância do Visual Studio, na barra de menus, escolha **depurar**  >  **anexar para processar**.
 
-7. Na caixa de diálogo **Anexar ao Processo** , na lista de **Processos Disponíveis** selecione **XDesProc.exe** e, em seguida, selecione o botão **Anexar** .
+7. Na caixa de diálogo **Anexar ao Processo**, na lista de **Processos Disponíveis** selecione **XDesProc.exe** e, em seguida, selecione o botão **Anexar**.
 
      ![O processo do Designer XAML](media/xaml_attach.png)
 
      Este é o processo para o designer XAML na primeira instância do Visual Studio.
 
-8. Na primeira instância do Visual Studio, na barra de menus, escolha **depurar**  >  **Iniciar Depuração** .
+8. Na primeira instância do Visual Studio, na barra de menus, escolha **depurar**  >  **Iniciar Depuração**.
 
      Agora, você pode intervir em seu código que está sendo executado no designer.
 
 ## <a name="to-disable-project-code-in-the-designer"></a>Para desabilitar o código do projeto no designer
 
-- Na caixa de diálogo de exceção sem tratamento, selecione o link **Clique aqui para desabilitar o código do projeto em execução e recarregar o designer** .
+- Na caixa de diálogo de exceção sem tratamento, selecione o link **Clique aqui para desabilitar o código do projeto em execução e recarregar o designer**.
 
-- Como alternativa, na barra de ferramentas do **Designer XAML** , clique no botão **Desabilitar código do projeto** .
+- Como alternativa, na barra de ferramentas do **Designer XAML**, clique no botão **Desabilitar código do projeto**.
 
      ![O botão Desabilitar Código do Projeto](media/xaml_disablecode.png)
 
@@ -92,12 +92,12 @@ Quando o código do projeto está desabilitado, o Visual Studio mostra espaços 
 
 No designer XAML, você pode alterar as opções de exibição de controle para exibir somente os controles de plataforma do SDK do Windows. Isso pode aumentar a confiabilidade do designer XAML.
 
-Para alterar as opções de exibição de controle, clique no ícone na parte inferior esquerda da janela do designer e selecione uma opção em **Opções de Exibição de Controle** :
+Para alterar as opções de exibição de controle, clique no ícone na parte inferior esquerda da janela do designer e selecione uma opção em **Opções de Exibição de Controle**:
 
 ![Opções de Exibição de Controle](media/control_display_options.png)
 
-Quando você selecionar **Exibir Somente os Controles de Plataforma** , todos os controles personalizados provenientes de SDKs, controles de usuário do cliente e outros não serão renderizados completamente. Em vez disso, eles serão substituídos por controles de fallback para demonstrar o tamanho e a posição do controle.
+Quando você selecionar **Exibir Somente os Controles de Plataforma**, todos os controles personalizados provenientes de SDKs, controles de usuário do cliente e outros não serão renderizados completamente. Em vez disso, eles serão substituídos por controles de fallback para demonstrar o tamanho e a posição do controle.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Projetar XAML no Visual Studio e no Blend para Visual Studio](designing-xaml-in-visual-studio.md)

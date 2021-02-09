@@ -5,17 +5,17 @@ ms.date: 01/28/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2d58462b90039e14ae98fe450812ca4cfdb6cbbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08ae2e13f094535eae0447cc3b8d4acf4c806a99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920618"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usar a extensão Cookiecutter
 
@@ -40,7 +40,7 @@ A home page do Cookiecutter exibe uma lista de modelos a serem escolhidos, organ
 | **Instalado** | Modelos que foram instalados no computador local. Quando um modelo online é usado, seu repositório é clonado automaticamente em uma subpasta de *~/.cookiecutters*. É possível excluir um modelo instalado escolhido pressionando **Delete**. |
 | **Recomendado** | Modelos carregados do feed recomendado. O feed padrão é coletado pela Microsoft. Consulte [Opções do Cookiecutter](#cookiecutter-options) abaixo para obter detalhes sobre como personalizar o feed. |
 | **GitHub** | Resultados da pesquisa do GitHub para a palavra-chave cookiecutter. Os resultados do GitHub retornam paginados e, se houver mais resultados disponíveis, a opção **Carregar Mais** será exibida ao final da lista. |
-| **Personalizado** | Quando uma localização personalizada é inserida na caixa de pesquisa, ela é exibida nesse grupo. É possível digitar um caminho completo para o repositório GitHub ou o caminho completo para uma pasta no disco local. |
+| **Custom** | Quando uma localização personalizada é inserida na caixa de pesquisa, ela é exibida nesse grupo. É possível digitar um caminho completo para o repositório GitHub ou o caminho completo para uma pasta no disco local. |
 
 ### <a name="cloning"></a>Clonar
 
@@ -82,7 +82,7 @@ As opções de CookieCutter estão disponíveis por meio de **ferramentas**  >  
 | Opção | Descrição |
 | --- | --- |
 | **URL de feed recomendada** | A localização do feed recomendado dos modelos. Pode ser uma URL ou um caminho para um arquivo local. Deixe a URL vazia para usar o feed padrão coletado pela Microsoft. O feed fornece uma lista simples de localizações de modelos, separadas por novas linhas. Para solicitar alterações ao feed coletado, faça uma solicitação pull [na fonte, no GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
-| **Mostrar ajuda** | Controla a visibilidade da barra de informações de ajuda na parte superior da janela do Cookiecutter. |
+| **Mostrar Ajuda** | Controla a visibilidade da barra de informações de ajuda na parte superior da janela do Cookiecutter. |
 
 ## <a name="optimize-cookiecutter-templates-for-visual-studio"></a>Otimizar modelos do Cookiecutter para o Visual Studio
 
@@ -98,7 +98,7 @@ A renderização padrão de uma variável de modelo depende do tipo de dados (ca
 | Propriedade | Descrição |
 | --- | --- |
 | Rotular | Especifica o que é exibido acima do editor para a variável, em vez do nome da variável. |
-| Descrição | Especifica a dica de ferramenta que é exibida no controle de edição, em vez do valor padrão dessa variável. |
+| Description | Especifica a dica de ferramenta que é exibida no controle de edição, em vez do valor padrão dessa variável. |
 | URL | Altera o rótulo para um hiperlink, com uma dica de ferramenta que mostra a URL. A seleção do hiperlink abre o navegador padrão do usuário para essa URL. |
 | Seletor | Permite a personalização do editor para uma variável. Atualmente, há suporte para os seguintes seletores:<ul><li>`string`: caixa de texto padrão, o padrão para cadeias de caracteres.</li><li>`list`: caixa de combinação padrão, o padrão para listas.</li><li>`yesno`: caixa de combinação para escolher entre `y` e `n`, para cadeias de caracteres.</li><li>`odbcConnection`: Caixa de texto com um botão **...** que abre um diálogo de conexão de banco de dados.</li></ul> |
 

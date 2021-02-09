@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 545e6a59-1093-4514-935e-78679a46fb3c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 67de0c2e5aa35fa3a1f54e26f425f4b0916cb428
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c5db0b870e050a9235f719d83710747101b95c3c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049120"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922526"
 ---
 # <a name="msbuild-special-characters"></a>Caracteres especiais do MSBuild
 
@@ -41,7 +41,7 @@ O MSBuild reserva alguns caracteres para uso especial em contextos específicos.
 |?|%3F|Caractere curinga para nomes de arquivos em atributos `Include` e `Exclude`|
 |*|%2A|Caractere curinga para uso em nomes de arquivos em atributos `Include` e `Exclude`|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Conceitos avançados](../msbuild/msbuild-advanced-concepts.md)
 - [Itens](../msbuild/msbuild-items.md)

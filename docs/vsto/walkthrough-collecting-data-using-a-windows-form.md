@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], collecting data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 58d6f58f732d4a52aade6ff3678842900f1c29cd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e8c88bbf529da8e07976c012d40ca59e5f1e5626
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527165"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920376"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Walkthrough: coletar dados usando um formulário do Windows
   Este tutorial demonstra como abrir um formulário do Windows de uma personalização em nível de documento para Microsoft Office Excel, coletar informações do usuário e gravar essas informações em uma célula de planilha.
@@ -138,7 +138,7 @@ ms.locfileid: "97527165"
 
 - Modifique a interface do usuário de um aplicativo Microsoft Office de uma personalização no nível do documento ou um suplemento do VSTO. Para obter mais informações, consulte [personalização da interface do usuário do Office](../vsto/office-ui-customization.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)
 - [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)

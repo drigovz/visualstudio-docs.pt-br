@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cb89692e-7657-47ff-846d-311943521951
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 67d0d7a8642c9dd90067b0e197f420d4cc821faa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8fec87a2294524c915116929f2ac2c991170c5ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726681"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920872"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
 Cria uma cópia do objeto gerenciado no espaço de endereço do mecanismo de depuração.
@@ -28,7 +28,7 @@ Cria uma cópia do objeto gerenciado no espaço de endereço do mecanismo de dep
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetManagedDebugObject( 
+HRESULT GetManagedDebugObject( 
    IDebugManagedObject** ppObject
 );
 ```
@@ -43,7 +43,7 @@ int GetManagedDebugObject(
 `ppObject`\
 fora Retorna um objeto [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) que representa o objeto gerenciado recém-criado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro. Retorna E_FAIL se esse [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) não representar uma instância de classe de valor gerenciado.
 
 ## <a name="remarks"></a>Comentários

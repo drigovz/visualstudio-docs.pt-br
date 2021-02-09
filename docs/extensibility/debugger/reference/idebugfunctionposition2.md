@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: a835f65b-91b0-48ad-8485-04534c814b1b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c260b6316207b0079a2ca8893b851db8b1288ba6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e05cc09d2c252ddeaadc3cfa1b40e1a5797b6d79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728313"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920907"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
 Essa interface representa uma posição abstrata de uma função em um documento de origem.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugFunctionPosition2 : IUnknown
@@ -53,7 +53,7 @@ IDebugFunctionPosition2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
-- [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)
 - [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

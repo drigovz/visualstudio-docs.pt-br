@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: bc54c652-904b-4297-a6db-faa329684881
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d87d7d3531d198a1478b4aaa55b354c3ac101302
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b7d69434a6bd6aefb073a252ee35c07fccbee6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728438"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920965"
 ---
 # <a name="idebugfunctionobject2evaluate"></a>IDebugFunctionObject2::Evaluate
 Chama a função e retorna o valor resultante como um objeto.
@@ -61,7 +61,7 @@ no Especifica o tempo máximo, em milissegundos, a aguardar antes de retornar de
 `ppResult`\
 fora Retorna um **IDebugObject** que representa o valor da função como um objeto.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também

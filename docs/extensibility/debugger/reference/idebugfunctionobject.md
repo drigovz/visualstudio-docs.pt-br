@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d94e97c-a9d1-400c-8a98-a44b5385b33a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6433c1f2c540b040a3b3beccc264377e69592387
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab1462c30f1012eb1002f692672fc470cac3b39a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728494"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921010"
 ---
 # <a name="idebugfunctionobject"></a>IDebugFunctionObject
 > [!IMPORTANT]
@@ -25,10 +25,10 @@ ms.locfileid: "80728494"
 
  Essa interface representa uma função.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
-IDebugFunctionObject : IDebugObject
+IDebugFunctionObject : IDebugObject
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores

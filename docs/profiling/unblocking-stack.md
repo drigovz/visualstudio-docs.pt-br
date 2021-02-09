@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1a4dfd9a-e7e2-4aa3-93e2-4f12c7b0970f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 30b4da23ef89f8bdde61bbf1eebb63bb4d239b7b
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 3d1804782ee03e322bda35d4855015dce1cf5542
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722354"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922020"
 ---
 # <a name="unblock-stack"></a>Desbloquear pilha
 Se o elemento de thread atualmente selecionado representa um segmento bloqueado que mais tarde começou a ser executado depois que foi desbloqueado por outro thread no processo atual, a pilha de chamadas do thread que fez o desbloqueio é mostrada nesta guia.

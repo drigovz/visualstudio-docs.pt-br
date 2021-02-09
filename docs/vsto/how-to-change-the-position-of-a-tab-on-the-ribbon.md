@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 21fd7f17f7a990f95ce5c8b781e85807a10608c4
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: dc0b4548ffa4e5efa75734b5528a7021cf122bfa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846760"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921912"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Como alterar a posição de uma guia na faixa de forma
   Você pode alterar a ordem das guias personalizadas em uma faixa de forma usando o **Editor de coleção de guias**. Você pode posicionar guias personalizadas antes ou depois de uma guia interna na faixa de bits. Uma guia interna é uma guia que já está na faixa de bits de um aplicativo Microsoft Office. Por exemplo, a guia **dados** é uma guia interna no Excel.

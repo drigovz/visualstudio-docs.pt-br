@@ -23,13 +23,13 @@ description: Saiba como atualizar a cópia gratuita do Dotfuscator Community, in
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 08492340022f772beadca8061a216de69fafc8af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+manager: jmartens
+ms.openlocfilehash: a0e3ad3e5f6afbd6675f8e65c918b4a5d7c66dd8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596795"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922776"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Atualizar o Dotfuscator Community
 

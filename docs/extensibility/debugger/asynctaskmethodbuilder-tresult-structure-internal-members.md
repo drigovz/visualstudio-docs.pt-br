@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 17ebc340-8170-4aff-bf54-dc4548c83632
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c4f4da7070af09937af9e047ec83142584942e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41cb409495b28b7dc2bc796859da413a32b90d85
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739339"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921635"
 ---
 # <a name="asynctaskmethodbuilderlttresultgt-structure---internal-members"></a>&lt; &gt; Estrutura de TResult AsyncTaskMethodBuilder-membros internos
 Este tópico descreve os membros internos da <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> classe. Para obter informações gerais sobre essa classe, consulte o <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> tópico de referência.
@@ -27,7 +27,7 @@ Este tópico descreve os membros internos da <xref:System.Runtime.CompilerServic
 
  Como você não pode acessar esses membros internos do .NET Framework, a sintaxe a seguir é fornecida em Common Intermediate Language (CIL).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```csharp
 .class public sequential ansi sealed beforefieldinit System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<TResult>
@@ -37,7 +37,7 @@ Este tópico descreve os membros internos da <xref:System.Runtime.CompilerServic
 
 ## <a name="internal-members"></a>Membros internos
 
-|Name|Descrição|
+|Nome|Descrição|
 |----------|-----------------|
 |[Propriedade ObjectIdForDebugger](../../extensibility/debugger/asynctaskmethodbuilder-tresult-objectidfordebugger-property.md)|Obtém um objeto que pode ser usado para identificar exclusivamente esse construtor para o depurador.|
 |[campo de m_task](../../extensibility/debugger/asynctaskmethodbuilder-tresult-m-task-field.md)|Representa a tarefa interna inicializada lentamente.|

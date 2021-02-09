@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 55adde38-1622-4b51-83cb-ce1b04c1ca7a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 021fab07cfaf1ec17821a8ef9a33a03f2d6ec714
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 187663390c1d3625e74db6cf397a304f5d699189
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921530"
 ---
 # <a name="execution-control-and-state-evaluation"></a>Controle de execução e avaliação de estado
 A depuração de um aplicativo requer a implementação desses recursos de controle de execução como depuração em funções, parando em pontos de interrupção e continuando a execução. A depuração do Visual Studio baseia seu controle de execução em eventos enviados entre componentes do depurador.

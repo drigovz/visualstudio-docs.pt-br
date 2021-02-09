@@ -9,18 +9,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ee28bde6de10006ccfdc5175cca629ad9d1590d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbebcec3f5b2de01bcbfa7839f68e6f7a3e2cc64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649646"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922842"
 ---
 # <a name="how-to-run-a-c-program-in-visual-studio"></a>Como executar um programa em C# no Visual Studio
 
@@ -54,7 +54,7 @@ Inicie o Visual Studio, abra um projeto de console em C# vazio, selecione todo o
 
 Inicie o Visual Studio, abra um projeto de console em C# vazio, selecione todo o código no arquivo. cs que já está no projeto e exclua-o. Em seguida, Cole o conteúdo do primeiro arquivo de código no arquivo. cs. Renomeie o arquivo para corresponder ao código original. 
 
-Para um segundo arquivo, clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** para abrir o menu de atalho para o projeto e escolha **Adicionar > item existente** (ou use a combinação de teclas **Shift** + **Alt** + **a Alt a**) e selecione os arquivos de código.
+Para um segundo arquivo, clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** para abrir o menu de atalho para o projeto e escolha **Adicionar > item existente** (ou use a combinação de teclas **Shift** +  + **a Alt a**) e selecione os arquivos de código.
 
 ### <a name="multiple-files-on-disk"></a>Vários arquivos em disco
 
@@ -72,9 +72,9 @@ Se você não tiver um arquivo de projeto, como se o código foi desenvolvido em
 
 Se o código que você deseja executar estiver no GitHub ou em um repositório DevOps do Azure, você poderá usar o Visual Studio para abrir o projeto diretamente do repositório. Consulte [abrir um projeto de um repositório](../tutorial-open-project-from-repo.md).
 
-## <a name="run-the-program"></a>Executar o programa
+## <a name="run-the-program"></a>Execute o programa
 
-Para iniciar o programa, pressione a seta verde (botão**Iniciar** ) na barra de ferramentas principal do Visual Studio ou pressione **F5** ou **Ctrl** + **F5** para executar o programa. Quando você usa o botão **Iniciar** , ele é executado no depurador.  O Visual Studio tenta criar o código em seu projeto e executá-lo.  Se isso for bem sucedido, ótimo! Mas, se não estiver, continue lendo algumas ideias sobre como fazê-lo compilar com êxito.
+Para iniciar o programa, pressione a seta verde (botão **Iniciar** ) na barra de ferramentas principal do Visual Studio ou pressione **F5** ou **Ctrl** + **F5** para executar o programa. Quando você usa o botão **Iniciar** , ele é executado no depurador.  O Visual Studio tenta criar o código em seu projeto e executá-lo.  Se isso for bem sucedido, ótimo! Mas, se não estiver, continue lendo algumas ideias sobre como fazê-lo compilar com êxito.
 
 ## <a name="troubleshooting"></a>Solução de problemas
 
@@ -98,7 +98,7 @@ Por exemplo, na tela a seguir, você pode optar por adicionar `using System;` ao
 
 #### <a name="missing-assembly-reference"></a>Referência de assembly ausente
 
-As referências do .NET podem estar na forma de assemblies ou pacotes NuGet. Normalmente, se você encontrar o código-fonte, o editor ou autor explicará quais assemblies são necessários e em quais pacotes o código depende. Para adicionar uma referência a um projeto manualmente, clique com o botão direito do mouse no nó **referências** na **Gerenciador de soluções**, escolha **Adicionar referência**e localize o assembly necessário.
+As referências do .NET podem estar na forma de assemblies ou pacotes NuGet. Normalmente, se você encontrar o código-fonte, o editor ou autor explicará quais assemblies são necessários e em quais pacotes o código depende. Para adicionar uma referência a um projeto manualmente, clique com o botão direito do mouse no nó **referências** na **Gerenciador de soluções**, escolha **Adicionar referência** e localize o assembly necessário.
 
 ![Captura de tela do menu Adicionar referência](media/add-reference.png)
 

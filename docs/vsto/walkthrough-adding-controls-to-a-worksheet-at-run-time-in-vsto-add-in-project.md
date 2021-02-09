@@ -15,15 +15,15 @@ helpviewer_keywords:
 - worksheets, adding controls at run time
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e9987e9427c0fe982cf3ddcb88ce8071caab04b0
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: bc6c608d406cabe6962a47dae4c86fa7503a05a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522777"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921791"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Walkthrough: adicionar controles a uma planilha em tempo de execução no projeto de suplemento do VSTO
   Você pode adicionar controles a qualquer planilha aberta usando um suplemento do VSTO do Excel. Este tutorial demonstra como usar a faixa de faixas para permitir que os usuários adicionem um <xref:Microsoft.Office.Tools.Excel.Controls.Button> , um <xref:Microsoft.Office.Tools.Excel.NamedRange> e um <xref:Microsoft.Office.Tools.Excel.ListObject> a uma planilha. Para obter informações, consulte [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -76,21 +76,21 @@ ms.locfileid: "97522777"
     |Propriedade|Valor|
     |--------------|-----------|
     |**Nome**|**Botão**|
-    |**Rotular**|**Botão**|
+    |**Rótulo**|**Botão**|
 
 6. Adicione uma segunda caixa de seleção a **grupo1** e, em seguida, altere as propriedades a seguir.
 
     |Propriedade|Valor|
     |--------------|-----------|
     |**Nome**|**NamedRange**|
-    |**Rotular**|**NamedRange**|
+    |**Rótulo**|**NamedRange**|
 
 7. Adicione uma terceira caixa de seleção a **grupo1** e, em seguida, altere as propriedades a seguir.
 
     |Propriedade|Valor|
     |--------------|-----------|
     |**Nome**|**ListObject**|
-    |**Rotular**|**ListObject**|
+    |**Rótulo**|**ListObject**|
 
 ## <a name="add-controls-to-the-worksheet"></a>Adicionar controles à planilha
  Os controles gerenciados só podem ser adicionados a itens de host, que atuam como contêineres. Como os projetos do suplemento do VSTO funcionam com qualquer pasta de trabalho aberta, o suplemento do VSTO converte a planilha em um item de host ou Obtém um item de host existente, antes de adicionar o controle. Adicione código aos manipuladores de eventos de clique de cada controle para gerar um <xref:Microsoft.Office.Tools.Excel.Worksheet> item de host baseado na planilha aberta. Em seguida, adicione um <xref:Microsoft.Office.Tools.Excel.Controls.Button> , um <xref:Microsoft.Office.Tools.Excel.NamedRange> e um <xref:Microsoft.Office.Tools.Excel.ListObject> na seleção atual na planilha.
@@ -189,7 +189,7 @@ ms.locfileid: "97522777"
 
 - Para saber mais sobre como salvar controles em uma planilha, confira o exemplo de controles dinâmicos do suplemento VSTO do Excel em [exemplos de desenvolvimento do Office e passo a passos](../vsto/office-development-samples-and-walkthroughs.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Soluções do Excel](../vsto/excel-solutions.md)
 - [Visão geral dos controles do Windows Forms em documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Controles em documentos do Office](../vsto/controls-on-office-documents.md)

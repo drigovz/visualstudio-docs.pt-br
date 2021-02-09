@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: d0501fdd-4b3a-4e74-b6ac-51d950a2e15b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9405b66c7412d65402a5572dcb5c71b232341b22
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 124782a832d818cb405fd980f9d224f9e0b62fbe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722861"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922452"
 ---
 # <a name="object-lifetime-view"></a>Exibição do tempo de vida do objeto
 A exibição Tempo de Vida do Objeto está disponível quando **Também coletar dados de tempo de vida do objeto .NET** está marcada nas páginas de propriedades da **Sessão de Desempenho**.

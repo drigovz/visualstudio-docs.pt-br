@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d27f777b660b2ffc94c4b9b6f0b6ba55816d626b
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: eb96cdafd08825f14c83d99471356f4e3a92eea5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722822"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922415"
 ---
 # <a name="overviews-performance-tools"></a>Visões gerais (ferramentas de desempenho)
 Esta seção fornece visões gerais conceituais e de terminologia para as Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], que você pode usar para medir as características de desempenho de um aplicativo em desenvolvimento.

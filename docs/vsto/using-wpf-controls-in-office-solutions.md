@@ -11,19 +11,19 @@ helpviewer_keywords:
 - WPF [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e041cda914cbf8aced4b19adfc80c601984c30e0
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 7bc720e6218e4cbb76b14f356d190b738e31ede3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526444"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921906"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Usar controles WPF em soluções do Office
 
-Embora as soluções criadas usando as ferramentas de desenvolvimento do Office no Visual Studio sejam projetadas para trabalhar diretamente com controles Windows Forms, você também pode usar controles WPF em suas soluções. Windows Presentation Foundation (WPF) é uma alternativa ao Windows Forms para criar interfaces do usuário. O WPF usa uma linguagem de marcação chamada Extensible Application Markup Language (XAML) para fornecer novas técnicas para incorporar a interface do usuário, mídia e documentos. Para obter mais informações, consulte [visão geral do WPF](/dotnet/framework/wpf/introduction-to-wpf).
+Embora as soluções criadas usando as ferramentas de desenvolvimento do Office no Visual Studio sejam projetadas para trabalhar diretamente com controles Windows Forms, você também pode usar controles WPF em suas soluções. Windows Presentation Foundation (WPF) é uma alternativa ao Windows Forms para criar interfaces do usuário. O WPF usa uma linguagem de marcação chamada linguagem XAML (XAML) para fornecer novas técnicas para incorporar a interface do usuário, mídia e documentos. Para obter mais informações, consulte [visão geral do WPF](/dotnet/framework/wpf/introduction-to-wpf).
 
 [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -118,7 +118,7 @@ Para obter mais informações sobre como adicionar controles WPF a Windows Forms
 
 - [Walkthrough: estilo de conteúdo do WPF](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)
 - [Visão geral dos controles de Windows Forms em documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md)

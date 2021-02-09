@@ -7,19 +7,19 @@ ms.topic: conceptual
 ms.assetid: 9aabe67a-1720-4bbf-80d3-822b3ccf75c0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46f1f96708af6f5d99affead4d47c1f35db5dc4a
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 5548478e5404c69acc92d7ca7dc4deb6a2e29fdf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796222"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922548"
 ---
 # <a name="configure-targets-and-tasks"></a>Configurar destinos e tarefas
 
-Você pode configurar destinos do MSBuild e tarefas para execução fora de processo com o MSBuild para que você possa direcionar contextos diferentes daqueles que você está executando. Por exemplo, você pode direcionar um aplicativo do .NET Framework 2.0 de 32 bits, enquanto o computador de desenvolvimento está em execução em um sistema de operacional de 64 bits do .NET Framework 4.5. Você também pode direcionar os computadores que executam o .NET Framework 4 ou anterior. A combinação de 32 ou 64 bits e a versão específica do .NET Framework é conhecida como o *contexto de destino* .
+Você pode configurar destinos do MSBuild e tarefas para execução fora de processo com o MSBuild para que você possa direcionar contextos diferentes daqueles que você está executando. Por exemplo, você pode direcionar um aplicativo do .NET Framework 2.0 de 32 bits, enquanto o computador de desenvolvimento está em execução em um sistema de operacional de 64 bits do .NET Framework 4.5. Você também pode direcionar os computadores que executam o .NET Framework 4 ou anterior. A combinação de 32 ou 64 bits e a versão específica do .NET Framework é conhecida como o *contexto de destino*.
 
 ## <a name="installation"></a>Instalação
 
@@ -31,6 +31,6 @@ Você pode configurar destinos do MSBuild e tarefas para execução fora de proc
 
  Se quiser criar seu próprio contexto de destino, você deverá definir esses parâmetros e argumentos adequadamente. Examine o arquivo *Microsoft.Common.targets* do .NET Framework 4.5 e o arquivo *Microsoft.Common.Tasks* para obter exemplos.  Para obter informações sobre como criar uma tarefa personalizada que pode trabalhar com vários contextos de destino ou como modificar as tarefas existentes, confira [Como configurar destinos e tarefas](../msbuild/how-to-configure-targets-and-tasks.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Multidirecionamento](../msbuild/msbuild-multitargeting-overview.md)
+- [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)

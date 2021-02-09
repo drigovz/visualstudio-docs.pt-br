@@ -5,17 +5,17 @@ ms.date: 09/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b611657db104a4b74e784df8925627ff41f3c33
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd63d927e41a8b360eb7d934693bb3c83a30ea4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535312"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920656"
 ---
 ## <a name="select-the-test-framework-for-a-python-project"></a>Selecione a estrutura de teste para um projeto Python
 
@@ -130,7 +130,7 @@ Testes executados em segundo plano e **Test Explorer** atualiza o status de cada
 Como os testes de unidade são partes do código, eles estão sujeitos a bugs, assim como qualquer outro código e, ocasionalmente, precisam ser executados em um depurador. No depurador é possível definir pontos de interrupção, examinar variáveis e executar o código em etapas. O Visual Studio também fornece ferramentas de diagnóstico para testes de unidade.
 
 > [!Note]
-> Por padrão, a depuração de teste usa o depurador do ptvsd 4 para o Visual Studio 2017 (versões 15,8 e posteriores) e o debugpy para Visual Studio 2019 (versões 16,5 e posteriores). Se você quiser usar o ptvsd 3, poderá selecionar a opção **usar depurador herdado** em opções **ferramentas**  >  **Options**  >  **Python**  >  **depuração**do Python. 
+> Por padrão, a depuração de teste usa o depurador do ptvsd 4 para o Visual Studio 2017 (versões 15,8 e posteriores) e o debugpy para Visual Studio 2019 (versões 16,5 e posteriores). Se você quiser usar o ptvsd 3, poderá selecionar a opção **usar depurador herdado** em opções **ferramentas**  >    >    >  **depuração** do Python. 
 
 Para iniciar a depuração, defina um ponto de interrupção inicial em seu código, clique com o botão direito do mouse no teste (ou uma seleção) no **Gerenciador de testes** e selecione **depurar testes selecionados**. O Visual Studio inicia o depurador do Python como faria com o código do aplicativo.
 

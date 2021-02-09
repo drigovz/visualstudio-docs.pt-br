@@ -5,17 +5,17 @@ ms.date: 09/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 032732f19855b9ba5c97c2e5281e8385f9ace3be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 612d4bd7d66add8c3fe7c45e8f03ca3531b0b4c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535313"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920670"
 ---
 ## <a name="discover-and-view-tests"></a>Descobrir e exibir testes
 
@@ -37,7 +37,7 @@ Por convenção, o Visual Studio identifica os testes como métodos cujos nomes 
         unittest.main()
     ```
 
-1. Salve o arquivo se necessário e, em seguida, abra o **Gerenciador de Testes** com o comando de menu **Teste** > **Windows** > ** Gerenciador de Testes**.
+1. Salve o arquivo se necessário e, em seguida, abra o **Gerenciador de Testes** com o comando de menu **Teste** > **Windows** > **Gerenciador de Testes**.
 
 1. O **Gerenciador de testes** pesquisa o projeto em busca de testes e os exibe conforme mostrado abaixo. Se você clicar duas vezes em um teste, seu arquivo de origem será aberto.
 

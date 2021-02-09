@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ad8ee37cba6f6f85e480fc0fe3ccaef081cefae4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 88d2a7b411097bdf2a90ec04456bfc4419e31c30
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850655"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923333"
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>Como: criar uma extensão de projeto do SharePoint
   Crie uma extensão de projeto quando desejar adicionar funcionalidade a qualquer projeto do SharePoint que esteja aberto no Visual Studio. Para obter mais informações, consulte [estender o sistema de projeto do SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
