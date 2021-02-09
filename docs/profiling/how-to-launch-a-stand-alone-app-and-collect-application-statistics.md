@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 52dcee2b-f178-4a76-bddc-e36c50bfcb78
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 575601f2676a8081422b029d0d7da94b6a4836ca
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: 49955afdb97ade1612c270dbb1094ca0ef04a947
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883462"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928957"
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Como iniciar um aplicativo autônomo com o criador de perfil e coletar estatísticas do aplicativo usando a linha de comando
 Este tópico descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar um aplicativo autônomo (cliente) e coletar estatísticas de desempenho usando o método de amostragem.
@@ -69,7 +69,7 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
     Por padrão, os dados de desempenho têm amostra obtida a cada 10.000.000 ciclos de relógio de processador não interrompidos. Isso é aproximadamente uma vez a cada 10 segundos em um processador de 1 GHz. Você pode especificar uma das opções a seguir para alterar o intervalo de ciclo de relógio ou especificar um evento de amostragem diferente.
 
-   |Evento de exemplo|Descrição|
+   |Evento de exemplo|Description|
    |------------------|-----------------|
    |[/timer](../profiling/timer.md) **:**`Interval`|Altera o intervalo de amostragem para o número de ciclos de relógio não interrompidos especificados pelo `Interval`.|
    |[/PF](../profiling/pf.md)[**:** `Interval` ]|Altera o evento de amostragem para falhas de página. Se `Interval` for especificado, define o número de falhas de página entre as amostras. O padrão é 10.|
@@ -106,6 +106,6 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
      **VSPerfCmd**  [/Shutdown](../profiling/shutdown.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Exibições de dados do método de amostragem](../profiling/profiler-sampling-method-data-views.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3ae09d34-112c-4285-80ee-9f7f8dc414d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fbd270aa1b65f05f308d41d22f154fb53b8833d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b90540aaf5f7e409c8fc7fa44126f195230317f8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727685"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929804"
 ---
 # <a name="idebugmanagedobject"></a>IDebugManagedObject
 > [!IMPORTANT]
@@ -25,10 +25,10 @@ ms.locfileid: "80727685"
 
  Essa interface permite que o avaliador de expressão (EE) chame Propriedades ou métodos em instâncias de classe de valor (por exemplo, `System.Decimal` ) e defina seu valor sem chamar [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) no programa que está sendo depurado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
-IDebugManagedObject : IDebugObject
+IDebugManagedObject : IDebugObject
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0bc7cc13-2628-4bd8-8c06-4d2aa6755ea8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50da5af616c56276a0299a0d08e6eeb0b88181cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c10de4db63a7706326ff6f387366c75f860408bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727335"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928153"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 Cria um enumerador para todas as variáveis locais do método, incluindo aquelas geradas internamente por um compilador.
@@ -28,7 +28,7 @@ Cria um enumerador para todas as variáveis locais do método, incluindo aquelas
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT EnumAllLocals( 
+HRESULT EnumAllLocals( 
    IDebugAddress*     pAddress,
    IEnumDebugFields** ppLocals
 );
@@ -48,7 +48,7 @@ no Um objeto [IDebugAddress](../../../extensibility/debugger/reference/idebugadd
 `ppLocals`\
 fora Retorna um objeto [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) que representa a lista de todos os locais no escopo especificado; caso contrário, retorna um valor nulo que indica nenhum local.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará S_OK ou retornará S_FALSE se não houver nenhum local. Caso contrário, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9152e45b402294dfd0bbb41bfda2c685588f01e
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: a0127b16438191a7d4f10ebf351b697455f72b16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716075"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928023"
 ---
 # <a name="signing-vsix-packages"></a>Assinando pacotes VSIX
 Os assemblies de extensão não precisam ser assinados antes que possam ser executados no Visual Studio, mas é uma boa prática fazer isso.
@@ -48,5 +48,5 @@ Os assemblies de extensão não precisam ser assinados antes que possam ser exec
 
    Sinal de VSIXSignTool.exe/f \<certfile> /p \<password>\<VSIXfile>
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enviar extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

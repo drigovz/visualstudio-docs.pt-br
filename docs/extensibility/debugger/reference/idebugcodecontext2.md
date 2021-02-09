@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 3670439e-2171-405d-9d77-dedb0f1cba93
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 778602cc29049d855c418fd8fa416feb1ad8e9fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f03bef276d4f4aada1a173c45defd100e4becbf4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734218"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928677"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 Essa interface representa a posição inicial de uma instrução de código. Para a maioria das arquiteturas de tempo de execução hoje, um contexto de código pode ser considerado como um endereço no fluxo de execução de um programa.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
-IDebugCodeContext2 : IDebugMemoryContext2
+IDebugCodeContext2 : IDebugMemoryContext2
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores

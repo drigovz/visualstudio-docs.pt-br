@@ -17,15 +17,15 @@ helpviewer_keywords:
 - IntelliTrace, debugging after a crash
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 518043a38f3a0f6945840a36a1f7fcade5a313d7
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 10b914ac60e19e39fb7712aa8021c5d988aada50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148995"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930298"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace para Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -41,7 +41,7 @@ Você pode usar o IntelliTrace no Visual Studio Enterprise Edition (mas não as 
 
 ## <a name="what-do-you-want-to-do"></a>O que você deseja fazer?
 
-|Cenário|Título|
+|Cenário|Title|
 |-|-|
 |**Depurar meu aplicativo com o IntelliTrace:**<br /><br /> – Mostrar-me eventos passados.<br />– Mostrar-me informações de chamadas com eventos passados.<br />– Salvar minha sessão do IntelliTrace.<br />– Controlar os dados que são coletados pelo IntelliTrace.|- [Inspecionar os Estados do aplicativo anterior usando o IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Walkthrough: usando o IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Recursos do IntelliTrace](../debugger/intellitrace-features.md)<br />- [Depuração histórica](../debugger/historical-debugging.md)|
 |**Coletar dados do IntelliTrace de aplicativos implantados**|- [Usando o coletor autônomo do IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
@@ -49,7 +49,7 @@ Você pode usar o IntelliTrace no Visual Studio Enterprise Edition (mas não as 
 
 ## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a> Que aplicativos posso depurar com o IntelliTrace?
 
-| Nível de suporte| Tipos de aplicativo |
+| Nível de suporte| Tipos de aplicativos |
 |---------------------| - |
 | **Suporte completo** | -Visual Basic e aplicativos do Visual C# que usam .NET Framework 2,0 ou versões posteriores.<br/>É possível depurar a maioria dos aplicativos, inclusive ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e aplicativos de 64 bits.<br/>Para depurar aplicativos do SharePoint com o IntelliTrace, consulte [Walkthrough: Depurando um aplicativo do SharePoint usando o IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Para depurar Microsoft Azure aplicativos com o IntelliTrace, consulte [Depurando um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md). |
 | **Suporte limitado** | -Aplicativos C++ voltados para o suporte do Windows exibindo instantâneos usando o passo do IntelliTrace. Somente os eventos Debugger e Exception têm suporte.<br />-.NET Core e ASP.NET Core aplicativos com suporte para determinados eventos somente (eventos do controlador MVC, ADO.NET e HTTPClient) na depuração local. O coletor autônomo não tem suporte para aplicativos .NET Core ou ASP.NET Core.<br />– Aplicativos F# em uma base de avaliação<br />-Aplicativos UWP com suporte somente para eventos |

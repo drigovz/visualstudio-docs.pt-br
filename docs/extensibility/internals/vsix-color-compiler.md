@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e50cd1f1c8c3ff7f86cd00e4b384f548c7ec9d21
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 7e6e4a07a023be398c4106984fe4dc33eddd2706
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487992"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929193"
 ---
 # <a name="vsix-color-compiler"></a>Compilador de cores do VSIX
 A ferramenta de compilador de cores de extensão do Visual Studio é um aplicativo de console que usa um arquivo. XML que representa as cores dos temas existentes do Visual Studio e o faz em um arquivo. pkgdef para que essas cores possam ser usadas no Visual Studio. Como é fácil comparar as diferenças entre arquivos. xml, essa ferramenta é útil para gerenciar cores personalizadas no controle do código-fonte. Ele também pode ser conectado a ambientes de compilação para que a saída da compilação seja um arquivo. pkgdef válido.
@@ -107,7 +107,7 @@ A ferramenta de compilador de cores de extensão do Visual Studio é um aplicati
 
 |**Atributo**|**Definição**|
 |-|-|
-|Type|Necessária O tipo da cor. Pode ser um dos seguintes:<br /><br /> *CT_INVALID:* A cor é inválida ou não está definida.<br /><br /> *CT_RAW:* Um valor de ARGB bruto.<br /><br /> *CT_COLORINDEX:* NÃO USE.<br /><br /> *CT_SYSCOLOR:* Uma cor de sistema do Windows de SysColor.<br /><br /> *CT_VSCOLOR:* Uma cor do Visual Studio de __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* A cor automática.<br /><br /> *CT_TRACK_FOREGROUND:* NÃO USE.<br /><br /> *CT_TRACK_BACKGROUND:* NÃO USE.|
+|Tipo|Necessária O tipo da cor. Pode ser um dos seguintes:<br /><br /> *CT_INVALID:* A cor é inválida ou não está definida.<br /><br /> *CT_RAW:* Um valor de ARGB bruto.<br /><br /> *CT_COLORINDEX:* NÃO USE.<br /><br /> *CT_SYSCOLOR:* Uma cor de sistema do Windows de SysColor.<br /><br /> *CT_VSCOLOR:* Uma cor do Visual Studio de __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* A cor automática.<br /><br /> *CT_TRACK_FOREGROUND:* NÃO USE.<br /><br /> *CT_TRACK_BACKGROUND:* NÃO USE.|
 |Fonte|Necessária O valor da cor representada em hexadecimal|
 
  Todos os valores compatíveis com a enumeração __VSCOLORTYPE são suportados pelo esquema no atributo Type. No entanto, recomendamos que você use apenas CT_RAW e CT_SYSCOLOR.

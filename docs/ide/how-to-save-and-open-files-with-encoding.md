@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: cb52b732-b395-4ba1-a3ef-104b3942a12a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 909e15a3acdc6725556c8d5121a363d1754a74be
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.openlocfilehash: d19b6f8e2e614ed397dee2e75807ded895a82d81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104273"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927906"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Como salvar e abrir arquivos com codificação
 
@@ -61,7 +61,7 @@ Salve arquivos com uma codificação de caracteres específica para dar suporte 
 
 3. Siga as Etapas 2 e 3 do procedimento anterior.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Codificação e quebras de linha](encodings-and-line-breaks.md)
 - [Codificação e globalização do Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)

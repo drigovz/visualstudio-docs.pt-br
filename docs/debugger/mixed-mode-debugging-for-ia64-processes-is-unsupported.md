@@ -14,15 +14,15 @@ dev_langs:
 ms.assetid: 20bc1e38-049b-4388-87c4-936815d85b46
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65969e354a5d1ed2dc1cf54ca31e6088cc19de7a
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 19232155a802e0e883b6169fe71fe5005711031c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975245"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930259"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>A depuração de modo misto para processos IA64 não é compatível.
 O Visual Studio não oferece suporte à depuração de modo misto de código gerenciado e nativo em processos IA64. Isso significa que, durante a depuração, você não pode depurar de código gerenciado para código nativo e vice-versa.
@@ -31,7 +31,7 @@ O Visual Studio não oferece suporte à depuração de modo misto de código ger
 
 - Depure seu código gerenciado e nativo em sessões separadas de depuração.
 
-     - ou -
+     -ou-
 
      Depure seu código misto como um processo de 32 bits, como descrito nos procedimentos a seguir.
 
@@ -51,5 +51,5 @@ O Visual Studio não oferece suporte à depuração de modo misto de código ger
 
 2. Nas Páginas de Propriedades, clique em **Plataforma** e selecione Win32 na lista de plataformas.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depurar aplicativos de 64 bits](../debugger/debug-64-bit-applications.md)

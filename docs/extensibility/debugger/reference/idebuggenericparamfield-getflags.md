@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: adcbbca1-8960-4c88-86b0-8b9467056c97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d131a5dc4a1fd64f2a82bff4f51f7cbc4a905a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be9f842db6b322ffb9bdc76ebd2a954d849e5d65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728001"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929817"
 ---
 # <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
 Recupera os sinalizadores para este parâmetro genérico.
@@ -42,7 +42,7 @@ int GetFlags(
 `pdwFlags`\
 fora Retorna os sinalizadores para este parâmetro genérico.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

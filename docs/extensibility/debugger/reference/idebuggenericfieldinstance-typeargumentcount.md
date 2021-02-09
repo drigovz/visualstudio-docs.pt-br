@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: e662c5ea-a5c1-478e-a268-5980dadffcd1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0f0272e86f5c1bbbd840ee222b2048440338302d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b811780bf135a700f0ea451ef148598fe621e4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728159"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928348"
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
 Retorna o número de argumentos de parâmetro de tipo para esta instância.
@@ -42,7 +42,7 @@ int TypeArgumentCount(
 `pcArgs`\
 [entrada, saída] Número de argumentos de parâmetro de tipo para esta instância.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

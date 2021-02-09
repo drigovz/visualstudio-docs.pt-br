@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0f9f0133-7d58-4cd9-a6ca-1141e095749d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e776434e17d90cd2c61c926bbf0100a44ecc524b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d4e484a1557ea99138f31fdc6f9103e6708b803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726923"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929740"
 ---
 # <a name="idebugmodule2reloadsymbols_deprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
 OBSOLETO. NÃO USE. Recarrega os símbolos para este módulo.
@@ -28,14 +28,14 @@ OBSOLETO. NÃO USE. Recarrega os símbolos para este módulo.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT ReloadSymbols( 
+HRESULT ReloadSymbols( 
    LPCOLESTR pszUrlToSymbols,
    BSTR*     pbstrDebugMessage
 );
 ```
 
 ```csharp
-int ReloadSymbols( 
+int ReloadSymbols( 
    string     pszUrlToSymbols,
    out string pbstrDebugMessage
 );
@@ -48,7 +48,7 @@ no O caminho para o repositório de símbolos.
 `pbstrDebugMessage`\
 fora Retorna uma mensagem informativa, como um status ou uma mensagem de erro, que é exibida à direita do nome do módulo na janela módulos.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Um mecanismo de depuração sempre deve retornar `E_FAIL` .
 
 ## <a name="remarks"></a>Comentários

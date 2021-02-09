@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 68f8166d-ef64-49ae-ad5e-79604f43bbd4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 09617dda06cf2c3132ba4d8fb26a90f0b7cea08d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c387f44f6e16717ee01d73d633d0cfa791e1325
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726760"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929713"
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
 Marca o módulo como sendo o código do usuário ou não.
@@ -28,8 +28,8 @@ Marca o módulo como sendo o código do usuário ou não.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT SetJustMyCodeState(
-   BOOL fIsUserCode
+HRESULT SetJustMyCodeState(
+   BOOL fIsUserCode
 );
 ```
 
@@ -43,7 +43,7 @@ int SetJustMyCodeState(
 `fIsUserCode`\
 no Diferente de zero ( `TRUE` ) se o módulo deve ser considerado código de usuário, zero ( `FALSE` ) se não deveria.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna o código de erro.
 
 ## <a name="see-also"></a>Confira também

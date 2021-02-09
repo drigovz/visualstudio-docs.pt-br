@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3aafb28715f58eaba4499b47a2e1dee15b82ed14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63803b84e3d00bddef2238a627300522a4e7c294
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726894"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929778"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 Recupera uma lista de caminhos que são pesquisados em busca de símbolos, bem como os resultados da pesquisa de cada caminho.
@@ -49,7 +49,7 @@ no Uma combinação de sinalizadores da enumeração [SYMBOL_SEARCH_INFO_FIELDS]
 `pInfo`\
 fora Uma estrutura de [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) cujos membros devem ser preenchidos com as informações especificadas. Se esse for um valor nulo, esse método retornará `E_INVALIDARG` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se o método tiver sucesso, ele retornará `S_OK` ; caso contrário, ele retornará um código de erro.
 
 > [!NOTE]
@@ -86,7 +86,7 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 
 **c:\symbols\user32.pdb... Arquivo não encontrado.** 
  **c:\winnt\symbols\user32.pdb... A versão não corresponde.** 
- ** \\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb... Símbolos carregados.**
+ **\\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb... Símbolos carregados.**
 
 ## <a name="see-also"></a>Confira também
 

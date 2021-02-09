@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 1fe98d10-c8f9-4b39-a920-99169bfd542e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c86c765ad8ebfbe36dcaca484f7da4121b7e297
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 2982912a0bf165f25b7777311d6db9a1bbe01a8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975271"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930272"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Caixa de diálogo Depurador do Microsoft Visual Studio (exceção gerada)
 Ocorreu uma exceção no seu programa. Esta caixa de diálogo relata o tipo de exceção lançada. Seu código precisa tratar essa exceção. Você pode escolher entre as seguintes opções para tratar a exceção:
@@ -42,7 +42,7 @@ Ocorreu uma exceção no seu programa. Esta caixa de diálogo relata o tipo de e
 
  **Ignorar** Permite que a execução continue sem invocar o manipulador de exceção. Como o manipulador de exceção não é invocado, isso poderá resultar em outras consequências, incluindo erros e exceções adicionais. Essa opção não está disponível para determinados tipos de exceções.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Gerenciando exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md)
 - [Práticas recomendadas para exceções](/dotnet/standard/exceptions/best-practices-for-exceptions)
-- [Tratamento de Exceção](/cpp/extensions/exception-handling-cpp-component-extensions)
+- [Tratamento de exceção](/cpp/extensions/exception-handling-cpp-component-extensions)

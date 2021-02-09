@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], resizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ba2a77dc44618c0415e645718aff3ead542b4b48
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 7b62d3fed62b4d17b9f1918b76760593b38d83a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525347"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927815"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Como: redimensionar controles nas células da planilha
   Quando você redimensiona colunas ou linhas em uma planilha, todos os controles de host dentro das células são redimensionados automaticamente para a altura ou largura da célula que foi redimensionada. Os controles de Windows Forms não são redimensionados automaticamente por padrão.
@@ -75,7 +75,7 @@ ms.locfileid: "97525347"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Controles em documentos do Office](../vsto/controls-on-office-documents.md)
 - [Como: adicionar controles de Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
 - [Como: Ocultar controles em planilhas ao imprimir](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)

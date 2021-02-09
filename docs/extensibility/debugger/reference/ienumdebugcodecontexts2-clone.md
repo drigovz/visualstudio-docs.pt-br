@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 22c98975-4294-4fbd-a345-16f65fe1200d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e860ec7f20e6578c9d43fa5483f4aea8b8867678
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a877fcda76cca704e12d228cf4e51ab070aa5c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717368"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929505"
 ---
 # <a name="ienumdebugcodecontexts2clone"></a>IEnumDebugCodeContexts2::Clone
 Retorna uma cópia da enumeração atual como um objeto separado.
@@ -43,7 +43,7 @@ int Clone(
 `ppEnum`\
 fora Retorna uma cópia dessa enumeração como um objeto separado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

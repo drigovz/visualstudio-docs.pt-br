@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b055928212dd4b094f4bd8987f6ce03960e932f1
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 8bb0bdeae09f22a2b45e3029fbc9097c00911d2a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382657"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930012"
 ---
 # <a name="clickonce-security-and-deployment"></a>Segurança e implantação do ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o é uma tecnologia de implantação que permite que você crie aplicativos baseados em Windows de atualização automática que podem ser instalados e executados com a interação mínima do usuário. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fornece suporte completo para publicar e atualizar aplicativos implantados com a tecnologia ClickOnce se você tiver desenvolvido seus projetos com o Visual Basic e o Visual C#. Para obter informações sobre a implantação de aplicativos Visual C++, consulte [implantação do ClickOnce para aplicativos Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications).
@@ -40,7 +40,7 @@ ms.locfileid: "94382657"
   No passado, esses problemas às vezes fizeram com que os desenvolvedores optassem por criar aplicativos Web em vez de aplicativos baseados em Windows, sacrificando uma rica interface do usuário para facilitar a instalação. Usando aplicativos implantados usando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o, você pode ter o melhor de ambas as tecnologias.
 
 ## <a name="what-is-a-clickonce-application"></a>O que é um aplicativo ClickOnce?
- Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é qualquer Windows Presentation Foundation ( *. XBAP* ), Windows Forms ( *. exe* ), aplicativo de console ( *. exe* ) ou solução do Office ( *. dll* ) publicado usando a [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnologia. Você pode publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo de três maneiras diferentes: de uma página da Web, de um compartilhamento de arquivos de rede ou de mídia, como um CD-ROM. Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo pode ser instalado no computador de um usuário final e ser executado localmente mesmo quando o computador estiver offline ou pode ser executado em um modo somente online sem a instalação permanente de qualquer coisa no computador do usuário final. Para obter mais informações, consulte [escolher uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
+ Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é qualquer Windows Presentation Foundation (*. XBAP*), Windows Forms (*. exe*), aplicativo de console (*. exe*) ou solução do Office (*. dll*) publicado usando a [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnologia. Você pode publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo de três maneiras diferentes: de uma página da Web, de um compartilhamento de arquivos de rede ou de mídia, como um CD-ROM. Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo pode ser instalado no computador de um usuário final e ser executado localmente mesmo quando o computador estiver offline ou pode ser executado em um modo somente online sem a instalação permanente de qualquer coisa no computador do usuário final. Para obter mais informações, consulte [escolher uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] os aplicativos podem ser atualizados automaticamente; Eles podem verificar se há versões mais recentes à medida que se tornam disponíveis e substituir automaticamente todos os arquivos atualizados. O desenvolvedor pode especificar o comportamento da atualização; um administrador de rede também pode controlar estratégias de atualização, marcando uma atualização como obrigatória, por exemplo. As atualizações também podem ser revertidas para uma versão anterior pelo usuário final ou por um administrador. Para obter mais informações, consulte [escolher uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
@@ -62,7 +62,7 @@ ms.locfileid: "94382657"
  A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] arquitetura de implantação principal baseia-se em dois arquivos de manifesto XML: um manifesto de aplicativo e um manifesto de implantação. Os arquivos são usados para descrever onde os aplicativos ClickOnce são instalados, como eles são atualizados e quando são atualizados.
 
 ### <a name="publish-clickonce-applications"></a>Publicar aplicativos ClickOnce
- O manifesto do aplicativo descreve o próprio aplicativo. Isso inclui os assemblies, as dependências e os arquivos que compõem o aplicativo, as permissões necessárias e o local em que as atualizações estarão disponíveis. O desenvolvedor do aplicativo cria o manifesto do aplicativo usando o assistente de publicação no Visual Studio ou o Manifest Generation and Editing Tool ( *Mage.exe* ) no [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Para obter mais informações, consulte [como publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+ O manifesto do aplicativo descreve o próprio aplicativo. Isso inclui os assemblies, as dependências e os arquivos que compõem o aplicativo, as permissões necessárias e o local em que as atualizações estarão disponíveis. O desenvolvedor do aplicativo cria o manifesto do aplicativo usando o assistente de publicação no Visual Studio ou o Manifest Generation and Editing Tool (*Mage.exe*) no [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Para obter mais informações, consulte [como publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
  O manifesto de implantação descreve como o aplicativo é implantado. Isso inclui o local do manifesto do aplicativo e a versão do aplicativo que os clientes devem executar.
 

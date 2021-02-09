@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: e082e494-2255-4d9d-a5a9-6dadd904bea8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d169f86548e97d4bb745e1ba91f39782de97cbc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca8fb9bb69e98b907ef48620149a0a3fd16dbe53
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734179"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928699"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
 Recupera uma referência à interface do processo de depuração.
@@ -41,7 +41,7 @@ public int GetProcess(
 `ppProcess`\
 fora Referência à interface do processo de depuração.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Bookmark control, resizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0d577f825337862de4ef967bb4f92f61ebbb0b45
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 55fe398b277586404c91ef7cb172f7ce3a9c98ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528200"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927841"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Como: redimensionar controles de indicador
   Você define o tamanho de um <xref:Microsoft.Office.Tools.Word.Bookmark> controle ao adicioná-lo a um Microsoft Office documento do Word. Você também pode redimensioná-lo em um momento posterior.
@@ -89,7 +89,7 @@ ms.locfileid: "97528200"
 
 3. Na caixa de diálogo **indicador** , selecione o nome do indicador que você deseja redimensionar e clique em **Adicionar**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Como: adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [Automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Visão geral de itens de host e controles de host](../vsto/host-items-and-host-controls-overview.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b32042ed-7a06-4b4a-99ef-fe03b0aa61cc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7d13fa3821a6d7bf861cd160a5588d0788b92243
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85224fcdeaa59c7d2046e1c936deff23681ce0d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721469"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928178"
 ---
 # <a name="idebugproperty2getmemorybytes"></a>IDebugProperty2::GetMemoryBytes
 Obtém os bytes de memória que compõem o valor de uma propriedade.
@@ -28,13 +28,13 @@ Obtém os bytes de memória que compõem o valor de uma propriedade.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetMemoryBytes ( 
+HRESULT GetMemoryBytes ( 
    IDebugMemoryBytes2** ppMemoryBytes
 );
 ```
 
 ```csharp
-int GetMemoryBytes ( 
+int GetMemoryBytes ( 
    out IDebugMemoryBytes2 ppMemoryBytes
 );
 ```
@@ -43,7 +43,7 @@ int GetMemoryBytes ( 
 `ppMemoryBytes`\
 fora Retorna um objeto [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) que pode ser usado para recuperar a memória que contém o valor da propriedade.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna o código de erro. Retorna `S_GETMEMORYBYTES_NO_MEMORY_BYTES` se não houver nenhum byte de memória para recuperar.
 
 ## <a name="see-also"></a>Confira também

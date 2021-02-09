@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cf34583b-6530-4dcc-89f8-eb27e4e8d594
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 621ebf3949a273e06053ced67209aa052c25bce0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe0db0267898b54837cd9d05e39b0ddce97d21cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928452"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
 Obtém as informações de atributo como um blob de bytes.
@@ -28,7 +28,7 @@ Obtém as informações de atributo como um blob de bytes.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetAttributeBytes( 
+HRESULT GetAttributeBytes( 
    BYTE*  ppBlob,
    DWORD* pdwLen
 );
@@ -48,7 +48,7 @@ int GetAttributeBytes(
 `pdwLen`\
 [entrada, saída] Especifica o número máximo de bytes a serem retornados na `ppBlob` matriz e retorna o número de bytes gravados na matriz.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

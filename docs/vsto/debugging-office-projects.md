@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], projects
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ea4874effcba4ee948f921ae9bf91f145b661f4f
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1e21a876fd2af04523ae205882463b0f8e0e3f3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845629"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928881"
 ---
 # <a name="debug-office-projects"></a>Depurar projetos do Office
   Você pode depurar projetos do Office usando as mesmas ferramentas da Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] usadas para outros [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projetos. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] os recursos do depurador, como a capacidade de inserir pontos de interrupção e variáveis de exibição na janela **locais** , também estão disponíveis quando você depura projetos do Office. Para obter mais informações sobre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ferramentas de depuração, consulte [depurar no Visual Studio](../debugger/debugger-feature-tour.md).

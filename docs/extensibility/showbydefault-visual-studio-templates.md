@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b17a9a29b55721695509deed6b3d33cc7554aa9
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 5cacf6f6774ad1c0f29ff81407848b23cb3b170d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903969"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928114"
 ---
 # <a name="showbydefault-element-visual-studio-templates"></a>Elemento ShowByDefault (modelos do Visual Studio)
 Se `false` , especifica que o modelo só será exibido sob o [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)especificado.
@@ -39,10 +39,10 @@ Se `false` , especifica que o modelo só será exibido sob o [TemplateGroupID](.
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 

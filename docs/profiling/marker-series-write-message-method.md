@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 546121bc-67e0-4a5a-a456-12bd78fd6de2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a4cb4a604907908b8f2b35ea0baa583ab1ca57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c5610cc623476fa395fae7bf68c2ffa127c96e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328304"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927893"
 ---
 # <a name="marker_serieswrite_message-method"></a>Método marker_series::write_message
 Grava uma mensagem para o arquivo de rastreamento da Visualização Simultânea.
@@ -59,5 +59,5 @@ void write_message(
 
  **Namespace:** Concurrency::diagnostic
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [classe marker_series](../profiling/marker-series-class.md)

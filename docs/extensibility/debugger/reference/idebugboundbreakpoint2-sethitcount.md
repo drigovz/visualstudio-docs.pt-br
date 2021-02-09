@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 8145d875-26b1-4049-a2a2-e7d3d7f4735f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e82f12b12c9afbc24f9416ec2639a4b9768d8fd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5daff1f0bd1928633a32021f96addcacd291694
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735408"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930467"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 Define a contagem de acesso para o ponto de interrupção associado.
@@ -29,13 +29,13 @@ Define a contagem de acesso para o ponto de interrupção associado.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT SetHitCount( 
+HRESULT SetHitCount( 
    DWORD dwHitCount
 );
 ```
 
 ```csharp
-int SetHitCount( 
+int SetHitCount( 
    uint dwHitCount
 );
 ```
@@ -44,7 +44,7 @@ int SetHitCount( 
 `dwHitCount`\
 no A contagem de pressionamentos a ser definida.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o estado do objeto de ponto de interrupção associado é definido como `BPS_DELETED` (parte da enumeração de [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
 ## <a name="remarks"></a>Comentários

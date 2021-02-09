@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: a8bbe061-c382-4fe9-a193-3f7d12216041
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a72296517a64c6dcfcb8e347fb00588504aa75a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e7ed9e573236f0bdeff9c9a8433af322a5a5f79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928491"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
 Essa interface representa um símbolo ou tipo que é um contêiner para outros símbolos ou tipos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
-IDebugContainerField : IDebugField
+IDebugContainerField : IDebugField
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores

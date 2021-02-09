@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d552cc92-963f-43c1-949f-ae6b63a427b8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 46510ce794ea30fdd365a77007b962a1eafd5d31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaac527149d3224370f04d9dec46123b59568ac1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734350"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928738"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
 Obtém o contexto do documento que corresponde a este contexto de código. O contexto do documento representa uma posição no arquivo de origem que corresponde ao código-fonte que gerou essa instrução.
@@ -28,13 +28,13 @@ Obtém o contexto do documento que corresponde a este contexto de código. O con
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetDocumentContext( 
+HRESULT GetDocumentContext( 
    IDebugDocumentContext2** ppSrcCxt
 );
 ```
 
 ```csharp
-int GetDocumentContext( 
+int GetDocumentContext( 
    out IDebugDocumentContext2 ppSrcCxt
 );
 ```
@@ -43,7 +43,7 @@ int GetDocumentContext( 
 `ppSrcCxt`\
 fora Retorna o objeto [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) que corresponde ao contexto do código. Se `S_OK` for retornado, desse deverá ser não `null` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Um mecanismo de depuração deve retornar um código de falha, como `E_FAIL` quando o `out` parâmetro é `null` , por exemplo, quando o contexto do código não tem nenhuma posição de origem associada.
 
 ## <a name="remarks"></a>Comentários
