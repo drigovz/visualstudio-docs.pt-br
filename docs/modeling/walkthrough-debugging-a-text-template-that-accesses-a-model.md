@@ -5,16 +5,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5065ed50afe3b9ee31b361be88c1b5c18138af
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 394fe7b1a368d3d4c6a47fd4350ac6644112aa57
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100781"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924109"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Instruções passo a passo: depurando um modelo (template) de texto que acessa um modelo
 Quando você modifica ou adiciona modelos de texto em uma solução de linguagem específica de domínio, você pode receber erros quando o mecanismo transforma o modelo no código-fonte ou quando compila o código gerado. A instrução a seguir demonstra algumas das coisas que você pode fazer para depurar um modelo de texto.
@@ -22,7 +22,7 @@ Quando você modifica ou adiciona modelos de texto em uma solução de linguagem
 > [!NOTE]
 > Para obter mais informações sobre modelos de texto em geral, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md). Para obter mais informações sobre como depurar modelos de texto, consulte [Walkthrough: Depurando um modelo de texto](debugging-a-t4-text-template.md).
 
-## <a name="creating-a-domain-specific-language-solution"></a>Criando uma solução de linguagem específica de domínio
+## <a name="creating-a-domain-specific-language-solution"></a>Criando uma solução de linguagem Domain-Specific
  Neste procedimento, você cria uma solução de linguagem específica de domínio que tem as seguintes características:
 
 - Nome: DebuggingTestLanguage
@@ -33,14 +33,14 @@ Quando você modifica ou adiciona modelos de texto em uma solução de linguagem
 
 - Nome da empresa: fabrikam
 
-  Para obter mais informações sobre como criar uma solução de linguagem específica de domínio, consulte [como criar uma solução de linguagem específica de domínio](../modeling/how-to-create-a-domain-specific-language-solution.md).
+  Para obter mais informações sobre como criar uma solução de linguagem específica de domínio, consulte [como criar uma solução de linguagem de Domain-Specific](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="creating-a-text-template"></a>Criando um modelo de texto
  Adicione um modelo de texto à sua solução.
 
 #### <a name="to-create-a-text-template"></a>Para criar um modelo de texto
 
-1. Compile a solução e comece a executá-la no depurador. (No menu **Compilar** , clique em **Recompilar solução**e, em seguida, no menu **depurar** , clique em **Iniciar Depuração**.) Uma nova instância do Visual Studio abre o projeto de depuração.
+1. Compile a solução e comece a executá-la no depurador. (No menu **Compilar** , clique em **Recompilar solução** e, em seguida, no menu **depurar** , clique em **Iniciar Depuração**.) Uma nova instância do Visual Studio abre o projeto de depuração.
 
 2. Adicione um arquivo de texto chamado `DebugTest.tt` ao projeto de depuração.
 

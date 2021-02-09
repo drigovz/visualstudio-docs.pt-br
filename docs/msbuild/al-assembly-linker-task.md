@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d59251240abc7ca39b3819adf2324bf5bb9cef0a
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 3d99c33a74512b380d7b5260d5b7e747c6a39e41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353350"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923866"
 ---
 # <a name="al-assembly-linker-task"></a>Tarefa AL (Assembly Linker)
 
@@ -95,7 +95,7 @@ A tarefa AL encapsula *AL.exe*, uma ferramenta que é distribuída com o SDK (So
 </AL>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 * [Tarefas](../msbuild/msbuild-tasks.md)

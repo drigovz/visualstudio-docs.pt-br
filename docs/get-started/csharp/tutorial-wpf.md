@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 26beadbe6963a685f10aef1db7bd8779434927d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4384a724b57de565e03637057e16fc26e8213e5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419270"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924884"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: criar um aplicativo simples com C\#
 
@@ -298,7 +298,7 @@ Você pode testar o código durante a depuração ao adicionar alguns pontos de 
 
 #### <a name="add-breakpoints"></a>Adicionar pontos de interrupção
 
-1. Abra *Greetings.XAML.cs*e selecione a seguinte linha: `MessageBox.Show("Hello.")`
+1. Abra *Greetings.XAML.cs* e selecione a seguinte linha: `MessageBox.Show("Hello.")`
 
 1. Adicione um ponto de interrupção por meio do menu selecionando **Depurar** e, em seguida, **Ativar/Desativar Ponto de Interrupção**.
 
@@ -314,7 +314,7 @@ Você pode testar o código durante a depuração ao adicionar alguns pontos de 
 
     ![Ponto de interrupção no depurador](media/exploreide-debugbreakpoint.png "Captura de tela de ponto de interrupção no depurador")
 
-1. Na barra de menus, escolha **depurar depuração**  >  **Step Out**.
+1. Na barra de menus, escolha **depurar depuração**  >  .
 
      O aplicativo retomará a execução e uma caixa de mensagem com a palavra "Olá" será exibida.
 

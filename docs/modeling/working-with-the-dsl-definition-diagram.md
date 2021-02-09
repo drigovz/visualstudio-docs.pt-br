@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Bring Tree Here
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d489bfde8b095e35bc652f1cdb7588b07458e48e
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 705134b5dfa31bb317360073e336abebcefdb13d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362828"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923968"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Trabalhando com o diagrama de definição de DSL
 O diagrama de uma [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definição é uma ferramenta importante para definir a linguagem específica do domínio. É possível adicionar elementos ao seu modelo de domínio e definir as relações no diagrama e é possível modificar o layout do diagrama para torná-lo mais legível.
@@ -72,6 +72,6 @@ O diagrama de uma [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definição é
 ### <a name="show-as-class"></a>Show As Class
  Se uma relação de domínio tiver relações derivadas, ou se tiver uma incorporação ou relações de referência com outras relações de domínio, você poderá exibir a relação como uma classe clicando com o botão direito do mouse na relação e, em seguida, clicando em **mostrar como classe**. A relação será exibida com um compartimento de **Propriedades de domínio** e mostrará as árvores de herança e relações.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

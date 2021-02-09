@@ -5,16 +5,16 @@ ms.date: 08/06/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f331c794c50d6b6573ad9708da6d153c77f4d77c
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: efd75e79d7c015539dfe045f7b0a3b266cfb4756
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352343"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923747"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Como criar e gerenciar ambientes Python no Visual Studio
 
@@ -262,7 +262,7 @@ Para corrigir um ambiente que você deseja manter, primeiro tente usar o process
 Para corrigir um ambiente que não tem uma opção de reparo, ou para remover um ambiente inválido, use as etapas a seguir para modificar o Registro diretamente. O Visual Studio atualiza automaticamente a janela de **ambientes Python** quando você faz alterações no registro.
 
 1. Execute *regedit.exe*.
-1. Navegue até **HKEY_LOCAL_MACHINE \software\python** ou **HKEY_CURRENT_USER \software\python**. Para o IronPython, procure **IronPython**.
+1. Navegue até **HKEY_LOCAL_MACHINE\SOFTWARE\Python** ou **HKEY_CURRENT_USER\SOFTWARE\Python**. Para o IronPython, procure **IronPython**.
 1. Expanda o nó que corresponde à distribuição, como **PythonCore** para o CPython ou **ContinuumAnalytics** para o Anaconda. Para o IronPython, expanda o nó de número de versão.
 1. Inspecione os valores no nó **InstallPath**:
 
@@ -270,7 +270,7 @@ Para corrigir um ambiente que não tem uma opção de reparo, ou para remover um
 
     - Se o ambiente ainda existir no computador, altere o valor de **ExecutablePath** para o local correto. Corrija também os valores **(Padrão)** e **WindowedExecutablePath**, conforme necessário.
     - Se o ambiente não existir mais no computador e você desejar removê-lo da janela **Ambientes do Python**, exclua o nó pai de **InstallPath**, como **3.6** na imagem acima.
-    - Configurações inválidas no **HKEY_CURRENT_USER \software\python** substituir as configurações em **HKEY_LOCAL_MACHINE \software\python**
+    - Configurações inválidas no **HKEY_CURRENT_USER\SOFTWARE\Python** substituir as configurações em **HKEY_LOCAL_MACHINE\SOFTWARE\Python**
 
 ## <a name="see-also"></a>Confira também
 

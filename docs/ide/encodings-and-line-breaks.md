@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 889af1c0fd28224b2f31eb80bbeecad28346cd1c
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: e466439469db66e8e871115abc9828988f24b546
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006634"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924747"
 ---
 # <a name="encodings-and-line-endings"></a>Codificações e términos de linha
 
@@ -46,7 +46,7 @@ Ao abrir um arquivo que tem caracteres de quebra de linha diferentes, talvez voc
 
 ## <a name="advanced-save-options"></a>Opções avançadas de salvamento
 
-Você pode usar a **File**  >  caixa de diálogo **Opções de salvamento avançadas** do arquivo para determinar o tipo de caracteres de quebra de linha desejado. Também é possível alterar a codificação de um arquivo com as mesmas configurações.
+Você pode usar a   >  caixa de diálogo **Opções de salvamento avançadas** do arquivo para determinar o tipo de caracteres de quebra de linha desejado. Também é possível alterar a codificação de um arquivo com as mesmas configurações.
 
 ![caixa de diálogo Opções avançadas de salvar](media/line_endings.png)
 

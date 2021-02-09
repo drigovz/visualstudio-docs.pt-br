@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d912e98d01448a378acbed79e2278f70f62436e7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: da5817711c7131868c4bad22bbe93447119d19d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362685"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924519"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Noções básicas sobre modelos, classes e relações
 Uma DSL (linguagem específica de domínio) é definida por seu arquivo de definição de DSL, junto com qualquer código de programa personalizado que você possa escrever. A maior parte do código do programa na solução de DSL é gerada a partir desse arquivo.
@@ -134,7 +134,7 @@ Uma DSL (linguagem específica de domínio) é definida por seu arquivo de defin
 
  Configure a multiplicidade de uma função digitando no diagrama ou modificando a `Multiplicity` Propriedade na janela **Propriedades** . A tabela a seguir descreve as configurações dessa propriedade.
 
-|Tipo de multiplicidade|Descrição|
+|Tipo de multiplicidade|Description|
 |-|-|
 |0.. * (zero a muitos)|Cada instância da classe de domínio pode ter várias instâncias da relação ou nenhuma instância da relação.|
 |0.. 1 (zero a um)|Cada instância da classe de domínio não pode ter mais de uma instância da relação ou nenhuma das instâncias da relação.|
@@ -150,6 +150,6 @@ Uma DSL (linguagem específica de domínio) é definida por seu arquivo de defin
 
  Uma relação derivada especializa sua relação de base. As classes de domínio para as quais ele se vincula devem ser derivadas ou iguais às classes vinculadas pela relação base. Quando um link da relação derivada é criado em um modelo, ele é uma instância de relações derivadas e base. No código do programa, você pode navegar até a extremidade oposta do link usando as propriedades geradas pelo base ou pela classe derivada.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

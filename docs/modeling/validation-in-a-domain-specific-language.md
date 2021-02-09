@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Domain-Specific Language, validation
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb9baced0a4cc38ae175146d3f3779c5b9c28dd2
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 44ee0d9e10a4f96979362d8613dc6ca949ff2fd7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362529"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924262"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validação em uma linguagem específica do domínio
 Como o autor de uma linguagem específica de domínio (DSL), você pode definir restrições de validação para verificar se o modelo criado pelo usuário é significativo. Por exemplo, se a sua DSL permite que os usuários desenhem uma árvore genealógica das pessoas e os seus ancestrais, você pode escrever uma restrição que garanta que os filhos tenham datas de nascimento posteriores as dos seus pais.
@@ -195,7 +195,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  Se você definir que a multiplicidade de uma função de uma relação de domínio como 1..* ou 1..1, mas o usuário não criar um link dessa relação, uma mensagem de erro de validação aparecerá.
 
- Por exemplo, se sua DSL tiver classes Person e cidade, e uma relação PersonLivesInTown com uma relação **1.. \\** _ na função cidade, para cada pessoa que não tem nenhuma cidade, uma mensagem de erro será exibida.
+ Por exemplo, se sua DSL tiver classes Person e cidade, e uma relação PersonLivesInTown com uma relação **1.. \\** * na função cidade, para cada pessoa que não tem nenhuma cidade, será exibida uma mensagem de erro.
 
 ## <a name="running-validation-from-program-code"></a>Executando a validação a partir do código do programa
  Você pode executar a validação acessando ou criando um ValidationController. Se você quiser que os erros sejam exibidos para o usuário na janela de erro, use o ValidationController que está anexado ao DocData do diagrama. Por exemplo, se você estiver escrevendo um comando de menu, `CurrentDocData.ValidationController` está disponível na classe de conjunto de comandos:
@@ -235,7 +235,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>Executando a validação quando ocorre uma alteração
  Se você deseja garantir que o usuário seja avisado imediatamente quando o modelo se tornar inválido, defina um evento de armazenamento que execute a validação. Para obter mais informações sobre como armazenar eventos, consulte [manipuladores de eventos propagar alterações fora do modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
- Além do código de validação, adicione um arquivo de código personalizado ao seu projeto _ *DslPackage**, com conteúdo semelhante ao exemplo a seguir. Esse código usa o `ValidationController` que é anexado ao documento. Esse controlador exibe os erros de validação na lista de erros do Visual Studio.
+ Além do código de validação, adicione um arquivo de código personalizado ao seu projeto **DslPackage** , com conteúdo semelhante ao exemplo a seguir. Esse código usa o `ValidationController` que é anexado ao documento. Esse controlador exibe os erros de validação na lista de erros do Visual Studio.
 
 ```csharp
 using System;
@@ -336,7 +336,7 @@ validationController.ValidateCustom
 > [!WARNING]
 > Verifique se o usuário sabe que a alteração foi ajustada ou revertida. Por exemplo, use `System.Windows.Forms.MessageBox.Show("message").`
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Manipuladores de eventos propagam alterações fora do modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md)
