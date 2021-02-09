@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 0af11464-eeb1-4d0b-87a6-0cc96779afb1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: be57355c8fc38758080ebde344db0b4224bc3df8
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 10818f473dec392364832cdc2f5215197ef4627f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728519"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873165"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Caixa de diálogo Depurar Arquivos de Origem, Propriedades Comuns, Páginas de Propriedades da Solução
 Esta página de propriedades especifica onde o depurador procurará arquivos de origem ao depurar a solução.
@@ -40,7 +40,7 @@ Esta página de propriedades especifica onde o depurador procurará arquivos de 
 
  **Não procurar esses arquivos de origem** Insira os nomes dos arquivos que você não deseja que o depurador Leia. Se o depurador encontrar um desses arquivos em um dos diretórios especificados acima, ele o ignorará. Se a caixa de diálogo **Localizar Fonte** aparecer durante a depuração e você clicar em **Cancelar**, o arquivo que você procurava será adicionado a essa lista para que o depurador não continue a procurar o arquivo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Configurações e preparação do depurador](../debugger/debugger-settings-and-preparation.md)

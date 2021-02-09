@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 9d175bc2-1d95-4c47-9bc3-9755af968a9c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fed6580219964ab71f5a5010060c1af193375df
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e7a133b4b59b11525a7f7ba776b3b4a4a1e6a31e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727132"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873204"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Depurar aplicativos multi-threaded no Visual Studio
 Um thread é uma sequência de instruções para as quais o sistema operacional concede o tempo do processador. Cada processo que está em execução no sistema operacional consiste em pelo menos um thread. Os processos que têm mais de um thread são chamados multithread.
@@ -99,7 +99,7 @@ Atribua ao thread um nome que aparecerá na janela **Threads**.
 
 Atribua ao thread um nome que aparecerá na janela **Threads**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Usar pontos de interrupção](../debugger/using-breakpoints.md)
 - [Threading](/dotnet/standard/threading/index)

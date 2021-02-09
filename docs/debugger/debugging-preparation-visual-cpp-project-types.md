@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 912b4ba2-7719-43d5-b087-db33e3f9329a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e399b28d3ddce07cae263550b536c21ad1db028
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: fcd4375b475106b0428f21057f5b44fc8bee8700
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728298"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872414"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Preparação da depuração: tipos de projeto C++
 Esta seção descreve como depurar os tipos de projeto básicos criados pelos modelos de projeto do [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].
@@ -48,13 +48,13 @@ Esta seção descreve como depurar os tipos de projeto básicos criados pelos mo
 
 ### <a name="configuration-properties-124-cc-124-optimization-node"></a>Propriedades de configuração &#124; C/C++ &#124; nó de otimização
 
-|Nome da propriedade|Configuração|
+|Nome da Propriedade|Configuração|
 |-------------------|-------------|
 |**Otimização**|Definido como **Desabilitado (/0d).** O código otimizado é mais difícil de depurar porque as instruções geradas não correspondem diretamente ao código-fonte. Se você descobrir que seu programa tem um bug que aparece apenas em código otimizado, habilite essa configuração, mas lembre-se de que o código mostrado na janela **Desmontagem** é gerado da origem otimizada que pode não corresponder ao que é visto em suas janelas de origem. Outros recursos, como depuração, podem não se comportar como esperado.|
 
 ### <a name="configuration-properties-124-linker-124-debugging-node"></a>Propriedades de configuração &#124; vinculador &#124; nó de depuração
 
-|Nome da propriedade|Configuração|
+|Nome da Propriedade|Configuração|
 |-------------------|-------------|
 |**Gerar informações de depuração**|Você sempre deve definir essa opção como **Sim (/DEBUG)** para criar os símbolos e os arquivos de depuração necessários para a depuração. Quando o aplicativo entra em produção, você pode defini-lo como desativado.|
 
@@ -110,7 +110,7 @@ Esta seção descreve como depurar os tipos de projeto básicos criados pelos mo
 
  [Neste tópico](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Configurações do projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Anexando a um programa ou a vários programas em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

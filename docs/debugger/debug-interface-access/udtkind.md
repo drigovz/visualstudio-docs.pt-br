@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 400b59b9-373c-42cb-aae1-570494214328
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 746ff69de6f58f85d16982522c6ac13dcbf4ce6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44c543d09a360bfb7eadad11d7fca84764bb2006
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460968"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873390"
 ---
 # <a name="udtkind"></a>UdtKind
 Descreve a variedade de UDT (tipo definido pelo usuário).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```C++
 enum UdtKind {

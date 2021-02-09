@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: f98c91c0-447a-4533-85b6-87170a0dc4c3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef34889b838e2f7eaa92420eec90db9def57e65
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 0835746b94412380bee314bc3fac59b4c48f86d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862836"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871995"
 ---
 # <a name="edit-and-continue-error-message"></a>Mensagem de erro editar e continuar
 
@@ -42,7 +42,7 @@ As possíveis razões para essa mensagem de erro incluem:
 - Tentando editar o código durante a depuração de um despejo de Dr. Watson.
 - A tentativa de editar o código após uma exceção sem tratamento ocorre e a opção **desenrolar a pilha de chamadas em exceções sem tratamento** não é selecionada.
 - Tentando editar o código durante a depuração de um aplicativo de tempo de execução inserido.
-- Tentando editar código gerenciado usando uma versão .NET Framework anterior à 4.5.1 com um destino de aplicativo de 64 bits. Para usar editar e continuar para .NET Framework anteriores ao 4.5.1, defina o destino como **x86** na **\<ProjectName>**  >  **Properties**  >  guia **Compilar** Propriedades, configuração **avançada do compilador** .
+- Tentando editar código gerenciado usando uma versão .NET Framework anterior à 4.5.1 com um destino de aplicativo de 64 bits. Para usar editar e continuar para .NET Framework anteriores ao 4.5.1, defina o destino como **x86** na **\<ProjectName>**  >    >  guia **Compilar** Propriedades, configuração **avançada do compilador** .
 - Tentativa de editar código em um assembly que foi modificado durante a depuração e foi recarregado.
 - Tentando editar o código em um assembly que não foi carregado.
 - Começando a depurar uma versão antiga de um aplicativo, pois a versão mais recente tem erros de compilação.

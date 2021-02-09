@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f99ce329d4b88037901db2336076bb1d12d411f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: ca83bd9f6ac88e26247f6c9beea9c242a505887c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363777"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873769"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Definindo uma imagem de plano de fundo em um diagrama
 No SDK de visualização e modelagem do Visual Studio, você pode definir a imagem de plano de fundo para um designer gerado usando código personalizado.
@@ -102,7 +102,7 @@ No SDK de visualização e modelagem do Visual Studio, você pode definir a imag
 
      Para obter mais informações sobre como personalizar o modelo com o código do programa, consulte [navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Definindo formas e conectores](../modeling/defining-shapes-and-connectors.md)
 - [Personalizando campos de texto e imagem](../modeling/customizing-text-and-image-fields.md)

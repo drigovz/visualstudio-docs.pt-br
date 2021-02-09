@@ -7,15 +7,15 @@ ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a281b90b3dabe2b1d91c43a27ee5f9c858f96c
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: f7fe40f78b8a8447c1ae784e33a25e905e368118
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873821"
 ---
 # <a name="walkthrough-build-an-application"></a>Passo a passo: Criar um aplicativo
 
@@ -45,7 +45,7 @@ Ao criar uma solução, as configurações de build de depuração e versão e s
 
 1. Na lista **plataforma de solução ativa** , escolha **\<New...\>** .
 
-1. Na caixa de diálogo **nova plataforma de solução** , escolha **x64**e não copie as configurações da plataforma x86.
+1. Na caixa de diálogo **nova plataforma de solução** , escolha **x64** e não copie as configurações da plataforma x86.
 
    ![Caixa de diálogo Nova Plataforma da Solução](../ide/media/buildwalk_newsolutionplatform.png)
 
@@ -67,7 +67,7 @@ Em seguida, você compilará a solução com a configuração de build personali
 
 ### <a name="build-the-solution"></a>Compilar a solução
 
-- Na barra de menus, escolha **criar**  >  **solução de compilação**ou pressione **Ctrl** + **Shift** + **B**.
+- Na barra de menus, escolha **criar**  >  **solução de compilação** ou pressione **Ctrl** + **Shift** + **B**.
 
     A Janela de **Saída** exibe os resultados do build. O build foi bem-sucedido.
 

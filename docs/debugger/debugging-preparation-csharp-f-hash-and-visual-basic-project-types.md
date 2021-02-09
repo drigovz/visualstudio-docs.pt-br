@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 7a0535f6-1cd4-4b51-ad34-f4a45b9f1ce3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1536c00f68232bb9e4aa92102b605b59ec58b196
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 88dc5beeace4b88f5591853d932976d987b0d3c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726846"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872411"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Preparação de depuração: tipos de projeto C#, F# e Visual Basic
 Os tópicos nessa seção descrevem como depurar os tipos de projeto C#, F# e [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] criados pelos modelos de projeto do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -48,5 +48,5 @@ Os tópicos nessa seção descrevem como depurar os tipos de projeto C#, F# e [!
 
  [Depuração de código gerenciado](../debugger/debugging-managed-code.md) Aborda problemas comuns de depuração e técnicas para aplicativos escritos em código gerenciado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Segurança do depurador](../debugger/debugger-security.md)

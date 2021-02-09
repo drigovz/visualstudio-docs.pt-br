@@ -1,5 +1,5 @@
 ---
-title: Usar a pesquisa do Visual Studio
+title: Usar a Pesquisa do Visual Studio
 description: Aprenda a usar o Visual Studio Search para localizar configurações, menus e código.
 ms.date: 10/08/2020
 ms.topic: how-to
@@ -16,15 +16,15 @@ ms.assetid: 3870a8fd-4afa-4f1e-a811-9fdf41a9e82d
 monikerRange: vs-2019
 author: profexorgeek
 ms.author: jusjohns
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b9f8182646af4facb0f2f86c74f95dff091d55d1
-ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
+ms.openlocfilehash: 101875b3a600a71c832498d05073187d2cf0b774
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92199615"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873899"
 ---
 # <a name="use-visual-studio-search"></a>Usar a pesquisa do Visual Studio
 
@@ -43,28 +43,28 @@ Ao contrário de outros recursos de pesquisa, como localizar em arquivos ou Pesq
 
 Você pode usar a caixa de pesquisa do Visual Studio para localizar configurações, opções e itens de configuração semelhantes. Por exemplo, pesquise por *alterar tema* para localizar e abrir rapidamente a caixa de diálogo que permite alterar o tema de cores do Visual Studio, conforme mostrado na seguinte captura de tela:
 
-:::image type="content" source="media/visual-studio-search-options.png" alt-text="Caixa de pesquisa do Visual Studio":::
+:::image type="content" source="media/visual-studio-search-options.png" alt-text="Pesquisar configurações e opções do Visual Studio":::
 
 > [!TIP]
 > Na maioria dos casos, a pesquisa do Visual Studio também o lembrará do menu, das teclas de atalho e do local de cada item nos resultados.
 
 Você pode usar a caixa de pesquisa do Visual Studio para localizar itens de menu e comandos. Por exemplo, pesquise *sol limpo* para localizar e executar rapidamente o comando limpar solução. Os resultados da pesquisa também oferecem um lembrete de onde encontrar esse comando nos menus, conforme mostrado na seguinte captura de tela:
 
-:::image type="content" source="media/visual-studio-search-menu.png" alt-text="Caixa de pesquisa do Visual Studio":::
+:::image type="content" source="media/visual-studio-search-menu.png" alt-text="Pesquisar itens de menu e comandos do Visual Studio":::
 
 Por fim, você pode procurar janelas ou painéis que você pode ter fechado acidentalmente. Por exemplo, pesquise por *teste* para localizar e abrir a janela Gerenciador de testes:
 
-:::image type="content" source="media/visual-studio-search-window.png" alt-text="Caixa de pesquisa do Visual Studio":::
+:::image type="content" source="media/visual-studio-search-window.png" alt-text="Pesquisar janelas e painéis do Visual Studio":::
 
 ## <a name="search-files-and-code"></a>Pesquisar arquivos e código
 
 A pesquisa do Visual Studio também pesquisa seus itens de solução para nome de arquivo, código, método e outras correspondências. Na captura de tela a seguir, uma pesquisa por *redução* encontrou o arquivo MarkdownMetaExtractor.cs, a `MarkdownMetaExtractor` classe e dois métodos dentro da solução:
 
-:::image type="content" source="media/visual-studio-search-files.png" alt-text="Caixa de pesquisa do Visual Studio":::
+:::image type="content" source="media/visual-studio-search-files.png" alt-text="Pesquisar arquivos com a pesquisa do Visual Studio":::
 
-Você também pode fazer uma pesquisa "camel case". Na captura de tela a seguir **, uma pesquisa**por *FSS* encontrou um arquivo, classe e**método imensionar****s**mais antigos:
+Você também pode fazer uma pesquisa "camel case". Na captura de tela a seguir **, uma pesquisa** por *FSS* encontrou um arquivo, classe e **método imensionar****s** mais antigos:
 
-:::image type="content" source="media/visual-studio-search-camel.png" alt-text="Caixa de pesquisa do Visual Studio":::
+:::image type="content" source="media/visual-studio-search-camel.png" alt-text="Pesquisa do Camel dobra com o Visual Studio Search":::
 
 ## <a name="see-also"></a>Confira também
 

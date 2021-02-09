@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, decorators
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ef863d0d3dab394c2ca427a27d039c19e5921a51
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e29dcda43fdbb7b60567ff0aa0627b41ca3ca299
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360827"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873782"
 ---
 # <a name="properties-of-decorators"></a>Propriedades de decoradores
 Os decoradores são ícones, texto ou divisas de expandir/recolher que podem aparecer em formas ou conectores no diagrama. As tabelas a seguir mostram as propriedades para os três tipos de decorador. Algumas das propriedades aparecem apenas em decoradores de forma ou somente em decoradores de conector.
@@ -28,7 +28,7 @@ Os decoradores são ícones, texto ou divisas de expandir/recolher que podem apa
 |Propriedade|Descrição|Padrão|
 |-|-|-|
 |DisplayName|O nome do decorador que será exibido no designer gerado.|Expandir recolher decorador|
-|Name|O nome do decorador.|ExpandCollapseDecorator|
+|Nome|O nome do decorador.|ExpandCollapseDecorator|
 |Observações|Observações informais que estão associadas a este decorador.|\<none>|
 |As|O deslocamento horizontal, em relação à posição padrão do decorador, em polegadas. (Somente nas formas.)|0|
 |VerticalOffset|O deslocamento vertical, em relação à posição padrão do decorador, em polegadas. (Somente nas formas.)|0|
@@ -42,7 +42,7 @@ Os decoradores são ícones, texto ou divisas de expandir/recolher que podem apa
 |-|-|-|
 |DefaultIcon|O caminho do arquivo de ícone ou de imagem a ser exibido.|\<none>|
 |DisplayName|O nome do decorador a ser exibido no designer gerado.|Decorador de ícone|
-|Name|O nome do decorador.|IconDecorator|
+|Nome|O nome do decorador.|IconDecorator|
 |Observações|Observações informais que estão associadas ao decorador.|\<none>|
 |As|O deslocamento horizontal, em relação à posição padrão do decorador, em polegadas. (Somente nas formas.)|0|
 |VerticalOffset|O deslocamento vertical, em relação à posição padrão do decorador, em polegadas. (Somente nas formas.)|0|
@@ -54,11 +54,11 @@ Os decoradores são ícones, texto ou divisas de expandir/recolher que podem apa
 
 |Propriedade|Descrição|Padrão|
 |-|-|-|
-|DefaultText|O texto padrão a ser exibido.|Rotular|
-|DisplayName|O nome do decorador a ser exibido no designer gerado.|Rotular|
+|DefaultText|O texto padrão a ser exibido.|Rótulo|
+|DisplayName|O nome do decorador a ser exibido no designer gerado.|Rótulo|
 |FontSize|O tamanho da fonte para o texto que é exibido no decorador.|8|
 |FontStyle|O estilo da fonte para o texto que é exibido no decorador.|Regular|
-|Name|O nome do decorador.|Rotular|
+|Nome|O nome do decorador.|Rótulo|
 |Observações|Observações informais que estão associadas ao decorador.|\<none>|
 |As|O deslocamento horizontal, em relação à posição padrão do decorador, em polegadas. (Somente nas formas.)|0|
 |VerticalOffset|O deslocamento vertical, em relação à posição padrão do decorador, em polegadas. (Somente nas formas.)|0|
@@ -66,6 +66,6 @@ Os decoradores são ícones, texto ou divisas de expandir/recolher que podem apa
 |OffsetFromShape|O deslocamento do decorador a partir da forma, em relação à sua posição padrão, em polegadas. (Somente em conectores.)|0|
 |Posição|A posição padrão do decorador.|TargetBottom|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

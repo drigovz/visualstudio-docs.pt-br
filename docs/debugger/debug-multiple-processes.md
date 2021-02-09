@@ -18,15 +18,15 @@ dev_langs:
 ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 214025c2d128443223594fdb00fcf730e5a8091a
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: fdb86d0c0140c7d0c30b3a56fbf875215d1e626e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728625"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873275"
 ---
 # <a name="debug-multiple-processes-c-visual-basic-c"></a>Depurar vários processos (C#, Visual Basic, C++)
 
@@ -174,7 +174,7 @@ A tabela a seguir descreve os comportamentos dos comandos parar, encerrar e desa
 |Janela de **processos** > **encerrar processo**|O processo selecionado foi encerrado.<br />Outros processos mantém o estado existente (suspenso ou em execução).|
 |Janela de **processos** > **desanexar quando a depuração parar**|Se selecionado, **depurar**  >  **parar depuração** desanexará do processo selecionado. <br />Se não for selecionado, **depurar**  >  **parar depuração** finalizará o processo selecionado. |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Especificar o símbolo (. pdb) e os arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [Anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

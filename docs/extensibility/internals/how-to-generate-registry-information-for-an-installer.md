@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 082833c97706868261e39b50377c158f90b46a4a
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: a32d8f57be2e1e4c8a2855f7f9008eaed2ae4eac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761219"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874054"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Como gerar informações de registro para um instalador
 
@@ -183,7 +183,7 @@ O utilitário *RegPkg.exe* pode ser usado para gerar um manifesto de registro pa
     </Include>
     ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Registrar VSPackages](../../extensibility/registering-and-unregistering-vspackages.md)
 - [VSPackages](../../extensibility/internals/vspackages.md)

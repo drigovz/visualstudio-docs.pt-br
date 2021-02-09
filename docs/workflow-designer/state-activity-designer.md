@@ -8,16 +8,16 @@ f1_keywords:
 - System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: d5dbe0a14b007ad8e916aa9b2d8d765402dbe66b
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: abf4e81ecd258668c93b674410f029e6be0f5bf1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433980"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873509"
 ---
 # <a name="state-activity-designer"></a>Designer de atividade de estado
 
@@ -38,7 +38,7 @@ A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.S
 |<xref:System.Activities.Statements.State.Exit%2A>|Falso|Especifica a ação que ocorre quando esse estado é feito a transição fora. Quando a <xref:System.Activities.Statements.State> atividade é expandida, esse valor pode ser definido arrastando-se uma atividade da **caixa de ferramentas** e soltando-a na seção de **saída** do estado.|
 |<xref:System.Activities.Statements.State.Transitions%2A>|Falso|Lista as transições possíveis que originam de <xref:System.Activities.Statements.State>. Cada item na lista possui um link a <xref:System.Activities.Statements.Transition> associado e de destino <xref:System.Activities.Statements.State>. Clicar no link alternará o designer para uma exibição expandida de <xref:System.Activities.Statements.Transition> ou de <xref:System.Activities.Statements.State>.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [StateMachine](../workflow-designer/statemachine-activity-designer.md)
 - [FinalState](../workflow-designer/finalstate-activity-designer.md)

@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 9a497032-cf73-441e-923b-4bbd5d37a6da
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43c6bf4e817f78867534abdca69c7e975397d287
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 82e384c714b02f02adf105e0d23551ee66caa5df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726963"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872554"
 ---
 # <a name="debugging-native-code-faqs"></a>Perguntas frequentes de depuração do código nativo
 Os tópicos a seguir contêm respostas a algumas perguntas frequentes:
@@ -50,6 +50,6 @@ Os tópicos a seguir contêm respostas a algumas perguntas frequentes:
 
 - [Se estiver interrompido no MFC, como posso voltar para a função que chamou o MFC?](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Depurando código nativo](../debugger/debugging-native-code.md)

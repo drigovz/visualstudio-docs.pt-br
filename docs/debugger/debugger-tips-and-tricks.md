@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5262d8b1-2648-429e-85d5-90fcaadfb362
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8d6df020694bb10fe4f3f051551056549d5673
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5b934c0e9532bd3bc1f53d9b00d1cc8273f4120
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315051"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872983"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Aprenda dicas e truques de produtividade para o depurador no Visual Studio
 
@@ -33,7 +33,7 @@ Se você passar o mouse sobre dicas de dados durante a depuração, convém fixa
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Editar seu código e continuar a depuração (C#, VB, C++)
 
-Na maioria dos idiomas com suporte no Visual Studio, você pode editar seu código no meio de uma sessão de depuração e continuar a depuração. Para usar esse recurso, clique em seu código com o cursor enquanto estiver em pausa no depurador, faça edições e pressione **F5**, **F10**ou **F11** para continuar a depuração.
+Na maioria dos idiomas com suporte no Visual Studio, você pode editar seu código no meio de uma sessão de depuração e continuar a depuração. Para usar esse recurso, clique em seu código com o cursor enquanto estiver em pausa no depurador, faça edições e pressione **F5**, **F10** ou **F11** para continuar a depuração.
 
 ![Editar e continuar a depuração](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 
@@ -143,7 +143,7 @@ Se você precisar depurar os tipos de problemas que são comuns a aplicativos mu
 ::: moniker range="vs-2017"
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Examinar as cargas para serviços Web e recursos de rede (UWP)
 
-Em aplicativos UWP, você pode analisar as operações de rede executadas usando a `Windows.Web.Http` API. Você pode usar essa ferramenta para ajudar a depurar os serviços Web e os recursos de rede. Para usar a ferramenta, selecione **depurar > criador de perfil de desempenho**. Selecione **rede**e, em seguida, escolha **Iniciar**. No aplicativo, percorra o cenário que usa `Windows.Web.Http` e escolha **Parar coleta** para gerar o relatório.
+Em aplicativos UWP, você pode analisar as operações de rede executadas usando a `Windows.Web.Http` API. Você pode usar essa ferramenta para ajudar a depurar os serviços Web e os recursos de rede. Para usar a ferramenta, selecione **depurar > criador de perfil de desempenho**. Selecione **rede** e, em seguida, escolha **Iniciar**. No aplicativo, percorra o cenário que usa `Windows.Web.Http` e escolha **Parar coleta** para gerar o relatório.
 
 ![Ferramenta de criação de perfil de uso de rede](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
 

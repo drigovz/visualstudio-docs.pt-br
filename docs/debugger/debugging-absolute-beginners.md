@@ -7,15 +7,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6202fa019aed8e6fc9eb9ff93bdb390bf22f2911
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: fbb99d2b41a8a354ec450e99dab13efb6ec60248
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761245"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872918"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Como depurar para iniciantes absolutos
 
@@ -180,7 +180,7 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
 
     *nome da galáxia*, *distância*, *tipo de galáxia*.
 
-### <a name="run-the-app"></a>Executar o aplicativo
+### <a name="run-the-app"></a>Execute o aplicativo
 
 1. Pressione **F5** ou o botão **Iniciar Depuração** ![Iniciar Depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na barra de ferramentas depurar, localizada acima do editor de códigos.
 

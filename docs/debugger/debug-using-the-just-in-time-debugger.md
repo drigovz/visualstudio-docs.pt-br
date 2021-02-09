@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Just-In-Time debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a03afa64d19e3ccd0efbb170b4305049f6bfee30
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 8e082f5346d22fd574b7f9b725f8ec88b8a3b08f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761336"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873191"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Depurar usando o depurador just-in-time no Visual Studio
 
@@ -191,7 +191,7 @@ Você poderá ver as seguintes mensagens de erro durante a depuração Just-in-t
 
     Para corrigir esse problema, use o Instalador do Visual Studio para reinstalar ou reparar a instalação do Visual Studio.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

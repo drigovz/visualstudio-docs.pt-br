@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 068362f88d801d44a1a6b6a85c74f97ba2d3c773
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 894263883cbb34c8d41ec67a5e595e801f723390
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873418"
 ---
 # <a name="evaluate-xpath-expressions"></a>Avaliar expressões XPath
 
@@ -36,7 +36,7 @@ O procedimento a seguir usa o *below-Average. xsl* e os arquivos de *books.xml* 
 
 1. Inserir um ponto de interrupção na tag de início de `xsl:if` .
 
-2. Para iniciar a depuração, escolha **XML**  >  **Iniciar Depuração XSLT** na barra de menus (ou pressione **ALT** + **F5** ).
+2. Para iniciar a depuração, escolha **XML**  >  **Iniciar Depuração XSLT** na barra de menus (ou pressione **ALT** + **F5**).
 
    Inicia e as quebras do depurador na marca `xsl:if` .
 
@@ -54,6 +54,6 @@ O procedimento a seguir usa o *below-Average. xsl* e os arquivos de *books.xml* 
 
    A caixa **valor** mostra que a expressão XPath é avaliada como `true` .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depuração de XSLT](../xml-tools/debugging-xslt.md)

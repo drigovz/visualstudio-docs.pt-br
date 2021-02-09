@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9641f1d9-2d5a-48b1-8731-6525e8f67892
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9de54feeb77f1bff31fc0b41e385e5a10393aba2
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e39cb7df53a12b97d297ee739338c42a3201089f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728259"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872515"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparação da depuração: projetos de console (C#, C++, Visual Basic, F #)
 
@@ -58,10 +58,10 @@ Como todas as propriedades do projeto, esses argumentos persistem entre sessões
 
   Quando você inicia um aplicativo de console do Visual Studio, a janela **Console** às vezes aparece por trás da janela do Visual Studio. Se você tentar iniciar o aplicativo de console do Visual Studio e nada acontecer, tente mover a janela do Visual Studio.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Depurando código nativo](../debugger/debugging-native-code.md)
 - [Depurando código gerenciado](../debugger/debugging-managed-code.md)
 - [Preparar para depurar projetos C++](../debugger/debugging-preparation-visual-cpp-project-types.md)
-- [Tipos de projeto do Visual Basic, C# e F#](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
+- [Tipos de projeto C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Configurações do projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Segurança do depurador](../debugger/debugger-security.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fb6ea896285c784021402400597ba168f6ccf716
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 462b2299a658359e81fc3641e590b95ab183a24e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724185"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874172"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 Anexa o SDM (Gerenciador de depuração de sessão) ao processo.
@@ -28,20 +28,20 @@ Anexa o SDM (Gerenciador de depuração de sessão) ao processo.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT Attach( 
-   IDebugEventCallback2* pCallback,
-   GUID*                 rgguidSpecificEngines,
-   DWORD                 celtSpecificEngines,
-   HRESULT*              rghrEngineAttach
+HRESULT Attach( 
+   IDebugEventCallback2* pCallback,
+   GUID*                 rgguidSpecificEngines,
+   DWORD                 celtSpecificEngines,
+   HRESULT*              rghrEngineAttach
 );
 ```
 
 ```csharp
-int Attach( 
-   IDebugEventCallback2 pCallback,
-   Guid[]               rgguidSpecificEngines,
-   uint                 celtSpecificEngines,
-   int[]                rghrEngineAttach
+int Attach( 
+   IDebugEventCallback2 pCallback,
+   Guid[]               rgguidSpecificEngines,
+   uint                 celtSpecificEngines,
+   int[]                rghrEngineAttach
 );
 ```
 
@@ -50,7 +50,7 @@ int Attach( 
 no Um objeto [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) que é usado para a notificação de evento de depuração.
 
 `rgguidSpecificEngines`\
-no Uma matriz de GUIDs de mecanismos de depuração a ser usada para depurar programas em execução no processo. Esse parâmetro pode ser um valor nulo. Consulte comentários para obter detalhes.
+no Uma matriz de GUIDs de mecanismos de depuração a ser usada para depurar programas em execução no processo. Esse parâmetro pode ser um valor nulo. Consulte Comentários para obter detalhes.
 
 `celtSpecificEngines`\
 no O número de mecanismos de depuração na `rgguidSpecificEngines` matriz e o tamanho da `rghrEngineAttach` matriz.
@@ -58,7 +58,7 @@ no O número de mecanismos de depuração na `rgguidSpecificEngines` matriz e o 
 `rghrEngineAttach`\
 [entrada, saída] Uma matriz de códigos HRESULT retornados pelos mecanismos de depuração. O tamanho dessa matriz é especificado no `celtSpecificEngines` parâmetro. Cada código costuma ser `S_OK` ou `S_ATTACH_DEFERRED` . O segundo indica que o DE está conectado no momento a nenhum programa.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. A tabela a seguir mostra outros valores possíveis.
 
 |Valor|Descrição|

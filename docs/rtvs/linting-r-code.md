@@ -7,21 +7,21 @@ f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: aecf9d95fb8a3b2cda659e2694bff145424e150b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c32bffbd25a39ff2053dea22930365860ed04a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62970726"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873652"
 ---
 # <a name="lint-r-code-in-visual-studio"></a>Fazer lint do código R no Visual Studio
 
 O linter analisa o código para revelar possíveis erros, problemas de formatação e outros ruídos no código, como espaço em branco diferente. O uso de um linter também ajuda a incentivar determinadas convenções de codificação, como a maneira como os identificadores são nomeados. Essas convenções são úteis dentro das equipes e de outras situações colaborativas.
 
-As RTVS (Ferramentas do R para Visual Studio) fornecem um linter interno para o R, cujo comportamento é controlado por meio de várias opções descritas neste artigo. Essas opções são encontradas em **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **R**  >  **pano**de R.
+As RTVS (Ferramentas do R para Visual Studio) fornecem um linter interno para o R, cujo comportamento é controlado por meio de várias opções descritas neste artigo. Essas opções são encontradas em **ferramentas**  >  **Opções**  >  **Editor de texto**  >    >  **pano** de R.
 
 O lint está desabilitado por padrão. Para habilitar o pano sem fiapos, defina a opção **todos**  >  **habilitar Panose** como **true**.
 

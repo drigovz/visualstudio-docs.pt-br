@@ -5,15 +5,15 @@ ms.date: 05/21/2018
 ms.topic: conceptual
 author: PoulChapman
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eae7e4726f720b1c9974682525bbe2a28ee38d5f
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 60a67da568703282a3ae469afa4dbc15c53cf4ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97667930"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873938"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programa de Aperfeiçoamento da Experiência do Usuário do Visual Studio
 
@@ -69,7 +69,7 @@ Valor = (DWORD)
 
 Para obter mais informações sobre as informações coletadas, processadas ou transmitidas pelo VSCEIP, confira a [Política de privacidade da Microsoft](https://privacy.microsoft.com/privacystatement).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Informações de diagnóstico coletadas pelo Visual Studio](diagnostic-data-collection.md)
 * [Opções de comentários do Visual Studio](../ide/feedback-options.md)

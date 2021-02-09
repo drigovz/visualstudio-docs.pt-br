@@ -14,15 +14,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 35c602b2754e4361b4e41e2b4d4d5cdcc09381c5
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 4d1bbdc3e06dee87e7d8930bc5c4e60c6d25ee2f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852778"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871735"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Erro: falha na depuração porque a autenticação integrada do Windows não está habilitada
 A autenticação do usuário que solicitou a depuração foi impedida por um erro de autenticação. Isso pode ocorrer ao tentar entrar em um aplicativo Web ou serviço Web XML. Uma causa desse erro é que a autenticação integrada do Windows não está habilitada. Para habilitá-la, siga as etapas em “Para habilitar a autenticação integrada do Windows”.
@@ -73,7 +73,7 @@ A autenticação do usuário que solicitou a depuração foi impedida por um err
 
          A caixa de diálogo Controle de Acesso do Usuário aparecerá e solicitará para que a permissão continue.
 
-    3. Clique em **Continuar**.
+    3. Clique em **Continue**.
 
          A caixa de diálogo Recursos do Windows é exibida.
 
@@ -113,7 +113,7 @@ A autenticação do usuário que solicitou a depuração foi impedida por um err
 
 10. Feche a janela **Gerenciador do IIS (Serviços de Informações da Internet)**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Depurando aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Autenticação do Microsoft Digest](/windows/win32/secauthn/microsoft-digest-authentication)
 - [Executando aplicativos Web no Windows Vista com o IIS 7,0 e o Visual Studio](/previous-versions/aa964620(v=vs.140))

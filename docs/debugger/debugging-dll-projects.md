@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 433cab30-d191-460b-96f7-90d2530ca243
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ec78e9a04062699ea699f45671e1210fc2306631
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: b6ad51d6b791def360f12b2d64e4ef6841c7bcda
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728480"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872788"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Depurar DLLs no Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -162,7 +162,7 @@ Você pode escrever um aplicativo de chamada para uma DLL em código gerenciado 
 
 Você também pode depurar uma DLL nativa de um projeto de chamada gerenciado. Para obter mais informações, consulte [como depurar código gerenciado e nativo](how-to-debug-managed-and-native-code.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Depurar o código gerenciado](../debugger/debugging-managed-code.md)
 - [Preparar para depurar projetos C++](../debugger/debugging-preparation-visual-cpp-project-types.md)
 - [Tipos de projeto C#, F # e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)

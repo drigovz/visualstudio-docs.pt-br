@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 73a428fd-797e-4ceb-8392-ba16f1c5226b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07cd3d1a1f80d1c5e816877b7e70a9e65d24d650
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65ebc0a4c029cdb748ebfadff41f83d0cbb2ab75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724275"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874185"
 ---
 # <a name="idebugprimitivetypefield"></a>IDebugPrimitiveTypeField
 Representa um valor de enumeração de tipo primitivo de uma interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugPrimitiveTypeField : IDebugField
