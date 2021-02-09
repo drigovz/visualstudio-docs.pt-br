@@ -14,15 +14,15 @@ helpviewer_keywords:
 - tutorials, multithreaded debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 30fd29357ab8b42ea6a8baa6412f9ccf7eafed28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28f9ab13cca4f1d31973f9526063eaa56574dcf4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350505"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870513"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Introdução à depuração de aplicativos multithread (C#, Visual Basic, C++)
 
@@ -59,8 +59,8 @@ Primeiro, você precisará de um projeto de aplicativo multi-threaded. Há um ex
    ::: moniker range="vs-2017"
    Na barra de menus superior, escolha **arquivo**  >  **novo**  >  **projeto**. No painel esquerdo da caixa de diálogo **novo projeto** , escolha o seguinte:
 
-   - Para um aplicativo C#, em **Visual C#**, escolha **Windows Desktop**e, no painel central, escolha **aplicativo de console (.NET Framework)**.
-   - Para um aplicativo Visual Basic, em **Visual Basic**, escolha **área de trabalho do Windows**e, no painel central, escolha **aplicativo de console (.NET Framework)**.
+   - Para um aplicativo C#, em **Visual C#**, escolha **Windows Desktop** e, no painel central, escolha **aplicativo de console (.NET Framework)**.
+   - Para um aplicativo Visual Basic, em **Visual Basic**, escolha **área de trabalho do Windows** e, no painel central, escolha **aplicativo de console (.NET Framework)**.
    - Para um aplicativo C++, em **Visual C++**, escolha **Windows Desktop**, e, em seguida, escolha **aplicativo de console do Windows**.
 
    Se você não vir o **aplicativo de console (.NET Core)** ou, para C++, o modelo de projeto de **aplicativo de console** , vá para **ferramentas**  >  **obter ferramentas e recursos...**, que abre a instalador do Visual Studio. Escolha o desenvolvimento de **área de trabalho .net** ou **desenvolvimento de desktop com** carga de trabalho C++ e, em seguida, escolha **Modificar**.
@@ -70,7 +70,7 @@ Primeiro, você precisará de um projeto de aplicativo multi-threaded. Há um ex
    Selecione **OK**.
    ::: moniker-end
 
-   Um novo projeto de console é exibido. Depois que o projeto tiver sido criado, um arquivo de origem será exibido. Dependendo do idioma escolhido, o arquivo de origem pode ser chamado *Program.cs*, *MyThreadWalkthroughApp. cpp*ou *Module1. vb*.
+   Um novo projeto de console é exibido. Depois que o projeto tiver sido criado, um arquivo de origem será exibido. Dependendo do idioma escolhido, o arquivo de origem pode ser chamado *Program.cs*, *MyThreadWalkthroughApp. cpp* ou *Module1. vb*.
 
 1. Exclua o código que aparece no arquivo de origem e substitua-o pela listagem de código de exemplo apropriada abaixo.
 
@@ -242,7 +242,7 @@ Primeiro, você precisará de um projeto de aplicativo multi-threaded. Há um ex
 
 3. No editor de código-fonte, localize a linha que contém o ponto de interrupção.
 
-### <a name="discover-the-thread-marker"></a><a name="ShowThreadsInSource"></a>Descobrir o marcador de thread  
+### <a name="discover-the-thread-marker"></a><a name="ShowThreadsInSource"></a>Descobrir o marcador de thread  
 
 1. Na barra de ferramentas depurar, selecione o botão **Mostrar threads no código-fonte** ![Mostrar threads na origem](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 
@@ -260,7 +260,7 @@ Primeiro, você precisará de um projeto de aplicativo multi-threaded. Há um ex
 
 Na janela **pilhas paralelas** , você pode alternar entre uma exibição de threads e a exibição de tarefas (para a programação baseada em tarefas) e pode exibir informações da pilha de chamadas para cada thread. Nesse aplicativo, podemos usar a exibição threads.
 
-1. Abra a janela **pilhas paralelas** escolhendo **depurar**  >  **Windows**  >  **pilhas paralelas**do Windows. Você verá algo semelhante ao seguinte. As informações exatas serão diferentes dependendo do local atual de cada thread, do hardware e da linguagem de programação.
+1. Abra a janela **pilhas paralelas** escolhendo **depurar**  >    >  **pilhas paralelas** do Windows. Você verá algo semelhante ao seguinte. As informações exatas serão diferentes dependendo do local atual de cada thread, do hardware e da linguagem de programação.
 
     ![Janela pilhas paralelas](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
 
@@ -345,7 +345,7 @@ Você pode definir pontos de interrupção em condições diferentes, como o nom
     ![Ponto de interrupção condicional](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
     > [!TIP]
-    > Se você estiver mais interessado em um thread específico, use um nome de thread ou ID de thread para a condição. Para fazer isso na janela **configurações de ponto de interrupção** , selecione **Filtrar** em vez de **expressão condicional**e siga as dicas de filtro. Talvez você queira nomear seus threads no código do aplicativo, pois as IDs de threads são alteradas quando você reinicia o depurador.
+    > Se você estiver mais interessado em um thread específico, use um nome de thread ou ID de thread para a condição. Para fazer isso na janela **configurações de ponto de interrupção** , selecione **Filtrar** em vez de **expressão condicional** e siga as dicas de filtro. Talvez você queira nomear seus threads no código do aplicativo, pois as IDs de threads são alteradas quando você reinicia o depurador.
 
 3. Feche a janela **configurações de ponto de interrupção** .
 
@@ -362,7 +362,7 @@ Você pode definir pontos de interrupção em condições diferentes, como o nom
 
 ## <a name="see-also"></a>Confira também
 
-- [Depurar aplicativos multissegmentados](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Como mudar para outro thread durante a depuração](../debugger/how-to-switch-to-another-thread-while-debugging.md)
 - [Como: usar a janela de pilha paralela](../debugger/using-the-parallel-stacks-window.md)
 - [Como usar a janela Inspeção Paralela](../debugger/how-to-use-the-parallel-watch-window.md)

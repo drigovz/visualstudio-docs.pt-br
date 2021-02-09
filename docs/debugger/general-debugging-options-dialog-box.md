@@ -20,19 +20,19 @@ helpviewer_keywords:
 ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b052c2cce3d396debb4fbaf8ce688ede3effb98
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 928499957ca90dda718f324827968f10cbb3a141
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863004"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870565"
 ---
 # <a name="general-debugging-options"></a>Opções gerais de depuração
 
-Para definir opções do depurador do Visual Studio, selecione opções de **ferramentas**  >  **Options** e, em **depuração** , marque ou desmarque as caixas ao lado das opções **gerais** . Você pode restaurar todas as configurações padrão com **ferramentas**  >  **importar e exportar configurações**  >  **redefinir todas as configurações**. Para redefinir um subconjunto de configurações, salve suas configurações com o **Assistente de importação e exportação de configurações** antes de fazer as alterações que você deseja testar e, em seguida, importe as configurações salvas posteriormente.
+Para definir opções do depurador do Visual Studio, selecione opções de **ferramentas**  >  e, em **depuração** , marque ou desmarque as caixas ao lado das opções **gerais** . Você pode restaurar todas as configurações padrão com **ferramentas**  >  **importar e exportar configurações**  >  **redefinir todas as configurações**. Para redefinir um subconjunto de configurações, salve suas configurações com o **Assistente de importação e exportação de configurações** antes de fazer as alterações que você deseja testar e, em seguida, importe as configurações salvas posteriormente.
 
 Você pode definir as seguintes opções **gerais** :
 

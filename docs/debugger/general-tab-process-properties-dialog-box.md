@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 86f4d61d-a594-4aac-8960-c5279b4a10fd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4980437c63348050db1a007e8f541e9af9e186cc
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: dae82479044df6c031e5aa9f023b17c5e7902965
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870552"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>Guia Geral, Caixa de diálogo Propriedades do Processo
 Use a guia **geral** para saber mais sobre um processo específico. Para exibir a [caixa de diálogo Propriedades do processo](../debugger/process-properties-dialog-box.md), mova o foco para uma janela de [exibição de processos](../debugger/processes-view.md) . Selecione qualquer nó de processo na árvore e escolha **Propriedades** no menu **Exibir** .

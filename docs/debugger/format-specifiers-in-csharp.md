@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: a832bcee3f722cabaedcb3ac0672dbe09a4e77c4
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: abc824cf5d0413f01ad5f3f4423b974aeca40b03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870578"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Especificadores de formato em C# no depurador do Visual Studio
 Você pode alterar o formato no qual um valor é exibido na janela de **inspeção** usando especificadores de formato. Você também pode usar especificadores de formato na janela **imediata** , na janela de **comando** , em [tracepoints](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e em janelas de origem. Se você pausar uma expressão nessas janelas, o resultado aparecerá em um  [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) na exibição do formato especificado.
@@ -77,6 +77,6 @@ A tabela a seguir descreve os especificadores de formato C# para o depurador do 
 |raw|Exibe o item como aparece no nó bruto do item. Válido apenas em objetos proxy.|Dicionário\<T>|Exibição bruta do dicionário\<T>|
 |results|Usado com uma variável de um tipo que implementa IEnumerable ou IEnumerable \<T> , geralmente o resultado de uma expressão de consulta. Exibe apenas os membros que contém o resultado da consulta.|Exibe todos os membros|Exibe os membros que atendem às condições da consulta|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Janelas Watch e QuickWatch](../debugger/watch-and-quickwatch-windows.md)
 - [Janelas automáticas e locais](../debugger/autos-and-locals-windows.md)
