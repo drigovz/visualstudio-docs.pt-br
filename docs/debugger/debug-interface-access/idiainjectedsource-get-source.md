@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3c0b5386-321f-4f8f-85cc-e2ee7b4cc3d2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8408145d83b3b78f8392603466980495ab32d24b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f44f30b063a34a0d5d5549cd1923b66c1dde9cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467025"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864862"
 ---
 # <a name="idiainjectedsourceget_source"></a>IDiaInjectedSource::get_source
 Recupera os bytes do código-fonte.
@@ -25,7 +25,7 @@ Recupera os bytes do código-fonte.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_source ( 
+HRESULT get_source ( 
    DWORD  cbData,
    DWORD* pcbData,
    BYTE   data[]
@@ -45,8 +45,8 @@ fora Retorna o número de bytes que representa os bytes retornados. Se `data` fo
 
 fora Um buffer que deve ser preenchido com os bytes de origem.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

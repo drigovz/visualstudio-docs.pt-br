@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 31fde3af-2824-4b0f-8d0d-cee6046596f6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 784e17ddf6202419618b7ff3b8836f0f46021989
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8346d86b88635e544c698d31f4aecb18728c8b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466682"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864659"
 ---
 # <a name="idialoadcallback2restrictoriginalpathaccess"></a>IDiaLoadCallback2::RestrictOriginalPathAccess
 Determina se há algum problema para procurar um arquivo. pdb no diretório de depuração original.
@@ -34,5 +34,5 @@ HRESULT RestrictOriginalPathAccess ();
 ## <a name="remarks"></a>Comentários
  Qualquer código de retorno diferente de `S_OK` impede a procura por um arquivo. pdb no diretório de depuração original. O diretório de depuração original é o caminho para o arquivo de símbolo compilado no executável quando a depuração está ativada. Esse caminho não é necessariamente o mesmo que o caminho onde o executável existe.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

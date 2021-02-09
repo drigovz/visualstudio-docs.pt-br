@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2ecdda93-950e-40d6-b79b-4ae3c55b6cfc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b67072fe2928556d355aac2e65cf5d011873edd9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e346352d802404beca57054ab649366035baa908
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467123"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864834"
 ---
 # <a name="idiainjectedsourceget_crc"></a>IDiaInjectedSource::get_crc
 Recupera uma CRC (verificação de redundância cíclica) calculada com base nos bytes do código-fonte.
@@ -25,7 +25,7 @@ Recupera uma CRC (verificação de redundância cíclica) calculada com base nos
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_crc ( 
+HRESULT get_crc ( 
    DWORD* pRetVal
 );
 ```
@@ -35,8 +35,8 @@ HRESULT get_crc ( 
 
 fora Retorna o CRC calculado a partir dos bytes do código-fonte.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

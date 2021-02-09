@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 2f18c64c-2cf0-43fc-a447-21e82702ca2a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 435dc337ea3f1caad2ad99031d9be872d80337e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa5013909fc875e406472c520a9811d716c50e6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466717"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864674"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 Recebe retornos de chamada do procedimento de localização de símbolo de DIA, permitindo assim que uma interface do usuário relate o progresso da tentativa de localização.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDiaLoadCallback : IUnknown
@@ -51,7 +51,7 @@ IDiaLoadCallback : IUnknown
 
  DLL: msdia80.dll
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Interfaces (SDK de Acesso à Interface de Depuração)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)

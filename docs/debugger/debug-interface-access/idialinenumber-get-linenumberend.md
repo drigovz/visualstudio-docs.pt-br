@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b101853e-2bcf-47c1-acef-e13984c7ea9d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aaf1a2144831c9c0a34ebfe27cb5082887454890
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93bb9e6cf42966b80bd2512a0cdc488ef91c7429
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864778"
 ---
 # <a name="idialinenumberget_linenumberend"></a>IDiaLineNumber::get_lineNumberEnd
 Recupera o número de linha de origem baseado em um onde a instrução ou expressão termina.
@@ -25,7 +25,7 @@ Recupera o número de linha de origem baseado em um onde a instrução ou expres
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_lineNumberEnd ( 
+HRESULT get_lineNumberEnd ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_lineNumberEnd ( 
 
 fora Retorna o número de linha onde a instrução ou a expressão termina. Se o valor for zero, as informações finais não estão presentes.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Confira também
