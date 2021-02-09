@@ -6,17 +6,17 @@ ms.date: 01/07/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa59197e584c6c8062c13354178f883b60b36442
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef9154a34ddd08e7e0a4b9434f7f748b2603aef4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250564"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882863"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Etapa 4: Usar o modelo Projeto Web do Flask completo
 
@@ -69,7 +69,7 @@ O modelo "Projeto Web do Flask" cria a estrutura abaixo. O conteúdo é muito se
   - *runserver.py*, um script para executar o aplicativo em um servidor de desenvolvimento.
   - *requirements.txt* contendo uma dependência do Flask 0.x.
 - A pasta *FlaskWeb* contém todos os arquivos de aplicativo:
-  - init.py marca o código do aplicativo como um módulo python, cria o objeto Flask e importa as exibições do aplicativo. * \_ \_ \_ \_ *
+  - init.py marca o código do aplicativo como um módulo python, cria o objeto Flask e importa as exibições do aplicativo. *\_ \_ \_ \_*
   - *views.py* contém o código para renderizar páginas.
   - A pasta *static* contém subpastas chamadas *content* (arquivos CSS), *fonts* (arquivos de fonte) e *scripts* (arquivos JavaScript).
   - A pasta *templates* contém um modelo base *layout.html* juntamente com *about.html*, *contact.html* e *index.html*, para páginas específicas que estendem *layout.html*.
@@ -164,7 +164,7 @@ Conforme observado no início deste artigo, o Visual Studio fornece um modelo "P
 
 Para habilitar o Jade, o modelo de projeto inclui primeiro o pacote pyjade em *requirements.txt*.
 
-O arquivo * \_ \_ init \_ \_ . py* do aplicativo contém uma linha para
+O arquivo *\_ \_ init \_ \_ . py* do aplicativo contém uma linha para
 
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')

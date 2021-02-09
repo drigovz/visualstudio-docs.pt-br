@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ca28446377c2e04766f70c9146e09dc47b8f089
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62429984"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882772"
 ---
 # <a name="step-2-write-and-run-code"></a>Etapa 2: Escrever e executar código
 
@@ -45,7 +45,7 @@ Embora **Gerenciador de soluções** seja onde você gerencia arquivos de projet
     ![Coloração de sintaxe e realce de erros do IntelliSense](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Como o ambiente de desenvolvimento é uma questão muito pessoal, o Visual Studio oferece controle total sobre a aparência e o comportamento do Visual Studio. Selecione o **Tools**  >  comando de menu**Opções** de ferramentas e explore as configurações nas guias **ambiente** e **Editor de texto** . Por padrão, você vê somente um número limitado de opções; para ver todas as opções de todas as linguagens de programação, selecione **Mostrar todas as configurações** na parte inferior da caixa de diálogo.
+    > Como o ambiente de desenvolvimento é uma questão muito pessoal, o Visual Studio oferece controle total sobre a aparência e o comportamento do Visual Studio. Selecione o   >  comando de menu **Opções** de ferramentas e explore as configurações nas guias **ambiente** e **Editor de texto** . Por padrão, você vê somente um número limitado de opções; para ver todas as opções de todas as linguagens de programação, selecione **Mostrar todas as configurações** na parte inferior da caixa de diálogo.
 
 1. Execute o código que você escreveu nesse ponto pressionando **Ctrl** + **F5** ou selecionando **depurar**  >  **Iniciar sem Depurar** item de menu. O Visual Studio avisará se ainda houver erros em seu código.
 

@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 73c58fe3-d53c-4f4e-b025-29567c6cbb7c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ed5a4f64a2c80cfdc61b37a6a8bac72adc97a33
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: c4e68889ae6ea8396795137243cf732a9b028931
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993595"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883266"
 ---
 # <a name="icon-element"></a>Elemento Icon
 O atributo GUID da marca de ícone é o GUID de um bitmap definido. O `id` atributo seleciona o slot na faixa de bitmap. Esse elemento é opcional. Se esse elemento não estiver incluído, o valor de **guidOfficeIcon: msotcidNoIcon** será implícito.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <Icon guid="guidImages" id="bmpPic1" />
@@ -36,8 +36,8 @@ O atributo GUID da marca de ícone é o GUID de um bitmap definido. O `id` atrib
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|guid|Obrigatórios. O GUID de um bitmap definido.|
-|id|Obrigatórios. Seleciona o slot na faixa de bitmap.|
+|guid|Obrigatório. O GUID de um bitmap definido.|
+|id|Obrigatório. Seleciona o slot na faixa de bitmap.|
 
 ### <a name="child-elements"></a>Elementos filho
 

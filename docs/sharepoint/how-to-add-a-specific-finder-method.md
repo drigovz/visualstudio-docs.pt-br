@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], get an entity
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a02e88b0168a6aa4b1a69af3ee14150a71e76037
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 237cd28bffece4517e80b979602ac8d2ed357aa2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849722"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882681"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Como adicionar um método localizador específico
   Você pode retornar uma única instância de entidade criando um método *localizador específico* . O serviço corporativo de conectividade de dados (BDC) executa o método localizador específico quando um usuário escolhe uma entidade em uma Web Part de dados corporativos ou em uma lista externa. Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).

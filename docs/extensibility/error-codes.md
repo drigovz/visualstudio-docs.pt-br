@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a77f869936531dbc41cc3bd1d9b510bf44c35cec
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: c9706f7c9cd5b25a3644af2f324fda01f448fa17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994713"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883396"
 ---
 # <a name="error-codes"></a>Códigos do Erro
 Quando uma função de API de plug-in de controle do código-fonte retorna um erro, espera-se que seja um dos seguintes códigos de erro. Todos os erros são negativos, avisos ou códigos de erro informativos são positivos e o sucesso é 0.

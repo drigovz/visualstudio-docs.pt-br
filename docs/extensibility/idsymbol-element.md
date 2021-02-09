@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4feb477f8507bc3fe57e6db355538ab98ceeeaa
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 830324e708ff83fbcbbbdb98d261130e92c7ba00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995532"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883188"
 ---
 # <a name="idsymbol-element"></a>Elemento IDSymbol
 O `IDSymbol` elemento contém a ID do par GUID: ID que representa um menu, grupo ou comando. O GUID vem do elemento pai `GuidSymbol` . O `IDSymbol` elemento tem um `name` atributo que fornece um nome amigável para a ID, que está contido no `value` atributo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <IDSymbol name=ElementName value="0x0010" />
@@ -36,11 +36,11 @@ O `IDSymbol` elemento contém a ID do par GUID: ID que representa um menu, grupo
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|name|Obrigatórios. Nome do símbolo de ID.|
-|value|Obrigatórios. Valor de ID numérico do símbolo de ID.|
+|name|Obrigatório. Nome do símbolo de ID.|
+|value|Obrigatório. Valor de ID numérico do símbolo de ID.|
 
 ### <a name="child-elements"></a>Elementos filho
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 

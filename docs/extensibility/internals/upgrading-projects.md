@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d42a912761f04fb122551dc14ec077f1869f6bf
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5b399feb80da56ef70b18a1b11b05c7f6cc3795f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487576"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883149"
 ---
 # <a name="upgrading-projects"></a>Atualizando projetos
 
@@ -181,6 +181,6 @@ Normalmente, os implementadores de item de projeto desejam aproveitar um projeto
 
 2. No momento em que o item do projeto recebe uma notificação da atualização do projeto, o **Assistente de conversão do Visual Studio** ainda é exibido. Portanto, você deve usar os métodos da <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> interface para fornecer mensagens de atualização para a interface do usuário do assistente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Projetos](../../extensibility/internals/projects.md)

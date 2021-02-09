@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d5168d739e49ebfc78054ea695f8b73a3e06fbc
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 92c423254c2e2e0a605ab3f7ff2238db41f4b45a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487667"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883123"
 ---
 # <a name="using-msbuild"></a>Usando o MSBuild
 O MSBuild fornece um formato XML extensível e bem definido para a criação de arquivos de projeto que descrevem totalmente os itens de projeto a serem criados, as tarefas de compilação e as configurações de compilação.
@@ -55,7 +55,7 @@ O MSBuild fornece um formato XML extensível e bem definido para a criação de 
 #### <a name="single-file-generators-vs-msbuild-tasks"></a>Geradores de arquivo único versus tarefas do MSBuild
  Os geradores de arquivo único são acessíveis em tempo de design apenas, mas as tarefas do MSBuild podem ser usadas em tempo de design e em tempo de compilação. Para obter máxima flexibilidade, portanto, use tarefas do MSBuild para transformar e gerar código. Para obter mais informações, consulte [ferramentas personalizadas](../../extensibility/internals/custom-tools.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Referência do MSBuild](../../msbuild/msbuild-reference.md)
 - [MSBuild](../../msbuild/msbuild.md)
 - [Ferramentas personalizadas](../../extensibility/internals/custom-tools.md)

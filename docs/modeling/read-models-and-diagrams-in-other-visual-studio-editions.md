@@ -9,15 +9,15 @@ helpviewer_keywords:
 - models, versions of Visual Studio
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ffbf39421f507338d14a6b05a667ec4301375067
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a8049471e9e172496381df016c6155410f3bc244
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882928"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Ler modelos e diagramas em outras edições do Visual Studio
 
@@ -57,7 +57,7 @@ Se você abrir um modelo e seus diagramas em uma versão do Visual Studio que n�
 
 Você pode salvar essas alterações. Se você quiser tornar as alterações visíveis para outros usuários, será necessário pelo menos enviar os arquivos **. layout** atualizados.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)
 - [Criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)

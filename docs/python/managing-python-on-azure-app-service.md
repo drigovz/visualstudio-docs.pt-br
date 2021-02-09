@@ -5,18 +5,18 @@ ms.date: 01/07/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f96e9123f613cf50eebbedd393f5bce9cfa633d2
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: b76bc008c30efdee0185e6f122abaff8457acef6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830681"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882785"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Como configurar um ambiente Python no Serviço de Aplicativo do Azure (Windows)
 
@@ -94,7 +94,7 @@ Essa ação abre a página de descrição da extensão que contém o caminho:
 
 Se tiver problemas para ver o caminho para a extensão, você poderá encontrá-la manualmente usando o console:
 
-1. Na página do serviço de aplicativo, selecione o console de **ferramentas de desenvolvimento**  >  **Console**.
+1. Na página do serviço de aplicativo, selecione o console de **ferramentas de desenvolvimento**  >  .
 1. Digite o comando `ls ../home` ou `dir ..\home` para ver as pastas de extensões de nível superior, como *Python361x64*.
 1. Digite um comando como `ls ../home/python361x64` ou `dir ..\home\python361x64` para verificar se ela contém o *python.exe* e outros arquivos de interpretador.
 
@@ -173,7 +173,7 @@ Para instalar pacotes diretamente no ambiente do servidor, use um dos seguintes 
 
 O [console Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) fornece acesso de linha de comando com privilégios elevados e direto para o servidor do Serviço de Aplicativo e seu sistema de arquivos. Isso é uma ferramenta valiosa de depuração e também permite operações de CLI, como instalação de pacotes.
 
-1. Abra o kudu na página do serviço de aplicativo na portal do Azure selecionando **ferramentas de desenvolvimento**  >  **ferramentas avançadas**e, em seguida, selecionando **ir**. Essa ação navega até uma URL que é a mesmo que a URL base do Serviço de Aplicativo, exceto pelo `.scm` inserido. Por exemplo, se a URL base for `https://vspython-test.azurewebsites.net/`, o Kudu será `https://vspython-test.scm.azurewebsites.net/` (que você poderá adicionar aos favoritos):
+1. Abra o kudu na página do serviço de aplicativo na portal do Azure selecionando **ferramentas de desenvolvimento**  >  **ferramentas avançadas** e, em seguida, selecionando **ir**. Essa ação navega até uma URL que é a mesmo que a URL base do Serviço de Aplicativo, exceto pelo `.scm` inserido. Por exemplo, se a URL base for `https://vspython-test.azurewebsites.net/`, o Kudu será `https://vspython-test.scm.azurewebsites.net/` (que você poderá adicionar aos favoritos):
 
     ![O console do Kudu para o Serviço de Aplicativo do Azure](media/python-on-azure-console01.png)
 
