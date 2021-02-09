@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02593af854a9e68e7f4a6cc66f54452d3c3d3f94
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5c006c5f4746f83e571475d93bedc452c7c23c75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487602"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888128"
 ---
 # <a name="test-area-7-share"></a>Área de teste 7: Compartilhar
 Essa área de teste aborda o compartilhamento de itens entre locais por meio do comando **compartilhar** .
@@ -60,5 +60,5 @@ Essa área de teste aborda o compartilhamento de itens entre locais por meio do 
 |Compartilhar uma pasta no projeto carregado — recursivo|1. Crie um novo projeto.<br />2. Adicione a solução ao controle do código-fonte.<br />3. Selecione o projeto.<br />4. Abra a caixa de diálogo **compartilhar** (compartilhamento de controle do  ->  **código-fonte** do arquivo  ->  ).<br />5. Selecione uma pasta.<br />6. compartilhe a pasta recursivamente no projeto.|Comportamento esperado comum.|
 |Compartilhar vários arquivos de um projeto para outro|1. Crie um novo projeto com vários arquivos.<br />2. Adicione a solução ao controle do código-fonte.<br />3. Feche a solução.<br />4. Crie um novo projeto em uma nova solução.<br />5. Adicione a solução ao controle do código-fonte.<br />6. Selecione o projeto.<br />7. Abra a caixa de diálogo **compartilhar** (compartilhamento de controle do  ->  **código-fonte** do arquivo  ->  ).<br />8. Compartilhe vários arquivos do projeto criado anteriormente para o projeto aberto no momento.|Comportamento esperado comum.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Guia de teste para plug-ins de controle do código-fonte](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

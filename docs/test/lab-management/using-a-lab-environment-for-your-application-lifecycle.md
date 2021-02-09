@@ -7,16 +7,16 @@ ms.topic: how-to
 helpviewer_keywords:
 - lab environment, test lab
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: cb25561f70882336a1143918d3cf78849b394065
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: a16b8df2539272f96f0211fdf08e32fe4e4eaac8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328919"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887816"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar um ambiente de laboratório para suas operações de desenvolvimento
 
@@ -103,20 +103,20 @@ Ambientes padrão e SCVMM oferecem suporte a vários dos mesmos recursos. No ent
 |Funcionalidade|Ambiente SCVMM|Ambientes padrão|
 |-|------------------------|-|
 |Testes.|||
-|Executar testes manuais|Com suporte|Com suporte|
-|Executar IU codificado e outros testes automáticos|Com suporte|Com suporte|
-|Arquivo com muitos bugs usando adaptadores de diagnóstico|Com suporte|Com suporte|
+|Executar testes manuais|Suportado|Suportado|
+|Executar IU codificado e outros testes automáticos|Suportado|Suportado|
+|Arquivo com muitos bugs usando adaptadores de diagnóstico|Suportado|Suportado|
 |**Compilar implantação**|||
-|Fluxos de trabalho compilar/implantar/testar automáticos|Com suporte|Com suporte|
+|Fluxos de trabalho compilar/implantar/testar automáticos|Suportado|Suportado|
 |**Criação e gerenciamento de ambiente**|||
-|Usar máquinas físicas, além de virtuais|Sem suporte|Com suporte|
-|Usar máquinas virtuais de terceiros|Sem suporte|Com suporte|
-|Instalar automaticamente agentes de teste em computadores com ambiente de laboratório|Com suporte|Com suporte|
-|Salvar e implantar o estado de um ambiente de laboratório usando instantâneos de ambiente|Com suporte|Sem suporte|
-|Criar ambientes de laboratório a partir de modelos VM|Com suporte|Sem suporte|
-|Ambiente de início/parada/instantâneo|Com suporte|Sem suporte|
-|Conecte-se ao ambiente usando o Visualizador de Ambiente|Com suporte|Com suporte|
-|Executa várias cópias de um ambiente ao mesmo tempo usando isolamento de rede|Com suporte|Sem suporte|
+|Usar máquinas físicas, além de virtuais|Sem suporte|Suportado|
+|Usar máquinas virtuais de terceiros|Sem suporte|Suportado|
+|Instalar automaticamente agentes de teste em computadores com ambiente de laboratório|Suportado|Suportado|
+|Salvar e implantar o estado de um ambiente de laboratório usando instantâneos de ambiente|Suportado|Sem suporte|
+|Criar ambientes de laboratório a partir de modelos VM|Suportado|Sem suporte|
+|Ambiente de início/parada/instantâneo|Suportado|Sem suporte|
+|Conecte-se ao ambiente usando o Visualizador de Ambiente|Suportado|Suportado|
+|Executa várias cópias de um ambiente ao mesmo tempo usando isolamento de rede|Suportado|Sem suporte|
 
 ### <a name="lab-management-concepts"></a>Conceitos de Lab Management
 

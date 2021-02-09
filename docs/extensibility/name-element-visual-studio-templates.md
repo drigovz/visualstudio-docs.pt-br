@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 48788dbf-7da0-4443-8061-aab966fc22c8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2aa14005a202b7868f61cd41ffb6ac9e2f872b68
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 109832586483bacb753f96b9a27c0f756ab7a6d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671175"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886633"
 ---
 # <a name="name-element-visual-studio-templates"></a>Elemento Name (modelos do Visual Studio)
 Especifica o nome do modelo como ele aparece na caixa de diálogo **novo projeto** ou **Adicionar novo item** .
@@ -49,7 +49,7 @@ Especifica o nome do modelo como ele aparece na caixa de diálogo **novo projeto
 |`ID`|Atributo opcional, para cenários de usuário avançados.<br /><br /> Especifica a ID de recurso do Visual Studio.|
 
 ### <a name="child-elements"></a>Elementos filho
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -92,6 +92,6 @@ Especifica o nome do modelo como ele aparece na caixa de diálogo **novo projeto
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)

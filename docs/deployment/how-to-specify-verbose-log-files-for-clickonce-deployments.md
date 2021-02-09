@@ -14,18 +14,18 @@ helpviewer_keywords:
 ms.assetid: 0807a28d-2e40-4a51-ab10-308d808ded6b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0da285cfef49bd495fbecf39131e49cacd0476a5
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 7adb711c77f4bb2dead3190d40065e148760b034
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350914"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887465"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Como especificar arquivos de log detalhados para implantações do ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mantém arquivos de log de atividades para todas as implantações. Esses logs documentam detalhes referentes à instalação, inicialização, atualização e desinstalação de uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação. Para aumentar os detalhes que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] gravam nesses arquivos de log, use o editor do registro ( *regedit.exe* ) para especificar o nível de verbosidade.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mantém arquivos de log de atividades para todas as implantações. Esses logs documentam detalhes referentes à instalação, inicialização, atualização e desinstalação de uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação. Para aumentar os detalhes que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] gravam nesses arquivos de log, use o editor do registro (*regedit.exe*) para especificar o nível de verbosidade.
 
 > [!CAUTION]
 > Se você usar o editor do registro incorretamente, poderá causar sérios problemas que podem exigir a reinstalação do sistema operacional. Use o Editor do Registro por sua conta e risco.
@@ -42,5 +42,5 @@ ms.locfileid: "94350914"
 
 4. Defina o `LogVerbosityLevel` valor como `1` .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Solucionar problemas de implantações do ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

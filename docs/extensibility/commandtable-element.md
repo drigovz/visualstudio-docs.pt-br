@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24e6792bb6199606f1d993492527d39c3f0f7f8b
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 79441880091088cf1d953c8925273e801dc0860d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974519"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887348"
 ---
 # <a name="commandtable-element"></a>Elemento commandtable
 Commandtable é o elemento raiz do arquivo *. vsct* . Esse é o arquivo que define o layout real e o tipo dos comandos que um VSPackage fornece para o IDE. Os comandos podem incluir itens de menu, menus, barras de ferramentas e caixas de combinação. Para obter mais informações, consulte [arquivos de tabela de comando do Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
@@ -48,7 +48,7 @@ Commandtable é o elemento raiz do arquivo *. vsct* . Esse é o arquivo que defi
 
 | Atributo | Descrição |
 |-----------| - |
-| xmlns | Obrigatórios. Namespaces XML:<br /><br /> `xmlns=http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable`<br /><br /> xmlns: XS = " <http://www.w3.org/2001/XMLSchema> " |
+| xmlns | Obrigatório. Namespaces XML:<br /><br /> `xmlns=http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable`<br /><br /> xmlns: XS = " <http://www.w3.org/2001/XMLSchema> " |
 | Linguagem | Opcional. O atributo language pode ser usado para especificar o idioma padrão de todos os \<Strings> elementos na tabela de comandos.  Se o idioma não for especificado, o idioma do processo atual será usado:<br /><br /> Language = "en-US" |
 
 ### <a name="child-elements"></a>Elementos filho
@@ -71,5 +71,5 @@ Commandtable é o elemento raiz do arquivo *. vsct* . Esse é o arquivo que defi
 |-------------|-----------------|
 |Nenhum||
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Arquivos de tabela de comando do Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

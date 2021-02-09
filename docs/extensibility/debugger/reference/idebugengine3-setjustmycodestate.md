@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8ec17fbf-df93-424a-b2ed-fd1e5ee51256
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9930f8ecf0c2f9b6fff4ce1c9e3edb935c5a7912
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e706d0fd23bc0c5388ee3bd6bb82323309725c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730676"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887179"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 Esse método informa ao mecanismo de depuração sobre as informações de estado do JustMyCode.
@@ -28,10 +28,10 @@ Esse método informa ao mecanismo de depuração sobre as informações de estad
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT SetJustMyCodeState(
-   BOOL           fUpdate,
-   DWORD          dwModules,
-   JMC_CODE_SPEC* rgJMCSpec
+HRESULT SetJustMyCodeState(
+   BOOL           fUpdate,
+   DWORD          dwModules,
+   JMC_CODE_SPEC* rgJMCSpec
 );
 ```
 
@@ -53,7 +53,7 @@ no Número de estruturas de informações em `rgJMCSpec.`
 `rgJMCSpec`\
 no Matriz de estruturas de [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) a serem usadas.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna o código de erro.
 
 ## <a name="remarks"></a>Comentários

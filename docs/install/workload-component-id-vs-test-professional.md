@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Usar IDs de carga de trabalho e de componente do Visual Studio para fornecer ferramentas de teste integradas para testadores em geral
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 03/16/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
 open_to_public_contributors: false
-ms.openlocfilehash: 61a52d98f695a6420dd6081117b8c6c4e83ae0a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee8d3d91f5079e23d5a0342c58b2db5a70e45f64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81276208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886464"
 ---
 # <a name="visual-studio-test-professional-component-directory"></a>Diretório de componentes do Visual Studio Test Professional
 
@@ -57,7 +57,7 @@ Estes são os componentes que não são incluídos com nenhuma carga de trabalho
 
 ID do componente | Nome | Versão
 --- | --- | ---
-n/d | n/d | n/d
+N/D | N/D | N/D
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

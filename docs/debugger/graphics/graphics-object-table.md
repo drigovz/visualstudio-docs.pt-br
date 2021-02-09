@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: f48f62d9-16ff-4a2e-8c01-5cbe99513788
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e746d37edaca87abfca42f315a65a470369e7e
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 095828e711f860662432edd767b19493b73c56c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887569"
 ---
 # <a name="graphics-object-table"></a>Tabela de objetos de gráfico
 A tabela de objetos gráficos na análise de gráficos do Visual Studio ajuda a entender os objetos do Direct3D que dão suporte a um quadro de seu jogo ou aplicativo.
@@ -111,6 +111,6 @@ A tabela de objetos gráficos na análise de gráficos do Visual Studio ajuda a 
 |**uint64**|Um valor inteiro sem sinal de 64 bits. O mesmo que **u8byte**.|
 |**bool**|Um valor booleano (`true` ou `false`). Cada valor booleano é representado por um valor de 32 bits.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Diagnóstico de gráficos (depuração de gráficos DirectX)](visual-studio-graphics-diagnostics.md)
 - [Passo a passo: Objetos ausentes devido ao estado do dispositivo](walkthrough-missing-objects-due-to-device-state.md)

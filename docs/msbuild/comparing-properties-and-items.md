@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f00de870986cf020e91ff992dabb2681469ae5b
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 226b86d621de2faee5a71d9fdb3fea39f20b984e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796765"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888115"
 ---
 # <a name="compare-properties-and-items"></a>Comparar propriedades e itens
 
@@ -29,7 +29,7 @@ Itens e propriedades do MSBuild são usados para passar informações para taref
 
 ## <a name="scalars-and-vectors"></a>Escalares e vetores
 
-Como as propriedades do MSBuild são pares nome-valor que têm apenas um valor de cadeia de caracteres, eles geralmente são descritos como *escalar* . Como os tipos de item do MSBuild são listas de itens, eles geralmente são descritos como *vetor* . No entanto, na prática, as propriedades podem representar vários valores e os tipos de item podem ter zero ou um item.
+Como as propriedades do MSBuild são pares nome-valor que têm apenas um valor de cadeia de caracteres, eles geralmente são descritos como *escalar*. Como os tipos de item do MSBuild são listas de itens, eles geralmente são descritos como *vetor*. No entanto, na prática, as propriedades podem representar vários valores e os tipos de item podem ter zero ou um item.
 
 ### <a name="target-dependency-injection"></a>Injeção de dependência de destino
 
@@ -187,6 +187,6 @@ O valor de `KeyFileVersion` é definido como "1.0.0.3" e não como "\@(KeyFile->
 KeyFileVersion: 1.0.0.3
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Conceitos avançados](../msbuild/msbuild-advanced-concepts.md)

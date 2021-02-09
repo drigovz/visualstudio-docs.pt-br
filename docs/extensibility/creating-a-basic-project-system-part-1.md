@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c202aa9e76f568db9394625485282345ea3222c1
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: a1b21ef736e69c962db389a7bb1a3eb284ebdd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887361"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Criar um sistema de projeto básico, parte 1
 No Visual Studio, os projetos são os contêineres que os desenvolvedores usam para organizar arquivos de código-fonte e outros ativos. Os projetos aparecem como filhos de soluções no **Gerenciador de soluções**. Os projetos permitem organizar, compilar, depurar e implantar código-fonte e criar referências a serviços Web, bancos de dados e outros recursos.
@@ -63,7 +63,7 @@ No Visual Studio, os projetos são os contêineres que os desenvolvedores usam p
  Você também deve baixar o código-fonte da [estrutura de pacote gerenciado para projetos](https://github.com/tunnelvisionlabs/MPFProj10). Extraia o arquivo para um local que possa ser acessado pela solução que você vai criar.
 
 ## <a name="create-a-basic-project-type"></a>Criar um tipo de projeto básico
- Crie um projeto VSIX em C# chamado **SimpleProject**. (**Arquivo**  >  **Novo**  >  **Projeto** e, em seguida, projeto VSIX de extensibilidade do **Visual C#**  >  **Extensibility**  >  **VSIX Project**). Adicione um modelo de item de projeto de pacote do Visual Studio (na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item** e vá para **extensibilidade** do  >  **pacote do Visual Studio**). Nomeie o arquivo *SimpleProjectPackage*.
+ Crie um projeto VSIX em C# chamado **SimpleProject**. (**Arquivo**  >  **Novo**  >  **Projeto** e, em seguida, projeto VSIX de extensibilidade do **Visual C#**  >    >  ). Adicione um modelo de item de projeto de pacote do Visual Studio (na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item** e vá para **extensibilidade** do  >  **pacote do Visual Studio**). Nomeie o arquivo *SimpleProjectPackage*.
 
 ## <a name="creating-a-basic-project-template"></a>Criando um modelo de projeto básico
  Agora, você pode modificar esse VSPackage básico para implementar o novo tipo de projeto *. MyProj* . Para criar um projeto baseado no tipo de projeto *. MyProj* , o Visual Studio precisa saber quais arquivos, recursos e referências adicionar ao novo projeto. Para fornecer essas informações, coloque os arquivos de projeto em uma pasta de modelo de projeto. Quando um usuário usa o projeto *. MyProj* para criar um projeto, os arquivos são copiados para o novo projeto.

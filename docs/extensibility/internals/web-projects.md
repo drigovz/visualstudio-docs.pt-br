@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d9c0329f-4b0b-4fda-8061-cce69f2f502d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6afdbff1e844f45cac56b68909e1327a190f7a74
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 6b248556c8980c63422c20c160241af42fc6918b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487875"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886854"
 ---
 # <a name="web-projects"></a>Projetos Web
 Um sistema de projeto da Web é um sistema de projeto que cria projetos Web. Os projetos da Web, por sua vez, criam aplicativos Web. Você pode programar uma página da Web usando linguagens de programação tradicionais, como [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] , para coletar e processar informações de um usuário, armazená-las em um banco de dados e assim por diante. Páginas da Web com código associado são chamadas de páginas da Web inteligentes.

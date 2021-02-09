@@ -5,17 +5,17 @@ ms.date: 11/12/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43270ee1ec956f45b76d23a6b649ad2d870638c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386979"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887920"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definir comandos personalizados para projetos do Python
 
@@ -36,7 +36,7 @@ Cada comando personalizado pode se referir a um arquivo Python, um módulo Pytho
 > [!Tip]
 > Sempre que você fizer alterações em um arquivo de projeto em um editor de texto, será necessário recarregar o projeto no Visual Studio para aplicar essas alterações. Por exemplo, você precisará recarregar o projeto depois de adicionar definições de comando personalizadas para que esses comandos sejam exibidos no menu de contexto do projeto.
 >
-> Como você deve saber, o Visual Studio fornece um meio para editar o arquivo de projeto diretamente. Primeiro, clique com o botão direito do mouse no arquivo de projeto e selecione **descarregar projeto**, clique com o botão direito do mouse novamente e selecione **Editar \<project-name> ** para abrir o projeto no editor do Visual Studio. Em seguida, faça edições e salve-as, clique com botão direito do mouse no projeto mais uma vez e selecione **Recarregar projeto**, que também solicita que você confirme o fechamento do arquivo de projeto no editor.
+> Como você deve saber, o Visual Studio fornece um meio para editar o arquivo de projeto diretamente. Primeiro, clique com o botão direito do mouse no arquivo de projeto e selecione **descarregar projeto**, clique com o botão direito do mouse novamente e selecione **Editar \<project-name>** para abrir o projeto no editor do Visual Studio. Em seguida, faça edições e salve-as, clique com botão direito do mouse no projeto mais uma vez e selecione **Recarregar projeto**, que também solicita que você confirme o fechamento do arquivo de projeto no editor.
 >
 > No entanto, ao desenvolver um comando personalizado, pode ser entendiante realizar todos esses cliques. Para obter um fluxo de trabalho mais eficiente, carregue o projeto no Visual Studio e abra também o arquivo *.pyproj* em um editor completamente separado (como outra instância do Visual Studio, o Visual Studio Code, o Bloco de notas, etc.). Quando você salva as alterações no editor e alterna para o Visual Studio, o Visual Studio detecta alterações e pergunta se o projeto deve ser recarregado (**o projeto foi \<name> modificado fora do ambiente**). Selecione **Recarregar** e as alterações serão aplicadas imediatamente em apenas uma etapa.
 
@@ -133,8 +133,8 @@ Para referenciar propriedades do projeto ou variáveis de ambiente em valores de
 
 | Atributo | Obrigatório | Descrição |
 | --- | --- | --- |
-| Name | Sim | O identificador do comando dentro do projeto do Visual Studio. Esse nome deve ser adicionado ao grupo de propriedades `<PythonCommands>` para que o comando seja exibido no submenu Python. |
-| Rotular | Sim | O nome de exibição da interface do usuário que é exibido no submenu Python. |
+| Nome | Sim | O identificador do comando dentro do projeto do Visual Studio. Esse nome deve ser adicionado ao grupo de propriedades `<PythonCommands>` para que o comando seja exibido no submenu Python. |
+| Rótulo | Sim | O nome de exibição da interface do usuário que é exibido no submenu Python. |
 | Retornos | Sim | Deve conter `@(Commands)`, que identifica o destino como um comando. |
 
 ### <a name="createpythoncommanditem-attributes"></a>Atributos de CreatePythonCommandItem

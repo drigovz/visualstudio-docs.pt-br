@@ -5,26 +5,26 @@ ms.date: 03/13/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b03e99a70edd587c9dfe2a43d326a64d14b9193
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62957523"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887881"
 ---
 # <a name="format-python-code"></a>Formatar o código do Python
 
 O Visual Studio permite que você reformate rapidamente o código para que ele corresponda às opções de formatação pré-configuradas.
 
-- Para formatar uma seleção: selecione **Editar**  >  **Advanced**  >  **seleção de formato** avançado ou pressione **Ctrl** + **E**  >  **F**.
-- Para formatar o arquivo inteiro: selecione **Editar**  >  **Advanced**  >  **documento de formato** avançado ou pressione **Ctrl** + **E**  >  **D**.
+- Para formatar uma seleção: selecione **Editar**  >    >  **seleção de formato** avançado ou pressione **Ctrl** + **E**  >  **F**.
+- Para formatar o arquivo inteiro: selecione **Editar**  >    >  **documento de formato** avançado ou pressione **Ctrl** + **E**  >  **D**.
 
-As opções são definidas por meio de **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **Python**  >  **formatação** Python e suas guias aninhadas. Você precisa selecionar **Mostrar todas as configurações** para essas opções serem exibidas:
+As opções são definidas por meio de **ferramentas**  >  **Opções**  >  **Editor de texto**  >    >  **formatação** Python e suas guias aninhadas. Você precisa selecionar **Mostrar todas as configurações** para essas opções serem exibidas:
 
 ![Opções de formatação de Python no Visual Studio](media/options-editor-formatting.png)
 

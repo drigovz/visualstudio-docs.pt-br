@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eb3e3ca5d18429c60894c42bda12328836dc6fc8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa0caa8184f3c52a010df1dd1f82718d44be700b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73024728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888050"
 ---
 # <a name="edit-python-code"></a>Editar código do Python
 
@@ -119,19 +119,19 @@ Usar o comando **Execute Mypy** neste código gera o seguinte erro:
 > [!Tip]
 > Para as versões do Python anteriores à 3.5, o Visual Studio também exibe dicas de tipo fornecidas por meio de *arquivos stub* do Typeshed (*.pyi*). Você pode usar arquivos stub sempre que não quiser incluir dicas de tipo diretamente no código, ou quando quiser criar dicas de tipo para uma biblioteca que não as usa diretamente. Para obter mais informações, consulte [Create stubs for Python modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) in the mypy Project wiki.
 >
-> O Visual Studio inclui um conjunto de pacotes de arquivos Typeshed para Python 2 e 3, para que os downloads adicionais não sejam necessários. No entanto, se você quiser usar um conjunto diferente de arquivos, poderá especificar o caminho nas opções de **ferramentas**  >  **Opções**de servidor do  >  **Python**  >  **Language** . Confira [Opções – Servidor de linguagem](python-support-options-and-settings-in-visual-studio.md#language-server-options).
+> O Visual Studio inclui um conjunto de pacotes de arquivos Typeshed para Python 2 e 3, para que os downloads adicionais não sejam necessários. No entanto, se você quiser usar um conjunto diferente de arquivos, poderá especificar o caminho nas opções de **ferramentas**  >  **Opções** de servidor do  >  **Python**  >  **Language** . Confira [Opções – Servidor de linguagem](python-support-options-and-settings-in-visual-studio.md#language-server-options).
 >
 > No momento, o Visual Studio não dá suporte a dicas de tipo nos comentários.
 ::: moniker-end
 
 ### <a name="signature-help"></a>Ajuda da assinatura
 
-Ao escrever o código que chama uma função, a ajuda da assinatura é exibida quando você digita o `(` de abertura e exibe as informações de parâmetro e documentação disponíveis. Você também pode fazê-lo aparecer com **Ctrl** + **Shift** + de**espaço** dentro de uma chamada de função. As informações exibidas dependem das cadeias de caracteres de documentação no código-fonte da função, mas incluem os valores padrão.
+Ao escrever o código que chama uma função, a ajuda da assinatura é exibida quando você digita o `(` de abertura e exibe as informações de parâmetro e documentação disponíveis. Você também pode fazê-lo aparecer com **Ctrl** + **Shift** + de **espaço** dentro de uma chamada de função. As informações exibidas dependem das cadeias de caracteres de documentação no código-fonte da função, mas incluem os valores padrão.
 
 ![Ajuda da assinatura no editor do Visual Studio](media/code-editing-signature-help.png)
 
 > [!Tip]
-> Para desabilitar a ajuda da assinatura, vá para **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **Python**  >  **geral** e limpar informações do parâmetro de **conclusão de instrução**  >  **Parameter information**.
+> Para desabilitar a ajuda da assinatura, vá para **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **Python**  >  **geral** e limpar informações do parâmetro de **conclusão de instrução**  >  .
 
 ### <a name="quick-info"></a>Informações rápidas
 
@@ -145,7 +145,7 @@ A coloração de código usa informações da análise de código para colorir v
 
 ![Coloração de código e de sintaxe no editor do Visual Studio](media/code-editing-code-coloring.png)
 
-Para personalizar as cores, vá para **ferramentas**  >  **Opções**  >  **Environment**  >  **fontes e cores** do ambiente e modifique as entradas do **Python** na lista **itens de exibição** :
+Para personalizar as cores, vá para **ferramentas**  >  **Opções**  >    >  **fontes e cores** do ambiente e modifique as entradas do **Python** na lista **itens de exibição** :
 
 ![Opções de Fontes e Cores no Visual Studio](media/code-editing-customize-colors.png)
 
@@ -160,13 +160,13 @@ Por exemplo, `class` é um atalho para um snippet de código que insere uma defi
 
 ![Snippet de código para o atalho de classe](media/code-editing-code-snippet-class.png)
 
-Pressionar **Tab** gera o restante da classe. Em seguida, você pode digitar sobre a lista nome e bases, movendo entre os campos realçados com **Tab**e, em seguida, pressionar **Enter** para começar a digitar o corpo.
+Pressionar **Tab** gera o restante da classe. Em seguida, você pode digitar sobre a lista nome e bases, movendo entre os campos realçados com **Tab** e, em seguida, pressionar **Enter** para começar a digitar o corpo.
 
 ![Destaques em áreas de um snippet de código para você preencher](media/code-editing-code-snippets.png)
 
 ### <a name="menu-commands"></a>Comandos de menu
 
-Ao usar o comando de menu **Editar**  >  **IntelliSense**  >  **trecho de código de inserção** do IntelliSense, primeiro selecione **Python**e, em seguida, selecione um trecho:
+Ao usar o comando de menu **Editar**  >    >  **trecho de código de inserção** do IntelliSense, primeiro selecione **Python** e, em seguida, selecione um trecho:
 
 ![Como selecionar um snippet de código por meio do comando Inserir Snippet de Código](media/code-editing-code-snippet-insert.png)
 
@@ -203,7 +203,7 @@ A barra de navegação é exibida na parte superior de cada janela do editor e i
 ![Barra de navegação no editor do Visual Studio](media/code-editing-navigation-bar.png)
 
 > [!Tip]
-> Para ocultar a barra de navegação, vá para **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **Python**  >  **geral** e limpar barra de navegação de **configurações**  >  **Navigation bar**.
+> Para ocultar a barra de navegação, vá para **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **Python**  >  **geral** e limpar barra de navegação de **configurações**  >  .
 
 ### <a name="go-to-definition"></a>Ir para definição
 
@@ -213,7 +213,7 @@ O comando **Ir Para Definição** vai rapidamente do uso de um identificador (co
 
 ### <a name="navigate-to"></a>Navegar para
 
-O comando **Editar**  >  **navegar para** (**Ctrl** + **,**) exibe uma caixa de pesquisa no editor onde você pode digitar qualquer cadeia de caracteres e ver possíveis correspondências no código que definem uma função, classe ou variável que contém essa cadeia de caracteres. Esse recurso fornece uma funcionalidade semelhante a **Ir Para Definição**, mas sem a necessidade de localizar um uso de um identificador.
+O comando **Editar**  >  **navegar para** (**Ctrl** + ) exibe uma caixa de pesquisa no editor onde você pode digitar qualquer cadeia de caracteres e ver possíveis correspondências no código que definem uma função, classe ou variável que contém essa cadeia de caracteres. Esse recurso fornece uma funcionalidade semelhante a **Ir Para Definição**, mas sem a necessidade de localizar um uso de um identificador.
 
 Clicar duas vezes em qualquer nome ou selecionar com as teclas de direção e **Enter**, navega até a definição desse identificador.
 
@@ -221,7 +221,7 @@ Clicar duas vezes em qualquer nome ou selecionar com as teclas de direção e **
 
 ### <a name="find-all-references"></a>Localizar Todas as Referências
 
-O comando **Localizar Todas as Referências** é uma maneira útil de descobrir o local em que um identificador específico é definido e usado, incluindo importações e atribuições. Você o invoca clicando com o botão direito do mouse em um identificador e selecionando **Localizar todas as referências**ou colocando o sinal de interpolação no identificador e pressionando **Shift** + **F12**. Clicar duas vezes em um item da lista navegará para sua localização.
+O comando **Localizar Todas as Referências** é uma maneira útil de descobrir o local em que um identificador específico é definido e usado, incluindo importações e atribuições. Você o invoca clicando com o botão direito do mouse em um identificador e selecionando **Localizar todas as referências** ou colocando o sinal de interpolação no identificador e pressionando **Shift** + **F12**. Clicar duas vezes em um item da lista navegará para sua localização.
 
 ![Resultados de Localizar Todas as Referências](media/code-editing-find-all-references.png)
 

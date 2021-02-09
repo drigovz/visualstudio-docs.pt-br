@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 1a886310-67c8-44e5-a382-c2f0454f887d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f00bd8aaa5db8ab72e6b6286763fd89fc900599f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 6e7168b78303f93ccf89fad324992dd580481ac2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351252"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888440"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Como verificar se há atualizações do aplicativo programaticamente usando a API de implantação do ClickOnce
 O ClickOnce fornece duas maneiras de atualizar um aplicativo quando ele é implantado. No primeiro método, você pode configurar a implantação do ClickOnce para verificar automaticamente se há atualizações em determinados intervalos. No segundo método, você pode escrever código que usa a <xref:System.Deployment.Application.ApplicationDeployment> classe para verificar se há atualizações com base em um evento, como uma solicitação de usuário.
@@ -61,7 +61,7 @@ O ClickOnce fornece duas maneiras de atualizar um aplicativo quando ele é impla
 ## <a name="net-framework-security"></a>Segurança do .NET Framework
  Seu aplicativo deve ter permissões de confiança total para usar a atualização programática.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Como especificar um local alternativo para atualizações de implantação](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)
 - [Escolher uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
 - [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)

@@ -9,16 +9,16 @@ f1_keywords:
 ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 74fed5f0dcbac45f603f16743eb2635fcf35292a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5730e96a47e7e931606269341d5f1cca302a0e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548142"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886386"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: aplicativo de 32 bits em execução em limites de memória gerenciada do processo
 
@@ -55,7 +55,7 @@ ms.locfileid: "85548142"
 
 - otimizando o uso de recursos de memória gerenciada do aplicativo
 
-   - ou -
+   -ou-
 
 - tomar medidas para aliviar as restrições de arquitetura em relação ao tamanho máximo de memória virtual para um processo de 32 bits
 
