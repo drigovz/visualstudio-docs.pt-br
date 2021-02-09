@@ -13,15 +13,15 @@ helpviewer_keywords:
 - dialog boxes, Word
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b2c1a748d38c2b649705fa1ad2de21553b710634
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 18a6176c6472f1587e00364f0e0bd300611eabf0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523615"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897520"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Como: usar programaticamente caixas de diálogo internas no Word
   Ao trabalhar com o Microsoft Office Word, há ocasiões em que você precisa exibir caixas de diálogo para entrada do usuário. Embora você possa criar o seu próprio, talvez também queira adotar a abordagem de uso das caixas de diálogo internas do Word, que são expostas na <xref:Microsoft.Office.Interop.Word.Dialogs> coleção do <xref:Microsoft.Office.Interop.Word.Application> objeto. Isso permite que você acesse mais de 200 das caixas de diálogo internas, que são representadas como enumerações.
@@ -48,7 +48,7 @@ ms.locfileid: "97523615"
 
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Como: usar de forma programática as caixas de diálogo do Word no modo oculto](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)
 - [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)
 - [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6292051e6ddf11e3ce4b56648574e0207bb5a41
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: bb59b0342d67ab9118ffcdba74c177106fcceea0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898124"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Área de teste 3: Fazer/desfazer check-out
 Esta área de teste de plug-in de controle de origem abrange a edição e a reversão de itens do repositório de versão por meio dos comandos **check-out** e **Undo check-out** .
@@ -139,5 +139,5 @@ Quando o usuário se reconecta ao repositório de versão, os Estados de check-o
 |Desfazer o check-out de um projeto depois de Adicionar arquivo (s) ao projeto|1. Crie um novo projeto e adicione-o ao controle do código-fonte.<br />2. Confira o projeto.<br />3. Adicione um arquivo ao projeto.<br />4. desfazer o check-out do projeto.|O arquivo adicionado é removido do projeto no Gerenciador de Soluções.<br /><br /> O projeto não está mais com check-out.|
 |Desfazer o check-out de um projeto após a exclusão de arquivo (s) do projeto|1. Crie um novo projeto e adicione-o ao controle do código-fonte.<br />2. Confira o projeto.<br />3. exclua um arquivo do projeto.<br />4. desfazer o check-out do projeto.|O arquivo excluído aparece no projeto no Gerenciador de Soluções.<br /><br /> O projeto não está mais com check-out.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Guia de teste para plug-ins de controle do código-fonte](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

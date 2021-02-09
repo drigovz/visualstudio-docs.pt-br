@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 90cf7b7f-53d2-487e-b793-94501a6e24dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4e958900307f5f7915f58679709c88f80c2abfc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ce5bee4f2401e3895570f16a6de5567b5979d98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721832"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898289"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 Recupera uma lista de programas em execução a partir de um processo especificado.
@@ -28,22 +28,22 @@ Recupera uma lista de programas em execução a partir de um processo especifica
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetProviderProcessData(
-   PROVIDER_FLAGS         Flags,
-   IDebugDefaultPort2*    pPort,
-   AD_PROCESS_ID          processId,
-   CONST_GUID_ARRAY       EngineFilter,
-   PROVIDER_PROCESS_DATA* pProcess
+HRESULT GetProviderProcessData(
+   PROVIDER_FLAGS         Flags,
+   IDebugDefaultPort2*    pPort,
+   AD_PROCESS_ID          processId,
+   CONST_GUID_ARRAY       EngineFilter,
+   PROVIDER_PROCESS_DATA* pProcess
 );
 ```
 
 ```csharp
-int GetProviderProcessData(
-   enum_PROVIDER_FLAGS     Flags,
-   IDebugDefaultPort2      pPort,
-   AD_PROCESS_ID           ProcessId,
-   CONST_GUID_ARRAY        EngineFilter,
-   PROVIDER_PROCESS_DATA[] pProcess
+int GetProviderProcessData(
+   enum_PROVIDER_FLAGS     Flags,
+   IDebugDefaultPort2      pPort,
+   AD_PROCESS_ID           ProcessId,
+   CONST_GUID_ARRAY        EngineFilter,
+   PROVIDER_PROCESS_DATA[] pProcess
 );
 ```
 
@@ -70,7 +70,7 @@ no Uma matriz de GUIDs para mecanismos de depuração atribuídos para depurar e
 `pProcess`\
 fora Uma estrutura de [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) que é preenchida com as informações solicitadas.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

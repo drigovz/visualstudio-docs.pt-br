@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office solutions [Office development in Visual Studio], developing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fbfe569e587c53aede6d550bc20527ad8d0fd328
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 012f08b4a4a8364d278322b7fe057231183fa233
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844992"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897590"
 ---
 # <a name="develop-office-solutions"></a>Desenvolver soluções do Office
   Depois de projetar um projeto usando as ferramentas de desenvolvedor do Office no Visual Studio e configurar os arquivos de projeto, você pode começar a se concentrar na implementação do código e da interface do usuário personalizada (UI).
@@ -48,7 +48,7 @@ ms.locfileid: "96844992"
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)|Descreve diferentes aspectos da gravação de código em soluções do Office.|
 |[Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)|Fornece uma visão geral do modelo de programação de suplementos do VSTO e tarefas de programação relacionadas.|

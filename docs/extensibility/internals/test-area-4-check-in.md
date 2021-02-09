@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffe0e7838c3bde048df2514c54e534cf7a9b3475
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: ef2baf2158403e8243632bc7ab77e58ea311b67b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898107"
 ---
 # <a name="test-area-4-check-in"></a>Área de teste 4: Fazer check-in
 Esta área de teste de plug-in de controle de origem aborda o envio de itens atualizados para o repositório de versão por meio do comando **check-in** .
@@ -68,5 +68,5 @@ Esta área de teste de plug-in de controle de origem aborda o envio de itens atu
 |Adicionar um projeto a uma solução em branco no controle do código-fonte (caixa **de diálogo check-in** )|1. Crie uma solução em branco.<br />2. Adicione a solução ao controle do código-fonte.<br />3. adicionar um novo projeto.<br />4. aceitar check-out da solução se solicitado.<br />5. faça check-in na caixa de diálogo **check-in** .|Comportamento esperado comum.|
 |Adicionar um projeto a uma solução em branco sob controle do código-fonte (janela **check-ins pendentes** )|1. Crie uma solução em branco.<br />2. Adicione a solução ao controle do código-fonte.<br />3. adicionar um novo projeto.<br />4. aceitar check-out da solução se solicitado.<br />5. fazer check-in da solução na janela **check-ins pendentes** .|Comportamento esperado comum.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Guia de teste para plug-ins de controle do código-fonte](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ed765f78a9e7330e5e1d3864c8a91b63239a3f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 83b869a91b823a2f14823ab65a745a3ef6c0d883
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877696"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898223"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Área de teste 2: Obter do controle do código-fonte
 Essa área de teste abrange os casos de teste para recuperar itens do repositório de versão por meio do comando Get. Esses casos de teste podem ser aplicados a projetos locais e para a Web.

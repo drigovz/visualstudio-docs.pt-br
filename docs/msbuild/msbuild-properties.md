@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 962912ac-8931-49bf-a88c-0200b6e37362
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 61cff0bfa1db43b196d7f6403b5140f9af2947ba
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a8f53613c71a51ab2e5bd8441cb4605da795e8a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046130"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897749"
 ---
 # <a name="msbuild-properties"></a>propriedades MSBuild
 
@@ -66,7 +66,7 @@ Propriedades são pares nome-valor que podem ser usados para configurar compila�
 
 ## <a name="registry-properties"></a>Propriedades de Registro
 
- Você pode ler os valores do registro do sistema usando a sintaxe a seguir, em que `Hive` é o hive do registro (por exemplo, **HKEY_LOCAL_MACHINE** ), `MyKey` é o nome da chave, `MySubKey` é o nome da subchave e `Value` é o valor da subchave.
+ Você pode ler os valores do registro do sistema usando a sintaxe a seguir, em que `Hive` é o hive do registro (por exemplo, **HKEY_LOCAL_MACHINE**), `MyKey` é o nome da chave, `MySubKey` é o nome da subchave e `Value` é o valor da subchave.
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
@@ -90,7 +90,7 @@ $(registry:Hive\MyKey\MySubKey)
 
 ## <a name="global-properties"></a>Propriedades globais
 
- O MSBuild permite definir propriedades na linha de comando usando a opção **-Property** (ou **-p** ). Esses valores de propriedades globais substituem os valores de propriedade que são definidos no arquivo de projeto. Isso inclui propriedades de ambiente, mas não inclui propriedades reservadas, que não podem ser alteradas.
+ O MSBuild permite definir propriedades na linha de comando usando a opção **-Property** (ou **-p**). Esses valores de propriedades globais substituem os valores de propriedade que são definidos no arquivo de projeto. Isso inclui propriedades de ambiente, mas não inclui propriedades reservadas, que não podem ser alteradas.
 
  O exemplo a seguir define a propriedade `Configuration` global como `DEBUG`.
 
@@ -146,7 +146,7 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)

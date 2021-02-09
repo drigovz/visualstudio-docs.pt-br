@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6aeb24b2aee5b0abb3e5d803004ba97725bb707
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d7d7e664f0c39a46e1d84df0c5a0842c7270c942
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876890"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896893"
 ---
 # <a name="project-model-core-components"></a>Componentes principais do projeto modelo
 As tabelas a seguir expandem o modelo de projeto. As tabelas apresentam breves descrições das interfaces e dos serviços identificados no modelo, bem como as interfaces e os serviços associados a objetos específicos. Além disso, as tabelas detalham outras interfaces que são opcionais na criação e manutenção do projeto, dependendo dos requisitos de seu tipo de projeto específico.
@@ -101,7 +101,7 @@ As tabelas a seguir expandem o modelo de projeto. As tabelas apresentam breves d
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|Usado para implementar o modelo de automação. No modelo de projeto, você retornará um objeto de propriedades que permite criar uma instância desse objeto.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Usado para implementar eventos da área de transferência no objeto Project na hierarquia. `SVsUIHierWinClipboardHelper` permite que você manipule corretamente as operações de recortar, copiar e colar.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Lista de verificação: Criando tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Não está no Build: usando classes de projeto HierUtil7 para implementar um tipo de projeto (C++)](/previous-versions/bb166212(v=vs.100))

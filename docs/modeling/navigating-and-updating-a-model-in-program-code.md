@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fb7c78351ccd03247d458ca403c81d379ec18d29
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a7e3d7ba31778c5d5a94f77b52f13bfe8fff8473
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362204"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897854"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Navegar e atualizar um modelo no código do programa
 
@@ -484,7 +484,7 @@ partial class MyDiagram
 ## <a name="store-partitions"></a>Armazenar partições
  Quando um modelo é carregado, o diagrama que o acompanha é carregado ao mesmo tempo. Normalmente, o modelo é carregado em Store. DefaultPartition e o conteúdo do diagrama é carregado em outra partição. Normalmente, o conteúdo de cada partição é carregado e salvo em um arquivo separado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [Validação em uma linguagem específica do domínio](../modeling/validation-in-a-domain-specific-language.md)
