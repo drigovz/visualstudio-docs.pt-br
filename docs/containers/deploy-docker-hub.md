@@ -2,19 +2,19 @@
 title: Implantar um contêiner do Docker ASP.NET Core no Hub do Docker | Microsoft Docs
 description: Saiba como usar as ferramentas de contêiner do Visual Studio para implantar um aplicativo Web ASP.NET Core no Hub do Docker
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 5bbdbffa9de9ac7789495249d3e7bfb0a8d65377
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: e51088d135d0d2cdcc5d1bcca71f72fed8b73fd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829894"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867653"
 ---
 # <a name="deploy-to-docker-hub"></a>Implantar no Docker Hub
 
@@ -32,7 +32,7 @@ Se você não tiver um repositório do Hub do Docker, crie um no [Hub do Docker]
 
    ![Captura de tela das opções de implantação](media/container-tools/vs-2019/docker-container-registry.png)
 
-1. Escolha **registro de contêiner do Docker**e, em seguida, escolha **Hub do Docker**.
+1. Escolha **registro de contêiner do Docker** e, em seguida, escolha **Hub do Docker**.
 
    ![Captura de tela da caixa de diálogo de publicação – escolher Hub do Docker](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
 
@@ -54,7 +54,7 @@ Publique no [registro de contêiner do Azure](/azure/container-registry/) seguin
 
 Configure a integração e a entrega contínuas (CI/CD) com [Azure pipelines](/azure/devops/pipelines/?view=azure-devops&preserve-view=true).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Implantar no serviço Azure app](deploy-app-service.md) 
  [Ferramentas de contêiner do Visual Studio](./index.yml).

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ec58528bfe5e1687c4b4edc7f86451c08b04652c
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: b6e42681d2c25162df22af9711d47b71ba155d67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518668"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867432"
 ---
 # <a name="add-new-data-sources"></a>Adicionar novas fontes de dados
 
@@ -65,7 +65,7 @@ A ilustração a seguir mostra um conjunto de um DataSet que foi descartado em u
 
 Você pode criar um conjunto de dados ou um modelo de Entity Framework para usar como uma fonte de dado para um banco de dados ou arquivo de banco de dados.
 
-### <a name="dataset"></a>Dataset
+### <a name="dataset"></a>Conjunto de dados
 
 Para criar um DataSet como uma fonte de dados, execute o **Assistente de configuração de fonte de dados** selecionando **projeto**  >  **Adicionar nova fonte de dados**. Escolha o tipo de fonte de dados **Database** e siga os prompts para especificar uma conexão de banco de dado nova ou existente, ou um arquivo de banco de dados.
 

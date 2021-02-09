@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 156acfd56789ec13201738e72c6df283e257e94f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: eeaafdca1a3a4d6fb73ca275c4fc97ce67094d8e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436856"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867263"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Conectar-se a dados em um banco de dados
 
@@ -39,7 +39,7 @@ Conecte-se a bancos de dados criados com Microsoft 365, acesso 2013, acesso 2010
 
    ![Exibir outras fontes de dados do Windows](../data-tools/media/viewdatasources.png)
 
-3. Na janela **Fontes de Dados** , clique em **Adicionar Nova Fonte de Dados**.
+3. Na janela **Fontes de Dados**, clique em **Adicionar Nova Fonte de Dados**.
 
    O **Assistente de configuração de fonte de dados** é aberto.
 
@@ -47,11 +47,11 @@ Conecte-se a bancos de dados criados com Microsoft 365, acesso 2013, acesso 2010
 
 5. Selecione **DataSet** na página **escolher um modelo de banco de dados** e, em seguida, selecione **Avançar**.
 
-6. Na página **Escolha a Conexão de Dados** , selecione **Nova Conexão** para configurar uma nova conexão de dados.
+6. Na página **Escolha a Conexão de Dados**, selecione **Nova Conexão** para configurar uma nova conexão de dados.
 
    A caixa de diálogo **Adicionar conexão** é aberta.
 
-7. Se a **fonte de dados** não estiver definida como arquivo de banco de dado do **Microsoft Access** , selecione o botão **alterar** .
+7. Se a **fonte de dados** não estiver definida como arquivo de banco de dado do **Microsoft Access**, selecione o botão **alterar** .
 
    A caixa de diálogo **Alterar fonte de dados** é aberta. Na lista de fontes de dados, escolha **arquivo de banco de dado do Microsoft Access**. Na lista suspensa **provedor de dados** , selecione **.NET Framework provedor de dados para OLE DB** e, em seguida, escolha **OK**.
 
@@ -81,7 +81,7 @@ Conecte-se a bancos de dados criados com o Access 2000-2003 usando o procediment
 
    ![Exibir outras fontes de dados do Windows](../data-tools/media/viewdatasources.png)
 
-3. Na janela **Fontes de Dados** , clique em **Adicionar Nova Fonte de Dados**.
+3. Na janela **Fontes de Dados**, clique em **Adicionar Nova Fonte de Dados**.
 
     O **Assistente de configuração de fonte de dados** é aberto.
 
@@ -89,11 +89,11 @@ Conecte-se a bancos de dados criados com o Access 2000-2003 usando o procediment
 
 5. Selecione **DataSet** na página **escolher um modelo de banco de dados** e, em seguida, selecione **Avançar**.
 
-6. Na página **Escolha a Conexão de Dados** , selecione **Nova Conexão** para configurar uma nova conexão de dados.
+6. Na página **Escolha a Conexão de Dados**, selecione **Nova Conexão** para configurar uma nova conexão de dados.
 
-7. Se a fonte de dados não for um **arquivo de banco de dado do Microsoft Access (OLE DB)** , selecione **alterar** para abrir a caixa de diálogo **Alterar fonte de dados** e selecione o arquivo de banco de dado **do Microsoft Access** e, em seguida, selecione **OK**.
+7. Se a fonte de dados não for um **arquivo de banco de dado do Microsoft Access (OLE DB)**, selecione **alterar** para abrir a caixa de diálogo **Alterar fonte de dados** e selecione o arquivo de banco de dado **do Microsoft Access** e, em seguida, selecione **OK**.
 
-8. No **nome do arquivo de banco de dados** , especifique o caminho e o nome do arquivo *. mdb* ao qual você deseja se conectar e, em seguida, selecione **OK**.
+8. No **nome do arquivo de banco de dados**, especifique o caminho e o nome do arquivo *. mdb* ao qual você deseja se conectar e, em seguida, selecione **OK**.
 
    ![Adicionar arquivo de banco de dados de acesso de conexão](../data-tools/media/add-connection-access-db.png)
 

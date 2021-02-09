@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a02edd3f0e34b0315e9b583c509cda4eb0287bf1
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: c1a6e424fe76b94321ca79ab08496cd160969890
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518681"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867523"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Adicionar código aos conjuntos de dados em aplicativos de n camadas
 
@@ -28,7 +28,7 @@ Você pode estender a funcionalidade de um conjunto de um DataSet criando um arq
 
 O código que define um conjunto de um DataSet é gerado toda vez que são feitas alterações na definição do conjunto de código (no dataset tipado). Esse código também é gerado quando você faz alterações durante a execução de qualquer assistente que modifica a configuração de um conjunto de uma. Para impedir que seu código seja excluído durante a regeneração de um conjunto de um DataSet, adicione o código ao arquivo de classe parcial do conjunto de um.
 
-Por padrão, depois de separar o DataSet e o código do TableAdapter, o resultado é um arquivo de classe discreto em cada projeto. O projeto original tem um arquivo chamado *DataSetName. designer. vb* (ou *DataSetName.designer.cs* ) que contém o código do TableAdapter. O projeto designado na Propriedade Project de **DataSet** tem um arquivo chamado *DataSetName. DataSet. designer. vb* (ou *DataSetName.DataSet.designer.cs* ). Esse arquivo contém o código do conjunto de conteúdo.
+Por padrão, depois de separar o DataSet e o código do TableAdapter, o resultado é um arquivo de classe discreto em cada projeto. O projeto original tem um arquivo chamado *DataSetName. designer. vb* (ou *DataSetName.designer.cs*) que contém o código do TableAdapter. O projeto designado na Propriedade Project de **DataSet** tem um arquivo chamado *DataSetName. DataSet. designer. vb* (ou *DataSetName.DataSet.designer.cs*). Esse arquivo contém o código do conjunto de conteúdo.
 
 > [!NOTE]
 > Quando você separa DataSets e TableAdapters (definindo a propriedade de **projeto DataSet** ), as classes parciais DataSet existentes no projeto não serão movidas automaticamente. As classes parciais de DataSet existentes devem ser movidas manualmente para o projeto do conjunto de um.

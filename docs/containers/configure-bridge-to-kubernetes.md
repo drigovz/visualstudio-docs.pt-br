@@ -8,15 +8,15 @@ keywords: Ponte para kubernetes, Azure Dev Spaces, espaços de desenvolvimento, 
 monikerRange: '>=vs-2019'
 author: ghogen
 ms.author: ghogen
-manager: jillfra
-ms.openlocfilehash: bd28921b7812689554e1dd707c500434bb021c9c
-ms.sourcegitcommit: f9179a3a6d74fbd871f62b72491e70b9e7b05637
+manager: jmartens
+ms.openlocfilehash: b250454fe5e80ec18f75add92c8c2f653893e994
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90845835"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867614"
 ---
-# <a name="configure-bridge-to-kubernetes"></a>Configurar ponte para kubernetes
+# <a name="configure-bridge-to-kubernetes"></a>Configurar a Ponte para Kubernetes
 
 O `KubernetesLocalProcessConfig.yaml` arquivo permite replicar as variáveis de ambiente e os arquivos montados disponíveis para o pods em seu cluster AKs. Você pode especificar as seguintes ações em um `KubernetesLocalProcessConfig.yaml` arquivo:
 
@@ -71,7 +71,7 @@ env:
     value: $(services:myapp1)/api/v1/
 ```
 
-O exemplo acima disponibiliza o serviço *myapp1* para o seu computador de desenvolvimento e a variável de ambiente *MYAPP1_SERVICE_HOST* é definida como o endereço IP local do serviço *myapp1* com o `/api/v1` caminho (ou seja, `127.1.1.4/api/v1` ). O serviço *myapp1* é acessível usando a variável de ambiente, *myapp1*ou *myapp1. svc. cluster. local*.
+O exemplo acima disponibiliza o serviço *myapp1* para o seu computador de desenvolvimento e a variável de ambiente *MYAPP1_SERVICE_HOST* é definida como o endereço IP local do serviço *myapp1* com o `/api/v1` caminho (ou seja, `127.1.1.4/api/v1` ). O serviço *myapp1* é acessível usando a variável de ambiente, *myapp1* ou *myapp1. svc. cluster. local*.
 
 > [!NOTE]
 > Tornar um serviço disponível em seu computador de desenvolvimento tornará todo o serviço disponível, independentemente do caminho definido. O caminho é usado apenas para definir a variável de ambiente para uso no computador de desenvolvimento.
