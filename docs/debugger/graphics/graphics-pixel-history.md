@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 0a2cbde5-1ad9-487e-857c-a3664158c268
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b12264c610d291ff49be0524663141a59082e9e
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 977d97bad864c27c164b6a7da0b14ad1a08128e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995298"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888622"
 ---
 # <a name="graphics-pixel-history"></a>Histórico de pixel gráfico
 A janela Histórico de pixels de gráficos no Analisador de Gráficos do Visual Studio ajuda a entender como um pixel específico é afetado pelos eventos do Direct3D que ocorrem durante um quadro de seu jogo ou aplicativo.

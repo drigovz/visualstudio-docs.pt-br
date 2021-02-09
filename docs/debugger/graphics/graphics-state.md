@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 97e7757e-c372-4626-8149-99a81367a0e1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: de8f3c356cfe05aade3e4f2197b3f7429967a259
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: c6f909d7e250be193bb446d25cd4182d4f062ebe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993999"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888596"
 ---
 # <a name="graphics-state"></a>Estado gráfico
 A janela de estado no diagnóstico de gráficos do Visual Studio ajuda você a entender o estado de gráficos que está ativo no momento do evento atual, como uma chamada de desenho.
@@ -28,7 +28,7 @@ A janela de estado no diagnóstico de gráficos do Visual Studio ajuda você a e
 ### <a name="state-views"></a>Modos de exibição de estados
  Você pode exibir a tabela de estado de várias maneiras diferentes:
 
-|Exibir|Descrição|
+|Visualizar|Descrição|
 |----------|-----------------|
 |Exibição do estado de entrada da API|Essa exibição apresenta o estado em um layout semelhante aos objetos do Direct3D que compõem o estado.|
 |Exibição de estado de entrada lógica|Essa exibição apresenta o estado em uma exibição lógica que não espelha o layout dos objetos do Direct3D que compõem o estado.|
@@ -54,7 +54,7 @@ A janela de estado no diagnóstico de gráficos do Visual Studio ajuda você a e
 |------------|-----------------|
 |Nome|O nome do item de estado. Se esse item representar um pacote de estado, o item poderá ser expandido para exibi-lo.<br /><br /> Nos Estados de exibição de **estado de entrada de API** e modo de exibição de **estado lógico** , os nomes são recuados para mostrar a relação hierárquica entre os Estados.<br /><br /> No estado de **exibição de estado fixado** , nomes totalmente qualificados são exibidos em uma lista simples.|
 |Valor|O valor do item de estado.|
-|Type|O tipo do item de estado.|
+|Tipo|O tipo do item de estado.|
 
 ### <a name="changed-state"></a>Estado alterado
  O estado de gráficos normalmente muda incrementalmente entre chamadas de desenho subsequentes e muitos tipos de problemas de renderização são causados quando o estado é alterado incorretamente. Para ajudá-lo a descobrir qual estado mudou desde a chamada de desenho anterior, o estado alterado é marcado com um asterisco e exibido em vermelho — isso se aplica não apenas ao estado em si, mas também ao item de estado pai, para que você possa identificar facilmente o estado alterado no nível mais alto e, em seguida, detalhar os detalhes.

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: ba3feb3c-f144-47ea-926d-cf752b804153
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8601951cfaba3f246e8488ab23c9b6ccad0d01
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: fe6f649543cee66a1050e5724a9317b7b8806534
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438185"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888635"
 ---
 # <a name="assign-activity-designer"></a>Atribua o designer de atividades
 
@@ -29,7 +29,7 @@ A atividade de <xref:System.Activities.Statements.Assign> atribui um valor a uma
 
 ### <a name="using-the-assign-activity-designer"></a>Usando o designer de atividade atribuir
 
-O designer de atividade de **atribuição** pode ser encontrado na categoria **primitivos** da **caixa de ferramentas** , que é acessada clicando na guia **caixa de ferramentas** (como alternativa, selecione caixa de **ferramentas** no menu **Exibir** ou CTRL + ALT + X.)
+O designer de atividade de **atribuição** pode ser encontrado na categoria **primitivos** da **caixa de ferramentas**, que é acessada clicando na guia **caixa de ferramentas** (como alternativa, selecione caixa de **ferramentas** no menu **Exibir** ou CTRL + ALT + X.)
 
 O designer de atividade de **atribuição** pode ser arrastado da **caixa de ferramentas** e retirado para a superfície de designer de fluxo de trabalho onde as atividades sempre são colocadas, como dentro de um <xref:System.Activities.Statements.Sequence> . Descartar o designer de atividade de **atribuição** cria uma <xref:System.Activities.Statements.Assign> atividade com um **DisplayName** padrão de atribuir. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade **assign** ou na caixa **DisplayName** da grade de propriedades.
 
@@ -40,8 +40,8 @@ A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.A
 |Nome da propriedade|Obrigatório|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|O nome amigável de atividade de <xref:System.Activities.Statements.Assign> . O padrão é atribui. Embora o valor de <xref:System.Activities.Activity.DisplayName%2A> não é necessário restrita, é uma prática recomendada usar um.|
-|<xref:System.Activities.Statements.Assign.To%2A>|Verdadeiro|A variável ou o argumento para que <xref:System.Activities.Statements.Assign.Value%2A> é atribuído. O valor deve ser um identificador de Visual Basic válido. Para definir a propriedade, digite uma expressão de Visual Basic na caixa **para** no designer de atividade de **atribuição** ou na grade de propriedades.|
-|<xref:System.Activities.Statements.Assign.Value%2A>|Verdadeiro|O valor que é atribuído à variável. Para definir o <xref:System.Activities.Statements.Assign.Value%2A> , digite uma expressão de Visual Basic na caixa **valor** no designer de atividade **atribuir** ou na grade de propriedades.|
+|<xref:System.Activities.Statements.Assign.To%2A>|True|A variável ou o argumento para que <xref:System.Activities.Statements.Assign.Value%2A> é atribuído. O valor deve ser um identificador de Visual Basic válido. Para definir a propriedade, digite uma expressão de Visual Basic na caixa **para** no designer de atividade de **atribuição** ou na grade de propriedades.|
+|<xref:System.Activities.Statements.Assign.Value%2A>|True|O valor que é atribuído à variável. Para definir o <xref:System.Activities.Statements.Assign.Value%2A> , digite uma expressão de Visual Basic na caixa **valor** no designer de atividade **atribuir** ou na grade de propriedades.|
 
 ## <a name="see-also"></a>Confira também
 

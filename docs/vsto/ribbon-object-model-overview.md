@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f97bbbab4b867f503e5b5befff27844df8a4b4bc
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6306b13cc40d8b93de734168fe1e6df92c256d21
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527986"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888687"
 ---
 # <a name="ribbon-object-model-overview"></a>Visão geral do modelo de objeto Ribbon
   O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expõe um modelo de objeto fortemente tipado que você pode usar para obter e definir as propriedades dos controles da faixa de tipos em tempo de execução. Por exemplo, você pode preencher dinamicamente controles de menu ou mostrar e ocultar os controles de forma contextual. Você também pode adicionar guias, grupos e controles a uma faixa de faixas, mas somente antes de a faixa de faixas ser carregada pelo aplicativo do Office. Para obter informações, consulte [definir propriedades que se tornam somente leitura](#SettingReadOnlyProperties).
@@ -58,7 +58,7 @@ ms.locfileid: "97527986"
 |**Edição**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
 |**Galeria**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**Grupo**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
-|**Rotular**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|
+|**Rótulo**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
 |**Separador**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
 |**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
@@ -186,7 +186,7 @@ ms.locfileid: "97527986"
 |*Sender*|Um <xref:System.Object> que representa o controle que disparou o evento.|
 |*Oriental*|Um <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> que contém um <xref:Microsoft.Office.Core.IRibbonControl> . Use este controle para acessar qualquer propriedade que não esteja disponível no modelo de objeto da faixa de forma fornecido pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Acessar a faixa de faixas em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
 - [Como: começar a personalizar a faixa de faixas](../vsto/how-to-get-started-customizing-the-ribbon.md)
