@@ -14,15 +14,15 @@ helpviewer_keywords:
 - ServerDocument class, managing documents on server
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 585ec1842daeb4e4c4c59047383e5d53b3599bcf
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 17a25ca382cfbbc762731afacaa628de616cfe1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528493"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879469"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Gerenciar documentos em um servidor usando a classe ServerDocument
   Você pode usar a `ServerDocument` classe no [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] para gerenciar vários aspectos de personalizações em nível de documento, mesmo que Microsoft Office Word e Microsoft Office Excel não estejam instalados. É possível executar as seguintes tarefas:
@@ -65,7 +65,7 @@ ms.locfileid: "97528493"
 |Para remover programaticamente uma personalização de um documento em tempo de execução.<br /><br /> Para obter mais informações, consulte [como: remover extensões de código gerenciado de documentos](../vsto/how-to-remove-managed-code-extensions-from-documents.md).|O método <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A>.|
 |Para obter a URL do manifesto de implantação que está associado ao documento.|A propriedade de <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.DeploymentManifestUrl%2A> .|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Como: anexar extensões de código gerenciado a documentos](../vsto/how-to-attach-managed-code-extensions-to-documents.md)
 - [Como remover extensões de código gerenciado de documentos](../vsto/how-to-remove-managed-code-extensions-from-documents.md)
 - [Visão geral do Ferramentas do Visual Studio para Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)
