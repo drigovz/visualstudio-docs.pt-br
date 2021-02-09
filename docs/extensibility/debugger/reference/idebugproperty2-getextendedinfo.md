@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 34d6cd880ccae520bf000ad01b52223857f4f10f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bb9fe21b1dc004d5a124a1146e6f7610fbe8699
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721492"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916048"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Obtém informações estendidas para a propriedade.
@@ -28,14 +28,14 @@ Obtém informações estendidas para a propriedade.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetExtendedInfo ( 
+HRESULT GetExtendedInfo ( 
    REFGUID* guidExtendedInfo,
    VARIANT* pExtendedInfo
 );
 ```
 
 ```csharp
-int GetExtendedInfo ( 
+int GetExtendedInfo ( 
    ref Guid guidExtendedInfo,
    out object pExtendedInfo
 );
@@ -43,12 +43,12 @@ int GetExtendedInfo ( 
 
 ## <a name="parameters"></a>Parâmetros
 `guidExtendedInfo`\
-no GUID que determina o tipo de informações estendidas a serem recuperadas. Consulte comentários para obter detalhes.
+no GUID que determina o tipo de informações estendidas a serem recuperadas. Consulte Comentários para obter detalhes.
 
 `pExtendedInfo`\
-fora Retorna um `VARIANT` (C++) ou um objeto (C#) que pode ser usado para recuperar as informações de propriedade estendida. Por exemplo, esse parâmetro pode retornar uma `IUnknown` interface que pode ser consultada para uma interface [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) . Consulte comentários para obter detalhes.
+fora Retorna um `VARIANT` (C++) ou um objeto (C#) que pode ser usado para recuperar as informações de propriedade estendida. Por exemplo, esse parâmetro pode retornar uma `IUnknown` interface que pode ser consultada para uma interface [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) . Consulte Comentários para obter detalhes.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna o código de erro. Retorna `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` se não houver informações estendidas a serem recuperadas.
 
 ## <a name="remarks"></a>Comentários
@@ -56,7 +56,7 @@ fora Retorna um `VARIANT` (C++) ou um objeto (C#) que pode ser usado para recupe
 
  Os GUIDs a seguir são normalmente reconhecidos por esse método (os valores GUID são especificados para C#, pois o nome não está disponível em nenhum assembly). GUIDs adicionais podem ser criados para uso interno.
 
-|Name|GUID|Descrição|
+|Nome|GUID|Descrição|
 |----------|----------|-----------------|
 |guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|Retorna uma `IUnknown` interface para o documento. Normalmente, a interface [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) pode ser obtida por meio desta `IUnknown` interface.|
 |guidCodeContext|{e2fc65e-56ce-11d1-b528-00aax004a8797}|Retorna uma `IUnknown` interface para o contexto do documento. Normalmente, a interface [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) pode ser obtida por meio desta `IUnknown` interface.|

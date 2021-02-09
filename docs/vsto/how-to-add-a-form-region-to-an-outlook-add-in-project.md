@@ -16,15 +16,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], adding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f137dbe88b8b3ecf51f17e0f19f61368359087fa
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 9f50475f52ca2ec08894a3c1c0375e78d2b5620b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845057"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917533"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Como: adicionar uma região de formulário a um projeto de suplemento do Outlook
   Crie uma região de formulário para estender um formulário Microsoft Office do Outlook padrão ou personalizado usando o novo assistente de **área de formulário do Outlook** . Você pode criar uma nova região de formulário e criar a interface do usuário no Visual Studio, ou pode importar uma região de formulário que foi desenvolvida no Outlook e adicionar Visual Basic ou código C#.
@@ -62,7 +62,7 @@ ms.locfileid: "96845057"
 
      Todos os tipos de região de formulário podem aparecer nos inspetores, no modo de composição (para criar itens) e no modo de leitura (para exibir itens). Os tipos de região de formulário adjacente, substituição e substituição – também podem aparecer no painel de leitura.
 
-10. Clique em **Avançar**.
+10. Clique em **Próximo**.
 
 11. Na página **identificar as classes de mensagem que exibirão esta região de formulário** , selecione as classes de mensagem padrão do Outlook ou digite os nomes de uma ou mais classes de mensagem personalizadas e clique em **concluir**. Para obter mais informações, consulte [associar uma região de formulário a uma classe de mensagem do Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).
 

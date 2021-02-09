@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7297a5486764127efda72ea37c5c97acc05245
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 79fd16f42629bdf242d70432065d077efd5883eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134211"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917208"
 ---
 # <a name="constant-nodes"></a>Nós de constante
 
@@ -23,7 +23,7 @@ No Designer do Sombreador, nós constantes representam valores literais e atribu
 
 ## <a name="vertex-attribute-interpolation"></a>Interpolação de atributo de vértice
 
-A imagem de uma cena 3D em um jogo ou aplicativo é feita por meio da transformação matemática de inúmeros objetos — definido pelos vértices, atributos de vértice e definições de primitivas — em pixels na tela. Todas as informações necessárias para dar uma aparência exclusiva a um pixel são fornecidas por meio de atributos de vértice, combinados de acordo com a proximidade do pixel para os diferentes vértices que compõem seu *primitivo* . Um primitivo é um elemento básico de renderização; ou seja, uma forma simples como um ponto, uma linha ou um triângulo. Um pixel muito semelhante a um dos vértices recebe constantes quase idênticas a esse vértice, mas um pixel com espaçamento uniforme entre todos os vértices de um primitivo recebe constantes que são a média desses vértices. Na programação de gráficos, as constantes que os pixels recebem são consideradas *interpoladas* . Fornecer dados constantes a pixels dessa maneira produz qualidade visual muito boa e, ao mesmo tempo, reduz a superfície de memória e os requisitos de largura de banda.
+A imagem de uma cena 3D em um jogo ou aplicativo é feita por meio da transformação matemática de inúmeros objetos — definido pelos vértices, atributos de vértice e definições de primitivas — em pixels na tela. Todas as informações necessárias para dar uma aparência exclusiva a um pixel são fornecidas por meio de atributos de vértice, combinados de acordo com a proximidade do pixel para os diferentes vértices que compõem seu *primitivo*. Um primitivo é um elemento básico de renderização; ou seja, uma forma simples como um ponto, uma linha ou um triângulo. Um pixel muito semelhante a um dos vértices recebe constantes quase idênticas a esse vértice, mas um pixel com espaçamento uniforme entre todos os vértices de um primitivo recebe constantes que são a média desses vértices. Na programação de gráficos, as constantes que os pixels recebem são consideradas *interpoladas*. Fornecer dados constantes a pixels dessa maneira produz qualidade visual muito boa e, ao mesmo tempo, reduz a superfície de memória e os requisitos de largura de banda.
 
 Embora cada instância de sombreador de pixel receba apenas um conjunto de valores constantes e não possa alterar esses valores, instâncias diferentes de sombreador de pixel recebem diferentes conjuntos de dados constantes. Esse design permite que um programa sombreador produza uma saída de cor diferente para cada pixel no primitivo.
 

@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 8aeff804-0183-4588-8218-52e107a5382e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f28a0f8bd60ad169715ba72b6fab957e7699a5b
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b3e2bda0a6ed746c5e518b046b2165f0aff2e38b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723017"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915914"
 ---
 # <a name="zoom-control-utilization-view"></a>Controle de zoom (exibição de utilização)
 O controle de zoom ajuda você a ampliar o gráfico de utilização da CPU para focar áreas de interesse específico. Esse controle amplia o centro da exibição. Portanto, você deve centralizar a área de interesse antes de ampliá-la.
 
  Você pode arrastar o ponteiro do mouse no gráfico de utilização da CPU ou no gráfico de atividade de GPU para criar uma área realçada. Quando o botão do mouse for liberado, a exibição ampliará o intervalo selecionado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Exibição de utilização](../profiling/utilization-view.md)

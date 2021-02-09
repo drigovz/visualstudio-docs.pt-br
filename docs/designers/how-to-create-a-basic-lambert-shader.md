@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1677de15006dcf3bbe2f7a6b925be247518f752
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 2aa4f3676708a99abba0a4706ecb524f1c14b212
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134518"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917026"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Como criar um sombreador Lambert básico
 
@@ -29,13 +29,13 @@ Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferrame
 
 1. Crie um sombreador DGSL com o qual trabalhar. Para obter informações sobre como adicionar um sombreador DGSL ao seu projeto, consulte a seção de Introdução em [Designer de Sombreador](../designers/shader-designer.md).
 
-2. Desconectar o nó **Ponto de Cor** do nó **Cor Final** . Escolha o terminal **RGB** do nó **Ponto de Cor** e, em seguida, escolha **Quebrar Links** . Deixe o terminal **Alfa** conectado.
+2. Desconectar o nó **Ponto de Cor** do nó **Cor Final**. Escolha o terminal **RGB** do nó **Ponto de Cor** e, em seguida, escolha **Quebrar Links**. Deixe o terminal **Alfa** conectado.
 
-3. Adicione um nó **Lambert** ao grafo. Na **Caixa de Ferramentas** , em **Utilitário** , selecione **Lambert** e mova-o para a superfície de design. O nó Lambert calcula a contribuição de cor difusa total do pixel, com base em parâmetros de iluminação difusa e ambiente.
+3. Adicione um nó **Lambert** ao grafo. Na **Caixa de Ferramentas**, em **Utilitário**, selecione **Lambert** e mova-o para a superfície de design. O nó Lambert calcula a contribuição de cor difusa total do pixel, com base em parâmetros de iluminação difusa e ambiente.
 
-4. Conecte o nó **Ponto de Cor** ao nó **Lambert** . No modo de **Seleção** , mova o terminal **RGB** do nó **Ponto de Cor** para o terminal **Cor Difusa** do nó **Lambert** . Essa conexão fornece o nó Lambert com a cor difusa interpolada do pixel.
+4. Conecte o nó **Ponto de Cor** ao nó **Lambert**. No modo de **Seleção**, mova o terminal **RGB** do nó **Ponto de Cor** para o terminal **Cor Difusa** do nó **Lambert**. Essa conexão fornece o nó Lambert com a cor difusa interpolada do pixel.
 
-5. Conecte o valor de cor calculado à cor final. Mova o terminal de **Saída** do nó **Lambert** para o terminal **RGB** do nó **Cor Final** .
+5. Conecte o valor de cor calculado à cor final. Mova o terminal de **Saída** do nó **Lambert** para o terminal **RGB** do nó **Cor Final**.
 
    A ilustração a seguir mostra o grafo de sombreador concluído e uma visualização do sombreador aplicado a um modelo de bule.
 
@@ -52,7 +52,7 @@ A ilustração a seguir mostra o sombreador que é descrito neste documento, apl
 
 Para obter mais informações sobre como aplicar um sombreador a um modelo 3D, consulte [como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Como exportar um sombreador](../designers/how-to-export-a-shader.md)

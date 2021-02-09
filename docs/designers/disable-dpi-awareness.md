@@ -4,14 +4,14 @@ description: Discute as limitações do Designer de Formulários do Windows em m
 ms.date: 09/28/2020
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.topic: conceptual
-ms.openlocfilehash: 08eb15914ad381fd81a838f5e09a1350bedff4fd
-ms.sourcegitcommit: 31f216b5f7491d5558de5b7ea4ebb0eb1faa3b9d
+ms.openlocfilehash: f63d831127951815f28955e72ae29b1a4d7f5a3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91493303"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917098"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Desabilitar o reconhecimento de DPI no Visual Studio
 
@@ -88,7 +88,7 @@ Definir seu dimensionamento de exibição como 100% pode ser indesejável, pois 
 
 Você pode optar por não ser notificado sobre problemas de dimensionamento de DPI no Visual Studio. Talvez você prefira desabilitar as notificações se não estiver trabalhando no designer, por exemplo.
 
-Para desabilitar as notificações, escolha **ferramentas**  >  **Opções** para abrir a caixa de diálogo **Opções** . Em seguida, escolha **Designer de formulários do Windows**  >  **geral**e defina as **notificações de dimensionamento de DPI** como **falso**.
+Para desabilitar as notificações, escolha **ferramentas**  >  **Opções** para abrir a caixa de diálogo **Opções** . Em seguida, escolha **Designer de formulários do Windows**  >  **geral** e defina as **notificações de dimensionamento de DPI** como **falso**.
 
 ![Opção de notificações de dimensionamento de DPI no Visual Studio](./media/notifications-option.png)
 
@@ -98,6 +98,6 @@ Se, posteriormente, você quiser reabilitar as notificações de dimensionamento
 
 Se a transição para o reconhecimento de DPI não estiver funcionando conforme o esperado no Visual Studio, verifique se você tem o valor `dpiAwareness` na subchave **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\devenv.exe** do Editor do Registro. Exclua o valor se ele estiver presente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Dimensionamento automático no Windows Forms](/dotnet/framework/winforms/automatic-scaling-in-windows-forms)

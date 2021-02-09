@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: f3ec919e-63e5-484b-adbf-8f0e79342e75
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fc7b128915b7fc961b44aa7d70a24a813d432ddf
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: fc7e8d9a7c39a0bb7953c309adb9f2abb1c0dc43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801469"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916712"
 ---
 # <a name="flag-markers"></a>Marcadores de sinalizador
 Um marcador de sinalizador representa algo que ocorreu em um instante de tempo em um aplicativo. Um sinalizador pode representar muitos tipos de eventos de aplicativo. Por exemplo, um sinalizador pode mostrar quando um determinado item de trabalho foi agendado ou quando uma exceção foi lançada. Runtimes, como a Biblioteca de Paralelismo de Tarefas, também podem gerar sinalizadores.
@@ -44,6 +44,6 @@ Um marcador de sinalizador representa algo que ocorreu em um instante de tempo e
 
  ![Sinalizadores de agregação mostrando quatro níveis de importância](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate") Sinalizadores de agregação por nível de importância
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Marcadores do Visualizador de simultaneidade](../profiling/concurrency-visualizer-markers.md)
 - [SDK do Visualizador de Simultaneidade](../profiling/concurrency-visualizer-sdk.md)

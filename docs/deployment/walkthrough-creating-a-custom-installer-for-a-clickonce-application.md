@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: fb222cc5-8aeb-4b94-8c49-b93e342f5f69
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 08b4adbaa7e7e25041f90628695de729aaff0d0d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 748d9f5932f93261bc991f0d8af43728b8e5ce02
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349198"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917287"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Walkthrough: criar um instalador personalizado para um aplicativo ClickOnce
 Qualquer aplicativo ClickOnce baseado em um arquivo *. exe* pode ser instalado e atualizado silenciosamente por um instalador personalizado. Um instalador personalizado pode implementar a experiência do usuário personalizada durante a instalação, incluindo caixas de diálogo personalizadas para operações de segurança e manutenção. Para executar operações de instalação, o instalador personalizado usa a <xref:System.Deployment.Application.InPlaceHostingManager> classe. Este tutorial demonstra como criar um instalador personalizado que instala silenciosamente um aplicativo ClickOnce.
@@ -77,6 +77,6 @@ Qualquer aplicativo ClickOnce baseado em um arquivo *. exe* pode ser instalado e
 ## <a name="next-steps"></a>Próximas etapas
  Um aplicativo ClickOnce também pode adicionar lógica de atualização personalizada, incluindo uma interface do usuário personalizada para mostrar durante o processo de atualização. Para obter mais informações, consulte <xref:System.Deployment.Application.UpdateCheckInfo>. Um aplicativo ClickOnce também pode suprimir a entrada do menu Iniciar padrão, atalho e adicionar ou remover programas usando um `<customUX>` elemento. Para obter mais informações, consulte [ \<entryPoint> elemento](../deployment/entrypoint-element-clickonce-application.md) e <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A> .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)
 - [\<entryPoint> elementos](../deployment/entrypoint-element-clickonce-application.md)

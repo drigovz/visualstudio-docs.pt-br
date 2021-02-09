@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 46497249-c797-42c5-a02c-3e4bb3b4ee60
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 38ae3e9c40204082ea8791ddea4e92d77a0d311e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 28dd2c6132905e4c5610d2a7a0f598650ce06692
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721314"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917865"
 ---
 # <a name="lines-view---sampling-data"></a>Exibição de linhas – dados de amostragem
 A visualização Linhas de dados de amostragem lista os dados de desempenho das instruções que estavam em execução quando os exemplos foram coletados na criação de perfil.
@@ -61,5 +61,5 @@ A visualização Linhas de dados de amostragem lista os dados de desempenho das 
 |**Amostras Exclusivas**|O número total de amostras coletadas durante a execução da linha de função.|
 |**% de Amostras Exclusivas**|O percentual de todas as amostras coletadas na criação de perfil durante a execução da linha de função.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Exibição de linhas-amostragem](../profiling/lines-view-dotnet-memory-sampling-data.md)

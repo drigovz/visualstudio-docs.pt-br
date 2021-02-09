@@ -8,16 +8,16 @@ helpviewer_keywords:
 - unit tests, creating
 - unit tests, running
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7d18a97a3cf8f680e7bfe3d679e8e57f7cc716fb
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 184ea2250732bfa37f1740fadfa85616d83a88cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329062"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917544"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Executar um teste de unidade como um processo de 64 bits
 
@@ -47,7 +47,7 @@ Se você tiver um computador de 64 bits, você poderá executar testes de unidad
 
    Especifique `<TargetPlatform>x64</TargetPlatform>` em um arquivo *. RunSettings* . Uma vantagem desse método é que você pode especificar grupos de configurações em arquivos diferentes e mudar rapidamente entre diferentes configurações. Você também pode copiar as configurações entre soluções. Para obter mais informações, consulte [Configurar testes de unidade usando um arquivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md)
 - [Teste de unidade em seu código](../test/unit-test-your-code.md)

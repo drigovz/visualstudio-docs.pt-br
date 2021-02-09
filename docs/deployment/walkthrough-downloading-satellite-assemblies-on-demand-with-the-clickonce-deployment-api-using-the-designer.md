@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 82b85a47-b223-4221-a17c-38a52c3fb6e2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b6b57faf01878dc5aff708f0aca47707bf6e48c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 74e6641eff7fcaecfab300afe4747bb2ab7b75b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350329"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917298"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Walkthrough: baixar assemblies satélite sob demanda com a API de implantação do ClickOnce usando o designer
 Windows Forms aplicativos podem ser configurados para várias culturas por meio do uso de assemblies satélite. Um *assembly satélite* é um assembly que contém recursos de aplicativo para uma cultura diferente da cultura padrão do aplicativo.
@@ -49,7 +49,7 @@ Windows Forms aplicativos podem ser configurados para várias culturas por meio 
 
 4. Marque a caixa de seleção **Mostrar todos os arquivos** para exibir assemblies satélite. Por padrão, todos os assemblies satélite serão incluídos na sua implantação e estarão visíveis nessa caixa de diálogo.
 
-     Um assembly satélite terá um nome no formulário *\<isoCode>\ApplicationName.resources.dll* , em que \<isoCode> é um identificador de idioma no formato RFC 1766.
+     Um assembly satélite terá um nome no formulário *\<isoCode>\ApplicationName.resources.dll*, em que \<isoCode> é um identificador de idioma no formato RFC 1766.
 
 5. Clique em **novo** na lista de **grupos de download** para cada identificador de idioma. Quando for solicitado um nome de grupo de download, insira o identificador de idioma. Por exemplo, para um assembly satélite em Japonês, você deve especificar o nome do grupo de download `ja-JP` .
 
@@ -80,6 +80,6 @@ Windows Forms aplicativos podem ser configurados para várias culturas por meio 
 ## <a name="next-steps"></a>Próximas etapas
  Em um ambiente de produção, provavelmente você precisará remover a linha nos exemplos de código que define <xref:System.Threading.Thread.CurrentUICulture%2A> para um valor específico, pois os computadores cliente terão o valor correto definido por padrão. Quando o aplicativo é executado em um computador cliente japonês, por exemplo, <xref:System.Threading.Thread.CurrentUICulture%2A> será `ja-JP` por padrão. Configurá-lo programaticamente é uma boa maneira de testar seus assemblies satélites antes de implantar seu aplicativo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Walkthrough: baixar assemblies satélite sob demanda com a API de implantação do ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)
 - [Localizar aplicativos ClickOnce](../deployment/localizing-clickonce-applications.md)

@@ -17,16 +17,16 @@ helpviewer_keywords:
 - HPC profiling
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 06a160adda25debe21d8262d9064c23849011dc9
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 3faea797d57ca8874a198e5ee1bf76708ee20e7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720521"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917560"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Criar perfil em clusters HPC (computação de alto desempenho)
 
@@ -72,7 +72,7 @@ Você pode configurar uma sessão de criação de perfil usando o Assistente de 
 
    - Para analisar um binário que não está em um projeto aberto, selecione a opção **Um executável (arquivo .EXE)**.
 
-4. Clique em **Avançar**.
+4. Clique em **Próximo**.
 
 5. Na terceira página do assistente:
 
@@ -84,7 +84,7 @@ Você pode configurar uma sessão de criação de perfil usando o Assistente de 
 
     - Em **Local de implantação**, especifique o caminho para o diretório HPC server usa para imagens do estágio de implantação.
 
-6. Clique em **Avançar**.
+6. Clique em **Próximo**.
 
 7. Na quarta página do assistente:
 
@@ -98,7 +98,7 @@ Você pode configurar uma sessão de criação de perfil usando o Assistente de 
 
          Para analisar processos que são executados em um nó específico no cluster de HPC, selecione a opção **Perfil no nó** e, em seguida, selecione o nó da lista suspensa.
 
-8. Clique em **Avançar**.
+8. Clique em **Próximo**.
 
 9. Na quinta página do assistente, você pode escolher iniciar imediatamente o criador de perfil e o processo de criação de perfil ou iniciar a criação de perfil posteriormente usando o Gerenciador de Desempenho.
 

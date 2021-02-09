@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: c21822fb-d4ee-42e4-b72d-41ee9786efe5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29bdd080e87e8fad44c7b8943d0d017749b8c30b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c0e8895f45524526fc8007ff909a9c541e9899b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350303"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917258"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Walkthrough: implantar manualmente um aplicativo ClickOnce que não requer nova assinatura e que preserva informações de identidade visual
 Ao criar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e, em seguida, fornecê-lo a um cliente para publicar e implantar, o cliente tradicionalmente teve de atualizar o manifesto de implantação e assinar novamente. Embora esse ainda seja o método preferencial na maioria dos casos, o .NET Framework 3,5 permite que você crie implantações [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] que podem ser implantadas pelos clientes sem a necessidade de regenerar um novo manifesto de implantação. Para obter mais informações, consulte [implantar aplicativos ClickOnce para servidores de teste e produção sem assinatura](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -113,9 +113,9 @@ Ao criar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ap
    MageUI.exe
    ```
 
-6. Crie um novo manifesto de aplicativo selecionando **arquivo** , **novo** , **manifesto do aplicativo** no menu.
+6. Crie um novo manifesto de aplicativo selecionando **arquivo**, **novo**, **manifesto do aplicativo** no menu.
 
-7. Na guia **nome** padrão, insira o nome e o número de versão dessa implantação. Além disso, forneça um valor para o **Editor** , que será usado como o nome da pasta para o link de atalho do aplicativo no menu iniciar quando ele for implantado.
+7. Na guia **nome** padrão, insira o nome e o número de versão dessa implantação. Além disso, forneça um valor para o **Editor**, que será usado como o nome da pasta para o link de atalho do aplicativo no menu iniciar quando ele for implantado.
 
 8. Selecione a guia **Opções do aplicativo** e clique em usar o **manifesto do aplicativo para obter informações de confiança**. Isso habilitará a identidade visual de terceiros para esse [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.
 
@@ -125,17 +125,17 @@ Ao criar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ap
 
 11. Clique no botão **popular** para adicionar todos os seus arquivos de aplicativo à lista de arquivos. Se seu aplicativo contiver mais de um arquivo executável, marque o arquivo executável principal para essa implantação como o aplicativo de inicialização selecionando **ponto de entrada** na lista suspensa **tipo de arquivo** . (Se seu aplicativo contiver apenas um arquivo executável, *MageUI.exe* irá marcá-lo para você.)
 
-12. Selecione a guia **permissões necessárias** e selecione o nível de confiança que você precisa que seu aplicativo declare. O padrão é **confiança total** , que será apropriado para a maioria dos aplicativos.
+12. Selecione a guia **permissões necessárias** e selecione o nível de confiança que você precisa que seu aplicativo declare. O padrão é **confiança total**, que será apropriado para a maioria dos aplicativos.
 
-13. Selecione **arquivo** , **salvar** no menu e salve o manifesto do aplicativo. Você será solicitado a assinar o manifesto do aplicativo quando salvá-lo.
+13. Selecione **arquivo**, **salvar** no menu e salve o manifesto do aplicativo. Você será solicitado a assinar o manifesto do aplicativo quando salvá-lo.
 
-14. Se você tiver um certificado armazenado como um arquivo no sistema de arquivos, use a opção **assinar como arquivo de certificado** e selecione o certificado do sistema de arquivos usando o botão de reticências ( **...** ).
+14. Se você tiver um certificado armazenado como um arquivo no sistema de arquivos, use a opção **assinar como arquivo de certificado** e selecione o certificado do sistema de arquivos usando o botão de reticências (**...**).
 
-     - ou -
+     -ou-
 
      Se o certificado for mantido em um repositório de certificados que pode ser acessado do seu computador, selecione a **opção assinar com o certificado armazenado** e selecione o certificado na lista fornecida.
 
-15. Selecione **arquivo** , **novo** , **manifesto de implantação** no menu para criar seu manifesto de implantação e, na guia **nome** , forneça um nome e um número de versão ( **1.0.0.0** neste exemplo).
+15. Selecione **arquivo**, **novo**, **manifesto de implantação** no menu para criar seu manifesto de implantação e, na guia **nome** , forneça um nome e um número de versão (**1.0.0.0** neste exemplo).
 
 16. Alterne para a guia **Atualizar** e especifique com que frequência você deseja que esse aplicativo seja atualizado. Se seu aplicativo usar a [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API de implantação para verificar se há atualizações em si, desmarque a caixa de seleção denominada **este aplicativo deve verificar se há atualizações**.
 
@@ -156,7 +156,7 @@ Ao criar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ap
 
 22. O cliente implanta o aplicativo para seus usuários.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [MageUI.exe (Manifest Generation and Editing Tool, cliente gráfico)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
 - [MakeCert](/windows/desktop/SecCrypto/makecert)

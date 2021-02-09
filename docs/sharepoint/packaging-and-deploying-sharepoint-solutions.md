@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging and deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bd06a5be3c9e7ceea38bdb4560f8b6262175bd45
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: ae74aa3cf759ba006acd36c168eecceac4b2ee4a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305082"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916552"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Empacotar e implantar soluções do SharePoint
   Normalmente, uma solução do SharePoint é implantada em um servidor do SharePoint usando um arquivo de pacote de solução (. wsp). Você pode usar o Visual Studio para organizar seus itens de projeto do SharePoint em recursos e criar um pacote para implantar seus recursos do SharePoint.

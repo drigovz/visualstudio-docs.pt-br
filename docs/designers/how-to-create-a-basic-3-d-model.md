@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 924b990e1626842778c0b3577ddb25a53a4eb910
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 5c60c30c593e67f47a620062e2b2f4958120a1a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134597"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917109"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Como criar um modelo 3D básico
 
@@ -44,15 +44,15 @@ Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferrame
 
 1. Crie um modelo 3D com o qual trabalhar. Para obter informações sobre como adicionar um modelo ao seu projeto, consulte a seção Introdução no [Editor de modelos](../designers/model-editor.md).
 
-2. Adicione um cubo para a cena. Na janela **Caixa de Ferramentas** , em **Formas** , selecione **Cubo** e mova-o para a superfície de design.
+2. Adicione um cubo para a cena. Na janela **Caixa de Ferramentas**, em **Formas**, selecione **Cubo** e mova-o para a superfície de design.
 
-3. Mude para seleção de face. Na barra de ferramentas do Editor de Modelo, escolha **Selecionar Face** .
+3. Mude para seleção de face. Na barra de ferramentas do Editor de Modelo, escolha **Selecionar Face**.
 
-4. Subdivida a parte superior do cubo. No modo de seleção de face, escolha o cubo uma vez para ativá-lo para a seleção e, em seguida, escolha a parte superior do cubo para selecionar a face superior. Na barra de ferramentas do Editor de Modelo, escolha **Subdivide a face** . Isso adiciona novos vértices na parte superior do cubo que o dividem em quatro partições de tamanhos iguais.
+4. Subdivida a parte superior do cubo. No modo de seleção de face, escolha o cubo uma vez para ativá-lo para a seleção e, em seguida, escolha a parte superior do cubo para selecionar a face superior. Na barra de ferramentas do Editor de Modelo, escolha **Subdivide a face**. Isso adiciona novos vértices na parte superior do cubo que o dividem em quatro partições de tamanhos iguais.
 
     ![A parte superior do cubo foi subdividida](../designers/media/gfx_model_demo_house_subdiv.png)
 
-5. Faça a extrusão de dois lados adjacentes do cubo, por exemplo, a frente e o lado direito do cubo. No modo de seleção de face, escolha uma vez o cubo para ativá-lo para a seleção e, em seguida, escolha um lado do cubo. Pressione e segure a tecla **Ctrl** , escolha outro lado do cubo que seja adjacente ao lado que foi selecionado primeiro e na barra de ferramentas do Editor de Modelo, clique em **Extrudar face** .
+5. Faça a extrusão de dois lados adjacentes do cubo, por exemplo, a frente e o lado direito do cubo. No modo de seleção de face, escolha uma vez o cubo para ativá-lo para a seleção e, em seguida, escolha um lado do cubo. Pressione e segure a tecla **Ctrl**, escolha outro lado do cubo que seja adjacente ao lado que foi selecionado primeiro e na barra de ferramentas do Editor de Modelo, clique em **Extrudar face**.
 
     ![Os lados do cubo tiveram sido extrudados](../designers/media/gfx_model_demo_house_extrude.png)
 
@@ -60,7 +60,7 @@ Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferrame
 
     ![Um lado do cubo foi extrudado mais ainda.](../designers/media/gfx_model_demo_house_extend.png)
 
-7. Triangular o modelo. Na barra de ferramentas do editor de modelos, escolha ferramentas **avançadas**  >  **Tools**  >  **Triangulate** .
+7. Triangular o modelo. Na barra de ferramentas do editor de modelos, escolha ferramentas **avançadas**  >    >  **Triangulate**.
 
 8. Crie o teto da casa. Mude para o modo de seleção de borda escolhendo **Selecionar Borda** na barra de ferramentas do Editor de Modelo e, em seguida, escolha o cubo para ativá-lo. Pressione e segure a tecla **Ctrl** enquanto você seleciona as bordas que são mostradas aqui:
 
@@ -74,7 +74,7 @@ Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferrame
 
    Como uma próxima etapa, você pode aplicar um sombreador a esse modelo 3D. Para obter informações, confira [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como modelar o terreno 3D do modelo](../designers/how-to-model-3-d-terrain.md)
 - [Editor de modelos](../designers/model-editor.md)
