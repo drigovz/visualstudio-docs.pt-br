@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bf914dc0-ff84-4f5d-9f75-1733b17f3be0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee138fd361d883fb465711e679d09e6c96ddac4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38ca5d1d1612b0a51dd817c3edc8c3e8d3f9d8fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461577"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853404"
 ---
 # <a name="idiasymbolget_unmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
 Recupera o tipo original deste símbolo. Use quando a [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) for definida como um tipo.
@@ -25,7 +25,7 @@ Recupera o tipo original deste símbolo. Use quando a [Enumeração SymTagEnum](
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_unmodifiedType( 
+HRESULT get_unmodifiedType( 
    IDiaSymbol** pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_unmodifiedType( 
 
 fora Retorna um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa o tipo original deste símbolo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -51,5 +51,5 @@ fora Retorna um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasy
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

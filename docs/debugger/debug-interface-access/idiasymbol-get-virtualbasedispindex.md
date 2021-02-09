@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5561a3cb-2c82-41cf-9217-3ee2b1e1d1d1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 99e65f8c869a55127fb39e18aa76058f46b3c602
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d022635259bc4ccf0bd6e7953effb98de1627cdd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461465"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853362"
 ---
 # <a name="idiasymbolget_virtualbasedispindex"></a>IDiaSymbol::get_virtualBaseDispIndex
 Recupera o índice do símbolo na tabela de deslocamento de base virtual.
@@ -35,11 +35,11 @@ HRESULT get_virtualBaseDispIndex (
 
 fora Retorna o índice na tabela de deslocamento de base virtual.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou código de erro.
 
 > [!NOTE]
 > Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

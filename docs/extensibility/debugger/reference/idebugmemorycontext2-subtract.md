@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 63df14c7-8d7e-47c1-afa7-5a1ab5d8eaba
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c858beb8c3f9f587633dbae8b3b1fe73fd789663
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71e3191384a0ee45778cb7ee37b7e55e5f673578
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851082"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
 Subtrai o valor especificado do contexto atual e retorna um novo contexto.
@@ -29,7 +29,7 @@ Subtrai o valor especificado do contexto atual e retorna um novo contexto.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT Subtract( 
+HRESULT Subtract( 
    UINT64                 dwCount,
    IDebugMemoryContext2** ppMemCxt
 );
@@ -49,7 +49,7 @@ no O número de bytes de memória a serem reduzidos.
 `ppMemCxt`\
 fora Retorna um novo objeto [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
@@ -57,5 +57,5 @@ fora Retorna um novo objeto [IDebugMemoryContext2](../../../extensibility/debugg
 
  Esse método sempre deve produzir um novo contexto, mesmo se o endereço resultante estiver fora do espaço de memória associado a esse contexto. A única exceção a isso é se nenhuma memória puder ser alocada para o novo contexto ou se `ppMemCxt` for um valor nulo (que é um erro).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

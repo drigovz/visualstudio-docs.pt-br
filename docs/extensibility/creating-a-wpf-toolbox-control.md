@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dbe9ed00223fa549420537579d39a4c88cf37cb
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 9b401baf1605a869772ba41ce83ad906061f8144
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973968"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851433"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Criar um controle de caixa de ferramentas do WPF
 
@@ -33,7 +33,7 @@ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a part
 
 1. Crie um projeto VSIX denominado `MyToolboxControl` . Você pode encontrar o modelo de projeto VSIX na caixa de diálogo **novo projeto** pesquisando por "VSIX".
 
-2. Quando o projeto for aberto, adicione um modelo de item de **controle da caixa de ferramentas do WPF** denominado `MyToolboxControl` . Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item**. Na caixa de diálogo **Adicionar novo item** , vá para extensibilidade do **Visual C#**  >  **Extensibility** e selecione **controle da caixa de ferramentas WPF**. No campo **nome** na parte inferior da janela, altere o nome do arquivo de comando para *MyToolboxControl.cs*.
+2. Quando o projeto for aberto, adicione um modelo de item de **controle da caixa de ferramentas do WPF** denominado `MyToolboxControl` . Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item**. Na caixa de diálogo **Adicionar novo item** , vá para extensibilidade do **Visual C#**  >   e selecione **controle da caixa de ferramentas WPF**. No campo **nome** na parte inferior da janela, altere o nome do arquivo de comando para *MyToolboxControl.cs*.
 
     Agora, a solução contém um controle de usuário, um `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> que adiciona o controle à **caixa de ferramentas** e uma entrada de ativo **Microsoft. VisualStudio. ToolboxControl** no manifesto do VSIX para implantação.
 
@@ -102,4 +102,4 @@ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a part
 
 3. Carregue o arquivo *. vsix* em uma rede ou em um site da Web.
 
-    Se você carregar o arquivo no site [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , outros usuários poderão usar as **Tools**  >  **extensões e as atualizações** de ferramentas no Visual Studio para localizar o controle online e instalá-lo.
+    Se você carregar o arquivo no site [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , outros usuários poderão usar as   >  **extensões e as atualizações** de ferramentas no Visual Studio para localizar o controle online e instalá-lo.

@@ -5,15 +5,15 @@ ms.date: 11/16/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 2cfad81c44822e59abb704e5e830357bfd32067d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e74966e71a7d440aed918e8aa609eeb8e68c355
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801549"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851875"
 ---
 # <a name="create-r-markdown-documents"></a>Criar documentos R Markdown
 
@@ -66,8 +66,8 @@ As RTVS (Ferramentas do R para Visual Studio) oferecem modelo de item do R Markd
 
 ## <a name="previews"></a>Visualizações
 
-O Visual Studio 2017 versão 15.5 e posterior fornece automaticamente a versão prévia dinâmica para o R Markdown. Para ativar a sincronização automática entre o editor e a versão prévia, selecione **ferramentas de R**  >  **redução**da  >  **sincronização automática** (**Ctrl** + **Shift** + **Y**). Se você não estiver usando a sincronização automática, poderá atualizar a visualização usando **ferramentas de R**  >  **redução**da  >  **recarga R Markdown visualização**.
+O Visual Studio 2017 versão 15.5 e posterior fornece automaticamente a versão prévia dinâmica para o R Markdown. Para ativar a sincronização automática entre o editor e a versão prévia, selecione **ferramentas de R**  >  **redução** da  >  **sincronização automática** (**Ctrl** + **Shift** + **Y**). Se você não estiver usando a sincronização automática, poderá atualizar a visualização usando **ferramentas de R**  >  **redução** da  >  **recarga R Markdown visualização**.
 
-Também é possível visualizar o arquivo nos formatos HTML, PDF e Microsoft Word clicando com o botão direito do mouse no editor e selecionando um dos comandos **Versão prévia**. Os mesmos comandos também estão disponíveis no menu de redução das **ferramentas de R**  >  **Markdown** . (Em versões anteriores do Visual Studio, esses comandos são encontrados nas **ferramentas**  >  do R Menu **publicar** .)
+Também é possível visualizar o arquivo nos formatos HTML, PDF e Microsoft Word clicando com o botão direito do mouse no editor e selecionando um dos comandos **Versão prévia**. Os mesmos comandos também estão disponíveis no menu de redução das **ferramentas de R**  >   . (Em versões anteriores do Visual Studio, esses comandos são encontrados nas **ferramentas**  >  do R Menu **publicar** .)
 
 ![Versão prévia dinâmica do R Markdown e outros comandos de menu de versão prévia](media/rmarkdown-live-preview.png)

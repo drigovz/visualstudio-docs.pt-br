@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 548116fc3c9b360a866f14e32074111dfdc872d9
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 2622c5e86a22b4dc7ef9bf1fa3c426a588f40bab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533869"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851992"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriedades de projeto comuns do MSBuild
 
@@ -136,7 +136,7 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | Win32Manifest | .NET | O nome do arquivo de manifesto deve ser inserido no assembly final. Esse parâmetro é equivalente à opção do compilador `/win32Manifest`. |
 | Win32Resource | .NET | O nome do arquivo do recurso do Win32 a ser inserido no assembly final. Esse parâmetro é equivalente à opção do compilador `/win32resource`. |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)
 - [Metadados de itens comuns do MSBuild](common-msbuild-item-metadata.md)

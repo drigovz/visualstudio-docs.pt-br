@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eda3a4d9242655af1b018664273ceb693c7e775c
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 3e5aad581babafe882fccc13e8594aa60437d9df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96043979"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852135"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -41,11 +41,11 @@ devenv {/LCID|/L} LocaleID
 
 - *LocaleID*
 
-  Obrigatórios. O identificador de localidade (LCID) do idioma que você especificar.
+  Obrigatório. O identificador de localidade (LCID) do idioma que você especificar.
 
 ## <a name="remarks"></a>Comentários
 
-Carrega o IDE e define o idioma natural padrão do ambiente. Essa alteração é persistida entre sessões, e o IDE mostra essa alteração na caixa **Tools** de  >  **Options**  >  **Environment**  >  **idioma configurações internacionais** do ambiente de opções  >  **Language** de ferramentas.
+Carrega o IDE e define o idioma natural padrão do ambiente. Essa alteração é persistida entre sessões, e o IDE mostra essa alteração na caixa de  >    >    >  **idioma configurações internacionais** do ambiente de opções  >   de ferramentas.
 
 Se o idioma especificado não estiver disponível em seu sistema, a opção `/LCID` será ignorada.
 

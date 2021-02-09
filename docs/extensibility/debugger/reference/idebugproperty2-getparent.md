@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 58780469-fe25-4d84-9187-67940ca0767f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7620c22d425a0426daa8c15d067a4d61c6bf96e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9855ff168152ed68117569aab939e62da990f81b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721426"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850965"
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
 Obtém a propriedade Parent de uma propriedade.
@@ -28,13 +28,13 @@ Obtém a propriedade Parent de uma propriedade.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetParent ( 
+HRESULT GetParent ( 
    IDebugProperty2** ppParent
 );
 ```
 
 ```csharp
-int GetParent ( 
+int GetParent ( 
    out IDebugProperty2 ppParent
 );
 ```
@@ -43,8 +43,8 @@ int GetParent ( 
 `ppParent`\
 fora Retorna um objeto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) que representa o pai da propriedade.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna o código de erro. Retornará `S_GETPARENT_NO_PARENT` se não houver nenhum pai.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

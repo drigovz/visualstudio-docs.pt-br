@@ -5,15 +5,15 @@ ms.date: 12/04/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 686f98aaaade035f1632139d255ccff8b37eddf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96078d1b2fdb5a54c912cbf214024726ce102e4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75850062"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851836"
 ---
 # <a name="set-up-remote-workspaces"></a>Configurar workspaces remotos
 
@@ -76,7 +76,7 @@ Para instalar o certificado no computador remoto, execute *certlm.msc* (o gerenc
 Depois que o certificado for importado, conceda à conta `NETWORK SERVICE` permissões para ler a chave privada conforme descrito nas instruções a seguir. `NETWORK_SERVICE` é a conta usada para executar o agente de serviços do R, que é o serviço que termina as conexões SSL de entrada para o computador servidor.
 
 1. Execute *certlm.msc* (o Gerenciador de Certificados) em um prompt de comando do administrador.
-1. Expanda **Personal**  >  **certificados**pessoais, clique com o botão direito do mouse no certificado e selecione **todas as tarefas**  >  **gerenciar chaves privadas**.
+1. Expanda   >  **certificados** pessoais, clique com o botão direito do mouse no certificado e selecione **todas as tarefas**  >  **gerenciar chaves privadas**.
 1. Clique com o botão direito do mouse no certificado e selecione o comando **Gerenciar Chaves Privadas** em **Todas as Tarefas**.
 1. Na caixa de diálogo que aparece, selecione **Adicionar** e insira `NETWORK SERVICE` como o nome da conta:
 

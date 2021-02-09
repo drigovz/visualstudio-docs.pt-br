@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f0c705dc-2b97-423d-abbf-5584d4827208
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 886695cea38909a8efa74797391adb1b6dd97d19
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: e28062f54426e2810acf29bdd64955998ea088cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305397"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852538"
 ---
 # <a name="find-command"></a>Comando Localizar
 Pesquisa arquivos usando um subconjunto das opções disponíveis na guia **Localizar nos Arquivos** da janela **Localizar e Substituir**.
@@ -79,7 +79,7 @@ Este exemplo realiza uma pesquisa que diferencia maiúsculas de minúsculas para
 >Edit.Find somestring /sel /case
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Janela de comando](../../ide/reference/command-window.md)
 - [Caixa Localizar/comando](../../ide/find-command-box.md)

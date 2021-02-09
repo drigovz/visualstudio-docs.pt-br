@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b40be36e-10e1-463c-9c6d-21862679d29f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d9c8f559e86e0acfb4137df61b82e28d21d3dfc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e75e07da9d3c217511a3d742e115ebc146108cab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853488"
 ---
 # <a name="idiasymbolget_typeid"></a>IDiaSymbol::get_typeId
 Recupera o identificador de tipo do símbolo.
@@ -25,7 +25,7 @@ Recupera o identificador de tipo do símbolo.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_typeId ( 
+HRESULT get_typeId ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_typeId ( 
 
 fora Retorna a ID do tipo do símbolo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -44,5 +44,5 @@ fora Retorna a ID do tipo do símbolo.
 ## <a name="remarks"></a>Comentários
  O identificador é um valor exclusivo criado pelo DIA SDK para marcar todos os símbolos como exclusivos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

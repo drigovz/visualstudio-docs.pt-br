@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 52d6bda98ee01dad4faf4a51412e810e1f5e4fa7
-ms.sourcegitcommit: 4eb8fe6eb7f1dc639f1d213db05a7a3007e8087e
+ms.openlocfilehash: 7daa0bfc6f67bd0dc9fee0775ba8dce591ce8148
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92156555"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852525"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Como usar exclusivamente o teclado
 
@@ -81,7 +81,7 @@ Para percorrer as opções em uma caixa de diálogo e alterar as configurações
 
 2. No menu **Janela**, selecione a opção **Encaixável**.
 
-3. Pressione **Alt**a + **barra de espaços**Alt e selecione **mover**.
+3. Pressione a + **barra de espaços** Alt e selecione **mover**.
 
    O losango guia de encaixe é exibido.
 
@@ -97,7 +97,7 @@ Para percorrer as opções em uma caixa de diálogo e alterar as configurações
 
    A janela de ferramentas é encaixada no novo local de encaixe.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Identificando e personalizando atalhos de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 * [Dicas e truques de acessibilidade](../../ide/reference/accessibility-tips-and-tricks.md)

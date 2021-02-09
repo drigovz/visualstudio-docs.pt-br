@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 799b7f2789898e0d02d9588f9a3ad7d1e8098a00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f69e5b61e80d3a00522307dd7481f74418407d99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62809768"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851797"
 ---
 # <a name="variable-explorer"></a>Gerenciador de Variáveis
 
@@ -45,7 +45,7 @@ Como os dados costumam ser tabulares, você pode exibir qualquer tipo de dados c
 
 Clicar em um título de coluna classifica os dados pela coluna (alternando entre crescente e decrescente). Manter pressionada a **tecla Shift** e clicar em colunas adicionais adiciona essas colunas também à classificação. Se você clicar em uma coluna sem pressionar a tecla **Shift**, retornará para a classificação de coluna única.
 
-A sequência em que você clica nos títulos de coluna determina a ordem na qual a classificação é executada. Por exemplo, pressione **Shift** + e**clique** na coluna **cyl** e, em seguida, **Shift** + **clique** na coluna **MPG** duas vezes para classificar a lista para cilindros crescentes e decrescente de milhas por litro:
+A sequência em que você clica nos títulos de coluna determina a ordem na qual a classificação é executada. Por exemplo, pressione **Shift** + e **clique** na coluna **cyl** e, em seguida, **Shift** + **clique** na coluna **MPG** duas vezes para classificar a lista para cilindros crescentes e decrescente de milhas por litro:
 
 ![Exibição de tabela de classificação de dados por duas colunas.](media/variable-explorer-table-view-sorting.png)
 
@@ -53,7 +53,7 @@ Como o **Gerenciador de Variáveis** e as exibições de tabela estão em janela
 
 ## <a name="open-in-excel-or-other-csv-capable-application"></a>Abrir no Excel (ou em outro aplicativo compatível com CSV)
 
-Para manipulação adicional e análise, geralmente é útil exportar as variáveis de sessão para CSV. A exportação é feita com o pequeno ícone do Excel ( ![ ícone de exportação do Excel ](media/variable-explorer-excel-icon.png) ) ao lado de cada nó na **Gerenciador de variáveis**ou clicando com o botão direito do mouse em um item e selecionando **abrir no aplicativo CSV**. A seleção do ícone grava os dados em um novo arquivo CSV na pasta *%userprofile%\Documents\RTVS_CSV_Exports* e, em seguida, inicia esse arquivo, que o abre em qualquer outro aplicativo associado à extensão *.csv*.
+Para manipulação adicional e análise, geralmente é útil exportar as variáveis de sessão para CSV. A exportação é feita com o pequeno ícone do Excel ( ![ ícone de exportação do Excel ](media/variable-explorer-excel-icon.png) ) ao lado de cada nó na **Gerenciador de variáveis** ou clicando com o botão direito do mouse em um item e selecionando **abrir no aplicativo CSV**. A seleção do ícone grava os dados em um novo arquivo CSV na pasta *%userprofile%\Documents\RTVS_CSV_Exports* e, em seguida, inicia esse arquivo, que o abre em qualquer outro aplicativo associado à extensão *.csv*.
 
 ## <a name="scopes"></a>Escopos
 

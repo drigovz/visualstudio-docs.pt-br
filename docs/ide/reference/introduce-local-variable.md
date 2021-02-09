@@ -5,15 +5,15 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 564ba133074af3749bd909f1b0a7fe32822f5d75
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 35850293b1ef739506fe6848e000396f6bacf1d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833254"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852291"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introduzir uma variável local no Visual Studio
 
@@ -47,7 +47,7 @@ Esta geração de código aplica-se a:
       - Pressione **Ctrl** + **.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
       - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
-      - Clique no botão ![Captura de tela do ícone de chave de fenda que aparece na margem esquerda do menu ações rápidas e refatoração.](media/screwdriver.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha com a expressão realçada.
+      - Clique no ícone ![Captura de tela do ícone de chave de fenda que aparece na margem esquerda do menu ações rápidas e refatoração.](media/screwdriver.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha com a expressão realçada.
 
    ![Introduzir versão prévia local](media/local-preview-cs.png)
 
@@ -69,7 +69,7 @@ Esta geração de código aplica-se a:
    > [!NOTE]
    > É possível usar a opção de menu **...todas as ocorrências de...** para substituir todas as instâncias da expressão selecionada, não somente a que foi especificamente realçada.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Geração de código](../code-generation-in-visual-studio.md)
 - [Visualizar alterações](../../ide/preview-changes.md)

@@ -5,15 +5,15 @@ ms.date: 06/29/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: dbb3984385e0042c669f8aad1d5bb4a2f64de917
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64b5ac36edf6c5f506628f9af88ba36bd62c71c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851823"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Criar gráficos de dados visuais com R
 
@@ -48,7 +48,7 @@ Redimensionar uma janela de gráficos sempre renderiza o gráfico novamente para
 
 ## <a name="plot-window-commands"></a>Comandos da janela de gráficos
 
-A barra de ferramentas da janela de plotagem contém comandos aplicáveis, a maioria dos quais também estão disponíveis por meio do menu de gráficos das **Ferramentas do R**  >  **Plots** .
+A barra de ferramentas da janela de plotagem contém comandos aplicáveis, a maioria dos quais também estão disponíveis por meio do menu de gráficos das **Ferramentas do R**  >   .
 
 | Botão | Comando | Descrição |
 | --- | --- | --- |
@@ -67,7 +67,7 @@ A barra de ferramentas da janela de plotagem contém comandos aplicáveis, a mai
 
 Como os cientistas de dados geralmente trabalham com muitos gráficos de vários conjuntos de dados diferentes, as RTVS permitem criar quantas janelas de gráficos independentes forem necessárias. Em seguida, você pode organizar essas janelas da forma que desejar no quadro do Visual Studio ou completamente fora desse quadro. (Consulte [Personalização de layouts de janela no Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md) para obter informações gerais sobre encaixe e redimensionando de janelas.)
 
-Você cria uma nova janela de plotagem usando o botão da barra de ferramentas ou as **Ferramentas do R**  >  **plotam**  >  **novas janelas**de plotagem. A nova janela de gráficos se torna a janela *ativa*, que é onde os novos gráficos são renderizados. Para alterar a janela ativa, mude para ela e selecione o botão de barra de ferramentas **Ativar Janela de Gráficos** ou **Ferramentas do R** > **Gráficos** > **Ativar Janela de Gráficos**.
+Você cria uma nova janela de plotagem usando o botão da barra de ferramentas ou as **Ferramentas do R**  >  **plotam**  >  **novas janelas** de plotagem. A nova janela de gráficos se torna a janela *ativa*, que é onde os novos gráficos são renderizados. Para alterar a janela ativa, mude para ela e selecione o botão de barra de ferramentas **Ativar Janela de Gráficos** ou **Ferramentas do R** > **Gráficos** > **Ativar Janela de Gráficos**.
 
 Os gráficos também são objetos independentes, o que significa que você pode copiá-los ou movê-los entre as janelas de gráficos usando o recurso do tipo “arrastar e soltar” com o mouse ou usando os comandos **Copiar**, **Recortar** e **Colar** no menu de contexto acionado com um clique do botão direito do mouse ou no menu **Editar**.
 
@@ -75,9 +75,9 @@ O comportamento padrão para arrastar e soltar é copiar; para mover, arraste e 
 
 ## <a name="plot-history"></a>Histórico de gráficos
 
-Os comandos de gráficos são mantidos em um histórico de gráficos de cada janela, garantindo que todos os gráficos dentro de uma sessão sejam preservados. Para navegar no histórico, use os botões de seta na barra de ferramentas da janela de plotagem ou **Ctrl** + **ALT** + **F11** e **Ctrl** + **ALT** + **F12**. Você também pode remover gráficos únicos ou limpar todas as plotagens da janela novamente usando botões da barra de ferramentas ou os comandos do menu de gráficos das **Ferramentas do R**  >  **Plots** .
+Os comandos de gráficos são mantidos em um histórico de gráficos de cada janela, garantindo que todos os gráficos dentro de uma sessão sejam preservados. Para navegar no histórico, use os botões de seta na barra de ferramentas da janela de plotagem ou **Ctrl** + **ALT** + **F11** e **Ctrl** + **ALT** + **F12**. Você também pode remover gráficos únicos ou limpar todas as plotagens da janela novamente usando botões da barra de ferramentas ou os comandos do menu de gráficos das **Ferramentas do R**  >   .
 
-Para ver toda a coleção de plotagens, abra a janela do histórico de plotagem usando o botão da barra de **ferramentas ou a**  >  **Plots**  >  **janela do histórico**de gráficos de gráficos de gráficos de gráficos.
+Para ver toda a coleção de plotagens, abra a janela do histórico de plotagem usando o botão da barra de **ferramentas ou a**  >    >  **janela do histórico** de gráficos de gráficos de gráficos de gráficos.
 O histórico fornece uma lista de miniaturas dos gráficos que foram exibidos nessa janela, agrupadas por diferentes janelas de gráficos (ou dispositivos). Usar os botões de zoom na barra de ferramentas altera o tamanho das miniaturas.
 
 ![Janela de histórico de gráficos](media/plotting-plot-history-window.png)

@@ -6,15 +6,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: c4d65388db0ef90f807ec85b8c9216d717c2b571
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 586f3038ff4bb091fb99160d7965ad927eda070a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62809551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851810"
 ---
 # <a name="remote-r-service-for-linux"></a>Serviço R Remoto para Linux
 
@@ -22,7 +22,7 @@ No momento, o Serviço R Remoto para Linux está empacotado como rtvs-daemon. O 
 
 Depois de configurar o computador remoto, as etapas a seguir conectam as RTVS (Ferramentas do R para Visual Studio) a este serviço:
 
-1. Selecione **ferramentas de R**  >  **Windows**  >  **espaços de trabalho** do Windows para abrir a janela **espaços de trabalho** .
+1. Selecione **ferramentas de R**  >    >  **espaços de trabalho** do Windows para abrir a janela **espaços de trabalho** .
 1. Selecione **Adicionar conexão**.
 1. Dê um nome à conexão e forneça sua URL, como `https://localhost:5444` (Subsistema Windows para Linux) ou `https://public-ip:5444` (contêiner do Azure). Selecione **Salvar** quando terminar.
 1. Selecione o ícone de conexão ou clique duas vezes no item de conexão.

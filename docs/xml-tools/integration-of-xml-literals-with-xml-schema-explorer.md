@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 57a29998-c6e8-48ac-bdb0-5788e73f9164
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 059263f06421fee3c90f2471df4c8b2c7bf8fc86
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: f46020dc8423da617deb8f4f70c2a159b4a32014
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398495"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851536"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Integração de literais XML com o XML Schema Explorer
 
@@ -31,6 +31,6 @@ Isso abre o **Gerenciador de esquema XML** lado a lado com o arquivo Visual Basi
 
 ![Captura de tela de uma janela de projeto Visual Basic mostrando que o XML Schema Explorer e Gerenciador de Soluções foram abertos no painel direito.](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer2.gif)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como: usar o designer de esquema XML com literais XML](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)

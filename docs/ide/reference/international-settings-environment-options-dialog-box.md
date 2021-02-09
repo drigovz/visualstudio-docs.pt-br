@@ -16,21 +16,21 @@ helpviewer_keywords:
 ms.assetid: e3a8815c-6995-4099-8e88-34f91fad55b2
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 37be8d3e5a652bb55b1d71f66c0e9c8ca4cc2f16
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: d9dc19c69bf99ba6f66648f396468ff36444eb3f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617364"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852265"
 ---
 # <a name="options-dialog-box-environment--international-settings"></a>Caixa de diálogo opções: \> configurações internacionais de ambiente
 
 A página Configurações Internacionais permite alterar o idioma padrão quando você tem mais de uma versão de idioma do IDE (ambiente de desenvolvimento integrado) instalada em seu computador. Você pode acessar essa caixa de diálogo selecionando **Opções** no menu **Ferramentas** e, em seguida, escolhendo **Configurações Internacionais** na pasta **Ambiente**.
 
-**Linguagem**
+**Idioma**
 
 Lista os idiomas disponíveis para as versões de idioma do produto instalado. Se vários idiomas de produtos ou uma instalação de idioma misto dos produtos compartilhar o ambiente, a seleção de idioma será alterada para **Usar o idioma do Microsoft Windows**.
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 62aee7c3-d314-4272-a32b-b2818f32fab8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 902a3d361eb06288a0e50e9f384b67a2a8c61aa1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 234bfa31c79fa2c9ef60afd29d655cfc6e585aed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461269"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853257"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>Interfaces (SDK de Acesso à Interface de Depuração)
 Os métodos são listados em ordem alfabética em cada interface no sumário e na página de interface em ordem vtable.
@@ -166,6 +166,6 @@ Descreve as enumerações e estruturas usadas pelas várias interfaces do DIA SD
 
 Descreve as constantes disponíveis no DIA SDK.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

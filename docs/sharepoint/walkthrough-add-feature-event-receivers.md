@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, feature event receivers
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 98b85222fca4da6dfca653ad74e1315801798d83
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: c9d50de6630a813a9c8c7a075af6f921608fcd93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915590"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851524"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Walkthrough: Adicionar receptores de evento de recurso
 Os receptores de evento de recurso são métodos que são executados quando um dos seguintes eventos relacionados ao recurso ocorre no SharePoint:
@@ -119,7 +119,7 @@ Este tutorial demonstra como adicionar um receptor de eventos a um recurso em um
 
      Observe que um anúncio aparece na lista **comunicados** depois que o recurso é desativado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como: criar um receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)

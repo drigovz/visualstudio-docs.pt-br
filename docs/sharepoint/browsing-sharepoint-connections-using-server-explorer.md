@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 79e8d3dbc1dab865b2ab9048cea8d13c478f2a12
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: b188d95e6478e488fc896b0622fb8d145ef2a741
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849825"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851602"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Procurar conexões do SharePoint usando Gerenciador de Servidores
   Agora você pode procurar conexões locais do SharePoint em **Gerenciador de servidores**. Usando essa técnica, você pode navegar pelos componentes de um site do SharePoint em seu sistema. Os componentes do site do SharePoint, como definições de lista e tipos de conteúdo, aparecem em um nó chamado **conexões do SharePoint** no modo de exibição de árvore de **Gerenciador de servidores**. Para exibir **Gerenciador de servidores**, na barra de menus, escolha **Exibir**  >  **Gerenciador de servidores**. Além de exibir os componentes do site do SharePoint, você pode remover itens, exibir suas propriedades ou atualizar o modo de exibição de árvore usando comandos no menu de atalho.
@@ -47,7 +47,7 @@ ms.locfileid: "94849825"
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Como: Adicionar ou remover conexões do SharePoint](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Descreve as etapas necessárias para adicionar um novo site do SharePoint ao nó **conexões do SharePoint** no **Gerenciador de servidores**.|
 

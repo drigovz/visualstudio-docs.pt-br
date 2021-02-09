@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 88980d9a-c4d6-4de4-a9ab-fb56fa71394a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7f90a0d130d69a0c710c89bb346ad9756ac54289
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5405b17771ea48541c3f6812945a0d09d2464ac4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715117"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852863"
 ---
 # <a name="ienumdebugthreads2reset"></a>IEnumDebugThreads2::Reset
 Redefine a enumeração para o primeiro elemento.
@@ -43,5 +43,5 @@ int Reset();
 ## <a name="remarks"></a>Comentários
  Depois que esse método é chamado, a próxima chamada para o [próximo](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md) método retorna o primeiro elemento da enumeração.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)

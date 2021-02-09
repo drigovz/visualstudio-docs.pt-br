@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 648a1c90b143a0f38f8911fcaed3ee1ed16908b6
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 44ee1a3afe313cdc11bb28e0a24a89e3e3ad7f0c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852720"
 ---
 # <a name="component-management"></a>Gerenciamento de componentes
 As unidades de tarefas no Windows Installer são chamadas de componentes Windows Installer (às vezes chamados de WICs ou apenas componentes). Um GUID identifica cada WIC, que é a unidade básica de instalação e a contagem de referência para as configurações que usam Windows Installer.
@@ -49,6 +49,6 @@ As unidades de tarefas no Windows Installer são chamadas de componentes Windows
 
      Se você fizer isso, as chaves compartilhadas serão substituídas quando outro VSPackage com versão for instalado. Depois de remover a segunda versão, o arquivo para o qual a chave está apontando é desaparecido.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Escolha entre VSPackages compartilhadas e com controle de versão](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [Cenários de instalação do VSPackage](../../extensibility/internals/vspackage-setup-scenarios.md)
