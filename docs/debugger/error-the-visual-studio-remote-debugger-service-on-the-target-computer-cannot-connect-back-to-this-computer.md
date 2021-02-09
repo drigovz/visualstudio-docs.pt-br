@@ -13,22 +13,22 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e879fdc1be2eba309258dd64b3c9d83639eb05f7
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ef556e19946789abb5805727ccc42c1a9230d9af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871254"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Erro: o serviço Depurador Remoto do Visual Studio no computador de destino não pode se reconectar a este computador
 Esse erro significa que o serviço de depurador remoto está sendo executado sob uma conta de usuário que não pode se autenticar quando tenta se conectar ao computador do qual você está depurando. Esse erro pode ocorrer quando a depuração remota está usando o mecanismo de depuração herdado e o depurador remoto está sendo executado como um serviço.
 
  A tabela a seguir mostra quais contas podem acessar o computador:
 
-|Cenário|Conta de LocalSystem|Conta do domínio|Contas locais que têm o mesmo nome de usuário e senha nos dois computadores|
+|Cenário|Conta de LocalSystem|Conta de domínio|Contas locais que têm o mesmo nome de usuário e senha nos dois computadores|
 |-|-|-|-|
 |Ambos os computadores no mesmo domínio|Sim|Sim|Sim|
 |Ambos os computadores em domínios que tenham a confiança bidirecional|Não|Não|Sim|

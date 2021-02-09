@@ -13,15 +13,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe0fc33c142c1bc70655817f833ae7c80fc628e7
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 8ecb8a0a3c725403d57769090229f690281026a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852570"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871501"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Erro: o Monitor de Depuração Remota do Microsoft Visual Studio (MSVSMON.EXE) parece não estar sendo executado no computador remoto.
 Essa mensagem de erro significa que o Visual Studio não pôde localizar a instância correta do Visual Studio Monitor de Depuração Remota no computador remoto. O Monitor de Depuração Remota do Visual Studio deve ser instalado para que a depuração remota funcione. Para obter informações sobre como baixar e configurar o depurador remoto, consulte [depuração remota](../debugger/remote-debugging.md).
@@ -51,7 +51,7 @@ Essa mensagem de erro significa que o Visual Studio não pôde localizar a inst�
 
 - Você pode interromper o depurador remoto e reiniciá-lo com a conta que você está usando no computador local.
 
-- Você pode iniciar o depurador remoto a partir da linha de comando com o parâmetro **/Allow \<username> ** :`msvsmon /allow <username@computer>`
+- Você pode iniciar o depurador remoto a partir da linha de comando com o parâmetro **/Allow \<username>** :`msvsmon /allow <username@computer>`
 
 - Você pode adicionar o usuário às permissões do depurador remoto (na janela do depurador remoto, **ferramentas > permissões**).
 

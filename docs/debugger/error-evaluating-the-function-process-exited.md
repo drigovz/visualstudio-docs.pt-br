@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.process_exit_during_func_eval
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97751ae2cbc44429bc1c0fb363366faa830beb68
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 07891e5bcbcab35a4ec5652676a014b87dd32d43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852726"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871631"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Erro: o processo de destino saiu com o código &#39;código&#39; ao avaliar a função &#39;function&#39;
 
@@ -28,20 +28,20 @@ Um motivo comum para esse problema é que quando o depurador avalia uma propried
 
 Há duas soluções possíveis para esse problema.
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>#1 da solução: impedir que o depurador chame a propriedade getter ou o método ToString 
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>#1 da solução: impedir que o depurador chame a propriedade getter ou o método ToString 
 
 A mensagem de erro informará o nome da função que o depurador tentou chamar. Com o nome da função, você pode tentar avaliar novamente essa função na janela **imediata** para depurar a avaliação. A depuração é possível ao avaliar a partir da janela **imediata** porque, ao contrário das avaliações implícitas das janelas **auto-/-local/Watch** , o depurador interrompe as exceções sem tratamento.
 
 Se você puder modificar essa função, poderá impedir que o depurador chame o método ou getter da propriedade `ToString` . Tente uma das seguintes opções:
 
 * Altere o método para algum outro tipo de código além de um método getter ou ToString de propriedade e o problema irá desaparecer.
-    - ou -
+    -ou-
 * (Para `ToString` ) Defina um `DebuggerDisplay` atributo no tipo e você pode fazer com que o depurador avalie algo diferente de `ToString` .
-    - ou -
+    -ou-
 * (Para um getter de propriedade) Coloque o `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` atributo na propriedade. Isso pode ser útil se você tiver um método que precisa permanecer como uma propriedade para motivos de compatibilidade com a API, mas deve realmente ser um método.
 
 Se você não puder modificar esse método, poderá interromper o processo de destino em uma instrução alternativa e tentar novamente a avaliação.
 
 ### <a name="solution-2-disable-all-implicit-evaluation"></a>#2 da solução: desabilitar toda a avaliação implícita
 
-Se as soluções anteriores não corrigirem o problema, vá para **ferramentas**  >  **Opções**e desmarque a opção **depuração**  >  **geral**  >  **habilitar avaliação de propriedade e outras chamadas de função implícitas**. Isso desabilitará a maioria das avaliações de função implícitas e deverá resolver o problema.
+Se as soluções anteriores não corrigirem o problema, vá para **ferramentas**  >  **Opções** e desmarque a opção **depuração**  >  **geral**  >  **habilitar avaliação de propriedade e outras chamadas de função implícitas**. Isso desabilitará a maioria das avaliações de função implícitas e deverá resolver o problema.

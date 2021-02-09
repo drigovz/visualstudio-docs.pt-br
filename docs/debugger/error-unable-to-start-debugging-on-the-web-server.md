@@ -23,15 +23,15 @@ helpviewer_keywords:
 - remote debugging, errors
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a0aa657abefa0638e62039cae8b6d15a33fdf51
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 94dcfdc05f2d852e1a433067b0a574444632195d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851418"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870877"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Erro: não foi possível iniciar a depuração no servidor Web
 
@@ -58,7 +58,7 @@ A `Unable to start debugging on the Web server` mensagem é genérica. Normalmen
 
 - Reinicie o Visual Studio como administrador e tente depurar novamente. (Alguns cenários de depuração ASP.NET exigem privilégios elevados.)
 
-    Você pode configurar o Visual Studio para sempre executar como administrador clicando com o botão direito do mouse no ícone de atalho do Visual Studio, escolhendo **propriedades > avançado**e, em seguida, escolhendo sempre executar como administrador.
+    Você pode configurar o Visual Studio para sempre executar como administrador clicando com o botão direito do mouse no ícone de atalho do Visual Studio, escolhendo **propriedades > avançado** e, em seguida, escolhendo sempre executar como administrador.
 
 ## <a name="the-web-server-is-not-configured-correctly"></a><a name="web_server_config"></a> O servidor Web não está configurado corretamente
 

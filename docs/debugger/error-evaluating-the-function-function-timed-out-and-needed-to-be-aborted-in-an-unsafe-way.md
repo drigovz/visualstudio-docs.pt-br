@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 256b7858ed5714d716b31fa28c8cd463b96dbb8a
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1f6cae3ffb692161deb0b162a6432efe90f12bf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871644"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Erro: avaliar a função &#39;função&#39; atingiu o tempo limite e precisava ser anulado de forma não segura
 
@@ -33,9 +33,9 @@ Há várias soluções possíveis para esse problema.
 A mensagem de erro informará o nome da função que o depurador tentou chamar. Se você puder modificar essa função, poderá impedir que o depurador chame o método getter ou ToString de propriedade. Tente uma das seguintes opções:
 
 * Altere o método para algum outro tipo de código além de um método getter ou ToString de propriedade e o problema irá desaparecer.
-    - ou -
+    -ou-
 * (Para ToString) Defina um atributo DebuggerDisplay no tipo e você pode fazer com que o depurador avalie algo diferente de ToString.
-    - ou -
+    -ou-
 * (Para um getter de propriedade) Coloque o `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` atributo na propriedade. Isso pode ser útil se você tiver um método que precisa permanecer como uma propriedade para motivos de compatibilidade de API, mas deve ser realmente um método.
 
 ### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>#2 da solução: faça com que o código de destino peça ao depurador para anular a avaliação
@@ -44,8 +44,8 @@ A mensagem de erro informará o nome da função que o depurador tentou chamar. 
 
 ### <a name="solution-3-disable-all-implicit-evaluation"></a>#3 da solução: desabilitar toda a avaliação implícita
 
-Se as soluções anteriores não corrigirem o problema, vá para **ferramentas**  >  **Opções**e desmarque a opção **depuração**  >  **geral**  >  **habilitar avaliação de propriedade e outras chamadas de função implícitas**. Isso desabilitará a maioria das avaliações de função implícitas e deverá resolver o problema.
+Se as soluções anteriores não corrigirem o problema, vá para **ferramentas**  >  **Opções** e desmarque a opção **depuração**  >  **geral**  >  **habilitar avaliação de propriedade e outras chamadas de função implícitas**. Isso desabilitará a maioria das avaliações de função implícitas e deverá resolver o problema.
 
 ### <a name="solution-4-enable-managed-compatibility-mode"></a>#4 de solução: habilitar o modo de compatibilidade gerenciado
 
-Se você alternar para o mecanismo de depuração herdado, talvez seja possível eliminar esse erro. Vá para **ferramentas**  >  **Opções**e selecione a definição configuração **Debugging**  >  **geral**  >  **usar modo de compatibilidade gerenciada**. Para obter mais informações, consulte [Opções gerais de depuração](../debugger/general-debugging-options-dialog-box.md).
+Se você alternar para o mecanismo de depuração herdado, talvez seja possível eliminar esse erro. Vá para **ferramentas**  >  **Opções** e selecione a definição configuração   >  **geral**  >  **usar modo de compatibilidade gerenciada**. Para obter mais informações, consulte [Opções gerais de depuração](../debugger/general-debugging-options-dialog-box.md).

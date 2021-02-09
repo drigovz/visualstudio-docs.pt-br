@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a6848363b3afa5c3216c242136c7909980f0ed60
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: cc16217b20d08e9ad2d3b43d3b074652fdffec95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852752"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871675"
 ---
 # <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>Erro: verifique se o DNS está configurado corretamente no computador de destino
 Ao tentar fazer a depuração remota, você pode receber a seguinte mensagem de erro:
@@ -30,7 +30,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
  Esse erro ocorre quando o computador de destino não pode resolver o nome do computador host do depurador do Visual Studio. Verifique as configurações DNS no computador de destino.
 
-- Para obter informações sobre como exibir sua configuração de DNS em Windows 8.1, vista, Windows 7, Windows Server 2012, Windows Server 2008 ou Windows Server 2008 R2, faça o seguinte: no menu **Iniciar** , escolha **ajuda e suporte**e, em seguida, procure **alterar configurações TCP/IP**.
+- Para obter informações sobre como exibir sua configuração de DNS em Windows 8.1, vista, Windows 7, Windows Server 2012, Windows Server 2008 ou Windows Server 2008 R2, faça o seguinte: no menu **Iniciar** , escolha **ajuda e suporte** e, em seguida, procure **alterar configurações TCP/IP**.
 
 - Para obter mais informações, vá para o [site do Microsoft Windows](https://www.microsoft.com/windows/) e pesquise **Alterar configurações de TCP/IP**.
 
