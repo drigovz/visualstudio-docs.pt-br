@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a28823a1a492cb1e8d5f434f98248fecc5d84e47
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: d4bfc58c9be578514598fce2d447ef921d091177
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904505"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919073"
 ---
 # <a name="msbuild-items"></a>Itens do MSBuild
 
@@ -35,7 +35,7 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
 </ItemGroup>
 ```
 
- O item *file2.cs* não substitui o item *file1.cs* ; em vez disso, o nome do arquivo é anexado à lista de valores para o `Compile` tipo de item.
+ O item *file2.cs* não substitui o item *file1.cs*; em vez disso, o nome do arquivo é anexado à lista de valores para o `Compile` tipo de item.
 
  O XML a seguir cria o mesmo tipo de item declarando os dois arquivos em um atributo `Include`. Observe que os nomes de arquivo são separados por ponto e vírgula.
 
@@ -89,7 +89,7 @@ Para obter mais informações sobre caracteres curinga, confira [Como selecionar
 
 ## <a name="use-the-exclude-attribute"></a>Usar o atributo Exclude
 
- Os elementos de item podem conter o atributo `Exclude`, que exclui itens específicos (arquivos) do tipo de item. O atributo `Exclude` normalmente é usado junto com caracteres curinga. Por exemplo, o XML a seguir adiciona cada arquivo *.cs* no diretório ao tipo de item CSFile, exceto o arquivo *DoNotBuild.cs* .
+ Os elementos de item podem conter o atributo `Exclude`, que exclui itens específicos (arquivos) do tipo de item. O atributo `Exclude` normalmente é usado junto com caracteres curinga. Por exemplo, o XML a seguir adiciona cada arquivo *.cs* no diretório ao tipo de item CSFile, exceto o arquivo *DoNotBuild.cs*.
 
 ```xml
 <ItemGroup>
@@ -97,7 +97,7 @@ Para obter mais informações sobre caracteres curinga, confira [Como selecionar
 </ItemGroup>
 ```
 
- O atributo `Exclude` afeta somente os itens adicionados pelo atributo `Include` no elemento do item que contém ambos. O exemplo a seguir não excluiria o arquivo *Form1.cs* , que foi adicionado no elemento item anterior.
+ O atributo `Exclude` afeta somente os itens adicionados pelo atributo `Include` no elemento do item que contém ambos. O exemplo a seguir não excluiria o arquivo *Form1.cs*, que foi adicionado no elemento item anterior.
 
 ```xml
 <Compile Include="*.cs" />
@@ -593,7 +593,7 @@ Item1: notebook
 -->
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)
 - [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)
@@ -603,4 +603,4 @@ Item1: notebook
 - [Como excluir arquivos da compilação](../msbuild/how-to-exclude-files-from-the-build.md)
 - [Como exibir uma lista de itens separados por vírgulas](../msbuild/how-to-display-an-item-list-separated-with-commas.md)
 - [Definições de item](../msbuild/item-definitions.md)
-- [Envio em lote](../msbuild/msbuild-batching.md)
+- [Separação em lotes](../msbuild/msbuild-batching.md)

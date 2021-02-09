@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76b359eebe0f4a22bef3ff6c6742a5134aa4520c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 6b3bb4c1a17cd5d1481be2fa942686bce3861bb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049045"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918921"
 ---
 # <a name="msbuild-tasks"></a>tarefas MSBuild
 
@@ -71,7 +71,7 @@ Uma plataforma de build precisa de capacidade para executar qualquer número de 
 
  O MSBuild procura tarefas em vários locais. O primeiro local está em arquivos com a extensão *. OverrideTasks* armazenados nos diretórios .NET Framework. As tarefas nesses arquivos substituem quaisquer outras tarefas com os mesmos nomes, incluindo tarefas no arquivo de projeto. O segundo local está nos arquivos com a extensão *.Tasks* nos diretórios do .NET Framework. Se a tarefa não for encontrada em um desses locais, a tarefa no arquivo de projeto será usada.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)

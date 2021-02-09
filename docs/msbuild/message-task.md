@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 2293309d-42b6-46dc-9684-8c146f66bc28
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b7a2854220a7ee85fd680cedd8c8e0c5c3ada89
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: eb2a1837210a5f36577d3bf677a4152033914f49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903837"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918244"
 ---
 # <a name="message-task"></a>tarefa de mensagem
 
@@ -64,7 +64,7 @@ Registra uma mensagem durante a compilação.
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)

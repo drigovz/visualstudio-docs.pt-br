@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 69ab08ab-3e76-41dd-a01b-49aa1d2e0cac
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c17906467579e8fc532372371df8be76b40e7f0
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 617a6d3712b137d76334d4063f36a1b8dde1d101
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048830"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918854"
 ---
 # <a name="property-element-msbuild"></a>Elemento Property (MSBuild)
 
@@ -31,7 +31,7 @@ Contém um nome e valor de propriedade definidos pelo usuário. Cada propriedade
 
  \<Project> \<PropertyGroup>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <Property Condition="'String A' == 'String B'">
@@ -51,7 +51,7 @@ Contém um nome e valor de propriedade definidos pelo usuário. Cada propriedade
 
 ### <a name="child-elements"></a>Elementos filho
 
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -67,7 +67,7 @@ Contém um nome e valor de propriedade definidos pelo usuário. Cada propriedade
 
 ## <a name="remarks"></a>Comentários
 
- Nomes de propriedade estão limitados a apenas a caracteres ASCII. Valores de propriedades são referenciados no projeto, colocando o nome da propriedade entre "`$(`" e "`)`". Por exemplo, `$(builddir)\classes` resolveria para *build\classes* , se a propriedade `builddir` tivesse o valor `build`. Para saber mais sobre as propriedades, confira [Propriedades do MSBuild](../msbuild/msbuild-properties.md).
+ Nomes de propriedade estão limitados a apenas a caracteres ASCII. Valores de propriedades são referenciados no projeto, colocando o nome da propriedade entre "`$(`" e "`)`". Por exemplo, `$(builddir)\classes` resolveria para *build\classes*, se a propriedade `builddir` tivesse o valor `build`. Para saber mais sobre as propriedades, confira [Propriedades do MSBuild](../msbuild/msbuild-properties.md).
 
 ## <a name="example"></a>Exemplo
 
@@ -80,7 +80,7 @@ Contém um nome e valor de propriedade definidos pelo usuário. Cada propriedade
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [propriedades MSBuild](../msbuild/msbuild-properties.md)
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)

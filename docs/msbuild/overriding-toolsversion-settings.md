@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ccd42c07-0fb6-4e8b-9ebb-a6a6db18aa2e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29fed063d4c223cf0b1862384612ea5aa84b52b0
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 855a07ab21d0396fea4605e5117e312608cb625e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048907"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918893"
 ---
 # <a name="override-toolsversion-settings"></a>Substituir as configurações de ToolsVersion
 
@@ -115,7 +115,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     1. O atributo `ToolsVersion` do elemento [Project](../msbuild/project-element-msbuild.md) do arquivo de projeto. Se esse atributo não existir, será considerado que se trata da versão atual.
 
-    2. A versão padrão das ferramentas no arquivo *MSBuild.exe.config* .
+    2. A versão padrão das ferramentas no arquivo *MSBuild.exe.config*.
 
     3. A versão das ferramentas padrão no Registro. Para obter mais informações, consulte [configurações padrão e personalizadas do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md).
 
@@ -123,15 +123,15 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     1. Se a variável de ambiente `MSBUILDDEFAULTTOOLSVERSION` estiver definida para um `ToolsVersion` que existe, use-a.
 
-    2. Se `DefaultOverrideToolsVersion` é definido em *MSBuild.exe.config* , use-o.
+    2. Se `DefaultOverrideToolsVersion` é definido em *MSBuild.exe.config*, use-o.
 
     3. Se `DefaultOverrideToolsVersion` estiver definida no Registro, use-a.
 
     4. Caso contrário, use a `ToolsVersion` atual.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Multidirecionamento](../msbuild/msbuild-multitargeting-overview.md)
+- [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
 - [Configurações padrão e personalizadas do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md)

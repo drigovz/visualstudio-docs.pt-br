@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 9d7aa308-b667-48ed-b4c9-a61e49eb0a85
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 62031255daca971345b2dd3dbc7c37eb7f4003c9
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a480c539fc178e5ae672427fe32e9fd34728dc79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046370"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919158"
 ---
 # <a name="msbuild-conditions"></a>Condições do MSBuild
 
@@ -66,7 +66,7 @@ A lógica booliana é avaliada apenas no contexto de condições, de modo que as
 
 O MSBuild implementa algumas regras de processamento especiais para facilitar o trabalho com propriedades de cadeia de caracteres que são usadas como valores Boolianos. Os literais boolianos são aceitos, portanto, `Condition="true"` e `Condition="false"` funcionam conforme o esperado. O MSBuild também inclui regras especiais para dar suporte ao operador de negação booliana. Portanto, se `$(Prop)` for ' true ', `!$(Prop)` expandirá para `!true` e isso será comparado igual a `false` , como você esperaria.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
 - [Construções condicionais](../msbuild/msbuild-conditional-constructs.md)

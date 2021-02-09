@@ -13,20 +13,20 @@ helpviewer_keywords:
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5459ded60ea90ae00a3f943f829065a82548d160
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 0168f8e4b6c04ea0d6b675ce6c280bd8140971b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305299"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919562"
 ---
 # <a name="list-registers-command"></a>Comando Listar Registros
 Exibe o valor dos registros selecionados e permite modificar a lista de registros a mostrar.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```cmd
 Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
