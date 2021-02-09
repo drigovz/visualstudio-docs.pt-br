@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 79e5c529c1aefb4777e174489fc8fd1ca95a4111
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: b440e8c47afdec6e0b04b5f48a35e15fe48e1875
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436340"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866795"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Como criar classes LINQ to SQL mapeadas para tabelas e exibições (Designer Relacional de Objetos)
 
@@ -34,7 +34,7 @@ Por padrão, o runtime do [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlin
 
 ### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Para criar classes LINQ to SQL que são mapeadas para tabelas ou exibições de banco de dados
 
-1. No **Servidor** / **Gerenciador de Banco de Dados** , expanda **Tabelas** ou **Modos de exibição** e localize a tabela ou exibição de banco de dados que você quer usar em seu aplicativo.
+1. No **Servidor**/**Gerenciador de Banco de Dados**, expanda **Tabelas** ou **Modos de exibição** e localize a tabela ou exibição de banco de dados que você quer usar em seu aplicativo.
 
 2. Arraste a tabela ou exibição para o o **/R Designer**.
 
@@ -42,15 +42,15 @@ Por padrão, o runtime do [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlin
 
 ## <a name="create-an-object-data-source-and-display-the-data-on-a-form"></a>Crie um objeto de fonte de dados e exiba os dados em um formulário
 
-Depois de criar classes de entidade usando o o **/R Designer** , você pode criar uma fonte de dados de objeto e popular a [janela de fontes de dados](add-new-data-sources.md#data-sources-window) com as classes de entidade.
+Depois de criar classes de entidade usando o o **/R Designer**, você pode criar uma fonte de dados de objeto e popular a [janela de fontes de dados](add-new-data-sources.md#data-sources-window) com as classes de entidade.
 
 ### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>Para criar uma fonte de dados de objeto com base nas classes de entidade do LINQ to SQL
 
-1. No menu **Compilar** , clique em **Compilar Solução** para criar o seu projeto.
+1. No menu **Compilar**, clique em **Compilar Solução** para criar o seu projeto.
 
 2. Para abrir a janela **fontes de dados** , no menu **dados** , clique em **mostrar fontes de dados**.
 
-3. Na janela **Fontes de Dados** , clique em **Adicionar Nova Fonte de Dados**.
+3. Na janela **Fontes de Dados**, clique em **Adicionar Nova Fonte de Dados**.
 
 4. Clique em **Objeto** na página **Escolher um Tipo de Fonte de Dados** e clique em **Avançar**.
 

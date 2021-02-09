@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 2d7b0121-71aa-414b-bbb6-ede1093d0bfc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b585ce001692ab5b4451acc8d2938741bfacd78
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: bc58d125f82a33f982578f9a186d579d280e89e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729061"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865950"
 ---
 # <a name="cc-assertions"></a>Asserções C/C++
 Uma instrução de declaração especifica uma condição que você espera ser verdadeira em um ponto específico em seu programa. Se essa condição não for verdadeira, a asserção falhará, a execução do programa será interrompida e a [caixa de diálogo Falha na Asserção](../debugger/assertion-failed-dialog-box.md) será exibida.
@@ -65,7 +65,7 @@ O Visual Studio dá suporte a instruções de declaração C++ baseadas nas segu
 
 - [MFC ASSERT_VALID e CObject:: AssertValid](#BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid)
 
-- [Limitações de AssertValid](#BKMK_Limitations_of_AssertValid)
+- [Limitações do AssertValid](#BKMK_Limitations_of_AssertValid)
 
   [Usando asserções](#BKMK_Using_assertions)
 

@@ -7,19 +7,19 @@ ms.topic: conceptual
 ms.assetid: af32653c-f4e6-4217-8c5a-e32b322b4918
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: aba03be7014880618d32be250e08c735622d8c4d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 4fed8d57359a6b4f7b6f64b283ed30c824ae32de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436570"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867055"
 ---
 # <a name="data-class-inheritance-or-designer"></a>Herança de classe de dados (Designer Relacional de Objetos)
 
-Assim como outros objetos, LINQ to SQL classes podem usar a herança e serem derivadas de outras classes. Em código, você pode especificar relações de herança entre objetos declarando uma classe que herda de outra. Em uma base de dados, as relações de herança são criadas de várias maneiras. O **Object Relational Designer** ( **o/R Designer** ) dá suporte ao conceito de herança de tabela única, pois ela geralmente é implementada em sistemas relacionais.
+Assim como outros objetos, LINQ to SQL classes podem usar a herança e serem derivadas de outras classes. Em código, você pode especificar relações de herança entre objetos declarando uma classe que herda de outra. Em uma base de dados, as relações de herança são criadas de várias maneiras. O **Object Relational Designer** (**o/R Designer**) dá suporte ao conceito de herança de tabela única, pois ela geralmente é implementada em sistemas relacionais.
 
 A herança de tabela única, há uma única tabela de base de dados que contém colunas para ambos base e classes derivadas. Com dados relacionais, uma coluna de discriminador contém o valor que determina qual classe qualquer determinado registro pertence. Por exemplo, considere uma `Persons` tabela que contém todos os empregados por uma empresa. Algumas pessoas são funcionários e algumas pessoas são gerentes. A `Persons` tabela contém uma coluna denominada `Type` que tem um valor de 1 para gerentes e um valor de 2 para funcionários. A `Type` coluna é a coluna discriminadora. Nesse cenário, você pode criar uma subclasse de Employees e preencher a classe somente com registros com um `Type` valor de 2.
 
@@ -32,8 +32,8 @@ A seguinte tabela lista as propriedades de herança e suas descrições:
 |Propriedade|Descrição|
 |--------------|-----------------|
 |**Propriedade Discriminatória**|A propriedade (mapeado para a coluna) que determina qual classe ao registro atual pertence.|
-|**Valor Discriminador de Classe Base**|O valor (na coluna designada como a **Propriedade discriminadora** ) que determina que um registro é da classe base.|
-|**Valor Discriminatório da Classe Derivada**|O valor (na propriedade designada como a **Propriedade discriminadora** ) que determina que um registro é da classe derivada.|
+|**Valor Discriminador de Classe Base**|O valor (na coluna designada como a **Propriedade discriminadora**) que determina que um registro é da classe base.|
+|**Valor Discriminatório da Classe Derivada**|O valor (na propriedade designada como a **Propriedade discriminadora**) que determina que um registro é da classe derivada.|
 |**Padrão de Herança**|A classe que é populada quando o valor na propriedade designada como a **Propriedade discriminadora** não corresponde ao **valor discriminador da classe base** ou ao **valor discriminador da classe derivada**.|
 
 Criar um modelo de objeto que usar herança e corresponde a dados relacionais pode ser um pouco confuso. Este tópico fornece informações sobre os conceitos básicos e as propriedades individuais que são necessários configurando a herança. Os tópicos a seguir fornecem uma explicação mais clara de como configurar a herança com o o **/R Designer**.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a46b9d0e-43e6-433f-b2c7-aa203981e4e4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ded09d64a071c12e14de1597c21aad3872cacf4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63bf56b7749033ecc99c7ba1ef0c9357c95542d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468542"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865275"
 ---
 # <a name="idiaaddressmapset_imageheaders"></a>IDiaAddressMap::set_imageHeaders
 Define cabeçalhos de imagem para habilitar a conversão de endereço virtual relativa.
@@ -25,7 +25,7 @@ Define cabeçalhos de imagem para habilitar a conversão de endereço virtual re
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT set_imageHeaders ( 
+HRESULT set_imageHeaders ( 
    DWORD cbData,
    BYTE  data[],
    BOOL  originalHeaders
@@ -45,7 +45,7 @@ no Uma matriz de  `IMAGE_SECTION_HEADER` estruturas a ser usada como cabeçalhos
 
 no Defina como `FALSE` se os cabeçalhos de imagem forem da nova imagem, `TRUE` se eles refletirem a imagem original antes de uma atualização. Normalmente, isso seria definido como `TRUE` somente em combinação com chamadas para o método [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

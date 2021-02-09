@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5fcd8bb06cf9c88466b4dfa3cfaf2dfd8093bd3d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c410d9290b7e377654a9cff87f8df7524a1b7149
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436440"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866873"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar uma exceção de simultaneidade
 
@@ -51,7 +51,7 @@ Este passo a passos percorre o seguinte processo:
 
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
-1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **instalador do Visual Studio** , você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho de **armazenamento e processamento de dados** ou como um componente individual.
+1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **instalador do Visual Studio**, você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho de **armazenamento e processamento de dados** ou como um componente individual.
 
 2. Instale o banco de dados de exemplo Northwind seguindo estas etapas:
 
@@ -69,7 +69,7 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 Comece criando um novo aplicativo Windows Forms:
 
-1. No Visual Studio, no menu **Arquivo** , selecione **Novo** > **Projeto**.
+1. No Visual Studio, no menu **Arquivo**, selecione **Novo** > **Projeto**.
 
 2. Expanda o **Visual C#** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
@@ -77,11 +77,11 @@ Comece criando um novo aplicativo Windows Forms:
 
 4. Nomeie o projeto **ConcurrencyWalkthrough** e escolha **OK**.
 
-     O projeto **ConcurrencyWalkthrough** é criado e adicionado ao **Gerenciador de soluções** , e um novo formulário é aberto no designer.
+     O projeto **ConcurrencyWalkthrough** é criado e adicionado ao **Gerenciador de soluções**, e um novo formulário é aberto no designer.
 
 ## <a name="create-the-northwind-dataset"></a>Criar o conjunto de conjuntos Northwind
 
-Em seguida, crie um conjunto de um DataSet chamado **NorthwindDataSet** :
+Em seguida, crie um conjunto de um DataSet chamado **NorthwindDataSet**:
 
 1. No menu **dados** , escolha **Adicionar nova fonte de dados**.
 
@@ -124,7 +124,7 @@ Agora você pode testar o formulário para certificar-se de que ele se comporta 
 
      O formulário é exibido com um <xref:System.Windows.Forms.DataGridView> controle que é preenchido com dados da tabela Customers.
 
-2. No menu **Depurar** , selecione **Interromper Depuração**.
+2. No menu **Depurar**, selecione **Interromper Depuração**.
 
 ## <a name="handle-concurrency-errors"></a>Tratar erros de simultaneidade
 
@@ -178,7 +178,7 @@ Crie a mensagem adicionando o código a seguir ao **Editor de código**. Insira 
 
 ### <a name="process-the-users-response"></a>Processar a resposta do usuário
 
-Você também precisa de código para processar a resposta do usuário para a caixa de mensagem. As opções são substituir o registro atual no banco de dados pela alteração proposta, ou abandonar as alterações locais e atualizar a tabela data com o registro que está atualmente no banco de dado. Se o usuário escolher **Sim** , o <xref:System.Data.DataTable.Merge%2A> método será chamado com o argumento *PreserveChanges* definido como **true**. Isso faz com que a tentativa de atualização seja bem-sucedida, porque a versão original do registro agora corresponde ao registro no banco de dados.
+Você também precisa de código para processar a resposta do usuário para a caixa de mensagem. As opções são substituir o registro atual no banco de dados pela alteração proposta, ou abandonar as alterações locais e atualizar a tabela data com o registro que está atualmente no banco de dado. Se o usuário escolher **Sim**, o <xref:System.Data.DataTable.Merge%2A> método será chamado com o argumento *PreserveChanges* definido como **true**. Isso faz com que a tentativa de atualização seja bem-sucedida, porque a versão original do registro agora corresponde ao registro no banco de dados.
 
 Adicione o código a seguir abaixo do código que foi adicionado na seção anterior:
 
@@ -193,20 +193,20 @@ Agora, é possível testar o formulário para garantir que ele se comporta da fo
 
 2. Depois que o formulário for exibido, deixe-o em execução e alterne para o IDE do Visual Studio.
 
-3. No menu **Exibir** , escolha **Gerenciador de Servidores**.
+3. No menu **Exibir**, escolha **Gerenciador de Servidores**.
 
-4. Em **Gerenciador de servidores** , expanda a conexão que seu aplicativo está usando e, em seguida, expanda o nó **tabelas** .
+4. Em **Gerenciador de servidores**, expanda a conexão que seu aplicativo está usando e, em seguida, expanda o nó **tabelas** .
 
 5. Clique com o botão direito do mouse na tabela **clientes** e selecione **Mostrar dados da tabela**.
 
-6. No primeiro registro ( **ALFKI** ), altere **ContactName** para **Maria Anders2**.
+6. No primeiro registro (**ALFKI**), altere **ContactName** para **Maria Anders2**.
 
     > [!NOTE]
     > Navegue até uma linha diferente para confirmar a alteração.
 
 7. Alterne para o formulário em execução do ConcurrencyWalkthrough.
 
-8. No primeiro registro no formulário ( **ALFKI** ), altere **ContactName** para **Maria anders1**.
+8. No primeiro registro no formulário (**ALFKI**), altere **ContactName** para **Maria anders1**.
 
 9. Selecione o botão **Salvar**.
 
@@ -214,6 +214,6 @@ Agora, é possível testar o formulário para garantir que ele se comporta da fo
 
    A seleção de **não** cancela a atualização e atualiza o conjunto de dados com os valores que estão no momento. Selecionar **Sim** grava o valor proposto no banco de dados.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Salvar dados novamente no banco de dados](../data-tools/save-data-back-to-the-database.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6c976f06f105969f1eaa91022607d61251a56008
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a9ab54b358125e45cfb0d6a4df30989cf679ab2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436752"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867133"
 ---
 # <a name="create-and-configure-tableadapters"></a>Criar e configurar TableAdapters
 
@@ -51,7 +51,7 @@ Se você arrastar um novo TableAdapter da caixa de ferramentas quando o **Design
 
 - Você tem a opção de criar um novo procedimento armazenado no banco de dados subjacente se tiver as permissões corretas para o banco de dados. Se você não tiver essas permissões, isso não será uma opção.
 
-- Você também pode optar por executar procedimentos armazenados existentes para os comandos **Select** , **Insert** , **Update** e **delete** do TableAdapter. O procedimento armazenado que é atribuído ao comando **Update** , por exemplo, é executado quando o `TableAdapter.Update()` método é chamado.
+- Você também pode optar por executar procedimentos armazenados existentes para os comandos **Select**, **Insert**, **Update** e **delete** do TableAdapter. O procedimento armazenado que é atribuído ao comando **Update** , por exemplo, é executado quando o `TableAdapter.Update()` método é chamado.
 
 Mapear parâmetros desde o procedimento armazenado selecionado até as colunas correspondentes na tabela de dados. Por exemplo, se o procedimento armazenado aceitar um parâmetro chamado `@CompanyName` que ele passa para a `CompanyName` coluna na tabela, defina a **coluna de origem** do `@CompanyName` parâmetro como `CompanyName` .
 
@@ -84,7 +84,7 @@ O exemplo a seguir mostra como chamar uma consulta adicional chamada `FillByCity
 
 1. Abra o conjunto de dados no **Designer de Conjunto de Dados**.
 
-2. Se você estiver criando uma nova consulta, arraste um objeto de **consulta** da guia **DataSet** da **caixa de ferramentas** para um <xref:System.Data.DataTable> ou selecione **Adicionar consulta** no menu de atalho do TableAdapter. Você também pode arrastar um objeto de **consulta** para uma área vazia da **Designer de conjunto de dados** , que cria um TableAdapter sem um associado <xref:System.Data.DataTable> . Essas consultas só podem retornar valores únicos (escalares) ou executar comandos UPDATE, INSERT ou DELETE no banco de dados.
+2. Se você estiver criando uma nova consulta, arraste um objeto de **consulta** da guia **DataSet** da **caixa de ferramentas** para um <xref:System.Data.DataTable> ou selecione **Adicionar consulta** no menu de atalho do TableAdapter. Você também pode arrastar um objeto de **consulta** para uma área vazia da **Designer de conjunto de dados**, que cria um TableAdapter sem um associado <xref:System.Data.DataTable> . Essas consultas só podem retornar valores únicos (escalares) ou executar comandos UPDATE, INSERT ou DELETE no banco de dados.
 
 3. Na tela **escolher sua conexão de dados** , selecione ou crie a conexão que será usada pela consulta.
 
@@ -117,6 +117,6 @@ O exemplo a seguir mostra como chamar uma consulta adicional chamada `FillByCity
     > [!NOTE]
     > Arrastar um objeto de **consulta** diretamente para o **Designer de conjunto de dados** cria um método que retorna apenas um valor escalar (único). Embora a consulta ou o procedimento armazenado selecionado possa retornar mais de um único valor, o método criado pelo assistente retornará apenas um único valor. Por exemplo, a consulta pode retornar a primeira coluna da primeira linha dos dados retornados.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

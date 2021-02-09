@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b68e2e68-6483-4936-bf97-1b0a13cb75e2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b48e1a0f5f0655c80e501740eae5fc4152f998a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33fb0719ee1c4f472b3c139e7e89a918884cf95b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467438"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865009"
 ---
 # <a name="idiaframedataget_addressoffset"></a>IDiaFrameData::get_addressOffset
 Recupera a parte de deslocamento do endereço do código para o quadro.
@@ -25,7 +25,7 @@ Recupera a parte de deslocamento do endereço do código para o quadro.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_addressOffset ( 
+HRESULT get_addressOffset ( 
    DWORD* pRetVal
 );
 ```
@@ -35,8 +35,8 @@ HRESULT get_addressOffset ( 
 
 fora Retorna a parte de deslocamento do endereço do código do quadro.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1b66bc0a-7979-416f-bf7f-e5df91584c91
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c2a202cbf9f315dce647e8ccbdfdde0fd5a01cc5
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 6912567ac7dedc6885d990dd96f21c41a1867292
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728711"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865478"
 ---
 # <a name="customtype"></a>CustomType
 Tipos definidos pelo fornecedor (tipos específicos do compilador) são identificados por um `SymTagCustomType` símbolo.
@@ -37,5 +37,5 @@ Tipos definidos pelo fornecedor (tipos específicos do compilador) são identifi
 |[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|ID do símbolo de tipo.|
 |[IDiaSymbol::get_types](../../debugger/debug-interface-access/idiasymbol-get-types.md)|`IDiaSymbol**`|Matriz de todos os tipos referenciados pelo símbolo de tipo personalizado.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Hierarquia de classes de tipos de símbolo](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

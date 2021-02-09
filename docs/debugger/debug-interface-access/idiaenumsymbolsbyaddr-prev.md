@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: da3b3dca-68cb-4cb0-b25c-e28a1ffe49d3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe7ced486524c7409532e140f48f841b5e55078
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 352e9b1892285d8cc33c86c595462da84273eac1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467641"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865128"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
 Recupera os símbolos anteriores no endereço de ordenação.
@@ -25,7 +25,7 @@ Recupera os símbolos anteriores no endereço de ordenação.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT Prev ( 
+HRESULT Prev ( 
    ULONG        celt,
    IDiaSymbol** rgelt,
    ULONG*       pceltFetched
@@ -45,12 +45,12 @@ fora Uma matriz que deve ser preenchida com objetos [IDiaSymbol](../../debugger/
 
 fora Retorna o número de símbolos no enumerador obtido.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver símbolos anteriores. Caso contrário, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários
  Esse método atualiza a posição do enumerador pelo número de elementos buscados.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

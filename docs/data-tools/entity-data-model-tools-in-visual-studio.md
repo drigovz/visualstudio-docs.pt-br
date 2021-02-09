@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1cc1aa43945ceee19b70a037b1c865c67539fb61
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: ee4bb5e56c5ae9ffb5f5266c8ef80804c8e96597
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436635"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866977"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools no Visual Studio
 
@@ -32,7 +32,7 @@ As ferramentas de Entity Framework são instaladas como parte da carga de trabal
 
 Essas são as ferramentas específicas que compõem Entity Framework ferramentas no Visual Studio:
 
-- Você pode usar o [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Designer** ( **Entity designer** ) para criar e modificar visualmente entidades, associações, mapeamentos e relações de herança. O **Entity designer** também gera [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] ou o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] código de camada de objeto.
+- Você pode usar o [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Designer** (**Entity designer**) para criar e modificar visualmente entidades, associações, mapeamentos e relações de herança. O **Entity designer** também gera [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] ou o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] código de camada de objeto.
 
 - Você pode usar o **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Assistente** para gerar um modelo conceitual a partir de um banco de dados existente e adicionar informações de conexão de banco de dados ao seu aplicativo.
 
@@ -56,6 +56,6 @@ As ferramentas geram ou modificam um arquivo *. edmx* . Esse arquivo *. edmx* co
 | [Documentação do Entity Framework (EF))](/ef/ef6/get-started) | Fornece um índice de vídeos, tutoriais e documentação avançada para ajudá-lo a aproveitar ao máximo Entity Framework. |
 | [ASP.NET 5 aplicativo para novo banco de dados](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html) | Descreve como criar um novo aplicativo ASP.NET 5 usando o Entity Framework 7. |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

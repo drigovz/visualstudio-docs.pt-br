@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d17eed2d-d8fd-4a47-82d3-8125c0624010
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c7441e25533ca29f84d55779942b0bfb785dd9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7bb7fbdfac3026d1487b39fd2ae3f1adb72d01f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468654"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865401"
 ---
 # <a name="enumerations-and-structures"></a>Enumerações e estruturas
 
@@ -102,6 +102,6 @@ Especifica as interfaces fornecidas pelo DIA SDK.
 
 Especifica as constantes que estão disponíveis no DIA SDK.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

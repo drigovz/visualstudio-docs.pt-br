@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 3260b2a7-3239-493d-9271-aedf705c13c7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1df80e8486cb8f8667494137392fadb0a9754e8b
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: f86f072a32bf9d7ff4af3c77564236fe2997f70a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728996"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865859"
 ---
 # <a name="com-and-activex-debugging"></a>Depuração de COM e ActiveX
 Essa seção fornece dicas sobre depuração de aplicativos COM e controles ActiveX.
@@ -43,7 +43,7 @@ Essa seção fornece dicas sobre depuração de aplicativos COM e controles Acti
 ## <a name="related-sections"></a>Seções relacionadas
  [Primeira olhada no depurador](../debugger/debugger-feature-tour.md) Fornece links para as seções maiores da documentação de depuração. As informações incluem: novidades no depurador, configurações e preparação, pontos de interrupção, tratamento de exceções, edição e continuação, depuração de código gerenciado, depuração de projetos C++, depuração de COM e ActiveX, depuração de DLLs, depuração de SQL e referências de interface do usuário.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Introdução ao COM](/cpp/atl/introduction-to-com)

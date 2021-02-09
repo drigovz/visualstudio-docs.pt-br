@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f00b9ab1-d4da-4818-973a-58f8f0e66769
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ef646016433ecfe19106a17dff391c2dd8ce8382
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c5954bb80afde6d0ab33a4ad14b1ab08a4435f8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467382"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864988"
 ---
 # <a name="idiaframedataget_functionparent"></a>IDiaFrameData::get_functionParent
 Recupera uma interface de dados de quadro para a função de circunscrição.
@@ -25,7 +25,7 @@ Recupera uma interface de dados de quadro para a função de circunscrição.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_functionParent ( 
+HRESULT get_functionParent ( 
    IDiaFrameData** pRetVal
 );
 ```
@@ -35,8 +35,8 @@ HRESULT get_functionParent ( 
 
 fora Retorna um objeto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) para a função de circunscrição.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

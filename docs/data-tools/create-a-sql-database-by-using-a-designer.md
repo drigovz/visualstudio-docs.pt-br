@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e31be90ff24f110fda66449187d3372976f269a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed0df13f1dd281fcf56056809419af5d7ed6d3dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282716"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867198"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Criar um banco de dados e adicionar tabelas no Visual Studio
 
@@ -41,7 +41,7 @@ Para concluir este passo a passos, você precisará do **desenvolvimento de áre
 
    ![Caixa de diálogo modelos de item](../data-tools/media/raddata-vsitemtemplates.png)
 
-4. Nomeie o banco de dados **SampleDatabase**e clique em **Adicionar**.
+4. Nomeie o banco de dados **SampleDatabase** e clique em **Adicionar**.
 
 ### <a name="add-a-data-source"></a>Adicionar uma fonte de dados
 
@@ -67,12 +67,12 @@ Para concluir este passo a passos, você precisará do **desenvolvimento de áre
 
 Você pode exibir a cadeia de conexão para o arquivo *SampleDatabase. MDF* abrindo o janela Propriedades da conexão de dados:
 
-- Selecione **Exibir**  >  **pesquisador de objetos do SQL Server** para abrir a janela **pesquisador de objetos do SQL Server** . Expanda **(LocalDB) \MSSQLLocalDB**  >  **bancos de dados**e clique com o botão direito do mouse em *SampleDatabase. MDF* e selecione **Propriedades**.
+- Selecione **Exibir**  >  **pesquisador de objetos do SQL Server** para abrir a janela **pesquisador de objetos do SQL Server** . Expanda **(LocalDB) \MSSQLLocalDB**  >  **bancos de dados** e clique com o botão direito do mouse em *SampleDatabase. MDF* e selecione **Propriedades**.
 
-- Como alternativa, você pode selecionar **Exibir**  >  **Gerenciador de servidores**, se essa janela ainda não estiver aberta. Abra o janela Propriedades expandindo o nó **conexões de dados** , clicando com o botão direito do mouse em *SampleDatabase. MDF*e, em seguida, selecionando **Propriedades**.
+- Como alternativa, você pode selecionar **Exibir**  >  **Gerenciador de servidores**, se essa janela ainda não estiver aberta. Abra o janela Propriedades expandindo o nó **conexões de dados** , clicando com o botão direito do mouse em *SampleDatabase. MDF* e, em seguida, selecionando **Propriedades**.
 
   > [!TIP]
-  > Se você não puder expandir o nó conexões de dados, ou se a conexão SampleDatabase. MDF não estiver listada, selecione o botão **conectar ao Database** na barra de ferramentas Gerenciador de servidores. Na caixa de diálogo **Adicionar conexão** , certifique-se de que **Microsoft SQL Server arquivo de banco** de dados esteja selecionado em **fonte de dados**e, em seguida, navegue até e selecione o arquivo SampleDatabase. MDF. Conclua a adição da conexão selecionando **OK**.
+  > Se você não puder expandir o nó conexões de dados, ou se a conexão SampleDatabase. MDF não estiver listada, selecione o botão **conectar ao Database** na barra de ferramentas Gerenciador de servidores. Na caixa de diálogo **Adicionar conexão** , certifique-se de que **Microsoft SQL Server arquivo de banco** de dados esteja selecionado em **fonte de dados** e, em seguida, navegue até e selecione o arquivo SampleDatabase. MDF. Conclua a adição da conexão selecionando **OK**.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Criar tabelas e chaves usando Designer de Tabela
 
@@ -82,7 +82,7 @@ Nesta seção, você criará duas tabelas, uma chave primária em cada tabela e 
 
 1. Em **Gerenciador de servidores**, expanda o nó **conexões de dados** e expanda o nó **SampleDatabase. MDF** .
 
-   Se você não puder expandir o nó conexões de dados, ou se a conexão SampleDatabase. MDF não estiver listada, selecione o botão **conectar ao Database** na barra de ferramentas Gerenciador de servidores. Na caixa de diálogo **Adicionar conexão** , certifique-se de que **Microsoft SQL Server arquivo de banco** de dados esteja selecionado em **fonte de dados**e, em seguida, navegue até e selecione o arquivo SampleDatabase. MDF. Conclua a adição da conexão selecionando **OK**.
+   Se você não puder expandir o nó conexões de dados, ou se a conexão SampleDatabase. MDF não estiver listada, selecione o botão **conectar ao Database** na barra de ferramentas Gerenciador de servidores. Na caixa de diálogo **Adicionar conexão** , certifique-se de que **Microsoft SQL Server arquivo de banco** de dados esteja selecionado em **fonte de dados** e, em seguida, navegue até e selecione o arquivo SampleDatabase. MDF. Conclua a adição da conexão selecionando **OK**.
 
 2. Clique com o botão direito do mouse em **tabelas** e selecione **Adicionar nova tabela**.
 
@@ -168,7 +168,7 @@ Nesta seção, você criará duas tabelas, uma chave primária em cada tabela e 
 
 1. Em **Gerenciador de servidores** ou **pesquisador de objetos do SQL Server**, expanda o nó do banco de dados de exemplo.
 
-2. Abra o menu de atalho para o nó **tabelas** , selecione **Atualizar**e, em seguida, expanda o nó **tabelas** .
+2. Abra o menu de atalho para o nó **tabelas** , selecione **Atualizar** e, em seguida, expanda o nó **tabelas** .
 
 3. Abra o menu de atalho da tabela clientes e selecione **Mostrar dados da tabela**.
 

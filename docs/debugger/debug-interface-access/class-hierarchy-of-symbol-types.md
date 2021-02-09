@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0ccd6990-4654-44cd-a6f3-bdd82fe90f6c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 36f97702f41f72efab970617da2a40a70f339e2a
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: c33b6852935bbe02c75b0814fd2f77095d283c15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728791"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865571"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Hierarquia de classes de tipos de símbolos
 A tabela a seguir descreve os tipos de símbolo na hierarquia de classes.
@@ -47,7 +47,7 @@ A tabela a seguir descreve os tipos de símbolo na hierarquia de classes.
 > [!NOTE]
 > Cada símbolo pode ter propriedades que contêm informações sobre o símbolo, bem como referências a outros símbolos. Essas propriedades são listadas nos tópicos de símbolos individuais.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Enumeração CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)
 - [Hierarquia lexical de tipos de símbolo](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [Símbolos e marcações de símbolos](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

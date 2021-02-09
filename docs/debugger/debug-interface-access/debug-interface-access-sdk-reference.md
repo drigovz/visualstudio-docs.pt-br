@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7cdbbce1-8b59-43ce-b6aa-a948bb4d7148
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fb49ee4ccd49d848b4d770459352c685469fb7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e914cb7fade7c46213f3ffc1c68113ebf83188b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468696"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865408"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>Referência do SDK de Acesso à Interface de Depuração
 
@@ -45,6 +45,6 @@ Descreve um número de cadeias de caracteres e seus rótulos que podem ser usado
 
 Descreve quais símbolos são e como eles são identificados por tipo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [SDK de Acesso à Interface de Depuração](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

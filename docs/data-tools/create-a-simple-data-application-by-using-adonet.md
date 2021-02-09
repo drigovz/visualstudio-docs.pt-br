@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 44205f7f8f12d453a7c1d93ec8fee6ed1a3c1765
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 71e6c03c4ed0319b45c5b6ef0b79f65abbfc9f73
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436791"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867185"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Criar um aplicativo de dados simples usando o ADO.NET
 
@@ -124,10 +124,10 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 ## <a name="store-the-connection-string"></a>Armazenar a cadeia de conexão
 Quando seu aplicativo tenta abrir uma conexão com o banco de dados, seu aplicativo deve ter acesso à cadeia de conexão. Para evitar inserir a cadeia de caracteres manualmente em cada formulário, armazene a cadeia de caracteres no arquivo de *App.config* em seu projeto e crie um método que retorne a cadeia de caracteres quando o método for chamado de qualquer formulário em seu aplicativo.
 
-Você pode encontrar a cadeia de conexão clicando com o botão direito do mouse na conexão dados de **vendas** em **Gerenciador de servidores** e escolhendo **Propriedades**. Localize a propriedade **ConnectionString** e, em seguida, use **Ctrl** + **A** , **Ctrl** + **C** para selecionar e copiar a cadeia de caracteres para a área de transferência.
+Você pode encontrar a cadeia de conexão clicando com o botão direito do mouse na conexão dados de **vendas** em **Gerenciador de servidores** e escolhendo **Propriedades**. Localize a propriedade **ConnectionString** e, em seguida, use **Ctrl** + **A**, **Ctrl** + **C** para selecionar e copiar a cadeia de caracteres para a área de transferência.
 
-1. Se você estiver usando C#, em **Gerenciador de soluções** , expanda o nó **Propriedades** no projeto e, em seguida, abra o arquivo **Settings. Settings** .
-    Se você estiver usando Visual Basic, em **Gerenciador de soluções** , clique em **Mostrar todos os arquivos** , expanda o nó **meu projeto** e, em seguida, abra o arquivo **Settings. Settings** .
+1. Se você estiver usando C#, em **Gerenciador de soluções**, expanda o nó **Propriedades** no projeto e, em seguida, abra o arquivo **Settings. Settings** .
+    Se você estiver usando Visual Basic, em **Gerenciador de soluções**, clique em **Mostrar todos os arquivos**, expanda o nó **meu projeto** e, em seguida, abra o arquivo **Settings. Settings** .
 
 2. Na coluna **nome** , digite `connString` .
 
@@ -150,9 +150,9 @@ O formulário de navegação é aberto quando você executa o aplicativo. O bot�
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Tornar o formulário de navegação o formulário de inicialização
 
-Se você estiver usando C#, em **Gerenciador de soluções** , abra **Program.cs** e, em seguida, altere a `Application.Run` linha para: `Application.Run(new Navigation());`
+Se você estiver usando C#, em **Gerenciador de soluções**, abra **Program.cs** e, em seguida, altere a `Application.Run` linha para: `Application.Run(new Navigation());`
 
-Se você estiver usando Visual Basic, em **Gerenciador de soluções** , abra a janela **Propriedades** , selecione a guia **aplicativo** e, em seguida, selecione **SimpleDataApp. Navigation** na lista **formulário de inicialização** .
+Se você estiver usando Visual Basic, em **Gerenciador de soluções**, abra a janela **Propriedades** , selecione a guia **aplicativo** e, em seguida, selecione **SimpleDataApp. Navigation** na lista **formulário de inicialização** .
 
 #### <a name="create-auto-generated-event-handlers"></a>Criar manipuladores de eventos gerados automaticamente
 

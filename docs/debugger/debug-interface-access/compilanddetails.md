@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ddc7d794-c622-4c63-b2a6-72f8b2d0022a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 04687eb58ecee2211f098c0f432afc28e0465305
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e217294eeec332a7b629ae39715b6973f7ebb2a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728777"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865538"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 As informações de compiland são divididas entre os símbolos com uma `SymTagCompiland` marca (baixo detalhe) e uma `SymTagCompilandDetails` marca (alta detalhes). `SymTagCompilandDetails` fornece uma infinidade de informações sobre o compiland que não está disponível com um `SymTagCompiland` símbolo.
@@ -55,6 +55,6 @@ As informações de compiland são divididas entre os símbolos com uma `SymTagC
 ## <a name="remarks"></a>Comentários
  Os compiladores geralmente vêm em um formato conhecido como um compilador de duas passagens; em algumas versões do compilador, cada passagem é tratada por um programa separado. Eles são conhecidos como compiladores de front-end e back-end, respectivamente, por isso as propriedades de símbolo para números de versão de back-end e front-end.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Compiland](../../debugger/debug-interface-access/compiland.md)
 - [Hierarquia lexical de tipos de símbolo](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

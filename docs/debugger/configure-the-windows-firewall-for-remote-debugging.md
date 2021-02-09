@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: be73b8392f6b92bf48bd9150197be9bf8fe380dd
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 959d015bd23c91ec2ba6215c7a5b42d13b37ee29
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728944"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865820"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configurar o Firewall do Windows para depuração remota
 
@@ -78,8 +78,8 @@ Se você selecionar **usar o modo de compatibilidade gerenciado** em **ferrament
 
 |**Portas**|**Entrada/saída**|**Protocolo**|**Descrição**|
 |-|-|-|-|
-|135, 139, 445|Saída|TCP|Obrigatórios.|
-|137, 138|Saída|UDP|Obrigatórios.|
+|135, 139, 445|Saída|TCP|Obrigatório.|
+|137, 138|Saída|UDP|Obrigatório.|
 
 Se sua política de domínio exigir que a comunicação de rede seja executada por meio do IPSec, você deverá abrir portas adicionais no Visual Studio e nos computadores remotos. Para depurar em um servidor Web IIS remoto, abra a porta 80 no computador remoto.
 
@@ -123,7 +123,7 @@ Se você não puder anexar ao seu aplicativo com o depurador remoto, verifique s
   - Para exibir ou alterar as configurações de regra, clique com o botão direito do mouse no aplicativo do **depurador remoto** na lista e selecione **Propriedades**. Use as guias **Propriedades** para habilitar ou desabilitar a regra, ou alterar os números de porta, protocolos ou tipos de rede.
   - Se o aplicativo do depurador remoto não aparecer na lista de regras, [adicione e configure as portas corretas](#configure-ports-for-remote-debugging).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Depuração remota](../debugger/remote-debugging.md)
 - [Atribuições de porta do depurador remoto do Visual Studio](../debugger/remote-debugger-port-assignments.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 492c0893-7043-452f-a020-890a47230d20
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 17fe6d65e70399ccac5b9ef4e2f1234ef4e3698e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fee6f04b3ee0aefe0aac99f8079e2f31733ce08b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468682"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865415"
 ---
 # <a name="dia2dump-sample"></a>Exemplo de Dia2dump
 
@@ -44,7 +44,7 @@ Por padrão, o diretório de instalação é um diretório protegido. Isso signi
 
 1. Abra a caixa de diálogo **Páginas de Propriedades** do projeto. Para obter detalhes, confira [Trabalhando com propriedades do projeto](/cpp/build/working-with-project-properties).
 
-1. Abra a página de propriedades de **configuração**  >  geral do**C/C++**  >  **General** .
+1. Abra a página de propriedades de **configuração**  >  geral do **C/C++**  >   .
 
 1. Na propriedade **incluir diretórios adicionais** , escolha o controle suspenso e escolha **Editar**.
 
@@ -64,7 +64,7 @@ Por padrão, o diretório de instalação é um diretório protegido. Isso signi
 
 ## <a name="run-the-dia2dump-sample"></a>Executar o exemplo de Dia2Dump
 
-Dia2Dump.exe se baseia no servidor COM do MSDIA*version*. dll para fornecer seus serviços. A partir do Visual Studio 2015, a versão é msdia140.dll. Se o servidor COM MSDIA*version*. dll não for inicializado, você deverá registrá-lo antes que dia2dump.exe possa funcionar. O diretório DIA SDK tem um subdiretório bin que contém a versão x86 da DLL. Uma versão para computadores com arquitetura x64 está em bin\amd64, e uma versão para ARM está em bin\arm. Para registrar a dll, abra uma janela de prompt de comando de desenvolvedor elevada e altere para o diretório que contém a versão da sua arquitetura de computador. Insira o comando `regsvr32 msdia140.dll` para registrar o servidor com.
+Dia2Dump.exe se baseia no servidor COM do MSDIA *version*. dll para fornecer seus serviços. A partir do Visual Studio 2015, a versão é msdia140.dll. Se o servidor COM MSDIA *version*. dll não for inicializado, você deverá registrá-lo antes que dia2dump.exe possa funcionar. O diretório DIA SDK tem um subdiretório bin que contém a versão x86 da DLL. Uma versão para computadores com arquitetura x64 está em bin\amd64, e uma versão para ARM está em bin\arm. Para registrar a dll, abra uma janela de prompt de comando de desenvolvedor elevada e altere para o diretório que contém a versão da sua arquitetura de computador. Insira o comando `regsvr32 msdia140.dll` para registrar o servidor com.
 
 ### <a name="to-run-the-sample"></a>Para executar a amostra
 

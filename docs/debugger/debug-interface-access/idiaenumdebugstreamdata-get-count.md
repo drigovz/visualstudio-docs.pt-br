@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 74ff3a85-3cc2-4aa8-ad9a-7f335b795ed1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 177ba4d84155b2688375421c614c3fb794a81f16
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 356d2de5ea0342d1064605ff6d727e7676a4b5ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865212"
 ---
 # <a name="idiaenumdebugstreamdataget_count"></a>IDiaEnumDebugStreamData::get_Count
 Recupera os registros de número no fluxo de dados de depuração.
@@ -25,7 +25,7 @@ Recupera os registros de número no fluxo de dados de depuração.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_Count ( 
+HRESULT get_Count ( 
    LONG* pRetVal
 );
 ```
@@ -34,9 +34,9 @@ HRESULT get_Count ( 
  pRetVal
 - [out, retval] Retorna o número de registros.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
 - [IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)

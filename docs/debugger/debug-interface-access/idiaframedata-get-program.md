@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9201409e-b4b1-4e2e-a9f8-d17678ac538b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5a9f25c3913519b50131ec5860e127bef3ddc11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1480b7e3273e3746f95c01ab8913eb5c934edc39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467263"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864939"
 ---
 # <a name="idiaframedataget_program"></a>IDiaFrameData::get_program
 Recupera a cadeia de caracteres do programa que é usada para calcular o conjunto de registros antes da chamada para a função atual.
@@ -25,7 +25,7 @@ Recupera a cadeia de caracteres do programa que é usada para calcular o conjunt
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_program ( 
+HRESULT get_program ( 
    BSTR* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_program ( 
 
 fora Retorna a cadeia de caracteres do programa.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários
@@ -51,5 +51,5 @@ fora Retorna a cadeia de caracteres do programa.
 
    Observe que a cadeia de caracteres do programa é específica para a CPU e para a Convenção de chamada configurada para a função representada pelo quadro de pilhas atual.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
