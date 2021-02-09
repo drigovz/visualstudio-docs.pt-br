@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, walkthroughs
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4d1700958d155801a436cbd00a8a88f7599292a0
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: b12aaade85964eb1c331bd96f2fbea522670bcc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970324"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892314"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>Passo a passos de desenvolvimento do SharePoint
   As instruções a seguir demonstram como desenvolver e implantar soluções do SharePoint usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -47,7 +47,7 @@ ms.locfileid: "95970324"
 |[Walkthrough: criar uma Web Part para o SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Mostra como criar uma Web Part usando o modelo de item de **Web Part** no Visual Studio.|
 |[Walkthrough: criar uma Web Part para o SharePoint usando um designer](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Mostra como criar uma Web Part visualmente usando o modelo de projeto de **Web Part Visual** do SharePoint no Visual Studio.|
 
-## <a name="workflows"></a>Fluxos de Trabalho
+## <a name="workflows"></a>Fluxos de trabalho
 
 |Tópico|Descrição|
 |-----------|-----------------|
@@ -95,5 +95,5 @@ ms.locfileid: "95970324"
 |[Walkthrough: estender Gerenciador de Servidores para exibir Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|Demonstra como adicionar novos nós para exibir Web Parts em sites do SharePoint que são exibidos no Gerenciador de Servidores. Este passo a passos também demonstra como criar um comando do SharePoint para chamar o modelo de objeto do SharePoint Server.|
 |[Walkthrough: chamar o modelo de objeto de cliente do SharePoint em uma extensão Gerenciador de Servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|Demonstra como adicionar novos nós para exibir Web Parts em sites do SharePoint que são exibidos no Gerenciador de Servidores. Este passo a passos também demonstra como usar o modelo de objeto de cliente do SharePoint.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Exemplos e orientações de desenvolvimento do SharePoint](../sharepoint/sharepoint-development-samples-and-walkthroughs.md)

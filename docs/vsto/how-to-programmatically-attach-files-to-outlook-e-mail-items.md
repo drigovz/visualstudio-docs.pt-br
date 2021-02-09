@@ -15,15 +15,15 @@ helpviewer_keywords:
 - attachments [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 54617bd61a6b45e3b105bce71342ea1a97f63050
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 972203b5306d3fa7c94461b235c204051871c33c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847384"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892080"
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Como: anexar arquivos por meio de programação a itens de email do Outlook
   Este exemplo anexa um arquivo a um novo item de email e o envia para Armando fixar. O exemplo supõe que uma pessoa chamada Armando fixar existe como o destinatário.

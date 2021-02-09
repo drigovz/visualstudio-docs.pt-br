@@ -30,15 +30,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], host controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 08205473636a04dbc742b6c09c99e9771094f61c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: fbc3258f3ea7e0b3cc93a2887dfff5a3bfefb19d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525123"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891885"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Limitações programáticas de itens de host e controles de host
   Cada item de host e controle de host é projetado para se comportar como uma palavra Microsoft Office nativa correspondente ou Microsoft Office objeto do Excel, com funcionalidade adicional. No entanto, há algumas diferenças fundamentais entre o comportamento de itens de host e controles de host e objetos nativos do Office em tempo de execução.
@@ -90,7 +90,7 @@ ms.locfileid: "97525123"
 
  Os modelos de objeto do Word e do Excel incluem propriedades que expõem coleções de controles nativos em documentos e planilhas. Você não pode acessar os controles gerenciados usando essas propriedades. Por exemplo, não é possível enumerar cada <xref:Microsoft.Office.Tools.Word.Bookmark> controle de host em um documento usando a <xref:Microsoft.Office.Interop.Word._Document.Bookmarks%2A> propriedade de uma <xref:Microsoft.Office.Interop.Word.Document> ou a <xref:Microsoft.Office.Tools.Word.Document.Bookmarks%2A> propriedade de um <xref:Microsoft.Office.Tools.Word.Document> . Essas propriedades incluem apenas os <xref:Microsoft.Office.Interop.Word.Bookmark> controles no documento; elas não contêm os controles de <xref:Microsoft.Office.Tools.Word.Bookmark> host no documento.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Visão geral de itens de host e controles de host](../vsto/host-items-and-host-controls-overview.md)
 - [Automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)

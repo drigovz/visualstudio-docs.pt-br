@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: daf41a06-8a55-48f6-95f5-49a8416bd308
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 47f4a2e9215cb2e98fdfefecdf978cb4a442ad84
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: b762fc95d510d5b99a2d4f8f939ef1801b5e70cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975050"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891560"
 ---
 # <a name="page-file-tab-process-properties-dialog-box"></a>Guia Arquivo de Paginação, Caixa de diálogo Propriedades do Processo
 Use a guia **arquivo de página** para examinar o arquivo de paginação de um processo. Para exibir a [caixa de diálogo Propriedades do processo](../debugger/process-properties-dialog-box.md), mova o foco para uma janela de [exibição de processos](../debugger/processes-view.md) . Selecione qualquer nó de processo na árvore e escolha **Propriedades** no menu **Exibir** .

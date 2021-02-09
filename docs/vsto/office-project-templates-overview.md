@@ -29,15 +29,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], project templates
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5e3203eb4bbd7339f5e59ecffea8436b02180b8b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: af01bf165c823ce34957e4a9eba38ef90c5344a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528076"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892028"
 ---
 # <a name="office-project-templates-overview"></a>Visão geral dos modelos do Office Project
   O Microsoft Office Developer Tools no Visual Studio inclui modelos de projeto para criação dos seguintes tipos de solução do Office:
@@ -168,7 +168,7 @@ ms.locfileid: "97528076"
 ## <a name="excel-add-ins-xla-files"></a>Suplementos do Excel (arquivos. xla)
  Não há nenhum projeto do Office para criar um suplemento do VSTO do Excel (arquivo *. xla* ). É possível salvar uma pasta de trabalho como um arquivo .xla, mas não é uma operação com suporte e não é recomendada. Se você salvar uma pasta de trabalho que tem extensões de código gerenciado como um arquivo **Microsoft Office Excel Add-In ( \* . xla)** , poderá selecioná-la na caixa de diálogo **suplementos** para aplicar a outra pasta de trabalho. Em alguns casos, seu código será executado na pasta de trabalho de destino depois que o suplemento do VSTO for aplicado, mas não há suporte para o uso da solução do Office.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)
 - [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)
 - [Como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)

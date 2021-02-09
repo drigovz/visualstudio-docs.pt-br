@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9bb964e90c44c4e0b41e0f09df8931665426dc70
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 03da1c8052140bbe23ce4d99c12d72baef18898f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527712"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891950"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Visão geral do desenvolvimento de soluções do Office (VSTO)
   Usando Microsoft Office como o front-end para soluções, você pode aproveitar as interfaces de usuário e ferramentas conhecidas do Microsoft Office, como os recursos de processamento de texto do Word, os recursos de análise de dados do Excel e os recursos de gerenciamento de email do Outlook. Você pode desenvolver soluções no Visual Studio para personalizar aplicativos do Office e adicionar os recursos específicos necessários para seus processos de negócios. Por exemplo, você pode transformar o Word em um gerador de contratos que reúne contratos fora de partes pré-existentes que podem se tornar editáveis ou não editáveis. Com o Excel, você pode criar uma planilha de orçamento automatizada personalizada para projetos diferentes. Os usuários também podem colocar as soluções do Office offline, o que torna as soluções complexas mais práticas do que seriam se você utilizasse uma arquitetura baseada na Web.
@@ -87,7 +87,7 @@ ms.locfileid: "97527712"
 ### <a name="security"></a>Segurança
  A segurança para soluções do VSTO Office é imposta por uma série de verificações que o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] faz quando instala e carrega a solução. Essas verificações incluem verificar se o local do manifesto de implantação é confiável ou se o certificado usado para assinar o manifesto de implantação é confiável. Para obter mais informações, consulte [proteger soluções do Office](../vsto/securing-office-solutions.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Introdução &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Arquitetura de personalizações em nível de documento](../vsto/architecture-of-document-level-customizations.md)
 - [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)

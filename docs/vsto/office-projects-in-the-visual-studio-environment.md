@@ -40,15 +40,15 @@ helpviewer_keywords:
 - VST.Designer.ExcelVST.Designer.Word
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0e183d5aca3fa856f45f322c2b79a76524b28005
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 88abd7294a96b4fe4989630753253b16f036ab7c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525152"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892002"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Projetos do Office no ambiente do Visual Studio
   Os projetos do Microsoft Office têm uma experiência de desenvolvimento semelhante a outros tipos de projeto no Visual Studio, como projetos do Windows Forms. Quando você cria ou abre um projeto do Office, os itens do projeto aparecem no **Gerenciador de soluções**. Para projetos no nível de documento, o documento (isto é, o documento do Word ou a pasta de trabalho do Excel) é aberto no Visual Studio e se comporta como um designer visual.
@@ -120,7 +120,7 @@ ms.locfileid: "97525152"
 ## <a name="data-sources-window"></a>janela Fontes de Dados
  Você pode usar a janela **fontes de dados** em projetos do Office de nível de documento para arrastar uma fonte de dados para o documento e criar um controle associado à fonte de dados. Para obter mais informações, confira [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)
 - [Visão geral dos modelos do Office Project](../vsto/office-project-templates-overview.md)

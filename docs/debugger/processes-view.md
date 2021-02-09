@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a52da28d01eac4f04081497888fbbfccaf4495e2
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: d48be382e222c9ca494237ae6b72bae54bb90d62
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975128"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891443"
 ---
 # <a name="processes-view"></a>Exibição de processos
 A exibição processos exibe uma árvore de todos os processos ativos em seu sistema. A ID do processo e o nome do módulo são mostrados. Use a exibição processos se desejar examinar um processo de sistema específico, que geralmente corresponde a um programa em execução. Os processos são identificados por nomes de módulo ou são designados como "processos do sistema".

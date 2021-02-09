@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 518e8153-eec2-4db9-a6f7-416ec11d8e09
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 889c6bac2f00041af6578d31bc0c6e036d82afe1
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: a8cd8c0b74dc06a72e7c20bd3af11fd91df07eb3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975089"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891508"
 ---
 # <a name="process-search-dialog-box"></a>Caixa de diálogo Pesquisa de Processo
 Use essa caixa de diálogo para localizar e selecionar o nó de um processo específico no [modo de exibição de processos](../debugger/processes-view.md). Para exibir essa caixa de diálogo, mova o foco para uma janela de exibição de **processos** . Em seguida, escolha **Localizar processo** no menu **Pesquisar** .

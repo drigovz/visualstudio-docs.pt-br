@@ -19,15 +19,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, templates
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e6cbcc4d0bc99ce7ab495e0a24591b145c58f377
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 8482a6185f670ce1bb340ff40fe277b751a39c06
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970370"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892327"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Modelos de projeto e item de projeto do SharePoint
   As seções a seguir descrevem o projeto do SharePoint e os modelos de item de projeto disponíveis e como eles são usados.
@@ -104,7 +104,7 @@ ms.locfileid: "95970370"
 
   O item de projeto receptor de eventos cria uma pasta **receptor de eventos** com um único arquivo de classe que contém manipuladores de eventos para todos os eventos que você especificou quando criou o projeto no **Assistente para personalização do SharePoint**. A classe receptor de evento pode manipular eventos que ocorrem no site do SharePoint quando itens como arquivos, campos, itens, listas, anexos, Web Parts e fluxos de trabalho são adicionados, atualizados, excluídos ou removidos. Para obter mais informações, consulte [como: criar um receptor de eventos e um](../sharepoint/how-to-create-an-event-receiver.md) bloco de [construção: manipulação de eventos](/previous-versions/office/developer/sharepoint-2010/ee535057(v=office.14)).
 
-### <a name="list"></a>Lista
+### <a name="list"></a>List
  Uma lista é uma instância de uma definição de lista do SharePoint de base reutilizável, como um calendário ou uma lista de tarefas. Depois de adicionar uma lista à sua solução, o designer de lista permite que você adicione colunas de site à lista e crie colunas de lista personalizadas. Isso inclui colunas de site de tipos de conteúdo. Você pode especificar a *exibição* da lista, que determina as colunas que serão exibidas na lista. Para obter mais informações, consulte [Walkthrough: criar uma coluna de site, tipo de conteúdo e lista para SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) e [bloco de construção: listas e bibliotecas de documentos](/previous-versions/office/developer/sharepoint-2010/ee534985(v=office.14)).
 
 ### <a name="module"></a>Módulo
@@ -142,6 +142,6 @@ ms.locfileid: "95970370"
 ### <a name="web-part"></a>Web Part
  Uma *Web Part* é um controle do lado do servidor executado dentro de um tipo especial de página chamado página de Web Parts. Eles são os blocos de construção de páginas que aparecem em um site do SharePoint. O item de Web Part fornece arquivos que permitem que você projete uma Web Part para um site do SharePoint. Para obter mais informações, consulte [como: criar uma Web Part do SharePoint e um](../sharepoint/how-to-create-a-sharepoint-web-part.md) [bloco de construção: Web Parts](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Produtos e Tecnologias SharePoint](/previous-versions/office/developer/sharepoint-2010/dd776256(v=office.12))

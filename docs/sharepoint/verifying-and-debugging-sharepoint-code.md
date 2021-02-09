@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, unit testing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ce891e40552c0f8927bfd4ce006b750b6e5f8a54
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d406afbc0a8506262f1bdc17310802b7f41a931a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892132"
 ---
 # <a name="verify-and-debug-sharepoint-code"></a>Verificar e depurar o código do SharePoint
 Usando o IntelliTrace e o teste de unidade, você pode depurar com mais facilidade suas soluções do SharePoint e garantir que cada método delas funcione corretamente. Você pode usar esses recursos para projetos do SharePoint no Visual Studio seguindo os mesmos procedimentos que para outros tipos de projetos.
@@ -42,7 +42,7 @@ Os projetos do SharePoint dão suporte a falsificações da Microsoft, que é um
 
 ## <a name="related-articles"></a>Artigos relacionados
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[IntelliTrace](../debugger/intellitrace.md)|Descreve como depurar soluções do Visual Studio com mais facilidade usando o IntelliTrace.|
 |[Walkthrough: Depurar um aplicativo do SharePoint usando o IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)|Demonstra como encontrar erros de codificação em um projeto do SharePoint usando o IntelliTrace.|

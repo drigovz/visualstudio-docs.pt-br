@@ -15,15 +15,15 @@ helpviewer_keywords:
 - workbooks, filling ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dc80b4b589eb46aefa9ef6d75384ed17bb1b7c8c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 64af8ddfa0d3d086b661483e76cb9b2bd82ae5c9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847202"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892067"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Como: preencher intervalos de forma programática automaticamente com dados em alteração incremental
   O <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> método do <xref:Microsoft.Office.Interop.Excel.Range> objeto permite preencher um intervalo em uma planilha com valores automaticamente. Geralmente, o <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> método é usado para armazenar valores incrementalmente crescentes ou decrescentes em um intervalo. Você pode especificar o comportamento fornecendo uma constante opcional da <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> enumeração.

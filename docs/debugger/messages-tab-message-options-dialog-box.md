@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: fb9fa211-e82c-40a5-9e4b-ba8de07313c0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: de50e6fe997ce10266cbb51f2fd91c318ab2bd1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c0a97a5b42e27c6db770e0c74a64e214561cea9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62905522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891599"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>Guia Mensagens, Caixa de diálogo Opções da Mensagem
 Use a guia **mensagens** para selecionar os tipos de mensagem a serem listados no [modo de exibição de mensagens](../debugger/messages-view.md)e para especificar os critérios de pesquisa de mensagens. Para exibir a [caixa de diálogo opções de mensagem](../debugger/message-options-dialog-box.md), escolha **registrar mensagens** no menu do **Spy** .
 
- Normalmente, primeiro você seleciona **grupos de mensagens**e, em seguida, ajusta a seleção selecionando **as mensagens individuais a serem exibidas**. O botão **tudo** seleciona todos os tipos de mensagem e o botão **nenhum** limpa todos os tipos.
+ Normalmente, primeiro você seleciona **grupos de mensagens** e, em seguida, ajusta a seleção selecionando **as mensagens individuais a serem exibidas**. O botão **tudo** seleciona todos os tipos de mensagem e o botão **nenhum** limpa todos os tipos.
 
  As configurações a seguir estão disponíveis na guia **mensagens** :
 

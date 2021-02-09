@@ -16,15 +16,15 @@ dev_langs:
 ms.assetid: d67387c2-39e9-4790-93bc-e41bff12fb9c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d7f74b0e490cf8b2baaa8818fa8f8eebb7842a30
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 3c92bada0777c01cd8999b30597999e55f113a2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975011"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891547"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Caixa de diálogo Janela de Saída, Depuração, Opções
 Você pode especificar quais tipos de informações de depuração aparecem na janela de **Saída**. Para exibir essas opções, abra o menu **Ferramentas**, clique em **Opções**, expanda o nó **Depuração** e clique em **Janela de Saída**.
@@ -37,6 +37,6 @@ Para obter mais informações, consulte [como exibir informações de rastreamen
 
 Se você precisar restaurar as configurações padrão, você pode fazer isso usando **ferramentas**  >  **importar e exportar configurações**  >  **redefinir todas as configurações**. Se você quiser redefinir um subconjunto de configurações, salve suas configurações no assistente de **importação e exportação de configurações** antes de fazer as alterações que deseja testar e, em seguida, importe as configurações salvas posteriormente.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depuração, caixa de diálogo opções](../debugger/debugging-options-dialog-box.md)
 - [Janela de Saída](../ide/reference/output-window.md)

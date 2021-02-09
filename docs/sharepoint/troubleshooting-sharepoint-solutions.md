@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a9ef5e7d47f72b82e7a8fab52cc2f1f8716c83bf
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c6b0e031e96d2543ae0bb109f243824125f431a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970266"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892288"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Solucionar problemas de soluções do SharePoint
   Os seguintes problemas ou alertas podem ocorrer quando você depura soluções do SharePoint usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador. Para obter mais informações, consulte [Depurando soluções de fluxo de trabalho do SharePoint 2007](/previous-versions/bb386166(v=vs.100)).
@@ -101,7 +101,7 @@ ms.locfileid: "95970266"
  Depois de criar e implantar uma definição de site usando uma versão diferente do inglês do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (ou seja, uma versão com uma localidade [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] diferente de 1033), a guia **personalizações do SharePoint** não aparecerá na caixa de **seleção de modelo** e o novo modelo de site não aparecerá na página **novo site do SharePoint** .
 
 ### <a name="error-message"></a>Mensagem de erro
- nenhuma.
+ Nenhum.
 
 ### <a name="resolution"></a>Resolução
  Esse problema ocorre devido a um valor incorreto na propriedade **path** do arquivo de configuração de definição de site do WebTemp, como *webtemp_SiteDefinitionProject1.xml*. Na propriedade **path** do arquivo WebTemp, localizado no **local de implantação**, altere 1033 para a localidade apropriada [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] . Por exemplo, para usar uma localidade japonesa, altere o valor para 1041. Para obter mais informações, consulte o artigo sobre [IDs de localidade atribuídas pela Microsoft](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c).
@@ -141,7 +141,7 @@ ms.locfileid: "95970266"
  Quando você cria um projeto receptor de eventos e seleciona determinados eventos da Web, como "um site está sendo excluído", o evento nunca ocorre.
 
 ### <a name="error-message"></a>Mensagem de erro
- nenhuma.
+ Nenhum.
 
 ### <a name="resolution"></a>Resolução
  Esse problema ocorre porque o escopo do recurso deve ser "site" para lidar com eventos no nível do site, mas o escopo do recurso padrão para projetos receptores de eventos é "Web". Os eventos da Web afetados são:
@@ -265,7 +265,7 @@ ms.locfileid: "95970266"
  Se você exportar uma solução do SharePoint, importar a solução para [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] o e, em seguida, implantar a solução de volta no mesmo site do qual ela foi exportada, a solução do SharePoint original será substituída. Esse problema não ocorrerá se você implantar a solução em um servidor que não tenha a solução original ativada.
 
 ### <a name="error-message"></a>Mensagem de erro
- nenhuma.
+ Nenhum.
 
 ### <a name="resolution"></a>Resolução
  Para evitar a substituição de uma solução no site do qual ela foi exportada, altere os GUIDs da SolutionId e as IDs de recurso de todos os recursos importados no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeto.
@@ -279,7 +279,7 @@ ms.locfileid: "95970266"
 ### <a name="resolution"></a>Resolução
  Para resolver esse problema, verifique se o valor da propriedade URL do site do projeto do SharePoint no Visual Studio corresponde à URL atribuída à zona padrão para os mapeamentos de acesso alternativos do aplicativo Web. Você não pode resolver o erro usando outra zona, como intranet, para a URL. A URL do site para o projeto e a URL na zona padrão devem corresponder. Para acessar mapeamentos alternativos de acesso, abra o utilitário administração central do SharePoint 2010, escolha o link **Gerenciamento de aplicativos** e, em **aplicativos Web**, escolha o link **configurar mapeamentos alternativos de acesso** . Para obter mais informações, consulte [criar zonas para aplicativos Web](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263087(v=office.12)).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Solução de problemas de empacotamento e implantação do SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 - [Compilar e depurar soluções do SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

@@ -22,15 +22,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment conflict resolution
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 07ce649a22573041768bfc316f65bfcdf7577b98
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f3ef56ba868700699eaaeb8ec88291fd6f8d8d32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95969947"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892301"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Solução de problemas de empacotamento e implantação do SharePoint
   Este tópico aborda vários problemas que você pode encontrar ao empacotar e implantar soluções do SharePoint.
@@ -70,7 +70,7 @@ ms.locfileid: "95969947"
  A página do SharePoint leva muito tempo para aparecer ao implantar uma Web Part Visual na pasta bin em [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)] , [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] ou [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] . Se você alterar todos os arquivos em um diretório de nível superior [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] , como o diretório bin, todo o aplicativo Web será recompilado. Isso pode causar um atraso de até 25 segundos para que a página do SharePoint seja renderizada.
 
 ### <a name="error-message"></a>Mensagem de erro
- nenhuma.
+ Nenhum.
 
 ### <a name="resolution"></a>Resolução
  Para contornar esse problema, execute as seguintes etapas:
@@ -112,6 +112,6 @@ ms.locfileid: "95969947"
 
  Para remover esse aviso, compile o projeto e, em seguida, feche e reabra o designer ou desabilite a opção de cancelamento automático para o projeto. Para fazer isso, desmarque a caixa de seleção **Cancelar automaticamente após a depuração** na guia **SharePoint** da caixa de diálogo Propriedades do projeto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
