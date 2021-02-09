@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 392de54b-9af0-4567-953b-1b41acd1e05c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bcf3578dc16c5c771233e1b5a9f348e375f21aad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a259f813d2bfbcb8ec92b039d44af74e431752ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719212"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880210"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 Esse método cria um enumerador para namespaces associados ao endereço de depuração.
@@ -28,7 +28,7 @@ Esse método cria um enumerador para namespaces associados ao endereço de depur
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetNamespacesUsedAtAddress( 
+HRESULT GetNamespacesUsedAtAddress( 
    IDebugAddress*     pAddress,
    IEnumDebugFields** ppEnum
 );
@@ -48,7 +48,7 @@ no O endereço de depuração.
 `ppEnum`\
 fora Retorna um enumerador [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) para os namespaces.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

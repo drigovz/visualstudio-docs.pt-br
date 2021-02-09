@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], removing data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a5e41fbb4f70bd3f5ae2db72b630ae6e524d3def
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 33ca8abf7a35bafd04c38fbb4a681245f2701f8e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915434"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879716"
 ---
 # <a name="how-to-add-a-deleter-method"></a>Como adicionar um método excluidor
   Você pode habilitar um usuário final para excluir um registro de dados de uma lista externa em um site do SharePoint adicionando um método excluidor ao modelo. Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).

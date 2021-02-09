@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 4314a404-2120-425b-be42-180cd4bac840
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d0ff17c128af78c1772ad85597153332a0848062
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 412b40fdb38e4931bcefb05bde8d695955d6c05a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722939"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879729"
 ---
 # <a name="modules-view"></a>Exibição de módulos
 A exibição de Módulos lista os módulos dos dados de criação de perfil. Cada módulo é o nó raiz de uma árvore hierárquica. As funções que tiveram o perfil criado do módulo são listadas abaixo do nó do módulo. Se os dados de criação de perfil foram coletados usando o método de amostragem, as informações de linha são listadas sob o nó de função e os dados de ponteiro de instrução são listados sob o nó de linha.

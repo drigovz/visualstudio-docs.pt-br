@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b80672b00bec95c740824ef7e29f1faba0e63cf4
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 2d626f2390138c7e4e6e2471d285bcda940d7f30
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974444"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882278"
 ---
 # <a name="capability-flags"></a>Sinalizadores de capacidade
 Os sinalizadores de SCC_CAP_ *xxx* são sinalizadores de bits usados para indicar os recursos de um plug-in de controle do código-fonte. Os sinalizadores de SCC_EXCAP_ *xxx* são sinalizadores incrementais que indicam recursos estendidos e resolvem para valores inteiros.
@@ -79,5 +79,5 @@ Os sinalizadores de SCC_CAP_ *xxx* são sinalizadores de bits usados para indica
 |`SCC_EXCAP_DELETE_CHECKEDOUT`|10|Pode excluir arquivos com check-out.|
 |`SCC_EXCAP_RENAME_CHECKEDOUT`|11|Pode renomear arquivos com check-out.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md)

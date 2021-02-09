@@ -17,15 +17,15 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], Outlook solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ded4652704a47252f0839aed151f0557ae5e6766
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 86fa849641894576f141ce9bc76eccaf72424d47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527541"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882434"
 ---
 # <a name="outlook-solutions"></a>Soluções do Outlook
   O Visual Studio fornece modelos de projeto que você pode usar para criar suplementos do VSTO para Microsoft Office Outlook. Você pode usar os suplementos do VSTO para automatizar o Outlook, estender os recursos do Outlook ou personalizar a interface do usuário do Outlook. Para obter mais informações sobre os suplementos do VSTO, consulte [arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md).
@@ -68,7 +68,7 @@ ms.locfileid: "97527541"
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Visão geral do modelo de objeto do Outlook](../vsto/outlook-object-model-overview.md)|Fornece uma visão geral dos objetos que são fornecidos pelo modelo de objeto do Outlook.|
 |[Criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)|Explica as ferramentas fornecidas pelo Visual Studio que facilitam o design, o desenvolvimento e a depuração de regiões de formulário.|

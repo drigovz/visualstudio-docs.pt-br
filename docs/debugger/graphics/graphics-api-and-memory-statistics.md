@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 27d2f303-e3ed-4219-9009-345a0d849506
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e0ad2bc48e1e15e1b061cdb600ce65773523e70
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 08c9f518f6d56f2ec211ef494da3890a56bf1369
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727884"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882291"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>Estatísticas de memória e API de gráficos
 <!-- VERSIONLESS -->
@@ -42,7 +42,7 @@ A coluna **alocação de GPU** exibe a quantidade de memória usada pelo evento 
 
 Assim como acontece com a ferramenta de estatísticas de API, você pode clicar com o botão direito do mouse na janela para copiar todos os dados como CSV, que podem ser colados em algo como o Excel para análise posterior.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Diagnóstico de gráficos (depuração de gráficos DirectX)](visual-studio-graphics-diagnostics.md)
 - [Histórico de recursos](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 13c20cd6-f09d-400a-8b7b-ecc266a32cef
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bcfff93ac9cb4903c534c0d4d57387a5143b6b40
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 38738dad275b38fe0c5a6a70104e80f6a794bab1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040869"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882180"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -35,7 +35,7 @@ devenv /Command CommandName
 
 *CommandName*
 
-Obrigatórios. O nome completo de um comando do Visual Studio ou seu alias, entre aspas duplas. Para obter mais informações sobre comandos e a sintaxe de aliases, consulte [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md).
+Obrigatório. O nome completo de um comando do Visual Studio ou seu alias, entre aspas duplas. Para obter mais informações sobre comandos e a sintaxe de aliases, consulte [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md).
 
 ## <a name="remarks"></a>Comentários
 

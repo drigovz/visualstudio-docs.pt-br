@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], scrolling database records
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6b65308cfc0ba4dee33dd6b20d3fd4028e9ea22e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a420f89fda4afd710f652223a9be594caba32f0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527475"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882395"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Walkthrough: associar dados de um serviço em um projeto de suplemento do VSTO
   Você pode associar dados a controles de host em projetos de suplemento do VSTO. Este tutorial demonstra como adicionar controles a um Microsoft Office documento do Word, associar os controles aos dados recuperados do serviço de conteúdo do MSDN e responder a eventos em tempo de execução.
@@ -116,5 +116,5 @@ ms.locfileid: "97527475"
 
      As informações são baixadas do serviço de conteúdo do MTPS e exibidas dentro do controle de conteúdo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - calling code from VBA
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0cbf03ef234ea6cf4eab790d96082d23b7ed5199
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 61e729113ecfa988f424e2182662d506377d33e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527288"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882382"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Walkthrough: chamar o código em um suplemento do VSTO do VBA
   Este tutorial demonstra como expor um objeto em um suplemento do VSTO para outras soluções de Microsoft Office, incluindo Visual Basic for Applications (VBA) e suplementos do VSTO COM.
@@ -152,7 +152,7 @@ ms.locfileid: "97527288"
 
 - Personalize a faixa de bits em um suplemento do VSTO. Para obter mais informações, consulte [visão geral da faixa](../vsto/ribbon-overview.md) de e [como: introdução à personalização da faixa de faixas](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)
 - [Chamar código em suplementos do VSTO de outras soluções do Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
 - [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)

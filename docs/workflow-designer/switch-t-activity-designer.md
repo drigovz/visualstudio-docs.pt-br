@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 18a6c96e-49a9-4356-ab61-fbd7e3ab44bb
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6bdf05878c08b1c175b78ff2205b74c4ea5669b
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 35dcc390dcf58e02a2c7c1fa2dba62840d433785
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433928"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882304"
 ---
 # <a name="switcht-activity-designer"></a>Designer de atividade Switch\<T>
 
@@ -41,7 +41,7 @@ A tabela a seguir mostra as propriedades mais úteis de <xref:System.Activities.
 |Nome da propriedade|Obrigatório|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Especifica o nome amigável do designer de atividade de <xref:System.Activities.Statements.Switch%601> . O valor padrão é switch<Int32 \> . O valor pode ser editado na janela **Propriedades** ou diretamente no cabeçalho do designer.<br /><br /> Embora não seja necessário <xref:System.Activities.Activity.DisplayName%2A> restrita, é uma prática recomendada usar um.|
-|<xref:System.Activities.Statements.Switch%601.Expression%2A>|Verdadeiro|Especifica a expressão usada para comparar as chaves na coleção dos casos para determinar que casos a executar.|
+|<xref:System.Activities.Statements.Switch%601.Expression%2A>|True|Especifica a expressão usada para comparar as chaves na coleção dos casos para determinar que casos a executar.|
 |<xref:System.Activities.Statements.Switch%601.Default%2A>||Especifica a atividade executada se nenhuma correspondência for encontrada. Clique no botão **Adicionar uma atividade** no designer para abrir a caixa **padrão** em que a atividade pode ser descartada.|
 |<xref:System.Activities.Statements.Switch%601.Cases%2A>||Especifica os casos a ser avaliado. Para adicionar um caso, clique no botão **Adicionar novo caso** na parte inferior do **switch \<T>** designer. O botão será alterado para uma caixa de texto (a box de combinação se o tipo genérico selecionado ao adicionar a opção \<T> for String ou enum). Depois de adicionar uma chave na caixa **valor do caso** , a área do caso é expandida e uma atividade pode ser descartada onde o texto de dica "soltar atividade aqui" para definir a lógica de execução para o caso.|
 

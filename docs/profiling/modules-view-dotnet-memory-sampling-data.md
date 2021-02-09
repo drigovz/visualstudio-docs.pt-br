@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 9c05b51a-8382-44cf-a8f7-3fabdd2e8f1b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e05a3e1d915853689c436b192de9e266e86b13d
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b9c00fd7647d6ba3da62d913e0371dc8cf300ca7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723290"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879820"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Exibição Módulos – dados de amostragem de memória do .NET
 A exibição Módulos de dados de alocação de memória do .NET coletados usando o método de amostragem agrupa os dados de memória pelos módulos que foram executados na execução de criação de perfil. Cada módulo é a raiz de uma árvore hierárquica. As funções do módulo são listadas abaixo do nó do módulo.
