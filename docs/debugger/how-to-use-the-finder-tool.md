@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ca277962f81b3cd1c35ebcf8a940e8168a6803
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: d48e9b580d25b521721fafa7dc475bdbe3532656
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150594"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912226"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Como usar a ferramenta Localizador
 Você pode usar a ferramenta Finder na caixa de diálogo **localizar janela** para exibir as propriedades ou as mensagens da janela. A ferramenta de localizador também pode localizar janelas filhas desabilitadas e discernir qual janela destacar se a sobreposição de janelas filho desabilitada.
@@ -51,7 +51,7 @@ Você pode usar a ferramenta Finder na caixa de diálogo **localizar janela** pa
 
     Se você selecionou **Propriedades**, a [caixa de diálogo Propriedades da janela](../debugger/window-properties-dialog-box.md) será aberta. Se você selecionou **mensagens**, uma janela [exibição de mensagens](../debugger/messages-view.md) será aberta.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Exibições do Spy++](../debugger/spy-increment-views.md)
 - [Usando Spy++](../debugger/using-spy-increment.md)
 - [Referência de Spy++](../debugger/spy-increment-reference.md)

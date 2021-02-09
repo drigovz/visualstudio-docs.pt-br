@@ -13,20 +13,20 @@ helpviewer_keywords:
 - entryPoint element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 17f57b90b7c6aa4c254b2b55ee838a3086193ef7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a75729d4be4aa96c3c118fed126af3ff84c18bcb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543592"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910462"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento EntryPoint (desenvolvimento do Office no Visual Studio)
   Cada `entryPoint` elemento do `vstav3` namespace identifica um assembly de personalização que deve ser executado quando esse [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] aplicativo é instalado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <entryPoint class>
@@ -48,7 +48,7 @@ ms.locfileid: "85543592"
  `entryPoint` tem o seguinte elemento.
 
 ### <a name="assemblyidentity"></a>assemblyIdentity
- Obrigatórios. O `assemblyIdentity` elemento no `vstav3` namespace refere-se a um `assemblyIdentity` elemento existente no [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] manifesto do aplicativo.
+ Obrigatório. O `assemblyIdentity` elemento no `vstav3` namespace refere-se a um `assemblyIdentity` elemento existente no [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] manifesto do aplicativo.
 
  A função `assemblyIdentity` e seus atributos são definidos no [ elemento&#60;assemblyIdentity&#62; &#40;aplicativo ClickOnce&#41;](../deployment/assemblyidentity-element-clickonce-application.md).
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f48e9531-efac-4d11-8166-f63a5ece1ac5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c86d5d1fd1e25b498405197b68efd9553ed64f16
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 92b5c1d323634bbb242cdccb54890908d5668803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383203"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911381"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;&gt;elemento AssemblyIdentity (aplicativo ClickOnce)
 Identifica o aplicativo implantado em uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação.
@@ -47,10 +47,10 @@ Identifica o aplicativo implantado em uma [!INCLUDE[ndptecclick](../deployment/i
 |Atributo|Descrição|
 |---------------|-----------------|
 |`Name`|Obrigatórios. Identifica o nome do aplicativo.<br /><br /> Se `Name` o contiver caracteres especiais, como aspas simples ou duplas, o aplicativo poderá falhar ao ser ativado.|
-|`Version`|Obrigatórios. Especifica o número de versão do aplicativo no seguinte formato: `major.minor.build.revision`|
+|`Version`|Obrigatório. Especifica o número de versão do aplicativo no seguinte formato: `major.minor.build.revision`|
 |`publicKeyToken`|Opcional. Especifica uma cadeia de caracteres hexadecimal de 16 caracteres que representa os últimos 8 bytes do `SHA-1` valor de hash da chave pública sob a qual o aplicativo ou assembly é assinado. A chave pública usada para assinar o catálogo deve ter 2048 bits ou mais.<br /><br /> Embora a assinatura de um assembly seja recomendada, mas opcional, esse atributo é necessário. Se um assembly não estiver assinado, você deverá copiar um valor de um assembly autoassinado ou usar um valor "fictício" de todos os zeros.|
-|`processorArchitecture`|Obrigatórios. Especifica o processador. Os valores válidos são `msil` para todos os processadores, `x86` para o windows de 32 bits, `IA64` para o Windows de 64 bits e `Itanium` para processadores Intel de 64 bits Itanium.|
-|`language`|Obrigatórios. Identifica os códigos de linguagem de duas partes (por exemplo, `en-US` ) do assembly. Este elemento está no `asmv2` namespace. Se não for especificado, o padrão será `neutral` .|
+|`processorArchitecture`|Obrigatório. Especifica o processador. Os valores válidos são `msil` para todos os processadores, `x86` para o windows de 32 bits, `IA64` para o Windows de 64 bits e `Itanium` para processadores Intel de 64 bits Itanium.|
+|`language`|Obrigatório. Identifica os códigos de linguagem de duas partes (por exemplo, `en-US` ) do assembly. Este elemento está no `asmv2` namespace. Se não for especificado, o padrão será `neutral` .|
 
 ## <a name="examples"></a>Exemplos
 

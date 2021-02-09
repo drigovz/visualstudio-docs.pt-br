@@ -17,15 +17,15 @@ helpviewer_keywords:
 - host items [Office development in Visual Studio], Document
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 35455ac7751a34632362cfa3f2c9b8f2f827fc6d
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: b7eb29a9cae9e43bd0372088298d2bd6b122c7a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846903"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910576"
 ---
 # <a name="document-host-item"></a>Item de host do documento
   O <xref:Microsoft.Office.Tools.Word.Document> item de host é um tipo que estende o <xref:Microsoft.Office.Interop.Word.Document> tipo do assembly de interoperabilidade primário para o Word. O <xref:Microsoft.Office.Tools.Word.Document> item de host fornece todas as mesmas propriedades, métodos e eventos que um <xref:Microsoft.Office.Interop.Word.Document> objeto, mas também expõe eventos adicionais e atua como um contêiner para controles de host e controles de Windows Forms.
@@ -49,7 +49,7 @@ ms.locfileid: "96846903"
 
  Para gerar um <xref:Microsoft.Office.Tools.Word.Document> item de host, use o `GetVstoObject` método. Para obter mais informações, consulte [estender documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Visão geral de itens de host e controles de host](../vsto/host-items-and-host-controls-overview.md)
 - [Automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)

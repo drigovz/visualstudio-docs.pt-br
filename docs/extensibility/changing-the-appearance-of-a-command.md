@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f79ac7873a1746e0b14db51ba864e94f6bbfa1e
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 1514fb9409805df91a16678a5cce67ee1f66ab9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974413"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911230"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Alterar a aparência de um comando
 Você pode fornecer comentários para o usuário alterando a aparência de um comando. Por exemplo, você pode desejar que um comando pareça diferente quando não estiver disponível. Você pode tornar os comandos disponíveis ou indisponíveis, ocultá-los ou exibi-los, ou marque ou desmarque-os no menu.
@@ -86,7 +86,7 @@ Para alterar a aparência de um comando, execute uma destas ações:
 
 8. No menu **ferramentas** , agora você deve ver o **novo texto**. Clique em **novo texto**. O comando agora deve estar esmaecido.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Como VSPackages adicionar elementos da interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Estendendo menus e comandos](../extensibility/extending-menus-and-commands.md)

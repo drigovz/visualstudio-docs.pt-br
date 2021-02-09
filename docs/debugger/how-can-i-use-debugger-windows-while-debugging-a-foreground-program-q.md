@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 9e67a308-1c81-42ab-966b-7fc3c1d2bf7a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f39f7dfbd463c48675f4b8c98612dfab3f33de3c
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 420a4073e4c00f66775bf55565c2ee8645d90f49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398734"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911380"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Como posso usar janelas do depurador durante a depuração de um programa em primeiro plano?
 ## <a name="problem-description"></a>Descrição do problema
@@ -37,6 +37,6 @@ ms.locfileid: "97398734"
 ## <a name="solution"></a>Solução
  Se você tiver um segundo computador, poderá usar a depuração remota. Com uma configuração de dois computadores, você poderá ver a pintura da tela no computador remoto quando operar o depurador no host. Para obter mais informações sobre a depuração remota, consulte [depuração remota](../debugger/remote-debugging.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md)
 - [Depurando código nativo](../debugger/debugging-native-code.md)

@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 778bc105-7643-46c4-a338-f3620e31125a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 90d263052c543cbf7e0f3207d9980bd04c13e990
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: a501a3f815d48630afe1a849e91c1fdb52c979fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719182"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911455"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 A ferramenta *VSPerfCmd.exe* é usada para iniciar e interromper a coleta de dados de desempenho. Ela usa a seguinte sintaxe:
@@ -91,7 +91,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver
  A opção **VSPerfCmd /Driver** está obsoleta. Use a opção **VsPerfCmd Admin** para essa funcionalidade.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [VSInstr](../profiling/vsinstr.md)
 - [VSPerfMon](../profiling/vsperfmon.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

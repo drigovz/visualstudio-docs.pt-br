@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ad298a44eedea0681a554add74bd67ed22cad41
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 99a0de44d5e7ac240187c929a8134ab47c7de55c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876022"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910989"
 ---
 # <a name="solution-configuration"></a>Configuração da solução
 As configurações da solução armazenam propriedades no nível da solução. Eles direcionam o comportamento da chave **Start** (F5) e os comandos de **Build** . Por padrão, esses comandos criam e iniciam a configuração de depuração. Ambos os comandos são executados no contexto de uma configuração de solução. Isso significa que o usuário pode esperar F5 para iniciar e compilar qualquer que seja a solução ativa configurada por meio das configurações. O ambiente foi projetado para otimizar soluções em vez de projetos quando se trata de criar e executar.
@@ -29,7 +29,7 @@ As configurações da solução armazenam propriedades no nível da solução. E
 
  Veja como você pode implementar as configurações de solução com suporte pelo seu tipo de projeto:
 
-- Projeto
+- Project
 
    Exibe os nomes dos projetos encontrados na solução atual.
 

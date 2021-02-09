@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: b276bd25-6658-4898-bc36-04ecdf92aa2f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d7dd8b5b86b6b8c89d11326b817f2718a3ee4ad3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0677b45d3c78f1e652a1185e0e5519bb60bc35ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733709"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911202"
 ---
 # <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
 Determina que a função no endereço de depuração especificado é excluída.
@@ -41,7 +41,7 @@ int IsFunctionDeleted(
 `pAddress`\
 no O endereço de depuração representado por uma interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) . Esse endereço deve ser um METHOD_ADDRESS.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se a função for excluída, retorna `S_OK` . Se a função existir, retornará `S_FALSE` .
 
 ## <a name="example"></a>Exemplo

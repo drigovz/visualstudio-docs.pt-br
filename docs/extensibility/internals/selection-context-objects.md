@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf5e54f00ecbac03eaebe68c6fb4de410987b63f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: c8fa0303d752351efd87847941037a36f2f90f2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875564"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911097"
 ---
 # <a name="selection-context-objects"></a>Objetos de contexto da seleção
 O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ambiente de desenvolvimento integrado) usa um objeto de contexto de seleção global para determinar o que deve ser exibido no IDE. Cada janela no IDE pode ter seu próprio objeto de contexto de seleção enviado por push para o contexto de seleção global. O IDE atualiza o contexto de seleção global com valores de uma janela quando essa janela tem o foco. Para obter mais informações, consulte [comentários para o usuário](../../extensibility/internals/feedback-to-the-user.md).
@@ -41,7 +41,7 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ambiente de 
 
 3. O VSPackage atua nos eventos que recebe, executando atividades como atualizar uma hierarquia, reativar uma ferramenta ou outras tarefas semelhantes.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>
 - [Hierarquias no Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

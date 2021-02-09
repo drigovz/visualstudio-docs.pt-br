@@ -14,19 +14,19 @@ helpviewer_keywords:
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c91a016d91addc4f9e4b06acb32614bd6f6a162
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: f3b6d98e715d0c86af6948f2fcc502e94dfde56a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136765"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910822"
 ---
 # <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Caixa de diálogo opções: \> compilação e execução de projetos e soluções
 
-Nessa caixa de diálogo, você poderá especificar o número máximo de projetos de C++ ou C# que podem ser compilados ao mesmo tempo, determinados comportamentos de build padrão e algumas configurações de log de build. Para acessar essas opções, selecione **ferramentas**  >  **Opções** expandir **projetos e soluções**e, em seguida, selecione **Compilar e executar**.
+Nessa caixa de diálogo, você poderá especificar o número máximo de projetos de C++ ou C# que podem ser compilados ao mesmo tempo, determinados comportamentos de build padrão e algumas configurações de log de build. Para acessar essas opções, selecione **ferramentas**  >  **Opções** expandir **projetos e soluções** e, em seguida, selecione **Compilar e executar**.
 
 **Número máximo de builds paralelos de projetos**
 
@@ -60,9 +60,9 @@ Determina a quantidade de informações do processo de build que é exibida na j
 
 *Aplica-se somente a projetos de C++.*
 
-Determina a quantidade de informações gravada no arquivo de log de compilação, localizado em * \\ \<ProjectName> \debug \\ \<ProjectName> . log*.
+Determina a quantidade de informações gravada no arquivo de log de compilação, localizado em *\\ \<ProjectName> \debug \\ \<ProjectName> . log*.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilando e criando](../../ide/compiling-and-building-in-visual-studio.md)
 - [Caixa de diálogo Opções, Projetos e Soluções](projects-and-solutions-options-dialog-box.md)

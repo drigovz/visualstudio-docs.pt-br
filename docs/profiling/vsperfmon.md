@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: 37052afb-7a58-441f-bb17-f1587cc57068
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 919153699299c2f39ad0353ed484a9f9c9f46846
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 663bb5d1e126aa7ebc17f6720d81ac8eafd1e265
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719169"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911463"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 Use a ferramenta VSPerfMon para coletar dados de desempenho de um aplicativo. Normalmente, essa ferramenta é iniciada pelo *VSPerfCmd.exe*. VSPerfMon exibe informações adicionais sobre como anexar ou desanexar processo que não está disponível usando a ferramenta VSPerfCmd. Para exibir essas informações, inicie o VSPerfMon em uma janela separada. Para invocar VSPerfMon use a seguinte sintaxe:
@@ -48,7 +48,7 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
 |**WinCounter**`:path`|Especifica um contador de desempenho do Windows para incluir com os dados de marca. `path` é uma cadeia de caracteres do contador de desempenho do Windows no formato de caminho de contador PDH. Por exemplo:<br /><br /> \Processor(0)\\% Processor Time<br /><br /> \System\Context Switches/sec|
 |**Marcar AUTOmarca**`:n`|Especifica o intervalo de tempo (em milissegundos) entre as marcas automática quando você usa /WINCOUNTER. Arredondado para cima até a 500 ms mais próximos.<br /><br /> Use 0 para desabilitar marcas automáticas. (padrão=500 ms se não especificado)|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [VSInstr](../profiling/vsinstr.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

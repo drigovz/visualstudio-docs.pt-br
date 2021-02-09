@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3ba5453976e3f3976aba43bc296c040a86b7a5
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 507ea5a90aa17ba252a95714f488f5ea22dff4f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719767"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911499"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 Ferramenta de linha de comando VSPerfReport é usada para criar relatórios usando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ferramentas de criação de perfil de arquivos de dados de criação de perfil. O formato de relatório padrão é um arquivo .*csv*.
@@ -91,5 +91,5 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**DiffColumn:**[*columnname*]|Use estes valores de comparação de colunas específicos. O padrão é a coluna de porcentagem de amostras exclusivas.|
 |**QueryDiffTables**|Liste as tabelas e as colunas válidas para os dois arquivos de relatório fornecidos.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Exibições de relatório de desempenho](../profiling/performance-report-views.md)

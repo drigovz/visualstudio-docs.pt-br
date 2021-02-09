@@ -16,15 +16,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62477f7cd37a7d5a416e8f42fb7eb2d2a8e43828
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ef68ffccd7a048cd0591ee0bf1aa511fe0489c92
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846123"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910514"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Habilitar o acesso ao VBA para criar ou abrir um Ferramentas do Visual Studio para o projeto de sistema Microsoft Office
 
@@ -109,7 +109,7 @@ Você deve habilitar explicitamente o acesso ao sistema de projeto Visual Basic 
 
 7. Abra o menu suspenso ao lado de **Visual Basic for Applications** e, em seguida, clique em **Executar de meu computador**.
 
-8. Clique em **Continuar**.
+8. Clique em **Continue**.
 
 9. Clique em **fechar**
 
@@ -125,5 +125,5 @@ Você deve habilitar explicitamente o acesso ao sistema de projeto Visual Basic 
 
 5. Selecione **detectar e reparar erros na instalação do Office** e, em seguida, clique em **instalar**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Proteger soluções do Office](../vsto/securing-office-solutions.md)

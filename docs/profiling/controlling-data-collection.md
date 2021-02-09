@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: e713ad63-b948-46f3-8db9-59b30922ebe5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b846db263c95f20c6ea4cb6a418973830a5dd8ee
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 1ca23b5477cee37154f1334328745a5d2b066b39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720924"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910735"
 ---
 # <a name="control-data-collection"></a>Controlar a coleta de dados
 As Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permitem controlar quando os dados de criação de perfil são coletados durante uma sessão de desempenho e especificar as funções das quais o perfil será criado. Esta seção descreve como iniciar e parar a coleta de dados nas janelas **Gerenciador de Desempenho** e **Controle de Coleta de Dados** e como limitar os objetos para os quais os dados de criação de perfil são coletados.
@@ -34,5 +34,5 @@ As Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/inclu
 ## <a name="related-sections"></a>Seções relacionadas
 - [Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Performance Explorer](../profiling/performance-explorer.md)

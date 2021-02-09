@@ -11,20 +11,20 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoints> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a8e735cfabcc02a46ca83759a7ad53877bfb05f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cd5b49183bc4754e894caf898f6ca6a0c0e5440
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543566"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910461"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;elemento entryPoints &gt; (desenvolvimento do Office no Visual Studio)
   O `entryPoints` elemento do `vstav3` namespace contém todos os `entryPoint` elementos associados a uma solução do Office.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <entryPoints>
@@ -49,7 +49,7 @@ ms.locfileid: "85543566"
  `entryPoints` tem os elementos a seguir.
 
 ### <a name="entrypoint"></a>entryPoint
- Obrigatórios. A função do `entryPoint` elemento no `vstav3` namespace é definida no [ elemento&#60;EntryPoint&#62; &#40;o desenvolvimento do Office no Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).
+ Obrigatório. A função do `entryPoint` elemento no `vstav3` namespace é definida no [ elemento&#60;EntryPoint&#62; &#40;o desenvolvimento do Office no Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Exemplo de personalização no nível do documento
 

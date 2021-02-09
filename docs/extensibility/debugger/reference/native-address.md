@@ -9,24 +9,24 @@ helpviewer_keywords:
 ms.assetid: 7a0cd085-bfc8-45cc-a3d4-4459070e207a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7c62bbea846f3d486ead8add4dfab2182df1e1bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3f655bf3def231790cf77f007575301f794dc02
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714336"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911734"
 ---
 # <a name="native_address"></a>NATIVE_ADDRESS
 
 Essa estrutura representa um endereço nativo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```cpp
 typedef struct _tagNATIVE_ADDRESS {

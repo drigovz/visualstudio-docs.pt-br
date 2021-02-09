@@ -15,15 +15,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2898781a3603e7cb9582d246e4fa7edaaf6bddb9
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ddfe9d70cafc6acf7526c8819cb9ae3f46ea8022
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846188"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910553"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Proteção de documentos em soluções de nível de documento
   Você pode usar os recursos de proteção do Microsoft Office Word e Microsoft Office Excel em projetos de nível de documento. Esses recursos impedem que usuários não autorizados façam alterações em partes protegidas de um documento.
@@ -54,7 +54,7 @@ ms.locfileid: "96846188"
 ## <a name="setting-the-password"></a>Definindo a senha
  O Visual Studio habilita automaticamente a proteção, mas não fornece nenhuma senha por padrão. Se desejar que a proteção do documento tenha uma senha, você deverá adicioná-la antes de implantar sua solução. A adição de uma senha permite que os usuários autorizados removam a proteção do documento; sem uma senha, a proteção não pode ser facilmente removida. Para obter detalhes sobre como definir uma senha, consulte a ajuda no aplicativo específico do Office.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Como: proteger documentos e partes de documentos programaticamente](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)
 - [Exemplos e orientações de desenvolvimento do Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Visão geral do gerenciamento de direitos de informação e extensões de código gerenciado](../vsto/information-rights-management-and-managed-code-extensions-overview.md)

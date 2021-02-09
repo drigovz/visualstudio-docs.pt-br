@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 1352c6ab-7b92-4a16-b2d2-6520b628830e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d1ede1cbd8c2a69d45a8c653aa97d0bfb618f821
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3791feff0b02bf3555b9fa973fdba90b5f5f6d6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733672"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911131"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
 Determina se o código no endereço do depurador especificado está oculto.
@@ -41,7 +41,7 @@ int IsHiddenCode(
 `pAddress`\
 no O endereço de depuração que é representado por uma interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se o código estiver oculto, retorna `S_OK` ; caso contrário, retorna `S_FALSE` .
 
 ## <a name="example"></a>Exemplo

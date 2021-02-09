@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fa934121-3f58-44dc-9c30-d3f752e44c8b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b3d39c99049c4c4583fbda466712c5b216137316
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f49a15486551a91538bebe8fa900d165fdbb78b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718668"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911885"
 ---
 # <a name="idebugthread2setthreadname"></a>IDebugThread2::SetThreadName
 Define o nome do thread.
@@ -28,13 +28,13 @@ Define o nome do thread.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT SetThreadName ( 
+HRESULT SetThreadName ( 
    LPCOLESTR pszName
 );
 ```
 
 ```csharp
-int SetThreadName ( 
+int SetThreadName ( 
    string pszName
 );
 ```
@@ -43,12 +43,12 @@ int SetThreadName ( 
 `pszName`\
 no O nome do thread.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
  Para obter o nome do thread, chame o método [GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md) .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md)

@@ -5,17 +5,17 @@ ms.date: 02/11/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9608f273683865be767a44dd8f1d66106b97b7e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f34ee9e852c1210425407f80788aa1b9d5c33c1e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912285"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Trabalhar com a janela Interativa do Python
 
@@ -25,7 +25,7 @@ O Visual Studio fornece uma janela interativa REPL (leitura-avaliação-impress�
 
 O Visual Studio tem diversos modos REPL do Python à sua disposição:
 
-| REPL | Descrição | Edição | Depuração | Imagens |
+| REPL | Description | Edição | Depuração | Imagens |
 | --- | --- | --- | --- | --- |
 | Standard | REPL padrão, que se comunica com o Python diretamente | Edição padrão (várias linhas etc.). | Sim, por meio de `$attach` | Não |
 | Depurar | REPL padrão, que se comunica com o processo depurado do Python | Edição padrão | Somente depuração | Não |
@@ -73,7 +73,7 @@ A exceção é quando as linhas de código adicionais são necessárias para faz
 
 <a name="meta-commands"></a> A janela **Interativa** também dá suporte a vários metacomandos. Todos os metacomandos começam com `$` e é possível digitar `$help` para obter uma lista dos metacomandos e `$help <command>` para obter detalhes de uso de um comando específico.
 
-| Metacomando | Descrição |
+| Metacomando | Description |
 | --- | --- |
 | `$$` | Insere um comentário, que é útil para comentar o código ao longo da sessão. |
 | `$attach` | Anexa o depurador do Visual Studio ao processo da janela REPL para habilitar a depuração. |
@@ -88,7 +88,7 @@ Os comandos também são extensíveis pelas extensões do Visual Studio implemen
 
 ## <a name="switch-scopes"></a>Mudar escopos
 
-Por padrão, a janela**Interativa** de um projeto tem como escopo o arquivo de inicialização do projeto, como se ele fosse executado no prompt de comando. Para um arquivo independente, ele tem esse arquivo como escopo. No entanto, a qualquer momento durante a sessão de REPL, o menu suspenso na parte superior da janela **Interativa** permite alterar o escopo:
+Por padrão, a janela **Interativa** de um projeto tem como escopo o arquivo de inicialização do projeto, como se ele fosse executado no prompt de comando. Para um arquivo independente, ele tem esse arquivo como escopo. No entanto, a qualquer momento durante a sessão de REPL, o menu suspenso na parte superior da janela **Interativa** permite alterar o escopo:
 
 ![Escopos da janela interativa](media/interactive-scopes.png)
 
@@ -107,7 +107,7 @@ Além de trabalhar na janela **interativa** diretamente, você pode selecionar o
 Esse comando é útil para o desenvolvimento de código iterativo ou evolucionário, incluindo o teste do código durante o desenvolvimento. Por exemplo, depois de enviar um trecho de código para a janela **interativa** e ver sua saída, você pode pressionar a seta para cima para mostrar o código novamente, modificá-lo e testá-lo rapidamente pressionando **Ctrl** + **Enter**. (Pressionar **Enter** no final da entrada a executa, mas pressionar **Enter** no meio da entrada insere uma nova linha.) Depois de ter o código desejado, você poderá copiá-lo facilmente de volta para o arquivo de projeto.
 
 > [!Tip]
-> Por padrão, o Visual Studio remove **>>>** e **...** O REPL solicita ao colar o código da janela **interativa** no editor. Você pode alterar esse comportamento na guia **ferramentas**  >  **Opções**  >  **Editor de texto**  >  do**Python**  >  **avançado** usando a opção **colar remove solicitações repl** . Consulte [Opções – opções diversas](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
+> Por padrão, o Visual Studio remove **>>>** e **...** O REPL solicita ao colar o código da janela **interativa** no editor. Você pode alterar esse comportamento na guia **ferramentas**  >  **Opções**  >  **Editor de texto**  >  do **Python**  >  **avançado** usando a opção **colar remove solicitações repl** . Consulte [Opções – opções diversas](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 

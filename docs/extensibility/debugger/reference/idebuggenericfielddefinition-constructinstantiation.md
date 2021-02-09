@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: ef8ae261-a98b-4dc2-93b3-7c5191818ba2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 352018e50b955ed414af974bc21b62775fd55f53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60ab91340c0f9baf9a75e6e283d3c1158bdbea3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728257"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911108"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
 Constrói uma instância de campo de acordo com uma matriz de argumentos de tipo.
@@ -52,7 +52,7 @@ no Matriz que contém os argumentos de tipo. Os argumentos de tipo devem ser tip
 `ppConstructedField`\
 fora Retorna a interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa o novo campo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

@@ -6,16 +6,16 @@ ms.topic: reference
 ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3d95422d3b4232d7a628f2054c7db2aa94dd6b
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 95c82b6c00d3a3b3af2a58232ed0d65df5b5f76f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723069"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911632"
 ---
 # <a name="vsperf"></a>VSPerf
 Use a ferramenta de linha de comando **VsPerf** para:
@@ -59,6 +59,6 @@ Use a ferramenta de linha de comando **VsPerf** para:
 |**/Detach**|Pare a coleta de dados, mas permita que os processos de destino continuem a executar.|
 |**/status**|Mostre status do criador de perfil.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)
 - [Criar perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

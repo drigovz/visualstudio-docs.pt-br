@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be42b3a66f6bd874568945081972b220e7a7830
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 8933127940cd8155bbf0854fd19c559022bceecb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006556"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912168"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Introdução à implantação no Visual Studio
 
@@ -131,7 +131,7 @@ Você pode usar Azure Pipelines para permitir a implantação contínua do seu a
 
 - [Alterar a plataforma de destino e publicar um projeto de banco de dados (SSDT (SQL Server Data Tools))](/sql/ssdt/how-to-change-target-platform-and-publish-a-database-project)
 - [Implantar um Projeto do Analysis Services (SSAS)](/sql/analysis-services/multidimensional-tutorial/lesson-2-5-deploying-an-analysis-services-project)
-- [Implantar projetos e pacotes do Integration Services (SSIS)](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
+- [Implante projetos e pacotes do SSIS (Integration Services)](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
 - [Compilar e implantar em um banco de dados local](/sql/ssdt/how-to-build-and-deploy-to-a-local-database)
 
 ## <a name="deployment-for-other-app-types"></a>Implantação de outros tipos de aplicativos

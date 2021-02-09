@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54d785d665122fd5c5fa1709aa9348777e3c730b
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 145097b9e012d8c09df1424747d04148df3cae8f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875798"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911004"
 ---
 # <a name="service-essentials"></a>Conceitos básicos do serviço
 Um serviço é um contrato entre duas VSPackages. Um VSPackage fornece um conjunto específico de interfaces para que outro VSPackage consuma. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] é, em si, uma coleção de VSPackages que fornece serviços para outros VSPackages.

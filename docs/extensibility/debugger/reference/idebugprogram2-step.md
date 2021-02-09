@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c6a70a96014ebf18984c75df60cfeb75ba0d0577
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 544ca22d263a3fca47f9484ac126031e83cde4e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387233"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911901"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 Executa uma etapa.
@@ -31,7 +31,7 @@ Executa uma etapa.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT Step( 
+HRESULT Step( 
    IDebugThread2*  pThread,
    STEPKIND        sk,
    STEPUNIT        step
@@ -39,7 +39,7 @@ HRESULT Step( 
 ```
 
 ```csharp
-int Step( 
+int Step( 
    IDebugThread2  pThread,
    enum_STEPKIND  sk,
    enum_STEPUNIT  step
@@ -56,7 +56,7 @@ no Um valor da enumeração [STEPKIND](../../../extensibility/debugger/reference
 `step`\
 no Um valor da enumeração [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) que especifica a unidade de etapa (por exemplo, por instrução ou instrução).
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
@@ -65,7 +65,7 @@ no Um valor da enumeração [STEPUNIT](../../../extensibility/debugger/reference
 > [!WARNING]
 > Não enviar um evento de interrupção ou um evento imediato (síncrono) para [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) ao lidar com essa chamada; caso contrário, o depurador pode parar de responder.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

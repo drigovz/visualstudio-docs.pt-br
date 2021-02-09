@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 02b09877-1df1-4531-a0d1-a4ca17c7f857
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1abf435625cc9003dc569542e24e020e3801ec00
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 16c2c6a1d5f9f9b673e7ae12661c4681f713c2fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189323"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910820"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Caixa de diálogo Opções (Visual Studio)
 
@@ -41,6 +41,6 @@ Opções para um recurso IDE não aparecem no painel de navegação até que o r
 
 Clicar em OK na caixa de diálogo **Opções** salva todas as configurações em todas as páginas. Clicar em Cancelar em qualquer página cancela todas as solicitações de alteração, incluindo qualquer uma recém feita em outras páginas de **Opções**. Algumas alterações nas configurações de opção, como aquelas feitas na [Caixa de Diálogo Fontes e Cores, Ambiente, Opções](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md), apenas entrarão em vigor depois que você fechar e reabrir o Visual Studio.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Personalizando o editor](../how-to-change-text-case-in-the-editor.md)

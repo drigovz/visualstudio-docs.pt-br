@@ -19,18 +19,18 @@ helpviewer_keywords:
 ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ffa19de6abff0bb73c91c4a8e79d707d0941e00
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 04cbb0db729d39295ee9c608a19302a109980f10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383008"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912223"
 ---
 # <a name="create-bootstrapper-packages"></a>Criar pacotes de bootstrapper
-O programa de instalação é um instalador genérico que pode ser configurado para detectar e instalar componentes redistribuíveis como arquivos do Windows Installer ( *.msi* ) e programas executáveis. O instalador também é conhecido como bootstrapper. Ele é programado por um conjunto de manifestos XML que especificam os metadados para gerenciar a instalação do componente.  Cada componente redistribuível, ou pré-requisito, que aparece na caixa de diálogo **pré-requisitos** do ClickOnce é um pacote de bootstrapper. Um pacote de bootstrapper é um grupo de diretórios e arquivos que contém arquivos de manifesto que descrevem como o pré-requisito deve ser instalado.
+O programa de instalação é um instalador genérico que pode ser configurado para detectar e instalar componentes redistribuíveis como arquivos do Windows Installer (*.msi*) e programas executáveis. O instalador também é conhecido como bootstrapper. Ele é programado por um conjunto de manifestos XML que especificam os metadados para gerenciar a instalação do componente.  Cada componente redistribuível, ou pré-requisito, que aparece na caixa de diálogo **pré-requisitos** do ClickOnce é um pacote de bootstrapper. Um pacote de bootstrapper é um grupo de diretórios e arquivos que contém arquivos de manifesto que descrevem como o pré-requisito deve ser instalado.
 
 O bootstrapper primeiro detecta se qualquer um dos pré-requisitos já está instalado. Se os pré-requisitos não estiverem instalados, primeiro o bootstrapper mostra os contratos de licença. Em segundo lugar, depois que o usuário final aceita os contratos de licença, a instalação dos pré-requisitos começa. Caso contrário, se forem detectados todos os pré-requisitos, o bootstrapper apenas inicia o instalador do aplicativo.
 
@@ -39,9 +39,9 @@ Você pode gerar os manifestos do bootstrapper usando o editor de XML no Visual 
 
 Para criar um pacote de bootstrapper, você precisa criar um manifesto de produto e, para cada versão localizada de um componente, um manifesto de pacote também.
 
-* O manifesto do produto, *product.xml* , contém quaisquer metadados com neutralidade de idioma para o pacote. Esse manifesto contém metadados comuns a todas as versões localizadas do componente redistribuível.  Para criar esse arquivo, consulte [como: criar um manifesto do produto](../deployment/how-to-create-a-product-manifest.md).
+* O manifesto do produto, *product.xml*, contém quaisquer metadados com neutralidade de idioma para o pacote. Esse manifesto contém metadados comuns a todas as versões localizadas do componente redistribuível.  Para criar esse arquivo, consulte [como: criar um manifesto do produto](../deployment/how-to-create-a-product-manifest.md).
 
-* O manifesto do pacote, *package.xml* , contém metadados específicos do idioma; Normalmente, ele contém mensagens de erro localizadas. Um componente deve ter, pelo menos, um pacote de manifesto para cada versão localizada desse componente. Para criar esse arquivo, consulte [como: criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md).
+* O manifesto do pacote, *package.xml*, contém metadados específicos do idioma; Normalmente, ele contém mensagens de erro localizadas. Um componente deve ter, pelo menos, um pacote de manifesto para cada versão localizada desse componente. Para criar esse arquivo, consulte [como: criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md).
 
 Depois que esses arquivos são criados, coloque o arquivo de manifesto do produto em uma pasta indicada para o bootstrapper personalizado. O arquivo de manifesto do pacote vai para uma pasta nomeada de acordo com a localidade. Por exemplo, se o arquivo de manifesto do pacote for para redistribuição em inglês, coloque o arquivo em uma pasta chamada en. Repita esse processo para cada localidade, como ja para japonês e de para alemão. O pacote final de bootstrapper personalizado pode ter estrutura de pastas a seguir.
 
@@ -120,7 +120,7 @@ A lista redistribuível é um arquivo XML que você deve nomear usando o seguint
 </FileList>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Como: instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [Caixa de diálogo pré-requisitos](../ide/reference/prerequisites-dialog-box.md)
 - [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)

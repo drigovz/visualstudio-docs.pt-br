@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: d840fdca-b035-4452-b652-72580c831896
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0471aa25b14111271e6f9219e8e849eed49f113f
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 8add274d74d9d8d7d72f2808a2b0100c66a19717
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150555"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912205"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Exibir DLLs e executáveis na janela módulos (C#, C++, Visual Basic, F #)
 
@@ -78,7 +78,7 @@ A coluna **status do símbolo** na janela **módulos** mostra quais módulos tê
 
 1. No menu de clique com o botão direito do mouse, selecione ou desmarque **sempre carregar automaticamente**. As alterações entrarão em vigor na próxima sessão de depuração.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Interrompendo a execução](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))
 - [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)
 - [Especificar o símbolo (. pdb) e os arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 86f31948-2ca8-47c0-8e8b-c2b817bbf79f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e79b6a64eff9eab92a05624f6ca71ae7a242ad2
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: d6a014afff6c26b8cfe8f4f7fae508f78ef5905f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382982"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912242"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>Depurar aplicativos ClickOnce que usam System.Deployment.Application
 No [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] , [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] a implantação permite que você configure como um aplicativo é atualizado. No entanto, se você precisar usar e personalizar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] recursos de implantação avançados, será necessário acessar o modelo de objeto de implantação fornecido pelo <xref:System.Deployment.Application> . Você pode usar as <xref:System.Deployment.Application> APIs para tarefas avançadas, como:
@@ -45,11 +45,11 @@ No [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 2. Implante a versão 1 do aplicativo.
 
-3. Crie uma nova solução em branco. No menu **Arquivo** , clique em **Novo** e, em seguida em **Projeto**. Na caixa de diálogo **novo projeto** , abra o nó **outros tipos de projeto** e, em seguida, selecione a pasta **soluções do Visual Studio** . No painel **modelos** , selecione **solução em branco**.
+3. Crie uma nova solução em branco. No menu **Arquivo**, clique em **Novo** e, em seguida em **Projeto**. Na caixa de diálogo **novo projeto** , abra o nó **outros tipos de projeto** e, em seguida, selecione a pasta **soluções do Visual Studio** . No painel **modelos** , selecione **solução em branco**.
 
-4. Adicione o local de origem arquivado às propriedades dessa nova solução. Em **Gerenciador de soluções** , clique com o botão direito do mouse no nó da solução e clique em **Propriedades**. Na caixa de diálogo **páginas de propriedades** , selecione **depurar arquivos de origem** e, em seguida, adicione o diretório do código-fonte arquivado. Caso contrário, o depurador encontrará os arquivos de origem desatualizados, já que os caminhos do arquivo de origem são registrados no arquivo. pdb. Se o depurador usar arquivos de origem desatualizados, você verá uma mensagem informando que a origem não corresponde.
+4. Adicione o local de origem arquivado às propriedades dessa nova solução. Em **Gerenciador de soluções**, clique com o botão direito do mouse no nó da solução e clique em **Propriedades**. Na caixa de diálogo **páginas de propriedades** , selecione **depurar arquivos de origem** e, em seguida, adicione o diretório do código-fonte arquivado. Caso contrário, o depurador encontrará os arquivos de origem desatualizados, já que os caminhos do arquivo de origem são registrados no arquivo. pdb. Se o depurador usar arquivos de origem desatualizados, você verá uma mensagem informando que a origem não corresponde.
 
-5. Verifique se o depurador pode encontrar os arquivos *. pdb* . Se você os tiver implantado com seu aplicativo, o depurador os encontrará automaticamente. Ele sempre aparece ao lado do assembly em questão primeiro. Caso contrário, será necessário adicionar o caminho de arquivo morto para os **locais de arquivos de símbolo (. pdb)** (para acessar essa opção, no menu **ferramentas** , clique em **Opções** , abra o nó **depuração** e clique em **símbolos** ).
+5. Verifique se o depurador pode encontrar os arquivos *. pdb* . Se você os tiver implantado com seu aplicativo, o depurador os encontrará automaticamente. Ele sempre aparece ao lado do assembly em questão primeiro. Caso contrário, será necessário adicionar o caminho de arquivo morto para os **locais de arquivos de símbolo (. pdb)** (para acessar essa opção, no menu **ferramentas** , clique em **Opções**, abra o nó **depuração** e clique em **símbolos**).
 
 6. Depurar o que acontece entre `CheckForUpdate` as `Download` / `Update` chamadas de método e.
 

@@ -5,17 +5,17 @@ ms.date: 03/18/2019
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f08709c5231b2981db67900f47b49503269e948b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d00f8cc05e4a2a2ce1e947207997cc2e46d9d9f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545490"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912380"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referência as guias da janela Ambientes do Python
 
@@ -105,7 +105,7 @@ Inserir um termo de pesquisa filtra a lista de pacotes instalados, bem como os p
 ![Guia de pacotes de ambientes do Python com uma pesquisa em "num"](media/environments/environments-pip-tab-2019.png)
 ::: moniker-end
 
-Como você pode ver na imagem acima, os resultados da pesquisa mostram um número de pacotes que correspondem ao termo de pesquisa; no entanto, a primeira entrada da lista é um comando para executar a **instalação \<name> do Pip** diretamente. Se você estiver na guia **pacotes (Conda)** , em vez disso, consulte **Conda \<name> install **:
+Como você pode ver na imagem acima, os resultados da pesquisa mostram um número de pacotes que correspondem ao termo de pesquisa; no entanto, a primeira entrada da lista é um comando para executar a **instalação \<name> do Pip** diretamente. Se você estiver na guia **pacotes (Conda)** , em vez disso, consulte **Conda \<name> install**:
 
 ::: moniker range="vs-2017"
 ![Guia Pacotes do Conda mostrando um comando conda install](media/environments/environments-conda-tab-install.png)
@@ -165,7 +165,7 @@ As bibliotecas para as quais os dados não foram compilados serão marcadas com 
 
 ::: moniker-end
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Gerenciar ambientes do Python no Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Selecionar um interpretador para um projeto](selecting-a-python-environment-for-a-project.md)
