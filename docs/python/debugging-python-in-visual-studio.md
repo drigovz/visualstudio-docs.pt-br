@@ -5,21 +5,21 @@ ms.date: 05/12/2020
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 094305e901624e13df147030899981f8fedb80d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5a86f600f9145742f6447af54fccb10dbc302a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387025"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931767"
 ---
 # <a name="debug-your-python-code"></a>Depurar o código do Python
 
-O Visual Studio fornece uma experiência de depuração abrangente para Python, incluindo anexar a processos em execução, avaliar expressões na **inspeção** e janelas **imediatas** , inspecionar variáveis locais, pontos de interrupção, instruções Step in/out/over, **definir a próxima instrução**e muito mais.
+O Visual Studio fornece uma experiência de depuração abrangente para Python, incluindo anexar a processos em execução, avaliar expressões na **inspeção** e janelas **imediatas** , inspecionar variáveis locais, pontos de interrupção, instruções Step in/out/over, **definir a próxima instrução** e muito mais.
 
 Veja também os seguintes artigos sobre depuração específicos ao cenário:
 
@@ -30,7 +30,7 @@ Veja também os seguintes artigos sobre depuração específicos ao cenário:
 <a name="debugging-without-a-project"></a>
 
 > [!Tip]
-> O Python no Visual Studio dá suporte à depuração sem um projeto. Com um arquivo Python autônomo aberto, clique com o botão direito do mouse no editor, selecione **Iniciar com depuração**e o Visual Studio iniciará o script com o ambiente padrão global (consulte [ambientes Python](managing-python-environments-in-visual-studio.md)) e nenhum argumento. Mas daí em diante, você tem suporte completo à depuração.
+> O Python no Visual Studio dá suporte à depuração sem um projeto. Com um arquivo Python autônomo aberto, clique com o botão direito do mouse no editor, selecione **Iniciar com depuração** e o Visual Studio iniciará o script com o ambiente padrão global (consulte [ambientes Python](managing-python-environments-in-visual-studio.md)) e nenhum argumento. Mas daí em diante, você tem suporte completo à depuração.
 >
 > Para controlar o ambiente e os argumentos, crie um projeto para o código, que é facilmente feito com o modelo [de projeto de código Python existente](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files) .
 
@@ -47,7 +47,7 @@ Uma sessão de depuração começa com o comando **depurar**  >  **Iniciar Depur
 
 ### <a name="breakpoints"></a>Pontos de interrupção
 
-Os pontos de interrupção interrompem a execução de código em um ponto marcado, para que você possa inspecionar o estado do programa. Defina pontos de interrupção clicando na margem esquerda do editor de código ou clicando com o botão direito do mouse em uma linha de código e selecionando **ponto**de interrupção  >  **Inserir ponto**de interrupção. Um ponto vermelho é exibido em cada linha com um ponto de interrupção.
+Os pontos de interrupção interrompem a execução de código em um ponto marcado, para que você possa inspecionar o estado do programa. Defina pontos de interrupção clicando na margem esquerda do editor de código ou clicando com o botão direito do mouse em uma linha de código e selecionando **ponto** de interrupção  >  **Inserir ponto** de interrupção. Um ponto vermelho é exibido em cada linha com um ponto de interrupção.
 
 ![Pontos de interrupção exibidos no Visual Studio](media/debugging-breakpoints.png)
 
@@ -74,7 +74,7 @@ Depois de interromper em um ponto de interrupção, você tem várias maneiras p
 | **Sair** | **Shift** + **F11** | Executa o código até o final da função atual e, em seguida, executa em etapas até a instrução de chamada.  Esse comando é útil quando não é necessário depurar o restante da função atual. |
 | **Executar até o cursor** | **Ctrl** + **F10** | Executa o código até a localização do cursor no editor. Esse comando permite ignorar facilmente um segmento de código que não precisa ser depurado. |
 | **Definir Próxima Instrução** | **Ctrl** + **Shift** + **F10** | Altera o ponto de execução atual no código para a localização atual do cursor. Esse comando permite omitir a execução de um segmento de código, como nos casos em que você sabe que o código tem uma falha ou produz um efeito colateral indesejado. |
-| **Mostrar Próxima Instrução** | **ALT** + **Núm** **&#42;**| Retorna à próxima instrução a ser executada. Esse comando é muito útil se você está procurando em várias partes do código e não se lembra em qual parte o depurador foi interrompido. |
+| **Mostrar próxima instrução** | **ALT** + **Núm** **&#42;**| Retorna à próxima instrução a ser executada. Esse comando é muito útil se você está procurando em várias partes do código e não se lembra em qual parte o depurador foi interrompido. |
 
 ### <a name="inspect-and-modify-values"></a>Inspecionar e modificar valores
 
@@ -114,7 +114,7 @@ Se ocorrer um erro no programa durante a depuração, mas você não tiver um ma
 
 Neste ponto, é possível inspecionar o estado do programa, incluindo a pilha de chamadas. No entanto, se você tentar executar o código em etapas, a exceção continuará sendo gerada até que ela seja tratada ou o programa seja encerrado.
 
-O **Debug**  >  comando de menu Depurar configurações de exceção do**Windows**  >  exibe uma janela na qual você pode expandir**as** **exceções do Python**:
+O   >  comando de menu Depurar configurações de exceção do **Windows**  >  exibe uma janela na qual você pode expandir **as** **exceções do Python**:
 
 ![Janela Exceções no depurador do Visual Studio](media/debugging-exception-settings.png)
 
@@ -126,7 +126,7 @@ Para configurar uma exceção que não aparece nessa lista, clique no botão **A
 
 ## <a name="project-debugging-options"></a>Opções de depuração de projeto
 
-Por padrão, o depurador inicia o programa com o inicializador padrão do Python, sem argumentos de linha de comando e sem nenhum outro caminho ou condição especial. As opções de inicialização são alteradas por meio das propriedades de depuração do projeto acessadas clicando com o botão direito do mouse em seu projeto no **Gerenciador de soluções**, selecionando **Propriedades**e selecionando a guia **depurar** .
+Por padrão, o depurador inicia o programa com o inicializador padrão do Python, sem argumentos de linha de comando e sem nenhum outro caminho ou condição especial. As opções de inicialização são alteradas por meio das propriedades de depuração do projeto acessadas clicando com o botão direito do mouse em seu projeto no **Gerenciador de soluções**, selecionando **Propriedades** e selecionando a guia **depurar** .
 
 ![Propriedades de depuração do projeto no depurador do Visual Studio](media/debugging-project-properties.png)
 
@@ -155,7 +155,7 @@ Há duas janelas interativas que você pode usar durante uma sessão de depuraç
 
 A janela **Imediata** (**Depurar** > **Janelas** > **Imediata**) é usada para avaliação rápida de expressões do Python e para inspeção ou atribuição de variáveis no programa em execução. Consulte o artigo da [janela geral imediata](../ide/reference/immediate-window.md) para obter detalhes.
 
-A janela **Interativa de Depuração do Python** (**Depurar** > **Janelas** > **Interativa de Depuração do Python**) é mais avançada, pois disponibiliza toda a experiência de [REPL Interativo](python-interactive-repl-in-visual-studio.md) durante a depuração, incluindo a escrita e a execução de código. Ele se conecta automaticamente a qualquer processo iniciado no depurador usando o iniciador do Python padrão (incluindo os **Debug**processos anexados por meio de  >  **anexação de depuração ao processo**). No entanto, ela não está disponível ao usar a depuração de modo misto do C/C++.
+A janela **Interativa de Depuração do Python** (**Depurar** > **Janelas** > **Interativa de Depuração do Python**) é mais avançada, pois disponibiliza toda a experiência de [REPL Interativo](python-interactive-repl-in-visual-studio.md) durante a depuração, incluindo a escrita e a execução de código. Ele se conecta automaticamente a qualquer processo iniciado no depurador usando o iniciador do Python padrão (incluindo os processos anexados por meio de  >  **anexação de depuração ao processo**). No entanto, ela não está disponível ao usar a depuração de modo misto do C/C++.
 
 ![Janela Interativa de Depuração do Python](media/debugging-interactive.png)
 
@@ -180,7 +180,7 @@ A janela **interativa de depuração** dá suporte a metadados especiais, além 
 | `$up`, `$u` | | Move o quadro atual um nível para cima no rastreamento de pilha. |
 | `$where`, `$w`, `$bt` | Lista os quadros do thread atual. |
 
-Observe que as janelas do depurador padrão, como **processos**, **threads**e **pilha de chamadas** , não são sincronizadas com a janela interativa de **depuração** . Alterar o processo, thread ou quadro ativo na janela **interativa de depuração** não afeta as outras janelas do depurador. Da mesma forma, alterar o processo, thread ou quadro ativo em outras janelas do depurador não afeta a janela **interativa de depuração** .
+Observe que as janelas do depurador padrão, como **processos**, **threads** e **pilha de chamadas** , não são sincronizadas com a janela interativa de **depuração** . Alterar o processo, thread ou quadro ativo na janela **interativa de depuração** não afeta as outras janelas do depurador. Da mesma forma, alterar o processo, thread ou quadro ativo em outras janelas do depurador não afeta a janela **interativa de depuração** .
 
 <a name="use-the-experimental-debugger"></a>
 
@@ -190,7 +190,7 @@ O Visual Studio 2017 versões 15.8 e posteriores usam um depurador com base no p
 
 ![Erro: o depurador não dá suporte a esse ambiente do Python, quando o depurador é usado](media/debugging-experimental-incompatible-error.png)
 
-Nesses casos, você precisa usar o depurador mais antigo (o que é o padrão no Visual Studio 2017 versões 15.7 e anteriores). Selecione o **Tools**  >  comando de menu**Opções** de ferramentas, **Python**navegue até  >  **depuração**do Python e selecione a opção **usar depurador herdado** .
+Nesses casos, você precisa usar o depurador mais antigo (o que é o padrão no Visual Studio 2017 versões 15.7 e anteriores). Selecione o   >  comando de menu **Opções** de ferramentas, navegue até  >  **depuração** do Python e selecione a opção **usar depurador herdado** .
 
 Se você tiver instalado uma versão mais antiga do ptvsd no ambiente atual (como uma versão 4.0.x anterior ou uma versão 3.x necessária para a depuração remota), o Visual Studio poderá mostrar um erro ou aviso.
 
@@ -243,7 +243,7 @@ As seguintes etapas habilitam a depuração na sessão atual do Visual Studio:
 
 1. Abra uma janela de comando no Visual Studio usando o comando de menu **Exibir**  >  **outra**  >  **janela de comando** do Windows.
 
-1. Digite o seguinte comando:
+1. Insira o seguinte comando:
 
     ```ps
     DebugAdapterHost.Logging /On /OutputWindow

@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 1b4e3f73-c94d-4aa3-9aa8-0d8cb8a6c5ca
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ed933b1abf67fbe357462e86d54b23e3b19fa548
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0de6de53c765e8e82ac63f85b52f443da3f9ee90
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735570"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930519"
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
 Habilita ou desabilita o ponto de interrupção.
@@ -35,7 +35,7 @@ HRESULT Enable(
 ```
 
 ```csharp
-int Enable( 
+int Enable( 
     int fEnable
 );
 ```
@@ -44,7 +44,7 @@ int Enable( 
 `fEnable`\
 no Defina como diferente de zero ( `TRUE` ) para habilitar ou para zero ( `FALSE` ) para desabilitar o ponto de interrupção.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o estado do objeto de ponto de interrupção associado é definido como `BPS_DELETED` (parte da enumeração de [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
 ## <a name="example"></a>Exemplo

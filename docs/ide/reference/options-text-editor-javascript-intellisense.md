@@ -12,15 +12,15 @@ f1_keywords:
 ms.assetid: b4a9816d-cf87-4dc6-a8d4-1591d6a48103
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41256882433bc95db7af380d27cc8dc63fbcd387
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 051711a9d6dfe861f37e741ae9ecabfbf741012e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947720"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932352"
 ---
 # <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Caixa de diálogo opções: \> IntelliSense do JavaScript do editor de texto \>
 
@@ -78,6 +78,6 @@ Quando essa caixa de seleção for marcada e se você tiver um arquivo JavaScrip
 > [!NOTE]
 > Em projetos Web, os arquivos remotos referenciados no seu projeto são baixados por padrão.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [JavaScript IntelliSense](../../ide/javascript-intellisense.md)

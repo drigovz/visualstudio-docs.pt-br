@@ -7,15 +7,15 @@ ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1ab54ccb3820b3a03724c30d16f08b3e8a45493
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933096"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Inspecionar estados anteriores do aplicativo usando o retrocesso do IntelliTrace no Visual Studio (Visual Studio Enterprise)
 
@@ -34,7 +34,7 @@ Neste tutorial, você irá:
 
 1. Abra seu projeto no Visual Studio Enterprise.
 
-1. Abra **ferramentas**  >  **Opções**  >  configurações do**IntelliTrace** e selecione a opção **eventos e instantâneos do IntelliTrace**.
+1. Abra **ferramentas**  >  **Opções**  >  configurações do **IntelliTrace** e selecione a opção **eventos e instantâneos do IntelliTrace**.
 
     Começando no Visual Studio 2017 Enterprise versão 15.9 Versão prévia 2, essa opção passou a ser **Instantâneos do IntelliTrace (gerenciados e nativos)**.
 
@@ -95,13 +95,13 @@ Neste tutorial, você irá:
 
 O IntelliTrace no modo somente eventos permite que você ative a depuração histórica em pontos de interrupção e etapas do depurador. No entanto, o IntelliTrace somente capturará dados nas janelas **Locais** e **Autos** se elas estiverem abertas e somente capturará dados que estejam expandidos e na exibição. No modo somente eventos, você geralmente não tem uma exibição completa das variáveis e de objetos complexos. Além disso, não há suporte para a avaliação de expressão e para a exibição de dados na janela **Inspeção**.
 
-No modo de eventos e instantâneos, o IntelliTrace captura todo o instantâneo do processo do aplicativo, incluindo objetos complexos. Em uma linha de código, você pode ver as mesmas informações como se você tivesse parado em um ponto de interrupção (e não importa se você expandiu previamente as informações). A avaliação da expressão também é compatível ao exibir um instantâneo.  
+No modo de eventos e instantâneos, o IntelliTrace captura todo o instantâneo do processo do aplicativo, incluindo objetos complexos. Em uma linha de código, você pode ver as mesmas informações como se você tivesse parado em um ponto de interrupção (e não importa se você expandiu previamente as informações). A avaliação da expressão também é compatível ao exibir um instantâneo.  
 
-#### <a name="what-is-the-performance-impact-of-this-feature"></a>Qual é o impacto de desempenho desse recurso? 
+#### <a name="what-is-the-performance-impact-of-this-feature"></a>Qual é o impacto de desempenho desse recurso? 
 
 O impacto no desempenho geral das etapas depende de seu aplicativo. A sobrecarga de tirar um instantâneo é de cerca de 30 ms. Quando um instantâneo é obtido, o processo do aplicativo é bifurcado e a cópia bifurcada é suspensa. Quando você exibe um instantâneo, o Visual Studio está anexando a cópia bifurcada do processo. Para cada instantâneo, o Visual Studio copia apenas a tabela de página e define as páginas como gravação de cópia. Se os objetos no heap forem alterados entre as etapas do depurador associadas a instantâneos, a respectiva tabela de página será copiada, resultando em um custo mínimo de memória. Se o Visual Studio detectar que não há memória suficiente para criar um instantâneo, ele não o fará.
 
-## <a name="known-issues"></a>Problemas Conhecidos
+## <a name="known-issues"></a>Problemas conhecidos
 * Se você estiver usando o modo de eventos e instantâneos do IntelliTrace em versões do Windows anteriores ao Windows 10 Fall Creators Update (RS3) e se a plataforma de depuração de destino do aplicativo for definida como x86, o IntelliTrace não obterá instantâneos.
 
     Soluções alternativas:

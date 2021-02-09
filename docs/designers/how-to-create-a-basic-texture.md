@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bb4a0a66855351e9edbb1b06dbf2aee452cd150
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 2ac90077831d852ba0361c46186d18fe39cf9e81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134139"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931065"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Como criar uma textura básica
 
@@ -45,28 +45,28 @@ Antes de começar, verifique se a janela **Propriedades** está sendo exibida. A
 
 1. Crie uma textura com o qual você trabalhará. Saiba mais sobre como adicionar uma textura ao seu projeto em [Editor de Imagens](../designers/image-editor.md#get-started).
 
-2. Defina o tamanho da imagem como 512x512 pixels. Na janela **Propriedades** , defina os valores das propriedades **Largura** e **Altura** como `512`.
+2. Defina o tamanho da imagem como 512x512 pixels. Na janela **Propriedades**, defina os valores das propriedades **Largura** e **Altura** como `512`.
 
-3. Na barra de ferramentas do Editor de Imagens, escolha a ferramenta **Preenchimento** . A janela **Propriedades** agora exibe as propriedades da ferramenta **Preenchimento** junto com as propriedades da imagem.
+3. Na barra de ferramentas do Editor de Imagens, escolha a ferramenta **Preenchimento**. A janela **Propriedades** agora exibe as propriedades da ferramenta **Preenchimento** junto com as propriedades da imagem.
 
-4. Defina a cor de primeiro plano como preto totalmente transparente. Na janela **Propriedades** , no grupo de propriedades **Cores** , selecione **Primeiro Plano** . Defina os valores das propriedades **R** , **G** , **B** e **A** ao lado do seletor de cor como `0`.
+4. Defina a cor de primeiro plano como preto totalmente transparente. Na janela **Propriedades**, no grupo de propriedades **Cores**, selecione **Primeiro Plano**. Defina os valores das propriedades **R**, **G**, **B** e **A** ao lado do seletor de cor como `0`.
 
-5. Na barra de ferramentas do Editor de Imagens, escolha a ferramenta **Preenchimento** , em seguida, pressione e segure a tecla **Shift** e escolha qualquer ponto na imagem. Se você usar a tecla **Shift** , o valor alfa da cor de preenchimento substituirá a cor na imagem. Caso contrário, o valor alfa será usado para misturar a cor de preenchimento com a cor da imagem.
+5. Na barra de ferramentas do Editor de Imagens, escolha a ferramenta **Preenchimento**, em seguida, pressione e segure a tecla **Shift** e escolha qualquer ponto na imagem. Se você usar a tecla **Shift**, o valor alfa da cor de preenchimento substituirá a cor na imagem. Caso contrário, o valor alfa será usado para misturar a cor de preenchimento com a cor da imagem.
 
     > [!IMPORTANT]
     > Essa etapa, junto com a seleção de cor na etapa anterior, garante que a imagem base seja preparada para a textura de destino de "alvo" que você desenhará. Quando a imagem é preenchida com preto transparente e como a borda do destino é preta, não haverá nenhum artefato de serrilhado em torno de destino.
 
-6. Na barra de ferramentas do Editor de Imagens, escolha a ferramenta **Elipse** .
+6. Na barra de ferramentas do Editor de Imagens, escolha a ferramenta **Elipse**.
 
-7. Defina a cor de primeiro plano como preto totalmente opaco. Defina os valores das propriedades **R** , **G** e **B** como `0` e o valor da propriedade **A** como `255`.
+7. Defina a cor de primeiro plano como preto totalmente opaco. Defina os valores das propriedades **R**, **G** e **B** como `0` e o valor da propriedade **A** como `255`.
 
-8. Defina a cor da tela de fundo como branco totalmente opaco. Na janela **Propriedades** , no grupo de propriedades **Cores** , selecione **Tela de Fundo** . Defina os valores das propriedades **R** , **G** , **B** e **A** como `255`.
+8. Defina a cor da tela de fundo como branco totalmente opaco. Na janela **Propriedades**, no grupo de propriedades **Cores**, selecione **Tela de Fundo**. Defina os valores das propriedades **R**, **G**, **B** e **A** como `255`.
 
-9. Defina a largura do contorno da elipse. Na janela **Propriedades** , no grupo de propriedades **Aparência** , defina o valor da propriedade **Largura** como `8`.
+9. Defina a largura do contorno da elipse. Na janela **Propriedades**, no grupo de propriedades **Aparência**, defina o valor da propriedade **Largura** como `8`.
 
-10. Verifique se a suavização está habilitada. Na janela **Propriedades** , no grupo de propriedades **Aparência** , verifique se a propriedade **Suavização** está definida.
+10. Verifique se a suavização está habilitada. Na janela **Propriedades**, no grupo de propriedades **Aparência**, verifique se a propriedade **Suavização** está definida.
 
-11. Usando a ferramenta **Elipse** , desenhe um círculo da coordenada de pixel `(3, 3)` até a coordenada de pixel `(508, 508)`. Para desenhar o círculo com mais facilidade, você pode pressionar e segurar a tecla **Shift** enquanto desenha.
+11. Usando a ferramenta **Elipse**, desenhe um círculo da coordenada de pixel `(3, 3)` até a coordenada de pixel `(508, 508)`. Para desenhar o círculo com mais facilidade, você pode pressionar e segurar a tecla **Shift** enquanto desenha.
 
     > [!NOTE]
     > As coordenadas de pixel do local atual do ponteiro são exibidas na barra de status do Visual Studio.
@@ -75,7 +75,7 @@ Antes de começar, verifique se a janela **Propriedades** está sendo exibida. A
 
 13. Desenhe outro círculo da coordenada de pixel `(64, 64)` até a coordenada de pixel `(448, 448)`.
 
-14. Altere a cor da tela de fundo de volta para branco totalmente opaco. Defina **R** , **G** , **B** e **A** como `255`.
+14. Altere a cor da tela de fundo de volta para branco totalmente opaco. Defina **R**, **G**, **B** e **A** como `255`.
 
 15. Desenhe outro círculo da coordenada de pixel `(128, 128)` até a coordenada de pixel `(384, 384)`.
 
@@ -89,6 +89,6 @@ A textura de destino de "alvo" foi concluída. Aqui está a imagem final, mostra
 
 Como uma próxima etapa, você pode gerar níveis de MIP para essa textura. Para obter informações, confira [Como criar e modificar níveis de MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Editor de imagem](../designers/image-editor.md)

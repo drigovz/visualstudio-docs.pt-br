@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4115e999cc061be53ba437a090f207046f71ef8
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: d7891687a76d0023b54be2c44c3b5fc09c97f010
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671640"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932789"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Elemento assembly (modelos do Visual Studio)
 Especifica informações sobre um assembly, que o modelo usa para adicionar uma referência desse assembly a projetos.
@@ -42,10 +42,10 @@ Especifica informações sobre um assembly, que o modelo usa para adicionar uma 
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -98,6 +98,6 @@ Especifica informações sobre um assembly, que o modelo usa para adicionar uma 
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

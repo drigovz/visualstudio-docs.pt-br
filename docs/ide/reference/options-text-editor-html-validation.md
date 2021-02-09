@@ -9,19 +9,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Validation
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b65edc2b6c48bc76075e909d0f9bd1341a1b6dd8
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 769a16c0dd1275c435f8cd0b496097a5b1575160
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040557"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932508"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>Opções, Editor de Texto, HTML (Web Forms), Validação
 
-Use a página de opções **Validação** para definir preferências de como o editor de HTML verifica a sintaxe de marcação HTML em seu documento. Para acessar essa página, na barra de menus, escolha **ferramentas**  >  **Opções** e, em seguida **Text Editor**, expanda validação de  >  **HTML do editor de texto (Web Forms)**  >  **Validation**.
+Use a página de opções **Validação** para definir preferências de como o editor de HTML verifica a sintaxe de marcação HTML em seu documento. Para acessar essa página, na barra de menus, escolha **ferramentas**  >  **Opções** e, em seguida , expanda validação de  >  **HTML do editor de texto (Web Forms)**  >  .
 
 ## <a name="validation"></a>Validação
 

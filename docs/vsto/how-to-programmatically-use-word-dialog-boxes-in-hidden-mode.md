@@ -14,15 +14,15 @@ helpviewer_keywords:
 - dialog boxes, hidden mode in Word
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 263041fe15f07e8041bb771a6f3abd8b3311b0f2
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0977e7241920ad23a6248bb2349ddaeb10a5e931
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523164"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931234"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Como: usar de forma programática as caixas de diálogo do Word no modo oculto
   Você pode executar operações complexas com uma chamada de método invocando as caixas de diálogo internas no Microsoft Office Word sem exibi-las ao usuário. Você pode fazer isso usando o <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> método do <xref:Microsoft.Office.Interop.Word.Dialog> objeto sem chamar o <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> método.
@@ -41,7 +41,7 @@ ms.locfileid: "97523164"
 
  [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Como: usar programaticamente caixas de diálogo internas no Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)
 - [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)
 - [Associação tardia em soluções do Office](../vsto/late-binding-in-office-solutions.md)

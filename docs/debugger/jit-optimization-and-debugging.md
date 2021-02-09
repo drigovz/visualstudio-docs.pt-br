@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f63c7232b52ebe849722147e007ab70527c311
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 558a54f6ddcf4945da4937f75b8aa133949349a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903916"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931078"
 ---
 # <a name="jit-optimization-and-debugging"></a>Otimização e depuração JIT
 Se você estiver tentando depurar o código, será mais fácil quando esse código **não** for otimizado. Quando o código é otimizado, o compilador e o tempo de execução fazem alterações no código de CPU emitido para que ele seja executado mais rapidamente, mas tem um mapeamento menos direto para o código-fonte original. Se o mapeamento for menos direto, os depuradores geralmente não poderão informar o valor das variáveis locais, e a depuração de código e os pontos de interrupção talvez não funcionem conforme o esperado.
@@ -67,7 +67,7 @@ Há duas situações em que ativar essa opção **não** funcionará:
 
     ![Definir COMPlus_ReadyToRun variável de ambiente](../debugger/media/environment-variables-debug-menu.png "Definir COMPlus_ReadyToRun variável de ambiente")
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Como depurar a origem do DOTNET Framework](../debugger/how-to-debug-dotnet-framework-source.md)
 - [Depurando código gerenciado](../debugger/debugging-managed-code.md)
 - [Navegar pelo Código com o Depurador](../debugger/navigating-through-code-with-the-debugger.md)

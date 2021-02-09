@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbd53d56b21886e972b33c219367edd603cbf0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c09b81a6a3eb56734e7d3a95dc5d1a8d1717fba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729786"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933109"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 O mecanismo de depuração (DE) envia essa interface para o SDM (Gerenciador de depuração de sessão) quando uma exceção é lançada no programa que está sendo executado no momento.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugExceptionEvent2 : IUnknown
@@ -55,7 +55,7 @@ IDebugExceptionEvent2 : IUnknown
  Antes de enviar o evento, o DE verifica para ver se esse evento DE exceção foi designado como uma exceção de primeira chance ou de segunda chance por uma chamada anterior para [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md). Se tiver sido designado para ser uma exceção de primeira chance, o `IDebugExceptionEvent2` evento será enviado para o SDM. Caso contrário, o DE dá ao aplicativo uma chance de lidar com a exceção. Se nenhum manipulador de exceção for fornecido, e se a exceção tiver sido designada como uma exceção de segunda chance, o `IDebugExceptionEvent2` evento será enviado para o SDM. Caso contrário, o DE retoma a execução do programa e o sistema operacional ou o tempo de execução trata a exceção.
 
 ## <a name="see-also"></a>Confira também
-- [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)
 - [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

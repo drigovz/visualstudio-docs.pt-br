@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 3d1ad14b-44fb-4cf0-a995-5e2f60026524
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b3758184a10161d64add37fe1dc231326b90cb53
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 783f8935b5d9eee25d6569dea9ba48b0eaeae8bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134825"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930922"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Como exportar uma textura que contenha mipmaps
 
@@ -35,12 +35,12 @@ O mapeamento mip fornece o nível de detalhe do espaço de tela automático para
 
 1. Comece com uma textura básica. Carregue um arquivo de imagem existente ou crie um, conforme descrito em [Como criar uma textura básica](../designers/how-to-create-a-basic-texture.md). Para oferecer suporte a mipmaps, especifique uma textura que tenha uma largura e altura que sejam as mesmas, por exemplo, 64x64, 256x256 ou 512x512.
 
-2. Configure o arquivo de textura que você acabou de criar para que ele seja processado pelo Pipeline de conteúdo de imagem. No **Gerenciador de Soluções** , abra o menu de atalho do arquivo de textura que você criou e selecione **Propriedades** . Na página **Propriedades de configuração**  >  **geral** , defina a propriedade **tipo de item** como pipeline de conteúdo da **imagem** . Verifique se a propriedade **Conteúdo** está definida como **Sim** e se **Excluir do Build** está definido como **Não** . Selecione **Aplicar** .
+2. Configure o arquivo de textura que você acabou de criar para que ele seja processado pelo Pipeline de conteúdo de imagem. No **Gerenciador de Soluções**, abra o menu de atalho do arquivo de textura que você criou e selecione **Propriedades**. Na página **Propriedades de configuração**  >  **geral** , defina a propriedade **tipo de item** como pipeline de conteúdo da **imagem**. Verifique se a propriedade **Conteúdo** está definida como **Sim** e se **Excluir do Build** está definido como **Não**. Escolha **Aplicar**.
 
    A página de propriedades de configuração **Pipeline de Conteúdo de Imagem** é exibida.
 
-3. Configure o Pipeline de conteúdo de imagem para gerar mipmaps. Na página **Propriedades de configuração** do  >  **pipeline de conteúdo**  >  **geral** , defina a propriedade **gerar MIPS** como **Sim (/generatemips)** .
+3. Configure o Pipeline de conteúdo de imagem para gerar mipmaps. Na página **Propriedades de configuração** do  >  **pipeline de conteúdo**  >  **geral** , defina a propriedade **gerar MIPS** como **Sim (/generatemips)**.
 
-4. Selecione **OK** .
+4. Selecione **OK**.
 
 Quando você cria o projeto, o Pipeline de conteúdo de imagem converte a imagem de origem do formato de trabalho para o formato de saída que você especificou, incluindo níveis de MIP. O resultado é copiado para o diretório de saída do projeto.

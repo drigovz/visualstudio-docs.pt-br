@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Options dialog box, Windows Forms Designer, Data UI Customization
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 2b43776d2218f6f2a6a120e139dcae9d540f6f10
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+manager: jmartens
+ms.openlocfilehash: 46834dea30f41ebf0eb8629fe4dde0525288e82d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040089"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932300"
 ---
 # <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>Caixa de diálogo opções: Designer de Formulários do Windows > personalização da interface do usuário de dados
 
-Essa caixa de diálogo define quais controles aparecem na lista de controles disponíveis para itens na janela Fontes de Dados. Para abri-lo, **Tools** selecione  >  **Opções** de ferramentas e, em seguida, selecione **Designer de formulários do Windows**  >  **personalização da interface do usuário de dados**.
+Essa caixa de diálogo define quais controles aparecem na lista de controles disponíveis para itens na janela Fontes de Dados. Para abri-lo, selecione  >  **Opções** de ferramentas e, em seguida, selecione **Designer de formulários do Windows**  >  **personalização da interface do usuário de dados**.
 
 É possível selecionar um controle de um item na janela Fontes de Dados antes de arrastá-lo para o formulário em um aplicativo do Windows Forms. Os controles disponíveis são determinados pelo tipo de dados do item. Cada tipo de dados possui uma lista de controles associados válidos, conforme definido nessa caixa de diálogo, incluindo um controle padrão. Ao arrastar um item da janela Fontes de Dados para um formulário sem selecionar um controle, o controle padrão para o tipo de dados do item selecionado é adicionado ao formulário.
 

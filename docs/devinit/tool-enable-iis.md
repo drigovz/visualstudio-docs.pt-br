@@ -5,18 +5,18 @@ ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b4b7c3f9681dd636ef88a5cd9f59c84c4ecac89c
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 8af1a09ba16c1b51c0ebb443aed65e131bbc6b9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440357"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932802"
 ---
 # <a name="enable-iis"></a>enable-iis
 
@@ -26,7 +26,7 @@ A `enable-iis` ferramenta é usada para habilitar recursos do IIS e instalar o [
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Type   | Obrigatório | Valor                                                                               |
+| Nome                                             | Tipo   | Obrigatório | Valor                                                                               |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                               |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | Não usado.                                                                           |

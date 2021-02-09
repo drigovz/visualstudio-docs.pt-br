@@ -9,13 +9,13 @@ f1_keywords:
 ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 9aac9420d084c64a4bd5d9199f6a7ca96b8c4281
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+manager: jmartens
+ms.openlocfilehash: b5e3674c955b229c4c517db5d1dab3d36830da5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040505"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932313"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Opções, Editor de texto, XML, Formatação
 
@@ -25,7 +25,7 @@ Use a página de opções de **Formatação** para especificar como elementos e 
 
 **Preservar formatação manual de atributos**
 
-Não reformate os atributos. Essa é a configuração padrão.
+Não reformate os atributos. Esta é a configuração padrão.
 
 > [!NOTE]
 > Se os atributos estiverem em linhas múltiplas, o editor recua cada linha de atributos para corresponder ao recuo do elemento pai.
@@ -55,7 +55,7 @@ Reformata o elemento quando a marca final é concluída.
 
 **Formatar conteúdo misto por padrão.**
 
-Tenta reformatar conteúdo misto, exceto quando o conteúdo encontra-se em um escopo `xml:space="preserve"`. Essa é a configuração padrão.
+Tenta reformatar conteúdo misto, exceto quando o conteúdo encontra-se em um escopo `xml:space="preserve"`. Esta é a configuração padrão.
 
 Se um elemento contiver uma mistura de texto e marcação, os conteúdos serão considerados de conteúdo misto. A seguir há um exemplo de um elemento com conteúdo misto.
 
@@ -66,7 +66,7 @@ Se um elemento contiver uma mistura de texto e marcação, os conteúdos serão 
 </dir>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Opções de XML – Diversos](options-text-editor-xml-miscellaneous.md)
 - [Ferramentas XML no Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

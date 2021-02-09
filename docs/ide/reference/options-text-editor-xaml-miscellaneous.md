@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 2a420e58-a408-4e8d-9220-44eeb4f67801
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: c5662381d025fa2c74ac82ac217122ea9097ab14
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 5679c6fd2fa0f11af045105df722ca13abf53fb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040960"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932264"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opções, Editor de texto, XAML, Diversos
 
@@ -56,6 +56,6 @@ Use essa configuração para controlar quando marcas e aspas são geradas automa
 
 Use essa configuração para controlar quando os erros e avisos são gerados automaticamente. Para obter mais informações, confira [Avisos e erros de XAML](../../xaml-tools/xaml-errors-warnings.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [XAML na WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)

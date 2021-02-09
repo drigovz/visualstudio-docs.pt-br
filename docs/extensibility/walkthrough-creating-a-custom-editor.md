@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d090abb6-d99f-4083-a3db-cd16bf81ce7d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 188c02471e8921e66faefe9668ec3f54c935b50b
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 0a4ebcf99634012943ed0a7fd1a72b5d4852729e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863126"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931377"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>Walkthrough: criar um editor personalizado
 O modelo de projeto VSPackage pode criar um editor personalizado simples em C++. O modelo de projeto VSPackage não dá mais suporte a projetos C# ou Visual Basic. Para obter mais informações, consulte [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
@@ -48,5 +48,5 @@ O modelo de projeto VSPackage pode criar um editor personalizado simples em C++.
 
      O editor oferece suporte a operações de recortar e colar, localizar e substituir e abrir e carregar.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [VSPackages](../extensibility/internals/vspackages.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e80a6960-9456-4764-9320-e7b1bd57fe5d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0fdbd8e409208c28fbfc1ce728df3591be655c75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2cbe4c0951d116500a94e1bce0fb905ea5bc501d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725027"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933044"
 ---
 # <a name="idebugportex2resumeprocess"></a>IDebugPortEx2::ResumeProcess
 Retoma a execução de um processo.
@@ -28,13 +28,13 @@ Retoma a execução de um processo.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT ResumeProcess( 
+HRESULT ResumeProcess( 
    IDebugProcess2* pPortProcess
 );
 ```
 
 ```cpp
-int ResumeProcess( 
+int ResumeProcess( 
    IDebugProcess2 pPortProcess
 );
 ```
@@ -43,7 +43,7 @@ int ResumeProcess( 
 `pPortProcess`\
 no Um objeto [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) que representa o processo a ser retomado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também

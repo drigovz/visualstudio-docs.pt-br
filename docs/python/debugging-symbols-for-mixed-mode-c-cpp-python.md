@@ -5,22 +5,22 @@ ms.date: 11/12/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4a735c374216b1810b3abd99ffab89000cec8b8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52eb7535430248f519654c09924541a6900336cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85540914"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933083"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Instalar símbolos de depuração para interpretadores do Python
 
 Para fornecer uma experiência de depuração completa, o [depurador de modo misto do Python](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) no Visual Studio precisa de símbolos de depuração para que o interpretador do Python sendo usado analise várias estruturas de dados internas. Por *python27.dll*, por exemplo, o arquivo de símbolo correspondente é *python27. pdb*; por *python36.dll*, o arquivo de símbolo é *python36. pdb*. Cada versão do interpretador também fornece arquivos de símbolo para diversos módulos.
 
-Com o Visual Studio 2017 e posterior, os interpretadores do Python 3 e do Anaconda 3 instalam automaticamente seus respectivos símbolos e o Visual Studio encontra esses símbolos de forma automática. Para o Visual Studio 2015 e anterior, ou ao usar outros interpretadores, você precisa baixar símbolos separadamente e, em seguida, apontar o Visual Studio para eles por meio da caixa de diálogo opções de **ferramentas**  >  **Options** na guia símbolos de **depuração**  >  **Symbols** . Essas etapas são detalhadas nas seções a seguir.
+Com o Visual Studio 2017 e posterior, os interpretadores do Python 3 e do Anaconda 3 instalam automaticamente seus respectivos símbolos e o Visual Studio encontra esses símbolos de forma automática. Para o Visual Studio 2015 e anterior, ou ao usar outros interpretadores, você precisa baixar símbolos separadamente e, em seguida, apontar o Visual Studio para eles por meio da caixa de diálogo opções de **ferramentas**  >   na guia símbolos de **depuração**  >   . Essas etapas são detalhadas nas seções a seguir.
 
 É possível que o Visual Studio faça solicitações quando precisar de símbolos, normalmente ao iniciar uma sessão de depuração de modo misto. Nesse caso, ele exibe uma caixa de diálogo com duas opções:
 
@@ -48,7 +48,7 @@ Com o Visual Studio 2017 e posterior, os interpretadores do Python 3 e do Anacon
 
 Se os símbolos tiverem sido baixados separadamente, siga as etapas abaixo para que o Visual Studio os reconheça. Se os símbolos foram instalados por meio do Python 3.5 ou de um instalador posterior, o Visual Studio os encontra automaticamente.
 
-1. Selecione o **Tools**  >  menu**Opções** de ferramentas e navegue até símbolos de **depuração**  >  **Symbols**.
+1. Selecione o   >  menu **Opções** de ferramentas e navegue até símbolos de **depuração**  >  .
 
 1. Selecione o botão **Adicionar** na barra de ferramentas (descrita abaixo), insira a pasta em que os símbolos baixados foram expandidos (em que *python.pdb* está localizado, como *c:\python34\Symbols*, conforme mostrado abaixo) e selecione **OK**.
 

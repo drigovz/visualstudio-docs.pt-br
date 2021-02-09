@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 37213cc2-a038-42ea-9b28-3ae40d4cfe69
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5b5759110c60bf25c0197c370bebdd45f71c2a22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ff93f4b4acb8bb2467f1347772ed6b2852b1711
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734150"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932835"
 ---
 # <a name="idebugcomplussymbolprovidercreatetypefromprimitive"></a>IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 Cria um tipo a partir do tipo primitivo especificado.
@@ -52,7 +52,7 @@ no Um objeto de endereço representado por uma interface [IDebugAddress](../../.
 `ppType`\
 no Retorna um objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que descreve o tipo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo

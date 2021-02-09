@@ -25,23 +25,23 @@ helpviewer_keywords:
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 884cecdcbdbef3320516dd67c43cedd72bc25076
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: a310cd4428232338ed46a8a54502d9956e73be15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903849"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932002"
 ---
 # <a name="midl-task"></a>tarefa MIDL
 
-Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl.exe* . Para obter mais informações, confira [Referência da linha de comando MIDL](/windows/desktop/Midl/midl-command-line-reference).
+Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl.exe*. Para obter mais informações, confira [Referência da linha de comando MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 ## <a name="parameters"></a>Parâmetros
 
- Veja a seguir a descrição dos parâmetros da tarefa **MIDL** . A maioria dos parâmetros de tarefa e alguns conjuntos de parâmetros correspondem a uma opção de linha de comando.
+ Veja a seguir a descrição dos parâmetros da tarefa **MIDL**. A maioria dos parâmetros de tarefa e alguns conjuntos de parâmetros correspondem a uma opção de linha de comando.
 
 - **AdditionalIncludeDirectories**
 
@@ -145,7 +145,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Se `true`, verifica se os valores de enumeração estão em um intervalo permitido.
 
-     Para obter mais informações, confira a opção **/error enum** na ajuda da linha de comando ( **/?** ) do *midl.exe* .
+     Para obter mais informações, confira a opção **/error enum** na ajuda da linha de comando (**/?**) do *midl.exe*.
 
 - **ErrorCheckRefPointers**
 
@@ -205,7 +205,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Parâmetro **booliano** opcional.
 
-     Se ele for `true`, um arquivo de biblioteca de tipos ( *.tlb* ) não será gerado.
+     Se ele for `true`, um arquivo de biblioteca de tipos (*.tlb*) não será gerado.
 
      Para obter mais informações, confira a opção **/notlb** em [Referência da linha de comando MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -261,7 +261,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Parâmetro opcional de **cadeia de caracteres []** .
 
-     Especifica um ou mais *defines* , ou seja, um nome e um valor opcional a serem passados para o pré-processador C como se por uma diretiva `#define`. A forma de cada define é *nome[=valor]* .
+     Especifica um ou mais *defines*, ou seja, um nome e um valor opcional a serem passados para o pré-processador C como se por uma diretiva `#define`. A forma de cada define é *nome[=valor]*.
 
      Para obter mais informações, confira a opção **/D** em [Referência da linha de comando MIDL](/windows/desktop/Midl/midl-command-line-reference). Consulte também o parâmetro **UndefinePreprocessorDefinitions** nessa tabela.
 
@@ -299,7 +299,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Parâmetro de **cadeia de caracteres** opcional.
 
-     Especifica o alinhamento ( *nível de empacotamento* ) de estruturas no sistema de destino.
+     Especifica o alinhamento (*nível de empacotamento*) de estruturas no sistema de destino.
 
      Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
@@ -342,7 +342,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
     |**NotSet**|*\<none>*|
     |**Win32**|**/env win32**|
     |**Itanium**|**/env ia64**|
-    |**X64**|**/env x64**|
+    |**X86**|**/env x64**|
 
      Para obter mais informações, confira a opção **/env** em [Referência da linha de comando MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -405,7 +405,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Parâmetro de **cadeia de caracteres** opcional.
 
-     Especifica a gravidade ( *nível de aviso* ) de avisos a serem emitidos. Nenhum aviso é emitido para um valor de 0. Caso contrário, um aviso será emitido se seu nível de aviso for numericamente menor ou igual ao valor especificado.
+     Especifica a gravidade (*nível de aviso*) de avisos a serem emitidos. Nenhum aviso é emitido para um valor de 0. Caso contrário, um aviso será emitido se seu nível de aviso for numericamente menor ou igual ao valor especificado.
 
      Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
@@ -419,6 +419,6 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/W** em [Referência da linha de comando MIDL](/windows/desktop/Midl/midl-command-line-reference). Consulte também o parâmetro **WarnAsError** nessa tabela.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 55162def18d2295e0767a3999ffde75d71e1233d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 2ba7234ee0c5a4ab8096c020cb44345f17830540
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931208"
 ---
 # <a name="invokemethod-activity-designer"></a>Designer de atividade de InvokeMethod
 
@@ -38,10 +38,10 @@ A tabela a seguir mostra as <xref:System.Activities.Statements.InvokeMethod> Pro
 |Nome da propriedade|Obrigatório|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|O nome amigável de atividade de <xref:System.Activities.Statements.InvokeMethod> . O valor padrão é InvokeMethod.<br /><br /> Embora o <xref:System.Activities.Activity.DisplayName%2A> não seja estritamente necessário, é melhor usar um.|
-|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|Verdadeiro|O nome do método a ser chamado quando a atividade executar. O método chamado deve ser declarado como **público**. Essa propriedade pode ser editada na superfície do designer e é obrigatória.|
+|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|True|O nome do método a ser chamado quando a atividade executar. O método chamado deve ser declarado como **público**. Essa propriedade pode ser editada na superfície do designer e é obrigatória.|
 |<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|Falso|A coleção de parâmetros do método chamado. Os parâmetros devem ser adicionados à coleção na mesma ordem que eles aparecem na assinatura de método. Para exibir a caixa de diálogo de **parâmetros** onde você pode definir essa propriedade, clique no botão de reticências no campo **parâmetros** da grade de propriedades. Clique no botão **criar argumento** para adicionar os parâmetros.|
 |<xref:System.Activities.Statements.InvokeMethod.Result%2A>|Falso|O valor de retorno de chamada de método.|
-|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|Verdadeiro|Especifica se o método é chamado de forma assíncrona. O valor padrão é **Falso**.|
+|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|True|Especifica se o método é chamado de forma assíncrona. O valor padrão é **Falso**.|
 |<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|Falso|O objeto que contém o método para chamar. Esta propriedade pode ser editada na superfície de designer.<br /><br /> <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> ou <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> são necessários para ser definidos.|
 |<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|Falso|O tipo de <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>. Esta propriedade pode ser editada na superfície de designer. Esta propriedade deve ser definida somente se o método é chamado estático.|
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: c49d1362-ab1c-4b6d-9950-fcae40e0e66b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6441cafcc34a06464061b41691ea5faa32fc359
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f332c715c8a182b30191cd96c8f1d1438cbdefd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739107"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930480"
 ---
 # <a name="contingentproperties-class---internal-members"></a>Classe contingentproperties-membros internos
 Contém propriedades adicionais para um <xref:System.Threading.Tasks.Task> objeto.
@@ -27,7 +27,7 @@ Contém propriedades adicionais para um <xref:System.Threading.Tasks.Task> objet
 
  Como você não pode acessar esses membros internos do .NET Framework, a sintaxe a seguir é fornecida em Common Intermediate Language (CIL).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```csharp
 .class auto ansi nested assembly beforefieldinit ContingentProperties
@@ -38,7 +38,7 @@ Contém propriedades adicionais para um <xref:System.Threading.Tasks.Task> objet
 
 ### <a name="fields"></a>Campos
 
-|Name|Descrição|
+|Nome|Descrição|
 |----------|-----------------|
 |[m_children](../../extensibility/debugger/m-children-field.md)|A lista de tarefas filho que são registradas com esta tarefa.|
 

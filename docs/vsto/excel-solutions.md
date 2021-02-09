@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], Excel
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e6ca4cfd45c1147d10ffaf8d3308b9adb09c689e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 3833ff549b2cceb3f783afc43a4f71dacc00ecb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848112"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931273"
 ---
 # <a name="excel-solutions"></a>Soluções do Excel
   O Visual Studio fornece modelos de projeto que você pode usar para criar personalizações em nível de documento e suplementos do VSTO para o Microsoft Office Excel. Você pode usar essas soluções para automatizar o Excel, estender recursos do Excel e personalizar a interface do usuário do Excel. Para obter mais informações sobre as diferenças entre as personalizações em nível de documento e os suplementos do VSTO, consulte [visão geral do desenvolvimento de soluções do Office &#40;&#41;do VSTO ](../vsto/office-solutions-development-overview-vsto.md).
@@ -109,7 +109,7 @@ ms.locfileid: "96848112"
 
 ### <a name="related-topics"></a>Tópicos relacionados
 
-| Título | Descrição |
+| Title | Descrição |
 | - | - |
 | [Visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md) | Fornece uma visão geral dos tipos principais fornecidos pelo modelo de objeto do Excel. |
 | [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md) | Fornece informações sobre objetos estendidos (fornecidos pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ) que você pode usar em soluções do Excel. |

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 755c018a-8a8b-4c94-8aee-3f171fc419e5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1819f72cc0eef389a3ef46148d4462fbd610e1a
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 04b435df9b028689ea6c0d1f2c61e7e8df8bb8bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048690"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931754"
 ---
 # <a name="requiresframework35sp1assembly-task"></a>Tarefa RequiresFramework35SP1Assembly
 
@@ -51,7 +51,7 @@ Determina se o aplicativo requer o .NET Framework 3.5 SP1.
 
  Além de ter os parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
