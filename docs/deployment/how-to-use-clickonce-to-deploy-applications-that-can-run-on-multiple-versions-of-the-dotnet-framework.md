@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e0a8c330-21bc-4eb2-b936-fd0f3c3221f1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67dcee1fac0b5ec082a7f92285c6c0ac2523800a
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c87ed73d2c3a26ecc4522c6497ac71e33e46a6c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349510"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889116"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Como usar o ClickOnce para implantar aplicativos que podem ser executados em várias versões do .NET Framework
 Você pode implantar um aplicativo que tem como alvo várias versões do .NET Framework usando a tecnologia de implantação do ClickOnce. Isso requer que você gere e atualize os manifestos de implantação e de aplicativo.
@@ -104,7 +104,7 @@ Você pode implantar um aplicativo que tem como alvo várias versões do .NET Fr
 
 - Atualize e assine novamente os manifestos de aplicativo e implantação. Para obter mais informações, consulte [como: assinar novamente manifestos de aplicativo e implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [\<compatibleFrameworks> elementos](../deployment/compatibleframeworks-element-clickonce-deployment.md)
 - [\<dependency> elementos](../deployment/dependency-element-clickonce-application.md)

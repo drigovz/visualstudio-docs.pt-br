@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 673b08bf5680e04c90376c9eb3d63f6f03df9723
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 7c0aa8550bc402520052003b59cf4ab1deaad7b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914186"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888960"
 ---
 # <a name="create-a-custom-debug-engine"></a>Criar um mecanismo de depuração personalizado
 Um mecanismo DE depuração (DE) é um componente que permite a depuração de arquiteturas de tempo de execução específicas. Normalmente, há apenas uma DE implementação por ambiente DE tempo DE execução.

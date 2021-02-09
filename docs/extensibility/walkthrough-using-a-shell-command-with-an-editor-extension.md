@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38d855ebe34c54d06159ecd958a8b1d31ae0131f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 4e0072d3f39ef037dfaa660d3a297afb59baacf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877813"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888908"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Walkthrough: usar um comando do shell com uma extensão do editor
 Em um VSPackage, você pode adicionar recursos como comandos de menu ao editor. Este tutorial mostra como adicionar um Adornment a uma exibição de texto no editor invocando um comando de menu.
@@ -693,5 +693,5 @@ Em um VSPackage, você pode adicionar recursos como comandos de menu ao editor. 
 
      Fourscore...
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Walkthrough: vincular um tipo de conteúdo a uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

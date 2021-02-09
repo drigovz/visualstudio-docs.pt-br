@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1908b4f63edcf90643c28523c0c6ed0d0e11a97
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 7435a4e4973ee0a000555e9508328a76f7aa59a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382722"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889142"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;&gt;elemento FileAssociation (aplicativo ClickOnce)
 Identifica uma extensão de arquivo a ser associada ao aplicativo.
@@ -45,9 +45,9 @@ Identifica uma extensão de arquivo a ser associada ao aplicativo.
 |Atributo|Descrição|
 |---------------|-----------------|
 |`extension`|Obrigatórios. A extensão de arquivo a ser associada ao aplicativo.|
-|`description`|Obrigatórios. Uma descrição do tipo de arquivo a ser usado pelo shell.|
-|`progid`|Obrigatórios. Um nome que identifica exclusivamente o tipo de arquivo.|
-|`defaultIcon`|Obrigatórios. Especifica o ícone a ser usado para arquivos com esta extensão. O arquivo de ícone deve ser especificado usando o [ \<file> elemento](../deployment/file-element-clickonce-application.md) dentro do [ \<assembly> elemento](../deployment/assembly-element-clickonce-application.md) que contém esse elemento.|
+|`description`|Obrigatório. Uma descrição do tipo de arquivo a ser usado pelo shell.|
+|`progid`|Obrigatório. Um nome que identifica exclusivamente o tipo de arquivo.|
+|`defaultIcon`|Obrigatório. Especifica o ícone a ser usado para arquivos com esta extensão. O arquivo de ícone deve ser especificado usando o [ \<file> elemento](../deployment/file-element-clickonce-application.md) dentro do [ \<assembly> elemento](../deployment/assembly-element-clickonce-application.md) que contém esse elemento.|
 
 ## <a name="remarks"></a>Comentários
  Esse elemento deve incluir uma referência de namespace XML para "urn: schemas-microsoft-com: ClickOnce. v1". Se o `<fileAssociation>` elemento for usado, ele deverá vir após o `<application>` elemento em seu [ \<assembly> elemento](../deployment/assembly-element-clickonce-application.md)pai.

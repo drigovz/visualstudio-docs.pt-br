@@ -9,21 +9,21 @@ f1_keywords:
 - Blend.Start.Dev12
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: affef27dae9fe569c0cacbbd3725b9bf76edb94c
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 9fdc3fc2241807cd1b36ec64d620c7b46a498918
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796336"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889259"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Visão geral do Blend para Visual Studio
 
 O Blend for Visual Studio ajuda você a projetar aplicativos Web e Windows baseados em XAML. Ele fornece a mesma experiência básica de design XAML que o Visual Studio e adiciona designers visuais para tarefas avançadas, como animações e comportamentos. Para obter uma comparação entre o Blend e o Visual Studio, confira [Criar XAML no Visual Studio e no Blend para Visual Studio](../xaml-tools/designing-xaml-in-visual-studio.md).
 
-Blend para Visual Studio é um componente do Visual Studio. Para instalar o Blend, no **Instalador do Visual Studio** escolha a carga de trabalho **desenvolvimento de Plataforma Universal do Windows** ou **desenvolvimento de área de trabalho do .NET** . As duas cargas de trabalho incluem o componente Blend para Visual Studio.
+Blend para Visual Studio é um componente do Visual Studio. Para instalar o Blend, no **Instalador do Visual Studio** escolha a carga de trabalho **desenvolvimento de Plataforma Universal do Windows** ou **desenvolvimento de área de trabalho do .NET**. As duas cargas de trabalho incluem o componente Blend para Visual Studio.
 
 ![Componentes da carga de trabalho UWP](media/installer-uwp.png)&nbsp;&nbsp;&nbsp;&nbsp;![Componentes da carga de trabalho de desenvolvimento de área de trabalho do .NET](media/installer-dotnet-desktop.png)
 
@@ -64,7 +64,7 @@ Acesse o painel Ativos e mostre o ativo usado mais recentemente na biblioteca.
 
 ## <a name="assets-window"></a>Janela Ativos
 
-A janela **Ativos** contém todos os controles disponíveis e é semelhante à **Caixa de ferramentas** no Visual Studio. Além dos controles, você encontrará tudo o que pode adicionar à sua prancheta na janela **Ativos** , incluindo estilos, mídias, comportamentos e efeitos. Para abrir a janela **Ativos** , escolha **Exibir** > **Janela Ativos** ou pressione **Ctrl**+**Alt**+**X** .
+A janela **Ativos** contém todos os controles disponíveis e é semelhante à **Caixa de ferramentas** no Visual Studio. Além dos controles, você encontrará tudo o que pode adicionar à sua prancheta na janela **Ativos**, incluindo estilos, mídias, comportamentos e efeitos. Para abrir a janela **Ativos**, escolha **Exibir** > **Janela Ativos** ou pressione **Ctrl**+**Alt**+**X**.
 
 ![Janela Ativos no Blend para Visual Studio](media/blend-assets-window.png)
 
@@ -73,7 +73,7 @@ A janela **Ativos** contém todos os controles disponíveis e é semelhante à *
 
 ## <a name="objects-and-timeline-window"></a>Janela Objetos e Linha do Tempo
 
-Use essa janela para organizar os objetos na prancheta e, se quiser, para animá-los. Para abrir a janela **Objetos e Linha do Tempo** , escolha **Exibir** > **Estrutura de Tópicos do Documento** . Além da funcionalidade fornecida na [janela Estrutura de Tópicos do Documento](creating-a-ui-by-using-xaml-designer-in-visual-studio.md#document-outline-window) no Visual Studio, a janela Objetos e Linha do Tempo no Blend para Visual Studio posiciona a área de composição da linha do tempo à direita. Use a linha do tempo quando estiver criando e editando animações.
+Use essa janela para organizar os objetos na prancheta e, se quiser, para animá-los. Para abrir a janela **Objetos e Linha do Tempo**, escolha **Exibir** > **Estrutura de Tópicos do Documento**. Além da funcionalidade fornecida na [janela Estrutura de Tópicos do Documento](creating-a-ui-by-using-xaml-designer-in-visual-studio.md#document-outline-window) no Visual Studio, a janela Objetos e Linha do Tempo no Blend para Visual Studio posiciona a área de composição da linha do tempo à direita. Use a linha do tempo quando estiver criando e editando animações.
 
 ![Janela Objetos e Linha do Tempo no modo de animação](media/storyboard-timeline.png)
 
@@ -81,7 +81,7 @@ Usar os botões relacionados ao storyboard ![Botões do storyboard no Blend para
 
 Passe o mouse sobre cada botão na janela para saber mais sobre a funcionalidade disponível.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Animar objetos](../xaml-tools/animate-objects-in-xaml-designer.md)
 - [Desenhe as formas e demarcadores](../xaml-tools/draw-shapes-and-paths.md)
