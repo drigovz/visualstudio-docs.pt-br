@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6a97cb74-6a14-41fd-8e24-2a42d7a1e529
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4bf904e6f9387610fbdb83e33d4738cfa7a528
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2337dbe13b6d6fed1b12bbcee86f943831dff3d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462479"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862769"
 ---
 # <a name="idiasymbolget_reference"></a>IDiaSymbol::get_reference
 Recupera um sinalizador que especifica se um tipo de ponteiro é uma referência.
@@ -25,7 +25,7 @@ Recupera um sinalizador que especifica se um tipo de ponteiro é uma referência
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_reference ( 
+HRESULT get_reference ( 
    BOOL* pRetVal
 );
 ```
@@ -35,11 +35,11 @@ HRESULT get_reference ( 
 
 fora Retorna `TRUE` se um tipo de ponteiro é uma referência; caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
 > Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

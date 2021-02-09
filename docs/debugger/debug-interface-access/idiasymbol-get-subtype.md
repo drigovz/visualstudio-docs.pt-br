@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 0b3cbf77-8f11-434a-ad60-ea9829fec6fa
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 57a7756d7764cbd4799bfe49eec7f06732bd0bee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3b5043404e7100af1b62e9aeea3f03f80d42d1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461945"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862692"
 ---
 # <a name="idiasymbolget_subtype"></a>IDiaSymbol::get_subType
 Recupera o subtipo.
@@ -32,8 +32,8 @@ HRESULT get_subType(
 
 fora Um ponteiro para o subtipo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

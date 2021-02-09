@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 41c751ba-81be-4bd3-838f-8373fc146157
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 64cc4dbae33e8522e323681196a7401735f0257b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70463ad786afda31f6cba97131582e16820d64dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462382"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862734"
 ---
 # <a name="idiasymbolget_samplerslot"></a>IDiaSymbol::get_samplerSlot
 Recupera o slot de amostra.
@@ -32,8 +32,8 @@ HRESULT get_samplerSlot(
 
 fora Um ponteiro para um `DWORD` que contém o slot de amostra.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 139a35bd-faeb-4878-be72-394dedfbb18f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9336bece2713c69f4fbb88df9703405cdd161e54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9421807871a173535aaded1064133dcef683f513
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862671"
 ---
 # <a name="idiasymbolget_symtag"></a>IDiaSymbol::get_symTag
 Recupera o classificador de tipo de símbolo.
@@ -25,7 +25,7 @@ Recupera o classificador de tipo de símbolo.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_symTag ( 
+HRESULT get_symTag ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_symTag ( 
 
 fora Retorna um valor da enumeração de [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) que especifica o classificador de tipo de símbolo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -49,6 +49,6 @@ DWORD       tag = 0;
 pType->get_symTag( &tag );
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

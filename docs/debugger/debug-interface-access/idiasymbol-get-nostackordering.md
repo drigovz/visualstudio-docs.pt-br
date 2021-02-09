@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a1753917-705b-4165-9880-d05e91e6dcb4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c82b8c4836d97f02fa84aec500d961911f993df3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e98ddb508ef1e00b1192df2d6015ba3ca5632cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462787"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862909"
 ---
 # <a name="idiasymbolget_nostackordering"></a>IDiaSymbol::get_noStackOrdering
 Essa função recupera um sinalizador que indica se nenhuma ordem de pilha pode ser feita como parte da verificação do buffer de pilha (opção[de compilador/GS (verificação de segurança de buffer)](/cpp/build/reference/gs-buffer-security-check) ).
@@ -35,7 +35,7 @@ HRESULT get_noStackOrdering(
 
 fora Retorna `TRUE` se nenhuma ordem de pilha pode ser feita como parte da verificação do buffer de pilha; caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -48,6 +48,6 @@ fora Retorna `TRUE` se nenhuma ordem de pilha pode ser feita como parte da verif
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [/GS (verificação de segurança do buffer)](/cpp/build/reference/gs-buffer-security-check)

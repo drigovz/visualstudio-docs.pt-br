@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fdcb38fb-490e-4d15-b4e5-3770043a366c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b42ec7b0026c19ab9ef9545a821179273bbb72c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 92c088660b4ae5cca67a5a90d840611046691a76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461612"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862552"
 ---
 # <a name="idiasymbolget_unalignedtype"></a>IDiaSymbol::get_unalignedType
 Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário está desalinhado.
@@ -25,7 +25,7 @@ Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_unalignedType ( 
+HRESULT get_unalignedType ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_unalignedType ( 
 
 fora Retorna `TRUE` se o tipo de dados definido pelo usuário não estiver alinhado; caso contrário, retornará `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]

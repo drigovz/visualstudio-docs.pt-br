@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 442f20d9-9d6a-44a1-83fb-c3f8c14b6c97
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb70f66ca23f9710b2d41e39b4cd626829a095d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81dc8975b415ca821fbfb89848cad7d1d02177b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462605"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862839"
 ---
 # <a name="idiasymbolget_offsetinudt"></a>IDiaSymbol::get_offsetInUdt
 Recupera o deslocamento para o início de um tipo definido pelo usuário (UDT) de um membro no UDT.
@@ -25,7 +25,7 @@ Recupera o deslocamento para o início de um tipo definido pelo usuário (UDT) d
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_offsetInUdt( 
+HRESULT get_offsetInUdt( 
    DWORD* pRetVal)
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_offsetInUdt( 
 
 fora Retorna o deslocamento em bytes do local do símbolo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -51,5 +51,5 @@ fora Retorna o deslocamento em bytes do local do símbolo.
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

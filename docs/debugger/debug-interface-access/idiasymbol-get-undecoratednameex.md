@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 25942c76d8e568d6354c9a6a2b2c69c806cde352
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3d34c362a64107bff94e271c01b57d45d09cf8d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461598"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862545"
 ---
 # <a name="idiasymbolget_undecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Recupera parte ou todo um nome não decorado para um nome de C++ decorado (vinculação).
@@ -25,7 +25,7 @@ Recupera parte ou todo um nome não decorado para um nome de C++ decorado (vincu
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_undecoratedNameEx( 
+HRESULT get_undecoratedNameEx( 
    DWORD undecorateOptions,
    BSTR* pRetval
 );
@@ -40,7 +40,7 @@ no Especifica uma combinação de sinalizadores que controlam o que é retornado
 
 fora Retorna o nome não decorado para um nome decorado em C++.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -75,5 +75,5 @@ fora Retorna o nome não decorado para um nome decorado em C++.
 |UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|Suprime a verificação de caracteres de identificador válidos.|
 |UNDNAME_NO_PTR64|0x20000|Não inclui ptr64 na saída.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 187801f0-bd82-4c5b-9fae-8eeb1a4ac0ce
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 401894a921f2ad6a9649e337059c8ee142858f84
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bec0bcde96bbb55129cf3549afa48707e236ddeb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462619"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862846"
 ---
 # <a name="idiasymbolget_oemsymbolid"></a>IDiaSymbol::get_oemSymbolId
 Recupera o valor da ID do símbolo do OEM (fabricante original do equipamento).
@@ -25,7 +25,7 @@ Recupera o valor da ID do símbolo do OEM (fabricante original do equipamento).
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_oemSymbolId ( 
+HRESULT get_oemSymbolId ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_oemSymbolId ( 
 
 fora Retorna a ID de símbolo atribuída internamente de um OEM.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -46,6 +46,6 @@ fora Retorna a ID de símbolo atribuída internamente de um OEM.
 
  Essa propriedade aplica-se somente a símbolos com um tipo de [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) de `SymTagCustomType` .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

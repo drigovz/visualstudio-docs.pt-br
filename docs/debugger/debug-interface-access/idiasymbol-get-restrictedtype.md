@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: c48b00a6-26b0-47b0-b824-fe44dedbc756
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bd7ecb7c0883281b44525d65a5dde44950842bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dcd200d40c982ddcf8137cac51ada813c962fd6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462444"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862727"
 ---
 # <a name="idiasymbolget_restrictedtype"></a>IDiaSymbol::get_restrictedType
 Especifica se o `this` ponteiro está sinalizado como restrito.
@@ -32,8 +32,8 @@ HRESULT get_restrictedType(
 
 fora Um ponteiro para um `BOOL` que especifica se o `this` ponteiro está sinalizado como restrito.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

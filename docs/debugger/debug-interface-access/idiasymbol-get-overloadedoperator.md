@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 257a9894-e980-47ae-bdc0-c5e2293ea734
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be214ee5a2e566ae8e79989279ea3f8a52164d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b42c1c6a5a05d18ec4846b950bce46f4fa26787
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462591"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862832"
 ---
 # <a name="idiasymbolget_overloadedoperator"></a>IDiaSymbol::get_overloadedOperator
 Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário tem operadores sobrecarregados.
@@ -25,7 +25,7 @@ Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_overloadedOperator ( 
+HRESULT get_overloadedOperator ( 
    BOOL* pRetVal
 );
 ```
@@ -35,11 +35,11 @@ HRESULT get_overloadedOperator ( 
 
 fora Retorna `TRUE` se o tipo de dados definido pelo usuário tem operadores sobrecarregados; caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
 > Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

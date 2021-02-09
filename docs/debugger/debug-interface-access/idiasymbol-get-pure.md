@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b61107e9-9144-4981-b7ef-58a339b80c58
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a3c507ae0cacae3f7819b0e9566e4f9b91c2c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad7d48615a29349562b76e8e93158ff4d3d5743
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462521"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862818"
 ---
 # <a name="idiasymbolget_pure"></a>IDiaSymbol::get_pure
 Recupera um sinalizador que especifica se a função é virtual puro.
@@ -25,7 +25,7 @@ Recupera um sinalizador que especifica se a função é virtual puro.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_pure ( 
+HRESULT get_pure ( 
    BOOL* pRetVal
 );
 ```
@@ -35,11 +35,11 @@ HRESULT get_pure ( 
 
 fora Retorna `TRUE` se a função é virtual pura; caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
 > Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
