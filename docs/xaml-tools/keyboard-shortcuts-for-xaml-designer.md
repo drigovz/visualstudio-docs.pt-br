@@ -7,13 +7,13 @@ ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: aed3ed43afcad9cfb38dc427a441512106d9749b
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+manager: jmartens
+ms.openlocfilehash: 0e0bdc7b10eb20b149493c8d9e05a6711eb71bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881328"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Atalhos de teclado do XAML Designer
 
@@ -36,7 +36,7 @@ Esta tabela lista os atalhos que estão disponíveis para trabalhar com elemento
 |Remova todos os elementos|Pressione **Ctrl** + **A**|
 |Limpe a seleção de todos os objetos|Pressione **Ctrl** + **Shift** + **A**|
 |Mostrar ou ocultar identificadores de elemento|Pressione **F9**|
-|Selecione uma propriedade para um elemento|Com um elemento selecionado e o foco na janela Propriedades, pressione **Tab** . (Use **Ctrl** + **Para alterar o foco para o** janela Propriedades.) Você pode usar as teclas de direção para selecionar valores de propriedade nas listas suspensas.|
+|Selecione uma propriedade para um elemento|Com um elemento selecionado e o foco na janela Propriedades, pressione **Tab**. (Use **Ctrl** + **Para alterar o foco para o** janela Propriedades.) Você pode usar as teclas de direção para selecionar valores de propriedade nas listas suspensas.|
 
 ## <a name="document-outline-window-shortcuts"></a>Atalhos da janela de Estrutura de Tópicos de Documento
 
@@ -49,6 +49,6 @@ A tabela a seguir lista os atalhos disponíveis ao trabalhar com elementos na ja
 |Bloqueie objetos da prancheta enquanto o foco está na janela de Estrutura de tópicos do documento|**Ctrl** + **L**|
 |Desbloqueie objetos da prancheta enquanto o foco está na janela de Estrutura de tópicos do documento|**Shift** + **Ctrl** + **L**|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criando uma interface do usuário usando o Designer XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 09e5973b39bae2fbf923cf97ac1bd9cf15e10874
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 172f3ea546565554c5f0701b81a88b9ca99b4100
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407673"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881094"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;&gt;elemento Dependency (implantação do ClickOnce)
 Identifica a versão do aplicativo a ser instalada e o local do manifesto do aplicativo.
@@ -78,25 +78,25 @@ Identifica a versão do aplicativo a ser instalada e o local do manifesto do apl
  O `dependency` elemento geralmente expressa as dependências para o aplicativo principal em assemblies contidos em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Se seu aplicativo de Main.exe consumir um assembly chamado DotNetAssembly.dll, esse assembly deverá estar listado em uma seção de dependência. No entanto, a dependência também pode expressar outros tipos de dependências, como dependências em uma versão específica do Common Language Runtime, em um assembly no GAC (cache de assembly global) ou em um objeto COM. Como se trata de uma tecnologia de implantação sem intervenção, o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] não pode iniciar o download e a instalação desses tipos de dependências, mas impede que o aplicativo seja executado se uma ou mais das dependências especificadas não existirem.
 
 ## <a name="dependentassembly"></a>dependentAssembly
- Obrigatórios. Esse elemento contém o `assemblyIdentity` elemento. A tabela a seguir mostra os atributos `dependentAssembly` aos quais o oferece suporte.
+ Obrigatório. Esse elemento contém o `assemblyIdentity` elemento. A tabela a seguir mostra os atributos `dependentAssembly` aos quais o oferece suporte.
 
 | Atributo | Descrição |
 |------------------| - |
 | `preRequisite` | Opcional. Especifica que esse assembly já deve existir no GAC. Os valores válidos são `true` e `false`. Se `true` e o assembly especificado não existir no GAC, o aplicativo não será executado. |
 | `visible` | Opcional. Identifica a identidade de aplicativo de nível superior, incluindo suas dependências. Usado internamente pelo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] para gerenciar o armazenamento e a ativação do aplicativo. |
-| `dependencyType` | Obrigatórios. A relação entre essa dependência e o aplicativo. Os valores válidos são:<br /><br /> -   `install`. O componente representa uma instalação separada do aplicativo atual.<br />-   `preRequisite`. O componente é exigido pelo aplicativo atual. |
+| `dependencyType` | Obrigatório. A relação entre essa dependência e o aplicativo. Os valores válidos são:<br /><br /> -   `install`. O componente representa uma instalação separada do aplicativo atual.<br />-   `preRequisite`. O componente é exigido pelo aplicativo atual. |
 | `codebase` | Opcional. O caminho completo para o manifesto do aplicativo. |
 | `size` | Opcional. O tamanho do manifesto do aplicativo, em bytes. |
 
 ## <a name="assemblyidentity"></a>assemblyIdentity
- Obrigatórios. Esse elemento é um filho do `dependentAssembly` elemento. O conteúdo de `assemblyIdentity` deve ser o mesmo descrito no manifesto do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. A tabela a seguir mostra os atributos do `assemblyIdentity` elemento.
+ Obrigatório. Esse elemento é um filho do `dependentAssembly` elemento. O conteúdo de `assemblyIdentity` deve ser o mesmo descrito no manifesto do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. A tabela a seguir mostra os atributos do `assemblyIdentity` elemento.
 
 |Atributo|Descrição|
 |---------------|-----------------|
 |`Name`|Obrigatórios. Identifica o nome do aplicativo.|
-|`Version`|Obrigatórios. Especifica o número de versão do aplicativo, no seguinte formato: `major.minor.build.revision`|
-|`publicKeyToken`|Obrigatórios. Especifica uma cadeia de caracteres hexadecimal de 16 caracteres que representa os últimos 8 bytes do hash SHA-1 da chave pública sob a qual o aplicativo ou assembly é assinado. A chave pública usada para assinar deve ser de 2048 bits ou mais.|
-|`processorArchitecture`|Obrigatórios. Especifica o microprocessador. Os valores válidos são `x86` para o Windows de 32 bits e `IA64` para o windows de 64 bits.|
+|`Version`|Obrigatório. Especifica o número de versão do aplicativo, no seguinte formato: `major.minor.build.revision`|
+|`publicKeyToken`|Obrigatório. Especifica uma cadeia de caracteres hexadecimal de 16 caracteres que representa os últimos 8 bytes do hash SHA-1 da chave pública sob a qual o aplicativo ou assembly é assinado. A chave pública usada para assinar deve ser de 2048 bits ou mais.|
+|`processorArchitecture`|Obrigatório. Especifica o microprocessador. Os valores válidos são `x86` para o Windows de 32 bits e `IA64` para o windows de 64 bits.|
 |`Language`|Opcional. Identifica os códigos de idioma de duas partes do assembly. Por exemplo, EN-US, que significa inglês (EUA). O padrão é `neutral`. Este elemento está no `asmv2` namespace.|
 |`type`|Opcional. Para compatibilidade com versões anteriores do Windows com tecnologia de instalação lado a lado. O único valor permitido é `win32` .|
 

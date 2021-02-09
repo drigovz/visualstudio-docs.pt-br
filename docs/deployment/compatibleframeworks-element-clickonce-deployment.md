@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f6c3ee55-9e65-403d-8664-3ebde872c7d4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da9819cd3df667be5e8fa04372684f82762c037
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 6b0a87e36a176a01b8f243c4646e2711220f807f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383060"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881172"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;&gt;elemento CompatibleFrameworks (implantação do ClickOnce)
 Identifica as versões do .NET Framework em que esse aplicativo pode ser instalado e executado.
@@ -52,13 +52,13 @@ Identifica as versões do .NET Framework em que esse aplicativo pode ser instala
 |`S` `upportUrl`|Opcional. Especifica uma URL em que a versão de .NET Framework compatível preferencial pode ser baixada.|
 
 ## <a name="framework"></a>estrutura
- Obrigatórios. A tabela a seguir lista os atributos aos quais o `framework` elemento dá suporte.
+ Obrigatório. A tabela a seguir lista os atributos aos quais o `framework` elemento dá suporte.
 
 |Atributo|Descrição|
 |---------------|-----------------|
 |`targetVersion`|Obrigatórios. Especifica o número de versão do .NET Framework de destino.|
-|`profile`|Obrigatórios. Especifica o perfil do .NET Framework de destino.|
-|`supportedRuntime`|Obrigatórios. Especifica o número de versão do tempo de execução associado ao .NET Framework de destino.|
+|`profile`|Obrigatório. Especifica o perfil do .NET Framework de destino.|
+|`supportedRuntime`|Obrigatório. Especifica o número de versão do tempo de execução associado ao .NET Framework de destino.|
 
 ## <a name="remarks"></a>Comentários
 

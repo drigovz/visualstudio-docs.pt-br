@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e4142183-3d8b-418f-907f-4ee4c753d8ce
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 876466d3617131815f6aa48b8b7dfb68b645ecb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 120434e44819d4c503336dffeaa1c255626270d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719233"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880223"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 Esse método obtém o idioma que foi usado para compilar o código no endereço de depuração.
@@ -28,7 +28,7 @@ Esse método obtém o idioma que foi usado para compilar o código no endereço 
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetLanguage( 
+HRESULT GetLanguage( 
    IDebugAddress* pAddress,
    GUID*          pguidLanguage,
    GUID*          pguidLanguageVendor
@@ -53,7 +53,7 @@ fora Retorna um `GUID` que especifica o idioma.
 `pguidLanguageVendor`\
 fora Retorna um `GUID` que especifica o fornecedor do idioma.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

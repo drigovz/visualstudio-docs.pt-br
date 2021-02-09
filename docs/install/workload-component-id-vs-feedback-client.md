@@ -5,7 +5,7 @@ description: Use IDs de carga de trabalho e de componente do Visual Studio para 
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
 open_to_public_contributors: false
-ms.openlocfilehash: fe4eec389389622f0d87d30edbbd46d7c5b53d80
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f83b457582124658285e0769d1907a8643d44fda
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81276299"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881757"
 ---
 # <a name="visual-studio-feedback-client-component-directory"></a>Diretório de componentes do Feedback Client do Visual Studio
 
@@ -57,7 +57,7 @@ Estes são os componentes que não são incluídos com nenhuma carga de trabalho
 
 ID do componente | Nome | Versão
 --- | --- | ---
-n/d | n/d | n/d
+N/D | N/D | N/D
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

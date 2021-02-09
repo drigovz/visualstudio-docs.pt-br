@@ -5,7 +5,7 @@ description: Use Visual Studio Professional carga de trabalho e IDs de component
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 05/19/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 6274396d35756682ad929b051d155897bcafb8e7
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: cdb15d60649f63d2725fd80befe50123c4152531
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846991"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881679"
 ---
 # <a name="visual-studio-professional-component-directory"></a>Diretório de componentes do Visual Studio Professional
 
@@ -45,7 +45,7 @@ ms.locfileid: "97846991"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [IDs de carga de trabalho e de componente do Visual Studio](workload-and-component-ids.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - workbooks, running calculations
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e9f385e7c58972844c30320c680f42d8394580d8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 761f58027171ccaa667aa26569e41c3b4a8b75a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524700"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880470"
 ---
 # <a name="how-to-programmatically-run-excel-calculations"></a>Como executar cálculos do Excel programaticamente
   Você usa um processo semelhante para executar cálculos em um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle ou em um objeto Range do Excel nativo.
@@ -58,7 +58,7 @@ ms.locfileid: "97524700"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#31)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#31)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Trabalhar com intervalos](../vsto/working-with-ranges.md)
 - [Controle NamedRange](../vsto/namedrange-control.md)
 - [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)

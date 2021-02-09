@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c60da36ac6a8e5002e65e0973af0f3e0cb13eef7
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 12dc587e25fef4e8b62d6ede0a13d5eb4aa7e3fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006478"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880496"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Atalhos de teclado populares para o Visual Studio
 
@@ -25,7 +25,7 @@ O contexto *Global* significa que o atalho é aplicável em qualquer janela de f
 > [!NOTE]
 > É possível [pesquisar o atalho](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) para qualquer comando abrindo a caixa de diálogo **Opções**, expandindo o nó **Ambiente** e, em seguida, escolhendo **Teclado**.
 
-## <a name="build"></a>Build
+## <a name="build"></a>Compilação
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------| - |
@@ -140,7 +140,7 @@ O contexto *Global* significa que o atalho é aplicável em qualquer janela de f
 |-------------| - |
 |Tools.AttachtoProcess|**Ctrl+Alt+P** [Global]|
 
-## <a name="view"></a>Exibir
+## <a name="view"></a>Visualizar
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------| - |

@@ -5,17 +5,17 @@ description: Usar IDs de carga de trabalho e de componente do Visual Studio para
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 8b99b3e92ace96fcf87f7fb5a4e575cb0ca15ee5
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: fcf85223bbec03594fc64e221b23b5f99c704abf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437404"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881915"
 ---
 ## <a name="azure-development-build-tools"></a>Ferramentas de build de desenvolvimento do Azure
 
@@ -38,14 +38,14 @@ Microsoft.VisualStudio.Component.NuGet.BuildTools | Os destinos e as tarefas de 
 Microsoft. VisualStudio. Component. TypeScript. 4.0 | SDK do TypeScript 4,0 | 16.0.30509.167 | Obrigatório
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Ferramentas de build do Windows Communication Foundation | 16.0.28516.191 | Obrigatório
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Ferramentas de build de desenvolvimento para a Web | 16.0.28516.191 | Obrigatório
-Microsoft.Net.Component.4.5.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.1 | 16.0.28517.75 | Recomendado
-Microsoft.Net.Component.4.5.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.2 | 16.0.28517.75 | Recomendado
-Microsoft.Net.Component.4.5.TargetingPack | Pacote de direcionamento do .NET Framework 4.5 | 16.0.28517.75 | Recomendado
-Microsoft.Net.Component.4.6.TargetingPack | Pacote de direcionamento do .NET Framework 4.6 | 16.0.28517.75 | Recomendado
-Microsoft.Net.Component.4.TargetingPack | Pacote de direcionamento do .NET Framework 4 | 16.0.28517.75 | Recomendado
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | Ferramentas de desenvolvimento do .NET Framework 4 a 4.6 | 16.0.28516.191 | Recomendado
-Microsoft.VisualStudio.Component.AspNet45 | Recursos avançados do ASP.NET | 16.0.28315.86 | Recomendado
-Microsoft.VisualStudio.Component.WebDeploy | Implantação da Web | 16.0.28517.75 | Recomendado
+Microsoft.Net.Component.4.5.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.1 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.Component.4.5.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.2 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.Component.4.5.TargetingPack | Pacote de direcionamento do .NET Framework 4.5 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.Component.4.6.TargetingPack | Pacote de direcionamento do .NET Framework 4.6 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.Component.4.TargetingPack | Pacote de direcionamento do .NET Framework 4 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Ferramentas de desenvolvimento do .NET Framework 4 a 4.6 | 16.0.28516.191 | Recomendadas
+Microsoft.VisualStudio.Component.AspNet45 | Recursos avançados do ASP.NET | 16.0.28315.86 | Recomendadas
+Microsoft.VisualStudio.Component.WebDeploy | Implantação da Web | 16.0.28517.75 | Recomendadas
 Microsoft.Net.Component.3.5.DeveloperTools | Ferramentas de desenvolvimento do .NET Framework 3.5 | 16.0.28517.75 | Opcional
 Microsoft.Net.Component.4.6.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.6.1 | 16.0.28517.75 | Opcional
 Microsoft.Net.Component.4.6.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.6.2 | 16.0.28517.75 | Opcional
@@ -72,15 +72,15 @@ Microsoft. NetCore. Component. SDK | SDK .NET | 16.8.30703.189 | Opcional
 
 ID do componente | Nome | Versão | Tipo de dependência
 --- | --- | --- | ---
-Microsoft.Net.Component.4.5.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.1 | 16.0.28517.75 | Recomendado
-Microsoft.Net.Component.4.5.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.2 | 16.0.28517.75 | Recomendado
-Microsoft.Net.Component.4.5.TargetingPack | Pacote de direcionamento do .NET Framework 4.5 | 16.0.28517.75 | Recomendado
-Microsoft.Net.Component.4.6.TargetingPack | Pacote de direcionamento do .NET Framework 4.6 | 16.0.28517.75 | Recomendado
-Microsoft.Net.Component.4.TargetingPack | Pacote de direcionamento do .NET Framework 4 | 16.0.28517.75 | Recomendado
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | Ferramentas de desenvolvimento do .NET Framework 4 a 4.6 | 16.0.28516.191 | Recomendado
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28714.129 | Recomendado
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# e Visual Basic | 16.8.30509.167 | Recomendado
-Microsoft.VisualStudio.Component.SQL.SSDTBuildSku | SQL Server Data Tools – Ferramentas de Build | 16.0.28315.86 | Recomendado
+Microsoft.Net.Component.4.5.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.1 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.Component.4.5.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.2 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.Component.4.5.TargetingPack | Pacote de direcionamento do .NET Framework 4.5 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.Component.4.6.TargetingPack | Pacote de direcionamento do .NET Framework 4.6 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.Component.4.TargetingPack | Pacote de direcionamento do .NET Framework 4 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Ferramentas de desenvolvimento do .NET Framework 4 a 4.6 | 16.0.28516.191 | Recomendadas
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28714.129 | Recomendadas
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# e Visual Basic | 16.8.30509.167 | Recomendadas
+Microsoft.VisualStudio.Component.SQL.SSDTBuildSku | SQL Server Data Tools – Ferramentas de Build | 16.0.28315.86 | Recomendadas
 
 ## <a name="net-desktop-build-tools"></a>Ferramentas de build de área de trabalho do .NET
 
@@ -97,19 +97,19 @@ Microsoft.Net.Component.4.6.1.TargetingPack | Pacote de direcionamento do .NET F
 Microsoft. net. Component. 4.8. SDK | SDK do .NET Framework 4,8 | 16.4.29313.120 | Obrigatório
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Os destinos e as tarefas de compilação do NuGet | 16.1.28829.92 | Obrigatório
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28714.129 | Obrigatório
-Microsoft.Component.ClickOnce.MSBuild | Ferramentas de build do ClickOnce | 16.0.28625.61 | Recomendado
-Microsoft.Net.Component.4.5.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.1 | 16.0.28517.75 | Recomendado
-Microsoft.Net.Component.4.5.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.2 | 16.0.28517.75 | Recomendado
-Microsoft.Net.Component.4.5.TargetingPack | Pacote de direcionamento do .NET Framework 4.5 | 16.0.28517.75 | Recomendado
-Microsoft.Net.Component.4.6.TargetingPack | Pacote de direcionamento do .NET Framework 4.6 | 16.0.28517.75 | Recomendado
-Microsoft.Net.Component.4.TargetingPack | Pacote de direcionamento do .NET Framework 4 | 16.0.28517.75 | Recomendado
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | Ferramentas de desenvolvimento do .NET Framework 4 a 4.6 | 16.0.28516.191 | Recomendado
-Microsoft.Net.Core.Component.SDK.2.1 | Tempo de execução do .NET Core 2,1 (LTS) | 16.8.30703.189 | Recomendado
-Microsoft. NetCore. Component. Runtime. 3.1 | Tempo de execução do .NET Core 3,1 (LTS) | 16.8.30703.189 | Recomendado
-Microsoft. NetCore. Component. Runtime. 5.0 | Tempo de execução do .NET 5,0 | 16.8.30703.189 | Recomendado
-Microsoft. NetCore. Component. SDK | SDK .NET | 16.8.30703.189 | Recomendado
-Microsoft.VisualStudio.Component.TestTools.BuildTools | Recursos principais de ferramentas de teste – Ferramentas de Build | 16.4.29409.204 | Recomendado
-Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Ferramentas de build do Windows Communication Foundation | 16.0.28516.191 | Recomendado
+Microsoft.Component.ClickOnce.MSBuild | Ferramentas de build do ClickOnce | 16.0.28625.61 | Recomendadas
+Microsoft.Net.Component.4.5.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.1 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.Component.4.5.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.2 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.Component.4.5.TargetingPack | Pacote de direcionamento do .NET Framework 4.5 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.Component.4.6.TargetingPack | Pacote de direcionamento do .NET Framework 4.6 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.Component.4.TargetingPack | Pacote de direcionamento do .NET Framework 4 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Ferramentas de desenvolvimento do .NET Framework 4 a 4.6 | 16.0.28516.191 | Recomendadas
+Microsoft.Net.Core.Component.SDK.2.1 | Tempo de execução do .NET Core 2,1 (LTS) | 16.8.30703.189 | Recomendadas
+Microsoft. NetCore. Component. Runtime. 3.1 | Tempo de execução do .NET Core 3,1 (LTS) | 16.8.30703.189 | Recomendadas
+Microsoft. NetCore. Component. Runtime. 5.0 | Tempo de execução do .NET 5,0 | 16.8.30703.189 | Recomendadas
+Microsoft. NetCore. Component. SDK | SDK .NET | 16.8.30703.189 | Recomendadas
+Microsoft.VisualStudio.Component.TestTools.BuildTools | Recursos principais de ferramentas de teste – Ferramentas de Build | 16.4.29409.204 | Recomendadas
+Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Ferramentas de build do Windows Communication Foundation | 16.0.28516.191 | Recomendadas
 Microsoft.Net.Component.3.5.DeveloperTools | Ferramentas de desenvolvimento do .NET Framework 3.5 | 16.0.28517.75 | Opcional
 Microsoft.Net.Component.4.6.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.6.2 | 16.0.28517.75 | Opcional
 Microsoft.Net.Component.4.7.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.7.1 | 16.8.30509.167 | Opcional
@@ -151,7 +151,7 @@ Microsoft. NetCore. Component. Runtime. 3.1 | Tempo de execução do .NET Core 3
 Microsoft. NetCore. Component. Runtime. 5.0 | Tempo de execução do .NET 5,0 | 16.8.30703.189 | Obrigatório
 Microsoft. NetCore. Component. SDK | SDK .NET | 16.8.30703.189 | Obrigatório
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Os destinos e as tarefas de compilação do NuGet | 16.1.28829.92 | Obrigatório
-Microsoft.Net.Core.Component.SDK.2.1 | Tempo de execução do .NET Core 2,1 (LTS) | 16.8.30703.189 | Recomendado
+Microsoft.Net.Core.Component.SDK.2.1 | Tempo de execução do .NET Core 2,1 (LTS) | 16.8.30703.189 | Recomendadas
 
 ## <a name="nodejs-build-tools"></a>Ferramentas de compilação do Node.js
 
@@ -192,8 +192,8 @@ Microsoft.VisualStudio.Component.Sharepoint.BuildTools | Ferramentas de build de
 Microsoft.VisualStudio.Component.Workflow.BuildTools | Ferramentas de Build do Windows Workflow Foundation | 16.0.28315.86 | Obrigatório
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Ferramentas de build do Windows Communication Foundation | 16.0.28516.191 | Obrigatório
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Ferramentas de build de desenvolvimento para a Web | 16.0.28516.191 | Obrigatório
-Microsoft.VisualStudio.Component.TeamOffice.BuildTools | Ferramentas de build do VSTO (Ferramentas do Visual Studio para Office) | 16.0.28625.61 | Recomendado
-Microsoft.VisualStudio.Component.WebDeploy | Implantação da Web | 16.0.28517.75 | Recomendado
+Microsoft.VisualStudio.Component.TeamOffice.BuildTools | Ferramentas de build do VSTO (Ferramentas do Visual Studio para Office) | 16.0.28625.61 | Recomendadas
+Microsoft.VisualStudio.Component.WebDeploy | Implantação da Web | 16.0.28517.75 | Recomendadas
 Microsoft.Net.Component.4.6.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.6.2 | 16.0.28517.75 | Opcional
 Microsoft.Net.Component.4.7.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.7.1 | 16.8.30509.167 | Opcional
 Microsoft.Net.Component.4.7.TargetingPack | Pacote de direcionamento do .NET Framework 4.7 | 16.8.30509.167 | Opcional
@@ -223,7 +223,7 @@ Microsoft. NetCore. Component. SDK | SDK .NET | 16.8.30703.189 | Obrigatório
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Os destinos e as tarefas de compilação do NuGet | 16.1.28829.92 | Obrigatório
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28714.129 | Obrigatório
 Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Pré-requisitos de build da Plataforma Universal do Windows | 16.3.29207.166 | Obrigatório
-Microsoft.VisualStudio.Component.Windows10SDK.18362 | SDK do Windows 10 (10.0.18362.0) | 16.1.28829.92 | Recomendado
+Microsoft.VisualStudio.Component.Windows10SDK.18362 | SDK do Windows 10 (10.0.18362.0) | 16.1.28829.92 | Recomendadas
 Microsoft.Net.Component.4.7.2.SDK | SDK do .NET Framework 4.7.2 | 16.4.29409.204 | Opcional
 Microsoft.VisualStudio.Component.UWP.VC.ARM64 | Suporte da Plataforma Universal do Windows do C++ para ferramentas de build v142 (ARM64) | 16.3.29207.166 | Opcional
 Microsoft.VisualStudio.Component.VC.Tools.ARM | Ferramentas de Build do ARM MSVC v142-VS 2019 C++ (v 14.28) | 16.8.30509.167 | Opcional
@@ -257,11 +257,11 @@ Microsoft.VisualStudio.Component.VC.CoreIde | Funcionalidades principais do C++ 
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Atualização dos Pacotes Redistribuíveis do C++ 2019 | 16.5.29515.121 | Obrigatório
 Microsoft.VisualStudio.Component.Windows10SDK | Runtime C Universal do Windows | 16.4.29409.204 | Obrigatório
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Principais recursos de área de trabalho do C++ | 16.2.29012.281 | Obrigatório
-Microsoft.VisualStudio.Component.TestTools.BuildTools | Recursos principais de ferramentas de teste – Ferramentas de Build | 16.4.29409.204 | Recomendado
-Microsoft. VisualStudio. Component. VC. ASAN | C++ AddressSanitizer (experimental) | 16.5.29515.121 | Recomendado
-Microsoft.VisualStudio.Component.VC.CMake.Project | Ferramentas CMake do C++ para Windows | 16.3.29103.31 | Recomendado
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Ferramentas de Build MSVC v142-VS 2019 C++ x64/x86 (v 14.28) | 16.8.30509.167 | Recomendado
-Microsoft.VisualStudio.Component.Windows10SDK.18362 | SDK do Windows 10 (10.0.18362.0) | 16.1.28829.92 | Recomendado
+Microsoft.VisualStudio.Component.TestTools.BuildTools | Recursos principais de ferramentas de teste – Ferramentas de Build | 16.4.29409.204 | Recomendadas
+Microsoft. VisualStudio. Component. VC. ASAN | C++ AddressSanitizer (experimental) | 16.5.29515.121 | Recomendadas
+Microsoft.VisualStudio.Component.VC.CMake.Project | Ferramentas CMake do C++ para Windows | 16.3.29103.31 | Recomendadas
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Ferramentas de Build MSVC v142-VS 2019 C++ x64/x86 (v 14.28) | 16.8.30509.167 | Recomendadas
+Microsoft.VisualStudio.Component.Windows10SDK.18362 | SDK do Windows 10 (10.0.18362.0) | 16.1.28829.92 | Recomendadas
 Microsoft.Component.VC.Runtime.UCRTSDK | SDK do CRT Universal do Windows | 16.0.28625.61 | Opcional
 Microsoft.Net.Component.4.6.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.6.1 | 16.0.28517.75 | Opcional
 Microsoft. net. Component. 4.8. SDK | SDK do .NET Framework 4,8 | 16.4.29313.120 | Opcional
@@ -319,22 +319,22 @@ Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Ferramentas de desenvolv
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Os destinos e as tarefas de compilação do NuGet | 16.1.28829.92 | Obrigatório
 Microsoft. VisualStudio. Component. TypeScript. 4.0 | SDK do TypeScript 4,0 | 16.0.30509.167 | Obrigatório
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Ferramentas de build de desenvolvimento para a Web | 16.0.28516.191 | Obrigatório
-Microsoft.Component.ClickOnce.MSBuild | Ferramentas de build do ClickOnce | 16.0.28625.61 | Recomendado
-Microsoft.Net.Component.4.5.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.1 | 16.0.28517.75 | Recomendado
-Microsoft.Net.Component.4.5.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.2 | 16.0.28517.75 | Recomendado
-Microsoft.Net.Component.4.5.TargetingPack | Pacote de direcionamento do .NET Framework 4.5 | 16.0.28517.75 | Recomendado
-Microsoft.Net.Component.4.6.TargetingPack | Pacote de direcionamento do .NET Framework 4.6 | 16.0.28517.75 | Recomendado
-Microsoft.Net.Component.4.TargetingPack | Pacote de direcionamento do .NET Framework 4 | 16.0.28517.75 | Recomendado
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | Ferramentas de desenvolvimento do .NET Framework 4 a 4.6 | 16.0.28516.191 | Recomendado
-Microsoft.Net.Core.Component.SDK.2.1 | Tempo de execução do .NET Core 2,1 (LTS) | 16.8.30703.189 | Recomendado
-Microsoft. NetCore. Component. Runtime. 3.1 | Tempo de execução do .NET Core 3,1 (LTS) | 16.8.30703.189 | Recomendado
-Microsoft. NetCore. Component. Runtime. 5.0 | Tempo de execução do .NET 5,0 | 16.8.30703.189 | Recomendado
-Microsoft. NetCore. Component. SDK | SDK .NET | 16.8.30703.189 | Recomendado
-Microsoft.VisualStudio.Component.AspNet45 | Recursos avançados do ASP.NET | 16.0.28315.86 | Recomendado
-Microsoft.VisualStudio.Component.DockerTools.BuildTools | Ferramentas de desenvolvimento de contêiner – Ferramentas de Build | 16.0.28625.61 | Recomendado
-Microsoft.VisualStudio.Component.TestTools.BuildTools | Recursos principais de ferramentas de teste – Ferramentas de Build | 16.4.29409.204 | Recomendado
-Microsoft.VisualStudio.Component.WebDeploy | Implantação da Web | 16.0.28517.75 | Recomendado
-Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Ferramentas de build do Windows Communication Foundation | 16.0.28516.191 | Recomendado
+Microsoft.Component.ClickOnce.MSBuild | Ferramentas de build do ClickOnce | 16.0.28625.61 | Recomendadas
+Microsoft.Net.Component.4.5.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.1 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.Component.4.5.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.2 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.Component.4.5.TargetingPack | Pacote de direcionamento do .NET Framework 4.5 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.Component.4.6.TargetingPack | Pacote de direcionamento do .NET Framework 4.6 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.Component.4.TargetingPack | Pacote de direcionamento do .NET Framework 4 | 16.0.28517.75 | Recomendadas
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Ferramentas de desenvolvimento do .NET Framework 4 a 4.6 | 16.0.28516.191 | Recomendadas
+Microsoft.Net.Core.Component.SDK.2.1 | Tempo de execução do .NET Core 2,1 (LTS) | 16.8.30703.189 | Recomendadas
+Microsoft. NetCore. Component. Runtime. 3.1 | Tempo de execução do .NET Core 3,1 (LTS) | 16.8.30703.189 | Recomendadas
+Microsoft. NetCore. Component. Runtime. 5.0 | Tempo de execução do .NET 5,0 | 16.8.30703.189 | Recomendadas
+Microsoft. NetCore. Component. SDK | SDK .NET | 16.8.30703.189 | Recomendadas
+Microsoft.VisualStudio.Component.AspNet45 | Recursos avançados do ASP.NET | 16.0.28315.86 | Recomendadas
+Microsoft.VisualStudio.Component.DockerTools.BuildTools | Ferramentas de desenvolvimento de contêiner – Ferramentas de Build | 16.0.28625.61 | Recomendadas
+Microsoft.VisualStudio.Component.TestTools.BuildTools | Recursos principais de ferramentas de teste – Ferramentas de Build | 16.4.29409.204 | Recomendadas
+Microsoft.VisualStudio.Component.WebDeploy | Implantação da Web | 16.0.28517.75 | Recomendadas
+Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Ferramentas de build do Windows Communication Foundation | 16.0.28516.191 | Recomendadas
 Microsoft.Net.Component.3.5.DeveloperTools | Ferramentas de desenvolvimento do .NET Framework 3.5 | 16.0.28517.75 | Opcional
 Microsoft.Net.Component.4.6.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.6.1 | 16.0.28517.75 | Opcional
 Microsoft.Net.Component.4.6.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.6.2 | 16.0.28517.75 | Opcional

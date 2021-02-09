@@ -10,18 +10,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 9d01d991daf5c24c02b8cd4976663a9399b251cc
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: aa3df844d5fad5dc968a9bab5d02e9a3e8e06719
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780964"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879963"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Etapa 3: trabalhar com dados usando Entity Framework
 
@@ -58,7 +58,7 @@ Agora, clique com o botão direito do mouse em jogos e escolha **Adicionar**  > 
 
 ![Adicionar páginas geradas por scaffold do ASP.NET Core no Visual Studio 2019](media/vs-2019/vs2019-add-scaffold.png)
 
-Selecione sua classe de modelo Jogo e use o ícone “+” para adicionar uma nova classe de contexto de dados. Nomeie-o `AppDbContext`. Mantenha os outros padrões e clique em **Adicionar**.
+Selecione sua classe de modelo Jogo e use o ícone “+” para adicionar uma nova classe de contexto de dados. Nomeie-o como `AppDbContext`. Mantenha os outros padrões e clique em **Adicionar**.
 
 Você verá que as seguintes Razor Pages adicionadas à pasta Jogos:
 

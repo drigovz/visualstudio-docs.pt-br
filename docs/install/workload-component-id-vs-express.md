@@ -5,7 +5,7 @@ description: Use as IDs de carga de trabalho e de componente para instalar o Vis
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
 open_to_public_contributors: false
-ms.openlocfilehash: 1e24f90f24921bee9a6132ccc047c0b9da37fc90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21735c82a318623758f1980a1865a543adde121e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81276286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881796"
 ---
 # <a name="visual-studio-desktop-express-component-directory"></a>Diretório de componentes do Visual Studio Desktop Express
 
@@ -74,7 +74,7 @@ Microsoft.VisualStudio.Component.SQL.CMDUtils | Utilitários de linha de comando
 Microsoft.VisualStudio.Component.SQL.DataSources | Fontes de dados para suporte do SQL Server | 15.0.26621.2 | Obrigatório
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.7.27617.1 | Obrigatório
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Obrigatório
-Microsoft.VisualStudio.Component.SQL.SSDT | Ferramentas de dados do SQL Server | 15.9.28107.0 | Obrigatório
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.9.28107.0 | Obrigatório
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Ferramentas de análise estática | 15.0.26208.0 | Obrigatório
 Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de texto | 15.0.26208.0 | Obrigatório
 Microsoft.VisualStudio.Component.VC.CLI.Support | Suporte ao C++/CLI | 15.6.27309.0 | Obrigatório
@@ -90,7 +90,7 @@ Estes são os componentes que não são incluídos com nenhuma carga de trabalho
 
 ID do componente | Nome | Versão
 --- | --- | ---
-n/d | n/d | n/d
+N/D | N/D | N/D
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

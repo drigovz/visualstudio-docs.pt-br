@@ -8,15 +8,15 @@ ms.topic: reference
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3641edafeed9cf7b5e29f8a967f9dbf26cdd3e8c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 92c2fd5ed260816ca9b0859d37f125b231c0906e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049251"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881276"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Atalhos de teclado no Blend para Visual Studio
 
@@ -42,13 +42,13 @@ ms.locfileid: "93049251"
 |Salvar todos os documentos|**Ctrl** + **Shift** + **S**|
 |Fechar o documento ativo|**Ctrl** + **W**|
 |Fechar todos os documentos abertos|**Ctrl** + **Shift** + **W**|
-|Desfazer a última ação|**Ctrl** + Z|
-|Refazer a última ação realizada|**Ctrl** +Y ou **Ctrl**+**Shift**+**Z**|
+|Desfazer a última ação|**Ctrl**+ Z|
+|Refazer a última ação realizada|**Ctrl**+Y ou **Ctrl**+**Shift**+**Z**|
 |Criar uma anotação de tempo de design|**Ctrl** + **Shift** + **T**|
 |Recortar|**Ctrl** + **X**|
 |Copiar|**Ctrl** + **C**|
 |Colar|**Ctrl** + **V**|
-|Excluir|**Excluir**|
+|Excluir|**Delete (excluir)**|
 |Localizar texto (somente exibição de XAML ou editor de JavaScript)|**Ctrl** + **F**|
 |Localizar a próxima ocorrência do texto (somente exibição de XAML ou editor de JavaScript)|**F3** ou **Ctrl**+**H**|
 
@@ -59,7 +59,7 @@ ms.locfileid: "93049251"
 |Criar um item|**Ctrl** + **N**|
 |Duplicar um objeto|Mantenha a tecla **Alt** pressionada e arraste o objeto|
 |Reassociar um objeto|Arrastar o objeto sobre um painel de layout e pressionar a tecla **Alt**|
-|Editar o texto em um controle|**F2** ( **Esc** para sair)|
+|Editar o texto em um controle|**F2** (**Esc** para sair)|
 |Editar um controle (WPF)|**Ctrl** + **E**|
 |Igualar a largura dos objetos selecionados|**Ctrl** + **Shift** + **1**|
 |Igualar a altura dos objetos selecionados|**Ctrl** + **Shift** + **2**|
@@ -97,7 +97,7 @@ ms.locfileid: "93049251"
 
 |Para fazer isso|Faça isto|
 |----------------|-------------|
-|Mudar entre os modos de exibição **Design** , **Código** e **Dividir**|**F11**|
+|Mudar entre os modos de exibição **Design**, **Código** e **Dividir**|**F11**|
 |Aumentar o zoom no artboard|**Ctrl** + **Sinal de igual** ( **=** )|
 |Reduzir o zoom no artboard|**Ctrl** + **Sinal de subtração** ( **-** )|
 |Aumentar ou diminuir o zoom no artboard|Girar o roda do mouse|
@@ -107,7 +107,7 @@ ms.locfileid: "93049251"
 |Exibir a prancheta no tamanho real|**Ctrl** + **1**|
 |Mostrar ou ocultar alças|**F9**|
 |Mostrar ou ocultar os limites do objeto|**Ctrl** + **Shift** + **H**|
-|Mudar entre os modos de exibição **Design** , **XAML** e **Dividir**|**F11**|
+|Mudar entre os modos de exibição **Design**, **XAML** e **Dividir**|**F11**|
 
 ## <a name="workspace-shortcuts"></a>Atalhos de workspace
 

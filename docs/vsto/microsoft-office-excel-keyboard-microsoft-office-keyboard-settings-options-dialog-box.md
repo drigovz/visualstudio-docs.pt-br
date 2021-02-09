@@ -16,15 +16,15 @@ helpviewer_keywords:
 - keyboard shortcuts, Office development in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b3422cb53fb454b3585e0b8ba936ce692dfc68a4
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 914b86e6e2b27d18e2089d44ce97810f82294c5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525311"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880340"
 ---
 # <a name="microsoft-office-excel-keyboard-settings-options-dialog-box"></a>Microsoft Office o teclado do Excel, configurações, caixa de diálogo opções
   Microsoft Office o Excel e o Visual Studio lidam com teclas de atalho. A mesma combinação de teclas de atalho pode representar comandos diferentes no Excel e no Visual Studio. Quando o Excel é aberto em um projeto de nível de documento no Visual Studio, somente um aplicativo por vez recebe os comandos de tecla de atalho. Por padrão, o Visual Studio recebe todos os comandos de tecla de atalho, mas você pode fazer com que o Excel os receba quando o documento tiver foco, selecionando **esquema de teclado dinâmico**.
@@ -38,5 +38,5 @@ ms.locfileid: "97525311"
 
  **Esquema de teclado dinâmico** O Visual Studio recebe comandos de tecla de atalho somente quando ele tem foco. Quando o Excel tem foco, o Excel recebe todos os comandos de tecla de atalho. Por exemplo, se você pressionar a tecla de função **F5** enquanto o Excel tiver foco, o Excel abrirá a caixa de diálogo **ir para** . Se você pressionar **F5** enquanto o Visual Studio tiver foco, o Visual Studio começará a depurar sua solução.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Microsoft Office o teclado do Word, Microsoft Office configurações do teclado, caixa de diálogo opções](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)

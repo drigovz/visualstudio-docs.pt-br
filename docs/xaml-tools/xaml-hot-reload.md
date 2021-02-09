@@ -8,15 +8,15 @@ helpviewer_keywords:
 - xaml hot reload
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 25819d8d691836c12c73d9d76e334e36d50b83b4
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 11257561deecdbce4606207c3d59012a6d7c3d09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668866"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880314"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Escrever e depurar o código XAML em execução com o Hot recarregamento de XAML no Visual Studio
 
@@ -50,12 +50,12 @@ Veja a seguir as limitações conhecidas do Hot recarregamento XAML. Para soluci
 |Limitação|WPF|UWP|Observações|
 |-|-|-|-|
 |Eventos de fiação para controles enquanto o aplicativo está em execução|Sem suporte|Sem suporte|Consulte erro: *falha no evento de garantia*. Observe que no WPF você pode fazer referência a um manipulador de eventos existente. Em aplicativos UWP, não há suporte para a referência a um manipulador de eventos existente.|
-|Criando objetos de recurso em um dicionário de recursos, como aqueles na página/janela do seu aplicativo ou *app. XAML*|Com suporte a partir do Visual Studio 2019 atualização 2|Com suporte|Exemplo: adicionando um a `SolidColorBrush` um dicionário de recursos para uso como um `StaticResource` .</br>Observação: recursos estáticos, conversores de estilo e outros elementos gravados em um dicionário de recursos podem ser aplicados/usados ao usar o Hot recarregamento de XAML. Somente a criação do recurso não tem suporte.</br> Alterando a propriedade do dicionário de recursos `Source` .|
+|Criando objetos de recurso em um dicionário de recursos, como aqueles na página/janela do seu aplicativo ou *app. XAML*|Com suporte a partir do Visual Studio 2019 atualização 2|Suportado|Exemplo: adicionando um a `SolidColorBrush` um dicionário de recursos para uso como um `StaticResource` .</br>Observação: recursos estáticos, conversores de estilo e outros elementos gravados em um dicionário de recursos podem ser aplicados/usados ao usar o Hot recarregamento de XAML. Somente a criação do recurso não tem suporte.</br> Alterando a propriedade do dicionário de recursos `Source` .|
 |Adicionar novos controles, classes, janelas ou outros arquivos ao seu projeto enquanto o aplicativo está em execução|Sem suporte|Sem suporte|Nenhum|
 |Gerenciando pacotes NuGet (adicionando/removendo/atualizando pacotes)|Sem suporte|Sem suporte|Nenhum|
 |Alterando a associação de dados que usa a extensão de marcação {x:Bind}|N/D|Com suporte a partir do Visual Studio 2019|Isso requer o Windows 10 versão 1809 (Build 10.0.17763). Sem suporte no Visual Studio 2017 ou em versões anteriores.|
 |Não há suporte para a alteração de diretivas x:Uid|N/D|Sem suporte|Nenhum|
-|Vários processos | Com suporte | Com suporte | Com suporte no Visual Studio 2019 [versão 16,6](/visualstudio/releases/2019/release-notes-v16.6) e posterior |
+|Vários processos | Suportado | Suportado | Com suporte no Visual Studio 2019 [versão 16,6](/visualstudio/releases/2019/release-notes-v16.6) e posterior |
 
 ## <a name="error-messages"></a>Mensagens de erro
 
@@ -66,7 +66,7 @@ Você pode se deparar com os seguintes erros ao usar o Hot recarregamento de XAM
 |Verifique se o evento falhou|Erro indica que você está tentando vincular um evento a um de seus controles, o que não tem suporte enquanto o aplicativo está em execução.|
 |Essa alteração não é suportada pelo Hot recarregamento XAML e não será aplicada durante a sessão de depuração.|Erro indica que a alteração que você está tentando executar não é suportada pelo Hot recarregamento XAML. Pare a sessão de depuração, faça a alteração e reinicie a sessão de depuração. Se você encontrar um cenário sem suporte que gostaria de ver com suporte, use nossa nova opção "sugerir um recurso" na [comunidade de desenvolvedores do Visual Studio](https://aka.ms/feedback/suggest?space=8). |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Solução de problemas de Recarga Dinâmica de XAML](xaml-hot-reload-troubleshooting.md)
 * [Recarga Dinâmica de XAML para Xamarin.Forms](/xamarin/xamarin-forms/xaml/hot-reload)

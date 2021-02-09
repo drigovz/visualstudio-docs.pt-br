@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7896fa2d39bafc793c5fd74f66f4991cf5e8461
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 1e716c0e9ebe88a8007296f1dad870424a0def0b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382943"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881107"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;&gt;elemento Dependency (aplicativo ClickOnce)
 Identifica uma dependência de plataforma ou assembly que é necessária para o aplicativo.
@@ -104,17 +104,17 @@ Identifica uma dependência de plataforma ou assembly que é necessária para o 
 |`description`|Opcional. Descreve, em forma legível, o sistema operacional descrito pelo `dependentOS` elemento.|
 
 ### <a name="osversioninfo"></a>osVersionInfo
- Obrigatórios. Esse elemento é um filho do `dependentOS` elemento e contém o `os` elemento. Esse elemento não tem atributos.
+ Obrigatório. Esse elemento é um filho do `dependentOS` elemento e contém o `os` elemento. Esse elemento não tem atributos.
 
 ### <a name="os"></a>os
- Obrigatórios. Esse elemento é um filho do `osVersionInfo` elemento. Esse elemento tem os atributos a seguir.
+ Obrigatório. Esse elemento é um filho do `osVersionInfo` elemento. Esse elemento tem os atributos a seguir.
 
 |Atributo|Descrição|
 |---------------|-----------------|
 |`majorVersion`|Obrigatórios. Especifica o número de versão principal do sistema operacional.|
-|`minorVersion`|Obrigatórios. Especifica o número de versão secundária do sistema operacional.|
-|`buildNumber`|Obrigatórios. Especifica o número de Build do sistema operacional.|
-|`servicePackMajor`|Obrigatórios. Especifica o service pack número principal do sistema operacional.|
+|`minorVersion`|Obrigatório. Especifica o número de versão secundária do sistema operacional.|
+|`buildNumber`|Obrigatório. Especifica o número de Build do sistema operacional.|
+|`servicePackMajor`|Obrigatório. Especifica o service pack número principal do sistema operacional.|
 |`servicePackMinor`|Opcional. Especifica a service pack número secundário do sistema operacional.|
 |`productType`|Opcional. Identifica o valor do tipo de produto. Os valores válidos são `server`, `workstation` e `domainController`. Por exemplo, para o Windows 2000 Professional, esse valor de atributo é `workstation` .|
 |`suiteType`|Opcional. Identifica um conjunto de produtos disponível no sistema ou o tipo de configuração do sistema. Os valores válidos são `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` e `terminal`. Por exemplo, para o Windows 2000 Professional, esse valor de atributo é `professional` .|
@@ -127,18 +127,18 @@ Identifica uma dependência de plataforma ou assembly que é necessária para o 
 | Atributo | Descrição |
 |-----------------------| - |
 | `dependencyType` | Obrigatórios. Especifica o tipo de dependência. Os valores válidos são `preprequisite` e `install`. Um `install` assembly é instalado como parte do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Um `prerequisite` assembly deve estar presente no GAC (cache de assembly global) antes que o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo possa ser instalado. |
-| `allowDelayedBinding` | Obrigatórios. Especifica se o assembly pode ser carregado programaticamente em tempo de execução. |
+| `allowDelayedBinding` | Obrigatório. Especifica se o assembly pode ser carregado programaticamente em tempo de execução. |
 | `group` | Opcional. Se o `dependencyType` atributo for definido como `install` , o designará um grupo nomeado de assemblies que serão instalados apenas sob demanda. Para obter mais informações, consulte [Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API Using the Designer](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md) (Instruções passo a passo: baixando assemblies sob demanda com a API de implantação do ClickOnce usando o designer).<br /><br /> Se definido como `framework` e o `dependencyType` atributo for definido como `prerequisite` , o designará o assembly como parte do .NET Framework. O cache assemby global (GAC) não é verificado para este assembly durante a instalação no .NET Framework 4 e versões posteriores. |
 | `codeBase` | Necessário quando o `dependencyType` atributo é definido como `install` . O caminho para o assembly dependente. Pode ser um caminho absoluto ou um caminho relativo à base de código do manifesto. Esse caminho deve ser um URI válido para que o manifesto do assembly seja válido. |
 | `size` | Necessário quando o `dependencyType` atributo é definido como `install` . O tamanho do assembly dependente, em bytes. |
 
 ### <a name="assemblyidentity"></a>assemblyIdentity
- Obrigatórios. Esse elemento é um filho do `dependentAssembly` elemento e tem os atributos a seguir.
+ Obrigatório. Esse elemento é um filho do `dependentAssembly` elemento e tem os atributos a seguir.
 
 |Atributo|Descrição|
 |---------------|-----------------|
 |`name`|Obrigatórios. Identifica o nome do aplicativo.|
-|`version`|Obrigatórios. Especifica o número de versão do aplicativo no seguinte formato: `major.minor.build.revision`|
+|`version`|Obrigatório. Especifica o número de versão do aplicativo no seguinte formato: `major.minor.build.revision`|
 |`publicKeyToken`|Opcional. Especifica uma cadeia de caracteres hexadecimal de 16 caracteres que representa os últimos 8 bytes do `SHA-1` valor de hash da chave pública sob a qual o aplicativo ou assembly é assinado. A chave pública usada para assinar o catálogo deve ter 2048 bits ou mais.|
 |`processorArchitecture`|Opcional. Especifica o processador. Os valores válidos são `x86` para o Windows de 32 bits e `I64` para o windows de 64 bits.|
 |`language`|Opcional. Identifica os códigos de idioma de duas partes, como EN-US, do assembly.|

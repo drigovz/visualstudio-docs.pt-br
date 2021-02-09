@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 451d5bce-b9c1-48ff-beaa-2b4c3e1ceea0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb5e4f9e32017cfb493aae00a24f9f8184605d1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6ebb698fc839a93547d15828b250bd436260e33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734751"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881029"
 ---
 # <a name="idebugbreakpointresolution2"></a>IDebugBreakpointResolution2
 Essa interface representa as informações que descrevem um ponto de interrupção associado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugBreakpointResolution2 : IUnknown

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - farm solutions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 17b310a3f992f80b04ad14bb6e038e05b009a4af
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 23424c1681a9967d9d50df47f9e67ec895a308a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970459"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881601"
 ---
 # <a name="sandboxed-solution-considerations"></a>Considerações sobre a solução em área restrita
   As *soluções de área restrita* são um recurso do Microsoft SharePoint 2010 que permite que os usuários do conjunto de sites Carreguem suas próprias soluções de código personalizado. Uma solução em área restrita comum é que os usuários carregam seus próprios Web Parts.
@@ -139,6 +139,6 @@ ms.locfileid: "95970459"
 
 - Fluxos de trabalho com código
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Diferenças entre soluções de área restrita e de farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)
 - [Desenvolvendo soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)

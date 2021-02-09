@@ -9,7 +9,7 @@ helpviewer_keywords:
 - msbuild logs"
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: c6b08b243a5b4eec3119ceedbaf2177670aa3e83
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: d9308bff68a5a5377c025bba5861ac344dcb0326
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136570"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880483"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Solucionar problemas e criar logs para problemas do MSBuild
 
@@ -46,7 +46,7 @@ A última definição de uma propriedade é o que é consumido na compilação. 
 - PropertyGroups e importações
 - ItemDefinitionGroups
 - ItemGroups
-- Destinos
+- Targets
 
 Portanto, dada a seguinte ordem:
 

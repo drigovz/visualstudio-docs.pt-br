@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b11d80e90daec19a14ca509e5a4b9bdb2d1ced4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c2032c15430fb4038ecdeab2050b47a59c932c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737816"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881068"
 ---
 # <a name="bp_resolution_location"></a>BP_RESOLUTION_LOCATION
 Especifica a estrutura do local de resolução do ponto de interrupção.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```cpp
 struct _BP_RESOLUTION_LOCATION {

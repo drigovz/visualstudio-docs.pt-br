@@ -5,7 +5,7 @@ description: Use Visual Studio Enterprise carga de trabalho e IDs de componente 
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: aa5e9ea62d02d900eab91d68e4df008431303007
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: be8e00bb815136a22004989a5e070171eb439d32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846893"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881822"
 ---
 # <a name="visual-studio-enterprise-component-directory"></a>Diretório de componentes do Visual Studio Enterprise
 
@@ -45,7 +45,7 @@ ms.locfileid: "97846893"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [IDs de carga de trabalho e de componente do Visual Studio](workload-and-component-ids.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)

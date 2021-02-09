@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 74900b9a-baef-432a-8231-4568fb5e19ad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8aac72cbc26ff5e6abf96259fd161cba63b3b2af
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: bedfdffd91c4e15de556609a030f7e0238a7e7d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716062"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880704"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Coloração de sintaxe em editores personalizados
 Os editores do SDK do ambiente do Visual Studio, incluindo o editor principal, usam os serviços de linguagem para identificar itens sintáticos específicos e os exibem com cores especificadas para uma determinada exibição de documento.
@@ -56,7 +56,7 @@ Os editores do SDK do ambiente do Visual Studio, incluindo o editor principal, u
 > [!NOTE]
 > Além de usar o Colorizer de um serviço de linguagem, um VSPackage pode optar por usar o mecanismo de coloração de texto do SDK do ambiente do Visual Studio para fins gerais. Para obter mais informações sobre esse mecanismo, consulte [usando fontes e cores](/previous-versions/visualstudio/visual-studio-2015/extensibility/using-fonts-and-colors?preserve-view=true&view=vs-2015).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Coloração de sintaxe em um serviço de linguagem herdado](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [Implementando a coloração de sintaxe](../extensibility/internals/implementing-syntax-coloring.md)

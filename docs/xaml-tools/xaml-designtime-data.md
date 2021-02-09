@@ -5,14 +5,14 @@ ms.date: 11/17/2020
 ms.topic: overview
 author: alihamie
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 992c97b188535fb39548fca4fd9d02d588a45474
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 4bd059fa82f8a959d6e3b8a843f19cbec636fb7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880405"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Usar dados de tempo de design com o Designer XAML no Visual Studio
 
@@ -181,7 +181,7 @@ Se você tiver um problema que não esteja listado nesta seção, informe-nos us
 
 - Os dados de tempo de design exigem o Visual Studio 2019 versão [16,7](/visualstudio/releases/2019/release-notes-v16.7) ou posterior.
 
-- Dá suporte a projetos de área de trabalho do Windows que se destinam a Windows Presentation Foundation (WPF) para .NET Core e UWP. Esse recurso também está disponível para .NET Framework no [canal de visualização](/visualstudio/releases/2019/release-notes-preview). Para habilitá-lo, vá para **ferramentas**  >  **Opções**  >  **Environment**  >  **recursos de visualização** do ambiente, selecione **novo designer XAML do WPF para .NET Framework** e reinicie o Visual Studio.
+- Dá suporte a projetos de área de trabalho do Windows que se destinam a Windows Presentation Foundation (WPF) para .NET Core e UWP. Esse recurso também está disponível para .NET Framework no [canal de visualização](/visualstudio/releases/2019/release-notes-preview). Para habilitá-lo, vá para **ferramentas**  >  **Opções**  >    >  **recursos de visualização** do ambiente, selecione **novo designer XAML do WPF para .NET Framework** e reinicie o Visual Studio.
 
 - A partir do Visual Studio 2019 versão 16,7, esse recurso funciona com todos os controles prontos do WPF e das estruturas UWP. O suporte para controles de terceiros agora está disponível na [versão 16,8](/visualstudio/releases/2019/release-notes/).
 

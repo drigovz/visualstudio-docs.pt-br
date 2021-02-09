@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 519998d23aada86e9142e3097aac1dac06b07b81
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: c386027391c02c9645836c98eab37d97a3967066
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134740"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880249"
 ---
 # <a name="math-nodes"></a>Nós de matemática
 
@@ -47,7 +47,7 @@ No Designer de Sombreador, os nós de matemática realizam álgebra, lógica, tr
 |**Multiplicar**|Calcula o produto do componente inteiro das entradas especificadas.<br /><br /> Para cada componente do resultado, os componentes correspondentes das entradas `X` e `Y` são multiplicados juntos.<br /><br /> **Entrada**<br /><br /> `X`: `float`, `float2`, `float3` ou `float4`<br /> Um dos valores a serem multiplicados juntos.<br /><br /> `Y`: igual à entrada `X`<br /> Um dos valores a serem multiplicados juntos.<br /><br /> **Saída:**<br /><br /> `Output`: igual à entrada `X`<br /> O produto, por componente.|Nenhum|
 |**Normaliza**|Normaliza o vetor especificado.<br /><br /> Um vetor normalizado retém a direção do vetor original, mas não sua magnitude. Você pode usar vetores normalizados para simplificar cálculos, nos quais a magnitude de um vetor não é importante.<br /><br /> **Entrada**<br /><br /> `X`: `float2`, `float3` ou `float4`<br /> O vetor a ser normalizado.<br /><br /> **Saída:**<br /><br /> `Output`: igual à entrada `X`<br /> O vetor normalizado.|Nenhum|
 |**Um Menos**|Calcula a diferença entre 1 e a entrada especificada por componente.<br /><br /> Para cada componente do resultado, o componente correspondente da entrada é subtraído de 1.<br /><br /> **Entrada**<br /><br /> `X`: `float`, `float2`, `float3` ou `float4`<br /> Os valores a serem subtraídos de 1.<br /><br /> **Saída:**<br /><br /> `Output`: igual à entrada `X`<br /> A diferença entre 1 e a entrada especificada, por componente.|Nenhum|
-|**Energia**|Calcula a exponenciação do componente inteiro (potência) das entradas especificadas.<br /><br /> Para cada componente do resultado, o componente correspondente da entrada `X` é elevado à potência do componente correspondente da entrada `Y`.<br /><br /> **Entrada**<br /><br /> `X`: `float`, `float2`, `float3` ou `float4`<br /> Os valores de base<br /><br /> `Y`: igual à entrada `X`<br /> Os valores do expoente.<br /><br /> **Saída:**<br /><br /> `Output`: igual à entrada `X`<br /> A exponenciação, por componente.|Nenhum|
+|**Alimentar**|Calcula a exponenciação do componente inteiro (potência) das entradas especificadas.<br /><br /> Para cada componente do resultado, o componente correspondente da entrada `X` é elevado à potência do componente correspondente da entrada `Y`.<br /><br /> **Entrada**<br /><br /> `X`: `float`, `float2`, `float3` ou `float4`<br /> Os valores de base<br /><br /> `Y`: igual à entrada `X`<br /> Os valores do expoente.<br /><br /> **Saída:**<br /><br /> `Output`: igual à entrada `X`<br /> A exponenciação, por componente.|Nenhum|
 |**Saturar**|Prende cada componente da entrada especificada ao intervalo [0, 1].<br /><br /> Você pode usar esse intervalo para representar os percentuais e outras medições relativas em cálculos. Para cada componente do resultado, os valores correspondentes do componente de entrada menores que 0 são igualados a 0, os valores maiores que 1 são igualados a 1 e os valores que estão no intervalo não são alterados.<br /><br /> **Entrada**<br /><br /> `X`: `float`, `float2`, `float3` ou `float4`<br /> Os valores a serem saturados.<br /><br /> **Saída:**<br /><br /> `Output`: igual à entrada `X`<br /> O valor saturado, por componente.|Nenhum|
 |**Sin**|Calcula o seno da entrada especificada, em radianos, por componente.<br /><br /> Para cada componente do resultado, o seno do componente correspondente, que é fornecido em radianos, é calculado. O resultado tem componentes cujos valores estão no intervalo [-1, 1].<br /><br /> **Entrada**<br /><br /> `X`: `float`, `float2`, `float3` ou `float4`<br /> Os valores para calcular o seno, em radianos.<br /><br /> **Saída:**<br /><br /> `Output`: igual à entrada `X`<br /> O seno, por componente.|Nenhum|
 |**Sqrt**|Calcula a raiz quadrada da entrada especificada, por componente.<br /><br /> Para cada componente do resultado, a raiz quadrada do componente correspondente é calculada.<br /><br /> **Entrada**<br /><br /> `X`: `float`, `float2`, `float3` ou `float4`<br /> Os valores para os quais calcular a raiz quadrada.<br /><br /> **Saída:**<br /><br /> `Output`: igual à entrada `X`<br /> A raiz quadrada, por componente.|Nenhum|

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c63d52290962d8c9878edf025bbc05487103da
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 0f53ca683e40be8e3cc428d013d2b8d3c8c5773e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383047"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881224"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Elemento Commands &gt; (Bootstrapper)
 O `Commands` elemento implementa testes descritos pelos elementos abaixo do `InstallChecks` elemento e declara qual pacote o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bootstrapper deve instalar se o teste falhar.
@@ -97,8 +97,8 @@ O `Commands` elemento implementa testes descritos pelos elementos abaixo do `Ins
 |Atributo|Descrição|
 |---------------|-----------------|
 |`Property`|Obrigatórios. O nome da propriedade a ser testada. A propriedade deve ter sido definida anteriormente por um filho do `InstallChecks` elemento. Para obter mais informações, consulte [ \<InstallChecks> elemento](../deployment/installchecks-element-bootstrapper.md).|
-|`Compare`|Obrigatórios. O tipo de comparação a ser executada. A lista a seguir mostra os valores válidos:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
-|`Value`|Obrigatórios. O valor a ser comparado com a propriedade.|
+|`Compare`|Obrigatório. O tipo de comparação a ser executada. A lista a seguir mostra os valores válidos:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
+|`Value`|Obrigatório. O valor a ser comparado com a propriedade.|
 |`Schedule`|Opcional. O nome de uma `Schedule` marca que define quando essa regra deve ser avaliada.|
 
 ## <a name="failif"></a>FailIf
@@ -109,8 +109,8 @@ O `Commands` elemento implementa testes descritos pelos elementos abaixo do `Ins
 |Atributo|Descrição|
 |---------------|-----------------|
 |`Property`|Obrigatórios. O nome da propriedade a ser testada. A propriedade deve ter sido definida anteriormente por um filho do `InstallChecks` elemento. Para obter mais informações, consulte [ \<InstallChecks> elemento](../deployment/installchecks-element-bootstrapper.md).|
-|`Compare`|Obrigatórios. O tipo de comparação a ser executada. A lista a seguir mostra os valores válidos:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
-|`Value`|Obrigatórios. O valor a ser comparado com a propriedade.|
+|`Compare`|Obrigatório. O tipo de comparação a ser executada. A lista a seguir mostra os valores válidos:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
+|`Value`|Obrigatório. O valor a ser comparado com a propriedade.|
 |`String`|Opcional. O texto a ser exibido para o usuário após a falha.|
 |`Schedule`|Opcional. O nome de uma `Schedule` marca que define quando essa regra deve ser avaliada.|
 
@@ -123,7 +123,7 @@ O `Commands` elemento implementa testes descritos pelos elementos abaixo do `Ins
 |Atributo|Descrição|
 |---------------|-----------------|
 |`Value`|Obrigatórios. O valor do código de saída ao qual esse `ExitCode` elemento se aplica.|
-|`Result`|Obrigatórios. Como a instalação deve reagir a esse código de saída. A lista a seguir mostra os valores válidos:<br /><br /> `Success`. Sinaliza o pacote como instalado com êxito.<br /><br /> `SuccessReboot`. Sinaliza o pacote como instalado com êxito e instrui o sistema a reiniciar.<br /><br /> `Fail`. Sinaliza o pacote como com falha.<br /><br /> `FailReboot`. Sinaliza o pacote como com falha e instrui o sistema a reiniciar.|
+|`Result`|Obrigatório. Como a instalação deve reagir a esse código de saída. A lista a seguir mostra os valores válidos:<br /><br /> `Success`. Sinaliza o pacote como instalado com êxito.<br /><br /> `SuccessReboot`. Sinaliza o pacote como instalado com êxito e instrui o sistema a reiniciar.<br /><br /> `Fail`. Sinaliza o pacote como com falha.<br /><br /> `FailReboot`. Sinaliza o pacote como com falha e instrui o sistema a reiniciar.|
 |`String`|Opcional. O valor a ser exibido para o usuário em resposta a este código de saída.|
 |`FormatMessageFromSystem`|Opcional. Determina se deve ser usada a mensagem de erro fornecida pelo sistema correspondente ao código de saída ou usar o valor fornecido em `String` . Os valores válidos são `true` , o que significa usar o erro fornecido pelo sistema e `false` , que significa usar a cadeia de caracteres fornecida pelo `String` . O padrão é `false`. Se essa propriedade for `false` , mas `String` não estiver definida, o erro fornecido pelo sistema será usado.|
 

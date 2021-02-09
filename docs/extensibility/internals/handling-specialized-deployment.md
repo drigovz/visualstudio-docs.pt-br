@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 664625cd8737fb9a9a3e398716d750d6d9665529
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 279732f6019757c1a0d9fef566e8aaf1898dbdfb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480428"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880042"
 ---
 # <a name="handle-specialized-deployment"></a>Manipular a implantação especializada
 Uma implantação é uma operação opcional para projetos. Um projeto Web, por exemplo, oferece suporte a uma implantação para permitir que um projeto atualize um servidor Web. Da mesma forma, um projeto de **dispositivo inteligente** dá suporte a uma implantação para copiar um aplicativo interno para o dispositivo de destino. Os subtipos de projeto podem fornecer um comportamento de implantação especializado implementando a <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface. Essa interface define um conjunto completo de operações de implantação:

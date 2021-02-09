@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 930a8fa2-db98-43e9-ad6d-a85cc7a6519a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2daa2ab6e3f41d5447204db573b8ae228d617fdf
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 93f36a3c2b587718fe6889688baa50224f663c1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437808"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881354"
 ---
 # <a name="if-activity-designer"></a>Se designer de atividades
 
@@ -29,8 +29,8 @@ A tabela a seguir mostra as propriedades mais úteis de atividade de <xref:Syste
 
 |Nome da propriedade|Obrigatório|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Statements.If.Condition%2A>|Verdadeiro|A condição que determina que atividade filho para executar. Para definir o <xref:System.Activities.Statements.If.Condition%2A> , digite uma expressão de Visual Basic na caixa **condição** no designer de atividade **If** ou na grade de propriedades.|
-|<xref:System.Activities.Statements.If.Else%2A>|Falso|A atividade a ser executada se o <xref:System.Activities.Statements.If.Condition%2A> for **falso**. Para adicionar uma atividade que é executada pela <xref:System.Activities.Statements.If.Else%2A> ramificação, descarte uma atividade da caixa de **ferramentas** no **Else** **caso** do designer de atividade, com texto de dica "soltar atividade aqui".|
+|<xref:System.Activities.Statements.If.Condition%2A>|True|A condição que determina que atividade filho para executar. Para definir o <xref:System.Activities.Statements.If.Condition%2A> , digite uma expressão de Visual Basic na caixa **condição** no designer de atividade **If** ou na grade de propriedades.|
+|<xref:System.Activities.Statements.If.Else%2A>|Falso|A atividade a ser executada se o <xref:System.Activities.Statements.If.Condition%2A> for **falso**. Para adicionar uma atividade que é executada pela <xref:System.Activities.Statements.If.Else%2A> ramificação, descarte uma atividade da caixa de **ferramentas** no  **caso** do designer de atividade, com texto de dica "soltar atividade aqui".|
 |<xref:System.Activities.Statements.If.Then%2A>|Falso|A atividade a ser executada se o <xref:System.Activities.Statements.If.Condition%2A> for **verdadeiro**. Para adicionar uma atividade que é executada pela <xref:System.Activities.Statements.If.Then%2A> ramificação, descarte uma atividade da caixa de **ferramentas** no **em seguida** , no, **se** o designer de atividade com texto de dica "soltar atividade aqui".|
 
 ## <a name="see-also"></a>Confira também
