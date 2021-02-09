@@ -1,17 +1,17 @@
 ---
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 03/16/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 040a168f45afff9111426aac57cafc32a05c1b12
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a3b5686ea36b77b6024fd1e95aee393877e0eaa1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79437498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868554"
 ---
 As tabelas desta página listam as IDs que podem ser usadas para instalar o Visual Studio na linha de comando ou que podem ser especificadas como uma dependência em um manifesto do VSIX. Adicionaremos outros componentes quando lançarmos atualizações para o Visual Studio.
 

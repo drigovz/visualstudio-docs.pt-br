@@ -12,15 +12,15 @@ helpviewer_keywords:
 - member definition [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fab4bae999825d7d2fb11dd232d1e271b4f62d5
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 804c49c079f619a774cb1f99d54b2b2af5a3929d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597490"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869356"
 ---
 # <a name="view-type-and-member-definitions"></a>Exibir Definições de Membro e de Tipo
 
@@ -44,7 +44,7 @@ Você pode alterar a tecla modificadora para o mouse-clique em **ir para defini�
 
 O recurso **Espiar Definição** permite visualizar a definição de um tipo sem sair do local atual no editor. Se você estiver usando um teclado, coloque o cursor de texto em algum lugar dentro do nome do tipo ou do membro e pressione **Alt + F12**. Se você estiver usando um mouse, selecione **Inspecionar Definição** no menu do clique com o botão direito.
 
-Para habilitar **Ctrl** + a funcionalidade CTRL **Click** , vá para **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **geral**. Selecione a opção **Abrir definição na espiada de exibição** e clique em **OK** para fechar a caixa de diálogo **Opções**.
+Para habilitar  + a funcionalidade CTRL **Click** , vá para **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **geral**. Selecione a opção **Abrir definição na espiada de exibição** e clique em **OK** para fechar a caixa de diálogo **Opções**.
 
 ![Configurando a opção de espiar definição com o clique do mouse](../ide/media/editor_options_peek_view.png)
 

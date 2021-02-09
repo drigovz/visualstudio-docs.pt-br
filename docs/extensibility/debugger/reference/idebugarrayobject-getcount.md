@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7931f3f7-033c-4bf8-8abd-95183952ebb0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d9d5e322b7bcd5238335c74caa21989f1f1962ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9750b2982ad0b2d70375fe0519a9fd888bcac8a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736205"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870214"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
 Obtém a contagem de elementos na matriz.
@@ -28,7 +28,7 @@ Obtém a contagem de elementos na matriz.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetCount( 
+HRESULT GetCount( 
    DWORD* pdwElements
 );
 ```
@@ -43,11 +43,11 @@ int GetCount(
 `pdwElements`\
 fora Retorna a contagem.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
  Esse método vê todos os elementos de um objeto de matriz como uma matriz unidimensional, mesmo que o objeto de matriz seja multidimensional. Por exemplo, dada a matriz `myarray[3][2][6]` , esse método retornaria 36 no `pdwElements` parâmetro. Use o método [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) para recuperar os elementos individuais um de cada vez.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

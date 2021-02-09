@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 154f168044e5395a534b4a79ea44d9eafe6293f6
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: a7c1e22d10e7ffa20c73e1b4c42541bc22eab4bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719273"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868225"
 ---
 # <a name="summary-view"></a>Exibição de Resumo
 A exibição de resumo exibe informações sobre as funções ou os objetos de desempenho mais caro em uma execução de criação de perfil. Essa exibição fornece um gráfico de linha do tempo e listas de duas ou mais das funções mais caras ou objetos com base nas métricas de desempenho do método de criação de perfil. Os dados nessa exibição dependem do método de criação de perfil que foi usado (amostragem, instrumentação ou simultaneidade) e se a alocação de memória .NET foi coletada.
@@ -56,7 +56,7 @@ A exibição de resumo exibe informações sobre as funções ou os objetos de d
 | **Filtrar Dados de Relatório** | Exibe o painel de filtro de relatório perfil no qual você pode especificar critérios para restringir os dados na exibição do relatório. Para obter mais informações, consulte [filtro de exibição de relatório de desempenho](../profiling/performance-report-view-filter.md) |
 | **Alternar tela inteira** | Alterna o modo de tela inteira para o modo de exibição de relatório. |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Exibição de resumo-dados de amostragem](../profiling/summary-view-sampling-data.md)
 - [Exibição de resumo – dados de instrumentação](../profiling/summary-view-instrumentation-data.md)
 - [Exibição de resumo-dados de memória do .NET](../profiling/summary-view-dotnet-memory-data.md)

@@ -12,13 +12,13 @@ helpviewer_keywords:
 - source code analysis, migration
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 5f9794c825012d682ca40dfdc5ebbfa03f0614ee
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+manager: jmartens
+ms.openlocfilehash: e435502587e65bd694567f4100516a91fa97cc0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398371"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867861"
 ---
 # <a name="migrate-from-fxcop-analyzers-to-net-analyzers"></a>Migrar de analisadores do FxCop para analisadores de .NET
 
@@ -47,7 +47,7 @@ A partir da versão `3.3.2` , o `Microsoft.CodeAnalysis.FxCopAnalyzers` pacote N
    </PropertyGroup>
    ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Análise de código-fonte versus análise herdada](net-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-net-analyzers)
 - [Migrar da análise herdada para analisadores de .NET](migrate-from-legacy-analysis-to-net-analyzers.md)

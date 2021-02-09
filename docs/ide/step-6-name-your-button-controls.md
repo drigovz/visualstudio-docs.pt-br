@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa5b69cc106aeae18012a7116fd511263423b2c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0f6612806f8bf1453cf28f9d75c78588c2074bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480311"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868875"
 ---
 # <a name="step-6-name-your-button-controls"></a>Etapa 6: Nomear os controles de botão
 
@@ -35,7 +35,7 @@ Há quatro botões no formulário e o IDE os nomeou **button1**, **button2**, **
 
 1. No formulário, clique no botão **Fechar**. (Se você ainda tiver todos os botões selecionados, escolha a tecla **ESC** para cancelar a seleção.) Role na janela **Propriedades** até ver a propriedade **(Name)** . (A propriedade **(Name)** é próxima à parte superior quando as propriedades são alfabéticas.) Altere o nome para **botãoFechar**, conforme mostrado na captura de tela a seguir.
 
-    ![A janela Propriedades com nome de closeButton](../ide/media/express_setnameproperty.png)<br>**_Propriedades_* _ _Window com * ***botãoFechar**_ _name *
+    ![A janela Propriedades com nome de closeButton](../ide/media/express_setnameproperty.png)<br>***Propriedades** _ _Window com * ***botãoFechar**_ _name *
 
     > [!NOTE]
     > Tente alterar o nome do botão para **fechar o botão**, com um espaço entre as palavras "fechar" e "botão". Quando você fizer isso, o IDE exibirá uma mensagem de erro: "o valor da propriedade não é válido." Espaços (e mais alguns caracteres) não são permitidos em nomes de controle.
@@ -48,7 +48,7 @@ Você pode verificar os nomes escolhendo a lista suspensa seletora de controle n
    Essa guia exibe o arquivo de código por trás do formulário, conforme mostrado na captura de tela a seguir.
 
     ![Guia Form1.cs com código do Visual C&#35;](../ide/media/express_showbuttoncode.png)<br>
-**_Form1.cs_* _ _tab com código C# *
+***Form1.cs** _ _tab com código C# *
 
     > [!NOTE]
     > A guia Form1.cs ou Form1. vb pode exibir o **botão** de **exibição como em** vez disso.

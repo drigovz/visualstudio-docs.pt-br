@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c53afebfd8c39e9c43f82916095d8eeef2ec8b11
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 68a4848f00153206b87dd3e5893bbaaeccf3b358
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479284"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868745"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Etapa 8: Adicionar um método para verificar se o jogador ganhou
 Você criou um jogo divertido, mas ele precisa de um item adicional para ser finalizado. O jogo deve terminar quando os jogadores ganham, de modo que você precisa adicionar um método `CheckForWinner()` para verificar se o jogador ganhou.
@@ -45,10 +45,10 @@ Você criou um jogo divertido, mas ele precisa de um item adicional para ser fin
 3. Salve e execute o programa. Jogue o jogo e combine todos os ícones. Quando você ganhar, o programa exibirá uma congratulary **MessageBox** (conforme mostrado na captura de tela a seguir) e, em seguida, fechará a caixa.
 
      ![Jogo da memória com MessageBox](../ide/media/express_tut4step8.png)<br/>
-**_Jogo de correspondência_* _ _com * ***MessageBox**_
+***Jogo de correspondência** _ _With * ***MessageBox***
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, consulte _ *[Step 9: Experimente outros recursos](../ide/step-9-try-other-features.md)* *.
+- Para ir para a próxima etapa do tutorial, consulte **[etapa 9: Experimente outros recursos](../ide/step-9-try-other-features.md)**.
 
 - Para retornar à etapa anterior do tutorial, consulte [etapa 7: manter pares visíveis](../ide/step-7-keep-pairs-visible.md).

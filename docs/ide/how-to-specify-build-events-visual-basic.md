@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 00655d1f30d18da4170782384c634ff189b104ee
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 426b387603fbe7bca29f2ad4f507f2e517cac9bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136921"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869252"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Como especificar eventos de build (Visual Basic)
 
@@ -65,7 +65,7 @@ O procedimento a seguir mostra como definir a versão mínima do sistema operaci
 
 ### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Para criar um comando .exe para alterar o manifesto do aplicativo
 
-1. Crie um aplicativo de console para o comando. No menu **arquivo** , clique em **novo**e em **projeto**.
+1. Crie um aplicativo de console para o comando. No menu **arquivo** , clique em **novo** e em **projeto**.
 
 2. Na caixa de diálogo **Novo Projeto**, no nó **Visual Basic**, selecione **Windows** e, em seguida, o modelo **Aplicativo de Console**. Dê ao projeto o nome de `ChangeOSVersionVB`.
 
@@ -118,7 +118,7 @@ O procedimento a seguir mostra como definir a versão mínima do sistema operaci
    End Sub
    ```
 
-   O comando utiliza dois argumentos. O primeiro argumento é o caminho para o manifesto do aplicativo (ou seja, a pasta na qual o processo de compilação cria o manifesto, normalmente * \<ProjectName> . publish*). O segundo argumento é a nova versão do sistema operacional.
+   O comando utiliza dois argumentos. O primeiro argumento é o caminho para o manifesto do aplicativo (ou seja, a pasta na qual o processo de compilação cria o manifesto, normalmente *\<ProjectName> . publish*). O segundo argumento é a nova versão do sistema operacional.
 
 5. No menu **Compilar**, clique em **Compilar Solução**.
 
@@ -128,7 +128,7 @@ O procedimento a seguir mostra como definir a versão mínima do sistema operaci
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Para invocar um evento de pós-build para alterar o manifesto do aplicativo
 
-1. Crie um aplicativo do Windows para o projeto a ser publicado. No menu **arquivo** , clique em **novo**e em **projeto**.
+1. Crie um aplicativo do Windows para o projeto a ser publicado. No menu **arquivo** , clique em **novo** e em **projeto**.
 
 2. Na caixa de diálogo **Novo Projeto**, no nó **Visual Basic**, selecione **Área de Trabalho do Windows** e, em seguida, o modelo **Aplicativo do Windows Forms**. Dê ao projeto o nome de `VBWinApp`.
 3. Com o projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.

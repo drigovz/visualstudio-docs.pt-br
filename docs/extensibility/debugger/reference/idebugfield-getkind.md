@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e7c9c60a-8e55-4ecc-aa63-0c814a1e92cc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 807b4ecab517e151c87bfc5daab3e94a1e7d5f22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d0f69d95aaf5313e2d2140b90339e23852ba1a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728820"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869876"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
 Esse método obtém o tipo de campo.
@@ -28,7 +28,7 @@ Esse método obtém o tipo de campo.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetKind( 
+HRESULT GetKind( 
    FIELD_KIND* pdwKind
 );
 ```
@@ -43,9 +43,9 @@ int GetKind(
 `pdwKind`\
 fora Retorna o tipo de campo como uma combinação de [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) constantes.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)

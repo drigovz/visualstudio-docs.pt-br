@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14193c0806c4b45f721ee97b101969de8437448d
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: c0d9d20000781980535259c0a739e03a47ae53e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869538"
 ---
 # <a name="inside-the-editor"></a>Dentro do editor
 
@@ -320,7 +320,7 @@ O IntelliSense dá suporte à conclusão de instrução, à ajuda da assinatura 
 
 A conclusão da instrução fornece listas pop-up de possíveis conclusões para nomes de métodos, elementos XML e outros elementos de codificação ou marcação. Em geral, um gesto de usuário invoca uma sessão de conclusão. A sessão exibe a lista de possíveis conclusões e o usuário pode selecionar uma ou ignorar a lista. O <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> é responsável por criar e disparar o <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession> . O <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> computa os <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> itens de conclusão para a sessão.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Pontos de extensão do serviço de linguagem e do editor](../extensibility/language-service-and-editor-extension-points.md)
 - [Importações do editor](../extensibility/editor-imports.md)

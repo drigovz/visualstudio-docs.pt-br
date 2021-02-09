@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 145fc1ad1dddfa4d0648e2ecc7a8d85263744d49
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 8569231ee1b9f19752bf58691b41ec74789bb761
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868992"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Caixa de diálogo Configurações avançadas de compilação (C#)
 
@@ -90,13 +90,13 @@ Para obter mais informações, consulte [/debug (opções do compilador C#)](/do
 
 **Alinhamento de Arquivo**
 
-Especifica o tamanho das seções no arquivo de saída. Os valores válidos são **512**, **1024**, **2048**, **4096**e **8192**. Esses valores são medidos em bytes. Cada seção será alinhada em um limite que é um múltiplo desse valor, afetando o tamanho do arquivo de saída. Para obter mais informações, consulte [/filealign (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
+Especifica o tamanho das seções no arquivo de saída. Os valores válidos são **512**, **1024**, **2048**, **4096** e **8192**. Esses valores são medidos em bytes. Cada seção será alinhada em um limite que é um múltiplo desse valor, afetando o tamanho do arquivo de saída. Para obter mais informações, consulte [/filealign (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
 
 **Endereço básico da biblioteca**
 
 Especifica o endereço básico preferencial no qual uma DLL será carregada. O endereço básico padrão de uma DLL é definido pelo Common Language Runtime do .NET Framework. Para obter mais informações, consulte [/BaseAddress (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Opções do compilador C#](/dotnet/csharp/language-reference/compiler-options/index)
 - [Página de compilação, designer de projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - application icons [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 34405fd52b49e89c2fa0fc95ec1268448bad3061
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 77be1eefb4ea4da139bb536e9d838afecddd7202
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95596905"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869291"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Como especificar um ícone do aplicativo (Visual Basic, C#)
 
@@ -33,7 +33,7 @@ A propriedade `Icon` pode ser acessada no painel **Aplicativo** do **Designer de
 
 1. No **Gerenciador de Soluções**, escolha um nó do projeto (não o nó **Solução**).
 
-1. Na barra de menus, escolha **Project**  >  **Propriedades** do projeto.
+1. Na barra de menus, escolha   >  **Propriedades** do projeto.
 
 1. Quando o **Designer de Projeto** for exibido, escolha a guia **Aplicativo**.
 

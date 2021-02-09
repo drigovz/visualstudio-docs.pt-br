@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8157335e47ec13c66da471f77ddbd2877bcac12d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 64d28df03c18207a3f0ded58caa48d4b41800824
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480662"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868927"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Etapa 6: Adicionar um problema de subtração
 Na sexta parte deste tutorial, você adicionará um problema de subtração e aprenderá a executar as seguintes tarefas:
@@ -62,12 +62,12 @@ Na sexta parte deste tutorial, você adicionará um problema de subtração e ap
      Você pode chamar o método de `Next()` da classe Random, que você nomeou como "randomizer" anteriormente neste tutorial, de várias maneiras. Os métodos que você pode chamar em mais de uma maneira são conhecidos como sobrecarregados, e você pode usar o IntelliSense para explorá-los. Procure novamente na dica de ferramenta da janela do IntelliSense pelo método de `Next()`.
 
      ![Dica de ferramenta do IntelliSense da janela](../ide/media/express_overloads.png)<br/>
-**_IntelliSense_* _ _window dica de ferramenta *
+***IntelliSense** _ _window dica de ferramenta *
 
      A dica de ferramenta exibe **(+ 2 sobrecarga(s))**, o que significa que você pode chamar o método `Next()` de outras duas maneiras. As sobrecargas contêm números ou tipos diferentes de argumentos, para que funcionem ligeiramente diferentes um do outro. Por exemplo, um método pode levar um único argumento inteiro e uma de suas sobrecargas pode levar um inteiro e uma cadeia de caracteres. Você escolhe a sobrecarga correta com base no que você deseja fazer. Quando você adiciona código ao método de `StartTheQuiz()`, mais informações aparecem na janela do IntelliSense para você inserir `randomizer.Next(`. Para percorrer as sobrecargas, escolha as teclas de **seta para cima** e **seta para baixo** como mostrado na ilustração a seguir:
 
      ![Sobrecarga para o método Next&#40;&#41; no IntelliSense](../ide/media/express_nextoverload.png)<br/>
-*Sobrecarga para*  * Método **Next ()** _ _no * ***IntelliSense**_
+*Sobrecarga para*  * **Next ()** _ _method em * ***IntelliSense***
 
      Nesse caso, você deseja escolher a última sobrecarga, porque você pode especificar valores mínimo e máximo.
 
@@ -88,7 +88,7 @@ Na sexta parte deste tutorial, você adicionará um problema de subtração e ap
      Seu programa inclui um problema de subtração, como mostra a ilustração a seguir:
 
      ![Teste de matemática com problema de subtração](../ide/media/express_addsubtract.png)<br/>
-_*_Teste de matemática_*_ _with problema de subtração *
+***Teste de matemática** _ _with problema de subtração *
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 

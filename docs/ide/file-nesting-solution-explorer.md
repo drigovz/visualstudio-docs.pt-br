@@ -9,13 +9,13 @@ helpviewer_keywords:
 - Solution Explorer, file nesting
 author: angelosp
 ms.author: angelpe
-manager: jillfra
-ms.openlocfilehash: 5425c255e85a2785383f1e8e718340fc2049e0c4
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+manager: jmartens
+ms.openlocfilehash: aa3ca640fed4e32c19defd925a49369890219035
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006686"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869447"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Aninhamento de arquivos no Gerenciador de Soluções
 
@@ -64,7 +64,7 @@ Vamos nos concentrar no nó **dependentFileProviders** e em seus nós filho. Cad
 
 ### <a name="the-extensiontoextension-provider"></a>O provedor extensionToExtension
 
-Esse provedor permite que você defina regras de aninhamento de arquivos usando extensões de arquivo específicas. Considere o exemplo a seguir:
+Esse provedor permite que você defina regras de aninhamento de arquivos usando extensões de arquivo específicas. Considere o seguinte exemplo:
 
 ![Regras de exemplo de extentionToExtension](media/filenesting_extensiontoextension.png) ![Efeito de exemplo de extentionToExtension](media/filenesting_extensiontoextension_effect.png)
 
@@ -78,7 +78,7 @@ Esse provedor permite que você defina regras de aninhamento de arquivos usando 
 
 ### <a name="the-filesuffixtoextension-provider"></a>O provedor fileSuffixToExtension
 
-Esse provedor funciona da mesma maneira que o provedor **extensionToExtension**, com a única diferença que a regra examina o sufixo do arquivo em vez de apenas a extensão. Considere o exemplo a seguir:
+Esse provedor funciona da mesma maneira que o provedor **extensionToExtension**, com a única diferença que a regra examina o sufixo do arquivo em vez de apenas a extensão. Considere o seguinte exemplo:
 
 ![Regras de exemplo de fileSuffixToExtension](media/filenesting_filesuffixtoextension.png) ![Efeito de exemplo de fileSuffixToExtension](media/filenesting_filesuffixtoextension_effect.png)
 
@@ -90,7 +90,7 @@ Esse provedor funciona da mesma maneira que o provedor **extensionToExtension**,
 
 Esse provedor aninha arquivos com uma extensão adicional no arquivo sem uma extensão adicional. A extensão adicional só pode ser exibida ao final do nome de arquivo completo.
 
-Considere o exemplo a seguir:
+Considere o seguinte exemplo:
 
 ![Regras de exemplo de addedExtension](media/filenesting_addedextension.png) ![Efeito de exemplo de addedExtension](media/filenesting_addedextension_effect.png)
 
@@ -103,7 +103,7 @@ Considere o exemplo a seguir:
 
 Esse provedor aninha arquivos com uma extensão adicional em um arquivo sem uma extensão adicional. A extensão adicional só pode ser exibida no meio do nome de arquivo completo.
 
-Considere o exemplo a seguir:
+Considere o seguinte exemplo:
 
 ![Regras de exemplo de pathSegment](media/filenesting_pathsegment.png) ![Efeito de exemplo de pathSegment](media/filenesting_pathsegment_effect.png)
 
@@ -128,7 +128,7 @@ Considere o exemplo a seguir:
 
 ### <a name="the-allextensions-provider"></a>O provedor allExtensions
 
-Esse provedor permite que você defina regras de aninhamento de arquivos para arquivos com qualquer extensão, exceto o mesmo nome de arquivo base. Considere o exemplo a seguir:
+Esse provedor permite que você defina regras de aninhamento de arquivos para arquivos com qualquer extensão, exceto o mesmo nome de arquivo base. Considere o seguinte exemplo:
 
 ![Regras de exemplo de allExtensions](media/filenesting_allextensions.png) ![Efeito de exemplo de allExtensions](media/filenesting_allextensions_effect.png)
 
@@ -136,7 +136,7 @@ Esse provedor permite que você defina regras de aninhamento de arquivos para ar
 
 ### <a name="the-filetofile-provider"></a>O provedor fileToFile
 
-Esse provedor permite que você defina regras de aninhamento de arquivos com base em nomes de arquivo inteiros. Considere o exemplo a seguir:
+Esse provedor permite que você defina regras de aninhamento de arquivos com base em nomes de arquivo inteiros. Considere o seguinte exemplo:
 
 ![Regras de exemplo de fileToFile](media/filenesting_filetofile.png) ![Efeito de exemplo de fileToFile](media/filenesting_filetofile_effect.png)
 
@@ -180,7 +180,7 @@ Desabilite as regras globais existentes de aninhamento de arquivos para soluçõ
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Personalizar o IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Soluções e projetos no Visual Studio](solutions-and-projects-in-visual-studio.md)

@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8e11d77a94c7c1d3d7b038ecea1a6c61646e371f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3dd2a688ef70064f44caccfd7c64150b7c649769
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77027575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869122"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>Estender uma versão de avaliação ou atualizar uma licença
 
@@ -37,7 +37,7 @@ Para obter mais informações sobre as assinaturas do Visual Studio e como elas 
 
 ## <a name="enter-a-product-key"></a>Inserir uma chave do produto
 
-1. Selecione **File**  >  **configurações de conta** de arquivo para abrir a caixa de diálogo **configurações de conta** e escolha a **licença com um link de chave do produto (Product Key** ).
+1. Selecione   >  **configurações de conta** de arquivo para abrir a caixa de diálogo **configurações de conta** e escolha a **licença com um link de chave do produto (Product Key** ).
 
 1. Insira a chave do produto (Product Key) no espaço fornecido.
 
