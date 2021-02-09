@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 464538d7f7be68737715cb6fd10fda4017a5556a
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 306099f1fc65a211943e4fb25a5cd73ad6195ea2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876656"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895668"
 ---
 # <a name="nesting-projects"></a>Aninhando projetos
 Os desenvolvedores de aplicativos empresariais que usam o pacote do VS podem, de forma conveniente, agrupar tipos semelhantes de projetos no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usando o *aninhamento de projetos*. Por exemplo, o projeto de modelo empresarial usa projetos aninhados para agrupar projetos em categorias. Projetos de fachada de negócios, projetos de interface do usuário da Web e assim por diante são agrupados em uma categoria.
@@ -34,7 +34,7 @@ Os desenvolvedores de aplicativos empresariais que usam o pacote do VS podem, de
 ## <a name="nested-projects-example"></a>Exemplo de projetos aninhados
  ![Solução de projetos aninhados](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects") Exemplo de projetos aninhados
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Considerações para descarregar e recarregar projetos aninhados](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
 - [Suporte do assistente para projetos aninhados](../../extensibility/internals/wizard-support-for-nested-projects.md)
 - [Registrando modelos de projeto e item](../../extensibility/internals/registering-project-and-item-templates.md)

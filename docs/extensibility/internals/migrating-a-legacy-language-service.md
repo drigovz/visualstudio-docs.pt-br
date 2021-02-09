@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced200ff24b17f312e63642c8083f038a6fc6a4d
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 7a0e20c77a1c8a81a29691079ace1e4751135560
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877826"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895681"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migrando um serviço de linguagem herdado
 Você pode migrar um serviço de idioma herdado para uma versão posterior do Visual Studio atualizando o projeto e adicionando um arquivo Source. Extension. vsixmanifest ao projeto. O próprio serviço de linguagem continuará a funcionar como antes, porque o editor do Visual Studio o adapta.
@@ -109,5 +109,5 @@ Você pode migrar um serviço de idioma herdado para uma versão posterior do Vi
 
 12. Inicie a depuração. Uma segunda instância do Visual Studio aberta.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Extensibilidade do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-extensibility.md)

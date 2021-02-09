@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc0edf82421ba41198480e6c105dd56c02bd0f7e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 423bcc7b3d902488f268b2d0706cb5126125f37d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903254"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895382"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>Elemento TemplateData (modelos do Visual Studio)
 Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .
@@ -43,7 +43,7 @@ Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
 

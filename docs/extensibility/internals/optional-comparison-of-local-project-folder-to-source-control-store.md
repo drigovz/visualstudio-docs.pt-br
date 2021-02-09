@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 65217e8b-15a6-4446-92b0-4cff1c6220f5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed69c6e503614cd1b2ed8e21716a5edcb4babd2b
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 61a23eb1fcb3cbae9e478f35b3ac1fdb6abaf407
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895473"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Comparação opcional da pasta do projeto local para o repositório de controle do código-fonte
 Na API de plug-in de controle do código-fonte 1,2 a comparação entre a pasta do projeto local e o controle do código-fonte é realizada usando as funções [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) e [SccDirDiff](../../extensibility/sccdirdiff-function.md).
@@ -40,5 +40,5 @@ Na API de plug-in de controle do código-fonte 1,2 a comparação entre a pasta 
 > [!NOTE]
 > Essa função usa os mesmos sinalizadores de comando que [SccDiff](../../extensibility/sccdiff-function.md). Como um provedor de plug-in de controle do código-fonte, você pode optar por não dar suporte à operação de "diferença rápida" para diretórios.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Novidades na API do plug-in de controle do código-fonte versão 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

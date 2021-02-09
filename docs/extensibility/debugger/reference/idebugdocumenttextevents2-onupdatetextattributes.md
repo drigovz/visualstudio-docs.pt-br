@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: eb68d69a-1ad9-4ce4-84e1-40979ef16634
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82cda44c50319ef76efbc8fa3ae2712c3a4ae8f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f663f6dc2de0a0c471587ecb19bfb3fade31e943
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731383"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896182"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
 Notifica o pacote de depuração que os atributos de texto foram atualizados no documento.
@@ -28,14 +28,14 @@ Notifica o pacote de depuração que os atributos de texto foram atualizados no 
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT onUpdateTextAttributes( 
+HRESULT onUpdateTextAttributes( 
    TEXT_POSITION pos,
    DWORD         dwNumToUpdate
 );
 ```
 
 ```csharp
-int onUpdateTextAttributes( 
+int onUpdateTextAttributes( 
    enum_TEXT_POSITION pos,
    uint               dwNumToUpdate
 );
@@ -48,7 +48,7 @@ no Uma estrutura de [TEXT_POSITION](../../../extensibility/debugger/reference/te
 `dwNumToUpdate`\
 no Especifica o número de caracteres de texto que foram atualizados.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também

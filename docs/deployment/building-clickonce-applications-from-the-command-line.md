@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b719f9609dfb2feb432f4692b31e820d806ff92
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 13b057f0a688c3a1ae855215ac226a4d31993ea1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437717"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895148"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Compilar aplicativos ClickOnce usando a linha de comando
 
@@ -33,7 +33,7 @@ No [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
  Quando você invoca o MSBuild/target: publish na linha de comando, ele informa ao sistema MSBuild para compilar o projeto e criar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo na pasta de publicação. Isso é equivalente a selecionar o comando **Publish** no IDE.
 
- Esse comando executa *msbuild.exe* , que está no caminho no ambiente de prompt de comando do Visual Studio.
+ Esse comando executa *msbuild.exe*, que está no caminho no ambiente de prompt de comando do Visual Studio.
 
  Um "destino" é um indicador do MSBuild sobre como processar o comando. Os principais destinos são o destino "Build" e o destino "Publish". O destino da compilação é o equivalente a selecionar o comando de compilação (ou pressionar F5) no IDE. Se você quiser apenas compilar seu projeto, poderá conseguir isso digitando `msbuild` . Esse comando funciona porque o destino da compilação é o destino padrão para todos os projetos gerados pelo [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] . Isso significa que você não precisa especificar explicitamente o destino da compilação. Portanto, digitar `msbuild` é a mesma operação que digitar `msbuild /target:build` .
 
@@ -67,9 +67,9 @@ No [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 1. Saia do [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
 
-2. No menu **Iniciar** do Windows, clique em **todos os programas** , **Microsoft Visual Studio** , em seguida, **Ferramentas do Visual Studio** , em seguida, prompt de **comando do Visual Studio**. Isso deve abrir um prompt de comando na pasta raiz do usuário atual.
+2. No menu **Iniciar** do Windows, clique em **todos os programas**, **Microsoft Visual Studio**, em seguida, **Ferramentas do Visual Studio**, em seguida, prompt de **comando do Visual Studio**. Isso deve abrir um prompt de comando na pasta raiz do usuário atual.
 
-3. No **prompt de comando do Visual Studio** , altere o diretório atual para o local do projeto que você acabou de criar acima. Por exemplo, digite `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
+3. No **prompt de comando do Visual Studio**, altere o diretório atual para o local do projeto que você acabou de criar acima. Por exemplo, digite `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
 
 4. Para remover os arquivos existentes produzidos em "para criar e publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] projeto", digite `rmdir /s publish` .
 
@@ -77,7 +77,7 @@ No [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 5. Digite `msbuild /target:publish`.
 
-   As etapas acima produzirão uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação completa do aplicativo em uma subpasta do projeto chamada **Publish**. *CmdLineDemo. Application* é o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto de implantação. A pasta *CmdLineDemo_1.0.0.0* contém os arquivos *CmdLineDemo.exe* e *CmdLineDemo.exe. manifest* , o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto do aplicativo. *Setup.exe* é o bootstrapper, que, por padrão, é configurado para instalar o .NET Framework. A pasta DotNetFX contém os pacotes redistribuíveis para o .NET Framework. Esse é o conjunto inteiro de arquivos de que você precisa para implantar seu aplicativo na Web ou via UNC ou CD/DVD.
+   As etapas acima produzirão uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação completa do aplicativo em uma subpasta do projeto chamada **Publish**. *CmdLineDemo. Application* é o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto de implantação. A pasta *CmdLineDemo_1.0.0.0* contém os arquivos *CmdLineDemo.exe* e *CmdLineDemo.exe. manifest*, o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto do aplicativo. *Setup.exe* é o bootstrapper, que, por padrão, é configurado para instalar o .NET Framework. A pasta DotNetFX contém os pacotes redistribuíveis para o .NET Framework. Esse é o conjunto inteiro de arquivos de que você precisa para implantar seu aplicativo na Web ou via UNC ou CD/DVD.
 
 > [!NOTE]
 > O sistema MSBuild usa a opção **PublishDir** para especificar o local da saída, por exemplo `msbuild /t:publish /p:PublishDir="<specific location>"` .
@@ -99,7 +99,7 @@ Depois de criar o perfil de publicação, você pode fornecer o arquivo pubxml c
 
  Quando você publica o aplicativo nos procedimentos acima, as propriedades a seguir são inseridas em seu arquivo de projeto pelo assistente de publicação ou no arquivo de perfil de publicação para projetos .NET Core 3,1 ou posteriores. Essas propriedades influenciam diretamente como o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é produzido.
 
- Em *CmdLineDemo. vbproj*  /  *CmdLineDemo. csproj* :
+ Em *CmdLineDemo. vbproj*  /  *CmdLineDemo. csproj*:
 
 ```xml
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>
@@ -130,7 +130,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 ::: moniker range=">=vs-2019"
 Para o .NET Core 3,1, ou posterior, os projetos dessas configurações são fornecidos no arquivo pubxml.
 
- As propriedades de publicação são controladas nas [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] páginas de propriedades de **publicação** , **segurança** e **assinatura** do **Designer de projeto**. Abaixo está uma descrição das propriedades de publicação, juntamente com uma indicação de como cada uma é definida nas várias páginas de propriedades do designer de aplicativo:
+ As propriedades de publicação são controladas nas [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] páginas de propriedades de **publicação**, **segurança** e **assinatura** do **Designer de projeto**. Abaixo está uma descrição das propriedades de publicação, juntamente com uma indicação de como cada uma é definida nas várias páginas de propriedades do designer de aplicativo:
 
 > [!NOTE]
 > Para projetos de área de trabalho do Windows .NET, essas configurações agora são encontradas no assistente de publicação

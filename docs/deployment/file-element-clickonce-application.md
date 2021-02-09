@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a4d09d4a0e141359b066f2af31c158f36c96522
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 8ad19de19176b7c8ee1d2c2872126a19abb93b67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895083"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;&gt;elemento File (aplicativo ClickOnce)
 Identifica todos os arquivos não assembly baixados e usados pelo aplicativo.
@@ -91,7 +91,7 @@ Identifica todos os arquivos não assembly baixados e usados pelo aplicativo.
 |Atributo|Descrição|
 |---------------|-----------------|
 |`name`|Obrigatórios. Identifica o nome do arquivo.|
-|`size`|Obrigatórios. Especifica o tamanho, em bytes, do arquivo.|
+|`size`|Obrigatório. Especifica o tamanho, em bytes, do arquivo.|
 |`group`|Opcional, se o `optional` atributo não for especificado ou definido como `false` ; obrigatório se `optional` for `true` . O nome do grupo ao qual este arquivo pertence. O nome pode ser qualquer valor de cadeia de caracteres Unicode escolhido pelo desenvolvedor e é usado para baixar arquivos sob demanda com a <xref:System.Deployment.Application.ApplicationDeployment> classe.|
 |`optional`|Opcional. Especifica se esse arquivo deve ser baixado quando o aplicativo é executado pela primeira vez ou se o arquivo deve residir apenas no servidor até que o aplicativo o solicite sob demanda. Se `false` ou indefinido, o arquivo é baixado quando o aplicativo é executado pela primeira vez ou instalado. Se `true` , um `group` deve ser especificado para que o manifesto do aplicativo seja válido. `optional` Não poderá ser verdadeiro se `writeableType` for especificado com o valor `applicationData` .|
 |`writeableType`|Opcional. Especifica que esse arquivo é um arquivo de dados. Atualmente, o único valor válido é `applicationData` .|
@@ -102,8 +102,8 @@ Identifica todos os arquivos não assembly baixados e usados pelo aplicativo.
 |Atributo|Descrição|
 |---------------|-----------------|
 |`tlbid`|Obrigatórios. O GUID atribuído à biblioteca de tipos.|
-|`version`|Obrigatórios. O número de versão da biblioteca de tipos.|
-|`helpdir`|Obrigatórios. O diretório que contém os arquivos de ajuda para o componente. Pode ser de comprimento zero.|
+|`version`|Obrigatório. O número de versão da biblioteca de tipos.|
+|`helpdir`|Obrigatório. O diretório que contém os arquivos de ajuda para o componente. Pode ser de comprimento zero.|
 |`resourceid`|Opcional. A representação de cadeia de caracteres hexadecimal do identificador de localidade (LCID). É um a quatro dígitos hexadecimais sem um prefixo 0x e sem zeros à esquerda. O LCID pode ter um identificador de subidioma neutro.|
 |`flags`|Opcional. A representação de cadeia de caracteres dos sinalizadores de biblioteca de tipos para esta biblioteca de tipos. Especificamente, deve ser um "RESTRICTED", "CONTROL", "HIDDEN" e "HASDISKIMAGE".|
 

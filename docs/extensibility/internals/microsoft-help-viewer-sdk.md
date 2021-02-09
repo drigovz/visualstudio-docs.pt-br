@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e77d06900a17aca4c2630587a45a9b144accde2
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 2e7b2c8d5f194287f0b654184ddd8716f248ca36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877839"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895746"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK do Microsoft Help Viewer
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: abf89411-1853-4f23-b244-d5e0afa197b1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 79167b0f7e8094fabf80bb9b2d83c94ac874aa31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89f8185734c8c2ee15728328a510236bbbc50a21
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714899"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895967"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
 Atualiza os dados do objeto com o objeto de dados fornecido e retorna um novo objeto de dados que representa os novos dados do objeto.
@@ -48,7 +48,7 @@ no Um objeto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatas
 `dataOut`\
 fora Retorna um novo `IEEDataStorage` objeto que contém os dados substituídos.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5f7d30036f0f25d1f81b690168675d74fc36bbd
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d9db0d2744648901a9389bd2d2805d8c6a4073ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903215"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895356"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>Elemento TemplateGroupID (modelos do Visual Studio)
 Especifica que tipo de projeto um modelo de item será exibido. Esse elemento é significativo quando [ShowByDefault (modelos do Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) é definido como `false` . Quando [ShowByDefault (modelos do Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) é definido como `true` , um modelo de item está disponível em todos os tipos de projeto.
@@ -39,10 +39,10 @@ Especifica que tipo de projeto um modelo de item será exibido. Esse elemento é
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 

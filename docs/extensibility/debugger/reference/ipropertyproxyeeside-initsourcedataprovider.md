@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5156f593-5052-4e3a-9d02-081916fb342d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f14f24836beb1d69a15149a56a2817ebf14eff55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60de888e3aa3f26bc094440fb07a67e49b62e73b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714903"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895980"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
 Inicializa os dados de origem para esse objeto e retorna um objeto que contém os dados iniciais.
@@ -43,7 +43,7 @@ int InitSourceDataProvider(
 `dataOut`\
 fora Retorna um objeto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

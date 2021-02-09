@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 606c1f4cb5559722028b78ef4ef21c41c0ba5556
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 0d7da8cfdb2b7995b77364e5a5de62667b13e52c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914706"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895005"
 ---
 # <a name="bind-breakpoints"></a>Associar pontos de interrupção
 Se o usuário definir um ponto de interrupção, talvez pressionando **F9**, o IDE formula a solicitação e solicita que a sessão de depuração crie o ponto de interrupção.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5cc813f7-04a1-4462-9ea7-fbddcf0e0143
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 931be468f6321250481aec79688f7f326abcfcac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bcf8a827f09c1b8d0e83b92f7729635cbb0f7f18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725239"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896169"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
 Esse método envia eventos que significam a criação e a destruição de processos e programas em uma porta.
@@ -76,7 +76,7 @@ no Um objeto [IDebugEvent2](../../../extensibility/debugger/reference/idebugeven
 `riidEvent`\
 no O GUID do evento. Como o evento é convertido em [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) antes de chamar esse método, esse identificador torna mais fácil determinar qual evento está sendo enviado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também

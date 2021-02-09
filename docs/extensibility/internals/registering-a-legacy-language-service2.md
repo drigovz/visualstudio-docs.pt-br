@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08b9e88440fcb7b488e479e4188279d82a526e4c
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d08552683ce61892b0ee233173466a79326e4c6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875155"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894849"
 ---
 # <a name="registering-a-legacy-language-service-2"></a>Registrando um serviço de idioma herdado 2
 As seções a seguir fornecem listas de entradas de registro para as várias opções de serviço de linguagem disponíveis no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
@@ -89,7 +89,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |----------|----------|-----------|-----------------|
 |(Padrão)|REG_SZ|ResID|O nome de exibição localizado desta página de opções. O nome pode ser um texto literal, ou # `nnn` , em que `nnn` é uma ID de recurso de cadeia de caracteres na DLL satélite do VSPackage especificado.|
 |Pacote|REG_SZ|*GUID*|O GUID do VSPackage que implementa essa página de opções.|
-|Página|REG_SZ|*GUID*|O GUID da página de propriedades a ser solicitada do VSPackage chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> método. Se essa entrada de registro não estiver presente, a chave do registro descreve um nó, e não uma página.|
+|?|REG_SZ|*GUID*|O GUID da página de propriedades a ser solicitada do VSPackage chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> método. Se essa entrada de registro não estiver presente, a chave do registro descreve um nó, e não uma página.|
 
 ### <a name="example"></a>Exemplo
 
@@ -239,5 +239,5 @@ ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
         MaxRegions            = reg_dword:0x0000000a
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Desenvolvendo um serviço de linguagem herdado](../../extensibility/internals/developing-a-legacy-language-service.md)

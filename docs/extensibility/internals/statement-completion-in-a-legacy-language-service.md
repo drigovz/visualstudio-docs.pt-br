@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1534c6ba029cf47cb637e958422efeecb970f35
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 815b47a700e87852596d7a65e341953f65b66cf9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877761"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894823"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Preenchimento de declaração em um serviço de linguagem herdado
 A conclusão da instrução é o processo pelo qual o serviço de idioma ajuda os usuários a concluir uma palavra-chave ou um elemento de linguagem que eles começaram a digitar no editor principal. Este tópico discute como a conclusão da instrução funciona e como implementá-la em seu serviço de idioma.
@@ -38,5 +38,5 @@ A conclusão da instrução é o processo pelo qual o serviço de idioma ajuda o
 
  Quando o gatilho é inserido no editor — especificamente, o buffer de texto — o serviço de linguagem chama o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> método. Isso faz com que o editor traga a interface do usuário para que o usuário possa escolher entre os candidatos de conclusão da instrução. Esse método exige que você implemente <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> e os <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> sinalizadores como parâmetros. A lista de itens de conclusão aparece em uma caixa de listagem de rolagem. À medida que o usuário continua digitando, a seleção dentro da caixa de listagem é atualizada para refletir a correspondência mais próxima com os caracteres mais recentes digitados. O editor central implementa a interface do usuário para conclusão de instrução, mas o serviço de linguagem deve implementar a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> interface para definir um conjunto de itens de conclusão candidatos para a instrução.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Interceptando comandos do serviço de linguagem herdado](../../extensibility/internals/intercepting-legacy-language-service-commands.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - keyboard shortcuts
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 06bbbb0124984530e92b0066044c71bfbe80ad2b
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 8a4901cecf36208f3ed2141e5baef15ecbe43a6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006361"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894732"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Atalhos de teclado padrão no Visual Studio
 
@@ -42,7 +42,7 @@ Para obter mais informações sobre acessibilidade no Visual Studio, consulte [d
 - [Menus de contexto do editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)
 - [Menus de Contexto de Projeto e Solução](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)
 - [Gerenciador de Testes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)
-- [Compilar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)
+- [Build](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)
 - [Arquivo](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)
 - [Refatoração](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)
 - [Ferramentas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)
@@ -184,7 +184,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 |Edit.Cut|**CTRL + X**<br /><br /> ou<br /><br /> **Shift + Delete**|
 |Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> ou<br /><br /> **Ctrl+Shift+Ins**|
 |Edit.Delete|**Delete (excluir)**|
-|Edit.Duplicate|**CTRL + D**|
+|Edit.Duplicate|**Ctrl+D**|
 |Edit.Find|**Ctrl + F**|
 |Edit.FindAllReferences|**SHIFT + F12**|
 |Edit.FindinFiles|**Ctrl + Shift + F**|
@@ -202,13 +202,13 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 |Edit.GoToPrevLocation|**Shift+F8** (erro anterior na Lista de Erros ou na janela Saída)|
 |Edit.InsertSnippet|**CTRL + K, CTRL + X**|
 |Edit.MoveControlDown|**CTRL + seta para baixo**|
-|Edit.MoveControlDownGrid|**Seta para baixo**|
+|Edit.MoveControlDownGrid|**Seta para Baixo**|
 |Edit.MoveControlLeft|**Ctrl+Seta para a Esquerda**|
-|Edit.MoveControlLeftGrid|**Seta para a esquerda**|
+|Edit.MoveControlLeftGrid|**Seta para a Esquerda**|
 |Edit.MoveControlRight|**Ctrl+Seta para a Direita**|
-|Edit.MoveControlRightGrid|**Seta para a direita**|
+|Edit.MoveControlRightGrid|**Seta para a Direita**|
 |Edit.MoveControlUp|**CTRL + seta para cima**|
-|Edit.MoveControlUpGrid|**Seta para cima**|
+|Edit.MoveControlUpGrid|**Seta para Cima**|
 |Edit.NextBookmark|**CTRL + K, Ctrl + N**|
 |Edit.NextBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + N**|
 |Edit.OpenFile|**Ctrl+Shift+G** (abre o nome do arquivo sob o cursor)|
@@ -221,9 +221,9 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 |Edit.Replace|**CTRL + H**|
 |Edit.ReplaceinFiles|**Ctrl + Shift + H**|
 |Edit.SelectAll|**CTRL + A**|
-|Edit.SelectNextControl|**Guia**|
+|Edit.SelectNextControl|**Tab**|
 |Edit.SelectPreviousControl|**Shift + Tab**|
-|Edit.ShowTileGrid|**Digita**|
+|Edit.ShowTileGrid|**Enter**|
 |Edit.SizeControlDown|**Ctrl+Shift+Seta para Baixo**|
 |Edit.SizeControlDownGrid|**Shift + seta para baixo**|
 |Edit.SizeControlLeft|**Ctrl+Shift+Seta para a Esquerda**|
@@ -429,7 +429,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 |Comandos|Atalhos do teclado|
 |--------------| - |
-|Window.ActivateDocumentWindow|**ESC**|
+|Window.ActivateDocumentWindow|**Esc**|
 |Window.AddTabtoSelection|**Ctrl+Shift+Alt+Space**|
 |Window.CloseDocumentWindow|**CTRL + F4**|
 |Window.CloseToolWindow|**SHIFT + ESC**|
@@ -488,7 +488,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 |Edit.ExpandCollapseBaseTypeList|**Shift+Alt+B**|
 |Edit.NavigateToLollipop|**Shift+Alt+L**|
 |Edit.RemovefromDiagram|**Delete (excluir)**|
-|View.ViewCode|**Digita**|
+|View.ViewCode|**Enter**|
 
 ## <a name="coded-ui-test-editor"></a>Editor de Testes de Interface de Usuário Codificada
 
@@ -579,7 +579,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 |Format.Bold|**CTRL + B**|
 |Format.ConverttoHyperlink|**CTRL + L**|
 |Format.InsertBookmark|**Ctrl + Shift + L**|
-|Format.Italic|**Ctrl + I**|
+|Format.Italic|**Ctrl+I**|
 |Format.Underline|**CTRL + U**|
 |Project.AddContentPage|**Ctrl+M, Ctrl+C**|
 |Table.ColumntotheLeft|**Ctrl + Alt + seta para a esquerda**|
@@ -616,7 +616,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 |Edit.EditCell|**F2**|
 |Edit.Remove|**Delete (excluir)**|
 |Edit.RemoveRow|**Ctrl + Delete**|
-|Edit.SelectionCancel|**Fuga**|
+|Edit.SelectionCancel|**Escape**|
 |Resources.Audio|**CTRL + 4**|
 |Resources.Files|**CTRL + 5**|
 |Resources.Icons|**CTRL + 3**|
@@ -721,21 +721,21 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 |Comandos|Atalhos do teclado|
 |--------------| - |
-|Edit.BreakLine|**Digita**|
-|Edit.CharLeft|**Seta para a esquerda**|
+|Edit.BreakLine|**Enter**|
+|Edit.CharLeft|**Seta para a Esquerda**|
 |Edit.CharLeftExtend|**Shift + seta para a esquerda**|
-|Edit.CharRight|**Seta para a direita**|
+|Edit.CharRight|**Seta para a Direita**|
 |Edit.CharRightExtend|**Shift + seta para a direita**|
-|Edit.InsertTab|**Guia**|
-|Edit.LineDown|**Seta para baixo**|
+|Edit.InsertTab|**Tab**|
+|Edit.LineDown|**Seta para Baixo**|
 |Edit.LineDownExtend|**Shift + seta para baixo**|
-|Edit.LineUp|**Seta para cima**|
+|Edit.LineUp|**Seta para Cima**|
 |Edit.LineUpExtend|**Shift + seta para cima**|
 |Edit.MoveControlDown|**CTRL + seta para baixo**|
 |Edit.MoveControlLeft|**Ctrl+Seta para a Esquerda**|
 |Edit.MoveControlRight|**Ctrl+Seta para a Direita**|
 |Edit.MoveControlUp|**CTRL + seta para cima**|
-|Edit.SelectionCancel|**ESC**|
+|Edit.SelectionCancel|**Esc**|
 |Edit.SizeControlDown|**Ctrl+Shift+Seta para Baixo**|
 |Edit.SizeControlLeft|**Ctrl+Shift+Seta para a Esquerda**|
 |Edit.SizeControlRight|**Ctrl + Shift + seta para a direita**|
@@ -756,7 +756,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 |--------------| - |
 |Edit.EditCell|**F2**|
 |Edit.RemoveRow|**Ctrl + Delete**|
-|Edit.SelectionCancel|**ESC**|
+|Edit.SelectionCancel|**Esc**|
 |View.ViewCode|**F7**|
 
 ## <a name="solution-explorer"></a>Gerenciador de Soluções
@@ -800,11 +800,11 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 | Comandos | Atalhos do teclado |
 | - | - |
-| Edit.BreakLine | **Digita**<br /><br /> ou<br /><br /> **Shift+Enter** |
-| Edit.CharLeft | **Seta para a esquerda** |
+| Edit.BreakLine | **Enter**<br /><br /> ou<br /><br /> **Shift+Enter** |
+| Edit.CharLeft | **Seta para a Esquerda** |
 | Edit.CharLeftExtend | **Shift + seta para a esquerda** |
 | Edit.CharLeftExtendColumn | **Shift + Alt + seta para a esquerda** |
-| Edit.CharRight | **Seta para a direita** |
+| Edit.CharRight | **Seta para a Direita** |
 | Edit.CharRightExtend | **Shift + seta para a direita** |
 | Edit.CharRightExtendColumn | **Shift + Alt + seta para a direita** |
 | Edit.ClearBookmarks | **CTRL + K, CTRL + L** |
@@ -837,13 +837,13 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 | Edit.GotoPreviousIssueinFile | **Alt+PgUp** |
 | Edit.HideSelection | **CTRL + M, CTRL + H** |
 | Edit.IncreaseFilterLevel | **ALT +.** |
-| Edit.IncrementalSearch | **Ctrl + I** |
+| Edit.IncrementalSearch | **Ctrl+I** |
 | Edit.InsertCaretsatAllMatching | **Shift + Alt +;** |
 | Edit.InsertNextMatchingCaret | **Shift + Alt +.** |
-| Edit.InsertTab | **Guia** |
+| Edit.InsertTab | **Tab** |
 | Edit.LineCut | **CTRL + L** |
 | Edit.LineDelete | **Ctrl + Shift + L** |
-| Edit.LineDown | **Seta para baixo** |
+| Edit.LineDown | **Seta para Baixo** |
 | Edit.LineDownExtend | **Shift + seta para baixo** |
 | Edit.LineDownExtendColumn | **Shift+Alt+Seta para baixo** |
 | Edit.LineEnd | **End** |
@@ -855,7 +855,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 | Edit.LineStartExtend | **Shift+Home** |
 | Edit.LineStartExtendColumn | **Shift + Alt + Home** |
 | Edit.LineTranspose | **Shift + Alt + T** |
-| Edit.LineUp | **Seta para cima** |
+| Edit.LineUp | **Seta para Cima** |
 | Edit.LineUpExtend | **Shift + seta para cima** |
 | Edit.LineUpExtendColumn | **Shift+Alt+Seta para Cima** |
 | Edit.ListMembers | **CTRL + J** |
@@ -880,7 +880,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 | Edit.ScrollLineDown | **CTRL + seta para baixo** |
 | Edit.ScrollLineUp | **CTRL + seta para cima** |
 | Edit.SelectCurrentWord | **CTRL + W** |
-| Edit.SelectionCancel | **Fuga** |
+| Edit.SelectionCancel | **Escape** |
 | Edit.SelectToLastGoBack | **CTRL + =** |
 | Edit.ShowCodeLensMenu | **CTRL + K, CTRL +\`** |
 | Edit.ShowNavigateMenu | **Alt +\`** |
@@ -950,10 +950,10 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 |Comandos|Atalhos do teclado|
 |--------------| - |
-|Edit.MoveControlDown|**Seta para baixo**|
-|Edit.MoveControlLeft|**Seta para a esquerda**|
-|Edit.MoveControlRight|**Seta para a direita**|
-|Edit.MoveControlUp|**Seta para cima**|
+|Edit.MoveControlDown|**Seta para Baixo**|
+|Edit.MoveControlLeft|**Seta para a Esquerda**|
+|Edit.MoveControlRight|**Seta para a Direita**|
+|Edit.MoveControlUp|**Seta para Cima**|
 |Edit.ScrollColumnLeft|**Ctrl+Seta para a Esquerda**|
 |Edit.ScrollColumnRight|**Ctrl+Seta para a Direita**|
 |Edit.ScrollLineDown|**CTRL + seta para baixo**|
@@ -976,7 +976,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 |Format.SizetoContent|**Shift+F7**|
 |Format.SpaceAcross|**Alt + seta para a direita**<br /><br /> ou<br /><br /> **Alt + seta para esquerda**|
 |Format.SpaceDown|**Alt+Up Arrow**<br /><br /> ou<br /><br /> **Alt + seta para baixo**|
-|Format.TabOrder|**CTRL + D**|
+|Format.TabOrder|**Ctrl+D**|
 |Format.TestDialog|**CTRL + T**|
 |Format.ToggleGuides|**CTRL + G**|
 
@@ -1006,7 +1006,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 |Image.OutlinedEllipseTool|**Shift+Alt+P**|
 |Image.OutlinedRectangleTool|**Shift+Alt+R**|
 |Image.OutlinedRoundedRectangleTool|**Shift+Alt+W**|
-|Image.PencilTool|**Ctrl + I**|
+|Image.PencilTool|**Ctrl+I**|
 |Image.PreviousColor|**CTRL + [**<br /><br /> ou<br /><br /> **Ctrl+Seta para a Esquerda**|
 |Image.PreviousRightColor|**Ctrl + Shift + [**<br /><br /> ou<br /><br /> **Ctrl+Shift+Seta para a Esquerda**|
 |Image.RectangleSelectionTool|**Shift+Alt+S**|
@@ -1051,25 +1051,25 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 |Comandos|Atalhos do teclado|
 |--------------| - |
-|Edit.BreakLine|**Digita**|
-|Edit.CharLeft|**Seta para a esquerda**|
+|Edit.BreakLine|**Enter**|
+|Edit.CharLeft|**Seta para a Esquerda**|
 |Edit.CharLeftExtend|**Shift + seta para a esquerda**|
-|Edit.CharRight|**Seta para a direita**|
+|Edit.CharRight|**Seta para a Direita**|
 |Edit.CharRightExtend|**Shift + seta para a direita**|
 |Edit.DocumentEnd|**End**|
 |Edit.DocumentEndExtend|**Shift+End**|
 |Edit.DocumentStart|**Início**|
 |Edit.DocumentStartExtend|**Shift+Home**|
-|Edit.InsertTab|**Guia**|
-|Edit.LineDown|**Seta para baixo**|
+|Edit.InsertTab|**Tab**|
+|Edit.LineDown|**Seta para Baixo**|
 |Edit.LineDownExtend|**Shift + seta para cima**|
-|Edit.LineUp|**Seta para cima**|
+|Edit.LineUp|**Seta para Cima**|
 |Edit.LineUpExtend|**Shift + seta para baixo**|
 |Edit.MoveControlDown|**CTRL + seta para baixo**|
 |Edit.MoveControlLeft|**Ctrl+Seta para a Esquerda**|
 |Edit.MoveControlRight|**Ctrl+Seta para a Direita**|
 |Edit.MoveControlUp|**CTRL + seta para cima**|
-|Edit.SelectionCancel|**Fuga**|
+|Edit.SelectionCancel|**Escape**|
 |Edit.SizeControlDown|**Ctrl+Shift+Seta para Baixo**|
 |Edit.SizeControlLeft|**Ctrl+Shift+Seta para a Esquerda**|
 |Edit.SizeControlRight|**Ctrl + Shift + seta para a direita**|

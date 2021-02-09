@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 9001342a-09a8-4f5e-b6ed-881a3b9d7246
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03cbcee265855c0e3ee26f75d5937315d64661a2
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: ffc7f8a80e86779f2cc419f841a3b80280f39c9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205392"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896397"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Guia Janelas, Caixa de diálogo Propriedades da Janela
 Use a guia **Windows** para mostrar informações sobre o Windows relacionadas à janela selecionada. Para exibir a [caixa de diálogo Propriedades da janela](../debugger/window-properties-dialog-box.md), mova o foco para a janela [exibição do Windows](../debugger/windows-view.md) . Selecione qualquer nó de janela na árvore e, em seguida, escolha **Propriedades** no menu **Exibir** .
 
  As configurações a seguir estão disponíveis na guia **Windows** :
 
-|Entrada|Description|
+|Entrada|Descrição|
 |-----------|-----------------|
 |**Próxima janela**|O identificador da próxima janela irmã na mesma sequência (ordem Z) mostrada no modo de exibição de árvore de janela ("nenhum" se não houver nenhuma janela seguinte). Escolha esta entrada para exibir as propriedades da próxima janela.|
 |**Janela anterior**|O identificador da janela irmã anterior na mesma sequência (ordem Z) mostrada no modo de exibição de árvore de janela ("None" se não houver nenhuma janela anterior). Escolha esta entrada para exibir as propriedades da janela anterior.|

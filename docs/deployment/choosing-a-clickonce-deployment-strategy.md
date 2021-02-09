@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 98bcab65-ab8b-4ed1-9adc-fdacf92b8106
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d623c47960a3c1a44c184df52488682659d5238d
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: f4c20689c79529edf4a34edca857dedf1420b03f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383164"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895109"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Escolher uma estratégia de implantação do ClickOnce
 Há três estratégias diferentes para implantar um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]; a estratégia escolhida depende principalmente do tipo de aplicativo que você está implantando. As três estratégias de implantação são as seguintes:
@@ -57,7 +57,7 @@ Há três estratégias diferentes para implantar um aplicativo [!INCLUDE[ndptecc
 
  Para habilitar essa estratégia de implantação em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], clique em **Não instalar o aplicativo** na página **Instalar ou Executar da Web** do Assistente de Publicação.
 
- Para habilitar essa estratégia de implantação, manualmente, altere a tag **install** no manifesto de implantação. (Seu valor pode ser **true** ou **false**. Em *Mage.exe* , use a opção **Somente Online** na lista **Tipo de Aplicativo**.)
+ Para habilitar essa estratégia de implantação, manualmente, altere a tag **install** no manifesto de implantação. (Seu valor pode ser **true** ou **false**. Em *Mage.exe*, use a opção **Somente Online** na lista **Tipo de Aplicativo**.)
 
 ## <a name="install-from-a-cd"></a>Instalação de um CD
  Ao usar essa estratégia, seu aplicativo será implantado em mídia removível como um CD-ROM ou DVD. Como na opção anterior, quando o usuário opta por instalar o aplicativo, ele é instalado e iniciado e os itens são adicionados ao menu **Iniciar** e **Adicionar ou Remover Programas** no **Painel de Controle**.
@@ -66,7 +66,7 @@ Há três estratégias diferentes para implantar um aplicativo [!INCLUDE[ndptecc
 
  Para habilitar essa estratégia de implantação em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], clique em **De um CD-ROM ou DVD-ROM** na página **Como Instalado** do Assistente de Publicação.
 
- Para habilitar essa estratégia de implantação manualmente, altere a tag **deploymentProvider** no manifesto de implantação. (No Visual Studio, essa propriedade é exposta como **URL de Instalação** na página **Publicar** do Designer de Projeto. Em *Mage.exe* , ela é **Localização Inicial**.)
+ Para habilitar essa estratégia de implantação manualmente, altere a tag **deploymentProvider** no manifesto de implantação. (No Visual Studio, essa propriedade é exposta como **URL de Instalação** na página **Publicar** do Designer de Projeto. Em *Mage.exe*, ela é **Localização Inicial**.)
 
 ## <a name="web-browser-support"></a>Suporte ao navegador da Web
  Os aplicativos destinados ao .NET Framework 3.5 podem ser instalados usando qualquer navegador.

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - <addin> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cf922799301aef67ee70c480dd9e0823382cbd47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71fa31122432f4894bfca59929ee5eb127b7cad2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543761"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896723"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento AddIn (desenvolvimento do Office no Visual Studio)
   O elemento **AddIn** do `vstav3` namespace contém informações específicas para Microsoft Office suplementos do VSTO e personalizações em nível de documento desenvolvidas com o Visual Studio.
@@ -57,16 +57,16 @@ ms.locfileid: "85543761"
  O `addin` elemento tem os seguintes elementos filho.
 
 ### <a name="entrypoints"></a>entryPoints
- Obrigatórios. O elemento **entryPoints** é descrito em [&#60;entryPoints&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
+ Obrigatório. O elemento **entryPoints** é descrito em [&#60;entryPoints&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
 ### <a name="update"></a>atualizar
- Obrigatórios. O elemento **Update** é descrito em [&#60;elemento&#62; de atualização &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).
+ Obrigatório. O elemento **Update** é descrito em [&#60;elemento&#62; de atualização &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).
 
 ### <a name="postactions"></a>Ações
  Opcional. O elemento de **ações** é descrito em [&#60;ações&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).
 
 ### <a name="application"></a>aplicativo
- Obrigatórios. O elemento **Application** é descrito em [&#60;elemento&#62; de aplicativo &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).
+ Obrigatório. O elemento **Application** é descrito em [&#60;elemento&#62; de aplicativo &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Exemplo de personalização no nível do documento
 

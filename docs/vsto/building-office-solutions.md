@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Office solutions [Office development in Visual Studio], debugging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3d942a7818c3c71e0859c9271b329688734682f2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 31cb28ad2c332d0afea9bef8cbe1c979b58536e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847930"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896717"
 ---
 # <a name="build-office-solutions"></a>Criar soluções do Office
   Em geral, compilar e depurar projetos do Office é o mesmo que compilar e depurar outros tipos de projetos no Visual Studio, como Windows Forms. Os tópicos nesta seção explicam as diferenças que existem. Para obter informações gerais sobre como criar aplicativos, consulte [Compilar e compilar no Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
@@ -107,7 +107,7 @@ ms.locfileid: "96847930"
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Depurar projetos do Office](../vsto/debugging-office-projects.md)|Apresenta os problemas envolvidos na depuração de projetos do Office.|
 |[Walkthrough: criar sua primeira personalização em nível de documento para o Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Demonstra como criar uma personalização básica no nível do documento para o Excel.|

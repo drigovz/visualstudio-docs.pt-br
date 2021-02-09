@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ead0df4e-6f88-4b42-9297-581b7902f050
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4786f450b108c8a6c1eaefc6f86f7adf57e9269e
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 728913596ce8c3947756906dffb144eecd3d71ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715854"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895265"
 ---
 # <a name="the-experimental-instance"></a>A instância experimental
 Para proteger seu ambiente de desenvolvimento do Visual Studio de aplicativos não testados que podem alterá-lo, o VSSDK fornece um espaço experimental que você pode usar para experimentar. Você desenvolve novos aplicativos usando o Visual Studio como de costume, mas os executa usando essa instância experimental.

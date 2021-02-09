@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 512302f1-12b1-4107-8a6e-c5bc878ce1c3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 440afc26688522da5cc8b6c20b2712872b4ce6b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25570442402db11c4f8eb499ecf33ea3ae82b54b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732227"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896208"
 ---
 # <a name="idebugdisassemblystream2getcurrentlocation"></a>IDebugDisassemblyStream2::GetCurrentLocation
 Retorna um identificador de local de código que representa o local do código atual.
@@ -28,13 +28,13 @@ Retorna um identificador de local de código que representa o local do código a
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetCurrentLocation( 
+HRESULT GetCurrentLocation( 
    UINT64* puCodeLocationId
 );
 ```
 
 ```csharp
-int GetCurrentLocation( 
+int GetCurrentLocation( 
    out ulong puCodeLocationId
 );
 ```
@@ -43,7 +43,7 @@ int GetCurrentLocation( 
 `puCodeLocationId`\
 fora Retorna o identificador de local do código. Consulte a seção comentários do método [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) para obter uma descrição de um identificador de local de código.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

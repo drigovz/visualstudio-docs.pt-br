@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 468b1a44fb4754f86b31992e2c6d96bf6380592d
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: bf089eeaf8c4408a0bc76d2f3982d311ac9c5979
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974550"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896254"
 ---
 # <a name="create-a-settings-category"></a>Criar uma categoria de configurações
 
@@ -94,7 +94,7 @@ Para iniciar este passo a passos, você deve primeiro concluir a primeira seçã
 
 1. Inicie o projeto no modo de depuração pressionando **F5**. Isso inicia a instância experimental.
 
-2. Abra a **Tools**  >  caixa de diálogo **Opções** de ferramentas.
+2. Abra a   >  caixa de diálogo **Opções** de ferramentas.
 
 3. No modo de exibição de árvore no painel esquerdo, expanda **minha categoria** e clique em **minha página de grade**.
 
@@ -149,7 +149,7 @@ Para iniciar este passo a passos, você deve primeiro concluir a primeira seçã
 
      A página **escolher uma coleção de configurações a serem importadas** é exibida.
 
-15. Selecione o arquivo MySettings *. vssettings* no nó **minhas configurações** do modo de exibição de árvore. Se o arquivo não aparecer no modo de exibição de árvore, clique em **procurar** e localize-o. Clique em **Avançar**.
+15. Selecione o arquivo MySettings *. vssettings* no nó **minhas configurações** do modo de exibição de árvore. Se o arquivo não aparecer no modo de exibição de árvore, clique em **procurar** e localize-o. Clique em **Próximo**.
 
      A caixa de diálogo **escolher configurações para importar** é exibida.
 

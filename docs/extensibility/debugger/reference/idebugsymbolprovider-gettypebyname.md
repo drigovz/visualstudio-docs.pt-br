@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b9d88d3b-8b75-484a-b9cc-dc8c0fbb4bc8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ce4dfab898190eb89c58503e378b410ddfc240de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 565a202d3b63a8c501864099940f5ca16da96077
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719189"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894862"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 Esse método mapeia um nome de símbolo para um tipo de símbolo.
@@ -28,7 +28,7 @@ Esse método mapeia um nome de símbolo para um tipo de símbolo.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetTypeByName( 
+HRESULT GetTypeByName( 
    LPCOLESTR     pszClassName,
    NAME_MATCH    nameMatch,
    IDebugField** ppField
@@ -53,7 +53,7 @@ no Seleciona o tipo de correspondência, por exemplo, diferencia maiúsculas de 
 `ppField`\
 fora Retorna o tipo de símbolo como um objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

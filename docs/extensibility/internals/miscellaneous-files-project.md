@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 93a278a8-d4f4-400b-8945-4f1b0a2b5bac
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a963b4d452a5d8ea9e0556b232f488e93dc0a29c
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: e22ff1c0f95c78e7e19f8e309d1c37f85c7b9aa5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876773"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895694"
 ---
 # <a name="miscellaneous-files-project"></a>Projeto arquivos diversos
 Quando um usuário abre itens de projeto, o IDE é atribuído ao projeto de arquivos diversos quaisquer itens que não sejam membros de nenhum projeto em uma solução.
@@ -37,7 +37,7 @@ Quando um usuário abre itens de projeto, o IDE é atribuído ao projeto de arqu
 
  O projeto de arquivos diversos não exige que o usuário o crie explicitamente com a caixa de diálogo **novo projeto** . Além disso, o projeto de arquivos diversos não gerencia permanentemente uma lista de membros do projeto. Ele usa um recurso opcional para registrar uma lista de arquivos usados mais recentemente para cada usuário.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>
