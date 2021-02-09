@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f35fc61b-f8dd-473a-b583-82c304059422
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d286ee807d0d0e006f129ea9a34918205d3fe3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d5d053e7f3d185f3685ff9b0bf775711115abad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464726"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854776"
 ---
 # <a name="idiastackwalkhelperframeforva"></a>IDiaStackWalkHelper::frameForVA
 Recupera o quadro de pilha que contém o endereço virtual especificado.
@@ -25,7 +25,7 @@ Recupera o quadro de pilha que contém o endereço virtual especificado.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT frameForVA( 
+HRESULT frameForVA( 
    ULONGLONG        va,
    IDiaFrameData**  ppFrame
 );
@@ -40,9 +40,9 @@ no O endereço virtual para os dados do quadro.
 
 fora Um objeto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) que representa o quadro de pilha no endereço especificado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

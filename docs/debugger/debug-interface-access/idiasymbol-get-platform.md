@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dff1c1eb-bcb2-4275-bb07-f2fdc076d6fb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe9da9a436604c869bb460dd6a30bf74c3c286f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: acfd6945e0ae32a259a67f646c0fed80820b9f9b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462556"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853691"
 ---
 # <a name="idiasymbolget_platform"></a>IDiaSymbol::get_platform
 Recupera o tipo de plataforma para o qual o compiland foi compilado.
@@ -25,7 +25,7 @@ Recupera o tipo de plataforma para o qual o compiland foi compilado.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_platform ( 
+HRESULT get_platform ( 
    DWORD* pRetVal
 );
 ```
@@ -35,12 +35,12 @@ HRESULT get_platform ( 
 
 fora Retorna um valor da enumeração de [enumeração CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) que especifica o tipo de plataforma para o qual o compiland foi compilado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
 > Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumeração CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md)

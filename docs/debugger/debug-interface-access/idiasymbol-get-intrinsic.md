@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f969f595-d9f9-48b9-adaa-63a6e4e09575
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 864a86f261ca115e9c5186129577696582966e18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2bd69f0e194ebd9842c23081b4722dd9934e7fbb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854174"
 ---
 # <a name="idiasymbolget_intrinsic"></a>IDiaSymbol::get_intrinsic
 Recupera um sinalizador que especifica se uma classe é um tipo intrínseco.
@@ -25,7 +25,7 @@ Recupera um sinalizador que especifica se uma classe é um tipo intrínseco.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_intrinsic( 
+HRESULT get_intrinsic( 
    BOOL* pRetVal)
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_intrinsic( 
 
 fora Retorna `TRUE` se a classe é um tipo intrínseco; caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -50,5 +50,5 @@ fora Retorna `TRUE` se a classe é um tipo intrínseco; caso contrário, retorna
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

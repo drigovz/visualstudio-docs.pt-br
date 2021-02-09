@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e44ba922-6cda-40c2-9b62-44e5a8628e63
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 26aca8f37bfe18940ecca45f3ee150e7af73d22d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65456c26881b3351e834397745ace5f8be280d16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462772"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853810"
 ---
 # <a name="idiasymbolget_notreached"></a>IDiaSymbol::get_notReached
 Recupera um sinalizador que especifica se a função ou o rótulo nunca é alcançado.
@@ -35,7 +35,7 @@ HRESULT get_notReached(
 
 fora Retorna `TRUE` se a função ou o rótulo nunca for alcançado; caso contrário, retornará `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -48,5 +48,5 @@ fora Retorna `TRUE` se a função ou o rótulo nunca for alcançado; caso contr�
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

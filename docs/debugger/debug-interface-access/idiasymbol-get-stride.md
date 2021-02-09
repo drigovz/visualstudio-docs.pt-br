@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 4264742a-3d91-44b9-9d14-87adbc77f0f0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f3853c6883ed5feab420f0b689c0c614d57aecd7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab4fae7c0e2816fa8c69e239cc96df82b9e805d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461952"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853593"
 ---
 # <a name="idiasymbolget_stride"></a>IDiaSymbol::get_stride
 Recupera o stride da matriz ou da matriz substituída.
@@ -32,8 +32,8 @@ HRESULT get_stride(
 
 fora Um ponteiro para um `DWORD` que contém o Stride.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

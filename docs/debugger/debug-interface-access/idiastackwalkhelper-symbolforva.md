@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8dd9455d-d44c-4dd6-a0aa-31131cbea2aa
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 90b157b0f5b09353ede1af1d344f1f9adf68debd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6944e2736fb418581306fa25b4541471335488f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464628"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854706"
 ---
 # <a name="idiastackwalkhelpersymbolforva"></a>IDiaStackWalkHelper::symbolForVA
 Recupera o símbolo que contém o endereço virtual especificado.
@@ -25,7 +25,7 @@ Recupera o símbolo que contém o endereço virtual especificado.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT symbolForVA( 
+HRESULT symbolForVA( 
    ULONGLONG     va,
    IDiaSymbol**  ppSymbol
 );
@@ -40,9 +40,9 @@ no O endereço virtual que está contido no símbolo solicitado. O símbolo deve
 
 fora Um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa o símbolo no endereço especificado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f2cf1e0-f817-4ca0-b782-3341362c46a9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 877ac3b0a73dc13600c9d6847dfc505caaa05821
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1d2f084d0561d7d691df1f0e12f98b4604c11b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464040"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854426"
 ---
 # <a name="idiasymbolget_constructor"></a>IDiaSymbol::get_constructor
 Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário tem um construtor ou destruidor.
@@ -25,7 +25,7 @@ Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_constructor ( 
+HRESULT get_constructor ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_constructor ( 
 
 fora Retorna `TRUE` se o tipo de dados definido pelo usuário tem um construtor ou destruidor; caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -48,5 +48,5 @@ fora Retorna `TRUE` se o tipo de dados definido pelo usuário tem um construtor 
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

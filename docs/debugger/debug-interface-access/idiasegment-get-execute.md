@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 746cdf8e-9097-415d-ba10-069854153185
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 349b9b865223e2df0083e12d4c8bfd26ae2c2643
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79b8207a8c983bdaea6af2e91190ae4b6c0e0105
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466003"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855322"
 ---
 # <a name="idiasegmentget_execute"></a>IDiaSegment::get_execute
 Recupera um sinalizador que indica se o segmento é executável.
@@ -25,7 +25,7 @@ Recupera um sinalizador que indica se o segmento é executável.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_execute ( 
+HRESULT get_execute ( 
    BOOL* pRetVal
 );
 ```
@@ -35,8 +35,8 @@ HRESULT get_execute ( 
 
 fora Retorna `TRUE` se o segmento está marcado como executável; caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

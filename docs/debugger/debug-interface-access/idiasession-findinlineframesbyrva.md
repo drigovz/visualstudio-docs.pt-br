@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: ddb3ff0e-cb3d-4fa0-af56-f064b218b264
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be9203b3ed22093863710eb7689b16226988efe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae878043729787b80102d4ad6ed3bf2158d3cba0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465688"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855168"
 ---
 # <a name="idiasessionfindinlineframesbyrva"></a>IDiaSession::findInlineFramesByRVA
 Recupera uma enumeração que permite que um cliente Itere em todos os quadros embutidos em um endereço virtual relativo (RVA) específico.
@@ -23,7 +23,7 @@ Recupera uma enumeração que permite que um cliente Itere em todos os quadros e
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT findInlineFramesByRVA ( 
+HRESULT findInlineFramesByRVA ( 
    IDiaSymbol*       parent,   DWORD             rva,
    IDiaEnumSymbols** ppResult
 );
@@ -42,10 +42,10 @@ no Especifica o endereço como um RVA.
 
 fora Mantém um `IDiaEnumSymbols` objeto que contém a lista de quadros recuperados.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

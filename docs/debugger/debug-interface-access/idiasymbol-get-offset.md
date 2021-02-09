@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8292bb08-4dc8-4663-beb4-258f5d5a448d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 71105c6c3f93f259bdb6ce8e5f46abe30c5953c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6469180cada412fe5f08db1bd982f5a6e250e9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462612"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853740"
 ---
 # <a name="idiasymbolget_offset"></a>IDiaSymbol::get_offset
 Recupera o deslocamento do local do símbolo. Use quando a [Enumeração LocationType](../../debugger/debug-interface-access/locationtype.md) for `LocIsRegRel` ou `LocIsBitField` .
@@ -25,7 +25,7 @@ Recupera o deslocamento do local do símbolo. Use quando a [Enumeração Locatio
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_offset ( 
+HRESULT get_offset ( 
    LONG* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_offset ( 
 
 fora Retorna o deslocamento em bytes do local do símbolo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -51,6 +51,6 @@ fora Retorna o deslocamento em bytes do local do símbolo.
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumeração LocationType](../../debugger/debug-interface-access/locationtype.md)

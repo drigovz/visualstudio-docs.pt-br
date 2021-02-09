@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 0aa356a1-5c5c-4ee4-8b48-bae0a2610013
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a9963de56dd02504cb74ed31c6a0ee2d3f08df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a50966270f91d941d825712938851ec5a06f0892
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463340"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854069"
 ---
 # <a name="idiasymbolget_ismultipleinheritance"></a>IDiaSymbol::get_isMultipleInheritance
 Especifica se o `this` ponteiro aponta para um membro de dados com várias heranças.
@@ -32,8 +32,8 @@ HRESULT get_isMultipleInheritance(
 
 fora Um ponteiro para um `BOOL` que especifica se o `this` ponteiro aponta para um membro de dados com várias heranças.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

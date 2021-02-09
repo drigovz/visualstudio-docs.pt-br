@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: e203e5c2-6563-43fa-be56-3063955043ab
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: abd6f8afb7275503fa3de855575e9dcb6dad0fb3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a2ce0d808a21a793115c6f065ca4ab95b1507e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465842"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855231"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
 Retorna uma enumeração de símbolos para quadros embutidos correspondentes ao nome da função embutida especificada.
@@ -23,7 +23,7 @@ Retorna uma enumeração de símbolos para quadros embutidos correspondentes ao 
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT findAcceleratorInlineeLinesByName ( 
+HRESULT findAcceleratorInlineeLinesByName ( 
    LPCOLESTR             name,
    DWORD                 option,
    IDiaEnumSymbols**     ppResult
@@ -43,13 +43,13 @@ no As opções de pesquisa de nome a serem usadas durante a pesquisa de quadros 
 
 fora Um ponteiro para um `IDiaEnumSymbols` ponteiro de interface que é inicializado com o resultado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
  Essa função procura Inlines apenas nas funções de stub do acelerador. Ele ignora os registros de procedimento C++ nativos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

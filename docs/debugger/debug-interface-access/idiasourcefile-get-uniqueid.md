@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e0b8dbc0-6061-4f31-bead-2cd72be44e41
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f159211854e5b408d34c253a77893caf763bf2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b562690569cfd5013ac44e0f091bc552874d8f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465195"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854944"
 ---
 # <a name="idiasourcefileget_uniqueid"></a>IDiaSourceFile::get_uniqueId
 Recupera um valor de chave de inteiro simples que é exclusivo para esta imagem.
@@ -25,7 +25,7 @@ Recupera um valor de chave de inteiro simples que é exclusivo para esta imagem.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_uniqueId ( 
+HRESULT get_uniqueId ( 
    DWORD* pRetVal
 );
 ```
@@ -35,11 +35,11 @@ HRESULT get_uniqueId ( 
 
 fora Retorna um valor de chave de inteiro simples que é exclusivo para esta imagem.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
  Comparar chaves em vez de cadeias de caracteres pode acelerar o processamento de números de linha.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

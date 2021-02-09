@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 355d3877-b6b6-45fd-a1d8-baed428d8f96
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4513571edb7d46efd02ff65bac5882c38f5dbc0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eee47ae1b1254e553c4b2bb1e075079c3f51a1ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464110"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854475"
 ---
 # <a name="idiasymbolget_callingconvention"></a>IDiaSymbol::get_callingConvention
 Retorna um indicador de uma Convenção de chamada de métodos.
@@ -25,7 +25,7 @@ Retorna um indicador de uma Convenção de chamada de métodos.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_callingConvention ( 
+HRESULT get_callingConvention ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_callingConvention ( 
 
 fora Retorna um valor da enumeração de [enumeração CV_call_e](../../debugger/debug-interface-access/cv-call-e.md) que especifica a Convenção de chamada de um método.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -48,6 +48,6 @@ fora Retorna um valor da enumeração de [enumeração CV_call_e](../../debugger
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumeração CV_call_e](../../debugger/debug-interface-access/cv-call-e.md)

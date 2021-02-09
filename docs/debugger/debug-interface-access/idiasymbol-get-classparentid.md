@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f11e3ccb-215d-418c-b8c3-e63159234915
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c4dc9d14808edbfef2076bf89478e4432c44ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a965d04bf6cd41bcd19c2b5e987f610149f601c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464096"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854482"
 ---
 # <a name="idiasymbolget_classparentid"></a>IDiaSymbol::get_classParentId
 Recupera o identificador pai de classe do símbolo.
@@ -25,7 +25,7 @@ Recupera o identificador pai de classe do símbolo.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_classParentId ( 
+HRESULT get_classParentId ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_classParentId ( 
 
 fora Retorna a ID do pai da classe do símbolo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou código de erro.
 
 > [!NOTE]
@@ -51,5 +51,5 @@ fora Retorna a ID do pai da classe do símbolo.
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

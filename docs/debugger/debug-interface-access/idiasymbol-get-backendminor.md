@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37f38d19-6685-440d-a477-7127c4f8699e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e65b2af4654949cdfd7198f54eefea386b905cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 72d7b5712c4ec0e2040d6e0f37a322e8b7b1dac0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464243"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854517"
 ---
 # <a name="idiasymbolget_backendminor"></a>IDiaSymbol::get_backEndMinor
 Recupera o número de versão secundária de back-end do compilador.
@@ -25,7 +25,7 @@ Recupera o número de versão secundária de back-end do compilador.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_backEndMinor ( 
+HRESULT get_backEndMinor ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_backEndMinor ( 
 
 fora Retorna o número de versão secundária do back-end. Consulte Observações.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -53,5 +53,5 @@ fora Retorna o número de versão secundária do back-end. Consulte Observaçõe
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

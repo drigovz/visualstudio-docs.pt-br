@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 864d9249-f0c8-4a34-b391-eb785f7e8865
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29d7255fd0e2c769a1b7d318e56982ba739915d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d73abdd735131c0af9e776dfcd41772b240059f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464082"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854454"
 ---
 # <a name="idiasymbolget_compilergenerated"></a>IDiaSymbol::get_compilerGenerated
 Recupera um sinalizador que indica se o símbolo foi gerado pelo compilador.
@@ -25,7 +25,7 @@ Recupera um sinalizador que indica se o símbolo foi gerado pelo compilador.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_compilerGenerated ( 
+HRESULT get_compilerGenerated ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_compilerGenerated ( 
 
 fora Retorna `TRUE` se o compilador gerou o símbolo; caso contrário, retorna `FALSE` se o símbolo foi gerado a partir da fonte gravada pelo usuário.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou código de erro.
 
 > [!NOTE]
@@ -48,5 +48,5 @@ fora Retorna `TRUE` se o compilador gerou o símbolo; caso contrário, retorna `
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

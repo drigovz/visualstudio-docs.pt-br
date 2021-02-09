@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0aa97951-f7e1-4fa5-a87f-2920460c122d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a3a76c0927efad18e667a786b1678262da6ac4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df38f143eb3e0ab7fb7181b111c309e37e2ed4ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463963"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854370"
 ---
 # <a name="idiasymbolget_customcallingconvention"></a>IDiaSymbol::get_customCallingConvention
 Recupera um sinalizador que especifica se a função tem uma Convenção de chamada personalizada.
@@ -35,7 +35,7 @@ HRESULT get_customCallingConvention(
 
 fora Retorna `TRUE` se a função tem uma Convenção de chamada personalizada; caso contrário, retorna `FALSE` , a função tem uma Convenção de chamada conhecida.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -48,5 +48,5 @@ fora Retorna `TRUE` se a função tem uma Convenção de chamada personalizada; 
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

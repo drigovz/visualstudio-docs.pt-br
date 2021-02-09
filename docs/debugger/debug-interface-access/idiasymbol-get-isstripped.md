@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cc2c4a0b-ab9f-4b79-a8ff-a3badb0405d6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2fa8d393511417c11e35a29e467ebf852f7f9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a62c05fa4297fb98d7a9e2005522d56bcaa58aba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463158"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853971"
 ---
 # <a name="idiasymbolget_isstripped"></a>IDiaSymbol::get_isStripped
 Recupera o sinalizador que indica se os símbolos privados foram removidos do arquivo de símbolo.
@@ -35,7 +35,7 @@ HRESULT get_isStripped(
 
 fora Retorna `TRUE` se os símbolos privados foram removidos do arquivo de símbolo; caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -51,6 +51,6 @@ fora Retorna `TRUE` se os símbolos privados foram removidos do arquivo de símb
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Exe](../../debugger/debug-interface-access/exe.md)

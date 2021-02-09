@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dd1fb3ba-31bf-497d-a6bf-79f1206e6642
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe5c412e815b5cda02959f792197954cb1f92540
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 810de26d9bef93308744a161f6638fb61913dea2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461917"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853558"
 ---
 # <a name="idiasymbolget_symindexid"></a>IDiaSymbol::get_symIndexId
 Recupera o identificador de símbolo exclusivo.
@@ -25,7 +25,7 @@ Recupera o identificador de símbolo exclusivo.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_symIndexId ( 
+HRESULT get_symIndexId ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_symIndexId ( 
 
 fora Retorna a ID do símbolo do símbolo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou código de erro.
 
 > [!NOTE]
@@ -44,5 +44,5 @@ fora Retorna a ID do símbolo do símbolo.
 ## <a name="remarks"></a>Comentários
  O identificador é um valor exclusivo criado pelo DIA SDK para marcar todos os símbolos como exclusivos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3b9fb747-670b-4da7-bb70-612f7b911786
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ebf6a450aa9b2b5fdd05d6573fc9ee10c6f83e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b6dfbb3d12e01656117c0b1a3391af5a0578358
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463823"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854286"
 ---
 # <a name="idiasymbolget_hasalloca"></a>IDiaSymbol::get_hasAlloca
 Recupera um sinalizador que especifica se a função contém uma chamada para `alloca` (que é usada para alocar memória na pilha).
@@ -25,7 +25,7 @@ Recupera um sinalizador que especifica se a função contém uma chamada para `a
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT get_hasAlloca(   BOOL *pFlag);
+HRESULT get_hasAlloca(   BOOL *pFlag);
 ```
 
 #### <a name="parameters"></a>Parâmetros
@@ -33,7 +33,7 @@ HRESULT get_hasAlloca(   BOOL *pFlag);
 
 fora Retorna `TRUE` se a função contém uma chamada para `alloca` ; caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -46,5 +46,5 @@ fora Retorna `TRUE` se a função contém uma chamada para `alloca` ; caso contr
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

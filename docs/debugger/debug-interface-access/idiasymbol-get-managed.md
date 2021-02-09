@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a69d00be-2a89-415c-b116-385c422e2fd5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 270fc706f94e8048ef1c4cc1477a4372ed8988a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c66a98d5570628325968ba7389c87ffe0a962e98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462906"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853873"
 ---
 # <a name="idiasymbolget_managed"></a>IDiaSymbol::get_managed
 Recupera um sinalizador que especifica se o símbolo se refere ao código gerenciado.
@@ -25,7 +25,7 @@ Recupera um sinalizador que especifica se o símbolo se refere ao código gerenc
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_managed ( 
+HRESULT get_managed ( 
    BOOL* pRetVal
 );
 ```
@@ -35,11 +35,11 @@ HRESULT get_managed ( 
 
 fora Retorna `TRUE` se o símbolo se refere ao código gerenciado; caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
 > Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

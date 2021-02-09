@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 47660b9b-6e4f-4dfa-88ab-63dce28f7412
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 361aa5083f0d3abafc42ddbacf9bee4e464a3336
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7df2a6bf560c8b0916357c063dff01f1d8f5ac9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464810"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854769"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
 Pesquisa o quadro de ativação especificado em busca de um endereço de retorno no endereço especificado ou próximo dele.
@@ -25,7 +25,7 @@ Pesquisa o quadro de ativação especificado em busca de um endereço de retorno
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT searchForReturnAddressStart ( 
+HRESULT searchForReturnAddressStart ( 
    IDiaFrameData* frame,
    ULONGLONG      startAddress,
    ULONGLONG*     returnAddress
@@ -45,9 +45,9 @@ no Um endereço de memória virtual do qual começar a Pesquisar.
 
 fora Retorna o endereço de retorno de função mais próximo para `startAddress` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

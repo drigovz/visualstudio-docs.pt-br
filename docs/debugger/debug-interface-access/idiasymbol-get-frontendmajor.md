@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f8a067c5-3306-4fc5-bc20-8910a47ed504
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 14d69d617d76ffe033e3ab763cdf85dad871f1f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bec64aa467ffeb4780626f2296d9fddbea4d3f1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463879"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854335"
 ---
 # <a name="idiasymbolget_frontendmajor"></a>IDiaSymbol::get_frontEndMajor
 Recupera o número de versão principal de front-end.
@@ -25,7 +25,7 @@ Recupera o número de versão principal de front-end.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_frontEndMajor ( 
+HRESULT get_frontEndMajor ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_frontEndMajor ( 
 
 fora Retorna o número de versão principal de front-end. Consulte Observações.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -53,5 +53,5 @@ fora Retorna o número de versão principal de front-end. Consulte Observações
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

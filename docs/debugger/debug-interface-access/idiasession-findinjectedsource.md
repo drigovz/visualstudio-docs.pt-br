@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 907531b6-1ef8-4153-986d-b72611a1632d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 315c09c29f99d8fe148f9795879193b2cb1f9e49
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a49af12ed317732271d755477a2f50e6bb424205
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465814"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855217"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
 Recupera uma lista de fontes que foram colocadas no repositório de símbolos por provedores de atributos ou outros componentes do processo de compilação.
@@ -25,7 +25,7 @@ Recupera uma lista de fontes que foram colocadas no repositório de símbolos po
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT findInjectedSource ( 
+HRESULT findInjectedSource ( 
    LPCOLESTR                 srcFile,
    IDiaEnumInjectedSources** ppResult
 );
@@ -40,9 +40,9 @@ no Nome do arquivo de origem para pesquisa.
 
 fora Retorna um objeto [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) que contém uma lista de todas as fontes injetadas.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

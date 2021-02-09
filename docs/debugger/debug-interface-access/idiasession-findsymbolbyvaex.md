@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 11c685f6-cda2-4474-a432-214ecaae4ffa
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: de381b67e84233b0ba4f7a6e3aaa6a4df0c93a67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac2795b2b2b8740c51afcc84f6c2c29715b0e04c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465534"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855070"
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
 Recupera um tipo de símbolo especificado que contém ou está mais próximo de, um endereço virtual (VA) especificado e um deslocamento.
@@ -25,7 +25,7 @@ Recupera um tipo de símbolo especificado que contém ou está mais próximo de,
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT findSymbolByVAEx ( 
+HRESULT findSymbolByVAEx ( 
    ULONGLONG    va,
    SymTagEnum   symtag,
    IDiaSymbol** ppSymbol,
@@ -50,7 +50,7 @@ fora Retorna um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasy
 
 fora Retorna um valor que especifica um deslocamento do endereço virtual fornecido por `va` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo
@@ -61,7 +61,7 @@ LONG disp = 0;
 pSession->findSymbolByVAEx( va, SymTagFunction, &pFunc, &disp );
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
 - [IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)

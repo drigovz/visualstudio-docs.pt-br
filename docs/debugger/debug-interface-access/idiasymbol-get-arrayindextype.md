@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cd63b9ec-9694-406c-b37f-bde6bd5fcbf2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bbe3bd3525abd5ac7fccbae66b603ce8d2a6dbf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 225723fbc5eb40025a6dad1b52a5ab6c790f3fea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464306"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854552"
 ---
 # <a name="idiasymbolget_arrayindextype"></a>IDiaSymbol::get_arrayIndexType
 Recupera a interface de símbolo do tipo de índice de matriz do símbolo.
@@ -25,7 +25,7 @@ Recupera a interface de símbolo do tipo de índice de matriz do símbolo.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_arrayIndexType ( 
+HRESULT get_arrayIndexType ( 
    IDiaSymbol** pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_arrayIndexType ( 
 
 fora Retorna um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa o tipo de índice de matriz do símbolo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou código de erro.
 
 > [!NOTE]
@@ -51,5 +51,5 @@ fora Retorna um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasy
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

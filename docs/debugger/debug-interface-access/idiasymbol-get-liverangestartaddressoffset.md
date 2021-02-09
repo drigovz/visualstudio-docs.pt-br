@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f5b28914-0a14-4b22-8259-59d7f97ee610
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2563afe5c5323415c5d4c9d7f0b0fa89583f9736
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d7c2e80ebbd7cef116b27d6c3b9a40ef21fd38d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853929"
 ---
 # <a name="idiasymbolget_liverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
 Retorna a parte de deslocamento do endereço inicial do intervalo no qual o símbolo local é válido.
@@ -25,7 +25,7 @@ Retorna a parte de deslocamento do endereço inicial do intervalo no qual o sím
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_liveRangeStartAddressOffset ( 
+HRESULT get_liveRangeStartAddressOffset ( 
    DWORD* offset
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_liveRangeStartAddressOffset ( 
 
 fora Retorna a parte de deslocamento do intervalo de endereços inicial.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 > [!NOTE]
@@ -53,5 +53,5 @@ fora Retorna a parte de deslocamento do intervalo de endereços inicial.
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

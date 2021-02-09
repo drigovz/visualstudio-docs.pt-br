@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e5b44a81-0804-429b-97d8-467cbba3132a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cee48dcfcd79c12d31d843aa20523e6d7214f740
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a85192d0ee5bc36241177a0e2e7c91933ec8e24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466080"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855343"
 ---
 # <a name="idiasectioncontribget_virtualaddress"></a>IDiaSectionContrib::get_virtualAddress
 Recupera o endereço virtual (VA) da contribuição.
@@ -25,7 +25,7 @@ Recupera o endereço virtual (VA) da contribuição.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_virtualAddress ( 
+HRESULT get_virtualAddress ( 
    ULONGLONG* pRetVal
 );
 ```
@@ -35,8 +35,8 @@ HRESULT get_virtualAddress ( 
 
 fora Retorna o VA da contribuição.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

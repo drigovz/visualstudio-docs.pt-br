@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b157b245-1ea0-4b80-8962-d8b278dbc742
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 807346ef5a34c0b175257fe2099dc25e8de692f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3642c17f342f824ea920fcf4adf0e11f5ef93215
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465380"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855028"
 ---
 # <a name="idiasessionput_loadaddress"></a>IDiaSession::put_loadAddress
 Define o endereço de carregamento para o arquivo executável que corresponde aos símbolos neste repositório de símbolos.
@@ -25,7 +25,7 @@ Define o endereço de carregamento para o arquivo executável que corresponde ao
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT put_loadAddress ( 
+HRESULT put_loadAddress ( 
    ULONGLONG NewVal
 );
 ```
@@ -41,5 +41,5 @@ no Carregue o endereço para o arquivo executável.
 > [!NOTE]
 > Você deve chamar esse método quando obter o objeto [IDiaSession](../../debugger/debug-interface-access/idiasession.md) e antes de começar a usar o objeto se precisar usar qualquer propriedade virtual em símbolos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

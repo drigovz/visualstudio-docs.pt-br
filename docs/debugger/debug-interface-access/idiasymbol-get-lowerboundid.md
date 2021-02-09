@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 12ce98e9-a225-4947-88c9-5fda39dd67e4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a8adc32ab715ee81ce5a74c01431d452475c74e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1780a1ec3af3a066bae698d7e2b0db8b25c4e69b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462920"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853880"
 ---
 # <a name="idiasymbolget_lowerboundid"></a>IDiaSymbol::get_lowerBoundId
 Recupera o identificador de símbolo do limite inferior de uma dimensão de matriz FORTRAN.
@@ -25,7 +25,7 @@ Recupera o identificador de símbolo do limite inferior de uma dimensão de matr
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_lowerBoundId ( 
+HRESULT get_lowerBoundId ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_lowerBoundId ( 
 
 fora Retorna a ID do símbolo que representa o limite inferior de uma dimensão de matriz FORTRAN.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -44,5 +44,5 @@ fora Retorna a ID do símbolo que representa o limite inferior de uma dimensão 
 ## <a name="remarks"></a>Comentários
  O identificador é um valor exclusivo criado pelo DIA SDK para marcar todos os símbolos como exclusivos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

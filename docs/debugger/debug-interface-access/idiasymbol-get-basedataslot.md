@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: f9ed21b7-9397-4813-926e-ade11914b06b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ce2a1f2d6404f7bbb708478dff1e64b09b8246d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3475ec7dd4a619ce231538203104ceab264c8a84
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464222"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854510"
 ---
 # <a name="idiasymbolget_basedataslot"></a>IDiaSymbol::get_baseDataSlot
 Recupera o slot de dados base.
@@ -32,8 +32,8 @@ HRESULT get_baseDataSlot(
 
 fora Um ponteiro para um `DWORD` que contém o slot de dados base.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

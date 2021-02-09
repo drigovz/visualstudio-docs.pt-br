@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 423af497-9294-438e-92b4-456c6f56dc56
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 995f4139e0bf70f6d7b30719698aafa4d03eb87f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f35d1e74042a1416a7d5f7f6a05b24b423255991
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464292"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854524"
 ---
 # <a name="idiasymbolget_backendbuild"></a>IDiaSymbol::get_backEndBuild
 Recupera o número de Build de back-end do compilador.
@@ -25,7 +25,7 @@ Recupera o número de Build de back-end do compilador.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_backEndBuild ( 
+HRESULT get_backEndBuild ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_backEndBuild ( 
 
 fora Retorna o número da compilação de back-end. Consulte Observações.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -53,5 +53,5 @@ fora Retorna o número da compilação de back-end. Consulte Observações.
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

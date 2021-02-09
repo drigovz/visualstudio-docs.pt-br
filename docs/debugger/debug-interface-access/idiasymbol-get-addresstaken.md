@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0d366188-f5e1-4226-b392-58c09539d097
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b62a848d70b59a1764220c806123b0edd03edf2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f2ae3ecac3e173d190f7393946dd07e4633b15b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464348"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854566"
 ---
 # <a name="idiasymbolget_addresstaken"></a>IDiaSymbol::get_addressTaken
 Recupera um sinalizador que indica se outro símbolo faz referência ao endereço deste símbolo.
@@ -25,7 +25,7 @@ Recupera um sinalizador que indica se outro símbolo faz referência ao endereç
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_addressTaken ( 
+HRESULT get_addressTaken ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_addressTaken ( 
 
 fora Retorna `TRUE` se outro símbolo referencia esse endereço; caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -56,5 +56,5 @@ int* B = &A;
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

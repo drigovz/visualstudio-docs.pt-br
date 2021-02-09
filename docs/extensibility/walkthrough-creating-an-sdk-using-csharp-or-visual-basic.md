@@ -7,18 +7,18 @@ ms.topic: how-to
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b9000290b146275ca495b49211c9823422b0a32f
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 1f1ede0e642f14581d13d571acf67a952360bf65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862951"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838689"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Walkthrough: criar um SDK usando C# ou Visual Basic
 Neste tutorial, você aprenderá a criar um SDK de biblioteca de matemática simples usando o Visual C# e, em seguida, empacotará o SDK como uma extensão do Visual Studio (VSIX). Você concluirá os seguintes procedimentos:
@@ -247,7 +247,7 @@ Neste tutorial, você aprenderá a criar um SDK de biblioteca de matemática sim
 
     Você criou e usou com êxito um SDK de extensão.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Walkthrough: criar um SDK usando C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [Walkthrough: criar um SDK usando JavaScript](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)
 - [Criar um Software Development Kit](../extensibility/creating-a-software-development-kit.md)

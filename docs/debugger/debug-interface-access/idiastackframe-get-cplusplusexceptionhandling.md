@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f2631820-c986-40ca-b61e-230d7a9c426c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc2e4042185b17d7e2f670456cf124c5ce079fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4532d64b31f291262938e03b595795d0f1252fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465117"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854930"
 ---
 # <a name="idiastackframeget_cplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
 Recupera um sinalizador que indica se a manipulação de exceção do C++ está em vigor.
@@ -25,7 +25,7 @@ Recupera um sinalizador que indica se a manipulação de exceção do C++ está 
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_cplusplusExceptionHandling ( 
+HRESULT get_cplusplusExceptionHandling ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_cplusplusExceptionHandling ( 
 
 fora Retorna `TRUE` se a manipulação de exceção do C++ está em vigor para este quadro; caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se a propriedade não tem suporte. Caso contrário, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários
@@ -43,6 +43,6 @@ fora Retorna `TRUE` se a manipulação de exceção do C++ está em vigor para e
 
  Para determinar se a manipulação de exceção estruturada está em vigor, chame o método [IDiaStackFrame:: get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
 - [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)

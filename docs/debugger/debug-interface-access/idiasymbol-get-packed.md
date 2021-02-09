@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e42ff368-56c4-49a2-8676-f80e349efa21
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 73694e46f66014c251dbe3760dfade7baea566da
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2682086764294f9721153e9509088e653b9fd11
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853705"
 ---
 # <a name="idiasymbolget_packed"></a>IDiaSymbol::get_packed
 Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário (UDT) está embalado.
@@ -25,7 +25,7 @@ Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_packed ( 
+HRESULT get_packed ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_packed ( 
 
 fora Retorna `TRUE` se o UDT é empacotado; caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -44,5 +44,5 @@ fora Retorna `TRUE` se o UDT é empacotado; caso contrário, retorna `FALSE` .
 ## <a name="remarks"></a>Comentários
  Embalado significa que todos os membros do UDT estão posicionados o mais próximo possível, sem nenhum preenchimento intermediário para alinhar aos limites de memória.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

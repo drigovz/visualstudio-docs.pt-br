@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e40f82f5-88fe-4a9b-b594-3605f42773ec
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: e4ce3326e6922227b83a12b21b6fc2aa2f9ce81e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2fe00b39fb451372d8d3a949d5f1d553b71d7507
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463690"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854230"
 ---
 # <a name="idiasymbolget_hasmanagedcode"></a>IDiaSymbol::get_hasManagedCode
 Recupera um sinalizador que indica se o módulo contém código gerenciado.
@@ -35,7 +35,7 @@ HRESULT get_hasManagedCode(
 
 fora Retorna `TRUE` se o módulo contém código gerenciado; caso contrário, retorna `FALSE` , o código é um código não gerenciado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -51,6 +51,6 @@ fora Retorna `TRUE` se o módulo contém código gerenciado; caso contrário, re
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)
