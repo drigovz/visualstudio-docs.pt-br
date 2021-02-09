@@ -12,15 +12,15 @@ helpviewer_keywords:
 - postActionData element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 85e1a02dbb85094cf84e1bba05e900d0e3f2c641
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 505b55b7513446a158adac66e7e0e38f401f0808
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583717"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847681"
 ---
 # <a name="ltpostactiondatagt-element-office-development"></a>&lt;&gt;elemento postActionData (desenvolvimento do Office)
   O `postActionData` elemento do `vstav3` namespace Especifica os dados associados a qualquer ação pós-implantação que é executada Depois que as soluções do Office são instaladas.
@@ -52,7 +52,7 @@ ms.locfileid: "91583717"
 </vstav3:postActionData>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Manifestos do aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifestos de implantação para soluções do Office](../vsto/deployment-manifests-for-office-solutions.md)

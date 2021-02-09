@@ -17,15 +17,15 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], calendars
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 38bf1aa02d72621bc1bcc7376a15ea975feb0860
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0651b392563ff90cb349a3a8e737717bf375bea6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528311"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847577"
 ---
 # <a name="work-with-calendar-items"></a>Trabalhar com itens de calendário
   A <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> classe contém os métodos e as propriedades que você usa para executar tarefas com itens de calendário.
@@ -39,7 +39,7 @@ ms.locfileid: "97528311"
 
  Para obter mais informações sobre tarefas do Outlook e o modelo de objeto do Outlook, consulte [visão geral do modelo de objeto do Outlook](../vsto/outlook-object-model-overview.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Trabalhar com itens de contato](../vsto/working-with-contact-items.md)
 - [Trabalhar com pastas](../vsto/working-with-folders.md)
 - [Trabalhar com itens de email](../vsto/working-with-mail-items.md)
