@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: ce877a6a-9bba-4fd9-92fb-0a8dfec9e75b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07230c3a9b76be8d78e22acaa83addd0fa21005a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: e9509d7bc0f8141b01ed1a0a600fa5d77a6d6916
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903826"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839370"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>Elemento SupportsMasterPage (modelos do Visual Studio)
 Especifica se a caixa de seleção selecionar ou não a **página mestra** está habilitada no diálogo **Adicionar novo item** .
@@ -39,10 +39,10 @@ Especifica se a caixa de seleção selecionar ou não a **página mestra** está
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -85,6 +85,6 @@ Especifica se a caixa de seleção selecionar ou não a **página mestra** está
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

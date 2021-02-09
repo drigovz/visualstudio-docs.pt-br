@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d17fd0b63438183b10b1ecb0e5eb6abb9f5d7f46
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 4bb44fbb263bb12aba04c06f1248ae25aa9d546f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204527"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839539"
 ---
 # <a name="making-commands-available"></a>Disponibilizando comandos
 
@@ -57,7 +57,7 @@ Você pode programar comandos VSPackage para que fiquem visíveis ou ocultos, de
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] monitora alterações que resultam de ações do usuário, como carregar um projeto ou ir da edição para a compilação. À medida que ocorrem alterações, a aparência do IDE é modificada automaticamente. A tabela a seguir mostra quatro contextos principais de alteração do IDE que o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] monitora.
 
-| Tipo de contexto | Description |
+| Tipo de contexto | Descrição |
 |-------------------------| - |
 | Tipo de projeto ativo | Para a maioria dos tipos de projeto, esse `GUID` valor é o mesmo que o GUID do VSPackage que implementa o projeto. No entanto, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] os projetos usam o tipo de projeto `GUID` como o valor. |
 | Janela ativa | Normalmente, esta é a última janela do documento ativo que estabelece o contexto da interface do usuário atual para associações de chave. No entanto, também pode ser uma janela de ferramentas que tem uma tabela de associação de chave que se assemelha ao navegador da Web interno. Para janelas de documentos com várias guias, como o editor de HTML, cada guia tem um contexto de comando diferente `GUID` . |
