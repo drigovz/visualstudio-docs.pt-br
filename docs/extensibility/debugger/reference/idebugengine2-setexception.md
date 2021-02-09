@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e6f5ec48-09e8-4b9b-9dc9-55f8d883f1b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7398db3c15c58821e05eff839a1022276401d569
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e2a6dbd5d5700d4d64625490c016da2d04af6d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730939"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878936"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 Especifica como o mecanismo de depuração (DE) deve tratar uma determinada exceção.
@@ -28,13 +28,13 @@ Especifica como o mecanismo de depuração (DE) deve tratar uma determinada exce
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT SetException( 
+HRESULT SetException( 
    EXCEPTION_INFO* pException
 );
 ```
 
 ```csharp
-int SetException( 
+int SetException( 
    EXCEPTION_INFO[] pException
 );
 ```
@@ -43,7 +43,7 @@ int SetException( 
 `pException`\
 no Uma estrutura de [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) que descreve a exceção e como depurá-la.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

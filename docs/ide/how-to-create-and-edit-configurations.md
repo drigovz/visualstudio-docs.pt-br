@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 635fc18965361967269b7260b6abaab279ffb52d
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 636fbabbede90d9a1c686a2252aef712b4789c18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136817"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878715"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Como criar e editar configurações
 
@@ -42,7 +42,7 @@ ms.locfileid: "92136817"
 Para abrir a caixa de diálogo do **Configuration Manager**, no **Gerenciador de Soluções**, abra o menu de atalho da solução e, em seguida, escolha **Configuration Manager**.
 
 > [!NOTE]
-> Se o comando do **Configuration Manager** não for exibido no menu de atalho, procure no menu **Build** na barra de menus. Se ele não aparecer lá, na barra de menus, escolha **ferramentas**  >  **Opções**e, no painel esquerdo da caixa de diálogo **Opções** , expanda **projetos e soluções**  >  **geral**e, no painel direito, marque a caixa de seleção **Mostrar configurações avançadas de Build** .
+> Se o comando do **Configuration Manager** não for exibido no menu de atalho, procure no menu **Build** na barra de menus. Se ele não aparecer lá, na barra de menus, escolha **ferramentas**  >  **Opções** e, no painel esquerdo da caixa de diálogo **Opções** , expanda **projetos e soluções**  >  **geral** e, no painel direito, marque a caixa de seleção **Mostrar configurações avançadas de Build** .
 
 Na caixa de diálogo **Configuration Manager** é possível usar a lista suspensa **Configuração da solução ativa** para selecionar uma configuração de build em toda a solução, modificar uma existente ou criar uma nova configuração. É possível usar a lista suspensa **Plataforma da solução ativa** para selecionar a plataforma que a configuração define como destino, modificar uma existente ou adicionar uma nova plataforma. O painel **Contextos do projeto** lista os projetos na solução. Para cada projeto, é possível selecionar configuração e plataforma específicas de projeto, modificar existentes ou criar uma nova configuração ou adicionar uma nova plataforma. Também é possível marcar caixas de seleção que indicam se cada projeto está incluído quando você usa a configuração em toda a solução para compilar ou implantar a solução.
 

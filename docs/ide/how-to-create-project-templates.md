@@ -10,13 +10,13 @@ helpviewer_keywords:
 - project templates [Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 9030a88e67c90fab870613d71d0fe63992166222
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+manager: jmartens
+ms.openlocfilehash: 9dc515b35fd57368e2be4742cb685be9414734ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597178"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878689"
 ---
 # <a name="how-to-create-project-templates"></a>Como criar modelos de projeto
 
@@ -43,7 +43,7 @@ Este tópico mostra como criar um modelo usando o **Assistente para exportar mod
 
    O projeto é exportado para um arquivo *. zip* e colocado no local de saída especificado e, se selecionado, importado para o Visual Studio.
 
-Para localizar o modelo na caixa de diálogo **novo projeto** , expanda **instalado** e expanda a categoria que corresponde ao `ProjectType` elemento no arquivo *. vstemplate* . Por exemplo, um arquivo *. vstemplate* que contém `<ProjectType>CSharp</ProjectType>` aparece em **Installed**  >  **Visual C#** instalado, por padrão. Você pode organizar seu modelo em um subdiretório do tipo de projeto apenas criando uma pasta nesse diretório e colocando o arquivo *. zip* de seu modelo nele. Para obter mais informações, consulte [como localizar e organizar modelos](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Para localizar o modelo na caixa de diálogo **novo projeto** , expanda **instalado** e expanda a categoria que corresponde ao `ProjectType` elemento no arquivo *. vstemplate* . Por exemplo, um arquivo *. vstemplate* que contém `<ProjectType>CSharp</ProjectType>` aparece em   >  **Visual C#** instalado, por padrão. Você pode organizar seu modelo em um subdiretório do tipo de projeto apenas criando uma pasta nesse diretório e colocando o arquivo *. zip* de seu modelo nele. Para obter mais informações, consulte [como localizar e organizar modelos](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ::: moniker-end
 

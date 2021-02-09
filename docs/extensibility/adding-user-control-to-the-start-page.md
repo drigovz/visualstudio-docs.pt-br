@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: fa812b477f88b03b8f0d4bdcba6c69f009ec2894
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 735e77868b85bdd8f85fb27957602d6759b5b097
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597542"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879170"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Adicionar controle de usuário à página inicial
 
@@ -185,7 +185,7 @@ Para disponibilizar esse controle para o projeto de página inicial, no arquivo 
 
 3. Em um prompt de comando do Visual Studio, digite **devenv/Rootsuffix exp** para abrir uma instância experimental do Visual Studio.
 
-4. Na instância experimental, vá para a **Tools**  >  página de inicialização do ambiente **Opções** de ferramentas  >  **Environment**  >  **Startup** e selecione o arquivo XAML na lista suspensa **Personalizar página inicial** .
+4. Na instância experimental, vá para a   >  página de inicialização do ambiente **Opções** de ferramentas  >    >   e selecione o arquivo XAML na lista suspensa **Personalizar página inicial** .
 
 5. No menu **Exibir** , clique em **página inicial**.
 

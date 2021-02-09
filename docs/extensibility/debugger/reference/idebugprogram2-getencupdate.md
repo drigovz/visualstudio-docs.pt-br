@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9832aac8-6320-4fd8-91dd-2a0852febb00
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e90ff9f8a7a80913aec72b9fe2bb6fe470013d51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7e3dbb0fdc7ea7ca7560f62bc7da45e57b24383
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722840"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878897"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
 Esse método obtém a atualização do ENC (editar e continuar) para este programa. Um mecanismo de depuração personalizado sempre retorna `E_NOTIMPL` .
@@ -28,7 +28,7 @@ Esse método obtém a atualização do ENC (editar e continuar) para este progra
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetENCUpdate( 
+HRESULT GetENCUpdate( 
    IUnknown** ppUpdate
 );
 ```
@@ -43,7 +43,7 @@ int GetENCUpdate(
 `ppUpdate`\
 fora Retorna uma interface interna que pode ser usada para atualizar este programa.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 > [!NOTE]

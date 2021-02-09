@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0c9e2698-c70f-4770-a7bb-39650e9c3a1f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ce139dd22361d9914693cbe8ad723656ab7d4f26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 485875f2ca4cd54c41d959ffaf769368db265243
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731102"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879040"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 Informa que um mecanismo de depuração (DE) que o programa especificou foi encerrado atypically e que o DE deve limpar todas as referências ao programa e enviar um evento de destruição de programa.
@@ -28,13 +28,13 @@ Informa que um mecanismo de depuração (DE) que o programa especificou foi ence
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT DestroyProgram( 
+HRESULT DestroyProgram( 
    IDebugProgram2* pProgram
 );
 ```
 
 ```cpp
-int DestroyProgram( 
+int DestroyProgram( 
    IDebugProgram2 pProgram
 );
 ```
@@ -43,7 +43,7 @@ int DestroyProgram( 
 `pProgram`\
 no Um objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que representa o programa que foi atypically finalizado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

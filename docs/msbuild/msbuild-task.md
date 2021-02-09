@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a4d1f9fe79ae5092992ff66ddaf5e10729e8b19a
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f8241188b484447f94c60aa0e0c9bf05e477dd39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049062"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878273"
 ---
 # <a name="msbuild-task"></a>tarefa MSBuild
 
@@ -39,7 +39,7 @@ Cria projetos do MSBuild de outro projeto do MSBuild.
 |-----------------------------------| - |
 | `BuildInParallel` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, os projetos especificados no parâmetro `Projects` serão criados em paralelo, se possível. O padrão é `false`. |
 | `Projects` | Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obrigatório.<br /><br /> Especifica os arquivos de projeto para compilar. |
-| `Properties` | Parâmetro `String` opcional.<br /><br /> Uma lista delimitada por ponto-e-vírgula de pares de nome/valor de propriedade para aplicar como propriedades globais para o projeto filho. Quando você especifica esse parâmetro, é funcionalmente equivalente a definir propriedades que têm a opção **-Property** quando você cria com [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md). Por exemplo:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Quando você passa Propriedades para o projeto por meio do `Properties` parâmetro, o MSBuild pode criar uma nova instância do projeto, mesmo que o arquivo de projeto já tenha sido carregado. O MSBuild cria uma única instância de projeto para um determinado caminho de projeto e um conjunto exclusivo de propriedades globais. Por exemplo, esse comportamento permite criar várias tarefas do MSBuild que chamam *myproject.proj* , com Configuration=Release, e você obtém uma única instância do *myproject.proj* (se não houver propriedades exclusivas especificadas na tarefa). Se você especificar uma propriedade que ainda não foi vista pelo MSBuild, o MSBuild criará uma nova instância do projeto, que pode ser criada em paralelo a outras instâncias do projeto. Por exemplo, uma configuração de versão poderia ser compilada ao mesmo tempo como uma configuração de depuração.|
+| `Properties` | Parâmetro `String` opcional.<br /><br /> Uma lista delimitada por ponto-e-vírgula de pares de nome/valor de propriedade para aplicar como propriedades globais para o projeto filho. Quando você especifica esse parâmetro, é funcionalmente equivalente a definir propriedades que têm a opção **-Property** quando você cria com [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md). Por exemplo:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Quando você passa Propriedades para o projeto por meio do `Properties` parâmetro, o MSBuild pode criar uma nova instância do projeto, mesmo que o arquivo de projeto já tenha sido carregado. O MSBuild cria uma única instância de projeto para um determinado caminho de projeto e um conjunto exclusivo de propriedades globais. Por exemplo, esse comportamento permite criar várias tarefas do MSBuild que chamam *myproject.proj*, com Configuration=Release, e você obtém uma única instância do *myproject.proj* (se não houver propriedades exclusivas especificadas na tarefa). Se você especificar uma propriedade que ainda não foi vista pelo MSBuild, o MSBuild criará uma nova instância do projeto, que pode ser criada em paralelo a outras instâncias do projeto. Por exemplo, uma configuração de versão poderia ser compilada ao mesmo tempo como uma configuração de depuração.|
 | `RebaseOutputs` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, os caminhos relativos dos itens de saída de destino de projetos de compilação terão seus caminhos ajustados para serem relativos ao projeto de chamada. O padrão é `false`. |
 | `RemoveProperties` | Parâmetro `String` opcional.<br /><br /> Especifica o conjunto de propriedades globais para remover. |
 | `RunEachTargetSeparately` | Parâmetro `Boolean` opcional.<br /><br /> Se `true` , a tarefa do MSBuild invocará cada destino na lista passada para o MSBuild, um de cada vez, em vez de ao mesmo tempo. Definir esse parâmetro como `true` garante que os destinos subsequentes sejam chamados mesmo se os destinos chamados anteriormente tiverem falhado. Caso contrário, um erro de build pararia a invocação de todos os destinos subsequentes. O padrão é `false`. |
@@ -55,7 +55,7 @@ Cria projetos do MSBuild de outro projeto do MSBuild.
 
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
- Ao contrário do uso da [tarefa Exec](../msbuild/exec-task.md) para iniciar *MSBuild.exe* , essa tarefa usa o mesmo processo do MSBuild para criar os projetos filho. A lista de destinos já compilados que pode ser ignorada é compartilhada entre as compilações pai e filho. Essa tarefa também é mais rápida porque nenhum novo processo do MSBuild é criado.
+ Ao contrário do uso da [tarefa Exec](../msbuild/exec-task.md) para iniciar *MSBuild.exe*, essa tarefa usa o mesmo processo do MSBuild para criar os projetos filho. A lista de destinos já compilados que pode ser ignorada é compartilhada entre as compilações pai e filho. Essa tarefa também é mais rápida porque nenhum novo processo do MSBuild é criado.
 
  Essa tarefa pode processar não somente arquivos de projeto, mas também arquivos de solução.
 
@@ -197,7 +197,7 @@ Cria projetos do MSBuild de outro projeto do MSBuild.
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

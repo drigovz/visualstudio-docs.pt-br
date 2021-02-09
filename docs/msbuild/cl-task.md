@@ -20,23 +20,23 @@ helpviewer_keywords:
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d930ed8d918a08503a6eaa6b60848abeec7683a
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 542d84f4c0279c1f76fa1ea29a244e78c53b394d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796830"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878429"
 ---
 # <a name="cl-task"></a>tarefa CL
 
-Encapsula a ferramenta de compilador do Microsoft C++, *cl.exe* . O compilador produz arquivos executáveis ( *. exe* ), arquivos de biblioteca de vínculo dinâmico ( *. dll* ) ou arquivos de módulo de código ( *. netmodule* ). Para obter mais informações, consulte [Opções do compilador](/cpp/build/reference/compiler-options) e usar o [MSBuild na linha de comando](/cpp/build/msbuild-visual-cpp) e [usar o conjunto de ferramentas do Microsoft C++ na linha de comando](/cpp/build/building-on-the-command-line).
+Encapsula a ferramenta de compilador do Microsoft C++, *cl.exe*. O compilador produz arquivos executáveis (*. exe*), arquivos de biblioteca de vínculo dinâmico (*. dll*) ou arquivos de módulo de código (*. netmodule*). Para obter mais informações, consulte [Opções do compilador](/cpp/build/reference/compiler-options) e usar o [MSBuild na linha de comando](/cpp/build/msbuild-visual-cpp) e [usar o conjunto de ferramentas do Microsoft C++ na linha de comando](/cpp/build/building-on-the-command-line).
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
- A lista a seguir descreve os parâmetros da tarefa **CL** . A maioria dos parâmetros de tarefa e alguns conjuntos de parâmetros correspondem a uma opção de linha de comando.
+ A lista a seguir descreve os parâmetros da tarefa **CL**. A maioria dos parâmetros de tarefa e alguns conjuntos de parâmetros correspondem a uma opção de linha de comando.
 
 - **AdditionalIncludeDirectories**
 
@@ -58,7 +58,7 @@ Encapsula a ferramenta de compilador do Microsoft C++, *cl.exe* . O compilador p
 
    Parâmetro String[] opcional.
 
-   Especifica um diretório em que o compilador pesquisará para resolver referências de arquivo passadas para diretiva **#using** .
+   Especifica um diretório em que o compilador pesquisará para resolver referências de arquivo passadas para diretiva **#using**.
 
    Para obter mais informações, consulte [/ai (especificar diretórios de metadados)](/cpp/build/reference/ai-specify-metadata-directories).
 
@@ -66,7 +66,7 @@ Encapsula a ferramenta de compilador do Microsoft C++, *cl.exe* . O compilador p
 
    Parâmetro String opcional.
 
-   Uma cadeia de caracteres sempre é emitida na linha de comando. Seu valor padrão é " **/c** ".
+   Uma cadeia de caracteres sempre é emitida na linha de comando. Seu valor padrão é "**/c**".
 
 - **AssemblerListingLocation**
 
@@ -92,7 +92,7 @@ Encapsula a ferramenta de compilador do Microsoft C++, *cl.exe* . O compilador p
 
   - **Todos**  -  **/FACS**
 
-    Para obter mais informações, consulte as opções **/FA** , **/fac** , **/FAS** e **/FACS** em [/FA,/FA (arquivo de listagem)](/cpp/build/reference/fa-fa-listing-file).
+    Para obter mais informações, consulte as opções **/FA**, **/fac**, **/FAS** e **/FACS** em [/FA,/FA (arquivo de listagem)](/cpp/build/reference/fa-fa-listing-file).
 
 - **BasicRuntimeChecks**
 
@@ -198,7 +198,7 @@ Encapsula a ferramenta de compilador do Microsoft C++, *cl.exe* . O compilador p
 
    Parâmetro Boolean opcional.
 
-   Se `true`, informará ao compilador para preparar uma imagem para *aplicação de patch sob demanda* . Esse parâmetro garante que a primeira instrução de cada função tenha dois bytes, o que é necessário para aplicação de patch sob demanda.
+   Se `true`, informará ao compilador para preparar uma imagem para *aplicação de patch sob demanda*. Esse parâmetro garante que a primeira instrução de cada função tenha dois bytes, o que é necessário para aplicação de patch sob demanda.
 
    Para obter mais informações, consulte [/hotpatch (criar imagem Hotpatchable)](/cpp/build/reference/hotpatch-create-hotpatchable-image).
 
@@ -206,7 +206,7 @@ Encapsula a ferramenta de compilador do Microsoft C++, *cl.exe* . O compilador p
 
    Parâmetro String opcional.
 
-   Seleciona o tipo de informações de depuração criadas para o seu programa e se essas informações são mantidas em arquivos de objeto ( *. obj* ) ou em um banco de dados de programa (PDB).
+   Seleciona o tipo de informações de depuração criadas para o seu programa e se essas informações são mantidas em arquivos de objeto (*. obj*) ou em um banco de dados de programa (PDB).
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
@@ -222,7 +222,7 @@ Encapsula a ferramenta de compilador do Microsoft C++, *cl.exe* . O compilador p
 
    Parâmetro Boolean opcional.
 
-   Se **true** , dirá ao compilador para emitir um erro para construções de linguagem que não sejam compatíveis com ANSI C ou ANSI C++.
+   Se **true**, dirá ao compilador para emitir um erro para construções de linguagem que não sejam compatíveis com ANSI C ou ANSI C++.
 
    Para obter mais informações, consulte a opção **/za** em [/za,/Ze (desabilitar extensões de linguagem)](/cpp/build/reference/za-ze-disable-language-extensions).
 
@@ -268,7 +268,7 @@ Encapsula a ferramenta de compilador do Microsoft C++, *cl.exe* . O compilador p
 
    Parâmetro String opcional.
 
-   Permite que você forneça informações de ICE (erro interno do compilador) diretamente à Microsoft. Por padrão, a configuração em compilações do IDE é **Aviso** e a configuração em compilações de linha de comando é **Fila** .
+   Permite que você forneça informações de ICE (erro interno do compilador) diretamente à Microsoft. Por padrão, a configuração em compilações do IDE é **Aviso** e a configuração em compilações de linha de comando é **Fila**.
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
@@ -330,7 +330,7 @@ Encapsula a ferramenta de compilador do Microsoft C++, *cl.exe* . O compilador p
 
    Se `true`, habilitará o modelo de exceção de ponto flutuante confiável. As exceções serão geradas imediatamente depois de serem disparadas.
 
-   Para obter mais informações, consulte a opção/ **fp: except** no [/FP (especificar comportamento de ponto flutuante)](/cpp/build/reference/fp-specify-floating-point-behavior).
+   Para obter mais informações, consulte a opção/**fp: except** no [/FP (especificar comportamento de ponto flutuante)](/cpp/build/reference/fp-specify-floating-point-behavior).
 
 - **FloatingPointModel**
 
@@ -456,7 +456,7 @@ Encapsula a ferramenta de compilador do Microsoft C++, *cl.exe* . O compilador p
 
    Parâmetro `Boolean` opcional.
 
-   Se `true` , omite o nome padrão da biblioteca de tempo de execução do C do arquivo de objeto ( *. obj* ). Por padrão, o compilador coloca o nome da biblioteca no arquivo *. obj* para direcionar o vinculador para a biblioteca correta.
+   Se `true` , omite o nome padrão da biblioteca de tempo de execução do C do arquivo de objeto (*. obj*). Por padrão, o compilador coloca o nome da biblioteca no arquivo *. obj* para direcionar o vinculador para a biblioteca correta.
 
    Para obter mais informações, consulte [/zl (omitir nome de biblioteca padrão)](/cpp/build/reference/zl-omit-default-library-name).
 
@@ -498,7 +498,7 @@ Encapsula a ferramenta de compilador do Microsoft C++, *cl.exe* . O compilador p
 
    Parâmetro de **cadeia de caracteres** opcional.
 
-   Crie ou use um arquivo de cabeçalho pré-compilado ( *. pch* ) durante a compilação.
+   Crie ou use um arquivo de cabeçalho pré-compilado (*. pch*) durante a compilação.
 
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
@@ -576,7 +576,7 @@ Encapsula a ferramenta de compilador do Microsoft C++, *cl.exe* . O compilador p
 
    Parâmetro `Integer` opcional.
 
-   Especifica o número máximo de processadores a serem usados em uma compilação multiprocessador. Use esse parâmetro em combinação com o parâmetro **MultiProcessorCompilation** .
+   Especifica o número máximo de processadores a serem usados em uma compilação multiprocessador. Use esse parâmetro em combinação com o parâmetro **MultiProcessorCompilation**.
 
 - **ProgramDataBaseFileName**
 
@@ -784,17 +784,17 @@ Encapsula a ferramenta de compilador do Microsoft C++, *cl.exe* . O compilador p
 
    Parâmetro `ITaskItem[]` opcional.
 
-   Especifica uma matriz de itens que representam os *logs de acompanhamento do arquivo de leitura* .
+   Especifica uma matriz de itens que representam os *logs de acompanhamento do arquivo de leitura*.
 
-   Um log de controle de arquivo de leitura ( *. tlog* ) contém os nomes dos arquivos de entrada que são lidos por uma tarefa e é usado pelo sistema de compilação do projeto para dar suporte a compilações incrementais. Para obter mais informações, consulte os parâmetros **TrackerLogDirectory** e **TrackFileAccess** nesta tabela.
+   Um log de controle de arquivo de leitura (*. tlog*) contém os nomes dos arquivos de entrada que são lidos por uma tarefa e é usado pelo sistema de compilação do projeto para dar suporte a compilações incrementais. Para obter mais informações, consulte os parâmetros **TrackerLogDirectory** e **TrackFileAccess** nesta tabela.
 
 - **TLogWriteFiles**
 
    Parâmetro `ITaskItem[]` opcional.
 
-   Especifica uma matriz de itens que representam os *logs de acompanhamento do arquivo de gravação* .
+   Especifica uma matriz de itens que representam os *logs de acompanhamento do arquivo de gravação*.
 
-   Um log de rastreamento de arquivo de gravação ( *. tlog* ) contém os nomes dos arquivos de saída que são gravados por uma tarefa e é usado pelo sistema de compilação do projeto para dar suporte a compilações incrementais. Para obter mais informações, consulte os parâmetros **TrackerLogDirectory** e **TrackFileAccess** nesta tabela.
+   Um log de rastreamento de arquivo de gravação (*. tlog*) contém os nomes dos arquivos de saída que são gravados por uma tarefa e é usado pelo sistema de compilação do projeto para dar suporte a compilações incrementais. Para obter mais informações, consulte os parâmetros **TrackerLogDirectory** e **TrackFileAccess** nesta tabela.
 
 - **TrackFileAccess**
 
@@ -804,6 +804,6 @@ Encapsula a ferramenta de compilador do Microsoft C++, *cl.exe* . O compilador p
 
    Para obter mais informações, consulte os parâmetros **TLogReadFiles** e **TLogWriteFiles** nesta tabela.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

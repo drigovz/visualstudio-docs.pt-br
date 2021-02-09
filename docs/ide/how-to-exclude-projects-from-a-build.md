@@ -8,15 +8,15 @@ ms.topic: how-to
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0e164c24770048495d16da852523b3dd50a43a
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: aaa36e7089be12cb0775b3300a134eb77b2eb618
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136895"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878663"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Como excluir projetos de um build
 
@@ -58,7 +58,7 @@ Para obter mais informações, consulte [Compreender configurações de build](.
 
 ## <a name="skipped-projects"></a>Projetos ignorados
 
-Os projetos podem ser ignorados durante a compilação porque eles não estão atualizados ou porque são excluídos da configuração. O Visual Studio usa o MSBuild para compilar seus projetos. O MSBuild cria um destino somente se a saída for mais antiga que a entrada, conforme determinado pelos carimbos de data/hora do arquivo. Para forçar uma recompilação, use a **Build**  >  **solução de recompilação**de compilação de comando.
+Os projetos podem ser ignorados durante a compilação porque eles não estão atualizados ou porque são excluídos da configuração. O Visual Studio usa o MSBuild para compilar seus projetos. O MSBuild cria um destino somente se a saída for mais antiga que a entrada, conforme determinado pelos carimbos de data/hora do arquivo. Para forçar uma recompilação, use a   >  **solução de recompilação** de compilação de comando.
 
 No painel **Build** da janela de **saída** , o Visual Studio relata o número de projetos que estavam atualizados, o número que foi criado com êxito, o número que falhou e o número que foram ignorados. A contagem ignorada não inclui projetos que não foram criados porque estavam atualizados. Quando os projetos são excluídos da configuração ativa, eles são ignorados durante a compilação. Na saída da compilação, você verá uma mensagem indicando que o projeto foi ignorado:
 

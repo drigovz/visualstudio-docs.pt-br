@@ -22,15 +22,15 @@ helpviewer_keywords:
 - customizing the Ribbon, displaying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1c9e1cf4c6af266495b3d85d96aa8cce1697cca7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 69ca0269859db9e1a69904c2211b8f4d1ad45710
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528420"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879287"
 ---
 # <a name="ribbon-xml"></a>XML da faixa de opções
   O item da faixa de de (XML) permite que você personalize uma faixa de faixas usando XML. Use o item da faixa de opção (XML) se desejar personalizar a faixa de uma forma que não seja suportada pelo item da faixa de opção (Visual Designer). Para obter uma comparação do que você pode fazer com cada item, consulte [visão geral da faixa](../vsto/Ribbon-overview.md)de medida.
@@ -145,7 +145,7 @@ ms.locfileid: "97528420"
 |`OnLoad`|Atribui o <xref:Microsoft.Office.Core.IRibbonControl> parâmetro ao `Ribbon` campo. Microsoft Office aplicativos chamam esse método quando carregam a faixa de Ribbon personalizada. Você pode usar esse campo para atualizar dinamicamente a faixa de Ribbon personalizada. Para obter mais informações, consulte o artigo técnico [Personalizar a interface do usuário da faixa de forma do Office (2007) para desenvolvedores (parte 1 de 3)](/previous-versions/office/developer/office-2007/aa338202(v=office.12)).|
 |`GetResourceText`|Chamado pelo `GetCustomUI` método para obter o conteúdo do arquivo XML da faixa de faixas.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
 - [Walkthrough: criar uma guia personalizada usando o XML da faixa de uma](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
 - [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)
