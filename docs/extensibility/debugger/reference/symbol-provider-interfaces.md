@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a24baec6738382f93dee5d8b7843d624eea80890
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f5c2204a1f8c4bef17256e98ed04dcf4b195c3aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845785"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850815"
 ---
 # <a name="symbol-provider-interfaces"></a>Interfaces de provedor de símbolos
 A seguir estão as interfaces de tratamento de símbolos para o [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] .
@@ -60,5 +60,5 @@ A seguir estão as interfaces de tratamento de símbolos para o [!INCLUDE[vsipsd
 |[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)|SP|Representa uma coleção de objetos [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) .|
 |[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)|SP|Representa uma coleção de objetos [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Referência da API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

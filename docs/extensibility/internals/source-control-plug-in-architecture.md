@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e154e91ce552df9e54d45ea9210a0679edae5f28
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 669ef527e65e56612199b8303f7cc99e8b993b50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878060"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846394"
 ---
 # <a name="source-control-plug-in-architecture"></a>Arquitetura do plug-in de controle do código-fonte
 Você pode adicionar suporte de controle do código-fonte ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE) implementando e anexando um plug-in de controle do código-fonte. O IDE conecta-se ao plug-in de controle do código-fonte por meio do controle do código-fonte bem definido Plug-In API. O IDE expõe os recursos de controle de versão do sistema de controle do código-fonte fornecendo uma interface do usuário (IU) que consiste em barras de ferramentas e comandos de menu. O plug-in de controle do código-fonte implementa a funcionalidade de controle do código-fonte.
@@ -38,7 +38,7 @@ Você pode adicionar suporte de controle do código-fonte ao [!INCLUDE[vsprvs](.
 
  Um plug-in de controle do código-fonte não pode fazer alterações no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell e, consequentemente, no pacote do adaptador de controle do código-fonte ou na interface do usuário do controle do código-fonte fornecido pelo IDE. Ele deve fazer uso máximo da flexibilidade oferecida por meio da implementação das várias funções de API de plug-in de controle do código-fonte que contribuem para uma experiência integrada para o usuário final. A seção de referência da documentação da API de plug-in de controle do código-fonte inclui informações para alguns recursos avançados de plug-in de controle do código-fonte. Para explorar esses recursos, o plug-in de controle do código-fonte deve declarar seus recursos avançados para o IDE durante a inicialização e deve implementar funções avançadas específicas para cada recurso.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Plug-ins de controle do código-fonte](../../extensibility/source-control-plug-ins.md)
 - [Glossário](../../extensibility/source-control-plug-in-glossary.md)
 - [Criando um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md)

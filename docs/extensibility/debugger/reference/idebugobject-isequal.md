@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 4b76e663-ef2e-41ff-9be1-bf26d666a34a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 13018e31fb5f8bed89a0a290d687360a605a855d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 406e93456f1bd6d92a42f1584d19aeb52dd5ff93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726508"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846771"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
 Compara um objeto com este objeto.
@@ -28,7 +28,7 @@ Compara um objeto com este objeto.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT IsEqual( 
+HRESULT IsEqual( 
    IDebugObject* pObject,
    BOOL*         pfIsEqual
 );
@@ -48,11 +48,11 @@ no Um objeto [IDebugObject](../../../extensibility/debugger/reference/idebugobje
 `pfIsEqual`\
 fora Retornará um valor diferente de zero ( `TRUE` ) se os valores dos objetos forem iguais; caso contrário, retornará zero ( `FALSE` ).
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
  Normalmente, esse método pode comparar os endereços dos valores representados pelo `pObject` parâmetro e esse objeto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) ; se os endereços forem iguais, os objetos poderão ser considerados iguais.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

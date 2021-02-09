@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 60e4689c-c899-4c14-9d18-96393b741e1f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ec3d8ed15786b2a39a04b63cfd09a749097ac661
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 791ed47d09d44713f4586d79ac2a1655ea0bb94b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731499"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848176"
 ---
 # <a name="idebugdocumenttextevents2ondestroy"></a>IDebugDocumentTextEvents2::onDestroy
 Indica que o documento inteiro foi destruído.
@@ -28,8 +28,8 @@ Indica que o documento inteiro foi destruído.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT onDestroy( 
-   void 
+HRESULT onDestroy( 
+   void 
 );
 ```
 
@@ -40,5 +40,5 @@ int onDestroy();
 ## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)

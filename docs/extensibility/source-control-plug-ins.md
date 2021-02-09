@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 617b06e46bb150026f49af3e23761dfd6cb4e902
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: ab076cef7aaab96779e303ee7b85c8047eb6b52e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715828"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848111"
 ---
 # <a name="source-control-plug-ins"></a>Plug-ins de controle do código-fonte
 A seção de referência do SDK de controle do código-fonte contém a especificação da interface completa que permite que os sistemas de controle do código-fonte sejam integrados ao [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Ele especifica a sintaxe e a semântica das várias funções e tipos de dados que o plug-in de controle do código-fonte deve implementar para a interface com o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE).

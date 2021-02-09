@@ -14,15 +14,15 @@ helpviewer_keywords:
 - workbooks, ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 168774f031e992db62b4173bd8d27652aa21b82f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ce099c7cf531e4fa9acfe725959023e579577c8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526913"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847434"
 ---
 # <a name="work-with-ranges"></a>Trabalhar com intervalos
   As <xref:Microsoft.Office.Tools.Excel.NamedRange> <xref:Microsoft.Office.Interop.Excel.Range> classes e contêm os métodos e as propriedades que você usa para executar tarefas com intervalos.
@@ -42,7 +42,7 @@ ms.locfileid: "97526913"
 
  Em alguns casos, as maneiras de executar essas tarefas nos suplementos do VSTO são diferentes das maneiras que você as executa em personalizações em nível de documento.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [Trabalhar com planilhas](../vsto/working-with-worksheets.md)
 - [Trabalhar com pastas de trabalho](../vsto/working-with-workbooks.md)

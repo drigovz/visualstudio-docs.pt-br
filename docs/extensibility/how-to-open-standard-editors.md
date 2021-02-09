@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d5ce10f9-047a-4b74-aa1d-295128898b89
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff03ed508fc11377861556bc27bdc33aaa1ec069
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 163d042ffb08a60d5673e64cf6bab94f7a2f1d63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993764"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850449"
 ---
 # <a name="how-to-open-standard-editors"></a>Como: abrir editores padrão
 Quando você abre um editor padrão, permite que o IDE determine um editor padrão para um tipo de arquivo designado, em vez de especificar um editor específico do projeto para o arquivo.
@@ -51,7 +51,7 @@ Quando você abre um editor padrão, permite que o IDE determine um editor padr�
 
      Se o objeto de exibição de documento ou de exibição de documento tiver sido site com êxito em um quadro de janela, o objeto será inicializado com seus dados chamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.LoadDocData%2A> .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
 - [Abrir e salvar itens de projeto](../extensibility/internals/opening-and-saving-project-items.md)
 - [Como: abrir editores específicos do projeto](../extensibility/how-to-open-project-specific-editors.md)

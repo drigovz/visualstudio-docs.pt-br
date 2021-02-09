@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], UI customization
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 289b055ab84dd9c2c440b55f3d64fe1fe39b8e1b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ed604b1bbbfcd5b217935b541325c121d521e878
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527582"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849808"
 ---
 # <a name="office-ui-customization"></a>Personalização da interface do usuário do Office
   Você pode personalizar a interface do usuário de aplicativos Microsoft Office usando as ferramentas de desenvolvedor do Office no Visual Studio. Este tópico descreve os recursos de interface do usuário que você pode personalizar nas seguintes seções:
@@ -97,7 +97,7 @@ ms.locfileid: "97527582"
 ## <a name="shortcut-menus"></a><a name="Shortcut"></a> Menus de atalho
  Um menu de atalho é exibido quando você clica com o botão direito do mouse em um documento ou em uma janela de aplicativo. Você pode definir um menu de atalho para aparecer depois que um evento ocorrer, como quando um usuário clica com o botão direito do mouse em um documento, pasta de trabalho ou controle de host. Você pode adicionar vários comandos de menu ou controles diferentes a um menu de atalho. Crie menus de atalho usando XML. Se você adicionar um item **da faixa (XML)** ao seu projeto do Office, você poderá adicionar XML ao arquivo XML da faixa de para criar menus de atalho. Para obter mais informações sobre como usar o XML para criar menus de atalho, consulte [como adicionar comandos a menus de atalho](../vsto/how-to-add-commands-to-shortcut-menus.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
 - [Visão geral dos controles do Windows Forms em documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Visão geral do painel Ações](../vsto/actions-pane-overview.md)

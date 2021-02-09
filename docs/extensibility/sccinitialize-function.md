@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 661e0a24fa1d222079fd5ee728c5f42a5386c75b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9fb944cb672249ecb823f48048d12c1b61d9e99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700636"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846355"
 ---
 # <a name="sccinitialize-function"></a>Função SccInitialize
 Essa função inicializa o plug-in de controle do código-fonte e fornece recursos e limites para o IDE (ambiente de desenvolvimento integrado).
@@ -70,7 +70,7 @@ fora Retorna o comprimento máximo permitido para um comentário de check-out.
 
 fora Retorna o comprimento máximo permitido para outros comentários.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
 
 |Valor|Descrição|
@@ -91,7 +91,7 @@ fora Retorna o comprimento máximo permitido para outros comentários.
 
  O `lpSccCaps` parâmetro fornece ao plug-in de controle do código-fonte um local para armazenar bitflags indicando os recursos do plug-in. (Para obter uma lista completa de funcionalidades bitflags, consulte [sinalizadores de capacidade](../extensibility/capability-flags.md)). Por exemplo, se o plug-in planeja gravar resultados em uma função de retorno de chamada fornecida pelo chamador, o plug-in definiria o bit de recurso SCC_CAP_TEXTOUT. Isso sinalizaria ao IDE para criar uma janela para resultados de controle de versão.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
 - [SccUninitialize](../extensibility/sccuninitialize-function.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

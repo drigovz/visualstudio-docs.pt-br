@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c5d78196a64ca0ab2067d0df73410c41cbeca35
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 2c26bd749fac3d458a5983380fc09bd40a2a645a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049170"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849769"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menus de contexto (XML Schema Explorer)
 
@@ -114,7 +114,7 @@ Além das opções do nó globais descritos acima, o menu de contexto para nós 
 |**Mostrar todos os membros**|Localiza e realces todos os membros do grupo chamado.|
 |**Mostrar todas as referências**|Localiza e realça todas as referências (grupos que têm `ref="selectedGroup"`) para o grupo selecionado.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)
 - [Pesquisando o conjunto de esquema](../xml-tools/searching-the-schema-set.md)

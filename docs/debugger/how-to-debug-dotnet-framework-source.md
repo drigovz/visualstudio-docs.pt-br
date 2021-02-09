@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 13a575ec2e77f1b715ec5f17324a6933d8cf0805
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 890aeef41a9a0f4d893cfcf57d42b78ff32d88c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398617"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846875"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Como depurar o código-fonte do .NET Framework
 
@@ -65,6 +65,6 @@ Para depurar .NET Framework origem, você deve:
 
    - Selecione **configurações de símbolo** para abrir a página **símbolos** . Na página **símbolos** , em **locais de arquivo de símbolo (. pdb)**, selecione **servidores de símbolos da Microsoft** para acessar símbolos dos servidores de símbolos públicos da Microsoft. Selecione os botões da barra de ferramentas para adicionar outros locais de símbolo e alterar a ordem de carregamento. Selecione **OK** para fechar a caixa de diálogo.
 
-### <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Confira também
 - [Depuração de código gerenciado](../debugger/debugging-managed-code.md)
 - [Especificar o símbolo (. pdb) e os arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

@@ -22,15 +22,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], custom XML parts
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d7998f2a47edd85a65b1e81dd45a046de80d0cdb
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f6018f7e440eb0cc3cc0b7dcb113583aaf7fcd4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844121"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850003"
 ---
 # <a name="custom-xml-parts-overview"></a>Visão geral das partes XML personalizadas
   Você pode inserir dados XML em documentos para alguns Microsoft Office aplicativos. Quando você insere dados XML em um documento, os dados são nomeados como uma *parte XML personalizada*.

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customizations> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cc1f33101346d334d08d2bd2d7795961ea33011e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 27b20a13d96b8fc23fcde2dbb8f14d1f1f27ceea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844030"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849925"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;elemento personalizações &gt; (desenvolvimento do Office no Visual Studio)
   O `customizations` elemento do `vstov4` namespace contém todas as informações sobre a instalação e o carregamento de cada solução do Office.
@@ -65,7 +65,7 @@ ms.locfileid: "96844030"
  O `customizations` elemento tem o seguinte elemento filho.
 
 ### <a name="customization"></a>Personalização
- Obrigatórios. O `customization` elemento no `vstov4` namespace é definido em [&#60;elemento&#62; de personalização &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
+ Obrigatório. O `customization` elemento no `vstov4` namespace é definido em [&#60;elemento&#62; de personalização &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
 
 ## <a name="example-of-a-document-level-customization"></a>Exemplo de uma personalização no nível do documento
 
@@ -122,7 +122,7 @@ ms.locfileid: "96844030"
 </vstov4:customizations>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Manifestos do aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifestos de implantação para soluções do Office](../vsto/deployment-manifests-for-office-solutions.md)

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a45187f01469f568a98098a8470ad62f67307a6
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: edf4658743bb719c1c23f93b2d1d3cc33afdbaba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437769"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847382"
 ---
 # <a name="interop-activity-designer"></a>Designer de atividade de Interoperabilidade
 
@@ -29,7 +29,7 @@ A atividade de <xref:System.Activities.Statements.Interop> gerencia a execução
 
 ### <a name="use-the-interop-activity-designer"></a>Usar o Interop Activity Designer
 
-O **Interop** Activity Designer pode ser encontrado na categoria **migração** da caixa de **ferramentas** , que é acessada clicando na guia **caixa de ferramentas** . Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
+O **Interop** Activity Designer pode ser encontrado na categoria **migração** da caixa de **ferramentas**, que é acessada clicando na guia **caixa de ferramentas** . Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
 
 A categoria de [migração](../workflow-designer/migration-activity-designers.md) que contém a <xref:System.Activities.Statements.Interop> atividade só aparecerá na **caixa de ferramentas** se seu projeto estiver direcionado .NET Framework 4 (completo) ou posterior. Se necessário, você pode alterar a versão do Framework que seu projeto tem como destino.
 
@@ -44,7 +44,7 @@ A tabela a seguir mostra as <xref:System.Activities.Statements.Interop> Propried
 |Nome da propriedade|Obrigatório|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|O nome amigável de atividade de <xref:System.Activities.Statements.Interop> . O valor padrão é **Interop**. Embora o nome de exibição não seja necessário, é recomendável fornecer um.|
-|<xref:System.Activities.Statements.Interop.ActivityType%2A>|Verdadeiro|Especifica o tipo de atividade contida pela atividade de <xref:System.Activities.Statements.Interop> . Este tipo especificado deve derivar de <xref:System.Workflow.ComponentModel.Activity>.|
+|<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|Especifica o tipo de atividade contida pela atividade de <xref:System.Activities.Statements.Interop> . Este tipo especificado deve derivar de <xref:System.Workflow.ComponentModel.Activity>.|
 
 ## <a name="see-also"></a>Confira também
 

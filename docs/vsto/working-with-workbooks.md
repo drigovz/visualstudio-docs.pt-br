@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], workbooks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6e328d48873c30626e2b661ede23b3d91066a0e5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 856f48b4d40dbae13112dc605d0b1f2c9ac4de52
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847395"
 ---
 # <a name="work-with-workbooks"></a>Trabalhar com pastas de trabalho
   A <xref:Microsoft.Office.Tools.Excel.Workbook> <xref:Microsoft.Office.Interop.Excel.Workbooks> classe e contém os métodos e as propriedades que você usa para executar tarefas com pastas de trabalho.
@@ -40,7 +40,7 @@ ms.locfileid: "97522565"
 
  Em alguns casos, as maneiras de executar essas tarefas nos suplementos do VSTO são diferentes das maneiras que você as executa em personalizações em nível de documento.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [Trabalhar com planilhas](../vsto/working-with-worksheets.md)
 - [Trabalhar com intervalos](../vsto/working-with-ranges.md)

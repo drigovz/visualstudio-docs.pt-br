@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f60ec1a-5a74-4362-8293-817a4dd73872
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98e84167bc9cbbcad41b897c2de69115c6827ca5
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: b7335e3c5b15365680d70486f5f8ec8d19e90af4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875512"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846485"
 ---
 # <a name="source-control-design-decisions"></a>Decisões de design de controle do código-fonte
 As decisões de design a seguir devem ser consideradas para projetos ao implementar o controle do código-fonte.
@@ -36,7 +36,7 @@ As decisões de design a seguir devem ser consideradas para projetos ao implemen
 
 3. Quando seu projeto ou editor chama <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> um arquivo, os arquivos especiais associados a esse arquivo não são automaticamente submetidos a check-out. Passe os arquivos especiais junto com o arquivo pai. O ambiente detectará a relação entre todos os arquivos passados e ocultará adequadamente os arquivos especiais na interface do usuário de check-out.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>

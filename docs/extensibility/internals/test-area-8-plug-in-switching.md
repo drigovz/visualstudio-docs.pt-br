@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6c3a25aa9312073d3ce4a60752d41585fcee7b3
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 50cbf92b8214e605976aec58aaea984276ca8cc6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487641"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848202"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Área de teste 8: Alternância de plug-in
 O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ambiente de desenvolvimento integrado) tem a interface do usuário para alterar o plug-in atual de controle do código-fonte. Essa área de teste fornece casos de teste para o processo de escolher qual plug-in usar para o controle de origem da solução.
@@ -54,5 +54,5 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ambiente de 
 |----------------------------------| - | - |
 | Alteração de plug-in para uma solução | 1. Selecione plug-in em testar como atual (**ferramentas**  ->  **Opções**  ->  seleção de plug-in de **controle do código-fonte**  ->  ).<br />2. Crie um novo projeto e solução.<br />3. Adicione a solução ao controle do código-fonte.<br />4. desassociar a solução do controle do código-fonte (usando a caixa de diálogo **alterar controle do código-fonte** ).<br />5. Selecione outro plug-in (por exemplo, [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] ).<br />6. recarregue a solução do disco, se descarregada.<br />7. Adicione a solução ao controle do código-fonte.<br />8. desassociar a solução do controle do código-fonte (usando a caixa de diálogo **alterar controle do código-fonte** ).<br />9. Selecione plug-in em teste novamente.<br />10. recarregue a solução do disco, se descarregada.<br />11. associe a solução ao local original (usando a caixa de diálogo **alterar controle do código-fonte** ). | A solução é adicionada ao controle do código-fonte usando o plug-in selecionado. |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Guia de teste para plug-ins de controle do código-fonte](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

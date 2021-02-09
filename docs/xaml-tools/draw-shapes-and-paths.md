@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c29e2a4718a10193a4c86d1485549ded6ae2c0e
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 2e815b3e4959727dab282fcbe0fcd1f82890bf8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796791"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847343"
 ---
 # <a name="draw-shapes-and-paths"></a>Desenhe as formas e demarcadores
 
@@ -26,7 +26,7 @@ Formas e caminhos usam gráficos vetoriais, portanto, eles se adaptam bem a exib
 
 ## <a name="draw-a-shape"></a>Desenhar uma forma
 
-Encontre formas na janela **Ativos** .
+Encontre formas na janela **Ativos**.
 
 :::image type="content" source="media/blend-shapes.png" alt-text="Captura de tela da categoria formas da janela ativos no Blend para Visual Studio":::
 
@@ -36,13 +36,13 @@ Arraste a forma desejada para a prancheta. Em seguida, use as alças da forma pa
 
 ## <a name="draw-a-path"></a>Desenhar um caminho
 
-Um caminho é uma série de linhas e curvas conectadas. Use um caminho para criar formas interessantes que não estejam disponíveis na janela **Ativos** .
+Um caminho é uma série de linhas e curvas conectadas. Use um caminho para criar formas interessantes que não estejam disponíveis na janela **Ativos**.
 
-É possível desenhar um caminho usando uma linha, caneta ou lápis. Essas ferramentas podem ser encontradas na janela **Ferramentas** .
+É possível desenhar um caminho usando uma linha, caneta ou lápis. Essas ferramentas podem ser encontradas na janela **Ferramentas**.
 
 ### <a name="draw-a-straight-line"></a>Desenhar uma linha reta
 
-Use a ferramenta **Caneta** ou a ferramenta **Linha** .
+Use a ferramenta **Caneta** ou a ferramenta **Linha**.
 
 **Usar a ferramenta Caneta**
 
@@ -54,7 +54,7 @@ Na prancheta, arraste do ponto em que deseja que a linha se inicie e libere no p
 
 ### <a name="draw-a-curve"></a>Desenhar uma curva
 
-Use a ferramenta **Caneta** .
+Use a ferramenta **Caneta**.
 
 Na prancheta, clique uma vez para definir o ponto inicial de uma linha e, em seguida, clique e arraste o ponteiro para criar a curva desejada.
 
@@ -62,21 +62,21 @@ Se desejar fechar o caminho, clique no primeiro ponto da linha.
 
 ### <a name="change-the-shape-of-a-curve"></a>Alterar a forma de uma curva
 
-Use a ferramenta **Seleção Direta** .
+Use a ferramenta **Seleção Direta**.
 
 Clique na forma e, em seguida, arraste qualquer ponto na forma de alterar formas curvadas.
 
 ### <a name="draw-a-free-form-path"></a>Desenhar um demarcador de forma livre
 
-Use a ferramenta **Lápis** .
+Use a ferramenta **Lápis**.
 
 Na prancheta, desenhe um caminho de forma livre, assim como com um lápis real.
 
 ### <a name="remove-part-of-a-path"></a>Remover parte de um caminho
 
-Use a ferramenta **Seleção Direta** .
+Use a ferramenta **Seleção Direta**.
 
-Selecione o caminho que contém o segmento que deseja excluir e, em seguida, clique no botão **Excluir** .
+Selecione o caminho que contém o segmento que deseja excluir e, em seguida, clique no botão **Excluir**.
 
 ### <a name="remove-a-point-in-a-path"></a>Remover um ponto em um caminho
 
@@ -88,7 +88,7 @@ Use a ferramenta **Seleção** para selecionar o caminho. Use a ferramenta **Can
 
 ## <a name="convert-a-shape-to-a-path"></a>Converter uma forma em um caminho
 
-Para modificar uma forma da mesma maneira que um caminho, converta a forma em um caminho. Selecione a forma e, em seguida, selecione **Formatar**  >  **caminho**  >  **converter em demarcador** .
+Para modificar uma forma da mesma maneira que um caminho, converta a forma em um caminho. Selecione a forma e, em seguida, selecione **Formatar**  >  **caminho**  >  **converter em demarcador**.
 
 **Assista a um vídeo curto:** ![Configure installed features](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Convert a shape to a path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147) (Configurar recursos instalados, Trabalhando com demarcadores: converter uma forma em um demarcador).
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 421244cd88af43e7602298e7384a632c8aa51833
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: d897cb9bb4697a687bd06eeb02c779e133090e33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715594"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848091"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Especificando identificadores de arquivo para extensões de nome de arquivo
 Há várias maneiras de determinar o aplicativo que manipula um arquivo que tem uma extensão de arquivo específica. Os verbos OpenWithList e OpenWithProgids são duas maneiras de especificar manipuladores de arquivo na entrada do registro para a extensão de arquivo.
@@ -79,6 +79,6 @@ HKEY_CLASSES_ROOT\
 
  Se o ProgID antigo tiver verbos associados a ele, esses verbos também serão exibidos em **abrir com** o *nome do produto* no menu de atalho.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Sobre as extensões de nome de arquivo](../extensibility/about-file-name-extensions.md)
 - [Registrar verbos para extensões de nome de arquivo](../extensibility/registering-verbs-for-file-name-extensions.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15dbf960aebc543b71ff282e525476583bdeba3d
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: f328f2112073c082e276683d32d6ca06276b9829
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974198"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848189"
 ---
 # <a name="command-flag-eelement"></a>Sinalizador de comando Eelement
 Modifica seu elemento pai.
@@ -76,5 +76,5 @@ Modifica seu elemento pai.
 |[Elemento Buttons](../extensibility/buttons-element.md)|Fornece um grupo para elementos de [elemento de botão](../extensibility/button-element.md) .|
 |[Elemento menus](../extensibility/menus-element.md)|Define todos os menus que um VSPackage implementa.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Tabela de comandos do Visual Studio (. Arquivos de vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], common tasks in Visio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8835e3ef668e060798c515a89868d800ca737f34
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 49809b1d67ae8427ae1230987cb4ceb05e08fa44
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523333"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847460"
 ---
 # <a name="work-with-visio-documents"></a>Trabalhar com documentos do Visio
   Os tópicos nesta seção fornecem procedimentos passo a passo e exemplos de código para usar o modelo de objeto do Microsoft Office Visio para trabalhar com documentos em projetos do Office.
@@ -34,7 +34,7 @@ ms.locfileid: "97523333"
 |Salve um documento com o mesmo nome ou com um novo nome.|[Como: salvar documentos do Visio programaticamente](../vsto/how-to-programmatically-save-visio-documents.md)|
 |Imprimir um documento inteiro ou uma página especificada.|[Como: imprimir documentos do Visio programaticamente](../vsto/how-to-programmatically-print-visio-documents.md)|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Soluções do Visio](../vsto/visio-solutions.md)
 - [Visão geral do modelo de objeto do Visio](../vsto/visio-object-model-overview.md)
 - [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)

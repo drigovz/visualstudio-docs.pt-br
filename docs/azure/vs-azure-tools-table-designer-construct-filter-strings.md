@@ -2,17 +2,17 @@
 title: Construindo cadeias de caracteres de filtro para o designer de tabela | Microsoft Docs
 description: Construindo cadeias de caracteres de filtro para o designer de tabela
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 288e4256a472eb7bbc692758ad81df68be507676
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: cdfcacf38239e896687a236624bb167573f4bd1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901915"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846199"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Construindo cadeias de caracteres de filtro para o designer de tabela
 ## <a name="overview"></a>Visão geral
@@ -27,13 +27,13 @@ Os seguintes operadores lógicos têm suporte para todos os tipos de propriedade
 | --- | --- | --- |
 | eq |Igual a |City eq 'Redmond' |
 | gt |Maior que |Preço gt 20 |
-| ge |Maior que ou igual a |Preço ge 10 |
+| ge |Maior ou igual a |Preço ge 10 |
 | lt |Menor que |Preço lt 20 |
-| le |Menor ou igual a |Preço le 100 |
-| ne |Diferente de |City ne 'London' |
-| e |e |Preço le 200 e Preço gt 3,5 |
+| le |Inferior ou igual |Preço le 100 |
+| ne |Diferente |City ne 'London' |
+| e |And |Preço le 200 e Preço gt 3,5 |
 | ou |Ou |Preço le 3,5 ou Preço gt 200 |
-| not |não |não isAvailable |
+| not |Not |não isAvailable |
 
 Ao construir uma cadeia de caracteres de filtro, as regras a seguir são importantes:
 

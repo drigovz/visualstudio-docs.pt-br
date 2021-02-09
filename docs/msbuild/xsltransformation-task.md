@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6f3a7d81-3ae3-4703-9a06-870b32b69d80
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da983f6dc215a5afd651733ecea6b62846ca95cc
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f779fc5d222fdd0985adef203f0bb20fc601a429
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047188"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847940"
 ---
 # <a name="xsltransformation-task"></a>Tarefa XslTransformation
 
@@ -58,7 +58,7 @@ No exemplo a seguir, um arquivo de transformação XSL *Transform. XSLT* é usad
                        Parameters="&lt;Parameter Name='Parameter1' Value='$(Parameter1)'/&gt;"/>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Parâmetros XSLT](/dotnet/standard/data/xml/xslt-parameters)
 - [Tarefas](../msbuild/msbuild-tasks.md)

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 6617ba26-c8bc-4aed-b746-112bf490d288
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 069640dccf185f2f2c738efdde6a2311352a04b6
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 9fdaf7172c00d80e5e7615bfcadcc1fb6233c257
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996091"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847356"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>Designer de atividade RemoveFromCollection\<T>
 
@@ -39,12 +39,12 @@ A tabela a seguir mostra as <xref:System.Activities.Statements.RemoveFromCollect
 |Nome da propriedade|Obrigatório|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|O nome amigável opcional de atividade de <xref:System.Activities.Statements.RemoveFromCollection%601> . O padrão é RemoveFromCollection<Int32 \> .<br /><br /> Embora não seja necessário <xref:System.Activities.Activity.DisplayName%2A> restrita, é uma prática recomendada usar um.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|Verdadeiro|O item a ser removido da **coleção \<T>**. Este item é do tipo *T*, que é do tipo *TypeArgument*. Para especificar o item, digite uma expressão do Visual Basic na grade de propriedade.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|Verdadeiro|A coleção da qual o item deve ser removido. Essa coleção é do tipo **ICollection<TypeArgument \> .** Para especificar a coleção, digite uma expressão de Visual Basic na grade de propriedades.|
-|*TypeArgument*|Verdadeiro|O tipo T de itens contidos em <xref:System.Collections.Generic.ICollection%601>. Por padrão, esse tipo de *TypeArgument* é definido como **Int32**. Para alterar o tipo, altere o valor de *TypeArgument* na caixa de combinação na grade de propriedades.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|O item a ser removido da **coleção \<T>**. Este item é do tipo *T*, que é do tipo *TypeArgument*. Para especificar o item, digite uma expressão do Visual Basic na grade de propriedade.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|True|A coleção da qual o item deve ser removido. Essa coleção é do tipo **ICollection<TypeArgument \> .** Para especificar a coleção, digite uma expressão de Visual Basic na grade de propriedades.|
+|*TypeArgument*|True|O tipo T de itens contidos em <xref:System.Collections.Generic.ICollection%601>. Por padrão, esse tipo de *TypeArgument* é definido como **Int32**. Para alterar o tipo, altere o valor de *TypeArgument* na caixa de combinação na grade de propriedades.|
 |<xref:System.Activities.Activity%601.Result%2A>|Falso|Um valor que indica se o item especificado foi removido da coleção. Para especificar uma variável para associar ao resultado, digite uma variável na grade de propriedade|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Coleção](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)

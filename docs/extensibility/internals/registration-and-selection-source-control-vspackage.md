@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76f0bd737eff52706cf73c9a1105b79e08c556f0
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 0784b16acd00e354c8ecf36f34d6b05c750f6bec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877345"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837197"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registro e seleção (VSPackage do controle do código-fonte)
 Um VSPackage de controle do código-fonte deve ser registrado para expô-lo ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Se mais de um VSPackage de controle do código-fonte estiver registrado, o usuário poderá selecionar qual VSPackage carregar nos horários apropriados. Consulte [VSPackages](../../extensibility/internals/vspackages.md) para obter mais detalhes sobre o VSPackages e como registrá-los.
@@ -81,7 +81,7 @@ Um VSPackage de controle do código-fonte deve ser registrado para expô-lo ao [
 
   Ao contrário das versões anteriores do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , uma reinicialização do IDE não é mais a única maneira de alternar o controle do código-fonte VSPackages. A seleção de VSPackage é automática. A alternância de pacotes requer privilégios de usuário do Windows (não administrador ou usuário avançado).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>
 - [Recursos](../../extensibility/internals/source-control-vspackage-features.md)
 - [Criando um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md)
