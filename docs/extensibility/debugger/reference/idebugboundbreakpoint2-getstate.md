@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: a40a8382-295e-4916-aae6-ffe3a9cd3f2d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30e36880fda8b94eefcbe8b3110685b2114476a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3a8717dd840836a093325bae40e9dec89e5d0bb8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735478"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927113"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
 Obtém o estado deste ponto de interrupção associado.
@@ -29,13 +29,13 @@ Obtém o estado deste ponto de interrupção associado.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetState( 
+HRESULT GetState( 
     BP_STATE* pState
 );
 ```
 
 ```csharp
-int GetState( 
+int GetState( 
     out enum_BP_STATE pState
 );
 ```
@@ -44,7 +44,7 @@ int GetState( 
 `pState`\
 fora Retorna um valor da enumeração [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) que descreve o estado do ponto de interrupção.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo

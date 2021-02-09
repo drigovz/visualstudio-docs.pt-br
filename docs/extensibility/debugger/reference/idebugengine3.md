@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 8bdf4bb7-3b5d-4991-8981-772d4f6bb656
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7026156eac7f60e7435e32244c3cc03ae5f08e1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a985acc5a949ead841239d56c8b067967531fb1e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730656"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927048"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 Representa um único mecanismo DE depuração (DE) que controla a depuração de um ou mais módulos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugEngine3 : IDebugEngine2

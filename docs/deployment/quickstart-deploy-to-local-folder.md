@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adb461c4-812a-4b8c-b2ab-96002379f6a9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a96ea0fe4b4bbbebfc29cde7258273ea4f4b21e2
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 2b16c10d13f63be43ad2e8c3e16d24c0f9fd5e38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437678"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927425"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Implantar um aplicativo em uma pasta usando o Visual Studio
 
@@ -38,7 +38,7 @@ Você pode usar a ferramenta de **publicação** para publicar aplicativos ASP.N
 
 ## <a name="deploy-to-a-local-folder"></a>Implantar em uma pasta local
 
-1. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar** (ou use o item de menu **Criar** > **Publicar** ).
+1. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar** (ou use o item de menu **Criar** > **Publicar**).
 
     ![O comando publicar no menu de contexto do projeto no Gerenciador de Soluções](../deployment/media/quickstart-publish.png "Escolha Publicar")
 
@@ -82,7 +82,7 @@ Você pode usar a ferramenta de **publicação** para publicar aplicativos ASP.N
 
 1. Para republicar, selecione **Publicar**.
 
-Implante os arquivos publicados na maneira que desejar. Por exemplo, é possível empacotá-los em um arquivo *.zip* , usar um simples comando para copiar ou implantá-los com qualquer pacote de instalação de sua escolha.
+Implante os arquivos publicados na maneira que desejar. Por exemplo, é possível empacotá-los em um arquivo *.zip*, usar um simples comando para copiar ou implantá-los com qualquer pacote de instalação de sua escolha.
 
 ## <a name="next-steps"></a>Próximas etapas
 

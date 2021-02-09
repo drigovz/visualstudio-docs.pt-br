@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b24a1702-8fbe-45b1-87a0-9618a0708f1d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 96dfb98b468782f771d866b33b94b2c18de6276f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 76f8aec5cec1d06b3c6162524e02ae1bb2faefc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350485"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927399"
 ---
 # <a name="trusted-application-deployment-overview"></a>Visão geral da implantação de aplicativos confiáveis
 Este tópico fornece uma visão geral de como implantar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos que têm permissões elevadas usando a tecnologia de implantação de aplicativo confiável.
@@ -79,7 +79,7 @@ Você deve seguir estas etapas para aproveitar a implantação de aplicativos co
 
 - O namespace <xref:System.Security.Cryptography?displayProperty=fullName>.
 
-- *CertMgr.exe* , que é um componente do Internet Explorer e, portanto, existe no Windows 98 e em todas as versões posteriores. Para obter mais informações, consulte [Certmgr.exe (ferramenta Gerenciador de certificados)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
+- *CertMgr.exe*, que é um componente do Internet Explorer e, portanto, existe no Windows 98 e em todas as versões posteriores. Para obter mais informações, consulte [Certmgr.exe (ferramenta Gerenciador de certificados)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Criar um aplicativo ClickOnce
  Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é um aplicativo cliente .NET Framework combinado com arquivos de manifesto que descrevem os parâmetros de instalação do aplicativo e de fornecimento. Você pode transformar seu programa em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo usando o comando **Publish** no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Como alternativa, você pode gerar todos os arquivos necessários para a [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação usando ferramentas incluídas no [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Para obter etapas detalhadas sobre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação, consulte [passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
@@ -103,6 +103,6 @@ Você deve seguir estas etapas para aproveitar a implantação de aplicativos co
 ## <a name="limitations-of-trusted-application-deployment"></a>Limitações da implantação de aplicativos confiáveis
  Você pode usar a implantação de aplicativo confiável para conceder confiança elevada a [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos implantados pela Web ou por meio de um compartilhamento de arquivos corporativo. Você não precisa usar a implantação de aplicativo confiável para [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos distribuídos em um CD, porque, por padrão, esses aplicativos recebem confiança total.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [Passo a passo: Implantar um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

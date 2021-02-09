@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fc82b1f1-d342-4b82-9a44-590479f0a895
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - azure
-ms.openlocfilehash: cf32e0aa1f19bb4398bc5600ae7fc9fbf151c76c
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 11e655adcfecb9ab63479275b64873fa4c9e6d0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815588"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927438"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publicar um aplicativo Web no Serviço de Aplicativo do Azure usando o Visual Studio
 
@@ -51,7 +51,7 @@ Este artigo descreve como usar a ferramenta **Publicar** para uma implantação 
 
     ![Link para criar uma nova instância do serviço de Azure App](../deployment/media/quickstart-publish-windows-create-new-link.png)
 
-1. Na caixa de diálogo **criar Azure app serviço (Windows)** , os campos **nome do aplicativo**, **grupo de recursos** e entrada do plano do **serviço de aplicativo** são preenchidos. Você pode manter esses nomes ou alterá-los. Quando estiver pronto, selecione **criar**.
+1. Na caixa de diálogo **criar Azure app serviço (Windows)** , os campos **nome do aplicativo**, **grupo de recursos** e entrada do plano do **serviço de aplicativo** são preenchidos. Você pode manter esses nomes ou alterá-los. Quando estiver pronto, selecione **Criar**.
 
     ![Captura de tela da caixa de diálogo Criar Azure App do serviço (Windows) com os campos nome, assinatura, grupo de recursos e plano de hospedagem preenchidos.](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
 

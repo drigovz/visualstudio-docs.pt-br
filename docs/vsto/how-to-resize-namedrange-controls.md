@@ -13,15 +13,15 @@ helpviewer_keywords:
 - ranges, resizing in Excel
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 043def019d30ee629e672a081cd5aea73bca4304
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 1e3ba042f5adda5b41e434e37e0cc7ea25725fa6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528179"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927684"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Como: redimensionar controles NamedRange
   Você pode definir o tamanho de um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle ao adicioná-lo a um Microsoft Office documento do Excel; no entanto, talvez você queira redimensioná-lo posteriormente.
@@ -90,7 +90,7 @@ ms.locfileid: "97528179"
      [!code-csharp[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#11)]
      [!code-vb[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#11)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Estenda documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Controles em documentos do Office](../vsto/controls-on-office-documents.md)

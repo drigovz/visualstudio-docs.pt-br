@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fc82b1f1-d342-4b82-9a44-590479f0a895
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 027350b6a51cae5e7be88643624adc6955de91e4
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: bf4248b9155e780b63faf48983adfca866440b98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350693"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927412"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Publique um aplicativo Web em um site usando o Visual Studio
 
@@ -30,7 +30,7 @@ ms.locfileid: "94350693"
 
 ## <a name="publish-to-a-web-site"></a>Publicar em um site
 
-1. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar** (ou use o item de menu **Criar** > **Publicar** ).
+1. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar** (ou use o item de menu **Criar** > **Publicar**).
 
     ![O comando publicar no menu de contexto do projeto no Gerenciador de Soluções](../deployment/media/quickstart-publish.png "Escolha Publicar")
 

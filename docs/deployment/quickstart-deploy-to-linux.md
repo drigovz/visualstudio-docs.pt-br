@@ -8,15 +8,15 @@ helpviewer_keywords:
 - deployment, website
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - azure
-ms.openlocfilehash: 27002d9360d36330249167b2cc8b75b7cd832135
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 0371a4186d51598a79818f79719b58e122a311f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815627"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927451"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publicar um aplicativo ASP.NET Core no Serviço de Aplicativo no Linux usando o Visual Studio
 
@@ -50,7 +50,7 @@ Este artigo descreve como usar a ferramenta **Publicar** para uma implantação 
 
     ![Link para criar uma nova instância do serviço de Azure App](../deployment/media/quickstart-publish-linux-create-new-link.png)
 
-1. Na caixa de diálogo **criar Azure app serviço (Linux)** , os campos **nome do aplicativo**, **grupo de recursos** e entrada do plano do **serviço de aplicativo** são preenchidos. Você pode manter esses nomes ou alterá-los. Quando estiver pronto, selecione **criar**.
+1. Na caixa de diálogo **criar Azure app serviço (Linux)** , os campos **nome do aplicativo**, **grupo de recursos** e entrada do plano do **serviço de aplicativo** são preenchidos. Você pode manter esses nomes ou alterá-los. Quando estiver pronto, selecione **Criar**.
 
     ![Captura de tela da caixa de diálogo Criar Azure App serviço (Linux) com os campos nome, assinatura, grupo de recursos e plano de hospedagem preenchidos.](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
 

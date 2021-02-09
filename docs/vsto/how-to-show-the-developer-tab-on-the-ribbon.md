@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Developer tab [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4dc38b941d27cab0653b923ddd03ba8b78eeab58
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 081d6740aa31a31173b12e467b1b8e32a074604a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528149"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927711"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Como: mostrar a guia Desenvolvedor na faixa de das
   Para acessar a guia **desenvolvedor** na faixa de faixas de um aplicativo do Office, você deve configurá-lo para mostrar essa guia porque ela não aparece por padrão. Por exemplo, você deve mostrar essa guia se quiser adicionar um <xref:Microsoft.Office.Tools.Word.GroupContentControl> a uma personalização em nível de documento para o Word.
@@ -68,5 +68,5 @@ ms.locfileid: "97528149"
 
 5. Escolha o botão **OK** para fechar a caixa de diálogo **Opções** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)

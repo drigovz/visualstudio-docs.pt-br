@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: eb6dfe79-f54c-4331-8e36-073688e70973
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 737e1092d88c48227183a32072502cb833ebcd37
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: fa9e94bf124888d05b6393a4821b5db61181871c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349484"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927568"
 ---
 # <a name="publish-clickonce-applications"></a>Publicar aplicativos ClickOnce
 Ao publicar um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pela primeira vez, as propriedades de publicação podem ser definidas usando o Assistente de Publicação. Apenas algumas das propriedades estão disponíveis no assistente; todas as outras propriedades são definidas como seus valores padrão.
@@ -55,7 +55,7 @@ Ao publicar um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndpteccl
 |[Como especificar para onde o Visual Studio copia os arquivos](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|Descreve como definir onde o Visual Studio coloca os arquivos de aplicativo e os manifestos.|
 |[Como especificar o local de onde os usuários finais instalarão](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|Descreve como definir o local onde os usuários irão baixar e instalar o aplicativo.|
 |[Como especificar o modo de instalação offline ou online do ClickOnce](../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)|Descreve como definir se o aplicativo estará disponível offline ou online.|
-|[Como definir a versão da publicação do ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md)|Descreve como configurar a propriedade **Publicar Versão do ClickOnce** , que determina se o aplicativo que você está publicando será ou não tratado como uma atualização.|
+|[Como definir a versão da publicação do ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md)|Descreve como configurar a propriedade **Publicar Versão do ClickOnce**, que determina se o aplicativo que você está publicando será ou não tratado como uma atualização.|
 |[Como: incrementar automaticamente a versão de publicação do ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)|Descreve como incrementar automaticamente o número de revisão de **PublishVersion** toda vez que você publicar o aplicativo.|
 
  Para obter mais informações, consulte [Publicar página, designer de projeto](../ide/reference/publish-page-project-designer.md)
@@ -78,7 +78,7 @@ Ao publicar um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndpteccl
 |-|-|
 |[Como alterar o idioma de publicação para um aplicativo ClickOnce](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|Descreve como especificar um idioma e uma cultura para coincidir com a versão localizada.|
 |[Como especificar um nome no menu Iniciar para um aplicativo ClickOnce](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|Descreve como alterar o nome de exibição de um aplicativo ClickOnce.|
-|[Como especificar um link para o suporte técnico](../deployment/how-to-specify-a-link-for-technical-support.md)|Descreve como configurar a propriedade **URL de Suporte** , que identifica uma página da Web ou um compartilhamento de arquivos que os usuários podem acessar para obter informações sobre o aplicativo.|
+|[Como especificar um link para o suporte técnico](../deployment/how-to-specify-a-link-for-technical-support.md)|Descreve como configurar a propriedade **URL de Suporte**, que identifica uma página da Web ou um compartilhamento de arquivos que os usuários podem acessar para obter informações sobre o aplicativo.|
 |[Como especificar uma URL de suporte para pré-requisitos individuais em uma implantação do ClickOnce](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|Demonstração de como alterar manualmente um manifesto de aplicativo para incluir URLs de suporte individual para cada pré-requisito.|
 |[Como especificar uma página de publicação para um aplicativo ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|Descreve como gerar e publicar uma página da Web padrão (publish.htm) junto com o aplicativo|
 |[Como personalizar a página da Web padrão do ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|Descreve como personalizar a página da Web que é gerada automaticamente e publicada com o aplicativo.|
@@ -102,6 +102,6 @@ Ao publicar um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndpteccl
 |[Walkthrough: criar um instalador personalizado para um aplicativo ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Explica como criar um instalador personalizado para instalar um aplicativo ClickOnce.|
 |[Como publicar um aplicativo WPF com estilos visuais habilitados](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|Fornece instruções passo a passo para resolver um erro que aparece quando você tentar publicar um aplicativo WPF com estilos visuais habilitados.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Referência do ClickOnce](../deployment/clickonce-reference.md)

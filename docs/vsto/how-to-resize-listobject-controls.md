@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ListObject control, resizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5c401f3938679c72cee3a07c4bff79a5777fcbc1
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e839e253e54e7c9c0358bef7330f9e330684b809
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528536"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927828"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Como: redimensionar controles de ListObject
   Você define o tamanho de um <xref:Microsoft.Office.Tools.Excel.ListObject> controle ao adicioná-lo a uma Microsoft Office pasta de trabalho do Excel; no entanto, talvez você queira redimensioná-lo posteriormente. Por exemplo, talvez você queira alterar uma lista de duas colunas para três colunas.
@@ -84,7 +84,7 @@ ms.locfileid: "97528536"
      [!code-csharp[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#13)]
      [!code-vb[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#13)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Estenda documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controles em documentos do Office](../vsto/controls-on-office-documents.md)
 - [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)

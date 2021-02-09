@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1cbc6ca5-87d0-4c30-a39e-0a9dc62ce1a9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9ea7a24708595eff7b4299964dd2a159c1c5836
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6847f75a3e6a2869e70665fbcf55ee5a8ba2f863
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468626"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865359"
 ---
 # <a name="funcdebugstart"></a>FuncDebugStart
 Se uma função tiver um ponto definido no qual a depuração deve começar, esse ponto será identificado por um símbolo com uma `SymTagFuncDebugStart` marca.
@@ -47,7 +47,7 @@ Se uma função tiver um ponto definido no qual a depuração deve começar, ess
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retorna `SymTagFuncDebugStart` (um dos valores de [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) ).|
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Posição da função no executável.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Hierarquia lexical de tipos de símbolo](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [Enumeração LocationType](../../debugger/debug-interface-access/locationtype.md)
 - [Locais de símbolos](../../debugger/debug-interface-access/symbol-locations.md)

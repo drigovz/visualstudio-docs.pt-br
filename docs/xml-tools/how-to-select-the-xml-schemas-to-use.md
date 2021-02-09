@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9773df597269d5f7044bf168626f530e4a454020
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1e0d8bf1bca7917c6692d7c9c2398df47c4145e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400148"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926541"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Como: selecionar os esquemas XML a serem usados
 
@@ -23,7 +23,7 @@ O editor de XML fornece um cache de esquema localizado no diretório *%VSINSTALL
 
 Use a propriedade de documento **esquemas** para selecionar um ou mais esquemas de linguagem de definição de esquema XML (XSD). Você pode selecionar esquemas do cache de esquema ou em outro lugar.
 
-Os esquemas que você especificar são salvos em um arquivo de opções de usuário da solução (oculta) (. *Suo* ), juntamente com todas as outras propriedades de documento XML. Como resultado, você não precisará reinserir esses valores na próxima vez que abrir a solução.
+Os esquemas que você especificar são salvos em um arquivo de opções de usuário da solução (oculta) (.*Suo*), juntamente com todas as outras propriedades de documento XML. Como resultado, você não precisará reinserir esses valores na próxima vez que abrir a solução.
 
 > [!NOTE]
 > O editor pode validar usando um esquema embutido ou um esquema referenciado pelo `xsd:schemaLocation` atributo. Para obter mais informações, consulte [validação de documento XML](../xml-tools/xml-document-validation.md).
@@ -42,7 +42,7 @@ Os esquemas que você especificar são salvos em um arquivo de opções de usuá
 
    - Selecione um esquema listado na caixa de diálogo **esquemas XML** , clique na coluna **usar** e, em seguida, selecione **usar este esquema**.
 
-     - ou -
+     -ou-
 
    - Selecione vários esquemas listados na caixa de diálogo **esquemas XML** e clique com o botão direito do mouse e selecione **usar este esquema**.
 

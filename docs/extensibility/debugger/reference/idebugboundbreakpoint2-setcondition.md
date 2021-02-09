@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 5d366876-efed-43d0-8ea1-dfdb009cbfac
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f23fbe1b353378ca521fa802bdeae25fd12476df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4c90c75d1ddfe4edaeb47e132f5b049ee8d29a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735468"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927100"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 Define ou altera a condição associada a este ponto de interrupção associado.
@@ -29,13 +29,13 @@ Define ou altera a condição associada a este ponto de interrupção associado.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT SetCondition( 
+HRESULT SetCondition( 
    BP_CONDITION bpCondition
 );
 ```
 
 ```csharp
-int SetCondition( 
+int SetCondition( 
    enum_BP_CONDITION bpCondition
 );
 ```
@@ -44,7 +44,7 @@ int SetCondition( 
 `bpCondition`\
 no Um valor da enumeração [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) que descreve a condição.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o estado do objeto de ponto de interrupção associado é definido como `BPS_DELETED` (parte da enumeração de [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
 ## <a name="remarks"></a>Comentários

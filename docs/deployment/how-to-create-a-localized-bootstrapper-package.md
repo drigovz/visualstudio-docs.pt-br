@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4858a9efdad747293a94563196108d895c40880b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 9eb06c54caceb2e9329347fb1dd0114749975e7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351239"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927581"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Como criar um pacote de bootstrapper localizado
-Depois de criar um pacote de bootstrapper, você pode criar versões localizadas desse pacote criando mais dois arquivos para cada localidade: um arquivo de termos de licença de software (como um *eula.rtf* ) e um manifesto do pacote ( *package.xml* ).
+Depois de criar um pacote de bootstrapper, você pode criar versões localizadas desse pacote criando mais dois arquivos para cada localidade: um arquivo de termos de licença de software (como um *eula.rtf*) e um manifesto do pacote (*package.xml*).
 
  Por padrão, o Visual Studio 2010 inclui pacotes de bootstrapper localizados apenas para os .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 e F# Runtime 4.0. Você pode criar pacotes localizados para outros bootstrappers concluindo três etapas.
 
@@ -30,7 +30,7 @@ Depois de criar um pacote de bootstrapper, você pode criar versões localizadas
 
 2. Crie um arquivo que contém os termos de licença de software para o pacote de bootstrapper e coloque-o na nova pasta.
 
-3. Crie um manifesto do pacote com o nome *package.xml* , atualize as cadeias de caracteres e cultura e coloque o arquivo na nova pasta. Se você já criou um bootstrapper do Visual Studio no idioma de destino, você pode copiar o arquivo *package.xml* do Visual Studio e modificá-lo nesta etapa.
+3. Crie um manifesto do pacote com o nome *package.xml*, atualize as cadeias de caracteres e cultura e coloque o arquivo na nova pasta. Se você já criou um bootstrapper do Visual Studio no idioma de destino, você pode copiar o arquivo *package.xml* do Visual Studio e modificá-lo nesta etapa.
 
 > [!NOTE]
 > Se você estiver usando um projeto de instalação para implantar aplicativos, você poderá localizar o aplicativo alterando a propriedade **Localização**.
@@ -47,7 +47,7 @@ Depois de criar um pacote de bootstrapper, você pode criar versões localizadas
 
      A tabela a seguir mostra os nomes das pastas que você pode usar para estabelecer uma localidade correspondente.
 
-    |Localidade|Nome da pasta|
+    |Locale|Nome da pasta|
     |------------|-----------------|
     |Chinês (Simplificado)|zh-Hans|
     |Chinês (Tradicional)|zh-Hans|
@@ -92,7 +92,7 @@ Depois de criar um pacote de bootstrapper, você pode criar versões localizadas
 
 6. Salve o arquivo *package.xml*.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Criar pacotes de bootstrapper](../deployment/creating-bootstrapper-packages.md)
 - [Pré-requisitos de implantação do aplicativo](../deployment/application-deployment-prerequisites.md)
 - [Como criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md)

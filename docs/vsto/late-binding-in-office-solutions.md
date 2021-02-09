@@ -14,15 +14,15 @@ helpviewer_keywords:
 - casting, object to specific type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 201b850d8a577f8cc76aff97e2370998b6f885ed
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 455816b2e23a25ad5ef83c726b2a78e4245ed99a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523572"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927646"
 ---
 # <a name="late-binding-in-office-solutions"></a>Associação tardia em soluções do Office
   Alguns tipos nos modelos de objeto dos aplicativos do Office fornecem funcionalidade que está disponível por meio de recursos de ligação tardia. Por exemplo, alguns métodos e propriedades podem retornar tipos diferentes de objetos, dependendo do contexto do aplicativo do Office, e alguns tipos podem expor diferentes métodos ou propriedades em diferentes contextos.
@@ -63,7 +63,7 @@ ms.locfileid: "97523572"
 
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)
 - [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)
 - [Use o guia de programação do tipo &#40;C&#35; dinâmico&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)

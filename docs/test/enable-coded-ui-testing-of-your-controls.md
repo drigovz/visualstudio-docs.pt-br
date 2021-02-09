@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 76224ce191354e05c2220af23aabe010403b35cb
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 1b4cdc135e0fac7bfbcfb1a558f74195a0f1a191
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815757"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926645"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar testes de IU codificado dos controles
 
@@ -198,7 +198,7 @@ O provedor da propriedade e o filtro de ação são implementados em um pacote d
 
 6. No construtor de teste de IU codificado, crie asserções para exercitar seu provedor de propriedade e registrar ações para exercitar seus filtros de ação.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Windows.Forms.AccessibleObject>
 - [Usar a automação da interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)

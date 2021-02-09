@@ -13,15 +13,15 @@ helpviewer_keywords:
 - configuration files [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3cff5e6f559245e361eda0db6623312917891969
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: da3a08ad9b3f6c78a10891e7d8ef2093ab46305d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528154"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927698"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Como definir informações de configuração para uma solução do Office
   Você pode usar arquivos de configuração para definir configurações específicas para suas soluções do Office. Você pode especificar configurações como política de associação de assembly, objetos de comunicação remota, depuração e configurações de rastreamento.
@@ -46,7 +46,7 @@ ms.locfileid: "97528154"
 
    Não há considerações especiais para o uso de arquivos de configuração com projetos do Office.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Esquema do arquivo de configuração para o .NET Framework](/dotnet/framework/configure-apps/file-schema/index)
 - [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)
 - [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)

@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 31e3a99e-e784-44a3-8b19-cc5ef31ed546
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 907fdaa928b3f84f6ff37490d5c54a9d48515053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9411bc7c3963636c8ad80e5a2bf94dd49bf3e5b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729339"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926274"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 Habilita o avaliador de expressão (EE) para especificar a interface de retorno de chamada que o mecanismo do depurador (DE) usará para ler as configurações de métrica.
@@ -42,7 +42,7 @@ int SetCallback (
 `pCallback`\
 no Interface a ser usada para o retorno de chamada de configurações.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

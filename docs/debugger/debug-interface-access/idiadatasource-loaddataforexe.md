@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d94a1068-f53f-44b5-b6fb-00dec361a7f2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ed61f8ffc95d0004213483d5b5d507c45ef2647
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cd56e200ffe382cf8803598d9a1006403aeb393
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468514"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865254"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 Abre e prepara os dados de depuração associados ao arquivo. exe/. dll.
@@ -45,7 +45,7 @@ pCallback
 
 no Uma `IUnknown` interface para um objeto que dá suporte a uma interface de retorno de chamada de depuração, como [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md), [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md), [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)e/ou as interfaces [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. A tabela a seguir mostra alguns dos possíveis códigos de erro para esse método.
 
 |Valor|Descrição|
@@ -86,7 +86,7 @@ if (FAILED(hr))
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

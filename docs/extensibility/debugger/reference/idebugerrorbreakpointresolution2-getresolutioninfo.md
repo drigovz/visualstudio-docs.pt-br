@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d94c4f60-8796-4848-86ee-186bbaa613f5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d242dcfac7a9c846793a8dcc9cd6684923192a80
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e43488966017150e5d7e03d7616185e0b619eb4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730028"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927022"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
 Obtém as informações de resolução de erro de ponto de interrupção.
@@ -28,14 +28,14 @@ Obtém as informações de resolução de erro de ponto de interrupção.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetResolutionInfo( 
+HRESULT GetResolutionInfo( 
     BPERESI_FIELDS            dwFields,
     BP_ERROR_RESOLUTION_INFO* pErrorResolutionInfo
 );
 ```
 
 ```csharp
-int GetResolutionInfo( 
+int GetResolutionInfo( 
     enum_BPERESI_FIELDS        dwFields,
     BP_ERROR_RESOLUTION_INFO[] pErrorResolutionInfo
 );
@@ -48,7 +48,7 @@ no Uma combinação de sinalizadores da enumeração [BPERESI_FIELDS](../../../e
 `pErrorResolutionInfo`\
 [entrada, saída] A estrutura de [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) que é preenchida com a descrição da resolução do ponto de interrupção.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo

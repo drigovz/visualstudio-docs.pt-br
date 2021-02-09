@@ -15,15 +15,15 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], multiple columns
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 988394595e8aa4710a22e1fedf22a921481c7396
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2dc5708da09074c7d973336958c9e89c16bf9da6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527113"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927659"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Walkthrough: ligação de dados complexa em um projeto de nível de documento
   Este tutorial demonstra os conceitos básicos da ligação de dados complexa em um projeto de nível de documento. Você pode associar várias células em uma Microsoft Office planilha do Excel a campos no banco de dados Northwind SQL Server.
@@ -177,17 +177,17 @@ ms.locfileid: "97527113"
 
 1. Selecione uma célula dentro do objeto de lista.
 
-    Uma nova linha é exibida na parte inferior da lista, com um asterisco (* *\** _) na primeira célula da nova linha.
+    Uma nova linha é exibida na parte inferior da lista, com um asterisco ( **\*** ) na primeira célula da nova linha.
 
 2. Adicione as seguintes informações na linha vazia.
 
-   |EmployeeID|LastName|Nome|Título|
+   |EmployeeID|LastName|Nome|Title|
    |----------------|--------------|---------------|-----------|
    |10|Ito|Shu|Gerente de Vendas|
 
 ### <a name="to-delete-rows"></a>Para excluir linhas
 
-- Clique com o botão direito do mouse no número 16 (linha 16) no lado esquerdo da planilha e, em seguida, clique em _ * excluir * *.
+- Clique com o botão direito do mouse no número 16 (linha 16) no lado esquerdo da planilha e clique em **excluir**.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>Para classificar as linhas na lista
 
@@ -226,7 +226,7 @@ ms.locfileid: "97527113"
 
 - Crie uma relação mestre/detalhes entre um campo e uma tabela. Para obter mais informações, consulte [Walkthrough: criar uma relação de detalhes mestre usando um conjunto de dados em cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dados em soluções do Office](../vsto/data-in-office-solutions.md)
 - [Walkthrough: vinculação de dados simples em um projeto de nível de documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
