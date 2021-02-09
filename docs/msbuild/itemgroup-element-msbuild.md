@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: aac894e3-a9f1-4bbc-a796-6ef07001f35b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f4397415e684b9603dd662e409590e88e86034b
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: eff27467aeea5068f3ec086b490ca9c735861549
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903613"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913847"
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
 
@@ -34,7 +34,7 @@ Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) defi
 \<Project>
 \<ItemGroup>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <ItemGroup Condition="'String A' == 'String B'"
@@ -95,7 +95,7 @@ Os RowGroups podem ter condições aplicadas usando o `Condition` atributo. Ness
 
 O `Label` atributo é usado em alguns sistemas de compilação como uma maneira de controlar os comportamentos de compilação. Você pode usá-lo somente em declarações, como uma maneira de criar scripts MSBuild mais compreensíveis ou como uma configuração de controle para afetar as ações de compilação.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Itens](../msbuild/msbuild-items.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4593fff50feb0176ea81f70dc297bc39d8dd1936
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 2f324fb3999c94d8f26e329859e095f31740c76c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436198"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914238"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Como selecionar os arquivos a serem compilados
 
@@ -42,7 +42,7 @@ Para incluir arquivos para uma compilação, eles devem ser incluídos em uma li
     `<VBFile Include="form1.vb"/>`
 
     > [!NOTE]
-    > Se os itens em uma coleção de itens não estiverem no mesmo diretório que o arquivo de projeto, será necessário especificar o caminho completo ou relativo para o item. Por exemplo: `Include="..\..\form2.cs"`.
+    > Se os itens em uma coleção de itens não estiverem no mesmo diretório que o arquivo de projeto, será necessário especificar o caminho completo ou relativo para o item. Por exemplo, `Include="..\..\form2.cs"`.
 
 #### <a name="to-declare-multiple-items"></a>Para declarar vários itens
 

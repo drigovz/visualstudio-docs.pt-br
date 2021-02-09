@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c4752e4b736a6ba2f8b4a209824b22f94d8036c2
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 2af490f27ab1cdecfe57da9253aff6c4247c7223
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436555"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914881"
 ---
 # <a name="generateapplicationmanifest-task"></a>Tarefa GenerateApplicationManifest
 
@@ -78,7 +78,7 @@ As entradas para as dependências e os arquivos podem ser mais decorados ainda c
 
 ## <a name="item-metadata"></a>Metadados do item
 
-|Nome dos metadados|Descrição|
+|Nome dos metadados|Description|
 |-------------------|-----------------|
 |`DependencyType`|Indica se a dependência é publicada e instalada com o aplicativo ou um pré-requisito. Esses metadados são válidos para todas as dependências, mas não são usados para arquivos. Os valores disponíveis para esses metadados são:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Instala o valor padrão.|
 |`AssemblyType`|Indica se a dependência é um assembly gerenciado ou nativo. Esses metadados são válidos para todas as dependências, mas não são usados para arquivos. Os valores disponíveis para esses metadados são:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` é o valor padrão, que indica que o gerador de manifesto determinará o tipo de assembly automaticamente.|
@@ -201,7 +201,7 @@ Este exemplo é semelhante ao exemplo anterior, exceto que o nome e a identidade
 </Project>
 ```
 
-## <a name="example-3"></a>Exemplo 3:
+## <a name="example-3"></a>Exemplo 3
 
 Este exemplo usa as `GenerateApplicationManifest` `GenerateDeploymentManifest` tarefas e para gerar manifestos de implantação e de aplicativo ClickOnce para um aplicativo com vários arquivos e assemblies.
 
@@ -358,7 +358,7 @@ Este exemplo produz *Test.exe.manifest*, tornando o aplicativo XCOPY implantáve
 </Project>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Tarefa GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)

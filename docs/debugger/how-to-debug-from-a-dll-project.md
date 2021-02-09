@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 40a94339-d3f7-4ab9-b8a1-b8cf82942f44
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 723f35142ec125c016caa3653be450b61fb05d02
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 3b819a5cdbd09ced66fddec91574c1d03718518f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398552"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913274"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Como: Depurar de um projeto de DLL no Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -83,7 +83,7 @@ Os projetos DLL nativos e gerenciados têm configurações diferentes para espec
 
 Se a depuração não atingir seus pontos de interrupção, verifique se a saída da DLL (por padrão, a pasta *\<project> \debug* ) é o local que o aplicativo de chamada está chamando.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Depuração de projetos de DLL](../debugger/debugging-dll-projects.md)
 - [Configurações do projeto para configurações de depuração do C#](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Definições do projeto para uma configuração de depuração do Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)

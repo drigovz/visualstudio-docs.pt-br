@@ -5,18 +5,18 @@ ms.date: 11/12/2018
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4d205ee2bbc0a6e9c44c34f3b0487abb4f22283e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a40745b19bde57f7f0ca52e04a11a89ad1ca69ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72983659"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912431"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projetos do serviço de nuvem do Azure para Python
 
@@ -45,7 +45,7 @@ Este artigo contém detalhes sobre o modelo de projeto e outros tipos de suporte
 
     ![Arquivos de suporte à função de trabalho](media/template-azure-cloud-service-worker-role-support-files.png)
 
-    Para adicionar esses scripts de configuração a um novo projeto, clique com o botão direito do mouse no projeto, selecione **Adicionar**  >  **novo item**e selecione arquivos de **suporte de função Web** ou **arquivos de suporte de função de trabalho**.
+    Para adicionar esses scripts de configuração a um novo projeto, clique com o botão direito do mouse no projeto, selecione **Adicionar**  >  **novo item** e selecione arquivos de **suporte de função Web** ou **arquivos de suporte de função de trabalho**.
 
 ## <a name="configure-role-deployment"></a>Configurar a implantação de função
 

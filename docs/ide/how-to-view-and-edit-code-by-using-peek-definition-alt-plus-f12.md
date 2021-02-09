@@ -6,15 +6,15 @@ ms.date: 01/10/2018
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b706e730767c7c79fbeebc11291ecd11f4635b6
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 9c296aca79e6f334c93d8a9974d4a718ccd39d97
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95596918"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914995"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Como visualizar e editar códigos usando a janela Inspecionar Definição (Alt+F12)
 
@@ -75,16 +75,16 @@ Você pode usar estes atalhos de teclado com a janela **Inspecionar Definição*
 |Funcionalidade|Atalho de teclado|
 |-------------------|:-----------------------:|
 |Abrir a janela de definição|**ALT** + **F12**|
-|Fechar a janela de definição|**ESC**|
+|Fechar a janela de definição|**Esc**|
 |Promover a janela de definição para uma guia de documento regular|**Ctrl** + **ALT** + **Página inicial**|
-|Navegar entre janelas de definição|**Ctrl** + **Alt** + ALT **-** e **Ctrl** + **ALT**+**=**|
+|Navegar entre janelas de definição|**Ctrl** +  + ALT **-** e **Ctrl** + **ALT**+**=**|
 |Navegar entre vários resultados|**F8** e **Shift** + **F8**|
 |Alternar entre a janela do editor de códigos e a janela de definição|**Shift** + **ESC**|
 
 > [!NOTE]
 > Você também pode usar os mesmos atalhos de teclado para editar código em uma janela **Inspecionar Definição**, como usa em qualquer outro lugar no Visual Studio.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Navegue pelos códigos](../ide/navigating-code.md)
 - [Ir para Definição e Definição de Pico](../ide/go-to-and-peek-definition.md)

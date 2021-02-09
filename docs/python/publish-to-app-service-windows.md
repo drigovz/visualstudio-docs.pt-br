@@ -5,18 +5,18 @@ ms.date: 01/07/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 9a3aee5dc1c2d1272c3814fa6cfb2561f6cb4564
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af3e7c2d74a9d7b3a95ae24bba37981822247728
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801302"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912561"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Como publicar no Serviço de Aplicativo do Azure no Windows
 
@@ -133,7 +133,7 @@ A publicação no Serviço de Aplicativo do Azure através do Visual Studio 2017
 
     Observe que, quando a matriz estiver vazia, o Django permitirá automaticamente 'localhost', mas adicionar sua URL de produção removerá essas funcionalidades. Por esse motivo, talvez você queira manter cópias do `settings.py` de desenvolvimento e de produção separadas ou usar variáveis de ambiente para controlar os valores de tempo de execução.
 
-1. No **Gerenciador de Soluções**, expanda a pasta com o mesmo nome que o seu projeto, clique com botão direito do mouse na pasta `static`, selecione **Adicionar > Novo Item... **, selecione o modelo "Arquivos estáticos web.config do Azure" e selecione **OK**. Essa ação cria outro `web.config` na pasta `static` que desabilita o processamento do Python para essa pasta. Essa configuração envia solicitações para arquivos estáticos para o servidor Web padrão em vez de usar o aplicativo Python.
+1. No **Gerenciador de Soluções**, expanda a pasta com o mesmo nome que o seu projeto, clique com botão direito do mouse na pasta `static`, selecione **Adicionar > Novo Item...**, selecione o modelo "Arquivos estáticos web.config do Azure" e selecione **OK**. Essa ação cria outro `web.config` na pasta `static` que desabilita o processamento do Python para essa pasta. Essa configuração envia solicitações para arquivos estáticos para o servidor Web padrão em vez de usar o aplicativo Python.
 
 1. Salve seu projeto e, em seguida, no **Gerenciador de Soluções** do Visual Studio, clique com o botão direito do mouse e selecione **Publicar**.
 

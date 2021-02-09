@@ -9,35 +9,35 @@ helpviewer_keywords:
 ms.assetid: 8eeea600-eda5-4b7c-868a-0b86d177b0a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ce84fec7a0d9223575828da105e46f43cc6cab09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4803698aba910bc910fa36bf5c4f7e23ab82d247
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713808"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912710"
 ---
 # <a name="program_node_array"></a>PROGRAM_NODE_ARRAY
 Contém uma matriz de objetos que descrevem os programas de interesse.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```cpp
-typedef struct tagPROGRAM_NODE_ARRAY {
-   DWORD                dwCount;
-   IDebugProgramNode2** Members;
-} PROGRAM_NODE_ARRAY;
+typedef struct tagPROGRAM_NODE_ARRAY {
+   DWORD                dwCount;
+   IDebugProgramNode2** Members;
+} PROGRAM_NODE_ARRAY;
 ```
 
 ```csharp
-public struct tagPROGRAM_NODE_ARRAY {
-   public uint                 dwCount;
-   public IDebugProgramNode2[] Members;
+public struct tagPROGRAM_NODE_ARRAY {
+   public uint                 dwCount;
+   public IDebugProgramNode2[] Members;
 }
 ```
 
@@ -58,7 +58,7 @@ public struct tagPROGRAM_NODE_ARRAY {
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

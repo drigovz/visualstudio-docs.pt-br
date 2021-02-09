@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5e6df3cc-2db8-4cbd-8fdd-3ffd03ac0876
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 94b94ef7b17633ab78f7eb91f61dd67ea2c8021d
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 64759ba2b973c0acf7f2aad20b065fbd99d4d289
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904635"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913962"
 ---
 # <a name="item-functions"></a>funções de item
 
@@ -108,6 +108,6 @@ O exemplo a seguir mostra como usar funções intrínsecas de item.
 
 As funções `Exists` e `HasTrailingSlash` não são funções de item. Eles estão disponíveis para uso com o `Condition` atributo. Consulte [condições do MSBuild](msbuild-conditions.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Itens](../msbuild/msbuild-items.md)

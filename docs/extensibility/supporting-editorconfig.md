@@ -9,15 +9,15 @@ helpviewer_keywords:
 - editorconfig, supporting in a language service
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c635df2301822fc1bb982df44912527d53c9ef6
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 8ddd7e0c7c1e2655f08b7b7113f43e14bbb37584
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716101"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914959"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>Suporte a EditorConfig para seu serviço de idioma
 
@@ -45,7 +45,7 @@ Opções específicas de idioma | Opções contextuais
 -------|--------
 Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize<br/>Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.TabSize|textBufferOptions.GetOptionValue(DefaultOptions.TabSizeOptionId)<br/>textView.Options.GetOptionValue(DefaultOptions.TabSizeOptionId)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Criar configurações de editor portátil usando EditorConfig](../ide/create-portable-custom-editor-options.md)
 - [Estendendo o editor e os serviços de linguagem](../extensibility/extending-the-editor-and-language-services.md)

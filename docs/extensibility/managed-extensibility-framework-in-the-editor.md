@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd6ed0e495056bf2924e46bfdfcd074daf1faf87
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 5965ca211710b0710626118f016b2cb3fec116b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915138"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework no editor
 O editor é criado usando componentes Managed Extensibility Framework (MEF). Você pode criar seus próprios componentes do MEF para estender o editor, e seu código também pode consumir componentes do editor.
@@ -104,5 +104,5 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
 
 5. Depois de compilar o assembly, coloque-o no *.. \* Pasta \Common7\IDE\Components da instalação do Visual Studio.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Pontos de extensão do serviço de linguagem e do editor](../extensibility/language-service-and-editor-extension-points.md)

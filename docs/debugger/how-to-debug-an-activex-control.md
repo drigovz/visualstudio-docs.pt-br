@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: bbc02cf7-a7e6-44fe-99af-87a43e1d7251
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a0458fb4981642d3f8386edd4c3605ae7b902a14
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 83522eb13350d86ef0531d90b3db844ece8f6655
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398669"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913419"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Como depurar um controle ActiveX
 
@@ -58,7 +58,7 @@ Para depurar seu controle ActiveX, você deverá especificar um contêiner (exec
 
      Se você não especificar um contêiner na caixa de diálogo **Páginas de Propriedades do Projeto**, poderá especificar o contêiner quando iniciar a depuração. Quando você selecionar um comando de execução para iniciar a depuração, a [caixa de diálogo Executável para Sessão de Depuração](../debugger/executable-for-debugging-session-dialog-box.md) é exibida. Especifique o nome do caminho do contêiner na caixa de diálogo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Controles ActiveX](/cpp/mfc/activex-controls)
 - [Testando Propriedades e eventos com contêiner de teste](/cpp/mfc/testing-properties-and-events-with-test-container)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee73ea3a9b65635cf14d4d345bf22de4e9593989
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07e48a59f044f8f3ccc94576210a51e7d70d9b66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387077"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912951"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 Continua executando este programa a partir de um estado parado. Qualquer estado de execução anterior (como uma etapa) é preservado e o programa começa a ser executado novamente.
@@ -31,13 +31,13 @@ Continua executando este programa a partir de um estado parado. Qualquer estado 
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT Continue( 
+HRESULT Continue( 
    IDebugThread2* pThread
 );
 ```
 
 ```csharp
-int Continue( 
+int Continue( 
    IDebugThread2 pThread
 );
 ```
@@ -45,7 +45,7 @@ int Continue( 
 ## <a name="parameters"></a>Parâmetros
 `pThread` no Um objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa o thread.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

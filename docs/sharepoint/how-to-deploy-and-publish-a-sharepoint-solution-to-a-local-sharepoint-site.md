@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 65683544f345a2378fdec559f582985ffec7bc43
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 22fe46e2876b14551637dd97712e1728816b020e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913698"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Como implantar e publicar uma solução do SharePoint em um site do SharePoint local
   Você pode implantar ou publicar soluções do SharePoint em um servidor do SharePoint local em seu computador de desenvolvimento. O processo de implantação copia o arquivo *. wsp* para o servidor do SharePoint, instala a solução e ativa os recursos. O processo de publicação só copia o arquivo *. wsp* para o servidor do SharePoint e o instala. Você deve ativá-lo manualmente para habilitá-lo no SharePoint.
@@ -44,7 +44,7 @@ ms.locfileid: "94903579"
 
      O progresso da publicação aparece na janela **saída** do Visual Studio. Quando o processo é concluído, o arquivo da solução (*. wsp*) é instalado no servidor do SharePoint local. No entanto, ele ainda deve ser ativado para ser usado no SharePoint. Se o arquivo de solução já existir, ocorrerá um erro e perguntará se você deseja substituir o arquivo existente. Para obter informações sobre como atualizar o pacote, consulte a seção sobre como atualizar pacotes remotos em [como implantar, publicar e atualizar soluções do SharePoint em um servidor remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Como implantar, publicar e atualizar soluções do SharePoint em um servidor remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)
 - [Criar pacotes de solução do SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
 - [Como: personalizar um pacote de solução do SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)

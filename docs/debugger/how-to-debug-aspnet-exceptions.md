@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 1810096e-de8c-435e-be3d-f365d0cd0a6a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 945e289f3da55c8884f4ec2cd115c65dbe3be237
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 00823fd1a5029cb45b91a6beb4168f8a9cbd999a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398643"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913261"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Como depurar exceções do ASP.NET
 A depuração de exceções é uma parte importante do desenvolvimento de um aplicativo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] robusto. As informações gerais sobre como depurar exceções estão no [Gerenciamento de exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md).
@@ -49,5 +49,5 @@ A depuração de exceções é uma parte importante do desenvolvimento de um apl
 
 - Coloque blocos de `try ... catch` em torno do código que pode lançar exceções que você pode prever e sabe como manipular. Por exemplo, se o aplicativo estiver fazendo chamadas para um serviço Web XML ou diretamente para o SQL Server, o código deve estar em blocos **try … catch** porque várias exceções podem ocorrer.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Depurar aplicativos ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

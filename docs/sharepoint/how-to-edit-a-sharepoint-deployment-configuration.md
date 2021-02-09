@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e64f805496d03b42ca70489bab1302ecf58b33bc
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 59354537f0c1f22534395da1e0ed3db3929a14a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903553"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913653"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Como: editar uma configuração de implantação do SharePoint
   Você pode criar uma configuração de implantação ou modificar uma configuração de implantação existente. Por exemplo, você pode executar uma única etapa ou alterar a ordem das etapas no processo de implantação. Talvez você queira criar ou modificar as configurações de implantação porque as configurações internas e adicionadas programaticamente não podem ser alteradas.
@@ -47,11 +47,11 @@ ms.locfileid: "94903553"
 
 #### <a name="to-change-the-active-deployment-configuration"></a>Para alterar a configuração de implantação ativa
 
-1. Em **Gerenciador de soluções**, escolha um projeto do SharePoint e, na barra de menus, escolha **Project**  >  **\<*ProjectName*> Propriedades** do projeto.
+1. Em **Gerenciador de soluções**, escolha um projeto do SharePoint e, na barra de menus, escolha   >  **\<*ProjectName*> Propriedades** do projeto.
 
 2. Escolha a guia **SharePoint** .
 
 3. Na caixa de listagem **configuração de implantação ativa** , escolha o nome da configuração de implantação que você deseja usar.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

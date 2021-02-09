@@ -9,17 +9,17 @@ ms.topic: tutorial
 ms.devlang: vb
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 279bfb00a2466120d21c5c868c0987ec19202acc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a08e955d8446ebcd376f81773b5996146241486e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579941"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915022"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Introdução ao Visual Basic no Visual Studio
 
@@ -111,7 +111,7 @@ Se o modelo de projeto **Aplicativo do Console (.NET Core)** não for exibido, v
 
 ## <a name="create-a-what-is-your-name-application"></a>Criar um aplicativo de “Qual é o seu nome”
 
-Vamos criar um aplicativo que solicita o nome e o exibe juntamente com a data e a hora. Este é o procedimento:
+Vamos criar um aplicativo que solicita o nome e o exibe juntamente com a data e a hora. Aqui está como:
 
  ::: moniker range="vs-2017"
 

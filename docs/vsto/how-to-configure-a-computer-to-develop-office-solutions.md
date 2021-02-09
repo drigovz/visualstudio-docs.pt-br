@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, installing tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d6504ac9682c4cd4e7691c651f1ee5c2b3818bf2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: eeb5deffd0d6dbfb39da22db993bdb201bac5e17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844303"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913481"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Como configurar um computador para desenvolver soluções do Office
   Para configurar um computador de desenvolvimento para que você possa usar as ferramentas de desenvolvedor do Microsoft Office no Visual Studio, siga as instruções neste tópico. Você deve ter privilégios administrativos no computador de desenvolvimento para executar essas etapas.
@@ -36,7 +36,7 @@ ms.locfileid: "96844303"
 
 3. Se você tiver uma versão em inglês do Visual Studio, mas usar configurações que não sejam do inglês para o Windows, poderá instalar o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] pacote de idiomas para ver [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] as mensagens no mesmo idioma que o Windows. Versões diferentes do inglês do Visual Studio instalam automaticamente o pacote de idiomas. O pacote de idiomas está disponível no [centro de download da Microsoft](https://www.microsoft.com/download/details.aspx?id=54246).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Como instalar o Ferramentas do Visual Studio para o Office Runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 75c8947243545b57e0b8c4352784869f54efe565
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 754080defd50bc10af501fdbaf509bafe549dcbd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904655"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913977"
 ---
 # <a name="item-definitions"></a>Definições de item
 
@@ -76,7 +76,7 @@ Os valores dos metadados definidos em um ItemDefinitionGroup podem vir de vária
 
 - Variável de ambiente
 
-- Propriedade global (na linha de comando *MSBuild.exe* )
+- Propriedade global (na linha de comando *MSBuild.exe*)
 
 - Propriedade reservada
 
@@ -262,4 +262,4 @@ A partir do MSBuild 3,5, os RowGroups também podem ser de autorreferência. Por
 
 ## <a name="see-also"></a>Confira também
 
-- [Envio em lote](../msbuild/msbuild-batching.md)
+- [Separação em lotes](../msbuild/msbuild-batching.md)

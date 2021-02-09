@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2496de5d1139d66e4ae9072b551ada990cf856dd
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: ad5b77176d05c28b3ba938a1255de6e10fcd7094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761212"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912756"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Como instalar um plug-in de controle do código-fonte
 A criação de um plug-in de controle de origem envolve três etapas:
@@ -37,7 +37,7 @@ A criação de um plug-in de controle de origem envolve três etapas:
 
 #### <a name="to-register-the-source-control-plug-in-dll"></a>Para registrar a DLL de plug-in de controle do código-fonte
 
-1. Adicione duas entradas sob a chave de **HKEY_LOCAL_MACHINE** na subchave de **software** que especifica a subchave de nome da empresa seguida pela subchave de nome do produto. O padrão é **\\ \<company name> \\ \<product name>HKEY_LOCAL_MACHINE\SOFTWARE\\ valor \<entry>**  =  *value*. As duas entradas são sempre chamadas **SCCServerName** e **SCCServerPath**. Cada uma é uma cadeia de caracteres regular.
+1. Adicione duas entradas sob a chave de **HKEY_LOCAL_MACHINE** na subchave de **software** que especifica a subchave de nome da empresa seguida pela subchave de nome do produto. O padrão é **\\ \<company name> \\ \<product name>HKEY_LOCAL_MACHINE\SOFTWARE\\ valor \<entry>**  =  . As duas entradas são sempre chamadas **SCCServerName** e **SCCServerPath**. Cada uma é uma cadeia de caracteres regular.
 
     Por exemplo, se o nome da sua empresa for a Microsoft e seu produto de controle do código-fonte for chamado de SourceSafe, esse caminho do registro será **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe**. Nessa subchave, a primeira entrada, **SCCServerName**, é uma cadeia de caracteres legível pelo usuário que nomeia seu produto. A segunda entrada, **SCCServerPath**, é o caminho completo para a DLL de plug-in de controle do código-fonte à qual o IDE deve se conectar. O seguinte fornece exemplos de entradas do registro:
 
@@ -55,7 +55,7 @@ A criação de um plug-in de controle de origem envolve três etapas:
 
       **HideInVisualStudio** é um valor DWORD e é definido como *1* para ocultar o plug-in ou *0* para mostrar o plug-in. Se a entrada do registro não for exibida, o comportamento padrão será mostrar o plug-in.
 
-   - A entrada de registro **DisableSccManager** pode ser usada para desabilitar ou ocultar a opção de menu **\<Source Control Server> Iniciar** que normalmente aparece no **File**  >  submenu **controle de origem** de arquivo. A seleção dessa opção de menu chama a função [SccRunScc](../../extensibility/sccrunscc-function.md) . O plug-in de controle do código-fonte pode não dar suporte a um programa externo e, portanto, talvez você queira desabilitar ou até mesmo ocultar a opção de menu **Iniciar** .
+   - A entrada de registro **DisableSccManager** pode ser usada para desabilitar ou ocultar a opção de menu **\<Source Control Server> Iniciar** que normalmente aparece no   >  submenu **controle de origem** de arquivo. A seleção dessa opção de menu chama a função [SccRunScc](../../extensibility/sccrunscc-function.md) . O plug-in de controle do código-fonte pode não dar suporte a um programa externo e, portanto, talvez você queira desabilitar ou até mesmo ocultar a opção de menu **Iniciar** .
 
       **DisableSccManager** é um valor DWORD e é definido como *0* para habilitar a opção de menu **Iniciar \<Source Control Server>** , defina como *1* para desabilitar a opção de menu e defina como *2* para ocultar a opção de menu. Se essa entrada de registro não for exibida, o comportamento padrão será mostrar a opção de menu.
 
@@ -118,5 +118,5 @@ A criação de um plug-in de controle de origem envolve três etapas:
 
  Se ambas as condições forem atendidas, as novas funções com suporte nas versões 1,2 e 1,3 poderão ser chamadas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Introdução aos plug-ins de controle do código-fonte](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

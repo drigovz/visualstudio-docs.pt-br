@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: cb077613-4a59-41b7-96ec-d8516689163c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 07f0312892d9f4f4073cf6fb2c9537ffa52a6267
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 67b2eff1ca7c1871eacad7608b56b6916e3cc8e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914361"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Como estender o processo de build do Visual Studio
 
@@ -223,7 +223,7 @@ Neste exemplo, este é um projeto no estilo SDK. Conforme mencionado na observa�
 
 A ordem dos elementos é importante. Os `BuildDependsOn` `CleanDependsOn` elementos e devem aparecer depois de importar o arquivo de destino padrão do SDK.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [integração com o Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

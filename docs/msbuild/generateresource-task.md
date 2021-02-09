@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 124e5dcc3666698dd71927e15c3686038233c317
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 810cbd4987277416b5be545603908d9818bff890
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914752"
 ---
 # <a name="generateresource-task"></a>Tarefa GenerateResource
 
@@ -38,7 +38,7 @@ A tabela a seguir descreve os parâmetros da tarefa `GenerateResource`.
 |Parâmetro|Descrição|
 |---------------|-----------------|
 |`AdditionalInputs`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Contém entradas adicionais para a verificação de dependência realizada por tarefa. Por exemplo, os arquivos de projeto e de destino normalmente devem ser entradas, de modo que se eles forem atualizados, todos os recursos serão regenerados.|
-|`EnvironmentVariables`|Parâmetro `String[]` opcional.<br /><br /> Especifica uma matriz de pares de nome-valor de variáveis de ambiente que devem ser passadas para o *resgen.exe*gerado, além de (ou substituindo seletivamente) o bloco de ambiente regular.|
+|`EnvironmentVariables`|Parâmetro `String[]` opcional.<br /><br /> Especifica uma matriz de pares de nome-valor de variáveis de ambiente que devem ser passadas para o *resgen.exe* gerado, além de (ou substituindo seletivamente) o bloco de ambiente regular.|
 |`ExcludedInputPaths`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica uma matriz de itens que especificam os caminhos dos quais entradas controladas serão ignoradas durante a verificação de atualização.|
 |`ExecuteAsTool`|Parâmetro `Boolean` opcional.<br /><br /> Se `true` , o executará *tlbimp.exe* e *aximp.exe* da estrutura de destino apropriada fora do processo para gerar os assemblies de wrapper necessários. Esse parâmetro habilita multi-targeting de `ResolveComReferences`.|
 |`FilesWritten`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contém os nomes de todos os arquivos gravados em disco. Isso inclui o arquivo de cache, se houver. Esse parâmetro é útil para implementações do Clean.|
@@ -100,7 +100,7 @@ Supondo que o assembly seja nomeado myAssembly, o seguinte código gera um recur
 
 Sem os \<LogicalName> metadados, o recurso seria nomeado *myAssembly. MyResource. Resources*.  Este exemplo aplica-se somente ao processo de build do Visual Basic e Visual C#.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

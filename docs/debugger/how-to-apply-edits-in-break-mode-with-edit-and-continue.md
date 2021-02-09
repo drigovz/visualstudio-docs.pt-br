@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 1eef7498-6a1f-4fba-8146-510adc6375c9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b8e6ef8c41fbaf5aafa6b1fc9ef4216c773e75e
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 46cc695461d7575c7093987c175836896732dce6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398682"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913407"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Como aplicar edições no modo de interrupção com editar e continuar (Visual Basic)
 Você pode usar Editar e Continuar para editar o código no modo de interrupção e, depois, continuar sem interromper e reiniciar a execução.
@@ -61,6 +61,6 @@ Para obter limitações sobre como usar editar e continuar durante a depuração
 
      O código agora é executado com as edições aplicadas incorporadas ao projeto.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Alterações de código com suporte (C# e Visual Basic)](../debugger/supported-code-changes-csharp.md)
 - [Editar e Continuar (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
