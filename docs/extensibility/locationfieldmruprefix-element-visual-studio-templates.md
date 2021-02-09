@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 03443691-9eb5-46f4-9169-cc2552a04bcb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd3eca6297430e574435f92d4b58cfbb51be805c
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 674773d25e4842aec649fc57daa4972530832f71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924971"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Elemento LocationFieldMRUPrefix (modelos do Visual Studio)
 
@@ -40,11 +40,11 @@ Especifica os caminhos usados mais recentemente (MRU) na caixa de diálogo **nov
 
 ### <a name="attributes"></a>Atributos
 
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
 
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -56,7 +56,7 @@ Especifica os caminhos usados mais recentemente (MRU) na caixa de diálogo **nov
 
  Esse elemento só deve ser usado para modelos produzidos por meio do [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)] .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)

@@ -14,20 +14,20 @@ helpviewer_keywords:
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60d6491101bef33f1d8c91d4f7640be9d7277da0
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0fbf76fec604819d7944a7b54fa4b2421e37c111
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349536"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925367"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;&gt;Elemento PackageFiles (Bootstrapper)
 O `PackageFiles` elemento contém `PackageFile` elementos, que definem os pacotes de instalação executados como resultado do `Command` elemento.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <PackageFiles
@@ -75,7 +75,7 @@ O `PackageFiles` elemento contém `PackageFile` elementos, que definem os pacote
 </PackageFiles>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [\<Product> elementos](../deployment/product-element-bootstrapper.md)
 - [\<Package> elementos](../deployment/package-element-bootstrapper.md)
 - [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)

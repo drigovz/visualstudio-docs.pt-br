@@ -13,15 +13,15 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8bd76f2aafc5d0b3058dcaba68b6f3099f01ff8d
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 664a7ac4e763b2378cf30603c417aacde27c2e47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849890"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925496"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Como: criar um receptor de eventos para uma instância de lista específica
   Um receptor de eventos de instância de lista responde a eventos que ocorrem em qualquer instância de uma definição de lista. Embora o modelo receptor de eventos não habilite o direcionamento de uma instância de lista específica, você pode modificar um receptor de eventos que tem como escopo uma definição de lista para responder a eventos em uma instância de lista específica.
@@ -88,6 +88,6 @@ ms.locfileid: "94849890"
 
      Observe que o receptor de eventos não é disparado no novo comunicado porque o receptor está configurado para responder somente a eventos na instância de lista de anúncios personalizada, **TestAnnouncements**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Como: criar um receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)

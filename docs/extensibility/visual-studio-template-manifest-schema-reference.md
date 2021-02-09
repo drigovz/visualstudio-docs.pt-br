@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d712f2cb95b2df9680c4476805e9dfb6809cf038
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 5f251b4511e2bff5bc20172e4018560205a378e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863832"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925836"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Referência de esquema de manifesto de modelo do Visual Studio
 Este esquema descreve o formato dos arquivos de manifesto do modelo do Visual Studio (*. vstman*) que são gerados para modelos de projeto ou item do Visual Studio. O esquema também descreve o local e outras informações relevantes sobre o modelo.
@@ -30,7 +30,7 @@ Este esquema descreve o formato dos arquivos de manifesto do modelo do Visual St
 
 ### <a name="attributes"></a>Atributos
 
-- **Version**: uma cadeia de caracteres que representa a versão do manifesto do modelo. Obrigatórios.
+- **Version**: uma cadeia de caracteres que representa a versão do manifesto do modelo. Obrigatório.
 
 - **Localidade**: uma cadeia de caracteres que representa a localidade ou as localidades do manifesto do modelo. O valor da localidade se aplica a todos os modelos. Você deve usar um manifesto separado para cada localidade. Opcional.
 
@@ -47,7 +47,7 @@ Este esquema descreve o formato dos arquivos de manifesto do modelo do Visual St
  O contêiner dos elementos de manifesto do modelo. Um manifesto tem um contêiner de modelo para cada modelo definido por ele.
 
 ### <a name="attributes"></a>Atributos
- **Vstemplatetype**: um valor de cadeia de caracteres que especifica o tipo do modelo ( `"Project"` , `"Item"` ou `"ProjectGroup"` ). Necessária
+ **Vstemplatetype**: um valor de cadeia de caracteres que especifica o tipo do modelo ( `"Project"` , `"Item"` ou `"ProjectGroup"` ). Obrigatório
 
 ### <a name="child-elements"></a>Elementos filho
 

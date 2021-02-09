@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f50f23847da8f6d56da6763146efd147aebca8c6
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: bb6047c98031c484f6a0a51ab2a393a2a46bb2a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863918"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926095"
 ---
 # <a name="visibilityconstraints-element"></a>Elemento VisibilityConstraints
 O elemento VisibilityConstraints determina a visibilidade estática de grupos de comandos e barras de ferramentas. A visibilidade é primeiro controlada pelo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE (ambiente de desenvolvimento integrado) sem carregar o VSPackage.
@@ -65,6 +65,6 @@ O elemento VisibilityConstraints determina a visibilidade estática de grupos de
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Elemento VisibilityItem](../extensibility/visibilityitem-element.md)
 - [Tabela de comandos do Visual Studio (. Arquivos de vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

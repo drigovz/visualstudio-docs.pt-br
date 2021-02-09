@@ -15,15 +15,15 @@ helpviewer_keywords:
 - regular expressions
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8648eb48c68e0220b1d36a851619edec2b51ceb7
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: d62d35a296c70462aab75af5a8c6729179d5b34d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478985"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925763"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expressões regulares no Visual Studio
 
@@ -52,7 +52,7 @@ A tabela a seguir contém alguns caracteres de expressão regular, operadores, c
 |Encontrar a correspondência de um caractere que não está em um conjunto de caracteres específico. Para saber mais, veja [Negative Character Group (Grupo de caracteres negativos)](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^abc]|`be[^n-t]` corresponde a "BEF" em "Before", "beh" em "Behind" e "rótulo" em "abaixo", mas não localiza nenhuma correspondência em "abaixo"|
 |Encontrar a correspondência da expressão antes ou depois do símbolo|&#124;|`(sponge|mud) bath` corresponde a "banho de esponja" e "lama banho"|
 |[Escapar do caractere](/dotnet/standard/base-types/character-escapes-in-regular-expressions) após a barra invertida| \\ |`\^` corresponde ao caractere ^|
-|Especificar o número de ocorrências do caractere ou do grupo anterior. Para saber mais, confira [Corresponder a exatamente n vezes](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, em que “n” é o número de ocorrências|`x(ab){2}x` corresponde a "xababx"<br/>`x(ab){2,3}x` corresponde a "xababx" e "xabababx", mas não a "xababababx"|
+|Especificar o número de ocorrências do caractere ou do grupo anterior. Para saber mais, confira [Corresponder a exatamente n vezes](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, em que “n” é o número de ocorrências|`x(ab){2}x` corresponde a "xababx"<br/>`x(ab){2,3}x` corresponde a "xababx" e a "xabababx", mas não a "xababababx"|
 |[Corresponder ao texto em uma categoria Unicode](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Para saber mais sobre classes de caracteres Unicode, confira [Propriedades de caractere do Padrão Unicode 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, em que "X" é o número Unicode.|`\p{Lu}` corresponde a "T" e "D" em "Thomas Doe"|
 |[Corresponder um limite de palavra](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (fora de uma classe de caractere, `\b` especifica um limite de palavra e, dentro de uma classe de caractere, `\b` especifica um backspace.)|`\bin` corresponde a "in" em "Inside" mas não localiza nenhuma correspondência em "fixar"|
 |Encontrar a correspondência de uma quebra de linha (isto é, um retorno de carro seguido por uma nova linha)|\r?\n|`End\r?\nBegin` corresponde a "End" e "Begin" somente quando "End" é a última cadeia de caracteres em uma linha e "Begin" é a primeira cadeia de caracteres na linha seguinte|

@@ -7,17 +7,17 @@ ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 08e04407c5fc25a2835bd3209ffcd60fdc86d0b1
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 852bfad102c4ae34bee9528009e3d4b2dd8c7384
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815770"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925724"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e React no Visual Studio
 
@@ -117,7 +117,7 @@ Este aplicativo requer um número de módulos npm para ser executado corretament
 * react
 * react-dom
 * express
-* path
+* caminho
 * ts-loader
 * typescript
 * webpack
@@ -340,7 +340,7 @@ Do Visual Studio 2019 em diante, é necessário um script de build. Em vez de tr
    }
    ```
 
-## <a name="run-the-app"></a>Executar o aplicativo
+## <a name="run-the-app"></a>Execute o aplicativo
 
 1. Selecione o **servidor Web (Google Chrome)** ou o **servidor Web (Microsoft Edge)** como o destino de depuração atual.
 
