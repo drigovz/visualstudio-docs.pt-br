@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 06effb313dc2b8a247eeeab99290a289717bc960
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: b2f36ee884beb3b79244e4621ba305c06aafe8ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350459"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915752"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Passo a passo: Criar um bootstrapper personalizado com um aviso de privacidade
 Você pode configurar aplicativos ClickOnce para atualizar automaticamente quando os assemblies com versões de arquivo mais recentes e versões de assembly ficarem disponíveis. Para garantir que seus clientes consentim nesse comportamento, você pode exibir um aviso de privacidade para eles. Em seguida, eles podem escolher se deseja conceder permissão ao aplicativo para atualizar automaticamente. Se o aplicativo não tiver permissão para ser atualizado automaticamente, ele não será instalado.
@@ -47,13 +47,13 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
 
 2. Na caixa de diálogo **novo projeto** , clique em **Windows** e em **WindowsFormsApplication**.
 
-3. Para o **nome** , digite **ConsentDialog** e clique em **OK**.
+3. Para o **nome**, digite **ConsentDialog** e clique em **OK**.
 
 4. No designer, clique no formulário.
 
 5. Na janela **Propriedades** , altere a propriedade **texto** para **atualizar a caixa de diálogo de consentimento**.
 
-6. Na **caixa de ferramentas** , expanda **todos os Windows Forms** e arraste um controle **rótulo** para o formulário.
+6. Na **caixa de ferramentas**, expanda **todos os Windows Forms** e arraste um controle **rótulo** para o formulário.
 
 7. No designer, clique no controle rótulo.
 
@@ -61,17 +61,17 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
 
     O aplicativo que você está prestes a instalar verifica as atualizações mais recentes na Web. Ao clicar em "concordo", você autoriza o aplicativo a verificar e instalar atualizações automaticamente da Internet.
 
-9. Na **caixa de ferramentas** , arraste um controle de **caixa de seleção** para o meio do formulário.
+9. Na **caixa de ferramentas**, arraste um controle de **caixa de seleção** para o meio do formulário.
 
 10. Na janela **Propriedades** , altere a propriedade **Text** em **layout** para **concordo**.
 
-11. Na **caixa de ferramentas** , arraste um controle de **botão** para a parte inferior esquerda do formulário.
+11. Na **caixa de ferramentas**, arraste um controle de **botão** para a parte inferior esquerda do formulário.
 
 12. Na janela **Propriedades** , altere a propriedade **Text** em **layout** para **continuar**.
 
 13. Na janela **Propriedades** , altere a propriedade **(Name)** em **design** para **ProceedButton**.
 
-14. Na **caixa de ferramentas** , arraste um controle de **botão** para a parte inferior direita do formulário.
+14. Na **caixa de ferramentas**, arraste um controle de **botão** para a parte inferior direita do formulário.
 
 15. Na janela **Propriedades** , altere a propriedade **Text** em **layout** para **Cancelar**.
 
@@ -112,7 +112,7 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
 
      Somente para desenvolvedores de Visual Basic:
 
-    1. Em **Gerenciador de soluções** , clique em **ConsentDialog**.
+    1. Em **Gerenciador de soluções**, clique em **ConsentDialog**.
 
     2. No menu **projeto** , clique em **Adicionar módulo** e, em seguida, clique em **Adicionar**.
 
@@ -234,9 +234,9 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
 
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Para definir o aplicativo de consentimento de atualização como um pré-requisito
 
-1. Em **Gerenciador de soluções** , clique no nome do aplicativo que você deseja implantar.
+1. Em **Gerenciador de soluções**, clique no nome do aplicativo que você deseja implantar.
 
-2. No menu **Projeto** , clique em *ProjectName* **Propriedades**.
+2. No menu **Projeto**, clique em *ProjectName* **Propriedades**.
 
 3. Clique na página **publicar** e clique em **pré-requisitos**.
 
@@ -252,9 +252,9 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
 
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Para criar e testar o programa de instalação, não clicando em Concordo
 
-1. Em **Gerenciador de soluções** , clique no nome do aplicativo que você deseja implantar.
+1. Em **Gerenciador de soluções**, clique no nome do aplicativo que você deseja implantar.
 
-2. No menu **Projeto** , clique em *ProjectName* **Propriedades**.
+2. No menu **Projeto**, clique em *ProjectName* **Propriedades**.
 
 3. Clique na página **publicar** e, em seguida, clique em **Publicar agora**.
 
@@ -278,9 +278,9 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
 
 #### <a name="to-create-and-test-the-setup-program-by-clicking-i-agree"></a>Para criar e testar o programa de instalação clicando em Concordo
 
-1. Em **Gerenciador de soluções** , clique no nome do aplicativo que você deseja implantar.
+1. Em **Gerenciador de soluções**, clique no nome do aplicativo que você deseja implantar.
 
-2. No menu **Projeto** , clique em *ProjectName* **Propriedades**.
+2. No menu **Projeto**, clique em *ProjectName* **Propriedades**.
 
 3. Clique na página **publicar** e, em seguida, clique em **Publicar agora**.
 
@@ -300,7 +300,7 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
 
 8. Se a caixa de diálogo instalação do aplicativo for exibida, clique em **instalar**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Pré-requisitos de implantação do aplicativo](../deployment/application-deployment-prerequisites.md)
 - [Criar pacotes de bootstrapper](../deployment/creating-bootstrapper-packages.md)
 - [Como criar um manifesto de produto](../deployment/how-to-create-a-product-manifest.md)

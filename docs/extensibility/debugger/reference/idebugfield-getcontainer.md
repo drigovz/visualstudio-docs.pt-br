@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6d6c8213-6181-4adf-9584-3e4cac163dd8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f1217a6f3a62f331fa09d9ed276640ef62cca8d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9d14a5666db03c9ebd701d5e1145c3f14465e37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728914"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915404"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 Esse método obtém o contêiner de um campo.
@@ -28,7 +28,7 @@ Esse método obtém o contêiner de um campo.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetContainer( 
+HRESULT GetContainer( 
    IDebugContainerField** ppContainerField
 );
 ```
@@ -43,7 +43,7 @@ int GetContainer(
 `ppContainerField`\
 fora Retorna o contêiner conforme representado pela interface [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

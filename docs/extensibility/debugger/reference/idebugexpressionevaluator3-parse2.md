@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5254d30ed1a656bfd357fca822efa554d895807e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a82e729f3811f63a11aa8476ad23b566521c8cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729132"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915522"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 Converte uma cadeia de caracteres de expressão em uma expressão analisada, dado o provedor de símbolos e o endereço do quadro de avaliação.
@@ -76,7 +76,7 @@ fora Retorna a posição do caractere do início do erro na cadeia de caracteres
 `ppParsedExpression`\
 fora Retorna a expressão analisada em um objeto [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
@@ -137,5 +137,5 @@ HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)
