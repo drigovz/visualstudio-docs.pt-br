@@ -7,7 +7,7 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload: multiple
 f1_keywords:
 - Win8ExpressDesktopBlock
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: ca13ff5263ab43fd6fbdf5764b506091dd9aa3bd
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 8182f8982734bd0089d483c9acefc230c9baaa91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97667982"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901324"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Referência de migração e atualização de projeto do Visual Studio
 
@@ -65,7 +65,7 @@ Se não estiver listado aqui um projeto ou um tipo de arquivo que deveria estar,
 | SharePoint 2016 | Projetos de Suplemento do SharePoint criados no Office Developer Tools Visualização 2 não podem ser abertos no Visual Studio 2017. Para contornar essa limitação, atualize o `MinimumVisualStudioVersion` para a versão 12.0 e o `MinimumOfficeToolsVersion` para a 12.2 no arquivo csproj vbproj. |
 | Silverlight | Não há suporte para projetos do Silverlight no Visual Studio 2017. Para manter os aplicativos do Silverlight, continue a usar o Visual Studio 2015. |
 | SQL Server Reporting Services e SQL Server Analysis Services (SSRS, SSDT, SSAS, MSAS) | O suporte para esses tipos de projeto é fornecido por meio de duas extensões na Galeria do Visual Studio: [Projetos de Modelagem do Microsoft Analysis Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) e [Projetos do Microsoft Reporting Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). Suporte do SSDT também está incluso com a carga de trabalho de Processamento e Armazenamento de Dados no Visual Studio de 2017. Para saber mais, confira a página [Baixar e instalar o SQL Server Data Tools (SSDT) para Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt).|
-| SQL Server Integration Services (SSIS) | O suporte para o Visual Studio 2017 está disponível por meio do SSDT (SQL Server Data Tools). Para saber mais, confira a página [Baixar e instalar o SQL Server Data Tools (SSDT) para Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt) e o blog da equipe [SQL Server Integration Services (SSIS)](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS). |
+| O SQL Server Integration Services (SSIS) | O suporte para o Visual Studio 2017 está disponível por meio do SSDT (SQL Server Data Tools). Para saber mais, confira a página [Baixar e instalar o SQL Server Data Tools (SSDT) para Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt) e o blog da equipe [SQL Server Integration Services (SSIS)](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS). |
 | Visual C++ | Você pode usar o Visual Studio 2017 para trabalhar em projetos criados em versões anteriores do Visual Studio no Visual Studio 2010. Quando você abre o projeto pela primeira vez, tem a opção de atualizar para o compilador e o conjunto de ferramentas mais recentes, ou continuar usando os originais. Se você optar por continuar usando os originais, o Visual Studio 2017 não modificará o arquivo de projeto e usará o conjunto de ferramentas da instalação anterior do Visual Studio para compilar o projeto. Manter as opções originais significa que você ainda pode abrir o projeto na versão original do Visual Studio, se for necessário. Para obter mais informações, consulte [Usar a multiplataforma nativa no Visual Studio para compilar projetos antigos](/cpp/porting/use-native-multi-targeting). |
 | Extensibilidade/VSIX do Visual Studio | Os projetos com o MinimumVersion 14.0 ou inferior serão atualizados para declarar a MinimumVersion 15.0, que impede que o projeto seja aberto em versões anteriores do Visual Studio. Para permitir que um projeto seja aberto em versões anteriores, defina MinimumVersion como `$(VisualStudioVersion)`. Consulte também [Como migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | É possível usar o Microsoft Test Manager ou o Visual Studio 2010 SP1 e posterior para abrir ambientes criados em qualquer uma dessas versões. No entanto, para o Visual Studio 2010 SP1, a versão do Microsoft Test Manager deve corresponder à versão do Team Foundation Server para que você possa criar ambientes. |
@@ -104,7 +104,7 @@ Consulte os seguintes artigos para uma discussão mais detalhada:
 - [Diretrizes de ToolsVersion](../msbuild/msbuild-toolset-toolsversion.md)
 - [Diretrizes de direcionamento de estrutura](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Referência de migração e atualização de projeto do Visual Studio 2019](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019&preserve-view=true)
 - [Ciclo de vida do produto Visual Studio e manutenção](/visualstudio/releases/2019/servicing/)
@@ -156,7 +156,7 @@ Se você não vir um projeto ou tipo de arquivo listado aqui que deveria ser, co
 | Silverlight | Projetos do Silverlight não são compatíveis no Visual Studio 2019. Para manter os aplicativos do Silverlight, continue a usar o Visual Studio 2015. |
 | SQL – Redgate | O SQL Change Automation Core (anteriormente chamado ReadyRoll Core), o SQL Prompt Core e o SQL Search do Redgate não são mais fornecidos no Instalador do Visual Studio.<br/><br/>Você pode continuar usando o Visual Studio 2017 para essas funcionalidades. No Visual Studio 2019, você pode fazer a atualização para os produtos pagos SQL Change Automation e SQL Prompt pagos que estão disponíveis no SQL Toolbelt do Redgate.|
 | SQL Server Reporting Services e SQL Server Analysis Services (SSRS, SSDT, SSAS, MSAS) | O suporte para esses tipos de projeto é fornecido por meio de duas extensões na Galeria do Visual Studio: [Projetos de Modelagem do Microsoft Analysis Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) e [Projetos do Microsoft Reporting Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). Suporte do SSDT também está incluso com a carga de trabalho de Processamento e Armazenamento de Dados no Visual Studio 2019. Para saber mais, confira a página [Baixar e instalar o SQL Server Data Tools (SSDT) para Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt). |
-| SQL Server Integration Services (SSIS) | O suporte ao Visual Studio 2019 está disponível. Para saber mais, confira a página [Baixar e instalar o SQL Server Data Tools (SSDT) para Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt), o blog da equipe [SQL Server Integration Services (SSIS)](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS) e a página [Projetos do SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects&ssr=false#overview) no Marketplace. |
+| O SQL Server Integration Services (SSIS) | O suporte ao Visual Studio 2019 está disponível. Para saber mais, confira a página [Baixar e instalar o SQL Server Data Tools (SSDT) para Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt), o blog da equipe [SQL Server Integration Services (SSIS)](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS) e a página [Projetos do SQL Server Integration Services](https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects&ssr=false#overview) no Marketplace. |
 | Extensão da Janela de Teste | No Visual Studio 2019, algumas APIs de janela de teste que foram marcadas como públicas anteriormente, mas nunca foram documentadas oficialmente, foram removidas. As APIs amplamente visíveis foram marcadas como preteridas no Visual Studio 2017 para fornecer um aviso antecipado aos mantenedores de extensão. Para o nosso conhecimento, poucas extensões haviam criado uma dependência dessas APIs. Para obter mais informações e atualizações, veja a [lista completa de APIs relacionadas a teste preteridas](https://github.com/Microsoft/vstest/issues/1830). Se isso afetar o seu cenário, informe-nos na [comunidade de desenvolvedores](https://aka.ms/feedback/suggest?space=8). |
 | Visual C++ | Você pode usar o Visual Studio 2019 para trabalhar em projetos criados em versões anteriores do Visual Studio no Visual Studio 2010. Quando você abre o projeto pela primeira vez, tem a opção de atualizar para o compilador e o conjunto de ferramentas mais recentes, ou continuar usando os originais. Se você optar por continuar usando os originais, o Visual Studio 2019 não modificará o arquivo de projeto e usará o conjunto de ferramentas da instalação anterior do Visual Studio para compilar o projeto. Manter as opções originais significa que você ainda pode abrir o projeto na versão original do Visual Studio, se for necessário. Para obter mais informações, consulte [Usar a multiplataforma nativa no Visual Studio para compilar projetos antigos](/cpp/porting/use-native-multi-targeting). |
 | Extensibilidade/VSIX do Visual Studio | Os projetos com o MinimumVersion 14.0 ou inferior serão atualizados para declarar a MinimumVersion 15.0, que impede que o projeto seja aberto em versões anteriores do Visual Studio. Para permitir que um projeto seja aberto em versões anteriores, defina MinimumVersion como `$(VisualStudioVersion)`. Consulte também [Como migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
@@ -198,7 +198,7 @@ Consulte os seguintes artigos para uma discussão mais detalhada:
 - [Diretrizes de ToolsVersion](../msbuild/msbuild-toolset-toolsversion.md)
 - [Diretrizes de direcionamento de estrutura](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Referência de atualização e de migração de projeto para o Visual Studio 2017](?view=vs-2017&preserve-view=true)
 - [Ciclo de vida do produto Visual Studio e manutenção](/visualstudio/releases/2019/servicing/)

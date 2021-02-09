@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c4311f38-979e-4324-b524-9e8c1cbdc41a
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ed964c618b59bf02086329715c5b0540039eb16a
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: f2d0e165171cb3619d3690e129e18f778504969e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796752"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901400"
 ---
 # <a name="createitem-task"></a>Tarefa CreateItem
 
@@ -53,7 +53,7 @@ Popula as coleções de itens com os itens de entrada. Isso permite que os itens
 
  O exemplo de código a seguir cria um novo item denominado `MySourceItemsWithMetadata` da coleção de itens `MySourceItems`. A tarefa `CreateItem` popula a nova coleção de itens com os itens no item `MySourceItems`. Em seguida, ela adiciona uma entrada de metadados adicionais chamada `MyMetadata` com um valor de `Hello` para cada item na nova coleção.
 
- Depois que a tarefa for executada, a coleção de itens `MySourceItemsWithMetadata` conterá os itens *file1.resx* e *file2.resx* , ambos com entradas de metadados para `MyMetadata`. A coleta do item `MySourceItems` permanece inalterada.
+ Depois que a tarefa for executada, a coleção de itens `MySourceItemsWithMetadata` conterá os itens *file1.resx* e *file2.resx*, ambos com entradas de metadados para `MyMetadata`. A coleta do item `MySourceItems` permanece inalterada.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -82,7 +82,7 @@ Popula as coleções de itens com os itens de entrada. Isso permite que os itens
 |---------------------|--------------|
 |`MySourceItemsWithMetadata`|*file1. resx* ( `MyMetadata="Hello"` )<br /><br /> *arquivo2. resx* ( `MyMetadata="Hello"` )|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)
