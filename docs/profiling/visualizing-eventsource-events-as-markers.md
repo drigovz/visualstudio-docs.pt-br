@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f8fadf9ef97717983c96226d81d43efada65e89
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 8c919c72cbf06faccf5bb39b0753533f2b2a441f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723134"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890520"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualizar eventos EventSource como marcadores
 A Visualização Simultânea pode exibir eventos do EventSource como marcadores e você pode controlar como os marcadores são exibidos. Para exibir os marcadores do EventSource, registre o GUID do provedor ETW usando a caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). A Visualização Simultânea tem convenções padrão para representar eventos do EventSource como [Marcadores de Sinalizador](../profiling/flag-markers.md), [Marcadores de Período](../profiling/span-markers.md) e [Marcadores de Mensagem](../profiling/message-markers.md). Você pode personalizar como os eventos EventSource são exibidos, adicionando campos personalizados aos eventos. Para obter mais informações sobre marcadores, consulte [Marcadores da Visualização Simultânea](../profiling/concurrency-visualizer-markers.md). Para obter mais informações sobre eventos do EventSource, consulte <xref:System.Diagnostics.Tracing>.
@@ -38,7 +38,7 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
 |win:LogAlways|Normal|
 |win:Critical|Crítico|
 |win:Error|Crítico|
-|win:Warning|Alto|
+|win:Warning|Alta|
 |win:Informational|Normal|
 |win:Verbose|Baixo|
 |Maior que win:verbose|Baixo|
@@ -73,8 +73,8 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
 |------------------------|---------------------------------------|
 |0|Normal|
 |1|Crítico|
-|2|Alto|
-|3|Alto|
+|2|Alta|
+|3|Alta|
 |4|Normal|
 |5|Baixo|
 |Todos os outros valores|Baixo|

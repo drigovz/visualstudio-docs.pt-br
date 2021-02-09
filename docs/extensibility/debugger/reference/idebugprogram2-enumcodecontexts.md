@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 478e06a2-07bb-4841-8887-deab0f42ebd0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c22a5ce398e76ee97b2f0448900fd4e38f996615
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2971eba711682781f509757c3986bb76f2e37703
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723042"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891027"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
 Recupera uma lista de contextos de código para uma determinada posição em um arquivo de origem.
@@ -28,14 +28,14 @@ Recupera uma lista de contextos de código para uma determinada posição em um 
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT EnumCodeContexts( 
+HRESULT EnumCodeContexts( 
    IDebugDocumentPosition2*  pDocPos,
    IEnumDebugCodeContexts2** ppEnum
 );
 ```
 
 ```csharp
-int EnumCodeContexts( 
+int EnumCodeContexts( 
    IDebugDocumentPosition2     pDocPos,
    out IEnumDebugCodeContexts2 ppEnum
 );
@@ -47,7 +47,7 @@ no Um objeto [IDebugDocumentPosition2](../../../extensibility/debugger/reference
 
 `ppEnum` fora Retorna um objeto [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) que contém uma lista de contextos de código.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

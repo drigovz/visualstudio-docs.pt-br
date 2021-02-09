@@ -6,17 +6,17 @@ ms.date: 06/05/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a913fa6abdcf59a64d8514f17656b8f8531d476d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0283cb4332e9137550b74a85c38d7963f3c77a70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315259"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890468"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Trabalhar com Python no Visual Studio no Windows
 
@@ -56,18 +56,18 @@ A janela **Ambientes do Python** do Visual Studio (mostrada abaixo em uma exibi�
 
 Use o comando **Abrir janela interativa** para executar o Python de maneira interativa no contexto do Visual Studio. Use o comando **Abrir no PowerShell** para abrir uma janela Comando separada na pasta do ambiente selecionado. Nessa janela Comando, você pode executar qualquer script de Python.
 
-Para obter mais informações:
+Para mais informações:
 
 - [Gerenciar ambientes do Python](managing-python-environments-in-visual-studio.md)
 - [Referência aos ambientes do Python](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Edição avançada, IntelliSense e compreensão do código
 
-O Visual Studio oferece um editor de Python de primeira classe, incluindo coloração de sintaxe, preenchimento automático em todo o código e em todas as bibliotecas, formatação de código, ajuda de assinatura, refatoração, dicas de tipo e linting. O Visual Studio também fornece recursos exclusivos como modo de exibição de classe, **ir para definição**, **Localizar todas as referências**e trechos de código. A integração direta com a [janela interativa](#interactive-window) ajuda você a desenvolver rapidamente o código Python que já está salvo em um arquivo.
+O Visual Studio oferece um editor de Python de primeira classe, incluindo coloração de sintaxe, preenchimento automático em todo o código e em todas as bibliotecas, formatação de código, ajuda de assinatura, refatoração, dicas de tipo e linting. O Visual Studio também fornece recursos exclusivos como modo de exibição de classe, **ir para definição**, **Localizar todas as referências** e trechos de código. A integração direta com a [janela interativa](#interactive-window) ajuda você a desenvolver rapidamente o código Python que já está salvo em um arquivo.
 
 ![Preenchimento de código para código Python no Visual Studio](media/code-editing-completions-simple.png)
 
-Para obter mais informações:
+Para mais informações:
 
 - Docs: [Editar o código Python](editing-python-code-in-visual-studio.md)
 - Docs: [Formatar o código](formatting-python-code.md)
@@ -85,7 +85,7 @@ O Visual Studio também fornece uma forte integração entre o editor de código
 
 O Visual Studio também é compatível com IPython/Jupyter no REPL, incluindo gráficos embutidos, .NET e WPF (Windows Presentation Foundation).
 
-Para obter mais informações:
+Para mais informações:
 
 - [Janela interativa](python-interactive-repl-in-visual-studio.md)
 - [IPython no Visual Studio](interactive-repl-ipython.md)
@@ -105,7 +105,7 @@ Modelos de projeto e de item automatizam o processo de configuração de diferen
 
 [![Modelos de projeto e item do Python no Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
-Para obter mais informações:
+Para mais informações:
 
 - Docs: [Gerenciar projetos Python](managing-python-projects-in-visual-studio.md)
 - Documentos: [referência de modelos de item](python-item-templates.md)
@@ -124,7 +124,7 @@ Um dos pontos fortes do Visual Studio é seu depurador avançado. Para Python es
 No Visual Studio 2019, é possível executar e depurar código sem a necessidade de um arquivo de projeto do Visual Studio. Consulte [início rápido: Abra e execute o código Python em uma pasta](quickstart-05-python-visual-studio-open-folder.md) para obter um exemplo.
 ::: moniker-end
 
-Para obter mais informações:
+Para mais informações:
 
 - Docs: [Depurar o Python](debugging-python-in-visual-studio.md)
 - Docs: [Depuração de modo misto Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
@@ -137,18 +137,18 @@ A criação de perfil explora como o tempo está sendo gasto no aplicativo. O Vi
 
 [![Resultados do criador de perfil do Visual Studio para um projeto Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
-Para obter mais informações:
+Para mais informações:
 
 - Docs: [Ferramentas de criação de perfil do Python](profiling-python-code-in-visual-studio.md)
 - Docs de recursos gerais do Visual Studio: [Tour do recurso de criação de perfil](../profiling/profiling-feature-tour.md). (Nem todos os recursos de criação de perfil do Visual Studio estão disponíveis para Python).
 
 ## <a name="unit-testing-tools"></a>Ferramentas de teste de unidade
 
-Descubra, execute e gerencie testes no Visual Studio **Test Explorer**e depure facilmente os testes de unidade.
+Descubra, execute e gerencie testes no Visual Studio **Test Explorer** e depure facilmente os testes de unidade.
 
 ![Depurando um teste de unidade do Python no Visual Studio](media/unit-test-debugging.png)
 
-Para obter mais informações:
+Para mais informações:
 
 - Docs: [Ferramentas de teste de unidade do Python](unit-testing-python-in-visual-studio.md)
 - Docs de recursos gerais do Visual Studio: [Execute teste de unidade no código](../test/unit-test-your-code.md).

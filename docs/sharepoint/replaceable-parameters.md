@@ -14,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, replaceable parameters
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload: office
-ms.openlocfilehash: 1cd44b3edfaeae376e5a4a9698d138bd75c03bf8
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 3eb6e737a1f939e05e6a6be7f2c9ba950fc411d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970259"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889493"
 ---
 # <a name="replaceable-parameters"></a>Parâmetros substituíveis
   Parâmetros substituíveis, ou *tokens*, podem ser usados dentro de arquivos de projeto para fornecer valores para itens de solução do SharePoint cujos valores reais não são conhecidos em tempo de design. Eles são semelhantes em função aos [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokens de modelo padrão. Para obter mais informações, consulte [parâmetros de modelo](../ide/template-parameters.md).
@@ -50,7 +50,7 @@ ms.locfileid: "95970259"
 ## <a name="tokens-list"></a>Lista de tokens
  A tabela a seguir lista os tokens disponíveis.
 
-|Name|Descrição|
+|Nome|Descrição|
 |----------|-----------------|
 |$SharePoint. Project. FileName $|O nome do arquivo de projeto que o contém, como, *NewProj. csproj*.|
 |$SharePoint. Project. FileNameWithoutExtension $|O nome do arquivo de projeto que o contém sem a extensão de nome de arquivo. Por exemplo, "NewProj".|
@@ -107,5 +107,5 @@ ms.locfileid: "95970259"
 
  Você pode adicionar a extensão diretamente ao arquivo de destinos (*. targets*). No entanto, adicionar a extensão altera a lista de extensões para todos os projetos do SharePoint empacotados no sistema local, não apenas os seus próprios. Essa extensão pode ser conveniente quando você é o único desenvolvedor no sistema ou se a maioria de seus projetos exigir. No entanto, como ele é específico do sistema, essa abordagem não é portátil e, portanto, é recomendável que você adicione todas as extensões ao arquivo de projeto em vez disso.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c6c48dbad986d8bc4be58f1ebd9c5bd1fffbd57
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 6e018631e24cf7e678072b6b54183fd3c619dc4a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974595"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890325"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Bitflags usado por comandos específicos
 O comportamento de várias funções na API de plug-in de controle do código-fonte pode ser modificado pela definição de um ou mais bits em um único valor. Esses valores são conhecidos como bitflags. Os vários bitflags usados pela API de plug-in de controle do código-fonte são detalhados aqui, agrupados pela função que os utiliza.
@@ -107,5 +107,5 @@ O comportamento de várias funções na API de plug-in de controle do código-fo
 |`SCC_OPT_SCO_NO`|0L|Os OK para fazer check-out da interface do usuário de plug-in; o diretório de trabalho está definido.|`SCC_OPT_SCCCHECKOUTONLY`|
 |`SCC_OPT_SCO_YES`|1L|Nenhum check-in da interface do usuário de plug-in, nenhum diretório de trabalho.|`SCC_OPT_SCCCHECKOUTONLY`|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md)

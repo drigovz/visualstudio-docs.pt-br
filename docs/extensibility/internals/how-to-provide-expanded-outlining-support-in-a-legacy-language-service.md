@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: df759e89-8193-418c-8038-6626304d387b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9397ff17ba80368a86ba03260b3c5af3759bfe8d
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: 3db7c4f886a071b4b759072a1b141690f4e4b097
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761355"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890715"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Como fornecer suporte expandido para estrutura de tópicos em um serviço de linguagem herdado
 Há duas opções para estender o suporte à estrutura de tópicos para sua linguagem além de dar suporte ao comando **recolher para definições** . Você pode adicionar regiões de estrutura de tópicos controladas por editor e adicionar regiões de estrutura de tópicos controladas pelo cliente.

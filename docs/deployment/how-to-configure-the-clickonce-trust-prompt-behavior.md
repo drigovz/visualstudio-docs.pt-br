@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 68d39bed64ff1392c83d6fc2be0de936ac1b00d2
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 8cb23eeee53990113d779e241adb8dcf1ab0cf16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350056"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890299"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Como configurar o comportamento do prompt confiável do ClickOnce
 Você pode configurar o prompt de confiança do ClickOnce para controlar se os usuários finais recebem a opção de instalar aplicativos ClickOnce, como Windows Forms aplicativos, Windows Presentation Foundation aplicativos, aplicativos de console, aplicativos de navegador WPF e soluções do Office. Configure o prompt de confiança definindo chaves do registro no computador de cada usuário final.
@@ -67,7 +67,7 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
 
      Se a chave não existir, crie-a.
 
-3. Adicione as seguintes subchaves como **valor de cadeia de caracteres** , se elas ainda não existirem, com os valores associados mostrados na tabela a seguir.
+3. Adicione as seguintes subchaves como **valor de cadeia de caracteres**, se elas ainda não existirem, com os valores associados mostrados na tabela a seguir.
 
     |Subchave de valor da cadeia de caracteres|Valor|
     |-------------------------|-----------|
@@ -126,7 +126,7 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
 
      Se a chave não existir, crie-a.
 
-3. Adicione as seguintes subchaves como **valor de cadeia de caracteres** , se elas ainda não existirem, com os valores associados mostrados na tabela a seguir.
+3. Adicione as seguintes subchaves como **valor de cadeia de caracteres**, se elas ainda não existirem, com os valores associados mostrados na tabela a seguir.
 
     |Subchave de valor da cadeia de caracteres|Valor|
     |-------------------------|-----------|
@@ -183,7 +183,7 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
 
      Se a chave não existir, crie-a.
 
-3. Adicione as seguintes subchaves como **valor de cadeia de caracteres** , se elas ainda não existirem, com os valores associados mostrados na tabela a seguir.
+3. Adicione as seguintes subchaves como **valor de cadeia de caracteres**, se elas ainda não existirem, com os valores associados mostrados na tabela a seguir.
 
     |Subchave de valor da cadeia de caracteres|Valor|
     |-------------------------|-----------|

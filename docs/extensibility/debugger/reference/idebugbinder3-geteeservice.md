@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: eb07aa40-8cd9-4a52-a4c7-4affd2307a01
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7c08d7df4a6b05be489f6b9ab06569c085f3b1f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5156f905eb5891be64d0718e8aeff4c3c404663b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735831"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891248"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 Esse método retorna um serviço solicitado.
@@ -28,20 +28,20 @@ Esse método retorna um serviço solicitado.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetEEService(
-   [in] GUID        vendor,
-   [in] GUID        language,
-   [in] GUID        iid,
-   [out] IUnknown** ppService
+HRESULT GetEEService(
+   [in] GUID        vendor,
+   [in] GUID        language,
+   [in] GUID        iid,
+   [out] IUnknown** ppService
 );
 ```
 
 ```csharp
-Int GetEEService(
-   Guid       vendor,
-   Guid       language,
-   Guid       iid,
-   out object ppService
+Int GetEEService(
+   Guid       vendor,
+   Guid       language,
+   Guid       iid,
+   out object ppService
 );
 ```
 
@@ -58,7 +58,7 @@ Int GetEEService(
 `ppService`\
 fora Uma interface para o serviço solicitado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
@@ -68,4 +68,4 @@ fora Uma interface para o serviço solicitado.
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)
-- [Visualizar e exibir dados](../../../extensibility/debugger/visualizing-and-viewing-data.md)
+- [Visualizando e exibindo dados](../../../extensibility/debugger/visualizing-and-viewing-data.md)

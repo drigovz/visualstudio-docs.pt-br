@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 529fa251-b7b3-49cf-863c-10e0b82ac7cc
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7241a574dc8ac8531c2eb4d88eddb1cf047a80d6
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: fa2cc2555f87d1781712e60463401a38f843635e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304205"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889922"
 ---
 # <a name="go-to-line-dialog-box"></a>Caixa de diálogo Ir para Linha
 
-A caixa de diálogo **Ir Para Linha** permite que você vá para uma linha específica no documento ativo. Para acessar essa caixa de diálogo, abra um documento para edição e, em seguida, selecione **Editar**  >  **ir para**  >  **ir para linha** ou pressione **Ctrl +** + **G**.
+A caixa de diálogo **Ir Para Linha** permite que você vá para uma linha específica no documento ativo. Para acessar essa caixa de diálogo, abra um documento para edição e, em seguida, selecione **Editar**  >  **ir para**  >  **ir para linha** ou pressione **Ctrl +** + .
 
 ![Caixa de diálogo Ir Para Linha no Visual Studio](media/go-to-line-dialog-box.png)
 

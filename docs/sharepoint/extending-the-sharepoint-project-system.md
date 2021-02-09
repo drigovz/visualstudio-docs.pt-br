@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c017217f66e38eed6248b90efaeabce0efaa9c70
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 5a81fef67cc6816f16a074494005a61d647abeab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672542"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889675"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>Estender o sistema de projeto do SharePoint
   Você pode criar soluções do SharePoint usando um conjunto de modelos de projeto e modelos de item no Visual Studio. Esses modelos atendem aos requisitos de vários cenários de desenvolvimento, mas você pode descobrir alguns casos em que eles não fornecem funcionalidade necessária. Nesses casos, você pode estender o sistema de projeto do SharePoint.
@@ -50,7 +50,7 @@ ms.locfileid: "94672542"
 
 - Converter um objeto no sistema de projeto do SharePoint em um objeto correspondente no modelo de objeto de automação do Visual Studio ou no modelo de objeto de integração ou vice-versa. Para obter mais informações, consulte [conver entre tipos de sistema de projeto do SharePoint e outros tipos de projeto do Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Definir tipos de item de projeto personalizados do SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Estender itens de projeto do SharePoint](../sharepoint/extending-sharepoint-project-items.md)
 - [Estender projetos do SharePoint](../sharepoint/extending-sharepoint-projects.md)

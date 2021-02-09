@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 70fd3c6f-2f82-43a3-993b-c1dc8aa080bf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c4d3c190195360d37c15be12cef2790610928a95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b6f3b3ebf41ebd3fd4c04b0cb7451f57a41fa73
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718136"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890988"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
 Esse método determina se o Visualizador pode ter o objeto de dados que ele representa atualizado.
@@ -28,14 +28,14 @@ Esse método determina se o Visualizador pode ter o objeto de dados que ele repr
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT CanSetObjectForVisualizer(
-   BOOL* b
+HRESULT CanSetObjectForVisualizer(
+   BOOL* b
 );
 ```
 
 ```csharp
-int CanSetObjectForVisualizer(
-   out int b
+int CanSetObjectForVisualizer(
+   out int b
 );
 ```
 
@@ -43,7 +43,7 @@ int CanSetObjectForVisualizer(
 `b`\
 fora Diferente de zero ( `TRUE` ) se o objeto no visualizador puder ser atualizado, zero ( `FALSE` ) se não puder.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
