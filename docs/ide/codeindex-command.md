@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ece3916f0af442b67bb5cdd0999ad37159e53448
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 47875bcece910433a1d20ad66867acd7fdbee8d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901174"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841913"
 ---
 # <a name="codeindex-command"></a>Comando CodeIndex
 
@@ -124,7 +124,7 @@ Para excluir o índice de código com confirmação:
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Localizar alterações de código e outro histórico com o CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
 - [Gerenciando a configuração do servidor com TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd)

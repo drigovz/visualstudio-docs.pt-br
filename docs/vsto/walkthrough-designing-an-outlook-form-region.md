@@ -11,15 +11,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e306814512c6cab2d331a26128f22bb94d7dbbf4
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9eaa78a04c7dfda42a82a5d5a9ff3b407e6502d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524199"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841992"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Walkthrough: criar uma região de formulário do Outlook
   As regiões de formulário personalizadas estendem formulários do Outlook Microsoft Office padrão ou personalizados. Neste tutorial, você criará uma região de formulário personalizada que aparece como uma nova página na janela Inspetor de um item de contato. Essa região de formulário exibe um mapa de cada endereço listado para o contato, enviando as informações de endereço para o site de pesquisa local do Windows Live. Para obter informações sobre regiões de formulário, consulte [criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md).
@@ -157,7 +157,7 @@ ms.locfileid: "97524199"
     |------------------|-------------|
     |**Negócios**|**4567 principal St. Buffalo, NY**|
     |**Início**|**1234 norte St. Buffalo, NY**|
-    |**Outras**|**3456 principal St. Seattle, WA**|
+    |**Outros**|**3456 principal St. Seattle, WA**|
 
 4. Salve e feche o item de contato.
 
@@ -174,7 +174,7 @@ ms.locfileid: "97524199"
 
 - Para saber mais sobre como personalizar a faixa de visualização de um item do Outlook, confira [personalizar uma faixa de visualização para o Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Acessar uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md)
 - [Criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)
 - [Diretrizes para criar regiões de formulário do Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)

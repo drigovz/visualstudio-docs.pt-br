@@ -11,15 +11,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b655a7bb6ab4b9ab971c0edd775aa8f29150dead
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b22870cdb038adee84adc0fd7a56c269cb048626
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525093"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841907"
 ---
 # <a name="invalid-properties-in-the-ofs-file-for-the-message-class"></a>Propriedades inválidas no arquivo. OFS para a classe de mensagem
 
@@ -35,5 +35,5 @@ Por exemplo, você pode selecionar **tarefa (IPM. Tarefa)** na página final do 
 
 - No designer de formulários no Outlook, remova os campos que não são compatíveis com as classes de mensagem. Remova os campos que você planeja selecionar na página final do assistente de **nova região de formulário** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Walkthrough: importar uma região de formulário projetada no Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - custom controls [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 905288d4a580f5633196273666fbea3954d1767c
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 52b7eeefd157e99fc5214f29c220d94fd6e19772
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560272"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841882"
 ---
 # <a name="toolbox"></a>Caixa de Ferramentas
 
@@ -48,7 +48,7 @@ A versão do .NET direcionada pelo projeto também afeta o conjunto de controles
 Por padrão, a **caixa de ferramentas** é recolhida ao longo do lado esquerdo do IDE do Visual Studio e aparece quando o cursor é movido sobre ele. É possível fixar a **Caixa de Ferramentas** (clicando no ícone **Fixar** da barra de ferramentas) para que ela permaneça aberta enquanto você move o cursor. Você também pode desencaixar a janela **Caixa de Ferramentas** e arrastá-la para qualquer lugar na tela. Você pode encaixar, desencaixar e ocultar a **Caixa de Ferramentas**, clicando com o botão direito do mouse na barra de ferramentas e selecionando uma das opções.
 
 > [!TIP]
-> Se a caixa de ferramentas não aparecer mais como recolhida ao longo do lado esquerdo do IDE do Visual Studio, você poderá adicioná- **Window** la de volta escolhendo  >  **layout da janela de redefinição** de janela na barra de menus.
+> Se a caixa de ferramentas não aparecer mais como recolhida ao longo do lado esquerdo do IDE do Visual Studio, você poderá adicioná- la de volta escolhendo  >  **layout da janela de redefinição** de janela na barra de menus.
 
 Você pode reorganizar os itens em uma guia da **caixa de ferramentas** ou adicionar guias e itens personalizados usando os seguintes comandos no menu de contexto do clique com o botão direito do mouse:
 
@@ -82,6 +82,6 @@ Veja os links a seguir para saber mais sobre algumas das guias da **caixa de fer
 - [Caixa de Ferramentas, Guia Componentes](../../ide/reference/toolbox-components-tab.md)
 - [Caixa de Ferramentas, Guia HTML](../../ide/reference/toolbox-html-tab.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Escolher itens da Caixa de Ferramentas, Componentes do WPF](choose-toolbox-items-wpf-components.md)
