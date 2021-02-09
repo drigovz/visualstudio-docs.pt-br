@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 63a28f23-0ca0-44a7-b11b-ca0206d642a0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f66d2ca43cba50d40bc7c8fc09b85bf252d352f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c753811378ee81deb5d0deacb8035c1768e80c50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468144"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856470"
 ---
 # <a name="idiaenumsectioncontribsitem"></a>IDiaEnumSectionContribs::Item
 Recupera contribuições de seção por meio de um índice.
@@ -25,7 +25,7 @@ Recupera contribuições de seção por meio de um índice.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT Item ( 
+HRESULT Item ( 
    DWORD                index,
    IDiaSectionContrib** section
 );
@@ -40,9 +40,9 @@ no Índice do objeto [IDiaSectionContrib](../../debugger/debug-interface-access/
 
 fora Retorna um objeto [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) que representa a contribuição da seção desejada.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

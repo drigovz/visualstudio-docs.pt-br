@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 09378a21-d5e3-4213-b7e2-10f04d85295f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 77d50a6c59ea376950d8cd4653f29ba7d04f36ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e96190e76d13f6934333b4d743a1d7d2e5ee2e80
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467837"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856183"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
 Recupera um número especificado de elementos de quadro de pilha da sequência de enumeração.
@@ -25,7 +25,7 @@ Recupera um número especificado de elementos de quadro de pilha da sequência d
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT Next( 
+HRESULT Next( 
    ULONG             celt,
    IDiaStackFrame**  rgelt,
    ULONG*            pceltFetched
@@ -45,9 +45,9 @@ fora Uma matriz que deve ser preenchida com os objetos [IDiaStackFrame](../../de
 
 fora Retorna o número de elementos de quadro de pilha no enumerador obtido.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver mais quadros de pilha. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

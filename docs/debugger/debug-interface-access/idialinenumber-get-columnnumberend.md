@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 02fa56c1-87b6-405a-adee-3bb6bc62de2d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 26645878ffca7c8c6ea0c51e02aa24668764a757
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f2ea924ffd92b6e099302c1bb8e2857dab47479
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466920"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855756"
 ---
 # <a name="idialinenumberget_columnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
 Recupera o número da coluna de origem baseada em um onde a expressão ou instrução termina.
@@ -25,7 +25,7 @@ Recupera o número da coluna de origem baseada em um onde a expressão ou instru
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_columnNumberEnd ( 
+HRESULT get_columnNumberEnd ( 
    DWORD* pRetVal
 );
 ```
@@ -35,11 +35,11 @@ HRESULT get_columnNumberEnd ( 
 
 fora Retorna o número da coluna onde a expressão ou instrução termina. Se o valor for zero, as informações de término da coluna não estão presentes.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários
  O valor da coluna retornado por esse método é um deslocamento de byte na linha até a posição após o último caractere da instrução na linha.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

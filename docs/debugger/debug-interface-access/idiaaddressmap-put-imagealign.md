@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f9ce875d-c263-43e5-a534-f34c37f9866f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ad9a97dd2e50b5bc131975321306bf8d9d52501e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c55eb3932ee1b529b3ce1b20f4ce1e9831b9cade
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468563"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857177"
 ---
 # <a name="idiaaddressmapput_imagealign"></a>IDiaAddressMap::put_imageAlign
 Define o alinhamento da imagem.
@@ -25,7 +25,7 @@ Define o alinhamento da imagem.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT put_imageAlign ( 
+HRESULT put_imageAlign ( 
    DWORD NewVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT put_imageAlign ( 
 
 no O novo valor de alinhamento da imagem para o executável.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
@@ -46,6 +46,6 @@ no O novo valor de alinhamento da imagem para o executável.
 > [!NOTE]
 > A imagem já está carregada no momento em que esse método pode ser chamado. O `put_imageAlign` método normalmente é usado quando a imagem é movida ou alterada e um novo alinhamento é necessário.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
 - [IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)

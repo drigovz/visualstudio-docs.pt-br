@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b8dec05-e76c-4cc4-9644-2369d583849f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cb00e661fc3976201abb4ab7304422195fda272
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5aa30598dcae08842c935d0d404cbb8b3303aefe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468353"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856876"
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
 Retorna um quadro pelo endereço virtual relativo (RVA).
@@ -25,7 +25,7 @@ Retorna um quadro pelo endereço virtual relativo (RVA).
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT frameByRVA( 
+HRESULT frameByRVA( 
    DWORD           relativeVirtualAddress,
    IDiaFrameData** frame
 );
@@ -40,9 +40,9 @@ no RVA do quadro de interesse.
 
 fora Retorna um objeto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) que representa o quadro que contém o endereço fornecido.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se nenhum dado de quadro corresponder ao endereço especificado. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

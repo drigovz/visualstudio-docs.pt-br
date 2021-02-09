@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ee44dd55-39a0-4b7b-97ff-2e1226eeb2bd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e03c01efb9f2dca13009a7dc7eeb8282b5c9082c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bcccb480ec8e84200f149d06a6e3b581c43f50fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468040"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856344"
 ---
 # <a name="idiaenumsegmentsitem"></a>IDiaEnumSegments::Item
 Recupera um segmento por meio de um índice.
@@ -25,7 +25,7 @@ Recupera um segmento por meio de um índice.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT Item ( 
+HRESULT Item ( 
    DWORD         index,
    IDiaSegment** segment
 );
@@ -40,9 +40,9 @@ no Índice do objeto [IDiaSegment](../../debugger/debug-interface-access/idiaseg
 
 fora Retorna um objeto [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) que representa o segmento desejado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

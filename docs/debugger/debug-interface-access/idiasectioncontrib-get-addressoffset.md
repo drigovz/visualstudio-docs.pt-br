@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4d569323-0e11-456d-9f92-a218bf292ecf
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 661c24a3d9fffc35e5fc581b1fc8a4f96452ef1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41be98ab0c44cfb41b7ee9c5f55e99b0fae17ae7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466444"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855490"
 ---
 # <a name="idiasectioncontribget_addressoffset"></a>IDiaSectionContrib::get_addressOffset
 Recupera a parte offset do endereço da contribuição.
@@ -25,7 +25,7 @@ Recupera a parte offset do endereço da contribuição.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_addressOffset ( 
+HRESULT get_addressOffset ( 
    DWORD* pRetVal
 );
 ```
@@ -35,8 +35,8 @@ HRESULT get_addressOffset ( 
 
 fora Retorna a parte de deslocamento do endereço da contribuição.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

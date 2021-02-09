@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8fe33eea-1457-4b8c-ae19-f1ede5578483
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6a19d926ead4c2c38ff69544311caa1f726b3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: adf9d25f2ba6afac0510c95790dc8608b22243c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857135"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 Prepara os dados de depuração armazenados em um arquivo de banco de dados do programa (. pdb) acessado por meio de um fluxo de dados na memória.
@@ -25,7 +25,7 @@ Prepara os dados de depuração armazenados em um arquivo de banco de dados do p
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT loadDataFromIStream ( 
+HRESULT loadDataFromIStream ( 
    IStream* pIStream
 );
 ```
@@ -35,7 +35,7 @@ HRESULT loadDataFromIStream ( 
 
 no Um <xref:IStream> objeto que representa o fluxo de dados a ser usado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. A tabela a seguir mostra os possíveis valores de retorno para esse método.
 
 |Valor|Descrição|
@@ -53,7 +53,7 @@ no Um <xref:IStream> objeto que representa o fluxo de dados a ser usado.
 
  Para obter acesso ao processo de carregamento de dados (por meio de um mecanismo de retorno de chamada), use o método [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)

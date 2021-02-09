@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7a6c7d03-1ff1-4059-bd54-5f407eeebc26
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2587d10b613200b1bf850636f613abbb497e04de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00cc4ba3f7ba3f54df4dd8687996fa72d27e91fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467445"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855994"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 Executa o desenrolamento de pilha e retorna os resultados em uma interface de quadro de movimentação de pilha.
@@ -25,7 +25,7 @@ Executa o desenrolamento de pilha e retorna os resultados em uma interface de qu
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT execute ( 
+HRESULT execute ( 
    IDiaStackWalkFrame* frame
 );
 ```
@@ -35,7 +35,7 @@ HRESULT execute ( 
 
 no Um objeto [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) que contém o estado dos registros de quadro.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. A tabela a seguir mostra os possíveis valores de retorno para esse método.
 
 |Valor|Descrição|
@@ -48,6 +48,6 @@ no Um objeto [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastac
 ## <a name="remarks"></a>Comentários
  Esse método é chamado durante a depuração para desenrolar a pilha. O objeto [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) é implementado pelo aplicativo cliente para receber atualizações para os registros e para fornecer métodos usados pelo `execute` método.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ac84339f-70c6-48ed-85d0-6d7d1b5194e8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f74f28dfd9b2a5ffdff4d6b5021dfbe4c7576bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3e4d5e4fcaad973ef21263e4eb3e5af6b42265e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467585"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856050"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyva"></a>IDiaEnumSymbolsByAddr::symbolByVA
 Posiciona o enumerador executando uma pesquisa por endereço virtual (VA).
@@ -25,7 +25,7 @@ Posiciona o enumerador executando uma pesquisa por endereço virtual (VA).
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT symbolByVA ( 
+HRESULT symbolByVA ( 
    DWORD**      virtualAddress,
    IDiaSymbol** ppsymbol
 );
@@ -40,9 +40,9 @@ no Endereço virtual.
 
 fora Retorna um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa o símbolo encontrado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se o símbolo não foi encontrado. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

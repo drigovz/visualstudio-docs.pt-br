@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 363d5b40-1316-4ab8-836f-63637f619e0a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1546c0bc7b8682b918d583769a9f580323c9dda4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d65791fddfd09aa90a65320b4663b17ea4e8260f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856589"
 ---
 # <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
 Recupera um número especificado de números de linha na sequência de enumeração.
@@ -25,7 +25,7 @@ Recupera um número especificado de números de linha na sequência de enumeraç
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT Next ( 
+HRESULT Next ( 
    ULONG            celt,
    IDiaLineNumber** rgelt,
    ULONG*           pceltFetched
@@ -45,10 +45,10 @@ fora Retorna uma matriz de objetos [IDiaLineNumber](../../debugger/debug-interfa
 
 fora Retorna o número de números de linha no enumerador obtido.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver mais números de linha. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7c42847a-f0df-443a-a9fe-c495c1271ea8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f223acd5d6f62417b8a47889aa4e9e4a116335c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a539d0fe6f99650254a53db9b8dd38c98fecae9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467053"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855784"
 ---
 # <a name="idiainjectedsourceget_objectfilename"></a>IDiaInjectedSource::get_objectFilename
 Recupera o nome do arquivo de objeto para o qual a origem foi compilada.
@@ -25,7 +25,7 @@ Recupera o nome do arquivo de objeto para o qual a origem foi compilada.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_objectFilename ( 
+HRESULT get_objectFilename ( 
    BSTR* pRetVal
 );
 ```
@@ -35,8 +35,8 @@ HRESULT get_objectFilename ( 
 
 fora Retorna o nome do arquivo de objeto para o qual a origem foi compilada.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

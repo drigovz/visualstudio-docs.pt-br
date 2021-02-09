@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2761a72d-1868-4f5b-a32e-c2a1d9358c91
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de3a87d62195ae28e83efefa641dde5667f0a6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8d2335cf84ece792b710725156d2f74e3f33770
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468325"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856813"
 ---
 # <a name="idiaenumframedataitem"></a>IDiaEnumFrameData::Item
 Recupera um elemento de dados de quadro por meio de um índice.
@@ -25,7 +25,7 @@ Recupera um elemento de dados de quadro por meio de um índice.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT Item ( 
+HRESULT Item ( 
    DWORD           index,
    IDiaFrameData** section
 );
@@ -40,9 +40,9 @@ no Índice do objeto [IDiaFrameData](../../debugger/debug-interface-access/idiaf
 
 fora Retorna um objeto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) que representa o elemento de dados de quadro desejado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

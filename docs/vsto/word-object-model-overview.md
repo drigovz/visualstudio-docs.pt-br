@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Office object models
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6d8ca92fdebb3504331ec38937dd79786fdb8b42
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3d593185412db23fa985f7effea6e91f9b3faa6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523489"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847642"
 ---
 # <a name="word-object-model-overview"></a>Visão geral do modelo de objeto do Word
   Ao desenvolver soluções do Word no Visual Studio, você interage com o modelo de objeto do Word. Esse modelo de objeto consiste em classes e interfaces que são fornecidas no assembly de interoperabilidade primário para o Word e são definidas no <xref:Microsoft.Office.Interop.Word> namespace.
@@ -130,7 +130,7 @@ ms.locfileid: "97523489"
 
  Todos os objetos e membros na referência do modelo de objeto do VBA correspondem a tipos e membros no PIA do Word. Por exemplo, o objeto Document na referência do modelo de objeto do VBA corresponde ao <xref:Microsoft.Office.Interop.Word.Document> objeto no pia do Word. Embora a referência de modelo de objeto do VBA Forneça exemplos de código para a maioria das propriedades, métodos e eventos, você deve converter o código VBA nesta referência para Visual Basic ou Visual C# se quiser usá-los em um projeto do Word criado usando o Visual Studio.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Assemblies de interoperabilidade primária do Office](../vsto/office-primary-interop-assemblies.md)
 - [Automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Trabalhar com documentos](../vsto/working-with-documents.md)

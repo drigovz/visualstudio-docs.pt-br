@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08efbeaf-22f7-49e9-96a8-bb906dfe4fd8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1eae34788cfed9f509e979df8efae6657f330d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55c0a421b89f9187a055b7ab5fedc93a5f66a112
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468213"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856596"
 ---
 # <a name="idiaenumlinenumbersitem"></a>IDiaEnumLineNumbers::Item
 Recupera um número de linha por meio de um índice.
@@ -25,7 +25,7 @@ Recupera um número de linha por meio de um índice.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT Item ( 
+HRESULT Item ( 
    DWORD            index,
    IDiaLineNumber** lineNumber
 );
@@ -40,9 +40,9 @@ no Índice do objeto [IDiaLineNumber](../../debugger/debug-interface-access/idia
 
 fora Retorna um objeto [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) que representa o número de linha desejado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

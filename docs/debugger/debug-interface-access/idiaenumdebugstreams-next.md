@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eb8eae5a-be27-45f4-a7bd-6e4ef0652385
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e61e7c1d7d955c5586c19ec21a43fd4ab9abea5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f70b052746438516275b205676339b216eea70e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468388"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856960"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
 Recupera um número especificado de fluxos de depuração na sequência de enumeração.
@@ -25,7 +25,7 @@ Recupera um número especificado de fluxos de depuração na sequência de enume
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT Next ( 
+HRESULT Next ( 
    ULONG                     celt,
    IDiaEnumDebugStreamData** rgelt,
    ULONG*                    pceltFetched
@@ -45,8 +45,8 @@ fora Retorna uma matriz de objetos [IDiaEnumDebugStreamData](../../debugger/debu
 
 fora Retorna o número de fluxos de depuração retornados.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver mais fluxos. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

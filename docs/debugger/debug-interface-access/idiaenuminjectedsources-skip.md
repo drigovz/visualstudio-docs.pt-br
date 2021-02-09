@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4aad6a51-f2d3-4064-b216-60d830d0a560
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b8cfac0306d95dffb2b6879e9bdc930719eb77ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab2adf44fa1ed2d394a6ad5edaca0818c503a180
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468248"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856659"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
 Ignora um número especificado de fontes injetadas em uma sequência de enumeração.
@@ -25,7 +25,7 @@ Ignora um número especificado de fontes injetadas em uma sequência de enumera�
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT Skip ( 
+HRESULT Skip ( 
    ULONG celt
 );
 ```
@@ -35,8 +35,8 @@ HRESULT Skip ( 
 
 no O número de fontes injetadas na sequência de enumeração a serem ignoradas.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK` ; caso contrário, retornará se não houver `S_FALSE` mais fontes injetadas para ignorar.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

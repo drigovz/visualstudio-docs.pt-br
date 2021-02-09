@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c0547f99-8468-4e57-82ca-9ef7d6707c8a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 468aef9faf4aa6c7c1b7ddebb1fd0c15445d61a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24e89d8a96ff1d615c75ae45b6846d7c3aedbf95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466738"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855637"
 ---
 # <a name="idialoadcallbacknotifyopenpdb"></a>IDiaLoadCallback::NotifyOpenPDB
 Chamado quando um arquivo Candidate. pdb é aberto.
@@ -25,7 +25,7 @@ Chamado quando um arquivo Candidate. pdb é aberto.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT NotifyOpenPDB ( 
+HRESULT NotifyOpenPDB ( 
    LPCOLESTR pdbPath,
    HRESULT   resultCode
 );
@@ -40,8 +40,8 @@ no O caminho completo do arquivo. pdb.
 
 no Código que indica o êxito ( `S_OK` ) ou a falha da carga, conforme aplicado a esse arquivo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. O código de retorno é normalmente ignorado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

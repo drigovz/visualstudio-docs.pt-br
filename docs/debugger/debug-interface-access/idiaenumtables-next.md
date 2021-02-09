@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d7bd359-d33e-4317-9674-d89283efd7de
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d425e16e18338c0269ccbf88030a47c7b184507
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ebc4b3eedd53048ab312ae4d8a4317aa06ae69d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856029"
 ---
 # <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
 Recupera um número especificado de tabelas na sequência de enumeração.
@@ -25,7 +25,7 @@ Recupera um número especificado de tabelas na sequência de enumeração.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT Next ( 
+HRESULT Next ( 
    ULONG       celt,
    IDiaTable** rgelt,
    ULONG*      pceltFetched
@@ -45,9 +45,9 @@ fora Uma matriz que deve ser preenchida com os objetos [IDiaTable](../../debugge
 
 fora Retorna o número de tabelas no enumerador obtido.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver mais tabelas. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

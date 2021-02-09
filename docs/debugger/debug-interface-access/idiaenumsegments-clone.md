@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 93deaac6-72ab-4408-ba14-66174a618757
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b9d0ff6739487ee34cfb1eb216e6f0509ab19f3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59cfde0b935ec43f6b439d2d2cf58b39d2ac9aa7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468061"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856407"
 ---
 # <a name="idiaenumsegmentsclone"></a>IDiaEnumSegments::Clone
 Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.
@@ -25,7 +25,7 @@ Cria um enumerador que contém o mesmo estado de enumeração que o enumerador a
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT Clone ( 
+HRESULT Clone ( 
    IDiaEnumSegments** ppenum
 );
 ```
@@ -35,8 +35,8 @@ HRESULT Clone ( 
 
 fora Retorna um objeto [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md) que contém uma duplicata do enumerador. Os segmentos não são duplicados, somente o enumerador.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

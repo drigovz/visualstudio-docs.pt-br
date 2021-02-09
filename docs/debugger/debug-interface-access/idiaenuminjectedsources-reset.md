@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c28e8820-1c67-4658-821d-b5879f90cce5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c1f00b0ad5eae835e4ed5aacb4819cb25b342e2f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cf1e6e273074870e6d0b625b6f78ab3d717950e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468255"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856680"
 ---
 # <a name="idiaenuminjectedsourcesreset"></a>IDiaEnumInjectedSources::Reset
 Redefine uma sequência de enumeração para o início.
@@ -31,5 +31,5 @@ HRESULT Reset();
 ## <a name="return-value"></a>Valor retornado
  Retorna `S_OK`.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

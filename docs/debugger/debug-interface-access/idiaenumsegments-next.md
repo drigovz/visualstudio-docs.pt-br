@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 53f61874-d821-47ab-a1f5-27e982804a6a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f8e87efa1ed616a38ccb79fec1e286417c10124b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a4533b34b35f5050e3bb13a9dee9c74fa69c61d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468026"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856345"
 ---
 # <a name="idiaenumsegmentsnext"></a>IDiaEnumSegments::Next
 Recupera um número especificado de segmentos na sequência de enumeração.
@@ -25,7 +25,7 @@ Recupera um número especificado de segmentos na sequência de enumeração.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT Next ( 
+HRESULT Next ( 
    ULONG         celt,
    IDiaSegment** rgelt,
    ULONG*        pceltFetched
@@ -45,9 +45,9 @@ fora Uma matriz que deve ser preenchida com os objetos [IDiaSegment](../../debug
 
 fora Retorna o número de segmentos no enumerador obtido.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver mais segmentos. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

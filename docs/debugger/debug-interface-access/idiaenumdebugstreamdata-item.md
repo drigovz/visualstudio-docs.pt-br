@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 761e61a5-44a6-4d5d-a98e-c2e9b89d2343
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4696d8fdab9720796db1c6b5dff25b7bcfe49e01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9c094d389b26424ef8b9fbeec9aeaf8de054441
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468451"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857051"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
 Recupera o registro especificado.
@@ -25,7 +25,7 @@ Recupera o registro especificado.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT Item ( 
+HRESULT Item ( 
    DWORD  index,
    DWORD  cbData,
    DWORD* pcbData,
@@ -50,10 +50,10 @@ fora Retorna o número de bytes retornados. Se `data` for `NULL` , `pcbData` con
 
 fora Um buffer que é preenchido com os dados de registro do fluxo de depuração.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna `E_INVALIDARG` para parâmetros inválidos e se o `index` parâmetro está fora dos limites.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
 - [IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)
 - [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)

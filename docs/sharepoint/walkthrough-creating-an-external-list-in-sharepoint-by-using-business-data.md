@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a791f94e46e16369392465e075ade92a833e2868
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: dbf996a2d44f94e4571a332fa7a86d861d820d45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915330"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847707"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Walkthrough: criar uma lista externa no SharePoint usando dados corporativos
 
@@ -128,7 +128,7 @@ Adicione uma entidade ao modelo. Você pode adicionar entidades da **caixa de fe
 
      A nova entidade aparece no designer. O Visual Studio adiciona um arquivo chamado *EntityService. vb* (em Visual Basic) ou *EntityService.cs* (em C#) ao projeto.
 
-3. Na barra de menus, escolha **Exibir**  >  **Properties**  >  **janela** de propriedades.
+3. Na barra de menus, escolha **Exibir**  >    >  **janela** de propriedades.
 
 4. Na janela **Propriedades** , defina o valor da propriedade **Name** como **Contact**.
 
@@ -186,7 +186,7 @@ Adicione um método localizador específico à entidade Contact usando a janela 
 
     |Nome|Nome do Tipo|
     |----------|---------------|
-    |Nome|System.String|
+    |FirstName|System.String|
     |LastName|System.String|
     |Telefone|System.String|
     |EmailAddress|System.String|

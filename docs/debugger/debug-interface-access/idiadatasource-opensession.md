@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a3319ed0-3979-483b-9852-c0af96852c48
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b49c90374975865edcac8a94c504e1fa991d711a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1221bac37b51d9aa55e31a07f2a301defa3af16e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468500"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857121"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 Abre uma sessão para consultar símbolos.
@@ -25,7 +25,7 @@ Abre uma sessão para consultar símbolos.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT openSession ( 
+HRESULT openSession ( 
    IDiaSession** ppSession
 );
 ```
@@ -35,7 +35,7 @@ ppSession
 
 fora Retorna um objeto [IDiaSession](../../debugger/debug-interface-access/idiasession.md) que representa a sessão aberta.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. A tabela a seguir mostra os possíveis valores de retorno para esse método.
 
 |Valor|Descrição|
@@ -60,7 +60,7 @@ if (FAILED(hr))
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [Visão geral](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

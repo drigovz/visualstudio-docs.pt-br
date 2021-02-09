@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e6cf2bed-ee2b-4122-886d-c20d93df7ff2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 37cd52af7326454b0b684ad97f9cde088a8a5679
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2dcec8380ebdc869c093a840d76347cd31c244b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468465"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857093"
 ---
 # <a name="idiaenumdebugstreamdataget_name"></a>IDiaEnumDebugStreamData::get_name
 Recupera o nome de um fluxo de dados de depuração.
@@ -25,7 +25,7 @@ Recupera o nome de um fluxo de dados de depuração.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_Name ( 
+HRESULT get_Name ( 
    BSTR * pRetVal
 )
 ```
@@ -35,8 +35,8 @@ HRESULT get_Name ( 
 
 fora Retorna o nome de um fluxo de dados de depuração.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
