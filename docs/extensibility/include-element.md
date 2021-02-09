@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: c923dfe6-084a-4105-aec1-f0a3f8399c54
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71da1241863e41529af33bdd5e45dcf0a8bfbdb1
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 6d718178bf7490d29c0668d892add4c302b8925a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996338"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893627"
 ---
 # <a name="include-element"></a>Elemento include
 O elemento include especifica um arquivo que pode estar localizado no caminho de inclusão fornecido para inserção no arquivo atual.  Todos os símbolos e tipos definidos se tornarão parte do resultado compilado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```csharp
 <Include href="stdidcmd.h" />
@@ -38,7 +38,7 @@ O elemento include especifica um arquivo que pode estar localizado no caminho de
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|href|Obrigatórios. O caminho para o arquivo de cabeçalho:<br /><br /> href = "stdidcmd. h"|
+|href|Obrigatório. O caminho para o arquivo de cabeçalho:<br /><br /> href = "stdidcmd. h"|
 |Condição|Opcional. Consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos filho

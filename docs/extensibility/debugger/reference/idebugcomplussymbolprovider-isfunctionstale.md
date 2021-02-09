@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: dcffc090-4ed8-47b2-ba51-bce1a6b6428d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4e5b42e8bb89a84b5274669173c93db3e287755a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 577ad48603c1378e8d34390f9780620ddbecb573
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892847"
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
 Determina se a função no endereço de depuração especificado é considerada obsoleta.
@@ -41,7 +41,7 @@ int IsFunctionStale(
 `pAddress`\
 no O endereço de depuração que é representado por uma interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) . Esse endereço deve ser um METHOD_ADDRESS.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
 Se a função for considerada obsoleta, retornará `S_OK` . Se a função não estiver obsoleta, retorna `S_FALSE` .
 
 ## <a name="example"></a>Exemplo

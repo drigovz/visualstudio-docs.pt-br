@@ -7,16 +7,16 @@ ms.topic: reference
 helpviewer_keywords:
 - coded UI tests
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 2b749375c398b3deb6ac56e8b1a787b0bcb82b22
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: ddad690c98b3516586b769e57721da8760b28b75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330245"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894537"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Configurações e plataformas compatíveis com testes de IU codificados e gravações de ação
 
@@ -33,7 +33,7 @@ As configurações e as plataformas de testes de IU codificados com suporte no V
 
 ## <a name="supported-configurations"></a>Configurações com suporte
 
-| Configuração | Com suporte |
+| Configuração | Suportado |
 |-| - |
 | Sistemas operacionais | [!INCLUDE[win7](../debugger/includes/win7_md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]<br /><br /> [!INCLUDE[win8](../debugger/includes/win8_md.md)]<br /><br /> Windows 10 |
 | Suporte para 32 bits/64 bits | O Windows de 32 bits que está executando o [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] de 32 bits pode testar aplicativos de 32 bits.<br /><br /> O Windows de 64 bits que está executando o [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] de 32 bits pode testar os aplicativos WOW de 32 bits que têm Sincronização de IU.<br /><br /> O Windows de 64 bits que está executando o [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] de 32 bits pode testar aplicativos do Windows Forms e do WPF que não têm Sincronização de IU. |

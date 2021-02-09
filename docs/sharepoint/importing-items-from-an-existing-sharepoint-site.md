@@ -17,15 +17,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ef77fb280021fcfb701a677bc9ce17ec26e39516
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 799589f5eba901a6fa82191507af1397ab1d323a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893341"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importar itens de um site existente do SharePoint
   O modelo de projeto importar pacote de solução do SharePoint permite reutilizar elementos como tipos de conteúdo e campos de sites existentes do SharePoint em uma nova [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] solução do SharePoint. Embora você possa executar a maioria das soluções importadas sem modificação, há certas restrições e problemas a serem considerados, especialmente se você modificar os itens depois de importá-los.
@@ -98,7 +98,7 @@ ms.locfileid: "96304524"
  Ao importar fluxos de trabalho, os formulários do InfoPath são copiados para a pasta **arquivos importados** . Se o arquivo *. wsp* contiver um modelo da Web, ele será definido como a página de inicialização no **Gerenciador de soluções**.
 
 ## <a name="import-fields-and-property-bags"></a>Importar campos e pacotes de propriedades
- Quando você importa uma solução que tem vários campos, todas as definições de campo separadas são mescladas em um único arquivo de *Elements.xml* em um nó **Solution Explorer** em Gerenciador de soluções **campos** chamados. Da mesma forma, todas as entradas do recipiente de propriedades são mescladas em um arquivo de *Elements.xml* em um nó chamado **PropertyBags**.
+ Quando você importa uma solução que tem vários campos, todas as definições de campo separadas são mescladas em um único arquivo de *Elements.xml* em um nó  em Gerenciador de soluções **campos** chamados. Da mesma forma, todas as entradas do recipiente de propriedades são mescladas em um arquivo de *Elements.xml* em um nó chamado **PropertyBags**.
 
  Os campos no SharePoint são colunas de um tipo de dados especificado, como um texto, booliano ou pesquisa. Para obter mais informações, consulte [bloco de construção: colunas e tipos de campo](/previous-versions/office/developer/sharepoint-2010/ee535893(v=office.14)). Os pacotes de propriedades permitem que você adicione Propriedades a objetos no SharePoint, tudo de um farm a uma lista em um site do SharePoint. Os pacotes de propriedade são implementados como uma tabela de hash de valores e nomes de propriedade. Para obter mais informações, consulte [Gerenciando a configuração do SharePoint](/previous-versions/msp-n-p/ff647766(v=pandp.10)) ou [configurações do recipiente de propriedades do SharePoint](https://archive.codeplex.com/?p=pbs).
 

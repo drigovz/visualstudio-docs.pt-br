@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3d14a8d4-2925-44d0-be41-ec546d411db9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 57740c05e31bde2ae4e5143735e3bba1f3fc112c
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: b3061823a97faa53680bb358475a583493be5b93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903799"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893094"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Depuração gerenciada: configurações de propriedade recomendadas
 Certas propriedades devem ser definidas da mesma maneira para todos os cenários gerenciados de depuração.
@@ -51,6 +51,6 @@ Certas propriedades devem ser definidas da mesma maneira para todos os cenários
 |**Definir constante de depuração**|Marque esta caixa de seleção para definir a constante de `DEBUG`, que permite que seu aplicativo use a classe <xref:System.Diagnostics.Debug>.|
 |**Definir a constante TRACE**|Marque esta caixa de seleção para definir a constante de `TRACE`, que permite que seu aplicativo use a classe <xref:System.Diagnostics.Trace>.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Depurando código gerenciado](../debugger/debugging-managed-code.md)
-- [Tipos de projeto do Visual Basic, C# e F#](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
+- [Tipos de projeto C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)

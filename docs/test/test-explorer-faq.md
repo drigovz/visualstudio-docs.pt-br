@@ -15,13 +15,13 @@ ms.author: kehavens
 ms.workload:
 - multiple
 author: kendrahavens
-manager: jillfra
-ms.openlocfilehash: b69274058ea939251a772dfb30ddf7b42861542c
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+manager: jmartens
+ms.openlocfilehash: a1e0f998b5fff45a8fee9ac6f9cc6a0ce2268907
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668580"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894459"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Perguntas frequentes sobre o Gerenciador de Testes do Visual Studio
 
@@ -166,7 +166,7 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 > [!NOTE]
 > Você pode desativar o sinalizador com o mesmo comando, usando o valor 0 em vez de 1 após dword.
 ::: moniker-end
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
 - [Criar e executar testes de unidade para código existente](/previous-versions/dd293546(v=vs.110))

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - XMLNodes control
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cd82b4bac36d648bee3f6735cf844691ef6d58b2
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: d920df609c8172b6329cac537d10868e5795be12
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527841"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894381"
 ---
 # <a name="xmlnodes-control"></a>Controle XMLNodes
   **Importante** As informações definidas neste tópico sobre o Microsoft Word são apresentadas exclusivamente para o benefício e o uso de indivíduos e organizações que estão localizados fora do Estados Unidos e de seus territórios ou que estão usando ou desenvolvendo programas que são executados em produtos do Microsoft Word que foram licenciados pela Microsoft antes de janeiro de 2010, quando a Microsoft removeu uma implementação de funcionalidades específicas relacionadas ao XML personalizado do Microsoft Word. Essas informações sobre o Microsoft Word podem não ser lidas ou usadas por indivíduos ou organizações na Estados Unidos ou em seus territórios que estão usando ou desenvolvendo programas que são executados no, produtos do Microsoft Word que foram licenciados pela Microsoft após 10 de janeiro de 2010; esses produtos não se comportarão da mesma forma que os produtos licenciados antes dessa data ou comprados e licenciados para uso fora do Estados Unidos.
@@ -81,7 +81,7 @@ ms.locfileid: "97527841"
 
  Existem as mesmas diferenças entre o <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextLeave> evento e o <xref:Microsoft.Office.Tools.Word.XMLNodes.Deselect> evento.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Visão geral de itens de host e controles de host](../vsto/host-items-and-host-controls-overview.md)
 - [Automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Controle XMLNode](../vsto/xmlnode-control.md)

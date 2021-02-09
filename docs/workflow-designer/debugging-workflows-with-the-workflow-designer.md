@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d71308cf-d464-4536-8711-0d0a8eadb255
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 45219da52cdd1ff87b7243c3cc742bb4c97a74e7
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0acc0cb0a37543b1462a4d5241eb63706868d372
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435854"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894329"
 ---
 # <a name="debug-workflows-with-the-workflow-designer"></a>Depurar fluxos de trabalho com o Designer de Fluxo de Trabalho
 
@@ -39,12 +39,12 @@ Geralmente, você depura fluxos de trabalho assim como você os programas de dep
 
 ## <a name="step-through-code"></a>Percorrer o código
 
-- **Etapa em** : entrar em uma atividade pressionando **F11**. O depurador avança em qualquer manipulador que é definido. Se nenhum manipulador é definido, você vai sobre a atividade, ou com atividades compostas, que contém outras atividades, você vai na primeira atividade executando.
+- **Etapa em**: entrar em uma atividade pressionando **F11**. O depurador avança em qualquer manipulador que é definido. Se nenhum manipulador é definido, você vai sobre a atividade, ou com atividades compostas, que contém outras atividades, você vai na primeira atividade executando.
 
 - **Depuração temporária:** Saia de uma atividade pressionando **Shift** + **F11**. Depuração fora de uma atividade executa a atividade atual e todas as suas atividades irmãos para a conclusão. O depurador interrompe no pai de atividade atual. Para passar para fora de um manipulador de código, o depurador interrompe a atividade com que o manipulador está associado.
 
-- **Depuração** : passe sobre uma atividade pressionando **F10**. Para entrar em uma atividade de composição, o depurador interrompe no primeiro filho executável de atividade composta. Para entrar em uma não composição, como uma atividade de <xref:System.Activities.Statements.Assign> , o depurador executa a atividade e seus manipuladores associados e interromper-los na atividade seguir. Se a atividade que é executada é a atividade filho a última em uma atividade de composição, então, após a execução, o depurador interrompe a atividade pai.
+- **Depuração**: passe sobre uma atividade pressionando **F10**. Para entrar em uma atividade de composição, o depurador interrompe no primeiro filho executável de atividade composta. Para entrar em uma não composição, como uma atividade de <xref:System.Activities.Statements.Assign> , o depurador executa a atividade e seus manipuladores associados e interromper-los na atividade seguir. Se a atividade que é executada é a atividade filho a última em uma atividade de composição, então, após a execução, o depurador interrompe a atividade pai.
 
 ## <a name="debug-with-f5"></a>Depurar com F5
 
-Se você estiver criando um aplicativo de console de fluxo de trabalho, basta pressionar **F5** para iniciar a depuração em seu aplicativo e fluxo de trabalho. Se você estiver criando uma biblioteca de atividades por conta própria, deverá especificar um aplicativo host executável como o projeto de inicialização. Para definir um projeto de inicialização no **Gerenciador de soluções** , clique com o botão direito do mouse no nome do projeto do host e selecione **definir como projeto de inicialização**.
+Se você estiver criando um aplicativo de console de fluxo de trabalho, basta pressionar **F5** para iniciar a depuração em seu aplicativo e fluxo de trabalho. Se você estiver criando uma biblioteca de atividades por conta própria, deverá especificar um aplicativo host executável como o projeto de inicialização. Para definir um projeto de inicialização no **Gerenciador de soluções**, clique com o botão direito do mouse no nome do projeto do host e selecione **definir como projeto de inicialização**.

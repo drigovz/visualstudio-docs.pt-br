@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 01f21ff9-e8a5-4e5f-9f7b-1b6de8b1432f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87dfa102916b55c8445ecbf99d7033c0391ec254
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65b94be12bab00b44f12bc23239de90f5e8c0ddc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733727"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892834"
 ---
 # <a name="idebugcomplussymbolprovidergettypefromaddress"></a>IDebugComPlusSymbolProvider::GetTypeFromAddress
 Recupera para um tipo de símbolo dado seu endereço de depuração.
@@ -47,7 +47,7 @@ no O endereço de depuração que é representado por uma interface [IDebugAddre
 `ppField`\
 fora Retorna o tipo de matriz conforme representado por uma interface [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
 Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo

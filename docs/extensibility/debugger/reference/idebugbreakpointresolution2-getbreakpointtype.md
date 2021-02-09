@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2b707fb9-f703-4c78-91bf-7434f57790a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2949366eeb3e79a732e94a4a8f8e9912048c6452
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5410cbf6147e0c8c6f4cba97b0214c4503f9790b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734814"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892990"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
 Obtém o tipo do ponto de interrupção representado por essa resolução.
@@ -28,13 +28,13 @@ Obtém o tipo do ponto de interrupção representado por essa resolução.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetBreakpointType( 
+HRESULT GetBreakpointType( 
     BP_TYPE* pBPType
 );
 ```
 
 ```csharp
-int GetBreakpointType( 
+int GetBreakpointType( 
     out enum_ BP_TYPE pBPType
 );
 ```
@@ -43,7 +43,7 @@ int GetBreakpointType( 
 `pBPType`\
 fora Retorna um valor da enumeração [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) que especifica o tipo desse ponto de interrupção.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna E_FAIL se o `bpResLocation` campo na estrutura de [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) associada não for válido.
 
 ## <a name="remarks"></a>Comentários

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, data sources
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2f79b8ae8716631a7adc68446b0c5fe267a30a88
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4df11976832359363c639a49dd767e7e87b41a26
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523601"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894433"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Como: atualizar uma fonte de dados com dados de um controle de host
   Você pode associar um controle de host a uma fonte de dados e atualizar a fonte de dados com as alterações feitas nos dados no controle. Há duas etapas principais neste processo:
@@ -115,7 +115,7 @@ ms.locfileid: "97523601"
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Salvar dados novamente no banco de dados](../data-tools/save-data-back-to-the-database.md)
 - [Atualizar dados usando um TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)

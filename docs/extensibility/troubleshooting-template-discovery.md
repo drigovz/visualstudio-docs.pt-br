@@ -6,15 +6,15 @@ ms.date: 01/02/2018
 ms.topic: troubleshooting
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff864e1a244d058b2c5ec1de33d116cfdcfe22db
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 23e30ddb5f43a755fc2dc0206509e403e802c3e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716040"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893484"
 ---
 # <a name="troubleshooting-template-installation"></a>Solução de problemas de instalação do modelo
 
@@ -72,7 +72,7 @@ O arquivo de log contém as seguintes colunas:
 > [!NOTE]
 > Para desabilitar o registro em log, remova o arquivo pkgdef ou altere o valor de `EnableTemplateDiscoveryLog` para `dword:00000000` e execute `devenv /updateConfiguration` novamente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Criando modelos personalizados de projeto e item](creating-custom-project-and-item-templates.md)
 - [Solução de problemas do Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

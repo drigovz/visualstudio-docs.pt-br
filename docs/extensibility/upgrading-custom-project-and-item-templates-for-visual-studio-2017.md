@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 089baadcb60afcc8b32e287095b10ab30196ce17
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 84e9b08350cf5977269bfbcf28ca5335e17f024d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715971"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893399"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Atualizar Modelos de Projeto e Item para Visual Studio personalizado 2017
 
@@ -190,7 +190,7 @@ Se sua extensão executar uma implantação baseada em MSI, você precisará ger
 
 Crie manifestos separados para modelos de projeto e item, e eles devem apontar para o diretório de modelo raiz, conforme especificado acima. Crie um manifesto por extensão e localidade.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Solução de problemas de descoberta de modelo](troubleshooting-template-discovery.md)
 - [Criando modelos personalizados de projeto e item](creating-custom-project-and-item-templates.md)

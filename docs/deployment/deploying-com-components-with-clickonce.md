@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc6ef0e4d682f0f712eefc4c139895331c31688
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: e2285706f2d15c5497a83d27c95cd613191e0fe4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382917"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893965"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Implantar componentes COM o ClickOnce
 A implantação de componentes COM herdados tem sido tradicionalmente uma tarefa difícil. Os componentes precisam ser registrados globalmente e, portanto, podem causar efeitos colaterais indesejáveis entre aplicativos sobrepostos. Essa situação geralmente não é um problema em aplicativos .NET Framework porque os componentes são completamente isolados para um aplicativo ou são compatíveis lado a lado. O Visual Studio permite que você implante componentes COM isolados no sistema operacional Windows XP ou superior.
@@ -37,7 +37,7 @@ A implantação de componentes COM herdados tem sido tradicionalmente uma tarefa
 ## <a name="registration-free-com"></a>COM sem registro
  O COM livre de registro é uma nova tecnologia para implantar e ativar componentes COM isolados. Ele funciona colocando toda a biblioteca de tipos e as informações de registro do componente que normalmente são instaladas no registro do sistema em um arquivo XML chamado de manifesto, armazenado na mesma pasta que o aplicativo.
 
- Isolar um componente COM requer que ele seja registrado no computador do desenvolvedor, mas não precisa ser registrado no computador do usuário final. Para isolar um componente COM, tudo o que você precisa fazer é definir sua propriedade **isolada** de referência como **true**. Por padrão, essa propriedade é definida como **false** , indicando que ela deve ser tratada como uma referência com registrada. Se essa propriedade for **true** , ela fará com que um manifesto seja gerado para esse componente no momento da compilação. Ele também faz com que os arquivos correspondentes sejam copiados para a pasta do aplicativo durante a instalação.
+ Isolar um componente COM requer que ele seja registrado no computador do desenvolvedor, mas não precisa ser registrado no computador do usuário final. Para isolar um componente COM, tudo o que você precisa fazer é definir sua propriedade **isolada** de referência como **true**. Por padrão, essa propriedade é definida como **false**, indicando que ela deve ser tratada como uma referência com registrada. Se essa propriedade for **true**, ela fará com que um manifesto seja gerado para esse componente no momento da compilação. Ele também faz com que os arquivos correspondentes sejam copiados para a pasta do aplicativo durante a instalação.
 
  Quando o gerador de manifesto encontra uma referência COM isolada, ele enumera todas as `CoClass` entradas na biblioteca de tipos do componente, correspondendo a cada entrada com seus dados de registro correspondentes e gerando definições de manifesto para todas as classes com no arquivo de biblioteca de tipos.
 
@@ -61,12 +61,12 @@ A implantação de componentes COM herdados tem sido tradicionalmente uma tarefa
 
 1. Usando Visual Basic 6,0, no menu **arquivo** , clique em **novo** e em **projeto**.
 
-2. Na caixa de diálogo **novo projeto** , selecione o nó **Visual Basic** e selecione um projeto de **dll ActiveX** . Na caixa **Nome** , digite `VB6Hello`.
+2. Na caixa de diálogo **novo projeto** , selecione o nó **Visual Basic** e selecione um projeto de **dll ActiveX** . Na caixa **Nome**, digite `VB6Hello`.
 
     > [!NOTE]
     > Somente os tipos de projeto DLL do ActiveX e de controle ActiveX têm suporte com o COM livre de registro; Não há suporte para os tipos de projeto de documento ActiveX e EXE ActiveX.
 
-3. Em **Gerenciador de soluções** , clique duas vezes em **Class1. vb** para abrir o editor de texto.
+3. Em **Gerenciador de soluções**, clique duas vezes em **Class1. vb** para abrir o editor de texto.
 
 4. Em Class1. vb, adicione o seguinte código após o código gerado para o `New` método:
 
@@ -76,7 +76,7 @@ A implantação de componentes COM herdados tem sido tradicionalmente uma tarefa
     End Sub
     ```
 
-5. Crie o componente. No menu **Compilar** , clique em **Solução de Compilação**.
+5. Crie o componente. No menu **Compilar**, clique em **Solução de Compilação**.
 
 > [!NOTE]
 > O COM sem registro oferece suporte somente a DLLs e tipos de projeto de controles COM. Você não pode usar EXEs com com sem registro.
@@ -87,9 +87,9 @@ A implantação de componentes COM herdados tem sido tradicionalmente uma tarefa
 
 1. Usando Visual Basic, no menu **arquivo** , clique em **novo** e em **projeto**.
 
-2. Na caixa de diálogo **novo projeto** , selecione o nó **Visual Basic** e selecione **aplicativo do Windows**. Na caixa **Nome** , digite `RegFreeComDemo`.
+2. Na caixa de diálogo **novo projeto** , selecione o nó **Visual Basic** e selecione **aplicativo do Windows**. Na caixa **Nome**, digite `RegFreeComDemo`.
 
-3. Em **Gerenciador de soluções** , clique no botão **Mostrar todos os arquivos** para exibir as referências do projeto.
+3. Em **Gerenciador de soluções**, clique no botão **Mostrar todos os arquivos** para exibir as referências do projeto.
 
 4. Clique com o botão direito do mouse no nó **referências** e selecione **Adicionar referência** no menu de contexto.
 
@@ -97,7 +97,7 @@ A implantação de componentes COM herdados tem sido tradicionalmente uma tarefa
 
     Uma referência de **VB6Hello** é exibida na lista de referências.
 
-6. Aponte para a **caixa de ferramentas** , selecione um controle de **botão** e arraste-o para o formulário **Form1** .
+6. Aponte para a **caixa de ferramentas**, selecione um controle de **botão** e arraste-o para o formulário **Form1** .
 
 7. Na janela **Propriedades** , defina a propriedade **Text** do botão como **Hello**.
 
@@ -110,7 +110,7 @@ A implantação de componentes COM herdados tem sido tradicionalmente uma tarefa
    End Sub
    ```
 
-9. Executar o aplicativo. No menu **Depurar** , clique em **Iniciar Depuração**.
+9. Execute o aplicativo. No menu **Depurar**, clique em **Iniciar Depuração**.
 
    Em seguida, você precisa isolar o controle. Cada componente COM que seu aplicativo usa é representado em seu projeto como uma referência COM. Essas referências são visíveis no nó **referências** na janela **Gerenciador de soluções** . (Observe que você pode adicionar referências diretamente usando o comando **Adicionar referência** no menu **projeto** ou indiretamente arrastando um controle ActiveX para o formulário.)
 
@@ -118,11 +118,11 @@ A implantação de componentes COM herdados tem sido tradicionalmente uma tarefa
 
 ##### <a name="to-isolate-a-com-component"></a>Para isolar um componente COM
 
-1. Em **Gerenciador de soluções** , no nó **referências** , selecione a referência **VB6Hello** .
+1. Em **Gerenciador de soluções**, no nó **referências** , selecione a referência **VB6Hello** .
 
 2. Na janela **Propriedades** , altere o valor da propriedade **isolada** de **false** para **true**.
 
-3. No menu **Compilar** , clique em **Solução de Compilação**.
+3. No menu **Compilar**, clique em **Solução de Compilação**.
 
    Agora, quando você pressiona F5, o aplicativo funciona conforme o esperado, mas agora ele está sendo executado em COM sem registro. Para provar isso, tente cancelar o registro do componente de VB6Hello.dll e executar RegFreeComDemo1.exe fora do IDE do Visual Studio. Desta vez, quando o botão é clicado, ele ainda funciona. Se você renomear temporariamente o manifesto do aplicativo, ele falhará novamente.
 

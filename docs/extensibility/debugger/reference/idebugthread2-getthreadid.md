@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: db8b1c07-6b86-47f9-b292-bac19c276d36
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a7788cc09d92ff4c784fbcb7004393fe0d3074c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e7dfb6714283fa2db1dc2fd8435a91a5c8dc56a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718709"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893809"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 Obtém o identificador de thread do sistema.
@@ -43,7 +43,7 @@ int GetThreadId (
 `pdwThreadId`\
 fora Retorna o identificador de thread do sistema.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
 Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

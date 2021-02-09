@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fae228b3fab1e25f92c02da2512abdd78edda0db
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: fd088d6887e7c7b60ea5a4101de050149583c5a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716023"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893445"
 ---
 # <a name="updating-the-user-interface"></a>Atualizando a interface do usuário
 Depois de implementar um comando, você pode adicionar código para atualizar a interface do usuário com o estado dos novos comandos.
@@ -52,6 +52,6 @@ Depois de implementar um comando, você pode adicionar código para atualizar a 
 
          Observe que você pode obter a <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interface chamando o `QueryInterface` método em um <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> objeto ou obtendo a interface do <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> serviço.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Como os VSPackages adicionam elementos da interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Implementação](../extensibility/internals/command-implementation.md)

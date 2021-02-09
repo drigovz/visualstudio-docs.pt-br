@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 10ad3083-10c1-4189-a870-9bba2eab244f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f509ade0103e390ea9cf53cbd5907116b99ddd39
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: d5c35d94001ae1e883e2bd76650f248d7e0364d2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382800"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893887"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;&gt;elemento EntryPoint (aplicativo ClickOnce)
 Identifica o assembly que deve ser executado quando este [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é executado em um computador cliente.
@@ -63,17 +63,17 @@ Identifica o assembly que deve ser executado quando este [!INCLUDE[ndptecclick](
  `entryPoint` tem os elementos a seguir.
 
 ## <a name="assemblyidentity"></a>assemblyIdentity
- Obrigatórios. A função de `assemblyIdentity` e seus atributos são definidos no [ \<assemblyIdentity> elemento](../deployment/assemblyidentity-element-clickonce-application.md).
+ Obrigatório. A função de `assemblyIdentity` e seus atributos são definidos no [ \<assemblyIdentity> elemento](../deployment/assemblyidentity-element-clickonce-application.md).
 
  O `processorArchitecture` atributo desse elemento e o `processorArchitecture` atributo definido em `assemblyIdentity` outro lugar no manifesto do aplicativo devem corresponder.
 
 ## <a name="commandline"></a>commandLine
- Obrigatórios. Deve ser um filho do `entryPoint` elemento. Ele não tem nenhum elemento filho e tem os atributos a seguir.
+ Obrigatório. Deve ser um filho do `entryPoint` elemento. Ele não tem nenhum elemento filho e tem os atributos a seguir.
 
 | Atributo | Descrição |
 |--------------| - |
 | `file` | Obrigatórios. Uma referência local para o assembly de inicialização do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Este valor não pode conter barra invertida (/) ou separadores de caminho de barra invertida ( \\ ). |
-| `parameters` | Obrigatórios. Descreve a ação a ser tomada com o ponto de entrada. O único valor válido é `run` ; se uma cadeia de caracteres em branco for fornecida, `run` será assumida. |
+| `parameters` | Obrigatório. Descreve a ação a ser tomada com o ponto de entrada. O único valor válido é `run` ; se uma cadeia de caracteres em branco for fornecida, `run` será assumida. |
 
 ## <a name="customhostrequired"></a>customHostRequired
  Opcional. Se incluído, especifica que essa implantação contém um componente que será implantado dentro de um host personalizado e não é um aplicativo autônomo.

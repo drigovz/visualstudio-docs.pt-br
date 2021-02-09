@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e6bbadcbabbe1dbd274c48f2325217c17d3933d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 1b661dddf6c07bca34e5ea044fd1338da68f4e19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438081"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894303"
 ---
 # <a name="delay-activity-designer"></a>Atrasar o designer de atividades
 
@@ -29,7 +29,7 @@ A atividade de <xref:System.Activities.Statements.Delay> atrasa a execução de 
 
 ### <a name="use-the-delay-activity-designer"></a>Usar o designer de atividade de atraso
 
-O designer de atividade de **atraso** pode ser encontrado na categoria **primitivos** da **caixa de ferramentas** , que é acessada clicando na guia **caixa de ferramentas** do designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
+O designer de atividade de **atraso** pode ser encontrado na categoria **primitivos** da **caixa de ferramentas**, que é acessada clicando na guia **caixa de ferramentas** do designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
 
 O designer de atividade de **atraso** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence> . Descartar o designer de atividade cria uma <xref:System.Activities.Statements.Delay> atividade com um padrão <xref:System.Activities.Activity.DisplayName%2A> de atraso. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade de **atraso** ou na caixa **DisplayName** da grade de propriedades.
 
@@ -40,7 +40,7 @@ A tabela a seguir mostra as <xref:System.Activities.Statements.Delay> Propriedad
 |Nome da propriedade|Obrigatório|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|O nome amigável de atividade de <xref:System.Activities.Statements.Delay> . O padrão é atraso. Embora o <xref:System.Activities.Activity.DisplayName%2A> valor não seja estritamente necessário, é uma prática recomendada usar um.|
-|<xref:System.Activities.Statements.Delay.Duration%2A>|Verdadeiro|A quantidade de tempo para atrasar o fluxo de trabalho. Essa propriedade é definida na grade de propriedade. Digite qualquer um <xref:System.TimeSpan> literal no 00:00 de formato: 00 ou uma expressão do Visual Basic para especificar a quantidade de tempo.|
+|<xref:System.Activities.Statements.Delay.Duration%2A>|True|A quantidade de tempo para atrasar o fluxo de trabalho. Essa propriedade é definida na grade de propriedade. Digite qualquer um <xref:System.TimeSpan> literal no 00:00 de formato: 00 ou uma expressão do Visual Basic para especificar a quantidade de tempo.|
 
 ## <a name="see-also"></a>Confira também
 

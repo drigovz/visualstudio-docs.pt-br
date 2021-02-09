@@ -13,15 +13,15 @@ helpviewer_keywords:
 - XMLMappedRange control, events
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3b3fd140787d44cdd8364ce77d5292dfcd83f54
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2849b815c38555be6b149544bb9d9953fe85ec4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894394"
 ---
 # <a name="xmlmappedrange-control"></a>Controle XmlMappedRange
   O <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controle é um intervalo criado somente quando um elemento de esquema não repetitivo é mapeado em uma célula no Microsoft Office Excel. Por exemplo, quando o `maxOccurs` atributo de um elemento de esquema é igual a 1. Depois que o Visual Studio cria o intervalo mapeado XML, você pode programá-lo diretamente sem ter que atravessar o modelo de objeto do Excel. Você só pode excluir um <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controle no Excel quando o mapeamento de elemento é removido.
@@ -57,7 +57,7 @@ ms.locfileid: "97525896"
 
 - <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.SelectionChange>
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [Como: adicionar controles XMLMappedRange a planilhas](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)

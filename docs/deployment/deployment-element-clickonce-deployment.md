@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3252c8f305b97564b8fb19affa83cc7dd837c97d
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 369d48c76ed82825021622af35141ef12ff42c76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382852"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893900"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;&gt;elemento Deployment (implantação do ClickOnce)
 Identifica os atributos usados para a implantação de atualizações e a exposição ao sistema.
@@ -76,7 +76,7 @@ Identifica os atributos usados para a implantação de atualizações e a exposi
  Opcional. Contém o `update` elemento. O `subscription` elemento não tem atributos. Se o `subscription` elemento não existir, o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo nunca verificará se há atualizações. Se o `install` atributo do `deployment` elemento for `false` , o `subscription` elemento será ignorado, pois um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo que é iniciado da rede sempre usa a versão mais recente.
 
 ## <a name="update"></a>atualizar
- Obrigatórios. Esse elemento é um filho do `subscription` elemento e contém o `beforeApplicationStartup` `expiration` elemento ou. `beforeApplicationStartup` e `expiration` não podem ser especificados no mesmo manifesto de implantação.
+ Obrigatório. Esse elemento é um filho do `subscription` elemento e contém o `beforeApplicationStartup` `expiration` elemento ou. `beforeApplicationStartup` e `expiration` não podem ser especificados no mesmo manifesto de implantação.
 
  O `update` elemento não tem atributos.
 
@@ -91,7 +91,7 @@ Identifica os atributos usados para a implantação de atualizações e a exposi
 |Atributo|Descrição|
 |---------------|-----------------|
 |`maximumAge`|Obrigatórios. Identifica o quão antigo a atualização atual deve se tornar antes de o aplicativo executar uma verificação de atualização. A unidade de tempo é determinada pelo `unit` atributo.|
-|`unit`|Obrigatórios. Identifica a unidade de tempo para `maximumAge` . As unidades válidas são `hours` , `days` e `weeks` .|
+|`unit`|Obrigatório. Identifica a unidade de tempo para `maximumAge` . As unidades válidas são `hours` , `days` e `weeks` .|
 
 ## <a name="deploymentprovider"></a>deploymentProvider
  Para o .NET Framework 2,0, esse elemento será necessário se o manifesto de implantação contiver uma `subscription` seção. Para o .NET Framework 3,5 e posterior, esse elemento é opcional e será padronizado para o servidor e o caminho do arquivo no qual o manifesto de implantação foi descoberto.

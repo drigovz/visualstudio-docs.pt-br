@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c902147bd1b7761bb6fdab1bc577af6a1990bed
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 9d4ea8bb6a1d03d3b61ab5be51992a7b51f661d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903876"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893250"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Depurar apenas o código de usuário com Apenas Meu Código
 
@@ -190,9 +190,9 @@ Um arquivo *. natstepfilter* é um arquivo XML com esta sintaxe:
 |Elemento|Descrição|
 |-------------|-----------------|
 |`Function`|Obrigatórios. Especifica uma ou mais funções como funções de não usuário.|
-|`Name`|Obrigatórios. Uma expressão regular formatada como ECMA-262 que especifica o nome completo da função a ser correspondida. Por exemplo:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> informa ao depurador que todos os métodos em `MyNS::MyClass` devem ser considerados como código de não usuário. A correspondência diferencia maiúsculas e minúsculas.|
+|`Name`|Obrigatório. Uma expressão regular formatada como ECMA-262 que especifica o nome completo da função a ser correspondida. Por exemplo:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> informa ao depurador que todos os métodos em `MyNS::MyClass` devem ser considerados como código de não usuário. A correspondência diferencia maiúsculas e minúsculas.|
 |`Module`|Opcional. Uma expressão regular formatada como ECMA-262 que especifica o caminho completo do módulo que contém a função. A correspondência não diferencia maiúsculas de minúsculas.|
-|`Action`|Obrigatórios. Um destes valores que diferenciam maiúsculas e minúsculas:<br /><br /> `NoStepInto`  -informa o depurador para percorrer a função.<br /> `StepInto`  – informa ao depurador para entrar na função, substituindo qualquer outra `NoStepInto` para a função correspondente.|
+|`Action`|Obrigatório. Um destes valores que diferenciam maiúsculas e minúsculas:<br /><br /> `NoStepInto`  -informa o depurador para percorrer a função.<br /> `StepInto`  – informa ao depurador para entrar na função, substituindo qualquer outra `NoStepInto` para a função correspondente.|
 
 ## <a name="javascript-just-my-code"></a><a name="BKMK_JavaScript_Just_My_Code"></a> Apenas Meu Código do JavaScript
 
@@ -281,7 +281,7 @@ As especificações nesse arquivo substituem as classificações padrão e a *my
 
 Os pares chave-valor **Eval**, **Function** e **ScriptBlock** determinam como o código gerado dinamicamente é classificado:
 
-|Name|Descrição|
+|Nome|Descrição|
 |-|-|
 |**Eval**|Script que é executado passando uma cadeia de caracteres à função `eval` fornecida pelo host. Por padrão, o script Eval é classificado como **MyCode**.|
 |**Função**|Script que é executado passando uma cadeia de caracteres para o construtor `Function`. Por padrão, o script Function é classificado como **LibraryCode**.|
@@ -297,7 +297,7 @@ Você pode alterar o valor para um destas palavras-chave:
 
 Os pares chave-valor **MyCode**, **Libraries** e **Unrelated** especificam as URLs ou os arquivos que você deseja incluir em uma classificação:
 
-|Name|Descrição|
+|Nome|Descrição|
 |-|-|
 |**MyCode**|Uma matriz de URLs ou arquivos classificados como **MyCode**.|
 |**Bibliotecas**|Uma matriz de URLs ou arquivos classificados como **LibraryCode**.|

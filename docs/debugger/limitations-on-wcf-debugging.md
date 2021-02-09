@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8e0333c4-1ddc-4abe-8f1c-d19bf6a2a07a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 30ca43483c352a4f102ab196dc5ea8e8650cdf81
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: aadaf90c0af8083537fdc837374ce2efa2c4a0e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903838"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893172"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitações da depuração WCF
 Há três modos de começar a depuração de um serviço WCF:
@@ -80,6 +80,6 @@ Este tópico descreve limitações nesses cenários.
 
  Para habilitar a depuração de aplicativos do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5, o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5 deve ser instalado antes que o [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] seja instalado. Se o [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] for instalado antes do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5, um erro ocorrerá quando você tentar depurar um aplicativo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5. A mensagem de erro é "Não é possível entrar automaticamente no servidor". Para corrigir esse problema, use os programas e recursos do **painel de controle** do Windows  >   para reparar a [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] instalação.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depurando serviços WCF](../debugger/debugging-wcf-services.md)
 - [Como depurar um serviço WCF Self-Hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

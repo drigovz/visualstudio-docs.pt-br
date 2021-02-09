@@ -31,15 +31,15 @@ helpviewer_keywords:
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a701e6297cb81ce84c164b3b6791a6e73c76f8
-ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
+ms.openlocfilehash: b594857b00ee233c186008efc9d0fba7d968a9bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98240264"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893159"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gerenciar exceções com o depurador no Visual Studio
 
@@ -217,9 +217,9 @@ Para adicionar exceções condicionais:
 
    ![Condições adicionais para uma exceção](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Para cada linha de condição, digite o nome do módulo e altere a lista operador de comparação para **Equals** ou **not Equals**. Você pode especificar curingas (* *\\\** _) no nome para especificar mais de um módulo.
+3. Para cada linha de condição, digite o nome do módulo e altere a lista operador de comparação para **Equals** ou **not Equals**. Você pode especificar curingas ( **\\\*** ) no nome para especificar mais de um módulo.
 
-4. Se você precisar excluir uma condição, escolha o _ *X** no final da linha de condição.
+4. Se você precisar excluir uma condição, escolha o **X** no final da linha de condição.
 
 ## <a name="see-also"></a>Confira também
 

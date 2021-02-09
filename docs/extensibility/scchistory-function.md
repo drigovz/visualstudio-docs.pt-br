@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 734afefd97e61867076d487acbcf67f10f54e672
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61ca9071373cd25a4a8bd0d367a97654dfdefb3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700660"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893562"
 ---
 # <a name="scchistory-function"></a>Função SccHistory
 Essa função exibe o histórico dos arquivos especificados.
@@ -60,7 +60,7 @@ no Sinalizadores de comando (atualmente não usados).
 
 no Opções específicas de plug-ins de controle do código-fonte.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
 
 |Valor|Descrição|

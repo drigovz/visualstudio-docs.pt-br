@@ -21,20 +21,20 @@ helpviewer_keywords:
 ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1920b4eddcbffa5cd51d548ade9af3a3a2f208d0
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 0356f05c3f0dac636813d1632f628dd02dd28923
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903786"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893120"
 ---
 # <a name="macros-for-reporting"></a>Macros para relatórios
 Para depuração, você pode usar as macros **_RPTn** e **_RPTFn** , definidas em CRTDBG. H, para substituir o uso de `printf` instruções. Você não precisa infechá-los em **#ifdef** s, pois eles desaparecerão automaticamente em sua compilação de versão quando **_DEBUG** não estiver definido.
 
-|Macro|Description|
+|Macro|Descrição|
 |-----------|-----------------|
 |**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Gera uma cadeia de caracteres de mensagem e zero a quatro argumentos. Por **_RPT1** por meio de **_RPT4**, a cadeia de caracteres de mensagem serve como uma cadeia de caracteres de formatação de estilo printf para os argumentos.|
 |**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF3**, **_RPTF4**|Da mesma forma que **_RPTn**, mas essas macros também geram a saída do nome do arquivo e o número da linha em que a macro está localizada.|
@@ -81,5 +81,5 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
 
  Você pode alterar facilmente uma macro personalizada para relatar mais ou menos informações para destinos diferentes. Essa abordagem é particularmente útil à medida que os requisitos de depuração evoluem.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Técnicas de depuração CRT](../debugger/crt-debugging-techniques.md)

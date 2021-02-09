@@ -11,16 +11,16 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a65cf7eea0541464a013a72377f439dd53ebf685
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: f20c7bf1060dc09783722c20254db7ed8c167b07
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903812"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893198"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Atalhos de teclado (HTML e JavaScript)
 
@@ -60,7 +60,7 @@ Atalhos de teclado no Visual Studio para depurar aplicativos UWP usando HTML e J
 |Aumentar o valor de CSS escolhido em 1|Seta para Cima|
 |Diminuir o valor de CSS escolhido em 1|Seta para Baixo|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Comandos do Console JavaScript](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 - [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017&preserve-view=true)
 - [Guia de início rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true)
