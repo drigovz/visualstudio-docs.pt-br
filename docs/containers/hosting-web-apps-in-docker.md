@@ -2,19 +2,19 @@
 title: Implantar o contêiner do Docker ASP.NET no registro ACR
 description: Saiba como usar as ferramentas de contêiner do Visual Studio para implantar um aplicativo Web ASP.NET ou ASP.NET Core em um registro de contêiner
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.assetid: e5e81c5e-dd18-4d5a-a24d-a932036e78b9
 ms.devlang: dotnet
 ms.topic: how-to
 ms.technology: vs-azure
 ms.date: 03/14/2019
 ms.author: ghogen
-ms.openlocfilehash: 4626b64f5e733fec049d56dfe53407cc0fe31566
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74a74e17dcc909b529a0afad1d66959000c80455
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168678"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859535"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Implantar um contêiner do ASP.NET em um registro de contêiner usando o Visual Studio
 
@@ -102,4 +102,4 @@ Agora, é possível extrair o contêiner do registro para qualquer host capaz de
 
 ## <a name="see-also"></a>Confira também
 
-[Início rápido: implantar uma instância de contêiner no Azure usando o CLI do Azure](/azure/container-instances/container-instances-quickstart)
+[Início Rápido: Implantar uma instância de contêiner no Azure usando a CLI do Azure](/azure/container-instances/container-instances-quickstart)

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 67dfbede-2678-47df-b664-5c49841d0b9b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 696ad3e659b503b27da73056dafb57c5852d5133
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c63d38e1b4d79227cfdc694dc6d8c154a01532f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461171"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853208"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Especifica as opções de pesquisa para nomes de arquivo e símbolo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```C++
 enum NameSearchOptions {
@@ -67,7 +67,7 @@ Os valores dessa enumeração são passados para os seguintes métodos:
 ## <a name="requirements"></a>Requisitos
 Cabeçalho: dia2. h
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
 - [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)

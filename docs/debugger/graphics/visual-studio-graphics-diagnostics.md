@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: fa69c550-62a7-41b5-bb1f-7eb04af1a6e8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b5a8eed74c4ce216e35c391833dcae80fc7efa
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 679b9464ef10f121bbe38f486291b135872fb36b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861485"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnóstico de gráficos do Visual Studio
 >[!NOTE]
@@ -68,7 +68,7 @@ O Visual Studio *diagnóstico de gráficos* é um conjunto de ferramentas para g
 
 ## <a name="related-sections"></a>Seções relacionadas
 
-| Título | Descrição |
+| Title | Descrição |
 | - | - |
 | [Tour pelos recursos do depurador](../debugger-feature-tour.md) | Apresenta a funcionalidade de depuração no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | [Elementos gráficos e jogos do DirectX](/windows/win32/directx) | Fornece artigos que discutem as tecnologias de gráficos do DirectX. |

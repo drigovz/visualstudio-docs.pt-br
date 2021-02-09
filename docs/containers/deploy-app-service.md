@@ -3,18 +3,18 @@ title: Implantar um contêiner de ASP.NET Core no serviço Azure App
 description: Saiba como usar as ferramentas de contêiner do Visual Studio para implantar um aplicativo Web ASP.NET Core em um contêiner do Docker para Azure App serviço
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: c0f45f14bc8b363a0c7c4e298effa67c5fccde18
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2e23658cfde1154f5b4df7ae7dade71b1569e35c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036334"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859639"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Implantar um contêiner de ASP.NET Core no serviço Azure App usando o Visual Studio
 
@@ -63,11 +63,11 @@ As etapas a seguir guiam você na criação de um aplicativo básico ASP.NET Cor
 
 1. Clique com o botão direito no projeto em **Gerenciador de Soluções** e escolha **Publicar**.
 1. Na caixa de diálogo Publicar destino, escolha **serviço de aplicativo Linux** ou **serviço de aplicativo**. Esse é o sistema operacional que hospedará o servidor Web.
-1. Você pode publicar somente no serviço de aplicativo ou pode publicar no serviço de aplicativo e no ACR (registro de contêiner do Azure). Para publicar o contêiner em um ACR (registro de contêiner do Azure), escolha **criar novo serviço de aplicativo para contêineres**e clique em **publicar**.
+1. Você pode publicar somente no serviço de aplicativo ou pode publicar no serviço de aplicativo e no ACR (registro de contêiner do Azure). Para publicar o contêiner em um ACR (registro de contêiner do Azure), escolha **criar novo serviço de aplicativo para contêineres** e clique em **publicar**.
 
    ![Captura de tela da caixa de diálogo publicar](media/deploy-app-service/publish-app-service-linux.PNG)
 
-   Para publicar somente em um serviço de Azure App sem usar o registro de contêiner do Azure, escolha **criar novo**e clique em **publicar**.
+   Para publicar somente em um serviço de Azure App sem usar o registro de contêiner do Azure, escolha **criar novo** e clique em **publicar**.
 
 1. Verifique se você está conectado com a conta que está associada à sua assinatura do Azure e escolha um nome exclusivo, uma assinatura, um grupo de recursos, um plano de hospedagem e um registro de contêiner (se aplicável) ou aceite os padrões.
 
@@ -134,9 +134,9 @@ Você pode exibir as configurações do serviço de aplicativo implantado abrind
 
 A partir daí, você pode exibir as informações do contêiner, exibir ou baixar logs ou configurar a implantação contínua. Confira [Azure app CI/CD de implantação contínua do serviço](/azure/app-service/containers/app-service-linux-ci-cd).
 
-## <a name="clean-up-resources"></a>Limpar recursos
+## <a name="clean-up-resources"></a>Limpar os recursos
 
-Para remover todos os recursos do Azure associados a este tutorial, exclua o grupo de recursos usando o [portal do Azure](https://portal.azure.com). Para localizar o grupo de recursos associado a um aplicativo Web publicado, escolha **Exibir**  >  **outra**  >  **atividade de publicação na Web**do Windows e, em seguida, escolha o ícone de engrenagem. A guia **publicar** é aberta, que contém o grupo de recursos.
+Para remover todos os recursos do Azure associados a este tutorial, exclua o grupo de recursos usando o [portal do Azure](https://portal.azure.com). Para localizar o grupo de recursos associado a um aplicativo Web publicado, escolha **Exibir**  >  **outra**  >  **atividade de publicação na Web** do Windows e, em seguida, escolha o ícone de engrenagem. A guia **publicar** é aberta, que contém o grupo de recursos.
 
 No portal do Azure, escolha **grupos de recursos**, selecione o grupo de recursos para abrir sua página de detalhes. Verifique se esse é o grupo de recursos correto, escolha **remover grupo de recursos**, digite o nome e escolha **excluir**.
 

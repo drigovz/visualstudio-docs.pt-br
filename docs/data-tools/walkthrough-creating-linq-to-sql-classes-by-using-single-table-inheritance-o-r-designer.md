@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: b83fd664cb2969c12d69e1e818f61190deed3804
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 7ed6d6f9d6a0e723979764313d185a41f49a08ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998233"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858144"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Walkthrough: criar classes de LINQ to SQL usando herança de tabela única (O/R Designer)
 As [ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) oferecem suporte à herança de tabela única, pois normalmente são implementadas em sistemas relacionais. Este tutorial se expande sobre as etapas genéricas fornecidas em [como configurar a herança usando o tópico o/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) e fornece alguns dados reais para demonstrar o uso de herança no [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
@@ -54,10 +54,10 @@ Para ver como a herança funciona, crie uma pequena `Person` tabela, use-a como 
     |Nome da coluna|Tipo de Dados|Permitir Nulos|
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**Falso**|
-    |**Tipo**|**int**|**Verdadeiro**|
+    |**Tipo**|**int**|**True**|
     |**Nome**|**nvarchar(200)**|**Falso**|
     |**Sobrenome**|**nvarchar(200)**|**Falso**|
-    |**Gerente**|**int**|**Verdadeiro**|
+    |**Gerente**|**int**|**True**|
 
 3. Defina a coluna de identificação como a chave primária.
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ddfa1617-bd0f-4187-ba77-a225bab93a95
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d573f54a6264562c02960448768a8409fcc5e5a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11f86019cdf037aaf5859346dba21e94a0471500
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461542"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862496"
 ---
 # <a name="idiasymbolget_upperboundid"></a>IDiaSymbol::get_upperBoundId
 Recupera o identificador de símbolo do limite superior de uma dimensão de matriz FORTRAN.
@@ -25,7 +25,7 @@ Recupera o identificador de símbolo do limite superior de uma dimensão de matr
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_upperBoundId ( 
+HRESULT get_upperBoundId ( 
    DWORD* pRetVal
 );
 ```
@@ -34,7 +34,7 @@ HRESULT get_upperBoundId ( 
  `pRetVal`
 - [fora,] Retorna a ID do símbolo que representa o limite superior de uma dimensão de matriz FORTRAN.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -43,5 +43,5 @@ HRESULT get_upperBoundId ( 
 ## <a name="remarks"></a>Comentários
  O identificador é um valor exclusivo criado pelo DIA SDK para marcar todos os símbolos como exclusivos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

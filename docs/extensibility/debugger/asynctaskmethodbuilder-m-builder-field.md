@@ -1,5 +1,5 @@
 ---
-title: Campo AsyncTaskMethodBuilder. m_builder | Microsoft Docs
+title: Campo de AsyncTaskMethodBuilder.m_builder | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: bfaf25a2-0f08-413f-b474-9ce0d97c0eeb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dd8bd1215700b8387f420e3aaec7e2ce73d9fec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 911b094c991e041a3f6a1a466d587294c6a09b4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739395"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862182"
 ---
-# <a name="asynctaskmethodbuilderm_builder-field"></a>Campo AsyncTaskMethodBuilder. m_builder
+# <a name="asynctaskmethodbuilderm_builder-field"></a>Campo de AsyncTaskMethodBuilder.m_builder
 Representa o objeto Construtor genérico ao qual essa instância não genérica é delegada.
 
  **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
@@ -34,6 +34,6 @@ Representa o objeto Construtor genérico ao qual essa instância não genérica 
 
 ## <a name="remarks"></a>Comentários
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>
 - [Elementos internos de extensão paralela para o .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

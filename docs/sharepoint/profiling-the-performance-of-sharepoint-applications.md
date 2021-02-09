@@ -17,15 +17,15 @@ helpviewer_keywords:
 - profiling [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ecdacce58e17c616b22c9a6a8ba6fce9d5cf272c
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: d59f5b472f791f9774515cdb3e92cc4cf7f9f55b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305108"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860731"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Criar perfil do desempenho de aplicativos do SharePoint
 
@@ -61,7 +61,7 @@ Testes de IU codificados direcionam automaticamente seu aplicativo do SharePoint
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Walkthrough: criar perfil de um aplicativo do SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Demonstra como executar uma análise de perfil de amostragem em um aplicativo do SharePoint.|
 |[Realizar um teste de desempenho no aplicativo antes do lançamento](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts&preserve-view=true)|Descreve como criar testes de carga, que ajudam você a enfatizar aplicativos do SharePoint de teste.|

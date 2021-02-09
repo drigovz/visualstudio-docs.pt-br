@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 670651e6-5e79-4845-b0c2-671beb7055a8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ae94a7cb9572a0975dc1c3717275c384c2e45978
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 466c64f3b055eef3629f0f4666529f1be4247f42
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72734754"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861329"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg (Construtor)
 Constrói uma instância da `VsgDbg` classe com ou sem preparar o componente no aplicativo de diagnóstico de gráficos para capturar e gravar ativamente informações de gráficos por padrão, com base no parâmetro booliano especificado.
@@ -36,6 +36,6 @@ VsgDbg(
 
 ## <a name="see-also"></a>Confira também
 - [VsgDbg::~VsgDbg (Destruidor)](vsgdbg-tilde-vsgdbg-destructor.md)
-- [Iniciar](init.md)
+- [Init](init.md)
 - [DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)
 - [VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)

@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: ad554d18-9988-4b64-ad71-e7594c266e94
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e19ce48a8716952f53a1caa6a44fd5ba3d817f4e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a242138d6a616de449193f574f7f867cf26a5d37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461346"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862419"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
 Recupera o arquivo de origem e o número de linha que indicam onde um tipo definido pelo usuário especificado é definido.
@@ -32,9 +32,9 @@ HRESULT getSrcLineOnTypeDefn(
 
 fora Um `IDiaLineNumber` objeto que contém o arquivo de origem e o número de linha em que o usuário definiu.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

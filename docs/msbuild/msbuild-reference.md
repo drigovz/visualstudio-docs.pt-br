@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b7bb9287f26825ad1a90c3f339d7308fd6def1
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 611060e018307eb55d6d575d5cd008bed6f0a2be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860874"
 ---
 # <a name="msbuild-reference"></a>Referência do MSBuild
 
@@ -72,7 +72,7 @@ MSBuild é o sistema de compilação para o Visual Studio. Os links a seguir lev
 - [Caracteres especiais para escapar](../msbuild/special-characters-to-escape.md)\
  Lista os caracteres que podem ter “escapado” para serem interpretados corretamente. Uma sequência de escape é uma série de caracteres que indica que o que segue se trata de uma interpretação alternativa.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral do MSBuild](../msbuild/msbuild.md)
 - [Microsoft.Build.Evaluation](/dotnet/api/microsoft.build.evaluation)

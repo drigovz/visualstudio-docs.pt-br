@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ab7156635914d46dfc1849717d29ac0416e2d9fa
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 40a620023dad754e3de4fedb9bc4fdbe7b7835a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351213"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861225"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Como criar um manifesto de produto
 Para implantar os pré-requisitos para seu aplicativo, você pode criar um pacote de bootstrapper. Um pacote de bootstrapper contém um único arquivo de manifesto de produto, mas um manifesto de pacote para cada localidade. O manifesto do pacote contém aspectos específicos da localização do seu pacote. Isso inclui cadeias de caracteres, contratos de licença de usuário final e pacotes de idiomas.
@@ -66,7 +66,7 @@ Para implantar os pré-requisitos para seu aplicativo, você pode criar um pacot
 
 6. Copie ou mova o arquivo de *CorePackage.msi* para a pasta *C:\package*
 
-7. Adicione XML para instalar o pacote usando comandos bootstrapper. O bootstrapper adiciona automaticamente o sinalizador **/qn** ao arquivo *. msi* , que será instalado silenciosamente. Se o arquivo for um *. exe* , o bootstrapper executará o arquivo *. exe* usando o Shell. O XML a seguir mostra nenhum argumento para *CorePackage.msi* , mas você pode colocar o argumento de linha de comando no `Arguments` atributo.
+7. Adicione XML para instalar o pacote usando comandos bootstrapper. O bootstrapper adiciona automaticamente o sinalizador **/qn** ao arquivo *. msi* , que será instalado silenciosamente. Se o arquivo for um *. exe*, o bootstrapper executará o arquivo *. exe* usando o Shell. O XML a seguir mostra nenhum argumento para *CorePackage.msi*, mas você pode colocar o argumento de linha de comando no `Arguments` atributo.
 
     ```xml
     <Commands>
@@ -160,5 +160,5 @@ Para implantar os pré-requisitos para seu aplicativo, você pode criar um pacot
 </Product>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ADO.NET, data access
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5458ffca549026c99c8faedc8f47d3f3285a7ca
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: b5e3d8b8cf0b2c74a5b5a862539bbf3b201b4ffd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518733"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859431"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Trabalhar com dados no Visual Studio
 
@@ -72,13 +72,13 @@ A maioria dos outros produtos de banco de dados SQL e NoSQL listados aqui pode s
 
 ::: moniker range="vs-2017"
 
-Muitos fornecedores de banco de dados e terceiros dão suporte à integração do Visual Studio por pacotes NuGet. Você pode explorar as ofertas em NuGet.org ou por meio do Gerenciador de pacotes NuGet no Visual Studio ( **ferramentas**  >  **Gerenciador de pacotes NuGet**  >  **gerenciar pacotes NuGet para solução** ). Outros produtos de banco de dados se integram com o Visual Studio como uma extensão. Você pode procurar essas ofertas na [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou navegando até **ferramentas**  >  **extensões e atualizações** e, em seguida, selecionando **online** no painel esquerdo da caixa de diálogo. Para obter mais informações, consulte [sistemas de banco de dados compatíveis para o Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Muitos fornecedores de banco de dados e terceiros dão suporte à integração do Visual Studio por pacotes NuGet. Você pode explorar as ofertas em NuGet.org ou por meio do Gerenciador de pacotes NuGet no Visual Studio (**ferramentas**  >  **Gerenciador de pacotes NuGet**  >  **gerenciar pacotes NuGet para solução**). Outros produtos de banco de dados se integram com o Visual Studio como uma extensão. Você pode procurar essas ofertas na [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou navegando até **ferramentas**  >  **extensões e atualizações** e, em seguida, selecionando **online** no painel esquerdo da caixa de diálogo. Para obter mais informações, consulte [sistemas de banco de dados compatíveis para o Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Muitos fornecedores de banco de dados e terceiros dão suporte à integração do Visual Studio por pacotes NuGet. Você pode explorar as ofertas em NuGet.org ou por meio do Gerenciador de pacotes NuGet no Visual Studio ( **ferramentas**  >  **Gerenciador de pacotes NuGet**  >  **gerenciar pacotes NuGet para solução** ). Outros produtos de banco de dados se integram com o Visual Studio como uma extensão. Você pode procurar essas ofertas na [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou navegando até **extensões**  >  **gerenciar extensões** e, em seguida, selecionando **online** no painel esquerdo da caixa de diálogo. Para obter mais informações, consulte [sistemas de banco de dados compatíveis para o Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Muitos fornecedores de banco de dados e terceiros dão suporte à integração do Visual Studio por pacotes NuGet. Você pode explorar as ofertas em NuGet.org ou por meio do Gerenciador de pacotes NuGet no Visual Studio (**ferramentas**  >  **Gerenciador de pacotes NuGet**  >  **gerenciar pacotes NuGet para solução**). Outros produtos de banco de dados se integram com o Visual Studio como uma extensão. Você pode procurar essas ofertas na [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou navegando até **extensões**  >  **gerenciar extensões** e, em seguida, selecionando **online** no painel esquerdo da caixa de diálogo. Para obter mais informações, consulte [sistemas de banco de dados compatíveis para o Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 

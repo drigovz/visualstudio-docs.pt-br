@@ -6,15 +6,15 @@ ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 61109a315a7f331821527ee882dd7c019411fca3
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 04b048250b2529e21dd30738821b273c268e3498
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903293"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862077"
 ---
 # <a name="features-of-visual-studio"></a>Funcionalidades do Visual Studio
 
@@ -142,4 +142,4 @@ Para saber mais sobre como estender o Visual Studio, consulte [Estender o IDE do
 
 - [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
 - [Novidades no Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
-- [Novidades no Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)
+- [O que há de novo no Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

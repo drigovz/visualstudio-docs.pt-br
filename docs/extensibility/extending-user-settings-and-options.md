@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 5bb6277a-8c9d-48c8-9b4e-1cb3052caded
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: adcefcfc18e64f9a7e082d0398b6609ba1877d28
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: f9c51456654862a94c6caf4c1819a36f4656cc74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994570"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862103"
 ---
 # <a name="extend-user-settings-and-options"></a>Estender as configurações e opções de usuário
-No Visual Studio, há duas maneiras principais de manter as preferências do usuário. As **Tools**  >  páginas **Opções** de ferramentas permitem que os usuários definam seus próprios valores para muitos tipos diferentes de configurações, tanto gerais quanto específicas de idioma. As configurações de usuário permitem que os usuários especifiquem Propriedades gerais de configuração do Visual Studio. Para obter mais informações sobre páginas de opções, consulte [Opções e páginas](../extensibility/internals/options-and-options-pages.md)de opções. Para obter mais informações sobre as configurações do usuário, consulte [suporte para configurações do usuário](../extensibility/internals/support-for-user-settings.md).
+No Visual Studio, há duas maneiras principais de manter as preferências do usuário. As   >  páginas **Opções** de ferramentas permitem que os usuários definam seus próprios valores para muitos tipos diferentes de configurações, tanto gerais quanto específicas de idioma. As configurações de usuário permitem que os usuários especifiquem Propriedades gerais de configuração do Visual Studio. Para obter mais informações sobre páginas de opções, consulte [Opções e páginas](../extensibility/internals/options-and-options-pages.md)de opções. Para obter mais informações sobre as configurações do usuário, consulte [suporte para configurações do usuário](../extensibility/internals/support-for-user-settings.md).
 
 - [Criar uma página de opções](../extensibility/creating-an-options-page.md) Explica como criar uma página de opções.
 

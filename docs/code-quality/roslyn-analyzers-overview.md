@@ -11,15 +11,15 @@ helpviewer_keywords:
 - code analyzers
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 237d1188b1a90c64464a15b2df81d507abacb718
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: d6a295e4abc62a7591c98b92cad4c173c5ff507b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349029"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859795"
 ---
 # <a name="overview-of-source-code-analysis"></a>Visão geral da análise de código-fonte
 
@@ -27,7 +27,7 @@ Os analisadores de .NET Compiler Platform (Roslyn) inspecionam seu código em C#
 
 Os analisadores podem ser divididos nos seguintes grupos:
 
-- Os analisadores de [estilo de código](/dotnet/fundamentals/code-analysis/code-style-rule-options?preserve-view=true&view=vs-2019#convention-categories) são integrados ao Visual Studio. A ID de diagnóstico ou o código para esses analisadores é do formato IDExxxx, por exemplo, IDE0067. Você pode configurar as preferências na [página Opções do editor de texto](../ide/code-styles-and-code-cleanup.md) ou em um [arquivo EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options). A partir do .NET 5,0, os analisadores de estilo de código estão incluídos no SDK do .NET e podem ser estritamente impostos como avisos ou erros de compilação. Para saber mais, clique [aqui](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
+- Os analisadores de [estilo de código](/dotnet/fundamentals/code-analysis/code-style-rule-options?preserve-view=true&view=vs-2019#convention-categories) são integrados ao Visual Studio. A ID de diagnóstico ou o código para esses analisadores é do formato IDExxxx, por exemplo, IDE0067. Você pode configurar as preferências na [página Opções do editor de texto](../ide/code-styles-and-code-cleanup.md) ou em um [arquivo EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options). A partir do .NET 5,0, os analisadores de estilo de código estão incluídos no SDK do .NET e podem ser estritamente impostos como avisos ou erros de compilação. Para mais informações, consulte [aqui](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
 
 - Analisadores de [qualidade de código](/dotnet/fundamentals/code-analysis/quality-rules/index) agora estão incluídos no SDK do .NET 5 e habilitados por padrão. A ID de diagnóstico ou o código para esses analisadores é do formato CAxxxx, por exemplo, CA1822. Para obter mais informações, consulte [visão geral da análise de qualidade de código do .net](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
 
@@ -60,7 +60,7 @@ Muitas regras de analisador ou *diagnósticos* têm uma ou mais *correções de 
 
 ## <a name="configure-analyzer-severity-levels"></a>Configurar níveis de severidade do analisador
 
-Você pode configurar a severidade de regras do analisador ou *diagnósticos* , em um [arquivo EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) ou no [menu de lâmpada](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu).
+Você pode configurar a severidade de regras do analisador ou *diagnósticos*, em um [arquivo EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) ou no [menu de lâmpada](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu).
 
 Os analisadores também podem ser configurados para inspecionar o código no momento da compilação e ao vivo conforme você digita. Você pode configurar o escopo da análise de código ao vivo para ser executado somente para o documento atual, para todos os documentos abertos ou para a solução inteira. Consulte [como: configurar o escopo da análise de código ao vivo](./configure-live-code-analysis-scope-managed-code.md).
 
@@ -99,7 +99,7 @@ Você não pode configurar a severidade de regras de analisadores que foram inst
 > [!div class="nextstepaction"]
 > [Usar analisadores de código no Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Perguntas frequentes sobre analisadores](analyzers-faq.md)
 - [Gravar seu próprio analisador de código](../extensibility/getting-started-with-roslyn-analyzers.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - results window, code metrics
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d29109811c3dd5f354b510d046b33b0ba31d60e5
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c02f5a3b5175be4517a51a6dc477d6e59b38a762
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859561"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Usar a janela de resultados de métricas de código
 
@@ -32,7 +32,7 @@ A janela **resultados de métricas de código** é exibida automaticamente quand
 
 Você pode exibir a janela de resultados de métricas de código usando uma das seguintes sequências de menu:
 
-- No menu **analisar** , escolha **Windows**  >  **resultados de métricas de código** do Windows.
+- No menu **analisar** , escolha   >  **resultados de métricas de código** do Windows.
 
 - No menu **Exibir** , escolha **outros**  >  **resultados de métricas de código** do Windows.
 
@@ -54,7 +54,7 @@ A caixa suspensa **filtro** contém os nomes das colunas de resultados. Quando u
 
 2. Em **mín**., digite o valor mínimo a ser exibido.
 
-3. Em **máximo** , digite o valor máximo a ser exibido.
+3. Em **máximo**, digite o valor máximo a ser exibido.
 
 4. Clique no botão **aplicar filtro** .
 
@@ -92,7 +92,7 @@ Para obter mais informações sobre Azure Boards itens de trabalho, consulte [it
 
 1. Clique com o botão direito do mouse no resultado.
 
-2. Aponte para **Criar item de trabalho** e clique no tipo de item de trabalho que você deseja criar ( **bug** , **tarefa** e assim por diante).
+2. Aponte para **Criar item de trabalho** e clique no tipo de item de trabalho que você deseja criar (**bug**, **tarefa** e assim por diante).
 
 3. Preencha o formulário de item de trabalho preenchendo todos os campos obrigatórios.
 

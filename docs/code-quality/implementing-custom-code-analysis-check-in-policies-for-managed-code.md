@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: fd029003-5671-4b24-8b6f-032e0a98b2e8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 567b6d2fe8906fd1a7a07ab73835439f8a9a9955
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8e682c3d3312be5c4f4639fc2642a398e321fc78
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435418"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859873"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementar políticas de check-in de análise de código personalizadas para código gerenciado
 
@@ -44,7 +44,7 @@ Para criar um conjunto de regras personalizado para um projeto DevOps do Azure, 
 
 2. No painel **pastas** , clique com o botão direito do mouse no projeto e clique em **nova pasta**.
 
-3. No painel principal de controle do código-fonte, clique com o botão direito do mouse em **nova pasta** , clique em **renomear** e digite um nome para a pasta do conjunto de regras.
+3. No painel principal de controle do código-fonte, clique com o botão direito do mouse em **nova pasta**, clique em **renomear** e digite um nome para a pasta do conjunto de regras.
 
 ### <a name="to-create-the-check-in-policy-rule-set"></a>Para criar o conjunto de regras de política de check-in
 
@@ -58,7 +58,7 @@ Para criar um conjunto de regras personalizado para um projeto DevOps do Azure, 
 
 ### <a name="to-add-the-rule-set-file-to-version-control"></a>Para adicionar o arquivo do conjunto de regras ao controle de versão
 
-1. Em **Source Control Explorer** , clique com o botão direito do mouse na nova pasta e clique em **Adicionar itens à pasta**.
+1. Em **Source Control Explorer**, clique com o botão direito do mouse na nova pasta e clique em **Adicionar itens à pasta**.
 
      Para obter mais informações, consulte [git e Azure Repos](/azure/devops/repos/git/overview?view=vsts&preserve-view=true).
 
@@ -71,7 +71,7 @@ Para criar um conjunto de regras personalizado para um projeto DevOps do Azure, 
 4. Na caixa de diálogo de **check-in** , você tem a opção de adicionar um comentário e, em seguida, clique em **check-in**.
 
     > [!NOTE]
-    > Se você já tiver configurado uma política de check-in de análise de código para seu projeto DevOps do Azure e tiver selecionado o **check-in de imposição para conter apenas os arquivos que fazem parte da solução atual** , você disparará um aviso de falha de política. Na caixa de diálogo falha de política, selecione **Substituir falha da política e continuar check-in**. Adicione um comentário necessário e clique em **OK**.
+    > Se você já tiver configurado uma política de check-in de análise de código para seu projeto DevOps do Azure e tiver selecionado o **check-in de imposição para conter apenas os arquivos que fazem parte da solução atual**, você disparará um aviso de falha de política. Na caixa de diálogo falha de política, selecione **Substituir falha da política e continuar check-in**. Adicione um comentário necessário e clique em **OK**.
 
 ### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Para especificar o arquivo de conjunto de regras como a política de check-in
 
@@ -90,7 +90,7 @@ Para criar um conjunto de regras personalizado para um projeto DevOps do Azure, 
      **$/** `TeamProjectName` **/** `VersionControlPath`
 
     > [!NOTE]
-    > Você pode copiar o caminho usando um dos seguintes procedimentos no **Source Control Explorer** :
+    > Você pode copiar o caminho usando um dos seguintes procedimentos no **Source Control Explorer**:
 
     - No painel **pastas** , clique na pasta que contém o arquivo de conjunto de regras. Copie o caminho de controle de versão da pasta que aparece na caixa **origem** e digite o nome do arquivo de conjunto de regras manualmente.
 
@@ -106,7 +106,7 @@ Você especifica uma regra de política de check-in de projeto definida como o c
 
    Você pode executar essa etapa no **Source Control Explorer** clicando com o botão direito do mouse na pasta conjunto de regras e clicando em **obter versão mais recente**.
 
-2. Em **Gerenciador de soluções** , clique com o botão direito do mouse no projeto de código e clique em **Propriedades**.
+2. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto de código e clique em **Propriedades**.
 
 3. **Clique em análise de código**.
 

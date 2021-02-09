@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 912da653-ddfe-45a4-84aa-64281283739a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b003fcbd1b38eb5dc919b7f4f361e0b56b585f08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1c9284637be43ab30d35d3e0cb4aea937c0a224
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461220"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853250"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Hierarquia lexical de tipos de símbolos
 A tabela a seguir mostra os tipos de símbolo na hierarquia lexical.
 
 ## <a name="symbol-types"></a>Tipos de símbolo
 
-|Tipo de símbolo|Descrição|
+|Tipo de símbolo|Description|
 |-----------------|-----------------|
 |[Anotação](../../debugger/debug-interface-access/annotation.md)|Especifica um local anotado no código do programa.|
 |[Bloquear](../../debugger/debug-interface-access/block.md)|Especifica escopos aninhados em funções.|
@@ -45,7 +45,7 @@ A tabela a seguir mostra os tipos de símbolo na hierarquia lexical.
 > [!NOTE]
 > As propriedades de símbolo adicionais podem estar disponíveis dependendo do tipo de símbolo. Essas propriedades são listadas nos tópicos de símbolos individuais.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Hierarquia de classes de tipos de símbolo](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)
 - [Símbolos e marcações de símbolos](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

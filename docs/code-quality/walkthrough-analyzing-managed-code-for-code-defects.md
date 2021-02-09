@@ -9,15 +9,15 @@ helpviewer_keywords:
 - managed code, analyzing
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e862b176ab396999d3504e19c4de9a5c407b266
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: b9895dc8926f1bb5c7d33e792168ca46297c8196
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349016"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859600"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Walkthrough: usar a análise de código estático para encontrar defeitos de código
 
@@ -89,7 +89,7 @@ Este artigo orienta você pelo processo de uso da análise herdada para analisar
 
     Dependendo do perfil de desenvolvedor que você escolheu, talvez seja necessário apontar para **outras janelas** no menu **Exibir** e, em seguida, escolher **lista de erros**.
 
-1. Em **Gerenciador de soluções** , escolha **Mostrar todos os arquivos**.
+1. Em **Gerenciador de soluções**, escolha **Mostrar todos os arquivos**.
 
 1. Expanda o nó Propriedades e, em seguida, abra o arquivo *AssemblyInfo.cs* .
 
@@ -129,7 +129,7 @@ Este artigo orienta você pelo processo de uso da análise herdada para analisar
 
       A caixa de diálogo **Criar Chave de Nome Forte** é aberta.
 
-   1. Para **nome de arquivo de chave** , insira **TestKey**.
+   1. Para **nome de arquivo de chave**, insira **TestKey**.
 
    1. Insira uma senha e escolha **OK**.
 
@@ -172,6 +172,6 @@ Este artigo orienta você pelo processo de uso da análise herdada para analisar
 
      O projeto é compilado sem avisos ou erros.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Análise de código para código gerenciado](../code-quality/code-analysis-for-managed-code-overview.md)

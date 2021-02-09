@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 913860538fe7f9da1514d0e51d23bb3ea48c3b66
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d2908f7ec93d8704b52798121bd0076a7f5fddc1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434682"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859912"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Como: sincronizar conjuntos de regras de projeto de código com uma política de check-in do projeto DevOps do Azure
 
@@ -33,7 +33,7 @@ Sincronize as configurações de análise de código para projetos de código pa
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Para especificar um conjunto de regras padrão da Microsoft
 
-1. Em **Gerenciador de soluções** , clique com o botão direito do mouse no projeto de código e clique em **Propriedades**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto de código e clique em **Propriedades**.
 
 2. Clique em **Análise de código**.
 
@@ -53,7 +53,7 @@ Sincronize as configurações de análise de código para projetos de código pa
 
 1. Se necessário, execute uma operação get no arquivo de conjunto de regras que especifica a política de check-in.
 
-2. Em **Gerenciador de soluções** , clique com o botão direito do mouse no projeto de código e clique em **Propriedades**.
+2. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto de código e clique em **Propriedades**.
 
 3. Clique em **Análise de código**.
 

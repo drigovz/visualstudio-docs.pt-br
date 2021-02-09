@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8cef7620-5bc8-4500-8bd0-e9e638bccb24
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: de9f99f26de3bbd075c00af33b844ed65f4154ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 254be1bd88151b962cf563de3ff8aa26a983bc1e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461241"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862363"
 ---
 # <a name="label-debug-interface-access-sdk"></a>Label (SDK de Acesso à Interface de Depuração)
 Um local no código do programa é identificado por um `SymTagLabel` símbolo.
@@ -47,7 +47,7 @@ Um local no código do programa é identificado por um `SymTagLabel` símbolo.
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retorna `SymTagFuncDebugLabel` (um dos valores de [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) ).|
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Posição deste rótulo na imagem executável.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Hierarquia lexical de tipos de símbolo](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [Enumeração LocationType](../../debugger/debug-interface-access/locationtype.md)
 - [Locais de símbolos](../../debugger/debug-interface-access/symbol-locations.md)

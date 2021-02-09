@@ -21,15 +21,15 @@ helpviewer_keywords:
 - dependency graphs, browsing
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ace2095e98bc7d7425f518249a754fcbed07a02
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e579f62c24795ad99939fe10f68c42acaaa89b60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363608"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861928"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Procurar e reorganizar mapas de código
 
@@ -310,7 +310,7 @@ Você pode reorganizar, excluir ou desativar temporariamente os estilos na caixa
     |**Para**|**Escolha**|
     |-|-|
     |Desativar o elemento de código|**Desabilitar**|
-    |Excluir o elemento de código|**Excluir**|
+    |Excluir o elemento de código|**Delete (excluir)**|
     |Mover o estilo para cima|**Mover para Cima**|
     |Mover o elemento de código para baixo|**Mover para Baixo**|
 
@@ -328,7 +328,7 @@ Você pode mesclar mapas copiando e colando elementos de código entre mapas. Se
 
 Como alternativa, você pode arrastar esses assemblies ou binários para o mesmo mapa dessa pasta.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)
 - [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)

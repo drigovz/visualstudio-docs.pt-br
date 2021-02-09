@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Excel projects [Office development in Visual Studio], getting started
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1fb048fd015126e5438a007be1950cddffbac9e1
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: de5d7529e0bd8bc99eb4f375a31dab9ea9520234
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860718"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Introdução à programação de personalizações em nível de documento para o Excel
   Se você estiver apenas começando a criar personalizações em nível de documento para Microsoft Office Excel usando o Visual Studio, aqui está o que você precisa saber.

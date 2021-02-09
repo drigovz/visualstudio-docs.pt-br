@@ -14,15 +14,15 @@ helpviewer_keywords:
 - generating code
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 871aa20fe4fc95ea1641b7f478cb9b01d71284aa
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 262ab0638a128fe94561debabe35e20723fb6615
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861810"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Geração de código e modelos de texto T4
 
@@ -96,6 +96,6 @@ Para obter mais informações, consulte [geração de código em tempo de design
 
 O recurso de transformação de modelo de texto se chama *T4*.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Gerar código com base em uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)

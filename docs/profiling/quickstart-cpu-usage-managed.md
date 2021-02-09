@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Diagnostics Tools, CPU Usage
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d3cdb022dce8a9f4b7037e3770cb0ae46c6863c
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 582a412dbcac043e4a77c1508d385cc8caa4c64c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074885"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861638"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Início rápido: analisar dados de uso da CPU no Visual Studio (C#, Visual Basic)
 
@@ -34,7 +34,7 @@ O Windows 8 ou posterior é necessário para executar ferramentas de criação d
    ::: moniker range="vs-2017"
    Na barra de menus superior, escolha **arquivo** > **novo** > **projeto**.
 
-   Na caixa de diálogo **novo projeto** no painel esquerdo, expanda **C#** ou **Visual Basic**e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo de Console (.NET Core)**. Em seguida, nomeie o projeto *MyProfilerApp*.
+   Na caixa de diálogo **novo projeto** no painel esquerdo, expanda **C#** ou **Visual Basic** e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo de Console (.NET Core)**. Em seguida, nomeie o projeto *MyProfilerApp*.
 
    Se você não vir o modelo de projeto do **Aplicativo de Console (.NET Core)**, escolha o link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento multiplaforma do .NET Core** e, em seguida, selecione **Modificar**.
    ::: moniker-end
@@ -175,7 +175,7 @@ O Windows 8 ou posterior é necessário para executar ferramentas de criação d
     ```
 
     > [!NOTE]
-    > Em Visual Basic, certifique-se de que o objeto de inicialização está definido como `Sub Main` (**Propriedades**do  >  **aplicativo**  >  **Startup object**).
+    > Em Visual Basic, certifique-se de que o objeto de inicialização está definido como `Sub Main` (**Propriedades** do  >  **aplicativo**  >  **Startup object**).
 
 ## <a name="step-1-collect-profiling-data"></a>Etapa 1: Coletar dados de criação de perfil
 

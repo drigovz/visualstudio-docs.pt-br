@@ -5,17 +5,17 @@ ms.date: 02/19/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: e007246b85671a0f4606bbdb3d1e9c4e0dc83541
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 80ac8f23b5404d70b70166915cd791f2c0d7ed07
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98129452"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860965"
 ---
 # <a name="extract-local-function-refactoring"></a>Extrair refatoração de função local
 
@@ -39,7 +39,7 @@ Esta refatoração aplica-se a:
 
     ![Captura de tela da janela do Visual Studio Code com uma linha realçada. O menu ações rápidas e refatoração é aberto e a função local de extração é selecionada.](media/extract-local-function.png)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Refatoração](../refactoring-in-visual-studio.md)
 - [Visualizar Alterações](../../ide/preview-changes.md)

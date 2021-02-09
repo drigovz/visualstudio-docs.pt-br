@@ -16,15 +16,15 @@ helpviewer_keywords:
 - application modeling
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 71296b9ccb2e442d1bd9bc13865e0086821bf030
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 7364da54179b742dc3cbfcd94622308f5c13b483
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361151"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861902"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analisar e modelar a sua arquitetura
 
@@ -95,7 +95,7 @@ Uma DSL é uma notação que você cria para uma finalidade específica. No Visu
 
 - [SDK de Modelagem para Visual Studio - linguagens específicas ao domínio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [O que há de novo para modelagem no Visual Studio 2017](../modeling/what-s-new-for-design-in-visual-studio.md)
 - [DevOps e gerenciamento de ciclo de vida do aplicativo](/azure/devops/user-guide/devops-alm-overview)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ee89bba8-5d5c-4a0b-aa0d-1aad56baa380
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 00586a85312b90a7cb6590adb3cdd41b465411d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81c7694c02ea570880b60b2588ba1e97e1ad8609
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461311"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862405"
 ---
 # <a name="idiatableget__newenum"></a>IDiaTable::get__NewEnum
 Recupera a <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versão deste enumerador.
@@ -25,7 +25,7 @@ Recupera a <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versão d
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get__NewEnum ( 
+HRESULT get__NewEnum ( 
    IUnknown** pRetVal
 );
 ```
@@ -35,8 +35,8 @@ HRESULT get__NewEnum ( 
 
 fora Retorna a `IUnknown` interface que representa a <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versão deste enumerador.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
