@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cc62f028-d195-4fbf-93bc-10b08bef52d2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d9adc7949b0a6df886ceda0c1ddc6f3b9ee90d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9ad12358e92be12dca0dd9c49f4a2941f5c1da3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863042"
 ---
 # <a name="idiasymbolget_length"></a>IDiaSymbol::get_length
 Recupera o número de bits ou bytes de memória usados pelo objeto representado por esse símbolo.
@@ -25,7 +25,7 @@ Recupera o número de bits ou bytes de memória usados pelo objeto representado 
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_length ( 
+HRESULT get_length ( 
    ULONGLONG* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_length ( 
 
 fora Retorna o número de bytes ou bits de memória usados pelo objeto representado por este símbolo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -59,6 +59,6 @@ pSymbol->get_length( &length );
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumeração LocationType](../../debugger/debug-interface-access/locationtype.md)

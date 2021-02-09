@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 711b81fd-9549-44dc-9761-5eb862ed64c0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 068720e4b35ca52e07351aeb6f74d7594fe69d1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f2439a2b2256732856afbfcf4d856bfa829cc7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463431"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863238"
 ---
 # <a name="idiasymbolget_iscvtcil"></a>IDiaSymbol::get_isCVTCIL
 Recupera um sinalizador que indica se o módulo foi convertido de um módulo Common Intermediate Language (CIL) em um módulo nativo.
@@ -35,7 +35,7 @@ HRESULT get_isCVTCIL(
 
 fora Retorna `TRUE` se o módulo foi convertido de cil para código nativo; caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -51,6 +51,6 @@ fora Retorna `TRUE` se o módulo foi convertido de cil para código nativo; caso
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)

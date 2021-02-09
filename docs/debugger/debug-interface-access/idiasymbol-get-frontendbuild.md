@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f7dab1c6-112b-4966-baa5-afc976949c76
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 261a43ab176669a2b06e1481f1ee2e1d62e73162
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fc3c967f296e87ef46fe9121eaca055fd879025
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463893"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863413"
 ---
 # <a name="idiasymbolget_frontendbuild"></a>IDiaSymbol::get_frontEndBuild
 Recupera o número de Build de front-end.
@@ -25,7 +25,7 @@ Recupera o número de Build de front-end.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_frontEndBuild ( 
+HRESULT get_frontEndBuild ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_frontEndBuild ( 
 
 fora Retorna o número da compilação de front-end. Consulte Observações.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -53,5 +53,5 @@ fora Retorna o número da compilação de front-end. Consulte Observações.
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

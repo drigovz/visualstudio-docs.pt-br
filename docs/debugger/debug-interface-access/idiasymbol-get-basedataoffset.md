@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: bb2ff5ed-9293-4c37-9741-654058b571c5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b9597388f34ce48fcded4930aebba2a3fa15a50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c97b83bea8dad9f069041710f9ef76e62a071ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464229"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863553"
 ---
 # <a name="idiasymbolget_basedataoffset"></a>IDiaSymbol::get_baseDataOffset
 Recupera o deslocamento de dados base.
@@ -32,8 +32,8 @@ HRESULT get_baseDataOffset(
 
 fora Um ponteiro para um `DWORD` que contém o deslocamento de dados base.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

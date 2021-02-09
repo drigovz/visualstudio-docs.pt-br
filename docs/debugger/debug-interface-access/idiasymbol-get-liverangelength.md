@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ffcce3cc-085c-44eb-8145-46e3819c54f9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dac0c302fa85533624f58eac1538f8c8ba076e5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b243159cccc53361e833107fdf4d6381833ac6da
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463039"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863014"
 ---
 # <a name="idiasymbolget_liverangelength"></a>IDiaSymbol::get_liveRangeLength
 Retorna o comprimento do intervalo de endereços no qual o símbolo local é válido.
@@ -25,7 +25,7 @@ Retorna o comprimento do intervalo de endereços no qual o símbolo local é vá
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_liveRangeLength ( 
+HRESULT get_liveRangeLength ( 
    ULONGLONG* length
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_liveRangeLength ( 
 
 fora Retorna o comprimento do intervalo de endereços.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 > [!NOTE]
@@ -50,5 +50,5 @@ fora Retorna o comprimento do intervalo de endereços.
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

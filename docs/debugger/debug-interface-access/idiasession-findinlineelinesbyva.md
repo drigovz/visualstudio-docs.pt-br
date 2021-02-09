@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: dffe6594-e0d1-4ed5-aeea-8773f88d82a6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d28c00ea33f0dc07b6785691e9528c4e3b02421
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e335c97ed9178834975030aaa634a13e3e2816e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465709"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864232"
 ---
 # <a name="idiasessionfindinlineelinesbyva"></a>IDiaSession::findInlineeLinesByVA
 Recupera uma enumeração que permite que um cliente itere pelas informações de número de linha de todas as funções que são embutidas, direta ou indiretamente, pelo símbolo pai especificado e estão contidas no endereço virtual (VA) especificado.
@@ -23,7 +23,7 @@ Recupera uma enumeração que permite que um cliente itere pelas informações d
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT findInlineeLinesByVA ( 
+HRESULT findInlineeLinesByVA ( 
    IDiaSymbol*           parent,   ULONGLONG             va,   DWORD                 length,
    IDiaEnumLineNumbers** ppResult
 );
@@ -46,10 +46,10 @@ no Especifica o intervalo de endereços, em número de bytes, a ser abordado com
 
 fora Mantém um `IDiaEnumLineNumbers` objeto que contém a lista de números de linha recuperados.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 892b80ff-5957-4233-b4d7-6144167be289
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b8ba63eb1b68cc5e630e650bff80d86d6fb0b3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05355c9031aa588c8e9ed4ddceb69920fa485f51
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463025"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863000"
 ---
 # <a name="idiasymbolget_liverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
 Retorna a parte da seção do endereço inicial do intervalo no qual o símbolo local é válido.
@@ -25,7 +25,7 @@ Retorna a parte da seção do endereço inicial do intervalo no qual o símbolo 
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_liveRangeStartAddressSection ( 
+HRESULT get_liveRangeStartAddressSection ( 
    DWORD* section
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_liveRangeStartAddressSection ( 
 
 fora Retorna a parte da seção do intervalo de endereços inicial.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 > [!NOTE]
@@ -53,5 +53,5 @@ fora Retorna a parte da seção do intervalo de endereços inicial.
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

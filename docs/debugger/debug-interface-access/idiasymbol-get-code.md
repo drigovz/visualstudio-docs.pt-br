@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f425fa3-7ba6-4979-8b3e-0fcd06cbba73
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b34714ccd23929d4aaa3ea734fc80941d04103dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb6336ea900cc7ae23848d67b5a2e6545a404ad7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464089"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863518"
 ---
 # <a name="idiasymbolget_code"></a>IDiaSymbol::get_code
 Recupera um sinalizador que especifica se o símbolo se refere a um endereço de código.
@@ -25,7 +25,7 @@ Recupera um sinalizador que especifica se o símbolo se refere a um endereço de
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_code ( 
+HRESULT get_code ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_code ( 
 
 fora Retorna `TRUE` se o símbolo se refere a um endereço de código, caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou código de erro.
 
 > [!NOTE]
@@ -48,5 +48,5 @@ fora Retorna `TRUE` se o símbolo se refere a um endereço de código, caso cont
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

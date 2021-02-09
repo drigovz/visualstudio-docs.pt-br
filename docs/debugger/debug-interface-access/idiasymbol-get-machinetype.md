@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 30870b10-6f32-45c6-a0d7-020dea707710
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29bdfbab41c5382661e022d38a190d3bd19c38c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd903d49ed036533195f2fcb8dc61eef9176ba42
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462913"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862979"
 ---
 # <a name="idiasymbolget_machinetype"></a>IDiaSymbol::get_machineType
 Recupera o tipo da CPU de destino.
@@ -25,7 +25,7 @@ Recupera o tipo da CPU de destino.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_machineType ( 
+HRESULT get_machineType ( 
    DWORD* pRetVal
 );
 ```
@@ -35,12 +35,12 @@ HRESULT get_machineType ( 
 
 fora Retorna um valor das [constantes IMAGE_FILE_MACHINE_](/windows/desktop/SysInfo/image-file-machine-constants) que especifica o tipo de CPU de destino.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
 > Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IMAGE_FILE_MACHINE_ constantes](/windows/desktop/SysInfo/image-file-machine-constants) 
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

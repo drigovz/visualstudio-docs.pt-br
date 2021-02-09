@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e1eb90aa-49b7-476c-9e70-7e8f08994cbe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bc768db3f42f610a8efd30cea567e721929cb291
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ed505938636c9cccb69a927cdafbcb9589b35bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464691"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863798"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 Lê um bloco de dados da imagem do executável na memória.
@@ -25,7 +25,7 @@ Lê um bloco de dados da imagem do executável na memória.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT readMemory( 
+HRESULT readMemory( 
    enum MemoryTypeEnum type,
    ULONGLONG           va,
    DWORD               cbData,
@@ -55,9 +55,9 @@ fora Retorna o número de bytes realmente lidos. Se `pbData` for `NULL` , este �
 
 [entrada, saída] Um buffer que é preenchido com a leitura de memória.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [Enumeração MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md)

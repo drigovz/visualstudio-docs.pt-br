@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: d66e5c84-565d-494e-8486-f91db9a34548
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf2f54c585a8a5406a0772dc1c580112036671d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b84661f5cd51da17cf20577490b2fe458e71ef71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464621"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863735"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 Facilita a movimentação da pilha usando o arquivo de banco de dados de depuração do programa (. pdb).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 
@@ -58,7 +58,7 @@ IDiaStackWalkHelper: IUnknown
 
  DLL: msdia80.dll
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Interfaces (SDK de Acesso à Interface de Depuração)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
 - [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

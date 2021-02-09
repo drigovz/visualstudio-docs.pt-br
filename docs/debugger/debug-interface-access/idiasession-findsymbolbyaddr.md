@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c130abc5-4d0a-4d2d-8286-94fde36ddd4a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fddf38af6f6294fd3a6fa8e129d395a66f1aa80
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5624bc6e5a4dc895f46534b8512a9c759ee78329
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864141"
 ---
 # <a name="idiasessionfindsymbolbyaddr"></a>IDiaSession::findSymbolByAddr
 Recupera um tipo de símbolo especificado que contém ou está mais próximo de um endereço especificado.
@@ -25,7 +25,7 @@ Recupera um tipo de símbolo especificado que contém ou está mais próximo de 
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT findSymbolByAddr ( 
+HRESULT findSymbolByAddr ( 
    DWORD        isect,
    DWORD        offset,
    SymTagEnum   symtag,
@@ -50,7 +50,7 @@ no Tipo de símbolo a ser encontrado. Os valores são obtidos da enumeração de
 
 fora Retorna um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa o símbolo recuperado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo

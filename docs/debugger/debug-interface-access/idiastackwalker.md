@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 4a61a22a-9cf8-4ea1-9e6e-b42f96872d40
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d80e20200966c65258485782fec5865158f114a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9ec4267a0f5de93b32a4a56a61742a9148f2d9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464845"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863853"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 Fornece métodos para fazer uma movimentação de pilha usando informações no arquivo. pdb.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDiaStackWalker: IUnknown
@@ -66,6 +66,6 @@ Biblioteca: diaguids. lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Interfaces (SDK de Acesso à Interface de Depuração)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

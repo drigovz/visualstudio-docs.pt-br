@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 84cd2b67-0d83-4589-9ecb-a4bcbeed55f5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c158d15f7d60000bfd022e8cab10c3f2bc060c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8914c0eae31e7faac8cea523f4c558a9f00749a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463767"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863385"
 ---
 # <a name="idiasymbolget_hasdebuginfo"></a>IDiaSymbol::get_hasDebugInfo
 Recupera um sinalizador que especifica se o [compiland](../../debugger/debug-interface-access/compiland.md) contém informações de depuração.
@@ -35,7 +35,7 @@ HRESULT get_hasDebugInfo(
 
 fora Retorna `TRUE` se o compiland contém informações de depuração; caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -48,5 +48,5 @@ fora Retorna `TRUE` se o compiland contém informações de depuração; caso co
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

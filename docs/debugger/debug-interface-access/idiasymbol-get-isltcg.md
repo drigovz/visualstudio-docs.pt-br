@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f7f05b8-6b71-4958-9e1e-e4924ef9c59b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 009fcf437f56852e324e392f6a5691dd23e23ebc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3f1fde1a3509181182e7d41486facfb01d3efe1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463361"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863175"
 ---
 # <a name="idiasymbolget_isltcg"></a>IDiaSymbol::get_isLTCG
 Recupera um sinalizador que especifica se o [compiland](../../debugger/debug-interface-access/compiland.md) foi vinculado com o comutador do vinculador [/LTCG (geração de código de tempo de vinculação)](/cpp/build/reference/ltcg-link-time-code-generation), que ajuda na otimização completa do programa. Essa opção se aplica somente ao código gerenciado.
@@ -35,7 +35,7 @@ HRESULT get_iSLTCG(
 
 fora Retorna `TRUE` se o `compiland` foi vinculado com a opção de vinculador/LTCG; caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -48,5 +48,5 @@ fora Retorna `TRUE` se o `compiland` foi vinculado com a opção de vinculador/L
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

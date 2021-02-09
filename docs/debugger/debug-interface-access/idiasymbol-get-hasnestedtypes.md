@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1a8306bd-10dd-40a9-81fc-01f71c348484
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe569737440cc9d974196eaa2a73c2fab5b7e143
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 117bbed95e4adf79270072888c8ac1ac71215433
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463676"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863308"
 ---
 # <a name="idiasymbolget_hasnestedtypes"></a>IDiaSymbol::get_hasNestedTypes
 Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário tem definições de tipo aninhado.
@@ -25,7 +25,7 @@ Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_hasNestedTypes ( 
+HRESULT get_hasNestedTypes ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_hasNestedTypes ( 
 
 fora Retorna `TRUE` se o tipo de dados definido pelo usuário tiver definições de tipo aninhadas; caso contrário, retornará `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -48,5 +48,5 @@ fora Retorna `TRUE` se o tipo de dados definido pelo usuário tiver definições
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

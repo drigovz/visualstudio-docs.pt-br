@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 75d128a8-3dce-40ed-b392-de3fdda041b7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dc1e935ab47fd815c8f132dbeee21e21c9ba6350
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b78497cee5fea3eb4ab4fda29eacc3d864ce2ea5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465443"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864099"
 ---
 # <a name="idiasessionget_globalscope"></a>IDiaSession::get_globalScope
 Recupera uma referência ao escopo global.
@@ -25,7 +25,7 @@ Recupera uma referência ao escopo global.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_globalScope ( 
+HRESULT get_globalScope ( 
    IDiaSymbol** pRetVal
 );
 ```
@@ -35,10 +35,10 @@ HRESULT get_globalScope ( 
 
 fora Retorna um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa o escopo global.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Exe](../../debugger/debug-interface-access/exe.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fb1acb9c-4500-4343-a590-0395789e4040
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d0d2410e8bb027aebf767970877870f1558a9c2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 709ffb3327359e41693d524e5b9eaab79dc64790
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463809"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863392"
 ---
 # <a name="idiasymbolget_hasassignmentoperator"></a>IDiaSymbol::get_hasAssignmentOperator
 Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário tem quaisquer operadores de atribuição definidos.
@@ -25,7 +25,7 @@ Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_hasAssignmentOperator ( 
+HRESULT get_hasAssignmentOperator ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_hasAssignmentOperator ( 
 
 fora Retorna `TRUE` se o tipo de dados definido pelo usuário tiver quaisquer operadores de atribuição definidos; caso contrário, retornará `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -48,5 +48,5 @@ fora Retorna `TRUE` se o tipo de dados definido pelo usuário tiver quaisquer op
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

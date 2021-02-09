@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eafcc757-b488-487d-a063-ad3703ff42e8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1462ed0224dc2f881c5745876347712ac2c14e60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 241f2860a6ed3b1bc57fb8e2d959ad5b26decc68
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465401"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864085"
 ---
 # <a name="idiasessiongetsymbolsbyaddr"></a>IDiaSession::getSymbolsByAddr
 Recupera um enumerador que localiza símbolos na ordem de seus endereços.
@@ -25,7 +25,7 @@ Recupera um enumerador que localiza símbolos na ordem de seus endereços.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT getSymbolsByAddr( 
+HRESULT getSymbolsByAddr( 
    IDiaEnumSymbolsByAddr** ppEnumbyAddr
 );
 ```
@@ -35,9 +35,9 @@ HRESULT getSymbolsByAddr( 
 
 fora Retorna um objeto [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) . Use esta interface para procurar por símbolos no repositório de símbolos por local da memória.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

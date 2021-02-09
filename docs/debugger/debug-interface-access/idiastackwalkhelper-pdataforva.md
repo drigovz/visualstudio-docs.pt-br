@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fafc38fe-74dc-4726-9a51-eebf3a673d7f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d6e9b3e812311ef3d9555584d72ebb966098232a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d150e777f657fcf63dc66dbe3e686c1b445dd473
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464705"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863805"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 Retorna o bloco de dados PDATA associado ao endereço virtual.
@@ -25,7 +25,7 @@ Retorna o bloco de dados PDATA associado ao endereço virtual.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT pdataForVA( 
+HRESULT pdataForVA( 
    ULONGLONG  va,
    DWORD      cbData,
    DWORD*     pcbData,
@@ -50,7 +50,7 @@ fora Retorna o tamanho real dos dados em bytes que foram obtidos.
 
 [entrada, saída] Um buffer que é preenchido com os dados solicitados. Não pode ser `NULL`.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver nenhum pData para o endereço especificado. Caso contrário, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários
@@ -58,5 +58,5 @@ fora Retorna o tamanho real dos dados em bytes que foram obtidos.
 
  O chamador sabe a quantidade de dados a ser retornada para que o chamador não precise solicitar a quantidade de dados disponível. Portanto, é aceitável que uma implementação desse método retorne um erro se o `pbData` parâmetro for `NULL` .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

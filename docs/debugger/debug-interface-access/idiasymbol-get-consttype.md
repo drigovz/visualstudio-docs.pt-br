@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cb43605e-fa39-4f83-b047-f936a8019d03
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d38dbd2755276d08aa34e01ff2320ae129e747fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13a2b81f307e2b925037dfa2075446d0a9c837a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464033"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863448"
 ---
 # <a name="idiasymbolget_consttype"></a>IDiaSymbol::get_constType
 Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário é constante.
@@ -25,7 +25,7 @@ Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_constType ( 
+HRESULT get_constType ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_constType ( 
 
 fora Retorna `TRUE` se o tipo de dados definido pelo usuário for constante; caso contrário, retornará `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou código de erro.
 
 > [!NOTE]
@@ -48,5 +48,5 @@ fora Retorna `TRUE` se o tipo de dados definido pelo usuário for constante; cas
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

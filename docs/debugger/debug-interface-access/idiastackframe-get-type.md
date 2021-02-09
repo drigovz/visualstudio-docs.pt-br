@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 99daa97b-5c05-455d-bd1e-800762ccf7c9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e3001287938449313cf6fcc85d8476985993db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 435e8fadf1c1928013f52d3e1d7339066990abff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464949"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863875"
 ---
 # <a name="idiastackframeget_type"></a>IDiaStackFrame::get_type
 Recupera o tipo de quadro.
@@ -25,7 +25,7 @@ Recupera o tipo de quadro.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_type ( 
+HRESULT get_type ( 
    DWORD* pRetVal
 );
 ```
@@ -35,9 +35,9 @@ HRESULT get_type ( 
 
 fora Retorna um valor da enumeração de [Enumeração StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md) .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se a propriedade não tem suporte. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
 - [Enumeração StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5d19046f-f668-4aa9-8788-95cda9a98997
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc62ed0b4a1f0a9ddd43ef692f748db4d9b6f10
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 498831197f5480314695a68d3b5a76a4595a21a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465835"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864267"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
 Recupera todos os filhos de um identificador pai especificado que correspondem ao nome e ao tipo de símbolo.
@@ -25,7 +25,7 @@ Recupera todos os filhos de um identificador pai especificado que correspondem a
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT findChildren ( 
+HRESULT findChildren ( 
    IDiaSymbol*       parent,
    SymTagEnum        symtag,
    LPCOLESTR         name,
@@ -55,7 +55,7 @@ no Especifica as opções de comparação aplicadas à correspondência de nomes
 
 fora Retorna um objeto [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) que contém a lista de símbolos filho recuperados.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo

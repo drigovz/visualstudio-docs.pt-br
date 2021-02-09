@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3e6e88b-0594-4d82-9457-480239a2e85a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 261ee4aee81eef06294c8fe2393d56663957b27a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73230694e120e361f102cf149ba7f9822d04fe1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465097"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863966"
 ---
 # <a name="idiastackframeget_functionstart"></a>IDiaStackFrame::get_functionStart
 Recupera um sinalizador que indica se o bloco contém o ponto de entrada de uma função.
@@ -25,7 +25,7 @@ Recupera um sinalizador que indica se o bloco contém o ponto de entrada de uma 
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_functionStart ( 
+HRESULT get_functionStart ( 
    BOOL* pRetVal
 );
 ```
@@ -35,8 +35,8 @@ HRESULT get_functionStart ( 
 
 fora Retorna `TRUE` se o registro de ativação contém o ponto de entrada de uma função; caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se a propriedade não tem suporte. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

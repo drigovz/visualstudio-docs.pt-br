@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 953e6dba-582e-4b76-b736-898b92e5693e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d32b4264047fe8dc787b3eac8e33877c883b200e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7bc90c83ec789920d89bb424e6c7a6464c0ce8f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464152"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863532"
 ---
 # <a name="idiasymbolget_builtinkind"></a>IDiaSymbol::get_builtInKind
 Recupera um tipo interno do tipo HLSL.
@@ -32,8 +32,8 @@ HRESULT get_buildInKind(
 
 fora Um ponteiro para um `DWORD` que contém um tipo interno do tipo HLSL.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

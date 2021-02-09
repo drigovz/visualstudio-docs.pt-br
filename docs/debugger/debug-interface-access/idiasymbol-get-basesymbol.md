@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: cabb5a18-bda7-47e8-9e46-5f4718579fc9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74d775ad1035b01eed4d2537b5d388e664843a0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 832a4c6fbd2c0571d9e87d877c7a013af62cf202
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464215"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863546"
 ---
 # <a name="idiasymbolget_basesymbol"></a>IDiaSymbol::get_baseSymbol
 Recupera o símbolo do qual o ponteiro se baseia.
@@ -32,9 +32,9 @@ HRESULT get_baseSymbol(
 
 fora Um ponteiro para o símbolo do qual o ponteiro se baseia.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_baseSymbolId](../../debugger/debug-interface-access/idiasymbol-get-basesymbolid.md)

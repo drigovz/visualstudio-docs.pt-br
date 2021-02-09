@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cb61dfd9-fe69-461c-8185-288440454864
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c565a8c13b31feb78c8d60bf0b18bbc923f14f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc96412402202f0e6e20c85778f14b6be444d9bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463746"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863378"
 ---
 # <a name="idiasymbolget_haseha"></a>IDiaSymbol::get_hasEHa
 Recupera um sinalizador que especifica se a função contém manipulação de exceção assíncrona (estruturada).
@@ -35,7 +35,7 @@ HRESULT get_hasEHa(
 
 fora Retorna `TRUE` se a função tem qualquer manipulação de exceção assíncrona; caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -51,5 +51,5 @@ fora Retorna `TRUE` se a função tem qualquer manipulação de exceção assín
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

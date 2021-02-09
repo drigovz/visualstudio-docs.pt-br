@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fd30ab7b-022b-4402-a42a-2d38e274c1b1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c7d98260678af245fbc5a17593670a2471e9a488
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41f968bcf5f295ae249c8e3c176fe3c10745f30b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466108"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864393"
 ---
 # <a name="idiasectioncontribget_remove"></a>IDiaSectionContrib::get_remove
 Recupera um sinalizador que indica se a seção é removida antes de ser feita como parte da imagem na memória.
@@ -25,7 +25,7 @@ Recupera um sinalizador que indica se a seção é removida antes de ser feita c
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_remove ( 
+HRESULT get_remove ( 
    BOOL* pRetVal
 );
 ```
@@ -35,8 +35,8 @@ HRESULT get_remove ( 
 
 fora Retorna `TRUE` se a seção não deve ser adicionada à imagem na memória; caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

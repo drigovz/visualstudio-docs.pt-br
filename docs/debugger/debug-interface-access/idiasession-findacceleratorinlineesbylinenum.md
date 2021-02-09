@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 386c87aa-f7b2-4d38-9dd6-fffba9ff01f0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ec927532ebc808fae0717e36439be356cb022b32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 196eafaee2b18c4dd08b81d6670b79cf62b8f41f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465870"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864281"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
 Retorna uma enumeração de símbolos para quadros embutidos que correspondem ao local de origem especificado.
@@ -23,7 +23,7 @@ Retorna uma enumeração de símbolos para quadros embutidos que correspondem ao
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT findAcceleratorInlineeLinesByName ( 
+HRESULT findAcceleratorInlineeLinesByName ( 
    IDiaSymbol*           parent,
    IDiaSourceFile*       file,
    DWORD                 linenum,
@@ -53,7 +53,7 @@ no O número da coluna do local de origem.
 
 fora Um ponteiro para um `IDiaEnumLineNumbers` ponteiro de interface que é inicializado com o resultado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também

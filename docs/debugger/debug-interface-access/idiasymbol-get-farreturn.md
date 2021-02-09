@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 141df0e9-f4d9-4330-a043-5d9ea865257f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9977ea604af65c288bde49dcf0f44eeb1e241b6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0f06b6fa14af959d051409ce721807fc939f8ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463907"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863420"
 ---
 # <a name="idiasymbolget_farreturn"></a>IDiaSymbol::get_farReturn
 Recupera um sinalizador que especifica se a função contém um retorno distante.
@@ -35,7 +35,7 @@ HRESULT get_farReturn(
 
 no Retorna `TRUE` se a função usa um retorno distante, caso contrário, retorna `FALSE` .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -48,5 +48,5 @@ no Retorna `TRUE` se a função usa um retorno distante, caso contrário, retorn
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 8.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

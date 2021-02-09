@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cbe3d8ac-319a-40ac-bc3e-4eb81b2d7807
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 42bd724e4f25b5475f89af32f5793ede8d66594a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f11d99a3e3a8a78b6c8152dd94a28f27d800772
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464964"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863938"
 ---
 # <a name="idiastackframeget_registervalue"></a>IDiaStackFrame::get_registerValue
 Recupera o valor de um registro especificado como armazenado no quadro de pilha.
@@ -40,9 +40,9 @@ no Um dos valores de enumeração de [enumeração de CV_HREG_e](../../debugger/
 
 fora Valor armazenado no registro.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna o código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
 - [Enumeração CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md)

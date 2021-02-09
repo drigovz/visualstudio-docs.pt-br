@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 72906b92-dd4a-42e3-9b24-b77628fa48c1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 67b35a40de94bec45ce9ea1f5b50472f234192d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b3cc3929b019765d3406ad9ddedf3b0eaec2f01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463151"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863098"
 ---
 # <a name="idiasymbolget_isvirtualinheritance"></a>IDiaSymbol::get_isVirtualInheritance
 Especifica se o `this` ponteiro aponta para um membro de dados com herança virtual.
@@ -32,8 +32,8 @@ HRESULT get_isVirtualInheritance(
 
 fora Um ponteiro para um `BOOL` que especifica se o `this` ponteiro aponta para um membro de dados com herança virtual.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

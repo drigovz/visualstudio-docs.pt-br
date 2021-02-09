@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9cbcaf00-9ace-45e1-b164-7a9439e08083
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fee917c4d275ec0f76cd3442d1ae56887667ca6c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdec2a9d4c1cb089ef813123bab6f84daa26a826
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462983"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862993"
 ---
 # <a name="idiasymbolget_localbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
 Recupera a ID do registro que contém um ponteiro de base para variáveis locais na pilha. Use quando a [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) for definida como `SymTagFunction` .
@@ -25,7 +25,7 @@ Recupera a ID do registro que contém um ponteiro de base para variáveis locais
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_localBasePointerRegisterId ( 
+HRESULT get_localBasePointerRegisterId ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_localBasePointerRegisterId ( 
 
 fora Retorna a ID do registro que contém um ponteiro de base para variáveis locais na pilha.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -50,5 +50,5 @@ fora Retorna a ID do registro que contém um ponteiro de base para variáveis lo
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

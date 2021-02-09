@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6e045045-da8c-4338-9423-81a1ca20c405
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 191991ffb842657b7a7c4f439ca04a05670bca7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68c13c433d10bb462c78397b012000f0f245327a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863714"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
 Recupera os filhos do símbolo. Os símbolos locais que são retornados incluem informações de intervalo ao vivo, se o programa for compilado com otimização ativada.
@@ -25,7 +25,7 @@ Recupera os filhos do símbolo. Os símbolos locais que são retornados incluem 
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT findChildrenEx ( 
+HRESULT findChildrenEx ( 
    enum SymTagEnum   symtag,
    LPCOLESTR         name,
    DWORD             compareFlags,
@@ -50,7 +50,7 @@ no Especifica as opções de comparação a serem aplicadas à correspondência 
 
 fora Retorna um objeto [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) que contém uma lista dos símbolos filho recuperados.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Retorna `S_OK` se pelo menos um filho do símbolo foi encontrado ou retorna `S_FALSE` se nenhum filho foi encontrado; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
@@ -63,7 +63,7 @@ fora Retorna um objeto [IDiaEnumSymbols](../../debugger/debug-interface-access/i
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

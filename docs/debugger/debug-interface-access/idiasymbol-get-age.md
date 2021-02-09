@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 60d05654-e832-4a2e-a4a7-fe9922c459fe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b8fc198573123c24a3c48068b50161d0aa7f3b60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9d7ebaaafa1e01ef081aa96d64170ac59922dc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464341"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863588"
 ---
 # <a name="idiasymbolget_age"></a>IDiaSymbol::get_age
 Recupera o valor de idade de um arquivo. pdb.
@@ -25,7 +25,7 @@ Recupera o valor de idade de um arquivo. pdb.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_age ( 
+HRESULT get_age ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_age ( 
 
 fora Retorna o valor de idade de um arquivo. pdb.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou código de erro.
 
 > [!NOTE]
@@ -51,5 +51,5 @@ fora Retorna o valor de idade de um arquivo. pdb.
 |Cabeçalho:|dia2.h|
 |Versão:|DIA SDK v 7.0|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

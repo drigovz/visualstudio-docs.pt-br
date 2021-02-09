@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: d3197a38-5973-4e56-873e-4f1b84c3f674
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ba4cdb5f74cedf13cfb74b5aff6d43d24534eab9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc38d92dc20d1eea368c07e45237508dd5f85585
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466479"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864561"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 Permite que você leia as propriedades persistentes de um conjunto de propriedades de DIA.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
-IDiaPropertyStorage : IUnknown
+IDiaPropertyStorage : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
@@ -126,7 +126,7 @@ Biblioteca: diaguids. lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Interfaces (SDK de Acesso à Interface de Depuração)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

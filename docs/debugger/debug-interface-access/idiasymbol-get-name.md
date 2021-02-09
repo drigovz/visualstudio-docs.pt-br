@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 050ec02f-b7b3-48fc-8e35-58bdf7d938b0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bf03315fe2f78ccfc4acd9d8c0aed8f6729f679
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7258f8bb3ed5ff90ec944d65ebc2e28a1bb029b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862965"
 ---
 # <a name="idiasymbolget_name"></a>IDiaSymbol::get_name
 Recupera o nome do símbolo.
@@ -25,7 +25,7 @@ Recupera o nome do símbolo.
 ## <a name="syntax"></a>Sintaxe
 
 ```C++
-HRESULT get_name ( 
+HRESULT get_name ( 
    BSTR* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_name ( 
 
 fora Retorna o nome do símbolo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
@@ -49,5 +49,5 @@ BSTR        name;
 pType->get_name( &name );
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
