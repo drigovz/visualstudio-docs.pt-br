@@ -13,15 +13,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7eeff880538d98f997f48f82c49d01045e834031
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 861b6ff20f9ceb73c279e54fa89ee513389b6b91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970135"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900949"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Walkthrough: importar itens de um site existente do SharePoint
   Este tutorial demonstra como importar itens de um site existente do SharePoint para um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeto do SharePoint.
@@ -124,7 +124,7 @@ ms.locfileid: "95970135"
 
 7. Na caixa **selecionar itens a serem importados** , desmarque todas as caixas de seleção na lista, exceto a **coluna de teste**, e escolha o botão **concluir** .
 
-    Como a lista contém muitos itens, você pode escolher as **Ctrl** + **A** teclas CTRL para escolher todos os itens na lista, escolher a tecla barra de espaços para desmarcar todas as caixas de seleção e, em seguida, selecionar apenas a caixa de seleção ao lado do item de **coluna de teste** .
+    Como a lista contém muitos itens, você pode escolher as  +  teclas CTRL para escolher todos os itens na lista, escolher a tecla barra de espaços para desmarcar todas as caixas de seleção e, em seguida, selecionar apenas a caixa de seleção ao lado do item de **coluna de teste** .
 
     Depois que a operação de importação for concluída, um novo projeto chamado **WspImportProject1** será criado e conterá uma pasta denominada **campos**. Nessa pasta está a **coluna de teste** coluna de site personalizada e seu arquivo de definição *Elements.xml*.
 
@@ -143,7 +143,7 @@ ms.locfileid: "95970135"
 
      Observe que a coluna de site personalizada que você importou do primeiro site do SharePoint aparece na lista.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Importar itens de um site existente do SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Criar controles reutilizáveis para Web Parts ou páginas de aplicativo](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

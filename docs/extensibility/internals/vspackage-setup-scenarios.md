@@ -8,15 +8,15 @@ helpviewer_keywords:
 - VSPackages, deployment considerations
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97538be6c174f76072a6ca006db6443aa3fcdb57
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 81e298229bb12d906a3061e0b547553518cce204
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487966"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900005"
 ---
 # <a name="vspackage-setup-scenarios"></a>Cenários de instalação do VSPackage
 
@@ -78,7 +78,7 @@ Nesse caso, o VSPackage é um VSPackage gerenciado instalado no GAC (cache de as
 
 Para obter mais informações sobre a implantação de assemblies lado a lado, consulte [simplificando a implantação e resolvendo a dll inferno com o .NET Framework](/previous-versions/dotnet/articles/ms973843(v=msdn.10)).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
 - [Fornecer suporte à várias versões do Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ListObject control, mapping data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa24e4a0f0dab9c01de8e5a2960f28d71a9dad6e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ec82809a694e735fed553a1c79ba36687de0fbb1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848229"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900899"
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>Como mapear colunas ListObject para dados
   Ao associar um <xref:Microsoft.Office.Tools.Excel.ListObject> controle a um <xref:System.Data.DataTable> , talvez você não queira exibir todas as colunas em uma lista ou pode ter determinadas colunas que não estão associadas aos dados. Você pode mapear as colunas que deseja que apareçam no <xref:Microsoft.Office.Tools.Excel.ListObject> quando chamar o <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> método.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 17fe4698-b04e-4798-8412-80e0da60c387
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62be3ce13ecbc3180cf2bbcce26b04f3d79edb1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b40fd243fa8f3f67786b862c3e0cdbfd81373a53
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731159"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899020"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
 Solicita que todos os programas que estão sendo depurados por esse mecanismo de depuração (DE) interrompam a execução na próxima vez que um de seus threads tentarem ser executados.
@@ -28,8 +28,8 @@ Solicita que todos os programas que estão sendo depurados por esse mecanismo de
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT CauseBreak( 
-   void 
+HRESULT CauseBreak( 
+   void 
 );
 ```
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 73cd3e9d-cd72-4ad2-8cae-94d6bb6b01e0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: db31d0182c598b32933cf2d4260706a2252a9b6f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 758aecc4f2bf280fd7ff5ca7ca482ee6a3e3d68d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351161"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900638"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Como habilitar configurações de segurança do ClickOnce
 A segurança de acesso do código para aplicativos ClickOnce deve ser habilitada para publicar o aplicativo. Isso é feito automaticamente quando você publica um aplicativo usando o assistente de publicação.
@@ -34,7 +34,7 @@ A segurança de acesso do código para aplicativos ClickOnce deve ser habilitada
 
 ### <a name="to-enable-clickonce-security-settings"></a>Para habilitar as configurações de segurança do ClickOnce
 
-1. Com um projeto selecionado no **Gerenciador de soluções** , no menu **projeto** , clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.
 
 2. Clique na guia **Segurança** .
 
@@ -47,7 +47,7 @@ A segurança de acesso do código para aplicativos ClickOnce deve ser habilitada
 
 ### <a name="to-disable-clickonce-security-settings"></a>Para desabilitar as configurações de segurança do ClickOnce
 
-1. Com um projeto selecionado no **Gerenciador de soluções** , no menu **projeto** , clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.
 
 2. Clique na guia **Segurança** .
 
@@ -58,6 +58,6 @@ A segurança de acesso do código para aplicativos ClickOnce deve ser habilitada
     > [!NOTE]
     > Cada vez que o aplicativo é publicado com o assistente de publicação, essa caixa de seleção será selecionada; Você deve limpá-lo novamente após a publicação bem-sucedida.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Proteger aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Segurança de acesso do código para aplicativos ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

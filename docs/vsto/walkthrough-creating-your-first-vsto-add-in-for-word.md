@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6dc136b1c58f9c627787045b1259d07e27a6b8ad
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 43104ad8b26045056ca8d8d653fcb9625734f7eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527869"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899431"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Walkthrough: criar seu primeiro suplemento do VSTO para Word
   Este guia introdutório mostra como criar um suplemento do VSTO para o Microsoft Office Word. Os recursos que você cria nesse tipo de solução estão disponíveis para o próprio aplicativo, independentemente de quais documentos estão abertos.
@@ -135,7 +135,7 @@ ms.locfileid: "97527869"
 
 - Implantando suplementos do VSTO para Word: [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluções do Word](../vsto/word-solutions.md)
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)

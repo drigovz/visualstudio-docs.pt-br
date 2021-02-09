@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fcc4004542f9a566d6c6bfa820cbb8c2e1846fa
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 61f4dfd8068cc44fca97eb5e07ddbf62b21ee1f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487927"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899909"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Passo a passo: Criando um serviço de linguagem herdado
 Usar as classes de linguagem MPF (Managed Package Framework) para implementar um serviço de linguagem no [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] é simples. Você precisa de um VSPackage para hospedar o serviço de idioma, o próprio serviço de linguagem e um analisador para seu idioma.
@@ -132,5 +132,5 @@ Usar as classes de linguagem MPF (Managed Package Framework) para implementar um
 
      Por exemplo, digite `public override` para ver uma lista de todos os métodos que podem ser substituídos nessa classe.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Implementando um serviço de linguagem herdado](../../extensibility/internals/implementing-a-legacy-language-service1.md)

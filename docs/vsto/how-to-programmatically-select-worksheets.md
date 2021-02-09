@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Excel projects, selecting worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5ddef833feeb4e59f5e9e9b2c95a2170ee3c2530
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 8a58c4cc53597714eb65010c2fdbb423dd20a35a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528550"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899389"
 ---
 # <a name="how-to-programmatically-select-worksheets"></a>Como: selecionar planilhas programaticamente
   O <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> método seleciona o objeto especificado, que move a seleção do usuário para o novo objeto. Use o <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> método se desejar colocar o foco no objeto sem alterar a seleção do usuário.
@@ -49,7 +49,7 @@ ms.locfileid: "97528550"
      [!code-csharp[Trin_VstcoreExcelAutomation#20](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#20)]
      [!code-vb[Trin_VstcoreExcelAutomation#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#20)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Trabalhar com planilhas](../vsto/working-with-worksheets.md)
 - [Como: imprimir planilhas programaticamente](../vsto/how-to-programmatically-print-worksheets.md)
 - [Como: excluir programaticamente planilhas de pastas de trabalho](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)

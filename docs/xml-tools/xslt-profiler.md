@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: f2214ab4d66dcad1ee92eda7d7acbb94b89e8eb6
-ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
+ms.openlocfilehash: 9dc37ceddd87fa0b6c8029c0acb8ea195f9ce10b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94531882"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900807"
 ---
 # <a name="the-xslt-profiler"></a>O criador de perfil XSLT
 
@@ -33,7 +33,7 @@ O XSLT Profiler faz parte do Visual Studio e está disponível no menu **XML** .
 
 1. Abra um documento XSLT no Visual Studio 2017.
 
-2. Na barra de menus, escolha **XML**  >  **XSLT de perfil** XML.
+2. Na barra de menus, escolha   >  **XSLT de perfil** XML.
 
 3. Fornecer um documento XML de entrada. Se um documento XML ele já não estiver aberto, você será solicitado para o arquivo.
 
@@ -53,7 +53,7 @@ O XSLT Profiler faz parte do Visual Studio e está disponível no menu **XML** .
 
    - Funções que usam o tempo os mais longa de executar
 
-   Por padrão, há três colunas para cada ponto de dados: o nome da função, o número de chamadas o valor absoluto, e um valor percentual de função chamado para chamadas de função total. De cada ponto de dados na **exibição de resumo** , você pode navegar para exibições mais detalhadas clicando com o botão direito do mouse nos pontos de dados da função.
+   Por padrão, há três colunas para cada ponto de dados: o nome da função, o número de chamadas o valor absoluto, e um valor percentual de função chamado para chamadas de função total. De cada ponto de dados na **exibição de resumo**, você pode navegar para exibições mais detalhadas clicando com o botão direito do mouse nos pontos de dados da função.
 
 3. Selecione a opção de **exibição de função** na lista suspensa **exibição atual** . A **exibição de função** lista as funções chamadas durante a criação de perfil. Você pode classificar os dados em um nome de coluna. As colunas exibidas por padrão são:
 
@@ -77,11 +77,11 @@ O XSLT Profiler faz parte do Visual Studio e está disponível no menu **XML** .
 
 Selecione o modo de exibição **chamador/receptor** na lista suspensa **exibição atual** . O modo de exibição **chamador/receptor** tem as três partes distintas a seguir:
 
-- **Funções que chamaram** : todas as funções que chamaram uma função específica são listadas na parte superior da exibição.
+- **Funções que chamaram**: todas as funções que chamaram uma função específica são listadas na parte superior da exibição.
 
-- **Função atual** : a função específica que foi chamada está listada na parte intermediária do modo de exibição.
+- **Função atual**: a função específica que foi chamada está listada na parte intermediária do modo de exibição.
 
-- **Funções que foram chamadas por** : todas as funções que foram chamadas pela função específica são listadas na parte inferior da exibição.
+- **Funções que foram chamadas por**: todas as funções que foram chamadas pela função específica são listadas na parte inferior da exibição.
 
 Se uma função chamada `SyncToNavigator` aparece na parte média de exibição, todas as funções que chamaram a função de `SyncToNavigator` aparecem na parte superior de exibição, e em todas as funções que foram chamados por `SyncToNavigator` aparecem na parte de fundo de exibição.
 
@@ -93,21 +93,21 @@ Se uma função chamada `SyncToNavigator` aparece na parte média de exibição,
 
 - Selecione **modo de exibição de árvore de chamada** na lista suspensa **exibição atual** . Esta exibição é um modo de exibição de árvore de execução do programa.
 
-   O **modo de exibição de árvore de chamadas** mostra a raiz da árvore como o nome do processo. As funções são os nós de árvore. Esta exibição permite que você fure em rastreamentos específicos de chamada e analise que os rastreamentos têm o maior impacto de desempenho. A exibição é semelhante à **exibição da pilha de chamadas** disponível durante a depuração. Além das colunas no **modo de exibição de função** , no modo de exibição de árvore de **chamada** , há uma coluna adicional para exibir o **nome do módulo**.
+   O **modo de exibição de árvore de chamadas** mostra a raiz da árvore como o nome do processo. As funções são os nós de árvore. Esta exibição permite que você fure em rastreamentos específicos de chamada e analise que os rastreamentos têm o maior impacto de desempenho. A exibição é semelhante à **exibição da pilha de chamadas** disponível durante a depuração. Além das colunas no **modo de exibição de função**, no modo de exibição de árvore de **chamada**, há uma coluna adicional para exibir o **nome do módulo**.
 
 - Selecione **marcas** na lista suspensa **exibição atual** .
 
-   Com o XSLT Profiler, há marcas que aparecem no fluxo de coleta de dados com um comentário associado. As marcas são locais no código que têm contadores. Quando você indica que o profiler XSLT para coletar contadores de desempenho XSLT, os contadores obtém como cada vez que uma dessas marcas é executado. Os dados são exibidos em uma tabela que contém a **ID de marca** , o nome da **marca** ( **Iniciar programa** , **encerrar programa** ) e o **carimbo de data/hora**. As marcas não são agregadas e aparecem em ordem cronológica na exibição de **marcas** do relatório de desempenho.
+   Com o XSLT Profiler, há marcas que aparecem no fluxo de coleta de dados com um comentário associado. As marcas são locais no código que têm contadores. Quando você indica que o profiler XSLT para coletar contadores de desempenho XSLT, os contadores obtém como cada vez que uma dessas marcas é executado. Os dados são exibidos em uma tabela que contém a **ID de marca**, o nome da **marca** (**Iniciar programa**, **encerrar programa**) e o **carimbo de data/hora**. As marcas não são agregadas e aparecem em ordem cronológica na exibição de **marcas** do relatório de desempenho.
 
 ## <a name="select-modules-in-the-current-view"></a>Módulos selecionados na exibição atual
 
 - Selecione **módulos** na lista suspensa **exibição atual** .
 
-   Exibição de módulos é uma lista plana das funções agregadas para o nível de módulo. Expandir ou recolher o nome do módulo para exibir ou fechar a exibição de dados de desempenho do módulo. Você pode classificar os dados em um nome de coluna. Por padrão, há valores absolutos e números percentuais para **tempo inclusivo decorrido** , **tempo exclusivo decorrido** , **tempo inclusivo do aplicativo** , **tempo exclusivo do aplicativo** e **número de chamadas**.
+   Exibição de módulos é uma lista plana das funções agregadas para o nível de módulo. Expandir ou recolher o nome do módulo para exibir ou fechar a exibição de dados de desempenho do módulo. Você pode classificar os dados em um nome de coluna. Por padrão, há valores absolutos e números percentuais para **tempo inclusivo decorrido**, **tempo exclusivo decorrido**, **tempo inclusivo do aplicativo**, **tempo exclusivo do aplicativo** e **número de chamadas**.
 
 - Selecione **processar** na lista suspensa **exibição atual** .
 
-   A exibição processo exibe uma tabela que inclui a **ID do processo** , o **nome do processo** , a hora de **início** e a **hora de término**. Os dados podem ser classificados clicando em nomes de coluna.
+   A exibição processo exibe uma tabela que inclui a **ID do processo**, o **nome do processo**, a hora de **início** e a **hora de término**. Os dados podem ser classificados clicando em nomes de coluna.
 
 ## <a name="see-also"></a>Confira também
 

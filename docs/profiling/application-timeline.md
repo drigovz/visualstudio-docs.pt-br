@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 8fc482e10ae1ca08230feb38eb2997d0c4dcab00
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 40fc899aecc3b8aea239703080d8db4efcfaec52
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901183"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analisar o consumo de recursos e a Atividade de Thread de Interface do Usuário (XAML)
 
@@ -101,7 +101,7 @@ A exibição de detalhes é o ponto em que você passa a maior parte do tempo an
 
 Há suporte para os seguintes eventos:
 
-|Name|Descrição|
+|Nome|Descrição|
 |-|-|
 |**Análise**|Tempo gasto analisando arquivos XAML e criando objetos.<br /><br /> Expandir um nó de **Análise** em **Detalhes da linha do tempo** exibe a cadeia de dependências de todos os arquivos XAML analisados devido ao evento raiz. Essa dica permite identificar a criação de objeto e a análise de arquivos desnecessárias em cenários sensíveis a desempenho e otimizá-los.|
 |**Layout**|Em aplicativos grandes, milhares de elementos podem ser mostrados na tela ao mesmo tempo. Essa exibição pode resultar em uma baixa taxa de quadros de interface do usuário e a capacidade de resposta do aplicativo correspondentemente baixa. O evento Layout determina com precisão o custo de estabelecer cada elemento (ou seja, o tempo gasto em Arrange, Measure, ApplyTemplate, ArrangeOverride e MeasureOverride). Ele também cria as árvores visuais que participaram de uma passagem de layout. É possível usar essa visualização para determinar quais árvores lógicas serão removidas ou para avaliar outros mecanismos de adiamento para otimizar sua passagem de layout.|
@@ -117,7 +117,7 @@ Há suporte para os seguintes eventos:
 
 Use a barra de ferramentas **Detalhes da linha do tempo** para classificar, filtrar e especificar as anotações das entradas da exibição **Detalhes da linha do tempo**.
 
-|Name|Descrição|
+|Nome|Descrição|
 |-|-|
 |**Classificar por**|Classifique por hora de início ou o duração de eventos.|
 |![Agrupar eventos por quadro](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Adiciona ou remove a categoria de **Quadro** de nível superior que agrupa eventos por quadro.|

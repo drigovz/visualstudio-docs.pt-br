@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 04a804bf-ed55-4a7a-a1e6-f63ed99c0276
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3518a2eef331414e5c73c0cebb36681ad2b72d61
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 61c81ab15a3f4f6ec89d1b37a2c96d963bbdf67b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900403"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Como especificar o local de onde os usuários finais instalarão
 
@@ -39,13 +39,13 @@ A `Installation URL` propriedade pode ser definida na página **publicar** do de
 
 ### <a name="to-specify-an-installation-url"></a>Para especificar uma URL de instalação
 
-1. Com um projeto selecionado no **Gerenciador de soluções** , no menu **projeto** , clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.
 
 2. Clique na guia **Publicar**.
 
 3. No campo URL de instalação, insira o local de instalação usando uma URL totalmente qualificada usando o formato `https://www.contoso.com/ApplicationName` ou um caminho UNC usando o formato `\Server\ApplicationName` .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Como especificar para onde o Visual Studio copia os arquivos](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
 - [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Como publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

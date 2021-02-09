@@ -6,15 +6,15 @@ ms.date: 05/16/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9898b720e51c2750b67054d1f095200372f426da
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 324f8fe7ee34f469d31ad1ce6cf6bd25ab97f225
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363764"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899821"
 ---
 # <a name="share-code-maps"></a>Compartilhar mapas de códigos
 
@@ -57,8 +57,8 @@ Ao exportar um mapa de código como um arquivo XPS, você pode vê-lo em visuali
 
 2. Navegue para onde você deseja salvar o arquivo.
 
-3. Nomeie o mapa de código. Verifique se a caixa **salvar como tipo** está definida como **arquivos XPS ( \* . XPS)**. Selecione **Salvar**.
+3. Nomeie o mapa de código. Verifique se a caixa **salvar como tipo** está definida como **arquivos XPS ( \* . XPS)**. Escolha **Salvar**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Mapear dependências com mapas de código](../modeling/map-dependencies-across-your-solutions.md)

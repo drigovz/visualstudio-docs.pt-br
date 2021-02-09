@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 743dd1aa72d9b8db6b848618c8a2ad6c8c8ecaaf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e8966be5c30bf2061fc1e03be6798279afbe8ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723332"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900173"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 Essa interface permite que o SDM (Gerenciador de depuração de sessão) Notifique um processo que está sendo anexado ou desanexado do processo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugProcessEx2 : IUnknown
@@ -61,5 +61,5 @@ IDebugProcessEx2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
-- [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a17902451c931bd37a92158a3b5c3838ed91ed4
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0b4e4efee02ca1571f40ae33f9d69d8fbec0a1d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351122"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900429"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Como assinar manifestos de aplicativo e implantação novamente
 Depois de fazer alterações nas propriedades de implantação no manifesto do aplicativo para Windows Forms aplicativos, XBAP (aplicativos Windows Presentation Foundation) ou soluções do Office, você deve assinar novamente os manifestos de aplicativo e de implantação com um certificado. Esse processo ajuda a garantir que arquivos violados não sejam instalados nos computadores dos usuários finais.
@@ -33,7 +33,7 @@ Depois de fazer alterações nas propriedades de implantação no manifesto do a
  Outro cenário em que você pode assinar novamente os manifestos é quando seus clientes desejam assinar o aplicativo e os manifestos de implantação com seu próprio certificado.
 
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Assinar novamente os manifestos de aplicativo e de implantação
- Este procedimento pressupõe que você já fez alterações no arquivo de manifesto do aplicativo ( *. manifest* ). Para obter mais informações, consulte [como alterar propriedades de implantação](/previous-versions/cc442869(v=vs.110)).
+ Este procedimento pressupõe que você já fez alterações no arquivo de manifesto do aplicativo (*. manifest*). Para obter mais informações, consulte [como alterar propriedades de implantação](/previous-versions/cc442869(v=vs.110)).
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Para assinar novamente o aplicativo e os manifestos de implantação com o Mage.exe
 
@@ -69,10 +69,10 @@ Depois de fazer alterações nas propriedades de implantação no manifesto do a
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5. Opcionalmente, copie o manifesto de implantação mestre ( *Publish \\ \<appname> . Application* ) para seu diretório de implantação de versão ( *publish\Application files \\ \<appname> _ \<version>* ).
+5. Opcionalmente, copie o manifesto de implantação mestre (*Publish \\ \<appname> . Application*) para seu diretório de implantação de versão (*publish\Application files \\ \<appname> _ \<version>*).
 
 ## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>Atualizar e assinar novamente os manifestos de aplicativo e implantação
- Este procedimento pressupõe que você já fez alterações no arquivo de manifesto do aplicativo ( *. manifest* ), mas que há outros arquivos que foram atualizados. Quando os arquivos são atualizados, o hash que representa o arquivo também deve ser atualizado.
+ Este procedimento pressupõe que você já fez alterações no arquivo de manifesto do aplicativo (*. manifest*), mas que há outros arquivos que foram atualizados. Quando os arquivos são atualizados, o hash que representa o arquivo também deve ser atualizado.
 
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Para atualizar e assinar novamente o aplicativo e os manifestos de implantação com o Mage.exe
 
@@ -112,9 +112,9 @@ Depois de fazer alterações nas propriedades de implantação no manifesto do a
 
 6. Adicione a extensão de arquivo *. Deploy* de volta aos arquivos, exceto os arquivos de manifesto de implantação e de aplicativo.
 
-7. Opcionalmente, copie o manifesto de implantação mestre ( *Publish \\ \<appname> . Application* ) para seu diretório de implantação de versão ( *publish\Application files \\ \<appname> _ \<version>* ).
+7. Opcionalmente, copie o manifesto de implantação mestre (*Publish \\ \<appname> . Application*) para seu diretório de implantação de versão (*publish\Application files \\ \<appname> _ \<version>*).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Proteger aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Segurança de acesso do código para aplicativos ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md)

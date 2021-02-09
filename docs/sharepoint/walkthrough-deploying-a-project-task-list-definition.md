@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0be8eed2dc41ad433c0e0514dfd34e3c6e3d7193
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: c70a3458a8f54cc4437e00517445917cf92f6aa1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970421"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901029"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Walkthrough: implantar uma definição de lista de tarefas de projeto
 
@@ -176,5 +176,5 @@ Você pode aprender mais sobre como personalizar e implantar soluções do Share
 
 - [Windows PowerShell para SharePoint Server 2010](/powershell/module/sharepoint-server)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

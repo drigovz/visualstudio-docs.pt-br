@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4a2f2b951881208d3995aeb1f5f1f655b80674f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 09337ee164c8b740e9aa8a044c4a9df385f01016
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900567"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Como instalar pré-requisitos com um aplicativo ClickOnce
 Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos exigem que a versão correta do .NET Framework seja instalada em um computador antes que possam ser executadas; muitos aplicativos também têm outros pré-requisitos. Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo, você pode escolher um conjunto de componentes de pré-requisito para ser empacotado junto com seu aplicativo. No momento da instalação, uma verificação será executada para cada pré-requisito para determinar se ele já existe; Se não for, ele será instalado antes da instalação do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.
@@ -40,13 +40,13 @@ Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplic
 
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Para especificar os pré-requisitos para instalar com um aplicativo ClickOnce
 
-1. Com um projeto selecionado no **Gerenciador de Soluções** , no menu **Projeto** , clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
 
 2. Selecione o painel **publicar** .
 
 3. Clique no botão **pré-requisitos** para abrir a caixa de diálogo **pré-requisitos** .
 
-4. Na caixa de diálogo **Pré-requisitos** , verifique se a caixa de seleção **Criar programa de instalação para instalar os componentes dos pré-requisitos** está marcada.
+4. Na caixa de diálogo **Pré-requisitos**, verifique se a caixa de seleção **Criar programa de instalação para instalar os componentes dos pré-requisitos** está marcada.
 
 5. Na lista **pré-requisitos** , verifique os componentes que você deseja instalar e clique em **OK**.
 
@@ -54,13 +54,13 @@ Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplic
 
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Para especificar um local de download diferente para os pré-requisitos
 
-1. Com um projeto selecionado no **Gerenciador de Soluções** , no menu **Projeto** , clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
 
 2. Selecione o painel **publicar** .
 
 3. Clique no botão **pré-requisitos** para abrir a caixa de diálogo **pré-requisitos** .
 
-4. Na caixa de diálogo **Pré-requisitos** , verifique se a caixa de seleção **Criar programa de instalação para instalar os componentes dos pré-requisitos** está marcada.
+4. Na caixa de diálogo **Pré-requisitos**, verifique se a caixa de seleção **Criar programa de instalação para instalar os componentes dos pré-requisitos** está marcada.
 
 5. Na seção **especificar o local de instalação para os pré-requisitos** , selecione **baixar pré-requisitos no seguinte local**.
 
@@ -69,6 +69,6 @@ Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplic
     > [!NOTE]
     > Você deve verificar se os instaladores para os componentes especificados existem no local especificado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Como publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 45916edbef4368c58f83426d6c73f3c692236cb9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa404f713a8982177cb28c48ddc83f332e5c5e56
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722438"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899008"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 Retorna os GUIDs para todos os mecanismos de depuração possíveis que podem depurar este programa.
@@ -28,7 +28,7 @@ Retorna os GUIDs para todos os mecanismos de depuração possíveis que podem de
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT EnumPossibleEngines( 
+HRESULT EnumPossibleEngines( 
    DWORD  celtBuffer,
    GUID*  rgguidEngines,
    DWORD* pceltEngines
@@ -36,7 +36,7 @@ HRESULT EnumPossibleEngines( 
 ```
 
 ```csharp
-int EnumPossibleEngines( 
+int EnumPossibleEngines( 
    uint      celtBuffer,
    GUID[]    rgguidEngines,
    ref DWORD pceltEngines
@@ -53,7 +53,7 @@ no O número de DE GUIDs a serem retornados. Isso também especifica o tamanho m
 `pceltEngines`\
 fora Retorna o número real de GUIDs que são retornados.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` ou [C#] 0x8007007A se o buffer não for grande o suficiente.
 
 ## <a name="remarks"></a>Comentários

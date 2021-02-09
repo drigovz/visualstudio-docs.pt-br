@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: db31a16b-960f-4264-91d7-c7c40f876068
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46e46278f5465de029aa9536744f51843397d743
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 1e721199716abc47e89dc9fd2c7c510926853439
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351226"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900697"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Como desabilitar a ativação de aplicativos ClickOnce pela URL
 
@@ -45,6 +45,6 @@ Este procedimento usa a ferramenta SDK (Software Development Kit) do Windows Mag
 
 4. Salve e assine o manifesto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)

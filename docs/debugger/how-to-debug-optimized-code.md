@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: fc8eeeb8-6629-4c9b-99f7-2016aee81dff
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 971ceb59a17788076a1188e42d834f7b4bd704cc
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 19b09831aea0f7e38c7d095c1e549496569405c9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903175"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899296"
 ---
 # <a name="how-to-debug-optimized-code"></a>Como depurar o código otimizado
 
@@ -91,7 +91,7 @@ for (x=0; x<10; x++)
 
  Suponha que você defina um ponto de interrupção nesta linha. Você pode esperar que o ponto de interrupção seja atingido 10 vezes, mas se o código for otimizado, o ponto de interrupção será atingido somente uma vez. Isso ocorre porque a primeira instrução define o valor de `x` como 0. O compilador reconhece que isso somente precisa ser feito uma vez e o move para fora do loop. O ponto de interrupção também será movido. As instruções que comparam e incrementam `x` permanecem dentro do loop. Quando você exibe a janela **Desmontagem**, a [unidade da etapa](/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100)) será definida automaticamente como Instrução para obter maior controle, o que é útil quando você passa por código otimizado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Depurando código nativo](../debugger/debugging-native-code.md)

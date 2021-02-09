@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bf01ffceb122ad99d5ecca8fabfaa102a8fc505
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee2f44e5d75d44cfc1c903d462e7a1df360eeefa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899168"
 ---
 # <a name="core-interfaces"></a>Interfaces principais
 As interfaces a seguir são as principais interfaces para estender o depurador usando o [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] .
@@ -305,4 +305,4 @@ As interfaces a seguir são as principais interfaces para estender o depurador u
 
 ## <a name="see-also"></a>Confira também
 - [Referência da API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
-- [Criar um mecanismo de depuração personalizado](../../../extensibility/debugger/creating-a-custom-debug-engine.md)
+- [Criando um mecanismo de depuração personalizado](../../../extensibility/debugger/creating-a-custom-debug-engine.md)

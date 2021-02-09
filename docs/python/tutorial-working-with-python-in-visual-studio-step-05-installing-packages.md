@@ -6,17 +6,17 @@ ms.date: 03/09/2020
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 32e85f39c4acf9466def24bcfea59bbfd6807a1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c47eacf0c9977e7342bfda17e03ea53728ee9215
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801653"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901148"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Etapa 5: Instalar pacotes no ambiente do Python
 
@@ -79,7 +79,7 @@ A comunidade de desenvolvedores do Python produziu milhares de pacotes úteis qu
    >
    > O Visual Studio 2017 versão 15,6 e posterior usa um método diferente e mais rápido para trabalhar com o IntelliSense e exibe uma mensagem para esse efeito na guia **IntelliSense** .
 
-## <a name="run-the-program"></a>Executar o programa
+## <a name="run-the-program"></a>Execute o programa
 
 1. Agora que o [matplotlib](https://matplotlib.org/) está instalado, execute o programa com (**F5**) ou sem o depurador (**Ctrl** + **F5**) para ver a saída:
 
