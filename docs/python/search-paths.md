@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 10430c6eba57c97dd46a706d0ec2f532cd08d4f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43d24d38fcb9ba07d4cc8c58d7b544256171b049
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801159"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902368"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Como o Visual Studio usa caminhos de pesquisa de Python
 
@@ -29,7 +29,7 @@ No entanto, o Visual Studio ignora a variável de ambiente do caminho de pesquis
 
 Dessa forma, o Visual Studio fornece um meio para especificar caminhos de pesquisa diretamente nos projetos e ambientes. O código que você executa ou depura no Visual Studio recebe os caminhos de pesquisa no valor de `PYTHONPATH` (e outras variáveis equivalentes). Ao adicionar caminhos de pesquisa, o Visual Studio inspeciona as bibliotecas nessas localizações e compila bancos de dados do IntelliSense para elas quando necessário (Visual Studio 2017 versão 15.5 e anterior; a criação do banco de dados pode demorar algum tempo, dependendo do número de bibliotecas).
 
-Para adicionar um caminho de pesquisa, vá para **Gerenciador de soluções**, expanda o nó do projeto, clique com o botão direito do mouse em **caminhos de pesquisa**e selecione **Adicionar pasta ao caminho de pesquisa**:
+Para adicionar um caminho de pesquisa, vá para **Gerenciador de soluções**, expanda o nó do projeto, clique com o botão direito do mouse em **caminhos de pesquisa** e selecione **Adicionar pasta ao caminho de pesquisa**:
 
 ::: moniker range="vs-2017"
 ![Comando Adicionar Pasta ao Caminho de Pesquisa em Caminhos de Pesquisa no Gerenciador de Soluções](media/search-paths-command.png)

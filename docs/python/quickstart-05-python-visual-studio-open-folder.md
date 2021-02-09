@@ -5,18 +5,18 @@ ms.date: 03/12/2019
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: d11ffcb2c43d2c519d75d43afad6383e0bfaa44a
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: bc47f2a91b0ce42c319651cad22dbe05fe32623f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761271"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902414"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Início rápido: abrir e executar o código Python em uma pasta
 
@@ -109,7 +109,7 @@ Nesses casos, você também deve adicionar uma linha ao arquivo JSON de configur
 > [!div class="nextstepaction"]
 > [Tutorial: trabalhar com Python no Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Início Rápido: Criar um projeto do Python com base em código existente](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
 - [Início rápido: criar um projeto Python por meio de um repositório](quickstart-03-python-in-visual-studio-project-from-repository.md)

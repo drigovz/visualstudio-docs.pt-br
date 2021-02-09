@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: be93ac7b8bc0659da522abcf6000d97ec05d46b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8eb46f324359549d7f74e8edd90d3056820e234e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801328"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902386"
 ---
 # <a name="refactor-python-code"></a>Refatorar o código do Python
 
@@ -42,7 +42,7 @@ O Visual Studio fornece vários comandos para transformar e limpar o código-fon
 ## <a name="extract-method"></a>Extrair método
 
 1. Selecione as linhas de código ou a expressão a ser extraída para um método separado.
-2. Selecione o **Edit**  >  comando de menu Editar método de extração de**refatoração**  >  **Extract method** ou digite **Ctrl** + **R**  >  **M**.
+2. Selecione o   >  comando de menu Editar método de extração de **refatoração**  >   ou digite **Ctrl** + **R**  >  **M**.
 3. Na caixa de diálogo exibida, insira um novo nome de método, indique o local em que ele deverá ser extraído e selecione as variáveis de fechamento. As variáveis não selecionadas para fechamento são transformadas em argumentos de método:
 
    ![Extrair a caixa de diálogo do método](media/code-refactor-extract-method-1.png)

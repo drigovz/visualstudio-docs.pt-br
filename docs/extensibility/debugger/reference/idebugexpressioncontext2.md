@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 577fdaae-4b2d-4112-9839-ab899535fa6f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 344ae287b3784ceca87fbbab09ad2b2e0a304205
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 92e2561d28c3d4c7133208c78b9a492bc2614fd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729634"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901655"
 ---
 # <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
 Essa interface representa um contexto para a avaliação da expressão
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugExpressionContext2 : IUnknown
@@ -55,6 +55,6 @@ IDebugExpressionContext2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
-- [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)

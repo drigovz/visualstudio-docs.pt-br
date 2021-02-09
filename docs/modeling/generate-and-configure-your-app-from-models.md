@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 25a0b83d3ac7be95c42ca0c4e53a188569bb5770
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9299880c2d06cf323351a234239bed71597072a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361866"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902708"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Gerar e configurar o aplicativo por meio de modelos
 Você pode gerar ou configurar partes do seu aplicativo a partir de um modelo.
@@ -72,7 +72,7 @@ Você pode gerar ou configurar partes do seu aplicativo a partir de um modelo.
 
      Por exemplo, um diagrama de classes UML é uma coleção de caixas e setas; com essa notação, você pode, teoricamente, definir qualquer coisa. Mas não recomendamos que você use o diagrama de classe, exceto onde você está, na verdade, descrevendo um conjunto de tipos. Por exemplo, você poderia adaptar os diagramas de classe para descrever diferentes tipos de páginas da Web.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Gerando código a partir de uma linguagem específica do domínio](../modeling/generating-code-from-a-domain-specific-language.md)
 - [Como abrir um modelo a partir de um arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)

@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: d41dd5ea-aa25-4bf3-bcfd-e0bf451ead49
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a488bce2ad5822f875776bdfc4c4de29eee71bbb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d006e55d9ca00ff828c59beb698441807f70c6e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728229"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903211"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
 Recupera o número de parâmetros de tipo que estão associados ao campo genérico.
@@ -42,7 +42,7 @@ int TypeParamCount(
 `pcParams`\
 [entrada, saída] Número de parâmetros de tipo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

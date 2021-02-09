@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 567adfb8-2f54-499a-a027-e4ecb82277ef
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 32be70e11776177a0e68f09689c2262497703ab1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8437dd2c98373c770d6f537e0ec9714100e3c4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732247"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901830"
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
 Retorna um identificador de local de código para um contexto de código específico.
@@ -28,14 +28,14 @@ Retorna um identificador de local de código para um contexto de código especí
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetCodeLocationId( 
+HRESULT GetCodeLocationId( 
    IDebugCodeContext2* pCodeContext,
    UINT64*             puCodeLocationId
 );
 ```
 
 ```csharp
-int GetCodeLocationId( 
+int GetCodeLocationId( 
    IDebugCodeContext2 pCodeContext,
    out ulong          puCodeLocationId
 );
@@ -47,7 +47,7 @@ no Um objeto [IDebugCodeContext2](../../../extensibility/debugger/reference/ideb
 
 `puCodeLocationId` fora Retorna o identificador de local do código. Consulte Observações.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna `E_CODE_CONTEXT_OUT_OF_SCOPE` se o contexto de código é válido, mas fora do escopo.
 
 ## <a name="remarks"></a>Comentários

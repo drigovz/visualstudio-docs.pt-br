@@ -24,15 +24,15 @@ helpviewer_keywords:
 - object browser
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e33a060718fc5fd8a3545baaa7e78b6b763ab78d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 63344b28026579e4b3e99b513a99c99d14617a64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478933"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902777"
 ---
 # <a name="view-the-structure-of-code-by-using-different-tool-windows"></a>Exibir a estrutura do código usando diferentes janelas de ferramentas
 
@@ -176,7 +176,7 @@ O menu de atalho (ou clique com o botão direito do mouse) no **pesquisador de o
 |**Localizar todas as referências**|Localiza o item do objeto selecionado e exibe os resultados em uma janela **Localizar Resultados**.|
 |**Filtrar Por Tipo**|Exibe apenas o namespace ou o tipo selecionado. É possível remover o filtro escolhendo o botão **Limpar Pesquisa**.|
 |**Copy**|Copia o nome totalmente qualificado do item.|
-|**Removerr**|Se o escopo for um conjunto de componentes personalizado, remove o componente selecionado do escopo.|
+|**Remover**|Se o escopo for um conjunto de componentes personalizado, remove o componente selecionado do escopo.|
 |**Classificar em Ordem Alfabética**|Lista tipos e membros em ordem alfabética por nome.|
 |**Classificar por Tipo de Objeto**|Lista tipos e membros ordenados segundo o tipo (de forma que classes precedam interfaces, interfaces precedam representantes e métodos precedam propriedades).|
 |**Classificar por Acesso a Objeto**|Lista tipos e membros ordenados segundo o tipo de acesso, como público ou privado.|

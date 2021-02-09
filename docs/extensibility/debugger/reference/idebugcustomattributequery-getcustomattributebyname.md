@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 6779727c-d10a-4abe-9acd-d0a1eb0737e7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1c87fd105d2dbdc18bd4689c4680f2825c9e3be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9717c16ba40cfb0b0d637f86da134a3864e2d05e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732645"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903247"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 Recupera um atributo personalizado de acordo com seu nome.
@@ -52,7 +52,7 @@ no Nome do atributo personalizado.
 `pdwLen`\
 fora Comprimento em bytes do `ppBlob` parâmetro.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se for bem-sucedido, retornará `S_OK`. Se o atributo personalizado não existir, o retornará `S_FALSE` . Caso contrário, retornará um código de erro.
 
 ## <a name="example"></a>Exemplo

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8dd62c01bad3ac50a57062729fe96588a7ef5be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4bb9505ab475da7919a39eb03e7c84b92857db4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801861"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902191"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Criar um controle de caixa de ferramentas de Windows Forms
 
@@ -36,9 +36,9 @@ O modelo de controle de caixa de ferramentas Windows Forms cria um controle de u
 
 1. Crie um projeto VSIX denominado `MyWinFormsControl` . Você pode encontrar o modelo de projeto VSIX na caixa de diálogo **novo projeto** , pesquisando por "VSIX".
 
-2. Quando o projeto for aberto, adicione um modelo de item de **controle de caixa de ferramentas de Windows Forms** chamado `Counter` . Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item**. Na caixa de diálogo **Adicionar novo item** , vá para extensibilidade do **Visual C#**  >  **Extensibility** e selecione **Windows Forms controle caixa de ferramentas**
+2. Quando o projeto for aberto, adicione um modelo de item de **controle de caixa de ferramentas de Windows Forms** chamado `Counter` . Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item**. Na caixa de diálogo **Adicionar novo item** , vá para extensibilidade do **Visual C#**  >   e selecione **Windows Forms controle caixa de ferramentas**
 
-3. Isso adiciona um controle de usuário, um `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> para posicionar o controle na **caixa de ferramentas**e uma entrada de ativo **Microsoft. VisualStudio. ToolboxControl** no manifesto do VSIX para implantação.
+3. Isso adiciona um controle de usuário, um `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> para posicionar o controle na **caixa de ferramentas** e uma entrada de ativo **Microsoft. VisualStudio. ToolboxControl** no manifesto do VSIX para implantação.
 
 ### <a name="build-a-user-interface-for-the-control"></a>Criar uma interface do usuário para o controle
 
@@ -80,16 +80,16 @@ O `Counter` controle irá expor um método para incrementar o contador, um event
 3. Crie as seguintes declarações de propriedade pública.
 
     ```csharp
-    public int Value {
+    public int Value {
         get { return currentValue; }
     }
 
-    public string Message {
+    public string Message {
         get { return displayText; }
         set { displayText = value; }
     }
 
-    public bool ShowReset {
+    public bool ShowReset {
         get { return btnReset.Visible; }
         set { btnReset.Visible = value; }
     }
@@ -101,7 +101,7 @@ O `Counter` controle irá expor um método para incrementar o contador, um event
 4. Coloque o código a seguir no `Load` evento para o controle.
 
     ```csharp
-    private void Counter_Load(object sender, EventArgs e)
+    private void Counter_Load(object sender, EventArgs e)
     {
         currentValue = 0;
         label1.Text = Message + Value;
@@ -109,12 +109,12 @@ O `Counter` controle irá expor um método para incrementar o contador, um event
 
     ```
 
-    Definir o texto do **rótulo** no <xref:System.Windows.Forms.UserControl.Load> evento permite que as propriedades de destino sejam carregadas antes de seus valores serem aplicados. Definir o texto do **rótulo** no Construtor resultaria em um **rótulo**vazio.
+    Definir o texto do **rótulo** no <xref:System.Windows.Forms.UserControl.Load> evento permite que as propriedades de destino sejam carregadas antes de seus valores serem aplicados. Definir o texto do **rótulo** no Construtor resultaria em um **rótulo** vazio.
 
 5. Crie o seguinte método público para incrementar o contador.
 
     ```csharp
-    public void Increment()
+    public void Increment()
     {
         currentValue++;
         label1.Text = displayText + Value;
@@ -126,7 +126,7 @@ O `Counter` controle irá expor um método para incrementar o contador, um event
 6. Adicione uma declaração para o `Incremented` evento à classe Control.
 
     ```csharp
-    public event EventHandler Incremented;
+    public event EventHandler Incremented;
     ```
 
     Os chamadores podem adicionar manipuladores a esse evento para responder às alterações no valor do contador.
@@ -134,7 +134,7 @@ O `Counter` controle irá expor um método para incrementar o contador, um event
 7. Retorne ao modo de exibição de design e clique duas vezes no botão **Redefinir** para gerar o `btnReset_Click` manipulador de eventos. Em seguida, preencha-o como mostrado no exemplo a seguir.
 
     ```csharp
-    private void btnReset_Click(object sender, EventArgs e)
+    private void btnReset_Click(object sender, EventArgs e)
     {
         currentValue = 0;
         label1.Text = displayText + Value;
@@ -148,7 +148,7 @@ O `Counter` controle irá expor um método para incrementar o contador, um event
 
     ```csharp
     [ProvideToolboxControl("General", false)]
-    public partial class Counter : UserControl
+    public partial class Counter : UserControl
     ```
 
 ### <a name="test-the-control"></a>Testar o controle
@@ -214,7 +214,7 @@ O `Counter` controle irá expor um método para incrementar o contador, um event
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Quando você cria um controle de **caixa de ferramentas** , o Visual Studio cria um arquivo chamado *ProjectName. vsix* na pasta \bin\debug\ do seu projeto. Você pode implantar o controle carregando o arquivo *. vsix* em uma rede ou em um site da Web. Quando um usuário abre o arquivo *. vsix* , o controle é instalado e adicionado à **caixa de ferramentas** do Visual Studio no computador do usuário. Como alternativa, você pode carregar o arquivo *. vsix* para [Visual Studio Marketplace](https://marketplace.visualstudio.com/) para que os usuários possam encontrá-lo navegando **Tools**na  >  caixa de diálogo**extensões e atualizações** de ferramentas.
+Quando você cria um controle de **caixa de ferramentas** , o Visual Studio cria um arquivo chamado *ProjectName. vsix* na pasta \bin\debug\ do seu projeto. Você pode implantar o controle carregando o arquivo *. vsix* em uma rede ou em um site da Web. Quando um usuário abre o arquivo *. vsix* , o controle é instalado e adicionado à **caixa de ferramentas** do Visual Studio no computador do usuário. Como alternativa, você pode carregar o arquivo *. vsix* para [Visual Studio Marketplace](https://marketplace.visualstudio.com/) para que os usuários possam encontrá-lo navegando na  >  caixa de diálogo **extensões e atualizações** de ferramentas.
 
 ## <a name="see-also"></a>Confira também
 

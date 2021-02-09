@@ -13,15 +13,15 @@ helpviewer_keywords:
 - what's new [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 05f3662f1bc6379fa3401e98473971bcefc36ddd
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 2bb8f6064bd2c2df55c7d0cf8fea1e25c513da0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847852"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903788"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Alterações no design de projetos do Office direcionados para o .NET Framework 4 ou o .NET Framework 4,5
   A partir do [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] , o Visual Studio introduziu algumas alterações no design de projetos do Office direcionados para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior. Se você estiver familiarizado com projetos do Office em versões anteriores do Visual Studio, deve estar ciente dessas alterações antes de desenvolver projetos do Office direcionados a essas versões do .NET Framework 4,0 ou posterior. Por padrão, todos os projetos que você cria usando o Visual Studio 2013 ou posterior direcionam o .NET Framework 4,0 ou posterior.
@@ -47,7 +47,7 @@ ms.locfileid: "96847852"
 ## <a name="breaking-changes-in-office-projects-that-are-retargeted-to-the-net-framework-4"></a>Alterações significativas em projetos do Office que são redirecionados para o .NET Framework 4
  A tabela a seguir lista as principais alterações que você pode encontrar em projetos do Office que são redirecionados para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior. Para obter mais detalhes, consulte [migrar soluções do Office para o .NET Framework 4 ou posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).
 
-|Alteração significativa|Consequência|
+|Alteração interruptiva|Consequência|
 |---------------------|-----------------|
 |O <xref:System.Security.SecurityTransparentAttribute> não é mais usado nem tem suporte em projetos do Office.|Você deve remover esse atributo do arquivo de código AssemblyInfo em projetos do Office que você atualiza do Visual Studio 2008. Para obter mais informações, consulte [as alterações necessárias para executar projetos do Office que você migra para o .NET Framework 4 ou o .NET Framework 4,5](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|
 |O **ExcelLocale1033Attribute** não é mais usado ou tem suporte em projetos do Excel.|Você deve remover esse atributo do arquivo de código *AssemblyInfo* em projetos do Excel. Para obter mais informações, consulte [Atualizar projetos do Excel e do Word que você migra para o .NET Framework 4 ou o .NET Framework 4,5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|

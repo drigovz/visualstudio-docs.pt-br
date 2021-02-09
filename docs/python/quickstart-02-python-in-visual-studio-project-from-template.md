@@ -5,17 +5,17 @@ ms.date: 12/06/2018
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 089be3e6f28a939979f6bd97097ea7558824b493
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81f337cf3feca517f46632e7fe08a9f5a62cd707
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62429742"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902454"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Início Rápido: criar um projeto do Python com base em um modelo no Visual Studio
 
@@ -23,7 +23,7 @@ Depois de [instalar o suporte ao Python no Visual Studio](installing-python-supp
 
 1. Inicie o Visual Studio.
 
-1. Na barra de menus superior, escolha **arquivo**  >  **novo**  >  **projeto**e, na caixa de diálogo **novo projeto** , procure "Flask em branco", selecione o modelo de **projeto Web Flask em branco** na lista intermediária, dê um nome ao projeto e selecione **OK**:
+1. Na barra de menus superior, escolha **arquivo**  >  **novo**  >  **projeto** e, na caixa de diálogo **novo projeto** , procure "Flask em branco", selecione o modelo de **projeto Web Flask em branco** na lista intermediária, dê um nome ao projeto e selecione **OK**:
 
     ![Criar um novo projeto com o modelo de Projeto Web Flask em branco](media/quickstart-python-06-blank-flask-template.png)
 
@@ -79,7 +79,7 @@ Depois de [instalar o suporte ao Python no Visual Studio](installing-python-supp
 
 **Resposta**: Com a carga de trabalho de Python instalada, o Visual Studio fornece uma variedade de modelos de projeto, inclusive para as [estruturas da Web Flask, Bottle e Django](../python/python-web-application-project-templates.md), serviços de nuvem do Azure, diferentes cenários de aprendizado de máquina e até mesmo um modelo para criar um projeto a partir de uma estrutura de pasta existente que contenha um aplicativo do Python. Acesse-os por meio da caixa de diálogo **arquivo**  >  **novo**  >  **projeto** selecionando o nó de linguagem **Python** e seus nós filho.
 
-O Visual Studio também fornece uma variedade de modelos de arquivo ou *Item* para criar rapidamente uma classe Python, um pacote Python, um teste de unidade do Python, arquivos de *web.config* e muito mais. Quando você tiver um projeto do Python aberto, acesse os modelos de **Project**item por meio do  >  comando do menu**Adicionar novo item** do projeto. Consulte a referência de [modelos de item](python-item-templates.md).
+O Visual Studio também fornece uma variedade de modelos de arquivo ou *Item* para criar rapidamente uma classe Python, um pacote Python, um teste de unidade do Python, arquivos de *web.config* e muito mais. Quando você tiver um projeto do Python aberto, acesse os modelos de item por meio do  >  comando do menu **Adicionar novo item** do projeto. Consulte a referência de [modelos de item](python-item-templates.md).
 
 O uso de modelos pode economizar um tempo significativo ao iniciar um projeto ou criar um arquivo, além de ser uma ótima maneira de aprender sobre os diferentes tipos de aplicativo e estruturas de código. É útil levar reservar alguns minutos para criar projetos e itens a partir de vários modelos para se familiarizar com o que eles oferecem.
 

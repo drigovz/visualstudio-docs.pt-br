@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 4fc7b5a5-11b0-46ca-9656-8c2a0b08d1fe
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 852b910de742676e1fe7dd0c85129640eb37a9ae
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 6287abee811d406ef7aafa5ce3cc3dc62624b0d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902623"
 ---
 # <a name="uidmanager-task"></a>Tarefa UidManager
 
@@ -38,7 +38,7 @@ A <xref:Microsoft.Build.Tasks.Windows.UidManager> tarefa verifica, atualiza ou r
 |-------------------------| - |
 | `IntermediateDirectory` | Parâmetro de **cadeia de caracteres** opcional.<br /><br /> Especifica o diretório que é usado para fazer backup dos arquivos XAML de origem que são especificados pelo parâmetro **MarkupFiles** . |
 | `MarkupFiles` | Parâmetro **ITaskItem []** necessário.<br /><br /> Especifica os arquivos XAML de origem a serem incluídos para verificação, atualização ou remoção de UID. |
-| `Task` | Parâmetro obrigatório **String** .<br /><br /> Especifica a tarefa de gerenciamento de UID que você deseja executar. As opções válidas são **Verificar** , **Atualizar** ou **Remover** . |
+| `Task` | Parâmetro obrigatório **String**.<br /><br /> Especifica a tarefa de gerenciamento de UID que você deseja executar. As opções válidas são **Verificar**, **Atualizar** ou **Remover**. |
 
 ## <a name="example"></a>Exemplo
 
@@ -58,7 +58,7 @@ A <xref:Microsoft.Build.Tasks.Windows.UidManager> tarefa verifica, atualiza ou r
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência do MSBuild do WPF](../msbuild/wpf-msbuild-reference.md)
 - [Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)

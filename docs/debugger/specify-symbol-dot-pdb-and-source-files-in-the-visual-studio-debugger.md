@@ -26,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: 1105e169-5272-4e7c-b3e7-cda1b7798a6b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 78440c6da86d49364f7fd9006779166e8c2fb7d3
-ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
+ms.openlocfilehash: 496994c0f9d546efe8804481230081090309d47e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99628000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903573"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Especificar o símbolo (. pdb) e os arquivos de origem no depurador do Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -269,7 +269,7 @@ Você pode especificar os locais em que o depurador pesquisa arquivos de origem 
 
 1. Selecione **OK** ou **aplicar**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Entender os arquivos de símbolo e as configurações de símbolo do Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
 - [Alterações de carregamento de símbolo remoto do .NET no Visual Studio 2012 e 2013](https://devblogs.microsoft.com/devops/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

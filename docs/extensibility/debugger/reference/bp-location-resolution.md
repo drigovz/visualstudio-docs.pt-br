@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 86ea2c8a-54a3-48e8-83c7-18a515273129
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 5f33f01d0c2b8465bbb417b56576118349234970
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8b6e022d14f663be24c92a7a8cce9a06959747b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737962"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902149"
 ---
 # <a name="bp_location_resolution"></a>BP_LOCATION_RESOLUTION
 Descreve a resolução de um ponto de interrupção em um local específico.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```cpp
 typedef struct _BP_LOCATION_RESOLUTION {

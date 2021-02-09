@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cf02fda50678d9de4eb01dc28b4825844e33063e
-ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
+ms.openlocfilehash: 550baf52347c1128ef50509e7787861355c9428f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98069494"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903398"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;&gt;Elemento InstallChecks (Bootstrapper)
 O `InstallChecks` elemento dá suporte à inicialização de uma variedade de testes em relação ao computador local para garantir que todos os pré-requisitos apropriados para um aplicativo tenham sido instalados.
@@ -77,9 +77,9 @@ O `InstallChecks` elemento dá suporte à inicialização de uma variedade de te
 |Atributo|Descrição|
 |---------------|-----------------|
 |`Property`|Obrigatórios. O nome da propriedade para armazenar o resultado. Essa propriedade pode ser referenciada de um teste sob o `InstallConditions` elemento, que é um filho do `Command` elemento. Para obter mais informações, consulte [ \<Commands> elemento](../deployment/commands-element-bootstrapper.md).|
-|`Name`|Obrigatórios. O nome totalmente qualificado do assembly a ser verificado.|
-|`PublicKeyToken`|Obrigatórios. A forma abreviada da chave pública associada a esse assembly com nome forte. Todos os assemblies armazenados no GAC devem ter um nome, uma versão e uma chave pública.|
-|`Version`|Obrigatórios. A versão do assembly.<br /><br /> O número de versão tem o formato \<*major version*> . \<*minor version*> . \<*build version*> . \<*revision version*> .|
+|`Name`|Obrigatório. O nome totalmente qualificado do assembly a ser verificado.|
+|`PublicKeyToken`|Obrigatório. A forma abreviada da chave pública associada a esse assembly com nome forte. Todos os assemblies armazenados no GAC devem ter um nome, uma versão e uma chave pública.|
+|`Version`|Obrigatório. A versão do assembly.<br /><br /> O número de versão tem o formato \<*major version*> . \<*minor version*> . \<*build version*> . \<*revision version*> .|
 |`Language`|Opcional. O idioma de um assembly localizado. O padrão é `neutral`.|
 |`ProcessorArchitecture`|Opcional. O processador do computador de destino desta instalação. O padrão é `msil`.|
 
@@ -91,7 +91,7 @@ O `InstallChecks` elemento dá suporte à inicialização de uma variedade de te
 |Atributo|Descrição|
 |---------------|-----------------|
 |`Property`|Obrigatórios. O nome da propriedade para armazenar o resultado. Essa propriedade pode ser referenciada de um teste sob o `InstallConditions` elemento, que é um filho do `Command` elemento. Para obter mais informações, consulte [ \<Commands> elemento](../deployment/commands-element-bootstrapper.md).|
-|`PackageFile`|Obrigatórios. O programa externo a ser executado. O programa deve fazer parte do pacote de distribuição da instalação.|
+|`PackageFile`|Obrigatório. O programa externo a ser executado. O programa deve fazer parte do pacote de distribuição da instalação.|
 |`Arguments`|Opcional. Fornece argumentos de linha de comando para o executável nomeado por `PackageFile` .|
 
 ## <a name="filecheck"></a>FileCheck
@@ -102,8 +102,8 @@ O `InstallChecks` elemento dá suporte à inicialização de uma variedade de te
 | Atributo | Descrição |
 |-----------------| - |
 | `Property` | Obrigatórios. O nome da propriedade para armazenar o resultado. Essa propriedade pode ser referenciada de um teste sob o `InstallConditions` elemento, que é um filho do `Command` elemento. Para obter mais informações, consulte [ \<Commands> elemento](../deployment/commands-element-bootstrapper.md). |
-| `FileName` | Obrigatórios. O nome do arquivo a ser localizado. |
-| `SearchPath` | Obrigatórios. O disco ou a pasta na qual procurar o arquivo. Esse deve ser um caminho relativo se `SpecialFolder` for atribuído; caso contrário, ele deve ser um caminho absoluto. |
+| `FileName` | Obrigatório. O nome do arquivo a ser localizado. |
+| `SearchPath` | Obrigatório. O disco ou a pasta na qual procurar o arquivo. Esse deve ser um caminho relativo se `SpecialFolder` for atribuído; caso contrário, ele deve ser um caminho absoluto. |
 | `SpecialFolder` | Opcional. Uma pasta que tem significância especial para o Windows ou para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . O padrão é interpretar `SearchPath` como um caminho absoluto. Os valores válidos incluem os seguintes:<br /><br /> `AppDataFolder`. A pasta de dados do aplicativo para este [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo; específica para o usuário atual.<br /><br /> `CommonAppDataFolder`. A pasta de dados de aplicativo usada por todos os usuários.<br /><br /> `CommonFilesFolder`. A pasta Arquivos comuns para o usuário atual.<br /><br /> `LocalDataAppFolder`. A pasta de dados para aplicativos que não são de roaming.<br /><br /> `ProgramFilesFolder`. A pasta arquivos de programas padrão para aplicativos de 32 bits.<br /><br /> `StartUpFolder`. A pasta que contém todos os aplicativos iniciados na inicialização do sistema.<br /><br /> `SystemFolder`. A pasta que contém DLLs de sistema de 32 bits.<br /><br /> `WindowsFolder`. A pasta que contém a instalação do sistema do Windows.<br /><br /> `WindowsVolume`. A unidade ou partição que contém a instalação do sistema do Windows. |
 | `SearchDepth` | Opcional. A profundidade na qual Pesquisar subpastas para o arquivo nomeado. A pesquisa é de profundidade-primeiro. O padrão é 0, o que restringe a pesquisa para a pasta de nível superior especificada por `SpecialFolder` e **SearchPath**. |
 
@@ -115,7 +115,7 @@ O `InstallChecks` elemento dá suporte à inicialização de uma variedade de te
 |Atributo|Descrição|
 |---------------|-----------------|
 |`Property`|Obrigatórios. O nome da propriedade para armazenar o resultado. Essa propriedade pode ser referenciada de um teste sob o `InstallConditions` elemento, que é um filho do `Command` elemento. Para obter mais informações, consulte [ \<Commands> elemento](../deployment/commands-element-bootstrapper.md).|
-|`Product`|Obrigatórios. O GUID do produto instalado.|
+|`Product`|Obrigatório. O GUID do produto instalado.|
 |`Feature`|Opcional. O GUID de um recurso específico do aplicativo instalado.|
 
 ## <a name="registrycheck"></a>RegistryCheck
@@ -126,7 +126,7 @@ O `InstallChecks` elemento dá suporte à inicialização de uma variedade de te
 |Atributo|Descrição|
 |---------------|-----------------|
 |`Property`|Obrigatórios. O nome da propriedade para armazenar o resultado. Essa propriedade pode ser referenciada de um teste sob o `InstallConditions` elemento, que é um filho do `Command` elemento. Para obter mais informações, consulte [ \<Commands> elemento](../deployment/commands-element-bootstrapper.md).|
-|`Key`|Obrigatórios. O nome da chave do Registro.|
+|`Key`|Obrigatório. O nome da chave do Registro.|
 |`Value`|Opcional. O nome do valor do registro a ser recuperado. O padrão é retornar o texto do valor padrão. `Value` deve ser uma cadeia de caracteres ou uma DWORD.|
 
 ## <a name="registryfilecheck"></a>RegistryFileCheck
@@ -137,7 +137,7 @@ O `InstallChecks` elemento dá suporte à inicialização de uma variedade de te
 |Atributo|Descrição|
 |---------------|-----------------|
 |`Property`|Obrigatórios. O nome da propriedade para armazenar o resultado. Essa propriedade pode ser referenciada de um teste sob o `InstallConditions` elemento, que é um filho do `Command` elemento. Para obter mais informações, consulte [ \<Commands> elemento](../deployment/commands-element-bootstrapper.md).|
-|`Key`|Obrigatórios. O nome da chave do Registro. Seu valor é interpretado como o caminho para um arquivo, a menos que o `File` atributo seja definido. Se essa chave não existir, `Property` não será definida.|
+|`Key`|Obrigatório. O nome da chave do Registro. Seu valor é interpretado como o caminho para um arquivo, a menos que o `File` atributo seja definido. Se essa chave não existir, `Property` não será definida.|
 |`Value`|Opcional. O nome do valor do registro a ser recuperado. O padrão é retornar o texto do valor padrão. `Value` deve ser uma cadeia de caracteres.|
 |`FileName`|Opcional. O nome de um arquivo. Se especificado, o valor obtido da chave do registro será considerado um caminho de diretório e esse nome será anexado a ele. Se não for especificado, o valor retornado do registro será considerado o caminho completo de um arquivo.|
 |`SearchDepth`|Opcional. A profundidade na qual Pesquisar subpastas para o arquivo nomeado. A pesquisa é de profundidade-primeiro. O padrão é 0, o que restringe a pesquisa para a pasta de nível superior especificada pelo valor da chave do registro.|
