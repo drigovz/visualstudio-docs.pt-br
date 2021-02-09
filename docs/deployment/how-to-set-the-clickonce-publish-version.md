@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 06f15504-6385-40a6-b01d-cd90ca36dc73
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 100c3cd12a3011d35445ac885333802e28b4a92f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 71d74d8b16e058b150187a231a1f3a7323c0c612
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349783"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885021"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>Como definir a versão da publicação do ClickOnce
 A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version` propriedade determina se o aplicativo que você está publicando será tratado como uma atualização. Cada versão de tempo é incrementada, o aplicativo será publicado como uma atualização.
@@ -35,16 +35,16 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Ver
 
 ### <a name="to-change-the-publish-version"></a>Para alterar a versão de publicação
 
-1. Com um projeto selecionado no **Gerenciador de Soluções** , no menu **Projeto** , clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
 
 2. Clique na guia **Publicar**.
 
-3. No **campo versão de publicação** , aumente os números de versão **principal** , **secundária** , de **compilação** ou de **revisão** .
+3. No **campo versão de publicação** , aumente os números de versão **principal**, **secundária**, de **compilação** ou de **revisão** .
 
     > [!NOTE]
     > Você nunca deve decrementar um número de versão; Isso pode causar um comportamento de atualização imprevisível.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Escolher uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
 - [Como: incrementar automaticamente a versão de publicação do ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
 - [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)

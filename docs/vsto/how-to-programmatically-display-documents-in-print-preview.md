@@ -13,15 +13,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], displaying in print preview
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 69c5014958d137b534a283b0d07fa048966092be
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 14005f465fd4394e86450017530de457a97b3d4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525857"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885541"
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>Como exibir programaticamente documentos na visualização de impressão
   Se sua solução gerar um relatório, talvez você queira exibir o relatório para o usuário no modo de visualização de impressão.
@@ -60,7 +60,7 @@ ms.locfileid: "97525857"
      [!code-vb[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#14)]
      [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Como: imprimir documentos programaticamente](../vsto/how-to-programmatically-print-documents.md)
 - [Como: abrir documentos existentes programaticamente](../vsto/how-to-programmatically-open-existing-documents.md)
 - [Como criar programaticamente novos documentos](../vsto/how-to-programmatically-create-new-documents.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 53467461-8e0f-45ee-9bc4-374bbaeaf00f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8caf1be3c10c0d89ce8780213c0914944ae87842
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: f127d178a8103cfaa01c43970848f5772827440f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149709"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884059"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Instruções passo a passo: escrevendo um visualizador em C\#
 
@@ -232,7 +232,7 @@ No código do lado do depurador, você especifica o tipo a ser visualizado (a or
 
     O aplicativo de console inicia e o visualizador aparece e exibe a cadeia de caracteres “Hello World”.
 
-   Parabéns! Você acabou de criar e testar seu primeiro visualizador.
+   Parabéns. Você acabou de criar e testar seu primeiro visualizador.
 
    Se você quiser usar o visualizador no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] em vez de apenas chamá-lo do teste automatizado, será preciso instalá-lo. Para obter mais informações, consulte [como: instalar um visualizador](../debugger/how-to-install-a-visualizer.md).
 

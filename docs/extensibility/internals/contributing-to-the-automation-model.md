@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 44de482d-93c8-41a4-843c-cefda995a03e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab43da108a8d4a3339c54973f60bf1bef6a74780
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 38ea8d477b377f78f5c836ec4661989cdbf8999c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884605"
 ---
 # <a name="contribute-to-the-automation-model"></a>Contribuir para o modelo de automação
 O Visual Studio fornece um conjunto de interfaces de automação para personalizar o ambiente. O modelo de automação é o modelo de objeto que permite que os usuários finais criem suplementos e extensões do Visual Studio.

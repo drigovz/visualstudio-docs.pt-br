@@ -12,15 +12,15 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], hiding in documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a375e8b844f82b5d310841d7b4cdc092b18ff6c3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e74a7a48effafefdc945b0e86dbec6d9692dabd7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525698"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885372"
 ---
 # <a name="how-to-programmatically-hide-text-in-documents"></a>Como: Ocultar texto de forma programática em documentos
   Você pode ocultar o texto em um documento definindo a <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> Propriedade do <xref:Microsoft.Office.Interop.Word.Range.Font%2A> para um intervalo de texto específico.
@@ -56,7 +56,7 @@ ms.locfileid: "97525698"
 ## <a name="compile-the-code"></a>Compilar o código
  Este exemplo de código pressupõe que o documento contém um <xref:Microsoft.Office.Tools.Word.Bookmark> controle (em uma personalização no nível do documento) ou <xref:Microsoft.Office.Interop.Word.Bookmark> controle (em um suplemento do VSTO) que é chamado `bookmark1` .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Como: imprimir documentos programaticamente](../vsto/how-to-programmatically-print-documents.md)
 - [Como: definir e selecionar intervalos de forma programática em documentos](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [Como: redefinição de intervalos programaticamente em documentos do Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)

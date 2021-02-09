@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65ac088d52b4e7a288965bb75e1bc6a00da40f7b
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: c81bcb029499b77b2f5b25c598437f1fcbf70854
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815809"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886153"
 ---
 # <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>Analisar o uso de memória sem depuração no criador de perfil de desempenho
 
@@ -215,7 +215,7 @@ Uma árvore **Tipos Referenciados** em um relatório de diferenças de instantâ
 |**Diferença de Tamanho Inclusivo (Bytes)**|No caso de um tipo, a diferença no tamanho de todas as instâncias do tipo entre o instantâneo primário e o instantâneo anterior, incluindo o tamanho dos objetos nos objetos.|
 |**Módulo**|O módulo que contém o objeto.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Memória JavaScript](../profiling/javascript-memory.md)
 - [Criação de perfis no Visual Studio](../profiling/index.yml)
 - [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

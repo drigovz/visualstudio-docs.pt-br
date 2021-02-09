@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1371472a4dec265b5e476d96a32cb725e91ce7fe
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: cd0e7ba0c1841ea054739cbae85b74245807b324
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487550"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884475"
 ---
 # <a name="test-area-6-delete"></a>Área de teste 6: Excluir
 Esta área de teste de plug-in de controle de origem abrange ações de exclusão.
@@ -54,5 +54,5 @@ Esta área de teste de plug-in de controle de origem abrange ações de exclusã
 |Excluir um projeto Web do sistema de arquivos|1. Crie um projeto Web do sistema de arquivos (use o botão procurar para especificar um caminho UNC).<br />2. Adicione a solução ao controle do código-fonte.<br />3. Remova todo o projeto da solução.<br />4. Repita as etapas de 1 a 3 para um projeto Web local (exercita caminhos diferentes por meio do código, mas tem a mesma interface e comportamento externos).|Comportamento esperado comum.|
 |Excluir um arquivo de um projeto Web do sistema de arquivos|1. criar um projeto Web do sistema de arquivos.<br />2. Adicione a solução ao controle do código-fonte.<br />3. exclua um arquivo do projeto.<br />4. Repita as etapas de 1 a 3 para um projeto Web local (exercita caminhos diferentes por meio do código, mas tem a mesma interface e comportamento externos).|Comportamento esperado comum.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Guia de teste para plug-ins de controle do código-fonte](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

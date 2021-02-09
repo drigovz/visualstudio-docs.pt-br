@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b9d1d8b985f7184ffdfbf083dc3f6b8ab03d894
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 62873d57da04f94ce1cdda16c5fe4801af5d19c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915577"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884917"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Criar grupos de botões reutilizáveis
 Um grupo de comandos é uma coleção de comandos que sempre aparecem juntos em um menu ou barra de ferramentas. Qualquer grupo de comandos pode ser usado novamente atribuindo-o a diferentes menus pai na seção CommandPlacements do arquivo *. vsct* .
@@ -30,7 +30,7 @@ Um grupo de comandos é uma coleção de comandos que sempre aparecem juntos em 
 
 1. Crie um projeto VSIX denominado `ReusableButtons` . Para obter mais informações, consulte [criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Quando o projeto for aberto, adicione um modelo de item de comando personalizado chamado **ReusableCommand**. Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item**. Na caixa de diálogo **Adicionar novo item** , vá para extensibilidade do **Visual C#**  >  **Extensibility** e selecione **comando personalizado**. No campo **nome** na parte inferior da janela, altere o nome do arquivo de comando para *ReusableCommand.cs*.
+2. Quando o projeto for aberto, adicione um modelo de item de comando personalizado chamado **ReusableCommand**. Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item**. Na caixa de diálogo **Adicionar novo item** , vá para extensibilidade do **Visual C#**  >   e selecione **comando personalizado**. No campo **nome** na parte inferior da janela, altere o nome do arquivo de comando para *ReusableCommand.cs*.
 
 3. No arquivo *. vsct* , vá para a seção símbolos e localize o elemento GuidSymbol que contém grupos e comandos para o projeto. Ele deve ser nomeado guidReusableCommandPackageCmdSet.
 

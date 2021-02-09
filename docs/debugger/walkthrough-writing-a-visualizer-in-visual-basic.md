@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c93bf5a1-3e5e-422f-894e-bd72c9bc1b57
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4354a226503ef11b8e596cff609912afa7fd34f0
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 49d730fe6fef116577f26acabd72440950a6e192
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149619"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884046"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Instruções passo a passo: escrevendo um visualizador no Visual Basic
 
@@ -233,7 +233,7 @@ No código do lado do depurador, você especifica o tipo a ser visualizado (a or
 
     O aplicativo de console é iniciado. O visualizador aparece e exibe a cadeia de caracteres “Hello, World”.
 
-   Parabéns! Você acabou de criar e testar seu primeiro visualizador.
+   Parabéns. Você acabou de criar e testar seu primeiro visualizador.
 
    Se você quiser usar o visualizador no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] em vez de apenas chamá-lo do teste automatizado, será preciso instalá-lo. Para obter mais informações, consulte [como: instalar um visualizador](../debugger/how-to-install-a-visualizer.md).
 

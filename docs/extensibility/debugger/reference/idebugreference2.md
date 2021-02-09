@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52f655afd35ed316080a3a85ccfae047aa50d87f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f1ae87cc9d0926d7afc22d819dddf672a89afd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720267"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883799"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Essa interface representa uma referência a uma propriedade de quadro de pilha ou alguma outra propriedade.
@@ -25,7 +25,7 @@ Essa interface representa uma referência a uma propriedade de quadro de pilha o
 > [!NOTE]
 > `IDebugReference2` é reservado para uso futuro e todos os seus métodos devem retornar `E_NOTIMPL` .
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugReference2 : IUnknown
@@ -73,7 +73,7 @@ IDebugReference2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
-- [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)

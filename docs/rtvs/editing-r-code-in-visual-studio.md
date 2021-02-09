@@ -5,15 +5,15 @@ ms.date: 11/05/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 7ecfd8f1cf50e94991ce2fd94ad94ac9815c92ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4aea7f5371dc425a77e10b64a9389571b06f80b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315090"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885853"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Editar o código R no Visual Studio
 
@@ -27,7 +27,7 @@ Além de colorir diferentes partes do código, como cadeias de caracteres, comen
 
 ![Coloração de sintaxe para código R](media/editing-syntax-colors.png)
 
-Para personalizar fontes e determinadas cores de realce, selecione o comando **ferramentas**  >  **Opções** , **Environment**navegue até  >  **fontes e cores**do ambiente e altere as configurações dos itens relacionados ao R na caixa **Exibir itens** :
+Para personalizar fontes e determinadas cores de realce, selecione o comando **ferramentas**  >  **Opções** , navegue até  >  **fontes e cores** do ambiente e altere as configurações dos itens relacionados ao R na caixa **Exibir itens** :
 
 ![Opções de fontes e cores para código R](media/editing-syntax-colors-options.png)
 
@@ -35,7 +35,7 @@ O Visual Studio também sublinha erros de sintaxe no editor:
 
 ![Realce de erro de sintaxe no código R](media/editing-syntax-error.png)
 
-Para alterar esse comportamento, consulte a **Advanced**  >  configuração**verificação de sintaxe** avançada em opções do [Editor](#editor-options).
+Para alterar esse comportamento, consulte a   >  configuração **verificação de sintaxe** avançada em opções do [Editor](#editor-options).
 
 ## <a name="edit-and-organize-code"></a>Editar e organizar o código
 
@@ -49,7 +49,7 @@ Ao digitar chamadas de funções que têm muitos parâmetros, muitas vezes você
 
 Para alterar esse comportamento, consulte [opções do editor](#editor-options) e veja o grupo **Guias**.
 
-As regiões de código recolhíveis permitem ocultar parte do código temporariamente no editor. O Visual Studio cria várias regiões para você automaticamente, como para instruções de várias linhas, a menos que a opção de estrutura de código de estrutura de tópicos **avançada**  >  **Outlining**  >  **Code outlining** esteja definida como off.
+As regiões de código recolhíveis permitem ocultar parte do código temporariamente no editor. O Visual Studio cria várias regiões para você automaticamente, como para instruções de várias linhas, a menos que a opção de estrutura de código de estrutura de tópicos **avançada**  >    >   esteja definida como off.
 
 Para criar uma região sua, coloque o código desejado entre comentários que terminam com `---`. Os controles pequenos +/- à esquerda do código permitem que você expanda e recolha regiões:
 
@@ -89,11 +89,11 @@ A aplicação da formatação a limpará deixando assim:
 f <- function(a) { return(a + 1) }
 ```
 
-Para reformatar o arquivo de código inteiro, selecione **Editar**  >  documento de**Advanced**  >  **formato** avançado (**Ctrl** + **E**,**D**).
+Para reformatar o arquivo de código inteiro, selecione **Editar**  >  documento de  >  **formato** avançado (**Ctrl** + **E**,**D**).
 
 A formatação automática é uma operação separada que pode ser desfeita. Por exemplo, se você colar o código no editor e a formatação aplicável, selecionar **Editar**  >  **desfazer** ou pressionar **Ctrl** + **Z** uma vez reverte a formatação; uma segunda **desfazer** inverte a colagem em si.
 
-As opções de formatação (incluindo a desativação da formatação) são definidas por meio de **ferramentas**  >  **Opções** na **Text Editor**  >  **R**  >  guia**avançado** do editor de texto. Você pode ir diretamente para esta página usando o comando opções do editor de **Ferramentas do R**  >  **Editor options** ou clicando com o botão direito do mouse no editor e selecionando **Opções de formatação**. Consulte a seção de [opções do editor](#editor-options) para obter detalhes.
+As opções de formatação (incluindo a desativação da formatação) são definidas por meio de **ferramentas**  >  **Opções** na   >    >  guia **avançado** do editor de texto. Você pode ir diretamente para esta página usando o comando opções do editor de **Ferramentas do R**  >   ou clicando com o botão direito do mouse no editor e selecionando **Opções de formatação**. Consulte a seção de [opções do editor](#editor-options) para obter detalhes.
 
 ## <a name="inserting-roxygen-comments"></a>Inserindo comentários Roxygen
 
@@ -103,7 +103,7 @@ As RTVS fornecem um atalho para a geração de comentários [Roxygen](https://cr
 
 ## <a name="editor-options"></a>Opções do editor
 
-As opções específicas do editor são definidas por meio do comando opções de **ferramentas**  >  **Options** , navegando até o **Editor de texto**  >  **R**ou usando o comando de atalho opções do editor de **ferramentas R**  >  **Editor Options**.
+As opções específicas do editor são definidas por meio do comando opções de **ferramentas**  >   , navegando até o **Editor de texto**  >  **R** ou usando o comando de atalho opções do editor de **ferramentas R**  >  .
 
 As opções nas guias **Geral**, **Barras de rolagem** e **Guias** não são específicas para R, mas são configurações gerais do Visual Studio disponíveis para todas as linguagens, mas são aplicadas de acordo com cada linguagem. Para obter detalhes, confira os seguintes artigos:
 
@@ -125,7 +125,7 @@ As opções na guia de **R**  >  **Advanced** são específicas para RTVS:
 | | Espaços antes e depois de = | Ativado | Insere espaços antes e depois de um sinal de igual. |
 | IntelliSense | Confirmar com a tecla Enter | Desativado | Confirma a seleção de preenchimento automático quando **Enter** é pressionado. |
 | | Confirmar com a tecla Espaço | Desativado | Confirma a seleção de preenchimento automático quando **Espaço** é pressionado.|
-| | Lista de conclusão no primeiro caractere | Ativado | Mostra a lista de conclusão nos primeiros tipos de caracteres. Quando desativado, uma lista de conclusão é exibida com a opção **Editar**  >  **IntelliSense**  >  **membros da lista** do IntelliSense (**Ctrl** + **J**). |
+| | Lista de conclusão no primeiro caractere | Ativado | Mostra a lista de conclusão nos primeiros tipos de caracteres. Quando desativado, uma lista de conclusão é exibida com a opção **Editar**  >    >  **membros da lista** do IntelliSense (**Ctrl** + **J**). |
 | | Lista de conclusão com a tecla **Tab** | Desativado | Invoca uma lista de conclusão digitando um ou mais caracteres e pressionando **Tab**. |
 | | Corresponder parcialmente ao digitar nomes de argumento | Desativado | Ao digitar os nomes de argumento em uma chamada de função, a ajuda de assinatura mostra uma descrição do argumento que é a melhor correspondência. |
 | Janela Interativa | Verificação de sintaxe no console do R | Desativado | Aplica a verificação na janela interativa de sintaxe. A verificação de sintaxe pode não funcionar corretamente com instruções de várias linhas. |

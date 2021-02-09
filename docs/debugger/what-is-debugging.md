@@ -8,19 +8,19 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c01317f3b8fa92cf1bc17c3745f708e0d3f26e5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3435b7a270d89dc38f5ff10a1350418a24f91c0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883929"
 ---
 # <a name="what-is-debugging"></a>O que é depuração?
 
-O depurador do Visual Studio é uma ferramenta poderosa. Antes de mostrarmos como usá-lo, queremos falar sobre alguns termos, como *depurador*, *depuração*e modo de *depuração*. Dessa forma, quando falarmos mais tarde sobre a localização e a correção de bugs, falaremos sobre a mesma coisa.
+O depurador do Visual Studio é uma ferramenta poderosa. Antes de mostrarmos como usá-lo, queremos falar sobre alguns termos, como *depurador*, *depuração* e modo de *depuração*. Dessa forma, quando falarmos mais tarde sobre a localização e a correção de bugs, falaremos sobre a mesma coisa.
 
 ## <a name="debugger-vs-debugging"></a>Depurador x depuração
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2ed0ba66-7259-486b-a518-aab6e45030aa
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 674eb33418aac8301cf19a0cbbefd15d90e24238
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: e750662c08ecd9b289e61410d1fdd40c8739ed24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148865"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885164"
 ---
 # <a name="how-to-refresh-the-view"></a>Como atualizar a exibição
 O Spy + + usa um "instantâneo" das tabelas do sistema e atualiza uma exibição com base nessas informações. É importante que você atualize periodicamente as exibições do sistema. Se você tiver uma exibição do Spy + + aberta e não tiver atualizado a exibição, não verá esses processos, threads e janelas subsequentemente criados. Além disso, você pode ver itens que não existem mais. O comando **Atualizar** está disponível para todas as exibições, exceto para a exibição mensagens.

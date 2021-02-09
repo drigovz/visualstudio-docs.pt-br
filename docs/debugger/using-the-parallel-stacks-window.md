@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 55a004e65a39f4a2b7bbf972cec36d689bf88d97
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 7b92f4e2faf2043c26c7119b6f9754edd3bdc990
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150165"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884384"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>Exibir threads e tarefas na janela de pilhas paralelas (C#, Visual Basic, C++)
 
@@ -72,7 +72,7 @@ Os itens de menu de atalho a seguir estão disponíveis quando você clica com o
 
 |Item de menu|Descrição|
 |-|-|
-|**Sinalizador**|Sinaliza o item selecionado.|
+|**Identificar**|Sinaliza o item selecionado.|
 |**Remover Sinalização**|Remove a sinalização do item selecionado.|
 |**Congelamento**|Congela o item selecionado.|
 |**Congelar**|Descongela o item selecionado.|

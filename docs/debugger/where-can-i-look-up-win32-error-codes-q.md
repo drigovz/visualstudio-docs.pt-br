@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 8fb4ff42-b8eb-4152-b49e-b802d194b05e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 44a006be3b6ecad3ef723c00154354cb35df0049
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: c4eb61a6eda5848277a1da95f9282b396b413ad5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149281"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883825"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Onde posso pesquisar códigos de erro Win32?
 WINERROR.H no diretório INCLUDE da instalação do sistema padrão contém as definições do código de erro para as funções de API do Win32.

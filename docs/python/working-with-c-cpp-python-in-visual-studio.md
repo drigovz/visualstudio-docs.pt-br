@@ -5,17 +5,17 @@ ms.date: 11/19/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d79c9d0d1b9c62d5afd78696ee2654c4eecdbe57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 461e68979de6c3b711c05cc4be3ef9d5bd761397
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972355"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885931"
 ---
 # <a name="create-a-c-extension-for-python"></a>Criar uma extensão do C++ para o Python
 
@@ -120,21 +120,21 @@ Siga as instruções nesta seção para criar dois projetos de C++ idênticos ch
 
 1. Defina as propriedades específicas, conforme descrito na tabela a seguir e, em seguida, selecione **OK**.
 
-    | Guia | Propriedade | Valor |
+    | Tab | Propriedade | Valor |
     | --- | --- | --- |
     | **Geral** | **Geral**  >  **Nome do destino** | Especifique o nome do módulo ao qual você deseja se referir do Python nas instruções `from...import`. Você pode usar esse mesmo nome em C++ ao definir o módulo para Python. Se você quiser usar o nome do projeto como o nome do módulo, deixe o valor padrão de **$(ProjectName)**. |
     | | **Geral**  >  **Extensão de destino** | **.pyd** |
     | | **Padrões**  >  do projeto **Tipo de configuração** | **Biblioteca Dinâmica (.dll)** |
     | **C/C++**  >  **Geral** | **Diretórios de Inclusão Adicionais** | Adicione a pasta *include* do Python conforme apropriado para sua instalação, por exemplo, `c:\Python36\include`.  |
     | **C/C++**  >  **Pré-processador** | **Definições do Pré-processador** | **Apenas CPython**: adicione `Py_LIMITED_API;` no início da cadeia de caracteres (inclusive o ponto e vírgula). Essa definição restringe algumas das funções que podem ser chamadas do Python e torna o código mais portável entre diferentes versões do Python. Se você estiver trabalhando com PyBind11, não adicione essa definição, caso contrário, verá erros de build. |
-    | **C/C++**  >  **Geração de código** | **Biblioteca de Runtime ** | **DLL com multi-thread (/MD)** (confira Aviso abaixo) |
+    | **C/C++**  >  **Geração de código** | **Biblioteca de Runtime** | **DLL com multi-thread (/MD)** (confira Aviso abaixo) |
     | **Vinculador**  >  **Geral** | **Diretórios de Biblioteca Adicionais** | Adicione a pasta *libs* do Python que contém arquivos *.lib* conforme apropriado para sua instalação, por exemplo, `c:\Python36\libs`. (Lembre-se de apontar para a pasta *libs* que contém arquivos *.lib* e *não* para a pasta *Lib* que contém arquivos *.py*.) |
 
     > [!Tip]
     > Se a guia C/C++ não for exibida nas propriedades do projeto, isso indicará que o projeto não contém nenhum arquivo que ele identifica como arquivos de origem do C/C++. Essa condição poderá ocorrer se você criar um arquivo de origem sem uma extensão *.c* ou *.cpp*. Por exemplo, se você acidentalmente inseriu `module.coo` em vez de `module.cpp` na caixa de diálogo novo item anteriormente, o Visual Studio criará o arquivo, mas não definirá o tipo de arquivo como "C/c + Code", que é o que ativa a guia de propriedades C/C++. Essa identificação indesejada permanece o caso, mesmo se você renomear o arquivo com `.cpp` . Para configurar o tipo de arquivo corretamente, clique com o botão direito do mouse no arquivo no **Gerenciador de Soluções**, escolha **Propriedades** e, em seguida, defina **Tipo de Arquivo** como **Código C/C++**.
 
     > [!Warning]
-    > Sempre defina a opção de biblioteca de tempo de execução de código do **C/C++**  >  **Code Generation**  >  **Runtime Library** como **/MD (DLL de vários threads)**, mesmo para uma configuração de depuração, porque essa configuração é a qual os binários do Python sem depuração são compilados. Com o CPython, se você definir a opção **/MDD (DLL de depuração multi-threaded)** , a criação de uma configuração de **depuração** produzirá o erro **C1189: Py_LIMITED_API é incompatível com Py_DEBUG, Py_TRACE_REFS e Py_REF_DEBUG**. Além disso, se você remover `Py_LIMITED_API` (que é necessário com CPython, mas não em PyBind11) para evitar o erro de build, o Python falhará ao tentar importar o módulo. (A falha ocorre na chamada da DLL a `PyModule_Create`, conforme descrito adiante, com a mensagem de saída **Erro fatal do Python: PyThreadState_Get: nenhum thread atual**.)
+    > Sempre defina a opção de biblioteca de tempo de execução de código do **C/C++**  >    >   como **/MD (DLL de vários threads)**, mesmo para uma configuração de depuração, porque essa configuração é a qual os binários do Python sem depuração são compilados. Com o CPython, se você definir a opção **/MDD (DLL de depuração multi-threaded)** , a criação de uma configuração de **depuração** produzirá o erro **C1189: Py_LIMITED_API é incompatível com Py_DEBUG, Py_TRACE_REFS e Py_REF_DEBUG**. Além disso, se você remover `Py_LIMITED_API` (que é necessário com CPython, mas não em PyBind11) para evitar o erro de build, o Python falhará ao tentar importar o módulo. (A falha ocorre na chamada da DLL a `PyModule_Create`, conforme descrito adiante, com a mensagem de saída **Erro fatal do Python: PyThreadState_Get: nenhum thread atual**.)
     >
     > A opção/MDd é usada para criar os binários de depuração do Python (como *python_d.exe*), mas selecioná-lo para uma DLL de extensão ainda causa o erro de compilação com `Py_LIMITED_API` .
 
@@ -218,7 +218,7 @@ Se você estiver trabalhando com o Python 2.7, consulte em vez disso [Extending 
     };
     ```
 
-1. Adicione um método que o Python chama quando carrega o módulo, que deve ser nomeado `PyInit_<module-name>` , em que &lt; nome do módulo &gt; corresponde exatamente à propriedade de nome de destino **geral**do projeto C++  >  **Target Name** (ou seja, corresponde ao nome de arquivo do *. PYD* compilado pelo projeto).
+1. Adicione um método que o Python chama quando carrega o módulo, que deve ser nomeado `PyInit_<module-name>` , em que &lt; nome do módulo &gt; corresponde exatamente à propriedade de nome de destino **geral** do projeto C++  >   (ou seja, corresponde ao nome de arquivo do *. PYD* compilado pelo projeto).
 
     ```cpp
     PyMODINIT_FUNC PyInit_superfastcode() {
@@ -266,7 +266,7 @@ A compilação do módulo de C++ pode falhar pelos seguintes motivos:
 
 - Não é possível localizar *Python.h* (**E1696: não é possível abrir o arquivo de software livre "Python.h"** e/ou **C1083: não é possível abrir o arquivo de inclusão: "Python.h": o arquivo ou diretório não existe**), verifique se o caminho em **C/C++** > **Geral** > **Diretórios de Inclusão Adicionais** nas propriedades do projeto aponta para a pasta *include* da instalação do Python. Veja a etapa 6 em [Criar o projeto principal do C++](#create-the-core-c-projects).
 
-- Não é possível localizar bibliotecas Python: Verifique se o caminho **Linker**em diretórios de  >  **General**  >  **biblioteca adicionais** gerais do vinculador nas propriedades do projeto aponta para a pasta *bibliotecas* da sua instalação do Python. Veja a etapa 6 em [Criar o projeto principal do C++](#create-the-core-c-projects).
+- Não é possível localizar bibliotecas Python: Verifique se o caminho em diretórios de  >    >  **biblioteca adicionais** gerais do vinculador nas propriedades do projeto aponta para a pasta *bibliotecas* da sua instalação do Python. Veja a etapa 6 em [Criar o projeto principal do C++](#create-the-core-c-projects).
 
 - Erros do vinculador relacionadas à arquitetura de destino: altere a arquitetura do projeto de destino C++ para corresponder à instalação do Python. Por exemplo, se você tiver como alvo x64 com o projeto C++, mas a instalação do Python for x86, altere o projeto C++ para ter como destino x86.
 

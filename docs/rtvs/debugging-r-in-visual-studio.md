@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 5efa0a32f51e1f5060474a0d277bfca7f1e7d548
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3696cac00c726cffb76f29a1da2c503a15af2bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189260"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885814"
 ---
 # <a name="debug-r-in-visual-studio"></a>Depurar o R no Visual Studio
 
@@ -35,7 +35,7 @@ Sourcing: c:\proj\rproject1\rproject1\Settings.R
 
 Observe que a função `rtvs::debug_source` é usada para o script de origem. Essa função é necessária porque as RTVS precisam modificar o código na preparação para a depuração. Ao usar qualquer comando de fornecimento de RTVS e um depurador estiver anexado, o Visual Studio automaticamente usará `rtvs::debug_source`.
 
-Você também pode anexar manualmente o depurador da janela interativa diretamente usando o comando do depurador de anexar sessão de **ferramentas R**  >  **Session**  >  **Attach Debugger** , o comando **debug**  >  **Attach to R interativo** ou o comando **Attach Debugger** na barra de ferramentas da janela interativa. Depois de fazer isso, será sua responsabilidade originar os arquivos que deseja depurar. Se você quiser originar os arquivos manualmente, certifique-se de usar `rtvs::debug_source` e não o comando `source` regular no R.
+Você também pode anexar manualmente o depurador da janela interativa diretamente usando o comando do depurador de anexar sessão de **ferramentas R**  >    >   , o comando **debug**  >  **Attach to R interativo** ou o comando **Attach Debugger** na barra de ferramentas da janela interativa. Depois de fazer isso, será sua responsabilidade originar os arquivos que deseja depurar. Se você quiser originar os arquivos manualmente, certifique-se de usar `rtvs::debug_source` e não o comando `source` regular no R.
 
 Essa conexão entre o depurador e a janela interativa facilita ações como chamar (e depurar) uma função com valores de parâmetros diferentes. Por exemplo, suponha que você tenha a seguinte função em um arquivo originado (o que significa que ela foi carregada na sessão):
 
@@ -60,7 +60,7 @@ O Navegador de Ambiente dá suporte a uma série de comandos especiais:
 | f | concluir: executa o restante do escopo da função atual e retorna ao chamador (o mesmo que sair). |
 | c, cont | continuar: executa o programa até o próximo ponto de interrupção. |
 | Q | encerra: termina a sessão de depuração. |
-| onde | mostrar pilha: exibe a pilha de chamadas na janela interativa. |
+| where | mostrar pilha: exibe a pilha de chamadas na janela interativa. |
 | ajuda | mostrar ajuda: exibe os comandos disponíveis na janela interativa. |
 | &lt;expr&gt; | avaliar a expressão em *expr*. |
 

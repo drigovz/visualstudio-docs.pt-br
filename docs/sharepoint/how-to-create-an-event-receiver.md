@@ -16,15 +16,15 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2e94bd1594f94f43c82eed5033d6ec2660905c18
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 1943bd8a652a88d218912ab0fc0f6227bf83bc95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849877"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885697"
 ---
 # <a name="how-to-create-an-event-receiver"></a>Como: criar um receptor de eventos
   Ao criar *receptores de eventos*, você pode responder quando um usuário interage com itens do SharePoint, como listas ou itens de lista. Por exemplo, o código em um receptor de eventos pode ser disparado quando um usuário altera o calendário ou exclui um nome de uma lista de contatos. Seguindo este tópico, você pode aprender a adicionar um receptor de evento a uma instância de lista.

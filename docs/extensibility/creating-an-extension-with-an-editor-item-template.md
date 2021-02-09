@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6264cb35e404d69900094513875fc7b79310a4d
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: c8bfdcd854cf35c392578d9851a7421bacc8cbfe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973741"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884982"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Criar uma extensão com um modelo de item do editor
 Você pode usar modelos de item que estão incluídos no SDK do Visual Studio para criar extensões básicas do editor que adicionam classificadores, adornos e margens ao editor. Os modelos de item do editor estão disponíveis para projetos VSIX do Visual C# ou Visual Basic.
@@ -98,5 +98,5 @@ Você pode usar modelos de item que estão incluídos no SDK do Visual Studio pa
 
 4. Compile este projeto e inicie a depuração. A instância experimental é exibida. Se você abrir um arquivo de texto, uma margem verde com as palavras **Hello EditorMargin1** será exibida abaixo da barra de rolagem horizontal.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Pontos de extensão do serviço de linguagem e do editor](../extensibility/language-service-and-editor-extension-points.md)

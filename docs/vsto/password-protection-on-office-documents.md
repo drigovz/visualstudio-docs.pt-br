@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b6beaf85000438846e5d440e48c9722b9660f9bd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2cc320baf310af0ec2b4cdd84fabff951b2a9cb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528066"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885281"
 ---
 # <a name="password-protection-on-office-documents"></a>Proteção por senha em documentos do Office
   É possível definir uma senha em seus documentos do Microsoft Office Word e Microsoft Office pastas de trabalho do Excel para que eles não possam ser abertos por alguém que não saiba a senha. Essa opção é chamada **de senha ao abrir**.
@@ -39,7 +39,7 @@ ms.locfileid: "97528066"
 
  Na primeira vez que você abrir um documento do Word no Visual Studio com a **senha aberta** habilitada, o Word solicitará a senha. Depois de inserir a senha com êxito, a **senha ao abrir** é removida do documento e a abertura do documento não exigirá mais uma senha. Se você quiser que o documento em sua solução exija uma senha para que possa ser aberto, você deve habilitar a **senha ao abrir** após a compilação final e antes de implantar a solução.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Proteção de documentos em soluções de nível de documento](../vsto/document-protection-in-document-level-solutions.md)
 - [Visão geral do gerenciamento de direitos de informação e extensões de código gerenciado](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [Como: permitir que o código execute por trás de documentos com permissões restritas](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 1e639182-1301-4e28-9c1e-b5df732f3f1b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fe9b1ed3acbe588b342ba6550bc45558a2070d2
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 9d52d04565b03d988d5d01a64e561fc0da8a16e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727639"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885242"
 ---
 # <a name="graphics-frame-validation"></a>Validação de quadro de gráficos
 <!-- VERSIONLESS -->
@@ -35,6 +35,6 @@ Clique no botão **executar validação** no canto superior esquerdo para inicia
 | Mensagem | A mensagem associada ao evento. |
 | Evento | O evento associado ao erro ou aviso. |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 [Diagnóstico de gráficos (depuração de gráficos DirectX)](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->

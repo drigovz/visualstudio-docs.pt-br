@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 2820ac4c-c893-4d87-8c62-83981d561493
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 84d43ede5fcca1ae76d155cb8799a61900926d7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f46efe377cb01b7b78a9df2de2d1e6fc89826014
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183841"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884280"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Walkthrough: Depurando um aplicativo paralelo no Visual Studio (C#, Visual Basic, C++)
 
@@ -83,8 +83,8 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
    ::: moniker range="vs-2017"
    Na barra de menus superior, escolha **arquivo**  >  **novo**  >  **projeto**. No painel esquerdo da caixa de diálogo **novo projeto** , escolha o seguinte:
 
-   - Para um aplicativo C#, em **Visual C#**, escolha **Windows Desktop**e, no painel central, escolha **aplicativo de console (.NET Framework)**.
-   - Para um aplicativo Visual Basic, em **Visual Basic**, escolha **área de trabalho do Windows**e, no painel central, escolha **aplicativo de console (.NET Framework)**.
+   - Para um aplicativo C#, em **Visual C#**, escolha **Windows Desktop** e, no painel central, escolha **aplicativo de console (.NET Framework)**.
+   - Para um aplicativo Visual Basic, em **Visual Basic**, escolha **área de trabalho do Windows** e, no painel central, escolha **aplicativo de console (.NET Framework)**.
    - Para um aplicativo C++, em **Visual C++**, escolha **Windows Desktop**, e, em seguida, escolha **aplicativo de console do Windows**.
 
    Se você não vir o **aplicativo de console (.NET Core)** ou, para C++, o modelo de projeto de **aplicativo de console** , vá para **ferramentas**  >  **obter ferramentas e recursos...**, que abre a instalador do Visual Studio. Escolha o desenvolvimento de **área de trabalho .net** ou **desenvolvimento de desktop com** carga de trabalho C++ e, em seguida, escolha **Modificar**.
@@ -104,7 +104,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
    [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
    [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]
 
-1. No menu **Arquivo** , clique em **Salvar Tudo**.
+1. No menu **Arquivo**, clique em **Salvar Tudo**.
 
 1. No menu **Compilar**, clique em **Recompilar Solução**.
 
@@ -236,7 +236,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
 4. Clique duas vezes em um thread na janela **Threads** para torná-lo atual. Os threads atuais têm a seta amarela. Quando você altera o thread atual, as outras janelas são atualizadas. Em seguida, examinaremos tarefas.
 
-5. No menu **depurar** , aponte para **Windows**e clique em **tarefas**. A ilustração a seguir mostra a janela **tarefas** .
+5. No menu **depurar** , aponte para **Windows** e clique em **tarefas**. A ilustração a seguir mostra a janela **tarefas** .
 
      ![Quatro tarefas em execução na janela tarefas](../debugger/media/pdb_walkthrough_6.png "PDW_Walkthrough_6")
 

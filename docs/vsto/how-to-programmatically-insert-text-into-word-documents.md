@@ -16,15 +16,15 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], replacing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9567ea197c9a181141aeb52db0cca56ad4776237
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e82aef0fc473b0ed11bcc9fce15b6426d5b91b4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525691"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885385"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Como: inserir texto de forma programática em documentos do Word
   Há três maneiras principais de inserir texto em Microsoft Office documentos do Word:
@@ -130,7 +130,7 @@ ms.locfileid: "97525691"
    [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
    [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Como: formatar texto de forma programática em documentos](../vsto/how-to-programmatically-format-text-in-documents.md)
 - [Como: definir e selecionar intervalos de forma programática em documentos](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [Como: estender intervalos programaticamente em documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
