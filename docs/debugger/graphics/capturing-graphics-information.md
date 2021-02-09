@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: 187ce86e-e340-4f6c-8937-8e8f1027a17f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a11a5dc3a02959ff7bec4cfaac9aac2ca231b2ba
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 29a6371d8c49aabf27227d283ec0887f07f0c89f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727918"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876440"
 ---
 # <a name="capturing-graphics-information"></a>Capturando informações de gráficos
 Capture informações de gráficos do seu aplicativo do Direct3D para que você possa usar Analisador de Gráficos do Visual Studio para diagnosticar problemas de processamento e desempenho.
@@ -81,5 +81,5 @@ Capture informações de gráficos do seu aplicativo do Direct3D para que você 
 ## <a name="capturing-graphics-information-from-the-command-line"></a>Captura de informações de elementos gráficos da linha de comando
  Informações de gráficos poderão ser capturadas em um aplicativo usando uma ferramenta de linha de comando. Essa ferramenta, DXCap.exe, pode capturar e reproduzir rapidamente informações de gráficos sem usar o Visual Studio ou a captura programática. Em específico, você pode usar o DXCap.exe para automação ou em um ambiente de teste. Para obter mais informações sobre DXCap.exe, consulte [ferramenta de captura de linha de comando](command-line-capture-tool.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Passo a passo: Capturando informações de gráficos](walkthrough-capturing-graphics-information.md)

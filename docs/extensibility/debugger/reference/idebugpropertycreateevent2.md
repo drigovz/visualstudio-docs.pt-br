@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84d8fcb4375f29820b51752ac3fdebbd04f06f80
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08ef46275d9c7365cfcc837b8e4dfc73f0b48b41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720924"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876050"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 Essa interface é enviada pelo mecanismo de depuração (DE) para o SDM (Gerenciador de depuração de sessão) quando cria uma propriedade associada a um documento específico.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugPropertyCreateEvent2 : IUnknown
@@ -52,7 +52,7 @@ IDebugPropertyCreateEvent2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
-- [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

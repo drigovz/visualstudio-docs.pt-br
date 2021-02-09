@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 91092763-3362-4857-adf0-231bc1254206
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 08f03e0d09db17e3dbcda30588191ff3efcb1c41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9c71ed9ee8d8a8be4931b17127fb1c1ade13252
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719982"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875829"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
 Recupera o identificador exclusivo de uma métrica de acordo com seu nome.
@@ -56,7 +56,7 @@ no Nome da métrica.
 `pguidValue`\
 fora Retorna o identificador exclusivo da métrica.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também

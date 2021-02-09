@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af462178cf18d57afa6b51aedaba0004615ebb6f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4697aa4869535d63c522ae25c978dd89bfe51697
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349237"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876167"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Solucionar erros específicos em implantações do ClickOnce
 Este artigo lista os seguintes erros comuns que podem ocorrer quando você implanta um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e fornece etapas para resolver cada problema.
@@ -91,7 +91,7 @@ Este artigo lista os seguintes erros comuns que podem ocorrer quando você impla
  Para usar PrivatePath (caminhos de investigação de fusão), o aplicativo deve solicitar a permissão de confiança total. Tente alterar o manifesto do aplicativo para solicitar confiança total e tente novamente.
 
 #### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>Durante a desinstalação, aparece uma mensagem dizendo "falha ao desinstalar o aplicativo"
- Essa mensagem geralmente indica que o aplicativo já foi removido ou o repositório está corrompido. Depois de clicar em **OK** , a entrada **Adicionar/remover programa** será removida.
+ Essa mensagem geralmente indica que o aplicativo já foi removido ou o repositório está corrompido. Depois de clicar em **OK**, a entrada **Adicionar/remover programa** será removida.
 
 #### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>Durante a instalação, aparece uma mensagem dizendo que as dependências de plataforma não estão instaladas
  Você não tem um pré-requisito no GAC (cache de assembly global) que o aplicativo precisa para ser executado.
@@ -138,7 +138,7 @@ Este artigo lista os seguintes erros comuns que podem ocorrer quando você impla
 | Os atalhos não podem ser ativados pela rede. | Os atalhos para um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo só podem ser iniciados no disco rígido local. Eles não podem ser iniciados abrindo uma URL que aponta para um arquivo de atalho em um servidor remoto. |
 | O aplicativo é muito grande para ser executado online em confiança parcial. Contate o fornecedor do aplicativo ou o administrador do sistema para obter assistência. | Um aplicativo que é executado em confiança parcial não pode ser maior que metade do tamanho da cota do aplicativo online, que por padrão é 250 MB. |
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Solucionar problemas de implantações do ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
 - [Solução de problemas do Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

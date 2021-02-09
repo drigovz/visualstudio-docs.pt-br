@@ -7,23 +7,23 @@ ms.topic: conceptual
 ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 91d1df06d991669b023ede60b8b384ea75af651a
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: e4ba5678d91779f0955147dbc87fd3b57cbe387c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796713"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876400"
 ---
 # <a name="debug-xaml-in-blend"></a>Depurar XAML no Blend
 
-Você pode usar as ferramentas no Blend para Visual Studio para depurar o XAML em seu aplicativo. Ao compilar um projeto, qualquer erro é exibido no painel **Resultados** . Clique duas vezes em um erro para localizar a marcação relacionada ao erro. Se precisar de mais espaço para trabalhar, você poderá ocultar o painel de **resultados** pressionando **F12** .
+Você pode usar as ferramentas no Blend para Visual Studio para depurar o XAML em seu aplicativo. Ao compilar um projeto, qualquer erro é exibido no painel **Resultados**. Clique duas vezes em um erro para localizar a marcação relacionada ao erro. Se precisar de mais espaço para trabalhar, você poderá ocultar o painel de **resultados** pressionando **F12**.
 
 ## <a name="syntax-errors"></a>Erros de sintaxe
 
-Erros de sintaxe ocorrem quando o XAML ou os arquivos code-behind não seguem as regras de formatação do idioma. A descrição do erro pode ajudar a entender como corrigir o problema. A lista também especifica o nome do arquivo e o número da linha em que se encontra o erro. Os erros de XAML são listados na guia **Marcação** do painel **Resultados** .
+Erros de sintaxe ocorrem quando o XAML ou os arquivos code-behind não seguem as regras de formatação do idioma. A descrição do erro pode ajudar a entender como corrigir o problema. A lista também especifica o nome do arquivo e o número da linha em que se encontra o erro. Os erros de XAML são listados na guia **Marcação** do painel **Resultados**.
 
 > [!TIP]
 > XAML é uma linguagem de marcação baseada em XML e segue as regras de sintaxe XML.
@@ -48,21 +48,21 @@ O exemplo a seguir mostrará uma sessão simples de depuração de XAML no Blend
 
 #### <a name="to-create-a-project"></a>Para criar um projeto
 
-1. No Blend, abra o menu **File** e clique em **New Project** .
+1. No Blend, abra o menu **File** e clique em **New Project**.
 
-    Na caixa de diálogo **Novo Projeto** , é exibida uma lista de tipos de projetos no lado esquerdo. Quando você clica em um tipo de projeto, os modelos de projeto associados a ele aparecem do lado direito.
+    Na caixa de diálogo **Novo Projeto**, é exibida uma lista de tipos de projetos no lado esquerdo. Quando você clica em um tipo de projeto, os modelos de projeto associados a ele aparecem do lado direito.
 
-2. Na lista de tipos de projeto, clique em **Windows universal** .
+2. Na lista de tipos de projeto, clique em **Windows universal**.
 
-3. Na lista de modelos de projeto, clique em **aplicativo em branco (universal do Windows)** .
+3. Na lista de modelos de projeto, clique em **aplicativo em branco (universal do Windows)**.
 
 4. Na caixa de texto **nome** , digite `DebuggingSample` .
 
-5. Na caixa de texto **Localização** , verifique a localização do projeto.
+5. Na caixa de texto **Localização**, verifique a localização do projeto.
 
-6. Na lista **Linguagem** , clique em **Visual C#** e em **OK** para criar o projeto.
+6. Na lista **Linguagem**, clique em **Visual C#** e em **OK** para criar o projeto.
 
-7. Clique com o botão direito do mouse na superfície de design e clique em **Exibir Código-Fonte** para alternar para o modo de exibição **Divisão** .
+7. Clique com o botão direito do mouse na superfície de design e clique em **Exibir Código-Fonte** para alternar para o modo de exibição **Divisão**.
 
 8. Copie o código a seguir clicando no link **Copiar** no canto superior direito do código.
 
@@ -92,7 +92,7 @@ O exemplo a seguir mostrará uma sessão simples de depuração de XAML no Blend
 
 10. Pressione **Ctrl** + **Shift** + **B** para compilar o projeto.
 
-    Uma mensagem de erro aparece alertando você que o projeto não pode ser criado e o painel **Resultados** , listando os erros, aparece na parte inferior do aplicativo.
+    Uma mensagem de erro aparece alertando você que o projeto não pode ser criado e o painel **Resultados**, listando os erros, aparece na parte inferior do aplicativo.
 
     ![Depurar XAML no Blend para Visual Studio](../debugger/media/blend_debugxaml_xaml.png "blend_debugXAML_XAML")
 
@@ -118,7 +118,7 @@ Quando são detectados erros de XAML, a superfície de design exibe um alerta in
 
 ## <a name="debug-in-visual-studio"></a>Depuração no Visual Studio
 
-Você pode abrir projetos de Blend no Visual Studio para depurar com mais facilidade o código em seu aplicativo. Para abrir um projeto do Blend no Visual Studio, clique com o botão direito do mouse no projeto no painel **projetos** e clique em **Editar no Visual Studio** . Depois de concluir a sessão de depuração no Visual Studio, pressione Ctrl + Shift + S para salvar todas as suas alterações e, em seguida, volte para o Blend. Você será solicitado a recarregar o projeto. Clique em **Sim para todos** para continuar trabalhando no Blend.
+Você pode abrir projetos de Blend no Visual Studio para depurar com mais facilidade o código em seu aplicativo. Para abrir um projeto do Blend no Visual Studio, clique com o botão direito do mouse no projeto no painel **projetos** e clique em **Editar no Visual Studio**. Depois de concluir a sessão de depuração no Visual Studio, pressione Ctrl + Shift + S para salvar todas as suas alterações e, em seguida, volte para o Blend. Você será solicitado a recarregar o projeto. Clique em **Sim para todos** para continuar trabalhando no Blend.
 
 Para obter mais informações sobre como depurar seu aplicativo, consulte [depurar aplicativos UWP no Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md).
 

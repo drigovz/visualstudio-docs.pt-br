@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: c5f8f417-0ef0-4fd0-a779-b0a8ead4effe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ce326c63f97dfafd06e3e2b3e760b1c06e60d442
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21f7965d07b723735bcbaddade94d50fb78aa2ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720059"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875881"
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
 Recupera um valor que corresponde à métrica especificada do avaliador de expressão.
@@ -56,7 +56,7 @@ no Nome da métrica.
 `pdwValue`\
 fora Retorna o valor que corresponde à cadeia de caracteres da métrica.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também

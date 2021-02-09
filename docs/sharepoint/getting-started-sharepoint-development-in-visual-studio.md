@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, getting started
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 40eb9444ec72787e154ddd0cd7bc93e786c84397
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 109cf2fe5661f23ae7fb051829ec1c9e9a6d2329
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915161"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876622"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Introdução (desenvolvimento do SharePoint no Visual Studio)
   Esta seção ajuda você a começar a trabalhar com o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para desenvolver soluções do SharePoint que tiram proveito do [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e do [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] .

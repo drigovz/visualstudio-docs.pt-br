@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ExtensionDataItem element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 23bd231343b3e7a6c68883aa7fe3ee4e518ac883
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: add1a119283635f9cfd9bebddfe18228f1976703
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672607"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876817"
 ---
 # <a name="extensiondataitem-element"></a>Elemento ExtensionDataItem
   Um item de dados personalizado que está associado ao item de projeto do SharePoint, no formato de chave/valor. Tanto a chave quanto o valor devem ser cadeias de caracteres.
@@ -42,7 +42,7 @@ ms.locfileid: "94672607"
 |**Valor**|Atributo **xs: String** necessário.<br /><br /> O valor do item de dados.|
 
 ### <a name="child-elements"></a>Elementos filho
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 

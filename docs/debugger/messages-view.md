@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 692902b2d2b612c71c2d1dc0f936c7550f430847
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: e20d3f83d6e68211d1b48f63747bea80ee6b25d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903397"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876323"
 ---
 # <a name="messages-view"></a>Exibição de mensagens
 Cada janela tem um fluxo de mensagens associado. Uma janela de exibição de mensagens exibe esse fluxo de mensagens. O identificador de janela, o código de mensagem e a mensagem são mostrados. Você também pode criar uma exibição de mensagens para um thread ou processo. Isso permite exibir mensagens enviadas a todas as janelas de propriedade de um processo ou thread específico, o que é particularmente útil para capturar mensagens de inicialização de janela.

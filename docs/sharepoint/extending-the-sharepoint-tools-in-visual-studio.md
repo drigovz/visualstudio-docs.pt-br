@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a921f45ea151ce7ee3313dba47e81a5acc86063d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: c074e62b47b926351948e94d78621a8a41c9c3e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672620"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876843"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Estenda as ferramentas do SharePoint no Visual Studio
   As ferramentas do SharePoint no Visual Studio atendem aos requisitos de muitos cenários de desenvolvimento de aplicativos. No entanto, você pode descobrir casos em que eles não fornecem funcionalidade que você ou outros desenvolvedores precisam. Nesses casos, você pode estender as ferramentas do SharePoint para criar a funcionalidade de que precisa.
@@ -50,7 +50,7 @@ ms.locfileid: "94672620"
 
  Para instalar o SDK do Visual Studio, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md). Para obter mais informações sobre extensões do Visual Studio, consulte [iniciando o desenvolvimento de extensões do Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral do modelo de programação das extensões de ferramentas do SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
 - [Estender o sistema de projeto do SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)

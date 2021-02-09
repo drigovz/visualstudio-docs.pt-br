@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 5be85715efa3086a5a225da45501697440053cc5
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+manager: jmartens
+ms.openlocfilehash: fc6c05b925c8dac5c488ce3eea79ca683b590b72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796700"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876414"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Projetar XAML no Visual Studio e no Blend para Visual Studio
 
 O Visual Studio e o Blend for Visual Studio fornecem ferramentas visuais para criar interfaces do usuário envolventes e experiências de mídia avançadas com XAML para vários tipos de aplicativos. Os dois IDEs (ambientes de desenvolvimento integrados) compartilham um conjunto comum de recursos, incluindo um editor XAML visual (o designer). O Blend para Visual Studio, que dá suporte às plataformas WPF e UWP, fornece ferramentas adicionais para a criação de estados visuais e animações.
 
-É possível alternar entre o Visual Studio e o Blend para Visual Studio e até deixar o mesmo projeto aberto nos dois IDEs ao mesmo tempo. As alterações salvas nos arquivos XAML em um IDE podem ser aplicadas por meio de recarregamento automático ao mudar para o outro IDE. Você pode controlar o comportamento de recarregamento navegando até **ferramentas**  >  **Opções**  >  **Environment**  >  **documentos** de ambiente em qualquer IDE.
+É possível alternar entre o Visual Studio e o Blend para Visual Studio e até deixar o mesmo projeto aberto nos dois IDEs ao mesmo tempo. As alterações salvas nos arquivos XAML em um IDE podem ser aplicadas por meio de recarregamento automático ao mudar para o outro IDE. Você pode controlar o comportamento de recarregamento navegando até **ferramentas**  >  **Opções**  >    >  **documentos** de ambiente em qualquer IDE.
 
 ## <a name="installation"></a>Instalação
 
@@ -44,7 +44,7 @@ Para tarefas de desenvolvimento mais básicas, o Visual Studio e o Blend para Vi
 
 - **Depuração:** Você pode depurar no [Visual Studio](inspect-xaml-properties-while-debugging.md) e [Blend para Visual Studio](../xaml-tools/debug-xaml-in-blend.md), incluindo a definição de pontos de interrupção no código para depurar um aplicativo em execução e usar a [recarga a quente](../xaml-tools/xaml-hot-reload.md) para alterar o código XAML enquanto o aplicativo está em execução. Para manter uma experiência de depuração consistente com o Visual Studio, o Blend for Visual Studio inclui a maioria das janelas de depuração e barras de ferramentas do Visual Studio.
 
-- **Recarregamento de arquivo:** Você pode editar os arquivos XAML no Visual Studio ou Blend para Visual Studio. Os arquivos editados que foram salvos são recarregados automaticamente conforme você alterna entre os IDEs. Você pode controlar o comportamento de recarregamento navegando até **ferramentas**  >  **Opções**  >  **Environment**  >  **documentos** de ambiente em qualquer IDE.
+- **Recarregamento de arquivo:** Você pode editar os arquivos XAML no Visual Studio ou Blend para Visual Studio. Os arquivos editados que foram salvos são recarregados automaticamente conforme você alterna entre os IDEs. Você pode controlar o comportamento de recarregamento navegando até **ferramentas**  >  **Opções**  >    >  **documentos** de ambiente em qualquer IDE.
 
 - **Configurações e layouts sincronizados:** Os layouts de janela da ferramenta de personalização de design e as preferências de configurações para o Visual Studio ou Blend para Visual Studio são sincronizadas em seus dispositivos e versões quando você entra com a mesma conta de personalização. Confira [Sincronizar configurações em vários computadores](../ide/synchronized-settings-in-visual-studio.md).
 
@@ -62,7 +62,7 @@ Para aumentar sua produtividade, considere o uso do Blend for Visual Studio para
 
 Para obter mais informações sobre design avançado de XAML, confira [Criar uma interface do usuário usando o Blend para Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral do XAML](xaml-overview.md)
 - [Visão geral do Blend para Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md)
