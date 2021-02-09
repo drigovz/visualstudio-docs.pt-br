@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 4ac1eae8-d6ce-4f05-98f0-a29065f471d4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 66408749688f80b1c49b317336f76ce148f09c74
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 916f886efd25f394483c0b94c6994c364f9ff87b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148657"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904215"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>Guia Estilos, Caixa de diálogo Propriedades da Janela
 Use a guia **estilos** para mostrar os estilos aplicados à janela selecionada. Para exibir a [caixa de diálogo Propriedades da janela](../debugger/window-properties-dialog-box.md), mova o foco para a janela [exibição do Windows](../debugger/windows-view.md) . Selecione qualquer nó de janela na árvore e, em seguida, escolha **Propriedades** no menu **Exibir** .
 
  As configurações a seguir estão disponíveis na guia **estilos** :
 
-|Entrada|Descrição|
+|Entrada|Description|
 |-----------|-----------------|
 |**Estilos de janela**|Uma combinação de códigos de estilo de janela e estilos de controle, se aplicável.|
 |**Estilos estendidos**|Uma combinação de códigos de estilo de janela estendida.|

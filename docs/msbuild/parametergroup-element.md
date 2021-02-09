@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c3275e69-a427-4889-bc1d-51bff2c285fa
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 104a7313104e194a85d9eb4fee00e84a8facb5b5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 56ff9c63de40f6a352c10f92b937a397c683fc65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048865"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905295"
 ---
 # <a name="parametergroup-element"></a>Elemento ParameterGroup
 
@@ -32,7 +32,7 @@ Contém uma lista opcional de parâmetros que estarão presentes na tarefa que �
  \<Project> \<UsingTask>
  \<ParameterGroup>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <ParameterGroup />
@@ -44,7 +44,7 @@ Contém uma lista opcional de parâmetros que estarão presentes na tarefa que �
 
 ### <a name="attributes"></a>Atributos
 
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
 
@@ -75,7 +75,7 @@ Contém uma lista opcional de parâmetros que estarão presentes na tarefa que �
 </UsingTask>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

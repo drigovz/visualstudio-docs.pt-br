@@ -14,15 +14,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], security
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b47a18aa3e791d446abc2a57b6aad1f139924ebf
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c778ed98a3f5d17007acccd2f16208ece3237037
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528463"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906749"
 ---
 # <a name="secure-deployment"></a>Implantação segura
   Quando você cria uma solução do Office, seu computador de desenvolvimento é atualizado automaticamente para permitir que o código em seu projeto seja executado. No entanto, ao implantar sua solução, você deve fornecer evidências nas quais basear uma decisão de confiança assinando a solução com um certificado ou usando a [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] chave de prompt de confiança. Para obter mais informações, consulte [Grant Trust to Office Solutions](../vsto/granting-trust-to-office-solutions.md).
@@ -46,7 +46,7 @@ ms.locfileid: "97528463"
 
   Para permitir que as soluções do Office executem o código, defina as duas `Disabled` entradas como 0 (zero) ou exclua as entradas do registro.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)
 - [Preparar computadores para executar ou hospedar soluções do Office](/previous-versions/bb772092(v=vs.110))
 - [Proteger soluções do Office](../vsto/securing-office-solutions.md)

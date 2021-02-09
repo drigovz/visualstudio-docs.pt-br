@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76e4301843cc318b60940948fee4b618860e7bae
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: d346826c97bfa0ed885579d4816c452dbed9a2d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905712"
 ---
 # <a name="vsix-project-template"></a>Modelo de projeto VSIX
 
@@ -84,7 +84,7 @@ Você pode empacotar uma extensão existente ou uma extensão que ainda não tem
 
     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Cria um arquivo *. vsix* que contém um arquivo de manifesto do VSIX, um arquivo [Content_Types]*. xml* e todos os ativos de extensão que você adicionou ao projeto.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Referência do esquema de extensão do VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md)
 - [Localizar e usar extensões do Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)

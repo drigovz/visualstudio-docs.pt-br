@@ -32,15 +32,15 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], writing code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 40ea589cb4406a383876b1f16721f18fc48ebadd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b0f72e859e0847b5035e99146ef6c0435ef299d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526022"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904451"
 ---
 # <a name="write-code-in-office-solutions"></a>Escrever código em soluções do Office
   Há alguns aspectos de escrever código em projetos do Office que são diferentes de outros tipos de projetos no Visual Studio. Muitas dessas diferenças estão relacionadas à maneira como os modelos de objeto do Office são expostos ao código gerenciado. Outras diferenças estão relacionadas ao design de projetos do Office.
@@ -121,7 +121,7 @@ A tabela a seguir mostra as principais diferenças entre o Visual Basic e o Visu
 |-------------|-----------------|-----------------------------------------|
 |Índices de matriz|O limite de matriz inferior de coleções em aplicativos Microsoft Office começa com 1. Visual Basic e o Visual C# usam matrizes baseadas em 0. Para obter mais informações, consulte [matrizes &#40;C&#35; guia de programação&#41;](/dotnet/csharp/programming-guide/arrays/index) e [matrizes no Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Para acessar o primeiro item de uma coleção no modelo de objeto de um aplicativo Microsoft Office, use o índice 1 em vez de 0.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)
 - [Acesso global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md)

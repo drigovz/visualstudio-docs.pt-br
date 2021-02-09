@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 780a298a-132e-4245-8370-8c82ca27c6c1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 49d1fb2b24488692031c647139aa1f1076f0dd6f
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: dd4709807b176806d8a7ca56de4adda8cdfe13ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398478"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904326"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Como posso depurar violações de acesso ao executar meu programa fora do depurador?
 
@@ -36,6 +36,6 @@ ms.locfileid: "97398478"
 ## <a name="solution"></a>Solução
  Defina a opção [depuração Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md) e execute o programa autônomo, até que ocorra a violação de acesso. Em seguida, na caixa de diálogo **Violação de Acesso**, clique em **Cancelar** para iniciar o depurador.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md)
 - [Depurando código nativo](../debugger/debugging-native-code.md)

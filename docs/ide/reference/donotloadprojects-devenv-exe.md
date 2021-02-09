@@ -10,15 +10,15 @@ helpviewer_keywords:
 - DoNotLoadProjects Devenv switch
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ef3502a2180f7ae7ed5963deb14844b46f3dbff9
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: fb43d3a12e50d3f4a7af43721a5e93b769da28ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040622"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907584"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
 
@@ -36,7 +36,7 @@ devenv /DoNotLoadProjects SolutionName
 
 *SolutionName*
 
-Obrigatórios. O caminho completo e o nome da solução a ser aberta.
+Obrigatório. O caminho completo e o nome da solução a ser aberta.
 
 ## <a name="example"></a>Exemplo
 

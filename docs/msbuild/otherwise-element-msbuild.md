@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: de3997e9-1595-4263-a886-95530b56a319
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 05cc8820f073ea8c620e4331c180ee1ddbfc2b65
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c5e78723ee6cc0f8ed1da0d5e913be0d84eb1050
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048939"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905326"
 ---
 # <a name="otherwise-element-msbuild"></a>Elemento Otherwise (MSBuild)
 
@@ -38,7 +38,7 @@ Especifica o bloco de código a executar se e somente se as condições de todos
  \<Choose>
 ...
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <Otherwise>
@@ -54,7 +54,7 @@ Especifica o bloco de código a executar se e somente se as condições de todos
 
 ### <a name="attributes"></a>Atributos
 
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
 
@@ -125,7 +125,7 @@ Especifica o bloco de código a executar se e somente se as condições de todos
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Construções condicionais](../msbuild/msbuild-conditional-constructs.md)
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)

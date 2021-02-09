@@ -14,15 +14,15 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0a750aa97c371ce25c7b6797ee773e82d8ab8eb6
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9101c59dddd0f5c3488c91c0ac7054ebb56cc2f8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524377"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906576"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>Orientações de segurança e implantação
   Os tópicos a seguir demonstram como você pode definir a política de segurança para permitir que sua solução seja executada e como você pode implantar sua solução do Office.
@@ -60,5 +60,5 @@ ms.locfileid: "97524377"
 
 - [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md) Fornece links para informações sobre como criar soluções do Word e do Excel e a função de assemblies em sua solução.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Exemplos e orientações de desenvolvimento do Office](../vsto/office-development-samples-and-walkthroughs.md)

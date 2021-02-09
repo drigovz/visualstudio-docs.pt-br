@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bf008bd7c1355f5991890ca5ab8bd999f2a8dd32
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: df8d9545ce8179451530e2eb30bef7f98ba365d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305439"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907554"
 ---
 # <a name="error-list-window"></a>Janela Lista de Erros
 
@@ -68,7 +68,7 @@ Se um filtro estiver aplicado no momento para o resultado da pesquisa, o nome do
 
 A lista no lado direito da barra de ferramentas especifica se serão mostrados os erros do build (os erros resultantes de uma operação de build), do IntelliSense (erros detectados antes da execução de um build) ou ambos.
 
-## <a name="search"></a>Pesquisar
+## <a name="search"></a>Search
 
 Use a caixa de texto **Pesquisar Lista de Erros** no lado direito da barra de ferramentas **Lista de Erros** para encontrar erros específicos na lista de erros. É possível pesquisar em qualquer coluna visível na lista de erros e os resultados da pesquisa são sempre classificados de acordo com a coluna que tem a prioridade de classificação, em vez da consulta ou do filtro aplicado. Se você escolher a tecla **Esc** enquanto o foco estiver na **Lista de Erros**, será possível limpar o termo de pesquisa e os resultados da pesquisa filtrados. Você também pode clicar no **X** no lado direito da caixa de texto para desmarcá-la.
 
@@ -78,7 +78,7 @@ Use a caixa de texto **Pesquisar Lista de Erros** no lado direito da barra de fe
 
 ## <a name="ui-element-list"></a>Lista de elementos da interface de usuário
 
-Severidade
+Severity
 
 Exibe os diferentes tipos da entrada **Lista de Erros** (**Erro**, **Mensagem**, **Aviso**, **Aviso [ativo]**, **Aviso [inativo]**).
 

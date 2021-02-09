@@ -17,15 +17,15 @@ helpviewer_keywords:
 - task panes [Office development in Visual Studio], automating applications
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7bb53d56a83c74a0ab1719f62377e2da426a83fd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ed0d2ae6bf66e8f7375bde72aaec085463b9ca18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522799"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906613"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Walkthrough: automatizar um aplicativo de um painel de tarefas personalizado
   Este tutorial demonstra como criar um painel de tarefas personalizado que automatiza o PowerPoint. O painel de tarefas personalizado insere datas em um slide quando o usuário clica <xref:System.Windows.Forms.MonthCalendar> em um controle que está no painel de tarefas personalizado.
@@ -143,7 +143,7 @@ ms.locfileid: "97522799"
 
 - Crie um painel de tarefas personalizado para cada mensagem de email aberta no Outlook. Para obter mais informações, consulte [Walkthrough: Exibir painéis de tarefas personalizados com mensagens de email no Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Painéis de tarefas personalizados](../vsto/custom-task-panes.md)
 - [Como: adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [Walkthrough: sincronizar um painel de tarefas personalizado com um botão da faixa de das](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)

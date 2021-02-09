@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2693d25e0b175a075bcc644077895076b75b7578
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 48f88f48f62818882dd15889cdfa1bd2a48d9808
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875720"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905824"
 ---
 # <a name="resources-in-vspackages"></a>Recursos em VSPackages
 Você pode inserir recursos localizados em DLLs de interface do usuário satélite nativas, DLLs satélite gerenciadas ou em um VSPackage gerenciado.
@@ -87,6 +87,6 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 
  Quando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o solicita um recurso de um VSPackage após a instalação, esse pacote provavelmente já estará carregado e inicializado, portanto, a perda de desempenho será mínima.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Gerenciar VSPackages](../../extensibility/managing-vspackages.md)
 - [Recursos localizados em aplicativos do MFC: DLLs satélite](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)

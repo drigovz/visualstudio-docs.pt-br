@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, compartment shape
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 54b6e42a46fc60dd981d9a103a4303b44fb0f909
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: eb97f6b218655266afeaeec6198ea52d35c76c52
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360488"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905495"
 ---
 # <a name="properties-of-compartment-shapes"></a>Propriedades de formas de compartimento
 As formas de compartimento são uma das formas que você pode usar para exibir uma classe de domínio em uma linguagem específica de domínio. Você pode expandir e recolher os compartimentos.
@@ -30,11 +30,11 @@ As formas de compartimento são uma das formas que você pode usar para exibir u
 |Propriedade|Descrição|Padrão|
 |-|-|-|
 |Padrão expandir estado de recolhimento|Se `Expanded` , os compartimentos são mostrados na criação. Se `Collapsed` não forem.|Expanded|
-|Cor de Preenchimento|A cor de preenchimento desta forma.|Branco|
+|Cor de Preenchimento|A cor de preenchimento desta forma.|Branca|
 |Preencher modo de gradiente|O modo de gradiente de preenchimento desta forma.|Horizontal|
 |Geometria|A geometria dessa forma (retângulo ou retângulo arredondado).|Retângulo|
 |Tem pontos de conexão padrão|Se `True` , a forma usará os pontos de conexão superior, inferior, esquerdo e direito no designer gerado.|Falso|
-|É um cabeçalho de compartimento único visível|Se `False` e a forma tiver um único compartimento, o cabeçalho do compartimento não será visível.|Verdadeiro|
+|É um cabeçalho de compartimento único visível|Se `False` e a forma tiver um único compartimento, o cabeçalho do compartimento não será visível.|True|
 |Cor do contorno|A cor da estrutura de tópicos desta forma.|Preto|
 |Estilo do contorno tracejado|O estilo do contorno tracejado dessa forma (sólido, traço, ponto, travessão ponto, travessão ponto ponto, personalizado).|Sólido|
 |Espessura do contorno|A espessura da estrutura de tópicos desta forma.|0, 3125|
@@ -45,7 +45,7 @@ As formas de compartimento são uma das formas que você pode usar para exibir u
 |Tem Construtor personalizado|Se `True` , um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Modificador de herança|Descreve o tipo de herança da classe de código-fonte gerada a partir da forma de compartimento `none` ( `abstract` ou `sealed` ).|Nenhum|
 |Forma do compartimento de base|A classe base dessa forma.|(nenhum)|
-|Name|O nome desta forma.|Nome atual|
+|Nome|O nome desta forma.|Nome atual|
 |Namespace|O namespace que é afiliado a esta forma.|Namespace atual|
 |Tipo de dica de ferramenta|Como a dica de ferramenta é definida (fixa, variável ou nenhuma). Se for corrigido, o valor da `Fixed Tooltip Text` propriedade será usado como dica de ferramenta; se for variável, a dica de ferramenta será definida no código personalizado.|nenhum|
 |Observações|Observações informais associadas a esta forma.|\<none>|
@@ -57,6 +57,6 @@ As formas de compartimento são uma das formas que você pode usar para exibir u
 |Texto de dica de ferramenta fixo|O texto que é usado para uma dica de ferramenta fixa.|\<none>|
 |Palavra-chave de ajuda|A palavra-chave usada para indexar a ajuda F1 para essa forma.|\<none>|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

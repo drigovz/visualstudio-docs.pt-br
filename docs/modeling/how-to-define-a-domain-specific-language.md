@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40dcba1cb83e695f2b02468bdd83a5faa8c25a38
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 440d2f42fb7967ebbcb97433c3faa55e2d91ca0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363309"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903927"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Como definir uma linguagem específica do domínio
 Para definir uma DSL (linguagem específica de domínio), você cria uma solução do Visual Studio a partir de um modelo. A parte fundamental da solução é o diagrama de Definição de DSL, que é armazenado em DslDefinition.dsl. A Definição de DSL define as classes e formas da DSL. Depois de modificar e adicionar esses elementos, você pode adicionar o código do programa para personalizar a DSL com mais detalhes.
@@ -622,7 +622,7 @@ Para criar uma nova linguagem específica de domínio, você cria uma nova solu�
 | A caixa de ferramentas de minha DSL não aparece após a mudança de nomes do assembly. | Inspecione e atualize o **DslPackage\GeneratedCode\Package.tt** para obter mais informações, consulte [como alterar o namespace de um idioma de Domain-Specific](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
 | A caixa de ferramentas de minha DSL não aparece, mas não alterei o nome do assembly.<br /><br /> Ou, uma caixa de mensagens aparece relatando a falha ao carregar uma extensão. | Redefina a instância experimental e recompile sua solução.<br /><br /> 1. no menu Iniciar do Windows, em **todos os programas**, expanda [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] , depois em **ferramentas** e clique em **redefinir a instância experimental Microsoft Visual Studio**.<br />2. no menu **Compilar** , clique em **Recompilar solução**. |
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Introdução às linguagens específicas do domínio](../modeling/getting-started-with-domain-specific-languages.md)
 - [Criando uma linguagem específica do domínio baseada no Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)

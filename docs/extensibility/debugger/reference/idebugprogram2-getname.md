@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a54cbf13-b3e3-4c9f-8b8d-13573232dfb0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 76e66e857da87afeee105267fb35ddebdb692637
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f51d294372d233edc8b35f7fccc562e5a650e9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722803"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906191"
 ---
 # <a name="idebugprogram2getname"></a>IDebugProgram2::GetName
 Obtém o nome do programa.
@@ -28,13 +28,13 @@ Obtém o nome do programa.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetName( 
+HRESULT GetName( 
    BSTR* pbstrName
 );
 ```
 
 ```csharp
-int GetName( 
+int GetName( 
    out string pbstrName
 );
 ```
@@ -43,7 +43,7 @@ int GetName( 
 `pbstrName`\
 fora Retorna o nome do programa.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

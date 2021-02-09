@@ -19,15 +19,15 @@ helpviewer_keywords:
 - debugging [Visual Studio ALM], IntelliTrace
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f5d4603e052cd5968055304290559b8a8d5a56a
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: f4c974b9056b41de2e021f5918963d1d28ffa3db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148631"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904998"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Recursos do IntelliTrace (C#, Visual Basic, C++)
 
@@ -127,7 +127,7 @@ Ao salvar dados do IntelliTrace no arquivo, você obtém um arquivo. itrace para
 
 [Depurador do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home)
 
-## <a name="videos"></a>Vídeos
+## <a name="videos"></a>vídeos
 
 [Experiência do IntelliTrace](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)
 

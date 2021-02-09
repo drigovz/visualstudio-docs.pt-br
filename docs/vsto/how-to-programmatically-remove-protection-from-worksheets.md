@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Unprotect method
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 86140e5595fc539a06a9eb8381e50b503e31708d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 85f659248528d0d7cf4357ffe2d1c2c5f88df9e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526640"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906754"
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Como: remover programaticamente a proteção de planilhas
   Você pode remover programaticamente a proteção de uma planilha Microsoft Office Excel.
@@ -46,7 +46,7 @@ ms.locfileid: "97526640"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#18)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Trabalhar com planilhas](../vsto/working-with-worksheets.md)
 - [Como: proteger planilhas programaticamente](../vsto/how-to-programmatically-protect-worksheets.md)
 - [Como: proteger pastas de trabalho programaticamente](../vsto/how-to-programmatically-protect-workbooks.md)

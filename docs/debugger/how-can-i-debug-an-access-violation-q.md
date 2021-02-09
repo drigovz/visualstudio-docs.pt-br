@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 9311d754-0ce9-4145-b147-88b6ca77ba63
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1786085e2f68a1d1196158ac56a62b87b80858be
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 9f7e33ff34357dc0aa258f179f55d379bdf05636
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761362"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904306"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>Como posso depurar uma violação de acesso de C++?
 
@@ -80,5 +80,5 @@ Se você executar esse código no Visual Studio 2015 atualização 1, verá a se
 
 Se você não puder determinar por que o ponteiro causou uma violação de acesso, rastreie o código para certificar-se de que o ponteiro que está causando o problema tenha sido atribuído corretamente.  Se ele for passado como um parâmetro, verifique se ele foi passado corretamente e se você não está criando acidentalmente uma [cópia superficial](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Em seguida, verifique se os valores não estão sendo acidentalmente alterados em algum lugar no programa criando um ponto de interrupção de dados para o ponteiro em questão para verificar se ele não está sendo modificado em outro lugar no programa. Para obter mais informações sobre pontos de interrupção de dados, consulte a seção ponto de interrupção de dados em [usando pontos de interrupção](../debugger/using-breakpoints.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md)

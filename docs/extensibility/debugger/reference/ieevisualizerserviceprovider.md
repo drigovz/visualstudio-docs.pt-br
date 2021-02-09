@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 859d1a51-1c65-4c8b-ae74-3b74b181ebcd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44d8a73589a4248736ac6c4d73814166056a1f90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40e811d33d23b35553ffb23338bed19dc207e1e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717890"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907794"
 ---
 # <a name="ieevisualizerserviceprovider"></a>IEEVisualizerServiceProvider
 > [!IMPORTANT]
@@ -25,7 +25,7 @@ ms.locfileid: "80717890"
 
  Essa interface fornece acesso a um método que pode criar um serviço visualizador, que é usado para tratar tarefas de visualizador de tipo para o IDE.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IEEVisualizerServiceProvider : IUnknown
@@ -61,4 +61,4 @@ IEEVisualizerServiceProvider : IUnknown
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
-- [Visualizar e exibir dados](../../../extensibility/debugger/visualizing-and-viewing-data.md)
+- [Visualizando e exibindo dados](../../../extensibility/debugger/visualizing-and-viewing-data.md)

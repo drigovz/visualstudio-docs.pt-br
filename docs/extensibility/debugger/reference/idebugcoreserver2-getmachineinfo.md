@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8fa1a1d3-9fcb-4fb3-bf4e-e7172ac08d77
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9411c296f396043a63eee6e4254a35d5c2c35884
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f90e8f97b020f746f6caa4807fe8ed063d613001
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733156"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904151"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
 Recupera uma descrição do computador no qual o servidor principal está sendo executado.
@@ -28,16 +28,16 @@ Recupera uma descrição do computador no qual o servidor principal está sendo 
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetMachineInfo( 
-   MACHINE_INFO_FIELDS Fields,
-   MACHINE_INFO*       pMachineInfo
+HRESULT GetMachineInfo( 
+   MACHINE_INFO_FIELDS Fields,
+   MACHINE_INFO*       pMachineInfo
 );
 ```
 
 ```csharp
-int GetMachineInfo( 
-   enum_ MACHINE_INFO_FIELDS  Fields,
-   MACHINE_INFO[]             pMachineInfo
+int GetMachineInfo( 
+   enum_ MACHINE_INFO_FIELDS  Fields,
+   MACHINE_INFO[]             pMachineInfo
 );
 ```
 
@@ -49,7 +49,7 @@ no Uma combinação de sinalizadores da enumeração [MACHINE_INFO_FIELDS](../..
 
  [entrada, saída] Uma estrutura de [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) que é preenchida com uma descrição do computador.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também

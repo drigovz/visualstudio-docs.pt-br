@@ -5,18 +5,18 @@ ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 27a29584a4cf3cd688abe36f625c2e68967c39c0
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: fab2a3f2893ba79874b6909b3d19ccf939f8b14a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440485"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906315"
 ---
 # <a name="choco-upgrade"></a>choco-upgrade
 
@@ -26,7 +26,7 @@ A `choco-upgrade` ferramenta pode ser usada para instalar e atualizar pacotes de
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta não fará nada.
 
-| Nome                                             | Type   | Obrigatório  | Valor                                                                                                          |
+| Nome                                             | Tipo   | Obrigatório  | Valor                                                                                                          |
 |--------------------------------------------------|--------|-----------|----------------------------------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No        | Propriedade de comentários opcional. Não usado.                                                                          |
 | [**entrada**](#input)                              | string | Sim       | O pacote a ser atualizado. Consulte a [entrada](#input) abaixo para obter detalhes.                                                 |

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 6f37edd7-a48c-4b41-b160-dff9be63a284
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f601027ce9e71dff6687bcd6aa1b08f13f5ce0cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ec3168a7e104e20bbb53607b4bd7a6acd8e79e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736624"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904650"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
 O mecanismo de depuração (DE) usa essa interface para solicitar que um documento seja carregado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugActivateDocumentEvent2 : IUnknown

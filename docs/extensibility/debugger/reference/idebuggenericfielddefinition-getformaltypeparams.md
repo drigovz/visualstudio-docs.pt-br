@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: cadbd6a1-bc7c-4aff-8777-5396b7a23c3e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4926d94e4ba032f3ff10ca8fdf7027ac6f6e751c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa1401181f844be2e1fa3dfd9e45b627e2daae19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728250"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904580"
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
 Recupera os parâmetros de tipo de acordo com o número de parâmetros.
@@ -52,7 +52,7 @@ fora Matriz de parâmetros de tipo.
 `pcParams`\
 [entrada, saída] Número de parâmetros na `ppParams` matriz.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

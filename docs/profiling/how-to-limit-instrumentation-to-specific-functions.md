@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 92825f77b1c94a7545b399dbc1cb35ecefb8218d
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: 2b1ce5af864a87691fab5b4026e797dc6eb970bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883326"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907267"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Como limitar a instrumentação a funções específicas
 Você pode limitar a instrumentação e a coleta de dados a uma ou mais funções ao definir opções na página **Avançado** da **Sessão de Desempenho** ou nas páginas de propriedades de binário de destino:
@@ -44,10 +44,10 @@ Você pode limitar a instrumentação e a coleta de dados a uma ou mais funçõe
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]**`...`
 
-    `FuncSpec` é o nome do namespace e da função. Ele tem o formato `Namespace` **::** `FunctionName` . Use um ponto e vírgula para separar várias funções. Use um asterisco (\*) para especificar um curinga para um ou mais caracteres. Por exemplo, **/include: MyNS:: \\** _ especifica todas as funções no namespace MyNS.
+    `FuncSpec` é o nome do namespace e da função. Ele tem o formato `Namespace` **::** `FunctionName` . Use um ponto e vírgula para separar várias funções. Use um asterisco (\*) para especificar um curinga para um ou mais caracteres. Por exemplo, **/include:MyNS::\\*** especifica todas as funções no namespace MyNS.
 
    > [!NOTE]
-   > Para listar as funções em um binário, abra uma janela de prompt de comando no diretório de instalação do Ferramentas de Criação de Perfil (consulte [especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e digite _ *vsinstr/DumpFuncs**
+   > Para listar as funções em um binário, abra uma janela do prompt de comando no diretório de instalação das Ferramentas de Criação de Perfil (confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e, em seguida, digite **vsinstr /DumpFuncs**
 
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>Para limitar a instrumentação a funções específicas em um binário
 
@@ -63,10 +63,10 @@ Você pode limitar a instrumentação e a coleta de dados a uma ou mais funçõe
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]**`...`
 
-    `FuncSpec` é o nome do namespace e da função. Ele tem o formato `Namespace` **::** `FunctionName` . Use um ponto e vírgula para separar várias funções. Use um asterisco (\*) para especificar um curinga para um ou mais caracteres. Por exemplo, **/include: MyNS:: \\** _ especifica todas as funções no namespace MyNS.
+    `FuncSpec` é o nome do namespace e da função. Ele tem o formato `Namespace` **::** `FunctionName` . Use um ponto e vírgula para separar várias funções. Use um asterisco (\*) para especificar um curinga para um ou mais caracteres. Por exemplo, **/include:MyNS::\\*** especifica todas as funções no namespace MyNS.
 
    > [!NOTE]
-   > Para listar as funções em um binário, abra uma janela de prompt de comando no diretório de instalação do Ferramentas de Criação de Perfil (consulte [especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e digite _ *vsinstr/DumpFuncs**
+   > Para listar as funções em um binário, abra uma janela do prompt de comando no diretório de instalação das Ferramentas de Criação de Perfil (confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e, em seguida, digite **vsinstr /DumpFuncs**
 
 ## <a name="see-also"></a>Confira também
 - [Controlar a coleta de dados](../profiling/controlling-data-collection.md)

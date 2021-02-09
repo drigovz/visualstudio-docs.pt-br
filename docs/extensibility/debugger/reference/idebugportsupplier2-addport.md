@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: df491161-6bf3-4fcc-b478-b9ec88ec995f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 00954ceaa0ddd750a3d08e372d1edaa1905f01c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e126612ed8b081e5ba0b703d14399ac74d78a9a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724741"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906311"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
 Adiciona uma porta.
@@ -28,14 +28,14 @@ Adiciona uma porta.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT AddPort( 
+HRESULT AddPort( 
    IDebugPortRequest2* pRequest,
    IDebugPort2**       ppPort
 );
 ```
 
 ```csharp
-int AddPort( 
+int AddPort( 
    IDebugPortRequest2 pRequest,
    out IDebugPort2    ppPort
 );
@@ -48,7 +48,7 @@ no Um objeto [IDebugPortRequest2](../../../extensibility/debugger/reference/ideb
 `ppPort`\
 fora Retorna um objeto [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) que representa a porta.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: c7f647bb-c5a3-4708-9f9d-33c0fd6e2e96
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f08821516ca25ed4e1746e13e506b9c0094b0227
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: ee8ae3082dc4dd19bb67c9374766b0d8f702fc9b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721548"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906826"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>Exibição de IPs (ponteiros de instrução) – dados de amostragem
 A exibição de IPs dos dados de amostragem lista os dados de desempenho das instruções de assembly que estavam diretamente em execução quando as amostras foram coletadas na criação de perfil.
@@ -43,5 +43,5 @@ A exibição de IPs dos dados de amostragem lista os dados de desempenho das ins
 |**Amostras Exclusivas**|O número total de amostras coletadas durante a execução da instrução.|
 |**% de Amostras Exclusivas**|O percentual de todas as amostras coletadas na criação de perfil durante a execução da instrução.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Exibição de ponteiros de instrução (IPs)-amostragem](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6323b4330279848bc0453bdc7413904e2582d13a
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: c053b5f7fe2962e683621ad834cac0815eee7d3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863966"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905744"
 ---
 # <a name="vsix-manifest-designer"></a>Designer de manifesto do VSIX
 Modifica um arquivo de manifesto do pacote VSIX, que define o comportamento da instalação para uma extensão do Visual Studio.
@@ -130,6 +130,6 @@ Modifica um arquivo de manifesto do pacote VSIX, que define o comportamento da i
 
   O identificador deve corresponder ao `ID` atributo dos metadados do pacote de dependência. A origem pode ser um projeto na solução atual, uma extensão atualmente instalada ou um arquivo. A configuração **como a dependência é resolvida** pode ser o caminho relativo de um pacote aninhado ou a URL do local de download para a dependência. A ID, a versão e a resolução do pacote de dependência correspondem aos `Id` `Version` atributos, e `Location` do `Dependency` elemento associado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Referência do esquema de extensão do VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md)
 - [Anatomia de um pacote VSIX](../extensibility/anatomy-of-a-vsix-package.md)

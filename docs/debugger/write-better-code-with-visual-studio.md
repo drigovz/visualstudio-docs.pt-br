@@ -10,15 +10,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c69fe13821f595a137c07d545a4ccfb10fc89b34
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89311385"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904952"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Ferramentas e técnicas de depuração para ajudá-lo a escrever código melhor
 
@@ -44,7 +44,7 @@ Para criar o aplicativo:
 
 1. Você deve ter o Visual Studio instalado e o **desenvolvimento de plataforma cruzada do .NET Core** ou a carga de **trabalho de desenvolvimento de desktop .net** instalada, dependendo do tipo de aplicativo que você deseja criar.
 
-    Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)   para instalá-lo gratuitamente.
+    Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalá-lo gratuitamente.
 
     Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, clique em **ferramentas**  >  **obter ferramentas e recursos**. O Instalador do Visual Studio é iniciado. Escolha o **desenvolvimento de plataforma cruzada do .NET Core** ou a carga de **trabalho de desenvolvimento de área de trabalho .net** e escolha **Modificar**.
 
@@ -54,7 +54,7 @@ Para criar o aplicativo:
     Na janela iniciar, escolha **criar um novo projeto**. Digite **console** na caixa de pesquisa e escolha o **aplicativo de console (.NET Core)** ou o **aplicativo de console (.NET Framework)**. Escolha **Próxima**. Digite um nome de projeto como **Console_Parse_JSON** e clique em **criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na barra de menus superior, escolha **arquivo**  >  **novo**  >  **projeto**. No painel esquerdo da caixa de diálogo **novo projeto** , em **Visual C#**, escolha **aplicativo de console**e, no painel central, escolha aplicativo de **console (.NET Core)** ou **aplicativo de console (.NET Framework)**. Digite um nome como **Console_Parse_JSON** e clique em **OK**.
+    Na barra de menus superior, escolha **arquivo**  >  **novo**  >  **projeto**. No painel esquerdo da caixa de diálogo **novo projeto** , em **Visual C#**, escolha **aplicativo de console** e, no painel central, escolha aplicativo de **console (.NET Core)** ou **aplicativo de console (.NET Framework)**. Digite um nome como **Console_Parse_JSON** e clique em **OK**.
     ::: moniker-end
 
     Se você não vir o modelo de projeto **aplicativo de console (.NET Core)** ou **aplicativo de console (.NET Framework)** , vá para **ferramentas**  >  **obter ferramentas e recursos**, o que abre o instalador do Visual Studio. Escolha o **desenvolvimento de plataforma cruzada do .NET Core** ou a carga de **trabalho de desenvolvimento de desktop .net** e escolha **Modificar**.

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], data binding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 76dffda9b332b9b76d6c0e0a423073959bcc7a56
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 7599348b0c44b7239305bb5af49ee2f5c51d882b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526201"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906587"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Walkthrough: associar dados a controles em um painel de ações do Word
   Este tutorial demonstra a vinculação de dados a controles em um painel Ações no Word. Os controles demonstram uma relação mestre/detalhes entre tabelas em um banco de dados SQL Server.
@@ -89,7 +89,7 @@ ms.locfileid: "97526201"
 
 4. Selecione uma conexão de dados para o exemplo da Northwind SQL Server Database ou adicione uma nova conexão usando o botão **nova conexão** .
 
-5. Clique em **Avançar**.
+5. Clique em **Próximo**.
 
 6. Desmarque a opção para salvar a conexão, se ela estiver selecionada, e clique em **Avançar**.
 
@@ -238,7 +238,7 @@ ms.locfileid: "97526201"
 
 - Implantando o projeto. Para obter mais informações, consulte [implantar uma solução do Office usando o ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Visão geral do painel Ações](../vsto/actions-pane-overview.md)
 - [Como: adicionar um painel de ações a documentos do Word ou a pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)

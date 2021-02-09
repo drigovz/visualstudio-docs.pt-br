@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 249d26ca-914f-43af-a400-8162477223f4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f3808ad6fb511270ee3825601c476f10a8b77124
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ba63a1f27e043ca114a3b954adfe403b60283ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718023"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907805"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 Esse método retorna uma lista de visualizadores de tipo que esse serviço conhece.
@@ -28,20 +28,20 @@ Esse método retorna uma lista de visualizadores de tipo que esse serviço conhe
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetCustomViewerList(
-   ULONG                celtSkip,
-   ULONG                celtRequested,
-   DEBUG_CUSTOM_VIEWER* rgViewers,
-   ULONG*               pceltFetched
+HRESULT GetCustomViewerList(
+   ULONG                celtSkip,
+   ULONG                celtRequested,
+   DEBUG_CUSTOM_VIEWER* rgViewers,
+   ULONG*               pceltFetched
 );
 ```
 
 ```csharp
-int GetCustomViewerList(
-   uint                  celtSkip,
-   uint                  celtRequested,
-   DEBUG_CUSTOM_VIEWER[] rgViewers,
-   out uint              pceltFetched
+int GetCustomViewerList(
+   uint                  celtSkip,
+   uint                  celtRequested,
+   DEBUG_CUSTOM_VIEWER[] rgViewers,
+   out uint              pceltFetched
 );
 ```
 
@@ -58,7 +58,7 @@ no Número de visualizadores a serem recuperados (também especifica o tamanho d
 `pceltFetched`\
 fora Número de visualizadores recuperados na verdade.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
@@ -71,4 +71,4 @@ fora Número de visualizadores recuperados na verdade.
 - [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)
 - [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)
-- [Visualizador de Tipo e Visualizador Personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+- [Visualizador de tipo e visualizador personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
