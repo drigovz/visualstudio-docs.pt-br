@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81fd495c51eff456f66275f33876038d14e43203
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: c3432092bc73ef3a06c807a1b4c4942080b9fce8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883539"
 ---
 # <a name="dynamically-add-menu-items"></a>Adicionar dinamicamente itens de menu
 Você pode adicionar itens de menu em tempo de execução especificando o `DynamicItemStart` sinalizador de comando em uma definição de botão de espaço reservado no arquivo de tabela de comandos do Visual Studio (*. vsct*) e, em seguida, definindo (no código) o número de itens de menu a serem exibidos e manipulando os comandos. Quando o VSPackage é carregado, o espaço reservado é substituído pelos itens de menu dinâmico.
