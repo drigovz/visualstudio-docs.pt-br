@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2ba5ef0c-395e-4006-9e3c-9b06e1d711d0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3e6ef918b55d8b311380264d688085b0d2803601
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63b42df8181ca12da1be2aca6faf1346406b621f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734435"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877428"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
 Cria um enumerador para as classes aninhadas nesta classe.
@@ -43,7 +43,7 @@ int EnumNestedClasses(
 `ppEnum`\
 fora Retorna um objeto [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) que representa a lista de classes aninhadas. Retorna um valor nulo se não houver nenhuma classe aninhada.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se for bem-sucedido, retornará S_OK ou retornará S_FALSE se não houver classes aninhadas. Caso contrário, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários

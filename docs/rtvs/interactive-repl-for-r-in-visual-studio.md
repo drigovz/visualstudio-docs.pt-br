@@ -5,15 +5,15 @@ ms.date: 06/28/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 7109e74e858aa308b8f49e6e1e335478f801070b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0355f1017bb661b4f72325fb74f60653f69cd182
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62814838"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878169"
 ---
 # <a name="work-with-the-r-interactive-window"></a>Trabalhar com a janela R Interativo
 
@@ -48,12 +48,12 @@ Aqui está a janela interativa com sua barra de ferramentas:
 
 ![Janela interativa com barra de ferramentas](media/repl-window.png)
 
-Os comandos da barra de ferramentas são os seguintes, a maioria deles tem equivalentes de teclado e também estão disponíveis nos menus de diretório de trabalho **ferramentas**de r  >  **Session** e **ferramentas de r**  >  **Working Directory** (ou conforme observado):
+Os comandos da barra de ferramentas são os seguintes, a maioria deles tem equivalentes de teclado e também estão disponíveis nos menus de diretório de trabalho **ferramentas** de r  >   e **ferramentas de r**  >   (ou conforme observado):
 
 | Botão | Comando | Combinação de teclas | Descrição |
 | --- | --- | --- | --- |
 | ![Botão Reiniciar](media/repl-toolbar-01-reset.png) | Redefinir | **Ctrl** + **Shift** + **F10** | Redefine a sessão de janela interativa, limpando todas as variáveis e o histórico. |
-| ![Botão Limpar](media/repl-toolbar-02-clear.png) | Liberada | **Ctrl** + **L** | Limpa a saída mostrada na janela interativa. não afeta as variáveis de sessão nem o histórico. |
+| ![Botão Limpar](media/repl-toolbar-02-clear.png) | Limpar | **Ctrl** + **L** | Limpa a saída mostrada na janela interativa. não afeta as variáveis de sessão nem o histórico. |
 | ![Botões Histórico](media/repl-toolbar-03-history.png) | Comando Histórico anterior<br/>Comando Próximo histórico | **Para cima**, **Para baixo**<br/>**ALT** + Para **cima**, **ALT** + **para baixo** | Percorre o histórico, com alguns comportamentos de blocos de código de várias linhas. Consulte [Histórico](#history). |
 | ![Botão Carregar workspace](media/repl-toolbar-04-load-workspace.png) | Carregar workspace | N/D | Carrega um workspace anterior salvo (consulte [Workspaces e sessões](#workspaces-and-sessions). |
 | ![Botão Salvar workspace como](media/repl-toolbar-05-save-workspace-as.png)| Salvar workspace | N/D | Salva o estado atual da sessão como um workspace (consulte [Workspaces e sessões](#workspaces-and-sessions). |
@@ -79,7 +79,7 @@ O botão **Redefinir** ou **Ferramentas do R** > **Sessão** > **Redefinir** lim
 
 ## <a name="working-directory"></a>Diretório de trabalho
 
-Normalmente, os desenvolvedores desejam alterar seu diretório de trabalho enquanto estão em uma sessão interativa. Vários comandos, disponíveis na barra de ferramentas, o menu do diretório de trabalho das **Ferramentas do R**  >  **Working directory** e o menu de contexto do projeto permitem que você defina facilmente um diretório de trabalho para o local de um arquivo de origem, o local ou o projeto ou qualquer outro local arbitrário. Isso ajuda a evitar a digitação de nomes de caminho completos ou de nomes de caminho relativos longos ao fazer referência a arquivos.
+Normalmente, os desenvolvedores desejam alterar seu diretório de trabalho enquanto estão em uma sessão interativa. Vários comandos, disponíveis na barra de ferramentas, o menu do diretório de trabalho das **Ferramentas do R**  >   e o menu de contexto do projeto permitem que você defina facilmente um diretório de trabalho para o local de um arquivo de origem, o local ou o projeto ou qualquer outro local arbitrário. Isso ajuda a evitar a digitação de nomes de caminho completos ou de nomes de caminho relativos longos ao fazer referência a arquivos.
 
 ## <a name="history"></a>Histórico
 
@@ -91,7 +91,7 @@ O histórico na janela interativa também funciona de forma inteligente com inst
 
 Esse comportamento acomoda o caso típico de executar novamente o último item no histórico com uma seta para cima e **digitar** a combinação de teclas, embora, naturalmente, permita a edição de um bloco de código de várias linhas pressionando a seta para cima para navegar até ele.
 
-Para evitar a navegação em blocos de código de várias linhas, use os botões da barra de ferramentas ou **ALT +** + **Up** **Alt** - **seta para baixo e ALT para baixo**, e todos esses blocos são tratados como uma única linha.
+Para evitar a navegação em blocos de código de várias linhas, use os botões da barra de ferramentas ou **ALT +** +   - **seta para baixo e ALT para baixo**, e todos esses blocos são tratados como uma única linha.
 
 A maneira mais fácil de experimentar os recursos de histórico é testá-los por contra própria na janela interativa. O código a seguir fornece várias instruções adequadas de linha única e de várias linhas. Use copiar e colar com cada instrução individualmente para criar o histórico apropriado. (Você também pode colar o código em um arquivo de código separado e, em seguida, enviar as linhas para a janela interativa com **Ctrl** + **Insira**.)
 

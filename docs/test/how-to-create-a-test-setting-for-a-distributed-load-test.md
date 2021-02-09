@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: b52fad24cf0772099e619b08ad877bae891365c3
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 4ca0058d1f06e00941766ed1ecf6f81d73939a8c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95439960"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877987"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Como: criar um arquivo de configurações de teste para um teste de carga distribuído
 
@@ -182,7 +182,7 @@ Na pasta **itens de solução** em **Gerenciador de soluções**, clique com o b
 
 O arquivo de configurações de teste é removido de sua solução.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Controladores de teste e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md)
 - [Coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md)

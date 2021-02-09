@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d808348528a64cc184c7a6c50359c057b2325a75
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: da527da4504d4c2d9375aee0209b0e261fe5fd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845642"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877925"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Implantar uma solução do Office usando o ClickOnce
   Você pode implantar sua solução do Office em menos etapas se usar o ClickOnce. Se você publicar atualizações, sua solução vai detectá-las e instalá-las automaticamente. No entanto, o ClickOnce exige que sua solução seja instalada separadamente para cada usuário de um computador. Portanto, você deve considerar o uso de Windows Installer (*. msi*) se mais de um usuário executar sua solução no mesmo computador.
@@ -54,7 +54,7 @@ ms.locfileid: "96845642"
 
 1. Em **Gerenciador de soluções**, escolha o nó que é nomeado para seu projeto.
 
-2. Na barra de menus, escolha **Project**, *ProjectName* **Propriedades** ProjectName.
+2. Na barra de menus, escolha **Project**,  **Propriedades** ProjectName.
 
 3. No **Designer de projeto**, escolha a guia **publicar** , que mostra a ilustração a seguir.
 
@@ -157,7 +157,7 @@ ms.locfileid: "96845642"
 
 2. Escolha o nome do computador, a pasta de **sites** ou o site da Web que você está configurando.
 
-3. Na barra de menus, escolha **Action**  >  **Propriedades** da ação.
+3. Na barra de menus, escolha   >  **Propriedades** da ação.
 
 4. Na guia **cabeçalhos HTTP** , escolha o botão **tipos de MIME** .
 
@@ -426,7 +426,7 @@ ms.locfileid: "96845642"
 
      A caixa **valor** contém o identificador do manifesto de implantação.
 
-4. Antes do identificador, insira o caminho totalmente qualificado do documento, seguido por uma barra, no identificador de *caminho* de formato | *Identifier* (por exemplo, *file://servername/FolderName/filename|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
+4. Antes do identificador, insira o caminho totalmente qualificado do documento, seguido por uma barra, no identificador de *caminho* de formato |  (por exemplo, *file://servername/FolderName/filename|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
 
      Para obter mais informações sobre como formatar esse identificador, consulte [visão geral de propriedades de documento personalizadas](../vsto/custom-document-properties-overview.md).
 
@@ -458,7 +458,7 @@ ms.locfileid: "96845642"
 > [!NOTE]
 > Os dados locais são salvos para apenas uma versão anterior de uma solução. Se você reverter duas versões, os dados locais não serão mantidos. Para obter mais informações sobre dados locais, consulte [acessar dados locais e remotos em aplicativos ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)
 - [Publicar soluções do Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)

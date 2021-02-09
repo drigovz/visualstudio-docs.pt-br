@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41102dfbbf1e49dadb1360ab0182810a47651dca
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 1069109cbda6b0385c9409a12f9f9c674ddec14c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973711"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877480"
 ---
 # <a name="create-an-options-page"></a>Criar uma página de opções
 
@@ -39,7 +39,7 @@ Este tutorial cria uma página simples de ferramentas/opções que usa uma grade
 
 1. Cada extensão do Visual Studio começa com um projeto de implantação VSIX, que conterá os ativos de extensão. Crie um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto VSIX denominado `MyToolsOptionsExtension` . Você pode encontrar o modelo de projeto VSIX na caixa de diálogo **novo projeto** pesquisando por "VSIX".
 
-2. Adicione um VSPackage adicionando um modelo de item de pacote do Visual Studio denominado `MyToolsOptionsPackage` . Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item**. Na **caixa de diálogo Adicionar novo item**, vá para extensibilidade de **itens do Visual C#**  >  **Extensibility** e selecione **pacote do Visual Studio**. No campo **nome** na parte inferior da caixa de diálogo, altere o nome do arquivo para `MyToolsOptionsPackage.cs` . Para obter mais informações sobre como criar um VSPackage, consulte [criar uma extensão com um VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).
+2. Adicione um VSPackage adicionando um modelo de item de pacote do Visual Studio denominado `MyToolsOptionsPackage` . Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item**. Na **caixa de diálogo Adicionar novo item**, vá para extensibilidade de **itens do Visual C#**  >   e selecione **pacote do Visual Studio**. No campo **nome** na parte inferior da caixa de diálogo, altere o nome do arquivo para `MyToolsOptionsPackage.cs` . Para obter mais informações sobre como criar um VSPackage, consulte [criar uma extensão com um VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).
 
 ### <a name="to-create-the-tools-options-property-grid"></a>Para criar a grade de propriedades opções de ferramentas
 
@@ -249,7 +249,7 @@ Este tutorial cria uma página simples de ferramentas/opções que usa uma grade
 
      Esse código chama <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> a criação ou recuperação de uma `OptionPageGrid` instância. `OptionPageGrid` chama <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> para carregar suas opções, que são propriedades públicas.
 
-2. Agora, adicione um modelo de item de comando personalizado chamado **MyToolsOptionsCommand** para exibir o valor. Na caixa de diálogo **Adicionar novo item** , vá para extensibilidade do **Visual C#**  >  **Extensibility** e selecione **comando personalizado**. No campo **nome** na parte inferior da janela, altere o nome do arquivo de comando para *MyToolsOptionsCommand.cs*.
+2. Agora, adicione um modelo de item de comando personalizado chamado **MyToolsOptionsCommand** para exibir o valor. Na caixa de diálogo **Adicionar novo item** , vá para extensibilidade do **Visual C#**  >   e selecione **comando personalizado**. No campo **nome** na parte inferior da janela, altere o nome do arquivo de comando para *MyToolsOptionsCommand.cs*.
 
 3. No arquivo *MyToolsOptionsCommand* , substitua o corpo do método do comando `ShowMessageBox` pelo seguinte:
 
@@ -268,6 +268,6 @@ Este tutorial cria uma página simples de ferramentas/opções que usa uma grade
 
      Uma caixa de mensagem exibe o valor atual de `OptionInteger` .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Opções e páginas de opções](../extensibility/internals/options-and-options-pages.md)

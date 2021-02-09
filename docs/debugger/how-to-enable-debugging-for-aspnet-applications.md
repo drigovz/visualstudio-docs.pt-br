@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 28f74c449e196d5eb0b3380d0ff1392db17e0b23
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 8ef65fbd9452aef52d807210f84928a4eef14100
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903591"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877740"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Depurar aplicativos ASP.NET ou ASP.NET Core no Visual Studio
 
@@ -176,7 +176,7 @@ Há diferentes maneiras de publicar aplicativos no IIS. Estas etapas mostram com
 
 1. Em **configuração**, selecione **depurar** na lista suspensa.
 
-1. Selecione **Salvar**.
+1. Clique em **Salvar**.
 
 1. Na caixa de diálogo **publicar** , verifique se **CustomProfile** (ou o nome do perfil que você acabou de criar) aparece e **LastUsedBuildConfiguration** está definido como **depurar**.
 
@@ -187,7 +187,7 @@ Há diferentes maneiras de publicar aplicativos no IIS. Estas etapas mostram com
 > [!IMPORTANT]
 > O modo de depuração reduz consideravelmente o desempenho do seu aplicativo. Para obter o melhor desempenho, defina `debug="false"` na *web.config* e especifique uma compilação de versão ao implantar um aplicativo de produção ou realizar medidas de desempenho.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depuração do ASP.NET: requisitos do sistema](aspnet-debugging-system-requirements.md)
 - [Como executar o processo de trabalho em uma conta de usuário](how-to-run-the-worker-process-under-a-user-account.md)
 - [Como localizar o nome do processo ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)

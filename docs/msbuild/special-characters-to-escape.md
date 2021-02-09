@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5b5172c3-41e4-4f38-a16f-2aeac831a5fc
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 433e762bf68b6a3956616e0ccccc229bca8f86b9
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 5e665c214ea75de67a6c339bb516dfb812936448
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048270"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878143"
 ---
 # <a name="special-characters-to-escape"></a>Caracteres especiais para escape
 
@@ -33,7 +33,7 @@ Caracteres especiais devem ser de escape somente se tiverem um significado espec
 
  Veja a seguir a lista completa de caracteres especiais de escape:
 
-|Caractere|Codificação ASCII|Description|
+|Caractere|Codificação ASCII|Descrição|
 |---------|----------|-----------|
 |%|%25|Sinal de porcentagem, usado para fazer referência a metadados.|
 |$|%24|Cifrão, usado para fazer referência a propriedades.|
@@ -47,7 +47,7 @@ Caracteres especiais devem ser de escape somente se tiverem um significado espec
 > [!NOTE]
 > Em alguns cenários, talvez seja necessário escapar dos caracteres de aspas duplas ("), como ao usar dentro de uma `Exec` tarefa.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como: escapar caracteres especiais no MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)

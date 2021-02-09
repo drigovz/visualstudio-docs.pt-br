@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 22993182-7026-4155-8046-b84fd99f803c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c4939a77fffdd5701cf1b9b4ac50995ce6995bb2
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 852eaf8dad8160566656d20189ada99378b63a0d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903422"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877662"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Como expandir e recolher árvores de Spy++
 Você pode expandir e recolher as exibições do Windows, processos e threads usando dois métodos: clicando nos ícones na janela ou usando o menu de **árvore** . Os ícones + e-na árvore agem como fazem na janela do projeto C++.
 
  O menu de **árvore** contém quatro comandos:
 
-|Menu Comando|Description|
+|Menu Comando|Descrição|
 |------------------|-----------------|
 |**Expandir um nível**|Expande o item selecionado no momento para o próximo nível.|
 |**Expandir ramificação**|Expande completamente o item selecionado no momento.|
@@ -40,7 +40,7 @@ Você pode expandir e recolher as exibições do Windows, processos e threads us
 
 2. No menu de **árvore** , escolha um dos comandos expandir ou recolher.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Usando Spy++](../debugger/using-spy-increment.md)
 - [Exibições do Spy++](../debugger/spy-increment-views.md)
 - [Referência de Spy++](../debugger/spy-increment-reference.md)

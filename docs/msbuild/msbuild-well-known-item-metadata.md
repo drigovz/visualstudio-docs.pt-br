@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b5e791b5-c68f-4978-ad8a-9247d03bb6c0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 047fe5ef6edc57681b8382a9f2a1069991e0f513
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d9ca2249e6119e27574791a2cbd9e8b09a9bde63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049016"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878173"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Metadados de itens conhecidos do MSBuild
 
@@ -37,7 +37,7 @@ A primeira tabela neste artigo descreve os metadados atribuídos a cada item na 
 </ItemGroup>
 ```
 
-|Metadados do item|Description|
+|Metadados do item|Descrição|
 |-------------------|-----------------|
 |%(FullPath)|Contém o caminho completo do item. Por exemplo:<br /><br /> *C:\MyProject\Source\Program.cs*|
 |%(RootDir)|Contém o diretório raiz do item. Por exemplo:<br /><br /> *&\\*|
@@ -45,15 +45,15 @@ A primeira tabela neste artigo descreve os metadados atribuídos a cada item na 
 |%(Extension)|Contém a extensão de nome de arquivo do item. Por exemplo:<br /><br /> *. cs*|
 |%(RelativeDir)|Contém o caminho especificado no atributo `Include`, até a barra invertida final (\\). Por exemplo:<br /><br /> *Fonte\\*<br /><br /> Se o `Include` atributo for um caminho completo, `%(RelativeDir)` começa com o diretório raiz `%(RootDir)` .  Por exemplo: <br /><br /> *C:\MyProject\Source\\*|
 |%(Directory)|Contém o diretório do item, sem o diretório raiz. Por exemplo:<br /><br /> *MyProject\\Source\\*|
-|%(RecursiveDir)|Se o atributo `Include` contiver o caractere curinga \*\*, esses metadados especificarão a parte do caminho que substitui o caractere curinga. Para obter mais informações sobre curingas, consulte [como: selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Se a pasta *C:\MySolution\MyProject\Source \\* contiver o arquivo *Program.cs* , e se o arquivo de projeto contiver este item:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> em seguida, o valor de `%(MyItem.RecursiveDir)` seria *MySolution\MyProject\Source\\* .|
+|%(RecursiveDir)|Se o atributo `Include` contiver o caractere curinga \*\*, esses metadados especificarão a parte do caminho que substitui o caractere curinga. Para obter mais informações sobre curingas, consulte [como: selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Se a pasta *C:\MySolution\MyProject\Source \\* contiver o arquivo *Program.cs*, e se o arquivo de projeto contiver este item:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> em seguida, o valor de `%(MyItem.RecursiveDir)` seria *MySolution\MyProject\Source\\*.|
 |%(Identity)|O item especificado no `Include` atributo. Por exemplo:<br /><br /> *Source\Program.cs*|
 |%(ModifiedTime)|Contém o carimbo de data/hora da última vez que o item foi modificado. Por exemplo:<br /><br /> `2004-07-01 00:21:31.5073316`|
 |%(CreatedTime)|Contém o carimbo de data/hora de quando o item foi criado. Por exemplo:<br /><br /> `2004-06-25 09:26:45.8237425`|
 |%(AccessedTime)|Contém o carimbo de data/hora da última vez que o item foi acessado.<br /><br /> `2004-08-14 16:52:36.3168743`|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Metadados de itens comuns do MSBuild](common-msbuild-item-metadata.md)
 - [Itens](../msbuild/msbuild-items.md)
-- [Envio em lote](../msbuild/msbuild-batching.md)
+- [Separação em lotes](../msbuild/msbuild-batching.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)

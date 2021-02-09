@@ -22,13 +22,13 @@ helpviewer_keywords:
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 7787b3b0afaed0bc3592b458646b97151e309905
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 5b501cef5360be08f1b283e9064617b649a33da9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442502"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878013"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analisar resultados do teste de carga e erros na exibição Tabelas do Analisador de Teste de Carga
 
@@ -81,7 +81,7 @@ A seguinte tabela lista as colunas na tabela **Solicitações**:
 |**Teste**|O nome do teste.|Sim|
 |**Total**|O número total dessa solicitação de teste de desempenho na Web emitida durante a execução do teste de carga. O total inclui solicitações aprovadas e com falha, mas não inclui solicitações armazenadas em cache, porque não são emitidas para o servidor Web.|Sim|
 |**Aprovado**|O número de vezes em que a solicitação foi emitida e aprovada.|Não|
-|**Com falha**|O número de vezes em que a solicitação foi emitida e falhou. As entradas nessa coluna são exibidas como hiperlinks. É possível escolher qualquer hiperlink para exibir uma lista dos erros individuais na caixa de diálogo **Erros de Teste de Carga**. Para obter mais informações, consulte [analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Sim|
+|**Falha**|O número de vezes em que a solicitação foi emitida e falhou. As entradas nessa coluna são exibidas como hiperlinks. É possível escolher qualquer hiperlink para exibir uma lista dos erros individuais na caixa de diálogo **Erros de Teste de Carga**. Para obter mais informações, consulte [analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Sim|
 |**Armazenado em cache**|O número total de vezes em que a solicitação já foi armazenada em cache.|Não|
 |**Solicitações/s**|A taxa por segundo da solicitação durante a execução do teste de carga.|Não|
 |**Aprovado/s**|A taxa por segundo dessa solicitação durante a execução do teste de carga, para as instâncias dessa solicitação que passaram.|Não|
@@ -102,7 +102,7 @@ A seguinte tabela lista as colunas na tabela **Testes**.
 |**Cenário**|O nome do cenário.|Sim|
 |**Total**|O número total de vezes em que o teste foi executado no cenário. Isso inclui o número de vezes em que o teste passou e falhou.|Sim|
 |**Aprovado**|O número de vezes em que o teste foi executado no cenário e passou.|Sim|
-|**Com falha**|O número de vezes em que o teste foi executado no cenário e falhou. As entradas nessa coluna são exibidas como hiperlinks. É possível escolher qualquer hiperlink para exibir uma lista dos erros individuais na caixa de diálogo **Erros de Teste de Carga**. Para obter mais informações, consulte [analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Sim|
+|**Falha**|O número de vezes em que o teste foi executado no cenário e falhou. As entradas nessa coluna são exibidas como hiperlinks. É possível escolher qualquer hiperlink para exibir uma lista dos erros individuais na caixa de diálogo **Erros de Teste de Carga**. Para obter mais informações, consulte [analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Sim|
 |**Testes/s**|A taxa por segundo do teste durante a execução do teste de carga.|Sim|
 |**Aprovado/s**|A taxa por segundo desse teste durante a execução do teste de carga, para as instâncias desse teste que passaram.|Não|
 |**Com falha/s**|A taxa por segundo desse teste durante a execução do teste de carga, para as instâncias desse teste que falharam.|Não|
@@ -172,7 +172,7 @@ A tabela **Erros de Teste de Carga** contém as seguintes colunas:
 |**Cenário**|O nome do cenário no qual o erro ocorreu.|
 |**Solicitação**|A URL da solicitação na qual o erro ocorreu.|
 |**Tipo**|O tipo do erro. Por exemplo, HttpError.|
-|**SubType**|O subtipo do erro. Por exemplo, LoadTestException.|
+|**Subtipo**|O subtipo do erro. Por exemplo, LoadTestException.|
 |**Text**|O texto da mensagem de erro. Por exemplo, 404 - NotFound.|
 |**Pilha**|As entradas nessa coluna estão vazias ou a palavra **Pilha** está formatada como um hiperlink. É possível escolher o hiperlink para exibir um rastreamento de pilha do erro.|
 |**Detalhes**|As entradas nessa coluna estão vazias ou a palavra **TestLog** está formatada como um hiperlink. Esse link pode ajudar a isolar erros no teste de carga. Por exemplo, a escolha do link **TestLog** em um erro de solicitação de teste de desempenho na Web abrirá os resultados para o teste de desempenho da Web no visualizador de resultados de teste de desempenho da Web e realçará o erro de solicitação.|
