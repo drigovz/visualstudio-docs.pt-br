@@ -19,22 +19,22 @@ helpviewer_keywords:
 ms.assetid: 64af5bed-e38b-420f-b9ce-d64f35100aae
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: acc8f5abaa0c839232bbcedc63d24387444bd749
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 10f26d61eddb0efb47e22722a039f73fec2b404c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729074"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857962"
 ---
 # <a name="assertion-failed-dialog-box"></a>Caixa de diálogo Falha de Asserção
 Uma instrução de declaração especifica uma condição que você espera ser verdadeira em algum ponto específico em seu programa. Se essa condição não se aplicar, a asserção falhará, a execução do programa será interrompida e essa caixa de diálogo será exibida.
 
 |Clique|Para|
 |-----------|--------|
-|Tentar novamente|Depure a declaração ou obtenha ajuda nas declarações.|
+|Repetir|Depure a declaração ou obtenha ajuda nas declarações.|
 |Ignorar|Ignore a declaração e continue executando o programa.|
 |Anular|Interrompa a execução do programa e termine a sessão de depuração.|
 

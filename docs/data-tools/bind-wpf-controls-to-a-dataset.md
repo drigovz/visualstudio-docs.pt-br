@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: de0a155d675f85e10cdf38969dd6eb59a3762770
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 2ebfc2071bdf9f9e9dc40b36744bb34d4a68ac04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518512"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859275"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associar controles do WPF a um conjunto de dados
 
@@ -88,19 +88,19 @@ Crie um novo projeto do WPF para exibir registros de produto.
 
 Antes de criar controles de associação de dados, você deve definir um modelo de dados para seu aplicativo e adicioná-lo à janela **Fontes de Dados**. Neste passo a passo, você criará um conjunto de dados para usar como modelo de dados.
 
-1. No menu **Dados** , clique em **Mostrar Fontes de Dados**.
+1. No menu **Dados**, clique em **Mostrar Fontes de Dados**.
 
    A janela **Fontes de Dados** é aberta.
 
-2. Na janela **Fontes de Dados** , clique em **Adicionar Nova Fonte de Dados**.
+2. Na janela **Fontes de Dados**, clique em **Adicionar Nova Fonte de Dados**.
 
    O assistente de **configuração de fonte de dados** é aberto.
 
-3. Na página **Escolher um Tipo de Fonte de Dados** , selecione **Banco de Dados** e clique em **Avançar**.
+3. Na página **Escolher um Tipo de Fonte de Dados**, selecione **Banco de Dados** e clique em **Avançar**.
 
-4. Na página **Escolher um Modelo de Banco de Dados** , selecione **Conjunto de Dados** e clique em **Avançar**.
+4. Na página **Escolher um Modelo de Banco de Dados**, selecione **Conjunto de Dados** e clique em **Avançar**.
 
-5. Na página **Escolha a Conexão de Dados** , selecione uma das seguintes opções:
+5. Na página **Escolha a Conexão de Dados**, selecione uma das seguintes opções:
 
    - Se uma conexão de dados com o banco de dados de exemplo AdventureWorksLT estiver disponível na lista suspensa, selecione-a e clique em **Avançar**.
 
@@ -108,7 +108,7 @@ Antes de criar controles de associação de dados, você deve definir um modelo 
 
 6. Na página **Salvar a Cadeia de Conexão no Arquivo de Configuração do Aplicativo** marque a caixa de seleção **Sim, salvar a conexão como** e clique em **Próximo**.
 
-7. Na página **Escolher Objetos do Banco de Dados** , expanda **Tabelas** e selecione a tabela **Produto (SalesLT)**.
+7. Na página **Escolher Objetos do Banco de Dados**, expanda **Tabelas** e selecione a tabela **Produto (SalesLT)**.
 
 8. Clique em **Concluir**.
 
@@ -120,15 +120,15 @@ Antes de criar controles de associação de dados, você deve definir um modelo 
 
 Para preencher o conjunto de dados com dados, use o método `Fill` do `ProductTableAdapter`. Por padrão, o método `Fill` preenche o `ProductDataTable` no `AdventureWorksLTDataSet` com todas as linhas de dados da tabela Produto. Você pode modificar esse método para retornar apenas um subconjunto das linhas. Para este passo a passo, modifique o método `Fill` para retornar somente linhas de produtos com fotos.
 
-1. No **Gerenciador de Soluções** , clique duas vezes no arquivo *AdventureWorksLTDataSet.xsd*.
+1. No **Gerenciador de Soluções**, clique duas vezes no arquivo *AdventureWorksLTDataSet.xsd*.
 
      O designer de conjunto de dados é aberto.
 
-2. No designer, clique com o botão direito do mouse na consulta **Fill** , **GetData()** e selecione **Configurar**.
+2. No designer, clique com o botão direito do mouse na consulta **Fill**,**GetData()** e selecione **Configurar**.
 
      O assistente **Configuração do TableAdapter** é aberto.
 
-3. Na página **Insira uma Instrução SQL** , adicione a seguinte cláusula WHERE após a instrução `SELECT` na caixa de texto.
+3. Na página **Insira uma Instrução SQL**, adicione a seguinte cláusula WHERE após a instrução `SELECT` na caixa de texto.
 
     ```sql
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
@@ -140,7 +140,7 @@ Para preencher o conjunto de dados com dados, use o método `Fill` do `ProductTa
 
 Adicione vários botões à janela, modificando o XAML no WPF Designer. A seguir neste passo a passo, você adicionará o código que permite aos usuários navegar e salvar alterações nos registros de produtos, usando esses botões.
 
-1. No **Gerenciador de Soluções** , clique duas vezes em *MainWindow.xaml*.
+1. No **Gerenciador de Soluções**, clique duas vezes em *MainWindow.xaml*.
 
     A janela é aberta no **designer do WPF**.
 
@@ -162,11 +162,11 @@ Adicione vários botões à janela, modificando o XAML no WPF Designer. A seguir
 
 Crie controles que exibam os registros do cliente arrastando a `Product` tabela da janela **fontes de dados** para o designer do WPF.
 
-1. Na janela **Fontes de Dados** , abra o menu suspenso para o nó **Produto** e selecione **Detalhes**.
+1. Na janela **Fontes de Dados**, abra o menu suspenso para o nó **Produto** e selecione **Detalhes**.
 
 2. Expanda o nó **Produto**.
 
-3. Neste exemplo, alguns campos não serão exibidos, portanto, clique no menu suspenso ao lado dos seguintes nós e selecione **Nenhum** :
+3. Neste exemplo, alguns campos não serão exibidos, portanto, clique no menu suspenso ao lado dos seguintes nós e selecione **Nenhum**:
 
     - ProductCategoryID
 
@@ -183,13 +183,13 @@ Crie controles que exibam os registros do cliente arrastando a `Product` tabela 
     > [!NOTE]
     > Por padrão, todos os itens na janela **Fontes de Dados** que representam as imagens têm seu controle padrão definido como **Nenhum**. Isso ocorre porque as imagens são armazenadas como matrizes de bytes em bancos de dados e as matrizes de bytes podem conter qualquer coisa, desde uma simples matriz de bytes até um arquivo executável de um aplicativo grande.
 
-5. Na janela **Fontes de Dados** , arraste o nó **Produto** para a linha de grade sob a linha que contém os botões.
+5. Na janela **Fontes de Dados**, arraste o nó **Produto** para a linha de grade sob a linha que contém os botões.
 
      O Visual Studio gera XAML que define um conjunto de controles associados aos dados na tabela **Produtos**. Também gera um código que carrega os dados. Para obter mais informações sobre o XAML e o código gerados, consulte [associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
 6. No designer, clique na caixa de texto ao lado do rótulo de **ID do Produto**.
 
-7. Na janela **Propriedades** , marque a caixa de seleção ao lado da propriedade **IsReadOnly**.
+7. Na janela **Propriedades**, marque a caixa de seleção ao lado da propriedade **IsReadOnly**.
 
 ## <a name="navigate-product-records"></a>Navegar pelos registros de produtos
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e35171a116272700de676cb03d116210753c599f
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 137d8970ebfc70dcf102fa70d7bcf18d81677535
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859262"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associar controles WPF a dados no Visual Studio
 
@@ -54,7 +54,7 @@ A tabela a seguir lista o [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tl
 
 | Fonte de dados | Gerar XAML que associa um controle à fonte de dados | Gerar código que preenche a fonte de dados com dados |
 | - | - | - |
-| Dataset | Sim | Sim |
+| Conjunto de dados | Sim | Sim |
 | [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | Sim | Sim |
 | Serviço | Sim | Não |
 | Objeto | Sim | Não |

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1dc1d82b0267e5e0655f3ebef8eb08806ad319a8
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 9ce4057378db357345869d10e933929ae31ee573
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518720"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859210"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Caixa de diálogo Configurar Referência de Serviço
 
@@ -93,7 +93,7 @@ Quando selecionado, somente os tipos selecionados na **lista assemblies referenc
 
 **Lista de assemblies referenciados**
 
-Contém uma lista de assemblies referenciados para o projeto ou site. Quando você seleciona **reutilizar os tipos em assemblies referenciados especificados** , você pode selecionar ou limpar assemblies individuais.
+Contém uma lista de assemblies referenciados para o projeto ou site. Quando você seleciona **reutilizar os tipos em assemblies referenciados especificados**, você pode selecionar ou limpar assemblies individuais.
 
 **Adicionar Referência Web**
 

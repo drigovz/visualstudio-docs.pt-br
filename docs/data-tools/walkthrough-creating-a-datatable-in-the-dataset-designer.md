@@ -11,15 +11,15 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a0dad1e6878adc73a08753dca21500499e652602
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: feec31fa0a9e34ad63e0b849d09084081e5710e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998246"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858170"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Walkthrough: criar uma DataTable no Designer de Conjunto de Dados
 
@@ -83,7 +83,7 @@ Para definir a chave primária, clique com o botão direito do mouse na coluna *
 
 Para salvar o projeto **DataTableWalkthrough** , no menu **arquivo** , selecione **salvar tudo**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criar e configurar conjuntos de dados no Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

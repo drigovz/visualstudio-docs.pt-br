@@ -72,15 +72,15 @@ helpviewer_keywords:
 ms.assetid: bf78ace6-28e4-4a04-97c6-39e0cdd00ba4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 774c6c03d0485664eb01e1a7967003ef2f5bd2bc
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 984253f6c4ccb9d64fc1cefb34b2b5d7962e3eb5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560610"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857656"
 ---
 # <a name="crt-debug-heap-details"></a>Detalhes da pilha de depuração CRT
 Este tópico fornece um aspecto detalhado na heap de depuração de CRT.
@@ -180,7 +180,7 @@ Vários dos recursos da heap de depuração devem ser acessados de dentro de seu
 
 O sinalizador **_crtDbgFlag** contém os seguintes campos de bits:
 
-|Campo de bits|Padrão<br /><br /> value|Descrição|
+|Campo de bits|Padrão<br /><br /> value|Description|
 |---------------|-----------------------|-----------------|
 |**_CRTDBG_ALLOC_MEM_DF**|Ativado|Ativa a alocação de depuração. Quando esse bit está desativado, as alocações permanecem encadeadas juntas, mas seu tipo de bloco é **_IGNORE_BLOCK**.|
 |**_CRTDBG_DELAY_FREE_MEM_DF**|Desativado|Impede que a memória seja liberada realmente para simular condições de memória baixa. Quando esse bit estiver ativado, os blocos liberados são mantidos na lista vinculada da heap de depuração, mas são marcados como **_FREE_BLOCK** e preenchidos com um valor especial de byte.|
@@ -355,5 +355,5 @@ Agora o nome do arquivo de origem e o número da linha onde `addNewRecord` foi c
 
 ![Voltar ao](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [conteúdo](#BKMK_Contents) superior
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 [Depurando código nativo](../debugger/debugging-native-code.md)

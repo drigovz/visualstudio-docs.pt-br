@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4c7891df6de9f12df324c8d79eed5dda0e091d9a
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 4911cc5ced991389d2c7b03a405c4fe9e28c5cc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518746"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859353"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Adicionar validação a um conjunto de dados de n camadas
 Adicionar validação a um conjunto de um DataSet que é separado em uma solução de n camadas é basicamente o mesmo que adicionar validação a um conjunto de um único arquivo (um conjunto de um DataSet em um único projeto). O local sugerido para executar a validação nos dados é durante os <xref:System.Data.DataTable.ColumnChanging> eventos e/ou <xref:System.Data.DataTable.RowChanging> de uma tabela de dados.

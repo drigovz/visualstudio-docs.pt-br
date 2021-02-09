@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c565f7238edf9126dd651fa567de82aed7b8d21
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d8e3692f376a502a2cd924fa9604eddab445333f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435007"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858755"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Como se conectar a dados em um serviço
 
@@ -38,7 +38,7 @@ Após a conclusão do assistente, uma referência de serviço é adicionada ao s
 
 ## <a name="to-connect-your-application-to-a-service"></a>Para conectar seu aplicativo a um serviço
 
-1. No menu **Dados** , clique em **Adicionar Nova Fonte de Dados**.
+1. No menu **Dados**, clique em **Adicionar Nova Fonte de Dados**.
 
 2. Selecione **serviço** na página **escolher um tipo de fonte de dados** e clique em **Avançar**.
 

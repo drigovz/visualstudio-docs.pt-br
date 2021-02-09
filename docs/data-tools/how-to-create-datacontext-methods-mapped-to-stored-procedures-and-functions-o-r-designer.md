@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4cb02a7fc7fdcbb4ff3c9c3750e722ff0fe031a5
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 2f9b003deb7bc4c564be62d8e7ca486c88cee8a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434942"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858729"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Como criar métodos DataContext mapeados para procedimentos armazenados e funções (Designer Relacional de Objetos)
 
@@ -35,7 +35,7 @@ Você pode criar <xref:System.Data.Linq.DataContext> métodos arrastando procedi
 
 ### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>Para criar métodos DataContext que retornam tipos gerados automaticamente
 
-1. Em **Gerenciador de servidores** ou **Gerenciador de banco de dados** , expanda o nó **procedimentos armazenados** do banco de dados com o qual você está trabalhando.
+1. Em **Gerenciador de servidores** ou **Gerenciador de banco de dados**, expanda o nó **procedimentos armazenados** do banco de dados com o qual você está trabalhando.
 
 2. Localize o procedimento armazenado desejado e arraste-o para uma área vazia do o **/R Designer**.
 
@@ -43,7 +43,7 @@ Você pode criar <xref:System.Data.Linq.DataContext> métodos arrastando procedi
 
 ### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Para criar métodos DataContext com o tipo de retorno de uma classe de entidade
 
-1. Em **Gerenciador de servidores** ou **Gerenciador de banco de dados** , expanda o nó **procedimentos armazenados** do banco de dados com o qual você está trabalhando.
+1. Em **Gerenciador de servidores** ou **Gerenciador de banco de dados**, expanda o nó **procedimentos armazenados** do banco de dados com o qual você está trabalhando.
 
 2. Localize o procedimento armazenado desejado e arraste-o para uma classe de entidade existente no o **/R Designer**.
 

@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: bfc0c1ca96f5bf6ce58a1b7df9ad0ea10f283e1e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 05575e6cc75468a85a3dd410ea59bebca79eee0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435150"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858833"
 ---
 # <a name="hierarchical-update"></a>Atualização hierárquica
 
@@ -40,7 +40,7 @@ Por padrão, um conjunto de testes trata tabelas relacionadas como "somente rela
 
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>Habilitar atualização hierárquica em um conjunto de um DataSet
 
-Por padrão, a atualização hierárquica está habilitada para todos os novos conjuntos de valores que são adicionados ou criados em um projeto. Ativar ou desativar a atualização hierárquica definindo a propriedade **Hierarchical Update** de um dataset tipado no DataSet como **true** ou **false** :
+Por padrão, a atualização hierárquica está habilitada para todos os novos conjuntos de valores que são adicionados ou criados em um projeto. Ativar ou desativar a atualização hierárquica definindo a propriedade **Hierarchical Update** de um dataset tipado no DataSet como **true** ou **false**:
 
 ![Configuração de atualização hierárquica](../data-tools/media/hierarchical-update-setting.png)
 
@@ -80,9 +80,9 @@ No entanto, às vezes, talvez você queira restaurar o conjunto de os conjuntos 
 
 Salve as alterações das tabelas relacionadas de dados no conjunto de dados para o banco de dados chamando o método `TableAdapterManager.UpdateAll` e passando no nome do conjunto de dados que contém as tabelas relacionadas. Por exemplo, execute o método `TableAdapterManager.UpdateAll(NorthwindDataset)` para enviar atualizações de todas as tabelas no NorthwindDataset para o banco de dados back-end.
 
-Depois de soltar os itens da janela **Fontes de Dados** , o código é automaticamente adicionado ao evento `Form_Load` para preencher cada tabela (os métodos `TableAdapter.Fill`). O código também é adicionado ao evento de clique do botão **Salvar** do <xref:System.Windows.Forms.BindingNavigator> para salvar os dados do conjunto de dados de volta ao banco de dados (o método `TableAdapterManager.UpdateAll`).
+Depois de soltar os itens da janela **Fontes de Dados**, o código é automaticamente adicionado ao evento `Form_Load` para preencher cada tabela (os métodos `TableAdapter.Fill`). O código também é adicionado ao evento de clique do botão **Salvar** do <xref:System.Windows.Forms.BindingNavigator> para salvar os dados do conjunto de dados de volta ao banco de dados (o método `TableAdapterManager.UpdateAll`).
 
-O código salvar gerado também contém uma linha de código que chama o método `CustomersBindingSource.EndEdit`. Mais especificamente, ele chama o <xref:System.Windows.Forms.BindingSource.EndEdit%2A> método do primeiro <xref:System.Windows.Forms.BindingSource> que é adicionado ao formulário. Em outras palavras, esse código só é gerado para a primeira tabela que é arrastada da janela **fontes de dados** para o formulário. A chamada <xref:System.Windows.Forms.BindingSource.EndEdit%2A> confirma as alterações que estão em processo em qualquer controle de associação de dados sendo editado no momento. Portanto, se um controle associado a dados ainda estiver em foco e você clicar no botão **Salvar** , todas as edições pendentes nesse controle serão confirmadas antes da gravação real (o método `TableAdapterManager.UpdateAll`).
+O código salvar gerado também contém uma linha de código que chama o método `CustomersBindingSource.EndEdit`. Mais especificamente, ele chama o <xref:System.Windows.Forms.BindingSource.EndEdit%2A> método do primeiro <xref:System.Windows.Forms.BindingSource> que é adicionado ao formulário. Em outras palavras, esse código só é gerado para a primeira tabela que é arrastada da janela **fontes de dados** para o formulário. A chamada <xref:System.Windows.Forms.BindingSource.EndEdit%2A> confirma as alterações que estão em processo em qualquer controle de associação de dados sendo editado no momento. Portanto, se um controle associado a dados ainda estiver em foco e você clicar no botão **Salvar**, todas as edições pendentes nesse controle serão confirmadas antes da gravação real (o método `TableAdapterManager.UpdateAll`).
 
 > [!NOTE]
 > O **Designer de conjunto de dados** apenas adiciona o `BindingSource.EndEdit` código para a primeira tabela que é descartada no formulário. Portanto, é necessário adicionar uma linha de código para chamar o método `BindingSource.EndEdit` para cada tabela relacionada no formulário. Para este passo a passo, isso significa que você precisa adicionar uma chamada ao método `OrdersBindingSource.EndEdit`.

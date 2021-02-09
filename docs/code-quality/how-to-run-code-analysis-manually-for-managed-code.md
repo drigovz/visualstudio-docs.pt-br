@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5086d228-f92e-4515-9708-c5b89b9e9a03
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2eb4beff76d602bb4ce6182fab6091c7cd2a0096
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 997fc6f6ecb8ffbd8c48e2352dcc9ae2f6092211
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348717"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860016"
 ---
 # <a name="run-code-analysis-manually-for-net"></a>Executar análise de código manualmente para .NET
 Por padrão, os analisadores de .NET Compiler Platform ("Roslyn") analisam seu código C# ou Visual Basic à medida que você digita fazendo análises ao vivo, bem como durante a compilação. Portanto, normalmente você não precisaria disparar manualmente a análise de código. No entanto, há alguns cenários em que você pode querer disparar manualmente a análise de código:
@@ -31,7 +31,7 @@ Por padrão, os analisadores de .NET Compiler Platform ("Roslyn") analisam seu c
 
 ### <a name="run-code-analysis-manually"></a>Executar análise de código manualmente
 
-1. Em **Gerenciador de soluções** , selecione o projeto.
+1. Em **Gerenciador de soluções**, selecione o projeto.
 
 2. No menu **analisar** , selecione **executar análise de código no** *nome do projeto*.
 

@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 6bfbdb65-8cb1-4c21-8c45-7194a2b77c1e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b0bea73a044dabce5270c06f68658f85c612574c
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 3c032ca57e5a046a9f2dd2295226263ffe20f99e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729178"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858001"
 ---
 # <a name="allocation-hook-functions"></a>Funções de gancho da alocação
 Uma função de gancho de alocação, instalada usando [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), é chamada toda vez que a memória é alocada, realocada ou liberada. Você pode usar esse tipo de gancho para várias finalidades diferentes. Use-o para testar como um aplicativo lida com situações de memória insuficientes, como para examinar padrões de alocação ou informações de alocação de log para análise posterior.

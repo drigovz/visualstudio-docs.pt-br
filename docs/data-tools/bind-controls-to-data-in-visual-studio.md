@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b48c2e8b557a47c1ed795b6f9d3c3ced6247a43
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: a237d07af14cd6f31af300eff050c8952fd9840e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518616"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859340"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Associar controles a dados no Visual Studio
 
@@ -34,7 +34,7 @@ No contexto de vinculação de dados, uma fonte de dados representa os dados na 
 
 | Fonte de dados | Suporte a arrastar e soltar no **Designer de formulários do Windows** | Suporte a arrastar e soltar no **designer do WPF** | Suporte a arrastar e soltar no **designer do Silverlight** |
 | - | - | - | - |
-| Dataset | Sim | Sim | Não |
+| Conjunto de dados | Sim | Sim | Não |
 | Modelo de Dados de Entidade | Sim<sup>1</sup> | Sim | Sim |
 | Classes do LINQ to SQL | Não<sup>2</sup> | Não<sup>2</sup> | Não<sup>2</sup> |
 | Serviços (incluindo serviços [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] WCF e serviços Web) | Sim | Sim | Sim |

@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 726a02c852c4b41dacc2cab73ab4000ebda53a8a
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 8568670e43f21227db7e3ef88d41b2c7c0fc63c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878937"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859457"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisitos do sistema para o Emulador do Visual Studio para Android
 
@@ -33,7 +33,7 @@ O programa de instalação tenta configurar esses pré-requisitos para você sil
 
 Esta é uma lista de verificação rápida dos requisitos para executar o Emulador do Visual Studio para Android. Para obter informações mais detalhadas, consulte as próximas seções neste tópico.
 
-Requisitos do sistema
+Requisitos de sistema
 
 - Suporte ao Hyper-V (consulte os requisitos do Hyper-V abaixo)
 
@@ -148,6 +148,6 @@ No sistema de arquivos ReFS, os arquivos do disco rígido virtual não devem ter
 
 Para que o emulador emule chamadas à GPU, como aquelas usadas pelo OpenGL ES, o computador deve ter uma GPU compatível com DirectX com drivers DirectX apropriados instalados.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Solução de problemas do Emulador do Visual Studio para Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

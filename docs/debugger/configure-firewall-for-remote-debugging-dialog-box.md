@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 5dff3393-fdeb-4129-a2f6-31f653107a82
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a0cac2e42e1271e689f2b1880eef8ca6d14644
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 4fb1d704e2a06ed6c31d6b401b592436c86e4318
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728957"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857721"
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>Caixa de diálogo Configurar Firewall para Depuração Remota
 Essa caixa de diálogo aparece quando o Firewall do Windows bloqueia o depurador de receber informações sobre a rede. Para continuar a depuração remota, você deverá abrir um buraco no firewall para que o depurador possa receber informações.
@@ -42,7 +42,7 @@ Essa caixa de diálogo aparece quando o Firewall do Windows bloqueia o depurador
 
  **Desbloquear a depuração remota de qualquer computador** Habilita a depuração remota de máquinas em qualquer lugar na rede. Essa configuração é a menos segura.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Depuração remota](../debugger/remote-debugging.md)

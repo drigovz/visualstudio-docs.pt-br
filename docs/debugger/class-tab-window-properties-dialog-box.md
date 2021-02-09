@@ -9,24 +9,24 @@ helpviewer_keywords:
 ms.assetid: eaec9f07-d580-436d-934d-76c4e59439aa
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf37d9e5d672f0ecce262699fdd5d704cde9efe
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e1d7126fe795e269ee619e03daf2b81d6458f2e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729022"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857809"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Guia Classe, Caixa de diálogo Propriedades da Janela
 Use a guia **classe** para mostrar informações sobre a classe da janela selecionada. Para exibir a [caixa de diálogo Propriedades da janela](../debugger/window-properties-dialog-box.md), mova o foco para a janela [exibição do Windows](../debugger/windows-view.md) . Selecione qualquer nó de janela na árvore e, em seguida, escolha **Propriedades** no menu **Exibir** .
 
  As configurações a seguir estão disponíveis na guia **classe** :
 
-|Entrada|Descrição|
+|Entrada|Description|
 |-----------|-----------------|
-|**Nome da classe**|O nome (ou número ordinal) dessa classe de janela.|
+|**Nome da Classe**|O nome (ou número ordinal) dessa classe de janela.|
 |**Estilos de Classe**|Uma combinação de códigos de estilo de classe.|
 |**Bytes da Classe**|Dados específicos do aplicativo associados a esta classe de janela.|
 |**Átomo da Classe**|O Atom para a classe retornada pela chamada **registerClass** .|

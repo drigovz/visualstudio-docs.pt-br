@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 4296ad30-6952-46cb-b002-6b34eee1993a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 216d820e455ad9902f19fe3c48caa927b21a2f0f
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: f8ccdd59d523c771671abfd8511ecc6bcd34732b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728983"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857747"
 ---
 # <a name="com-debugging-tools"></a>Ferramentas de depuração COM
 
@@ -42,7 +42,7 @@ Exemplos de classe do Microsoft Foundation
 
 Os exemplos MFC ActiveX, OCLIENT e SUPERPAD, também estão disponíveis para testar com seus aplicativos. O código-fonte completo para esses exemplos está incluído.
 
-### <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Confira também
 
 - [Depuração COM e ActiveX](../debugger/com-and-activex-debugging.md)
 - [Ferramentas de depuração COM](../debugger/com-debugging-tools.md)

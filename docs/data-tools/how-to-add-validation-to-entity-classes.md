@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4f367cf799dd00b8b442870554e499e5405865cb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 08d60b254867c02c7cc406709a95117a11d669c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435098"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858807"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Como adicionar validação a classes de entidade
 *Validar* classes de entidade é o processo que confirma que os valores inseridos em objetos de dados estão de acordo com as restrições do esquema de um objeto e também as regras estabelecidas para o aplicativo. Validar dados antes de enviar atualizações para o base de dados subjacente é uma boa prática que reduz erros. Também reduz o número potencial de processamentos entre um aplicativo e o base de dados.
@@ -37,7 +37,7 @@ Este procedimento mostra como validar dados quando o valor em uma coluna é alte
 
 1. Abra ou crie um novo arquivo de classes de LINQ to SQL (arquivo **. dbml** ) no o **/R Designer**. (Clique duas vezes no arquivo **.dbml** em **Gerenciador de Soluções**.)
 
-2. No **Designer Relacional de Objetos** , clique com o botão direito do mouse na classe para qual você deseja adicionar validação e clique em **Exibir Código**.
+2. No **Designer Relacional de Objetos**, clique com o botão direito do mouse na classe para qual você deseja adicionar validação e clique em **Exibir Código**.
 
      O editor de códigos abre com uma classe parcial para a classe de entidade selecionada.
 
@@ -121,7 +121,7 @@ Além de verificar valores alterações pendentes, você também pode validar da
     }
     ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Validando dados](../data-tools/validate-data-in-datasets.md)

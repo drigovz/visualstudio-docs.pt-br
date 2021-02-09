@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: d5e0c287565c001870f91f4912afad28864fe2ef
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9fb859d61ab31a554579f72121a18a541b2995a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434643"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858547"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Ler dados XML em um conjunto de dados
 
@@ -41,9 +41,9 @@ Crie um novo projeto de **aplicativo Windows Forms** para C# ou Visual Basic. No
 
 Como este passo a passos se concentra na leitura de dados XML em um conjunto, o conteúdo de um arquivo XML é fornecido.
 
-1. No menu **Projeto** , selecione **Adicionar novo item**.
+1. No menu **Projeto**, selecione **Adicionar novo item**.
 
-2. Selecione **arquivo XML** , nomeie o arquivo **authors.xml** e, em seguida, selecione **Adicionar**.
+2. Selecione **arquivo XML**, nomeie o arquivo **authors.xml** e, em seguida, selecione **Adicionar**.
 
    O arquivo XML é carregado no designer e está pronto para edição.
 
@@ -129,7 +129,7 @@ A interface do usuário para esse aplicativo consiste no seguinte:
 
 1. Abra `Form1` no modo Design.
 
-2. Na **caixa de ferramentas** , arraste os seguintes controles para o formulário:
+2. Na **caixa de ferramentas**, arraste os seguintes controles para o formulário:
 
     - Um <xref:System.Windows.Forms.DataGridView> controle
 
@@ -152,7 +152,7 @@ A interface do usuário para esse aplicativo consiste no seguinte:
 
 Nesta etapa, você cria um novo conjunto de uma chamada `authors` . Para obter mais informações sobre conjuntos de dados, consulte [ferramentas de DataSet no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
-1. Em **Gerenciador de soluções** , selecione o arquivo de origem para o **Form1** e, em seguida, selecione o botão **Designer de exibição** na barra de ferramentas **Gerenciador de soluções** .
+1. Em **Gerenciador de soluções**, selecione o arquivo de origem para o **Form1** e, em seguida, selecione o botão **Designer de exibição** na barra de ferramentas **Gerenciador de soluções** .
 
 2. Na [caixa de ferramentas, guia Data](../ide/reference/toolbox-data-tab.md), arraste um **conjunto** de dados para **Form1**.
 
@@ -166,7 +166,7 @@ Nesta etapa, você cria um novo conjunto de uma chamada `authors` . Para obter m
 
 O botão **ler XML** lê o arquivo XML no conjunto de os. Em seguida, ele define as propriedades no <xref:System.Windows.Forms.DataGridView> controle que a associa ao conjunto de linhas.
 
-1. Em **Gerenciador de soluções** , selecione **Form1** e, em seguida, selecione o botão **Designer de exibição** na barra de ferramentas **Gerenciador de soluções** .
+1. Em **Gerenciador de soluções**, selecione **Form1** e, em seguida, selecione o botão **Designer de exibição** na barra de ferramentas **Gerenciador de soluções** .
 
 2. Selecione o botão **ler XML** .
 
@@ -183,7 +183,7 @@ O botão **ler XML** lê o arquivo XML no conjunto de os. Em seguida, ele define
 
 O botão **Mostrar esquema** cria um <xref:System.IO.StringWriter> objeto que é preenchido com o esquema e é exibido no <xref:System.Windows.Forms.TextBox> controle.
 
-1. Em **Gerenciador de soluções** , selecione **Form1** e, em seguida, selecione o botão **Designer de exibição** .
+1. Em **Gerenciador de soluções**, selecione **Form1** e, em seguida, selecione o botão **Designer de exibição** .
 
 2. Selecione o botão **Mostrar esquema** .
 

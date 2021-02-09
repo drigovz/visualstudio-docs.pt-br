@@ -8,16 +8,16 @@ helpviewer_keywords:
 - debugging, Docker container
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 4f39d4ecd69b726c1d549d723fadd324b1edd722
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761258"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857923"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>Anexar a um processo em execução em um contêiner do Docker 
 
@@ -52,13 +52,13 @@ Você pode anexar o depurador do Visual Studio a um processo em execução em um
     > [!NOTE]
     > Há duas opções para se conectar remotamente a um processo em execução em um contêiner do Docker. A primeira opção, para usar SSH, é ideal se você não tiver as ferramentas do Docker instaladas em seu computador local.  Se você tiver as ferramentas do Docker instaladas localmente e tiver um daemon do Docker configurado para aceitar solicitações remotas, tente a segunda opção, usando um daemon do Docker.
 
-    1. **_Para se conectar a um computador remoto via SSH:_* _
-        1. Selecione _ *Adicionar..* . * para se conectar a um sistema remoto.<br/>
+    1. ***Para se conectar a um computador remoto via SSH:***
+        1. Selecione **Adicionar...** para se conectar a um sistema remoto.<br/>
         ![Conectar-se a um sistema remoto](../debugger/media/connect-remote-system.png "Conectar-se a um sistema remoto")
         1. Selecione um contêiner em execução ao qual anexar depois de se conectar ao SSH ou ao daemon com êxito e pressione **OK**.
 
-    1. **_Para definir o destino para um contêiner remoto executando um processo por meio de um [daemon do Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)_* _
-        1. Especifique o endereço do daemon (ou seja, via TCP, IP, etc.) em _ *host do Docker (opcional)** e clique no link atualizar.
+    1. ***Para definir o destino para um contêiner remoto executando um processo por meio de um [daemon do Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)***
+        1. Especifique o endereço do daemon (ou seja, via TCP, IP, etc.) em **host do Docker (opcional)** e clique no link atualizar.
         1. Selecione um contêiner em execução ao qual anexar depois de se conectar ao daemon com êxito e pressione **OK**.
 
 4. Escolha o processo de contêiner correspondente na lista de **processos disponíveis** e selecione **anexar** para iniciar a depuração do processo de contêiner do C# no Visual Studio!
@@ -86,8 +86,8 @@ Você pode anexar o depurador do Visual Studio a um processo em execução em um
 
    A definição do destino para um contêiner remoto via SSH não está disponível no momento e só pode ser feita usando um daemon do Docker.
 
-    **_Para definir o destino para um contêiner remoto executando um processo por meio de um [daemon do Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)_* _
-    1. Especifique o endereço do daemon (ou seja, via TCP, IP, etc.) em _ *host do Docker (opcional)** e clique no link atualizar.
+    ***Para definir o destino para um contêiner remoto executando um processo por meio de um [daemon do Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)***
+    1. Especifique o endereço do daemon (ou seja, via TCP, IP, etc.) em **host do Docker (opcional)** e clique no link atualizar.
 
     1. Selecione um contêiner em execução ao qual anexar depois de se conectar ao daemon com êxito e escolha OK.
 

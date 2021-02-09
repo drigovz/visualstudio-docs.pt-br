@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bb0262139e2096cf55ae7581ef854a57c67d22a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 62175e33949b2c6311fba8e9255b237cd8b43e01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858469"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Passo a passo: salvar dados em uma transação
 
@@ -52,7 +52,7 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 A primeira etapa é criar um **aplicativo Windows Forms**.
 
-1. No Visual Studio, no menu **Arquivo** , selecione **Novo** > **Projeto**.
+1. No Visual Studio, no menu **Arquivo**, selecione **Novo** > **Projeto**.
 
 2. Expanda o **Visual C#** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
@@ -76,7 +76,7 @@ Esta etapa usa o **Assistente de configuração de fonte de dados** para criar u
 
     - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
-         - ou -
+         -ou-
 
     - Selecione **Nova Conexão** para inicializar a caixa de diálogo **Adicionar/Modificar Conexão** e criar uma conexão com o banco de dados Northwind.
 
@@ -110,7 +110,7 @@ As transações usam o namespace <xref:System.Transactions>. Uma referência do 
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Para adicionar uma referência ao arquivo DLL System.Transactions
 
-1. No menu **Projeto** , selecione **Adicionar Referência**.
+1. No menu **Projeto**, selecione **Adicionar Referência**.
 
 2. Selecione **System. Transactions** (na guia **.net** ) e, em seguida, selecione **OK**.
 
@@ -141,28 +141,28 @@ A ordem para reconciliar as alterações aos dados relacionados é a seguinte:
 
 ### <a name="to-delete-existing-orders"></a>Para excluir pedidos existentes
 
-- Adicione o seguinte método `DeleteOrders` a **Form1** :
+- Adicione o seguinte método `DeleteOrders` a **Form1**:
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
 ### <a name="to-delete-existing-customers"></a>Para excluir clientes existentes
 
-- Adicione o seguinte método `DeleteCustomers` a **Form1** :
+- Adicione o seguinte método `DeleteCustomers` a **Form1**:
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
 ### <a name="to-add-new-customers"></a>Para adicionar novos clientes
 
-- Adicione o seguinte método `AddNewCustomers` a **Form1** :
+- Adicione o seguinte método `AddNewCustomers` a **Form1**:
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
 ### <a name="to-add-new-orders"></a>Para adicionar novos pedidos
 
-- Adicione o seguinte método `AddNewOrders` a **Form1** :
+- Adicione o seguinte método `AddNewOrders` a **Form1**:
 
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]

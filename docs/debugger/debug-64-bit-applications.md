@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: db648e5f-6375-4e2d-aa98-eb7261958927
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29deb50bb57f018d3031ed1065145b6a39abab67
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 18ea2ade8ed87bfc58280bf5b2dc45c633eb2055
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857591"
 ---
 # <a name="debug-64-bit-applications"></a>Depurar aplicativos de 64 bits
 Você pode depurar um aplicativo de 64 bits que está sendo executado no computador local ou em um computador remoto.
@@ -54,7 +54,7 @@ Você pode depurar um aplicativo de 64 bits que está sendo executado no computa
 
 - Você está se deparando com um problema em que o Visual Studio se torna sem resposta ou outro problema de desempenho. Se o problema ocorrer regularmente, você poderá coletar despejos do Visual Studio (devenv.exe) e do processo de trabalho (msvsmon.exe) e enviá-los à Microsoft. Para obter informações sobre como relatar um problema, consulte [como relatar um problema com o Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Aplicativos de 64 bits](/dotnet/framework/64-bit-apps)
 - [Configurando programas para 64 bits](/cpp/build/configuring-programs-for-64-bit-visual-cpp)

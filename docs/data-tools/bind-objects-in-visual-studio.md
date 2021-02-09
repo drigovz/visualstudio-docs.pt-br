@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: ed743ce6-73af-45e5-a8ff-045eddaccc86
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ad8b5f502953912e2de7383afa4a86ff749c5724
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: b9446fa0edb9302d4032f19f23c8adb8747d9cc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518583"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859301"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Associar objetos como fontes de dados no Visual Studio
 
@@ -136,7 +136,7 @@ Salve os dados de volta no banco de dado passando os valores de seu objeto para 
 
 O Visual Studio cria métodos DBDirect que podem ser executados diretamente no banco de dados. Esses métodos não exigem objetos DataSet ou DataTable.
 
-|Métodos DBDirect TableAdapter|DESCRIÇÃO|
+|Métodos DBDirect TableAdapter|Descrição|
 | - |-----------------|
 |`TableAdapter.Insert`|Adiciona novos registros a um banco de dados, permitindo que você transmita valores de coluna individuais como parâmetros de método.|
 |`TableAdapter.Update`|Atualiza os registros existentes em um banco de dados. O método Update usa valores originais e novos de coluna como parâmetros de método. Os valores originais são usados para localizar o registro original e os novos valores são usados para atualizar esse registro.<br /><br /> O `TableAdapter.Update` método também é usado para reconciliar as alterações em um conjunto de dados de volta para o Database, por meio de uma <xref:System.Data.DataSet> <xref:System.Data.DataTable> matriz,, <xref:System.Data.DataRow> ou de <xref:System.Data.DataRow> s como parâmetros de método.|

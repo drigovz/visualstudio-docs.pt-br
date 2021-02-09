@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e740483a855bbfd736810dd4d41e3f4d01b7dd60
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9aad1bff0b70f87ff271f6d09cc7f8d34179136d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434669"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858560"
 ---
 # <a name="pass-data-between-forms"></a>Passar dados entre formulários
 
@@ -69,7 +69,7 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 ## <a name="create-the-windows-forms-app-project"></a>Criar o projeto de aplicativo Windows Forms
 
-1. No Visual Studio, no menu **Arquivo** , selecione **Novo** > **Projeto**.
+1. No Visual Studio, no menu **Arquivo**, selecione **Novo** > **Projeto**.
 
 2. Expanda o **Visual C#** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
@@ -83,13 +83,13 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 1. Para abrir a janela **fontes de dados** , no menu **dados** , clique em **mostrar fontes de dados**.
 
-2. Na janela **Fontes de Dados** , selecione **Adicionar Nova Fonte de Dados** para iniciar o assistente de **Configuração de Fonte de Dados**.
+2. Na janela **Fontes de Dados**, selecione **Adicionar Nova Fonte de Dados** para iniciar o assistente de **Configuração de Fonte de Dados**.
 
 3. Selecione **Banco de Dados** na página **Escolher um Tipo de Fonte de Dados** e, em seguida, clique em **Avançar**.
 
-4. Na página **Escolha um Modelo de Banco de Dados** , verifique se o **Conjunto de dados** foi especificado e clique em **Avançar**.
+4. Na página **Escolha um Modelo de Banco de Dados**, verifique se o **Conjunto de dados** foi especificado e clique em **Avançar**.
 
-5. Na página **Escolha a Conexão de Dados** , faça o seguinte:
+5. Na página **Escolha a Conexão de Dados**, faça o seguinte:
 
     - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
@@ -119,7 +119,7 @@ Você pode criar uma grade de associação de dados (um controle <xref:System.Wi
 
 Crie um segundo formulário para o qual passar dados.
 
-1. No menu **Projeto** , escolha **Adicionar Formulário do Windows**.
+1. No menu **Projeto**, escolha **Adicionar Formulário do Windows**.
 
 2. Deixe o nome padrão **Form2** e clique em **Adicionar**.
 
@@ -156,7 +156,7 @@ Adicione uma consulta do TableAdapter ao Form2 para carregar pedidos para o clie
 
 6. Clique em **Próximo**.
 
-7. Para o **preenchimento de um nome de DataTableMethod** , digite `FillByCustomerID` .
+7. Para o **preenchimento de um nome de DataTableMethod**, digite `FillByCustomerID` .
 
 8. Desmarque a opção **Retornar uma DataTable** e clique em **Avançar**.
 
@@ -173,9 +173,9 @@ Adicione uma consulta do TableAdapter ao Form2 para carregar pedidos para o clie
 
 ## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>Criar um método no Form1 para passar dados e exibir o Form2
 
-1. No **Form1** , clique com o botão direito do mouse na grade de dados do Cliente e clique em **Propriedades**.
+1. No **Form1**, clique com o botão direito do mouse na grade de dados do Cliente e clique em **Propriedades**.
 
-2. Na janela **Propriedades** , clique em **Eventos**.
+2. Na janela **Propriedades**, clique em **Eventos**.
 
 3. Clique duas vezes no evento **CellDoubleClick**.
 
@@ -186,7 +186,7 @@ Adicione uma consulta do TableAdapter ao Form2 para carregar pedidos para o clie
      [!code-csharp[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]
      [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]
 
-## <a name="run-the-app"></a>Executar o aplicativo
+## <a name="run-the-app"></a>Execute o aplicativo
 
 - Pressione **F5** para executar o aplicativo.
 
