@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ab8a723b69f4c5930c91a10719a2107ad83003
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: ba53fefcc5d29cb47bd3a6912ad7af34dd8deabb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136791"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850380"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Criar e limpar projetos e soluções no Visual Studio
 
@@ -61,7 +61,7 @@ Usando os procedimentos neste tópico, é possível criar, recriar ou limpar tod
 
 1. No **Gerenciador de Soluções**, escolha ou abra o projeto.
 
-2. Na barra de menus, escolha **Compilar**e, em seguida, escolha **criar** *ProjectName* ou **recriar** *ProjectName*.
+2. Na barra de menus, escolha **Compilar** e, em seguida, escolha **criar** *ProjectName* ou **recriar** *ProjectName*.
 
     - Escolha **criar** *ProjectName* para compilar somente os componentes do projeto que foram alterados desde a compilação mais recente.
 
@@ -87,7 +87,7 @@ Usando os procedimentos neste tópico, é possível criar, recriar ou limpar tod
 
 ## <a name="to-build-only-the-selected-visual-c-project"></a>Para compilar somente o projeto Visual C++ selecionado
 
-Escolha um [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projeto e, na barra de menus, escolha **Compilar**  >  **projeto apenas**e um dos seguintes comandos:
+Escolha um [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projeto e, na barra de menus, escolha **Compilar**  >  **projeto apenas** e um dos seguintes comandos:
 
 - **Somente build** *ProjectName*
 

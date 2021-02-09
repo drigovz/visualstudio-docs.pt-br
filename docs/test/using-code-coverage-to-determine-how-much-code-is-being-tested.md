@@ -12,13 +12,13 @@ dev_langs:
 - CPP
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: c2c7bcb270184bcc140dbadef63af1315df765dc
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: c74a39c81de2612bca5c3fc39286a4432916eb11
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330050"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850068"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar a cobertura de código para determinar quanto do código está sendo testado
 
@@ -59,7 +59,7 @@ O recurso de cobertura de código está disponível apenas no Visual Studio Ente
 2. Após a execução dos testes, para ver quais linhas foram executadas, escolha ![ mostrar o ícone de colorização de cobertura de código ](../test/media/codecoverage-showcoloringicon.png) **Mostrar cores de cobertura de código** na janela resultados da cobertura de **código** . Por padrão, o código coberto por testes é realçado em azul claro.
 
    > [!TIP]
-   > Para alterar as cores ou usar a face em negrito, escolha **ferramentas**  >  **Opções**  >  **Environment**  >  **fontes e cores**  >  **do ambiente Mostrar configurações para: editor de texto**. Em **Exibir itens**, ajuste as configurações para os itens de "cobertura", por exemplo, **área de cobertura não** coberta.
+   > Para alterar as cores ou usar a face em negrito, escolha **ferramentas**  >  **Opções**  >    >  **fontes e cores**  >  **do ambiente Mostrar configurações para: editor de texto**. Em **Exibir itens**, ajuste as configurações para os itens de "cobertura", por exemplo, **área de cobertura não** coberta.
    >
    > ![Fontes e cores de cobertura de código](media/vs-2019/coverage-fonts-and-colors.png)
 
@@ -306,7 +306,7 @@ Para obter mais informações, consulte [Opções de linha de comando de VSTest.
 
 Se os resultados da cobertura de código não forem exibidos, o artigo [Solução de problemas de cobertura de código](../test/troubleshooting-code-coverage.md) poderá ajudá-lo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md)
 - [Solução de problemas de cobertura de código](../test/troubleshooting-code-coverage.md)
