@@ -5,18 +5,18 @@ ms.date: 08/28/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 153864a293ca25fdcf30f23b96f686737411c965
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9cd9fef6cebdefc190d37c067616e51c6d3e372f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435782"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908130"
 ---
 # <a name="devinit-commands"></a>comandos devinit
 
@@ -34,10 +34,10 @@ Opções opcionais para o `devinit init` comando.
 
 | Argumento             | Obrigatório | Descrição                                                               |
 |----------------------|----------|---------------------------------------------------------------------------|
-| -f,--file            | No       | Caminho para o `.devinit.json` arquivo.                                         |
-| --ação de erro       | No       | Especifica como tratar erros. Opções: parar, ignorar, continuar (padrão).|
-| -v,--detalhado         | No       | Emitir saída detalhada.                                                      |
-| -n,--execução seca         | No       | Simulação de execução.                                                                  |
+| -f,--file            | Não       | Caminho para o `.devinit.json` arquivo.                                         |
+| --ação de erro       | Não       | Especifica como tratar erros. Opções: parar, ignorar, continuar (padrão).|
+| -v,--detalhado         | Não       | Emitir saída detalhada.                                                      |
+| -n,--execução seca         | Não       | Simulação de execução.                                                                  |
 
 #### <a name="--file-argument"></a>--argumento de arquivo
 
@@ -81,12 +81,12 @@ Opções para o `devinit run` comando.
 
 | Argumento                                      | Obrigatório | Descrição                                                                          |
 |-----------------------------------------------|----------|--------------------------------------------------------------------------------------|
-| -t,--ferramenta                                     | Yes      | Obrigatórios. O nome da ferramenta.                                                             |
-| -i,--entrada                                    | No       | O valor de entrada da ferramenta. Por exemplo, um FileName, um pacote ou um nome.                     |
-| --ação de erro                                | No       | Especifica como tratar erros de ferramenta: parar, ignorar, continuar. O padrão é parar. |
-| -v,--detalhado                                  | No       | Emitir saída detalhada.                                                                 |
-| -n,--execução seca                                  | No       | Simulação de execução.                                                                             |
-| --&lt;arg1 &gt; &lt; arg2 &gt; ... &lt; argN&gt;  | No       | Argumentos de linha de comando adicionais para a ferramenta.                                       |
+| -t,--ferramenta                                     | Sim      | Obrigatório. O nome da ferramenta.                                                             |
+| -i,--entrada                                    | Não       | O valor de entrada da ferramenta. Por exemplo, um FileName, um pacote ou um nome.                     |
+| --ação de erro                                | Não       | Especifica como tratar erros de ferramenta: parar, ignorar, continuar. O padrão é parar. |
+| -v,--detalhado                                  | Não       | Emitir saída detalhada.                                                                 |
+| -n,--execução seca                                  | Não       | Simulação de execução.                                                                             |
+| --&lt;arg1 &gt; &lt; arg2 &gt; ... &lt; argN&gt;  | Não       | Argumentos de linha de comando adicionais para a ferramenta.                                       |
 
 #### <a name="--error-action-argument"></a>--argumento de ação de erro
 
@@ -124,7 +124,7 @@ Para instalar o dotnet em um diretório específico `C:\Program Files\dotnet` :
 devinit run -t require-dotnetcoresdk --"-InstallDir \"C:\Program Files\dotnet\""
 ```
 
-## <a name="list"></a>Lista
+## <a name="list"></a>List
 
 ```console
 devinit list
@@ -140,7 +140,7 @@ devinit show -t <toolname>
 
 | Argumento       | Obrigatório | Descrição                                                                          |
 |----------------|----------|--------------------------------------------------------------------------------------|
-| -t,--ferramenta      | Yes      | Obrigatórios. O nome da ferramenta.                                                             |
+| -t,--ferramenta      | Sim      | Obrigatório. O nome da ferramenta.                                                             |
 
 Imprime informações de ajuda para uma determinada ferramenta.
 

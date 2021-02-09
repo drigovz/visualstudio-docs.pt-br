@@ -14,15 +14,15 @@ helpviewer_keywords:
 - MSBuild, VerifyFileHash task
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d76c7de1fcf6857cbc32709490e54d5bdf3b8988
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: cfd6bb88a5bfbbffb7c99f7f43036cf9fee4d6ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046105"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908798"
 ---
 # <a name="verifyfilehash-task"></a>Tarefa VerifyFileHash
 
@@ -87,7 +87,7 @@ No MSBuild 16,5 e posterior, se você não quiser que a compilação falhe quand
   </Target>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

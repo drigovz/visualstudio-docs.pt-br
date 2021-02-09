@@ -11,15 +11,15 @@ helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 51e4a2cc4fb74309c44b8068152253de92eed0df
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: fc61f66b2aefaf0e43b1b5af819e0e244feec114
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910313"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalização e localização de soluções do Excel
   Esta seção contém informações sobre considerações especiais para Microsoft Office soluções do Excel que serão executadas em computadores com configurações diferentes do inglês para o Windows. A maioria dos aspectos de globalizar e localizar soluções de Microsoft Office são as mesmas que você encontra ao criar outros tipos de soluções usando o Visual Studio. Para obter informações gerais, consulte [globalizar e localizar aplicativos](../ide/globalizing-and-localizing-applications.md).
@@ -97,7 +97,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 ### <a name="applications-that-use-external-data"></a>Aplicativos que usam dados externos
  Qualquer código que abre ou, de outra forma, usa dados externos, como arquivos que incluem valores separados por vírgulas (arquivos CSV) exportados de um sistema herdado, também poderá ser afetado se esses arquivos forem exportados usando qualquer formato além de en-US. O acesso ao banco de dados pode não ser afetado porque todos os valores devem estar no formato binário, a menos que o banco de dados armazene datas como cadeias de caracteres ou execute operações que não usem o formato binário. Além disso, se você construir consultas SQL usando dados do Excel, talvez seja necessário garantir que elas estejam no formato en-US, dependendo da função usada.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como: direcionar a interface do usuário multilíngüe do Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)
 - [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)

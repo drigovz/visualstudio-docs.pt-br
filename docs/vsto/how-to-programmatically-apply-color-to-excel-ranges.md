@@ -13,15 +13,15 @@ helpviewer_keywords:
 - ranges, applying color
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 63a38bb4fb6f8f8ab35b9e1104a1b93d6d757446
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 7ab1681cf402fc45b81b49b77a84973be83729c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847995"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910104"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Como: aplicar de forma programática cores a intervalos do Excel
   Para aplicar uma cor ao texto em um intervalo de células, use um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle ou um objeto Range do Excel nativo.

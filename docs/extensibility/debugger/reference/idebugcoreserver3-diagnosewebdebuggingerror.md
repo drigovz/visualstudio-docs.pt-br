@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8c4570ca-ae55-42f2-bbaa-8d8e75d2fa19
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fec5b8fbe1cae18b8221702fe14443df231d8880
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6c95c3953b70235daa739e48b5de50b4a815b13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732955"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908054"
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
 Tenta determinar por que uma conexão automática falhou.
@@ -28,14 +28,14 @@ Tenta determinar por que uma conexão automática falhou.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT DiagnoseWebDebuggingError(
-   LPCWSTR pszUrl
+HRESULT DiagnoseWebDebuggingError(
+   LPCWSTR pszUrl
 );
 ```
 
 ```csharp
-int DiagnoseWebDebuggingError(
-   string pszUrl
+int DiagnoseWebDebuggingError(
+   string pszUrl
 );
 ```
 
@@ -43,7 +43,7 @@ int DiagnoseWebDebuggingError(
 `pszUrl`\
 no Não usado atualmente; deve sempre ser definido como um valor nulo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. A seguir estão outros códigos de retorno típicos:
 
 |Código|Descrição|

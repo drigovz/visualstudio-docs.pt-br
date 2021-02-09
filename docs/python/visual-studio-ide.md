@@ -5,18 +5,18 @@ ms.date: 03/13/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9d744e7495323c6e0ce565f33e2cfca95feb0a51
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d90ee69b8ee7f264a48d6ae01f77ea65e5d1c1b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928678"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908784"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bem-vindo ao IDE do Visual Studio | Python
 
@@ -106,7 +106,7 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 
 - [Depuração](debugging-python-in-visual-studio.md)
 
-    O Visual Studio fornece uma experiência de depuração abrangente para Python, incluindo anexar a processos em execução, avaliar expressões na **inspeção** e janelas **imediatas** , inspecionar variáveis locais, pontos de interrupção, instruções Step in/out/over, **definir a próxima instrução**e muito mais. Você também pode depurar um código Python remoto executado em computadores Linux.
+    O Visual Studio fornece uma experiência de depuração abrangente para Python, incluindo anexar a processos em execução, avaliar expressões na **inspeção** e janelas **imediatas** , inspecionar variáveis locais, pontos de interrupção, instruções Step in/out/over, **definir a próxima instrução** e muito mais. Você também pode depurar um código Python remoto executado em computadores Linux.
 
     ![Depurando o Python no Visual Studio](media/remote-debugging-breakpoint-hit.png)
 
@@ -144,7 +144,7 @@ Explore ainda mais o Python no Visual Studio seguindo um destes tutoriais ou in�
 > [!div class="nextstepaction"]
 > [Introdução à estrutura da Web Flask no Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - Descubra [mais recursos do Visual Studio](../ide/advanced-feature-overview.md)
 - Visite [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)

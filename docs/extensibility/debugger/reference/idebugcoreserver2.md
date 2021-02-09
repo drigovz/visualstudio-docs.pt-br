@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 9c47d0a6-9eb1-464e-bd44-fa2b552d4d36
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a5990c84fbaeb5ebb3b1e188d3317234afda06b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba05cb5a933c5b3caaf080c9098c83451a20e484
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733014"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909997"
 ---
 # <a name="idebugcoreserver2"></a>IDebugCoreServer2
 Essa interface é usada para representar e obter informações de um servidor em um computador na rede.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugCoreServer2 : IUknown

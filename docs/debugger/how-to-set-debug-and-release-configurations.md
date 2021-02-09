@@ -30,15 +30,15 @@ helpviewer_keywords:
 ms.assetid: 57b6bbb7-f2af-48f7-8773-127d75034ed2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 51237a9b73825620c77c7f2a10ad1efe367cdd37
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 6f96570f517d24492ecdacb4e45450fa7b7ba1cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149541"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908394"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Definir configurações de depuração e versão no Visual Studio
 
@@ -119,7 +119,7 @@ Para obter informações detalhadas sobre configurações de projeto para config
 
    O compilador cria os arquivos de símbolo na mesma pasta que o executável ou o arquivo de saída principal.
 
-## <a name="see-also"></a><a name="see-also"></a>Confira também
+## <a name="see-also"></a><a name="see-also"></a>Consulte também
 
 - [Especificar arquivos de símbolo (. pdb) e arquivos de origem no depurador do Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
 - [Configurações e preparação do depurador](../debugger/debugger-settings-and-preparation.md)<br/>

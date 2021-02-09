@@ -14,15 +14,15 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f0b81c034ed0f8934da378dc214191d3be1f4506
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f98f3154a0708ce7a01603968f0f5774dd86f40e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848320"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910235"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Conceder confiança às soluções do Office
   Conceder confiança a soluções do Office significa modificar a política de segurança de cada computador de destino para confiar no assembly da solução, manifesto do aplicativo, manifesto de implantação e documento. A confiança pode ser concedida à solução do Office por você ou pelo usuário final.
@@ -47,7 +47,7 @@ ms.locfileid: "96848320"
 
  Os administradores podem desabilitar o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] prompt de confiança ou exigir que o prompt ocorra somente para soluções assinadas com um certificado Authenticode. Para obter mais informações sobre como alterar essas configurações para as zonas MyComputer, LocalIntranet, Internet, TrustedSites e UntrustedSites, consulte [como configurar o comportamento do prompt de confiança do ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Proteger soluções do Office](../vsto/securing-office-solutions.md)
 - [Conceder confiança aos documentos](../vsto/granting-trust-to-documents.md)

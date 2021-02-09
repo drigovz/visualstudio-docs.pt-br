@@ -14,15 +14,15 @@ helpviewer_keywords:
 - outlining code
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e45d7192c35ed60442fadf1a3eb302997fbaf381
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 04a2156723bc33e25a658814b9348655f7ba86d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136661"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909054"
 ---
 # <a name="outlining"></a>Estrutura de tópicos
 
@@ -31,7 +31,7 @@ Você pode optar por ocultar alguns códigos da exibição recolhendo uma regiã
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Editor de código-fonte (Visual Studio para Mac)](/visualstudio/mac/source-editor).
 
-As regiões na margem da estrutura de tópicos também são realçadas quando você focaliza a margem com o mouse. A cor de realce padrão pode parecer bastante esmaecida em algumas configurações de cor. Você pode alterá-lo em **ferramentas**  >  **Opções**  >  **Environment**  >  **fontes de ambiente e cores**  >  **recolhíveis região**.
+As regiões na margem da estrutura de tópicos também são realçadas quando você focaliza a margem com o mouse. A cor de realce padrão pode parecer bastante esmaecida em algumas configurações de cor. Você pode alterá-lo em **ferramentas**  >  **Opções**  >    >  **fontes de ambiente e cores**  >  **recolhíveis região**.
 
 Quando você trabalha no código de estrutura de tópicos, pode expandir as seções nas quais deseja trabalhar, recolhê-las quando terminar e passar para outras seções. Quando você não quiser que a estrutura de tópicos seja exibida, você pode usar o comando **Interromper Estrutura de Tópicos** para remover as informações de estrutura de tópicos sem afetar o código subjacente.
 
@@ -40,7 +40,7 @@ Os comandos **Desfazer** e **Refazer** no menu **Editar** afetam essas ações. 
 > [!CAUTION]
 > Quando você altera uma região de estrutura de tópicos, a estrutura de tópicos pode ser perdida. Por exemplo, as exclusões ou as operações de **localização e substituição** podem apagar o final da região.
 
-Os comandos a seguir podem ser encontrados no **Edit**  >  submenu editar**estrutura de tópicos** .
+Os comandos a seguir podem ser encontrados no   >  submenu editar **estrutura de tópicos** .
 
 |Nome|Descrição|
 |-|-|

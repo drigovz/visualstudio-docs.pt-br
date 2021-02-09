@@ -5,18 +5,18 @@ ms.date: 11/02/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 863c2715b7dfbc2c331bb57f6cf06851401c51df
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 47859d00861c2361ed03931bf1417e22425d6e68
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672496"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908117"
 ---
 # <a name="devinit-configuration-file"></a>arquivo de configuração devinit
 
@@ -67,7 +67,7 @@ Em um `.devinit.json` , você pode especificar mais de uma ferramenta a ser exec
 | Nome         | Tipo   | Obrigatório | Valor                              |
 |--------------|--------|----------|------------------------------------|
 | **feitos** | Cadeia de caracteres | No       | Comentários para o arquivo.             |
-| **funcionam**      | matriz  | Sim      | [Objeto RunTool](#run-tool-object) |
+| **funcionam**      | array  | Sim      | [Objeto RunTool](#run-tool-object) |
 
 #### <a name="run-tool-object"></a>Executar objeto de ferramenta
 

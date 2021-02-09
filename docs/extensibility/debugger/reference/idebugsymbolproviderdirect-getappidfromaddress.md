@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: d76a0f36-79c4-4c58-9db3-880b00d11610
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df1dbea23cf29809c5f504359ebf02b40c14e6e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfdc81b18b68a3dafe239bb2f23f700f9796cf8e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719163"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909559"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
 Recupera o identificador de domínio do aplicativo de acordo com o endereço de depuração.
@@ -47,7 +47,7 @@ no Endereço de depuração que é representado pela interface [IDebugAddress](.
 `pAppID`\
 fora Identificador do domínio do aplicativo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também

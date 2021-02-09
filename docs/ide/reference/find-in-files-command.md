@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2fc78bfe-b339-4599-97f9-4cafd8a194d9
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aa0a907332b3ce0164573b809ee9c4b2ac2addda
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 6fc824a7166e3bbaba84bd49e89f1fdf30b65761
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305388"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908959"
 ---
 # <a name="find-in-files-command"></a>Comando Localizar nos Arquivos
 Pesquise arquivos usando um subconjunto das opções disponíveis na guia **Localizar nos Arquivos** da janela **Localizar e Substituir**.
@@ -36,7 +36,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 ## <a name="arguments"></a>Argumentos
 
 `findwhat`\
-Obrigatórios. O texto a ser correspondido.
+Obrigatório. O texto a ser correspondido.
 
 ## <a name="switches"></a>Comutadores
 /case ou /c\

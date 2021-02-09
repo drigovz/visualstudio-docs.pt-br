@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 815a945f6fb591960ebf0bf4b4fcd9d842ffefd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e11472c2c883705c36ab71a37b1af10eb1cb5b10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720687"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909814"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 Essa interface empacota interfaces relacionadas a programas entre limites de processo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugProviderProgramNode2 : IUnknown
@@ -52,5 +52,5 @@ IDebugProviderProgramNode2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
-- [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

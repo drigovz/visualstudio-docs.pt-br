@@ -20,15 +20,15 @@ helpviewer_keywords:
 - objects [Visual Studio], referencing
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fdf737d26ec14c2a108125425a3b66cdf4a0e519
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: b9beb330f452ff97b7f5a81539cfc62c02404901
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95870944"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909168"
 ---
 # <a name="manage-references-in-a-project"></a>Gerenciar referências em um projeto
 
@@ -128,7 +128,7 @@ Ao contrário da maioria dos outros tipos de projetos, um *projeto compartilhado
 
 Referências de arquivo são referências diretas a assemblies fora do contexto de um projeto do Visual Studio. Crie-as usando a guia **Procurar** da caixa de diálogo Gerenciador de Referências. Use uma referência de arquivo quando você tiver apenas um assembly ou componente e não o projeto que o cria como a saída.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md)
 - [Como adicionar ou remover referências](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

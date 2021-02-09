@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 76f36bae-f6ab-413c-a8a9-8808bfeba05b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2346bb76fe604265a309a51f48b734fc6f2ab8d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b76c37d767ae38a33d537a96f9ad8f7087503ed2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733022"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909959"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
 Cria uma instância de um mecanismo de depuração no servidor.
@@ -28,12 +28,12 @@ Cria uma instância de um mecanismo de depuração no servidor.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT CreateInstanceInServer(
-   LPCWSTR  szDll,
-   WORD     wLangId,
-   REFCLSID clsidObject,
-   REFIID   riid,
-   void**   ppvObject
+HRESULT CreateInstanceInServer(
+   LPCWSTR  szDll,
+   WORD     wLangId,
+   REFCLSID clsidObject,
+   REFIID   riid,
+   void**   ppvObject
 );
 ```
 
@@ -63,7 +63,7 @@ no ID da interface específica a ser recuperada do objeto de classe.
 `ppvObject`\
 [fora] `IUnknown` interface do objeto instanciado. Converta ou realize marshaling deste objeto para a interface desejada.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também

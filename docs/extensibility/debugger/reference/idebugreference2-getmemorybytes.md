@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2006cb2b-1dfa-4a2d-8e3e-db2ce0302e0d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 958c38d6650c7152efef9fe72481a46a70090660
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0088bc80d53b450db2e2c0f73ff9dadd6b8e51e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909668"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
 Obtém os bytes de memória que contêm fisicamente o valor de uma referência. Reservado para uso futuro.
@@ -28,13 +28,13 @@ Obtém os bytes de memória que contêm fisicamente o valor de uma referência. 
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetMemoryBytes ( 
+HRESULT GetMemoryBytes ( 
    IDebugMemoryBytes2** ppMemoryBytes
 );
 ```
 
 ```csharp
-int GetMemoryBytes ( 
+int GetMemoryBytes ( 
    out IDebugMemoryBytes2 ppMemoryBytes
 );
 ```
@@ -43,7 +43,7 @@ int GetMemoryBytes ( 
 `ppMemoryBytes`\
 fora Retorna um objeto [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) que pode ser usado para recuperar a memória que contém o valor da referência.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Sempre retorna `E_NOTIMPL`.
 
 ## <a name="see-also"></a>Confira também

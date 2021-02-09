@@ -14,15 +14,15 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9d91a86f8596e0ed7a04ae68099c7c9ab6099a40
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: e2871741d7297b6efabf53bb6f258355c41cac49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910261"
 ---
 # <a name="grant-trust-to-documents"></a>Conceder confiança aos documentos
   Um projeto de nível de documento tem os mesmos requisitos de segurança que os projetos de nível de aplicativo: assinando os manifestos com um certificado ou clicando no prompt de confiança. Além disso, o documento ou pasta de trabalho deve estar localizado em um diretório designado como um local confiável.
@@ -45,7 +45,7 @@ ms.locfileid: "96847735"
 
 - Você pode armazenar o documento ou a pasta de trabalho de uma solução em nível de documento no mesmo diretório que o assembly ou em um diretório diferente. Por exemplo, o documento pode estar localizado em um servidor do SharePoint e o assembly pode estar localizado em um compartilhamento de arquivos de rede. Para obter mais informações, consulte [como publicar uma solução do Office em nível de documento em um servidor do SharePoint usando o ClickOnce](/previous-versions/bb608595(v=vs.110)).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Conceder confiança às soluções do Office](../vsto/granting-trust-to-office-solutions.md)
 - [Solucionar problemas de segurança da solução do Office](../vsto/troubleshooting-office-solution-security.md)
 - [Proteger soluções do Office](../vsto/securing-office-solutions.md)

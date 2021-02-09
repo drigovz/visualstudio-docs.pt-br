@@ -16,15 +16,15 @@ helpviewer_keywords:
 - WordArt, adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0662c9324aaab8f5a368bc4db300ccff1a0ece33
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 596f7ea7586ee70ae740dc237d83b7a4b40fa83f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844043"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910191"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Como: adicionar imagens e arte de palavras programaticamente a documentos
   Você pode adicionar imagens e objetos de desenho a seus documentos em tempo de design ou durante o tempo de execução. O WordArt permite que você adicione texto decorativo a Microsoft Office documentos do Word. Esses efeitos de texto especiais são objetos de desenho que você pode personalizar e inserir em seu documento.
@@ -102,7 +102,7 @@ ms.locfileid: "96844043"
 
 - Uma imagem chamada *SamplePicture.jpg* deve existir na unidade C.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Como: abrir documentos existentes programaticamente](../vsto/how-to-programmatically-open-existing-documents.md)
 - [Como: inserir texto de forma programática em documentos do Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
 - [Como: programaticamente restaurar seleções após pesquisas](../vsto/how-to-programmatically-restore-selections-after-searches.md)

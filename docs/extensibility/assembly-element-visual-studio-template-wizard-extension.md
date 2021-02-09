@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4807014a99fd479a126481db910097ceefd5f806
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: ffc20d0156aeb04131e19c25fef8ab4455b7ab0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671715"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908139"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Elemento assembly (extensão do assistente de modelo do Visual Studio)
 Especifica o nome ou nome forte do assembly que implementa a `IWizard` interface.
@@ -41,10 +41,10 @@ Especifica o nome ou nome forte do assembly que implementa a `IWizard` interface
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -91,7 +91,7 @@ Especifica o nome ou nome forte do assembly que implementa a `IWizard` interface
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)

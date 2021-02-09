@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: df5f095f-1dee-46f9-84cf-92417c71d5fb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11e180288a9312d9af5a3d3b1bd63d8f2266f581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8485497f9a5f0c6a04090755e6848bf8ed916ab3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719175"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909568"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 Essa interface representa um provedor de símbolos que fornece símbolos e tipos, retornando-os como campos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugSymbolProvider : IUnknown

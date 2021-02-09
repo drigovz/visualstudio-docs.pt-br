@@ -9,17 +9,17 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1f541c94804f8f5f454f6299a116a8bd1386e7
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 342fb2ba0d094299b41707b93b52f3b28a3afdce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037270"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909259"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Tutorial: criar seu primeiro aplicativo Plataforma Universal do Windows no Visual Studio com XAML e C&#35;
 
@@ -64,7 +64,7 @@ Primeiro, crie um projeto da Plataforma Universal do Windows. O tipo de projeto 
    ![Captura de tela de Criar um novo projeto](media/vs-2019/uwp-create-new-project.png)
 
    > [!NOTE]
-   > Se você não vir o modelo de projeto **Aplicativo em Branco (Universal Windows) **, clique no link **Instalar mais ferramentas e recursos**.<br><br>![Clicar no link Instalar mais ferramentas e recursos](media/vs-2019/uwp-not-finding.png)<br><br>O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento na Plataforma Universal do Windows** e, em seguida, selecione **Modificar**.<br><br>![Carga de trabalho de desenvolvimento na Plataforma Universal do Windows no Instalador do Visual Studio](media/uwp-dev-workload.png)
+   > Se você não vir o modelo de projeto **Aplicativo em Branco (Universal Windows)**, clique no link **Instalar mais ferramentas e recursos**.<br><br>![Clicar no link Instalar mais ferramentas e recursos](media/vs-2019/uwp-not-finding.png)<br><br>O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento na Plataforma Universal do Windows** e, em seguida, selecione **Modificar**.<br><br>![Carga de trabalho de desenvolvimento na Plataforma Universal do Windows no Instalador do Visual Studio](media/uwp-dev-workload.png)
 
 1. Dê um nome ao projeto, _HelloWorld_, e escolha **criar**.
 
@@ -209,7 +209,7 @@ Parabéns por concluir este tutorial. Esperamos que você tenha aprendido alguma
 > [!div class="nextstepaction"]
 > [Criar uma interface do usuário](/windows/uwp/design/basics/xaml-basics-ui)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visão Geral da UWP](/windows/uwp/get-started/universal-application-platform-guide)
 - [Obter exemplos de aplicativo UWP](/windows/uwp/get-started/get-uwp-app-samples)

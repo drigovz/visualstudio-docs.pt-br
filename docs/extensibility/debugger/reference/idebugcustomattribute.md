@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: c5ae41e9-00b9-4cca-871d-b8de9ef390d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a31133139d0104cd29f5d0d0e760bd78ec5783fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1baa46cd9be53134d42c71e8c2bd88e3e2c38d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732685"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907958"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 Essa interface representa um atributo personalizado e pode fornecer o nome, o pai e o tipo de classe do atributo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
-IDebugCustomAttribute : IUnknown
+IDebugCustomAttribute : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores

@@ -7,17 +7,17 @@ ms.technology: vs-ide-general
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8122f42fb5d2ec4c31ec553407b644e59e9f4418
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8724fcb717953f3897bab092eb3895e228e10c60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248291"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909229"
 ---
 # <a name="learn-to-use-the-code-editor-with-c"></a>Aprenda a usar o editor de código com C\#
 
@@ -58,7 +58,7 @@ Comece criando um novo arquivo e adicionando códigos nele.
 
 ::: moniker-end
 
-2. No menu **arquivo** na barra de menus, escolha **novo**  >  **arquivo**ou pressione **Ctrl** + **N**.
+2. No menu **arquivo** na barra de menus, escolha **novo**  >  **arquivo** ou pressione **Ctrl** + **N**.
 
 3. Na caixa de diálogo **Novo Arquivo**, na categoria **Geral**, escolha **Classe do Visual C#** e, então, selecione **Abrir**.
 
@@ -80,7 +80,7 @@ O Visual Studio fornece *snippets de código* úteis que você pode usar para ge
 
    Você verá que a assinatura do método `static void Main()` será adicionada ao arquivo. O método [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) é o ponto de entrada para aplicativos C#.
 
-Os snippets de código disponíveis variam em linguagens de programação diferentes. Você pode examinar os trechos de código disponíveis para a sua linguagem escolhendo **Editar**  >  trecho do**IntelliSense**  >  **Insert** ou pressionando **Ctrl** + **K**, **Ctrl** + **X**e, em seguida, escolhendo a pasta do seu idioma. Para o C#, a lista tem este aspecto:
+Os snippets de código disponíveis variam em linguagens de programação diferentes. Você pode examinar os trechos de código disponíveis para a sua linguagem escolhendo **Editar**  >  trecho do **IntelliSense**  >  **Insert** ou pressionando **Ctrl** + **K**, **Ctrl** + **X** e, em seguida, escolhendo a pasta do seu idioma. Para o C#, a lista tem este aspecto:
 
 ![Lista de snippet de código de C#](../media/tutorial-code-snippet-list.png)
 
@@ -171,7 +171,7 @@ O [IntelliSense](../../ide/using-intellisense.md) é um recurso inestimável qua
 
 Ninguém obtém o código correto na primeira vez e uma das coisas que talvez você precise alterar é o nome de uma variável ou de um método. Vamos experimentar a funcionalidade de [refatorar](../../ide/refactoring-in-visual-studio.md) do Visual Studio para renomear a variável `_words` como `words`.
 
-1. Coloque o cursor sobre a definição da `_words` variável e escolha **renomear** no menu de contexto ou clique com o botão direito do mouse ou pressione **Ctrl** + **r**e **Ctrl** + **r**.
+1. Coloque o cursor sobre a definição da `_words` variável e escolha **renomear** no menu de contexto ou clique com o botão direito do mouse ou pressione **Ctrl** + **r** e **Ctrl** + **r**.
 
    Uma caixa de diálogo pop-up chamada **Renomear** aparecerá no canto superior direito do editor.
 
@@ -188,7 +188,7 @@ Ninguém obtém o código correto na primeira vez e uma das coisas que talvez vo
 > [!div class="nextstepaction"]
 > [Saiba mais sobre projetos e soluções](../tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Snippets de código](../../ide/code-snippets.md)
 - [Navegue pelos códigos](../../ide/navigating-code.md)

@@ -9,18 +9,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 484cb82a3659e306bd4c6bd14a3133c4677160db
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: ff5e23a92409a3169add19c8810bec44fa4db9ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833332"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909361"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: criar um aplicativo de console C# simples no Visual Studio
 
@@ -49,13 +49,13 @@ Para começar, criaremos um projeto de aplicativo em C#. O tipo de projeto inclu
 2. Na barra de menus superior, escolha **arquivo**  >  **novo**  >  **projeto**.
    (Como alternativa, pressione **Ctrl** + **Shift** + **N**).
 
-3. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **C#** e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo de Console (.NET Core)**. Em seguida, nomeie o arquivo **_Calculator_* _.
+3. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **C#** e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo de Console (.NET Core)**. Em seguida, nomeie a **_calculadora_** de arquivo.
 
    ![Modelo de projeto do aplicativo do console (.NET Core) na caixa de diálogo Novo projeto no IDE do Visual Studio](./media/new-project-csharp-calculator-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>Adicionar uma carga de trabalho (opcional)
 
-Se você não vir o modelo de projeto _ *aplicativo de console (.NET Core)**, poderá obtê-lo adicionando a carga de trabalho de **desenvolvimento de plataforma cruzada do .NET Core** . Veja como.
+Se o modelo de projeto **Aplicativo do Console (.NET Core)** não for exibido, você poderá obtê-lo adicionando a carga de trabalho **Desenvolvimento .NET Core de multiplataforma**. Veja como.
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Opção 1: usar a caixa de diálogo Novo Projeto
 
@@ -620,7 +620,7 @@ Continue com a segunda parte deste tutorial:
 > [Continuar com a parte 2](tutorial-console-part-2.md)
 :::moniker-end
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
 * [Aprenda a depurar o código C# no Visual Studio](tutorial-debugger.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - dependency diagrams, adding custom gestures
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bc91e2c160d2081db868daf8d8dbaeb041172297
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9da8272f115efe4c6708bcc4d5cd0203697bfdd6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908887"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Adicionar comandos e gestos a diagramas de dependência
 
@@ -263,6 +263,6 @@ Observe os seguintes pontos sobre manipuladores de gestos:
 
 - Os manipuladores para alguns tipos de itens arrastados já estão definidos. Por exemplo, o usuário pode arrastar itens do Gerenciador de Soluções para um diagrama de dependência. Você não pode definir um manipulador de arrastar para esses tipos de item. Nesses casos, seus `DragDrop` métodos não serão invocados.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Adicionar validação de arquitetura personalizada a diagramas de dependência](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
