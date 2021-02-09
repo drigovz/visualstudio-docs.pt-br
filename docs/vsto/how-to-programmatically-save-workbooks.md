@@ -13,15 +13,15 @@ helpviewer_keywords:
 - workbooks, saving backup copies
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbc228a703d6c9224fda545a93132ccb45c94b0f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3a4f46a679e04c921aafd9a7774949d56c0925f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524625"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841991"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Como: salvar pastas de trabalho programaticamente
   Há várias maneiras de salvar uma pasta de trabalho. Você pode salvar uma pasta de trabalho sem alterar o caminho. Se a pasta de trabalho não tiver sido salva antes, você deverá salvar a pasta de trabalho especificando um caminho. Sem um caminho explícito, Microsoft Office Excel salva o arquivo na pasta atual com o nome que foi fornecido quando foi criado. Você também pode salvar uma cópia da pasta de trabalho sem modificar a pasta de trabalho aberta na memória.
@@ -84,7 +84,7 @@ ms.locfileid: "97524625"
 ## <a name="robust-programming"></a>Programação robusta
  O cancelamento interativo de qualquer um dos métodos que salvam ou copiam a pasta de trabalho gera um erro em tempo de execução em seu código. Por exemplo, se o procedimento chama o <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> método, mas não desabilita prompts do Excel e o usuário clica em **Cancelar** quando solicitado, o Excel gera um erro em tempo de execução.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Trabalhar com pastas de trabalho](../vsto/working-with-workbooks.md)
 - [Item de host da pasta de trabalho](../vsto/workbook-host-item.md)
 - [Como: fechar pastas de trabalho programaticamente](../vsto/how-to-programmatically-close-workbooks.md)

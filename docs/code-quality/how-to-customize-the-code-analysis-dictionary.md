@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 33a552cfe918ef75257a4d23391535622560661c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 10466acedcd5c7f5fda835d66e654128a556d0a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860094"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Como personalizar o dicionário de análise do código
 
@@ -266,13 +266,13 @@ Os termos no nó Dictionary/acrônimos/CasingExceptions são aplicados às segui
 
 ## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a> Para aplicar um dicionário personalizado a um projeto
 
-1. No **Gerenciador de soluções** , use um dos seguintes procedimentos:
+1. No **Gerenciador de soluções**, use um dos seguintes procedimentos:
 
     - Para adicionar um dicionário a um único projeto, clique com o botão direito do mouse no nome do projeto e clique em **Adicionar item existente**. Especifique o arquivo na caixa de diálogo **Adicionar item existente** .
   
     - Para adicionar um dicionário compartilhado entre dois ou mais projetos, localize o arquivo para compartilhar na caixa de diálogo **Adicionar item existente** , clique na seta para baixo no botão **Adicionar** e, em seguida, clique em **Adicionar como link**.
 
-2. Em **Gerenciador de soluções** , clique com o botão direito do mouse no nome do arquivo de **CustomDictionary.xml** e clique em **Propriedades**.
+2. Em **Gerenciador de soluções**, clique com o botão direito do mouse no nome do arquivo de **CustomDictionary.xml** e clique em **Propriedades**.
 
 3. Na lista **ação de compilação** , selecione **CodeAnalysisDictionary**.
 

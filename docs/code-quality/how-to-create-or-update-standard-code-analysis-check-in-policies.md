@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code analysis, migrating check-in policy
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5f03cbd78944d49301362c07d01497abb22734c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3d46ed89880c41cbcaa6982c386e2ff8f115f8de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348756"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860107"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Como criar ou atualizar políticas de check-in de análise do código padrão
 
@@ -41,7 +41,7 @@ Depois de especificar uma política de check-in para código gerenciado, os memb
 
 1. Na caixa de diálogo **controle do código-fonte** , selecione a guia **política de check-in** .
 
-1. Realize uma destas ações:
+1. Realize um dos seguintes procedimentos:
 
     - Clique em **Adicionar** para criar uma nova política de check-in.
 
@@ -69,6 +69,6 @@ Na lista **executar este conjunto de regras** , use um dos seguintes métodos:
 
 Para obter mais informações sobre como criar e implementar um conjunto de regras de política de check-in personalizado, consulte [implementar políticas de check-in personalizadas para código gerenciado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Implementar políticas de check-in de análise de código personalizadas para código gerenciado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0b48f35a9467e1f69a0055ac0859083078f9cf3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b572a6854d505704accd79cc4da2ac4e52c193d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88992349"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850160"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Criar uma instalação de rede do Visual Studio
 
@@ -33,7 +33,7 @@ Fizemos isso para que as estações de trabalho cliente pudessem usar o mesmo lo
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Baixar o bootstrapper do Visual Studio
 
-Baixe um arquivo bootstrapper para a edição do Visual Studio que você deseja. Certifique-se de escolher **salvar**e, em seguida, escolha **abrir pasta**.
+Baixe um arquivo bootstrapper para a edição do Visual Studio que você deseja. Certifique-se de escolher **salvar** e, em seguida, escolha **abrir pasta**.
 
 ::: moniker range="vs-2017"
 
@@ -41,13 +41,13 @@ Para obter um bootstrapper para o Visual Studio 2017, consulte a página de down
 
 Seu executável de instalação &mdash; ou ser mais específico, o arquivo bootstrapper &mdash; deve corresponder ou ser semelhante a um dos seguintes.
 
-| Edição | Nome de arquivo |
+| Edition | Nome de arquivo |
 |-------------|-----------------------|
 |Visual Studio Enterprise | **vs_enterprise.exe** |
 |Visual Studio Professional | **vs_professional.exe** |
 |Ferramentas de Build do Visual Studio   | **vs_buildtools.exe** |
 
-Outros bootstrapper com suporte incluem **vs_feedbackclient.exe**, **vs_teamexplorer.exe**, **vs_testagent.exe**, **vs_testcontroller.exe**e **vs_testprofessional.exe**.
+Outros bootstrapper com suporte incluem **vs_feedbackclient.exe**, **vs_teamexplorer.exe**, **vs_testagent.exe**, **vs_testcontroller.exe** e **vs_testprofessional.exe**.
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ Outros bootstrapper com suporte incluem **vs_feedbackclient.exe**, **vs_teamexpl
 
 Seu executável de instalação &mdash; ou ser mais específico, um arquivo bootstrapper &mdash; deve corresponder ou ser semelhante a um dos itens a seguir.
 
-|Edição | Baixar|
+|Edition | Baixar|
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], getting started
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: be4e129de68d2a7f7690ba24acc92fb09400cfb2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d7e6f891f8485d4e08734e59a11db8018eaa07b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845109"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860628"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Introdução à programação de suplementos do VSTO
   Você pode usar os suplementos do VSTO para automatizar Microsoft Office aplicativos, estender recursos do aplicativo e personalizar a interface do usuário do aplicativo. Para obter informações sobre como os suplementos do VSTO se comparam com outros tipos de soluções do Office que você pode criar usando o Visual Studio, consulte [visão geral do desenvolvimento de soluções do office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).

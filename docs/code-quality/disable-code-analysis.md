@@ -9,13 +9,13 @@ helpviewer_keywords:
 - disable code analysis
 author: mikadumont
 ms.author: midumont
-manager: jillfra
-ms.openlocfilehash: e808cb623fa47c9971e1cdceb15a02b5bf46e901
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+manager: jmartens
+ms.openlocfilehash: 6a1f1466caa921d46ce4701f5074b98f3d5ba051
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348548"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860380"
 ---
 # <a name="disable-source-code-analysis-for-net"></a>Desabilitar análise de código-fonte para .NET
 
@@ -69,7 +69,7 @@ Exemplos:
 
 ## <a name="source-analysis"></a>Análise de código-fonte
 
-Não é possível desativar a [análise de origem](roslyn-analyzers-overview.md) no Visual Studio 2017. Se você quiser limpar erros do analisador do **lista de erros** , poderá suprimir todas as violações atuais selecionando **analisar**  >  **executar análise de código e suprimir problemas ativos** na barra de menus. Para obter mais informações, consulte [suprimir violações](use-roslyn-analyzers.md#suppress-violations).
+Não é possível desativar a [análise de origem](roslyn-analyzers-overview.md) no Visual Studio 2017. Se você quiser limpar erros do analisador do **lista de erros**, poderá suprimir todas as violações atuais selecionando **analisar**  >  **executar análise de código e suprimir problemas ativos** na barra de menus. Para obter mais informações, consulte [suprimir violações](use-roslyn-analyzers.md#suppress-violations).
 
 A partir do Visual Studio 2019 versão 16,3, você pode desativar a análise de código-fonte ou executá-la sob demanda. Considere atualizar para o Visual Studio 2019.
 
@@ -79,7 +79,7 @@ Você pode desabilitar a análise herdada e em tempo de compilação na página 
 
 ::: moniker-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Suprimir violações](use-roslyn-analyzers.md#suppress-violations)
 - [Como habilitar e desabilitar a análise de código herdado](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

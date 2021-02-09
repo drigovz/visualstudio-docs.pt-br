@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6eb2f6e1358c91a1103615aca67ede4a3561fae
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 373e062ad7f2d8600fd28f098cbc0cae1c8d5a65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436661"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859002"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Criar consultas TableAdapter parametrizadas
 
@@ -42,7 +42,7 @@ Você cria consultas de TableAdapter com parâmetros no **Designer de conjunto d
 
 - Crie um novo TableAdapter, adicionando uma cláusula WHERE com os parâmetros desejados à instrução SQL. Para obter mais informações, consulte [criar e configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-     - ou -
+     -ou-
 
 - Acrescente uma consulta a um TableAdapter existente, adicionando uma cláusula WHERE com os parâmetros desejados à instrução SQL.
 
@@ -52,7 +52,7 @@ Você cria consultas de TableAdapter com parâmetros no **Designer de conjunto d
 
 2. No menu **dados** , selecione **Adicionar consulta**.
 
-3. Preencha a caixa de diálogo **Pesquisar Construtor de Critérios** , adicionando uma cláusula WHERE com os parâmetros desejados à instrução SQL.
+3. Preencha a caixa de diálogo **Pesquisar Construtor de Critérios**, adicionando uma cláusula WHERE com os parâmetros desejados à instrução SQL.
 
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>Adicionar uma consulta a um formulário associado a dados existente
 
@@ -61,13 +61,13 @@ Você cria consultas de TableAdapter com parâmetros no **Designer de conjunto d
 2. No menu **dados** , selecione Adicionar **marcas inteligentes** de **consulta** ou de dados.
 
     > [!NOTE]
-    > Se **Adicionar Consulta** não estiver disponível no menu **Dados** , selecione um controle no formulário que exibe a fonte de dados no qual deseja adicionar a parametrização. Por exemplo, se o formulário exibir dados em um controle <xref:System.Windows.Forms.DataGridView>, selecione-o. Se o formulário exibir dados em controles individuais, selecione qualquer controle associado a dados.
+    > Se **Adicionar Consulta** não estiver disponível no menu **Dados**, selecione um controle no formulário que exibe a fonte de dados no qual deseja adicionar a parametrização. Por exemplo, se o formulário exibir dados em um controle <xref:System.Windows.Forms.DataGridView>, selecione-o. Se o formulário exibir dados em controles individuais, selecione qualquer controle associado a dados.
 
 3. Na área **selecionar tabela de fonte de dados** , selecione a tabela à qual você deseja adicionar a parametrização.
 
 4. Digite um nome na caixa **Nome da nova consulta** ao criar uma nova consulta.
 
-     - ou -
+     -ou-
 
      Selecione uma consulta na caixa **Nome da consulta existente**.
 
@@ -94,9 +94,9 @@ Se essa fosse uma consulta em um TableAdapter, você poderia consultar todos os 
 
 Para habilitar uma consulta para aceitar valores nulos:
 
-1. Na **Designer de conjunto de dados** , selecione a consulta do TableAdapter que precisa aceitar valores de parâmetro nulos.
+1. Na **Designer de conjunto de dados**, selecione a consulta do TableAdapter que precisa aceitar valores de parâmetro nulos.
 
-2. Na janela **Propriedades** , selecione **parâmetros** e clique no botão de reticências ( **...** ) para abrir o **Editor de coleção de parâmetros**.
+2. Na janela **Propriedades** , selecione **parâmetros** e clique no botão de reticências (**...**) para abrir o **Editor de coleção de parâmetros**.
 
 3. Selecione o parâmetro que permite valores nulos e defina a propriedade **AllowDBNull** como `true` .
 

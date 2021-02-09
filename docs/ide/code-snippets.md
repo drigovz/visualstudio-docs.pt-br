@@ -12,19 +12,19 @@ helpviewer_keywords:
 - code snippets
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 52059dd464ad0c720a4a2e77a961b7d6f3525c6d
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 642bfe9fdccaa607476facb792120502437cb4b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006387"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841957"
 ---
 # <a name="code-snippets"></a>Snippets de código
 
@@ -39,9 +39,9 @@ Os snippets de código estão disponíveis para uma variedade de linguagens, inc
 
 Em geral, os snippets de código podem ser acessados das seguintes maneiras:
 
-- Na barra de menus, escolha **Editar**  >  **IntelliSense**  >  **trecho de código de inserção** do IntelliSense
+- Na barra de menus, escolha **Editar**  >    >  **trecho de código de inserção** do IntelliSense
 
-- No menu de contexto ou clique com o botão direito do mouse no editor **Snippet** de códigos, escolha trecho de código de  >  **inserção** de trecho
+- No menu de contexto ou clique com o botão direito do mouse no editor de códigos, escolha trecho de código de  >  **inserção** de trecho
 
 - No teclado, pressione **Ctrl** + **K**,**Ctrl** + **X**
 

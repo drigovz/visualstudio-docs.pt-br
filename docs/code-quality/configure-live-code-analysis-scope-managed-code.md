@@ -11,21 +11,21 @@ helpviewer_keywords:
 - full solution analysis
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9690e50ccbe927702ef1b3e7e99545c07cdced41
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 7a6a7253d4104fbcde09b96b86f5f83a864677cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348457"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860393"
 ---
 # <a name="configure-live-code-analysis-for-net"></a>Configurar análise de código ao vivo para .NET
 
-O Visual Studio executa várias análises de código ao vivo, também chamadas de *análise em segundo plano* , enquanto você edita os arquivos de origem no editor. Algumas delas são necessárias para uma análise mínima de uma experiência aceitável de edição do IDE do Visual Studio. Alguns deles são para uma capacidade de resposta aprimorada para os recursos do IDE. Embora seja possível habilitar funcionalidades adicionais do IDE, como diagnóstico e correções de código de analisadores Roslyn. Com base na funcionalidade, essas análises podem ser agrupadas da seguinte maneira:
+O Visual Studio executa várias análises de código ao vivo, também chamadas de *análise em segundo plano*, enquanto você edita os arquivos de origem no editor. Algumas delas são necessárias para uma análise mínima de uma experiência aceitável de edição do IDE do Visual Studio. Alguns deles são para uma capacidade de resposta aprimorada para os recursos do IDE. Embora seja possível habilitar funcionalidades adicionais do IDE, como diagnóstico e correções de código de analisadores Roslyn. Com base na funcionalidade, essas análises podem ser agrupadas da seguinte maneira:
 
-- **Computação em segundo plano de diagnóstico** : análise para computar erros, avisos e sugestões em arquivos de origem. Esses diagnósticos aparecem como entradas na lista de erros e como rabiscos no editor. Eles podem ser classificados em duas categorias:
+- **Computação em segundo plano de diagnóstico**: análise para computar erros, avisos e sugestões em arquivos de origem. Esses diagnósticos aparecem como entradas na lista de erros e como rabiscos no editor. Eles podem ser classificados em duas categorias:
   - Diagnóstico de compilador do C# e do Visual Basic
   - Diagnóstico do Roslyn Analyzer, que inclui:
 
@@ -33,7 +33,7 @@ O Visual Studio executa várias análises de código ao vivo, também chamadas d
     - Analisadores de autoridade de certificação internos para sugestões de qualidade de código
     - Pacotes do analisador de terceiros [instalados](./install-roslyn-analyzers.md) para projetos na solução atual.
 
-- **Outras análises em segundo plano** : análise para melhorar a capacidade de resposta e a interação do Visual Studio para recursos do IDE. Alguns exemplos dessas análises são:
+- **Outras análises em segundo plano**: análise para melhorar a capacidade de resposta e a interação do Visual Studio para recursos do IDE. Alguns exemplos dessas análises são:
   - Análise em segundo plano de arquivos abertos.
   - Compilação em segundo plano de projetos com arquivos abertos para obter símbolos para uma capacidade de resposta aprimorada de determinados recursos do IDE.
   - Criando caches de sintaxe e de símbolos.
@@ -53,9 +53,9 @@ O escopo padrão de cada análise em segundo plano foi ajustado para a melhor ex
 
 A partir do Visual Studio 2019 versão 16,5, os usuários podem personalizar explicitamente o escopo de todas as análises de código ao vivo, incluindo a computação de diagnóstico, para projetos em C# e Visual Basic. Os escopos de análise disponíveis são:
 
-- **Documento atual** : minimiza o escopo de análise de código ao vivo para execução somente para o arquivo atual ou visível no editor.
-- **Documentos abertos** : escopo de análise de código ativo padrão, conforme descrito na seção acima.
-- **Solução inteira** : maximiza o escopo de análise de código ao vivo para executar para todos os arquivos e projetos em toda a solução.
+- **Documento atual**: minimiza o escopo de análise de código ao vivo para execução somente para o arquivo atual ou visível no editor.
+- **Documentos abertos**: escopo de análise de código ativo padrão, conforme descrito na seção acima.
+- **Solução inteira**: maximiza o escopo de análise de código ao vivo para executar para todos os arquivos e projetos em toda a solução.
 
 Você pode escolher um dos escopos de análise personalizados acima na caixa de diálogo ferramentas opções seguindo as etapas abaixo:
 
@@ -68,7 +68,7 @@ Você pode escolher um dos escopos de análise personalizados acima na caixa de 
 ![Escopo da análise.](./media/background-analysis-scope.png)
 
 > [!NOTE]
-> Antes do Visual Studio 2019 versão 16,5, os usuários podem personalizar o escopo de análise para a computação de diagnóstico para toda a solução usando a caixa de seleção **Habilitar análise de solução completa** de **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **C#** ou **Basic**  >  guia **avançado** básico. Não há suporte para minimizar o escopo da análise em segundo plano nas versões anteriores do Visual Studio.
+> Antes do Visual Studio 2019 versão 16,5, os usuários podem personalizar o escopo de análise para a computação de diagnóstico para toda a solução usando a caixa de seleção **Habilitar análise de solução completa** de **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **C#** ou   >  guia **avançado** básico. Não há suporte para minimizar o escopo da análise em segundo plano nas versões anteriores do Visual Studio.
 
 ## <a name="automatically-minimize-live-code-analysis-scope"></a>Minimizar automaticamente o escopo da análise de código dinâmico
 
@@ -76,7 +76,7 @@ Se o Visual Studio detectar que 200 MB ou menos de memória do sistema está dis
 
 ![Texto de alerta minimizando o escopo de análise](./media/fsa_alert.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Suspensão automática de recursos](./automatic-feature-suspension.md)
 - [Solicitação de recurso do modo de economia de energia](https://github.com/dotnet/roslyn/issues/38429)

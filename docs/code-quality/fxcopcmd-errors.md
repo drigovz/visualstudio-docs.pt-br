@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 ms.author: mikejo
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c900ec10ea13e7f9d7092769565703bf52fe8c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: efeabd85bbf2753dd3f5e37a43e0918b7f95d7fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860211"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Erros da ferramenta FxCopCmd
 
@@ -54,6 +54,6 @@ O **erro de análise** é retornado para erros fatais. Isso indica que a anális
 > [!NOTE]
 > O assembly de código de retorno FxCopCmd **referencia o erro** 0x200 por si só é um aviso em vez de um erro. Esse código de retorno indica que há referências indiretas ausentes, mas que FxCopCmd foi capaz de tratá-las. O aviso significa que há uma possibilidade de que alguns resultados da análise possam ter sido comprometidos. Tratar **erro de referências de assembly** como um erro quando ele é combinado com qualquer outro código de retorno.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Erros do aplicativo de análise do código](../code-quality/code-analysis-application-errors.md)

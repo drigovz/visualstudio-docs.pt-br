@@ -17,15 +17,15 @@ helpviewer_keywords:
 - code analysis, rule sets
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c14a72ff0d797f2fcab8e4ac62d0e0a3fb1001f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 8b76678b1e5c0f53502e24f8baee87ede3bd3ef6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348795"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860172"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Como: configurar a análise herdada para código gerenciado
 
@@ -38,7 +38,7 @@ No Visual Studio, você pode escolher em uma lista de conjuntos de [regras](../c
 
 1. Abra a guia **análise de código** nas páginas de propriedades do projeto. É possível fazer isso de qualquer uma destas maneiras:
 
-   - Em **Gerenciador de soluções** , escolha o projeto. Na barra de menus, selecione **analisar**  >  **Configurar análise**  >  **de código \<projectname> para**.
+   - Em **Gerenciador de soluções**, escolha o projeto. Na barra de menus, selecione **analisar**  >  **Configurar análise**  >  **de código \<projectname> para**.
 
    - Clique com o botão direito do mouse no projeto em **Gerenciador de soluções** e selecione **Propriedades** e, em seguida, selecione a guia **análise de código** .
 
@@ -99,6 +99,6 @@ Por padrão, todos os projetos gerenciados de uma solução são atribuídos ao 
 
 5. Selecione o campo **conjunto de regras** de um projeto e, em seguida, selecione o nome do conjunto de regras que você deseja aplicar.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência do conjunto de regras da análise de código](../code-quality/rule-set-reference.md)

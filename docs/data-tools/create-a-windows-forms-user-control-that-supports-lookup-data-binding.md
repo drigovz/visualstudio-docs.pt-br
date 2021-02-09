@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: de89839dd85f0f330356e1ade7d4658428ea3d3e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0eeb3e768370066bf93afc766d4d7f67d8d39a1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435268"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859067"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Criar um controle de usuário do Windows Forms compatível com associação de dados de consulta
 
@@ -60,7 +60,7 @@ Durante este passo a passos, você aprenderá a:
 
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
-1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **instalador do Visual Studio** , você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho de **armazenamento e processamento de dados** ou como um componente individual.
+1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **instalador do Visual Studio**, você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho de **armazenamento e processamento de dados** ou como um componente individual.
 
 2. Instale o banco de dados de exemplo Northwind seguindo estas etapas:
 
@@ -78,7 +78,7 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 A primeira etapa é criar um projeto de **aplicativo Windows Forms** .
 
-1. No Visual Studio, no menu **Arquivo** , selecione **Novo** > **Projeto**.
+1. No Visual Studio, no menu **Arquivo**, selecione **Novo** > **Projeto**.
 
 2. Expanda o **Visual C#** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
@@ -90,9 +90,9 @@ A primeira etapa é criar um projeto de **aplicativo Windows Forms** .
 
 ## <a name="add-a-user-control-to-the-project"></a>Adicionar um controle de usuário ao projeto
 
-Este passo a passo cria um controle de pesquisa de um **Controle de Usuário** , portanto, adicione um item de **Controle de Usuário** ao projeto **LookupControlWalkthrough**.
+Este passo a passo cria um controle de pesquisa de um **Controle de Usuário**, portanto, adicione um item de **Controle de Usuário** ao projeto **LookupControlWalkthrough**.
 
-1. No menu **Projeto** , selecione **Adicionar Controle do Usuário**.
+1. No menu **Projeto**, selecione **Adicionar Controle do Usuário**.
 
 2. Digite `LookupBox` a área **nome** e clique em **Adicionar**.
 
@@ -106,7 +106,7 @@ Para criar o controle LookupBox, arraste um <xref:System.Windows.Forms.ComboBox>
 
 Para controles de pesquisa que suportam associação de dados, você pode implementar o <xref:System.ComponentModel.LookupBindingPropertiesAttribute>.
 
-1. Mude o controle **LookupBox** para exibição de código. (No menu **Exibir** , escolha **Código**.)
+1. Mude o controle **LookupBox** para exibição de código. (No menu **Exibir**, escolha **Código**.)
 
 2. Substitua o código no `LookupBox` pelo seguinte:
 
@@ -121,7 +121,7 @@ Esta etapa cria uma fonte de dados usando o **Assistente de Configuração de Fo
 
 1. Para abrir a janela **fontes de dados** , no menu **dados** , clique em **mostrar fontes de dados**.
 
-2. Na janela **Fontes de Dados** , selecione **Adicionar Nova Fonte de Dados** para iniciar o assistente de **Configuração de Fonte de Dados**.
+2. Na janela **Fontes de Dados**, selecione **Adicionar Nova Fonte de Dados** para iniciar o assistente de **Configuração de Fonte de Dados**.
 
 3. Selecione **Banco de Dados** na página **Escolher um Tipo de Fonte de Dados** e, em seguida, clique em **Avançar**.
 
@@ -143,17 +143,17 @@ Esta etapa cria uma fonte de dados usando o **Assistente de Configuração de Fo
 
 ## <a name="set-the-customerid-column-of-the-orders-table-to-use-the-lookupbox-control"></a>Definir a coluna CustomerID da tabela Orders para usar o controle LookupBox
 
-Na janela **Fontes de Dados** , você pode definir o controle a ser criado antes de arrastar itens para seu formulário.
+Na janela **Fontes de Dados**, você pode definir o controle a ser criado antes de arrastar itens para seu formulário.
 
 1. Abra **Form1** no designer.
 
 2. Expanda o nó **Clientes** na janela **Fontes de Dados**.
 
-3. Expanda o nó **Pedidos** (no nó **Clientes** abaixo da coluna **Fax** ).
+3. Expanda o nó **Pedidos** (no nó **Clientes** abaixo da coluna **Fax**).
 
 4. Clique na seta suspensa no nó **Pedidos** e escolha **Detalhes** na lista de controle.
 
-5. Clique na seta suspensa na coluna **CustomerID** (no nó **Pedidos** ) e escolha **Personalizar**.
+5. Clique na seta suspensa na coluna **CustomerID** (no nó **Pedidos**) e escolha **Personalizar**.
 
 6. Selecione **LookupBox** na lista de **Controles Associados** na caixa de diálogo **Opções de Personalização da Interface do Usuário de Dados**.
 
@@ -179,6 +179,6 @@ Isso configura a associação de dados para exibir o `CompanyName` da tabela `Cu
 
 - Navegue por alguns registros e verifique se `CompanyName` aparece no controle `LookupBox`.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Associar controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

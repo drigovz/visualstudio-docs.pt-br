@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43dae5ec9ca68c746b914ad0a75b792f2a6e6b43
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 5fdd14b394bca495b38f408be94b46a4b9a68c01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349094"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860549"
 ---
 # <a name="code-analysis-policy-errors"></a>Erros da política de análise do código
 
@@ -31,7 +31,7 @@ Os requisitos de análise de código que verificam o controle do código-fonte d
 
 - A análise de código não está habilitada na compilação para todos os projetos na solução.
 
-- O conjunto de regras locais para o projeto no Visual Studio tem uma configuração de **ação** menos restritiva do que o conjunto de regras do projeto, por exemplo, uma regra definida como erro de **ação** = **Error** no servidor tem sua **ação** definida como **aviso** ou **nenhuma** no conjunto de regras que está sendo executado no Visual Studio).
+- O conjunto de regras locais para o projeto no Visual Studio tem uma configuração de **ação** menos restritiva do que o conjunto de regras do projeto, por exemplo, uma regra definida como erro de **ação** =  no servidor tem sua **ação** definida como **aviso** ou **nenhuma** no conjunto de regras que está sendo executado no Visual Studio).
 
 - O conjunto de regras especificado no Visual Studio não contém todas as regras especificadas no conjunto de regras especificado na política de check-in de análise de código do projeto.
 
@@ -75,6 +75,6 @@ Esse erro é aplicado a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)
 
 Esse erro se aplica a projetos não gerenciados. A política de análise de código requer análise de código para C/C++, mas não está habilitada no projeto atual no cliente.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Erros do aplicativo de análise do código](../code-quality/code-analysis-application-errors.md)

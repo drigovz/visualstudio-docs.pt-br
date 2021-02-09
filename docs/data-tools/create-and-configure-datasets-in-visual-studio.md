@@ -10,15 +10,15 @@ helpviewer_keywords:
 - datasets, configuring
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a9a10d68b5b0617b5c4e2152cbbbb920a7c683f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f625b17841fe63b0c42dcfb82c2e859d6406e776
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435398"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859119"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Como: criar e configurar conjuntos de valores no Visual Studio
 
@@ -90,7 +90,7 @@ Este procedimento mostra como adicionar uma tabela do mesmo banco de dados que v
 
 Tabelas autônomas precisam implementar a `Fill` lógica em tabelas autônomas para que você possa preenchê-las com dados. Para obter informações sobre como preencher tabelas de dados autônomas, consulte [Populando um DataSet de um DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Relacionamentos em conjuntos de dados](../data-tools/relationships-in-datasets.md)

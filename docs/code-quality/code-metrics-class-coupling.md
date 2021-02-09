@@ -5,15 +5,15 @@ description: Saiba mais sobre a métrica de acoplamento de classe para métricas
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: db1308843cb3c4fe8fb0a4aa32300e545e5e3a7c
-ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
+ms.openlocfilehash: f8320c460faf7532887364693080d38c0ff6baa6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98069584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860510"
 ---
 # <a name="code-metrics---class-coupling"></a>Métricas de código – acoplamento de classe
 
