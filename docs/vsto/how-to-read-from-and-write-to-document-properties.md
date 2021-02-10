@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], document properties
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 60ee5ccebc9c6c38369ed707c9d2043ffc1995c9
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 864906e678cb3976e99dd8d9aeb9147e303f2517
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528205"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942173"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Como: ler e gravar nas propriedades do documento
   Você pode armazenar as propriedades do documento junto com um documento. Os aplicativos do Office fornecem várias propriedades internas, como autor, título e assunto. Este tópico mostra como definir propriedades de documento no Microsoft Office Excel e Microsoft Office Word.
@@ -80,7 +80,7 @@ ms.locfileid: "97528205"
 
  Embora você esteja trabalhando com o Word e o Excel e seus objetos, Microsoft Office fornece a lista de propriedades de documento internas disponíveis. A tentativa de acessar uma propriedade indefinida gera uma exceção.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)
 - [Programar personalizações em nível de documento](../vsto/programming-document-level-customizations.md)
 - [Como: criar e modificar propriedades de documento personalizadas](../vsto/how-to-create-and-modify-custom-document-properties.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ffe163ab567de98161f185ba2f3d2522c505095
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: e6ad377ddb457018099256cd64b6b8382c69df81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942068"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navegar pelo código com o depurador do Visual Studio
 
@@ -82,7 +82,7 @@ Em uma chamada de função aninhada, a **Depuração Completa** intervém na fun
 
 Talvez você não se preocupa com uma função durante a depuração, ou você sabe que ela funciona, como um código de biblioteca bem testado. Você pode usar os comandos a seguir para ignorar o código durante a depuração de código. As funções ainda são executadas, mas o depurador as ignora.
 
-|Comando de teclado|Comando do menu Depurar|Descrição|
+|Comando de teclado|Comando do menu Depurar|Description|
 |----------------------|------------------|-----------------|
 |**F10**|**Contornar**|Se a linha atual contiver uma chamada de função, a **etapa** executará o código e suspenderá a execução na primeira linha de código depois que a função chamada retornar.|
 |**Shift** + **F11**|**Sair**|O **Step Out** continua executando o código e suspende a execução quando a função atual retorna. O depurador ignora a função atual.|
@@ -187,7 +187,7 @@ Para carregar os símbolos da Microsoft, consulte [Configurar locais de símbolo
 ## <a name="step-into-properties-and-operators-in-managed-code"></a><a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Intervir em propriedades e operadores no código gerenciado
  O depurador considera propriedades e operadores no código gerenciado por padrão. Na maioria dos casos, isso proporciona uma melhor experiência de depuração. Para habilitar a depuração em Propriedades ou operadores, escolha opções de **depuração**  >  . Na página **depuração**  >  **geral** , desmarque a caixa de seleção **passar por propriedades e operadores (somente gerenciados)** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [O que é depuração?](../debugger/what-is-debugging.md)
 - [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md)
 - [Primeira olhada na depuração](../debugger/debugger-feature-tour.md)

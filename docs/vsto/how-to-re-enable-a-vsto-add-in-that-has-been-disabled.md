@@ -15,15 +15,15 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], enabling
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d03a03494b149a761910ddbdaa1d41592704f969
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: de3e251c15699ce29b7986e4f0cc19a3f5c5798d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524475"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942172"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Como: reabilitar um suplemento do VSTO que foi desabilitado
   Microsoft Office aplicativos podem desabilitar os suplementos do VSTO que se comportam inesperadamente. Se um aplicativo não carregar seu suplemento do VSTO quando você tentar depurá-lo, o aplicativo poderá ter o disco rígido desabilitado ou desabilitado por software do seu suplemento do VSTO.
@@ -75,7 +75,7 @@ ms.locfileid: "97524475"
 
 7. Clique em **OK**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Criar soluções do Office](../vsto/building-office-solutions.md)
 - [Depurar projetos do Office](../vsto/debugging-office-projects.md)
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)

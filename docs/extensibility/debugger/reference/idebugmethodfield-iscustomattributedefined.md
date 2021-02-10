@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1b5d95a8-cc87-4acb-9e6a-3928f3632b7c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d60e7a451a18ff8efbf47a008831109cd7f747c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63351a106497121c40fa7fb04d95b59494e4575e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727113"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941821"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
 Determina se um atributo personalizado específico foi definido.
@@ -28,7 +28,7 @@ Determina se um atributo personalizado específico foi definido.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT IsCustomAttributeDefined( 
+HRESULT IsCustomAttributeDefined( 
    LPCOLESTR pszCustomAttributeName
 );
 ```
@@ -43,8 +43,8 @@ int IsCustomAttributeDefined(
 `pszCustomAttributeName`\
 no Uma cadeia de caracteres que contém o nome do atributo personalizado a ser localizado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Retorna S_OK se o atributo personalizado for definido nesse método; caso contrário, retorna S_FALSE.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

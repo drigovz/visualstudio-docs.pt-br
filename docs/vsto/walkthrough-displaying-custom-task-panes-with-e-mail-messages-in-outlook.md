@@ -16,15 +16,15 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], displaying with e-mail messages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ac14eff05c6f776181c20acde4cff4e2ed7a87b6
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e1092f48ad699291ccad9abcc8c834344821c060
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522714"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942120"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Walkthrough: Exibir painéis de tarefas personalizados com mensagens de email no Outlook
   Este tutorial demonstra como exibir uma instância exclusiva de um painel de tarefas personalizado com cada mensagem de email que é criada ou aberta. Os usuários podem exibir ou ocultar o painel de tarefas personalizado usando um botão na faixa de de cada mensagem de email.
@@ -269,7 +269,7 @@ ms.locfileid: "97522714"
 
 - Crie um botão da faixa de medida no Excel que possa ser usado para ocultar ou exibir um painel de tarefas personalizado. Para obter mais informações, consulte [Walkthrough: sincronizar um painel de tarefas personalizado com um botão Ribbon](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Painéis de tarefas personalizados](../vsto/custom-task-panes.md)
 - [Como: adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [Walkthrough: automatizar um aplicativo de um painel de tarefas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
