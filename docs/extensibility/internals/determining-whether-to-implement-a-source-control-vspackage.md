@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7b6c0e786f13ff526a1b71861c040cb165bc9e4
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 80c86a8ab40b74d1b8f2838e3bf4359af41b0fc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329816"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963426"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>Determinar se uma VSPackage de controle do código-fonte deve ser implementada
 
@@ -31,7 +31,7 @@ Esta seção elabora as opções de plug-ins de controle do código-fonte e VSPa
 
  Se você quiser implementar uma solução de controle do código-fonte que fornece um modelo de controle do código-fonte avançado que não é capturado adequadamente usando a API de plug-in de controle do código-fonte, você pode considerar um pacote de controle do código-fonte como o caminho de integração. Isso se aplica especialmente se você preferir substituir o pacote do adaptador de controle do código-fonte (que se comunica com plug-ins de controle do código-fonte e fornece uma interface do usuário de controle do código-fonte básica) com o seu próprio para que você possa manipular os eventos de controle do código-fonte de maneira personalizada. Se você já tiver uma interface do usuário de controle do código-fonte satisfatória e quiser preservar essa experiência no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , a opção do pacote de controle do código-fonte permitirá que você faça exatamente isso. O pacote de controle do código-fonte não é genérico e é projetado exclusivamente para uso com o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
 
- Se você quiser implementar uma solução de controle do código-fonte que forneça flexibilidade e controle mais avançado sobre a lógica de controle do código-fonte e a interface do usuário, você pode preferir a rota de integração do pacote de controle do código-fonte Você poderá:
+ Se você quiser implementar uma solução de controle do código-fonte que forneça flexibilidade e controle mais avançado sobre a lógica de controle do código-fonte e a interface do usuário, você pode preferir a rota de integração do pacote de controle do código-fonte Você pode:
 
 1. Registre seu próprio VSPackage de controle do código-fonte (consulte [registro e seleção](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).
 
@@ -41,6 +41,6 @@ Esta seção elabora as opções de plug-ins de controle do código-fonte e VSPa
 
 4. Manipule eventos de edição de consulta e salvar consulta (veja [consulta editar consulta salvar](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criar um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md)
