@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <friendlyName> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6629212fcc981ba3decb3b02d63975bc9826dc1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c04a7a90f32051cc211fece4f27f1f46f8fb92f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541655"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939260"
 ---
 # <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;elemento FriendlyName &gt; (desenvolvimento do Office no Visual Studio)
   O `friendlyName` elemento do `vstov4` namespace armazena o nome que aparece na lista de programas instalados.

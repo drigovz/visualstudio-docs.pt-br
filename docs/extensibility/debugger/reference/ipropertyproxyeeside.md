@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: cf227cf8-39d9-4758-8f7e-a697aebb1926
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c89cecbf22091a45e31c307c5b523ac8aa4c924e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0331365716c8399c1b2a565fc8046482df5d80f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714853"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938896"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
 Essa interface fornece métodos para exibir dados no objeto associado. Essa interface faz parte do suporte para visualizadores de tipo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IPropertyProxyEESide : IUnknown
@@ -57,7 +57,7 @@ IPropertyProxyEESide : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
-- [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
-- [Visualizador de Tipo e Visualizador Personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+- [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Visualizador de tipo e visualizador personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -14,21 +14,21 @@ helpviewer_keywords:
 ms.assetid: 2a7d5704-5e8c-452c-9ef3-5e8ec5e952fe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f852182baec22915f412a3753755b129053e0ad
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 6f71f042df1ef683ed48e2389e2c781dfb22bff1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383021"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939247"
 ---
 # <a name="clickonce-reference"></a>Referência de ClickOnce
 As páginas a seguir descrevem a estrutura dos arquivos XML usados para representar aplicativos ClickOnce.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Manifesto de aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)
+ [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)
 
  Lista e descreve os elementos e atributos que compõem um manifesto do aplicativo.
 

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d86f57abdc96e4fc4f2abbb781e9437c74854a7c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598140"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939286"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Adicionar uma extensão do Language Server Protocol
 
@@ -109,7 +109,7 @@ textDocument/renomear | sim
 
 Para criar uma extensão de serviço de idioma usando um servidor de linguagem baseado em LSP, primeiro verifique se você tem a carga de trabalho de **desenvolvimento de extensão do Visual Studio** instalada para sua instância do vs.
 
-Em seguida, crie um novo projeto VSIX navegando até **arquivo**  >  **novo projeto** projeto  >  VSIX de extensibilidade do **Visual C#**  >  **Extensibility**  >  **VSIX Project**:
+Em seguida, crie um novo projeto VSIX navegando até **arquivo**  >  **novo projeto** projeto  >  VSIX de extensibilidade do **Visual C#**  >    >  :
 
 ![Criar projeto VSIX](media/lsp-vsix-project.png)
 
@@ -288,13 +288,13 @@ Adicionar suporte a servidores de idioma LSP não exige que você implemente seu
 
 ## <a name="advanced-features"></a>Recursos avançados
 
-### <a name="settings"></a>Configurações
+### <a name="settings"></a>Settings
 
 O suporte para configurações específicas do servidor de idioma personalizado está disponível, mas ainda está no processo de melhoria. As configurações são específicas ao que o servidor de linguagem dá suporte e geralmente controlam como o servidor de linguagem emite dados. Por exemplo, um servidor de idioma pode ter uma configuração para o número máximo de erros relatados. Os autores de extensão definem um valor padrão, que pode ser alterado por usuários para projetos específicos.
 
 Siga estas etapas abaixo para adicionar suporte para configurações para sua extensão de serviço de idioma LSP:
 
-1. Adicione um arquivo JSON (por exemplo, *MockLanguageExtensionSettings.js*) ao seu projeto que contém as configurações e seus valores padrão. Por exemplo: 
+1. Adicione um arquivo JSON (por exemplo, *MockLanguageExtensionSettings.js*) ao seu projeto que contém as configurações e seus valores padrão. Por exemplo:
 
     ```json
     {
@@ -344,7 +344,7 @@ Siga estas etapas abaixo para adicionar suporte para configurações para sua ex
 
 1. O usuário abre um espaço de trabalho que contém os arquivos que o servidor possui.
 2. O usuário adiciona um arquivo na pasta *. vs* chamada *VSWorkspaceSettings.jsno*.
-3. O usuário adiciona uma linha à *VSWorkspaceSettings.jsno* arquivo para uma configuração que o servidor fornece. Por exemplo: 
+3. O usuário adiciona uma linha à *VSWorkspaceSettings.jsno* arquivo para uma configuração que o servidor fornece. Por exemplo:
 
     ```json
     {

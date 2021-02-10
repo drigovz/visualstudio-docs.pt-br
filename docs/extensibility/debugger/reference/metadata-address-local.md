@@ -9,24 +9,24 @@ helpviewer_keywords:
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e3adf9ca5f679c7a526f10b1ee6c91d50dac52d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5d4e9ee9808c25bb0df570ac451c061067904c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714483"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938744"
 ---
 # <a name="metadata_address_local"></a>METADATA_ADDRESS_LOCAL
 
 Essa estrutura representa o endereço de uma variável local dentro de um escopo (geralmente uma função ou método).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```cpp
 typedef struct _tagMETADATA_ADDRESS_LOCAL {

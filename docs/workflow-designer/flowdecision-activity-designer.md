@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a70e7e44976df975be721d93e918d7c25d192bf
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 77570557563b4aca3109f5bcbdebd16c7af09144
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437990"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938428"
 ---
 # <a name="flowdecision-activity-designer"></a>Designer de atividade de FlowDecision
 
@@ -29,11 +29,11 @@ Use <xref:System.Activities.Statements.FlowDecision> quando o fluxo pode ser tra
 
 ### <a name="using-the-flowdecision-designer"></a>Utilizando o designer de FlowDecision
 
-O **FlowDecision** designer pode ser encontrado na categoria **fluxograma** da caixa de **ferramentas** , que é acessada clicando na guia **caixa de ferramentas** na Designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
+O **FlowDecision** designer pode ser encontrado na categoria **fluxograma** da caixa de **ferramentas**, que é acessada clicando na guia **caixa de ferramentas** na Designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
 
 O designer de **FlowDecision** pode ser arrastado da **caixa de ferramentas** e retirado para a superfície de designer de fluxo de trabalho dentro de um designer de atividade de **fluxograma** . Isso cria uma <xref:System.Activities.Statements.FlowDecision> **decisão** rotulada dentro da <xref:System.Activities.Statements.Flowchart> atividade. O mouse sobre o designer e os identificadores quadrados **verdadeiro** e **falso** para as duas ramificações são exibidos.
 
-Depois de arrastar o designer de **FlowDecision** e outros designers para o **fluxograma** , os nós podem ser vinculados juntos para especificar a ordem de execução. Para criar um link entre um nó de origem (incluindo as ramificações **true** e **false** do **FlowDecision** ) e um nó de destino, o mouse sobre o designer do nó de origem e os identificadores quadrados aparecem em cada lado dele. Clique em uma das alças de quadradas e arraste-a segurando o botão do mouse na uma das alças que aparece de maneira similar ao redor do nó de destino quando você o mouse sobre ele. Liberar o botão do mouse e um link é criado no meio esses dois nós que é representado como uma seta do designer de origem para o designer de destino.
+Depois de arrastar o designer de **FlowDecision** e outros designers para o **fluxograma**, os nós podem ser vinculados juntos para especificar a ordem de execução. Para criar um link entre um nó de origem (incluindo as ramificações **true** e **false** do **FlowDecision**) e um nó de destino, o mouse sobre o designer do nó de origem e os identificadores quadrados aparecem em cada lado dele. Clique em uma das alças de quadradas e arraste-a segurando o botão do mouse na uma das alças que aparece de maneira similar ao redor do nó de destino quando você o mouse sobre ele. Liberar o botão do mouse e um link é criado no meio esses dois nós que é representado como uma seta do designer de origem para o designer de destino.
 
 A expressão que declara o <xref:System.Activities.Statements.FlowDecision.Condition%2A> pode ser digitada na caixa **condição** da janela **Propriedades** clicando em onde o texto de dica diz "inserir uma expressão vb".
 
@@ -43,7 +43,7 @@ A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.F
 
 |Nome da propriedade|Obrigatório|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Statements.FlowDecision.Condition%2A>|Verdadeiro|A condição que determina que caminho o controle de fluxo leva.|
+|<xref:System.Activities.Statements.FlowDecision.Condition%2A>|True|A condição que determina que caminho o controle de fluxo leva.|
 |<xref:System.Activities.Statements.FlowDecision.True%2A>|Falso|O caminho tomada pelo controle de fluxo se <xref:System.Activities.Statements.FlowDecision.Condition%2A> estiver satisfeito.|
 |<xref:System.Activities.Statements.FlowDecision.False%2A>|Falso|O caminho tomada pelo controle de fluxo se <xref:System.Activities.Statements.FlowDecision.Condition%2A> não estiver satisfeito.|
 

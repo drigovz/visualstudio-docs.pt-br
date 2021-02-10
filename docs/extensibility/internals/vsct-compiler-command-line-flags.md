@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d60b248a4941d176ac6ba4e808a94dbc67efbe7
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 53e50e408166eb2d2e1545549cdd6c72018c9553
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488005"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938779"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Sinalizadores de linha de comando do compilador VSCT
 O compilador de tabela de comando do Visual Studio (VSCT) fornece opções de linha de comando para garantir a compilação bem-sucedida de arquivos. vsct.
@@ -76,7 +76,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 
  O compilador VSCT também pode descompilar um arquivo binário compilado anteriormente. Para fazer isso, forneça um arquivo binário para o \<infile> .   Se o arquivo binário foi produzido pelo compilador VSCT, ele terá seus símbolos já inseridos e produzirá a saída com os nomes simbólicos em uma \<Symbols> seção da saída. Se o binário foi produzido pelo compilador CTC, a saída conterá os GUIDs e as IDs reais. Se o arquivo *. ctsym produzido pelas versões atuais do Ctc.exe estiver na mesma pasta que o arquivo de entrada binário, os símbolos serão carregados desse arquivo e usados para saída.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Arquivos .Vsct (Visual Studio Command Table)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Referência do esquema XML do VSCT](../../extensibility/vsct-xml-schema-reference.md)
 - [Como os VSPackages adicionam elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

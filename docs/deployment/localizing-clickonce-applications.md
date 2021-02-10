@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c4fe8d72cc8e2216ee8f5057d032c071974bf3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 8a8e1dea5fb3716d593ca9b28f52ca0cd59a054f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350797"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938493"
 ---
 # <a name="localize-clickonce-applications"></a>Localizar aplicativos ClickOnce
 A localização é o processo de tornar seu aplicativo apropriado para uma cultura específica. Esse processo envolve a conversão de texto da interface do usuário em uma linguagem específica da região, usando a formatação correta de data e moeda, ajustando o tamanho dos controles em um formulário e espelhando controles da direita para a esquerda, se necessário.
@@ -48,7 +48,7 @@ A localização é o processo de tornar seu aplicativo apropriado para uma cultu
 
  Esse método é o padrão no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Para usar esse método no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , você não precisa fazer nenhum trabalho adicional.
 
- Para usar esse método com *MageUI.exe* , você deve definir a cultura do seu aplicativo como **neutra** em *MageUI.exe*. Em seguida, você deve incluir manualmente todos os assemblies satélite em sua implantação. No *MageUI.exe* , você pode adicionar os assemblies satélite usando o botão **popular** na guia **arquivos** do manifesto do aplicativo.
+ Para usar esse método com *MageUI.exe*, você deve definir a cultura do seu aplicativo como **neutra** em *MageUI.exe*. Em seguida, você deve incluir manualmente todos os assemblies satélite em sua implantação. No *MageUI.exe*, você pode adicionar os assemblies satélite usando o botão **popular** na guia **arquivos** do manifesto do aplicativo.
 
  A vantagem dessa abordagem é que ela cria uma única implantação e simplifica sua história de implantação localizada. Em tempo de execução, o assembly satélite apropriado será usado, dependendo da cultura padrão do sistema operacional Windows do usuário. Uma desvantagem dessa abordagem é que ela baixa todos os assemblies satélite sempre que o aplicativo é instalado ou atualizado em um computador cliente. Se seu aplicativo tiver um grande número de cadeias de caracteres ou se seus clientes tiverem uma conexão de rede lenta, esse processo poderá afetar o desempenho durante a atualização do aplicativo.
 
@@ -80,7 +80,7 @@ A localização é o processo de tornar seu aplicativo apropriado para uma cultu
 
 - Você pode definir a <xref:System.Threading.Thread.CurrentUICulture%2A> propriedade programaticamente em seu aplicativo. (Essa propriedade deve ser definida antes de você chamar o <xref:System.Windows.Forms.Application.Run%2A> método.)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [\<assemblyIdentity> elementos](../deployment/assemblyidentity-element-clickonce-deployment.md)
 - [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Globalizar formulários do Windows](/dotnet/framework/winforms/advanced/globalizing-windows-forms)

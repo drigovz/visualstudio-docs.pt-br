@@ -23,15 +23,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 59d0e9122bf35ac6f40799d91d3b52614d027f50
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1c5f66042dad7051c856aa6158ea0a666a81e9b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846396"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938519"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Combine personalizações do VBA e no nível do documento
   Você pode usar o código Visual Basic for Applications (VBA) em um documento que faz parte de uma personalização em nível de documento para Microsoft Office Word ou Microsoft Office Excel. Você pode chamar o código VBA no documento a partir do assembly de personalização ou pode configurar seu projeto para habilitar o código VBA no documento para chamar o código no assembly de personalização.

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eefb532380badcf917f6d512bc5b41ebb96b1d1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: fa38e508c087d61ad5ea1762e3e3cc33d6d4f538
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597724"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939221"
 ---
 # <a name="add-command-line-switches"></a>Adicionar opções de linha de comando
 Você pode adicionar opções de linha de comando que se aplicam ao seu VSPackage quando *devenv.exe* é executado. Use <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> para declarar o nome do comutador e suas propriedades. Neste exemplo, a opção mySwitch é adicionada a uma subclasse de VSPackage chamada **AddCommandSwitchPackage** sem argumentos e com o VSPackage carregado automaticamente.
@@ -74,4 +74,4 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Opções de linha de comando do Devenv](../ide/reference/devenv-command-line-switches.md)
 - [Utilitário CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)
-- [Arquivos. pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
+- [. Arquivos pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
