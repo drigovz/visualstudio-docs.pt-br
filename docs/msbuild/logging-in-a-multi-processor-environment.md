@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: dd4dae65-ed04-4883-b48d-59bcb891c4dc
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fe90440e9e9e40312eafef0bda951937ea27ad9
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: d58f9f29d88d7988b4ead3c2d96eadbbf95a8f46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904374"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966260"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrando em log em um ambiente multiprocessador
 
@@ -32,7 +32,7 @@ Você pode melhorar a eficiência de registro em log ainda mais criando um agent
 
 ### <a name="central-logging-model"></a>Modelo de log central
 
-Para builds para vários processadores, o MSBuild usa um "modelo de log central". No modelo de log central, uma instância do *MSBuild.exe* atua como o processo de compilação principal ou "nó central". As instâncias secundárias de *MSBuild.exe* , ou "nós secundários", são anexadas ao nó central. Qualquer agente de ILogger anexado ao nó central é conhecido como "agentes centrais" e agentes anexados a nós secundários são conhecidos como "agentes secundários".
+Para builds para vários processadores, o MSBuild usa um "modelo de log central". No modelo de log central, uma instância do *MSBuild.exe* atua como o processo de compilação principal ou "nó central". As instâncias secundárias de *MSBuild.exe*, ou "nós secundários", são anexadas ao nó central. Qualquer agente de ILogger anexado ao nó central é conhecido como "agentes centrais" e agentes anexados a nós secundários são conhecidos como "agentes secundários".
 
 Quando ocorre um build, os agentes secundários encaminham o tráfego de eventos para os agentes centrais. Como eventos se originam em vários nós secundários, os dados chegam ao nó central simultaneamente, mas intercalados. Para resolver referências de evento para projeto e evento para destino, os argumentos do evento incluem informações adicionais de contexto do evento de build.
 
@@ -77,7 +77,7 @@ Culture=neutral
 
 Um asterisco (*) separa os dois nomes de agentes na opção `-dl`.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Agentes de build](../msbuild/build-loggers.md)
 - [Criar agentes de encaminhamento](../msbuild/creating-forwarding-loggers.md)

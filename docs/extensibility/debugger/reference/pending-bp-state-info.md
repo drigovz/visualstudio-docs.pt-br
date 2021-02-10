@@ -9,33 +9,33 @@ helpviewer_keywords:
 ms.assetid: 4d73ceff-43f9-4e95-8dba-88e1fab2def3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d66ecc63e133a75148f06b59b8f1ccf61fe2658d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7c1e2b8b537607f6dc57d807d276c5b72ccb144
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714071"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968561"
 ---
 # <a name="pending_bp_state_info"></a>PENDING_BP_STATE_INFO
 Contém informações sobre o estado de um ponto de interrupção que está pronto para ser associado a um local de código.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```cpp
-typedef struct _tagPENDING_BP_STATE_INFO { 
+typedef struct _tagPENDING_BP_STATE_INFO { 
    PENDING_BP_STATE       state;
    PENDING_BP_STATE_FLAGS flags;
 } PENDING_BP_STATE_INFO;
 ```
 
 ```csharp
-public struct PENDING_BP_STATE_INFO { 
+public struct PENDING_BP_STATE_INFO { 
    public uint state;
    public uint flags;
 };

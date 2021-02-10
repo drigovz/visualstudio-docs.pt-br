@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 7a043f2841dc5a6918036c152628ebfc346e11ee
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 6ecc16725913e159bb2dfeb45277c4555efa50a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440102"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966780"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Como coletar dados do IntelliTrace para ajudar a depurar problemas difíceis
 
@@ -85,7 +85,7 @@ Antes de executar as etapas neste procedimento, você deverá abrir as configura
 
 5. Escolha a guia **geral** . Selecione **eventos do IntelliTrace somente** para registrar eventos de diagnóstico significativos que têm impacto mínimo sobre o desempenho durante o teste.
 
-     - ou -
+     -ou-
 
      Selecione **Eventos do IntelliTrace e informações de chamada** para registrar eventos de diagnóstico e rastreamento no nível de método que mostram informações de chamada. Esse nível de rastreamento pode afetar o desempenho quando você executa os testes.
 
@@ -93,7 +93,7 @@ Antes de executar as etapas neste procedimento, você deverá abrir as configura
 
 7. Escolha a guia **módulos** . Selecione **coletar dados de todos os módulos, exceto o seguinte** e use **Adicionar** para adicionar à lista de módulos e **remover** para remover um módulo. Essa opção permite incluir todos os módulos em execução no sistema, exceto os módulos que você especifica.
 
-     - ou -
+     -ou-
 
      Selecione **Coletar dados apenas dos módulos a seguir** e use **Adicionar** para adicionar à lista de módulos e **Remover** para remover um módulo. Essa opção permite especificar exatamente quais módulos você deseja.
 
@@ -102,7 +102,7 @@ Antes de executar as etapas neste procedimento, você deverá abrir as configura
 
 8. Escolha a guia **processos** . Selecione **coletar dados de todos os processos, exceto o seguinte** , e use **Adicionar** para adicionar à lista de processos e **remover** para remover um processo. Essa opção permite incluir todos os processos em execução no sistema, exceto os processos que você especifica.
 
-     - ou -
+     -ou-
 
      Selecione **Coletar dados apenas nos processos especificados** e use **Adicionar** para adicionar à lista de processos e **Remover** para remover um processo. Essa opção permite especificar exatamente quais processos você deseja.
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aeab78a2f64be2df6f601ad8ed224f13071eb8c
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: f87b5bcc94ed11e18de763bd1db7c59bdc4796fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616098"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966377"
 ---
 # <a name="load-vspackages"></a>Carregar VSPackages
 VSPackages são carregados no Visual Studio somente quando sua funcionalidade é necessária. Por exemplo, um VSPackage é carregado quando o Visual Studio usa uma fábrica de projetos ou um serviço que o VSPackage implementa. Esse recurso é chamado de carregamento atrasado, que é usado sempre que possível para melhorar o desempenho.
@@ -73,5 +73,5 @@ VSPackages são carregados no Visual Studio somente quando sua funcionalidade é
 
      O carregamento forçado não deve ser usado para comunicação VSPackage. Use [usar e fornecer serviços](../extensibility/using-and-providing-services.md) em vez disso.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [VSPackages](../extensibility/internals/vspackages.md)

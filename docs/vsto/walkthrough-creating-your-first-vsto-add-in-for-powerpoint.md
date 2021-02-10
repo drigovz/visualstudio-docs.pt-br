@@ -15,15 +15,15 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3e02da3484ce7c2beb35e643d3d90d8e37225e11
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c73c5ab61c51ca4be749e9bf14700c7bea64023e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524860"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966533"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Walkthrough: criar seu primeiro suplemento do VSTO para PowerPoint
   Este tutorial mostra como criar um suplemento do VSTO para Microsoft Office PowerPoint. Os recursos que você cria nesse tipo de solução estão disponíveis para o próprio aplicativo, independentemente de quais apresentações estão abertas. Para obter mais informações, consulte [visão geral do desenvolvimento de soluções do Office &#40;&#41;do VSTO ](../vsto/office-solutions-development-overview-vsto.md).
@@ -132,7 +132,7 @@ ms.locfileid: "97524860"
 
 - Implantando suplementos do VSTO para PowerPoint. Para obter mais informações, consulte [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)
 - [Soluções do PowerPoint](../vsto/powerpoint-solutions.md)
 - [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)

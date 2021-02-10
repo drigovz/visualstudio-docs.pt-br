@@ -11,15 +11,15 @@ helpviewer_keywords:
 - coauthoring, in Excel
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4c0d4c513da403b02454055dadf6d0fd70eef81c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e7889965590865639149b79e8c6d285e333b3822
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522836"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968782"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>Entender a coautoria e os suplementos
 
@@ -27,5 +27,5 @@ A coautoria é um recurso do Excel para Windows desktop que permite que você ed
 
 Observação: a coautoria do Windows Desktop Excel foi introduzida no 2017 e está disponível para assinantes do Office365 no momento. Atualmente, os usuários que compraram uma licença perpétua para o Office 2016 ou anterior não têm acesso ao recurso de coautoria. (O Excel online, o Excel para Android, o Excel para iOS e o Excel Mobile na Windows Store também dão suporte à coautoria).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Soluções do Excel](./excel-solutions.md)

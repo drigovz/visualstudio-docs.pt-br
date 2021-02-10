@@ -13,15 +13,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c1f827346c30720cefd781dade3039416504b9c0
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 56777213c4cac0e2356fa33235d2527abdbb5172
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527080"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966637"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Walkthrough: criar sua primeira personalização em nível de documento para o Word
 
@@ -76,7 +76,7 @@ ms.locfileid: "97527080"
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. Clique em **Avançar**.
+4. Clique em **Próximo**.
 
 5. Digite **FirstWorkbookCustomization** na caixa **nome** do diálogo **configurar seu novo projeto** e clique em **criar**.
 
@@ -172,7 +172,7 @@ ms.locfileid: "97527080"
 
 - Implantando personalizações em nível de documento para [o Word: implante uma solução do Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluções do Word](../vsto/word-solutions.md)

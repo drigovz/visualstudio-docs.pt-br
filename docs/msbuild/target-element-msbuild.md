@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b8533bed128199a4eb0b6e7171ed9c674d62f4
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 231ffd185eaf06fb91a709631082c2b68db372ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048045"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966117"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 
@@ -33,7 +33,7 @@ Contém um conjunto de tarefas para que o MSBuild seja executado em sequência.
 
  \<Project> \<Target>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <Target Name="Target Name"
@@ -123,7 +123,7 @@ Contém um conjunto de tarefas para que o MSBuild seja executado em sequência.
 </Target>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Destinos](../msbuild/msbuild-targets.md)
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)

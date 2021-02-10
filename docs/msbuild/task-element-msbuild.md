@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d82e2485-e5f0-4936-a357-745bacccc299
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58ac6b02424da40ba1130d8a1b549886c9efd718
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a4b8e3cb3acccc2e7ae4c6c2d93353bec79a3690
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047963"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966039"
 ---
 # <a name="task-element-of-target-msbuild"></a>Elemento Task de Target (MSBuild)
 
@@ -31,7 +31,7 @@ Cria e executa uma instância de uma tarefa do MSBuild. O nome do elemento é de
 
  \<Project> \<Target>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <Task Parameter1="Value1"... ParameterN="ValueN"
@@ -50,7 +50,7 @@ Cria e executa uma instância de uma tarefa do MSBuild. O nome do elemento é de
 |Atributo|Descrição|
 |---------------|-----------------|
 |`Condition`|Atributo opcional. Condição a ser avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|
-|`ContinueOnError`|Atributo opcional. Pode conter um dos seguintes valores:<br /><br /> -   **WarnAndContinue** ou **true** . Quando uma tarefa falha, as tarefas subsequentes no elemento de [destino](../msbuild/target-element-msbuild.md) e a compilação continuam a ser executadas, e todos os erros da tarefa são tratados como avisos.<br />-   **ErrorAndContinue** . Quando uma tarefa falha, as tarefas subsequentes no elemento de `Target` e o build continuam em execução e todos os erros da tarefa são tratados como erros.<br />-   **ErrorAndStop** ou **false** (padrão). Quando uma tarefa falha, as tarefas restantes do elemento de `Target` e o build não são executadas e todo o elemento de `Target` e o build são considerados como em falha.<br /><br /> As versões do .NET Framework antes da 4.5 ofereciam suporte somente aos valores `true` e `false`.<br /><br /> Para obter mais informações, consulte [como ignorar erros em tarefas](../msbuild/how-to-ignore-errors-in-tasks.md).|
+|`ContinueOnError`|Atributo opcional. Pode conter um dos seguintes valores:<br /><br /> -   **WarnAndContinue** ou **true**. Quando uma tarefa falha, as tarefas subsequentes no elemento de [destino](../msbuild/target-element-msbuild.md) e a compilação continuam a ser executadas, e todos os erros da tarefa são tratados como avisos.<br />-   **ErrorAndContinue**. Quando uma tarefa falha, as tarefas subsequentes no elemento de `Target` e o build continuam em execução e todos os erros da tarefa são tratados como erros.<br />-   **ErrorAndStop** ou **false** (padrão). Quando uma tarefa falha, as tarefas restantes do elemento de `Target` e o build não são executadas e todo o elemento de `Target` e o build são considerados como em falha.<br /><br /> As versões do .NET Framework antes da 4.5 ofereciam suporte somente aos valores `true` e `false`.<br /><br /> Para obter mais informações, consulte [como ignorar erros em tarefas](../msbuild/how-to-ignore-errors-in-tasks.md).|
 |`Parameter`|Será necessário se a classe de tarefa contiver uma ou mais propriedades rotuladas com o atributo `[Required]`.<br /><br /> Um parâmetro de tarefa definido pelo usuário que contém o valor do parâmetro como seu valor. Pode haver qualquer quantidade de parâmetros no elemento `Task`, com cada atributo mapeado para uma propriedade do .NET na classe tarefa.|
 
 ### <a name="child-elements"></a>Elementos filho
@@ -89,7 +89,7 @@ Cria e executa uma instância de uma tarefa do MSBuild. O nome do elemento é de
 </Target>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

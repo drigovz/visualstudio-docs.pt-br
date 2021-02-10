@@ -9,16 +9,16 @@ f1_keywords:
 ms.assetid: f871a547-0e6f-4b11-b2d7-174d30fc2ed8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1834bf395d3a9c5d4f516a9fec1693d40ff378
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 61fb953b1eae3ecfb0aa9c87e8b10a25099cb12a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90035684"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967001"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Alta taxa de coletas de lixo de Geração 2
 
@@ -26,7 +26,7 @@ ms.locfileid: "90035684"
 |-|-|
 |ID de regra|DA0022|
 |Categoria|Uso do .NET Framework|
-|Método de criação de perfil|Todos|
+|Método de criação de perfil|Tudo|
 |Mensagem|Há uma taxa bem alta de coletas de lixo da Ger 2 ocorrendo. Se, por design, a maioria das estruturas de dados do programa for alocada e persistida por um longo tempo, normalmente, isso não será um problema. No entanto, se esse comportamento não for intencional, o aplicativo poderá estar fixando objetos. Se não tiver certeza, você poderá coletar dados de alocação de memória do .NET e informações de tempo de vida do objeto para entender o padrão de alocação de memória usado pelo aplicativo.|
 |Tipo de regra|Aviso|
 

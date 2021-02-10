@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f5f7be4ce9b8beb7699844397de3e1fc206d017c
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5418013898f24b15cf51926022d974d23f4a7215
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363400"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966351"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Diretrizes para escrever modelos de texto T4
 
@@ -171,7 +171,7 @@ No entanto, para alguns tipos de requisitos de negócios, é importante esclarec
 
 Você também pode criar seu próprio tipo de diagrama como uma DSL (linguagem específica de domínio). O código pode ser gerado de UML e DSLs. Para obter mais informações, consulte [análise e modelagem de arquitetura](../modeling/analyze-and-model-your-architecture.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Geração de código na hora de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Geração de texto de tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md)

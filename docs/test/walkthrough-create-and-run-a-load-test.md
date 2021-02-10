@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: bdcd96e8fc87a7627689af1c67a81b69b2ecee72
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+manager: jmartens
+ms.openlocfilehash: 888bf1f699027ab883a01ba74d8efc5703c91c9a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598257"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968964"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Passo a passo: Criar e executar um teste de carga que contém testes de unidade
 
@@ -147,7 +147,7 @@ Nesta explicação passo a passo, você concluirá as seguintes tarefas:
 
 2. Se a simulação de teste exceder qualquer limite, ícones serão exibidos nos nós de controle da árvore para indicar uma violação de limite. Erros têm uma sobreposição de círculo vermelho, e os avisos têm uma sobreposição de triângulo amarelo. Você pode localizar um contador que excede o limite e o representa graficamente arrastando o ícone no gráfico. Você pode fazer isso quando o teste está sendo executado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Editar a combinação de testes para especificar quais testes incluir em um cenário de teste de carga](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
 - [Especificar tipos de rede virtuais](../test/specify-virtual-network-types-in-a-load-test-scenario.md)

@@ -6,17 +6,17 @@ ms.date: 06/12/2019
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 10dff5d9129d1a91f01ef7541397d86f5a71468c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: e4f10f3555f4edcec031cd4c144bf5a28e9c055d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967144"
 ---
 # <a name="sync-namespace-and-folder-name"></a>Sincronizar namespace e nome da pasta
 
@@ -38,6 +38,6 @@ Esta refatoração aplica-se a:
 
    ![Sincronizar namespace e nome da pasta](media/sync-namespace-and-folder-name.png)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Refatoração](../refactoring-in-visual-studio.md)

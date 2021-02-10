@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: troubleshooting
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7e960e0729e7d13b27d0c4fbda9b3f8eca0ac57c
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: d99dcc3a141bc3734c5c356601d0e1e7474f06a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330115"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967963"
 ---
 # <a name="troubleshoot-code-coverage"></a>Solução de problemas de cobertura de código
 
@@ -65,7 +65,7 @@ O arquivo *. pdb* deve ser gerado da mesma compilação que os arquivos *. dll* 
 
 Resolução certifique-se de &mdash; que as configurações de Build gerem o arquivo *. pdb* . Se os arquivos *. pdb* não forem atualizados quando o projeto for compilado, abra as propriedades do projeto, selecione a página de **compilação** , escolha **avançado** e inspecione as informações de **depuração**.
 
-Para projetos C++, verifique se os arquivos. pdb gerados têm informações de depuração completas. Abra as propriedades do projeto e verifique se a depuração do **vinculador** de  >  **Debugging**  >  **geração de informações** de depuração está definida para **gerar informações de depuração otimizadas para compartilhamento e publicação (/debug: Full)**.
+Para projetos C++, verifique se os arquivos. pdb gerados têm informações de depuração completas. Abra as propriedades do projeto e verifique se a depuração do **vinculador** de  >    >  **geração de informações** de depuração está definida para **gerar informações de depuração otimizadas para compartilhamento e publicação (/debug: Full)**.
 
 Se os arquivos *. pdb* e *. dll* ou *. exe* estiverem em locais diferentes, copie o arquivo *. pdb* para o mesmo diretório. Também é possível configurar o mecanismo de cobertura de código para pesquisar arquivos *. pdb* em outro local. Para obter mais informações, confira [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md).
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7950858d3205cf910eb09e5b0a99b5f67c71c4bd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 16f735e2902527307ac812922495a2a0cb3b377e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524235"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966585"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Walkthrough: criar seu primeiro suplemento do VSTO para Outlook
   Este tutorial mostra como criar um suplemento do VSTO para Microsoft Office Outlook. Os recursos que você cria nesse tipo de solução estão disponíveis para o próprio aplicativo, independentemente de qual item do Outlook está aberto. Para obter mais informações, consulte [visão geral do desenvolvimento de soluções do Office &#40;&#41;do VSTO ](../vsto/office-solutions-development-overview-vsto.md).
@@ -139,7 +139,7 @@ ms.locfileid: "97524235"
 
 - Implantando suplementos do VSTO para Outlook. Para obter mais informações, consulte [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)
 - [Soluções do Outlook](../vsto/outlook-solutions.md)
 - [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)

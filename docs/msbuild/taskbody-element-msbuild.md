@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 49d8741b-f1ea-4470-94fd-a1ac27341a6a
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f99452021b0efef1e5df305e984c684f3f446905
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 29259d71a610a4d83740c139c1309db477288004
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047898"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965987"
 ---
 # <a name="task-element-of-usingtask-msbuild"></a>Elemento Task de UsingTask (MSBuild)
 
@@ -32,7 +32,7 @@ Contém os dados que são passados para um `UsingTask` `TaskFactory`. Para obter
  \<Project> \<UsingTask>
  \<Task>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <Task Evaluate="true/false" />
@@ -77,7 +77,7 @@ Contém os dados que são passados para um `UsingTask` `TaskFactory`. Para obter
 </UsingTask>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

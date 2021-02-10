@@ -12,15 +12,15 @@ helpviewer_keywords:
 - data access [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e436c7a30708fac0cf59c2e79100cc89dade84b2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1c610bdc33564e3e211d1ec5aab943af4eec49d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965792"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Acessar dados em documentos no servidor
   Você pode programar contra os dados em uma personalização em nível de documento sem precisar usar o modelo de objeto do Microsoft Office Word ou Microsoft Office Excel. Isso significa que você pode acessar os dados contidos em um documento em um servidor que não tenha o Word ou o Excel instalado. Por exemplo, o código em um servidor (por exemplo, em uma [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] página) pode personalizar os dados em um documento e enviar o documento personalizado para um usuário final. Quando o usuário final abre o documento, o código de vinculação de dados no assembly da solução associa os dados personalizados ao documento. Isso é possível porque os dados no documento são separados da interface do usuário. Para obter mais informações, consulte [dados armazenados em cache em personalizações em nível de documento](../vsto/cached-data-in-document-level-customizations.md).

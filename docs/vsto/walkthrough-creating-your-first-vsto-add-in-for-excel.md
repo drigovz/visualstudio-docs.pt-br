@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0f04532e627a694e8a234f1842995b92a707e537
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4449e286fed0572e2dfc1ed855daf834400bd4e4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527905"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966624"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Walkthrough: criar seu primeiro suplemento do VSTO para Excel
   Este guia introdutório mostra como criar um suplemento em nível de aplicativo para Microsoft Office Excel. Os recursos que você cria nesse tipo de solução estão disponíveis para o próprio aplicativo, independentemente de quais pastas de trabalho estão abertas.
@@ -134,7 +134,7 @@ ms.locfileid: "97527905"
 
 - Implantando suplementos do VSTO para Excel: [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluções do Excel](../vsto/excel-solutions.md)
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <update> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 241bddb8c79a01bb1ba6921486a4dc46d99940cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5712be9e12ede3338856955e00a34a7565d733ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537378"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968756"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento Update (desenvolvimento do Office no Visual Studio)
   O `update` elemento Especifica o intervalo no qual a solução verificará se há atualizações.
@@ -55,11 +55,11 @@ ms.locfileid: "85537378"
 |Atributo|Descrição|
 |---------------|-----------------|
 |`maximumAge`| Obrigatórios. Defina isso igual a um inteiro.|
-|`unit`|Obrigatórios. Defina `unit` como um dos seguintes valores:<br /><br /> -   **duração**<br />-   **dias**<br />-   **semanas**|
+|`unit`|Obrigatório. Defina `unit` como um dos seguintes valores:<br /><br /> -   **duração**<br />-   **dias**<br />-   **semanas**|
 
 ## <a name="example-of-always-checking-for-updates"></a>Exemplo de sempre verificar se há atualizações
 
-### <a name="description"></a>Descrição
+### <a name="description"></a>Description
  O exemplo de código a seguir ilustra um `update` elemento que é definido para sempre verificar se há atualizações nas soluções do Office.
 
 ### <a name="code"></a>Código
@@ -70,7 +70,7 @@ ms.locfileid: "85537378"
 
 ## <a name="example-of-setting-a-default-update-interval"></a>Exemplo de configuração de um intervalo de atualização padrão
 
-### <a name="description"></a>Descrição
+### <a name="description"></a>Description
  O exemplo de código a seguir ilustra um `update` elemento em um manifesto de aplicativo para soluções do Office. Este exemplo de código faz parte de um exemplo maior fornecido em [manifestos do aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Código
@@ -81,7 +81,7 @@ ms.locfileid: "85537378"
 </vstav3:update>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Implantar uma solução do Office usando o ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
 - [Manifestos do aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md)

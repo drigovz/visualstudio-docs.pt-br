@@ -19,15 +19,15 @@ helpviewer_keywords:
 - troubleshooting [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fd12c3dd9cd3c90564351dd1c64cebfe5df6e99d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cbda0a4b7977f962751ed9803bd1b39103f67679
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523040"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968821"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Solucionar erros em soluções do Office
   Você pode encontrar problemas ao executar as seguintes tarefas ao desenvolver soluções do Office no Visual Studio:
@@ -215,7 +215,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Se você clicar em **Sim** ou **não** na caixa de diálogo, o Visual Studio encerrará o processo do Excel ou do Word e interromperá o depurador. Para interromper a depuração do projeto sem exibir essa caixa de diálogo, saia do Excel ou do Word diretamente em vez de parar o depurador no Visual Studio.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Solucionar problemas de soluções do Office](../vsto/troubleshooting-office-solutions.md)
 - [Solucionar problemas de segurança da solução do Office](../vsto/troubleshooting-office-solution-security.md)
 - [Solucionar problemas de implantação de solução do Office](../vsto/troubleshooting-office-solution-deployment.md)

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e732c6d9d791d789471c49a319ab9945fdd5dc06
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 4b35bcb6fcd1dc2ac3826d5dccb17ff764979321
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996169"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968743"
 ---
 # <a name="parallelforeach-activity-designer"></a>Designer de atividade ParallelForEach
 
@@ -47,13 +47,13 @@ A tabela a seguir mostra as propriedades mais úteis de atividade de <xref:Syste
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Especifica o nome amigável para exibição do designer de atividade no cabeçalho. O valor padrão é **ParallelForEach \<Int32>**. O valor pode ser editado opcionalmente na grade de **Propriedades** ou diretamente no cabeçalho do designer de atividade.|
 |<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|Falso|A atividade a executar para cada item na coleção. Para adicionar a <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> atividade, remova uma atividade da caixa de ferramentas para o **corpo** do **ParallelForEach \<T>** designer de atividade com dica de texto "soltar atividade aqui".|
-|**TypeArgument**|Verdadeiro|O tipo dos itens na <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> coleção especificada pelo parâmetro genérico *T*. Por padrão, **TypeArgument** é definido como **Int32**. Para alterar o tipo T no **ParallelForEach<T \>** Activity Designer, altere o valor da caixa de combinação **TypeArgument** na grade de propriedades.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Verdadeiro|A coleção de itens para iterar. Para definir o <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> , digite uma expressão de Visual Basic na caixa **valores** no designer de atividade **ForEach \><T** na caixa com o texto de dica "Insira uma expressão vb" ou na caixa **valores** na janela **Propriedades** .|
+|**TypeArgument**|True|O tipo dos itens na <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> coleção especificada pelo parâmetro genérico *T*. Por padrão, **TypeArgument** é definido como **Int32**. Para alterar o tipo T no **ParallelForEach<T \>** Activity Designer, altere o valor da caixa de combinação **TypeArgument** na grade de propriedades.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|True|A coleção de itens para iterar. Para definir o <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> , digite uma expressão de Visual Basic na caixa **valores** no designer de atividade **ForEach \><T** na caixa com o texto de dica "Insira uma expressão vb" ou na caixa **valores** na janela **Propriedades** .|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||Avaliado após cada iteração completa. Se avalia para retificar, então o agendada durante iterações é cancelado. Se esta propriedade não for definida, todas as instruções agendados executam até a conclusão.|
 
 Por padrão, o iterador do loop é chamado item. Você pode alterar o nome da variável de iterador na caixa **foreach** no designer de atividade do **ParallelForEach \<T>** . O iterador do loop pode ser usado em expressões nos filhos de atividade de <xref:System.Activities.Statements.ParallelForEach%601> .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Sequência](../workflow-designer/sequence-activity-designer.md)
 - [Parallel](../workflow-designer/parallel-activity-designer.md)

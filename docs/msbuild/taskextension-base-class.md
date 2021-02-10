@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 08bb8059-b7e2-4565-89ba-d9034d4f0e16
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 33808468653cf969719b6da5380da96cc53e490a
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 6692cb16b3861d72bf713c22b2ecfb2ee95bc036
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047855"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965974"
 ---
 # <a name="taskextension-base-class"></a>Classe base TaskExtension
 
@@ -41,7 +41,7 @@ Muitas tarefas são herdadas da classe <xref:Microsoft.Build.Tasks.TaskExtension
 |<xref:Microsoft.Build.Utilities.Task.HostObject%2A>|Parâmetro <xref:Microsoft.Build.Framework.ITaskHost> opcional.<br /><br /> Especifica a instância do objeto de host (pode ser nulo). O mecanismo de compilação define essa propriedade se o IDE do host associou um objeto de host com essa tarefa em particular.|
 |<xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>|Parâmetro <xref:Microsoft.Build.Utilities.TaskLoggingHelper> somente leitura opcional.<br /><br /> Obtém um objeto `TaskLoggingHelperExtension` que contém os métodos de registro de tarefa.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)

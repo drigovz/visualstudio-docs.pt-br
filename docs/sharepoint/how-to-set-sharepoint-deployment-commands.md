@@ -11,22 +11,22 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc1da67206e5e5c9fde1b5c595424239d1685ac7
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 72938f316be22cd9b2eab2d7dab893c9370fb0ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304376"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965844"
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>Como definir comandos de implantação do SharePoint
   Você pode personalizar o processo de implantação Configurando comandos pré-implantação e pós-implantação. Esses comandos são executados antes e depois de outras ações de implantação quando você depura soluções do SharePoint do Visual Studio.
 
 ### <a name="to-add-a-pre-deployment-command"></a>Para adicionar um comando de pré-implantação
 
-1. Na barra de menus, escolha **Project**  >  **\<*ProjectName*> Propriedades** do projeto.
+1. Na barra de menus, escolha   >  **\<*ProjectName*> Propriedades** do projeto.
 
 2. Escolha a guia **SharePoint** .
 
@@ -36,7 +36,7 @@ ms.locfileid: "96304376"
 
 ### <a name="to-add-a-post-deployment-command"></a>Para adicionar um comando pós-implantação
 
-1. Na barra de menus, escolha **Project**  >  **\<*ProjectName*> Propriedades** do projeto.
+1. Na barra de menus, escolha   >  **\<*ProjectName*> Propriedades** do projeto.
 
 2. Escolha a guia **SharePoint** .
 
@@ -44,5 +44,5 @@ ms.locfileid: "96304376"
 
      Por exemplo, para listar o conteúdo do diretório após a conclusão da implantação, insira **dir**. Para usar uma variável do MSBuild para copiar o assembly do diretório de compilação, digite **Copy $ (TargetPath) c:\DeploymentDirectory**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

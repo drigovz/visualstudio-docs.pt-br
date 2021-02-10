@@ -15,15 +15,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c0b739a7671f19b126b0566dfc8f4775a2c91063
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d1e66b587a149c02059e549fb20a5293f296a4a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845006"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968938"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Como: armazenar em cache uma fonte de dados programaticamente em um documento do Office
   Você pode adicionar programaticamente um objeto de dados ao cache de dados em um documento chamando o `StartCaching` método de um item de host, como um <xref:Microsoft.Office.Tools.Word.Document> , <xref:Microsoft.Office.Tools.Excel.Workbook> ou <xref:Microsoft.Office.Tools.Excel.Worksheet> . Remova um objeto de dados do cache de dados chamando o `StopCaching` método de um item de host.
@@ -56,7 +56,7 @@ ms.locfileid: "96845006"
     > [!NOTE]
     > Não chame `StopCaching` do manipulador de eventos para o `Shutdown` evento de um documento ou planilha. No momento em que o `Shutdown` evento é gerado, é muito tarde para modificar o cache de dados. Para obter mais informações sobre o `Shutdown` evento, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Dados de cache](../vsto/caching-data.md)
 - [Como armazenar em cache dados para uso offline ou em um servidor](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)

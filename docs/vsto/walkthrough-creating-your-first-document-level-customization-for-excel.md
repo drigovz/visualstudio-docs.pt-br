@@ -14,15 +14,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4183e84a930957b7cf87a6cc1e6fabcb21420785
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ae0f4982ca325970b8b7965c956a7d2dea4bf60f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527953"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966663"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Walkthrough: criar sua primeira personalização em nível de documento para o Excel
 
@@ -77,7 +77,7 @@ ms.locfileid: "97527953"
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. Clique em **Avançar**.
+4. Clique em **Próximo**.
 
 5. Digite **FirstWorkbookCustomization** na caixa **nome** do diálogo **configurar seu novo projeto** e clique em **criar**.
 
@@ -185,7 +185,7 @@ ms.locfileid: "97527953"
 
 - Implantando personalizações em nível de documento para [o Excel: implante uma solução do Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluções do Excel](../vsto/excel-solutions.md)

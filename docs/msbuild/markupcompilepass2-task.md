@@ -15,15 +15,15 @@ helpviewer_keywords:
 - MarkupCompilePass2 task [WPF MSBuild], parameters
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9efcd6fd293352dfa3396bca35953f0a76feb25
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 7425e0342974c3b000486f57227f768aac47b9ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903862"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966169"
 ---
 # <a name="markupcompilepass2-task"></a>Tarefa MarkupCompilePass2
 
@@ -33,22 +33,22 @@ A <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2> tarefa executa a compi
 
 | Parâmetro | Descrição |
 | - | - |
-| `AlwaysCompileMarkupFilesInSeparateDomain` | Parâmetro **booliano** opcional.<br /><br /> Especifica se a tarefa deve ser executada em um <xref:System.AppDomain> separado. Se esse parâmetro retornar **false** , a tarefa será executada na mesma <xref:System.AppDomain> forma que o MSBuild e será executada mais rapidamente. Se o parâmetro retornar **true** , a tarefa será executada em um segundo <xref:System.AppDomain> que é isolada do MSBuild e executada mais devagar. |
-| `AssembliesGeneratedDuringBuild` | Parâmetro opcional de **cadeia de caracteres []** .<br /><br /> Especifica as referências aos assemblies alterados durante o processo de build. Por exemplo, uma solução do Visual Studio pode conter um projeto que faz referência à saída compilada de outro projeto. Nesse caso, a saída compilada do segundo projeto pode ser adicionada a **AssembliesGeneratedDuringBuild** .<br /><br /> Observação: **AssembliesGeneratedDuringBuild** deve conter referências ao conjunto completo de assemblies que são gerados por uma solução de build. |
-| `AssemblyName` | Parâmetro obrigatório **String** .<br /><br /> Especifica o nome curto do assembly que é gerado para um projeto. Por exemplo, se um projeto estiver gerando um executável cujo nome é *WinExeAssembly.exe* , o parâmetro **AssemblyName** terá um valor de **WinExeAssembly** . |
-| `GeneratedBaml` | Parâmetro de saída opcional **ITaskItem[]** .<br /><br /> Contém a lista de arquivos gerados no formato binário XAML. |
+| `AlwaysCompileMarkupFilesInSeparateDomain` | Parâmetro **booliano** opcional.<br /><br /> Especifica se a tarefa deve ser executada em um <xref:System.AppDomain> separado. Se esse parâmetro retornar **false**, a tarefa será executada na mesma <xref:System.AppDomain> forma que o MSBuild e será executada mais rapidamente. Se o parâmetro retornar **true**, a tarefa será executada em um segundo <xref:System.AppDomain> que é isolada do MSBuild e executada mais devagar. |
+| `AssembliesGeneratedDuringBuild` | Parâmetro opcional de **cadeia de caracteres []** .<br /><br /> Especifica as referências aos assemblies alterados durante o processo de build. Por exemplo, uma solução do Visual Studio pode conter um projeto que faz referência à saída compilada de outro projeto. Nesse caso, a saída compilada do segundo projeto pode ser adicionada a **AssembliesGeneratedDuringBuild**.<br /><br /> Observação: **AssembliesGeneratedDuringBuild** deve conter referências ao conjunto completo de assemblies que são gerados por uma solução de build. |
+| `AssemblyName` | Parâmetro obrigatório **String**.<br /><br /> Especifica o nome curto do assembly que é gerado para um projeto. Por exemplo, se um projeto estiver gerando um executável cujo nome é *WinExeAssembly.exe*, o parâmetro **AssemblyName** terá um valor de **WinExeAssembly**. |
+| `GeneratedBaml` | Parâmetro de saída opcional **ITaskItem[]**.<br /><br /> Contém a lista de arquivos gerados no formato binário XAML. |
 | `KnownReferencePaths` | Parâmetro opcional de **cadeia de caracteres []** .<br /><br /> Especifica as referências aos assemblies nunca alterados durante o processo de build. Inclui assemblies que estão localizados no GAC (cache de assembly global), em um diretório de instalação do .NET e assim por diante. |
-| `Language` | Parâmetro obrigatório **String** .<br /><br /> Especifica a linguagem gerenciada à qual o compilador dá suporte. As opções válidas são **C#** , **VB** , **JScript** e **C++** . |
-| `LocalizationDirectivesToLocFile` | Parâmetro de **cadeia de caracteres** opcional.<br /><br /> Especifica como gerar informações de localização para cada arquivo XAML de origem. As opções válidas são **None** , **CommentsOnly** e **All** . |
-| `OutputPath` | Parâmetro obrigatório **String** .<br /><br /> Especifica o diretório no qual os arquivos de formato binário XAML gerados são gerados. |
-| `OutputType` | Parâmetro obrigatório **String** .<br /><br /> Especifica o tipo de assembly que é gerado por um projeto. As opções válidas são **winexe** , **exe** , **library** e **netmodule** . |
+| `Language` | Parâmetro obrigatório **String**.<br /><br /> Especifica a linguagem gerenciada à qual o compilador dá suporte. As opções válidas são **C#**, **VB**, **JScript** e **C++**. |
+| `LocalizationDirectivesToLocFile` | Parâmetro de **cadeia de caracteres** opcional.<br /><br /> Especifica como gerar informações de localização para cada arquivo XAML de origem. As opções válidas são **None**, **CommentsOnly** e **All**. |
+| `OutputPath` | Parâmetro obrigatório **String**.<br /><br /> Especifica o diretório no qual os arquivos de formato binário XAML gerados são gerados. |
+| `OutputType` | Parâmetro obrigatório **String**.<br /><br /> Especifica o tipo de assembly que é gerado por um projeto. As opções válidas são **winexe**, **exe**, **library** e **netmodule**. |
 | `References` | Parâmetro opcional **ITaskItem []** .<br /><br /> Especifica a lista de referências de arquivos para assemblies que contêm os tipos usados nos arquivos XAML. Uma referência é ao assembly gerado pela tarefa <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly>, que deve ser executada antes da tarefa <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2>. |
 | `RootNamespace` | Parâmetro de **cadeia de caracteres** opcional.<br /><br /> Especifica o namespace raiz para as classes que estão dentro do projeto. **RootNamespace** também é usado como o namespace padrão de um arquivo de código gerenciado gerado quando o arquivo XAML correspondente não inclui o `x:Class` atributo. |
-| `XAMLDebuggingInformation` | Parâmetro **booliano** opcional.<br /><br /> Quando **true** , as informações de diagnóstico são geradas e incluídas no XAML compilado para auxiliar na depuração. |
+| `XAMLDebuggingInformation` | Parâmetro **booliano** opcional.<br /><br /> Quando **true**, as informações de diagnóstico são geradas e incluídas no XAML compilado para auxiliar na depuração. |
 
 ## <a name="remarks"></a>Comentários
 
-Antes de executar o **MarkupCompilePass2** , você deve gerar um assembly temporário que contenha os tipos que são usados pelos arquivos XAML cuja passagem de compilação de marcação foi adiada. Gere o assembly temporário executando a tarefa **GenerateTemporaryTargetAssembly** .
+Antes de executar o **MarkupCompilePass2**, você deve gerar um assembly temporário que contenha os tipos que são usados pelos arquivos XAML cuja passagem de compilação de marcação foi adiada. Gere o assembly temporário executando a tarefa **GenerateTemporaryTargetAssembly**.
 
 Uma referência ao assembly temporário gerado é fornecida quando é <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2> executada, permitindo que os arquivos XAML cuja compilação foi adiada na primeira passagem de compilação de marcação agora sejam compilados para o formato binário.
 
@@ -72,7 +72,7 @@ O exemplo a seguir mostra como usar a tarefa <xref:Microsoft.Build.Tasks.Windows
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência do MSBuild do WPF](../msbuild/wpf-msbuild-reference.md)
 - [Referência de tarefas do WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)

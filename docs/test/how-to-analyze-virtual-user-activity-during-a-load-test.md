@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 353a38c17cdcd3358376547155750914e406f4be
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 33bb1d3ed7d2deb891556f2091c6c389bc1b03c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442385"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966910"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Como analisar o que usuários virtuais estão fazendo durante um teste de carga usando o gráfico de atividade de usuário virtual
 
@@ -31,7 +31,7 @@ Os procedimentos a seguir demonstram como exibir o **Gráfico de atividade do us
 
 2. Após a execução do teste de carga, a página de resumo dos resultados do teste é exibida. Escolha o botão **Detalhes do Usuário** na barra de ferramentas.
 
-     - ou -
+     -ou-
 
      Abra a exibição Gráficos escolhendo o botão **Gráficos** na barra de ferramentas. Clique com o botão direito do mouse em um gráfico e selecione **Ir para detalhe do usuário**.
 

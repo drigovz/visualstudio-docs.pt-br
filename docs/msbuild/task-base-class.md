@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 6c3f6238-b9f0-4325-b8b0-de61090bd0a2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41557eb7df3da8a6322a3951520918ffb158b57a
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: bf6bc7cf353a8a1da7854a350f352e69013eb52e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048002"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966091"
 ---
 # <a name="task-base-class"></a>Classe base Task
 
@@ -38,7 +38,7 @@ Muitas tarefas são herdadas da classe <xref:Microsoft.Build.Utilities.Task>. Es
 |<xref:Microsoft.Build.Utilities.Task.HostObject%2A>|Parâmetro <xref:Microsoft.Build.Framework.ITaskHost> opcional.<br /><br /> Especifica a instância do objeto de host (pode ser nulo). O mecanismo de compilação define essa propriedade se o IDE do host associou um objeto de host com essa tarefa em particular.|
 |<xref:Microsoft.Build.Utilities.Task.Log%2A>|Parâmetro <xref:Microsoft.Build.Utilities.TaskLoggingHelper> somente leitura opcional.<br /><br /> O objeto auxiliar de registro em log.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)

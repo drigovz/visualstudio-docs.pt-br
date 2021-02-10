@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: be8648dd-3eb9-4a50-8ec1-57a8be804692
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3daa7cef76d2448cc7bcda66a967a3406bb2352c
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 988c080b7b6c89baa4151858fcaf4e3320582e09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435567"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968717"
 ---
 # <a name="persist-activity-designer"></a>Persistir o designer de atividades
 
@@ -29,7 +29,7 @@ A atividade de <xref:System.Activities.Statements.Persist> salva um fluxo de tra
 
 ### <a name="using-the-persist-activity-designer"></a>Usando o designer de atividade de persistir
 
-O designer de atividade de **persistência** pode ser encontrado na categoria **tempo de execução** da **caixa de ferramentas** , que é acessada clicando na guia caixa de **ferramentas** (como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou CTRL + ALT + X).
+O designer de atividade de **persistência** pode ser encontrado na categoria **tempo de execução** da **caixa de ferramentas**, que é acessada clicando na guia caixa de **ferramentas** (como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou CTRL + ALT + X).
 
 O designer de atividade de **persistência** pode ser arrastado da **caixa de ferramentas** e colocado na superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence> . Isso cria uma <xref:System.Activities.Statements.Persist> atividade com um **DisplayName** padrão de persist. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade de **persistência** ou na caixa **DisplayName** da grade de propriedades.
 
@@ -41,7 +41,7 @@ A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.P
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|O nome amigável de atividade de <xref:System.Activities.Statements.Persist> . O padrão é persiste. Embora o nome para exibição não é necessário restrita, é uma prática recomendada usar um nome para exibição.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Runtime](../workflow-designer/runtime-activity-designers.md)
 - [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)
