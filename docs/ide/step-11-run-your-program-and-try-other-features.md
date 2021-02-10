@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ac5967d13aa6572b36989150561363555a9705
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a4488c212cabe95d73f75246fb297c17ce073b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809192"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950894"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Etapa 11: executar o aplicativo do Visualizador de imagens e experimentar outros recursos
 
@@ -30,7 +30,7 @@ Seu aplicativo visualizador de imagens foi concluído e está pronto para ser ex
 1. Antes de abrir uma imagem, clique no botão **Definir a cor da tela de fundo**. A caixa de diálogo **Cor** é aberta.
 
      ![Caixa de diálogo Cor](../ide/media/express_colordialog.png)<br/>
-***Color*** *Caixa de diálogo* cor
+***Cor** _ _dialog caixa *
 
 1. Escolha uma cor para definir a cor do plano de fundo de PictureBox. Examine com mais detalhes o `backgroundButton_Click()` método (ou, `BackgroundButton_Click()` ) para entender como ele funciona.
 

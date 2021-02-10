@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76225685a9f68ca6f6cb05f902922f8fa208015d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 04168d6f648a9219c40f81aa042cbc778429ca0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480389"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950998"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Etapa 1: Crie um projeto de aplicativo do Windows Forms
 
@@ -29,7 +29,7 @@ Quando você cria um visualizador de imagens, a primeira etapa é criar um proje
 
 1. Na barra de menus, escolha **arquivo**  >  **novo**  >  **projeto**. A caixa de diálogo deve ser semelhante à captura de tela a seguir.
 
-     ![Caixa de diálogo Novo Projeto](../ide/media/newprojectdialogcallouts.png)<br/>**_Novo projeto_* _ _dialog Box *
+     ![Caixa de diálogo Novo Projeto](../ide/media/newprojectdialogcallouts.png)<br/>***Novo projeto** _ _dialog Box *
 
 2. No lado esquerdo da caixa de diálogo **novo projeto** , escolha **Visual C#** ou **Visual Basic** e, em seguida, escolha **área de trabalho do Windows**.
 
@@ -107,7 +107,7 @@ O Visual Studio cria uma solução para seu aplicativo. Uma solução atua como 
      Como alternativa, escolha o botão **salvar tudo** na barra de ferramentas, que mostra a imagem a seguir.
 
      ![Botão de barra de ferramentas Salvar Todos](../ide/media/express_iconsaveall.png)<br/>
-     *Botão *_salvar tudo_** _toolbar *
+     *Botão **salvar tudo*** _toolbar *
 
      O Visual Studio preenche automaticamente o nome da pasta e o nome do projeto e, em seguida, salva o projeto na sua pasta de projeto.
 

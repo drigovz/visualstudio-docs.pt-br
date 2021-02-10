@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1018b390f6ebbf67fab88554aa85fe6a8ecec88d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 496bf75495d864024ef587849edd554bfd435db5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480688"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950881"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Etapa 2: Adicionar um objeto aleatório e uma lista de ícones
 
@@ -44,7 +44,7 @@ Nesta etapa, você cria um conjunto de símbolos correspondentes para o jogo. Ca
 
 3. Ao adicionar o objeto de lista, observe a janela do **IntelliSense** que é aberta. Veja a seguir um exemplo de C#, mas o texto semelhante é exibido quando você adiciona uma lista no Visual Basic.
 
-     ![Janela Propriedades mostrando o evento de clique](../ide/media/express_listintellisense.png)<br/>*Janela do *_IntelliSense_**
+     ![Janela Propriedades mostrando o evento de clique](../ide/media/express_listintellisense.png)<br/>*Janela do **IntelliSense***
 
     > [!NOTE]
     > A janela do IntelliSense aparece apenas quando você insere código manualmente. Se você copiar e colar o código, ela não aparecerá.

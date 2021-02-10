@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 264917d515e25823f8d6c2cb522e85dcc9c47d84
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 24f13e61f783b041134dc38a4c9bc1690421b6cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878950"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951128"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Teclas de atalho no Help Viewer
 
@@ -44,12 +44,12 @@ Você pode navegar no **Microsoft Help Viewer** usando as teclas de atalho na ta
 |Navegadores|**ALT** + **S**<br /><br /> -OU-<br /><br /> **Ctrl** + E<br /><br /> -OU-<br /><br /> **Ctrl** + **Shift** + **S**|Exiba a guia **Pesquisar**.|
 |Navegadores|**ALT** + **M**<br /><br /> -OU-<br /><br /> **Ctrl** + **Shift** + **M**|Exiba a guia **Gerenciar Conteúdo**.|
 |Tópico|Tecla do **Menu de Atalho**<br /><br /> OU<br /><br /> **Shift** + **F10**|Exiba o menu de atalho do elemento da interface do usuário atual.|
-|Tópico|**Seta para cima**|Role até o início do documento uma linha por vez.|
-|Tópico|**Seta para baixo**|Role até o final do documento uma linha por vez.|
-|Tópico|**Página acima**|Role até o início do documento uma tela por vez.|
+|Tópico|**Seta para Cima**|Role até o início do documento uma linha por vez.|
+|Tópico|**Seta para Baixo**|Role até o final do documento uma linha por vez.|
+|Tópico|**Page Up**|Role até o início do documento uma tela por vez.|
 |Tópico|**Page Down**|Role até o final do documento uma tela por vez.|
 |Tópico|**Início**|Vá até o início do documento.|
-|Tópico|**Completo**|Vá até o final do documento.|
+|Tópico|**End**|Vá até o final do documento.|
 |Tópico|**Ctrl** + **F**|Localize o texto de pesquisa nesta página.|
 |Tópico|**F5**|Atualize a página atual.|
 |Tópico|**Ctrl** + **P**|Imprima a página atual.|
@@ -60,12 +60,12 @@ Você pode navegar no **Microsoft Help Viewer** usando as teclas de atalho na ta
 |Tópico|**Ctrl** + **Guia**|Mude entre guias da esquerda para a direita.|
 |Tópico|**Ctrl** + **Shift** + **Guia**|Mude entre guias da direita para a esquerda.|
 |Tópico|**Ctrl** + **W**|Feche a guia atual.|
-|Tópico|**Ctrl** + ** _Número_ de**|Mude para uma guia específica, em que o **_Número_** está entre 1 e 9 e indica qual guia da sequência.|
+|Tópico|**Ctrl** + **_Número_ de**|Mude para uma guia específica, em que o **_Número_** está entre 1 e 9 e indica qual guia da sequência.|
 |Tópico|**Ctrl** + **ALT** + **F4**|Feche outras guias de conteúdo.|
 |Tópico|**Ctrl** + **Shift** + **Sinal de adição**|Aumente o zoom em 10%.|
 |Tópico|**Ctrl** + **Sinal de subtração**|Diminua o zoom em 10%.|
 |Tópico|**Ctrl** + **0** (zero)|Altere o zoom para 100%.|
-|Índice|**Guia**|Alterne o foco da entrada de palavras-chave para a lista de palavras-chave.|
+|Índice|**Tab**|Alterne o foco da entrada de palavras-chave para a lista de palavras-chave.|
 |Índice|**Ctrl** + **K**|Mude entre a exibição de entradas que contêm a palavra-chave que você especificar e entradas que começam com a palavra-chave que você especificar.|
 |Favoritos|**Ctrl** + **Shift** + **Del**|Limpe o histórico de navegação.|
 |Favoritos|**Confirmar**|Exclua o item especificado.|
@@ -75,15 +75,15 @@ Você pode navegar no **Microsoft Help Viewer** usando as teclas de atalho na ta
 |Sumário, Índice, Pesquisa e Favoritos|**Ctrl** + **P**|Imprima o tópico especificado.|
 |Sumário, Índice, Pesquisa e Favoritos|**Ctrl** + **F2**|Exiba uma visualização de impressão do tópico especificado.|
 |Sumário, Índice, Pesquisa e Favoritos|**Ctrl** + **Clique em**|Abra o tópico em uma nova guia.|
-|Search|**ESC**|Limpe a caixa de texto de pesquisa.|
+|Search|**Esc**|Limpe a caixa de texto de pesquisa.|
 |Opções do Visualizador|**ALT** + **T**|Altere o foco para a lista **Tamanho do Texto**.|
 |Opções do Visualizador|**ALT** + **S**|Altere o foco para a lista **Máximo de Resultados da Pesquisa**.|
 |Opções do Visualizador|**ALT** + **H**|Altere o foco para a lista **Máximo de entradas do Histórico salvas**.|
 |Opções do Visualizador|**ALT** + **E**|Selecione ou desmarque a caixa de seleção **Incluir conteúdo em inglês em todas as guias de navegação e solicitações F1** se ela estiver habilitada.|
 |Opções do Visualizador|**ALT** + **O**|Marque ou desmarque a caixa de seleção **Ficar online para procurar atualizações de conteúdo**.|
-|Localizar|**Digita**|Altere o foco para o próximo item.|
+|Localizar|**Enter**|Altere o foco para o próximo item.|
 |Localizar|**Shift** + **Insira**|Altere o foco para o item anterior.|
-|Localizar|**ESC**|Oculta a caixa de texto **Localizar**.|
+|Localizar|**Esc**|Oculta a caixa de texto **Localizar**.|
 |Barra de Status|**ALT** + **E**|Abra a caixa de diálogo **Erro** se a barra de status mostrar que um erro ocorreu.|
 |Barra de Status|**ALT** + **U**|Baixe conteúdo se a barra de status mostrar que atualizações estão disponíveis|
 
@@ -102,18 +102,18 @@ Você pode navegar no **Microsoft Help Viewer** usando as teclas de atalho na ta
 |-|-|
 |**ALT** + **D**|Altere a origem de instalação para o disco.|
 |**ALT** + **O**|Altere a origem de instalação para online.|
-|**Guia**|Altere o foco para a caixa de texto **Caminho do repositório local**.|
-|**Guia**|Altere o foco para o botão **Mover**.|
+|**Tab**|Altere o foco para a caixa de texto **Caminho do repositório local**.|
+|**Tab**|Altere o foco para o botão **Mover**.|
 |**ALT** + **V**|Abra a caixa de diálogo **Mover Conteúdo**.|
 |**Ctrl** + **ALT** + **F**|Altere o foco para a caixa de texto **Filtrar documentação**.|
-|**Guia**|Altere o foco para a lista de documentação.|
+|**Tab**|Altere o foco para a lista de documentação.|
 |**Seta para cima** e **Seta para Baixo**|Role a lista de documentação.|
 |**Disco**|Adicione um item à lista **Alterações pendentes**.|
-|**Guia**|Altere o foco para a lista **Alterações pendentes**.|
+|**Tab**|Altere o foco para a lista **Alterações pendentes**.|
 |**Seta para cima** e **Seta para Baixo**|Role a lista **Alterações pendentes**.|
 |**Disco**|Remova um item da lista **Alterações pendentes**.|
 |**ALT** + **T**|Aplique todas as alterações pendentes.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Recursos de acessibilidade do Visualizador da ajuda](accessibility-features.md)

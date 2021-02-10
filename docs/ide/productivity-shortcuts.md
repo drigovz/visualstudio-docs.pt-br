@@ -5,15 +5,15 @@ ms.date: 11/02/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd11a05ed6b19fe5d6236bec2c6b4926bbcdefd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585724"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951102"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Dicas de atalho para o Visual Studio
 
@@ -44,7 +44,7 @@ Para obter uma lista completa de atalhos de comando, confira [Atalhos de teclado
 |Tarefa|Atalho|
 |-|-|
 |Pesquisa do Gerenciador de Soluções|**Ctrl** + **;**|
-|Focar a caixa de pesquisa em qualquer janela de ferramentas (exceto o editor)|**Alt** + ALT **`** Quando a janela de ferramentas tem foco|
+|Focar a caixa de pesquisa em qualquer janela de ferramentas (exceto o editor)| + ALT **`** Quando a janela de ferramentas tem foco|
 |Pesquisar Visual Studio|**Ctrl** + **P**|
 |Pesquisar filtro de resultados da caixa|@opt – opções<br />@cmd – comandos<br />@mru – usado mais recentemente<br />@doc – documentos abertos|
 |Pesquisar em Opções de Ferramentas|**Ctrl** + **E**|
@@ -54,7 +54,7 @@ Para obter uma lista completa de atalhos de comando, confira [Atalhos de teclado
 |Tarefa|Atalho|
 |-|-|
 |Localização Rápida|**Ctrl** + **F**|
-|Resultado Seguinte Rápido de Alterações|**Digita**|
+|Resultado Seguinte Rápido de Alterações|**Enter**|
 |Resultado Anterior de Localização Rápida|**Shift** + **Insira**|
 |Menu Suspenso Expansão de Localização Rápida|**ALT** + **Seta para baixo**|
 |Ignorar Localizar|**Esc**|
@@ -74,14 +74,14 @@ Para obter uma lista completa de atalhos de comando, confira [Atalhos de teclado
 |Adicionar seleção de correspondência com vários cursores|**Shift** + **ALT** + **Ins**|
 |Formatar Documento|**Ctrl** + **K**,**D**|
 |Modo de sugestão do IntelliSense|**Ctrl** + **ALT** + **Espaço** (alternar)|
-|Forçar a exibição do IntelliSense|**Ctrl** + **J**|
+|Forçar a exibição do IntelliSense|**Ctrl**+**J**|
 |Ações Rápidas|**Ctrl** + **.**|
 |Seletor de trechos|**Ctrl** + **K**,**X** ou **?**,**Tab** (Visual Basic)|
 |Envolver com|**Ctrl** + **K**,**S**|
 |Mostrar Informações Rápidas|**Ctrl** + **K**,**I**|
 |Navegar para|**Ctrl** + **,**|
 |Navegar em referências realçadas|**Ctrl** + **Shift** + **Para cima** (anterior)<br />**Ctrl** + **Shift** + **Para baixo** (próximo)|
-|Zoom do editor|**Ctrl** + **Shift** + SHIFT **>** No<br />**Ctrl** + **Shift** + SHIFT **<** Fora|
+|Zoom do editor|**Ctrl** +  + SHIFT **>** No<br />**Ctrl** +  + SHIFT **<** Fora|
 |Bloquear seleção|Mantenha **Alt** pressionada e arraste o mouse<br />**Shift** + **ALT** + **Teclas de direção**|
 |Mover linha para cima/para baixo|**ALT** + **Seta**  /  para cima **ALT** + **Seta para baixo**|
 |Duplicar linha|**Ctrl** + **e**,**V**|
@@ -92,7 +92,7 @@ Para obter uma lista completa de atalhos de comando, confira [Atalhos de teclado
 |Pilha Ir para Definição|**Ctrl** + **Shift** + **8** (voltar)<br />**Ctrl** + **Shift** + **7** (encaminhar)|
 |Feche a janela Inspecionar Definição|**Esc**|
 |Promover a janela Inspecionar Definição para uma guia de documento regular|**Ctrl** + **ALT** + **Página inicial**|
-|Navegar entre várias janelas Inspecionar Definição|**Ctrl** + **Alt** + ALT **-** e **Ctrl** + **ALT**+**=**|
+|Navegar entre várias janelas Inspecionar Definição|**Ctrl** +  + ALT **-** e **Ctrl** + **ALT**+**=**|
 |Navegar entre vários resultados de espiada|**F8** e **Shift** + **F8**|
 |Alterne entre a janela do editor de códigos e a janela de definição de auge|**Shift** + **ESC**|
 |Ir para bloco delimitador|**Ctrl** + **ALT** + **Seta para cima**|
@@ -106,7 +106,7 @@ Para obter uma lista completa de atalhos de comando, confira [Atalhos de teclado
 |Adicionar botões|Selecione o botão de estouro da barra de ferramentas|
 |Localizar a combinação na barra de ferramentas padrão|**Ctrl** + **D**|
 |Localizar o modo de comando da caixa de texto|Escreva **>**|
-|Crie novos alias|** \<new alias> Alias \<command> ** de tipo na janela de **comando**|
+|Crie novos alias|**\<new alias> Alias \<command>** de tipo na janela de **comando**|
 
 ## <a name="debugging"></a>Depuração
 
@@ -127,7 +127,7 @@ Para obter uma lista completa de atalhos de comando, confira [Atalhos de teclado
 |Janela imediata – limpar cache|Tipo **cls**|
 |Janela imediata – valor da impressão|Digite **?varname**|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md)
 - [Recursos de produtividade no Visual Studio](productivity-features.md)

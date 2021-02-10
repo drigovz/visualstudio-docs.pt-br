@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: b32c12f9-b34d-43bd-a1b9-61af6cf8e51b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bcc7bd57ce0c392a2874f107c6e4d8d5753399d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f02d74b1c826b9e9ef7fa7406ca9a61d19b7311
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735439"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951297"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
 Define ou altera a contagem de aprovações associada a este ponto de interrupção associado.
@@ -29,13 +29,13 @@ Define ou altera a contagem de aprovações associada a este ponto de interrupç
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT SetPassCount( 
+HRESULT SetPassCount( 
    BP_PASSCOUNT bpPassCount
 );
 ```
 
 ```csharp
-int SetPassCount( 
+int SetPassCount( 
    BP_PASSCOUNT bpPassCount
 );
 ```
@@ -44,7 +44,7 @@ int SetPassCount( 
 `bpPassCount`\
 no A estrutura de [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) que especifica a contagem de aprovações.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o estado do objeto de ponto de interrupção associado é definido como `BPS_DELETED` (parte da enumeração de [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
 ## <a name="remarks"></a>Comentários
@@ -52,7 +52,7 @@ no A estrutura de [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-pa
 
  Qualquer contagem de aprovação que foi associada anteriormente a esse ponto de interrupção é perdida.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md)
 - [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)
