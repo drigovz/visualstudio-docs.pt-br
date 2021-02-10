@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: caac02510d2fce95fa67340d2061341ed77ac13e
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: a18302067749e3b4fc70b08519056dc391d3dca4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075425"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936880"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Medir o desempenho do aplicativo analisando o uso da CPU
 
@@ -51,7 +51,7 @@ Se o **uso da CPU** não fornecer os dados de que você precisa, outras ferramen
 
 3. A janela de **ferramentas de diagnóstico** aparece automaticamente, a menos que você a tenha desativado. Para exibir a janela novamente, clique em **depurar**  >  **janelas**  >  **Mostrar ferramentas de diagnóstico**.
 
-4. Você pode optar por ver **Uso de CPU** e/ou [Uso de Memória](../profiling/Memory-Usage.md), com a configuração **Selecionar Ferramentas** na barra de ferramentas. Se estiver executando Visual Studio Enterprise, você também poderá habilitar ou desabilitar o IntelliTrace no **Tools**  >  **Options**  >  **IntelliTrace**opções de ferramentas.
+4. Você pode optar por ver **Uso de CPU** e/ou [Uso de Memória](../profiling/Memory-Usage.md), com a configuração **Selecionar Ferramentas** na barra de ferramentas. Se estiver executando Visual Studio Enterprise, você também poderá habilitar ou desabilitar o IntelliTrace no   >    >  **IntelliTrace** opções de ferramentas.
 
      ![Mostrar ferramentas de diagnóstico](../profiling/media/diag-tools-select-tool.png "DiagToolsSelectTool")
 
@@ -130,7 +130,7 @@ Recomendamos que você comece a analisar os dados examinando a lista de funçõe
     ![Árvore de chamadas de ferramentas de diagnóstico](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
     ::: moniker-end
 
-    |Image|Descrição|
+    |Imagem|Descrição|
     |-|-|
     |![Etapa 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|O nó de nível superior nas árvores de chamada de uso da CPU é um pseudo-nó|
     |![Etapa 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Na maioria dos aplicativos, quando a opção [Mostrar Código Externo](#view-external-code) está desabilitada, o nó de segundo nível é um nó **[Código Externo]** que contém o código do sistema e da estrutura que inicia e para o aplicativo, desenha a interface do usuário, controla o agendamento de thread e fornece ao aplicativo outros serviços de nível inferior.|
@@ -162,7 +162,7 @@ Se você quiser exibir os caminhos de chamada do código externo, escolha **Most
 
 ![Escolha o modo de exibição de filtro e, em seguida, mostrar código externo](../profiling/media/diag-tools-show-external-code.png "DiagToolsShowExternalCode")
 
-Saiba que muitas correntes de chamada de código externo são muito aninhadas, de forma que a largura da coluna Nome da Função pode exceder a largura da tela de todos os monitores de computador, exceto dos maiores. Quando isso acontece, os nomes de função são mostrados como **[...] **.
+Saiba que muitas correntes de chamada de código externo são muito aninhadas, de forma que a largura da coluna Nome da Função pode exceder a largura da tela de todos os monitores de computador, exceto dos maiores. Quando isso acontece, os nomes de função são mostrados como **[...]**.
 
 Use a caixa de pesquisa para localizar um nó que você esteja procurando e use a barra de rolagem horizontal para exibir os dados.
 

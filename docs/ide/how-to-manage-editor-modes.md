@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b86859f5f5718871499bb1f3e2014da59f956db
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 112fbd727f28ce1dd3f72626c03e3cc6594da213
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597139"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935877"
 ---
 # <a name="how-to-manage-editor-modes"></a>Como gerenciar modos do editor
 
@@ -56,7 +56,7 @@ No modo **Espaço virtual**, os espaços são inseridos no final de cada linha d
 
 1. Selecione **Opções** no menu **Ferramentas**.
 
-2. Expanda a pasta **Editor de Texto** e escolha **Todas as Linguagens** para definir essa opção globalmente ou escolha uma pasta de idioma específico. Por exemplo, para ativar números de linha somente em Visual Basic, escolha o **Basic**  >  nó **Editor de texto** básico.
+2. Expanda a pasta **Editor de Texto** e escolha **Todas as Linguagens** para definir essa opção globalmente ou escolha uma pasta de idioma específico. Por exemplo, para ativar números de linha somente em Visual Basic, escolha o   >  nó **Editor de texto** básico.
 
 3. Selecione as opções **Gerais** e, em **Configurações**, selecione **Habilitar Espaço virtual**.
 

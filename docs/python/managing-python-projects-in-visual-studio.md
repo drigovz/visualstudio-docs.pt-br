@@ -5,17 +5,17 @@ ms.date: 03/18/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9031b0107babf3d31b6e3b70bb7952cd83467d7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09203557fd9adcd6580dfafa981d6ed4f80eca16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238784"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936451"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projetos do Python no Visual Studio
 
@@ -43,7 +43,7 @@ O Visual Studio fornece uma variedade de modelos de projeto do Python para confi
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Adicionar arquivos, atribuir um arquivo de inicialização e definir os ambientes
 
-À medida que você desenvolve seu aplicativo, normalmente, você precisa adicionar novos arquivos de diferentes tipos ao projeto. Adicionar esses arquivos é feito clicando com o botão direito do mouse no projeto e selecionando **Adicionar**  >  **Item existente** com o qual você procura um arquivo a ser adicionado ou **adiciona**  >  um**novo item**, que abre uma caixa de diálogo com uma variedade de modelos de item. Conforme descrito na referência de [modelos de item](python-item-templates.md), as opções incluem arquivos vazios do Python, uma classe do Python, um teste de unidade e vários arquivos relacionados a aplicativos Web. Explore essas opções com um projeto de teste para saber o que está disponível em sua versão do Visual Studio.
+À medida que você desenvolve seu aplicativo, normalmente, você precisa adicionar novos arquivos de diferentes tipos ao projeto. Adicionar esses arquivos é feito clicando com o botão direito do mouse no projeto e selecionando **Adicionar**  >  **Item existente** com o qual você procura um arquivo a ser adicionado ou **adiciona**  >  um **novo item**, que abre uma caixa de diálogo com uma variedade de modelos de item. Conforme descrito na referência de [modelos de item](python-item-templates.md), as opções incluem arquivos vazios do Python, uma classe do Python, um teste de unidade e vários arquivos relacionados a aplicativos Web. Explore essas opções com um projeto de teste para saber o que está disponível em sua versão do Visual Studio.
 
 Cada projeto do Python tem um arquivo de inicialização atribuído, mostrado em negrito no **Gerenciador de Soluções**. O arquivo de inicialização é o arquivo que é executado quando você inicia a depuração (**F5** ou **debug**  >  **inicia a depuração**) ou quando você executa o projeto na janela **interativa** (**Shift** + **ALT** + **F5** ou **debug**  >  **Execute Project no Python Interactive**). Para alterar, clique com o botão direito do mouse no novo arquivo e selecione **Definir como Item de Inicialização** (ou **Definir como Arquivo de Inicialização** em versões mais antigas do Visual Studio).
 
@@ -69,7 +69,7 @@ Para alterar o ambiente ativo, clique com o botão direito do mouse no ambiente 
 
 ## <a name="project-templates"></a>Modelos de projeto
 
-O Visual Studio fornece várias maneiras para configurar um projeto do Python, do zero ou com base em um código existente. Para usar um modelo, selecione o comando **arquivo**  >  **novo**  >  **projeto** de menu ou clique com o botão direito do mouse na solução em **Gerenciador de soluções** e selecione **Adicionar**  >  **novo projeto**, que exibirá a caixa de diálogo **novo projeto** abaixo. Para ver os modelos específicos do Python, pesquise "Python" ou selecione o nó **Installed**  >  **python** instalado:
+O Visual Studio fornece várias maneiras para configurar um projeto do Python, do zero ou com base em um código existente. Para usar um modelo, selecione o comando **arquivo**  >  **novo**  >  **projeto** de menu ou clique com o botão direito do mouse na solução em **Gerenciador de soluções** e selecione **Adicionar**  >  **novo projeto**, que exibirá a caixa de diálogo **novo projeto** abaixo. Para ver os modelos específicos do Python, pesquise "Python" ou selecione o nó   >  **python** instalado:
 
 ![Nova caixa de diálogo do projeto com modelos do Python](media/projects-new-project-dialog.png)
 

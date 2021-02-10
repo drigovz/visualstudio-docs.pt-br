@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: a89818630258aab42535fb4256fa3e844b0c6878
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 1196f0893c73873d4be6d17c7e41ee56490590d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442424"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937557"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Como criar relatórios de desempenho de teste de carga usando o Microsoft Excel
 
@@ -150,6 +150,6 @@ Os relatórios do Excel podem ser gerados no **Analisador de Teste de Carga**, u
 
 Os resultados de teste de carga e os relatórios contêm possivelmente informações sigilosas que podem ser usadas para criar um ataque no seu computador ou sua rede. Os resultados de teste de carga e os relatórios contêm nomes de computadores e cadeias de conexão. Você deve estar ciente disso quando compartilhar relatórios de teste de carga com outras pessoas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Relatar resultados do teste de carga para comparações de testes ou análise de tendências](../test/compare-load-test-results.md)

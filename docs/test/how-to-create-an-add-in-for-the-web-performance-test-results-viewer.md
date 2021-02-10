@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: b8fa3b83fb9a92be0118f4222e92364767affcda
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: e2773165b37600eb214893de91f8fc8c4467c0d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441072"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937622"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Como: criar um suplemento para o Visualizador de Resultados de Teste de desempenho da Web
 
@@ -336,7 +336,7 @@ As configurações no Visual Studio relacionadas à segurança do suplemento sã
 
 - **Permitir carregamento de componentes de Suplemento de uma URL.** Não é selecionado por padrão. Quando forem selecionados, os suplementos poderão ser carregados de sites externos. Quando não selecionados, os suplementos remotos são proibidos de serem carregados no Visual Studio. Se um suplemento não puder ser carregado por algum motivo, ele não poderá ser carregado na Web. Essa configuração controla somente o carregamento da DLL do suplemento. Os arquivos de registro *.Addin* precisam estar sempre localizados no sistema local.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Windows.Forms.UserControl>
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>

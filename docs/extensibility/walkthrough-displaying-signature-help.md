@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be324ab48d42e859678ccf01d8c75faae6cea381
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 8933822ee5bb63b341ff51296ba2884fef2aeb75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876240"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935905"
 ---
 # <a name="walkthrough-display-signature-help"></a>Walkthrough: exibir a ajuda da assinatura
 A ajuda da assinatura (também conhecida como *informações do parâmetro*) exibe a assinatura de um método em uma dica de ferramenta quando um usuário digita o caractere de início da lista de parâmetros (normalmente um parêntese de abertura). Como um separador de parâmetro e parâmetro (normalmente uma vírgula) são digitados, a dica de ferramenta é atualizada para mostrar o próximo parâmetro em negrito. Você pode definir a ajuda da assinatura das seguintes maneiras: no contexto de um serviço de idioma, defina sua própria extensão de nome de arquivo e tipo de conteúdo e exiba a ajuda da assinatura apenas para esse tipo, ou exiba a ajuda da assinatura para um tipo de conteúdo existente (por exemplo, "texto"). Este tutorial mostra como exibir a ajuda da assinatura para o tipo de conteúdo "texto".
@@ -246,5 +246,5 @@ A ajuda da assinatura (também conhecida como *informações do parâmetro*) exi
 
 4. Depois de digitar o parêntese de abertura, você deverá ver uma dica de ferramenta que exibe uma lista das duas assinaturas do `add()` método.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Walkthrough: vincular um tipo de conteúdo a uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

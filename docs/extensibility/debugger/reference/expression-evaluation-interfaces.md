@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da230a2da87b2dd3e3a85ce3ec6c914e829ccc61
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a048d11b09ee873a2f5a11e35db78f68df6ad680
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736947"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936932"
 ---
 # <a name="expression-evaluation-interfaces"></a>Interfaces de avaliação de expressão
 > [!IMPORTANT]
@@ -62,4 +62,4 @@ ms.locfileid: "80736947"
 ## <a name="see-also"></a>Confira também
 - [Referência da API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 - [Escrevendo um avaliador de expressão do CLR](../../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-- [Visualizador de Tipo e Visualizador Personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+- [Visualizador de tipo e visualizador personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

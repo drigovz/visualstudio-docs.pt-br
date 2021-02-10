@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: c003fc5d6573dfdd88ec85ea37fbb10f80c94484
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: bcef8b73eaf4709e8e636d4719784606019bdcbf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441033"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937583"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Como criar grafos personalizados em resultados do teste de carga
 
@@ -42,7 +42,7 @@ Você pode executar o procedimento a seguir enquanto um teste de carga está em 
 
 3. Personalize o novo gráfico adicionando contadores. Para saber mais, confira [Como adicionar e excluir contadores em gráficos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Analisar resultados do teste de carga na exibição Grafos](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Como: Adicionar e excluir contadores em gráficos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

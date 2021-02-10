@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: d637e019-7c50-4b0a-812e-bc822001e697
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9af7c90342638fb0c154e7de21fa111d560905d0
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: fd6722ca0b930d66a386732dac466a8e4fe36976
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048424"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937908"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 
@@ -42,6 +42,6 @@ HRESULT WINAPI ResumeTracking();
 
  **Cabeçalho:** *FileTracker.h*
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [SuspendTracking](../msbuild/suspendtracking.md)

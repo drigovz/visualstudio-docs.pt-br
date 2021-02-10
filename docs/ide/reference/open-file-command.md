@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: a51a83fc-e3c6-4fa2-8882-8b7b6c0a6406
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 792fe50aea43bc9711a58a895be09f85c041345b
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 96376c352d3019ba2efefc1f82e75e89a4ac2370
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304118"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935619"
 ---
 # <a name="open-file-command"></a>Comando Abrir arquivo
 
@@ -37,7 +37,7 @@ File.OpenFile filename [/e:editorname]
 
 `filename`
 
-Obrigatórios. O caminho total ou parcial e o nome do arquivo a abrir. Caminhos que contêm espaços devem ser colocados entre aspas.
+Obrigatório. O caminho total ou parcial e o nome do arquivo a abrir. Caminhos que contêm espaços devem ser colocados entre aspas.
 
 ## <a name="switches"></a>Comutadores
 
@@ -65,7 +65,7 @@ Este exemplo abre o arquivo de estilo "Test1.css" no editor de código-fonte.
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 34e1bb2c92cd387e979fdaa5746a34ea8d3995fc
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 3c07dd32b889a9d75222bc8ff5a245f516fab528
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877930"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935918"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Walkthrough: Exibir dicas de ferramenta QuickInfo
 QuickInfo é um recurso do IntelliSense que exibe assinaturas de método e descrições quando um usuário move o ponteiro sobre um nome de método. Você pode implementar recursos baseados em linguagem, como QuickInfo, definindo os identificadores para os quais você deseja fornecer descrições de QuickInfo e, em seguida, criando uma dica de ferramenta para exibir o conteúdo. Você pode definir QuickInfo no contexto de um serviço de idioma ou pode definir sua própria extensão de nome de arquivo e tipo de conteúdo e exibir o QuickInfo para apenas esse tipo, ou pode exibir QuickInfo para um tipo de conteúdo existente (como "texto"). Este tutorial mostra como exibir QuickInfo para o tipo de conteúdo "text".
@@ -179,5 +179,5 @@ QuickInfo é um recurso do IntelliSense que exibe assinaturas de método e descr
 
 4. Mova o ponteiro sobre uma das ocorrências de "Adicionar". A assinatura e a descrição do `add` método devem ser exibidas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Walkthrough: vincular um tipo de conteúdo a uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

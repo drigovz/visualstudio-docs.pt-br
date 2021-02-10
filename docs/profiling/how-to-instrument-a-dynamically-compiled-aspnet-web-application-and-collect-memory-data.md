@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 2cdd9903-39db-47e8-93dd-5e6a21bc3435
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: c26342fb956aa5043f316015f05e18ef70d20559
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: 513840110a5f948e245a0ff91878c28fc3b21e6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883586"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936568"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Como instrumentar um aplicativo Web ASP.NET compilado dinamicamente e coletar dados de memória usando a linha de comando do criador de perfil
 Este tópico descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para coletar dados detalhados de alocação de memória do .NET e dados de tempo de vida do objeto de um aplicativo Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilado dinamicamente usando o método de criação de perfil por instrumentação.
@@ -128,6 +128,6 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
 3. Reinicie o computador.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Exibições de dados de memória do .NET](../profiling/dotnet-memory-data-views.md)

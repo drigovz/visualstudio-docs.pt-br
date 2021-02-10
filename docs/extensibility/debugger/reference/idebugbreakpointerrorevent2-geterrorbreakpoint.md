@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e5acfd19-ac17-47f3-a31a-b2aa8baca36d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fe22f18d4574ffde48cea975bff8d8f5801ca465
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e81cf833ea6e03a79d359144fa3e7e9a7024b74e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735077"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936113"
 ---
 # <a name="idebugbreakpointerrorevent2geterrorbreakpoint"></a>IDebugBreakpointErrorEvent2::GetErrorBreakpoint
 Obtém um objeto [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) que descreve o motivo pelo qual um ponto de interrupção não foi associado.
@@ -28,13 +28,13 @@ Obtém um objeto [IDebugErrorBreakpoint2](../../../extensibility/debugger/refere
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetErrorBreakpoint( 
+HRESULT GetErrorBreakpoint( 
     IDebugErrorBreakpoint2** ppErrorBP
 );
 ```
 
 ```csharp
-int GetErrorBreakpoint( 
+int GetErrorBreakpoint( 
     out IDebugErrorBreakpoint2 ppErrorBP
 );
 ```
@@ -43,7 +43,7 @@ int GetErrorBreakpoint( 
 `ppErrorBP`\
 fora Retorna um objeto [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) que descreve o aviso ou erro.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

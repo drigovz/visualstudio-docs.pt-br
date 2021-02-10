@@ -5,15 +5,15 @@ ms.date: 06/29/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: bcdef95935c0522c8b93a972d7f44fbd7632c53b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42cdc6e964d23b5aafdfe225c04d5d35b151cc08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312685"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936399"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Criar projetos do R no Visual Studio
 
@@ -33,7 +33,7 @@ Esse comando cria um projeto com um arquivo *script.R* vazio aberto no editor. O
 
 ![Conteúdo de um projeto R criado usando um modelo](media/projects-template-results.png)
 
-O *.Rhistory* registra todos os comandos que você insere na janela [R Interativo](interactive-repl-for-r-in-visual-studio.md). Você pode abrir uma janela de histórico dedicada com o comando **ferramentas de R**do  >  **Windows**  >  **history** . Essa janela tem um botão de barra de ferramentas e itens do menu de contexto para limpar o conteúdo do histórico.
+O *.Rhistory* registra todos os comandos que você insere na janela [R Interativo](interactive-repl-for-r-in-visual-studio.md). Você pode abrir uma janela de histórico dedicada com o comando **ferramentas de R** do  >  **Windows**  >  **history** . Essa janela tem um botão de barra de ferramentas e itens do menu de contexto para limpar o conteúdo do histórico.
 
 O arquivo *rproject.rproj* mantém determinadas configurações do projeto específicas do R que não são gerenciadas pelo Visual Studio de nenhum outro modo:
 
@@ -56,14 +56,14 @@ Se você tem uma pasta existente de arquivos *.R* que deseja gerenciar em um pro
 
 1. Crie um novo projeto no Visual Studio como na seção anterior.
 1. Copie os arquivos para a pasta do projeto.
-1. No Gerenciador de soluções do Visual Studio, clique com o botão direito do mouse no projeto, selecione **Adicionar**  >  **Item existente**e navegue até os arquivos que você deseja adicionar. Esses arquivos aparecem na árvore do projeto depois de selecionar **OK**.
+1. No Gerenciador de soluções do Visual Studio, clique com o botão direito do mouse no projeto, selecione **Adicionar**  >  **Item existente** e navegue até os arquivos que você deseja adicionar. Esses arquivos aparecem na árvore do projeto depois de selecionar **OK**.
 1. Para organizar o código em subpastas, clique com o botão direito do mouse no projeto, selecione **Adicionar**  >  **nova pasta** primeiro, copie os arquivos nessa pasta e adicione os itens existentes na etapa 3.
 
 ## <a name="project-properties"></a>Propriedades do projeto
 
 Para abrir as páginas de propriedades do projeto, clique com o botão direito do mouse no projeto no **Gerenciador de Soluções** e selecione **Propriedades** ou selecione o item de menu **Projeto > Propriedades do (nome do projeto)**. A janela aberta exibe propriedades do projeto:
 
-| Guia | Propriedade | Descrição |
+| Tab | Propriedade | Descrição |
 | --- | --- | --- |
 | Executar | Arquivo de inicialização | O nome do arquivo que é executado com o comando **Arquivo de inicialização de origem**, **F5**, **Depurar** > **Iniciar depuração** ou **Depurar** > **Iniciar sem depuração**. Clicar com o botão direito do mouse no arquivo no projeto e selecionar **Definir como script de inicialização do R** também o define como o arquivo de inicialização. |
 | | Redefinir R Interativo em execução | Limpa todas as variáveis de workspace da janela interativa ao executar o projeto. Isso garante que não haja nenhum conteúdo no workspace que restou das execuções anteriores. |
@@ -80,13 +80,13 @@ Os projetos do Visual Studio dão suporte a vários comandos gerais por meio do 
 | --- | --- |
 | Definir diretório de trabalho aqui | Define o diretório de trabalho da janela do R Interativo para a pasta do projeto, que também pode ser usado em qualquer subpasta dentro de um projeto. |
 | Abrir pasta que contém | Abre o Windows Explorer no local do arquivo selecionado. |
-| Adicionar script R | Cria e abre um arquivo *.R* com um nome padrão. Você também pode usar o comando **Adicionar**  >  **novo item** para criar *. *Arquivos de R, bem como vários outros tipos de arquivo. Consulte [Modelos de item específicos do R](#r-specific-item-templates). |
+| Adicionar script R | Cria e abre um arquivo *.R* com um nome padrão. Você também pode usar o comando **Adicionar**  >  **novo item** para criar *.* Arquivos de R, bem como vários outros tipos de arquivo. Consulte [Modelos de item específicos do R](#r-specific-item-templates). |
 | Adicionar R Markdown | Cria e abre um documento *.rmd* com um nome padrão. Você também pode usar o comando **Adicionar**  >  **novo item** para criar arquivos *. RMD* , bem como vários outros tipos de arquivo. Consulte [Modelos de item específicos do R](#r-specific-item-templates).  |
 | Publicar procedimentos armazenados | Inicia um processo para publicar todos os procedimentos armazenados contidos em scripts R. Veja [Trabalhar com procedimentos armazenados do SQL Server](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures). |
 
 ## <a name="r-specific-item-templates"></a>Modelos de item específicos do R
 
-As RTVS incluem vários modelos para tipos de arquivo específicos. Você acessa modelos clicando com o botão direito do mouse em um projeto do R e selecionando **Adicionar**  >  **novo item**, selecionando **projeto**  >  **Adicionar novo item**ou usando **arquivo**  >  **novo**  >  **arquivo** e selecionando a guia **R** . A melhor maneira de explorar um modelo é criar um novo projeto e inserir arquivos de cada tipo.
+As RTVS incluem vários modelos para tipos de arquivo específicos. Você acessa modelos clicando com o botão direito do mouse em um projeto do R e selecionando **Adicionar**  >  **novo item**, selecionando **projeto**  >  **Adicionar novo item** ou usando **arquivo**  >  **novo**  >  **arquivo** e selecionando a guia **R** . A melhor maneira de explorar um modelo é criar um novo projeto e inserir arquivos de cada tipo.
 
 > [!Note]
 > Os comandos **Adicionar**  >  **novo item** também exibem tipos de arquivo gerais que não estão listados na tabela; com **arquivo**  >  **novo**  >  **arquivo** , esses tipos estão contidos na guia **geral** .

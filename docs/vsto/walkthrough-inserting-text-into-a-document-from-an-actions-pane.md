@@ -15,15 +15,15 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], adding controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 44fd876dfad99e1a1320a5e5d743ea8e30dfdb98
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c0f24c7270dc3c174be124506e1e36dafe7581f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524166"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937375"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Walkthrough: inserir texto em um documento a partir de um painel Ações
   Este tutorial demonstra como criar um painel Ações em um Microsoft Office documento do Word. O painel Ações contém dois controles que coletam entrada e enviam o texto ao documento.
@@ -124,8 +124,8 @@ ms.locfileid: "97524166"
     |Propriedade|Valor|
     |--------------|-----------|
     |**Nome**|**GetAddress**|
-    |**Aceita o retorno**|**Verdadeiro**|
-    |**Multilinha**|**Verdadeiro**|
+    |**Aceita o retorno**|**True**|
+    |**Multilinha**|**True**|
     |**Tamanho**|**130, 40**|
 
 7. Adicione um controle de **botão** ao controle do painel Ações e altere as propriedades a seguir.
@@ -182,7 +182,7 @@ ms.locfileid: "97524166"
 
 - Associar dados a controles em um painel Ações. Para obter mais informações, consulte [Walkthrough: associar dados a controles em um painel de ações do Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Visão geral do painel Ações](../vsto/actions-pane-overview.md)
 - [Como: adicionar um painel de ações a documentos do Word ou a pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Como: adicionar um painel de ações a pastas de trabalho do Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))

@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 798de693-e43a-4056-aff5-48310c2172c5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b88abc935ca9eaef0a22230d427817756629bcb
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: cc1dc50c379ab2eac7d44c48e06834dd73c477f7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719429"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936425"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Exibições de dados do método de amostragem do criador de perfil
 Esta seção contém informações de referência sobre as exibições e os relatórios dos arquivos de dados do criador de perfil que foram gerados por método de amostragem.

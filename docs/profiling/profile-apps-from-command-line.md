@@ -10,16 +10,16 @@ helpviewer_keywords:
 - CPU Usage, command-line
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: b0d2b0964c565bab4d3a0731a14b93ccd976bb69
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: 0b1d5906213b148605e35c483b377280dc942515
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344488"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936542"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Medir o desempenho do aplicativo na linha de comando
 
@@ -71,7 +71,7 @@ A criação de perfil usando as ferramentas da CLI de Diagnóstico do Visual Stu
    VSDiagnostics.exe stop <id> /output:<path to file>
    ```
 
-1. Localize a saída do arquivo *. diagsession* do comando anterior e abra-o no Visual Studio ( **arquivo**  >  **aberto** ) para examinar as informações coletadas.
+1. Localize a saída do arquivo *. diagsession* do comando anterior e abra-o no Visual Studio (**arquivo**  >  **aberto**) para examinar as informações coletadas.
 
    Para analisar os resultados, consulte a documentação da ferramenta de desempenho correspondente. Por exemplo, isso pode ser o [uso da CPU](../profiling/cpu-usage.md), a [ferramenta de alocação de objeto .net](../profiling/dotnet-alloc-tool.md)ou a ferramenta de [banco de dados](../profiling/analyze-database.md) .
 

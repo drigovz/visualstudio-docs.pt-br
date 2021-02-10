@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32d0dd7dbeee70b8c4eb566a07cf9a44d40d4f49
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 7b98914d4e7fc2d63fd6cc9f79789c389e19b784
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606535"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935996"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Auxiliares do SDK para depuração
 Essas funções e declarações são funções auxiliares globais para implementar mecanismos de depuração, avaliadores de expressão e provedores de símbolo em C++.
@@ -166,7 +166,7 @@ HRESULT EnumMetricSections(
 |metrictypeException|Todas as métricas de exceção.|
 |metricttypeEEExtension|Todas as extensões do avaliador de expressão.|
 
-|Propriedades do mecanismo de depuração|Descrição|
+|Propriedades do mecanismo de depuração|Description|
 |-----------------------------|-----------------|
 |metricAddressBP|Defina como diferente de zero para indicar suporte para pontos de interrupção de endereço.|
 |metricAlwaysLoadLocal|Defina como diferente de zero para sempre carregar o mecanismo de depuração localmente.|
@@ -202,13 +202,13 @@ HRESULT EnumMetricSections(
 |metricIncompatibleList|Chave do registro contendo entradas que especificam GUIDs para mecanismos de depuração que são incompatíveis com esse mecanismo de depuração.|
 |metricDisableJITOptimization|Defina isso como diferente de zero para indicar que otimizações just-in-time (para código gerenciado) devem ser desabilitadas durante a depuração.|
 
-|Propriedades do avaliador de expressão|Descrição|
+|Propriedades do avaliador de expressão|Description|
 |-------------------------------------|-----------------|
 |metricEngine|Isso contém o número de mecanismos de depuração que dão suporte ao avaliador de expressão especificado.|
 |metricPreloadModules|Defina como diferente de zero para indicar que os módulos devem ser pré-carregados quando um avaliador de expressão for iniciado em um programa.|
 |metricThisObjectName|Defina isso para o nome do objeto "This".|
 
-|Propriedades de extensão do avaliador de expressão|Descrição|
+|Propriedades de extensão do avaliador de expressão|Description|
 | - |-----------------|
 |metricExtensionDll|Nome da dll que dá suporte a essa extensão.|
 |metricExtensionRegistersSupported|Lista de registros com suporte.|
@@ -216,18 +216,18 @@ HRESULT EnumMetricSections(
 |metricExtensionTypesSupported|Lista de tipos com suporte.|
 |metricExtensionTypesEntryPoint|Ponto de entrada para acessar tipos.|
 
-|Propriedades do fornecedor da porta|Descrição|
+|Propriedades do fornecedor da porta|Description|
 |------------------------------|-----------------|
 |metricPortPickerCLSID|O CLSID do seletor de porta (uma caixa de diálogo que o usuário pode usar para selecionar portas e adicionar portas a serem usadas para depuração).|
 |metricDisallowUserEnteredPorts|Diferente de zero se as portas inseridas pelo usuário não puderem ser adicionadas ao fornecedor da porta (isso torna a caixa de diálogo Seletor de porta essencialmente somente leitura).|
 |metricPidBase|A ID do processo base usada pelo fornecedor da porta ao alocar IDs de processo.|
 
-|Tipos de armazenamento de SP predefinido|Descrição|
+|Tipos de armazenamento de SP predefinido|Description|
 |-------------------------------|-----------------|
 |storetypeFile|Os símbolos são armazenados em um arquivo separado.|
 |storetypeMetadata|Os símbolos são armazenados como metadados em um assembly.|
 
-|Propriedades diversas|Descrição|
+|Propriedades diversas|Description|
 |------------------------------|-----------------|
 |metricShowNonUserCode|Defina isso como diferente de zero para mostrar o código que não é do usuário.|
 |metricJustMyCodeStepping|Defina isso como diferente de zero para indicar que a depuração pode ocorrer somente no código do usuário.|
@@ -426,5 +426,5 @@ HRESULT EnumMetricSections(
 
  Biblioteca: libs\ad2de.lib, libs\dbgmetric.lib
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Referência da API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

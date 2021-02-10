@@ -9,19 +9,19 @@ helpviewer_keywords:
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 515c99a4d73abcb3a287f3f4026723bd8050b360
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f7927ff370ab05f4931cb0346f00f65157a411d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048491"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937921"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Resolver assemblies em tempo de design
 
-Quando você adiciona uma referência a um assembly por meio da guia **.NET** da caixa de diálogo **Adicionar Referência** , a referência aponta para um assembly de referência intermediário ou seja, um assembly que contém todas as informações de tipo e a assinatura, mas que não necessariamente contém qualquer código. A guia **.net** lista os assemblies de referência que correspondem aos assemblies de tempo de execução no .NET Framework. Além disso, ela lista os assemblies de referência que correspondem aos assemblies de runtime nas pastas AssemblyFoldersEx registradas que são usados por terceiros.
+Quando você adiciona uma referência a um assembly por meio da guia **.NET** da caixa de diálogo **Adicionar Referência**, a referência aponta para um assembly de referência intermediário ou seja, um assembly que contém todas as informações de tipo e a assinatura, mas que não necessariamente contém qualquer código. A guia **.net** lista os assemblies de referência que correspondem aos assemblies de tempo de execução no .NET Framework. Além disso, ela lista os assemblies de referência que correspondem aos assemblies de runtime nas pastas AssemblyFoldersEx registradas que são usados por terceiros.
 
 ## <a name="multi-targeting"></a>Multiplataforma
 
@@ -41,5 +41,5 @@ Quando você adiciona uma referência a um assembly por meio da guia **.NET** da
 
  O pacote de direcionamento que agora é fornecido com o SDK do .NET Framework inclui uma lista de todos os assemblies de runtime nessa versão do Framework, denominada lista de redistribuição (redist), impossibilitando ao sistema de build resolver tipos contra a versão errada do assembly.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Conceitos avançados](../msbuild/msbuild-advanced-concepts.md)

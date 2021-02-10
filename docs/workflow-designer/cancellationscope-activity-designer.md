@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 2c85d663-b219-4142-9866-7693ffd46379
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 175ca46645d55106f18c163c54135316d73ea3ec
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: ef415763a67232f79b269650abecfe6bcabe6bd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993231"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937193"
 ---
 # <a name="cancellationscope-activity-designer"></a>Designer de atividade de CancellationScope
 
@@ -40,8 +40,8 @@ A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.C
 |Nome da propriedade|Obrigatório|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|O nome amigável opcional de atividade de <xref:System.Activities.Statements.CancellationScope> . O padrão é CancellationScope. Embora o valor de <xref:System.Activities.Activity.DisplayName%2A> não é necessário restrita, é uma prática recomendada usar um.|
-|<xref:System.Activities.Statements.CancellationScope.Body%2A>|Verdadeiro|Especifica a atividade para que a lógica cancelar é fornecida. Para adicionar a <xref:System.Activities.Statements.CancellationScope.Body%2A> atividade, descartar uma atividade da caixa de **ferramentas** no **corpo** box no designer de atividade do **CancellationScope** . Adicione o texto de dica "soltar atividade aqui".|
-|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|Verdadeiro|Especifica a atividade que é executada se houver um cancelamento. Para adicionar a <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> atividade, descarte uma atividade da caixa de **ferramentas** no **CancellationHandler** box no designer de atividade do **CancellationScope** . Adicione o texto de dica "soltar atividade aqui".|
+|<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|Especifica a atividade para que a lógica cancelar é fornecida. Para adicionar a <xref:System.Activities.Statements.CancellationScope.Body%2A> atividade, descartar uma atividade da caixa de **ferramentas** no **corpo** box no designer de atividade do **CancellationScope** . Adicione o texto de dica "soltar atividade aqui".|
+|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|True|Especifica a atividade que é executada se houver um cancelamento. Para adicionar a <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> atividade, descarte uma atividade da caixa de **ferramentas** no **CancellationHandler** box no designer de atividade do **CancellationScope** . Adicione o texto de dica "soltar atividade aqui".|
 
 ## <a name="see-also"></a>Confira também
 

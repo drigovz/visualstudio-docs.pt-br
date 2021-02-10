@@ -14,15 +14,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], simple binding data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bc0b4f18e0f9a45f19148fde9e3d289ccad9e73f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e6162c8cc508c1eaada6c2be90bd28d430779cb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526153"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937362"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Walkthrough: vinculação de dados simples no projeto de suplemento do VSTO
 
@@ -153,7 +153,7 @@ Quando você abre o Word, o controle de conteúdo exibe dados do `AdventureWorks
 
 2. Clique nos botões **Avançar** e **anterior** para percorrer os registros do banco de dados.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Dados em soluções do Office](../vsto/data-in-office-solutions.md)
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)

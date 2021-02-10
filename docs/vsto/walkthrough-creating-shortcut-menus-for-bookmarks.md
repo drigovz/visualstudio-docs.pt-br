@@ -14,15 +14,15 @@ helpviewer_keywords:
 - menus, creating in Office applications
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8b018687ec10eb725ece7d776277ea1c699dbbec
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: aabc7dec0a9965a055bce07cafeca25ac0165037
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524216"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937404"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Walkthrough: criar menus de atalho para indicadores
   Este tutorial demonstra como criar menus de atalho para <xref:Microsoft.Office.Tools.Word.Bookmark> controles em uma personalização em nível de documento para o Word. Quando um usuário clica com o botão direito do mouse no texto em um indicador, um menu de atalho é exibido e fornece ao usuário as opções para formatar o texto.
@@ -194,7 +194,7 @@ ms.locfileid: "97524216"
 
 - Use uma caixa de seleção para alterar a formatação em um indicador. Para obter mais informações, consulte [Walkthrough: alterar a formatação do documento usando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Passo a passos usando o Word](../vsto/walkthroughs-using-word.md)
 - [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)
 - [Automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)

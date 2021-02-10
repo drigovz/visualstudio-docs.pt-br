@@ -16,15 +16,15 @@ helpviewer_keywords:
 - simple data binding [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 868a120baa8207d922d3dee55e10c8e903381e19
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 31084703a581999a1f25bfc82db6c36d9e2cbf6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524099"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937401"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Walkthrough: vinculação de dados simples em um projeto de nível de documento
   Este tutorial demonstra os conceitos básicos da vinculação de dados em um projeto de nível de documento. Um único campo de dados em um banco de dado SQL Server está associado a um intervalo nomeado no Microsoft Office Excel. O Walkthrough também mostra como adicionar controles que permitem percorrer todos os registros na tabela.
@@ -194,7 +194,7 @@ ms.locfileid: "97524099"
 
 - Use um <xref:System.Windows.Forms.BindingNavigator> controle para percorrer os registros. Para obter mais informações, consulte [como navegar dados com o controle BindingNavigator Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dados em soluções do Office](../vsto/data-in-office-solutions.md)
 - [Walkthrough: ligação de dados complexa em um projeto de nível de documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)

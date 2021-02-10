@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6456ab3e-1c03-4f3c-91f9-16797ab7f5e7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4bdbff651618365f3b68a142a6cb1e76836876a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dad51c2741296f9d666a352a5e5a6aa0a3e9cf61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735961"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938220"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 Esse método determina o tipo de tempo de execução de um objeto.
@@ -28,7 +28,7 @@ Esse método determina o tipo de tempo de execução de um objeto.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT ResolveRuntimeType( 
+HRESULT ResolveRuntimeType( 
    IDebugObject* pObject,
    IDebugField** ppResolved
 );
@@ -48,7 +48,7 @@ no O [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) a
 `ppResolved`\
 fora Retorna o tipo do objeto como um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

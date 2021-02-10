@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c323f05d341af810eecafae43e8d04d3cba29054
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: a095e9d1e8fc48500bceac06732150a3067e2dd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913939"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937674"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Walkthrough: chamando o modelo de objeto de cliente do SharePoint em uma extensão Gerenciador de Servidores
   Este tutorial demonstra como chamar o modelo de objeto do cliente do SharePoint de uma extensão para o nó **conexões do SharePoint** no **Gerenciador de servidores**. Para obter mais informações sobre como usar o modelo de objeto de cliente do SharePoint, consulte [chamar os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -282,7 +282,7 @@ O conhecimento dos seguintes conceitos é útil, mas não é necessário, para c
 
 5. Feche as duas instâncias do Visual Studio (a instância experimental e a instância do Visual Studio na qual a solução WebPartNode está aberta).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Chamar para os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Estenda o nó conexões do SharePoint no Gerenciador de Servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Walkthrough: estender Gerenciador de Servidores para exibir Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

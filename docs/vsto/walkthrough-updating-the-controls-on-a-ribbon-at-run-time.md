@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], updating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2246dcdca1e754c885dd610f98986306a256228c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 181fafeb55720b5a97a635a4c2322cf7343643d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526055"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937180"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Walkthrough: atualizar os controles em uma faixa de faixas em tempo de execução
 
@@ -298,7 +298,7 @@ Você pode aprender mais sobre como personalizar a interface do usuário do Offi
 
 - Adicione um painel de tarefas personalizado ao Outlook. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Acessar a faixa de faixas em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)

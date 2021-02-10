@@ -13,15 +13,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], updating documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: df2996d99e752fbe0f7f36bcab537ee8c19d4f06
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0db8cd113983231ee45252fec8fb47e3a7b75b7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528395"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937323"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Walkthrough: atualizar um gráfico em um documento usando botões de opção
   Esse passo a passo demonstra como usar os botões de opção em uma personalização ao nível do documento do Microsoft Office Word para fornecer aos usuários a opção de selecionar estilos de gráficos no documento.
@@ -215,7 +215,7 @@ ms.locfileid: "97528395"
 
 - Alterar a formatação selecionando um estilo de uma caixa de combinação. Para obter mais informações, consulte [Walkthrough: alterar a formatação do documento usando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Passo a passos usando o Word](../vsto/walkthroughs-using-word.md)
 - [Exemplos e orientações de desenvolvimento do Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Limitações de controles de Windows Forms em documentos do Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

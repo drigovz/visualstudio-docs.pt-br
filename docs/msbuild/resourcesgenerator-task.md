@@ -16,31 +16,31 @@ helpviewer_keywords:
 ms.assetid: e782bbac-9ee6-472b-8171-3ee008c77b4e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 288d83cd16b9faebc9c6826a08da7c11811663d5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a26c8bfc29ca985a725deea6c75b14d68abb9eb4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048481"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937882"
 ---
 # <a name="resourcesgenerator-task"></a>Tarefa ResourcesGenerator
 
-A <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> tarefa incorpora um ou mais recursos ( *. jpg* , *. ico* , *. bmp* , XAML em formato binário e outros tipos de extensão) em um arquivo *. Resources* .
+A <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> tarefa incorpora um ou mais recursos (*. jpg*, *. ico*, *. bmp*, XAML em formato binário e outros tipos de extensão) em um arquivo *. Resources* .
 
 ## <a name="task-parameters"></a>Parâmetros de tarefa
 
 |Parâmetro|Descrição|
 |---------------|-----------------|
-|`OutputPath`|Parâmetro obrigatório **String** .<br /><br /> Especifica o caminho do diretório de saída. Se o caminho não for um caminho absoluto, ele será tratado como um caminho relativo ao diretório do projeto raiz.|
+|`OutputPath`|Parâmetro obrigatório **String**.<br /><br /> Especifica o caminho do diretório de saída. Se o caminho não for um caminho absoluto, ele será tratado como um caminho relativo ao diretório do projeto raiz.|
 |`OutputResourcesFile`|Parâmetro de saída **ITaskItem[]** obrigatório.<br /><br /> Especifica o caminho e o nome dos arquivos *.resource* gerados. Se o caminho não for um caminho absoluto, o arquivo *.resources* será gerado em relação ao diretório raiz do projeto.|
 |`ResourcesFiles`|Parâmetro **ITaskItem []** necessário.<br /><br /> Especifica um ou mais recursos para ser inserido no arquivo *.resources* gerado.|
 
 ## <a name="example"></a>Exemplo
 
- O exemplo a seguir gera um arquivo *.resources* com um único recurso *.bmp* . O recurso *. bmp* é gerado para um diretório relativo ao diretório raiz do projeto.
+ O exemplo a seguir gera um arquivo *.resources* com um único recurso *.bmp*. O recurso *. bmp* é gerado para um diretório relativo ao diretório raiz do projeto.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -56,7 +56,7 @@ A <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> tarefa incorpora um ou
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência do MSBuild do WPF](../msbuild/wpf-msbuild-reference.md)
 - [Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)

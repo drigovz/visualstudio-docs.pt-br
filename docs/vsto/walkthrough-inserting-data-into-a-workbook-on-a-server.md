@@ -15,15 +15,15 @@ helpviewer_keywords:
 - workbooks [Office development in Visual Studio], inserting data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 23acfc79514d034faa6fce5c2c27a8edcaa4c58d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2456f92e6bd0b6e1a6b8bf6389718ec6a41342dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526219"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937427"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Walkthrough: inserir dados em uma pasta de trabalho em um servidor
   Este tutorial demonstra como inserir dados em um DataSet que é armazenado em cache em uma Microsoft Office pasta de trabalho do Excel sem iniciar o Excel usando a <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -294,6 +294,6 @@ Você pode aprender mais sobre como trabalhar com dados armazenados em cache a p
 
 - Alterar os dados em um conjunto de dado armazenado em cache sem iniciar o Excel. Para obter mais informações, consulte [Walkthrough: alterar dados em cache em uma pasta de trabalho em um servidor](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Walkthrough: alterar os dados armazenados em cache em uma pasta de trabalho em um servidor](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)

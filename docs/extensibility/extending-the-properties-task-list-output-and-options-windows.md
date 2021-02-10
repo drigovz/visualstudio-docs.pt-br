@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54b78197be71dca9fbabbfded90c4e07660a74db
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 2586618b16afa8f8bfd6b7aa529486adf1d9ce41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995792"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938129"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Estenda as propriedades, Lista de Tarefas, saída e opções do Windows
 Você pode acessar qualquer janela de ferramentas no Visual Studio. Este tutorial mostra como integrar informações sobre a janela da ferramenta em uma nova página **Opções** e uma nova configuração na página **Propriedades** e também como gravar nas janelas **lista de tarefas** e **saída** .
@@ -367,7 +367,7 @@ Você pode acessar qualquer janela de ferramentas no Visual Studio. Este tutoria
 
 8. Teste seu código. Compile o projeto e comece a depuração. A instância experimental deve aparecer.
 
-9. Abra a **Tools**  >  página **Opções** de ferramentas. Você deve ver a categoria ToDo no painel esquerdo. As categorias são listadas em ordem alfabética, portanto, olhe sob o TS.
+9. Abra a   >  página **Opções** de ferramentas. Você deve ver a categoria ToDo no painel esquerdo. As categorias são listadas em ordem alfabética, portanto, olhe sob o TS.
 
 10. Na página opções de **tarefas** , você deve ver a `DaysAhead` propriedade definida como **0**. Altere-o para **2**.
 
@@ -490,7 +490,7 @@ Você pode acessar qualquer janela de ferramentas no Visual Studio. Este tutoria
 
      Uma data de vencimento 2 dias depois de hoje é adicionada à caixa de listagem. Nenhum erro é gerado e o **lista de tarefas** (**View**  >  **lista de tarefas**) não deve ter entradas.
 
-4. Agora, altere a configuração na **Tools**  >  **Options**  >  página opções de ferramentas **todo** de **2** volta para **0**.
+4. Agora, altere a configuração na   >    >  página opções de ferramentas **todo** de **2** volta para **0**.
 
 5. Digite outra coisa no **TodoWindow** e clique em **Adicionar** novamente. Isso dispara um erro e também uma entrada no **lista de tarefas**.
 

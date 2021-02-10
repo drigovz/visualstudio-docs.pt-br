@@ -13,15 +13,15 @@ helpviewer_keywords:
 - worksheets, using radio buttons
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4e375f394cd3d8be35ace8e3df07920fb824a07e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b1c9da3b1d019c77988ef01e1b3c019dd3f1d775
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526066"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937310"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Instruções passo a passo: atualizando um gráfico em uma planilha usando botões de opção
   Este tutorial mostra as noções básicas de como usar botões de opção em uma Microsoft Office planilha do Excel para dar ao usuário uma maneira de alternar rapidamente entre as opções. Nesse caso, as opções alteram o estilo de um gráfico.
@@ -251,5 +251,5 @@ ms.locfileid: "97526066"
 
 - Altere a formatação em uma planilha usando as caixas de seleção. Para obter mais informações, consulte [Walkthrough: alterar a formatação da planilha usando controles CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Passo a passos usando o Excel](../vsto/walkthroughs-using-excel.md)

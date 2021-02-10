@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cc235bea-e909-4d8c-ab54-936736c803fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b29252d1586d039084ec1d21f1fc4967aea68baf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1893ffac03aba345589274475f81abd44b5b7b5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727169"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936815"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
 Obtém o `this` `Me` ponteiro (no [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] ) do objeto que contém o método.
@@ -28,7 +28,7 @@ Obtém o `this` `Me` ponteiro (no [!INCLUDE[vbprvb](../../../code-quality/includ
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetThis( 
+HRESULT GetThis( 
    IDebugClassField** ppClass
 );
 ```
@@ -43,7 +43,7 @@ int GetThis(
 `ppClass`\
 fora Retorna um objeto [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) que representa o ponteiro "This".
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

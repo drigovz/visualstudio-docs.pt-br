@@ -14,15 +14,15 @@ helpviewer_keywords:
 author: JoshuaPartlow
 ms.author: joshuapa
 ms.custom: SEO-VS-2020
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b62716c87fafd965652452b6494fe255530e7b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 79f131276172a9df91dd8408149fae66a2f28ca9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363855"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938038"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: alterar o design usando visualização e modelagem
 
@@ -190,7 +190,7 @@ Consulte:
 
 - [Check-in restrito do TFVC](/azure/devops/pipelines/build/triggers)
 
-- [Tarefas de Build e versão](/azure/devops/pipelines/tasks/index)
+- [Criar e lançar tarefas](/azure/devops/pipelines/tasks/index)
 
 ### <a name="general-tips-for-creating-and-using-models"></a>Dicas gerais para criar e usar modelos
 
@@ -482,7 +482,7 @@ Os diagramas de dependência ajudam você a:
 |-|-|
 |**Fóruns**|- [Ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [SDK de modelagem de & de visualização do Visual Studio (ferramentas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visualizar código](../modeling/visualize-code.md)
 - [Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)

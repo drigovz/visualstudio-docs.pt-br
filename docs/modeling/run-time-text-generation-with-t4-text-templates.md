@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text templates, generating files at run time
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fcb7048b4319d1edb46911a74e96f440540e4299
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5c64dd1c8ee25f2e0a3c2b94caa8026438b32286
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363933"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937947"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Geração de texto de tempo de execução com modelos de texto T4
 
@@ -429,13 +429,13 @@ End of common template.
 End material for DerivedTemplate1.
 ```
 
-## <a name="related-topics"></a>Tópicos Relacionados
+## <a name="related-topics"></a>Tópicos relacionados
 
 Modelos de tempo de design: se você quiser usar um modelo para gerar código que se torne parte de seu aplicativo, consulte [geração de código em tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
 Os modelos de tempo de execução podem ser usados em qualquer aplicativo em que os modelos e seu conteúdo sejam determinados no momento da compilação. Mas se você quiser escrever uma extensão do Visual Studio que gere texto de modelos que são alterados em tempo de execução, consulte [invocando a transformação de texto em uma extensão do vs](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md)
 - [Gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md)

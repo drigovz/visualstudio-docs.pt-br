@@ -16,15 +16,15 @@ helpviewer_keywords:
 - <Sdk> element [MSBuild]
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b348cf2af76c439a28bbb58c0050cc3d458d5457
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: cd5f66cc6500a3320e0da962985f5b7fff1e86dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048358"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937895"
 ---
 # <a name="sdk-element-msbuild"></a>Elemento Sdk (MSBuild)
 
@@ -32,7 +32,7 @@ Faz referência a um SDK de projeto do MSBuild.
 
  \<Project> \<Sdk>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <Sdk Name="My.Custom.Sdk"
@@ -52,7 +52,7 @@ Faz referência a um SDK de projeto do MSBuild.
 
 ### <a name="child-elements"></a>Elementos filho
 
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -60,7 +60,7 @@ Faz referência a um SDK de projeto do MSBuild.
 | - | - |
 | [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto do MSBuild. |
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como referenciar um SDK de projeto do MSBuild](../msbuild/how-to-use-project-sdk.md)
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)

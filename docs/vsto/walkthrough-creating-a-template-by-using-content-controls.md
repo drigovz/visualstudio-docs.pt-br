@@ -13,15 +13,15 @@ helpviewer_keywords:
 - content controls [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2dd7e75048a84a4e235390b99d17d48dfad039ec
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4bd636070a8375b6761cb2d3ab62d08be4302db4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524989"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937492"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Walkthrough: criar um modelo usando controles de conteúdo
   Este tutorial demonstra como criar uma personalização em nível de documento que usa controles de conteúdo para criar conteúdo estruturado e reutilizável em um modelo do Word Microsoft Office.
@@ -236,7 +236,7 @@ ms.locfileid: "97524989"
 
 - Associar controles de conteúdo a partes do XML, também nomeadas como partes XML personalizadas, que são inseridas em um documento. Para obter mais informações, consulte [Walkthrough: associar controles de conteúdo a partes XML personalizadas](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Controles de conteúdo](../vsto/content-controls.md)
 - [Como: adicionar controles de conteúdo a documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md)

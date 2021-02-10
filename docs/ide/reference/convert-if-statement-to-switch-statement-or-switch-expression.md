@@ -6,17 +6,17 @@ ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: e19314b8bf73f5859fdf2cef7d281f142c643b68
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 0d857338eb1c9b5bb66ccb89e20e6f892944d608
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305560"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936823"
 ---
 # <a name="convert-if-statement-to-switch-statement-or-switch-expression"></a>Converter instrução if em instrução switch ou em expressão switch
 
@@ -44,6 +44,6 @@ Esta refatoração aplica-se a:
 
     ![Converter a instrução If para alternar a expressão](media/convert-if-to-switch-expression.png)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Refatoração](../refactoring-in-visual-studio.md)
