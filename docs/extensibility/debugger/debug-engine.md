@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c31d095a3e340bf7e8f7a61a8db5bcbed53f0d5f
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 9e278b83e69a063c88b4cb3ff48d919d2b07ea6a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914212"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955158"
 ---
 # <a name="debug-engine"></a>Mecanismo de depuração
 Um mecanismo DE depuração (DE) funciona com o interpretador ou o sistema operacional para fornecer serviços de depuração, como controle de execução, pontos de interrupção e avaliação de expressão. O DE é responsável por monitorar o estado de um programa que está sendo depurado. Para fazer isso, o DE usa quaisquer métodos disponíveis no tempo de execução com suporte, seja da CPU ou das APIs fornecidas pelo tempo de execução.
@@ -39,7 +39,7 @@ Um mecanismo DE depuração (DE) funciona com o interpretador ou o sistema opera
 
  O DE funciona com um componente avaliador de expressão para habilitar o DE para esse tempo de execução específico entender a sintaxe das expressões. O DE também funciona com um componente de manipulador de símbolo para acessar as informações de depuração simbólicas geradas pelo compilador de linguagem. Para obter mais informações, consulte [avaliador de expressão](../../extensibility/debugger/expression-evaluator.md) e [provedor de símbolos](../../extensibility/debugger/symbol-provider.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Componentes do depurador](../../extensibility/debugger/debugger-components.md)
 - [Avaliador de expressão](../../extensibility/debugger/expression-evaluator.md)
 - [Provedor de símbolos](../../extensibility/debugger/symbol-provider.md)

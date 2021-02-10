@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2513eb99940d45d11bc2360581cbba455e864da2
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: f8a85c87b14057372254f755e4c414aa089e5a55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305029"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955236"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Conceitos e recursos de programação para extensões de ferramentas do SharePoint
   Há vários conceitos e recursos de programação importantes relacionados às ferramentas do SharePoint no Visual Studio. Esses conceitos e recursos desempenham um papel importante na maioria das extensões das ferramentas do SharePoint.
@@ -38,7 +38,7 @@ ms.locfileid: "96305029"
 
  Descreve como associar dados personalizados a determinados tipos de objetos em extensões de ferramentas do SharePoint.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Estenda as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Estender o sistema de projeto do SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Estenda o nó conexões do SharePoint no Gerenciador de Servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)

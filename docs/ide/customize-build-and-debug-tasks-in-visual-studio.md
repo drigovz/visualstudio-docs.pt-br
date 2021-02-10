@@ -12,15 +12,15 @@ helpviewer_keywords:
 - launch.vs.json file [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 26f529fe8d9d8731375c4aa0783dde0dadb28a1d
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 1088cae031dc3498d2c5cdcd33db8d42f721b7d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006452"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954417"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalizar tarefas de compilação e depuração para desenvolvimento de "Pasta Aberta"
 
@@ -311,7 +311,7 @@ Os arquivos *.gitignore* são usados para informar ao Git quais arquivos ignorar
 
 As configurações lidas no arquivo *.gitignore* são aplicadas ao seu diretório pai e a todos os subdiretórios.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Desenvolver o código sem projetos nem soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Projetos Open Folder para C++](/cpp/build/open-folder-projects-cpp)

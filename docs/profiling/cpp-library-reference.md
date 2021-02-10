@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c9f8eea2-c964-485d-9ad0-55a4bf425ae7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: efe02bbd2e31792e1feb306ba331fa3bc4f736f9
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: f5a8d34c5a0e39b52949c1b60a6e73d18fff3d26
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723004"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954300"
 ---
 # <a name="c-library-reference"></a>Referência de biblioteca C++
 
@@ -30,6 +30,6 @@ Esta seção contém informações de referência para o SDK da Visualização S
 
 [Namespace de simultaneidade (Visualizador de simultaneidade)](../profiling/concurrency-namespace-concurrency-visualizer.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [SDK do Visualizador de Simultaneidade](../profiling/concurrency-visualizer-sdk.md)

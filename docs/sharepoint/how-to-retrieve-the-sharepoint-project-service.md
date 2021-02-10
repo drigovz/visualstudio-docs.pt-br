@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint project service
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 553b4ae3b7ecfa9fa49065824020ebdcecf77215
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 6ae4000bb0ef147a8f601ce80483b9f2ecbe2de8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304437"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955223"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>Como recuperar o serviço de projeto do SharePoint
   Você pode acessar o serviço de projeto do SharePoint nos seguintes tipos de soluções:
@@ -101,7 +101,7 @@ ms.locfileid: "96304437"
 
   Em uma extensão do Visual Studio que tem acesso a um <xref:EnvDTE80.DTE2> objeto, você pode solicitar um <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objeto usando o <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> método de um <xref:Microsoft.VisualStudio.Shell.ServiceProvider> objeto. Para obter mais informações, consulte [obtendo um serviço do objeto DTE](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Usar o serviço de projeto do SharePoint](../sharepoint/using-the-sharepoint-project-service.md)
 - [Como: obter um serviço](../extensibility/how-to-get-a-service.md)
 - [Como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)

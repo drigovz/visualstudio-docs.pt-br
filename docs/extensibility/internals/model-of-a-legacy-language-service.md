@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2928d3c09a54ea8e9548f7751381279f153643e5
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 26b27bd6bef40a38e32e5b0d6d26e3d147659286
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876734"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954630"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modelo de um serviço de linguagem herdado
 Um serviço de linguagem define os elementos e recursos para um idioma específico e é usado para fornecer ao editor informações específicas para esse idioma. Por exemplo, o editor precisa saber os elementos e as palavras-chave do idioma para dar suporte à cor da sintaxe.
@@ -49,5 +49,5 @@ Um serviço de linguagem define os elementos e recursos para um idioma específi
 | Gerenciador de texto | Gerenciado pelo <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> serviço, do qual você obtém um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> ponteiro | Um componente que mantém informações comuns compartilhadas por todos os componentes descritos anteriormente. |
 | Serviço de linguagem | Dependente de implementação; implementa <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | Um objeto que fornece ao editor informações específicas de idioma, como realce de sintaxe, conclusão de instrução e correspondência de chaves. |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Dados de documentos e exibição de documentos em editores personalizados](../../extensibility/document-data-and-document-view-in-custom-editors.md)

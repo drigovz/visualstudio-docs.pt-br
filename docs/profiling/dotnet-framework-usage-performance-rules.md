@@ -7,21 +7,21 @@ ms.topic: conceptual
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6bb10f948e7aa9d97491949222c3cb0d15ba66
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: f8ec2756353ac56b3b5d44e2a50c4d4f5b1c7ebf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955379"
 ---
 # <a name="net-framework-usage-performance-rules"></a>Regras de desempenho de uso do .NET Framework
 As regras de desempenho na categoria de uso do .NET Framework identificam métodos específicos que podem ser otimizados e também identificam padrões de uso mais gerais, como coleta de lixo e contenção de bloqueio, o que pode ser investigado para problemas de desempenho.
 
-|Regra|Descrição|
+|Regra|Description|
 |-|-|
 |[DA0001: Usar StringBuilder para concatenações](../profiling/da0001-use-stringbuilder-for-concatenations.md)|As chamadas a <xref:System.String.Concat(System.String,System.String)?displayProperty=fullName> são uma proporção significativa dos dados de criação de perfil. Considere o uso da classe <xref:System.Text.StringBuilder> para construir cadeias de caracteres com base em vários segmentos.|
 |[DA0005: Coletas de GC2 frequentes](../profiling/da0005-frequent-gc2-collections.md)|Um número relativamente alto de objetos de memória do .NET está sendo recuperado na coleta de lixo de geração 2. Se muitos objetos de curta duração sobrevivem à coleta de geração 1, o custo de gerenciamento de memória pode facilmente se tornar excessivo.|

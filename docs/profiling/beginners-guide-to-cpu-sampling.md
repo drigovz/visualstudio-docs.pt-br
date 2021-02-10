@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 85161cc4-18ee-49b3-9487-33680e687597
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c61d407247910131deee9585d19a921f8cf76cca
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: c9368ca0bf2c10afb86f61683bf58b631c4ba5f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205353"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954378"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guia do iniciante para amostragem de CPU
 Você pode usar as ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este procedimento mostra como usar dados de **Amostragem**.
@@ -125,7 +125,7 @@ Você pode usar as ferramentas de criação de perfil do Visual Studio para anal
 
      Uma nova janela de relatório é aberta, exibindo os resultados da comparação. Para saber mais sobre como usar a exibição de comparação, veja [Como comparar arquivos de dados de desempenho](../profiling/how-to-compare-performance-data-files.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Performance Explorer](../profiling/performance-explorer.md)
 - [Introdução](../profiling/getting-started-with-performance-tools.md)
 - [Visões gerais](../profiling/overviews-performance-tools.md)

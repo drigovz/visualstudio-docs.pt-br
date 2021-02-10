@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f6801f6b60d2ef522385ecdf290d0a1913bd6df2
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: c16414e6a49d727cf6b2113184c507feb7a73569
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850215"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955782"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Compilar e depurar soluções do SharePoint
   Em geral, a criação e a depuração de soluções do SharePoint são as mesmas que a criação e a depuração de outros tipos de projetos no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Os tópicos nesta seção explicam as diferenças que existem.
@@ -50,7 +50,7 @@ ms.locfileid: "94850215"
 ## <a name="using-the-clean-command"></a>Usando o comando limpar
  Quando uma solução do SharePoint é instalada em um servidor do SharePoint para depuração, o comando **limpar** não desinstala a solução. Em vez disso, você deve desativar os recursos por meio da configuração do SharePoint.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Procurar conexões do SharePoint usando Gerenciador de Servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

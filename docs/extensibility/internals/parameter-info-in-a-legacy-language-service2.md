@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc239d5b0d580d420683c6940ac2bbd5198335d7
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 60e24162407c4daeb8643bf106c385f76b11c7d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875941"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954521"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-2"></a>Informações de parâmetro em um serviço de linguagem herdado 2
 As informações de parâmetro do IntelliSense são uma dica de ferramenta que exibe a assinatura de um método quando o usuário digita o caractere inicial da lista de parâmetros (normalmente um parêntese de abertura) para a lista de parâmetros do método. À medida que cada parâmetro é inserido e o separador de parâmetro (normalmente uma vírgula) é digitado, a dica de ferramenta é atualizada para mostrar o próximo parâmetro em negrito.

@@ -8,17 +8,17 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 187ca5ea0d0232e0ca8b99165e77ee265b81e801
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9838cd39fe29f8233f82df00dda6a7392e3494cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285082"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955483"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Desenvolver código JavaScript e TypeScript no Visual Studio sem projetos ou soluções
 
@@ -79,7 +79,7 @@ Se nenhuma das estruturas com suporte for reconhecida, o executor de teste padr�
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))
 
-Depois de abrir o Gerenciador de testes (escolha **testar**o  >  **Windows**  >  **Test Explorer**), o Visual Studio descobre e exibe os testes.
+Depois de abrir o Gerenciador de testes (escolha **testar** o  >  **Windows**  >  **Test Explorer**), o Visual Studio descobre e exibe os testes.
 
 > [!NOTE]
 > O executor de teste enumerará somente os arquivos JavaScript na raiz do teste. Se o aplicativo for escrito em TypeScript, você precisará criá-los primeiro.

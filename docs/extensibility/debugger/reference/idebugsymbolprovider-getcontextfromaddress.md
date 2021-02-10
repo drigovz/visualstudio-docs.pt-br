@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7a27d56f-20d4-4e5c-af7b-7307d3aff0a1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca6c3fa5d657100ecce55de31117ea2c2532374d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60ee6773e468c1f647a78712bbdcb5b64f8d6871
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719253"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954755"
 ---
 # <a name="idebugsymbolprovidergetcontextfromaddress"></a>IDebugSymbolProvider::GetContextFromAddress
 Esse método mapeia um endereço de depuração em um contexto de documento.
@@ -28,7 +28,7 @@ Esse método mapeia um endereço de depuração em um contexto de documento.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetContextFromAddress( 
+HRESULT GetContextFromAddress( 
    IDebugAddress*           pAddress,
    IDebugDocumentContext2** ppDocContext
 );
@@ -48,7 +48,7 @@ no O endereço de depuração, conforme representado por uma interface [IDebugAd
 `ppDocContext`\
 fora Retorna um contexto de documento, conforme representado por uma interface [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também

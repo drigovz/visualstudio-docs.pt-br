@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e6529f4f82f7a8a6862ae85adbf170d2fb6f8706
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: ce569dabca9e5d867310b8d510975331f5a9f046
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006504"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954430"
 ---
 # <a name="code-snippet-functions"></a>Funções de snippet de código
 
@@ -29,7 +29,7 @@ Há três funções disponíveis para uso com os snippets de código de C#. As f
 
 A tabela a seguir descreve as funções disponíveis para uso com o elemento `Function` em snippets de código.
 
-|Função|Descrição|Idioma|
+|Função|Descrição|Linguagem|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(EnumerationLiteral)`|Gera uma instrução de opção e um conjunto de instruções de maiúsculas e minúsculas para os membros da enumeração especificada pelo parâmetro `EnumerationLiteral`. O parâmetro `EnumerationLiteral` deve ser uma referência a uma literal de enumeração ou a um tipo de enumeração.|C#|
 |`ClassName()`|Retorna o nome da classe que contém o snippet inserido.|C#|
@@ -157,7 +157,7 @@ Este exemplo mostra como usar a função `SimpleTypeName`. Quando este snippet f
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Elemento Function](../ide/code-snippets-schema-reference.md#function-element)
 - [Referência de esquema dos snippets de código](../ide/code-snippets-schema-reference.md)

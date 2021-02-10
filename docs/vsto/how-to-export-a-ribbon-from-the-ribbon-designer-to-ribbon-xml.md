@@ -18,15 +18,15 @@ helpviewer_keywords:
 - exporting Ribbon
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f39131eb7e3469d389ad2d50aaeb1ee97e3865b9
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 2a0511fd103345859f96b18f333465106505057a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844134"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953975"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Como exportar uma faixa de faixas do designer de faixa de das faixas para XML da faixa de modo
   O item **da faixa de tipos (Visual Designer)** não dá suporte a todos os tipos possíveis de personalização da faixa de medida. Para personalizar a faixa de opções de maneiras avançadas, você pode exportar a faixa do designer para o XML da faixa e editar o XML diretamente.

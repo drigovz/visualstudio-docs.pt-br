@@ -12,15 +12,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1f9eca5150e019906805adf40e5c9b6af8a3c14e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ddbc74c00c1e1f74ce078586d624e2da4dbd8163
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846721"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954014"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Como: configurar a segurança da lista de inclusão
   Se você tiver permissões de administrador, poderá configurar o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] prompt de confiança para controlar se os usuários finais recebem a opção de instalar soluções do Office, salvando uma decisão de confiança na lista de inclusão. Para obter informações sobre listas de inclusão, consulte [confiar em soluções do Office usando listas de inclusão](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).
@@ -58,9 +58,9 @@ ms.locfileid: "96846721"
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
     |**UntrustedSites**|**Desabilitado**|
-    |**Meu**|**Habilitado**|
-    |**Intranet Local**|**Habilitado**|
-    |**TrustedSites**|**Habilitado**|
+    |**Meu**|**Enabled**|
+    |**Intranet Local**|**Enabled**|
+    |**TrustedSites**|**Enabled**|
 
      Por padrão, a **Internet** tem o valor **AuthenticodeRequired** e **UntrustedSites** tem o valor **desabilitado**.
 
@@ -209,6 +209,6 @@ ms.locfileid: "96846721"
 
 3. Compile e execute o aplicativo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Confiar em soluções do Office usando listas de inclusão](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
 - [Proteger soluções do Office](../vsto/securing-office-solutions.md)

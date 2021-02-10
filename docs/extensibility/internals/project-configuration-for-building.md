@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7768de1b57142e201c4108f5ef0c0768c57a8639
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: b8891d5e68623312049e60730b0239bf7c06e83c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877995"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954469"
 ---
 # <a name="project-configuration-for-building"></a>Configuração de projeto para compilar
 A lista de configurações de solução para uma determinada solução é gerenciada pela caixa de diálogo Configurações de solução.
@@ -57,7 +57,7 @@ A lista de configurações de solução para uma determinada solução é gerenc
 
  Além disso, você pode fornecer uma grade na janela dependências do projeto. Para obter mais informações, consulte [grade de exibição de propriedades](../../extensibility/internals/properties-display-grid.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Gerenciando opções de configuração](../../extensibility/internals/managing-configuration-options.md)
 - [Configuração de projeto para gerenciar a implantação](../../extensibility/internals/project-configuration-for-managing-deployment.md)
 - [Configuração de projeto para saída](../../extensibility/internals/project-configuration-for-output.md)

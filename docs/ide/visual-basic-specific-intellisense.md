@@ -11,15 +11,15 @@ helpviewer_keywords:
 - IntelliSense [Visual Studio], Visual Basic
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 70cdcf9eb6d741fc579ce555ce0bfa3cdea0d774
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 1420165c8ca574c74efe6911bb9c5635e729a260
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478816"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955548"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>IntelliSense para arquivos de código do Visual Basic
 
@@ -41,7 +41,7 @@ Dicas de sintaxe são exibidas na sintaxe da instrução que você está digitan
 
 A conclusão pode ser desativada por padrão desmarcando **Listar membros automaticamente** na página de propriedades **Geral** na pasta **Visual Basic**.
 
-Você pode invocar manualmente a conclusão invocando membros da lista, palavra completa **Alt** ou + **seta para a direita** Alt. Para obter mais informações, confira [Usar o IntelliSense](../ide/using-intellisense.md).
+Você pode invocar manualmente a conclusão invocando membros da lista, palavra completa ou + **seta para a direita** Alt. Para obter mais informações, confira [Usar o IntelliSense](../ide/using-intellisense.md).
 
 ## <a name="intellisense-in-zone"></a>IntelliSense por Zona
 
