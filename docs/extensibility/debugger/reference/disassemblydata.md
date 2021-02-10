@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9dcf3316ba57bbb25ee171cba7e4edc4923fa270
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49e8f151aa01037a0bc18161fbe94a00488394db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737278"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953832"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 Descreve uma instrução de desmontagem para o ambiente de desenvolvimento integrado (IDE) a ser exibido.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```cpp
 typedef struct tagDisassemblyData {
@@ -46,7 +46,7 @@ typedef struct tagDisassemblyData {
 ```
 
 ```csharp
-public struct DisassemblyData { 
+public struct DisassemblyData { 
     public uint          dwFields;
     public string        bstrAddress;
     public string        bstrAddressOffset;
@@ -96,7 +96,7 @@ Para documentos de texto que podem ser representados como nomes de arquivo, o `b
 
 Para documentos de texto que não podem ser representados como nomes de arquivo, `bstrDocumentUrl` é um identificador exclusivo para o documento e o mecanismo de depuração deve implementar o método [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) .
 
-Esse campo também pode conter informações adicionais sobre somas de verificação. Consulte comentários para obter detalhes.
+Esse campo também pode conter informações adicionais sobre somas de verificação. Consulte Comentários para obter detalhes.
 
 `dwByteOffset`\
 O número de bytes que a instrução é do início da linha de código.

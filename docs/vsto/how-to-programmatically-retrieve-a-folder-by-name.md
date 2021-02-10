@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], retrieving by name
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c4e615897fedcbfa41ad7958e93354718d9ccfbc
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c05f8bc0174807a5336a9d9f79ac3dc81e87476e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953871"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Como: recuperar programaticamente uma pasta por nome
   Este exemplo obtém uma referência a uma pasta personalizada nomeada e, em seguida, exibe o conteúdo da pasta.
@@ -34,7 +34,7 @@ ms.locfileid: "97528574"
 
 - Uma pasta chamada TestFolder.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Trabalhar com pastas](../vsto/working-with-folders.md)
 - [Como: pesquisar programaticamente em uma pasta específica](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
 - [Como: pesquisar programaticamente por um contato específico](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
