@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 20dc9b6ac1bd4e565fd10793889c611f9b039778
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 324037010e642ab4e96f6efea5da0f232c9bd530
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363166"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935060"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Estender a DSL usando MEF
 
@@ -131,7 +131,7 @@ Se você tiver acesso a um DSL habilitado para MEF criado por você mesmo ou por
 
    - Esse assembly geralmente tem um nome que termina com ".Dsl.dll".
 
-   - Se você tiver acesso ao projeto DSL, poderá encontrar o arquivo do assembly no diretório **DSL \\ bin \\ \** _
+   - Se você tiver acesso ao projeto de DSL, poderá encontrar o arquivo de assembly na pasta de **DSL \\ \\ \*** do diretório
 
    - Se você tiver acesso ao arquivo VSIX de DSL, poderá encontrar o assembly alterando a extensão de nome de arquivo do arquivo VSIX para ". zip". Descompacte o arquivo. zip.
 
@@ -147,7 +147,7 @@ Se você tiver acesso a um DSL habilitado para MEF criado por você mesmo ou por
 
    - System.Windows.Forms.dll
 
-4. Crie um novo projeto _ *VSIX projeto**.
+4. Crie um novo projeto de **projeto VSIX** .
 
 5. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto VSIX e escolha **definir como projeto de inicialização**.
 
@@ -159,11 +159,11 @@ Se você tiver acesso a um DSL habilitado para MEF criado por você mesmo ou por
 
    1. Em **origem. extensão. vsixmanifest**, clique em **Adicionar referência**
 
-   2. Na caixa de diálogo, clique em **Adicionar carga** e localize o arquivo VSIX da DSL. O arquivo VSIX é criado na solução DSL, em **DslPackage \\ bin \\ \** _.
+   2. Na caixa de diálogo, clique em **Adicionar carga** e localize o arquivo VSIX da DSL. O arquivo VSIX é criado na solução DSL, no **DslPackage \\ bin \\ \***.
 
        Isso permite que os usuários instalem a DSL e sua extensão ao mesmo tempo. Se o usuário já tiver instalado a DSL, somente sua extensão será instalada.
 
-9. Revise e atualize os outros campos de _ * Source. Extension. vsixmanifest * *. Clique em **selecionar edições** e verifique se as edições corretas do Visual Studio estão definidas.
+9. Examine e atualize os outros campos de **origem. extensão. vsixmanifest**. Clique em **selecionar edições** e verifique se as edições corretas do Visual Studio estão definidas.
 
 10. Adicione código ao projeto de biblioteca de classes. Use os exemplos na próxima seção como guia.
 
@@ -374,7 +374,7 @@ namespace MefExtension
 } } } }
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Enviar extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [MEF (Managed Extensibility Framework)](/dotnet/framework/mef/index)

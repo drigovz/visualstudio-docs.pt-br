@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain path
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a24e2c9bcbecb095282c0914fa09f93e5c21e699
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: c11776576d00306e4b0f3de5e7ff830037c1fefd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361737"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935151"
 ---
 # <a name="domain-path-syntax"></a>Sintaxe do caminho de domínio
 As definições de DSL usam uma sintaxe semelhante a XPath para localizar elementos específicos em um modelo.
@@ -37,6 +37,6 @@ As definições de DSL usam uma sintaxe semelhante a XPath para localizar elemen
 
  O nome que você usa para o salto do elemento ao link é o valor de `Property Name` da função. O nome que você usa para o salto do link ao elemento é o nome da função de destino.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Noções básicas sobre modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - text templates, debugging
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ad1545918a02fbcf530b439e801a656a425864
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b197fd52972162acbc6e7d6882507f943b2a560c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361463"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935346"
 ---
 # <a name="debugging-a-t4-text-template"></a>Depurando um modelo de texto T4
 Você pode definir pontos de interrupção em modelos de texto. Para depurar um modelo de texto de tempo de design, salve o arquivo de modelo de texto e escolha **depurar modelo T4** no menu de atalho do arquivo em Gerenciador de soluções. Para depurar um modelo de texto de tempo de execução, basta depurar o aplicativo ao qual ele pertence.
@@ -45,7 +45,7 @@ Você pode definir pontos de interrupção em modelos de texto. Para depurar um 
 |O assembly ' {0} ' para o processador de diretiva ' {1} ' não recebeu o conjunto de permissões FullTrust. Somente os assemblies confiáveis têm permissão para fornecer processadores de diretiva. Esse processador de diretiva não será carregado.|Ocorre quando o sistema não concede permissões FullTrust a um assembly que contém um processador de diretiva. A mensagem fornece o nome do assembly e o nome do processador de diretiva.|Certifique-se de usar apenas assemblies confiáveis no computador local.|
 |O caminho ' {0} ' deve ser local para este computador ou parte de sua zona confiável.|Ocorre quando uma diretiva ou diretiva de assembly faz referência a um arquivo que não está no computador local ou na zona confiável da rede.|Certifique-se de que o diretório onde as diretivas de diretiva ou de assembly estão localizadas esteja em sua zona confiável. Você pode adicionar um diretório de rede à sua zona confiável por meio do Internet Explorer.|
 |Vários erros de sintaxe, como "catch ' inválido de token '" ou "um namespace não pode conter diretamente Membros"|Número excessivo de chaves de fechamento no seu código de modelo. O compilador está confuso com o código de geração padrão.|Verifique o número de chaves de fechamento e colchetes dentro dos delimitadores de código.|
-|Loops ou condicionais não compilados ou executados corretamente. Por exemplo: `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Esse código sempre gera o valor de i. Somente "número é:" é condicional.|Em C#, sempre use chaves para circundar blocos de texto inseridos em instruções de controle.|Adicionar chaves: `<#if (i>10) { #>    Number is: <#= i #><# } #>` .|
+|Loops ou condicionais não compilados ou executados corretamente. Por exemplo, `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Esse código sempre gera o valor de i. Somente "número é:" é condicional.|Em C#, sempre use chaves para circundar blocos de texto inseridos em instruções de controle.|Adicionar chaves: `<#if (i>10) { #>    Number is: <#= i #><# } #>` .|
 |"Expressão muito complexa" ao processar um modelo em tempo de design ou compilar um modelo de tempo de execução (pré-processado).<br /><br /> O Visual Studio para de funcionar ao tentar inspecionar o código gerado por um modelo de tempo de execução.|O bloco de texto é muito longo. O T4 converte blocos de texto em uma expressão de concatenação de cadeia de caracteres, com um literal de cadeia de caracteres para cada linha de modelo. Blocos de texto muito longos podem overstep os limites de tamanho do compilador.|Divida o bloco de texto longo com um bloco de expressão, como:<br /><br /> `<#= "" #>`|
 
 ## <a name="warning-descriptions-and-fixes"></a>Descrições e correções de aviso

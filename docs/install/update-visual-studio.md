@@ -14,15 +14,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Environment.ProductUpdates
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 01bc8fe18ff32d5da3f56eb39465b3fc696239b4
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: d087ed0a43296f77ca934671f63f716bf6ddfae8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007180"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935710"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Atualizar o Visual Studio para a versão mais recente
 
@@ -206,7 +206,7 @@ Veja como atualizar o Visual&nbsp;Studio&nbsp;2019.
 
 Você pode verificar se há uma atualização e, em seguida, instalá-la usando a barra de menus ou a caixa de pesquisa no Visual Studio 2019.
 
-### <a name="open-visual-studio"></a>Abrir o Visual Studio
+### <a name="open-visual-studio"></a>Abra o Visual Studio
 
 1. No menu **Iniciar** do Windows, abra o **Visual Studio 2019**.
 
@@ -275,7 +275,7 @@ Há dois modos de instalação para sua escolha:
 
 Você também pode escolher a configuração **Baixar as atualizações automaticamente**, que permite que as atualizações sejam baixadas enquanto seu computador estiver ocioso.
 
-Este é o procedimento:
+Aqui está como:
 
 1. Na barra de menus, escolha **Ferramentas** > **Opções**.
 
@@ -289,7 +289,7 @@ Este é o procedimento:
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Instalar versões do Visual Studio lado a lado](install-visual-studio-versions-side-by-side.md)
 * [Atualizar uma instalação em rede do Visual Studio](update-a-network-installation-of-visual-studio.md)

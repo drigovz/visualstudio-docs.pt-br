@@ -12,17 +12,17 @@ f1_keywords:
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7210a2834dda749cfe1d89b9093cd627b7c0ae1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5bea30b8a046be55ba49a1cc1dbf12e3093585f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114363"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935646"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Usar parâmetros de linha de comando para instalar o Visual Studio
 
@@ -60,7 +60,7 @@ O arquivo bootstrapper deve corresponder ou ser semelhante a um dos seguintes no
 >[!TIP]
 >Se você tiver baixado anteriormente um arquivo bootstrapper e quiser verificar sua versão, veja como fazer isso. No Windows, abra o explorador de arquivos, clique com o botão direito do mouse no arquivo bootstrapper, escolha **Propriedades**, escolha a guia **detalhes** e, em seguida, exiba o número de **versão do produto** . Para corresponder esse número a uma versão do Visual Studio, consulte a página [números de compilação e datas de lançamento do Visual Studio](visual-studio-build-numbers-and-release-dates.md) .
 
-## <a name="command-line-parameters"></a>Parâmetros de linha de comando
+## <a name="command-line-parameters"></a>Parâmetros da linha de comando
 
  Os parâmetros da linha de comando do Visual Studio diferenciam maiúsculas de minúsculas.
 
@@ -253,7 +253,7 @@ Cada operação gera vários arquivos de log no diretório `%TEMP%` que indicam 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Exemplos de parâmetros de linha de comando para a instalação do Visual Studio](command-line-parameter-examples.md)
 - [Criar uma instalação offline do Visual Studio](create-an-offline-installation-of-visual-studio.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - layer models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d78b7005875f0544354c845cd27d187bdbf40d6d
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 10e0e07b6a8ee4245e19628e03bfdf484f94d34c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361619"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935138"
 ---
 # <a name="extend-dependency-diagrams"></a>Estender diagramas de dependência
 
@@ -37,7 +37,7 @@ Você deve ter o seguinte instalado no computador em que deseja desenvolver suas
 
 Você deve ter uma edição adequada do Visual Studio instalada no computador em que deseja executar suas extensões de camada. Para ver quais edições do Visual Studio dão suporte a diagramas de dependência, consulte [suporte de edição para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)
 - [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)

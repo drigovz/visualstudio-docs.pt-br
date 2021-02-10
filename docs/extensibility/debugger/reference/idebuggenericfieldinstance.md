@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: f68b4761-be8b-4801-9d4b-cde90e01d95e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9723c146ecb5096ea6f3635a3d5cae5c48e573e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06711f7112aaa528b7274867bc133368075d19ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728119"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934371"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
 Representa uma instância de um campo para um tipo genérico de código gerenciado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugGenericFieldInstance : IUnknown

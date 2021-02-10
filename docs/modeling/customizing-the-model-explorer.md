@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Domain-Specific Language Explorer
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d4bdfcea6cbc54fd620e9aacbdc6250493ca426
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b3ae5ea3c24ea72c911f686c7a0a92191785d9d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362884"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935372"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizando o Gerenciador de Modelos
 Você pode alterar a aparência e o comportamento do Gerenciador para o designer de linguagem específica do domínio da seguinte maneira:
@@ -113,6 +113,6 @@ Você pode alterar a aparência e o comportamento do Gerenciador para o designer
 
      O Gerenciador deve mostrar apenas um nó **atores** e não deve mostrar o nó de **comentários** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

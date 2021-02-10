@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a76ae38b686e1c77acd9561e9c48fd3444565b0a
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: aa7590689b4d7acdb7a7ebe501584ed6a8bd41bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363192"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935411"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definindo uma política de bloqueio para criar segmentos somente leitura
 A API de imutabilidade do SDK de visualização e modelagem do Visual Studio permite que um programa Bloqueie parte ou todo um modelo de DSL (linguagem específica de domínio) para que possa ser lido, mas não alterado. Essa opção somente leitura pode ser usada, por exemplo, para que um usuário possa pedir que os colegas anotem e examinem um modelo DSL, mas possam impedir que eles alterem o original.
