@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], shortcut keys
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b72270da75d27ed2837540369f74e9c5e87b417b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 06211bb22ae071132b4cfad67352daa46182d366
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527999"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940911"
 ---
 # <a name="ribbon-designer"></a>Designer da faixa de opções
   O designer de faixa de Ribbon é uma tela de Design Visual. Use o designer de faixa de faixas para adicionar guias, grupos e controles personalizados à faixa de faixas de um aplicativo Microsoft Office.
@@ -148,7 +148,7 @@ ms.locfileid: "97527999"
 |**Suspenso**|Uma lista de itens que o usuário pode selecionar. O usuário não pode digitar um novo item em uma lista suspensa.<br /><br /> Use a <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> propriedade para adicionar itens à lista. Você pode adicionar e remover itens em tempo de execução.<br /><br /> Use a <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> propriedade para adicionar botões à lista. No entanto, você não pode adicionar e remover botões em tempo de execução depois que a faixa de faixas é carregada no aplicativo do Office.|
 |**Edição**|Uma caixa na qual o usuário pode digitar texto.|
 |**Galeria**|Um menu que apresenta uma matriz ou grade de opções visuais das quais os usuários podem selecionar. Você pode controlar o layout das seleções no menu. Use as <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> Propriedades e <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> para especificar o número de linhas e colunas que exibirão os itens e os botões da galeria.|
-|**Rotular**|Texto que você pode usar para identificar controles na faixa de faixas.|
+|**Rótulo**|Texto que você pode usar para identificar controles na faixa de faixas.|
 |**Menu**|Uma lista suspensa que pode conter qualquer um dos seguintes controles:<br /><br /> -Botão<br />-Caixa de seleção<br />-Galeria<br />-Menu<br />-Botão de divisão<br />-Botão de alternância<br />-Separador<br /><br /> Para adicionar um controle a um menu no designer de faixa de faixas, clique na seta para baixo no menu para expor a superfície de design do menu. Em seguida, você pode arrastar os controles da faixa de **ferramentas da Toolbox** para o menu. Para organizar controles, arraste-os para as posições desejadas.<br /><br /> Para adicionar controles ao <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> depois que a faixa de faixas é carregada no aplicativo do Office, você deve definir a <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> propriedade como **true** antes que a faixa de faixas seja carregada. Para obter informações sobre como fazer isso, consulte [visão geral do modelo de objeto da faixa](../vsto/ribbon-object-model-overview.md)de informações.|
 |**Separador**|Uma barra fina usada para separar itens em uma lista. Quando adicionado a um grupo, a barra é vertical. Quando adicionado a um menu, a barra é horizontal.|
 |**SplitButton**|Um botão com um menu anexado. Um botão de divisão pode conter qualquer um dos seguintes controles:<br /><br /> -Botão<br />-Caixa de seleção<br />-Galeria<br />-Menu<br />-Botão de divisão<br />-Botão de alternância<br />-Separador<br /><br /> Como o menu, o botão de divisão tem sua própria superfície de design. No entanto, ao contrário de um menu, você só pode atualizar os itens em um botão de divisão antes que a faixa de faixas seja carregada no aplicativo do Office. Para obter informações sobre como atualizar os itens em um botão de divisão, consulte [visão geral do modelo de objeto da faixa](../vsto/ribbon-object-model-overview.md)de medida.|
@@ -184,7 +184,7 @@ ms.locfileid: "97527999"
 |Mova a seleção de um controle para outro no mesmo grupo. Para um painel suspenso, mova entre o controle pai e os controles no painel suspenso.|**Operante**<br /><br /> **Para baixo**|
 |Iterar progressivamente todos os controles.|**Tab**|
 |Iterar para o inverso através de todos os controles.|**Shift** + **Guia**|
-|Excluir o controle ou conjunto de controles selecionado.|**Excluir**|
+|Excluir o controle ou conjunto de controles selecionado.|**Delete (excluir)**|
 |Copie os controles selecionados.|**Ctrl** + **C**|
 |Recortar os controles selecionados.|**Ctrl** + **X**|
 |Colar controles da área de transferência.|**Ctrl** + **V**|
@@ -195,13 +195,13 @@ ms.locfileid: "97527999"
 
 |Ação|Atalho de teclado|
 |------------|-----------------------|
-|Selecione o controle pai se o painel suspenso estiver aberto e houver um controle selecionado no painel suspenso.|**Esquerda**|
-|Feche o painel suspenso se o painel suspenso estiver aberto e o controle pai estiver selecionado.|**Esquerda**|
-|Abra o painel suspenso.|**Direita**|
-|Selecione o primeiro controle no painel suspenso se o painel suspenso estiver aberto.|**Direita**|
+|Selecione o controle pai se o painel suspenso estiver aberto e houver um controle selecionado no painel suspenso.|**Mantida**|
+|Feche o painel suspenso se o painel suspenso estiver aberto e o controle pai estiver selecionado.|**Mantida**|
+|Abra o painel suspenso.|**Certo**|
+|Selecione o primeiro controle no painel suspenso se o painel suspenso estiver aberto.|**Certo**|
 |Feche um painel suspenso.|**Esc**|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
 - [XML da faixa de opções](../vsto/ribbon-xml.md)

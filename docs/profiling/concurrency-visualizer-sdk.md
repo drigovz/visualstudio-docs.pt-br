@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f07dbfb0ca193f7bacbf2408fc26e622ffb037e1
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 7b7cf8883e1a0c94756f7dcd9cc3a0a99744c9c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720976"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941093"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK do Visualizador de Simultaneidade
 Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Simultânea para exibir informações adicionais na Visualização Simultânea. É possível associar os dados adicionais a fases e eventos em seu código. Estas visualizações adicionais são conhecidas como *marcadores*.  Para ver um passo a passo introdutório, consulte [Apresentando o SDK da Visualização Simultânea](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk).
@@ -123,7 +123,7 @@ Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Si
 
 ## <a name="see-also"></a>Confira também
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Referência da biblioteca C++](../profiling/cpp-library-reference.md)|Descreve a API da Visualização Simultânea para C++.|
 |[Referência da biblioteca C](../profiling/c-library-reference.md)|Descreve a API da Visualização Simultânea para C.|

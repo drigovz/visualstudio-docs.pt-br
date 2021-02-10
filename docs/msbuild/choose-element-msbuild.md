@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 7b8b025a-d944-4f5c-9018-c89fc2ef146d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ad83bc215c70389dbb9383e1cb9562b99be7106
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 4a3cb3ae9ef120954bb3c299cdf310a32da69845
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796622"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939507"
 ---
 # <a name="choose-element-msbuild"></a>Elemento Choose (MSBuild)
 
@@ -54,7 +54,7 @@ Avalia a elementos filho para selecionar um conjunto de elementos `ItemGroup` e/
 
 ### <a name="attributes"></a>Atributos
 
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
 
@@ -124,7 +124,7 @@ Avalia a elementos filho para selecionar um conjunto de elementos `ItemGroup` e/
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Construções condicionais](../msbuild/msbuild-conditional-constructs.md)
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)

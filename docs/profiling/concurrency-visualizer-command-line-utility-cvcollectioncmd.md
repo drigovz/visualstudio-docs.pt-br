@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6970c582b6f3ac254f5bbb60f0324128dac63cfe
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 47da8ae405dc24cad5bab4c98384ad5db5a97ef2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721041"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941171"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilitário de linha de comando da Visualização Simultânea (CVCollectionCmd)
 É possível usar o utilitário de linha de comando do Visualização Simultânea (*CVCollectionCmd.exe*) para coletar rastreamentos na linha de comando para que seja possível exibi-los na Visualização Simultânea do Visual Studio. As ferramentas podem ser usadas em computadores que não tenham o Visual Studio instalado.
@@ -29,7 +29,7 @@ ms.locfileid: "98721041"
  Para baixar e instalar o utilitário de linha de comando, vá para [Coleção de Ferramentas de Visualização Simultânea para Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) e siga as instruções. Por padrão, o *CVCollectionCmd.exe* é instalado em%ProgramFiles%\Microsoft Concurrency Visualizer ferramentas de coleção \ (% ProgramFiles (x86)% \ Microsoft Concurrency Visualizer ferramentas de coleção \ em computadores x64).
 
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Coletar um rastreamento usando CVCollectionCmd
- Você pode coletar um rastreamento iniciando o aplicativo com CVCollectionCmd ou se conectando a ele. Consulte a referência aos comandos abaixo para ver as opções. Por exemplo
+ Você pode coletar um rastreamento iniciando o aplicativo com CVCollectionCmd ou se conectando a ele. Consulte a referência aos comandos abaixo para ver as opções. Por exemplo,
 
 ```cmd
 <Path>CVCollectionCmd /launch c:\myapp\myapp.exe /outdir c:\myapp\data
@@ -49,7 +49,7 @@ ms.locfileid: "98721041"
 |Analisar|Analisa o rastreamento especificado.|O caminho completo do arquivo CVTrace.|0 se a análise for bem-sucedida.<br /><br /> 1 se a análise não puder ser iniciada porque o rastreamento especificado estava em todo o sistema, mas sem um processo de destino especificado.<br /><br /> 2 se a análise não puder ser iniciada porque o rastreamento não estava em todo o sistema e um processo foi especificado.<br /><br /> 3 se a análise falhou porque o processo especificado é inválido.<br /><br /> 4 se a análise falhou porque o arquivo CVTrace especificado é inválido.|
 |LaunchArgs|Especifica os argumentos executáveis de destino. Essa opção só se aplica ao comando Inicializar.|Os argumentos de linha de comando para o aplicativo.|Nenhum.|
 |Outdir|Especifica o diretório no qual os arquivos de rastreamento serão salvos. Aplica-se aos comandos Inicializar e Anexar.|Um caminho do diretório ou relativo.|Nenhum.|
-|Processo|Especifica o processo a ser conectado quando o comando Anexar é executado ou o processo em um rastreamento a ser analisado quando o comando Analisar é executado. Aplica-se aos comandos Anexar e Analisar.|A PID ou o nome do processo.|Nenhum.|
+|Processar|Especifica o processo a ser conectado quando o comando Anexar é executado ou o processo em um rastreamento a ser analisado quando o comando Analisar é executado. Aplica-se aos comandos Anexar e Analisar.|A PID ou o nome do processo.|Nenhum.|
 |Config|Especifica o caminho do arquivo de configuração, se você quiser configurações de coleta diferentes das configurações padrão.   Aplica-se aos comandos Inicializar, Anexar e Analisar.|O caminho do diretório ou relativo do arquivo de configuração XML.|Nenhum.|
 
 ## <a name="customize-configuration-settings"></a>Personalizar as definições de configuração
@@ -73,7 +73,7 @@ ms.locfileid: "98721041"
 | SymbolPath | Especifica o caminho do servidor de símbolos. Para obter mais informações, consulte [Use the Microsoft Symbol Server to obtain debug symbol files (Usar o Servidor de Símbolos da Microsoft para obter arquivos de símbolo de depuração)](/windows/win32/dxtecharts/debugging-with-symbols). | Um nome ou uma URL do diretório. |
 | Marcadores | Contém a lista de provedores de marcadores. | Pode conter zero ou mais elementos MarkerProvider. |
 | MarkerProvider | Especifica um único provedor de marcadores. | Deve conter estes elementos:<br /><br /> –   Nível<br />–   GUID<br />–   Nome<br /><br /> Pode conter estes elementos:<br /><br /> –   Categories<br />–   IsEnabled |
-| Nível | Define o nível de importância de um MarkerProvider. | –   Baixa<br />–   Normal<br />–   Alta<br />–   Crítica<br />–   Todas |
+| Level | Define o nível de importância de um MarkerProvider. | –   Baixa<br />–   Normal<br />–   Alta<br />–   Crítica<br />–   Todas |
 | Guid | O identificador global exclusivo do provedor de marcadores ETW. | Uma GUID. |
 | Nome | Especifica a descrição do provedor de marcadores. | Uma cadeia de caracteres. |
 | Categorias | Especifica as categorias coletadas para o provedor de marcadores. | Uma cadeia de caracteres delimitada por vírgula de números ou intervalos de números. |

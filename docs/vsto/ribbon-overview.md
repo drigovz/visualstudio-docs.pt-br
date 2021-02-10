@@ -17,15 +17,15 @@ helpviewer_keywords:
 - custom Ribbon, multiple Ribbons
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ca7f7757cddf89b97f7a374385ea834728f0e975
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2eff346425dca31cb88342e69701a229de2b80ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527976"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940859"
 ---
 # <a name="ribbon-overview"></a>Visão geral da faixa de faixas
   A faixa de opção é uma maneira de organizar comandos relacionados para que eles sejam mais fáceis de localizar. Os comandos aparecem como controles na faixa de faixas. Os controles são organizados em *grupos* ao longo de uma faixa horizontal na borda superior de uma janela de aplicativo. Os grupos relacionados são organizados em guias.
@@ -117,7 +117,7 @@ ms.locfileid: "97527976"
 
 ### <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Como: começar a personalizar a faixa de faixas](../vsto/how-to-get-started-customizing-the-ribbon.md)|Mostra como personalizar a faixa de visualização de um aplicativo Microsoft Office, adicionar um item **da faixa de Ribbon (designer visual)** ou de **faixa (XML)** a um projeto do Office.|
 |[Designer de faixa de das](../vsto/ribbon-designer.md)|Descreve como você pode usar o designer de faixa de faixas para adicionar guias, grupos e controles personalizados à faixa de faixas de um aplicativo Microsoft Office.|

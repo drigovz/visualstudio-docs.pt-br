@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 854f7d410e327ca92d0c5156d89bc21765e13cc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de6a8ffbaa0fb10929d013a351ebffa8e3f4b529
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62999046"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939429"
 ---
 # <a name="intellisense"></a>IntelliSense
 
@@ -25,13 +25,13 @@ Ao digitar uma função ou outra instrução, o IntelliSense fornece um menu de 
 
 ![Menu de preenchimento automático do IntelliSense](media/intellisense-auto-complete-menu.png)
 
-Pressionar **Tab** (ou **Enter**ou **Space**, dependendo de como as opções são definidas), insere o item selecionado na lista suspensa. Você pode alterar a seleção com as teclas de direção.
+Pressionar **Tab** (ou **Enter** ou **Space**, dependendo de como as opções são definidas), insere o item selecionado na lista suspensa. Você pode alterar a seleção com as teclas de direção.
 
 O IntelliSense também oferece sugestões para membros dos objetos R:
 
 ![Sugestões do IntelliSense para membros do objeto](media/intellisense-auto-complete-r-objects.png)
 
-Pressionar **ESC** ignora o menu completamente. Você pode trazê-lo de volta **Ctrl**com o + **espaço**Ctrl.
+Pressionar **ESC** ignora o menu completamente. Você pode trazê-lo de volta com o + **espaço** Ctrl.
 
 Digitar o `(` de abertura para uma chamada de função insere o `)` de fechamento e abre a Ajuda de assinatura conforme mostrado anteriormente:
 

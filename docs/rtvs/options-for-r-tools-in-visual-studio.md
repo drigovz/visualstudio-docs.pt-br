@@ -10,19 +10,19 @@ f1_keywords:
 - vs.toolsoptionspages.r_tools.#150
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: c7c2cb57dc96d7bb0df09248eb7a877820e50521
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed2ee29fb7a0a832dd3076cbd47a7f9cd1414d96
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315077"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939468"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Opções das Ferramentas do R para Visual Studio
 
-As configurações são acessadas por meio do menu de opções das **Ferramentas do r**  >  **Options** ou por meio das opções de **ferramentas**  >  **Options** e rolagem para **Ferramentas do r**:
+As configurações são acessadas por meio do menu de opções das **Ferramentas do r**  >   ou por meio das opções de **ferramentas**  >   e rolagem para **Ferramentas do r**:
 
   ![Caixa de diálogo de opções para Ferramentas de R](media/options-dialog.png)
 
@@ -43,7 +43,7 @@ O item de menu **Ferramentas do R > Configurações da Ciência de Dados** confi
 
 ![Layout da janela do cientista de dados no Visual Studio](media/installation-data-scientist-layout-result.png)
 
-Para reverter para outras configurações do Visual Studio mais tarde, primeiro use o comando **ferramentas**  >  **importar e exportar configurações** , selecione **exportar configurações de ambiente selecionadas**e especifique um nome de arquivo. Para restaurar essas configurações, use o mesmo comando e selecione **Importar configurações de ambiente selecionadas**. Você também poderá usar os mesmos comandos se você alterar o layout do cientista de dados e quiser retornar a ele, em vez de usar o comando **Configurações da ciência de dados** diretamente.
+Para reverter para outras configurações do Visual Studio mais tarde, primeiro use o comando **ferramentas**  >  **importar e exportar configurações** , selecione **exportar configurações de ambiente selecionadas** e especifique um nome de arquivo. Para restaurar essas configurações, use o mesmo comando e selecione **Importar configurações de ambiente selecionadas**. Você também poderá usar os mesmos comandos se você alterar o layout do cientista de dados e quiser retornar a ele, em vez de usar o comando **Configurações da ciência de dados** diretamente.
 
 ## <a name="text-editor--r--advanced-options"></a>Editor de texto > R > Opções avançadas
 
@@ -57,7 +57,7 @@ Cada opção é definida como ativada ou desativada para controlar o comportamen
 
 ## <a name="r-tools--advanced-options"></a>Ferramentas do R > Opções avançadas
 
-O comando de menu opções das **Ferramentas do r**  >  **Options** abre a caixa de diálogo **Opções** para as opções do r:
+O comando de menu opções das **Ferramentas do r**  >   abre a caixa de diálogo **Opções** para as opções do r:
 
   ![Caixa de diálogo de opções para Ferramentas de R](media/options-dialog.png)
 
@@ -100,7 +100,7 @@ Essas opções controlam como os valores são manipulados no [Gerenciador de Var
 | --- | --- | --- |
 | Navegador de páginas HTML | `External` | Determina onde o conteúdo, como um gráfico `ggvis` ou um aplicativo `shiny`, é renderizado. `Internal` mostra a saída HTML dentro de uma janela de ferramentas no Visual Studio; `External` exibe a saída HTML no navegador padrão. |
 
-### <a name="logging"></a>Registro em log
+### <a name="logging"></a>Registrando em log
 
 | Opção | Valor padrão | Descrição |
 | --- | --- | --- |

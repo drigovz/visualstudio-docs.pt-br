@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 24eb80f8-8fca-4c47-93b5-bb1eb8ffdffd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0802b91bb9cbbbe31cb156104bb7b5df3fda1282
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 32d7730d36f7e99a2557e764c2adb92862515e24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686175"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941041"
 ---
 # <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>Função CvCreateDefaultMarkerSeriesOfDefaultProvider
 Cria a série de marcador padrão de um provedor padrão.
@@ -44,5 +44,5 @@ HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(
 ## <a name="requirements"></a>Requisitos
  **Cabeçalho:** *cvmarkers.h*
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Referência da biblioteca C++](../profiling/cpp-library-reference.md)

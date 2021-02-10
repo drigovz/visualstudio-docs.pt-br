@@ -7,17 +7,17 @@ ms.technology: vs-python
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4318cd98de166210a8e8744840967942006b8ea6
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: dc47bdb2913e2d18998663967d4da3c0a7dcdd9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939936"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Início rápido: crie seu primeiro aplicativo Web Python usando o Visual Studio
 
@@ -184,7 +184,7 @@ Agora você está pronto para adicionar um pouco de código Python para implemen
 
 3. Selecione **depurar > iniciar sem depuração** (**Ctrl** + **F5**), que salva as alterações em arquivos e executa o aplicativo.
 
-4. Uma janela de comando é exibida com a mensagem **em execução em https: \/ /localhost: 4449**e uma janela do navegador deve ser aberta para `localhost:4449` onde você vê a mensagem "Olá, Python!" A solicitação GET também aparece na janela de comando com um status 200.
+4. Uma janela de comando é exibida com a mensagem **em execução em https: \/ /localhost: 4449** e uma janela do navegador deve ser aberta para `localhost:4449` onde você vê a mensagem "Olá, Python!" A solicitação GET também aparece na janela de comando com um status 200.
 
     Se um navegador não for aberto automaticamente, inicie o navegador de sua escolha e navegue até `localhost:4449`.
 
@@ -196,14 +196,14 @@ Agora você está pronto para adicionar um pouco de código Python para implemen
 
 **Pergunta: Qual é a diferença entre o comando Iniciar Sem Depuração e Iniciar Depuração?**
 
-**Resposta**: Use **Iniciar Depuração** para executar o aplicativo no contexto do [depurador do Visual Studio](../python/debugging-python-in-visual-studio.md), o que permite que você defina pontos de interrupção, examine variáveis e depure seu código linha por linha. Os aplicativos podem ser executados mais lentamente no depurador devido aos vários ganchos que possibilitam a depuração. **Iniciar Sem Depuração**, por outro lado, executa o aplicativo diretamente, como se fosse executado na linha de comando, sem nenhum contexto de depuração, e também inicia automaticamente um navegador e navega para a URL especificada na guia ** Depurar** das propriedades do projeto.
+**Resposta**: Use **Iniciar Depuração** para executar o aplicativo no contexto do [depurador do Visual Studio](../python/debugging-python-in-visual-studio.md), o que permite que você defina pontos de interrupção, examine variáveis e depure seu código linha por linha. Os aplicativos podem ser executados mais lentamente no depurador devido aos vários ganchos que possibilitam a depuração. **Iniciar Sem Depuração**, por outro lado, executa o aplicativo diretamente, como se fosse executado na linha de comando, sem nenhum contexto de depuração, e também inicia automaticamente um navegador e navega para a URL especificada na guia **Depurar** das propriedades do projeto.
 
 ## <a name="next-steps"></a>Próximas etapas
 
 Parabéns por executar seu primeiro aplicativo do Python no Visual Studio. Você aprendeu um pouco sobre como usar o Visual Studio como um IDE do Python!
 
 > [!div class="nextstepaction"]
-> [Implantar o aplicativo no serviço Azure App](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
+> [Implantar o aplicativo no Serviço de Aplicativo do Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
 Como as etapas seguidas neste Início Rápido são razoavelmente genéricas, você provavelmente percebeu que elas podem e devem ser automatizadas. Essa automação é a função dos modelos de projeto do Visual Studio. Acompanhe o [Início Rápido – Criar um projeto Python usando um modelo](../python/quickstart-02-python-in-visual-studio-project-from-template.md) para obter uma demonstração que cria um aplicativo Web semelhante ao que você criou neste artigo, mas com menos etapas.
 

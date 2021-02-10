@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain relationships
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c5db50432947b99a2667280fe7861e7acd95ac
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 6fb50018dccbe03512c8ab6e5f07c17dbcee307d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362451"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941327"
 ---
 # <a name="properties-of-domain-relationships"></a>Propriedades de relacionamentos de domínio
 As propriedades na tabela a seguir são associadas a uma relação de domínio. Para obter informações sobre relações de domínio, consulte [noções básicas sobre modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md). Para obter mais informações sobre como usar essas propriedades, consulte [Personalizando e estendendo uma linguagem de Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -31,13 +31,13 @@ As propriedades na tabela a seguir são associadas a uma relação de domínio. 
 |Permite duplicatas|Se `True` , os links duplicados da relação de domínio poderão ser criados entre os mesmos dois elementos.|`False`|
 |Relações de base|Se a relação de domínio for derivada, a relação base da relação de domínio.|\<none>|
 |Está incorporando|Se `True` , a relação de domínio é uma relação incorporada. Se `False` , a relação é uma relação de referência.|\<both>|
-|Name|O nome da relação de domínio.|Nome atual|
+|Nome|O nome da relação de domínio.|Nome atual|
 |Namespace|O namespace que é afiliado ao relacionamento de domínio.|Namespace atual|
 |Observações|Observações informais que estão associadas à relação de domínio.|\<none>|
 |Descrição|A descrição usada para documentar o código e é usada na interface do usuário do designer gerado.|\<none>|
 |Nome de exibição|O nome que é exibido no designer gerado para a relação de domínio.|\<none>|
 |Palavra-chave de ajuda|A palavra-chave opcional que é usada para indexar a ajuda F1 para a relação de domínio.|\<none>|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

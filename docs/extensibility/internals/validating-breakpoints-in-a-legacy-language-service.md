@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d48db7397e2f9a5921315036bea15551fb7baa9
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 593663c4906cc669c52336ffe6689e8de9fcde48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488018"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941587"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validando pontos de interrupção em um serviço de linguagem herdado
 Um ponto de interrupção indica que a execução do programa deve parar em um momento específico enquanto está sendo executada em um depurador. Um usuário pode inserir um ponto de interrupção em qualquer linha no arquivo de origem, já que o editor não tem conhecimento do que constitui um local válido para um ponto de interrupção. Quando o depurador é iniciado, todos os pontos de interrupção marcados (chamados de pontos de interrupção pendentes) são associados ao local apropriado no programa em execução. Ao mesmo tempo, os pontos de interrupção são validados para garantir que eles marquem locais de código válidos. Por exemplo, um ponto de interrupção em um comentário não é válido, pois não há nenhum código nesse local no código-fonte. O depurador desabilita pontos de interrupção inválidos.
@@ -100,5 +100,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Recursos do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-features1.md)

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - MSBuild, build process overview
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4374e6763933e2da3e6a11c5609b76e3341e1050
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 8a7f8645cd34fe56d7d8d0f6a9efa6bf01bd13d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353246"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939650"
 ---
 # <a name="how-msbuild-builds-projects"></a>Como o MSBuild compila projetos
 
@@ -26,7 +26,7 @@ O processo de compilação completo consiste na [inicialização inicial](#start
 
 ## <a name="startup"></a>Inicialização
 
-O MSBuild pode ser invocado do Visual Studio por meio do modelo de objeto do MSBuild no *Microsoft.Build.dll*ou invocando o executável diretamente na linha de comando ou em um script, como em sistemas de CI. Em ambos os casos, as entradas que afetam o processo de compilação incluem o arquivo de projeto (ou o objeto de projeto interno ao Visual Studio), possivelmente um arquivo de solução, variáveis de ambiente e opções de linha de comando ou seus equivalentes de modelo de objeto. Durante a fase de inicialização, as opções de linha de comando ou equivalentes de modelo de objeto são usadas para definir as configurações do MSBuild, como a configuração de agentes. As propriedades definidas na linha de comando usando `-property` a `-p` opção ou são definidas como propriedades globais, que substituem os valores que seriam definidos nos arquivos de projeto, mesmo que os arquivos de projeto sejam lidos posteriormente.
+O MSBuild pode ser invocado do Visual Studio por meio do modelo de objeto do MSBuild no *Microsoft.Build.dll* ou invocando o executável diretamente na linha de comando ou em um script, como em sistemas de CI. Em ambos os casos, as entradas que afetam o processo de compilação incluem o arquivo de projeto (ou o objeto de projeto interno ao Visual Studio), possivelmente um arquivo de solução, variáveis de ambiente e opções de linha de comando ou seus equivalentes de modelo de objeto. Durante a fase de inicialização, as opções de linha de comando ou equivalentes de modelo de objeto são usadas para definir as configurações do MSBuild, como a configuração de agentes. As propriedades definidas na linha de comando usando `-property` a `-p` opção ou são definidas como propriedades globais, que substituem os valores que seriam definidos nos arquivos de projeto, mesmo que os arquivos de projeto sejam lidos posteriormente.
 
 As próximas seções são sobre os arquivos de entrada, como arquivos de solução ou arquivos de projeto.
 
@@ -240,6 +240,6 @@ Muitos comportamentos de compilação podem ser configurados definindo proprieda
 
 O processo do MSBuild tem vários outros pontos de extensão diferentes daqueles descritos aqui. Consulte [personalizar sua compilação](customize-your-build.md). e [como estender o processo de compilação do Visual Studio](how-to-extend-the-visual-studio-build-process.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [MSBuild](msbuild.md)

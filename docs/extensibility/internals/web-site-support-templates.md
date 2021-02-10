@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7bb3d669dadf7c33fa81231adf26ae30e999c51
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 988b81e72ff7714cb8a0983655de551b54c9150c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487849"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940021"
 ---
 # <a name="web-site-support-templates"></a>Modelos de suporte a site
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Os modelos de projeto e item de site fornecem um projeto de site e stubs de item reutilizáveis e personalizáveis que aceleram o processo de desenvolvimento removendo a necessidade de criar novos projetos de site e itens do zero. Para obter mais informações sobre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modelos, consulte [Creating Project and item templates](../../ide/creating-project-and-item-templates.md).
@@ -186,5 +186,5 @@ ms.locfileid: "97487849"
 
      O arquivo de modelo que determina o conteúdo da nova página mestra e seu arquivo dependente, se houver.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Suporte a site](../../extensibility/internals/web-site-support.md)

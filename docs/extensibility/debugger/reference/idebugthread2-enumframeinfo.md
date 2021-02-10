@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 17914a71-10ea-4b6f-8982-e364f87dca53
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8bd3c6d46a577930cc7a2b87c85cd82a55f8cf66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a254de60995eb5e7902eda80cf50c4af227a756f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718850"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940274"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 Recupera uma lista de quadros de pilha para este thread.
@@ -28,7 +28,7 @@ Recupera uma lista de quadros de pilha para este thread.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT EnumFrameInfo ( 
+HRESULT EnumFrameInfo ( 
    FRAMEINFO_FLAGS        dwFieldSpec,
    UINT                   nRadix,
    IEnumDebugFrameInfo2** ppEnum
@@ -36,7 +36,7 @@ HRESULT EnumFrameInfo ( 
 ```
 
 ```csharp
-int EnumFrameInfo ( 
+int EnumFrameInfo ( 
    enum_FRAMEINFO_FLAGS     dwFieldSpec,
    uint                     nRadix,
    out IEnumDebugFrameInfo2 ppEnum
@@ -53,7 +53,7 @@ no Base usada na formatação de informações numéricas no enumerador.
 `ppEnum`\
 fora Retorna um objeto [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) que contém uma lista de estruturas [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) que descrevem o quadro de pilhas.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

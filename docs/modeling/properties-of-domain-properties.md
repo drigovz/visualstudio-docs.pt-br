@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97bfbcf73a950692d5736b7a6e0b529cfe658caa
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: f9cca8468e99d41d879bee02dded8538e5fa9c5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361515"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941353"
 ---
 # <a name="properties-of-domain-properties"></a>Propriedades de propriedades de domínio
 Uma *propriedade de domínio* é um recurso de um elemento de modelo que pode conter um valor. Por exemplo, a classe de domínio `Person` poderia ter as propriedades `Name` e `BirthDate`. Em Definição de DSL, as propriedades de domínio são listadas na caixa de classe de domínio no diagrama e sob a classe de domínio no Gerenciador de DSL. Para obter mais informações, consulte [como definir um idioma de Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md).
@@ -34,7 +34,7 @@ Uma *propriedade de domínio* é um recurso de um elemento de modelo que pode co
 
   Quando você seleciona uma Propriedade de Domínio em um diagrama ou no Gerenciador de DSL, pode ver os itens a seguir na janela Propriedades. Para obter mais informações sobre como usar esses itens, consulte [Personalizando e estendendo um idioma de Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Propriedade|Descrição|Valor padrão|
+|Propriedade|Descrição|Valor Padrão|
 |-|-|-|
 |**Descrição**|A descrição usada para documentar a interface do usuário (IU) do designer gerado.|\<none>|
 |**Nome de Exibição**|O nome que será exibido no designer gerado para essa propriedade de domínio. Ele pode conter espaços e pontuação, por exemplo "Título da Música".|\<none>|
@@ -50,6 +50,6 @@ Uma *propriedade de domínio* é um recurso de um elemento de modelo que pode co
 |**Modificador de acesso setter**|O modificador de acesso do setter. Controla o escopo no qual o código do programa pode definir a propriedade.|`public`|
 |**Tipo**|O tipo de propriedade. Para adicionar à lista de tipos disponíveis, clique com o botão direito do mouse na raiz da DSL no Gerenciador de DSL e clique em **Adicionar tipo externo**.|`String`|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

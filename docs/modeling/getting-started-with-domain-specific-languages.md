@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eaab198edae66fc334e854ae1f47dae313dce76b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 8fe531b127d657228ed68fa79358ef5df69ff17c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363478"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941483"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introdução à Linguagem Específica de Domínio
 
@@ -409,7 +409,7 @@ Renomeie as classes e relações de domínio existentes. Por exemplo, a partir d
 
 2. Reconstrua quaisquer DSLs experimentais ou outras extensões experimentais do Visual Studio que você ainda deseja usar.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Noções básicas sobre modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md)
 - [Como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md)

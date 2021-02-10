@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5352d11a-debb-4c20-b9a0-d37d94900b1c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 377357345516d210b30dd4db278dd672a8b6b469
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 7c09b9f061c9f718f8830cdb797cc56f35619e20
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149125"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940717"
 ---
 # <a name="thread-properties-dialog-box"></a>Caixa de diálogo Propriedades do Thread
 Use essa caixa de diálogo para saber mais sobre um thread específico. Para exibir essa caixa de diálogo, mova o foco para uma janela de [exibição de threads](../debugger/threads-view.md) ou abra a [exibição mensagens](../debugger/messages-view.md) e expanda uma mensagem. Selecione qualquer nó de thread na árvore e, em seguida, escolha **Propriedades** no menu **Exibir** .

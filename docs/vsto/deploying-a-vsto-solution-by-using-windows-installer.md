@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e49705c99801cd6e09f4bf6d9be3c411cc2c53e3
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 75c2d97e8cd30bb3cf5605d50e65a68513590647
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939364"
 ---
 # <a name="deploying-a-vsto-solution-using-windows-installer"></a>Implantando uma solução do VSTO usando o Windows Installer
 
@@ -125,7 +125,7 @@ A primeira etapa é criar o projeto de instalação.
 ::: moniker-end
 ::: moniker range="=vs-2019"
 3. Na caixa de diálogo **Adicionar um novo projeto** , selecione o modelo de **projeto de instalação** .
-4. Clique em **Avançar**.
+4. Clique em **Próximo**.
 ::: moniker-end
 
 5. Na caixa **nome** , digite **OfficeAddInSetup**.
@@ -559,7 +559,7 @@ A última etapa é configurar a ação personalizada para as etapas de **instala
     **Figura 16: ações personalizadas do manifesto do documento**
 
 10. No editor de **ações personalizadas (ExcelWorkbookSetup)** , clique com o botão direito do mouse em **copiar documento para meus documentos e anexe a personalização** e clique em **janela de propriedades**.
-11. Na janela **CustomActionData** **Propriedades** de CustomActionData, insira o local da DLL de personalização, o manifesto de implantação e o local do Microsoft Office documento. O SolutionId também é necessário.
+11. Na janela  **Propriedades** de CustomActionData, insira o local da DLL de personalização, o manifesto de implantação e o local do Microsoft Office documento. O SolutionId também é necessário.
 12. Se você quiser registrar em log os erros de instalação em um arquivo, inclua um parâmetro de LogFile.
 s
     ``` text

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c20edbf4-3d4f-4f66-b1d5-753a0d858ed8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dc33c3a413d788bd9a5a30a7db69c4c7766a3392
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: f1eb27a311f1b61e3e36b4c9eaa65de7f3fd8f1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939493"
 ---
 # <a name="combinepath-task"></a>Tarefa CombinePath
 
@@ -64,12 +64,12 @@ Combina os caminhos especificados em um único caminho.
   </Target>
 ```
 
-A única propriedade que `CombinePath` permite ser uma lista é `Paths` , caso em que a saída também é uma lista. Portanto, se `$(PublishRoot)` for *C:\Site1 \\* e `$(ReleaseDirectory)` for *Release \\* e `@(LangDirectories)` for *en-US \; fr-fr \\* , este exemplo criará as pastas:
+A única propriedade que `CombinePath` permite ser uma lista é `Paths` , caso em que a saída também é uma lista. Portanto, se `$(PublishRoot)` for *C:\Site1 \\* e `$(ReleaseDirectory)` for *Release \\* e `@(LangDirectories)` for *en-US \; fr-fr \\*, este exemplo criará as pastas:
 
 - C:\Site1\Release\en-us\
 - C:\Site1\Release\fr-fr\
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

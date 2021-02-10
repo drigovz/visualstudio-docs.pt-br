@@ -9,17 +9,17 @@ ms.topic: quickstart
 ms.devlang: vb
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 34f3dc8642e2cf8e965e2ad303bed79931d2645c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24e34bbd72810932f385d53a25ca1670fa059c1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579504"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939923"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Guia de início rápido: criar seu primeiro aplicativo de console no Visual Studio com o Visual Basic
 
@@ -122,7 +122,7 @@ Vamos adicionar alguns códigos para pausar o aplicativo e, em seguida, solicita
 
     Isso pausa o programa até que você pressione uma tecla.
 
-2. Na barra de menus, selecione **Compilar**compilar  >  **solução**.
+2. Na barra de menus, selecione **Compilar** compilar  >  **solução**.
 
    Isso compila seu programa em uma IL (linguagem intermediária) que é convertida em um código binário por um compilador JIT (Just-In-Time).
 

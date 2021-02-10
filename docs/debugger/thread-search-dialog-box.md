@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 52ecb289-9b86-455c-a52b-3dcd3f7255bf
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 895241a99131c31e2fab73b9799f6203db7259e0
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: afcbbcb1990f27a09ec74814b67dbdd77bc28ec9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940612"
 ---
 # <a name="thread-search-dialog-box"></a>Caixa de diálogo Pesquisa de Thread
 Use essa caixa de diálogo para localizar e selecionar o nó de um thread específico na [exibição threads](../debugger/threads-view.md). Para exibir essa caixa de diálogo, mova o foco para uma janela de exibição de **threads** . Em seguida, escolha **Localizar thread** no menu **Pesquisar** .

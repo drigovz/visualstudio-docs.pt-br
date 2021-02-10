@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bce6230e-41d4-49b7-a050-2dde5efb6805
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e148fb0b9b043fc1717effca00d698ee14beb2f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05d788f63d4807ccfd8e99d36cbf858df2be499f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718845"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940248"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 Os mecanismos de depuração não implementam esse método.
@@ -28,14 +28,14 @@ Os mecanismos de depuração não implementam esse método.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetLogicalThread( 
+HRESULT GetLogicalThread( 
    IDebugStackFrame2*     pStackFrame,
    IDebugLogicalThread2** ppLogicalThread
 );
 ```
 
 ```csharp
-int GetLogicalThread( 
+int GetLogicalThread( 
    IDebugStackFrame2        pStackFrame,
    out IDebugLogicalThread2 ppLogicalThread
 );
@@ -48,7 +48,7 @@ no Um objeto [IDebugStackFrame2](../../../extensibility/debugger/reference/idebu
 `ppLogicalThread`\
 fora Retorna uma `IDebugLogicalThread2` interface que representa o thread lógico associado. Uma implementação do mecanismo de depuração deve definir isso como um valor nulo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Implementações do mecanismo de depuração sempre retornam `E_NOTIMPL` .
 
 ## <a name="see-also"></a>Confira também

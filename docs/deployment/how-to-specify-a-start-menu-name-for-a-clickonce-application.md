@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4b5183b2-2fd4-4433-9310-4a73bb12c4e3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 12a6ebce0ff3bb7c3040765c1a82f876d0055c4d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a9c9dee27ae78375dcb667bba5157ea84c046073
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349666"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940430"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Como especificar um nome no menu Iniciar para um aplicativo ClickOnce
 Quando um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é instalado para uso online e offline, uma entrada é adicionada ao menu **Iniciar** e à lista **Adicionar ou remover programas** . Por padrão, o nome de exibição é o mesmo que o nome do assembly do aplicativo, mas você pode alterar o nome de exibição definindo o **nome do produto** na caixa de diálogo **Opções de publicação** .
@@ -38,7 +38,7 @@ Quando um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] apli
 
 ### <a name="to-specify-a-start-menu-name"></a>Para especificar um nome do menu iniciar
 
-1. Com um projeto selecionado no **Gerenciador de soluções** , no menu **projeto** , clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.
 
 2. Clique na guia **Publicar**.
 
@@ -50,6 +50,6 @@ Quando um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] apli
 
 6. Opcionalmente, você pode inserir um nome de editor no **nome do editor**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Como publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -13,16 +13,16 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc6260bdac6f4313daddc1ca59f8541bc4fda7c8
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: db26f71ac1b191cf5824e1c3f64d6cc1dfc2489b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761297"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939559"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opções para o Python no Visual Studio
 
@@ -57,7 +57,7 @@ Também há opções adicionais específicas do Python na guia Avançado do Pyth
 | **Avisar quando o módulo importado não puder ser encontrado** | Ativado | Desmarque esta opção para suprimir avisos quando você sabe que um módulo importado não está disponível no momento, mas não afeta a operação do código de outra forma. |
 | **Relatar recuo divergente como** | **Warnings** | Como o interpretador do Python depende muito do recuo adequado para determinar o escopo, o Visual Studio por padrão emite avisos quando detecta recuos inconsistentes que podem indicar erros de codificação. Definir como **Erros** para ser ainda mais estrito, o que faz com que o programa saia nesses casos. Para desabilitar esse comportamento completamente, selecione **Não**. |
 | **Verificar se há pesquisa/notícias** | **Uma vez por semana** | *Visual Studio 2017 e anterior.* Define a frequência com que você permite que o Visual Studio abra uma janela contendo uma página da Web com itens de notícias e pesquisas relacionados ao Python, se disponível. As opções são **Nunca**, **Uma vez por dia**, **Uma vez por semana** e **Uma vez por mês**. |
-| Botão **Redefinir todas as caixas de diálogo permanentemente ocultas** | n/a | Caixas de diálogo diferentes fornecem opções como **Não mostrar novamente**. Use esse botão para limpar essas opções e fazer com que as caixas de diálogo sejam exibidas novamente. |
+| Botão **Redefinir todas as caixas de diálogo permanentemente ocultas** | N/D | Caixas de diálogo diferentes fornecem opções como **Não mostrar novamente**. Use esse botão para limpar essas opções e fazer com que as caixas de diálogo sejam exibidas novamente. |
 
 ::: moniker range="vs-2017"
 ![Caixa de diálogo de opções do Python, guia Geral](media/options-general.png)
@@ -107,8 +107,8 @@ Também há opções adicionais específicas do Python na guia Avançado do Pyth
 | Opção | Padrão | Descrição |
 | --- | --- | --- |
 | **Inclui logs de análise** | Ativado | Inclui logs detalhados relacionados à análise de ambientes do Python instalados ao salvar o diagnóstico em um arquivo ou copiá-los na área de transferência usando os botões. Essa opção pode aumentar significativamente o tamanho do arquivo gerado, mas costuma ser necessária para diagnosticar problemas do IntelliSense. |
-| Botão **salvar diagnóstico no arquivo** | n/a | Solicita um nome de arquivo e salva o log em um arquivo de texto. |
-| Botão **copiar diagnóstico para a área de transferência** | n/a | Coloca a totalidade do log na área de transferência; essa operação pode levar algum tempo, dependendo do tamanho do log. |
+| Botão **salvar diagnóstico no arquivo** | N/D | Solicita um nome de arquivo e salva o log em um arquivo de texto. |
+| Botão **copiar diagnóstico para a área de transferência** | N/D | Coloca a totalidade do log na área de transferência; essa operação pode levar algum tempo, dependendo do tamanho do log. |
 
 ![Caixa de diálogo de opções do Python, guia Diagnóstico](media/options-diagnostics.png)
 
@@ -118,7 +118,7 @@ Também há opções adicionais específicas do Python na guia Avançado do Pyth
 
 | Opção | Padrão | Descrição |
 | --- | --- | --- |
-| **Scripts** | n/a | Especifica uma pasta geral para scripts de inicialização que serão aplicados às janelas **Interativas** de todos os ambientes. Consulte [scripts de inicialização](python-environments-window-tab-reference.md#startup-scripts). No entanto, observe que esse recurso não funciona no momento. |
+| **Scripts** | N/D | Especifica uma pasta geral para scripts de inicialização que serão aplicados às janelas **Interativas** de todos os ambientes. Consulte [scripts de inicialização](python-environments-window-tab-reference.md#startup-scripts). No entanto, observe que esse recurso não funciona no momento. |
 | **As setas para cima e para baixo navegam o histórico** | Ativado | Usa as teclas de direção para navegar no histórico na janela **Interativa**. Desmarque essa configuração para usar as teclas de direção para navegar na saída da janela **Interativa**. |
 | **Modo de Conclusão** | **Avaliar somente expressões sem chamadas de função** | O processo de determinar os membros disponíveis em uma expressão na janela **Interativa** pode exigir a avaliação da expressão incompleta atual, que pode resultar em efeitos colaterais ou funções sendo chamadas várias vezes. A configuração padrão **Avaliar somente expressões sem função chamadas** exclui expressões que aparecem para chamar uma função, mas avaliada outras expressões. Por exemplo, ele avalia `a.b`, mas não `a().b`.  **Nunca avaliar expressões** impede todos os efeitos colaterais, usando apenas o mecanismo IntelliSense normal para obter sugestões. **Avaliar todas as expressões** avalia a expressão completa para obter sugestões, independentemente de efeitos colaterais. |
 | **Ocultar sugestões de análise estática** | Desativado | Quando definido, exibe apenas sugestões que são obtidas avaliando a expressão. Se combinado com o valor do **Modo de Conclusão****Nunca avaliar expressões**, nenhuma conclusão útil será exibida na janela **Interativa**. |

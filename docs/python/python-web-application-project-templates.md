@@ -5,17 +5,17 @@ ms.date: 01/28/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 572e02d614f0c6b5f782d683ff7e42e954b54441
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 1f6376978826afc2946cfac25ab635d0b7533dc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352330"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939533"
 ---
 # <a name="python-web-application-project-templates"></a>Modelos de projeto de aplicativo Web Python
 
@@ -37,7 +37,7 @@ Todos os outros modelos se baseiam nas estruturas da Web Bottle, Flask ou Django
 
 ### <a name="blank-group"></a>Grupo em branco
 
-Todos os modelos de ** \<framework> projeto Web em branco** criam um projeto com mais ou menos código clichê mínimo e as dependências necessárias declaradas em um arquivo de *requirements.txt* .
+Todos os modelos de **\<framework> projeto Web em branco** criam um projeto com mais ou menos código clichê mínimo e as dependências necessárias declaradas em um arquivo de *requirements.txt* .
 
 | Modelo | Descrição |
 | --- | --- |
@@ -47,7 +47,7 @@ Todos os modelos de ** \<framework> projeto Web em branco** criam um projeto com
 
 ### <a name="web-group"></a>Grupo da Web
 
-Todos os modelos de ** \<Framework> projeto Web** criam um aplicativo Web inicial com um design idêntico, independentemente da estrutura escolhida. O aplicativo tem as páginas Início, Sobre e Contato, juntamente com uma barra de navegação e um design responsivo usando a Inicialização. Cada aplicativo é configurado adequadamente para fornecer arquivos estáticos (CSS, JavaScript e fontes) e usa um mecanismo de modelo de página adequado para a estrutura.
+Todos os modelos de **\<Framework> projeto Web** criam um aplicativo Web inicial com um design idêntico, independentemente da estrutura escolhida. O aplicativo tem as páginas Início, Sobre e Contato, juntamente com uma barra de navegação e um design responsivo usando a Inicialização. Cada aplicativo é configurado adequadamente para fornecer arquivos estáticos (CSS, JavaScript e fontes) e usa um mecanismo de modelo de página adequado para a estrutura.
 
 | Modelo | Descrição |
 | --- | --- |
@@ -58,7 +58,7 @@ Todos os modelos de ** \<Framework> projeto Web** criam um aplicativo Web inicia
 
 ### <a name="polls-group"></a>Grupo de pesquisas
 
-Os modelos de ** \<framework> projeto Web de pesquisas** criam um aplicativo Web inicial por meio do qual os usuários podem votar em diferentes perguntas de sondagem. Cada aplicativo se baseia na estrutura dos modelos de projeto **Web** para usar um banco de dados para gerenciar as pesquisas e as respostas dos usuários. Os aplicativos incluem modelos de dados adequados e uma página de aplicativo especial (/seed) que carrega votações de um arquivo *samples.json*.
+Os modelos de **\<framework> projeto Web de pesquisas** criam um aplicativo Web inicial por meio do qual os usuários podem votar em diferentes perguntas de sondagem. Cada aplicativo se baseia na estrutura dos modelos de projeto **Web** para usar um banco de dados para gerenciar as pesquisas e as respostas dos usuários. Os aplicativos incluem modelos de dados adequados e uma página de aplicativo especial (/seed) que carrega votações de um arquivo *samples.json*.
 
 | Modelo | Descrição |
 | --- | --- |
@@ -81,7 +81,7 @@ Os Serviços de Nuvem do Microsoft Azure *dão* suporte ao arquivo *requirements
 
 ## <a name="debugging"></a>Depuração
 
-Quando um projeto Web é iniciado para depuração, o Visual Studio inicia um servidor Web local em uma porta aleatória e abre seu navegador padrão para esse endereço e porta. Para especificar opções adicionais, clique com o botão direito do mouse no projeto, selecione **Propriedades**e selecione a guia **iniciador da Web** :
+Quando um projeto Web é iniciado para depuração, o Visual Studio inicia um servidor Web local em uma porta aleatória e abre seu navegador padrão para esse endereço e porta. Para especificar opções adicionais, clique com o botão direito do mouse no projeto, selecione **Propriedades** e selecione a guia **iniciador da Web** :
 
 ![Propriedades do inicializador da Web para o modelo da Web genérico](media/template-web-launcher-properties.png)
 

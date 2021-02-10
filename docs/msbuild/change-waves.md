@@ -8,16 +8,16 @@ helpviewer_keywords:
 - MSBuildDisableFeaturesFromVersion environment variable
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 monikerRange: '>=vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 68aafd8ebb97b4bf649cc41eb7739e1700c9cb1a
-ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
+ms.openlocfilehash: 77f93b4741ee987bac871e619ccbe58e2d4d4000
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94532065"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939520"
 ---
 # <a name="change-waves"></a>Alterar ondas
 
@@ -33,13 +33,13 @@ Para desabilitar os recursos em uma alteração de onda, defina a variável de a
 
 Você receberá um aviso e/ou padrão para uma onda específica se não definir `MSBuildDisableFeaturesFromVersion` como uma onda de alteração válida. A tabela a seguir mostra as configurações possíveis:
 
-| Valor `MSBuildDisableFeaturesFromVersion`                         | Resultado        | Receber aviso? |
+| Valor `MSBuildDisableFeaturesFromVersion`                         | Result        | Receber aviso? |
 | :-------------                                                    | :----------   | :----------: |
-| Definição                                                             | Habilitar todas as ondas de alteração, o que significa que todos os recursos atrás de cada onda de alteração estão habilitados.               | No   |
-| Qualquer onda de alteração válida e atual (por exemplo, `16.8` )                      | Desabilite todos os recursos atrás da alteração Wave `16.8` **e superior**.                                           | No   |
-| Valor inválido (por exemplo, `16.9` quando as ondas válidas são `16.8` e `16.10` )| O padrão é o valor válido mais próximo (em ordem crescente). Por exemplo, `16.9` a configuração vai padronizar você para `16.10` .               | No   |
-| Fora de rotação (por exemplo, `17.1` quando a onda mais alta é `17.0` )      | Fixe para o valor válido mais próximo. Por exemplo, `17.1` coloca para `17.0` e `16.5` coloca para `16.8`                    | Yes  |
-| Formato inválido (por exemplo, `16x8` , `17_0` `garbage` )                    | Habilitar todas as ondas de alteração, o que significa que todos os recursos atrás de cada onda de alteração estão habilitados.               | Yes  |
+| Definição                                                             | Habilitar todas as ondas de alteração, o que significa que todos os recursos atrás de cada onda de alteração estão habilitados.               | Não   |
+| Qualquer onda de alteração válida e atual (por exemplo, `16.8` )                      | Desabilite todos os recursos atrás da alteração Wave `16.8` **e superior**.                                           | Não   |
+| Valor inválido (por exemplo, `16.9` quando as ondas válidas são `16.8` e `16.10` )| O padrão é o valor válido mais próximo (em ordem crescente). Por exemplo, `16.9` a configuração vai padronizar você para `16.10` .               | Não   |
+| Fora de rotação (por exemplo, `17.1` quando a onda mais alta é `17.0` )      | Fixe para o valor válido mais próximo. Por exemplo, `17.1` coloca para `17.0` e `16.5` coloca para `16.8`                    | Sim  |
+| Formato inválido (por exemplo, `16x8` , `17_0` `garbage` )                    | Habilitar todas as ondas de alteração, o que significa que todos os recursos atrás de cada onda de alteração estão habilitados.               | Sim  |
 
 ## <a name="change-waves-and-associated-features"></a>Alterar ondas e recursos associados
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c913f3015c56f7872dfe5ef3471578de7075b7d0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5d04366c908494386edc9921129db27df0ead4f7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363270"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941405"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Como criar uma solução de linguagem específica do domínio
 Uma DSL (linguagem específica do domínio) é criada usando uma solução especializada do Visual Studio.
@@ -118,7 +118,7 @@ O padrão é um nome composto por seus nomes de produtos e da empresa.
 
  Para obter mais informações sobre nomes fortes, consulte [criando e usando assemblies de Strong-Named](/dotnet/standard/assembly/create-use-strong-named).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

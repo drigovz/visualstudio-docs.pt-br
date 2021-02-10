@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 267d9097ebe53b4074bed6c5caf4077006c946eb
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 4fc3f49038a44b2b2bd5b467d6e1874f8a9a9803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149203"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940755"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Alterações de código com suporte (C# e Visual Basic)
 Editar e Continuar trata a maioria dos tipos de alterações de código dentro dos corpos do método. A maioria das alterações fora dos corpos do método e algumas alterações dentro dos corpos do método, no entanto, não podem ser aplicadas durante a depuração. Para aplicar essas alterações sem suporte, você deverá parar a depuração e reinicializar com uma versão atualizada do código.
@@ -58,7 +58,7 @@ A tabela a seguir mostra as alterações que podem ser feitas em C# e Visual Bas
 |Recurso/elemento de linguagem|Operação de edição sem suporte|
 |-|-|
 |Todos os elementos de código|Renomear|
-|Namespaces|Add|
+|Namespaces|Adicionar|
 |Namespaces, tipos, membros|Excluir|
 |Genéricos|Adicionar ou modificar|
 |Interfaces|Modificar|
@@ -76,7 +76,7 @@ A tabela a seguir mostra as alterações que podem ser feitas em C# e Visual Bas
 |Operadores ou indexadores|Modificar um parâmetro de tipo, tipo base, tipo de representante ou tipo de retorno |
 |blocos catch|Modificar quando ele contém uma instrução ativa|
 |blocos try – catch-finally|Modificar quando ele contém uma instrução ativa|
-|usando instruções|Add|
+|usando instruções|Adicionar|
 |métodos/lambdas assíncronos|Modificar um método/Lambda assíncrono em um projeto direcionado .NET Framework 4 e inferior (consulte os [detalhes](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
 |Iterators|Modificar um iterador em um projeto direcionado .NET Framework 4 e inferior (consulte os [detalhes](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
 
