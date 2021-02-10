@@ -5,14 +5,14 @@ ms.date: 10/13/2020
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: f8affd426593754f77760e4f924cd401167078e5
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: d1ddefb07d95901baa70553fdc2a322aa36f6e87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414146"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947965"
 ---
 # <a name="visual-studio-2015-documentation"></a>Documentação do Visual Studio 2015
 
@@ -30,7 +30,7 @@ No IDE do Visual Studio 2015, a funcionalidade de ajuda F1 deve continuar funcio
 
 Se você estiver usando o Visual Studio 2015 docs frequentemente, talvez queira explorar a opção de usar o Visualizador da ajuda e baixar os livros de ajuda offline para essa versão. Consulte [o Visualizador da ajuda da Microsoft](./help-viewer/overview.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Documentação para versões mais antigas do Visual Studio](/previous-versions/visualstudio/)
 - [Versões do Visual Studio 2015](/visualstudio/releasenotes/vs2015-version-history)

@@ -9,16 +9,16 @@ f1_keywords:
 ms.assetid: a148b468-b849-4858-880a-808a6b47e596
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 788cc8d8a0988740ae78e5b2b21368eb5658ec7a
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 0a9e28b0e1c3e82cb9416a376603e8f4a560f02c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98800342"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948134"
 ---
 # <a name="how-to-configure-performance-rules"></a>Como configurar regras de desempenho
 Os avisos de desempenho do Visual Studio Ferramentas de Criação de Perfil indicam problemas em um aplicativo de perfil que pode prejudicar a execução do programa. Os avisos também podem indicar que talvez seja necessário alterar os métodos de coleta para coletar dados mais úteis. Os avisos de desempenho são gerados automaticamente em uma sessão de criação de perfil e aparecem na janela **Lista de Erros** quando um arquivo de dados de criação de perfil é aberto no [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Alguns avisos podem não se aplicar aos cenários que você está interessado e alguns avisos podem ser gerados de forma imprecisa. Você pode configurar os avisos de desempenho para mostrar ou ocultar avisos específicos.

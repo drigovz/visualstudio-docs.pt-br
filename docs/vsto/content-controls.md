@@ -37,15 +37,15 @@ helpviewer_keywords:
 - BuildingBlockGalleryContentControl class
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a34211c7fb1fa001719219b7d08baab65340bde5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ce692bf10c5473c648fd6587b6b6568d369ed496
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848034"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947991"
 ---
 # <a name="content-controls"></a>Controles de conteúdo
   Os controles de conteúdo fornecem uma maneira de criar documentos e modelos que tenham estes recursos:
@@ -236,7 +236,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]
  [!code-csharp[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Como: adicionar controles de conteúdo a documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Walkthrough: criar um modelo usando controles de conteúdo](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)

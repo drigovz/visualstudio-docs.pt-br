@@ -12,15 +12,15 @@ helpviewer_keywords:
 - custom actions [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4fe77cddcfe810e73d13de81cc7280969c1d1b1c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1f95c5bfcd0dda73b3cd3392c5a8b0bb7384bd9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848190"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947874"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Ações personalizadas nas regiões de formulário do Outlook
   Ações exibem botões que permitem que os usuários respondam a um item Microsoft Office Outlook. Por exemplo, para responder a um item de email, os usuários clicam nos botões **responder**, **responder a todos** ou **encaminhar** ação. Cada uma dessas ações cria um novo item de email e popula os campos do item usando as informações do item original.
@@ -42,7 +42,7 @@ ms.locfileid: "96848190"
 |--------------|-----------------|
 |**AddressLike**|Especifica como o formulário de destino será endereçado.|
 |**Corpo**|Especifica como o corpo do item original é acrescentado ao formulário de destino.|
-|**Habilitado**|Indica se a ação personalizada está habilitada. Se essa propriedade for definida como **false**, a ação personalizada será desabilitada.|
+|**Enabled**|Indica se a ação personalizada está habilitada. Se essa propriedade for definida como **false**, a ação personalizada será desabilitada.|
 |**Método**|Especifica o tipo de resposta disponível quando a ação personalizada é executada. A ação personalizada pode enviar o formulário, abrir o formulário ou avisar o usuário se deseja enviar ou abrir o formulário.|
 |**Nome**|Especifica o nome interno que você pode usar para fazer referência a essa ação personalizada no código.|
 |**ShowOnRibbon**|Indica se a ação personalizada deve ser exibida na faixa de faixas do item original.|
@@ -53,7 +53,7 @@ ms.locfileid: "96848190"
 ## <a name="customize-a-custom-action-at-run-time"></a>Personalizar uma ação personalizada em tempo de execução
  Você também pode adicionar o comportamento à ação personalizada usando código. Por exemplo, você pode adicionar código que usa os nomes de destinatários de email e adiciona esses nomes como participantes em um novo item de compromisso. Para fazer isso, manipule o evento [CustomAction](/office/vba/api/Outlook.MailItem.CustomAction) do [objeto MailItem](/office/vba/api/Outlook.MailItem).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)
 - [Walkthrough: criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Associar uma região de formulário a uma classe de mensagem do Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)

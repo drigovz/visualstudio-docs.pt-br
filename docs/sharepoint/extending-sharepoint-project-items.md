@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 22ba5acb995466e695c0e25b5b7540f3677b1264
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: e8486120b0f08077bc30c2a5177a8aba915c37f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672568"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948668"
 ---
 # <a name="extend-sharepoint-project-items"></a>Estender itens de projeto do SharePoint
   Crie uma extensão de item de projeto quando desejar adicionar funcionalidade a um tipo de item de projeto do SharePoint que já está instalado no Visual Studio. Por exemplo, você pode criar uma extensão para o **receptor de evento** interno ou itens de projeto de **definição de lista** no Visual Studio, ou pode criar uma extensão para um tipo de item de projeto personalizado. Você também pode criar uma extensão para todos os tipos de itens de projeto do SharePoint.
@@ -66,7 +66,7 @@ ms.locfileid: "94672568"
 |Web Part|Microsoft. VisualStudio. SharePoint. WebPart|
 |Formulário de associação de fluxo de trabalho|Microsoft. VisualStudio. SharePoint. WorkflowAssociation|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Como: criar uma extensão de item de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 - [Como: adicionar um item de menu de atalho a uma extensão de item de projeto do SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
 - [Como: adicionar uma propriedade a uma extensão de item de projeto do SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 937aa9d6-278a-4df3-bef7-151441df16d5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eb2cc6f7408fc5d9af0215dbccf166477876ac23
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 015a25e57e042c86bee28c42489ce3d4f63e8553
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686435"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948173"
 ---
 # <a name="cvwritealert-function"></a>Função CvWriteAlert
 Grava um alerta para o arquivo de rastreamento da Visualização Simultânea.
@@ -73,5 +73,5 @@ HRESULT CvWriteAlertVA(
 
  **ANSI:** CvWriteAlertA, CvWriteAlertVA
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Referência da biblioteca C++](../profiling/cpp-library-reference.md)

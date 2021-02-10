@@ -21,15 +21,15 @@ helpviewer_keywords:
 - helper methods [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e971556605a120b4ef475f434390c6dcf7b17938
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 5d49c7fa9224b2d527956536cb0c56b016f6b52e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844836"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948642"
 ---
 # <a name="add-controls-to-office-documents-at-run-time"></a>Adicionar controles a documentos do Office em tempo de execução
   Você pode adicionar controles a um documento Microsoft Office Word e Microsoft Office pasta de trabalho do Excel em tempo de execução. Você também pode removê-los em tempo de execução. Os controles que você adiciona ou remove em tempo de execução são chamados de *controles dinâmicos*.

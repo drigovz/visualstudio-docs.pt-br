@@ -8,13 +8,13 @@ helpviewer_keywords:
 - Windows Forms Designer, get started
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: d4d3c0965d638c9e048cef29d7f1b535a54e54a5
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+manager: jmartens
+ms.openlocfilehash: 5803530290988affd6cfbb8342f3b1d545238985
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947840"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>Tutorial: introdução ao Designer de Formulários do Windows
 
@@ -45,7 +45,7 @@ A primeira etapa é criar o projeto de controle DemoCalculator.
 
    ::: moniker-end
 
-2. Para renomear o arquivo, em **Gerenciador de soluções** , clique com o botão direito do mouse em **UserControl1. vb** ou **UserControl1.cs** , selecione **renomear** e altere o nome do arquivo para DemoCalculator. vb ou DemoCalculator.cs. Selecione **Sim** quando for solicitado se deseja renomear todas as referências ao elemento de código “UserControl1”.
+2. Para renomear o arquivo, em **Gerenciador de soluções**, clique com o botão direito do mouse em **UserControl1. vb** ou **UserControl1.cs**, selecione **renomear** e altere o nome do arquivo para DemoCalculator. vb ou DemoCalculator.cs. Selecione **Sim** quando for solicitado se deseja renomear todas as referências ao elemento de código “UserControl1”.
 
 O Designer de Formulários do Windows mostra a superfície de designer para o controle DemoCalculator. Nessa exibição, é possível projetar graficamente a aparência do controle selecionando controles e componentes da Caixa de Ferramentas e colocando-os na superfície do designer. Para saber mais sobre controles personalizados, confira [Variedades de controles personalizados](/dotnet/framework/winforms/controls/varieties-of-custom-controls).
 
@@ -55,14 +55,14 @@ O controle DemoCalculator contém vários controles do Windows Forms. Neste proc
 
 1. No Designer de Formulários do Windows, altere o controle DemoCalculator para um tamanho maior selecionando a alça de dimensionamento no canto inferior direito e arrastando-a para baixo e para a direita. No canto inferior direito do Visual Studio, encontre as informações de tamanho e localização dos controles. Defina o tamanho do controle para uma largura de 500 e uma altura de 400, observando as informações de tamanho à medida que você redimensiona o controle.
 
-2. Na **Caixa de Ferramentas** , selecione o nó **Contêineres** para abri-lo. Selecione o controle **SplitContainer** e arraste-o para a superfície do designer.
+2. Na **Caixa de Ferramentas**, selecione o nó **Contêineres** para abri-lo. Selecione o controle **SplitContainer** e arraste-o para a superfície do designer.
 
    `SplitContainer` é colocado na superfície do designer do controle DemoCalculator.
 
     > [!TIP]
     > O controle `SplitContainer` ajusta-se ao tamanho do controle DemoCalculator. Observe a janela **Propriedades** para consultar as configurações da propriedade para o controle `SplitContainer`. Encontre a propriedade <xref:System.Windows.Forms.SplitContainer.Dock%2A>. Seu valor é [DockStyle.Fill](xref:System.Windows.Forms.DockStyle.Fill), o que significa que o controle `SplitContainer` sempre se dimensionará para os limites do controle DemoCalculator. Redimensione o controle DemoCalculator para verificar esse comportamento.
 
-3. Na janela **Propriedades** , altere o valor da propriedade <xref:System.Windows.Forms.SplitContainer.Dock%2A> para `None`.
+3. Na janela **Propriedades**, altere o valor da propriedade <xref:System.Windows.Forms.SplitContainer.Dock%2A> para `None`.
 
     O controle `SplitContainer` reduz para o tamanho padrão e não acompanha mais o tamanho do controle DemoCalculator.
 
@@ -77,9 +77,9 @@ O controle DemoCalculator contém vários controles do Windows Forms. Neste proc
 
     `SplitContainer` divide o controle DemoCalculator em dois painéis com uma borda móvel separando-os. O painel à esquerda mostrará os botões e a tela da calculadora, e o painel à direita mostrará um registro das operações aritméticas realizadas pelo usuário.
 
-6. Na janela **Propriedades** , altere o valor da propriedade `BorderStyle` para `Fixed3D`.
+6. Na janela **Propriedades**, altere o valor da propriedade `BorderStyle` para `Fixed3D`.
 
-7. Na **Caixa de Ferramentas** , selecione o nó **Controles Comuns** para abri-lo. Selecione o controle `ListView` e arraste-o para o painel direito do controle `SplitContainer`.
+7. Na **Caixa de Ferramentas**, selecione o nó **Controles Comuns** para abri-lo. Selecione o controle `ListView` e arraste-o para o painel direito do controle `SplitContainer`.
 
 8. Selecione o glifo de marca inteligente do controle `ListView`. No painel de marcas inteligentes, altere a configuração `View` para `Details`.
 
@@ -87,11 +87,11 @@ O controle DemoCalculator contém vários controles do Windows Forms. Neste proc
 
    A caixa de diálogo **Editor de Coleção ColumnHeader** abre.
 
-10. Na caixa de diálogo **Editor de Coleção ColumnHeader** , selecione **Adicionar** para adicionar uma coluna ao controle `ListView`. Altere o valor da propriedade `Text` da coluna para **Histórico**. Selecione **OK** para criar a coluna.
+10. Na caixa de diálogo **Editor de Coleção ColumnHeader**, selecione **Adicionar** para adicionar uma coluna ao controle `ListView`. Altere o valor da propriedade `Text` da coluna para **Histórico**. Selecione **OK** para criar a coluna.
 
 11. No painel de marcas inteligentes, selecione **Encaixar no Contêiner Pai** e, em seguida, selecione o glifo de marca inteligente para fechar o painel de marcas inteligentes.
 
-12. Na **Caixa de Ferramentas** do nó **Contêineres** , arraste um controle `TableLayoutPanel` para o painel esquerdo do controle `SplitContainer`.
+12. Na **Caixa de Ferramentas** do nó **Contêineres**, arraste um controle `TableLayoutPanel` para o painel esquerdo do controle `SplitContainer`.
 
     O controle `TableLayoutPanel` aparece na superfície do designer com o painel de marcas inteligentes aberto. O controle `TableLayoutPanel` organiza seus controles filhos em uma grade. O controle `TableLayoutPanel` manterá a exibição e os botões do controle DemoCalculator. Para obter mais informações, consulte [Walkthrough: organizar controles usando um TableLayoutPanel](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel).
 
@@ -101,23 +101,23 @@ O controle DemoCalculator contém vários controles do Windows Forms. Neste proc
 
 14. Selecione o botão **Adicionar** até que cinco colunas sejam exibidas. Selecione todas as cinco colunas e, em seguida, selecione **Porcentagem** na caixa **Tipo de Tamanho**. Defina o valor **Porcentagem** como **20**. Isso define cada coluna com a mesma largura.
 
-15. Em **Mostrar** , selecione **Linhas**.
+15. Em **Mostrar**, selecione **Linhas**.
 
 16. Selecione **Adicionar** até que cinco linhas sejam exibidas. Selecione todas as cinco linhas e, em seguida, selecione **Porcentagem** na caixa **Tipo de Tamanho**. Defina o valor **Porcentagem** como **20**. Isso define cada linha com a mesma altura.
 
 17. Selecione **OK** para aceitar as alterações e, em seguida, selecione o glifo de marca inteligente para fechar o painel de marcas inteligentes.
 
-18. Na janela **Propriedades** , altere o valor da propriedade `Dock` para `Fill`.
+18. Na janela **Propriedades**, altere o valor da propriedade `Dock` para `Fill`.
 
 ## <a name="populate-the-control"></a>Preencher o controle
 
 Agora que o layout do controle está configurado, você pode preencher o controle DemoCalculator com botões e uma tela.
 
-1. Na **caixa de ferramentas** , selecione o `TextBox` ícone de controle.
+1. Na **caixa de ferramentas**, selecione o `TextBox` ícone de controle.
 
    Um controle `TextBox` é colocado na primeira célula do controle `TableLayoutPanel`.
 
-2. Na janela **Propriedades** , altere o valor da propriedade ColumnSpan do controle `TextBox` para **5**.
+2. Na janela **Propriedades**, altere o valor da propriedade ColumnSpan do controle `TextBox` para **5**.
 
    O controle `TextBox` fica centralizado em sua linha.
 
@@ -127,15 +127,15 @@ Agora que o layout do controle está configurado, você pode preencher o control
 
 4. Altere o valor da propriedade `TextBox` do controle `TextAlign` para `Right`.
 
-5. Na janela **Propriedades** , expanda o nó de propriedade `Font`. Defina `Size` como **14** e `Bold` como **true** para os controles `TextBox`.
+5. Na janela **Propriedades**, expanda o nó de propriedade `Font`. Defina `Size` como **14** e `Bold` como **true** para os controles `TextBox`.
 
 6. Selecione o controle `TableLayoutPanel`.
 
-7. Na **caixa de ferramentas** , selecione o `Button` ícone.
+7. Na **caixa de ferramentas**, selecione o `Button` ícone.
 
    Um controle `Button` é colocado na próxima célula aberta do controle `TableLayoutPanel`.
 
-8. Na **caixa de ferramentas** , selecione o `Button` ícone quatro mais vezes para preencher a segunda linha do `TableLayoutPanel` controle.
+8. Na **caixa de ferramentas**, selecione o `Button` ícone quatro mais vezes para preencher a segunda linha do `TableLayoutPanel` controle.
 
 9. Selecione todos os cinco controles `Button` pressionando a tecla **Shift** durante a seleção. Pressione **Ctrl** + **C** para copiar os `Button` controles para a área de transferência.
 
@@ -143,17 +143,17 @@ Agora que o layout do controle está configurado, você pode preencher o control
 
 11. Selecione todos os 20 controles `Button` pressionando a tecla **Shift** durante a seleção.
 
-12. Na janela **Propriedades** , altere o valor da propriedade `Dock` para `Fill`.
+12. Na janela **Propriedades**, altere o valor da propriedade `Dock` para `Fill`.
 
     Todos os controles `Button` são encaixados para preencher suas células.
 
-13. Na janela **Propriedades** , expanda o nó de propriedade `Margin`. Defina o valor de `All` como **5**.
+13. Na janela **Propriedades**, expanda o nó de propriedade `Margin`. Defina o valor de `All` como **5**.
 
     Todos os controles `Button` são menores para criar uma margem maior entre eles.
 
-14. Selecione **button10** e **button20** , em seguida, pressione **Excluir** para removê-los do layout.
+14. Selecione **button10** e **button20**, em seguida, pressione **Excluir** para removê-los do layout.
 
-15. Selecione **button5** e **button15** , em seguida, altere o valor da propriedade `RowSpan` para **2**. Esses serão os botões **Limpar** e **=** para o controle DemoCalculator.
+15. Selecione **button5** e **button15**, em seguida, altere o valor da propriedade `RowSpan` para **2**. Esses serão os botões **Limpar** e **=** para o controle DemoCalculator.
 
 ## <a name="use-the-document-outline-window"></a>Usar a janela Estrutura de Tópicos do Documento
 
@@ -165,7 +165,7 @@ Ao preencher o controle ou formulário com vários controles, talvez seja mais f
 
 2. Na janela **estrutura de tópicos do documento** , clique com o botão direito do mouse em **Button1** e selecione **renomear**. Altere seu nome para sevenButton.
 
-3. Usando a janela **Estrutura de Tópicos do Documento** , renomeie os controles `Button` do nome gerado pelo designer para o nome de produção, de acordo com a lista a seguir:
+3. Usando a janela **Estrutura de Tópicos do Documento**, renomeie os controles `Button` do nome gerado pelo designer para o nome de produção, de acordo com a lista a seguir:
 
    - button1 para **sevenButton**
 
@@ -203,7 +203,7 @@ Ao preencher o controle ou formulário com vários controles, talvez seja mais f
 
    - button19 para **additionButton**
 
-4. Usando as janelas **Estrutura de Tópicos do Documento** e **Propriedades** , altere o valor da propriedade `Text` para cada nome de controle `Button` de acordo com a lista a seguir:
+4. Usando as janelas **Estrutura de Tópicos do Documento** e **Propriedades**, altere o valor da propriedade `Text` para cada nome de controle `Button` de acordo com a lista a seguir:
 
    - Altere a propriedade de texto do controle sevenButton para **7**
 
@@ -221,9 +221,9 @@ Ao preencher o controle ou formulário com vários controles, talvez seja mais f
 
    - Altere a propriedade de texto do controle sixButton para **6**
 
-   - Alterar a propriedade texto do controle multiplicationButton para * *\** _ (asterisco)
+   - Alterar a propriedade texto do controle multiplicationButton para **\*** (asterisco)
 
-   - Altere a propriedade texto do controle oneButton para _ *1**
+   - Altere a propriedade de texto do controle oneButton para **1**
 
    - Altere a propriedade de texto do controle twoButton para **2**
 
@@ -243,7 +243,7 @@ Ao preencher o controle ou formulário com vários controles, talvez seja mais f
 
 5. Na superfície do designer, mantenha pressionada a tecla **Shift** e clique para selecionar todos os controles `Button`.
 
-6. Na janela **Propriedades** , expanda o nó de propriedade `Font`. Defina `Size` como **14** e `Bold` como **true** para todos os controles `Button`.
+6. Na janela **Propriedades**, expanda o nó de propriedade `Font`. Defina `Size` como **14** e `Bold` como **true** para todos os controles `Button`.
 
 Isso conclui o design do controle DemoCalculator. Tudo o que resta é fornecer a lógica da calculadora.
 
@@ -277,11 +277,11 @@ A primeira etapa é criar o projeto do aplicativo. Você usará esse projeto par
 
 1. Crie um novo projeto **Aplicativo do Windows Forms** e nomeie-o como **DemoCalculatorTest**.
 
-2. Em **Gerenciador de soluções** , clique com o botão direito do mouse no projeto **DemoCalculatorTest** e selecione **Adicionar referência** para abrir a caixa de diálogo **Adicionar referência** .
+2. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto **DemoCalculatorTest** e selecione **Adicionar referência** para abrir a caixa de diálogo **Adicionar referência** .
 
 3. Vá para a guia **projetos** e selecione o projeto DemoCalculatorLib para adicionar a referência ao projeto de teste.
 
-4. No **Gerenciador de Soluções** , clique com o botão direito do mouse em **DemoCalculatorTest** e, em seguida, selecione **Definir como Projeto de Inicialização**.
+4. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **DemoCalculatorTest** e, em seguida, selecione **Definir como Projeto de Inicialização**.
 
 5. No Designer de Formulários do Windows, aumente o tamanho do formulário para aproximadamente **700 x 500**.
 
@@ -289,7 +289,7 @@ A primeira etapa é criar o projeto do aplicativo. Você usará esse projeto par
 
 Para usar o controle DemoCalculator em um aplicativo, é preciso colocá-lo em um formulário.
 
-1. Na **Caixa de Ferramentas** , expanda o nó **Componentes do DemoCalculatorLib**.
+1. Na **Caixa de Ferramentas**, expanda o nó **Componentes do DemoCalculatorLib**.
 
 2. Arraste o controle **DemoCalculator** da **Caixa de Ferramentas** para seu formulário. Mova o controle para o canto superior esquerdo do formulário. Quando o controle estiver próximo das bordas do formulário, *guias de alinhamento* aparecerão. Guias de alinhamento indicam a distância da propriedade `Padding` do formulário e da propriedade `Margin` do controle. Posicione o controle no local indicado pelas guias de alinhamento.
 
@@ -313,7 +313,7 @@ Para usar o controle DemoCalculator em um aplicativo, é preciso colocá-lo em u
 
 Este artigo demonstrou como construir a interface do usuário para uma calculadora simples. Para continuar, você pode ampliar sua funcionalidade implementando a lógica da calculadora e, em seguida, [publicar o aplicativo usando o ClickOnce](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md). Ou continue com um tutorial diferente no qual você [cria um visualizador de imagens usando o Windows Forms](../ide/tutorial-1-create-a-picture-viewer.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Controles de formulários do Windows](/dotnet/framework/winforms/controls/)
 - [Acessibilidade para controles do Windows Forms](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)

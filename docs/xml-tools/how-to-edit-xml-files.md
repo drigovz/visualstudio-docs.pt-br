@@ -7,19 +7,19 @@ ms.topic: how-to
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 933ce2912845b69ceb73584c0599566b0a037fef
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c538e9a4da3c4bbd08c571818dbaaaca466c2471
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399976"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948538"
 ---
 # <a name="how-to-edit-xml-files"></a>Como: editar arquivos XML
 
-O editor de XML é o novo editor de arquivos XML. Ele pode ser usado em um arquivo XML independente, ou em um arquivo associado a um projeto o Visual Studio. O editor de XML está associado às seguintes extensões de arquivo: *. config* , *. DTD* , *. xml* , *. xsd* , *. XDR* , *. xsl* , *. XSLT* e *. vssettings*. O editor de XML também está associado a qualquer outro tipo de arquivo que não tenha um editor específico registrado e que contenha conteúdo XML ou DTD.
+O editor de XML é o novo editor de arquivos XML. Ele pode ser usado em um arquivo XML independente, ou em um arquivo associado a um projeto o Visual Studio. O editor de XML está associado às seguintes extensões de arquivo: *. config*, *. DTD*, *. xml*, *. xsd*, *. XDR*, *. xsl*, *. XSLT* e *. vssettings*. O editor de XML também está associado a qualquer outro tipo de arquivo que não tenha um editor específico registrado e que contenha conteúdo XML ou DTD.
 
 > [!NOTE]
 > Os documentos XHTML são tratados pelo Editor de HTML.
@@ -38,7 +38,7 @@ Para editar um arquivo XML, abra o arquivo que você deseja editar.
 
 ## <a name="add-an-existing-xml-file-to-a-project"></a>Adicionar um arquivo XML existente a um projeto
 
-1. No menu **Projeto** , selecione **Adicionar Item Existente**.
+1. No menu **Projeto**, selecione **Adicionar Item Existente**.
 
    A caixa de diálogo **Adicionar item existente** é exibida.
 
@@ -82,7 +82,7 @@ Para editar um arquivo XML, abra o arquivo que você deseja editar.
 
    O editor de XML localiza os esquemas que você adiciona a este projeto e os usa para validação e IntelliSense em qualquer XML, esquema ou arquivos XSLT que você editar enquanto este projeto está aberto.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Editor de XML](../xml-tools/xml-editor.md)
 - [Propriedades do documento XML, janela Propriedades](../xml-tools/xml-document-properties-properties-window.md)

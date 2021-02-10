@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], form regions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3273c02416cac54dfd244ba4f163fb5d726413c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ba2c4412b344a37e1b1db74cdddea8c5b60b69d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847956"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947887"
 ---
 # <a name="create-outlook-form-regions"></a>Criar regiões de formulário do Outlook
   Você pode usar regiões de formulário para personalizar Microsoft Office formulários do Outlook. O Visual Studio fornece ferramentas avançadas que facilitam o design, o desenvolvimento e a depuração de regiões de formulário.
@@ -178,7 +178,7 @@ ms.locfileid: "96847956"
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Diretrizes para criar regiões de formulário do Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)|Fornece informações que podem ajudá-lo a otimizar suas regiões de formulário e evitar possíveis problemas.|
 |[Como: adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|Mostra como criar uma região de formulário para estender um formulário Microsoft Office do Outlook padrão ou personalizado usando o novo assistente de **área de formulário do Outlook** .|

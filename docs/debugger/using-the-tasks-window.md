@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df43a02dbda1fbcbe93decb58721032cd84d657
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: fcae019e8854ecee9cdc553eedd3e9d2d0f28a63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150061"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948577"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>Usando a janela tarefas (C#, Visual Basic, C++)
 
@@ -47,7 +47,7 @@ Você pode usar a janela **Tarefas** sempre que quebrar no depurador. Você pode
 
 As colunas na janela **Tarefas** mostram as informações a seguir.
 
-|Nome da coluna|Descrição|
+|Nome da coluna|Description|
 |-----------------|-----------------|
 |**Sinalizadores**|Mostra quais tarefas estão sinalizadas e permite sinalizar ou remover a sinalização de uma tarefa.|
 |**Ícones**|Uma seta amarela indica a tarefa atual. A tarefa atual é a tarefa mais alta no thread atual.<br /><br /> Uma seta branca indica a tarefa de quebra, isto é, a que era atual quando o depurador foi chamado.<br /><br /> O ícone de pausa indica uma tarefa que foi congelada pelo usuário. Você pode congelar e descongelar uma tarefa clicando com o botão direito na lista.|
@@ -56,7 +56,7 @@ As colunas na janela **Tarefas** mostram as informações a seguir.
 |**Start Time**|A hora em que a tarefa se tornou ativa.|
 |**Duration**|O número de segundos que a tarefa esteve ativa.|
 |**Tempo de Conclusão**|A hora e conclusão da tarefa.|
-|**Localização**|O local atual da pilha de chamadas da tarefa. Passe o mouse sobre esta célula para ver a pilha de chamada inteira para a tarefa. As tarefas agendadas não têm um valor nessa coluna.|
+|**Localidade**|O local atual da pilha de chamadas da tarefa. Passe o mouse sobre esta célula para ver a pilha de chamada inteira para a tarefa. As tarefas agendadas não têm um valor nessa coluna.|
 |**Tarefa**|O método inicial e quaisquer argumentos que são passados para a tarefa quando ela foi criada.|
 |**AsyncState**|Para código gerenciado, o status da tarefa. Por padrão, essa coluna está ocultada. Para exibir esta coluna, abra o menu de contexto para um dos cabeçalhos de coluna. Escolha **Colunas**, **AsyncState**.|
 |**Pai**|A ID da tarefa que criou essa tarefa. Se estiver em branco, a tarefa não terá pai. Isso é aplicável somente para programas gerenciados.|
@@ -94,7 +94,7 @@ As colunas na janela **Tarefas** mostram as informações a seguir.
 
 O comando **alternar para tarefa** torna a tarefa atual a tarefa ativa. O comando **alternar para quadro** torna o quadro de pilhas selecionado o quadro de pilhas ativo. O contexto do depurador alterna para a tarefa atual ou para o quadro de pilhas selecionado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Depurando código gerenciado](../debugger/debugging-managed-code.md)

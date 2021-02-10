@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9f0f9eb6c863a961a527fcb6fb330a2a4f88669e
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd4967e38738018f9b30365575a2dcb9e8970963
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672581"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948746"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>Estender o empacotamento e a implantação do SharePoint
   Você pode estender o processo de empacotamento e implantação para projetos do SharePoint.
@@ -54,7 +54,7 @@ ms.locfileid: "94672581"
 ## <a name="customize-validation-rules"></a>Personalizar regras de validação
  Antes de implantar um pacote de solução (. wsp), você pode criar regras de validação de pacotes e recursos personalizados para verificar se o recurso ou pacote é válido. Por exemplo, você pode relatar informações, avisos ou erros aos desenvolvedores para ajudá-los a corrigir problemas de validação. Para obter mais informações, consulte [como criar regras personalizadas de validação de pacotes e recursos para soluções do SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Como executar código quando as etapas de implantação são executadas](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)
 - [Walkthrough: criar uma etapa de implantação personalizada para projetos do SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 - [Como criar regras de validação de pacotes e recursos personalizados para soluções do SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)

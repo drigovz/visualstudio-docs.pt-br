@@ -16,13 +16,13 @@ helpviewer_keywords:
 ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: e30d81277ae28a3f5d6ca45a259fa66e0f4ee004
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: cbd15d57090f2248cdd97eba1898e363cc2d21b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441970"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948069"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analisar resultados do teste de carga na exibição Grafos do Analisador de Teste de Carga
 
@@ -71,7 +71,7 @@ A legenda contém as seguintes colunas:
 |Computador|O nome do computador para o qual o contador é coletado.|
 |Color|A cor da linha no gráfico.|
 |Intervalo|Indica o número que é representado por 100 no gráfico desse contador. Por exemplo, para um intervalo cujo valor superior é 10.000, o rótulo 100 na parte superior do gráfico representa 10.000.|
-|Mín|Indica o valor mínimo do contador em milissegundos.|
+|Min|Indica o valor mínimo do contador em milissegundos.|
 |Max|Indica o valor máximo do contador em milissegundos.|
 |Méd|Indica o valor médio do contador em milissegundos.|
 |Último|Mostra o valor do contador durante o intervalo de amostragem mais recente em milissegundos.|
