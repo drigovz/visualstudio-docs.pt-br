@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ab97efc82575c31c8e05b73063c2b53a09691d2d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd0dfa3a12c675463c46e93aa0d5b25e8b4bd4b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672659"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948850"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Implantar, publicar e atualizar pacotes de solução do SharePoint
   Depois de desenvolver uma solução do SharePoint no Visual Studio, você pode implantar seu arquivo de pacote (. wsp) em um servidor do SharePoint local ou publicá-lo em um servidor do SharePoint remoto ou local. Se você implantar os arquivos, poderá personalizar como os arquivos de pacote (. wsp) são implantados.
@@ -66,5 +66,5 @@ ms.locfileid: "94672659"
 ### <a name="upgrade-published-packages"></a>Atualizar pacotes publicados
  Se você fizer alterações em um projeto do SharePoint no Visual Studio depois que ele for publicado, o pacote publicado deverá ser atualizado para incluir as alterações. Para atualizar com êxito, um pacote deve ter um nome exclusivo. Se um pacote com o mesmo nome for encontrado no site do SharePoint, o que pode ocorrer quando você estiver atualizando um aplicativo existente, um erro alertará você sobre o conflito de nome de arquivo e permitirá que você renomeie o pacote. Depois de ser republicado, o novo pacote aparece no site do SharePoint e pode ser atualizado. Um pacote atualizado atualiza a solução usando dados do pacote mais antigo e ativa a solução no SharePoint. Para obter mais informações, consulte [como implantar, publicar e atualizar soluções do SharePoint em um servidor remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

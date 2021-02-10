@@ -12,15 +12,15 @@ helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 06a8fdef9c194e9b0f81768f93b675ade77d39ef
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 8fc572f6fc5c0444fda619af5af49c6c2e52ac5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949110"
 ---
 # <a name="create-sharepoint-features"></a>Criar recursos do SharePoint
   Você pode usar um recurso do SharePoint para agrupar itens de projeto do SharePoint relacionados para facilitar a implantação. Você pode criar recursos, definir escopos e marcar outros recursos como dependências usando o designer de recursos do SharePoint. O designer também gera um manifesto, que é um arquivo XML que descreve cada recurso.
@@ -42,9 +42,9 @@ ms.locfileid: "94850579"
 
 |Propriedade|Descrição|
 |--------------|-----------------|
-|Título|Opcional. O título padrão do recurso é definido como *SolutionName* *FeatureName*.|
+|Title|Opcional. O título padrão do recurso é definido como *SolutionName* *FeatureName*.|
 |Descrição|Opcional. A descrição do recurso do SharePoint.|
-|Escopo|Obrigatórios. Se um recurso for criado usando **Gerenciador de soluções**, o escopo será definido como Web por padrão.<br /><br /> -Farm: Ative um recurso para um farm de servidores inteiro.<br /><br /> -Site: Ative um recurso para todos os sites em um conjunto de sites.<br /><br /> -Web: ativar um recurso para um site específico.<br /><br /> -WebApplication: ativar um recurso para todos os sites em um aplicativo Web.|
+|Escopo|Obrigatório. Se um recurso for criado usando **Gerenciador de soluções**, o escopo será definido como Web por padrão.<br /><br /> -Farm: Ative um recurso para um farm de servidores inteiro.<br /><br /> -Site: Ative um recurso para todos os sites em um conjunto de sites.<br /><br /> -Web: ativar um recurso para um site específico.<br /><br /> -WebApplication: ativar um recurso para todos os sites em um aplicativo Web.|
 |Itens na solução|Todos os itens do SharePoint que podem ser adicionados ao recurso.|
 |Itens no recurso|Os itens de projeto do SharePoint que foram adicionados ao recurso.|
 

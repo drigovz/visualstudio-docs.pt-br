@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5ad95ce8b4ab9567f22748453ae59c258f24aa86
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 2b098ac007825745e13481592760be9d2badeb55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948902"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Extensões de depuração para as ferramentas do SharePoint no Visual Studio
   Você pode depurar extensões de ferramentas do SharePoint na instância experimental ou na instância regular do Visual Studio. Se você precisar solucionar problemas de comportamento de uma extensão, também poderá modificar valores de registro para exibir informações de erro adicionais e configurar como o Visual Studio executa comandos do SharePoint.
@@ -53,7 +53,7 @@ ms.locfileid: "94671214"
 
 3. Na caixa de diálogo **instalador de extensão do Visual Studio** , escolha a edição do Visual Studio na qual você deseja instalar a extensão e, em seguida, escolha o botão **instalar** .
 
-     O Visual Studio instala os arquivos de extensão em nome de extensão de \\ *nome de autor*%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions \\ *extension name* \\ *versão*. As três últimas pastas neste caminho são construídas nos `Author` elementos, `Name` e `Version` no arquivo *extension. vsixmanifest* para a extensão.
+     O Visual Studio instala os arquivos de extensão em nome de extensão de \\ *nome de autor*%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions \\  \\ *versão*. As três últimas pastas neste caminho são construídas nos `Author` elementos, `Name` e `Version` no arquivo *extension. vsixmanifest* para a extensão.
 
 4. Depois que o Visual Studio instalar a extensão, escolha o botão **fechar** .
 
@@ -130,7 +130,7 @@ ms.locfileid: "94671214"
 |MaxReceivedMessageSize|REG_DWORD que especifica o tamanho máximo permitido, em bytes, das mensagens do WCF que são passadas entre o Visual Studio e *vssphost4.exe*.<br /><br /> O padrão é 1.048.576 bytes (1 MB).|
 |MaxStringContentLength|REG_DWORD que especifica o tamanho máximo permitido, em bytes, de cadeias de caracteres que são transmitidas entre o Visual Studio e *vssphost4.exe*.<br /><br /> O padrão é 1.048.576 bytes (1 MB).|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Estenda as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Implantar extensões para as ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

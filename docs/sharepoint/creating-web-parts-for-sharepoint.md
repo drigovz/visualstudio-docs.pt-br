@@ -22,15 +22,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bc9427d561817cb115473bddc71f2ba63475427e
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: ae28ab44b12c979f3c405bd7d853d7a2d196aae4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672789"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948928"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Criar Web Parts para SharePoint
   Usando Web Parts, você pode modificar o conteúdo, a aparência e o comportamento de páginas de um site do SharePoint usando um navegador. As Web Parts são controles do lado do servidor que são executados dentro de uma página de Web Part: são os blocos de construção de páginas que aparecem em um site do SharePoint. Consulte [bloco de construção: Web Parts](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
@@ -59,7 +59,7 @@ ms.locfileid: "94672789"
 ## <a name="sharepoint-controls"></a>Controles do SharePoint
  O Visual Studio fornece alguns controles para criar páginas do SharePoint, como páginas de aplicativo. Esses controles aparecem na **caixa de ferramentas** em **controles do SharePoint**. A funcionalidade para esses controles deriva do namespace [Microsoft. SharePoint. WebControls](/previous-versions/office/sharepoint-server/ms413880(v=office.15)) , que contém os controles de servidor ASP.NET que são usados nas páginas de site e de lista do SharePoint.
 
-|Nome do controle|Descrição|
+|Nome do controle|Description|
 |------------------|-----------------|
 |[AspMenu](/previous-versions/office/sharepoint-server/ms454108(v=office.15))|Insere um menu ASP. Para obter mais informações, consulte [visão geral do controle de menu](/previous-versions/ecs0x9w5(v=vs.140)).|
 |[CssLink](/previous-versions/office/sharepoint-server/ms439048(v=office.15))|Insere um elemento **link** na página *. aspx* e aplica uma ou mais folhas de estilo externas definidas por **CssRegistration**.|

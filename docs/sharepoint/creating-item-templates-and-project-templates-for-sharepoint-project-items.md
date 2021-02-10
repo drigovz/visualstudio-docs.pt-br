@@ -17,15 +17,15 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating custom templates
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 59710eb4651f363d669dc27b6190f8d224d9917f
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 538bc709ed3af1c7b1424b56c1bd843b127c6ab7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850631"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949149"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Criar modelos de item e modelos de projeto para itens de projeto do SharePoint
 
@@ -40,7 +40,7 @@ Modelos de item e modelos de projeto são arquivos *. zip* que contêm arquivos 
 
  A tabela a seguir lista os arquivos necessários para criar um modelo de item para um item de projeto do SharePoint.
 
-|Arquivo necessário|Descrição|
+|Arquivo necessário|Description|
 |-------------------|-----------------|
 |Um arquivo *. COMDATA*|Esse arquivo XML especifica o conteúdo e o comportamento padrão do item de projeto. Esse arquivo deve ser incluído no modelo de item. Para obter mais informações sobre o conteúdo de arquivos *. OnData* , consulte [referência de esquema de item de projeto do SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md).|
 |Um arquivo *. vstemplate* .|Esse arquivo fornece ao Visual Studio as informações necessárias para exibir o modelo na caixa de diálogo **Adicionar novo item** e criar um item de projeto a partir do modelo. Esse arquivo deve ser incluído no modelo de item. Para obter mais informações, consulte [arquivos de metadados de modelo do Visual Studio](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\)).|
@@ -48,7 +48,7 @@ Modelos de item e modelos de projeto são arquivos *. zip* que contêm arquivos 
 
  A tabela a seguir lista alguns dos arquivos opcionais mais comuns que podem ser incluídos no modelo de item. Alguns tipos de itens de projeto podem exigir outros arquivos não listados aqui.
 
-| Arquivo opcional | Descrição |
+| Arquivo opcional | Description |
 |----------------------| - |
 | *Elements.xml* | Um arquivo de *elemento de recurso* . Esse arquivo define a interface do usuário e o comportamento da personalização criada pelo item de projeto. Cada tipo de personalização, como instâncias de lista, tipos de conteúdo ou ações personalizadas, tem um esquema diferente que define o conteúdo desse arquivo. Para obter mais informações, consulte [bloco de construção: recursos](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14)) e [esquemas](/previous-versions/office/developer/sharepoint-2010/ms414322(v=office.14))de recursos. |
 | *Schema.xml* | O arquivo de esquema para definições de lista. Para obter mais informações, consulte [bloco de construção: listas e bibliotecas de documentos](/previous-versions/office/developer/sharepoint-2010/ee534985(v=office.14)) e [Schema.xml](/previous-versions/office/developer/sharepoint-2010/ms459356(v=office.14)). |
@@ -64,7 +64,7 @@ Modelos de item e modelos de projeto são arquivos *. zip* que contêm arquivos 
 
  A tabela a seguir lista os arquivos que devem ser incluídos em um modelo de projeto do SharePoint.
 
-|Arquivo necessário|Descrição|
+|Arquivo necessário|Description|
 |-------------------|-----------------|
 |Um arquivo *. vstemplate*|Esse arquivo fornece ao Visual Studio as informações necessárias para exibir o modelo na caixa de diálogo **novo projeto** e criar um projeto a partir do modelo. Para obter mais informações, consulte [arquivos de metadados de modelo do Visual Studio](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\)).|
 |Um arquivo *. csproj* ou *. vbproj*|Este é o arquivo de projeto. Ele define o conteúdo e as definições de configuração do projeto.|
@@ -73,7 +73,7 @@ Modelos de item e modelos de projeto são arquivos *. zip* que contêm arquivos 
 
  A tabela a seguir lista os arquivos opcionais que podem ser incluídos no modelo de projeto.
 
-|Arquivo opcional|Descrição|
+|Arquivo opcional|Description|
 |-------------------|-----------------|
 |itens de projeto do SharePoint|Você pode incluir um ou mais arquivos. COMDATA que definem tipos de item de projeto do SharePoint. Cada arquivo *. COMDATA* deve ter uma <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementação correspondente em um assembly de extensão que está incluído no pacote VSIX com o modelo de projeto. Para obter mais informações, consulte [criar modelos de item](#create-item-templates).<br /><br /> Normalmente, os projetos do SharePoint incluem pelo menos um item de projeto do SharePoint. No entanto, isso não é obrigatório.|
 |*\<featureName>. recurso*|Esse arquivo define um recurso do SharePoint que é usado para agrupar vários itens de projeto para implantação. Quando você usa o designer de recursos para personalizar um recurso em seu projeto, o Visual Studio armazena dados sobre o recurso neste arquivo. Se você quiser agrupar os itens do projeto em diferentes recursos, poderá incluir vários arquivos *. Feature* .<br /><br /> Quando você cria um modelo de projeto personalizado do SharePoint, é recomendável incluir apenas o mínimo de conteúdo necessário em cada arquivo *. Feature* e configurar recursos usando as APIs no <xref:Microsoft.VisualStudio.SharePoint.Features> namespace em uma extensão associada ao modelo de projeto. Se você fizer isso, o modelo de projeto será protegido contra alterações futuras na estrutura do arquivo *. Feature* . Para obter um exemplo que demonstra como criar um arquivo *. Feature* com apenas o mínimo de conteúdo necessário, consulte [passo a passos: criar um item de projeto de coluna de site com um modelo de projeto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Se você quiser modificar um arquivo *. Feature* diretamente, poderá verificar o conteúdo usando o esquema em *% arquivos de programas (x86)% \ Microsoft Visual Studio 11.0 \ Xml\Schemas\FeatureModelSchema.xsd*.|
@@ -84,7 +84,7 @@ Modelos de item e modelos de projeto são arquivos *. zip* que contêm arquivos 
 
  Para obter orientações que demonstram como criar assistentes para modelos de item e modelos de projeto, consulte [passo a passos: criar um item de projeto de ação personalizada com um modelo de item, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md) e [passo a passos: criar um item de projeto de coluna de site com um modelo de projeto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Definir tipos de item de projeto personalizados do SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Walkthrough: criar um item de projeto de ação personalizada com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)

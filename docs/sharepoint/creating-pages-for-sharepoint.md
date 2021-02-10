@@ -16,15 +16,15 @@ helpviewer_keywords:
 - page layouts[SharePoint development in Visual Studio], designing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 974ddb3c68d0c2ef297c884e75300a8507f436cc
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 702d2c4d5cafd6f4ff4ef2e4104da9f6cc02c5fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949162"
 ---
 # <a name="create-pages-for-sharepoint"></a>Criar páginas para o SharePoint
   Você pode criar páginas de aplicativo, páginas de site, páginas mestras e layouts de página para um site do SharePoint.
@@ -36,7 +36,7 @@ ms.locfileid: "94850618"
 ## <a name="types-of-sharepoint-pages"></a>Tipos de páginas do SharePoint
  A tabela a seguir descreve os quatro tipos principais de páginas que um site do SharePoint contém.
 
-|Tipo de página|Descrição|
+|Tipo de página|Description|
 |---------------|-----------------|
 |Páginas do aplicativo|Crie uma página de aplicativo se desejar que a página contenha código personalizado ou que você queira que a página seja compartilhada entre vários sites. Caso contrário, uma página do site pode ser a melhor opção.|
 |Páginas do site|Crie uma página do site se desejar executar qualquer uma das seguintes tarefas:<br /><br /> -Adicione a página a uma biblioteca do SharePoint.<br />– Habilite a página para hospedar recursos como Web Parts dinâmicos e zonas de Web Part.<br />– Permitir que os usuários personalizem a página usando o SharePoint Designer.<br /><br /> Não crie uma página do site se desejar que a página contenha código personalizado. Embora você possa adicionar código personalizado a uma página do site, o código parará de ser executado quando o usuário personalizar a página usando o SharePoint Designer.|

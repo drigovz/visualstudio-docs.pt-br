@@ -15,15 +15,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1228ef551235fd616803d6e05057ee50f0ea7ec4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 9ecd6573573d76c3e47a2c87a4f455cb9890fb31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850436"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949175"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Criar páginas de aplicativo para o SharePoint
   Uma *página de aplicativo* é uma página da Web ASP.NET que é projetada para uso em um site do SharePoint. As páginas de aplicativo são um tipo especializado de página ASP.NET. A principal diferença entre uma página de aplicativo e uma página ASP.NET padrão é que uma página de aplicativo contém conteúdo que é mesclado com uma página mestra do SharePoint. Uma página mestra permite que as páginas do aplicativo compartilhem a mesma aparência e comportamento de outras páginas em um site.
@@ -73,7 +73,7 @@ ms.locfileid: "94850436"
 
  Você pode alterar explicitamente qual página mestra é usada pela página do aplicativo definindo o `MasterPageFile` atributo do `Page` elemento Application. (Por exemplo: `MasterPageFile="~/_layouts/applicationv4.master"` ). Na verdade, você deve definir esse atributo se as páginas mestras dinâmicas não estiverem habilitadas no servidor do SharePoint. Para obter mais informações sobre páginas mestras no SharePoint, consulte [páginas mestras](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14)).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Desenvolvimento do SharePoint Foundation em detalhes](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
 - [Visão geral do ASP.NET](/aspnet/overview)
 - [Páginas da Web do ASP.NET](/aspnet/web-pages/index)

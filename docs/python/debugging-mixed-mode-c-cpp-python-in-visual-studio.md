@@ -5,17 +5,17 @@ ms.date: 11/12/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0b55a0bbeee7c5a8c38a0df61db0a1b17ae5e033
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85118cebfa862a1575762985d41df61ef76b5cc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238654"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949318"
 ---
 # <a name="debug-python-and-c-together"></a>Depurar o Python e o C++ juntos
 
@@ -54,7 +54,7 @@ Os recursos de depuração de modo misto incluem o seguinte, conforme explicado 
 
     As configurações de tipo de código são persistentes, portanto, se você quiser desabilitar a depuração de modo misto ao anexar a um processo diferente mais tarde, limpe o tipo de código **Python** .
 
-    É possível selecionar outros tipos de código além do **Nativo** ou em vez dele. Por exemplo, se um aplicativo gerenciado hospeda CPython, que por sua vez usa módulos de extensão nativos, e você deseja depurar todos os três, você pode verificar o **Python**, **nativo**e **gerenciado** em conjunto para uma experiência de depuração unificada, incluindo pilhas de chamadas combinadas e percorrendo entre todos os três tempos de execução.
+    É possível selecionar outros tipos de código além do **Nativo** ou em vez dele. Por exemplo, se um aplicativo gerenciado hospeda CPython, que por sua vez usa módulos de extensão nativos, e você deseja depurar todos os três, você pode verificar o **Python**, **nativo** e **gerenciado** em conjunto para uma experiência de depuração unificada, incluindo pilhas de chamadas combinadas e percorrendo entre todos os três tempos de execução.
 
 1. Ao iniciar a depuração no modo misto pela primeira vez, você poderá ver uma caixa de diálogo **Símbolos Obrigatórios do Python** (confira [Símbolos para depuração de modo misto](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Você precisa instalar símbolos apenas uma vez para qualquer ambiente do Python. Os símbolos serão incluídos automaticamente se você instalar o suporte do Python por meio do instalador do Visual Studio (Visual Studio 2017 e posterior).
 
@@ -78,7 +78,7 @@ Usando esse método, fique ciente de que você não pode depurar o próprio inic
 
 Para todas as versões anteriores do Visual Studio, a depuração direta de modo misto é habilitada apenas ao iniciar um projeto do Python no Visual Studio, pois os projetos do C/C++ usam somente o depurador nativo. No entanto, você pode anexar o depurador separadamente:
 
-1. Inicie o projeto C++ sem depuração (**Debug**  >  **Iniciar Depuração sem depuração** ou **Ctrl** + **F5**).
+1. Inicie o projeto C++ sem depuração (  >  **Iniciar Depuração sem depuração** ou **Ctrl** + **F5**).
 1. Selecione **depuração**  >  **anexar ao processo**. Na caixa de diálogo exibida, selecione o processo apropriado e, em seguida, use o botão **selecionar** para abrir a caixa de diálogo **Selecionar tipo de código** na qual você pode selecionar **python**:
 
     ![Selecionando Python como o tipo de depuração ao anexar um depurador](media/mixed-mode-debugging-attach-type.png)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b574c52b9081cc6640c5611e0759b5559e7a4f6d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8fb1aa194688533855b7c5bd1d58a4e3b97ac749
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672646"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948836"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Criar um modelo de conectividade de dados corporativos
   Você pode desenvolver um modelo para o serviço corporativo de conectividade de dados (BDC) adicionando entidades e métodos a um arquivo de modelo. Uma entidade descreve uma coleção de campos de dados. Por exemplo, uma entidade pode representar uma tabela em um banco de dados. Um método executa uma tarefa como adicionar, excluir ou atualizar dados representados pelas entidades. Para obter mais informações, consulte [integrar dados corporativos ao SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -113,7 +113,7 @@ ms.locfileid: "94672646"
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Visão geral das ferramentas de design de modelo do BDC](../sharepoint/bdc-model-design-tools-overview.md)|Descreve as ferramentas que você pode usar para criar visualmente um modelo para o BDC.|
 |[Como: adicionar uma entidade a um modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)|Mostra como adicionar tipos de conteúdo externo, ou entidades, ao modelo.|

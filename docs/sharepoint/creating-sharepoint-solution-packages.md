@@ -12,15 +12,15 @@ helpviewer_keywords:
 - packages [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bbe458f6ab4de01ffb224ae4e493bf23e3fc6ceb
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 423fcaf54d1d46ddf92352f4ff8bdbb637bbe514
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850553"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949084"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Criar pacotes de solução do SharePoint
   Usando o designer de pacote, você pode criar e personalizar pacotes de implantação. Por exemplo, você pode adicionar recursos e itens de projeto do SharePoint, redefinir o servidor IIS, definir escopos de ativação de recursos e identificar dependências de recursos. O designer também gera um manifesto, um arquivo XML que descreve cada pacote.
@@ -48,7 +48,7 @@ ms.locfileid: "94850553"
 
  A tabela a seguir mostra os dois destinos do MSBuild que você pode usar para personalizar como o arquivo *. wsp* é criado.
 
-|Destino|Descrição|
+|Destino|Description|
 |------------|-----------------|
 |BeforeLayout|O destino que executa tarefas imediatamente antes de os arquivos serem copiados para um diretório intermediário. Você pode modificar os arquivos antes de criar um arquivo de pacote (*. wsp*).|
 |AfterLayout|O destino que executa tarefas imediatamente após os arquivos serem copiados para um diretório intermediário.|
@@ -73,7 +73,7 @@ ms.locfileid: "94850553"
 ## <a name="package-folder-structure"></a>Estrutura de pastas do pacote
  Quando você empacota seu projeto do SharePoint, um arquivo *. wsp* é criado para você na *pasta \\ \<BuildConfiguration> SolutionFolder\bin* Por exemplo, se sua solução estiver no *C:\Visual Studio 2013 \ Projects\ListDefinition1* e sua configuração de compilação estiver definida como versão, o arquivo *. wsp* estará localizado no *C:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Como: personalizar um pacote de solução do SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
 - [Como adicionar e remover recursos e itens para um pacote usando o designer de pacotes](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
 - [Como: criar um pacote de solução do SharePoint usando tarefas do MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)

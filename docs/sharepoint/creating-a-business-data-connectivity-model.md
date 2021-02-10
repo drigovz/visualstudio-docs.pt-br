@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, Business Data Connectivity service
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0486ce6ac53850b1b607f9e7f859806cdc3ef8fe
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 8232847ce336ca559134aa1211a70057a1306faa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850462"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949253"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Criar um modelo de conectividade de dados corporativos
   Você pode criar um modelo de BDC (conectividade de dados corporativos) ou personalizar um modelo de BDC existente usando o Visual Studio. Cada projeto do SharePoint pode conter apenas um modelo. Para obter mais informações, consulte [integrar dados corporativos ao SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -64,7 +64,7 @@ ms.locfileid: "94850462"
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Como: criar um modelo de BDC](../sharepoint/how-to-create-a-bdc-model.md)|Mostra como criar um novo modelo BDC.|
 |[Como: adicionar um arquivo de modelo BDC existente a um projeto do SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|Mostra como importar um modelo existente para um projeto do SharePoint.|

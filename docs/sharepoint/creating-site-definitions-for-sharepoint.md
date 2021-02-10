@@ -12,15 +12,15 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7585a4b80322afb37e816758fc7074806a443676
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: c802832a9881cf3bf247c8e48b8ecdc2d784b1c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850566"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948993"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Criar definições de site para o SharePoint
   O projeto de definição de site do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] permite que você crie uma *definição de site*, que serve como base para um novo site do SharePoint. Essas definições não apenas determinam a aparência e o comportamento do site do SharePoint, mas também seu conteúdo e funcionalidade padrão. Na definição, você pode colocar listas pré-configuradas, tipos de conteúdo, receptores de eventos, imagens e outros itens. O SharePoint inclui algumas definições de site, como BLOG, por exemplo. Quando você cria um site com base na definição do site do BLOG, o site contém as listas, Web Parts e outros itens que um site de Blogs requer.
@@ -46,7 +46,7 @@ ms.locfileid: "94850566"
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Passo a passo: criar um projeto de definição de site básico](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|O conduz passo a passo por meio da criação de um projeto básico de definição de site no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
 |[Como criar uma definição e configuração de site personalizados](/previous-versions/office/developer/sharepoint-2010/ms454677(v=office.14))|Descreve como criar uma definição de site personalizada no SharePoint copiando uma definição de site existente e, em seguida, modificando a cópia.|
