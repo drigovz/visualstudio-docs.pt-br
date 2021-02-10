@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Publish Wizard, Office solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 25821a0f245f2f0ed30fcbfb10137a772dd0dd01
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 29400e82dcd7b0d5cd9062679610b50bfaab191d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528016"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971681"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Assistente de publicação (desenvolvimento do Office no Visual Studio)
   Use o **Assistente de publicação** para copiar arquivos de solução para um local especificado, criar os arquivos de manifesto e criar um programa de instalação.
@@ -63,7 +63,7 @@ ms.locfileid: "97528016"
 
  O Visual Studio não grava o CD ou DVD. Você deve copiar a saída para um CD ou DVD manualmente.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Implantar uma solução do Office usando o ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
 - [Publicar página, designer de projeto &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
 - [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)

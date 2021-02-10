@@ -5,18 +5,18 @@ ms.topic: how-to
 ms.date: 09/21/2020
 author: gregvanl
 ms.author: gregvanl
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 994ac7b759b943a2076c4e8f401d757258e782ab
-ms.sourcegitcommit: 0e91210421974ad08189919495a7327e60be93bb
+ms.openlocfilehash: 1a94915748f6c7cedb19a0b27c67eb67d6086963
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99251434"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971135"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Recursos do Visual Studio com suporte (versão prévia)
 
@@ -122,7 +122,7 @@ Ainda não disponível:
 * Recursos de teste empresarial-Live Unit Testing, falsificações da Microsoft, cobertura de código e IntelliTest não têm suporte.
 * Cenários de publicação avançada-publicação seletiva, publicação de FTP, alterações de visualização, barra de ferramentas de publicação rápida, etc.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [O que é o GitHub Codespaces?](codespaces-overview.md)
 * [Como usar o Visual Studio com um codespace](use-visual-studio-with-codespaces.md)

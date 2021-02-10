@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7f132f67-8589-464c-90dc-0d57ae02aa8f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1b015f29b6521482013a77bbcf7c44d8a79afa6
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: e717064318372b31e13d97381ee03d5986a9de2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329868"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965311"
 ---
 # <a name="deploy-project-types"></a>Implantar tipos de projeto
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] instala um novo agregador de tipo de projeto (*ProjectAggregator2.dll*) e também um pacote Windows Installer para redistribuição (*ProjectAggregator2.msi*). Você deve usar o novo agregador para tipos de projeto de código gerenciado. ProjectAggregator2 trabalha em relação às limitações no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] agregador de projeto que impede que os tipos de projeto de código gerenciado funcionem corretamente. As etapas a seguir descrevem como alterar seu VSPackage para usar o novo agregador.

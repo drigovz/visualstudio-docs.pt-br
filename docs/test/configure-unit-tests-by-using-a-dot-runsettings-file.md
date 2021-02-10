@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 07/15/2020
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ca15e265f9e6f3188826c019a8c81d02a7668bcf
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 10bfed2a9a2a0ce466e1b3276a487695d40fb580
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442684"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964557"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um arquivo *. RunSettings*
 
@@ -43,7 +43,7 @@ Arquivos de configurações de execução são opcionais. Se você não precisar
 
 ::: moniker range="vs-2017"
 
-Se você quiser desativar e ativar as configurações personalizadas no IDE, desmarque ou selecione o arquivo no menu configurações do teste **de teste** > **Test Settings** .
+Se você quiser desativar e ativar as configurações personalizadas no IDE, desmarque ou selecione o arquivo no menu configurações do teste **de teste** >  .
 
 ![Menu de configurações do teste com o arquivo de configurações personalizadas no Visual Studio 2017](../test/media/codecoverage-settingsfile.png)
 
@@ -466,7 +466,7 @@ O nó **RunConfiguration** deve conter um nó **EnvironmentVariables** . Uma var
 > [!NOTE]
 > Como essas variáveis de ambiente sempre devem ser definidas quando o host de teste é iniciado, os testes sempre devem ser executados em um processo separado. Para isso, o sinalizador */InIsolation* será definido quando houver variáveis de ambiente para que o host de teste sempre seja invocado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Configurar uma execução de teste](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md)

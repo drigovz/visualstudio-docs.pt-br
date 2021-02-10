@@ -9,16 +9,16 @@ f1_keywords:
 - Annotation
 ms.assetid: 9aa0e8d6-8129-4438-8389-d460611581a7
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 0fe5b766c0c5545a1cc3839e29d71e3f3b7a1f39
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9417dd0084b381d8fc997a90b4690c49191f4785
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437951"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971694"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Como: Adicionar comentários a um fluxo de trabalho em Designer de Fluxo de Trabalho
 
@@ -41,7 +41,7 @@ Para facilitar a criação de fluxos de trabalho maiores e mais complicados, .NE
 
 ## <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Adicionando uma anotação a uma atividade no designer
 
-1. No designer de fluxo de trabalho, clique com o botão direito do mouse em um item no designer de fluxo de trabalho e selecione **anotações** , **Adicionar anotação**.
+1. No designer de fluxo de trabalho, clique com o botão direito do mouse em um item no designer de fluxo de trabalho e selecione **anotações**, **Adicionar anotação**.
 
 1. Adicione o texto de anotação no espaço fornecido.
 
@@ -61,21 +61,21 @@ Para facilitar a criação de fluxos de trabalho maiores e mais complicados, .NE
 
 ## <a name="showing-or-hiding-all-annotations"></a>Mostrar ou ocultar todas as anotações
 
-1. Clique com o botão direito do mouse uma atividade que tenha uma anotação. Selecione **anotações** , **Mostrar todas as anotações**.
+1. Clique com o botão direito do mouse uma atividade que tenha uma anotação. Selecione **anotações**, **Mostrar todas as anotações**.
 
    Todas as anotações são exibidas nos designers da atividade.
 
-1. Para exibir todas as anotações fora dos designers da atividade, clique com o botão direito do mouse na atividade e selecione **anotações** , **ocultar todas as anotações**.
+1. Para exibir todas as anotações fora dos designers da atividade, clique com o botão direito do mouse na atividade e selecione **anotações**, **ocultar todas as anotações**.
 
 ## <a name="editing-or-deleting-an-annotation-for-an-activity"></a>Editando ou excluindo uma anotação para uma atividade
 
 1. Clique com o botão direito do mouse em uma atividade que tenha uma anotação.
 
-1. Selecione **anotações** , **Editar Anotação** ou **excluir anotação**.
+1. Selecione **anotações**, **Editar Anotação** ou **excluir anotação**.
 
    A anotação está aberta para edição ou exclusão.
 
-1. Para excluir todas as anotações de uma vez, clique com o botão direito do mouse no designer de fluxo de trabalho e selecione **anotação** , **excluir todas as anotações**.
+1. Para excluir todas as anotações de uma vez, clique com o botão direito do mouse no designer de fluxo de trabalho e selecione **anotação**, **excluir todas as anotações**.
 
 ## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Adicionando, editar, e excluir uma anotação para uma variável ou um argumento
 

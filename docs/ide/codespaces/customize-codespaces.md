@@ -5,18 +5,18 @@ ms.topic: how-to
 ms.date: 09/21/2020
 author: gregvanl
 ms.author: gregvanl
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 9072676dfc96ffc6286f81785048eca8ec46b0b8
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 15efee817e41f928e5ca1162e9ace20276bd20d2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850501"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971148"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>Como personalizar um codespace (visualização)
 
@@ -126,7 +126,7 @@ Ao especificar `devinit init` , `devinit` será executado usando seu *devinit.js
 
 Veja um exemplo simples instalando o .NET Core Entity Framework ferramenta de linha de comando, `dotnet-ef` .
 
-**devcontainer.jsem**
+**devcontainer.json**
 
 Conteúdo da *.devcontainer.jsno* arquivo na raiz do repositório. 
 
@@ -192,7 +192,7 @@ Se você estiver usando uma identidade de Azure Active Directory para autenticar
 
 Você pode saber mais sobre o `az login` comando na [documentação](/cli/azure/reference-index#az_login)do CLI do Azure.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [O que é o GitHub Codespaces?](codespaces-overview.md)
 - [Como usar o Visual Studio com um codespace](use-visual-studio-with-codespaces.md)

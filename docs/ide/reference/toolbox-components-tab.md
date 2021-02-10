@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Toolbox, Components tab
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40ba84712a343a071d6213dc9cd985727fc20ebf
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: adbc2611cf0d0e08ef356e91e25ed0c4854c4386
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560935"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965038"
 ---
 # <a name="toolbox-components-tab"></a>Caixa de Ferramentas, guia Componentes
 
@@ -46,7 +46,7 @@ Cria uma instância do componente <xref:System.DirectoryServices.DirectorySearch
 
 Cria uma instância do componente <xref:System.Windows.Forms.ErrorProvider>, que indica para o usuário final que um controle em um formulário tem um erro associado a ele. Para obter mais informações, confira [Componente ErrorProvider](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
 
-**EventLog**
+**Log**
 
 Cria uma instância do componente <xref:System.Diagnostics.EventLog>, que pode ser usada para interagir com logs do sistema e de eventos personalizados, incluindo a gravação de eventos em um log e a leitura dos dados de log.
 

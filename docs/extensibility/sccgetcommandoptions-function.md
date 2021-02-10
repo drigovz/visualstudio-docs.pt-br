@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eeefa26422476ca40e782df3ff35eee9d429a149
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b1f465e6709932cd89794c5c0558d608fadd2a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700827"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965194"
 ---
 # <a name="sccgetcommandoptions-function"></a>Função SccGetCommandOptions
 Essa função solicita ao usuário opções avançadas para um determinado comando.
@@ -79,6 +79,6 @@ no A estrutura da opção (também pode ser `NULL` ).
 > [!NOTE]
 > O comando `SCC_COMMAND_OPTIONS` é usado quando o IDE exibe uma caixa de diálogo **Opções** que permite que o usuário defina as preferências que controlam como a integração funciona. Se o plug-in de controle do código-fonte quiser fornecer sua própria caixa de diálogo de preferências, ele poderá exibi-lo de um botão **avançado** na caixa de diálogo Preferências do IDE. O plug-in é exclusivamente responsável por obter e persistir essas informações; o IDE não o usa ou o modifica.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Funções da API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
 - [Código de comando](../extensibility/command-code-enumerator.md)

@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c0eea844b04cbe8ba261fd4d65a6d21fb99aa4b
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: cdfd4294511752e201c2291a03f89d0bded2506b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479128"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971447"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Criar um visualizador de imagens
 
@@ -48,7 +48,7 @@ Quando você terminar, seu aplicativo deverá ser semelhante à imagem a seguir:
 
 ## <a name="tutorial-links"></a>Links do tutorial
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Etapa 1: Crie um projeto de aplicativo do Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Comece criando um projeto de aplicativo Windows Forms.|
 |[Etapa 2: executar o aplicativo visualizador de imagens](../ide/step-2-run-your-program.md)|Execute o projeto de aplicativo Windows Forms que você criou na etapa anterior.|

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f2ffdb25bfdb359352d62913c984cad07c18aed
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 6def442b6500ac1265f83aef49db8c79c8e05ae7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996299"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971668"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Como: Adicione atividades a caixa de ferramentas
 
@@ -60,6 +60,6 @@ As atividades podem ser adicionadas à **caixa de ferramentas** em sua solução
 
 6. A atividade personalizada é exibida na **caixa de ferramentas** sob a categoria que estava em foco antes de o item ser adicionado. Por exemplo, se a categoria **geral** foi selecionada na **caixa de ferramentas** antes de adicionar o item da caixa de ferramentas, a atividade aparecerá na categoria **geral** .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Usando o Designer de Fluxo de Trabalho](developing-applications-with-the-workflow-designer.md)

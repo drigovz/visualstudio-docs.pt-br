@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2d69308d2f569fc2e0d72dcf64c762687955d4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50281ffdd233debd3c10672868e9debd4b1f395f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700895"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965207"
 ---
 # <a name="sccget-function"></a>Função SccGet
 Essa função recupera uma cópia de um ou mais arquivos para exibição e compilação, mas não para edição. Na maioria dos sistemas, os arquivos são marcados como somente leitura.
@@ -86,7 +86,7 @@ no Opções específicas de plug-ins de controle do código-fonte.
  Por fim, mesmo que um plug-in de controle do código-fonte tenha especificado o `SCC_CAP_GET_NOUI` sinalizador na inicialização, indicando que ele não tem uma interface do usuário para um comando Get, essa função ainda pode ser chamada pelo IDE para recuperar arquivos. O sinalizador simplesmente significa que o IDE não exibe um item de menu Get e que o plug-in não deve fornecer nenhuma interface do usuário.
 
 ## <a name="rename-files-and-sccget"></a>Renomear arquivos e SccGet
- Situação: um usuário faz o check-out de um arquivo, por exemplo, *a.txt*e o modifica. Antes que *a.txt* possa ser feito o check-in, um segundo usuário renomeia *a.txt* para *b.txt* no banco de dados de controle do código-fonte, verifica *b.txt*, faz algumas modificações no arquivo e verifica o arquivo em. O primeiro usuário quer as alterações feitas pelo segundo usuário para que o primeiro usuário renomeie sua versão local do *a.txt* arquivo como *b.txt* e faça um get no arquivo. No entanto, o cache local que controla os números de versão ainda pensa que a primeira versão do *a.txt* é armazenada localmente e, portanto, o controle do código-fonte não pode resolver as diferenças.
+ Situação: um usuário faz o check-out de um arquivo, por exemplo, *a.txt* e o modifica. Antes que *a.txt* possa ser feito o check-in, um segundo usuário renomeia *a.txt* para *b.txt* no banco de dados de controle do código-fonte, verifica *b.txt*, faz algumas modificações no arquivo e verifica o arquivo em. O primeiro usuário quer as alterações feitas pelo segundo usuário para que o primeiro usuário renomeie sua versão local do *a.txt* arquivo como *b.txt* e faça um get no arquivo. No entanto, o cache local que controla os números de versão ainda pensa que a primeira versão do *a.txt* é armazenada localmente e, portanto, o controle do código-fonte não pode resolver as diferenças.
 
  Há duas maneiras de resolver essa situação em que o cache local das versões de controle do código-fonte fica fora de sincronia com o banco de dados de controle do código-fonte:
 
@@ -106,6 +106,6 @@ no Opções específicas de plug-ins de controle do código-fonte.
 
     6. O arquivo atualizado *b.txt* agora pode ser verificado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Funções da API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
 - [Bitflags usado por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - safe controls [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 024cd50fc36b84addca11dc3c0f23cdc64fa507d
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: bf7e2f2c5b0de59a5f1cac91f0df9cefbf15bda8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304502"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964700"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Como: marcar controles como controles seguros
   Por segurança, o SharePoint diferencia os controles da Web que são protegidos contra injeção de script e controles da Web que não são. Controles protegidos, ou *controles seguros*, podem ser acessados por usuários não confiáveis. Você pode marcar controles como seguros na propriedade entradas de controle seguro de um item de projeto do SharePoint ou no **Designer de pacotes** ao adicionar um assembly ao pacote. Para obter mais informações, consulte
@@ -87,7 +87,7 @@ ms.locfileid: "96304502"
 
 12. Insira os valores para as propriedades da tabela a seguir.
 
-    |Nome da propriedade|Valor|
+    |Nome da Propriedade|Valor|
     |-------------------|-----------|
     |Namespace|O namespace totalmente qualificado para o controle, como **BdcModelProject1. VisualWebPart1**.|
     |Nome do Tipo|Button1|
@@ -104,7 +104,7 @@ ms.locfileid: "96304502"
 
 15. Insira os valores para as propriedades da tabela a seguir.
 
-    |Nome da propriedade|Valor|
+    |Nome da Propriedade|Valor|
     |-------------------|-----------|
     |Namespace|O namespace totalmente qualificado para o controle, como **BdcModelProject1. VisualWebPart1**.|
     |Nome do Tipo|TextBox1|

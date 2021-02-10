@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 99eb322e1eebe2d8845b355cd76a9e34a7516348
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 65044baf78e6f49e35f011a4853111063e82a192
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441822"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964401"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizar a análise de cobertura de código
 
@@ -118,11 +118,11 @@ A tabela a seguir mostra as várias maneiras pelas quais os assemblies e membros
 
 ### <a name="regular-expressions"></a>Expressões regulares
 
-Os nós de inclusão e exclusão usam expressões regulares, que não são iguais aos curingas. Todas as correspondências não diferenciam maiúsculas de minúsculas. Alguns exemplos são:
+Os nós de inclusão e exclusão usam expressões regulares, que não são iguais aos curingas. Todas as correspondências não diferenciam maiúsculas de minúsculas. Alguns exemplos incluem:
 
-- **.\** _ corresponde a uma cadeia de caracteres de qualquer caractere
+- **.\*** corresponde a uma cadeia de caracteres de qualquer caractere
 
-- _ *\\.* * corresponde a um ponto "."
+- **\\.** corresponde a um ponto "."
 
 - **\\ ( \\ )** faz a correspondência entre parênteses "()"
 

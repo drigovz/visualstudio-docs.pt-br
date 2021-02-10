@@ -8,15 +8,15 @@ helpviewer_keywords:
 - coded UI tests, data-driven
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c4deb02bea8bf6e3dc3615ba9c5f0eddc6c877
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: eadba1454e04c95bf1e2b3610a019e3503ec3af3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442671"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964479"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Criar um teste de interface do usuário codificado controlado por dados
 
@@ -106,7 +106,7 @@ Este exemplo cria um teste de interface do usuário codificado que é executado 
 
 2. Preencha o arquivo *. csv* com os seguintes dados:
 
-    |Núm1|Núm2|Soma|
+    |Núm1|Núm2|Somar|
     |-|-|-|
     |3|4|7|
     |5|6|11|
@@ -235,7 +235,7 @@ Você deve ver a execução de teste por meio das três iterações usando os va
 
 Se você precisar modificar um método gravado, copie-o para o arquivo *UIMap.cs* e renomeie-o. O arquivo *UIMap.cs* pode ser usado para substituir métodos e propriedades no arquivo *UIMapDesigner.cs*. Você deve remover a referência ao método original no arquivo *UITest.cs* codificado e substituí-lo pelo nome do método renomeado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>

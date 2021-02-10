@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Property Pages dialog box, Publish [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7f68ab8f0ee9efde903148d4702e85e99aad77d2
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: bc80a71516f1de8f2a6943d9df7b02341ea786aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525015"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971720"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Publicar página, designer de projeto (desenvolvimento do Office no Visual Studio)
   A página **publicar** do **Designer de projeto** é usada para configurar as propriedades de implantação.
@@ -100,7 +100,7 @@ ms.locfileid: "97525015"
 
   **Publicar agora** Publica o aplicativo usando as configurações atuais. Equivalente ao botão **concluir** no assistente de **publicação**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)
 - [Implantar uma solução do Office usando o ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)

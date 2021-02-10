@@ -15,15 +15,15 @@ helpviewer_keywords:
 - copying data, Office development in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cdcae80148e54f2e1adb09d4c69b2dc3268b7428
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: d768eb086707af2eeddeb18a77bad1ef1f101839
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523188"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964232"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Como: copiar dados e formatação programaticamente em planilhas
   Você pode copiar dados de um intervalo em uma planilha para todas as outras planilhas em uma pasta de trabalho usando o <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> método. Especifique um intervalo e se deseja copiar dados, formatação ou ambos.
@@ -37,7 +37,7 @@ ms.locfileid: "97523188"
 ## <a name="compile-the-code"></a>Compilar o código
  Este exemplo requer um intervalo chamado `rangeData` em uma planilha.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Trabalhar com planilhas](../vsto/working-with-worksheets.md)
 - [Como: adicionar programaticamente novas planilhas a pastas de trabalho](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
 - [Como: alterar a formatação de forma programática em linhas de planilha contendo células selecionadas](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)

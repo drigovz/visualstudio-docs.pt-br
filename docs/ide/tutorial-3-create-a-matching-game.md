@@ -8,15 +8,15 @@ ms.topic: tutorial
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 62859c86ff3b4057eceb1f6e00ebfd46867f9927
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: cfb5a8af72d7c41cdee913ee94c382c57e8cf5dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479024"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971408"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Tutorial 3: Criar um jogo da memória
 
@@ -43,7 +43,7 @@ Quando você terminar, seu aplicativo deverá ser semelhante à imagem a seguir:
 
 ## <a name="tutorial-links"></a>Links do tutorial
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Etapa 1: Criar um projeto e adicionar uma tabela ao formulário](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Comece criando o projeto e adicionando um controle `TableLayoutPanel` para manter os controles devidamente alinhados.|
 |[Etapa 2: Adicionar um objeto aleatório e uma lista de ícones](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|Adicione um objeto `Random` e um objeto `List` para criar uma lista de ícones.|

@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: bb98fc67-cad8-43a7-9598-60df6d734db2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d7618d7e4e16de151c296d66a0c5798475f7ca43
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: ceda15402b3588e407388d71140b73f571c03b24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353272"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964921"
 ---
 # <a name="bscmake-task"></a>Tarefa BscMake
 
@@ -49,6 +49,6 @@ ms.locfileid: "92353272"
 |**SuppressStartupBanner**|Parâmetro **booliano** opcional.<br /><br /> Se `true`, impedirá a exibição da mensagem de direitos autorais e de número de versão quando a tarefa for iniciada.<br /><br /> Para obter mais informações, confira a opção **/NOLOGO** em [Opções do BSCMAKE](/cpp/build/reference/bscmake-options).|
 |**TrackerLogDirectory**|Parâmetro de **cadeia de caracteres** opcional.<br /><br /> Especifica o diretório do log de rastreamento.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

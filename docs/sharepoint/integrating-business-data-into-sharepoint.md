@@ -18,15 +18,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3156adc286222282ae63f70f70838bc6b7155a8
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 94162e2fca66fd86b2ac8b237c518e391d0a9908
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304349"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964674"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Integre dados corporativos ao SharePoint
   Você pode integrar dados corporativos ao SharePoint. Os dados de negócios podem vir de aplicativos de servidor back-end, como o [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)] Siebel e o SAP, ou um serviço Web. Os usuários podem exibir, adicionar, atualizar ou excluir dados corporativos usando listas externas ou Web Parts de dados corporativos no SharePoint.  Os usuários também podem acessar esses dados offline em um aplicativo Microsoft Office, como o Microsoft Outlook. Para obter mais informações, consulte [onde você pode mostrar dados externos](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14)).
@@ -43,7 +43,7 @@ ms.locfileid: "96304349"
 
  Um modelo contém entidades e métodos.
 
-### <a name="entities"></a>Entities
+### <a name="entities"></a>Entidades
  Uma entidade descreve uma coleção de campos. Por exemplo, uma entidade pode representar uma tabela em um banco de dados. Uma entidade aparece como um tipo de conteúdo externo no SharePoint. Para obter mais informações sobre tipos de conteúdo externo, consulte [o que são tipos de conteúdo externo?](/previous-versions/office/developer/sharepoint-2010/ee556391(v=office.14))
 
 ### <a name="methods"></a>Métodos
@@ -53,7 +53,7 @@ ms.locfileid: "96304349"
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Criar um modelo de conectividade de dados corporativos](../sharepoint/creating-a-business-data-connectivity-model.md)|Mostra como criar um novo modelo ou importar um modelo que você exporta do SharePoint.|
 |[Criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md)|Explica como projetar os elementos de um modelo usando as ferramentas de design do Visual Studio.|

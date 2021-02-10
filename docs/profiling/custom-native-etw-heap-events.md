@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61005bf108d0dab16ec419e942e3da97e02cdc7f
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 93d5783620c11d6de80e3ad381c456afd1fcd99a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686318"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964843"
 ---
 # <a name="custom-native-etw-heap-events"></a>Eventos de heap de ETW nativos personalizados
 
@@ -157,6 +157,6 @@ Assim como ocorre com o heap padrão do Windows, também é possível usar essa 
 > [!TIP]
 > O Visual Studio também contém uma ferramenta **Uso de Memória** no conjunto de ferramentas **Criação de Perfil de Desempenho**, que é habilitada na opção de menu **Depurar** > **Criador de Perfil de Desempenho** ou na combinação de teclas **Alt**+**F2**.  Esse recurso não inclui o acompanhamento de heap e não exibirá o heap personalizado descrito aqui.  Somente a janela **Ferramentas de Diagnóstico**, que pode ser habilitada com o menu **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico** ou a combinação de teclas **Ctrl**+**Alt**+**F2**, contém essa funcionalidade.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 [Primeiro, veja as ferramentas](../profiling/profiling-feature-tour.md) 
  de criação de perfil [Uso de memória](../profiling/memory-usage.md)

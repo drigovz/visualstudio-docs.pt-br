@@ -14,15 +14,15 @@ helpviewer_keywords:
 - IntelliSense [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c60372d7268dd76bf9bbd967678490998ffa76c3
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 46eae980a1dafc8e9b7f95f5d40593e57045cc01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479011"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971317"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense no Visual Studio
 
@@ -40,11 +40,11 @@ Na lista de membros, o ícone à esquerda representa o tipo do membro, como name
 
 ![Lista de membros do Visual Studio](../ide/media/vs2015_intellisense.png)
 
-Você pode invocar o recurso **listar Membros** manualmente digitando **Ctrl** + **J**, escolhendo **Editar**  >  **IntelliSense**  >  **membros da lista** do IntelliSense ou escolhendo o botão **listar Membros** na barra de ferramentas do editor. Quando é invocada em uma linha em branco ou fora de um escopo reconhecível, a lista exibe símbolos no namespace global.
+Você pode invocar o recurso **listar Membros** manualmente digitando **Ctrl** + **J**, escolhendo **Editar**  >    >  **membros da lista** do IntelliSense ou escolhendo o botão **listar Membros** na barra de ferramentas do editor. Quando é invocada em uma linha em branco ou fora de um escopo reconhecível, a lista exibe símbolos no namespace global.
 
 Para desativar os membros da lista por padrão (para que ele não apareça, a menos que seja especificamente invocado), vá para **ferramentas**  >  **Opções**  >  **todos os idiomas** e desmarque **listar Membros automaticamente**. Se você deseja desligar Listar Membros somente para uma linguagem específica, vá para as configurações **Gerais** dessa linguagem.
 
-Você também pode alterar para o modo de sugestão, no qual apenas o texto que você digita é inserido no código. Por exemplo, se você inserir um identificador que não está na lista e pressionar a **Guia**, no modo de preenchimento, a entrada poderá substituir o identificador digitado. Para alternar entre o modo de conclusão e o modo de sugestão, pressione **Ctrl** + **ALT** + **espaço** ou escolha **Editar**  >  **IntelliSense**  >  **modo de conclusão de alternância** do IntelliSense.
+Você também pode alterar para o modo de sugestão, no qual apenas o texto que você digita é inserido no código. Por exemplo, se você inserir um identificador que não está na lista e pressionar a **Guia**, no modo de preenchimento, a entrada poderá substituir o identificador digitado. Para alternar entre o modo de conclusão e o modo de sugestão, pressione **Ctrl** + **ALT** + **espaço** ou escolha **Editar**  >    >  **modo de conclusão de alternância** do IntelliSense.
 
 ## <a name="parameter-info"></a>Informações de Parâmetro
 
@@ -56,7 +56,7 @@ O parâmetro em negrito indica o próximo parâmetro que é necessário à medid
 
 Quando você anota funções e parâmetros com comentários da Documentação XML, os comentários são exibidos como Informações do Parâmetro. Para obter mais informações, consulte [Fornecer comentários de código XML](reference/generate-xml-documentation-comments.md).
 
-Você pode invocar manualmente informações de parâmetro escolhendo **Editar**  >  informações de **IntelliSense**  >  **parâmetro** do IntelliSense, pressionando **Ctrl** + **Shift** + **espaço** ou escolhendo o botão **informações do parâmetro** na barra de ferramentas do editor.
+Você pode invocar manualmente informações de parâmetro escolhendo **Editar**  >  informações de  >  **parâmetro** do IntelliSense, pressionando **Ctrl** + **Shift** + **espaço** ou escolhendo o botão **informações do parâmetro** na barra de ferramentas do editor.
 
 ## <a name="quick-info"></a>Informação Rápida
 
@@ -68,7 +68,7 @@ Quando você seleciona um membro na caixa **Listar Membros**, as Informações R
 
 ![Informações do parâmetro em um arquivo de código C&#35;](../ide/media/vs2015_paraminfo.png)
 
-Você pode invocar manualmente informações rápidas escolhendo **Editar**  >  **IntelliSense**  >  **informações rápidas** do IntelliSense, pressionando **Ctrl** + **I** ou escolhendo o botão **informações rápidas** na barra de ferramentas do editor.
+Você pode invocar manualmente informações rápidas escolhendo **Editar**  >    >  **informações rápidas** do IntelliSense, pressionando **Ctrl** + **I** ou escolhendo o botão **informações rápidas** na barra de ferramentas do editor.
 
 Se uma função estiver sobrecarregada, o IntelliSense não poderá exibir informações de todos os formulários da sobrecarga.
 
@@ -85,7 +85,7 @@ As opções do IntelliSense são ativadas por padrão. Para desativá-las, escol
 ## <a name="intellisense-icons"></a>Ícones do IntelliSense
 Os ícones no IntelliSense podem transmitir significado adicional com modificadores de ícone. Esses são estrelas, corações e cadeados sobrepostos ao ícone do objeto e que transmitem, respectivamente, os significados de protegido, interno ou privado.
 
-|    Ícone    |    Acessibilidade    |    Descrição    |
+|    ícone    |    Acessibilidade    |    Description    |
 |------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ![Modificador de ícone público](../ide/media/intellisensePublicNoModifier.png)       |    Classe pública    |    O acesso não é restrito.   |
 | ![Modificador de ícone protegido](../ide/media/intellisenseProtectedModifier.png)       |    Classe protegida    |    O acesso é limitado à classe que os contém ou aos tipos derivados da classe que os contém.    |
@@ -109,7 +109,7 @@ MessageBox( hWnd, "String literal|")
 
 **As opções automáticas estão desativadas.** Por padrão, o IntelliSense funciona automaticamente, mas é possível desabilitar isso. Mesmo se o preenchimento automático de declaração for desabilitado, é possível invocar um recurso IntelliSense.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)
 - [C# IntelliSense](../ide/visual-csharp-intellisense.md)

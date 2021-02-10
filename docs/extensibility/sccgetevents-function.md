@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 32f8147d-6dcc-465e-b07b-42da5824f9b0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91b3debf0e686ceece3048cf3d92b629e3359edd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4502dd1cdf5cb23f317cd29bee74460c5911482c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700815"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965155"
 ---
 # <a name="sccgetevents-function"></a>Função SccGetEvents
 Essa função recupera um evento de status enfileirado.
@@ -64,6 +64,6 @@ no A estrutura de contexto do plug-in de controle do código-fonte.
 
  Se não houver nenhuma atualização de status para relatar, o plug-in de controle do código-fonte armazenará uma cadeia de caracteres vazia no buffer apontado por `lpFileName` . Caso contrário, o plug-in armazena o nome do caminho completo do arquivo para o qual as informações de status foram alteradas e retorna o código de status apropriado (um dos valores detalhados no [código de status do arquivo](../extensibility/file-status-code-enumerator.md)).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Funções da API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
 - [Código de status do arquivo](../extensibility/file-status-code-enumerator.md)

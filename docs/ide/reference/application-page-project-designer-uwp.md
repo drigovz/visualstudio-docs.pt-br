@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Application page [UWP project]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 826d408d8e1a6a2cb8bcad956ce930781a9155db
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 21dd08f81802661cae9d77ee3449f4e9369ca768
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871360"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965077"
 ---
 # <a name="application-property-page-uwp-projects"></a>Página de propriedades do aplicativo (projetos UWP)
 
@@ -26,7 +26,7 @@ Use a página de projetos do **Aplicativo** para especificar informações de as
 
 ![Página de propriedades do aplicativo](media/application-page-uwp.png)
 
-Para acessar a página **Aplicativo**, escolha um nó do projeto **Gerenciador de Soluções**. Em seguida, escolha Propriedades do **projeto**  >  **Properties** na barra de menus. As páginas de propriedades são abertas na guia **Aplicativo**.
+Para acessar a página **Aplicativo**, escolha um nó do projeto **Gerenciador de Soluções**. Em seguida, escolha Propriedades do **projeto**  >   na barra de menus. As páginas de propriedades são abertas na guia **Aplicativo**.
 
 ## <a name="general-section"></a>Seção geral
 
