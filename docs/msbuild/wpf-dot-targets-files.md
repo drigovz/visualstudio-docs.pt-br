@@ -16,21 +16,21 @@ helpviewer_keywords:
 ms.assetid: e85a3ff4-dedd-4ff4-9b22-3a1e94755362
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a81caf88798f1b02c212b6ee5a802e6ea824758
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a010ce3ff090b50557bedb62b7a611705fb9638a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047535"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933759"
 ---
 # <a name="wpf-targets-files"></a>Arquivos .targets do WPF
 
-Windows Presentation Foundation (WPF) estende o MSBuild adicionando um conjunto de tarefas específicas do WPF que são combinadas em um arquivo *. targets* especial, *Microsoft. WinFX. targets* . Esse arquivo combina o conjunto de tarefas do MSBuild que são necessárias para criar um projeto do MSBuild no WPF.
+Windows Presentation Foundation (WPF) estende o MSBuild adicionando um conjunto de tarefas específicas do WPF que são combinadas em um arquivo *. targets* especial, *Microsoft. WinFX. targets*. Esse arquivo combina o conjunto de tarefas do MSBuild que são necessárias para criar um projeto do MSBuild no WPF.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Arquivos .targets do MSBuild](../msbuild/msbuild-dot-targets-files.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)

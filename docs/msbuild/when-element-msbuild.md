@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: eb27de6f-4e71-4e87-87e2-d93f7bf5899c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e373c6491f8f174aba372c9a600e1b5c823dfb00
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 36d96eacc0fbc88a3fcf082493e064a77c5c403a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046029"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933811"
 ---
 # <a name="when-element-msbuild"></a>Elemento When (MSBuild)
 
@@ -38,7 +38,7 @@ Especifica um possível bloco de códigos para o elemento `Choose` selecionar.
  \<Choose>
 ...
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <When Condition="'StringA'=='StringB'">
@@ -127,7 +127,7 @@ Especifica um possível bloco de códigos para o elemento `Choose` selecionar.
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Construções condicionais](../msbuild/msbuild-conditional-constructs.md)
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)

@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: f1b05db3-50d8-453f-a72f-e68b239236a4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d967ec9cf406f7dae691c3f05eda514e0907c7e3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69fbdef70fc9c95ef571ce0ce796199292417ca0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731605"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933551"
 ---
 # <a name="idebugdocumentpositionoffset2"></a>IDebugDocumentPositionOffset2
 Representa uma posição em um arquivo de origem como um deslocamento de caractere.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugDocumentPositionOffset2 : IUnknown

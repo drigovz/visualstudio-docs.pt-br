@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ef95b38e-d9b2-4fb5-a166-7c2e14641dc7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 551945ded9d1ba3e973f18c21463a896cbd478c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0eb781cd9e7a9073a45418c3793dc6ba026ec45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730243"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933343"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
 Esse método usa uma pesquisa que não diferencia maiúsculas de minúsculas para retornar o valor associado ao nome de uma constante de enumeração.
@@ -48,7 +48,7 @@ no Uma cadeia de caracteres que especifica o nome para o qual obter o valor. Obs
 `pValue`\
 fora Retorna o valor numérico associado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK` ; caso contrário, retornará `S_FALSE` , se o nome não fizer parte da enumeração ou um código de erro.
 
 ## <a name="remarks"></a>Comentários

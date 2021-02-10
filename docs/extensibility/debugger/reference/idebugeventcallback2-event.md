@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e5a3345b-d460-4e40-8f5b-3111c56a2ed9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0b60c09b21d531326e343dddd2f1cc69cfb0e5d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54f53132f0a1f4769386874118d24f7e77a95f71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729899"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933304"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 Envia a notificação de eventos de depuração.
@@ -28,7 +28,7 @@ Envia a notificação de eventos de depuração.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT Event( 
+HRESULT Event( 
    IDebugEngine2*  pEngine,
    IDebugProcess2* pProcess,
    IDebugProgram2* pProgram,
@@ -40,7 +40,7 @@ HRESULT Event( 
 ```
 
 ```csharp
-int Event( 
+int Event( 
    IDebugEngine2  pEngine,
    IDebugProcess2 pProcess,
    IDebugProgram2 pProgram,
@@ -73,7 +73,7 @@ no GUID que identifica qual interface de evento obter do `pEvent` parâmetro.
 `dwAttrib`\
 no Uma combinação de sinalizadores da enumeração do [eventoattributes](../../../extensibility/debugger/reference/eventattributes.md) .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

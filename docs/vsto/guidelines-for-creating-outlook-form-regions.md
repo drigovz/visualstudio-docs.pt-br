@@ -12,15 +12,15 @@ helpviewer_keywords:
 - icons [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aaf6b96548a9856833fcd1768764ed914da30a07
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: a3a2fab671d6302583f1207f5756118c548bd8a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848086"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933603"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Diretrizes para criar regiões de formulário do Outlook
   As informações a seguir podem ajudá-lo a otimizar suas regiões de formulário e evitar possíveis problemas:
@@ -86,7 +86,7 @@ ms.locfileid: "96848086"
 
   O ícone de **página** aparece na faixa de bits de um inspetor para itens que têm regiões de formulário separadas, substitutas ou substituídas.
 
-  O ícone da **janela** é exibido na área de notificação e na caixa de diálogo da **Alt** + **guia** Alt para abrir itens que exibem as regiões de formulário substituição ou substituir-todas.
+  O ícone da **janela** é exibido na área de notificação e na caixa de diálogo da  + **guia** Alt para abrir itens que exibem as regiões de formulário substituição ou substituir-todas.
 
 ## <a name="see-also"></a>Confira também
 - [Acessar uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md)

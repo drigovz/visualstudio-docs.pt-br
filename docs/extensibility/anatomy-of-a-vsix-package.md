@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fc65cda5eb969e361e90771e0245fdaeaeebcd1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 8d25430206129f0236661222b92cefdbe538a7ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598153"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933564"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomia de um pacote VSIX
 Um pacote VSIX é um arquivo *. vsix* que contém uma ou mais extensões do Visual Studio, junto com os metadados que o Visual Studio usa para classificar e instalar as extensões. Esses metadados estão contidos no manifesto do VSIX e no arquivo *[Content_Types]. xml* . Um pacote VSIX também pode conter um ou mais arquivos *extension. vsixlangpack* para fornecer texto de instalação localizado e pode conter pacotes VSIX adicionais para instalar dependências.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 627af69c-5cce-4e1d-8233-5f4d8dbc62e5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1a12e0ebbbf5c964da69c6bf6b1e7233487d6528
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 089122a4a4d7ff3d6a8828ba0c251efd3729c101
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731852"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933538"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
 Recupera uma lista de todos os contextos de código associados a este contexto de documento.
@@ -42,7 +42,7 @@ int EnumCodeContexts(
 ## <a name="parameters"></a>Parâmetros
 `ppEnumCodeCxts`\
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

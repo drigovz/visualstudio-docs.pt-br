@@ -35,15 +35,15 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], deleting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: edc8939f2a9e5f41f81c8176d5268528c273a7ce
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: c58ad4dee128f7b2d0dcd91edb7b19c7f8f5a474
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845564"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933616"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Visão geral de itens de host e controles de host
   Os itens de host e os controles de host são tipos que ajudam a fornecer o modelo de programação para soluções do Office que são criadas usando as ferramentas de desenvolvimento do Office no Visual Studio. Os itens de host e os controles de host fazem a interação com os modelos de objeto do Microsoft Office Word e Microsoft Office Excel, que se baseiam em COM, mais como interagir com objetos gerenciados, como controles de Windows Forms.

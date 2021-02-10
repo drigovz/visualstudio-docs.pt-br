@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 5e000ee0-a919-46e9-9277-2a0659f1eb78
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbc48d305e287fcb77407fbbf5ba52888b25dca6
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 89ecd1d0f7697a38ef7318ddf93a91a4397b5d72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715893"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934058"
 ---
 # <a name="usedcommands-element"></a>Elemento UsedCommands
 O elemento UsedCommands agrupa elementos UsedCommand e outros agrupamentos do UsedCommands.
@@ -66,6 +66,6 @@ O elemento UsedCommands agrupa elementos UsedCommand e outros agrupamentos do Us
 </UsedCommands>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Elemento UsedCommand](../extensibility/usedcommand-element.md)
 - [Arquivos .Vsct (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

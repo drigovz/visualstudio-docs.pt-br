@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a288beb618b0b539f53270928366349f47aee9e9
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 951b83f425f1e7171c519fced3fa3a4644279621
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934136"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guia de teste para plug-ins de controle do código-fonte
 Esta seção fornece diretrizes para testar seu plug-in de controle do código-fonte com o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Uma visão geral abrangente das áreas de teste mais comuns, bem como algumas das áreas mais complexas que podem ser problemáticas é fornecida. Esta visão geral não deve ser uma lista completa de casos de teste.
@@ -103,5 +103,5 @@ Esta seção fornece diretrizes para testar seu plug-in de controle do código-f
 
   - Cenário 8B: alteração baseada em solução
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Plug-ins de controle do código-fonte](../../extensibility/source-control-plug-ins.md)
