@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 0cb317c3-0ae6-4531-aaa8-447576eec037
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 590705e7fb55315176d5533a9cd009784430ea4d
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 6aa2daf8e03f61d529f0d07c8f78af49821fa92b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722666"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960007"
 ---
 # <a name="summary-view---net-memory-data"></a>Exibição Resumo – dados de memória do .NET
 A exibição Resumo exibe informações sobre as funções e os tipos do .NET que alocaram a maior quantidade de memória e os tipos que foram criados mais vezes em uma execução de criação de perfil. Para obter mais informações, incluindo uma descrição dos links de notificação e listas de relatórios, consulte [modo de exibição de resumo](../profiling/summary-view.md).
@@ -49,6 +49,6 @@ A exibição Resumo exibe informações sobre as funções e os tipos do .NET qu
 |**Nome**|O nome do tipo.|
 |**% de instâncias**|O percentual do número total de objetos do .NET que foram criados na execução de criação de perfil que eram instâncias desse tipo.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Exibição de resumo-dados de amostragem](../profiling/summary-view-sampling-data.md)
 - [Exibição de resumo – dados de instrumentação](../profiling/summary-view-instrumentation-data.md)

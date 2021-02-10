@@ -14,15 +14,15 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], action panes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5e9cd19687e15cd30c8196183f43709d4ba5149d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9ee5d6cbe372b0a7930b867a98136d132ddb0b2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525097"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959877"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Passo a passos de personalização da interface do usuário do Office
   As instruções a seguir demonstram maneiras que você pode personalizar a interface do usuário de aplicativos Microsoft Office usando personalizações no nível do documento e suplementos do VSTO.
@@ -66,7 +66,7 @@ ms.locfileid: "97525097"
 
 - [Walkthrough: atualizar um gráfico em uma planilha usando botões de opção](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md) Mostra as noções básicas de alteração de estilos de gráfico usando botões de opção em uma planilha do Excel.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Passo a passos usando o Word](../vsto/walkthroughs-using-word.md)
 - [Passo a passos usando o Excel](../vsto/walkthroughs-using-excel.md)
 - [Orientações sobre os dados nas soluções do Office](../vsto/data-in-office-solutions-walkthroughs.md)

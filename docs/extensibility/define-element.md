@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 5aee74e3-de41-4dc6-9618-93e158af56dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a427371afe55b6ea4ee20f658e683b9dcdb8fbe2
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 2a2686abd8e8c703d8fb85009b3ba56070f166f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996234"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968444"
 ---
 # <a name="define-element"></a>Definir elemento
 Define um par de nome e valor de símbolo. Esse símbolo pode ser avaliado por atributos condicionais. Para obter mais informações, consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md). Consulte também o [elemento Symbols](../extensibility/symbols-element.md).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 <Define name="Mode" value="Standard" />
@@ -36,12 +36,12 @@ Define um par de nome e valor de símbolo. Esse símbolo pode ser avaliado por a
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|name|Obrigatórios. O nome do símbolo:<br /><br /> nome = "modo"|
-|value|Obrigatórios. O valor do símbolo:<br /><br /> valor = "padrão"|
+|name|Obrigatório. O nome do símbolo:<br /><br /> nome = "modo"|
+|value|Obrigatório. O valor do símbolo:<br /><br /> valor = "padrão"|
 |Condição|Opcional. Para obter mais informações, consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos filho
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 

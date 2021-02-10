@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c7957d79d51cab93e45adf8f74899ecc59b76d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c9c46ae3dcc0063c7a2664e032fba14ce320af18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438003"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961294"
 ---
 # <a name="flowchart-activity-designer"></a>Designer de atividade do fluxograma
 
@@ -31,7 +31,7 @@ A atividade de <xref:System.Activities.Statements.Flowchart> é usada para criar
 
 ### <a name="using-the-flowchart-activity-designer"></a>Usando o designer de atividade do fluxograma
 
-O designer de atividades de **fluxograma** pode ser encontrado na categoria **fluxograma** da **caixa de ferramentas** , que é acessada clicando na guia **caixa de ferramentas** na Designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
+O designer de atividades de **fluxograma** pode ser encontrado na categoria **fluxograma** da **caixa de ferramentas**, que é acessada clicando na guia **caixa de ferramentas** na Designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
 
 O designer de atividades de **fluxograma** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho onde os designers de atividade normalmente são colocados, seja como uma atividade raiz ou como o filho de outra atividade de fluxo de controle. Se o designer de atividades do **fluxograma** for descartado em uma superfície de designer de fluxo de trabalho em branco, ele criará uma <xref:System.Activities.Statements.Flowchart> atividade, que por padrão se apresenta em uma exibição expandida na qual o nó inicial que inicia a execução é representado como uma bola verde. Se o designer de atividades de **fluxograma** for descartado em outra atividade de fluxo de controle, ele se apresentará em uma exibição minimizada que pode ser expandida clicando-se duas vezes no designer de atividades do **fluxograma** . Qualquer atividade na **caixa de ferramentas** pode ser arrastada diretamente para o designer de atividades do **fluxograma** , incluindo outras atividades de fluxo de controle.
 

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 39af2f57-0a01-42b8-b093-b7fbc61e2909
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d86997d11e124fd5a47981314cf383f5cd8aff7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5511624fb69015351d8cc37d6b27ad142a5956d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961177"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 Essa interface estende [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) para manipular exceções interceptadas.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugStackFrame3 : IDebugStackFrame2
@@ -61,7 +61,7 @@ IDebugStackFrame3 : IDebugStackFrame2
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Confira também
-- [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
+## <a name="see-also"></a>Consulte também
+- [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [Auxiliares do SDK para depuração](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

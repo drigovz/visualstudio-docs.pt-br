@@ -16,15 +16,15 @@ helpviewer_keywords:
 - multiple Office versions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4d70e61e318f0f6afd0a58ed35f912b6a5f2cda8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f9083a92482a99d7ec7ecce144ece2806e9889e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961385"
 ---
 # <a name="run-solutions-in-different-versions-of-microsoft-office"></a>Executar soluções em versões diferentes do Microsoft Office
 
@@ -58,7 +58,7 @@ ms.locfileid: "97523543"
 
  3. As soluções do Office que exigem o tempo de execução das ferramentas do Visual Studio 2005 para Office Second Edition não são compatíveis com as versões de 64 bits do [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e do [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] . Para executar essas soluções na edição de 64 bits do [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ou do [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] , você deve atualizar o projeto do para [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] o ou para um projeto do Visual Studio 2008 que tenha como alvo o sistema 2007 Microsoft Office.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)
 - [Visão geral do Ferramentas do Visual Studio para Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)
 - [Como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)

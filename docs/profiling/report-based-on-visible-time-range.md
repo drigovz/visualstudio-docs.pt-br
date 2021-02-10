@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ef4f6259-a110-43b6-a325-364154e1ba00
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 02dc0e009702b25c2204f0a1302931fe941b5f59
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 31ad1fbdf44283a0dc7f5f6374299aab27303db1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720365"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960254"
 ---
 # <a name="report-based-on-visible-time-range"></a>Relatório com base no intervalo de tempo visível
 O modo de exibição de perfil exibe relatórios com base no intervalo de tempo visível no momento e canais. Para ver detalhes de subconjuntos diferentes de dados, clique em itens na legenda.
