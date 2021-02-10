@@ -7,15 +7,15 @@ helpviewer_keywords:
 - deployment, publish settings
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d2c52d6db6ca3001712a692a1de059834c975ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50a65d681693bd9c1421767d2cac47f65b685e6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801705"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945039"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publicar um aplicativo no Serviço de Aplicativo do Azure com a importação de configurações de publicação no Visual Studio
 
@@ -30,10 +30,10 @@ Neste tutorial, você irá:
 > * Importar o arquivo de configurações de publicação para o Visual Studio
 > * Implantar o aplicativo no Serviço de Aplicativo do Azure
 
-Um arquivo de configurações de publicação (* \* . publishsettings*) é diferente de um perfil de publicação (* \* . Pubxml*) criado no Visual Studio. Um arquivo de configurações de publicação é criado pelo Serviço de Aplicativo do Azure e, em seguida, pode ser importado para o Visual Studio.
+Um arquivo de configurações de publicação (*\* . publishsettings*) é diferente de um perfil de publicação (*\* . Pubxml*) criado no Visual Studio. Um arquivo de configurações de publicação é criado pelo Serviço de Aplicativo do Azure e, em seguida, pode ser importado para o Visual Studio.
 
 > [!NOTE]
-> Se você só precisar copiar um perfil de publicação do Visual Studio (arquivo* \* . pubxml* ) de uma instalação do Visual Studio para outra, poderá encontrar o perfil de publicação, * \<profilename\> . pubxml*, na pasta * \\<ProjectName \> \Properties\PublishProfiles* para tipos de projeto gerenciado. Para sites, examine embaixo da pasta *\App_Data*. Os perfis de publicação são arquivos XML do MSBuild.
+> Se você só precisar copiar um perfil de publicação do Visual Studio (arquivo *\* . pubxml* ) de uma instalação do Visual Studio para outra, poderá encontrar o perfil de publicação, *\<profilename\> . pubxml*, na pasta *\\<ProjectName \> \Properties\PublishProfiles* para tipos de projeto gerenciado. Para sites, examine embaixo da pasta *\App_Data*. Os perfis de publicação são arquivos XML do MSBuild.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -41,14 +41,14 @@ Um arquivo de configurações de publicação (* \* . publishsettings*) é difer
 
 * É necessário ter o Visual Studio 2019 instalado e a carga de trabalho de desenvolvimento do **ASP.NET e desenvolvimento Web**.
 
-    Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)   para instalá-lo gratuitamente.
+    Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalá-lo gratuitamente.
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 * É necessário ter o Visual Studio 2017 instalado e a carga de trabalho de desenvolvimento do **ASP.NET e desenvolvimento Web**.
 
-    Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)   para instalá-lo gratuitamente.
+    Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalá-lo gratuitamente.
 ::: moniker-end
 
 * Crie um Serviço de Aplicativo do Azure. Para obter instruções detalhadas, confira [Implantar um aplicativo Web do ASP.NET Core no Azure usando o Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
@@ -57,7 +57,7 @@ Um arquivo de configurações de publicação (* \* . publishsettings*) é difer
 
 1. No computador que executa o Visual Studio, crie um projeto.
 
-    Escolha o modelo correto. Neste exemplo, escolha **aplicativo web ASP.net (.NET Framework)** ou (somente para C#) **ASP.NET Core aplicativo Web**e, em seguida, selecione **OK**.
+    Escolha o modelo correto. Neste exemplo, escolha **aplicativo web ASP.net (.NET Framework)** ou (somente para C#) **ASP.NET Core aplicativo Web** e, em seguida, selecione **OK**.
 
     Se você não vir os modelos de projeto especificados, vá para o link **abrir instalador do Visual Studio** no painel esquerdo da caixa de diálogo **novo projeto** . O Instalador do Visual Studio é iniciado. Instale o ASP.NET e a carga de trabalho de **desenvolvimento na Web** .
 
@@ -69,7 +69,7 @@ Um arquivo de configurações de publicação (* \* . publishsettings*) é difer
 
     O Visual Studio cria o projeto.
 
-1. Escolha **Compilar**compilar  >  **solução** para compilar o projeto.
+1. Escolha **Compilar** compilar  >  **solução** para compilar o projeto.
 
 ## <a name="create-the-publish-settings-file-in-azure-app-service"></a>Criar um arquivo de configurações de publicação no Serviço de Aplicativo do Azure
 

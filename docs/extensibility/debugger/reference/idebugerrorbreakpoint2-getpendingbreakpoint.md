@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 59d0defc-99fd-445c-bdac-8224d5dea3f9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0cdd84437d0f2480cacfd66860564b908ea76dd1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50bed9b3bbfcfce660455a3e62676593d6429b57
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730147"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946859"
 ---
 # <a name="idebugerrorbreakpoint2getpendingbreakpoint"></a>IDebugErrorBreakpoint2::GetPendingBreakpoint
 Obtém o ponto de interrupção pendente que causou o erro.
@@ -28,13 +28,13 @@ Obtém o ponto de interrupção pendente que causou o erro.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetPendingBreakpoint ( 
+HRESULT GetPendingBreakpoint ( 
    IDebugPendingBreakpoint2** ppPendingBreakpoint
 );
 ```
 
 ```csharp
-int GetPendingBreakpoint ( 
+int GetPendingBreakpoint ( 
    out IDebugPendingBreakpoint2 ppPendingBreakpoint
 );
 ```
@@ -43,7 +43,7 @@ int GetPendingBreakpoint ( 
 `ppPendingBreakpoint`\
 fora Retorna um objeto [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) que representa o ponto de interrupção pendente que falhou ao ser associado.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também

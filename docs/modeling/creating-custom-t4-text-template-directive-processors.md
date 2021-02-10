@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, custom directive processors
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 283f2122c05a91a5e677293f59e3f6e02d43f63a
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: bf17d2a7e3b38e267f0353f71c7cd83826b141bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363414"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945325"
 ---
 # <a name="create-custom-t4-text-template-directive-processors"></a>Criar processadores personalizados de diretiva de modelo de texto T4
 
@@ -66,7 +66,7 @@ Depois de todas as chamadas para ProcessDirective (), o mecanismo de modelagem c
 
 - Para obter mais informações, consulte [Walkthrough: Criando um processador de diretiva personalizada](../modeling/walkthrough-creating-a-custom-directive-processor.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Implantar um processador de diretiva personalizado](../modeling/deploying-a-custom-directive-processor.md) explica como registrar um processador de diretiva personalizado.
 - [Walkthrough: criar um processador de diretiva personalizado](../modeling/walkthrough-creating-a-custom-directive-processor.md) descreve como criar um processador de diretiva personalizado, como registrar e testar o processador de diretivas e como formatar o arquivo de saída como HTML.

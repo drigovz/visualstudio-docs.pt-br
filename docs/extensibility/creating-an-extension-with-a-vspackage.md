@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 431de32838ad236229db5e41330aba372e30ea75
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: b847fad9752c6a2448c0fdc571815ea1823e2d9c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973783"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944889"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Criar uma extensão com um VSPackage
 
@@ -29,7 +29,7 @@ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a part
 
 1. Crie um projeto VSIX chamado **FirstPackage**. Você pode encontrar o modelo de projeto VSIX na caixa de diálogo **novo projeto** pesquisando por "VSIX".
 
-2. Quando o projeto for aberto, adicione um modelo de item de pacote do Visual Studio chamado **FirstPackage**. Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item**. Na caixa de diálogo **Adicionar novo item** , vá para extensibilidade do **Visual C#**  >  **Extensibility** e selecione **pacote do Visual Studio**. No campo **nome** na parte inferior da janela, altere o nome do arquivo de comando para *FirstPackage.cs*.
+2. Quando o projeto for aberto, adicione um modelo de item de pacote do Visual Studio chamado **FirstPackage**. Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item**. Na caixa de diálogo **Adicionar novo item** , vá para extensibilidade do **Visual C#**  >   e selecione **pacote do Visual Studio**. No campo **nome** na parte inferior da janela, altere o nome do arquivo de comando para *FirstPackage.cs*.
 
 3. Compile o projeto e comece a depuração.
 

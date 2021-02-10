@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3cc4c9a4-7805-4239-b00e-eb4a024f3c55
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2ceb87277460f65e52c35f02e7fbbd01da1101a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad298d83efd16112a0cf1be3171601b93342a55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736519"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944713"
 ---
 # <a name="idebugalias"></a>IDebugAlias
 > [!IMPORTANT]
@@ -25,7 +25,7 @@ ms.locfileid: "80736519"
 
  Representa um alias numérico para uma variável. Um alias é simplesmente um nome diferente para uma variável.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugAlias : IUnknown
@@ -57,7 +57,7 @@ IDebugAlias : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Interfaces de avaliação de expressão](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)
 - [FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)

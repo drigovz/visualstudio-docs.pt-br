@@ -27,15 +27,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], visualizing the call stack
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b3d5c531400ddd88cea17b9172f19bf9711105d
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 7196cf06e7d6bcde33bc1e4a6c5d0ebfac486576
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362425"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946482"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapear métodos na pilha de chamadas ao depurar no Visual Studio
 
@@ -202,7 +202,7 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
 
 - [Localizar bugs usando o mapa](#FindBugs)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)
 - [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)

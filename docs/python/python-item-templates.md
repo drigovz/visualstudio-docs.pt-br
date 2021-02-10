@@ -5,21 +5,21 @@ ms.date: 12/06/2018
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 528606356c2d976de71ab2c0317a1a0236d2e63f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23a79d0842592ff3ad68f63c2739a2af9847aaeb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533387"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945156"
 ---
 # <a name="python-item-templates"></a>Modelos de item do Python
 
-Os modelos de item estão disponíveis em projetos do Python **Project**por meio do  >  comando de menu**Adicionar novo item** do projeto ou do comando **Adicionar**  >  **novo item** no menu de contexto no **Gerenciador de soluções**.
+Os modelos de item estão disponíveis em projetos do Python por meio do  >  comando de menu **Adicionar novo item** do projeto ou do comando **Adicionar**  >  **novo item** no menu de contexto no **Gerenciador de soluções**.
 
 ![Caixa de diálogo Adicionar Novo Item](media/project-item-templates.png)
 
@@ -31,7 +31,7 @@ A tabela a seguir explica brevemente o efeito de cada modelo de item em um proje
 | --- | --- |
 | **Arquivo vazio do Python** | Um arquivo vazio com a extensão *.py*. |
 | **Classe Python** | Um arquivo *.py* que contém uma única definição de classe vazia do Python. |
-| **Pacote do Python** | Uma pasta que contém um arquivo * \_ \_ init \_ \_ . py* . |
+| **Pacote do Python** | Uma pasta que contém um arquivo *\_ \_ init \_ \_ . py* . |
 | **Teste de Unidade do Python** | Um arquivo *.py* com um único teste de unidade baseado na estrutura `unittest`, juntamente com uma chamada a `unittest.main()` para executar os testes no arquivo. |
 | **Página HTML** | Um arquivo *.html* com uma estrutura de página simples que consiste em um `<head>` e um elemento `<body>`. |
 | **JavaScript** | Um arquivo *.js* vazio. |
@@ -46,7 +46,7 @@ A tabela a seguir explica brevemente o efeito de cada modelo de item em um proje
 | **Arquivos estáticos web.config do Azure** | Um arquivo *web.config* normalmente adicionado a uma pasta *static* (ou outra pasta que contém itens estáticos) para desabilitar o processamento do Python para essa pasta. Esse arquivo de configuração funciona em conjunto com um dos arquivos de configuração FastCGI ou HttpPlatformHandler acima. Para saber mais, confira [Configurar um aplicativo para IIS](configure-web-apps-for-iis-windows.md). |
 | **Depuração remota de web.config do Azure** | Preterido (foi usado para depuração remota no Serviço de Aplicativo do Azure para Windows, que não é mais suportado). |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Gerenciar projetos Python – Modelos de projetos](managing-python-projects-in-visual-studio.md#project-templates)
 - [Modelos de projeto Web do Python](python-web-application-project-templates.md)

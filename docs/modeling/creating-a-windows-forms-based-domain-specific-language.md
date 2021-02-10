@@ -5,18 +5,18 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e4c712eed732830da4bc1b158c8ad53a65a45d8
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 41c3ba299df1e6f9ce0e2848f7ffad59e5b3fbea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945403"
 ---
-# <a name="create-a-windows-forms-based-domain-specific-language"></a>Criar uma linguagem específica de domínio baseada em Windows Forms
+# <a name="create-a-windows-forms-based-domain-specific-language"></a>Criar uma linguagem de Domain-Specific baseada em Windows Forms
 
 Você pode usar Windows Forms para exibir o estado de um modelo de DSL (linguagem específica de domínio), em vez de usar um diagrama DSL. Este tópico orienta você pela Associação de um formulário do Windows a uma DSL usando o Visual Studio Visualization and Modeling SDK.
 
@@ -33,7 +33,7 @@ O modelo DSL **mínimo do WinForm designer** cria uma DSL mínima que você pode
     Neste tutorial, os seguintes nomes são assumidos:
 
     - Nome da solução e da DSL: `FarmApp`
-    - Namespace `Company.FarmApp`
+    - Namespace: `Company.FarmApp`
 
 2. Experimente o exemplo inicial que o modelo fornece:
 
@@ -79,7 +79,7 @@ A imagem a seguir é a definição de DSL usada neste passo a passos.
 
 3. Renomeie a classe de domínio **ExampleModel** para `Farm` .
 
-     Forneça as propriedades de domínio adicionais nomeadas `Size` do tipo **Int32**e `IsOrganic` do tipo **booliano**.
+     Forneça as propriedades de domínio adicionais nomeadas `Size` do tipo **Int32** e `IsOrganic` do tipo **booliano**.
 
     > [!NOTE]
     > Se você excluir a classe de domínio raiz e, em seguida, criar uma nova raiz, precisará redefinir a propriedade da classe raiz do editor. No **Gerenciador de DSL**, selecione **Editor**. Em seguida, no janela Propriedades, defina a **classe raiz** como `Farm` .
@@ -123,7 +123,7 @@ Agora você pode criar um novo controle de usuário que exibirá as informaçõe
 
 2. Escolha **objeto**, **Avançar**.
 
-     Expanda **DSL**, **Company. FarmApp**e selecione **farm**, que é a classe raiz do seu modelo. Escolha **Concluir**.
+     Expanda **DSL**, **Company. FarmApp** e selecione **farm**, que é a classe raiz do seu modelo. Escolha **Concluir**.
 
      No Gerenciador de Soluções, o projeto de **interface do usuário** agora contém **Properties\DataSources\Farm.DataSource**
 
@@ -149,14 +149,14 @@ Agora você pode criar um novo controle de usuário que exibirá as informaçõe
 
 5. Exclua **farmBindingNavigator**. Isso também é gerado automaticamente no `FarmControl` Designer, mas não é útil para esse aplicativo.
 
-6. Usando a caixa de ferramentas, crie duas instâncias de **DataGridView**e nomeie-as `AnimalGridView` e `FieldGridView` .
+6. Usando a caixa de ferramentas, crie duas instâncias de **DataGridView** e nomeie-as `AnimalGridView` e `FieldGridView` .
 
    > [!NOTE]
    > Uma etapa alternativa é arrastar os itens animais e Fields da janela fontes de dados para o controle. Essa ação cria automaticamente grades de dados e associações entre o modo de exibição de grade e a fonte de dados. No entanto, essa associação não funciona corretamente para DSLs. Portanto, é melhor criar manualmente as grades de dados e associações.
 
 7. Se a caixa de ferramentas não contiver a ferramenta **ModelingBindingSource** , adicione-a. No menu de atalho da guia **dados** , escolha **escolher itens**. Na caixa de diálogo **escolher itens da caixa de ferramentas** , selecione **ModelingBindingSource** na guia **.NET Framework** .
 
-8. Usando a caixa de ferramentas, crie duas instâncias de **ModelingBindingSource**e nomeie-as `AnimalBinding` e `FieldBinding` .
+8. Usando a caixa de ferramentas, crie duas instâncias de **ModelingBindingSource** e nomeie-as `AnimalBinding` e `FieldBinding` .
 
 9. Defina a propriedade **DataSource** de cada **ModelingBindingSource** como **farmBindingSource**.
 
@@ -323,8 +323,8 @@ No entanto, esse código não define um nome padrão para o novo item. Ele não 
 
 Portanto, recomendamos que você use <xref:Microsoft.VisualStudio.Modeling.ElementOperations> para criar novos elementos. Para obter mais informações, consulte [Personalizando a criação e movimentação do elemento](../modeling/customizing-element-creation-and-movement.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)
-- [Escrever código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Como definir um idioma de Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md)
+- [Escrever código para personalizar um idioma de Domain-Specific](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [SDK de Modelagem para Visual Studio - linguagens específicas ao domínio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

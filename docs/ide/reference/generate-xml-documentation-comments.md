@@ -6,15 +6,15 @@ ms.date: 01/22/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 250e07994b04e03b015bf3893633ebce0f36a90d
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 2c203d9a445d9426a8079801a856e20f7be82229
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617468"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946560"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Como inserir comentários XML para geração de documentação
 
@@ -32,7 +32,7 @@ O arquivo XML gerado pelo compilador pode ser distribuído em conjunto com o ass
 
 1. coloque o cursor de texto acima do elemento que você deseja documentar, por exemplo, um método.
 
-2. Realize uma destas ações:
+2. Realize um dos seguintes procedimentos:
 
    - Digite `///` em C# ou `'''` em Visual Basic
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d4cf36d722c260f52584b16557bcb8d7cda83c
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: bb088954833f42e35de6c8316e5553d0f9e3fc68
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945585"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Gerenciar extensões para o Visual Studio
 
@@ -67,7 +67,7 @@ Se você tentar instalar uma extensão que tenha dependências, o instalador ver
 
 ### <a name="install-without-using-the-extensions-and-updates-dialog-box"></a>Instalar sem usar a caixa de diálogo Extensões e Atualizações
 
-As extensões que foram empacotadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A **Tools**  >  caixa de diálogo **extensões e atualizações** de ferramentas não pode detectar esses arquivos, mas você pode instalar um arquivo *. vsix* clicando duas vezes no arquivo ou selecionando o arquivo e pressionando **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Extensões e Atualizações** para habilitá-la, desabilitá-la ou desinstalá-la.
+As extensões que foram empacotadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A   >  caixa de diálogo **extensões e atualizações** de ferramentas não pode detectar esses arquivos, mas você pode instalar um arquivo *. vsix* clicando duas vezes no arquivo ou selecionando o arquivo e pressionando **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Extensões e Atualizações** para habilitá-la, desabilitá-la ou desinstalá-la.
 
 > [!NOTE]
 > - O Visual Studio Marketplace contém extensões VSIX e MSI. A caixa de diálogo extensões e atualizações não pode habilitar ou desabilitar extensões baseadas em MSI.
@@ -114,7 +114,7 @@ Para proteger seu sistema contra extensões que possam conter erros ou código m
 
 Para restringir quando as extensões por usuário são carregadas:
 
-1. Abra a página opções de extensões (**ferramentas**  >  **Opções**  >  **Environment**  >  **extensões** de ambiente).
+1. Abra a página opções de extensões (**ferramentas**  >  **Opções**  >    >  **extensões** de ambiente).
 
 2. Desmarque a caixa de seleção **carregar extensões por usuário ao executar como administrador** .
 
@@ -152,7 +152,7 @@ Quando essas notificações forem exibidas, você poderá ignorar a notificaçã
 
 ::: moniker range="vs-2017"
 
-- Escolha **Desabilitar esta extensão**. O Visual Studio desabilita a extensão e permite que você saiba se precisa reiniciar o sistema para a desabilitação entrar em vigor. Você pode reabilitar a extensão na caixa de **Tools**  >  diálogo **extensões e atualizações** de ferramentas, se desejar.
+- Escolha **Desabilitar esta extensão**. O Visual Studio desabilita a extensão e permite que você saiba se precisa reiniciar o sistema para a desabilitação entrar em vigor. Você pode reabilitar a extensão na caixa de   >  diálogo **extensões e atualizações** de ferramentas, se desejar.
 
 ::: moniker-end
 

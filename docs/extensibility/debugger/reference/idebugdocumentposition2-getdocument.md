@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: eaa172c9-5748-4ce1-a0e2-33c2063f6752
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1f167c581ea07225774d9a34e42058d6616f0f89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6cbfd47cb5e8f72723ab385b544e804a603ef1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731693"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946885"
 ---
 # <a name="idebugdocumentposition2getdocument"></a>IDebugDocumentPosition2::GetDocument
 Obtém o documento de contenção.
@@ -28,13 +28,13 @@ Obtém o documento de contenção.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetDocument( 
+HRESULT GetDocument( 
    IDebugDocument2** ppDoc
 );
 ```
 
 ```csharp
-int GetDocument( 
+int GetDocument( 
    out IDebugDocument2 ppDoc
 );
 ```
@@ -43,7 +43,7 @@ int GetDocument( 
 `ppDoc`\
 fora Retorna um objeto [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) que representa o documento que contém essa posição.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5eec842f989497fda618482916154aabdcdd406
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 00dd13898204fe322ec0ddd33db10e7ca19db167
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480532"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946638"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Expor eventos no SDK do Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] permite que você origemie eventos usando automação. É recomendável que você retenha eventos de origem para projetos e itens de projeto.
@@ -54,7 +54,7 @@ ms.locfileid: "96480532"
 
  **AutomationProjectItemEvents** = retorna o `AutomationProjectItemsEvents` objeto.
 
-|Nome|Tipo|Intervalo|Descrição|
+|Nome|Type|Intervalo|Description|
 |----------|----------|-----------|-----------------|
 |Padrão (@)|REG_SZ|Não usado|Não utilizado. Você pode usar o campo de dados para documentação.|
 |*AutomationProjectsEvents*|REG_SZ|Nome do seu objeto de evento.|Somente o nome da chave é relevante. Você pode usar o campo de dados para documentação.<br /><br /> Este exemplo vem do exemplo de projeto básico.|
@@ -110,5 +110,5 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
 
  Os objetos de evento são recuperados do mesmo local central, o `DTE.Events` objeto. Dessa forma, todos os objetos de evento são agrupados para que um usuário final não precise procurar o modelo de objeto inteiro para localizar um evento específico. Isso também permite que você forneça seus objetos VSPackage específicos, em vez de exigir que você implemente seu próprio código para eventos de todo o sistema. No entanto, para o usuário final, que deve encontrar um evento para a sua `ProjectItem` interface, ele não é imediatamente limpo de onde o objeto de evento é recuperado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

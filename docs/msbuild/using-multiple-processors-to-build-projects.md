@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 49fa36c9-8e14-44f5-8a2b-34146cf6807b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e6c523d21a194626805168d6fee3054e77586b19
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c1560b40fe94af8dae5223981dd8e0c790320085
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047576"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946365"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>Usar vários processadores para criar projetos
 
@@ -38,7 +38,7 @@ MSBuild pode tirar proveito dos sistemas com vários processadores ou vários n�
 
 ## <a name="c-project-vcxproj-and-solution-sln-files"></a>Arquivos do projeto C++ (. vcxproj) e da solução (. sln)
 
- Os projetos C++ ( *. vcxproj* ) e de solução ( *. sln* ) podem ser passados para a [tarefa do MSBuild](../msbuild/msbuild-task.md). Para projetos C++, VCWrapperProject é chamado e, em seguida, o projeto interno do MSBuild é criado. Para soluções C++, um SolutionWrapperProject é criado e, em seguida, o projeto interno do MSBuild é criado. Em ambos os casos, o projeto resultante é tratado da mesma forma que qualquer outro projeto do MSBuild.
+ Os projetos C++ (*. vcxproj*) e de solução (*. sln*) podem ser passados para a [tarefa do MSBuild](../msbuild/msbuild-task.md). Para projetos C++, VCWrapperProject é chamado e, em seguida, o projeto interno do MSBuild é criado. Para soluções C++, um SolutionWrapperProject é criado e, em seguida, o projeto interno do MSBuild é criado. Em ambos os casos, o projeto resultante é tratado da mesma forma que qualquer outro projeto do MSBuild.
 
 ## <a name="multi-process-execution"></a>Execução multiprocesso
 
@@ -46,7 +46,7 @@ MSBuild pode tirar proveito dos sistemas com vários processadores ou vários n�
 
  Para evitar esse problema, mas ainda habilitar compilações de vários processadores, o MSBuild usa "isolamento de processo". Usando o isolamento de processo, o MSBuild pode criar um máximo de `n` processos, onde `n` é igual ao número de processadores disponíveis no sistema. Por exemplo, se o MSBuild criar uma solução em um sistema que tenha dois processadores, somente dois processos de compilação serão criados. Novamente, esses processos são usados para criar todos os projetos na solução.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Crie vários projetos em paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)

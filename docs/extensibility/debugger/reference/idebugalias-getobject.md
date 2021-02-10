@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 97bc3af6-6e55-4940-8a6d-692c61257806
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c7e73a7c1ccb5840927f4292fe057cbb6670a89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ff5459903b5259d6005a4ebb01228117c2801db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736440"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944778"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
 Obtém o objeto para o qual este alias se destina.
@@ -28,14 +28,14 @@ Obtém o objeto para o qual este alias se destina.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetObject(
-   IDebugObject2** ppObject
+HRESULT GetObject(
+   IDebugObject2** ppObject
 );
 ```
 
 ```csharp
-int GetObject(
-   Out IDebugObject2 ppObject
+int GetObject(
+   Out IDebugObject2 ppObject
 )
 ```
 
@@ -43,9 +43,9 @@ int GetObject(
 `ppObject`\
 fora O [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) que este alias representa.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

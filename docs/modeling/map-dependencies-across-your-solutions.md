@@ -15,15 +15,15 @@ helpviewer_keywords:
 - dependency graphs
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b34bb124d663d81769c6d3086d6b36803d60eb
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9723fd44aedf4950b99a49b62d421230b43d55fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362230"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946521"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapear dependências com mapas de código
 
@@ -238,7 +238,7 @@ Suponha que você tenha uma revisão de código para executar em alguns arquivos
 
    ![Use o painel de filtro para simplificar a exibição](../modeling/media/almcodemapfilterpane.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Vídeo: entenda o design do código com os mapas de código do Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)

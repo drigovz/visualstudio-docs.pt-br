@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4a4f5c0250405c2e2a0314b52c4cbc64d749fc0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 720850096e7099ed95cbc5fa914bebb2bee580ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732101"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944661"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 Lê as instruções a partir da posição atual no fluxo de desmontagem.
@@ -28,7 +28,7 @@ Lê as instruções a partir da posição atual no fluxo de desmontagem.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT Read( 
+HRESULT Read( 
    DWORD                     dwInstructions,
    DISASSEMBLY_STREAM_FIELDS dwFields,
    DWORD*                    pdwInstructionsRead,
@@ -37,7 +37,7 @@ HRESULT Read( 
 ```
 
 ```csharp
-int Read( 
+int Read( 
    uint                           dwInstructions,
    enum_DISASSEMBLY_STREAM_FIELDS dwFields,
    out uint                       pdwInstructionsRead,
@@ -58,7 +58,7 @@ fora Retorna o número de instruções realmente desmontadas.
 `prgDisassembly`\
 fora Uma matriz de estruturas [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) que é preenchida com o código desmontado, uma estrutura por instrução desmontada. O comprimento dessa matriz é determinado pelo `dwInstructions` parâmetro.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
@@ -68,7 +68,7 @@ fora Uma matriz de estruturas [DisassemblyData](../../../extensibility/debugger/
 
  O `DSF_OPERANDS_SYMBOLS` sinalizador pode ser adicionado ao `DSF_OPERANDS` sinalizador no `dwFields` parâmetro para indicar que os nomes de símbolo devem ser usados ao desmontar as instruções.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

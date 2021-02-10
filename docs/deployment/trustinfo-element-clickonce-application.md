@@ -21,20 +21,20 @@ helpviewer_keywords:
 ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6779471edc25435f14511cc2ebcc34e6247225ee
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3e91bdb2e842692224564374e3f9f4d23cf71cf8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349211"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945013"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;&gt;elemento TrustInfo (aplicativo ClickOnce)
 Descreve as permissões de segurança mínimas necessárias para que o aplicativo seja executado no computador cliente.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 
@@ -72,38 +72,38 @@ Descreve as permissões de segurança mínimas necessárias para que o aplicativ
  O `trustInfo` elemento é obrigatório e está no `asm.v2` namespace. Ele não tem atributos e contém os elementos a seguir.
 
 ## <a name="security"></a>segurança
- Obrigatórios. Esse elemento é um filho do `trustInfo` elemento. Ele contém o `applicationRequestMinimum` elemento e não tem nenhum atributo.
+ Obrigatório. Esse elemento é um filho do `trustInfo` elemento. Ele contém o `applicationRequestMinimum` elemento e não tem nenhum atributo.
 
 ## <a name="applicationrequestminimum"></a>applicationRequestMinimum
- Obrigatórios. Esse elemento é um filho do `security` elemento e contém os `PermissionSet` elementos, e `assemblyRequest` `defaultAssemblyRequest` . Esse elemento não tem atributos.
+ Obrigatório. Esse elemento é um filho do `security` elemento e contém os `PermissionSet` elementos, e `assemblyRequest` `defaultAssemblyRequest` . Esse elemento não tem atributos.
 
 ## <a name="permissionset"></a>PermissionSet
- Obrigatórios. Esse elemento é um filho do `applicationRequestMinimum` elemento e contém o `IPermission` elemento. Esse elemento tem os atributos a seguir.
+ Obrigatório. Esse elemento é um filho do `applicationRequestMinimum` elemento e contém o `IPermission` elemento. Esse elemento tem os atributos a seguir.
 
 - `ID`
 
-     Obrigatórios. Identifica o conjunto de permissões. Esse atributo pode ser qualquer valor. A ID é referenciada nos `defaultAssemblyRequest` `assemblyRequest` atributos e.
+     Obrigatório. Identifica o conjunto de permissões. Esse atributo pode ser qualquer valor. A ID é referenciada nos `defaultAssemblyRequest` `assemblyRequest` atributos e.
 
 - `version`
 
-     Obrigatórios. Identifica a versão da permissão. Normalmente, esse valor é `1` .
+     Obrigatório. Identifica a versão da permissão. Normalmente, esse valor é `1` .
 
 ## <a name="ipermission"></a>IPermission
  Opcional. Esse elemento é um filho do `PermissionSet` elemento. O `IPermission` elemento identifica totalmente uma classe de permissão no .NET Framework. O `IPermission` elemento tem os atributos a seguir, mas pode ter atributos adicionais que correspondam às propriedades na classe de permissão. Para descobrir a sintaxe de uma permissão específica, consulte os exemplos listados no arquivo de Security.config.
 
 - `class`
 
-     Obrigatórios. Identifica a classe de permissão por nome forte. Por exemplo, o código a seguir identifica o `FileDialogPermission` tipo.
+     Obrigatório. Identifica a classe de permissão por nome forte. Por exemplo, o código a seguir identifica o `FileDialogPermission` tipo.
 
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`
 
 - `version`
 
-     Obrigatórios. Identifica a versão da permissão. Normalmente, esse valor é `1` .
+     Obrigatório. Identifica a versão da permissão. Normalmente, esse valor é `1` .
 
 - `Unrestricted`
 
-     Obrigatórios. Identifica se o aplicativo precisa de uma concessão irrestrita dessa permissão. Se `true` , a concessão de permissão é incondicional. Se `false` , ou se esse atributo for indefinido, ele será restrito de acordo com os atributos específicos de permissão definidos na `IPermission` marca. Adote as seguintes permissões:
+     Obrigatório. Identifica se o aplicativo precisa de uma concessão irrestrita dessa permissão. Se `true` , a concessão de permissão é incondicional. Se `false` , ou se esse atributo for indefinido, ele será restrito de acordo com os atributos específicos de permissão definidos na `IPermission` marca. Adote as seguintes permissões:
 
     ```xml
     <IPermission
@@ -123,18 +123,18 @@ Descreve as permissões de segurança mínimas necessárias para que o aplicativ
 
 - `permissionSetReference`
 
-     Obrigatórios. Identifica a ID do conjunto de permissões que é a permissão padrão. O conjunto de permissões é declarado no `PermissionSet` elemento.
+     Obrigatório. Identifica a ID do conjunto de permissões que é a permissão padrão. O conjunto de permissões é declarado no `PermissionSet` elemento.
 
 ## <a name="assemblyrequest"></a>assemblyRequest
  Opcional. Identifica as permissões para um assembly específico. Esse elemento é um filho do `applicationRequestMinimum` elemento e tem os atributos a seguir.
 
 - `Name`
 
-     Obrigatórios. Identifica o nome do assembly.
+     Obrigatório. Identifica o nome do assembly.
 
 - `permissionSetReference`
 
-     Obrigatórios. Identifica a ID do conjunto de permissões que este assembly requer. O conjunto de permissões é declarado no `PermissionSet` elemento.
+     Obrigatório. Identifica a ID do conjunto de permissões que este assembly requer. O conjunto de permissões é declarado no `PermissionSet` elemento.
 
 ## <a name="requestedprivileges"></a>requestedPrivileges
  Opcional. Esse elemento é um filho do `security` elemento e contém o `requestedExecutionLevel` elemento. Esse elemento não tem atributos.
@@ -144,7 +144,7 @@ Descreve as permissões de segurança mínimas necessárias para que o aplicativ
 
 - `Level`
 
-   Obrigatórios. Indica o nível de segurança que o aplicativo está solicitando. Os valores possíveis são:
+   Obrigatório. Indica o nível de segurança que o aplicativo está solicitando. Os valores possíveis são:
 
    `asInvoker`, não solicitando permissões adicionais. Esse nível não requer prompts de confiança adicionais.
 
@@ -269,6 +269,6 @@ Descreve as permissões de segurança mínimas necessárias para que o aplicativ
 </trustInfo>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Visão geral da implantação de aplicativos confiáveis](../deployment/trusted-application-deployment-overview.md)
 - [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)

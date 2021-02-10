@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4954b3b278b3c7a6b798a4ffda3856ab8bb200c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3223f454fbf775b6aa11512c20fc63f8c224ade7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732076"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944622"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 Move o ponteiro de leitura no fluxo de desmontagem de um determinado número de instruções relativas a uma posição especificada.
@@ -28,7 +28,7 @@ Move o ponteiro de leitura no fluxo de desmontagem de um determinado número de 
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT Seek( 
+HRESULT Seek( 
    SEEK_START          dwSeekStart,
    IDebugCodeContext2* pCodeContext,
    UINT64              uCodeLocationId,
@@ -37,7 +37,7 @@ HRESULT Seek( 
 ```
 
 ```csharp
-int Seek( 
+int Seek( 
    enum_SEEK_START    dwSeekStart,
    IDebugCodeContext2 pCodeContext,
    ulong              uCodeLocationId,
@@ -58,7 +58,7 @@ no O identificador de local do código ao qual a operação de busca é relativa
 `iInstructions`\
 no O número de instruções a serem movidas em relação à posição especificada em `dwSeekStart` . Esse valor pode ser negativo para mover para trás.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se a posição de busca era para um ponto além da lista de instruções disponíveis. Caso contrário, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários

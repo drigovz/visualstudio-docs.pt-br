@@ -6,17 +6,17 @@ ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d75bb4f5274201b7cf745ff8c7c6f27b869855c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c83516891a33a026399a6e5fcfc2458b5e03a0bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81445006"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945429"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publicar um aplicativo Node.js no Azure (Serviço de Aplicativo do Linux)
 
@@ -41,10 +41,10 @@ Neste tutorial, você aprenderá como:
 * Você precisa ter o Visual Studio instalado e a carga de trabalho de desenvolvimento de Node.js.
 
     ::: moniker range=">=vs-2019"
-    Se você ainda não instalou o Visual Studio 2019, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)   para instalá-lo gratuitamente.
+    Se você ainda não instalou o Visual Studio 2019, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalá-lo gratuitamente.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Se você ainda não instalou o Visual Studio 2017, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)   para instalá-lo gratuitamente.
+    Se você ainda não tiver instalado o Visual Studio 2017, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalá-lo gratuitamente.
     ::: moniker-end
 
     Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, vá para **ferramentas**  >  **obter ferramentas e recursos...**, que abre o instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
@@ -87,7 +87,7 @@ Para configurar o GitHub para o Visual Studio:
 
 1. Verifique se a [Extensão do GitHub para Visual Studio](https://visualstudio.github.com/) está instalada e habilitada usando o item de menu **Ferramentas** > **Extensões e Atualizações**.
 
-2. No menu, selecione **Exibir**  >  **outro**  >  **GitHub**do Windows.
+2. No menu, selecione **Exibir**  >  **outro**  >  **GitHub** do Windows.
 
     A janela do GitHub será aberta.
 
@@ -175,7 +175,7 @@ Para configurar o GitHub para o Visual Studio:
 * Se o processo do node.exe se tornar inativo (ou seja, uma exceção sem tratamento ocorrer), o contêiner será reinicializado.
 * Quando o contêiner for iniciado, ele percorrerá várias heurísticas para descobrir como iniciar o processo do Node.js. Veja os detalhes da implementação em [generateStartupCommand.js](https://github.com/Azure/app-service-builtin-images/blob/master/node/8.9.4/startup/generateStartupCommand.js).
 * Conecte-se ao contêiner em execução por meio do SSH para fazer investigações. Faça isso com facilidade usando o portal do Azure. Selecione o Serviço de Aplicativo e role a lista de ferramentas para baixo até chegar a **SSH**, na seção **Ferramentas de Desenvolvimento**.
-* Para ajudar com a solução de problemas, vá para as configurações de **Logs de diagnóstico** do Serviço de Aplicativo e altere a configuração de **Log de contêiner do Docker** de **Desativado** para **Sistema de Arquivos**. Os logs são criados no contêiner em */home/LogFiles/*_docker.log* e podem ser acessados na caixa usando o SSH ou FTP(S).
+* Para ajudar com a solução de problemas, vá para as configurações de **Logs de diagnóstico** do Serviço de Aplicativo e altere a configuração de **Log de contêiner do Docker** de **Desativado** para **Sistema de Arquivos**. Os logs são criados no contêiner em */home/LogFiles/* _docker.log* e podem ser acessados na caixa usando o SSH ou FTP(S).
 * Um nome de domínio personalizado pode ser atribuído ao site, em vez da URL *.azurewebsites.net atribuída por padrão. Para obter mais detalhes, confira o tópico [Mapear domínio personalizado](/azure/app-service/app-service-web-tutorial-custom-domain).
 * A implantação em um site de preparo para a execução de testes adicionais antes da migração para a produção é uma melhor prática. Para obter detalhes sobre como configurar isso, confira o tópico [Criar ambientes de preparo](/azure/app-service/web-sites-staged-publishing).
 * Confira as [Perguntas frequentes sobre o Serviço de Aplicativo do Linux](/azure/app-service/containers/app-service-linux-faq) para ver mais perguntas frequentes.

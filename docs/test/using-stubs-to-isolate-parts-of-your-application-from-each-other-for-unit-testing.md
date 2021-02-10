@@ -5,19 +5,19 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: eeb7b981dcaec97d52c24ea40476f0bec84e608e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 874695bed7044c92f43c6d3031842d94372a2c33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598556"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946222"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Use stubs para isolar partes de seu aplicativo umas das outras para teste de unidade
 
@@ -223,7 +223,7 @@ Os stubs também são gerados para getters e setters de propriedades, para event
 
 ### <a name="verify-parameter-values"></a>Verificar valores de parâmetros
 
-Você pode verificar que, quando seu componente chama outro componente, ele passa os valores corretos. Você pode colocar uma asserção no stub ou armazenar o valor e verificá-lo no corpo principal do teste. Por exemplo: 
+Você pode verificar que, quando seu componente chama outro componente, ele passa os valores corretos. Você pode colocar uma asserção no stub ou armazenar o valor e verificá-lo no corpo principal do teste. Por exemplo:
 
 ```csharp
 [TestClass]
@@ -395,7 +395,7 @@ Se o código fosse chamar `GetValue<T>` com qualquer outra instanciação, o stu
 
 ### <a name="stubs-of-virtual-classes"></a>Stubs de classes virtuais
 
-Nos exemplos anteriores, os stubs foram gerados a partir de interfaces. Você também pode gerar stubs a partir de uma classe que tenha membros virtuais ou abstratos. Por exemplo: 
+Nos exemplos anteriores, os stubs foram gerados a partir de interfaces. Você também pode gerar stubs a partir de uma classe que tenha membros virtuais ou abstratos. Por exemplo:
 
 ```csharp
 // Base class in application under test

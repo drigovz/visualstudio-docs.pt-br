@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ac2d8891-56b5-40ef-9866-ed74f18bb043
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a8ebb10e5b01d95b6d9437f41b3ccf2b6c8b99d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 72e6f71384f6e30850527524077df35d49aab3cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736456"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944765"
 ---
 # <a name="idebugaliasgetname"></a>IDebugAlias::GetName
 Obtém o nome deste alias.
@@ -28,14 +28,14 @@ Obtém o nome deste alias.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetName(
-   BSTR* pbstrName
+HRESULT GetName(
+   BSTR* pbstrName
 );
 ```
 
 ```csharp
-int GetName(
-   out string pbstrName
+int GetName(
+   out string pbstrName
 );
 ```
 
@@ -43,8 +43,8 @@ int GetName(
 `pbstrName`\
 fora Nome do alias.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

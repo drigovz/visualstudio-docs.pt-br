@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6c159c9d-345d-4b23-8ddd-9839d338b62f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92fcce4dc62cdc84d15ca6dc51420791d4460340
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 24ffc64876e015ba2139022698576e04b12625e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875421"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945637"
 ---
 # <a name="properties-window-object-list"></a>Lista de objetos de janela Propriedades
 A lista de objetos na janela **Propriedades** é uma lista suspensa que permite alterar a seleção para outros objetos disponíveis em uma ou mais janelas selecionadas. A seleção de um objeto diferente dentro dessa lista dispara uma chamada para <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> para informar ao ambiente que um novo objeto foi selecionado. As informações exibidas na janela **Propriedades** são então alteradas para mostrar as propriedades associadas ao objeto selecionado recentemente.
@@ -31,5 +31,5 @@ A lista de objetos na janela **Propriedades** é uma lista suspensa que permite 
 
  Se o objeto COM não for implementado <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> , a janela **Propriedades** exibirá o nome da interface no lugar do nome do objeto no lado esquerdo da lista.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Estendendo propriedades](../../extensibility/internals/extending-properties.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: abef18c0-8272-4451-b82a-b4624edaba7d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc3b1f2510742e2d0656727826e5b4aeae935b6f
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 8cf456dca27a45a2674f7138a6c0b21b12750c81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559895"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945962"
 ---
 # <a name="implement-type-visualizers-and-custom-viewers"></a>Implementar visualizadores de tipo e visualizadores personalizados
 > [!IMPORTANT]

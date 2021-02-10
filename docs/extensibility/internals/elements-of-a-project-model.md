@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e366b2923d5903f00241db0a6b71017dc25f3dee
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: f786ae8e0725c7c1b6f0683a779a65f015ac2a75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480038"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946742"
 ---
 # <a name="elements-of-a-project-model"></a>Elementos de um modelo de projeto
 As interfaces e implementações de todos os projetos no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] compartilham uma estrutura básica: o modelo de projeto para o tipo de projeto. No modelo de projeto, que é o VSPackage que você está desenvolvendo, você cria objetos que estão em conformidade com suas decisões de design e trabalham em conjunto com a funcionalidade global fornecida pelo IDE. Embora você controle como um item de projeto é persistido, por exemplo, você não controla a notificação de que um arquivo deve ser persistido. Quando um usuário coloca o foco em um item de projeto aberto e escolhe **salvar** no menu **arquivo** na [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] barra de menus, o código do tipo de projeto deve interceptar o comando do IDE, persistir o arquivo e enviar a notificação de volta para o IDE que o arquivo não é mais alterado.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - find all references
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5ee6a0792c5dbfa1661018e75806499d1aa1028
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 0cc7702ae07c83c5798945c4a9bb2ab787fc9cd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945559"
 ---
 # <a name="find-references-in-your-code"></a>Localizar referências no seu código
 
@@ -42,7 +42,7 @@ Você pode usar os seguintes métodos para navegar para as referências na janel
 - Pressione **F8** para acessar a próxima referência ou **Shift + F8** para acessar a referência anterior.
 - Pressione a tecla **Enter** em uma referência ou clique duas vezes nela para acessá-la no código.
 - No menu do clique com o botão direito (menu de contexto) de uma referência, escolha os comandos **Ir para Local Anterior** ou **Ir para Próximo Local**.
-- Escolha as teclas de seta para **cima** e **seta para baixo** (se elas estiverem habilitadas na caixa de diálogo **Opções** ). Para habilitar essa funcionalidade, na barra de menus, escolha **ferramentas**  >  **Opções**  >  **Environment**  >  **guias de ambiente e**  >  a **guia Visualização** do Windows e, em seguida, selecione **permitir novos arquivos a serem abertos na guia Visualizar** e **visualize os arquivos selecionados em caixas de pesquisa de resultados** .
+- Escolha as teclas de seta para **cima** e **seta para baixo** (se elas estiverem habilitadas na caixa de diálogo **Opções** ). Para habilitar essa funcionalidade, na barra de menus, escolha **ferramentas**  >  **Opções**  >    >  **guias de ambiente e**  >  a **guia Visualização** do Windows e, em seguida, selecione **permitir novos arquivos a serem abertos na guia Visualizar** e **visualize os arquivos selecionados em caixas de pesquisa de resultados** .
 
 ## <a name="change-reference-groupings"></a>Alterar agrupamentos de referência
 Por padrão, as referências são agrupadas por projetos, depois por definição. No entanto, você pode alterar essa ordem de agrupamento alterando a configuração na caixa de listagem suspensa **Agrupar por:** na barra de ferramentas. Por exemplo, é possível alterá-la na configuração padrão de **Projeto em vez de definição** para **Definição em vez de projeto** e também para outras configurações.

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d3dac454-518a-44d7-a76e-ccb7b9c3a150
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d2e8b49f833b5dd91dc6379d2a015d41a9679afe
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 23174667827e63afb93d82679a51d65512731710
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349770"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946066"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Como definir uma zona de segurança para um aplicativo ClickOnce
 Ao definir permissões de segurança de acesso de código para um aplicativo ClickOnce, você precisa começar com um conjunto base de permissões na página **segurança** do **Designer de projeto**.
@@ -32,7 +32,7 @@ Ao definir permissões de segurança de acesso de código para um aplicativo Cli
 
 ### <a name="to-set-a-security-zone"></a>Para definir uma zona de segurança
 
-1. Com um projeto selecionado no **Gerenciador de Soluções** , no menu **Projeto** , clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
 
 2. Clique na guia **Segurança** .
 
@@ -44,7 +44,7 @@ Ao definir permissões de segurança de acesso de código para um aplicativo Cli
 
 5. Na lista suspensa zona em que **seu aplicativo será instalado** , selecione uma zona de segurança.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Como definir permissões personalizadas em um aplicativo ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [Proteger aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Segurança de acesso do código para aplicativos ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
