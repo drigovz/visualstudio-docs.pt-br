@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6a212ee5-414c-4eb5-ab11-19db1786943d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d139029bf65149ae59fb037434f6e7d6298f1d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ce260e172e8f09ffac38fa8c267c286af15c32f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731863"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947067"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
 Obtém o idioma associado a este contexto de documento.
@@ -48,7 +48,7 @@ fora Retorna o nome do idioma que implementa o código neste contexto de documen
 `pguidLanguage`\
 fora Retorna o GUID do idioma que implementa o código neste contexto de documento. Por exemplo, `guidVBScriptLang` ou `guidCPPLang`. Esse GUID não está limitado aos idiomas fornecidos pelo [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo

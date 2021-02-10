@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 686ab88a-6305-4914-a05b-fe269cc0ae1e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b4d39654134177f3936bd2fbe72b6786ca9cf03c
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: b84b0a8932bb9d8fd4738c2cd4924b61bb6faeb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947769"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Como incrementar automaticamente a versão de publicação do ClickOnce
 
@@ -37,7 +37,7 @@ Você pode desabilitar esse comportamento na página **publicar** do designer de
 
 ## <a name="to-disable-automatically-incrementing-the-publish-version"></a>Para desabilitar o incrementamento automático da versão de publicação
 
-1. Com um projeto selecionado no **Gerenciador de soluções** , no menu **projeto** , clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.
 
 2. Clique na guia **Publicar**.
 
