@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5ba512642e1a63d9d39856f96194d717583d44f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a68b03f594ad686f2b3e23aab52cabfe4fa5d92a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701177"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952103"
 ---
 # <a name="scccheckin-function"></a>Função SccCheckin
 Essa função faz check-out de arquivos extraídos anteriormente no sistema de controle do código-fonte, armazenando as alterações e criando uma nova versão. Essa função é chamada com uma contagem e uma matriz de nomes dos arquivos nos quais será feito o check-in.
@@ -75,7 +75,7 @@ no Opções específicas de plug-in SCC.
 |SCC_E_ACCESSFAILURE|Houve um problema ao acessar o sistema de controle do código-fonte, provavelmente devido a problemas de rede ou de contenção. Uma nova tentativa é recomendada.|
 |SCC_E_NONSPECIFICERROR|Falha não específica. O check-in do arquivo não foi feito.|
 |SCC_E_NOTCHECKEDOUT|O usuário não fez o check-out do arquivo; portanto, não é possível verificá-lo.|
-|SCC_E_CHECKINCONFLICT|O check-in não pôde ser executado porque:<br /><br /> -Outro usuário fez o check-in antecipado e `bAutoReconcile` foi falso.<br /><br /> - ou -<br /><br /> -A mesclagem automática não pode ser feita (por exemplo, quando os arquivos são binários).|
+|SCC_E_CHECKINCONFLICT|O check-in não pôde ser executado porque:<br /><br /> -Outro usuário fez o check-in antecipado e `bAutoReconcile` foi falso.<br /><br /> -ou-<br /><br /> -A mesclagem automática não pode ser feita (por exemplo, quando os arquivos são binários).|
 |SCC_E_VERIFYMERGE|O arquivo foi mesclado automaticamente, mas não foi verificado na verificação de usuário pendente.|
 |SCC_E_FIXMERGE|O arquivo foi mesclado automaticamente, mas não foi verificado devido a um conflito de mesclagem que deve ser resolvido manualmente.|
 |SCC_E_NOTAUTHORIZED|O usuário não tem permissão para executar esta operação.|
@@ -88,5 +88,5 @@ no Opções específicas de plug-in SCC.
 
  O `fOptions` argumento pode receber um valor do `SCC_KEEP_CHECKEDOUT` sinalizador para indicar a intenção do usuário de verificar o arquivo e conferir novamente.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Funções da API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

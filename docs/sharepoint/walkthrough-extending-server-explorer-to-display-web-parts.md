@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 55950d8498b436d38d2145c2692556330718883e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: aa190ea6d5376c00584cc5936d1074d245b9509e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970213"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952662"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Walkthrough: estender Gerenciador de Servidores para exibir Web Parts
   No Visual Studio, você pode usar o nó **conexões do SharePoint** de **Gerenciador de servidores** para exibir componentes em sites do SharePoint. No entanto, o **Gerenciador de servidores** não exibe alguns componentes por padrão. Neste tutorial, você estenderá **Gerenciador de servidores** para que ele exiba a Galeria de Web Parts em cada site do SharePoint conectado.
@@ -372,7 +372,7 @@ ms.locfileid: "95970213"
 
 4. Feche as duas instâncias do Visual Studio (a instância experimental e a instância do Visual Studio na qual a solução WebPartNode está aberta).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Estenda o nó conexões do SharePoint no Gerenciador de Servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Walkthrough: chamar o modelo de objeto de cliente do SharePoint em uma extensão Gerenciador de Servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 - [Editor de imagem para ícones](/cpp/windows/image-editor-for-icons)

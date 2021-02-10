@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d6eb6e72dc409a642dcf8e1a4c7a7389529375c7
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 9a29aed406d216e2fd72d9763cd9d0522f9cdd17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96933513"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951817"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Como dividir uma classe em classes parciais no Designer de Classe
 
@@ -78,7 +78,7 @@ Partial Public Class Employee
 End Class
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Classes e métodos parciais](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
 - [partial (tipo) (Referência de C#)](/dotnet/csharp/language-reference/keywords/partial-type)

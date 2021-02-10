@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: de110a4e-5b51-4a40-9dee-615df4d8f999
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b4660c4efc7c22431b7c9f0d9180576d524a372
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d5249102013aaf72a48c7137b415636952ed1d0d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901161"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951804"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Como exibir tipos existentes no Designer de Classe
 
@@ -63,7 +63,7 @@ Quando você exibe um tipo no diagrama pela primeira vez, sua forma aparece reco
 
 Em **Gerenciador de soluções** ou **modo de exibição de classe**, clique com o botão direito do mouse no projeto e escolha **Exibir** e, em seguida, escolha **Exibir diagrama de classe**. Um Diagrama de Classe populado automaticamente é criado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como exibir herança entre tipos](how-to-view-inheritance-between-types.md)
 - [Como: Personalizar diagramas de classe](how-to-customize-class-diagrams.md)

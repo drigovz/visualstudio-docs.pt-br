@@ -15,15 +15,15 @@ helpviewer_keywords:
 - reusable workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1421b061c50277177b5a30f0357725e9a042f3bd
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d4c12626550e36acc1a135258750f2d96ac5e81d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970189"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952584"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>Walkthrough: importar um fluxo de trabalho reutilizável do SharePoint Designer
 
@@ -198,7 +198,7 @@ ms.locfileid: "95970189"
 
     3. Preencha os valores ausentes no Assistente para personalização do SharePoint e, em seguida, escolha o botão **concluir** .
 
-12. Escolha o arquivo. xoml e, na barra de menus, escolha Designer de **exibição**  >  **Designer** para exibir o fluxo de trabalho importado no designer de fluxo de trabalho.
+12. Escolha o arquivo. xoml e, na barra de menus, escolha Designer de **exibição**  >   para exibir o fluxo de trabalho importado no designer de fluxo de trabalho.
 
 13. No nó **Windows Workflow v 3.0** da caixa de **ferramentas**, execute uma das seguintes etapas:
 
@@ -264,7 +264,7 @@ ms.locfileid: "95970189"
 
      Observe que duas ações são executadas pelo fluxo de trabalho: seu nome aparece na coluna **atribuído à** tarefa e um anúncio é exibido na lista **comunicados** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Importar itens de um site existente do SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Criar controles reutilizáveis para Web Parts ou páginas de aplicativo](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 719ce0ac88761599fbed7da90643fd8a9d79db69
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: c8ac314a2ec49b805fc87badf6b63a719b8511e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715815"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952090"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Padrões de composição para Visual Studio
 Padrões de composição combinam elementos de interação e design em configurações distintas. Alguns dos padrões de composição mais importantes no Visual Studio em relação à consistência incluem:
@@ -439,9 +439,9 @@ Padrões de composição combinam elementos de interação e design em configura
 
 | Objeto | Seleção |
 |--------|------------|
-| Lista | Vizinha |
-| Lista | Não contíguo |
-| Lista | Região |
+| List | Vizinha |
+| List | Não contíguo |
+| List | Região |
 
  Clicar uma vez em uma lista seleciona a linha na qual o clique ocorreu. Se o usuário for clicar em uma célula de lista que dá suporte à edição in-loco, a célula também será imediatamente ativada para edição in-loco. Caso contrário, a linha inteira será selecionada imediatamente e mostrará um realce.
 
@@ -484,7 +484,7 @@ Padrões de composição combinam elementos de interação e design em configura
 |caixa de diálogo|O local da caixa de diálogo, se tiver sido movido<br /><br /> A exibição que o usuário usou pela última vez na caixa de diálogo|Quando a caixa de diálogo fechar<br /><br /> Quando a sessão do Visual Studio termina|Na memória<br /><br /> Registro no **HKEY_CURRENT_USER**|
 |Janela|O tamanho e o local da janela|Quando a janela for fechada<br /><br /> Quando o modo do Visual Studio é alterado<br /><br /> Quando a sessão do Visual Studio termina|O arquivo de **Opções do usuário (. suo)** para o projeto<br /><br /> Arquivo de opções personalizadas para configurações de janela|
 |Documento|A seleção atual no documento<br /><br /> A exibição do documento<br /><br /> Os últimos vários locais que o usuário visitou|Quando o documento é salvo|O arquivo de **Opções do usuário (. suo)** para o projeto|
-|Projeto|Referências a arquivos<br /><br /> Referências a diretórios em disco<br /><br /> Referências a outros softwares<br /><br /> Componentes<br /><br /> Informações de estado sobre o projeto em si|Quando o projeto é salvo|O arquivo de projeto|
+|Project|Referências a arquivos<br /><br /> Referências a diretórios em disco<br /><br /> Referências a outros softwares<br /><br /> Componentes<br /><br /> Informações de estado sobre o projeto em si|Quando o projeto é salvo|O arquivo de projeto|
 |Solução|Referências a projetos<br /><br /> Referências a arquivos|Quando o projeto ou a solução é salva|O arquivo da **solução (. sln)**|
 |Configurações em **ferramentas > opções**|Personalizações do teclado<br /><br /> Personalizações da barra de ferramentas<br /><br /> Esquemas de cor|Quando a caixa de diálogo **ferramentas > opções** for fechada<br /><br /> Quando a sessão do Visual Studio termina|Registro no **HKEY_CURRENT_USER**|
 

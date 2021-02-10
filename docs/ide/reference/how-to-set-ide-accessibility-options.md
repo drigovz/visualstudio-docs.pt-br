@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac857d961b1ae736645ba2cfda3f1ef5755d0fa1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d7cc99747571feb5b443f10355d867da7c22f44
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770282"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952909"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Como definir opções de acessibilidade do IDE
 
@@ -62,7 +62,7 @@ Também é possível alterar as configurações de como o texto é exibido no ed
 
 1. No menu **Ferramentas**, escolha **Opções**.
 
-1. Escolha **Environment**  >  **fontes e cores**do ambiente.
+1. Escolha   >  **fontes e cores** do ambiente.
 
 1. Selecione uma opção no menu suspenso **Mostrar configurações de**.
 
@@ -83,7 +83,7 @@ Também é possível alterar as configurações de como o texto é exibido no ed
     > [!TIP]
     > Para redefinir o tamanho do texto em editores e janelas de ferramentas baseadas em texto, escolha **Usar Padrões**.
 
-7. Escolha **OK**.
+7. Selecione **OK**.
 
 ### <a name="change-the-colors-that-are-used-in-the-ide"></a>Alterando as cores usadas no IDE
 
@@ -99,10 +99,10 @@ Você pode optar por alterar as cores padrão de texto, indicadores de margem, e
 
 1. Selecione configurações de exibição entre as opções a seguir: **Primeiro plano do item**, **Tela de fundo do item** e **Negrito**.
 
-1. Escolha **OK**.
+1. Selecione **OK**.
 
 > [!TIP]
-> Para usar cores de alto contraste para todas as janelas de aplicativos em seu sistema operacional, pressione **ALT esquerda**com + **SHIFT esquerda** + **PrtScn**. Feche e reabra o Visual Studio, se estiver aberto, para implementar completamente as cores de alto contraste.
+> Para usar cores de alto contraste para todas as janelas de aplicativos em seu sistema operacional, pressione **ALT esquerda** com + **SHIFT esquerda** + . Feche e reabra o Visual Studio, se estiver aberto, para implementar completamente as cores de alto contraste.
 
 ## <a name="toolbars"></a>Barras de ferramentas
 
@@ -114,7 +114,7 @@ Para melhorar a acessibilidade e a usabilidade da barra de ferramentas, você po
 
 1. Na caixa de diálogo **Personalizar**, selecione a guia **Comandos**.
 
-1. Selecione **barra de ferramentas**e, em seguida, escolha o nome da barra de ferramentas que contém o botão para o qual você pretende exibir o texto.
+1. Selecione **barra de ferramentas** e, em seguida, escolha o nome da barra de ferramentas que contém o botão para o qual você pretende exibir o texto.
 
 1. Na lista, selecione o comando que deseja alterar.
 
@@ -128,7 +128,7 @@ Para melhorar a acessibilidade e a usabilidade da barra de ferramentas, você po
 
 1. Ao lado de **Nome**, forneça uma nova legenda para o botão selecionado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [Recursos de acessibilidade do Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
 * [Acessibilidade para Visual Studio para Mac](/visualstudio/mac/accessibility/)

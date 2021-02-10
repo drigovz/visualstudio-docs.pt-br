@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1c07076b6e257bd5519d19f841797fbc652f0c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d081389124b8703958f82cb97fc877f9f812290
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701237"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952116"
 ---
 # <a name="sccbackgroundget-function"></a>Função SccBackgroundGet
 Essa função recupera do controle do código-fonte cada um dos arquivos especificados sem interação do usuário.
@@ -72,6 +72,6 @@ no Um valor exclusivo associado a esta operação.
 
  O uso do `dwFlags` argumento é o mesmo que o [SccGet](../extensibility/sccget-function.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Funções da API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGet](../extensibility/sccget-function.md)

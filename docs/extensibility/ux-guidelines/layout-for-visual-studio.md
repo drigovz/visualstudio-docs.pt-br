@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e6c90831c39f0e378dd9060397c68592ec73384
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 16a4178231c575f590a13b8205cd872668f46143
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863666"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951934"
 ---
 # <a name="layout-for-visual-studio"></a>Layout para Visual Studio
 A maioria das caixas de diálogo do Visual Studio são o [layout da caixa de diálogo do utilitário](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), que são as caixas de diálogo destinadas que seguem princípios padrão de layout de caixa de diálogo do [Windows Desktop](/windows/desktop/uxguide/win-dialog-box). À medida que o Visual Studio muda para atualizar sua interface do usuário, algumas das caixas de diálogo mais proeminentes têm um novo design que as estabelece como experiências de definição de produto. Esse [layout de caixa de diálogo com tema](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) tem uma aparência com tema.
@@ -156,7 +156,7 @@ A maioria das caixas de diálogo do Visual Studio são o [layout da caixa de di�
 
  **Figura 8, 1-k: caixa de diálogo com tema – cores**
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Padrões de aplicativo para Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)
 - [Controles (Windows)](/windows/desktop/uxguide/controls)
 - [Caixas de diálogo (Windows)](/windows/desktop/uxguide/win-dialog-box)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c7982d8c8c0d71f8c79e9b808be5453d384882d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79a1203d97bfbf105a69b97516bda307825bd99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701193"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952129"
 ---
 # <a name="sccbeginbatch-function"></a>Função SccBeginBatch
 Essa função inicia uma sequência em lote de operações de controle do código-fonte. O [SccEndBatch](../extensibility/sccendbatch-function.md) será chamado para encerrar o lote. Esses lotes não podem ser aninhados.
@@ -44,6 +44,6 @@ SCCRTN SccBeginBatch(void);
 
  Enquanto uma operação em lote está em vigor, o plug-in de controle do código-fonte deve apresentar no máximo uma caixa de diálogo para qualquer pergunta ao usuário e aplicar a resposta dessa caixa de diálogo em todas as operações subsequentes.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Funções da API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
 - [SccEndBatch](../extensibility/sccendbatch-function.md)

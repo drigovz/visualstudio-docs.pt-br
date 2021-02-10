@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, geometry shape
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e66f68079ae97f0a2514a77acab4d779561ed86
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 4bcb7bb1bb3950fbc79d9151b8b98ba3b2032494
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360657"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951765"
 ---
 # <a name="properties-of-geometry-shapes"></a>Propriedades de formas geométricas
 Você pode usar formas de geometria para especificar como as instâncias de classes de domínio são exibidas em uma linguagem específica de domínio. Para obter mais informações, consulte [como definir um idioma de Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [Personalizando e estendendo uma linguagem de Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -27,7 +27,7 @@ Você pode usar formas de geometria para especificar como as instâncias de clas
 
 |Propriedade|Descrição|Padrão|
 |-|-|-|
-|Cor de Preenchimento|A cor de preenchimento desta forma.|Branco|
+|Cor de Preenchimento|A cor de preenchimento desta forma.|Branca|
 |Preencher modo de gradiente|O modo de gradiente de preenchimento desta forma (horizontal, vertical, diagonal para frente, diagonal para trás ou nenhum).|Horizontal|
 |Geometria|A geometria desta forma (retângulo, retângulo arredondado, elipse ou círculo).|Retângulo|
 |Tem pontos de conexão padrão|Se `True` , a forma usará os pontos de conexão superior, inferior, esquerdo e direito no designer gerado.|Falso|
@@ -41,18 +41,18 @@ Você pode usar formas de geometria para especificar como as instâncias de clas
 |Tem Construtor personalizado|Se `True` , um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Modificador de herança|Descreve o tipo de herança da classe de código-fonte que é gerada a partir da forma ( `none` `abstract` ou `sealed` ).|nenhum|
 |Forma geométrica base|A classe base dessa forma.|(nenhum)|
-|Name|O nome desta forma.|Nome atual|
+|Nome|O nome desta forma.|Nome atual|
 |Namespace|O namespace que é afiliado a esta forma.|Namespace atual|
 |Tipo de dica de ferramenta|Como a dica de ferramenta é definida (fixa, variável ou nenhuma). Se for corrigido, o valor da `Fixed Tooltip Text` propriedade será usado como dica de ferramenta; se for variável, a dica de ferramenta será definida no código personalizado.|Nenhum|
 |Observações|Observações informais que estão associadas a este elemento.|\<none>|
 |Altura inicial|Altura inicial desta forma, em polegadas.|1|
 |Largura inicial|Largura inicial desta forma, em polegadas.|1.5|
 |Cor de preenchimento exposta como Propriedade<br /><br /> Modo de gradiente de preenchimento exposto<br /><br /> Cor da estrutura de tópicos exposta como Propriedade<br /><br /> Contorno exposto traço estilo como Propriedade<br /><br /> Espessura da estrutura de tópicos exposta como Propriedade<br /><br /> Expõe a cor do texto|Se `True` , o usuário pode definir a propriedade declarada de uma forma. Para definir isso, clique com o botão direito do mouse na definição de forma e clique em **Adicionar exposto**.|Falso|
-|Descrição|A descrição usada para documentar o designer gerado.|\<none>|
+|Description|A descrição usada para documentar o designer gerado.|\<none>|
 |Nome de exibição|O nome que será exibido no designer gerado para essa forma.|\<none>|
 |Texto de dica de ferramenta fixo|O texto que é usado para uma dica de ferramenta fixa.|\<none>|
 |Palavra-chave de ajuda|A palavra-chave usada para indexar a ajuda F1 para essa forma.|\<none>|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0ea04cfa-de87-4b6c-897e-4572c1a28942
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1f00b209ff5f91d160e89f5f55ad966fbe9e6414
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff14c10f5563053ce704982455eee6d9dc81b742
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726011"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953247"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
 Esse método avalia a expressão analisada e, opcionalmente, converte o resultado em outro tipo de dados.
@@ -28,7 +28,7 @@ Esse método avalia a expressão analisada e, opcionalmente, converte o resultad
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT EvaluateSync( 
+HRESULT EvaluateSync( 
    DWORD                 dwEvalFlags,
    DWORD                 dwTimeout,
    IDebugSymbolProvider* pSymbolProvider,
@@ -73,7 +73,7 @@ no O tipo do qual o resultado deve ser convertido. Esse argumento pode ser um va
 `ppResult`\
 fora Retorna a interface [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) que representa os resultados da avaliação.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

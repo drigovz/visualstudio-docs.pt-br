@@ -9,40 +9,40 @@ helpviewer_keywords:
 ms.assetid: 0bcfe85c-5f37-4a9d-bf2b-141acd96ad67
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cbd015408cbefd1861f6e795447a5302efabb0dc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2611828f1e9bb2aec740e392db18ce60839d19a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738143"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952389"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 Especifica onde um assembly está localizado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```cpp
-enum enum_ASSEMBLYLOCRESOLUTION {
-    ALR_NAME      = 0x0,
-    ALR_USERDIR   = 0x1,
-    ALR_SHAREDDIR = 0x2,
-    ALR_REMOTEDIR = 0x4,
+enum enum_ASSEMBLYLOCRESOLUTION {
+    ALR_NAME      = 0x0,
+    ALR_USERDIR   = 0x1,
+    ALR_SHAREDDIR = 0x2,
+    ALR_REMOTEDIR = 0x4,
 };
-typedef DWORD ASSEMBLYLOCRESOLUTION;
+typedef DWORD ASSEMBLYLOCRESOLUTION;
 ```
 
 ```csharp
-public enum enum_ASSEMBLYLOCRESOLUTION {
-    ALR_NAME      = 0x0,
-    ALR_USERDIR   = 0x1,
-    ALR_SHAREDDIR = 0x2,
-    ALR_REMOTEDIR = 0x4,
+public enum enum_ASSEMBLYLOCRESOLUTION {
+    ALR_NAME      = 0x0,
+    ALR_USERDIR   = 0x1,
+    ALR_SHAREDDIR = 0x2,
+    ALR_REMOTEDIR = 0x4,
 };
 ```
 
@@ -71,7 +71,7 @@ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)
 - [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)

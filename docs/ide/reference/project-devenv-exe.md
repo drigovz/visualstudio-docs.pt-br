@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8b07859c-3439-436d-9b9a-a8ee744eee30
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 90c1cdf37ddda7209b4f951e42ad07720e5cc40b
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 8f61125c743cb33ccaccbb15c1345aa01fbc57bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040102"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952896"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 
@@ -39,11 +39,11 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 - *SolutionName*
 
-  Obrigatórios. O caminho completo e o nome do arquivo de solução.
+  Obrigatório. O caminho completo e o nome do arquivo de solução.
 
 - {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
 
-  Obrigatórios. [Compila](build-devenv-exe.md), [limpa](clean-devenv-exe.md), [implanta](deploy-devenv-exe.md) ou [recompila](rebuild-devenv-exe.md) o projeto.
+  Obrigatório. [Compila](build-devenv-exe.md), [limpa](clean-devenv-exe.md), [implanta](deploy-devenv-exe.md) ou [recompila](rebuild-devenv-exe.md) o projeto.
 
 - *SolnConfigName*
 
@@ -77,7 +77,7 @@ Este exemplo apresenta a compilação do projeto `CSharpWinApp`, usando a config
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/ProjectConfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md)

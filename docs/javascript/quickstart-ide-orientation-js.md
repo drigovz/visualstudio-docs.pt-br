@@ -7,15 +7,15 @@ ms.date: 02/05/2019
 ms.topic: quickstart
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f80dd85e1cc8f93784ed938ef1788730b3c926e8
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 2dd480bb214acf2529d271d085711f21effea23a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947811"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952922"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Introdução ao IDE do Visual Studio
 
@@ -132,7 +132,7 @@ A caixa pesquisa é uma maneira rápida e fácil de fazer praticamente tudo no V
 
    ![Caixa de pesquisa no Visual Studio](media/quickstart-IDE-quick-launch.png)
 
-   A caixa de diálogo **Opções**é aberta na página de opções **Compilar e Executar**.
+   A caixa de diálogo **Opções** é aberta na página de opções **Compilar e Executar**.
 
 1. Em **Detalhes da saída de build do projeto do MSBuild**, escolha **Normal** e clique em **OK**.
 
@@ -158,7 +158,7 @@ Examinamos apenas alguns dos recursos do Visual Studio para nos familiarizarmos 
 > [!div class="nextstepaction"]
 > [Saiba mais sobre projetos e soluções](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
 - [Mais recursos do Visual Studio 2017](../ide/advanced-feature-overview.md)

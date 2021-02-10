@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 09e32d05-464b-40a6-a41d-76f2759cf2cd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f796aef9533e3861a870b0a0543ae6b4aeb11de1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2da595754066adefb397bf90085b7d2e58ab49d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953104"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 Alterna o estado habilitado do ponto de interrupção pendente.
@@ -44,7 +44,7 @@ int Enable(
 `fEnable`\
 no Defina como diferente de zero ( `TRUE` ) para habilitar um ponto de interrupção pendente ou para zero ( `FALSE` ) para desabilitar.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o ponto de interrupção foi excluído.
 
 ## <a name="remarks"></a>Comentários
