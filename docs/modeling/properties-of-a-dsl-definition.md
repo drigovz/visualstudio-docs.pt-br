@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 48771a61577c5c7ca910cc3b4f8496db37ada281
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: ef8f49e46c554efca89862c787fbfbe97c48c8f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360514"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959110"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Propriedades de uma definição de DSL
 As propriedades DslDefinition definem propriedades *de definição de linguagem específicas de domínio* , como numeração de versão. As propriedades DslDefinition aparecem na janela **Propriedades** quando você clica em uma área aberta do diagrama na *Designer de linguagem específica de domínio*.
@@ -29,8 +29,8 @@ As propriedades DslDefinition definem propriedades *de definição de linguagem 
 |-|-|-|
 |Modificador de acesso|Determina se o modificador de acesso para a classe de domínio é público ou interno.|públicos|
 |Atributos personalizados|Atributos definidos personalizados para a classe de domínio.<br /><br /> **Observação** Use o botão procurar para adicionar um atributo.|\<none>|
-|Nome da Empresa|O nome do nome da empresa atual no registro do sistema.|Nome da empresa atual|
-|Name|O nome desta classe de domínio.|Nome atual|
+|Nome da empresa|O nome do nome da empresa atual no registro do sistema.|Nome da empresa atual|
+|Nome|O nome desta classe de domínio.|Nome atual|
 |Namespace|O namespace afiliado a esta classe de domínio.|Namespace atual|
 |GUID do pacote|O GUID do pacote do Visual Studio gerado para esta DSL.|\<none>|
 |Namespace do pacote|O namespace do pacote do Visual Studio gerado para esta DSL.|\<none>|
@@ -39,7 +39,7 @@ As propriedades DslDefinition definem propriedades *de definição de linguagem 
 |Descrição|Descrição para esta classe de domínio.|\<none>|
 |Nome de exibição|O nome que será exibido no designer gerado para essa classe de domínio.|\<none>|
 |Palavra-chave de ajuda|A palavra-chave Help associada a essa classe de domínio.|\<none>|
-|Compilação|O número de Build incremental para esta definição de linguagem específica de domínio.|0|
+|Build|O número de Build incremental para esta definição de linguagem específica de domínio.|0|
 |Versão Principal|O número de Build principal incremental para essa definição de linguagem específica de domínio.|1|
 |Versão Secundária|O número de Build secundário incremental para essa definição de linguagem específica de domínio.|0|
 |Revisão|O número da versão da revisão incremental para essa definição de linguagem específica de domínio.|0|

@@ -15,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: 56a99c39-e7f6-4f48-ae56-04ab8e022bf7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cccad7f47a26396612264280926b7b26e431879
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 13323a768b9f42e70df9e8be6e64c9dd98438865
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801163"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958954"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Como anexar e desanexar ferramentas de desempenho de processos em execução
 O criador de perfil pode ser usado para anexar ou desanexar de um processo em execução para facilitar a amostragem e a coleta de dados de desempenho. É possível usar esse método para criar o perfil de um processo quando você deseja evitar a coleta de dados sobre o tempo de carregamento do aplicativo ou para monitorar o desempenho de um processo após ele atingir um estado específico.
@@ -62,7 +62,7 @@ O criador de perfil pode ser usado para anexar ou desanexar de um processo em ex
 
 3. Clique em **Desanexar**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Controlar a coleta de dados](../profiling/controlling-data-collection.md)
 - [Visão geral da sessão de desempenho](../profiling/performance-session-overview.md)
 - [Como iniciar e terminar a coleta de dados de desempenho](../profiling/how-to-start-and-end-performance-data-collection.md)

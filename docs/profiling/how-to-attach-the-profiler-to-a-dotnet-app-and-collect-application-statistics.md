@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: b62fcbc1-791f-474e-890a-a6c332e0c9ea
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 899a74894e34b43f87a7f45b4c4c90fff60088a1
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 52a1e52590073c48f0386c5d174eec8193f1518d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801142"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958915"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Como anexar o criador de perfil a um aplicativo autônomo do .NET Framework e coletar estatísticas de aplicativo usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um aplicativo (cliente) .NET Framework independente em execução e coletar estatísticas de desempenho usando o método de amostragem.
@@ -74,7 +74,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
    - Por padrão, os dados de desempenho têm amostra obtida a cada 10.000.000 ciclos de relógio de processador não interrompidos. Significa aproximadamente uma vez a cada 10 segundos em um processador de 1GH. Você pode especificar uma das opções a seguir para alterar o intervalo do ciclo do relógio ou para especificar um evento de amostragem diferente. [/TargetCLR](../profiling/targetclr.md)**:** `Version` especifica a versão do CLR para o perfil quando mais de uma versão do tempo de execução é carregada em um aplicativo. Opcional.
 
-   |Evento de exemplo|Descrição|
+   |Evento de exemplo|Description|
    |-|-|
    |[/timer](../profiling/timer.md) **:**`Interval`|Altera o intervalo de amostragem para o número de ciclos de relógio não interrompidos especificados pelo `Interval`.|
    |[/PF](../profiling/pf.md) [**:** `Interval` ]|Altera o evento de amostragem para falhas de página. Se `Interval` for especificado, define o número de falhas de página entre as amostras. O padrão é 10.|
@@ -115,6 +115,6 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
      **VSPerfClrEnv /off**
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Exibições de dados do método de amostragem](../profiling/profiler-sampling-method-data-views.md)

@@ -8,16 +8,16 @@ ms.topic: how-to
 ms.assetid: ffbdfe37-8325-44be-bd36-2c8aab2dec7b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: c3b7a8e255094cb03cac8708dbaa4cb4a938db24
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 4c12db2be72e1435c840bf9d85e681536a5e2202
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98800383"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958837"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>Como anexar o criador de perfil a um serviço do .NET para coletar dados de simultaneidade usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um serviço .NET Framework e coletar dados de simultaneidade de thread e do processo usando o método de amostragem.

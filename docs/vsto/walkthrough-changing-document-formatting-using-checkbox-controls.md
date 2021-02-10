@@ -15,15 +15,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 931e9554a10e0e1525d9ee4a10505633b211610b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4d83fb8fad6de0c932d371f7f874cea0ff9a8f80
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527247"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958655"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Walkthrough: alterar a formatação do documento usando controles CheckBox
   Este tutorial demonstra como usar Windows Forms controles em uma personalização em nível de documento para Microsoft Office Word para alterar a formatação de texto.
@@ -158,7 +158,7 @@ ms.locfileid: "97527247"
 
 - Usando botões de opção para selecionar estilos de gráfico. Para obter mais informações, consulte [Walkthrough: atualizar um gráfico em um documento usando botões de opção](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Passo a passos usando o Word](../vsto/walkthroughs-using-word.md)
 - [Exemplos e orientações de desenvolvimento do Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Controle NamedRange](../vsto/namedrange-control.md)

@@ -6,16 +6,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1a80e4201f04565aaa163d58bca8e13ae715b09f
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: e882806096696ac0d3b57c6d9916570d0e03da7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801106"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958863"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Como anexar o criador de perfil a um aplicativo .NET Framework independente para coletar dados da memória usando a linha de comando
 
@@ -110,7 +110,7 @@ Para concluir uma sessão de criação de perfil, o criador de perfil deve ser d
 
      **VSPerfCmd /off**
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 [Perfis de aplicativos](../profiling/command-line-profiling-of-stand-alone-applications.md) 
  autônomos [Exibições de dados de memória do .net](../profiling/dotnet-memory-data-views.md)

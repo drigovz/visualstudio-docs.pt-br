@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9670ac3a-8f2f-4874-974d-cb87d3b0cde1
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6185418364e8b22e1f473308b2db9899c8778d13
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 5557fb9ca4c362f764cac04441add4fea0433856
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304165"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958187"
 ---
 # <a name="quick-watch-command"></a>Comando Inspeção Rápida
 Exibe o texto selecionado ou especificado no campo Expressão da janela [QuickWatch](../../debugger/watch-and-quickwatch-windows.md). Você pode usar essa caixa de diálogo para calcular o valor atual de uma variável ou expressão reconhecida pelo depurador ou o conteúdo de um registro. Além disso, você pode alterar o valor de qualquer variável não const ou o conteúdo de qualquer registro.

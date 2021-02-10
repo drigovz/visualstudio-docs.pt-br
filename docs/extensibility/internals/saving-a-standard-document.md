@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81c79ece83bc8aaaf7ca4dd28642de5973ad94c1
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 18e7fcb73a5ce89fae0936189eada9e3b959a55f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875660"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958447"
 ---
 # <a name="saving-a-standard-document"></a>Salvando um documento padrão
 O ambiente manipula os comandos salvar, salvar como e salvar todos. Quando um usuário seleciona **salvar**, **salvar como** ou **salvar tudo** no menu **arquivo** ou fecha a solução, resultando em um **salvamento de tudo**, o processo a seguir ocorre.
@@ -58,6 +58,6 @@ O ambiente manipula os comandos salvar, salvar como e salvar todos. Quando um us
 
 2. Chame o <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> `pszMkDocumentNew` método (, `punkWindowFrame` ) para transferir o documento para a nova hierarquia. A hierarquia que executa o comando Salvar como chama esse método.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Abrindo e salvando itens de projeto](../../extensibility/internals/opening-and-saving-project-items.md)

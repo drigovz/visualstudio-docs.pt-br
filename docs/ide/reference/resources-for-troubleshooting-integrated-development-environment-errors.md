@@ -92,15 +92,15 @@ f1_keywords:
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 081b36767388da4f78e1fd8f1e0f279d7ca201c9
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 3e2b678423cb8e212d435682a6a56947cd3f3276
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696553"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957927"
 ---
 # <a name="resources-for-troubleshooting-ide-errors"></a>Recursos para solucionar erros do IDE
 
@@ -128,7 +128,7 @@ Aqui está uma lista de recursos de Fórum:
 
 Se ainda tiver dúvidas após tentar os outros recursos, você pode contatar os serviços de suporte da Microsoft visitando o site de [Suporte da Microsoft](https://support.microsoft.com/en-us). Para obter informações sobre o suporte do produto disponível em sua área, consulte a página [Opções de comentários do Visual Studio](../../ide/feedback-options.md) .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Solução de problemas relacionados à rede ou erros de proxy](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
 * [Solução de problemas (Visual Studio para Windows)](/troubleshoot/visualstudio/welcome-visual-studio/)

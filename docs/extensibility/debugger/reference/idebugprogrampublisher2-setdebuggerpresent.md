@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c88c3ff4-3632-4199-b5de-83c6d21bcf75
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b551c644346b66d907fa4f75b11b24c8b9538e27
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef671690cdf9f0c6b84d3585aef3b23a6bbd8ba9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721607"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959500"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
 Informa ao editor do programa que um depurador está presente e em execução.
@@ -28,14 +28,14 @@ Informa ao editor do programa que um depurador está presente e em execução.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT SetDebuggerPresent(
-   BOOL fDebuggerPresent
+HRESULT SetDebuggerPresent(
+   BOOL fDebuggerPresent
 );
 ```
 
 ```csharp
-int SetDebuggerPresent(
-   int fDebuggerPresent
+int SetDebuggerPresent(
+   int fDebuggerPresent
 );
 ```
 
@@ -43,12 +43,12 @@ int SetDebuggerPresent(
 `fDebuggerPresent`\
 no Diferente de zero ( `TRUE` ) se um depurador estiver presente, zero ( `FALSE` ) se não for.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
  A presença ou a ausência de um depurador é refletida nos dados retornados do método [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) : o valor retornado é definido ou limpo por uma chamada anterior ao `SetDebuggerPresent` método.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: aeac39af-ad99-479f-aa36-4104356ca512
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: e31404c07fb7093bb2bd1114340cdb87d3c8558a
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 22db478d5d88f8e3311b7b3ddb883768d5ad9af6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98800582"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958785"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-service-to-collect-memory-data-by-using-the-command-line"></a>Como: anexar o criador de perfil a um serviço de .NET Framework para coletar dados de memória usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um serviço .NET Framework e coletar dados de memória. É possível coletar dados sobre o número e tamanho das alocações de memória, bem como sobre o tempo de vida de objetos de memória.
@@ -126,6 +126,6 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
 4. Reinicie o computador.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)
 - [Exibições de dados de memória do .NET](../profiling/dotnet-memory-data-views.md)

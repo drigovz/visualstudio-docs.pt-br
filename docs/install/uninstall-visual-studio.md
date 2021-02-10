@@ -11,17 +11,17 @@ f1_keywords:
 ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e924ead1b8796089242ef20c7f5a3070833b68ba
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: 7d7c4400d553d8244d3b9239f0b0a984d382c99a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007150"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959162"
 ---
 # <a name="uninstall-visual-studio"></a>Desinstalar o Visual Studio
 
@@ -111,7 +111,7 @@ Se você tiver um erro catastrófico e não puder desinstalar o Visual Studio us
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Modificar o Visual Studio](modify-visual-studio.md)
 * [Atualizar o Visual Studio](update-visual-studio.md)

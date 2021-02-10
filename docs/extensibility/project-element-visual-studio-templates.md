@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 652d438d6a0fdf0c42648ded7d3dc9c18b0212ff
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: b8373501f324882c541784c6786b6b9f04a76069
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672379"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959448"
 ---
 # <a name="project-element-visual-studio-templates"></a>Elemento Project (modelos do Visual Studio)
 Especifica os arquivos ou diretórios a serem adicionados ao projeto.
@@ -102,7 +102,7 @@ Especifica os arquivos ou diretórios a serem adicionados ao projeto.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)
 - [Elemento ProjectItem (modelos de projeto do Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: deb27180-2035-49ed-b835-c47bb3cd2f8f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d9da3dbe92bdde8b0c19495e73cdbf2660ef3b4
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 29a73f1e0c7a39bb5ffaa1877cbaff7aa54c3930
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671227"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959396"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>Elemento ProjectCollection (modelos do Visual Studio)
 Especifica a organização e o conteúdo de modelos de vários projetos.
@@ -42,7 +42,7 @@ Especifica a organização e o conteúdo de modelos de vários projetos.
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
 
@@ -85,7 +85,7 @@ Especifica a organização e o conteúdo de modelos de vários projetos.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
 - [Como: criar modelos de vários projetos](../ide/how-to-create-multi-project-templates.md)

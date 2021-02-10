@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5247f2de7ffc63db7235f915c72b3274b8fee5f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1256c9110fe538b4a5d52b165c71216b6537f2c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958408"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>Função SccGetExtendedCapabilities
 Essa função retorna recursos adicionais com suporte pelo plug-in de controle do código-fonte.
@@ -56,7 +56,7 @@ fora Retorna um valor diferente de zero ( `TRUE` ) se houver suporte para o recu
 ## <a name="remarks"></a>Comentários
  Esse método é chamado sob demanda; ou seja, quando um recurso precisa ser testado, esse método é chamado para determinar se há suporte para esse recurso. Apenas um sinalizador por vez é especificado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Funções da API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
 - [Códigos de erro](../extensibility/error-codes.md)
 - [Sinalizadores de capacidade](../extensibility/capability-flags.md)

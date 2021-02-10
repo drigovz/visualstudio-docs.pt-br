@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cc06bd51d66b49991e12db8bb03a63a5a742fe1
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 30e3847c87559fd7a916af8ad3be48343d649671
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616662"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958135"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referências, Designer de Projeto (Visual Basic)
 
@@ -58,7 +58,7 @@ Escolha **Referência** para adicionar uma referência ao seu projeto usando a c
 
 Escolha **Referência Web** para adicionar uma referência Web ao seu projeto usando a caixa de diálogo **Adicionar Referência Web**.
 
- **Removerr**
+ **Remover**
 
 Selecione uma ou mais referências na lista **Referências** e clique nesse botão para excluí-las.
 
@@ -70,7 +70,7 @@ Selecione uma referência Web na lista **Referências** e clique nesse botão pa
 
 Você pode digitar seu próprio namespace nesta caixa e clicar em **Adicionar Importação de Usuário** para adicioná-lo à lista de namespaces.
 
-Você pode criar aliases para namespaces importados pelo usuário. Para fazer isso, insira o alias e o namespace no namespace de *alias* de formato = *namespace*. Isso é útil se você estiver usando namespaces longos, por exemplo: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+Você pode criar aliases para namespaces importados pelo usuário. Para fazer isso, insira o alias e o namespace no namespace de *alias* de formato = . Isso é útil se você estiver usando namespaces longos, por exemplo: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Adicionar Importação de Usuário**
 

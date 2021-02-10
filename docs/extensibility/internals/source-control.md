@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 13d5728c-4e28-42e4-944a-a565b1765ef8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33437994770ee78327d130f288d9d2e9689774fe
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 33c13b1bc0c7b3b700d65b67e0aa6b856372dffa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876097"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958460"
 ---
 # <a name="source-control"></a>Controle do código-Fonte
 Esta seção aborda as opções para implementar o controle do código-fonte como um recurso integrado do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , seja por meio de um plug-in de controle do código-fonte ou de um VSPackage de controle do código-fonte.

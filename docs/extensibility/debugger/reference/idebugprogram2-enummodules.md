@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 876ac9da-3b7c-4156-b79a-8f340e9fcea6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 967b9b4a06f382e5da2ee2422dd48209184e474b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da3f3dcd150d35199458e9952074f76931969175
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723021"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958577"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
 Recupera uma lista dos módulos que este programa carregou e está executando.
@@ -28,13 +28,13 @@ Recupera uma lista dos módulos que este programa carregou e está executando.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT EnumModules( 
+HRESULT EnumModules( 
    IEnumDebugModules2** ppEnum
 );
 ```
 
 ```csharp
-int EnumModules( 
+int EnumModules( 
    out IEnumDebugModules2 ppEnum
 );
 ```
@@ -43,7 +43,7 @@ int EnumModules( 
 `ppEnum`\
 fora Retorna um objeto [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) que contém uma lista dos módulos.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

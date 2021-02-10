@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da2bfe820f70925a979548abeab955865f2bbc2c
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 32980161281cf36c54ad15d536870a96694a461a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304159"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958005"
 ---
 # <a name="replace-in-files-command"></a>Comando Substituir nos Arquivos
 Substitui texto em arquivos usando um subconjunto das opções disponíveis na guia **Substituir nos Arquivos** da janela **Localizar e Substituir**.
@@ -37,11 +37,11 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 ## <a name="arguments"></a>Argumentos
 `findwhat`
 
-Obrigatórios. O texto a ser correspondido.
+Obrigatório. O texto a ser correspondido.
 
 `replacewith`
 
-Obrigatórios. O texto a ser substituído pelo texto correspondido.
+Obrigatório. O texto a ser substituído pelo texto correspondido.
 
 ## <a name="switches"></a>Comutadores
 /all ou /a

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - ranges, resetting in documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b87d157344f1302d4b1ee910ee2dda449bbea5a1
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 562b4dab6c26af12760190b01ff460c7080a3bb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527758"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958772"
 ---
 # <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>Como: redefinição de intervalos programaticamente em documentos do Word
   Use o <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> método para redimensionar um intervalo existente em um Microsoft Office documento do Word.
@@ -65,7 +65,7 @@ ms.locfileid: "97527758"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#42)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#42](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#42)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Como: estender intervalos programaticamente em documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
 - [Como: definir e selecionar intervalos de forma programática em documentos](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [Como recuperar programaticamente caracteres de início e término em intervalos](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)

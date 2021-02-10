@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0abe51b9f01d0c1f380c4762a7d0d4f457964aa7
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.openlocfilehash: 1e5af6f11a6b5036b50f44abaf50c5adfe18487b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91135125"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959175"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Solucionar erros relacionados à rede ao instalar ou usar o Visual Studio
 
@@ -164,7 +164,7 @@ Você pode usar o `net use` comando ou pode alterar a configuração de polític
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [Instalar e usar o Visual Studio por trás de um firewall ou servidor proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b41d20a7-ba40-4c42-a450-16f413d6a04f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dd88eebedc8c6dc5b059cbcd94844ce4191fccc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a298ac5e99176294be8afe9dbba1f00bdea0a82
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721767"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959682"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
 Estabelece uma localidade a ser usada para qualquer recurso específico de localidade.
@@ -28,14 +28,14 @@ Estabelece uma localidade a ser usada para qualquer recurso específico de local
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT SetLocale(
-   WORD wLangID
+HRESULT SetLocale(
+   WORD wLangID
 );
 ```
 
 ```csharp
-int SetLocale(
-   ushort wLangID
+int SetLocale(
+   ushort wLangID
 );
 ```
 
@@ -43,7 +43,7 @@ int SetLocale(
 `wLangID`\
 no ID de idioma a ser estabelecida. Por exemplo, 1033 para inglês.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também

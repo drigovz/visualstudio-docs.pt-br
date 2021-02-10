@@ -7,16 +7,16 @@ ms.topic: reference
 ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 85ed799cac54d630dfff1b285d3f2257e5eb99b5
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: c465e85337be017679d1a4994d84f911564cb66e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720690"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958980"
 ---
 # <a name="counter"></a>Contador
 A opção **Counter** coleta dados de contadores de desempenho do processador (hardware).
@@ -67,7 +67,7 @@ VSPerfCmd.exe /Launch:TestApp.exe /Counter:NonHaltedCycles,1000,"Non-Halted Cycl
 VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /Counter:L2InstructionFetches,,"L2 Cache Instruction Fetches"
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

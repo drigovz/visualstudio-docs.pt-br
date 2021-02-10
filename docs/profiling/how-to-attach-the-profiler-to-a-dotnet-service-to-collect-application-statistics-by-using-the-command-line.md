@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: a0046c47-26c8-4bec-96a0-81da05e5104a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: c91fef6cc98ae270420354a1287c05e78b38ac3e
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 3808f004d9813e846a10c2b672b6406f9cc54cde
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801125"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958876"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Como anexar o criador de perfil a um serviço do .NET para coletar estatísticas do aplicativo usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um serviço do .NET Framework e coletar estatísticas de desempenho usando o método de amostragem.
@@ -83,7 +83,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
      Por padrão, os dados de desempenho têm amostra obtida a cada 10.000.000 ciclos de relógio de processador não interrompidos. Significa aproximadamente 100 amostras por segundo em um processador 1GH. Você pode especificar uma das opções a seguir para alterar o intervalo de ciclo de relógio ou especificar um evento de amostragem diferente.
 
-   |Evento de Amostra|Descrição|
+   |Evento de Amostra|Description|
    |------------------|-----------------|
    |[/timer](../profiling/timer.md) **:**`Interval`|Altera o intervalo de amostragem para o número de ciclos de relógio não interrompidos especificados por `Interval`.|
    |[/PF](../profiling/pf.md)[**:** `Interval` ]|Altera o evento de amostragem para falhas de página. Se `Interval` for especificado, define o número de falhas de página entre as amostras. O padrão é 10.|
@@ -130,6 +130,6 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
 4. Reinicie o computador.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)
 - [Exibições de dados do método de amostragem](../profiling/profiler-sampling-method-data-views.md)

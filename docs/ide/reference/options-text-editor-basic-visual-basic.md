@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
 author: akhera99
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 530fffdf335232a76a54e66551487a89dc50b09a
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 517745fd302bcc19e46a8a0e7b8e4ed629950062
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040986"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959370"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Opções, Editor de Texto, Basic (Visual Basic), Avançado
 A página de propriedades **Específico do VB**, na pasta **Básico** da pasta **Editor de Texto** da caixa de diálogo **Opções** (menu **Ferramentas**) inclui as seguintes propriedades:
@@ -116,7 +116,7 @@ Quando você confirma uma instrução `Implements` ou uma instrução `Inherits`
 
 O editor de texto pode sugerir soluções para erros comuns e permitir selecionar a correção apropriada, que então é aplicada ao seu código.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)
 - [Opções, Editor de Texto, Todas as Linguagens, Guias](../../ide/reference/options-text-editor-all-languages-tabs.md)

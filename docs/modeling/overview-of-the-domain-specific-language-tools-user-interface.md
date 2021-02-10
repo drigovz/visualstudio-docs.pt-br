@@ -1,5 +1,5 @@
 ---
-title: Visão geral da interface do usuário do Ferramentas de Linguagem Específica de Domínio
+title: Visão geral da interface do usuário das ferramentas de linguagem Domain-Specific
 description: Fornece uma visão geral da interface do usuário de uma solução de ferramentas de linguagem específica de domínio no Visual Studio.
 ms.date: 11/04/2016
 ms.topic: overview
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 62dee3372f9d0c667c138e72c2ad58c886388f7a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fa47b10edc3804468f6ca0766872849ae9e8a949
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808097"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959123"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Visão geral da interface de usuário das Ferramentas de Linguagem Específica do Domínio
-Quando você abre uma solução de Ferramentas de Linguagem Específica de Domínio (ferramentas DSL) pela primeira vez no Visual Studio, a interface do usuário será semelhante à imagem a seguir.
+Ao abrir pela primeira vez uma solução de ferramentas de linguagem de Domain-Specific (ferramentas DSL) no Visual Studio, a interface do usuário será semelhante à imagem a seguir.
 
  ![Designer de DSL](../modeling/media/dsl_designer.png)
 

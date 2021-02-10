@@ -8,18 +8,18 @@ ms.prod: visual-studio-windows
 ms.topic: quickstart
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 7e7c6eec178d0ba3b2934e390cc02310044c4dfa
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: f9f442757b60b7dc9dc0e2dd0b8eba0c4928976b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833345"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959513"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Início rápido: Usar o Visual Studio para criar seu primeiro aplicativo Web ASP.NET Core
 
@@ -213,6 +213,6 @@ Para saber mais, continue com o tutorial a seguir:
 > [!div class="nextstepaction"]
 > [Introdução a C# e ASP.NET no Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Publicar seu aplicativo Web no Serviço de Aplicativo do Azure usando o Visual Studio](../deployment/quickstart-deploy-to-azure.md)

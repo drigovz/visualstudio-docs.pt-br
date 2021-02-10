@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 49963df35aa5bebd126aa241fca6cb1712a0b111
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 8f6fb030f1f8377ac6e2f7a458f68d6ababf9a6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808988"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957940"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Recursos para criar aplicativos acessíveis
 
@@ -54,7 +54,7 @@ Saiba mais sobre as tecnologias compatíveis com o design acessível. Também in
 
 ### <a name="third-party-resources"></a>Recursos de terceiros
 
-- **Iniciativa de Acessibilidade na Web do W3C (World Wide Web Consortium)** Esse site apresenta diretrizes e técnicas para o desenvolvimento de site acessível. Para obter mais informações, consulte [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
+- **Iniciativa de Acessibilidade na Web do W3C (World Wide Web Consortium)** Esse site apresenta diretrizes e técnicas para o desenvolvimento de site acessível. Para obter mais informações, confira [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Confira também
 
