@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], saving documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2221ec6576e7ac0de399613a1cda3cdcb8dcea6c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 34992bb4f76f68229bebbdb98265838f049dc288
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525468"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949773"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Como: salvar documentos programaticamente
 
@@ -90,7 +90,7 @@ Este exemplo de código requer o seguinte:
 
 - Para salvar um documento com um novo nome, um diretório chamado *teste* deve existir na unidade C.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como: fechar documentos programaticamente](../vsto/how-to-programmatically-close-documents.md)
 - [Como: abrir documentos existentes programaticamente](../vsto/how-to-programmatically-open-existing-documents.md)

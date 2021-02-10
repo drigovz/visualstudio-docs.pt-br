@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 725dd8368bd4db9509426fa1a98ce56ef85bc3c0
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 90acdde2c365effd189efe4437b5e41c39f494b0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974400"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949630"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Escolha entre VSPackages compartilhadas e com controle de versão
 Versões diferentes do Visual Studio podem coexistir no mesmo computador. O VSPackages pode dar suporte a qualquer combinação de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] versões.
@@ -63,6 +63,6 @@ Versões diferentes do Visual Studio podem coexistir no mesmo computador. O VSPa
 
   Além de planejar a compatibilidade binária para seus binários do VSPackage, você também deve considerar os formatos de arquivo da solução e do projeto. Se o seu VSPackage cria um novo tipo de projeto, você deve decidir se ele pode ser executado em apenas uma versão ou em várias versões do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Para obter mais informações, consulte [upgrading Custom Projects](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Instalando o VSPackages com o Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md)
 - [Gerenciamento de componentes](../extensibility/internals/component-management.md)

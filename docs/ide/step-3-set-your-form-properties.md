@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b858ed302c7fe89049585edb7cc5c4391a4789b
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 10f021e8f8151216cd2728e1e9723b0edb9b3e1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480610"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950725"
 ---
 # <a name="step-3-set-your-form-properties"></a>Etapa 3: Definir as propriedades do formulário
 
@@ -35,7 +35,7 @@ Em seguida, use a janela **Propriedades** para alterar a aparência do seu formu
 1. Depois que o formulário for selecionado, localize a propriedade de **Texto** na janela **Propriedades**. Dependendo de como a lista estiver classificada, talvez seja necessário rolar para baixo. Escolha **Texto**, digite **Visualizador de Imagens** e escolha **Enter**.  Seu formulário agora deve ter o **Visualizador de imagens** de texto em sua barra de título e a janela **Propriedades** deve ser semelhante à captura de tela a seguir.
 
     ![Janela Propriedades](../ide/media/express_edittextproperty.png)<br>
-   **_Propriedades_* _ _window *
+   ***Propriedades** _ _window *
 
    > [!NOTE]
    > As propriedades podem ser classificadas por um modo **Categorizado** ou **Alfabético**. É possível mude entre essas duas modos de exibição usando os botões na janela **Propriedades**. Neste tutorial, é mais fácil localizar propriedades por meio da exibição **Alfabética**.
@@ -58,7 +58,7 @@ Em seguida, use a janela **Propriedades** para alterar a aparência do seu formu
    - Na barra de ferramentas, clique no botão **Iniciar Depuração**, que aparece da seguinte maneira.
 
       ![Botão de barra de ferramentas Iniciar Depuração](../ide/media/express_icondebug.png)<br>
-     **_Iniciar Depuração_* _ botão _toolbar *
+     ***Iniciar Depuração** _ botão _toolbar *
 
      Assim como antes, o IDE cria e executa seu aplicativo e uma janela é exibida.
 
@@ -78,7 +78,7 @@ Em seguida, use a janela **Propriedades** para alterar a aparência do seu formu
 
 * Para retornar à etapa anterior do tutorial, consulte [etapa 2: executar o aplicativo visualizador de imagem](../ide/step-2-run-your-program.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [Tutorial 2: criar um teste de matemática cronometrado](tutorial-2-create-a-timed-math-quiz.md)
 * [Tutorial 3: criar um jogo de correspondência](tutorial-3-create-a-matching-game.md)

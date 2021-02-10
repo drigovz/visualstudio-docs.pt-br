@@ -11,17 +11,17 @@ f1_keywords:
 ms.assetid: f8625d5e-f6ea-4db0-83c0-619b77fab3cf
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1c658d97ed678950869c9a011af04e04eeacf5b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e4a7e0f9335971bb026ccc1c6b977680d9e3121
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86156813"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949552"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Criar uma instalação offline do Visual Studio
 
@@ -81,7 +81,7 @@ Para obter um bootstrapper para o Visual Studio 2017, consulte a página de down
 
 Seu executável de instalação &mdash; ou ser mais específico, o arquivo bootstrapper &mdash; deve corresponder ou ser semelhante a um dos seguintes.
 
-| Edição | Nome de arquivo |
+| Edition | Nome de arquivo |
 |-------------|-----------------------|
 |Comunidade Visual Studio | vs_community.exe |
 |Visual Studio Professional | vs_professional.exe |
@@ -94,7 +94,7 @@ Seu executável de instalação &mdash; ou ser mais específico, o arquivo boots
 
 Comece baixando o bootstrapper do Visual Studio para sua edição do Visual Studio escolhida. O arquivo de instalação, ou bootstrapper, corresponderá ou será semelhante a um dos listados a seguir.
 
-| Edição                    | Arquivo                                                                    |
+| Edition                    | Arquivo                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
 | Comunidade Visual Studio    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
 | Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
@@ -192,7 +192,7 @@ Para obter mais exemplos de como usar [parâmetros de linha de comando](use-comm
 | ----------------------- | --------------- |
 | cs-CZ | Tcheco |
 | de-DE | Alemão |
-| pt-BR | Inglês |
+| en-US | Inglês |
 | es-ES | Espanhol |
 | fr-FR | Francês |
 | it-IT | Italiano |

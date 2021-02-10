@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fc7493d20d09ebd606e3a6ec8e5271981fb6f62
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: c3a2f54f9cdd576a5c4d90c3a471febe516e6549
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950267"
 ---
 # <a name="call-tree-view---sampling-data"></a>Modo de exibição de árvore de chamadas – dados de amostragem
 O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de função que foram percorridos no aplicativo analisado.

@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff3e132087b97339bc710555428ba7488fa2e06
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 58f46f80a90cce116b985def0377ef80f5a671c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480571"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950660"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Etapa 5: Adicionar controles ao formulário
 
@@ -45,7 +45,7 @@ Nessa etapa, você adiciona controles como um controle <xref:System.Windows.Form
 
 1. Escolha o **TableLayoutPanel** no formulário e, em seguida, adicione um controle de caixa de seleção ao formulário. Clique duas vezes no item de **caixa de seleção** na caixa de **ferramentas** para adicionar um novo controle de caixa de seleção à próxima célula gratuita da tabela. Como um PictureBox ocupa as duas primeiras células em TableLayoutPanel, o controle de caixa de seleção é adicionado à célula do canto inferior esquerdo. Escolha a propriedade **texto** e digite a **ampliação** da palavra, conforme mostrado na imagem a seguir.
 
-    ![Controle TextBox com a propriedade Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>**_TextBox_* _ _Control com * ***Stretch**_ _property *
+    ![Controle TextBox com a propriedade Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>***TextBox** _ _Control com * ***Stretch**_ _property *
 
 1. Escolha o **TableLayoutPanel** no formulário e, em seguida, vá para o grupo **contêineres** na **caixa de ferramentas** (onde você obteve o controle TableLayoutPanel) e clique duas vezes no item **FlowLayoutPanel** para adicionar um novo controle à última célula (canto inferior direito). Em seguida, encaixe o FlowLayoutPanel no TableLayoutPanel. Você pode fazer isso escolhendo **encaixar no contêiner pai** na lista de tarefas do triângulo preto do FlowLayoutPanel ou definindo a propriedade **Dock** do FlowLayoutPanel como **Fill**.
 
@@ -76,7 +76,7 @@ Nessa etapa, você adiciona controles como um controle <xref:System.Windows.Form
 
    Os botões agora devem ser dimensionados corretamente e estar na ordem correta. (Desde que todos os quatro botões sejam selecionados, você pode alterar todas as quatro propriedades de **dimensionamento** ao mesmo tempo.) A imagem a seguir mostra os quatro botões.
 
-    ![Visualizador de imagens com quatro botões](../ide/media/express_autosize.png)<br/>**_Visualizador de imagem_* _ _with quatro botões *
+    ![Visualizador de imagens com quatro botões](../ide/media/express_autosize.png)<br/>***Visualizador de imagem** _ _with quatro botões *
 
 1. Agora, execute o programa novamente para ver suas alterações.
 
@@ -88,7 +88,7 @@ Nessa etapa, você adiciona controles como um controle <xref:System.Windows.Form
 
 * Para retornar à etapa anterior do tutorial, consulte [etapa 4: dispor o formulário com um controle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [Tutorial 2: criar um teste de matemática cronometrado](tutorial-2-create-a-timed-math-quiz.md)
 * [Tutorial 3: criar um jogo de correspondência](tutorial-3-create-a-matching-game.md)

@@ -4,7 +4,7 @@ description: Saiba como adicionar ou editar as marcas nos modelos de projeto no 
 ms.date: 04/30/2019
 author: minsa110
 ms.author: somin
-manager: jillfra
+manager: jmartens
 ms.topic: reference
 helpviewer_keywords:
 - item templates, updating
@@ -13,12 +13,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 37a1965712920420bdc4d784a003dbfbd2f2167a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5f8c3f6e96e8e593fe74fd58b3e8bafab0ad88e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285212"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950608"
 ---
 # <a name="add-tags-to-project-templates"></a>Adicionar marcas aos modelos de projeto
 
@@ -44,7 +44,7 @@ Talvez você queira adicionar ou editar as marcas no XML *.vstemplate* do modelo
 * [Atualizar seu modelo de projeto existente](how-to-update-existing-templates.md).
 * [Criar um novo modelo de projeto do VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <LanguageTag> Language Name </LanguageTag>
@@ -145,7 +145,7 @@ O exemplo a seguir mostra os metadados para um modelo de projeto de um aplicativ
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criar modelos de projeto e de item](creating-project-and-item-templates.md)

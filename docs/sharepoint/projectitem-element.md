@@ -11,20 +11,20 @@ helpviewer_keywords:
 - ProjectItem element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3e211aa44b1402d6667fc3e02ca7e271a29c3ec7
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 2b94b44bfa442805c4c785a48c9f60f56eb8e002
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305049"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950582"
 ---
 # <a name="projectitem-element"></a>Elemento ProjectItem
   Representa um item de projeto do SharePoint. Esse elemento é o elemento raiz necessário do arquivo *. esdata* .
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <ProjectItem DefaultFile = "File that opens in the editor when you open the project item"
@@ -66,7 +66,7 @@ ms.locfileid: "96305049"
 |[SafeControls](../sharepoint/safecontrols-element.md)|Elemento opcional.<br /><br /> Representa uma coleção de controles ASPX e Web Parts que são designados como seguros para qualquer usuário acessar em qualquer página ASPX no site do SharePoint.<br /><br /> Você pode incluir apenas um elemento **SafeControls** .|
 
 ### <a name="parent-elements"></a>Elementos pai
- nenhuma.
+ Nenhum.
 
 ## <a name="element-information"></a>Informações do elemento
 
