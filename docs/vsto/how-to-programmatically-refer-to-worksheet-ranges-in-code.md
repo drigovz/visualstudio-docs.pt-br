@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], referring to worksheet ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9756123038de33e8f8e69bd9a824822c26e2dc00
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 89a4b7c594f942405777145f94ed0a3503e9b16f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526679"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963751"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Como fazer referência programaticamente a intervalos de planilha no código
   Você usa um processo semelhante para fazer referência ao conteúdo de um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle ou a um objeto Range do Excel nativo.
@@ -50,7 +50,7 @@ ms.locfileid: "97526679"
      [!code-csharp[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#47)]
      [!code-vb[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#47)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Trabalhar com intervalos](../vsto/working-with-ranges.md)
 - [Como: verificar a ortografia em planilhas programaticamente](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
 - [Como: aplicar estilos programaticamente a intervalos em pastas de trabalho](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)

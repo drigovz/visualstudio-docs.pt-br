@@ -15,15 +15,15 @@ helpviewer_keywords:
 - ranges, defining in documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d1cc0475f7b25550b85018477d7c842f012445e2
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e9c703f4d4e747934d1bab458b75a9d499f0d439
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528327"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963946"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Como: definir e selecionar intervalos de forma programática em documentos
   Você pode definir um intervalo em um Microsoft Office documento do Word usando um <xref:Microsoft.Office.Interop.Word.Range> objeto. Você pode selecionar o documento inteiro de várias maneiras, por exemplo, usando o <xref:Microsoft.Office.Interop.Word.Range.Select%2A> método do <xref:Microsoft.Office.Interop.Word.Range> objeto ou usando a propriedade content da <xref:Microsoft.Office.Tools.Word.Document> classe (em uma personalização no nível do documento) ou a <xref:Microsoft.Office.Interop.Word.Document> classe (em um suplemento do VSTO).
@@ -127,7 +127,7 @@ ms.locfileid: "97528327"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#24)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)
 - [Como: estender intervalos programaticamente em documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
 - [Como recuperar programaticamente caracteres de início e término em intervalos](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)

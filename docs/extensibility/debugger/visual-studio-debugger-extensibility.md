@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a072373ce0cf7633c595eb549455e6ecd62df887
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: ebc884d36260ec3a057f75951cdbc4e7cc811079
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995987"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965441"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Extensibilidade do depurador do Visual Studio
 O Visual Studio inclui um depurador de código-fonte totalmente interativo, fornecendo uma ferramenta poderosa e fácil de usar para o rastreamento de bugs em seu programa. O depurador tem suporte completo para Visual Basic, C#, C/C++ e JavaScript. No entanto, com o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , que está disponível no [centro de download da Microsoft](https://www.microsoft.com/download/details.aspx?id=21835), outras linguagens de programação podem ter suporte no depurador com os mesmos recursos avançados.

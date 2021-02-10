@@ -12,21 +12,21 @@ helpviewer_keywords:
 - Application page in Project Designer
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0b77ee4edca8f9cb8de2079e01d9c9997a24aeff
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 30f0951073214a70ec2865bce89426d0758b19cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871373"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965103"
 ---
 # <a name="application-page-project-designer-c"></a>Página Aplicativo, Designer de Projeto (C#)
 
 Use a página **Aplicativo** do **Designer de Projeto** para especificar as propriedades e configurações de aplicativo do projeto.
 
-Para acessar a página **Aplicativo**, escolha um nó de projeto (não o nó **Solução**) no **Gerenciador de Soluções**. Em seguida, escolha Propriedades do **projeto**  >  **Properties** na barra de menus. Quando o **Designer de Projeto** for exibido, clique na guia **Aplicativo**.
+Para acessar a página **Aplicativo**, escolha um nó de projeto (não o nó **Solução**) no **Gerenciador de Soluções**. Em seguida, escolha Propriedades do **projeto**  >   na barra de menus. Quando o **Designer de Projeto** for exibido, clique na guia **Aplicativo**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -50,7 +50,7 @@ Consulte [namespace](/dotnet/csharp/language-reference/keywords/namespace) para 
 
 Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.
 
-**Estrutura de destino**
+**Estrutura de Destino**
 
 Especifica a versão do .NET direcionada pelo aplicativo. Essa opção pode ter valores diferentes dependendo de quais versões do .NET estão instaladas no computador.
 
@@ -109,7 +109,7 @@ Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.
 
 Para obter informações sobre como criar um ícone, confira [Editor de imagens para ícones](/cpp/windows/image-editor-for-icons).
 
-**Manifesto**
+**Manifest**
 
 Seleciona uma opção de geração de manifesto quando o aplicativo é executado no Windows Vista no UAC (Controle de Conta de Usuário). Essa opção pode ter os seguintes valores:
 

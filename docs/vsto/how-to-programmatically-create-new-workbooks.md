@@ -12,15 +12,15 @@ helpviewer_keywords:
 - workbooks, creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: daaaedc60988d7f523865d3979207dd1fe43e029
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 13acd34d9883cfdc7df201dff193d261252f8a9d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523135"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963985"
 ---
 # <a name="how-to-programmatically-create-new-workbooks"></a>Como criar programaticamente novas pastas de trabalho
   Quando você cria uma pasta de trabalho programaticamente, ela é um <xref:Microsoft.Office.Interop.Excel.Workbook> objeto nativo, não um <xref:Microsoft.Office.Tools.Excel.Workbook> item de host.
@@ -39,7 +39,7 @@ ms.locfileid: "97523135"
     > [!NOTE]
     > Você pode criar uma pasta de trabalho com base em um modelo diferente do modelo padrão: passe o modelo que você deseja usar como um parâmetro para o <xref:Microsoft.Office.Interop.Excel.Workbooks.Add%2A> método.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Estenda documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Trabalhar com pastas de trabalho](../vsto/working-with-workbooks.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - contacts [Office development in Visual Studio], deleting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f1398a631db77704a89a06b5e66ef4cb370280e4
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 98ee7773c86e85fa9ced0274bc37c4db3f8aacc2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528295"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963883"
 ---
 # <a name="how-to-programmatically-delete-outlook-contacts"></a>Como: excluir programaticamente contatos do Outlook
   Este exemplo exclui um contato. O exemplo supõe que um contato chamado "Armando fixar" existe na pasta **contatos** .

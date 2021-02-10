@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 1bb05441-c4ff-4323-9fef-f3924fba4430
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bd210f1d92245889be8d18156c43e0cad7ee3db
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 53d6dcc6cdc903f0050eeb326ebd3c5fa36252ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722913"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964739"
 ---
 # <a name="nameprofile"></a>NameProfile
 A função `NameProfile` atribui uma cadeia de caracteres ao thread ou processo especificado.
@@ -51,7 +51,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 
   Indica o nível de perfil de desempenho que pode ser aplicado a coleta de dados. Os seguintes valores de **PROFILE_CONTROL_LEVEL** podem ser usados para indicar um dos três níveis aos quais a coleta de dados de desempenho pode ser aplicada:
 
-|Enumerador|Descrição|
+|Enumerador|Description|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|A configuração de nível global afeta todos os processos e threads na execução da criação de perfil.|
 |PROFILE_PROCESSLEVEL|A configuração de nível de processo afeta todos os threads que fazem parte do processo especificado.|
@@ -64,7 +64,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="property-valuereturn-value"></a>Valor da propriedade/valor retornado
  A função indica êxito ou falha usando a enumeração **PROFILE_COMMAND_STATUS**. O valor de retorno pode ser um dos seguintes:
 
-|Enumerador|Descrição|
+|Enumerador|Description|
 |----------------|-----------------|
 |NAME_ERROR_ID_NOEXIST|O elemento de criação de perfil especificado não existe.|
 |NAME_ERROR_INVALID_NAME|O nome é inválido.|
@@ -134,5 +134,5 @@ void ExerciseNameProfile()
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Referência da API do criador de perfil do Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)

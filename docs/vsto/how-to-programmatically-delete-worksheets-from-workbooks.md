@@ -13,15 +13,15 @@ helpviewer_keywords:
 - worksheets, deleting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e9d1330c454e0b9b9f5ad4624c18e4ed1055343d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2289309932dcd1d946fc775de60a0e07892be222
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527775"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963881"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Como: excluir programaticamente planilhas de pastas de trabalho
   Você pode excluir qualquer planilha em uma pasta de trabalho. Para excluir uma planilha, use o item de host da planilha ou acesse a planilha usando a coleção planilhas da pasta de trabalho.
@@ -67,7 +67,7 @@ ms.locfileid: "97527775"
      [!code-csharp[Trin_VstcoreExcelAutomation#18](codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomation#18](codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Trabalhar com planilhas](working-with-worksheets.md)
 - [Como: ocultar planilhas programaticamente](how-to-programmatically-hide-worksheets.md)
 - [Como: mover planilhas programaticamente dentro de pastas de trabalho](how-to-programmatically-move-worksheets-within-workbooks.md)

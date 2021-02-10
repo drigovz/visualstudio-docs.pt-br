@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 94a545d2-16b9-45e9-b2e7-4e49ff90aad0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f4767dbe08e716d64ea03c18a1c4a6f7d6690a7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2111f4c3b60bbdc5f8a88b5cc7777fc92af74509
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720298"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963621"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 Define o valor de uma referência de outra referência. Reservado para uso futuro.
@@ -28,7 +28,7 @@ Define o valor de uma referência de outra referência. Reservado para uso futur
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT SetValueAsReference ( 
+HRESULT SetValueAsReference ( 
    IDebugReference2** rgpArgs,
    DWORD              dwArgCount,
    IDebugReference2*  pValue,
@@ -37,7 +37,7 @@ HRESULT SetValueAsReference ( 
 ```
 
 ```cpp
-int SetValueAsReference ( 
+int SetValueAsReference ( 
    IDebugReference2[] rgpArgs,
    uint               dwArgCount,
    IDebugReference2   pValue,
@@ -58,8 +58,8 @@ no Um objeto [IDebugReference2](../../../extensibility/debugger/reference/idebug
 `dwTimeout`\
 no Tempo máximo, em milissegundos, a aguardar antes de retornar deste método. Use `INFINITE` para aguardar indefinidamente.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Sempre retorna `E_NOTIMPL`.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

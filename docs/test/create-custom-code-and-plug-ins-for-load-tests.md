@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 0c0fcc99-673b-4ea0-a268-0475f66e5cb6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: db91f8f5ccf86d67d01bb56a3a42b66757320500
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 040ca84d5da9019da87f0dfddc89cfc6b1aa043e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442658"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964440"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Criar código personalizado e plug-ins para testes de carga
 
@@ -47,7 +47,7 @@ Um plug-in personalizado usa um código que você grava e anexa a um teste de ca
 
 <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Gerar e executar um teste de desempenho para Web codificado](../test/generate-and-run-a-coded-web-performance-test.md)

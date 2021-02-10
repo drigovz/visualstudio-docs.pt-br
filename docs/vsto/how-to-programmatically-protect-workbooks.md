@@ -16,15 +16,15 @@ helpviewer_keywords:
 - workbooks, protecting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3b35b0fc234c3015275650ddb51e8ea3011c97a6
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 05587b067fb5e8365433049c7da7fd3d5949a831
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528287"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963842"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Como: proteger pastas de trabalho programaticamente
   Você pode proteger um Microsoft Office pasta de trabalho do Excel para que os usuários não possam adicionar ou excluir planilhas e também desproteger a pasta de trabalho programaticamente. Opcionalmente, você pode especificar uma senha, indicar se deseja que a estrutura seja protegida (para que os usuários não possam mover as planilhas) e indicar se deseja que o Windows da pasta de trabalho seja protegido.
@@ -67,7 +67,7 @@ ms.locfileid: "97528287"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#7)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#7)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Trabalhar com pastas de trabalho](../vsto/working-with-workbooks.md)
 - [Como: proteger planilhas programaticamente](../vsto/how-to-programmatically-protect-worksheets.md)
 - [Como: ocultar planilhas programaticamente](../vsto/how-to-programmatically-hide-worksheets.md)

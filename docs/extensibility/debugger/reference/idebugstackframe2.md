@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: bd212a6a-dcc6-4756-a77a-e8dfda38b104
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37acb9f2984c36130de494108ef4b76a59cc74e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7241c697baf7810d961f4cc3aba71d469bad4582
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719515"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963556"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 Essa interface representa um único quadro de pilha em uma pilha de chamadas em um thread específico.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugStackFrame2 : IUnknown
@@ -60,5 +60,5 @@ IDebugStackFrame2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Confira também
-- [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
+## <a name="see-also"></a>Consulte também
+- [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)

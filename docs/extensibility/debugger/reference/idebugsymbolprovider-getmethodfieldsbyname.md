@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1f781320-81ef-4037-b068-f1864b271258
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cf123c1e7e83264a2ae4a8ef8c2b4b3207a62a5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77f6aa9561642b59a4cf605485011ac3b3ac75ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719224"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963517"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 Esse método obtém o campo que representa um nome de método totalmente qualificado.
@@ -28,7 +28,7 @@ Esse método obtém o campo que representa um nome de método totalmente qualifi
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetMethodFieldsByName( 
+HRESULT GetMethodFieldsByName( 
    LPCOLESTR          pszFullName,
    NAME_MATCH         nameMatch,
    IEnumDebugFields** ppEnum
@@ -53,7 +53,7 @@ no Seleciona o tipo de correspondência, por exemplo, diferencia maiúsculas de 
 `ppEnum`\
 fora Retorna um enumerador [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) para os campos associados a este método.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], creating Visio documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 59c1fe0264a294692bea04b05e5e143fa28be801
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a5aeddeecf7fb76000817f2c57b90e30465fa4ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526849"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964024"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>Como criar programaticamente novos documentos do Visio
   Ao criar um novo documento de desenho Microsoft Office do Visio, você o adiciona à `Microsoft.Office.Interop.Visio.Documents` coleção de documentos abertos do Visio. Consequentemente, o `Microsoft.Office.Interop.Visio.Documents.Add` método cria um novo documento de desenho do Visio. Para obter mais informações, consulte a documentação de referência do VBA para o [Microsoft.Office.Interop.Visio.Documents. Adicionar](/office/vba/api/Visio.Documents.Add) método.
@@ -73,7 +73,7 @@ ms.locfileid: "97526849"
 
 - Um documento do Visio chamado `myTemplate.vst` deve estar localizado em um diretório chamado `Test` na pasta *meus documentos* (para o Windows XP e versões anteriores) ou a pasta *documentos* (para o Windows Vista).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Soluções do Visio](../vsto/visio-solutions.md)
 - [Visão geral do modelo de objeto do Visio](../vsto/visio-object-model-overview.md)
 - [Como: abrir documentos do Visio programaticamente](../vsto/how-to-programmatically-open-visio-documents.md)

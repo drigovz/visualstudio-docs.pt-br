@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a404ddd9-d940-4513-97cd-f52b8ab6a560
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d7ea57467c6bcc716226ac7075976a0fb9daf5f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3cc4a24bec040ce146c3336d205ac7b11b6dfd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720372"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963686"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
 Obtém o tamanho, em bytes, do valor da referência. Reservado para uso futuro.
@@ -28,13 +28,13 @@ Obtém o tamanho, em bytes, do valor da referência. Reservado para uso futuro.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetSize ( 
+HRESULT GetSize ( 
    DWORD* pdwSize
 );
 ```
 
 ```csharp
-int GetSize ( 
+int GetSize ( 
    out uint pdwSize
 );
 ```
@@ -43,8 +43,8 @@ int GetSize ( 
 `pdwSize`\
 fora Retorna o tamanho, em bytes, do valor da referência.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Sempre retorna `E_NOTIMPL`.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
