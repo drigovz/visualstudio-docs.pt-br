@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6ff9efc4-919d-4071-a80d-6dbdd2ceb2f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4132d878ff1ec7689be890446a1849577fafd30
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 98c73da67e607346138d7d6fae124a86b7a34618
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877917"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961840"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Walkthrough: publicando uma extensão do Visual Studio via linha de comando
 
@@ -32,7 +32,7 @@ VsixPublisher.exe é a ferramenta de linha de comando para publicar extensões d
 
 Publica uma extensão para o Marketplace. A extensão pode ser um VSIX, um arquivo exe/msi ou um link. Se a extensão já existir com a mesma versão, ela substituirá a extensão. Se a extensão ainda não existir, ela criará uma nova extensão.
 
-|Opções de comando |Descrição |
+|Opções de comando |Description |
 |---------|---------|
 |carga (obrigatório) | Um caminho para a carga a ser publicada ou um link a ser usado como "URL mais informações". |
 |publishManifest (obrigatório) | Caminho para o arquivo de manifesto de publicação a ser usado. |
@@ -47,7 +47,7 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 Cria um Publicador no Marketplace. Também registra o Publicador no computador para futuras ações (por exemplo, excluir/publicar uma extensão).
 
-|Opções de comando |Descrição |
+|Opções de comando |Description |
 |---------|---------|
 |displayName (obrigatório) | Nome de exibição do Publicador. |
 |PublisherName (obrigatório) | O nome do Publicador (por exemplo, o identificador). |
@@ -63,7 +63,7 @@ VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName
 
 Exclui um Publicador no Marketplace.
 
-|Opções de comando |Descrição |
+|Opções de comando |Description |
 |---------|---------|
 |PublisherName (obrigatório) | O nome do Publicador (por exemplo, o identificador). |
 |personalAccessToken (obrigatório) | Token de acesso pessoal que é usado para autenticar o Publicador. |
@@ -76,7 +76,7 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 Exclui uma extensão do Marketplace.
 
-|Opções de comando |Descrição |
+|Opções de comando |Description |
 |---------|---------|
 |ExtensionName (obrigatório) | O nome da extensão a ser excluída. |
 |PublisherName (obrigatório) | O nome do Publicador (por exemplo, o identificador). |
@@ -90,11 +90,11 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 Registra um Publicador no computador.
 
-|Opções de comando |Descrição |
+|Opções de comando |Description |
 |---------|---------|
 |personalAccessToken (obrigatório | Token de acesso pessoal que é usado para autenticar o Publicador. |
 |PublisherName (obrigatório) | O nome do Publicador (por exemplo, o identificador). |
-|substituir | Especifica que qualquer Publicador existente deve ser substituído pelo novo token de acesso pessoal. |
+|overwrite | Especifica que qualquer Publicador existente deve ser substituído pelo novo token de acesso pessoal. |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
@@ -104,7 +104,7 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 Registra um Publicador fora do computador.
 
-|Opções de comando |Descrição |
+|Opções de comando |Description |
 |---------|---------|
 |PublisherName (obrigatório) | O nome do Publicador (por exemplo, o identificador). |
 |ignoreMissingPublisher | Especifica que a ferramenta não deve ser erro se o Publicador especificado ainda não estiver conectado. |

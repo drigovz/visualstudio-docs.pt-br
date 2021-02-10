@@ -20,15 +20,15 @@ helpviewer_keywords:
 - extensibility interfaces [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 436f426eee6c90476997f416bab907c8e17f94cc
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f84a694c9a18b6ec1c64204c8150ff721633278d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845616"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962464"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Personalizar recursos de interface do usuário usando interfaces de extensibilidade
   As ferramentas de desenvolvimento do Office no Visual Studio fornecem classes e designers que lidam com muitos detalhes de implementação ao usá-los para criar painéis de tarefas personalizados, personalizações da faixa de forma e regiões de formulário do Outlook em um suplemento do VSTO. No entanto, você também pode implementar a *interface de extensibilidade* para cada recurso se tiver requisitos especiais.
@@ -79,7 +79,7 @@ ms.locfileid: "96845616"
  [!code-vb[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#2)]
  [!code-csharp[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#2)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Exemplos e orientações de desenvolvimento do Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)
 - [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)

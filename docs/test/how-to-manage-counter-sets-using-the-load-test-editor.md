@@ -14,13 +14,13 @@ helpviewer_keywords:
 ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 15d04d105264d07a1f883c5b67ce57c8590375a8
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 684715ed8ac29a3c85d0ea46799a2e14fb9722bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440007"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961437"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Como gerenciar conjuntos de contadores usando o Editor de Teste de Carga
 
@@ -62,7 +62,7 @@ Gerenciar conjuntos de contadores envolve escolher o conjunto de computadores do
 
 6. Selecione **OK**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Controladores de teste e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md)
 - [Especificar os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

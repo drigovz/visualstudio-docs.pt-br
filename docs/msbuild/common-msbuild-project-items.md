@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ea072cf3e9a236fdc6a4ad66b1c0cf7ddcda1550
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: cd43be13351309e0f4715ee889fb910f4f7e49a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533439"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963192"
 ---
 # <a name="common-msbuild-project-items"></a>Itens de projeto comuns do MSBuild
 
@@ -39,11 +39,11 @@ Representa uma referência de assembly (gerenciado) no projeto.
 |Nome de metadados de item|Descrição|
 |---------------|-----------------|
 |HintPath|Cadeia de caracteres opcional. O caminho relativo ou absoluto do assembly.|
-|Name|Cadeia de caracteres opcional. O nome de exibição do assembly, por exemplo, “System.Windows.Forms.”|
+|Nome|Cadeia de caracteres opcional. O nome de exibição do assembly, por exemplo, “System.Windows.Forms.”|
 |FusionName|Cadeia de caracteres opcional. Especifica o nome de fusão simples ou forte para o item.<br /><br /> Quando esse atributo estiver presente, é possível economizar tempo, pois o arquivo do assembly não precisa ser aberto para obter o nome de fusão.|
 |SpecificVersion|Booliano opcional. Especifica se apenas a versão no nome de fusão deve ser referenciada.|
 |Aliases|Cadeia de caracteres opcional. Quaisquer aliases da referência.|
-|Privado|Booliano opcional. Especifica se a referência deve ser copiada para a pasta de saída. Esse atributo corresponde à propriedade **Copiar Local** da referência que está no Visual Studio IDE.|
+|Privados|Booliano opcional. Especifica se a referência deve ser copiada para a pasta de saída. Esse atributo corresponde à propriedade **Copiar Local** da referência que está no Visual Studio IDE.|
 
 ### <a name="comreference"></a>COMReference
 
@@ -51,7 +51,7 @@ Representa uma referência a um componente COM (não gerenciado) no projeto. Est
 
 |Nome de metadados de item|Descrição|
 |---------------|-----------------|
-|Name|Cadeia de caracteres opcional. O nome de exibição do componente.|
+|Nome|Cadeia de caracteres opcional. O nome de exibição do componente.|
 |Guid|Cadeia de caracteres obrigatória. Um GUID para o componente, no formato {12345678-1234-1234-1234-1234567891234}.|
 |VersionMajor|Cadeia de caracteres obrigatória. A parte principal do número de versão do componente. Por exemplo, “5” se o número de versão completo for “5,46”.|
 |VersionMinor|Cadeia de caracteres obrigatória. A parte secundária do número de versão do componente. Por exemplo, “46” se o número de versão completo for “5,46”.|
@@ -73,7 +73,7 @@ Representa um arquivo de manifesto nativo ou uma referência a esse arquivo.
 
 |Nome de metadados de item|Descrição|
 |---------------|-----------------|
-|Name|Cadeia de caracteres obrigatória. O nome de base do arquivo de manifesto.|
+|Nome|Cadeia de caracteres obrigatória. O nome de base do arquivo de manifesto.|
 |HintPath|Cadeia de caracteres obrigatória. O caminho relativo do arquivo de manifesto.|
 
 ### <a name="projectreference"></a>ProjectReference
@@ -82,16 +82,16 @@ Representa uma referência a outro projeto. `ProjectReference` os itens são tra
 
 |Nome de metadados de item|Descrição|
 |---------------|-----------------|
-|Name|Cadeia de caracteres opcional. O nome de exibição da referência.|
+|Nome|Cadeia de caracteres opcional. O nome de exibição da referência.|
 |GlobalPropertiesToRemove|`string[]` opcional. Nomes das propriedades a serem removidas ao criar o projeto referenciado, por exemplo `RuntimeIdentifier;PackOnBuild` . O padrão é vazio.|
 |Project|Cadeia de caracteres opcional. Um GUID para a referência, no formato {12345678-1234-1234-1234-1234567891234}.|
 |OutputItemType|Cadeia de caracteres opcional. Tipo de item para o qual as saídas de destino são emitidas. O padrão está em branco. Se os metadados de referência forem definidos como "true" (padrão), as saídas de destino se tornarão referências para o compilador.|
-|ReferenceOutputAssembly|Booliano opcional. Se estiver definido como `false`, não inclui a saída do projeto referenciado como uma [referência](#reference) deste projeto, mas ainda garante que o outro projeto seja compilado antes desse. O padrão é `true`.|
+|ReferenceOutputAssembly|Booliano opcional. Se estiver definido como `false`, não inclui a saída do projeto referenciado como uma [referência](#reference) deste projeto, mas ainda garante que o outro projeto seja compilado antes desse. Assume o padrão de `true`.|
 |Configuração de|Cadeia de caracteres opcional. Define a propriedade global `Configuration` para o projeto referenciado, por exemplo `Configuration=Release` .|
 |Setplatform|Cadeia de caracteres opcional. Define a propriedade global `Platform` para o projeto referenciado, por exemplo `Platform=AnyCPU` .|
 |SetTargetFramework|Cadeia de caracteres opcional. Define a propriedade global `TargetFramework` para o projeto referenciado, por exemplo `TargetFramework=netstandard2.0` .|
-|SkipGetTargetFrameworkProperties|Booliano opcional. Se `true` , o criará o projeto referenciado sem negociar o valor mais compatível `TargetFramework` . O padrão é `false`.|
-|Destinos|`string[]` opcional. Lista de destinos separados por ponto e vírgula nos projetos referenciados que devem ser compilados. Padrão é o valor do `$(ProjectReferenceBuildTargets)` qual o padrão é vazio, indicando os destinos padrão.|
+|SkipGetTargetFrameworkProperties|Booliano opcional. Se `true` , o criará o projeto referenciado sem negociar o valor mais compatível `TargetFramework` . Assume o padrão de `false`.|
+|Targets|`string[]` opcional. Lista de destinos separados por ponto e vírgula nos projetos referenciados que devem ser compilados. Padrão é o valor do `$(ProjectReferenceBuildTargets)` qual o padrão é vazio, indicando os destinos padrão.|
 
 ### <a name="compile"></a>Compilar
 

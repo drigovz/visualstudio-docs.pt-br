@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Tier Interactions view
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9021f814f093151c6d65beaececc0fa99a662d44
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 350810bba477f5a86963862fb496cf05eaf2c810
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722510"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963179"
 ---
 # <a name="tier-interactions-view"></a>Exibição de interações da camada
 
@@ -41,7 +41,7 @@ A Exibição Interações exibe os dados de interação de camada em dois painé
 |Coluna|Descrição|
 |------------|-----------------|
 |**Nome**|- Para uma linha de nível superior, o nome do processo com perfil ou a página da Web.<br />- Para uma linha de conexão de banco de dados, o nome do servidor que hospeda o banco de dados.|
-|**Banco de dados**|O nome do banco de dados (somente linhas de conexão de banco de dados).|
+|**Backup de banco de dados**|O nome do banco de dados (somente linhas de conexão de banco de dados).|
 |**Count**|O número total de solicitações geradas pelo processo, pela página da Web ou pela conexão de banco de dados.|
 |**Tempo total decorrido**|O tempo total gasto na execução de uma solicitação do processo, da página da Web ou da conexão de banco de dados.|
 |**Tempo máximo decorrido**|O tempo máximo gasto na execução de uma solicitação do processo, da página da Web ou da conexão de banco de dados.|

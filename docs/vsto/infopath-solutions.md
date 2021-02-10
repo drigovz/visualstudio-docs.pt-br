@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], InfoPath
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8d5e26614c7f06c803093cd7e19b7e9842b397fb
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b3feab4a4b66ed2d6cf96fbccc8aaf1fb7de3bb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527743"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962360"
 ---
 # <a name="infopath-solutions"></a>Soluções InfoPath
   O Visual Studio fornece modelos de projeto que você pode usar para criar suplementos do VSTO para Microsoft Office InfoPath 2013 e InfoPath 2010. O InfoPath não está disponível no Office 2016.
@@ -57,7 +57,7 @@ ms.locfileid: "97527743"
 
  Para obter mais informações sobre como personalizar a interface do usuário do InfoPath e outros aplicativos Microsoft Office, consulte [personalização da interface do usuário do Office](../vsto/office-ui-customization.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Sobre o Microsoft Office assembly de interoperabilidade primário do InfoPath](/office/client-developer/infopath/external-automation/about-the-microsoft-office-infopath-primary-interop-assembly)
 - [Introdução à programação de suplementos do VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
 - [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)

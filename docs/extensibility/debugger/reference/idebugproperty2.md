@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b04abdac135143ccbbd1b8e5632bf85c974f29d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c5cec0d93919058eae725a9e49198f1704d8bfc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721231"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962191"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Essa interface representa uma propriedade de quadro de pilha, uma propriedade de documento de programa ou alguma outra propriedade. A propriedade é geralmente o resultado de uma avaliação de expressão.
@@ -25,7 +25,7 @@ Essa interface representa uma propriedade de quadro de pilha, uma propriedade de
 > [!NOTE]
 > Esse uso de "Property" não deve ser confundido com isso, o que significa uma variável de membro de uma classe, embora um `IDebugProperty2` possa representar essa entidade.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugProperty2 : IUnknown
@@ -77,6 +77,6 @@ IDebugProperty2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
-- [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

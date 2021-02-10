@@ -8,16 +8,16 @@ helpviewer_keywords:
 - generics, and unit tests
 - unit tests, and generics
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 88ef5d64d2513bb97bdd5589e04669629dfdf6ae
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 16d1348d74bb459a73dd4a5a4f8de21e367865c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962490"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testes de unidade para métodos genéricos
 
@@ -196,6 +196,6 @@ namespace TestProject1
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Teste de unidade em seu código](../test/unit-test-your-code.md)

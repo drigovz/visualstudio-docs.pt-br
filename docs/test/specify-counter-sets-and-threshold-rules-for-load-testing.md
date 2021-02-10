@@ -14,13 +14,13 @@ helpviewer_keywords:
 ms.assetid: 9e14d955-f3a4-4717-bbfe-7f08cdda5678
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 04348eb2d88c560e9687c687486e6b44d8394371
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: fda390640d627a91d4ab534192cba9bd9e30f00f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328945"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962633"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Especificar conjuntos de contadores e regras de limite para computadores em um teste de carga
 
@@ -99,7 +99,7 @@ Defina a propriedade **Alertar caso seja superado** como **Verdadeiro** para ind
 
 Defina a propriedade **Alertar caso seja superado** como **Falso** para indicar que ficar abaixo de um limite é um problema. Por exemplo, se a regra de limite for definida em **Solicitações/s** e você quiser ser alertado se o valor estiver abaixo de 50, use o tipo de regra **Comparar constante**, defina o **Valor de limite crítico** como 50 e defina **Alertar caso seja superado** como **Falso**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como adicionar uma regra de limite](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)
 - [Analisar violações de regra de limite](../test/analyze-threshold-rule-violations-in-load-tests.md)

@@ -21,15 +21,15 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], creating projects
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 652b7676ddf5d7e095010e711ab0dabc5b5f2ab7
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1d0bd242f3a57031442cb0b39e62a28c01ad1a6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844368"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962386"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Como: criar projetos do Office no Visual Studio
   Você pode usar o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para criar o suplemento do VSTO e personalizações em nível de documento para aplicativos Microsoft Office. Para obter mais informações sobre esses tipos de projetos, consulte [visão geral do desenvolvimento de soluções do Office &#40;&#41;do VSTO ](../vsto/office-solutions-development-overview-vsto.md).
@@ -160,7 +160,7 @@ ms.locfileid: "96844368"
 
      Para obter mais informações sobre como adicionar um documento a locais confiáveis, consulte a Microsoft Office site online [criar, remover ou alterar um local confiável para seus arquivos](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Visão geral dos modelos do Office Project](../vsto/office-project-templates-overview.md)
 - [Desenvolvimento colaborativo de soluções do Office](../vsto/collaborative-development-of-office-solutions.md)
 - [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)

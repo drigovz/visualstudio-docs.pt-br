@@ -6,13 +6,13 @@ ms.topic: overview
 monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 29fa854ab00764fc0166a53d8b48989f2c74f036
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+manager: jmartens
+ms.openlocfilehash: df2c257caed24e85569ca41f3cc83dd9d47d5b03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833293"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962308"
 ---
 # <a name="xaml-code-editor"></a>Editor de código XAML
 
@@ -116,7 +116,7 @@ Você também pode acessar esse recurso na barra de menus. Para fazer isso, esco
 
 Para obter mais informações sobre como usar configurações, consulte a página [classificar usando](../ide/reference/sort-usings.md) . Para obter mais informações sobre o IntelliSense, consulte a página [IntelliSense no Visual Studio](../ide/using-intellisense.md) . E, para obter mais informações sobre algumas das maneiras típicas de os desenvolvedores usarem ações rápidas, consulte a página [ações rápidas comuns](../ide/common-quick-actions.md) .
 
-#### <a name="change-tracking"></a>Change tracking
+#### <a name="change-tracking"></a>controle de alterações
 
 A cor da margem esquerda permite que você mantenha o controle das alterações feitas em um arquivo. Veja como as cores se relacionam às ações tomadas:
 
@@ -299,7 +299,7 @@ A tabela a seguir lista as configurações na caixa de diálogo [Opções](../id
 
 Para saber mais sobre como editar seu código em tempo real enquanto você estiver executando seu aplicativo no modo de depuração, consulte a página de [Hot recarregamento de XAML](xaml-hot-reload.md) .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Recursos do editor de código do Visual Studio](../ide/writing-code-in-the-code-and-text-editor.md)
 - [XAML em aplicativos UWP](/windows/uwp/xaml-platform/xaml-overview/)

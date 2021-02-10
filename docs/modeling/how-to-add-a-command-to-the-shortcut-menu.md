@@ -9,15 +9,15 @@ helpviewer_keywords:
 - walkthroughs [Domain-Specific Language Tools]
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dc51de28162471262d8c4bd35ddd09bc156896e
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 063c0a5cfcf5136e53750e4405e8619bf3154ee2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363335"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963296"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Como: adicionar um comando ao menu de atalho
 
@@ -359,7 +359,7 @@ O **método OnStatus não é chamado**:
 
 - Certifique-se de que você tenha desinstalado as versões anteriores do pacote.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Escrevendo código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Como modificar um comando de menu padrão](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)

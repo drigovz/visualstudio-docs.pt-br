@@ -9,16 +9,16 @@ helpviewer_keywords:
 - unit tests, verifying code with
 - testing code, automated tests
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: dc82d72d7c0a333fc28146746a473ed359857490
-ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
+ms.openlocfilehash: 718f5560176f287f237d54a89bd44c831c7f03ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98240277"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962607"
 ---
 # <a name="unit-test-tools-and-tasks"></a>Ferramentas e tarefas de teste de unidade
 
@@ -58,6 +58,6 @@ Use os artigos a seguir para ajudar com o entendimento e a criação dos testes 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting> descreve o namespace UnitTesting, que fornece atributos, exceções, asserções e outras classes que oferecem suporte a testes de unidade.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> descreve o namespace UnitTesting.Web, que estende o namespace UnitTesting dando suporte para o ASP.NET e a testes de unidade do serviço Web.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Melhorar a qualidade do código](../test/improve-code-quality.md)

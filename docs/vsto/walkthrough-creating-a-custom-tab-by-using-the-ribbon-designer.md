@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 539f75b7770abab75e912a28bc62ed51b7fb61d8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b87113b47ee0dc4d296bb5e206d6d277394160c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524823"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962269"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Walkthrough: criar uma guia personalizada usando o designer de faixa de faixas
   Usando o designer de faixa de faixas, você pode criar uma guia personalizada e, em seguida, adicionar e posicionar controles nela.
@@ -161,7 +161,7 @@ ms.locfileid: "97524823"
 
 - Estenda um formulário padrão ou personalizado do Microsoft Office Outlook. Para obter mais informações, consulte [Walkthrough: criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Acessar a faixa de faixas em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
 - [Designer da faixa de opções](../vsto/ribbon-designer.md)

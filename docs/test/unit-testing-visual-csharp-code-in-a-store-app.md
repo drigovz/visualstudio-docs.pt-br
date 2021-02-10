@@ -6,15 +6,15 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.author: mikejo
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 410d5dfefa5980bceabff99d66067987b390a615
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: e0267fb31515d842f7c9b6591d412e454c803bdb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330076"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962542"
 ---
 # <a name="unit-test-c-code"></a>Executar o teste de unidade de um código C#
 
@@ -72,7 +72,7 @@ Este artigo demonstra o *desenvolvimento controlado por testes*. Nessa abordagem
 
 2. Dê ao arquivo da classe o nome *Rooter.cs*.
 
-3. Adicione o seguinte código ao arquivo **Rooter** de classe raiz *Rooter.cs* :
+3. Adicione o seguinte código ao arquivo  de classe raiz *Rooter.cs* :
 
    ```csharp
    public Rooter()
@@ -270,6 +270,6 @@ O método **RangeTest** codifica o denominador da variável de *tolerância* que
 > [!TIP]
 > Se você adicionar um método auxiliar a uma classe de teste e não quiser que ele apareça no **Gerenciador de testes**, não adicione o <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> atributo ao método.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Walkthrough: desenvolvimento orientado por testes usando o Gerenciador de testes](quick-start-test-driven-development-with-test-explorer.md)
