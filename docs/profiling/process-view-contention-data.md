@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 8821d98c-0771-43b2-a38b-e9039a3abd75
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f3eb95c5ba8bb9f519623d4b43bc80d37919305d
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 60f137c470b31ddccfa9b26cb907b13288d07dc1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719457"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957303"
 ---
 # <a name="process-view---contention-data"></a>Exibição Processo – dados de contenção
 A exibição Processo exibe dados de contenção para os processos e threads que foram executados durante o processo de criação de perfil.
@@ -40,6 +40,6 @@ A exibição Processo exibe dados de contenção para os processos e threads que
 |**Nome**|O nome do processo ou thread.|
 |**ID exclusiva**|Um identificador gerado pelo criador de perfil que é exclusivo ao processo ou thread.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Como: Personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)
 - [Exibição de processo](../profiling/process-view.md)

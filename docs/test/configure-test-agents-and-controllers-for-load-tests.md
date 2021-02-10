@@ -8,13 +8,13 @@ helpviewer_keywords:
 - load tests, test agents and controllers
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: e70c1f3783945fbea00816d961f8ae6518ff726b
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 50356044b4463353f99ddf93ac41e08a572f3879
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442606"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957238"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Visão geral dos agentes de teste e controladores de teste para executar testes de carga
 
@@ -39,7 +39,7 @@ Essa arquitetura oferece os seguintes benefícios:
 
 - A capacidade de expandir a geração de carga incluindo agentes de teste adicionais em um controlador de teste.
 
-- Flexibilidade para instalar o cliente, o controlador de teste e o software do agente de teste no mesmo computador ou em computadores diferentes. Por exemplo: 
+- Flexibilidade para instalar o cliente, o controlador de teste e o software do agente de teste no mesmo computador ou em computadores diferentes. Por exemplo:
 
    **Configuração local:**
 
@@ -91,6 +91,6 @@ Para obter informações importantes sobre os requisitos de hardware e software 
 
 Depois de instalar um controlador de teste e um ou mais agentes, você poderá especificar se deseja usar uma execução remota com o controlador de teste na configuração de teste para os testes de carga. Além disso, você pode especificar os dados e os adaptadores de diagnóstico a serem usados com a função associada aos agentes na configuração de teste.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md)

@@ -8,13 +8,13 @@ helpviewer_keywords:
 - editorconfig [Visual Studio]
 author: mikadumont
 ms.author: midumont
-manager: jillfra
-ms.openlocfilehash: a1f66368972614347df9eebe33af435987ea9cc8
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+manager: jmartens
+ms.openlocfilehash: 8ab90fda1f14521d59982ef7b5d20998cf61e505
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006491"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956835"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Criar configurações do editor portátil e personalizado com o EditorConfig
 
@@ -33,7 +33,7 @@ Quando você adiciona um arquivo EditorConfig ao seu projeto no Visual Studio, n
 
 ::: moniker range="=vs-2017"
 
-Quando você adiciona um arquivo EditorConfig ao seu projeto no Visual Studio, novas linhas de código são formatadas de acordo com as configurações do EditorConfig. A formatação do código existente não é alterada, a menos que você formate o documento (**edite** o documento de  >  **Advanced**  >  **formato** avançado ou **Ctrl** + **K**, **Ctrl** + **D** no perfil padrão). A formatação do documento afeta apenas as configurações de espaço em branco, como o estilo de recuo, a menos que você tenha configurado o documento de formato para [executar a limpeza de código adicional](../ide/code-styles-and-code-cleanup.md#apply-code-styles).
+Quando você adiciona um arquivo EditorConfig ao seu projeto no Visual Studio, novas linhas de código são formatadas de acordo com as configurações do EditorConfig. A formatação do código existente não é alterada, a menos que você formate o documento (**edite** o documento de  >    >  **formato** avançado ou **Ctrl** + **K**, **Ctrl** + **D** no perfil padrão). A formatação do documento afeta apenas as configurações de espaço em branco, como o estilo de recuo, a menos que você tenha configurado o documento de formato para [executar a limpeza de código adicional](../ide/code-styles-and-code-cleanup.md#apply-code-styles).
 
  ::: moniker-end
 
@@ -74,7 +74,7 @@ Há suporte para as configurações de editor do EditorConfig em todas as lingua
 
 ## <a name="add-and-remove-editorconfig-files"></a>Adicionar e remover arquivos EditorConfig
 
-Quando você adiciona um arquivo EditorConfig ao seu projeto ou base de código, as novas linhas de código que você escreve são formatadas de acordo com o arquivo EditorConfig. No entanto, a adição de um arquivo EditorConfig não converte os estilos existentes para os novos até que você formate o documento ou execute a [limpeza de código](../ide/code-styles-and-code-cleanup.md). Por exemplo, se você tiver recuos em seu arquivo formatados com tabulações e adicionar um arquivo EditorConfig com recuos com espaços, os caracteres de recuo não serão convertidos automaticamente em espaços. Ao Formatar o documento (**Editar** o documento de  >  **Advanced**  >  **formato** avançado ou **Ctrl** + **K**, **Ctrl** + **D**), as configurações de espaço em branco no arquivo EditorConfig são aplicadas a linhas de código existentes.
+Quando você adiciona um arquivo EditorConfig ao seu projeto ou base de código, as novas linhas de código que você escreve são formatadas de acordo com o arquivo EditorConfig. No entanto, a adição de um arquivo EditorConfig não converte os estilos existentes para os novos até que você formate o documento ou execute a [limpeza de código](../ide/code-styles-and-code-cleanup.md). Por exemplo, se você tiver recuos em seu arquivo formatados com tabulações e adicionar um arquivo EditorConfig com recuos com espaços, os caracteres de recuo não serão convertidos automaticamente em espaços. Ao Formatar o documento (**Editar** o documento de  >    >  **formato** avançado ou **Ctrl** + **K**, **Ctrl** + **D**), as configurações de espaço em branco no arquivo EditorConfig são aplicadas a linhas de código existentes.
 
 Se você remover um arquivo EditorConfig de seu projeto ou base de códigos e desejar que as novas linhas sejam formatadas de acordo com as configurações globais do editor, é preciso fechar e reabrir os arquivos de código abertos.
 

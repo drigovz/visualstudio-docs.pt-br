@@ -11,16 +11,16 @@ helpviewer_keywords:
 - CPU counters in Profiling Tools
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c3657f3558a688232424b868d0e93b8c056467c
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 3553106c9c2bea0d4d4c24b2e51b59e4fcf42722
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719155"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956055"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de CPU e do Windows
 
@@ -98,7 +98,7 @@ Para listar os contadores disponíveis em um computador na IDE do Visual Studio,
 
       **Observação** Clique em **Cancelar** para retornar à configuração de amostragem anterior.
 
-     - ou -
+     -ou-
 
    - Selecione **Contadores da CPU** e, em seguida, **Coletar Contadores da CPU**. Os contadores da CPU são listados em **Contadores disponíveis**.
 
@@ -116,7 +116,7 @@ Para listar os contadores disponíveis em um computador na IDE do Visual Studio,
 
      **Observação:** Clique em **Cancelar** para retornar à configuração de coleta de contadores anterior.
 
-### <a name="command-line"></a>Linha de Comando
+### <a name="command-line"></a>Linha de comando
 
 Com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), é possível listar os contadores da CPU disponíveis em um computador por meio da linha de comando.
 
@@ -124,7 +124,7 @@ Com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), é 
 
 1. Abra una janela de prompt de comando.
 
-2. Tipo
+2. Type
 
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd/QueryCounters**
 

@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: b2dbc033-bf95-4d10-8e51-f9462979133e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 386f8e85c02fe73eab9801b3edf79ec0d0b178fc
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 3ee8f09c502f6125c6ce2e67e504a689c035ffd5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150776"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957342"
 ---
 # <a name="call-tree-view"></a>Visualização Árvore de Chamadas
 O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de função que foram percorridos no aplicativo analisado. A raiz da árvore é o ponto de entrada do aplicativo ou do componente. Cada nó da função lista todas as funções que ela chamou e os dados de desempenho sobre essas chamadas de função.
@@ -51,7 +51,7 @@ O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de f
 
 - [Modo de exibição de árvore de chamada](../profiling/call-tree-view-contention-data.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Exibições de relatório de desempenho](../profiling/performance-report-views.md)
 - [Entendendo sobre os valores de dados de instrumentação](../profiling/understanding-instrumentation-data-values.md)
 - [Entendendo sobre os valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)

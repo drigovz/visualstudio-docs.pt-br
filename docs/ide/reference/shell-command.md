@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a6197201ed35520ba8d362b6aa448fe625a2fe3a
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 6b520d3bedf31bc09dc0cf48e86777872176e2e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616362"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957615"
 ---
 # <a name="shell-command"></a>Comando Shell
 Inicia programas executáveis de dentro do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -39,7 +39,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ## <a name="arguments"></a>Argumentos
 `path`
 
-Obrigatórios. O caminho e o nome do arquivo a ser executado ou o documento a ser aberto. Será necessário um caminho completo se o arquivo especificado não estiver em um dos diretórios na variável de ambiente PATH.
+Obrigatório. O caminho e o nome do arquivo a ser executado ou o documento a ser aberto. Será necessário um caminho completo se o arquivo especificado não estiver em um dos diretórios na variável de ambiente PATH.
 
 `args`
 
@@ -86,7 +86,7 @@ O comando a seguir usa xcopy.exe para copiar o arquivo `MyText.txt` para a pasta
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela de comando](../../ide/reference/command-window.md)

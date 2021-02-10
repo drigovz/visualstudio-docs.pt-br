@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 ms.devlang: CSharp
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a06a6885c3d0858f60c8de48dd61054534aad40f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0fcc42b999039abe5d682394e378cb95f12b9283
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809040"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956926"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Criar um aplicativo Windows Forms no Visual Studio com C\#
 
@@ -100,7 +100,7 @@ Depois de selecionar o modelo de projeto C# e nomear o arquivo, o Visual Studio 
 
      ![Escolha a caixa de ferramentas para abrir a janela caixa de ferramentas](../ide/media/csharp-toolbox-toolwindow.png)
 
-     (Se você não encontrar a opção suspensa **Caixa de Ferramentas**, ela poderá ser aberta da barra de menus. Para fazer isso, **exiba**a  >  **caixa de ferramentas**. Ou pressione **Ctrl** + **ALT** + **X**.)
+     (Se você não encontrar a opção suspensa **Caixa de Ferramentas**, ela poderá ser aberta da barra de menus. Para fazer isso, **exiba** a  >  **caixa de ferramentas**. Ou pressione **Ctrl** + **ALT** + **X**.)
 
 1. Escolha o ícone de **pino** para encaixar a janela caixa de **ferramentas** .
 
@@ -135,7 +135,7 @@ Agora que adicionamos um controle de botão para criar uma ação, vamos adicion
 
 1. Na janela **Form1.cs &#91;Design&#93;** **, clique duas vezes no botão para** abrir a janela **Form1.cs** .
 
-      (Como alternativa, você pode expandir **Form1.cs** em **Gerenciador de soluções**e, em seguida, escolher **Form1**.)
+      (Como alternativa, você pode expandir **Form1.cs** em **Gerenciador de soluções** e, em seguida, escolher **Form1**.)
 
 1. Na janela **Form1.cs** , após a linha **void particular** , digite ou insira, `lblHelloWorld.Text = "Hello World!";` conforme mostrado na seguinte captura de tela:
 

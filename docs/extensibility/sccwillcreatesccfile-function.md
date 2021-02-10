@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0d7542f0-4351-41b3-b24c-960ab99c05a1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0694fd6b4ba82faf8b05354765fc5734efe2ef4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50ef18e44579525df136bd770cda96124cb30c87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700205"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956861"
 ---
 # <a name="sccwillcreatesccfile-function"></a>Função SccWillCreateSccFile
 Essa função determina se o plug-in de controle do código-fonte dá suporte à criação do MSSCCPRJ. Arquivo SCC para cada um dos arquivos fornecidos.
@@ -50,7 +50,7 @@ no Uma matriz de nomes de arquivos totalmente qualificados a serem verificados (
 
 [entrada, saída] Matriz na qual armazenar os resultados.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
 
 |Valor|Descrição|

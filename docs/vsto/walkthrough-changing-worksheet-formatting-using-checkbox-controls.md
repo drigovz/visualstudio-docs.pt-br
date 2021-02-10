@@ -13,15 +13,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 28b9f000c2e8517304387e2b203dfa7888b33d64
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 908660693abce2f2adf07d98e7f2a451a8f3c8e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527219"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956588"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Walkthrough: alterar a formatação da planilha usando controles CheckBox
   Este tutorial mostra as noções básicas do uso de caixas de seleção em uma Microsoft Office planilha do Excel para alterar a formatação. Você usará as ferramentas de desenvolvimento do Office no Visual Studio para criar e adicionar código ao seu projeto. Para ver o resultado como um exemplo completo, consulte o exemplo de controles do Excel em [exemplos de desenvolvimento do Office e passo a passos](../vsto/office-development-samples-and-walkthroughs.md).
@@ -162,7 +162,7 @@ ms.locfileid: "97527219"
 - Implantando o projeto. Para obter mais informações, consulte [implantar uma solução do Office usando o ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 - Usar um botão para preencher uma caixa de texto. Para obter mais informações, consulte [Walkthrough: exibir texto em uma caixa de texto em uma planilha usando um botão](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Passo a passos usando o Excel](../vsto/walkthroughs-using-excel.md)
 - [Controle NamedRange](../vsto/namedrange-control.md)
 - [Limitações de controles de Windows Forms em documentos do Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

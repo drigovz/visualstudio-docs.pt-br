@@ -1,5 +1,5 @@
 ---
-title: Criar um projeto
+title: Criar um novo projeto
 description: Saiba como criar um novo projeto no Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 12/23/2020
@@ -10,15 +10,15 @@ helpviewer_keywords:
 - projects [Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dcbf39be441ba8237520fcc56ceec7946d688901
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: 97d585f8c484f1ef8b4cbd0514585d6f328af67c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956874"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Criar um novo projeto no Visual Studio
 
@@ -106,7 +106,7 @@ Se você quiser adicionar um projeto adicional a uma solução, clique com o bot
 > [!TIP]
 > Para obter um exemplo de um projeto e uma solução criados a partir do zero, conclua com instruções passo a passo e código de exemplo, consulte [introdução aos projetos e soluções](../get-started/tutorial-projects-solutions.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Introdução a projetos e soluções](../get-started/tutorial-projects-solutions.md)
 - [Trabalhar com soluções e projetos](creating-solutions-and-projects.md)

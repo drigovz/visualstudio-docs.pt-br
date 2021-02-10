@@ -13,21 +13,21 @@ helpviewer_keywords:
 - Security page in Project Designer
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7080c1a2ce77d26987f81acaa0a751887f9f574e
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 426179eb20fcb71ac02039c3b2be20dab6f685b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350251"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957849"
 ---
 # <a name="security-page-project-designer"></a>Página Segurança, Designer de Projeto
 
 A página **Segurança** do **Designer de Projeto** é usada para definir configurações de segurança de acesso do código para aplicativos implantados usando a implantação do ClickOnce. Para obter mais informações, consulte [segurança de acesso de código para aplicativos ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).
 
-Para acessar a página **Segurança** , clique em um nó do projeto no **Gerenciador de Soluções** e, em seguida, no menu **Projeto** , clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Segurança**.
+Para acessar a página **Segurança**, clique em um nó do projeto no **Gerenciador de Soluções** e, em seguida, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Segurança**.
 
 ## <a name="security-settings"></a>Configurações de segurança
 
@@ -36,7 +36,7 @@ Para acessar a página **Segurança** , clique em um nó do projeto no **Gerenci
 Determina se as configurações de segurança estão habilitadas no tempo de design. Quando esta opção estiver desmarcada, todas as outras opções na página **Segurança** não ficarão disponíveis.
 
 > [!NOTE]
-> Quando você publica um aplicativo usando o assistente **Publicar** , essa opção fica habilitada automaticamente.
+> Quando você publica um aplicativo usando o assistente **Publicar**, essa opção fica habilitada automaticamente.
 
 Quando seleciona a opção, você tem a escolha de selecionar um de dois botões de opção: **Este é um aplicativo de confiança total** ou **Este é um aplicativo de confiança parcial**.
 
@@ -74,7 +74,7 @@ Abre o modelo de manifesto do aplicativo (app.manifest) para configurar as permi
 
 Abre o [Caixa de diálogo Configurações de Segurança Avançadas](../../ide/reference/advanced-security-settings-dialog-box.md), que é usada para definir configurações para depurar o aplicativo com permissões restritas. Essas configurações são verificadas durante a depuração, e exceções de permissão indicam que seu aplicativo pode precisar de mais permissões do que as que foram definidas em uma zona.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Security.Permissions.WebBrowserPermission>
 - <xref:System.Security.Permissions.MediaPermission>

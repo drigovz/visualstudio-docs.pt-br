@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6b78f91e-a006-440c-83fb-e7368040951d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a102b11fdc7608b94b97105b061e28860f41a9a1
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b8515043b228deb4fbcbf43c0e75b9826912f059
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957316"
 ---
 # <a name="preemption-time"></a>Tempo de preempção
 Esses segmentos na linha do tempo estão associados aos tempos de bloqueio categorizados como Preempção. Esta categoria implica que um thread é alternado devido a um destes motivos:
@@ -31,5 +31,5 @@ Esses segmentos na linha do tempo estão associados aos tempos de bloqueio categ
 
   A dica de ferramenta para um segmento de preempção exibe o nome do processo ou do thread que causou a preempção. No entanto, isso não significa que o processo ou thread que assumiu o controle foi realmente executado durante o período de admitiu preempção.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Modo de Exibição de Threads](../profiling/threads-view-parallel-performance.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1e016ebd-aadd-411f-a606-03bf69d3f8aa
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b6a5c2f010b60546fe1ece16f66bf437d2dc633
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: cef9475e9336acd5c10cee604d453706ea7321c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616572"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957797"
 ---
 # <a name="set-current-process"></a>Definir processo atual
 Define o processo especificado como o processo ativo no depurador.
@@ -32,7 +32,7 @@ Debug.SetCurrentProcess index
 ## <a name="arguments"></a>Argumentos
 `index`
 
-Obrigatórios. O índice do processo.
+Obrigatório. O índice do processo.
 
 ## <a name="remarks"></a>Comentários
 Você pode se conectar a vários processos quando está depurando, mas somente um processo está ativo no depurador em um determinado momento. Você pode usar o comando `SetCurrentProcess` para definir o processo ativo.

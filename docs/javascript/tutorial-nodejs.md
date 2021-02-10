@@ -6,17 +6,17 @@ ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7ce7b4af783149a53e0eacadaa5753d596f69563
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: d3b8413673318f2e0cd2a5f00cfb9d1d7f0b4097
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846916"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957524"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e Express no Visual Studio
 
@@ -39,7 +39,7 @@ Neste tutorial, você aprenderá como:
 > * Criar um projeto Node.js
 > * Adicionar código
 > * Usar o IntelliSense para editar o código
-> * Executar o aplicativo
+> * Execute o aplicativo
 > * Atingir um ponto de interrupção no depurador
 
 ## <a name="before-you-begin"></a>Antes de começar
@@ -216,7 +216,7 @@ Em seguida, você executará o aplicativo com o depurador do Visual Studio anexa
 
     ![Definir um ponto de interrupção](../javascript/media/tutorial-nodejs-set-breakpoint.png)
 
-## <a name="run-the-application"></a>Execute o aplicativo
+## <a name="run-the-application"></a>Executar o aplicativo
 
 1. Selecione o destino de depuração na barra de ferramentas de depuração, como **servidor Web (Google Chrome)** ou **servidor Web (Microsoft Edge)**.
 

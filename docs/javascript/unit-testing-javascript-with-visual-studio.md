@@ -6,17 +6,17 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cdaff34c7eb2f9eba7c075127647c2eacbb736f9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e10f9b628d1d9fbbdb2911977fe7e63b1a7b6d57
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86033345"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957472"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Teste de unidade em JavaScript e TypeScript no Visual Studio
 
@@ -67,7 +67,7 @@ Se você não definiu as opções de teste de unidade nas propriedades do projet
 > [!Note]
 > As opções de teste de unidade terão preferência em relação às configurações de arquivos individuais.
 
-Depois de abrir o Gerenciador de testes (escolha **testar**o  >  **Windows**  >  **Test Explorer**), o Visual Studio descobre e exibe os testes. Se os testes não estiverem sendo mostrados inicialmente, recompile o projeto para atualizar a lista.
+Depois de abrir o Gerenciador de testes (escolha **testar** o  >  **Windows**  >  **Test Explorer**), o Visual Studio descobre e exibe os testes. Se os testes não estiverem sendo mostrados inicialmente, recompile o projeto para atualizar a lista.
 
 ![Gerenciador de Testes](../javascript/media/UnitTestsDiscoveryMocha.png)
 

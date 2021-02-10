@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b82eaf6ca52b04d39e9f776feca74f5bb223a0d5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 70b0d85ea161a3f938013c01702dd2ccce73a31d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048176"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956094"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurações padrão e personalizadas do Conjunto de Ferramentas
 
@@ -76,9 +76,9 @@ O Visual Studio 2017 e versões posteriores não usam uma chave do Registro no c
 
 ## <a name="custom-toolset-definitions"></a>Definições personalizadas do Conjunto de Ferramentas
 
- Quando um conjunto de ferramentas padrão não atender a seus requisitos de build, você pode criar um conjunto de ferramentas personalizado. Por exemplo, você pode ter um cenário de laboratório de compilação no qual você deve ter um sistema separado para criar projetos C++. Usando um Conjunto de Ferramentas personalizado, você pode atribuir valores personalizados para o `ToolsVersion` atributo ao criar projetos ou executar *MSBuild.exe* . Fazendo isso, você também pode usar a propriedade `$(MSBuildToolsPath)` para importar arquivos *.targets* do diretório, bem como definir suas próprias propriedades de Conjunto de Ferramentas personalizadas, as quais podem ser usadas para qualquer projeto que use esse Conjunto de Ferramentas.
+ Quando um conjunto de ferramentas padrão não atender a seus requisitos de build, você pode criar um conjunto de ferramentas personalizado. Por exemplo, você pode ter um cenário de laboratório de compilação no qual você deve ter um sistema separado para criar projetos C++. Usando um Conjunto de Ferramentas personalizado, você pode atribuir valores personalizados para o `ToolsVersion` atributo ao criar projetos ou executar *MSBuild.exe*. Fazendo isso, você também pode usar a propriedade `$(MSBuildToolsPath)` para importar arquivos *.targets* do diretório, bem como definir suas próprias propriedades de Conjunto de Ferramentas personalizadas, as quais podem ser usadas para qualquer projeto que use esse Conjunto de Ferramentas.
 
- Especifique um Conjunto de Ferramentas personalizado no arquivo de configuração de *MSBuild.exe* (ou da ferramenta personalizada que hospeda o mecanismo MSBuild, se for o seu caso). Por exemplo, o arquivo de configuração de *MSBuild.exe* poderia incluir a seguinte definição de Conjunto de Ferramentas caso deseje definir um conjunto de ferramentas chamado *MyCustomToolset* .
+ Especifique um Conjunto de Ferramentas personalizado no arquivo de configuração de *MSBuild.exe* (ou da ferramenta personalizada que hospeda o mecanismo MSBuild, se for o seu caso). Por exemplo, o arquivo de configuração de *MSBuild.exe* poderia incluir a seguinte definição de Conjunto de Ferramentas caso deseje definir um conjunto de ferramentas chamado *MyCustomToolset*.
 
 ```xml
 <msbuildToolsets default="MyCustomToolset">
@@ -114,6 +114,6 @@ O Visual Studio 2017 e versões posteriores não usam uma chave do Registro no c
 
   Você também pode adicionar propriedades personalizadas, propriedades específicas do ToolsVersion para o arquivo de configuração usando a mesma sintaxe que você pode usar para adicionar a propriedade MSBuildToolsPath. Para disponibilizar essas propriedades personalizadas para o arquivo de projeto, use o mesmo nome como o nome do valor que é especificado no arquivo de configuração. Você pode definir Conjuntos de Ferramentas, mas não os subconjuntos de ferramentas no arquivo de configuração.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 994e30ad-435a-4f9e-9272-d96d9e01099c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aa67792ced94afd9c4439cbc6ea577e6b85f28b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdc2006b45a664496615988251081f1000cdb428
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716611"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956276"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 Essa interface enumera as estruturas [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) .
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IEnumDebugFrameInfo2 : IUnknown
@@ -40,9 +40,9 @@ IEnumDebugFrameInfo2 : IUnknown
 |Método|Descrição|
 |------------|-----------------|
 |[Próximo](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|Recupera um número especificado de estruturas [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) em uma sequência de enumeração.|
-|[Ignorar](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|Ignora um número especificado de estruturas [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) em uma sequência de enumeração.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|Ignora um número especificado de estruturas [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) em uma sequência de enumeração.|
 |[Redefinir](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|Redefine uma sequência de enumeração para o início.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.|
+|[8i](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|Obtém o número de estruturas [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) em um enumerador.|
 
 ## <a name="remarks"></a>Comentários
@@ -56,6 +56,6 @@ IEnumDebugFrameInfo2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
-- [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
 - [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

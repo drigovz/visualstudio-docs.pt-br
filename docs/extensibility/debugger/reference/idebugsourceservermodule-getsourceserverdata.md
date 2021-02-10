@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: f15d86aa-1bd9-4b16-a64a-21b01c27db2e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c0388e4a1916a16f7e429fa4f32c45ed62fdb02e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a53da7b55258cd3708777a802bcd4625e8461b0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719923"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956510"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 Recupera uma matriz de informações do servidor de origem.
@@ -46,7 +46,7 @@ fora Número de bytes na matriz de dados.
 `ppData`\
 fora Referência à matriz de dados.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo
@@ -74,5 +74,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)
