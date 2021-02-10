@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99e33ae67e0fd18ecd9a1a40a8b8075cd22d4bf7
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: bf32f4cd32ad6e53c1db33f75f68559e84414436
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715659"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942900"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Cores e estilo para Visual Studio
 
@@ -360,7 +360,7 @@ Construa um tipo especial de entrada de registro de categoria em `[HKLM\SOFTWARE
 
 Preencha o registro com dois valores:
 
-| Nome | Tipo | Dados | Descrição |
+| Nome | Type | Dados | Descrição |
 | --- | --- | --- | --- |
 | Categoria | REG_SZ | GUID | Um GUID criado para identificar a categoria |
 | Pacote | REG_SZ | GUID | O GUID do serviço VSPackage que dá suporte à categoria |
@@ -373,7 +373,7 @@ Construa um tipo especial de entrada de registro de categoria em `[HKLM\SOFTWARE
 
 Preencha o registro com dois valores:
 
-| Nome | Tipo | Dados | Descrição |
+| Nome | Type | Dados | Descrição |
 |--- | --- | --- | --- |
 | Categoria | REG_SZ | GUID | Um GUID criado para identificar a categoria |
 | Pacote | REG_SZ | GUID | O GUID do serviço VSPackage que dá suporte à categoria |

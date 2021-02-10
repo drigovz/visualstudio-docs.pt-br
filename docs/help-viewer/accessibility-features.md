@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 94a3225c-d2cb-4565-8453-855d1cdc1acf
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 359a1c4c87a139c35bf38d36edc6a53b2147dd98
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 7ada860eb82b6c391e04e7431d6625c876174654
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944349"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Funcionalidades de acessibilidade do Help Viewer
 A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços para todos. Este tópico inclui informações sobre recursos, produtos e serviços que ajudam a tornar o Microsoft Help Viewer acessível a pessoas com uma ampla variedade de capacidades.
@@ -34,7 +34,7 @@ Você pode alterar a largura das janelas de navegação ou documento apontando p
 ## <a name="help-viewer-position"></a>Posição do Help Viewer
 É possível reposicionar o Help Viewer arrastando sua barra de título para uma posição diferente.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)
 - [Teclas de atalho (Visualizador da ajuda)](../help-viewer/shortcut-keys.md)

@@ -6,15 +6,15 @@ ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46eb9c21b5bc6f7d0a577b85d043933b48bf60bc
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 4ebf3bbd1fe04b13f31de7ebd8c513de670dd480
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878989"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944128"
 ---
 # <a name="how-to-search-for-topics"></a>Como pesquisar tópicos
 
@@ -77,7 +77,7 @@ O algoritmo de pesquisa é aplicável a determinados critérios para ajudar a cl
 
 Palavras ou números que ocorrem com frequência, chamados de palavras irrelevantes, são automaticamente ignorados durante uma pesquisa de texto completo. Por exemplo, se você pesquisar a frase "passar por", os resultados da pesquisa exibirão tópicos que contêm a palavra "passar", mas não "por".
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Operadores lógicos e avançados](../help-viewer/logical-operators-search-expressions.md)
 - [Como localizar tópicos no índice](../help-viewer/find-topics-index.md)

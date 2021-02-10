@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 11fb3545-8974-4776-9a54-6b6e7739ae31
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98fd802021f29365b6f338610754214352a996d7
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 8f739135a9a4bed969163ce26911e5304a66822b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994232"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943388"
 ---
 # <a name="guidsymbol-element"></a>Elemento GuidSymbol
 O `GuidSymbol` elemento contém o GUID do par GUID: ID que representa um menu, grupo ou comando. A ID vem de um `IDSymbol` elemento no `GuidSymbol` elemento. O `GuidSymbol` elemento tem um `name` atributo que fornece um nome amigável para o GUID, que está contido no `value` atributo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <GuidSymbol name="guidMyCommandSet" value="{xxxxxxxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx}">
@@ -39,8 +39,8 @@ O `GuidSymbol` elemento contém o GUID do par GUID: ID que representa um menu, g
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|name|Obrigatórios. Nome do símbolo de GUID.|
-|value|Obrigatórios. GUID do símbolo GUID.|
+|name|Obrigatório. Nome do símbolo de GUID.|
+|value|Obrigatório. GUID do símbolo GUID.|
 
 ### <a name="child-elements"></a>Elementos filho
 

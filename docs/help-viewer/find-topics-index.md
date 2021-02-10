@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 695bcabc195b97551b2943a557d591bdfb85c991
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 34eb02621c42282fdd5ec1656edcb175351a1f5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879015"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944216"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Localizar tópicos usando o índice do Visualizador da Ajuda
 
@@ -78,7 +78,7 @@ Se você não encontrar uma entrada para a palavra ou frase inserida, tente o se
 
     Por exemplo, se tiver inserido o termo "compilando", tente "criando".
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como localizar tópicos no Sumário](../help-viewer/find-topics-toc.md)
 - [Como pesquisar tópicos](../help-viewer/find-topics.md)

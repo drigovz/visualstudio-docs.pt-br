@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b68df68ce7fa4ad5cbc98db256204ddf8623d2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ff2b2d5e5a0043cde17fecd2d59c084d2958e32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701029"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943108"
 ---
 # <a name="sccdiff-function"></a>Função SccDiff
 Essa função exibe (ou, opcionalmente, apenas verifica) as diferenças entre o arquivo atual (no disco local) e sua última versão com check-in no sistema de controle do código-fonte.
@@ -49,7 +49,7 @@ no Nome do arquivo para o qual a diferença é solicitada.
 
  fOptions
 
-no Sinalizadores de comando. Consulte comentários para obter detalhes.
+no Sinalizadores de comando. Consulte Comentários para obter detalhes.
 
  pvOptions
 

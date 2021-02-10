@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44345b712f448bd7eedf288d7c58cb4193e1b020
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 09ddccece8261a331277d1c143054305f0d08d7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672419"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943199"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>Elemento MaxFrameworkVersion (modelos do Visual Studio)
 
@@ -41,10 +41,10 @@ Especifica a versão máxima do .NET Framework exigido pelo modelo. Ele determin
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- nenhuma.
+ Nenhum.
 
 ### <a name="child-elements"></a>Elementos filho
- nenhuma.
+ Nenhum.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -85,7 +85,7 @@ O exemplo a seguir ilustra os metadados para um [!INCLUDE[csprcs](../data-tools/
 
 Neste exemplo, a versão máxima do .NET Framework exigido pelo modelo, representada por `MaxFrameworkVersion` , é 4.7.1. Um projeto criado com este modelo pode ter como destino .NET Framework versões até o 4.7.1.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)

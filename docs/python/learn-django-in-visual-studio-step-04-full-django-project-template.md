@@ -6,17 +6,17 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c778d830b20797962306700a5af938eb3a3bb142
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c0a0f0f4e009d689a69e840b31281e65bc5a0e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62961664"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942549"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Etapa 4: Usar o modelo Projeto Web do Django completo
 
@@ -73,7 +73,7 @@ No nível mais amplo, o modelo "Projeto Web do Django" cria a seguinte estrutura
   - *requirements.txt* contendo uma dependência Django 1.x.
   - *readme.html*, um arquivo que é exibido no Visual Studio após a criação do projeto. Conforme observado na seção anterior, siga as instruções aqui para criar uma conta de superusuário (administrador) para o aplicativo.
 - A pasta *app* contém todos os arquivos do aplicativo, incluindo exibições, modelos, testes, formulários, modelos e arquivos estáticos (veja a etapa 4-2). Normalmente, você renomeie esta pasta para usar um nome de aplicativo mais diferente.
-- A pasta *DjangoWeb* (projeto Django) contém os arquivos de projeto Django típicos: * \_ \_ init \_ \_ . py*, *Settings.py*, *URLs.py*e *WSGI.py*. Usando o modelo de projeto, *settings.py* já está configurado para o aplicativo e o arquivo de banco de dados, e *urls.py* já está configurado com rotas para todas as páginas de aplicativo, incluindo o formulário de logon.
+- A pasta *DjangoWeb* (projeto Django) contém os arquivos de projeto Django típicos: *\_ \_ init \_ \_ . py*, *Settings.py*, *URLs.py* e *WSGI.py*. Usando o modelo de projeto, *settings.py* já está configurado para o aplicativo e o arquivo de banco de dados, e *urls.py* já está configurado com rotas para todas as páginas de aplicativo, incluindo o formulário de logon.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pergunta: É possível compartilhar um ambiente virtual entre projetos do Visual Studio?
 

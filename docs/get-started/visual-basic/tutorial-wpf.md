@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc57e3d104d7f8427e97eb6b3dd97ca3e89bc49e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b8488682674b2531bac561e9f2536e616800fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419205"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944362"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: criar um aplicativo simples com Visual Basic
 
@@ -104,7 +104,7 @@ Vamos dar um nome mais específico para MainWindow. Em **Gerenciador de soluçõ
 
 ## <a name="design-the-user-interface-ui"></a>Criar a interface do usuário
 
-Se o designer não estiver aberto, selecione *Greetings. XAML* em **Gerenciador de soluções**e pressione **Shift** + **F7** para abrir o designer.
+Se o designer não estiver aberto, selecione *Greetings. XAML* em **Gerenciador de soluções** e pressione **Shift** + **F7** para abrir o designer.
 
 Adicionaremos três tipos de controles a este aplicativo: um controle <xref:System.Windows.Controls.TextBlock>, dois controles <xref:System.Windows.Controls.RadioButton> e um controle <xref:System.Windows.Controls.Button>.
 
@@ -265,7 +265,7 @@ Você pode testar o código durante a depuração ao adicionar alguns pontos de 
 
 #### <a name="add-breakpoints"></a>Adicionar pontos de interrupção
 
-1. Abra o *Greetings. XAML. vb*e selecione a seguinte linha: `MessageBox.Show("Hello.")`
+1. Abra o *Greetings. XAML. vb* e selecione a seguinte linha: `MessageBox.Show("Hello.")`
 
 2. Adicione um ponto de interrupção pressionando **F9** ou por meio do menu selecionando **Depurar** e, em seguida, **Ativar/Desativar Ponto de Interrupção**.
 
@@ -281,7 +281,7 @@ Você pode testar o código durante a depuração ao adicionar alguns pontos de 
 
    ![Captura de tela de ponto de interrupção no depurador](media/exploreide-debugbreakpoint.png)
 
-6. Na barra de menus, escolha **depurar depuração**  >  **Step Out**.
+6. Na barra de menus, escolha **depurar depuração**  >  .
 
      O aplicativo retomará a execução e uma caixa de mensagem com a palavra "Olá" será exibida.
 
@@ -315,7 +315,7 @@ Agora que você verificou que tudo está funcionando, já pode preparar um build
 
 Parabéns por concluir este tutorial. Você pode encontrar o *. exe* criado sob sua solução e o diretório do projeto (*. ..\HelloWPFApp\HelloWPFApp\bin\Release*).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 ::: moniker range="vs-2017"
 

@@ -7,17 +7,17 @@ ms.technology: vs-ide-general
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: c46120c369fa130e83620549ca0bc084a5075f7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 227d54fbc2734290954fc1c847a34846bb6dc5cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235141"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944531"
 ---
 # <a name="learn-to-use-the-code-editor-with-visual-basic"></a>Aprenda a usar o editor de códigos com Visual Basic
 
@@ -80,7 +80,7 @@ O Visual Studio fornece *snippets de código* úteis que você pode usar para ge
 
    A estrutura do código do procedimento Sub `MySub()` é adicionada ao arquivo.
 
-Os snippets de código disponíveis variam em linguagens de programação diferentes. Você pode examinar os trechos de código disponíveis para Visual Basic escolhendo **Editar**  >  trecho do**IntelliSense**  >  **Insert** (ou pressione **Ctrl** + **K**, **Ctrl** + **X**). Para o Visual Basic, os snippets de código estão disponíveis para as seguintes categorias:
+Os snippets de código disponíveis variam em linguagens de programação diferentes. Você pode examinar os trechos de código disponíveis para Visual Basic escolhendo **Editar**  >  trecho do **IntelliSense**  >  **Insert** (ou pressione **Ctrl** + **K**, **Ctrl** + **X**). Para o Visual Basic, os snippets de código estão disponíveis para as seguintes categorias:
 
 ![Lista de snippets de código do Visual Basic](media/tutorial-code-snippet-list.png)
 
@@ -187,7 +187,7 @@ Ninguém obtém o código correto na primeira vez e uma das coisas que talvez vo
 > [!div class="nextstepaction"]
 > [Saiba mais sobre projetos e soluções](tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Snippets de código](../../ide/code-snippets.md)
 - [Navegue pelos códigos](../../ide/navigating-code.md)

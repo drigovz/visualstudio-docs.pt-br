@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.FSharp.IntelliSense
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84e24f609891e67bdafaab5ff8847dc341b861ba
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: d8005a427aeb0e07235c077d23f12906ab2d29ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039608"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943855"
 ---
 # <a name="options-text-editor-f-intellisense"></a>Opções, Editor de Texto, F#, IntelliSense
 
@@ -36,7 +36,7 @@ Use a página de opções **IntelliSense** para modificar algumas configuraçõe
 
    Quando essa opção estiver selecionada, o IntelliSense exibirá automaticamente a lista de conclusão quando você começar a digitar e incluir itens de namespaces não abertos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)
 - [Usando o IntelliSense](../../ide/using-intellisense.md)

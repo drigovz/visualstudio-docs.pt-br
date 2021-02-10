@@ -5,18 +5,18 @@ ms.date: 08/28/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: a2f284e1e464ab41391f60c546ce01d418ff377b
-ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
+ms.openlocfilehash: 6524cec090f20c475724f1ae8615c5dd24cfa2d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92750122"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943501"
 ---
 # <a name="opencv"></a>OpenCV
 
@@ -28,10 +28,10 @@ As personalizações a seguir já estão aplicadas na bifurcação [Microsoft/Op
 
 O `.devcontainer` diretório precisa conter os seguintes arquivos:
 
-* devcontainer.jsem
+* devcontainer.json
 * devinit.jsem
 
-### <a name="devcontainerjson"></a>devcontainer.jsem
+### <a name="devcontainerjson"></a>devcontainer.json
 
 Veja a seguir o conteúdo do _devcontainer.jsno_ arquivo.
 
@@ -41,7 +41,7 @@ Veja a seguir o conteúdo do _devcontainer.jsno_ arquivo.
 }
 ```
 
-O `postCreateCommand` inicia a ferramenta  [devinit](devinit-and-codespaces.md) , que consome _devinit.jsem_ .
+O `postCreateCommand` inicia a ferramenta  [devinit](devinit-and-codespaces.md) , que consome _devinit.jsem_.
 
 ### <a name="devinitjson"></a>devinit.jsem
 
@@ -60,7 +60,7 @@ Veja a seguir o conteúdo do [_devinit.jsno_](devinit-json.md) arquivo.
 }
 ```
 
-O _devinit.jsno_ é o arquivo consumido pela ferramenta [devinit](devinit-and-codespaces.md) e deve estar no mesmo diretório de _devcontainer.jsem_ .
+O _devinit.jsno_ é o arquivo consumido pela ferramenta [devinit](devinit-and-codespaces.md) e deve estar no mesmo diretório de _devcontainer.jsem_.
 
 Neste exemplo, a ferramenta [WSL-install](tool-wsl-install.md) é usada para criar uma instância WSL que executa o Ubuntu 20, 4 e o provisionamento com ferramentas essenciais de desenvolvimento em C++.
 ## <a name="targeting-windows-or-linux"></a>Direcionamento para Windows ou Linux

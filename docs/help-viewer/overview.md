@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e0ec4755584a7021d4f5489500aa53b9bad87e
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 339d424dd0b09404fc135a119606d47cf7570be3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878963"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944089"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
@@ -92,7 +92,7 @@ A barra de ferramentas na janela do **Help Viewer** contém os seguintes botões
 
 - O triângulo pequeno no lado direito abre uma lista de guias, incluindo guias de tópico e a guia **gerenciar conteúdo** . Você pode escolher um nome de guia para torná-lo a guia ativa.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Instalação do Microsoft Help Viewer](../help-viewer/installation.md)
 - [Guia do administrador do Help Viewer](../help-viewer/administrator-guide.md)

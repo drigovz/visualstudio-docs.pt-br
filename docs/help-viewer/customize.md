@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9c0bc950-7323-4f0f-8de2-0b0af9a42b85
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 402aa5deaae6b082c8360b9867807516f11d935d
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 0421a5cdb93c64093ae5b428260c78da44e71e3c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879028"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944193"
 ---
 # <a name="customize-the-help-viewer"></a>Personalizar o Help Viewer
 Você pode personalizar o layout das janelas do Help Viewer, bem como outras opções, como tamanho da fonte, número máximo de resultados e se deseja incluir conteúdo em inglês.
@@ -46,6 +46,6 @@ Abra a caixa de diálogo **Opções do Visualizador** escolhendo o botão **Opç
 |Alterar o número máximo de entradas de histórico que aparecem na janela **Favoritos**|Escolha um valor na lista **Máximo de entradas do Histórico salvas**.|
 |Incluir ou excluir conteúdo em inglês quando você exibir conteúdo de uma versão diferente do inglês de um produto.|Marque ou desmarque a caixa de seleção **Incluir conteúdo em inglês em todas as guias de navegação e solicitações F1**. **Cuidado:** esse recurso também controla se você pode baixar o conteúdo em inglês na guia **Gerenciar Conteúdo**.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)

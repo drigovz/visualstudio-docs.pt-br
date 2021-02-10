@@ -14,15 +14,15 @@ helpviewer_keywords:
 - collaborative development [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d30f28b3e97469bc9e0bf921438960206b4f89c0
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 028530014afdc78ab6c9c0483c3d443195383793
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845798"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942302"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Desenvolvimento colaborativo de soluções do Office
   Vários desenvolvedores podem trabalhar em um projeto do Office da mesma maneira que colaboram em outros projetos do Visual Studio. O Visual Studio localiza corretamente a instalação do Microsoft Office em cada computador, mesmo se o Office estiver instalado em locais diferentes. No entanto, há algumas considerações importantes a serem observadas.
@@ -44,7 +44,7 @@ ms.locfileid: "96845798"
 
  Os certificados temporários gerados automaticamente no momento da compilação não são protegidos por senhas. Os certificados contêm o nome de logon do desenvolvedor e outras informações pessoais. Se você implantar personalizações que são assinadas por certificados temporários, outras pessoas poderão acessar essas informações.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Proteger soluções do Office](../vsto/securing-office-solutions.md)
 - [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)
 - [Criar soluções do Office](../vsto/building-office-solutions.md)

@@ -1,22 +1,22 @@
 ---
-title: Crie um projeto de teste de unidade
+title: Criar um projeto de teste de unidade
 description: Saiba como criar um projeto de teste de unidade. O projeto de teste pode estar na mesma solução que o código de produção ou em uma solução separada.
 ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f0d438c05d3c9608c11903c02119d7c3e267a48b
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 8ca3cbe82bf4253e660ce69960570e40702c5512
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441840"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942354"
 ---
-# <a name="create-a-unit-test-project"></a>Crie um projeto de teste de unidade
+# <a name="create-a-unit-test-project"></a>Criar um projeto de teste de unidade
 
 Geralmente, os testes de unidade refletem a estrutura do código que está sendo testado. Por exemplo, um projeto de teste de unidade será criado para cada projeto de código do produto. O projeto de teste pode estar na mesma solução que o código de produção ou em uma solução separada. É possível ter vários projetos de teste de unidade em uma solução.
 

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: b03cab0c-3f0b-4cc6-88dc-acb3b48c567a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ba08e4ec32aceaf6c265714848939cc6ad9c66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d561c8eaa9f7b4fc08f71c241fd052fd366ca80d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732038"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944635"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 Essa interface representa um fluxo de instruções.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDebugDisassemblyStream2 : IUnknown
@@ -58,7 +58,7 @@ IDebugDisassemblyStream2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Confira também
-- [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
+## <a name="see-also"></a>Consulte também
+- [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

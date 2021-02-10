@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 312b886ee0becc794f657ecaaba7fb028d4b3cf1
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: e52b03b01f53a8064dc6ec691f751c86266af6a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878885"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944297"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guia do administrador do Help Viewer
 
@@ -131,7 +131,7 @@ Em seguida, você precisará empacotar o conteúdo para que ele seja implantado 
 
 1. Crie um compartilhamento de rede e copie o conteúdo da ajuda nesse local.
 
-     Por exemplo, copie o conteúdo em *C:\VSHelp* para * \\ \myserver\VSHelp*.
+     Por exemplo, copie o conteúdo em *C:\VSHelp* para *\\ \myserver\VSHelp*.
 
 2. Crie um arquivo *.bat* para conter o script de implantação do conteúdo da ajuda. Como o cliente provavelmente tenha um bloqueio de leitura em alguns dos arquivos que estão sendo excluídos como parte do envio, você deve encerrar cliente antes de enviar atualizações. Por exemplo:
 
@@ -143,7 +143,7 @@ Em seguida, você precisará empacotar o conteúdo para que ele seja implantado 
 
 3. Execute o arquivo *. bat* nos computadores locais em que você deseja instalar o conteúdo da ajuda.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Argumentos de linha de comando para o Gerenciador de conteúdo da ajuda](../help-viewer/command-line-arguments.md)
 - [Substituições do Gerenciador de conteúdo da ajuda](../help-viewer/behavior-overrides.md)

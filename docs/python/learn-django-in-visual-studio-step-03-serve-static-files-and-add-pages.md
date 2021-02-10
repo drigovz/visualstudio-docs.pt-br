@@ -6,17 +6,17 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 748f941d5a8f257b3765b06651ff3244793e0123
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7aabfa91f7f6c6204919c4a06d2d3080b5174c5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942575"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-django-app"></a>Etapa 3: fornecer arquivos estáticos, adicionar páginas e usar a herança de modelo com o aplicativo Django
 
@@ -63,7 +63,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 Você pode organizar os arquivos usando qualquer estrutura de pastas desejada dentro de *static* e, em seguida, usar caminhos relativos dentro dessa pasta para referenciar os arquivos. Para demonstrar esse processo, as seguintes etapas adicionam um arquivo CSS ao aplicativo e, em seguida, usam essa folha de estilos no modelo *index.html*:
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse na pasta **HelloDjangoApp** no projeto do Visual Studio, selecione **Adicionar**  >  **nova pasta**e nomeie a pasta `static` .
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse na pasta **HelloDjangoApp** no projeto do Visual Studio, selecione **Adicionar**  >  **nova pasta** e nomeie a pasta `static` .
 
 1. Clique com o botão direito do mouse na pasta **static** e selecione **Adicionar** > **Novo item**. Na caixa de diálogo exibida, selecione o modelo de **folha de estilos** , nomeie o arquivo `site.css` e selecione **OK**. O arquivo **site.css** é exibido no projeto e aberto no editor. A estrutura de pastas deve ser semelhante à imagem a seguir:
 

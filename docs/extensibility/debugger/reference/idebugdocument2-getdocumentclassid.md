@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 111c2b85-ebfa-487f-b896-2ec4a3eac4d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 71683c91082f477da530ec1be1fdc7627d6a7635
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c635afa758a4f025305b88f1e11c48737a146a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732033"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944596"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 Obtém o identificador de classe do documento.
@@ -28,13 +28,13 @@ Obtém o identificador de classe do documento.
 ## <a name="syntax"></a>Sintaxe
 
 ```cpp
-HRESULT GetDocumentClassID( 
+HRESULT GetDocumentClassID( 
    CLSID* pclsid
 );
 ```
 
 ```csharp
-int GetDocumentClassID( 
+int GetDocumentClassID( 
    out Guid pclsid
 );
 ```
@@ -42,11 +42,11 @@ int GetDocumentClassID( 
 ## <a name="parameters"></a>Parâmetros
 `pclsid` fora Retorna um GUID que é a ID de classe do documento.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
  Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
  O GUID de classe pode ser usado para instanciar classes individuais, cada uma representando um documento.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

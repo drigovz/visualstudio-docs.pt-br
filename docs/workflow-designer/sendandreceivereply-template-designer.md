@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 818a8c84-6593-416d-b016-1d91b85ffb68
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 91885371f72c5756ddc026111404f091a2cccf08
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 02bcc4a812a541ea792a190dc21dfbeb3119c008
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993257"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943686"
 ---
 # <a name="sendandreceivereply-template-designer"></a>Designer do modelo de SendAndReceiveReply
 
@@ -47,7 +47,7 @@ A tabela a seguir mostra as <xref:System.ServiceModel.Activities.ReceiveReply> P
 | Nome da propriedade | Obrigatório | Uso |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | Falso | O nome amigável opcional de atividade de <xref:System.ServiceModel.Activities.ReceiveReply> . O padrão é ReceiveReplyForSend.<br /><br /> Embora o uso de um valor não padrão para o amigável <xref:System.Activities.Activity.DisplayName%2A> não seja estritamente necessário, é melhor usar esse valor. |
-| <xref:System.ServiceModel.Activities.ReceiveReply.Request%2A> | Verdadeiro | Fazer referência a <xref:System.ServiceModel.Activities.Send> a atividade emparelhada com esta atividade de <xref:System.ServiceModel.Activities.ReceiveReply> . Essa propriedade não deve ser **nula**. <xref:System.ServiceModel.Activities.Send> e <xref:System.ServiceModel.Activities.ReceiveReply> as atividades são usadas em conjunto no cliente para modelar um padrão de mensagens de solicitação/resposta. Esta propriedade especifica que a atividade de <xref:System.ServiceModel.Activities.Send> é emparelhada. No designer, você não pode editar essa propriedade porque ela é associada automaticamente à <xref:System.ServiceModel.Activities.Send> atividade da qual você criou a <xref:System.ServiceModel.Activities.ReceiveReply> atividade. |
+| <xref:System.ServiceModel.Activities.ReceiveReply.Request%2A> | True | Fazer referência a <xref:System.ServiceModel.Activities.Send> a atividade emparelhada com esta atividade de <xref:System.ServiceModel.Activities.ReceiveReply> . Essa propriedade não deve ser **nula**. <xref:System.ServiceModel.Activities.Send> e <xref:System.ServiceModel.Activities.ReceiveReply> as atividades são usadas em conjunto no cliente para modelar um padrão de mensagens de solicitação/resposta. Esta propriedade especifica que a atividade de <xref:System.ServiceModel.Activities.Send> é emparelhada. No designer, você não pode editar essa propriedade porque ela é associada automaticamente à <xref:System.ServiceModel.Activities.Send> atividade da qual você criou a <xref:System.ServiceModel.Activities.ReceiveReply> atividade. |
 | <xref:System.ServiceModel.Activities.ReceiveReply.Content%2A> | Falso | Especifica o conteúdo de mensagem ou de parâmetro para receber. Pode ser uma atividade de <xref:System.ServiceModel.Activities.ReceiveMessageContent> ou uma atividade de <xref:System.ServiceModel.Activities.ReceiveParametersContent> . Edite essa propriedade clicando no botão de reticências ao lado do campo **conteúdo** na grade de propriedades ou clicando no botão **definir** ao lado do rótulo de **conteúdo** na superfície do designer de atividade **receber** . Ambos exibem a caixa de diálogo **definição de conteúdo** . Para obter mais informações sobre como usar essa caixa, consulte a [caixa de diálogo Definição de conteúdo](../workflow-designer/content-definition-dialog-box.md). |
 | <xref:System.ServiceModel.Activities.ReceiveReply.CorrelationInitializers%2A> | Falso | Especifica a coleção de objetos de <xref:System.ServiceModel.Activities.CorrelationInitializer> que inicializam vários objetos de <xref:System.ServiceModel.Activities.CorrelationHandle> que configuram esta atividade de <xref:System.ServiceModel.Activities.Receive> dentro de fluxo de trabalho. Clique no botão de reticências ao lado da <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> Propriedade na grade de propriedades para abrir a caixa de diálogo **Adicionar inicializadores de correlação** . Para obter mais informações sobre como usar essa caixa, consulte [Adicionar CorrelationInitializers caixa de diálogo](../workflow-designer/add-correlationinitializers-dialog-box.md). |
 | <xref:System.ServiceModel.Activities.ReceiveReply.Action%2A> | Falso | Especifica o cabeçalho da ação de mensagem. Se não estiver definido explicitamente, seu valor padrão será:<br /><br /> `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}`. |

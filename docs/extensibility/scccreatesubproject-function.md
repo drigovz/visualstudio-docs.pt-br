@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74354e05b16830f599dd706fbe48aadd75b11a18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ed763635d5629400c70c53497c7a798e0ac38f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701033"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943121"
 ---
 # <a name="scccreatesubproject-function"></a>Função SccCreateSubProject
 Essa função cria um subprojeto com o nome fornecido em um projeto pai existente especificado pelo `lpParentProjPath` argumento.
@@ -92,7 +92,7 @@ no O nome sugerido do subprojeto (até SCC_PRJPATH_SIZE, incluindo o terminador 
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Notas técnicas para SccCreateSubProject e SccGetParentProjectPath
  A adição de soluções e projetos ao controle do código-fonte foi simplificada no Visual Studio para minimizar o número de vezes que um usuário é solicitado a selecionar locais no sistema de controle do código-fonte. Essas alterações são ativadas pelo Visual Studio se um plug-in de controle do código-fonte der suporte a ambas as novas funções `SccCreateSubProject` e `SccGetParentProjectPath` . No entanto, a seguinte entrada de registro pode ser usada para desabilitar essas alterações e reverter para o comportamento anterior do Visual Studio (API de plug-in de controle de origem versão 1,1):
 
- **[HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = DWORD: 00000001**
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = DWORD: 00000001**
 
  Se essa entrada de registro não existir ou for definida como DWORD: 00000000, o Visual Studio tentará usar as novas funções `SccCreateSubProject` e `SccGetParentProjectPath` .
 

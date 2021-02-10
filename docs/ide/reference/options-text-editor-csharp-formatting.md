@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Text editor Options dialog box, formatting
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: a29f298579d571595cbf537f99ed67b333fbbb9c
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: eea4f9afd82dd87385e02ba9f149e91f336369a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039765"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944063"
 ---
 # <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Caixa de diálogo opções: \> formatação de \> estilo de código C# do editor de texto \>
 
@@ -67,7 +67,7 @@ Essas configurações definem o comando **Formatar Documento** para executar a l
 |**Aplicar todas as regras de formatação de C# (recuo, quebra automática, espaçamento)**|O comando **Formatar Documento** sempre corrige os problemas de formatação. Essa configuração não pode ser alterada.| [Principais opções do EditorConfig](../../ide/create-portable-custom-editor-options.md)<br/>[Opções de formatação do EditorConfig do .NET](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules)<br/><br/>**Ferramentas**  >  do **Opções**  >  do **Editor**  >  de texto **C#**  >  **Formatando** > [**recuo** ou **novas linhas** ou **espaçamento** ou **disposição**]|
 |**Executar limpeza de código de adição durante a formatação**|Quando selecionada, aplica correções para as regras especificadas abaixo no comando **Edit.FormatDocument**.| N/D |
 |**Remover using desnecessários**|Quando selecionada, remove as diretivas `using` desnecessários quando **Edit.FormatDocument** é disparado.| N/D |
-|**Classificar usos**|Quando selecionada, classifica as diretivas `using` quando **Edit.FormatDocument** é disparado.| dotnet_sort_system_directives_first<br/><br/>**Ferramentas**  >  do **Opções**  >  do **Editor**  >  de texto **C#**  >  **Avançado**  >  **Coloque as diretivas ' System ' primeiro ao classificar usando** |
+|**Classificar usando**|Quando selecionada, classifica as diretivas `using` quando **Edit.FormatDocument** é disparado.| dotnet_sort_system_directives_first<br/><br/>**Ferramentas**  >  do **Opções**  >  do **Editor**  >  de texto **C#**  >  **Avançado**  >  **Coloque as diretivas ' System ' primeiro ao classificar usando** |
 |**Adicionar/remover chaves de instruções de controle de única linha**|Quando selecionado, adiciona ou remove as chaves das instruções de controle de única linha quando **Edit.FormatDocument** é disparado.| csharp_prefer_braces<br/><br/>**Ferramentas**  >  do **Opções**  >  do **Editor**  >  de texto **C#**  >  **Estilo**  >  do código Preferências de bloco de **código**  >  **Preferir chaves** |
 |**Adicionar modificadores de acessibilidade**|Quando selecionada, adiciona os modificadores de acessibilidade ausentes quando **Edit.FormatDocument** é disparado.| dotnet_style_require_accessibility_modifiers |
 |**Classificar modificadores de acessibilidade**|Quando selecionada, classifica os modificadores de acessibilidade quando **Edit.FormatDocument** é disparado.| csharp_preferred_modifier_order<br/>visual_basic_preferred_modifier_order |
@@ -92,10 +92,10 @@ As opções de recuo nessa página se aplicam quando o código é formatado auto
 ![Opções de recuo do editor de texto em C# no Visual Studio](media/csharp-indentation-options.png)
 
 > [!TIP]
-> Também há opções de recuo na página de opções de guias do **Editor de texto**  >  **C#**  >  **Tabs** . Essas opções determinam apenas onde o editor de códigos coloca o cursor quando você pressiona **Enter** no final de uma linha.
+> Também há opções de recuo na página de opções de guias do **Editor de texto**  >  **C#**  >   . Essas opções determinam apenas onde o editor de códigos coloca o cursor quando você pressiona **Enter** no final de uma linha.
 >
 > ![Opções de guias do editor de texto em C# no Visual Studio](media/csharp-tabs-options.png)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Caixa de diálogo geral, ambiente, opções](../../ide/reference/general-environment-options-dialog-box.md)

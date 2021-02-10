@@ -3,19 +3,19 @@ title: Aumentar a produtividade de desenvolvimento do .NET
 description: Uma visão geral da navegação, da análise de código, do teste de unidade e de outros recursos para ajudá-lo a escrever um código .NET melhor mais rápido.
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 23b50221845cf2b02b963c98f912a218a60630c6
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 036c59e54ba2e2068cf1bfa7eb05b67059cdf855
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658406"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942939"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guia de produtividade do Visual Studio para desenvolvedores de C#
 
@@ -52,7 +52,7 @@ Estes são os atalhos populares do Visual Studio:
 | **Ctrl** + **D** | Duplicar linha | Duplica a linha de código onde o cursor está posicionado (disponível no **Visual Studio 2017 versão 15.6** e posterior) |
 | **Shift** + **ALT**+**+**/**-** | Expandir/Reduzir seleção | Expande ou reduz a seleção atual no editor (disponível no **Visual Studio 2017 versão 15.5** e posteriores) |
 | **Shift**  +  **ALT**  +  **.** | Inserir próximo sinal de interpolação correspondente | Adiciona uma seleção e um sinal de interpolação no próximo local que corresponde à seleção atual (disponível no **Visual Studio 2017 versão 15.8** e posterior) |
-| **Ctrl** + **P** | Pesquisar | Pesquise todas as configurações do Visual Studio |
+| **Ctrl** + **P** | Search | Pesquise todas as configurações do Visual Studio |
 | **F5** | Iniciar Depuração | Inicie a depuração do aplicativo |
 | **Ctrl** + **F5** | Executar sem Depurar | Execute o aplicativo localmente sem depuração |
 | **Ctrl** + **K**,**D** (perfil padrão) ou **Ctrl** + **E**,**d** (perfil C#) | Formatar Documento | Limpe as violações de formatação de um arquivo com base nas configurações de nova linha, de espaçamento e de recuo |
@@ -62,7 +62,7 @@ Estes são os atalhos populares do Visual Studio:
 | **Ctrl** + **Shift**+**/** | Alternar bloquear comentário/cancelar os comentários | Este comando adiciona ou remove os comentários de bloco, dependendo do que você selecionou |
 
 > [!NOTE]
-> Algumas extensões desassociam as associações de teclas padrão do Visual Studio. Para usar os comandos acima, restaure as associações de teclas para os padrões do Visual Studio acessando **ferramentas**  >  **importar e exportar configurações**  >  **redefinir todas as configurações** ou **ferramentas**  >  **Opções**  >  **Keyboard**  >  **redefinição**de teclado.
+> Algumas extensões desassociam as associações de teclas padrão do Visual Studio. Para usar os comandos acima, restaure as associações de teclas para os padrões do Visual Studio acessando **ferramentas**  >  **importar e exportar configurações**  >  **redefinir todas as configurações** ou **ferramentas**  >  **Opções**  >    >  **redefinição** de teclado.
 
 Para saber mais sobre os comandos e atalhos de teclado, confira [Atalhos de produtividade](../ide/productivity-shortcuts.md) e [Atalhos comuns de teclado](default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md).
 
@@ -158,10 +158,10 @@ O Visual Studio tem muitos recursos para ajudar você a pesquisar e [navegar em 
 |- | - | -|
 | Localizar Todas as Referências | **Shift** + **F12**| Os resultados são coloridos e podem ser agrupados por projeto, definição e tipo de referência, como leitura ou escrita. Também é possível "bloquear" resultados. |
 | Ir Para Implementação | **Ctrl** + **F12** | É possível usar “Ir para definição” na palavra-chave `override` para navegar até o membro substituído |
-| Ir para definição | **F12** **Ctrl** + **Clique em** F12 ou CTRL| Pressione **Ctrl** enquanto clica para navegar até a definição |
+| Ir para definição |   + **Clique em** F12 ou CTRL| Pressione **Ctrl** enquanto clica para navegar até a definição |
 | Inspecionar Definição | **ALT** + **F12** | Exibição embutida de uma definição |
 | Visualizador de Estrutura | Linhas cinzas pontilhadas entre chaves | Passe o mouse para ver a estrutura do código |
-| Navegação para assemblies descompilados | **F12** **Ctrl** + **Clique em** F12 ou CTRL | Navegue até fonte externa (descompilado com ILSpy) habilitando o recurso: **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **C#**  >  **avançado**  >  **habilitar navegação para fontes descompiladas**. |
+| Navegação para assemblies descompilados |   + **Clique em** F12 ou CTRL | Navegue até fonte externa (descompilado com ILSpy) habilitando o recurso: **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **C#**  >  **avançado**  >  **habilitar navegação para fontes descompiladas**. |
 
 ![Ir para Todos e Localizar Todas as Referências](../ide/media/VSIDE_Productivity_Navigation.png)
 

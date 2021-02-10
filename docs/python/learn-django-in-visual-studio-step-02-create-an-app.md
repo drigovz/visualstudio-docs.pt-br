@@ -6,17 +6,17 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d91e587f354efe14db7cd669fa89a0f4658a538
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 9c8da2566be9b389b3ae36f2e6aa46686011ac0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90097301"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942588"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo Django com exibição e modelos de página
 
@@ -51,7 +51,7 @@ Usando qualquer método, crie um aplicativo com o nome "HelloDjangoApp". O resul
 | Item | Descrição |
 | --- | --- |
 | **\_\_Init \_ \_ . py** | O arquivo que identifica o aplicativo como um pacote. |
-| **migrações** | Uma pasta na qual o Django armazena scripts que atualizam o banco de dados para se alinhar com as alterações nos modelos. Em seguida, as ferramentas de migração do Django aplicam as alterações necessárias a qualquer versão anterior do banco de dados para que corresponda aos modelos atuais. Com as migrações, você mantém o foco nos seus modelos e permite que o Django lide com o esquema de banco de dados subjacente. As migrações são discutidas na etapa 6; por enquanto, a pasta simplesmente contém um arquivo * \_ \_ init \_ \_ . py* (indicando que a pasta define seu próprio pacote Python). |
+| **migrações** | Uma pasta na qual o Django armazena scripts que atualizam o banco de dados para se alinhar com as alterações nos modelos. Em seguida, as ferramentas de migração do Django aplicam as alterações necessárias a qualquer versão anterior do banco de dados para que corresponda aos modelos atuais. Com as migrações, você mantém o foco nos seus modelos e permite que o Django lide com o esquema de banco de dados subjacente. As migrações são discutidas na etapa 6; por enquanto, a pasta simplesmente contém um arquivo *\_ \_ init \_ \_ . py* (indicando que a pasta define seu próprio pacote Python). |
 | **templates** | Uma pasta para modelos de página do Django que contém um único arquivo *index.html* dentro de uma pasta que corresponde ao nome do aplicativo. (No Visual Studio 2017 15,7 e anterior, o arquivo está contido diretamente em *modelos* e a etapa 2-4 instrui você a criar a subpasta.) Os modelos são blocos de HTML nos quais as exibições podem adicionar informações para renderizar dinamicamente uma página. "Variáveis" de modelos de página, como `{{ content }}` em *index.html*, são espaços reservados para valores dinâmicos, conforme explicado mais adiante neste artigo (etapa 2). Normalmente, os aplicativos do Django criam um namespace para seus modelos, colocando-os em uma subpasta que corresponda ao nome do aplicativo. |
 | **admin.py** | O arquivo Python no qual você estende a interface administrativa do aplicativo (veja a etapa 6), que é usada para propagar e editar dados em um banco de dados. Inicialmente, esse arquivo contém apenas a instrução `from django.contrib import admin`. Por padrão, o Django inclui uma interface administrativa padrão por meio de entradas no arquivo *settings.py* do projeto do Django, que você pode ativar removendo a marca de comentário das entradas existentes em *urls.py*. |
 | **apps.py** | Um arquivo Python que define uma classe de configuração para o aplicativo (veja abaixo, depois desta tabela). |
@@ -149,7 +149,7 @@ def index(request):
 Execute o projeto novamente para ver uma mensagem como "**Olá, Django!** na segunda-feira, 16 de abril de 2018, às 16:28:10". Atualize a página para atualizar a hora e confirme que o conteúdo está sendo gerado com cada solicitação. Pare o servidor ao terminar.
 
 > [!Tip]
-> Um atalho para parar e reiniciar o projeto é usar o comando de menu **Debug**de  >  **reinicialização** de depuração (**Ctrl** + **Shift** + **F5**) ou o botão **reiniciar** na barra de ferramentas de depuração:
+> Um atalho para parar e reiniciar o projeto é usar o comando de menu de  >  **reinicialização** de depuração (**Ctrl** + **Shift** + **F5**) ou o botão **reiniciar** na barra de ferramentas de depuração:
 >
 > ![Botão de reinicialização na barra de ferramentas de depuração no Visual Studio](media/debugging-restart-toolbar-button.png)
 

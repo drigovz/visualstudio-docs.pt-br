@@ -9,19 +9,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Format
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e3c8fe85b7bce856867802d43411816ae2df5d2c
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: fd8d7e6bd81e32858f990c70bbcdf0bf00049867
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040973"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943829"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opções, Editor de Texto, HTML (Web Forms), Formatação
 
-Use a página de opções de **Formatação** para definir opções do projeto em HTML para formatação de códigos no Editor de Códigos. Para acessar essa página, na barra de menus, escolha **ferramentas**  >  **Opções** e, em seguida **Text Editor**, expanda  >  **formatação HTML do editor de texto (Web Forms)**  >  **Formatting**.
+Use a página de opções de **Formatação** para definir opções do projeto em HTML para formatação de códigos no Editor de Códigos. Para acessar essa página, na barra de menus, escolha **ferramentas**  >  **Opções** e, em seguida , expanda  >  **formatação HTML do editor de texto (Web Forms)**  >  .
 
 ## <a name="capitalization"></a>Uso de maiúsculas
 
@@ -36,7 +36,7 @@ Quando essas opções são selecionadas, a exibição e editores XML de origem a
 
 Essas opções especificam como a marcação para controles de servidor Web é capitalizada.
 
-|Opção|Resultado|
+|Opção|Result|
 |---------------------------------|------------------------------|
 |**Como inserido**|A capitalização do elemento fica exatamente como foi inserida.|
 |**Maiúsculas**|Nomes de elementos são reformatados para maiúsculas.|
@@ -47,7 +47,7 @@ Essas opções especificam como a marcação para controles de servidor Web é c
 
 Essas opções especificam se a formatação automática altera os nomes dos atributos e das propriedades HTML para maiúsculas ou minúsculas, ou se os mantêm como foram inseridos.
 
-|Opção|Resultado|
+|Opção|Result|
 |---------------------------------|------------------------------|
 |**Como inserido**|A capitalização do atributo fica exatamente como foi inserida.|
 |**Maiúsculas**|Os nomes de atributo são reformatados para maiúsculas.|
@@ -101,6 +101,6 @@ Essas opções determinam se o editor quebrará marcas em linhas se elas exceder
 
    Exibe a caixa de diálogo **Opções Específicas à Marca**, que permite a definição de opções de formatação para marcas individuais ou grupos de marcas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)

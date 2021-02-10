@@ -33,15 +33,15 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c76ea1729fa84bee97458f131e18f64281b76567
-ms.sourcegitcommit: 4ee20054afe7bcf5c0aed504dec01e18059fbbd0
+ms.openlocfilehash: e39febb27a74b0a2cef54098542bba087e2e0180
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226494"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943868"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>Caixa de diálogo opções: editor de texto \> geral
 
@@ -75,7 +75,7 @@ Com essa opção estiver selecionada, você poderá pressionar **Ctrl** e passar
 
 Marque a caixa de seleção **Abrir definição na exibição de inspeção** para exibir a definição do elemento selecionado em uma janela sem sair do local atual no editor de código.
 
-## <a name="display"></a>Exibir
+## <a name="display"></a>Monitor
 
 ### <a name="selection-margin"></a>Margem de seleção
 
@@ -101,7 +101,7 @@ Quando essa opção estiver selecionada, as linhas verticais serão exibidas no 
 
 Quando selecionado, uma barra status (erros, avisos) do indicador de integridade do arquivo, com opções de limpeza de código, será exibida no canto inferior esquerdo do editor.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Opções, Editor de Texto, Todas as Linguagens](../../ide/reference/options-text-editor-all-languages.md)
 - [Opções, Editor de Texto, Todas as Linguagens, Guias](../../ide/reference/options-text-editor-all-languages-tabs.md)

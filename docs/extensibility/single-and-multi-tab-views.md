@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94081af0bfdb85793c092f76d28758f220f4628b
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: f6cea04557fb0bf3075461b22979cac2168af322
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715204"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942978"
 ---
 # <a name="single-and-multi-tab-views"></a>Exibição de guia única e multiguias
 Um editor pode criar diferentes tipos de exibições. Um exemplo é uma janela do editor de código, outra é um designer de formulários.
@@ -114,7 +114,7 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Suporte a várias exibições de documento](../extensibility/supporting-multiple-document-views.md)
 - [Como anexar exibições para dados de documentos](../extensibility/how-to-attach-views-to-document-data.md)
 - [Criar designers e editores personalizados](../extensibility/creating-custom-editors-and-designers.md)

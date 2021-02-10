@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf97cc10543f066665506d3e238386dc39f0d4f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 23df6dc45d1d96997a18942e7878a84a5d9f60a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363491"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942796"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controlando a visibilidade de um ícone ou decorador
 Um *decorador* é um ícone ou linha de texto que aparece em uma forma em uma DSL (linguagem específica do domínio). Você pode fazer com que o decorador apareça e desapareça, dependendo do estado das propriedades no modelo. Por exemplo, em uma forma que representa uma pessoa, você poderia ter ícones diferentes que aparecem dependendo do sexo da pessoa, do número de filhos e assim por diante.
@@ -105,7 +105,7 @@ Um *decorador* é um ícone ou linha de texto que aparece em uma forma em uma DS
 
 8. Recompile e execute a solução.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Definindo formas e conectores](../modeling/defining-shapes-and-connectors.md)
 - [Definindo uma imagem de plano de fundo em um diagrama](../modeling/setting-a-background-image-on-a-diagram.md)

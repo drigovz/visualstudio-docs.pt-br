@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0c38ae7d-3e20-4d47-a020-9677cd285916
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bfa869bed2bc4462c050ac77e08665958f60598
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 37e2652d04df154a45ae5f87fd62c8f8dc2e0b3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878924"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944076"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Operadores lógicos e avançados em expressões de pesquisa
 
@@ -68,7 +68,7 @@ Você pode usar o operador `code:` para localizar conteúdo sobre qualquer uma d
 > [!NOTE]
 > O operador `code:` localiza apenas o conteúdo que está marcado com um rótulo de linguagem de programação e não um conteúdo marcado genericamente como código.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como pesquisar tópicos](../help-viewer/find-topics.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)
