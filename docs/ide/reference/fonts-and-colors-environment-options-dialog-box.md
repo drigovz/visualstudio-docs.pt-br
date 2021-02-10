@@ -24,19 +24,19 @@ helpviewer_keywords:
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dbbd42b0e4eae6d124fc59d68592155bf2c9bd49
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: ccc2309cf3ccc51c82796816f635908b55b81901
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969744"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Caixa de diálogo Fontes e Cores, Ambiente, Opções
 
-A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelecer um esquema de cores e fontes personalizado para vários elementos da interface do usuário no IDE (ambiente de desenvolvimento integrado). Você pode acessar essa caixa de diálogo clicando em **ferramentas**  >  **Opções** e, em **Environment** seguida, selecionando  >  **fontes e cores** do ambiente.
+A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelecer um esquema de cores e fontes personalizado para vários elementos da interface do usuário no IDE (ambiente de desenvolvimento integrado). Você pode acessar essa caixa de diálogo clicando em **ferramentas**  >  **Opções** e, em seguida, selecionando  >  **fontes e cores** do ambiente.
 
 As alterações no esquema de cores não são implementadas durante a sessão em que foram feitas. É possível avaliar alterações de cores abrindo outra instância do Visual Studio e produzindo as condições nas quais você espera aplicar essas alterações.
 
@@ -222,7 +222,7 @@ Os itens podem herdar a cor de primeiro plano de outros itens de exibição, com
 
 A cor exibida para o item na primeira vez que você abre o Visual Studio. Clicar no botão **Usar Padrões** redefine para essa cor.
 
-**Personalizado**
+**Custom**
 
 Exibe a caixa de diálogo Cor para permitir que você defina uma cor personalizada para o item selecionado na lista de itens de Exibição.
 
@@ -241,7 +241,7 @@ Os itens podem herdar a cor da tela de fundo de outros itens de exibição, como
 
 A cor exibida para o item na primeira vez que você abre o Visual Studio. Clicar no botão **Usar Padrões** redefine para essa cor.
 
-**Personalizado**
+**Custom**
 
 Exibe a caixa de diálogo Cor para permitir que você defina uma cor personalizada para o item selecionado na lista de itens de Exibição.
 

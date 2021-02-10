@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 323d118b73649c8c23d9b4a2e3ace2fd2fc6fdea
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: f8a298f19f247c45740e87074804755f6ca691ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136752"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969861"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Como configurar projetos para terem plataformas como destino
 
@@ -120,7 +120,7 @@ Você pode ter um assembly ou uma DLL .NET com as versões x86 e x64. Para confi
 
 Para obter mais informações sobre o arquivo de projeto, confira [Referência de esquema do arquivo de projeto do MSBuild](../msbuild/msbuild-project-file-schema-reference.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Noções básicas sobre plataformas de build](../ide/understanding-build-platforms.md)
 - [/platform (opções do compilador de C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7e807a5673f27da6a852fd2c83347d1348f1f6fd
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 065a904047630d15a8e9ed167a6a4a2764858387
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844407"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970316"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Como: adicionar controles XMLMappedRange a planilhas
   Quando você mapeia um elemento XML para uma célula no Microsoft Office Excel, o Visual Studio adiciona automaticamente um <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controle à sua planilha.
@@ -62,7 +62,7 @@ ms.locfileid: "96844407"
     > [!NOTE]
     > Se você arrastar um elemento pai do painel de tarefas **origem XML** , um <xref:Microsoft.Office.Tools.Excel.ListObject> controle será criado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Controle XmlMappedRange](../vsto/xmlmappedrange-control.md)
 - [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [Visão geral de itens de host e controles de host](../vsto/host-items-and-host-controls-overview.md)

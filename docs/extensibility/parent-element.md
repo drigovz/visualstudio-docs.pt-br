@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e4624ac8-1b9a-4940-910a-528a661cefad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03f1709184126d31845bfe1145afdebfeffcd1d1
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: e34b857d26be49bb98096c6b0ba85ff8049290b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863330"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968977"
 ---
 # <a name="parent-element"></a>Elemento pai
 O pai de um botão ou caixa de combinação pode ser apenas um grupo. O pai de um menu ou grupo pode ser qualquer outro menu ou grupo. Em um [elemento CommandPlacement](../extensibility/commandplacement-element.md), esse elemento é necessário; em todas as outras instâncias, é opcional. Se esse elemento for omitido, o pai de `Group_Undefined:0` será implícito.
@@ -36,8 +36,8 @@ O pai de um botão ou caixa de combinação pode ser apenas um grupo. O pai de u
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|guid|Obrigatórios. GUID do identificador de comando de GUID/ID.|
-|id|Obrigatórios. ID do identificador de comando de GUID/ID.|
+|guid|Obrigatório. GUID do identificador de comando de GUID/ID.|
+|id|Obrigatório. ID do identificador de comando de GUID/ID.|
 
 ### <a name="child-elements"></a>Elementos filho
  Nenhum

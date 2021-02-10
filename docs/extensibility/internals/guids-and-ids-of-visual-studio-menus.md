@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0203c8b7028fb170ae2ba4d2cc9d6f1825414f64
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: bd2bdc047ddd5a568aca01ed99b6148b0f288faa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480402"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970264"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUIDs e IDs dos menus do Visual Studio
 Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus do Visual Studio. Esses valores são definidos em arquivos *. vsct* que são instalados como parte do SDK do Visual Studio. Para obter mais informações, consulte [comandos, menus e grupos definidos pelo IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -34,12 +34,12 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>Grupos na barra de menus do Visual Studio
  Para adicionar um menu à barra de menus, defina um desses grupos como seu pai.
 
-|Agrupar|ID|
+|Grupo|ID|
 |-----------|--------|
 |Arquivo/Editar/Exibir|IDG_VS_MM_FILEEDITVIEW|
 |Refatoração|IDG_VS_MM_REFACTORING:|
 |Project|IDG_VS_MM_PROJECT|
-|Compilação|IDG_VS_MM_BUILDDEBUGRUN|
+|Build|IDG_VS_MM_BUILDDEBUGRUN|
 |Formato/ferramentas|IDG_VS_MM_TOOLSADDINS|
 |Janela/ajuda/Comunidade|IDG_VS_MM_WINDOWHELP|
 |Suplementos|IDG_VS_MM_MACROS|
@@ -55,7 +55,7 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
 |Visualizar|IDM_VS_MENU_VIEW|
 |Refatoração|IDM_VS_MENU_REFACTORING|
 |Project|IDM_VS_MENU_PROJECT|
-|Compilação|IDM_VS_MENU_BUILD|
+|Build|IDM_VS_MENU_BUILD|
 |Formatar|IDM_VS_MENU_FORMAT|
 |Ferramentas|IDM_VS_MENU_TOOLS|
 |Extensões|IDM_VS_MENU_EXTENSIONS|
@@ -69,7 +69,7 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
 
 ### <a name="file-menu-groups"></a>Grupos de menus de arquivo
 
-|Agrupar|ID|
+|Grupo|ID|
 |-----------|--------|
 |Novo/abrir|IDG_VS_FILE_FILE|
 |Adicionar|IDG_VS_FILE_ADD|
@@ -85,7 +85,7 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
 
 ### <a name="edit-menu-groups"></a>Editar grupos de menus
 
-|Agrupar|ID|
+|Grupo|ID|
 |-----------|--------|
 |Desfazer/refazer|IDG_VS_EDIT_UNDOREDO|
 |Recortar/copiar/colar|IDG_VS_EDIT_CUTCOPY|
@@ -98,14 +98,14 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
 
 ### <a name="refactor-menu-groups"></a>Refatorar grupos de menus
 
-|Agrupar|ID|
+|Grupo|ID|
 |-----------|--------|
 |Comum|IDG_REFACTORING_COMMON|
 |Avançado|IDG_REFACTORING_ADVANCED|
 
 ### <a name="view-menu-groups"></a>Exibir grupos de menus
 
-|Agrupar|ID|
+|Grupo|ID|
 |-----------|--------|
 |Código de formulário|IDG_VS_VIEW_FORMCODE|
 |Navegador|IDG_VS_VIEW_BROWSER|
@@ -126,7 +126,7 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
 
 ### <a name="project-menu-groups"></a>Grupos de menus do projeto
 
-|Agrupar|ID|
+|Grupo|ID|
 |-----------|--------|
 |Adição de diversos|IDG_VS_PROJ_MISCADD|
 |Adicionar|IDG_VS_PROJ_ADD|
@@ -138,7 +138,7 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
 
 ### <a name="build-menu-groups"></a>Criar grupos de menus
 
-|Agrupar|ID|
+|Grupo|ID|
 |-----------|--------|
 |Solução|IDG_VS_BUILD_SOLUTION|
 |Seleção|IDG_VS_BUILD_SELECTION|
@@ -148,7 +148,7 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
 
 ### <a name="tools-menu-groups"></a>Grupos de menus de ferramentas
 
-|Agrupar|ID|
+|Grupo|ID|
 |-----------|--------|
 |Linha de comando|IDG_VS_TOOLS_CMDLINE|
 |Snippets|IDG_VS_TOOLS_SNIPPETS|
@@ -160,18 +160,18 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
 
 ### <a name="window-menu-groups"></a>Grupos de menus de janela
 
-|Agrupar|ID|
+|Grupo|ID|
 |-----------|--------|
 |Novo|IDG_VS_WINDOW_NEW|
 |Encaixar/fechar|IDG_VS_DOCKCLOSE|
 |Encaixar/ocultar|IDG_VS_DOCKHIDE|
 |Organizar|IDG_VS_WINDOW_ARRANGE|
 |Navegação|IDG_VS_WINDOW_NAVIGATION|
-|Lista|IDG_VS_WINDOW_LIST|
+|List|IDG_VS_WINDOW_LIST|
 
 ### <a name="help-menu-groups"></a>Grupos de menus de ajuda
 
-|Agrupar|ID|
+|Grupo|ID|
 |-----------|--------|
 |Exemplos|IDG_VS_HELP_SAMPLES|
 |Suporte|IDG_VS_HELP_SUPPORT|

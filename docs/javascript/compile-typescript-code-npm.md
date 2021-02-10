@@ -5,17 +5,17 @@ ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: be7bc30f260a492fbc783a8e730b1e550fcb4671
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: 966b08a912a7bab59998daf39590a6fd46920eb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969523"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Compilar código TypeScript (Node.js)
 
@@ -113,7 +113,7 @@ O [pacote NPM do typescript](https://www.npmjs.com/package/typescript) adiciona 
 
    Os arquivos de mapa de origem são necessários para [depuração](../javascript/debug-nodejs.md).
 
-### <a name="run-the-application"></a>Execute o aplicativo
+### <a name="run-the-application"></a>Executar o aplicativo
 
 Para obter instruções para executar o aplicativo depois de compilá-lo, consulte [criar seu primeiro Node.js aplicativo](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json#run-the-application).
 

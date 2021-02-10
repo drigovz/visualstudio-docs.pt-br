@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 6b54ef59-ffed-4f62-a645-1279ede97ebf
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 06c6f98e9d022a7b253fdd0ea25a60ff01a4d756
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: ba1f6f0de7e7b716853ec58aa27a34fe11010da4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040063"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969588"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 
@@ -43,11 +43,11 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 - *SolutionName*
 
-  Obrigatórios. O caminho completo e o nome do arquivo de solução.
+  Obrigatório. O caminho completo e o nome do arquivo de solução.
 
 - {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
 
-  Obrigatórios. [Compila](build-devenv-exe.md), [limpa](clean-devenv-exe.md), [implanta](deploy-devenv-exe.md) ou [recompila](rebuild-devenv-exe.md) o projeto.
+  Obrigatório. [Compila](build-devenv-exe.md), [limpa](clean-devenv-exe.md), [implanta](deploy-devenv-exe.md) ou [recompila](rebuild-devenv-exe.md) o projeto.
 
 - *SolnConfigName*
 

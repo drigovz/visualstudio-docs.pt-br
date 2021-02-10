@@ -5,7 +5,7 @@ description: Saiba mais sobre como usar o EditorConfig para formatar o código C
 ms.date: 9/14/2020
 author: jureid
 ms.author: jureid
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CPP
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ ms.topic: reference
 ms.workload:
 - cplusplus
 monikerRange: vs-2019
-ms.openlocfilehash: f248ede6a4bb45a58d64a346489124462f304a86
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 490a7b29d6e3d8a2dc63c27b9e9d7226b5d22662
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518538"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970875"
 ---
 # <a name="c-editorconfig-formatting-conventions"></a>Convenções de formatação de EditorConfig do C++
 
@@ -380,7 +380,7 @@ O restante deste documento lista todas as configurações de formatação do Edi
   - `all_one_line_scopes` -Não quebrar blocos de código em que as chaves de abertura e fechamento estejam na próxima linha.
   - `never` -Sempre aplicar configurações de novas linhas para blocos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [EditorConfig.org](https://editorconfig.org/)
 - [Dando suporte ao EditorConfig para um serviço de linguagem](../extensibility/supporting-editorconfig.md)

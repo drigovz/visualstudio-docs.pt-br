@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 310e716f890dcc2185d6ebf6e60411934a1761f4
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 396981533502f2687040f470ded9b490cab1ef7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560909"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970628"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizar as configurações do Visual Studio em vários computadores
 
@@ -29,19 +29,19 @@ Por padrão, as seguintes configurações são sincronizadas:
 
 - Alias de comando definidos pelo usuário. Para saber mais sobre como definir aliases de comando, veja [Aliases de comando do Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
-- Layouts de janela definidos pelo usuário **Window** na  >  página **gerenciar layouts de janela** do Windows.
+- Layouts de janela definidos pelo usuário na  >  página **gerenciar layouts de janela** do Windows.
 
-- As opções a seguir nas **Tools**  >  páginas **Opções** de ferramentas:
+- As opções a seguir nas   >  páginas **Opções** de ferramentas:
 
-  - Configurações de caixas de tema e barra de **Environment** menus na  >  página opções **gerais** do ambiente.
+  - Configurações de caixas de tema e barra de menus na  >  página opções **gerais** do ambiente.
 
-  - Todas as configurações na **Environment**  >  página opções de **fontes e cores** do ambiente.
+  - Todas as configurações na   >  página opções de **fontes e cores** do ambiente.
 
-  - Todos os atalhos de teclado **Environment** na  >  página opções de **teclado** do ambiente.
+  - Todos os atalhos de teclado na  >  página opções de **teclado** do ambiente.
 
-  - Todas as configurações nas **Environment**  >  **guias ambiente e** na página Opções do Windows.
+  - Todas as configurações nas   >  **guias ambiente e** na página Opções do Windows.
 
-  - Todas as configurações na **Environment**  >  página opções de **inicialização** do ambiente.
+  - Todas as configurações na   >  página opções de **inicialização** do ambiente.
 
   - Todas as configurações nas páginas de opção do **Editor de Texto**, por exemplo, [preferências de estilo de código](code-styles-and-code-cleanup.md).
 
@@ -54,7 +54,7 @@ As configurações sincronizadas para o Visual Studio são ativadas por padrão.
 Por exemplo, se você decidir não sincronizar as configurações no Visual Studio no computador "A", as alterações de configuração feitas no computador "A" não aparecerão no computador "B" ou no computador "C". Os computadores "B" e "C" continuarão sendo sincronizados um com o outro, mas não com o computador "A".
 
 > [!NOTE]
-> Se você optar por não sincronizar as configurações desmarcando a opção na página contas do ambiente de opções de **ferramentas**  >  **Options**  >  **Environment**  >  **Accounts** , outras versões ou edições do Visual Studio que você tem no mesmo computador não serão afetadas. Essas instalações lado a lado do Visual Studio continuarão sincronizando as configurações (a menos que você desmarque a opção nelas também).
+> Se você optar por não sincronizar as configurações desmarcando a opção na página contas do ambiente de opções de **ferramentas**  >    >    >   , outras versões ou edições do Visual Studio que você tem no mesmo computador não serão afetadas. Essas instalações lado a lado do Visual Studio continuarão sincronizando as configurações (a menos que você desmarque a opção nelas também).
 
 ## <a name="synchronize-settings-across-visual-studio-ide-products-and-editions"></a>Sincronizar configurações em produtos e edições do IDE do Visual Studio
 
@@ -94,6 +94,6 @@ Para redefinir todas as configurações para seus padrões, entre no Visual Stud
 ## <a name="see-also"></a>Confira também
 
 - [Personalizar o IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Configurações de ambiente](../ide/environment-settings.md)
+- [Configurações do ambiente](../ide/environment-settings.md)
 - [Caixa de diálogo Ambiente > Opções de Contas](reference/accounts-environment-options-dialog-box.md)
 - [Instalar versões do Visual Studio lado a lado](../install/install-visual-studio-versions-side-by-side.md)

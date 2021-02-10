@@ -5,17 +5,17 @@ ms.date: 03/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 46b0a8005ea76445a1d6205c8635963dbaedd0d4
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 6521df812d708744a617c0e3fe95285fdbfa0262
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90097028"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970602"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Como selecionar um ambiente do Python para um projeto
 
@@ -34,7 +34,7 @@ Depois de marcar **OK**, todos os ambientes escolhidos são exibidos no nó **Am
 
 ![Vários ambiente de Python mostrados no Gerenciador de Soluções](media/environments/environments-project-multiple.png)
 
-Para ativar rapidamente outro ambiente, clique com o botão direito do mouse no nome desse ambiente e selecione **Ativar ambiente**. Sua escolha é salva com o projeto e esse ambiente é ativado sempre que você abrir o projeto futuramente. Se você desmarcar todas as opções na caixa de diálogo **Adicionar/Remover Ambientes de Python **, o Visual Studio ativa o ambiente padrão global.
+Para ativar rapidamente outro ambiente, clique com o botão direito do mouse no nome desse ambiente e selecione **Ativar ambiente**. Sua escolha é salva com o projeto e esse ambiente é ativado sempre que você abrir o projeto futuramente. Se você desmarcar todas as opções na caixa de diálogo **Adicionar/Remover Ambientes de Python**, o Visual Studio ativa o ambiente padrão global.
 
 O menu de contexto no nó **Ambientes do Python** também fornece comandos adicionais:
 
@@ -42,7 +42,7 @@ O menu de contexto no nó **Ambientes do Python** também fornece comandos adici
 | --- | --- |
 | **Adicionar ambiente virtual** | Inicia o processo de criação de um novo ambiente virtual no projeto. Confira [Criar um ambiente virtual](#create-a-virtual-environment). |
 | **Adicionar um ambiente virtual existente** | Solicita que você selecione uma pasta que contém um ambiente virtual e o adiciona à lista em **Ambientes do Python**, mas não o ativa. Confira [Ativar um ambiente virtual existente](#activate-an-existing-virtual-environment). |
-| **Criar ambiente do Conda** | Alterna para a **Python Environments** *janela* de ambientes do Python na qual você insere um nome para o ambiente e especifica seu interpretador base. Confira [Ambientes do Conda](managing-python-environments-in-visual-studio.md#conda-environments). |
+| **Criar ambiente do Conda** | Alterna para a  *janela* de ambientes do Python na qual você insere um nome para o ambiente e especifica seu interpretador base. Confira [Ambientes do Conda](managing-python-environments-in-visual-studio.md#conda-environments). |
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -169,7 +169,7 @@ Saiba que as entradas exibidas podem não ser precisas e a instalação e desins
 Observe também que o Visual Studio não oferece suporte no momento ao uso de `conda` para instalar os pacotes em um ambiente conda. Use `conda` na linha de comando.
 
 > [!Tip]
-> Uma situação comum em que o Pip não consegue instalar um pacote é quando o pacote inclui o código-fonte para componentes nativos em arquivos * \* . PYD* . Sem a versão necessária do Visual Studio instalada, o PIP não pode compilar esses componentes. A mensagem de erro exibida nessa situação é **erro: Não foi possível localizar vcvarsall.bat**. `easy_install` geralmente é capaz de baixar binários pré-compilados, e você pode baixar um compilador adequado para versões mais antigas do Python do [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266) . Para obter mais detalhes, consulte [Como lidar com o problema “Não é possível localizar vcvarsallbat”](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) no blog da equipe das Ferramentas Python.
+> Uma situação comum em que o Pip não consegue instalar um pacote é quando o pacote inclui o código-fonte para componentes nativos em arquivos *\* . PYD* . Sem a versão necessária do Visual Studio instalada, o PIP não pode compilar esses componentes. A mensagem de erro exibida nessa situação é **erro: Não foi possível localizar vcvarsall.bat**. `easy_install` geralmente é capaz de baixar binários pré-compilados, e você pode baixar um compilador adequado para versões mais antigas do Python do [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266) . Para obter mais detalhes, consulte [Como lidar com o problema “Não é possível localizar vcvarsallbat”](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) no blog da equipe das Ferramentas Python.
 
 ## <a name="see-also"></a>Confira também
 

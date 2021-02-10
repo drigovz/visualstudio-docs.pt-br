@@ -13,15 +13,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], importing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9b65502bbf29f6e0df7435f6a27d3c51e8082e41
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4b60060f8db2bf2bb1abf42803a8c80333ee5fc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522676"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969146"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Walkthrough: importar uma região de formulário projetada no Outlook
   Este tutorial demonstra como criar uma região de formulário no Microsoft Office Outlook e, em seguida, importar a região de formulário para um projeto de suplemento do VSTO do Outlook usando o assistente de **nova região de formulário** . A criação da região de formulário no Outlook possibilita que você adicione controles nativos do Outlook à região do formulário que se associam aos dados do Outlook. Depois de importar a região do formulário, você pode manipular os eventos de cada controle.
@@ -253,7 +253,7 @@ ms.locfileid: "97522676"
 
 - Para saber mais sobre como adicionar um painel de tarefas personalizado ao Outlook, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Acessar uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md)
 - [Criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)
 - [Diretrizes para criar regiões de formulário do Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)

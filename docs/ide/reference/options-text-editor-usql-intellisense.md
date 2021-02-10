@@ -9,19 +9,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HQL.IntelliSense
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c1aea741c91f38be9d5b423226e635b77e440d9e
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 1fe7fc81fdc27fc2cdb126e2bf50d07dd3048ec9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040193"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970823"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>Opções, Editor de Texto, U-SQL, IntelliSense
 
-Use a página de opções **IntelliSense** para modificar algumas configurações do editor de texto para U-SQL. Para acessar essa página de opções, escolha **ferramentas**  >  **Opções** e, em seguida, escolha **Editor de texto**  >  **IntelliSense U-SQL**  >  **IntelliSense**.
+Use a página de opções **IntelliSense** para modificar algumas configurações do editor de texto para U-SQL. Para acessar essa página de opções, escolha **ferramentas**  >  **Opções** e, em seguida, escolha **Editor de texto**  >  **IntelliSense U-SQL**  >  .
 
 ## <a name="intellisense-settings"></a>Configurações do IntelliSense
 
@@ -55,7 +55,7 @@ Marque uma caixa de seleção para habilitar **Informações Rápidas** ou **Int
 
    Quando essa opção estiver selecionada, uma nova linha será adicionada automaticamente e o cursor irá para a nova linha quando você digitar todos os caracteres de uma sugestão de lista de conclusão.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)
 - [Usando o IntelliSense](../../ide/using-intellisense.md)

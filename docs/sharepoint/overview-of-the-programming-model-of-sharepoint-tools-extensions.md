@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 67e0f4ae5b06e96747a7257b2b9b444566235877
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: b823aecff4f05208094bd98b559a661c7f23fc5b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305134"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970524"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Visão geral do modelo de programação das extensões de ferramentas do SharePoint
   Ao criar uma extensão para as ferramentas do SharePoint no Visual Studio, você começa implementando uma ou mais interfaces de extensibilidade que são expostas pelas ferramentas do SharePoint. Na maioria dos casos, você também usará outros tipos fornecidos pelas ferramentas do SharePoint para implementar recursos em sua extensão. Em alguns cenários, você também pode usar tipos em outros modelos de objeto fornecidos pelo Visual Studio e pelo SharePoint. Você deve entender a finalidade de cada um desses modelos de objeto e saber como usá-los entre si para criar extensões para as ferramentas do SharePoint.
@@ -104,12 +104,12 @@ ms.locfileid: "96305134"
 
  Você pode usar APIs em qualquer modelo de objeto em uma extensão de ferramentas do SharePoint, mas cada modelo de objeto tem alguns benefícios e desvantagens no contexto das extensões de ferramentas do SharePoint. Para obter mais informações, consulte [chamar os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
-|Modelo de objeto|Descrição|
+|Modelo de objeto|Description|
 |------------------|-----------------|
 |Modelo de objeto de servidor|O modelo de objeto de servidor fornece acesso a todos os recursos que [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] expõe programaticamente. Esse modelo de objeto foi projetado para ser usado por soluções do SharePoint que são executadas no servidor do SharePoint. A maior parte desse modelo de objeto é definida no assembly *Microsoft.SharePoint.dll* . Para obter mais informações sobre o modelo de objeto de servidor, consulte [usando o modelo de objeto de Server-Side do SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).|
 |Modelo de objeto de cliente|O modelo de objeto de cliente é um subconjunto do modelo de objeto de servidor que pode ser usado para interoperar com dados do SharePoint de um cliente ou servidor remoto. Ele foi projetado para minimizar o número de viagens de ida e volta que devem ser executadas para executar tarefas comuns. A maior parte do modelo de objeto de cliente é definida nos assemblies *Microsoft.SharePoint.Client.dll* e *Microsoft.SharePoint.Client.Runtime.dll* . Para obter mais informações sobre o modelo de objeto de cliente, consulte [modelo de objeto de cliente gerenciado](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14)).|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Estenda as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Chamar para os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Usar o serviço de projeto do SharePoint](../sharepoint/using-the-sharepoint-project-service.md)

@@ -5,17 +5,17 @@ ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 929c17c9cbd2a0987bebca02c70b3b751c19fc9a
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: 375f56d8a367c6d5cb090e10069b714b5a3843f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846832"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969536"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>Compilar código TypeScript (ASP.NET Core)
 
@@ -108,7 +108,7 @@ Para obter um exemplo de como usar Gulp com o executor de tarefa para criar seu 
 
 Se você encontrar problemas em que o Visual Studio está usando uma versão do Node.js ou uma ferramenta de terceiros que seja diferente da versão esperada, talvez seja necessário definir o caminho do Visual Studio a ser usado. Escolha **ferramentas**  >  **Opções**. Em **projetos e soluções**, escolha **Web gerenciamento de pacotes**  >  **ferramentas Web externas**.
 
-### <a name="run-the-application"></a>Execute o aplicativo
+### <a name="run-the-application"></a>Executar o aplicativo
 
 Para obter instruções para executar o aplicativo depois de compilá-lo, consulte [criar seu primeiro Node.js aplicativo](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application).
 

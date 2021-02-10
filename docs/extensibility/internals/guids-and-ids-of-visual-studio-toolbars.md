@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44cda401faa0d7e34bf9ce7579aa3cca026fa13
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 7b4df4bac9fcc933cccc1bd54ced89c416b23863
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480376"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970212"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUIDs e IDs das barras de ferramentas do Visual Studio
 Este tópico enumera os valores de GUID e ID das barras de ferramentas que estão incluídas no IDE (ambiente de desenvolvimento integrado) do Visual Studio e nos grupos que eles contêm. Esses valores são definidos em arquivos *. vsct* que são instalados como parte do SDK do Visual Studio. Para obter mais informações, consulte [comandos, menus e grupos definidos pelo IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -43,7 +43,7 @@ Este tópico enumera os valores de GUID e ID das barras de ferramentas que estã
 |Barra de ferramentas|ID|
 |-------------|--------|
 |Standard|IDM_VS_TOOL_STANDARD|
-|Compilação|IDM_VS_TOOL_BUILD|
+|Build|IDM_VS_TOOL_BUILD|
 |Editor de texto|IDM_VS_TOOL_TEXTEDITOR|
 |Depurar|guidVSDebugGroup: IDM_DEBUG_TOOLBAR|
 |Local de depuração|guidVSDebugGroup: IDM_DEBUG_CONTEXT_TOOLBAR|
@@ -136,7 +136,7 @@ Este tópico enumera os valores de GUID e ID das barras de ferramentas que estã
 |Memória 1-4|guidVSDebugGroup: IDM_MEMORY_WINDOW_TOOLBAR1... quatro|IDG_MEMORY_EXPRESSION1.. quatro<br /><br /> IDG_MEMORY_COLUMNS1.. quatro|
 |Processos|guidVSDebugGroup: IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Adicionar um controlador de menu a uma barra de ferramentas](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)
 - [Adicionar uma barra de ferramentas a uma janela de ferramentas](../../extensibility/adding-a-toolbar-to-a-tool-window.md)
 - [GUIDs e IDs dos menus do Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

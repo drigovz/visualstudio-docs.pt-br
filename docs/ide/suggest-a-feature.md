@@ -5,15 +5,15 @@ ms.date: 12/17/2018
 ms.topic: conceptual
 author: madskristensen
 ms.author: madsk
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a17f196f48b053f8b834b8fd25b8c0295e42b547
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 75841186ca78089cf84ca91f18445243acc42ac8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668892"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970745"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Sugerir uma funcionalidade para o Visual Studio
 
@@ -134,6 +134,6 @@ Estamos totalmente empenhados em ouvir suas sugestões de funcionalidades e toma
 
 O tempo de resposta depende do status em que estão seus comentários. Examine a explicação dos status neste documento para entender os tempos de resposta.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Introducing 'Suggest a Feature' in Developer Community (Apresentação de 'Sugerir uma Funcionalidade' na Comunidade de Desenvolvedores) (blog do Visual Studio)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

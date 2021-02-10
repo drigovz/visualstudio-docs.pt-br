@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99377db0e835de8d84485d0254d84892a360f5f0
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 1dbdb2f04ad5038941eeb9790efa9e05781def3f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190155"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969003"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Adicionar itens à caixa de diálogo Adicionar novo item
 O processo para adicionar itens à caixa de diálogo **Adicionar novo item** começa com as chaves do registro. Conforme mostrado nas entradas de registro a seguir, a seção **Additemtemplates** contém o caminho e o nome do diretório no qual os itens disponibilizados na caixa de diálogo **Adicionar novo item** são colocados.
@@ -33,11 +33,11 @@ O processo para adicionar itens à caixa de diálogo **Adicionar novo item** com
 
  **@** = #6
 
- **TemplatesDir**  =  \\ TemplatesDir &lt; Caminho de instalação do SDK do Visual Studio &gt; \\ VSIntegration \\ &lt; SomeFolder &gt; \\ &lt; SomePackage &gt; \\ &lt; SomeProject &gt; \\ &lt; SomeProjectItems&gt;
+   =  \\ TemplatesDir &lt; Caminho de instalação do SDK do Visual Studio &gt; \\ VSIntegration \\ &lt; SomeFolder &gt; \\ &lt; SomePackage &gt; \\ &lt; SomeProject &gt; \\ &lt; SomeProjectItems&gt;
 
  **SortPriority** = DWORD: 00000064
 
-| Nome | Tipo | Dados (do arquivo *. rgs* ) | Descrição |
+| Nome | Type | Dados (do arquivo *. rgs* ) | Descrição |
 |------------------|-----------| - | - |
 | @ (Padrão) | REG_SZ | #% IDS_ADDITEM_TEMPLATES_ENTRY% | ID do recurso para adicionar modelos de **Item** . |
 | Valor TemplatesDir | REG_SZ | % TEMPLATE_PATH% \\ &lt; SomeProjectItems&gt; | Caminho dos itens de projeto exibidos na caixa de diálogo para o assistente para **Adicionar novo item** . |

@@ -7,17 +7,17 @@ ms.topic: how-to
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b86cc50e5a25466b0ec80e45a225d64b8a97f72
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: f233eaed4b08e499b3a7543d10caafd36c77a480
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399164"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969068"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Como: usar o designer de esquema XML com literais XML
 
@@ -37,7 +37,7 @@ Este tópico descreve como exibir um esquema associado com um literal XML em um 
 
 2. Salve o arquivo em algum local com o nome *PurchaseOrderSchema. xsd*.
 
-3. Em **Gerenciador de soluções** , clique com o botão direito do mouse no nome do projeto, selecione **Adicionar** e, em seguida, selecione **Item existente**. A caixa de diálogo de **Item Addexisting** é exibida. Navegue até o arquivo *PurchaseOrderSchema. xsd* , selecione-o e clique em **Adicionar**.
+3. Em **Gerenciador de soluções**, clique com o botão direito do mouse no nome do projeto, selecione **Adicionar** e, em seguida, selecione **Item existente**. A caixa de diálogo de **Item Addexisting** é exibida. Navegue até o arquivo *PurchaseOrderSchema. xsd* , selecione-o e clique em **Adicionar**.
 
      O projeto xmlliterais agora contém dois arquivos: *Module1. vb* e *PurchaseOrderSchema. xsd*.
 

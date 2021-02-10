@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 18081db7537eab1d14f800e9457821679c0316b8
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: e33a4add7ebc6a3e323331731f3183d7a0dce26f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970277"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Como: criar um esquema XML a partir de um documento XML
 
@@ -39,6 +39,6 @@ Para obter mais informações sobre o mecanismo de inferência de esquema, consu
 
    Um documento de esquema XML é criado e aberto para cada namespace encontrado no arquivo XML. Cada esquema é aberto como um arquivo variado temporário. Os esquemas podem ser salvos no disco, adicionados ao seu projeto ou descartados.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Editor de XML](../xml-tools/xml-editor.md)

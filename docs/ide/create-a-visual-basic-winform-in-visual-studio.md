@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 ms.devlang: vb
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c7c3e34778a1bad3eb833c073c530db72b7a36
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7a5ee86c98a7e66ac43cbcfb1abbcab6bf970b08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809053"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970914"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Criar um aplicativo do Windows Forms no Visual Studio com o Visual Basic
 
@@ -100,7 +100,7 @@ Depois de selecionar o modelo de projeto do Visual Basic e nomear seu arquivo, o
 
      ![Clique na Caixa de Ferramentas para abrir a janela da Caixa de Ferramentas](../ide/media/vb-toolbox-toolwindow.png)
 
-     (Se você não encontrar a opção suspensa **Caixa de Ferramentas**, ela poderá ser aberta da barra de menus. Para fazer isso, **exiba**a  >  **caixa de ferramentas**. Ou pressione **Ctrl** + **ALT** + **X**.)
+     (Se você não encontrar a opção suspensa **Caixa de Ferramentas**, ela poderá ser aberta da barra de menus. Para fazer isso, **exiba** a  >  **caixa de ferramentas**. Ou pressione **Ctrl** + **ALT** + **X**.)
 
 1. Clique no ícone **Fixar** para encaixar a janela **Caixa de Ferramentas**.
 
@@ -162,7 +162,7 @@ Para saber mais, continue com o tutorial a seguir:
 > [!div class="nextstepaction"]
 > [Tutorial: Criar um visualizador de imagens](tutorial-1-create-a-picture-viewer.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [Mais tutoriais Visual Basic](../get-started/visual-basic/index.yml)
 * [Tutoriais do C#](../get-started/csharp/index.yml)
