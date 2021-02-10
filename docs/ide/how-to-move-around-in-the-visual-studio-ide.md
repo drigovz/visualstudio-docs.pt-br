@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b8f2e796ed122bc4dba0c1fb4cfca85c74065fb8
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 384a6252ef17709970f6e902dfdf83a157b0460a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597035"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968041"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Como mover-se no IDE do Visual Studio
 
@@ -76,7 +76,7 @@ O `Window.PreviousDocumentWindowNav` permite ir para o arquivo acessado mais rec
 
     \- ou –
 
-- Na barra de menus, escolha **Window**  >  **janelas** de janelas.
+- Na barra de menus, escolha   >  **janelas** de janelas.
 
 - Na lista, selecione o arquivo que você deseja exibir e, em seguida, escolha **Ativar**.
 
@@ -94,7 +94,7 @@ O **Navegador de IDE** também permite percorrer as janelas de ferramenta aberta
     > [!TIP]
     > Para inverter a ordem em que você percorre a lista **Janelas de Ferramentas Ativas**, mantenha pressionada as teclas **Shift**+**Alt** e pressione **F7**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Personalizar layouts de janela](../ide/customizing-window-layouts-in-visual-studio.md)
 - [Atalhos de teclado padrão](../ide/default-keyboard-shortcuts-in-visual-studio.md)

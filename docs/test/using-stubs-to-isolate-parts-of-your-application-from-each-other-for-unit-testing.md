@@ -12,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 874695bed7044c92f43c6d3031842d94372a2c33
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d5e4d8fb598434bfaa2a8a699c546cdc84febb0
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946222"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006435"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Use stubs para isolar partes de seu aplicativo umas das outras para teste de unidade
 
@@ -152,7 +152,7 @@ Para usar stubs, você deve primeiro gerar tipos de stub a partir das definiçõ
 1. Em **Gerenciador de soluções**, 
     - Para um projeto de .NET Framework mais antigo (estilo não SDK), expanda o nó **referências** do seu projeto de teste de unidade.
     ::: moniker range=">=vs-2019"
-    - Para um projeto no estilo SDK direcionado a .NET Framework ou .NET Core, expanda o nó **dependências** para localizar o assembly que você gostaria de falsificar em **assemblies**, **projetos** ou **pacotes**.
+    - Para um projeto no estilo SDK direcionado a .NET Framework, .NET Core ou .NET 5,0, expanda o nó **dependências** para localizar o assembly que você gostaria de falsificar em **assemblies**, **projetos** ou **pacotes**.
     ::: moniker-end
     - Se você estiver trabalhando em Visual Basic, selecione **Mostrar todos os arquivos** na barra de ferramentas **Gerenciador de soluções** para ver o nó **referências** .
 
@@ -463,6 +463,6 @@ O comportamento também pode ser modificado globalmente para todos os objetos st
 StubBehaviors.Current = BehavedBehaviors.DefaultValue;
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Isolar o código em teste com elementos fictícios da Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)

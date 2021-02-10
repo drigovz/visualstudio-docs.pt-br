@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 833d75d7dfd18e863664e6d3d17d65a4e08b4d77
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 81167b1e2e9f7959398b30b89796913520c48fac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994141"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967443"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Como: criar um Feed Atom para uma galeria privada
 Você pode criar um Feed Atom (RSS) para um local de intranet que contém extensões e adicionar o feed a **extensões e atualizações** como uma galeria privada. Saiba mais em [Galerias privadas](../extensibility/private-galleries.md).
@@ -74,5 +74,5 @@ Você pode criar um Feed Atom (RSS) para um local de intranet que contém extens
 
  Observe que as duas marcas de link se referem a capturas de tela na pasta gerada de imagens.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Galerias privadas](../extensibility/private-galleries.md)

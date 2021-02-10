@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba494af91d3d40720493b27e7381660ece3fba69
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: ba25698cd1efc6aebf030638e191f139a14f99a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862899"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967287"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Preparar extensões para implantação de Windows Installer
 Você não pode usar um pacote de Windows Installer (MSI) para implantar um pacote VSIX. No entanto, você pode extrair o conteúdo de um pacote VSIX para a implantação do MSI. Este documento mostra como preparar um projeto cuja saída padrão é um pacote VSIX para inclusão em um projeto de instalação.
@@ -56,6 +56,6 @@ Você não pode usar um pacote de Windows Installer (MSI) para implantar um paco
 
 5. Adicione os arquivos restantes ao seu projeto de instalação.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Implantação do instalador do Visual Studio](/previous-versions/2kt85ked(v=vs.120))
 - [Walkthrough: criar uma ação personalizada](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

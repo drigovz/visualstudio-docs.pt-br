@@ -19,32 +19,32 @@ helpviewer_keywords:
 ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aef78460197796767ec1429179e5598d0f12dbc
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7227fff5dd4c58e1bce81ef8cad5c32f854abf55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047205"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960319"
 ---
 # <a name="xsd-task"></a>tarefa XSD
 
-Encapsula a ferramenta de definição de esquema XML ( *xsd.exe* ), que gera arquivos de esquema ou classe de uma origem.
+Encapsula a ferramenta de definição de esquema XML (*xsd.exe*), que gera arquivos de esquema ou classe de uma origem.
 
 > [!NOTE]
 > A partir do Visual Studio 2017, o suporte a projetos em C++ para *xsd.exe* foi preterido. Você ainda pode usar as APIs **Microsoft.VisualC.CppCodeProvider** manualmente adicionando *CppCodeProvider.dll* ao cache de assembly global.
 
 ## <a name="parameters"></a>Parâmetros
 
- A tabela a seguir descreve os parâmetros da tarefa **XSD** .
+ A tabela a seguir descreve os parâmetros da tarefa **XSD**.
 
 - **AdditionalOptions**
 
      Parâmetro de **cadeia de caracteres** opcional.
 
-     Uma lista de opções, conforme especificado na linha de comando. Por exemplo,/ \<option1>  / \<option2>  / \<option#> . Use esse parâmetro para especificar opções não representadas por nenhum outro parâmetro da tarefa **XSD** .
+     Uma lista de opções, conforme especificado na linha de comando. Por exemplo,/ \<option1>  / \<option2>  / \<option#> . Use esse parâmetro para especificar opções não representadas por nenhum outro parâmetro da tarefa **XSD**.
 
 - **GenerateFromSchema**
 
@@ -90,6 +90,6 @@ Encapsula a ferramenta de definição de esquema XML ( *xsd.exe* ), que gera arq
 
      Especifica o diretório do log de rastreamento.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

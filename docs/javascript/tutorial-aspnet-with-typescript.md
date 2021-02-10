@@ -6,17 +6,17 @@ ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ef287616f5b214566a273817c229d9105bf253c5
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: c28355e4097dc014f4757788f175ea80850a3f63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98129478"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960423"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Tutorial: criar um aplicativo ASP.NET Core com TypeScript no Visual Studio
 
@@ -39,7 +39,7 @@ Neste tutorial, você aprenderá como:
 > * Criar um projeto ASP.NET Core
 > * Adicionar o pacote NuGet para o suporte do TypeScript
 > * Adicionar um código TypeScript
-> * Executar o aplicativo
+> * Execute o aplicativo
 > * Adicionar uma biblioteca de terceiros usando NPM
 
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -191,7 +191,7 @@ Neste tutorial, você começa com um projeto simples contendo código para um ap
 
    Os arquivos de mapa de origem são necessários para depuração.
 
-## <a name="run-the-application"></a>Execute o aplicativo
+## <a name="run-the-application"></a>Executar o aplicativo
 
 1. Pressione **F5** (**Depurar** > **Iniciar Depuração**) para executar o aplicativo.
 

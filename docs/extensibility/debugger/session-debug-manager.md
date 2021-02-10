@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2c51b1fd345789cabbb9735621626ab7c2db993
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d67716f78249bda5d316ffde175b80f4ef1c1e45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845278"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960774"
 ---
 # <a name="session-debug-manager"></a>Gerenciador de depuração de sessão
 O SDM (Gerenciador de depuração de sessão) gerencia qualquer número de mecanismos de depuração (DE) que estejam Depurando qualquer número de programas em vários processos em qualquer número de computadores. Além de ser um multiplexador de mecanismo de depuração, o SDM fornece uma exibição unificada da sessão de depuração para o IDE.
@@ -38,7 +38,7 @@ O SDM (Gerenciador de depuração de sessão) gerencia qualquer número de mecan
 
  O SDM não rastreia o programa atual, o thread ou o registro de ativação. As informações de processo, programa e thread são enviadas para o SDM em conjunto com eventos de depuração específicos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Mecanismo de depuração](../../extensibility/debugger/debug-engine.md)
 - [Componentes do depurador](../../extensibility/debugger/debugger-components.md)
 - [Contextos do depurador](../../extensibility/debugger/debugger-contexts.md)

@@ -12,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: e58a9c6477568843141a73ece002d1911280d7ab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e7e7672ca93c47370f746358203c37826a1b3ad3
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916455"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006418"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolar o código em teste com elementos fictícios da Microsoft
 
@@ -36,7 +36,7 @@ O Fakes vem em duas versões:
 - Visual Studio Enterprise
 - Um projeto do .NET Framework
 ::: moniker range=">=vs-2019"
-- O .NET Core e o projeto em estilo SDK oferecem suporte à visualização no Visual Studio 2019 atualização 6 e são habilitados por padrão na atualização 8. Para obter mais informações, consulte [falsificações da Microsoft para projetos do estilo SDK e do .NET Core](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+- O .NET Core, o .NET 5,0 e o projeto em estilo SDK oferecem suporte à visualização no Visual Studio 2019 atualização 6 e são habilitados por padrão na atualização 8. Para obter mais informações, consulte [falsificações da Microsoft para projetos do estilo SDK e do .NET Core](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
 ::: moniker-end
 
 > [!NOTE]
@@ -88,7 +88,7 @@ Para obter uma descrição mais detalhada, confira [Usar stubs para isolar parte
    1. Em **Gerenciador de soluções**, 
        - Para um projeto de .NET Framework mais antigo (estilo não SDK), expanda o nó **referências** do seu projeto de teste de unidade.
        ::: moniker range=">=vs-2019"
-       - Para um projeto no estilo SDK direcionado a .NET Framework ou .NET Core, expanda o nó **dependências** para localizar o assembly que você gostaria de falsificar em **assemblies**, **projetos** ou **pacotes**.
+       - Para um projeto no estilo SDK direcionado a .NET Framework, .NET Core ou .NET 5,0, expanda o nó **dependências** para localizar o assembly que você gostaria de falsificar em **assemblies**, **projetos** ou **pacotes**.
        ::: moniker-end
        - Se você estiver trabalhando em Visual Basic, selecione **Mostrar todos os arquivos** na barra de ferramentas **Gerenciador de soluções** para ver o nó **referências** .
    2. Selecione o assembly que contém as definições de classe para as quais você deseja criar shims. Por exemplo, se você quiser corrigir **DateTime**, selecione **System.dll**.
@@ -269,21 +269,21 @@ Como as falsificações da Microsoft exigem Visual Studio Enterprise, a geraçã
 </Project>
 ```
 
-Essa referência deve ser adicionada em projetos de estilo de SDK especificamente específicos (.NET Core e .NET Framework) porque mudamos para adicionar implicitamente referências de assembly ao projeto de teste. Se você seguir esse método, precisará garantir que o assembly de falsificações seja atualizado quando o assembly pai for alterado.
+Essa referência é necessária para ser adicionada em projetos de estilo de SDK especificamente específicos (.NET Core, .NET 5,0 e .NET Framework) porque mudamos para adicionar implicitamente referências de assembly ao seu projeto de teste. Se você seguir esse método, precisará garantir que o assembly de falsificações seja atualizado quando o assembly pai for alterado.
 ::: moniker-end
 
 ### <a name="running-microsoft-fakes-tests"></a>Executando testes de falsificações da Microsoft
 Desde que os assemblies de falsificações da Microsoft estejam presentes no `FakesAssemblies` diretório configurado (o padrão está sendo `$(ProjectDir)FakesAssemblies` ), você pode executar testes usando a [tarefa VSTest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true).
 
 ::: moniker range=">=vs-2019"
-Os testes distribuídos com a [tarefa VSTest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) projetos do .NET Core usando as falsificações da Microsoft exigem o Visual Studio 2019 atualização 9 Preview `20201020-06` e superior.
+Os testes distribuídos com os projetos .NET Core e .NET 5,0 da [tarefa VSTest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) usando falsificações da Microsoft exigem o Visual Studio 2019 atualização 9 Preview `20201020-06` e superior.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-or-net-core-projects"></a>Transição de seus projetos de teste de .NET Framework que usam falsificações da Microsoft para projetos do estilo SDK .NET Framework ou do .NET Core
-Você precisará de alterações mínimas em seu .NET Framework configurado para que os falsificadores da Microsoft façam a transição para o .NET Core. Os casos que você teria que considerar são:
+## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-net-core-or-net-50-projects"></a>Transição de seus projetos de teste de .NET Framework que usam falsificações da Microsoft para projetos do estilo SDK .NET Framework, .NET Core ou .NET 5,0
+Você precisará de alterações mínimas em seu .NET Framework configurado para que os falsificadores da Microsoft façam a transição para o .NET Core ou o .NET 5,0. Os casos que você teria que considerar são:
 - Se você estiver usando um modelo de projeto personalizado, precisará garantir que ele seja o estilo do SDK e seja compilado para uma estrutura de destino compatível.
-- Alguns tipos existem em diferentes assemblies no .NET Framework e no .NET Core (por exemplo, `System.DateTime` existe no `System` / `mscorlib` .NET Framework e no no `System.Runtime` .NET Core), e nesses cenários você precisa alterar o assembly que está sendo falsificado.
+- Alguns tipos existem em assemblies diferentes no .NET Framework e no .NET Core/. NET 5,0 (por exemplo, `System.DateTime` existe no `System` / `mscorlib` .NET Framework e no `System.Runtime` .NET Core e no .NET 5,0), e nesses cenários você precisa alterar o assembly que está sendo falsificado.
 - Se você tiver uma referência de assembly para um assembly de falsificações e o projeto de teste, você poderá ver um aviso de compilação sobre uma referência ausente semelhante a:
   ```
   (ResolveAssemblyReferences target) ->
@@ -299,12 +299,12 @@ Você precisará de alterações mínimas em seu .NET Framework configurado para
 - Os testes de falsificações da Microsoft podem ser executados com todos os pacotes NuGet Microsoft. TestPlatform disponíveis.
 - A cobertura de código tem suporte para projetos de teste que usam falsificações da Microsoft no Visual Studio Enterprise 2015 e superior.
 
-### <a name="microsoft-fakes-in-sdk-style-net-framework-and-net-core-projects"></a>Falsificações da Microsoft em .NET Framework de estilo SDK e projetos do .NET Core
+### <a name="microsoft-fakes-in-sdk-style-net-framework-net-core-and-net-50-projects"></a>Microsoft falsificações nos projetos .NET Framework, .NET Core e .NET 5,0 no estilo SDK
 - A geração de assembly de falsificações da Microsoft visualizada no Visual Studio Enterprise 2019 atualização 6 e é habilitada por padrão na atualização 8.
 - Os testes de falsificações da Microsoft para projetos direcionados .NET Framework podem ser executados com todos os pacotes NuGet Microsoft. TestPlatform disponíveis.
-- Os testes de falsificações da Microsoft para projetos direcionados ao .NET Core podem ser executados com pacotes NuGet Microsoft. TestPlatform com versões [16.8.0-Preview-20200921-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.8.0-preview-20200921-01) e superiores.
+- Os testes de falsificações da Microsoft para projetos direcionados para .NET Core e .NET 5,0 podem ser executados com pacotes NuGet Microsoft. TestPlatform com versões [16.9.0-Preview-20210106-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.9.0-preview-20210106-01) e superiores.
 - A cobertura de código tem suporte para projetos de teste destinados a .NET Framework usando falsificações da Microsoft no Visual Studio Enterprise versão 2015 e superior.
-- O suporte à cobertura de código para projetos de teste destinados ao .NET Core usando falsificações da Microsoft está em desenvolvimento.
+- O suporte à cobertura de código para projetos de teste destinados ao .NET Core e ao .NET 5,0 usando falsificações da Microsoft está disponível no Visual Studio 2019 atualização 9 e superior.
 
 
 ## <a name="in-this-section"></a>Nesta seção

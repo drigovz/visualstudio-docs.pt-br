@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 20247902-9446-4a1f-8253-5c7a17e4fe43
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d09f266f5bf51b870dbbbc0f80aa8282e91faa9
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 3adc3d648e73fc1f3596cc7a5c2cb2148a8f611b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046116"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960332"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 
@@ -33,7 +33,7 @@ Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-elem
 
  \<Project> \<UsingTask>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <UsingTask TaskName="TaskName"
@@ -111,7 +111,7 @@ O assembly que contém a tarefa personalizada é carregado quando o `Task` é us
               AssemblyFile="c:\myTasks\myTask.dll" />
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Como: configurar destinos e tarefas](../msbuild/how-to-configure-targets-and-tasks.md)   

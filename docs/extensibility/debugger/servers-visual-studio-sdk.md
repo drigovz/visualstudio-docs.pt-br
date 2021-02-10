@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 62236d64-7956-448c-9ac3-5528f3edac1d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9eaccebf874fa5fc0e7aaf63823547742215a568
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d60c214fce57f5958d8b30ca231c3e8a2bc05194
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845291"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960800"
 ---
 # <a name="servers-visual-studio-sdk"></a>Servidores (SDK do Visual Studio)
 Na arquitetura do depurador, um *servidor*:
@@ -29,7 +29,7 @@ Na arquitetura do depurador, um *servidor*:
 
 - É representado por uma interface [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) , que é implementada pelo Visual Studio (uma instância de um servidor para cada instância do Visual Studio em execução).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Portas](../../extensibility/debugger/ports.md)
 - [Fornecedores de porta](../../extensibility/debugger/port-suppliers.md)
 - [Conceitos do depurador](../../extensibility/debugger/debugger-concepts.md)

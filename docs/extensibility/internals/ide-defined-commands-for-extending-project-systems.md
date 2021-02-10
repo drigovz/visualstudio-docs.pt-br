@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0e33b8e9-16fa-4400-a941-e92d56120e7e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d5147f4e03b019b083613a77afe95b95e9e033a
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: 4a08d60a52ed970781ceafdb15d0d5c64440f0cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761160"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968067"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Comandos definidos pelo IDE para estender sistemas de projeto
 Quando você deseja estender sistemas de projeto, você pode usar comandos e grupos de comandos fornecidos pelo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
@@ -28,7 +28,7 @@ Quando você deseja estender sistemas de projeto, você pode usar comandos e gru
 ## <a name="command-menus"></a>Menus de comando
  A tabela a seguir mostra os menus de comando que são locais úteis para que você coloque comandos de alto nível que invocam um extensor de projeto.
 
-|Menu de comando|Descrição|
+|Menu de comando|Description|
 |------------------|-----------------|
 |IDM_VS_MENU_PROJECT|O menu de nível superior do **projeto** .|
 |IDM_VS_TOOL_PROJWIN|A barra de ferramentas **Gerenciador de soluções** .|
@@ -36,7 +36,7 @@ Quando você deseja estender sistemas de projeto, você pode usar comandos e gru
 ## <a name="shortcut-menus"></a>Menus de atalho
  A tabela a seguir mostra os menus de atalho que se aplicam quando um único nó é selecionado na **Gerenciador de soluções**, ou quando há várias seleções homogêneas no **Gerenciador de soluções**, que é quando todos os nós selecionados são do mesmo tipo.
 
-|Menu de atalho|Descrição|
+|Menu de atalho|Description|
 |-------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|Aplica-se quando o nó do projeto é selecionado.|
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|Aplica-se quando um arquivo é selecionado.|
@@ -47,7 +47,7 @@ Quando você deseja estender sistemas de projeto, você pode usar comandos e gru
 
  A tabela a seguir mostra os menus de atalho que se aplicam quando a seleção no **Gerenciador de soluções** abrange várias hierarquias,
 
-|Menu de atalho|Descrição|
+|Menu de atalho|Description|
 |-------------------|-----------------|
 |IDM_VS_CTXT_XPROJ_SLNPROJ|Aplica-se quando a seleção atual contém o nó da solução e os nós do projeto raiz.|
 |IDM_VS_CTXT_XPROJ_SLNITEM|Aplica-se quando a seleção atual contém o nó da solução e os itens do projeto.|
@@ -58,7 +58,7 @@ Quando você deseja estender sistemas de projeto, você pode usar comandos e gru
 ## <a name="command-groups"></a>Grupos de comandos
  A tabela a seguir mostra os grupos de comandos que você pode usar ao estender projetos e que você pode acessar por meio do <xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE> menu de atalho.
 
-|Grupo de comandos|Descrição|
+|Grupo de comandos|Description|
 |-------------------|-----------------|
 |IDG_VS_CTXT_PROJECT_BUILD|Comandos para compilar, recompilar e implantar o projeto.|
 |IDG_VS_CTXT_COMPILELINK|Comandos para compilar e vincular o projeto.|
@@ -71,7 +71,7 @@ Quando você deseja estender sistemas de projeto, você pode usar comandos e gru
 |IDG_VS_CTXT_PROJECT_TRANSFER|Comandos para operações de recortar, copiar e colar.|
 |IDG_VS_CTXT_PROJECT_PROPERTIES|Comandos que fornecem acesso à caixa de diálogo **Propriedades do projeto** .|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como os VSPackages adicionam elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Criar grupos reutilizáveis de botões](../../extensibility/creating-reusable-groups-of-buttons.md)

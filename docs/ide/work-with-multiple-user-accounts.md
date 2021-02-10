@@ -6,15 +6,15 @@ ms.date: 11/16/2020
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 071c6061417e26b45e5f9e67bc6ac1001bf08530
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 169415537460dae94ca844c426bb3770449161b5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480337"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960449"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabalhar com várias contas de usuário
 
@@ -101,7 +101,7 @@ Para entrar usando o fluxo de código do dispositivo:
 
 1. Abra a página [**Contas**](reference/accounts-environment-options-dialog-box.md) em **Ferramentas** > **Opções** > **Ambiente** e, em seguida, selecione **Habilitar fluxo de código do dispositivo ao adicionar ou reautenticar uma conta**. Escolha **OK** para fechar as páginas de opções.
 
-1. Escolha **File**  >  **configurações de conta** de arquivo para abrir a página de gerenciamento de conta.
+1. Escolha   >  **configurações de conta** de arquivo para abrir a página de gerenciamento de conta.
 
 1. Escolha **Adicionar uma conta** em **Todas as Contas**.
 
@@ -136,7 +136,7 @@ A partir da versão 16,8, você poderá adicionar as contas do GitHub e do GitHu
 Para obter instruções detalhadas, consulte [trabalhar com contas do GitHub no Visual Studio](work-with-github-accounts.md).
 ::: moniker-end
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Entrar no Visual Studio](signing-in-to-visual-studio.md)
 - [Entrar no Visual Studio para Mac](/visualstudio/mac/signing-in)

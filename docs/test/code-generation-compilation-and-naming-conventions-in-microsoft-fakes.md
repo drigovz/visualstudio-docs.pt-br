@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e3ebb1439c7b8eb958d8e7126ca0197462e89a09
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: ecba59e633bf6d456f16e6098f47719e052ac0de
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441627"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006359"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Geração de código, compilação e convenções de nomenclatura no Microsoft Fakes
 
@@ -25,7 +25,7 @@ Este artigo discute problemas e opções na compilação e geração de código 
 - Visual Studio Enterprise
 - Um projeto do .NET Framework
 ::: moniker range=">=vs-2019"
-- O .NET Core e o projeto em estilo SDK oferecem suporte à visualização no Visual Studio 2019 atualização 6 e são habilitados por padrão na atualização 8. Para obter mais informações, consulte [falsificações da Microsoft para projetos do estilo SDK e do .NET Core](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+- O .NET Core, o .NET 5,0 e o projeto em estilo SDK oferecem suporte à visualização no Visual Studio 2019 atualização 6 e são habilitados por padrão na atualização 8. Para obter mais informações, consulte [falsificações da Microsoft para projetos do estilo SDK e do .NET Core](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
 ::: moniker-end
 
 ## <a name="code-generation-and-compilation"></a>Geração e compilação de código
@@ -136,7 +136,7 @@ A estrutura do Fakes usa a mesma chave para assinar assemblies gerados, então v
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-Você pode especificar uma chave pública diferente para o assembly de falsificações, como uma chave que você criou para o assembly corrigido, especificando o caminho completo para o arquivo *. SNK* que contém a chave alternativa como o `KeyFile` valor do atributo no `Fakes` \\ `Compilation` elemento do arquivo *. falsificações* . Por exemplo: 
+Você pode especificar uma chave pública diferente para o assembly de falsificações, como uma chave que você criou para o assembly corrigido, especificando o caminho completo para o arquivo *. SNK* que contém a chave alternativa como o `KeyFile` valor do atributo no `Fakes` \\ `Compilation` elemento do arquivo *. falsificações* . Por exemplo:
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -276,6 +276,6 @@ As regras a seguir são aplicadas recursivamente:
 
 - Se um nome resultante corresponde a qualquer membro do tipo declarativo, um esquema de numeração é usado, acrescentando um contador de dois dígitos, começando por 01.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Isolamento de código em teste com falsificações da Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)
