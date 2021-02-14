@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0387542487b2c24baa129fbb0163dee0140cb413
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aa0512e5d29cb1b5c5a39715e34667803b752795
+ms.sourcegitcommit: 04954be0c4373f82f79181e1a5e7812be4d3e1f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860029"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496256"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Como gerar dados de métricas de código
 
@@ -279,7 +279,7 @@ Se você não quiser instalar o pacote NuGet, poderá gerar e usar o *Metrics.ex
 1. Clone o repositório [dotnet/Roslyn-analisadores](https://github.com/dotnet/roslyn-analyzers) .
 2. Abra Prompt de Comando do Desenvolvedor do Visual Studio como administrador.
 3. Na raiz do repositório **Roslyn-Analyzers** , execute o seguinte comando: `Restore.cmd`
-4. Altere o diretório para *src\Tools*.
+4. Altere o diretório para *src\Tools\Metrics*.
 5. Execute o seguinte comando para compilar o projeto de **métricas. csproj** :
 
    ```shell
@@ -333,7 +333,7 @@ A `LinesOfCode` métrica é mais precisa e confiável na nova ferramenta de mét
 
 Outras métricas, como `CyclomaticComplexity` e `MaintainabilityIndex` usam as mesmas fórmulas das versões anteriores do *Metrics.exe*, mas a nova ferramenta conta o número de `IOperations` (instruções de origem lógica) em vez de instruções de Il (linguagem intermediária). Os números serão ligeiramente diferentes daqueles gerados pelo IDE do Visual Studio e por versões anteriores do *Metrics.exe*.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Usar a janela de resultados de métricas de código](../code-quality/working-with-code-metrics-data.md)
 - [Valores de métricas de código](../code-quality/code-metrics-values.md)
