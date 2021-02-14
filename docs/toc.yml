@@ -190,8 +190,8 @@
           href: ide/creating-solutions-and-projects.md
         - name: Abrir um projeto de um repositório no Visual Studio 2017
           href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
-        - name: Abrir um projeto de um repositório no Visual Studio
-          href: get-started/tutorial-open-project-from-repo.md
+        - name: Abrir um projeto de um repositório no Visual Studio 2019
+          href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
         - name: 'Portar, migrar e atualizar projetos'
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
         - name: Gerenciar propriedades do projeto e da solução

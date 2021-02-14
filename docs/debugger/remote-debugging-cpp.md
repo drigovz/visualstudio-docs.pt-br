@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9915fdab1d4d0976a199a09a11c815e4966192a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d7723a87471b8f76b9496fe8e7b01e56d1440ee2
+ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934644"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100335255"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Depuração remota de um projeto C++ no Visual Studio
 Para depurar um aplicativo do Visual Studio em um computador diferente, instale e execute as ferramentas remotas no computador em que você implantará seu aplicativo, configure seu projeto para se conectar ao computador remoto do Visual Studio e, em seguida, implante e execute seu aplicativo.
@@ -68,7 +68,7 @@ O depurador remoto tem suporte no Windows 7 e em versões mais recentes (não de
 
 5. Faça as seguintes alterações nas propriedades:
 
-   |Configuração|Valor|
+   |Setting|Valor|
    |-|-|
    |Comando remoto|C:\remotetemp\mymfc.exe|
    |Diretório de trabalho|C:\remotetemp|
@@ -99,7 +99,7 @@ O depurador remoto tem suporte no Windows 7 e em versões mais recentes (não de
     > [!TIP]
     > Como alternativa, você pode implantar os arquivos como uma etapa separada. Na **Gerenciador de soluções,** clique com o botão direito do mouse no nó **mymfc** e escolha **implantar**.
 
-    Se você tiver arquivos que não são de código exigidos pelo aplicativo, poderá especificá-los em **arquivos adicionais para implantar** na página do **depurador remoto do Windows** .
+    Se você tiver arquivos que não são de código exigidos pelo aplicativo, poderá especificá-los em uma lista delimitada por ponto e vírgula em **arquivos adicionais para implantar** na página do **depurador remoto do Windows** .
 
     Como alternativa, você pode incluir os arquivos em seu projeto e definir a propriedade **Content** como **Sim** na página **Propriedades** de cada arquivo. Esses arquivos são copiados para o **diretório de implantação** especificado na página do **depurador remoto do Windows** . Você também pode alterar o **tipo de item** para **copiar o arquivo** e especificar propriedades adicionais ali se precisar que os arquivos sejam copiados para uma subpasta do **diretório de implantação**.
 
@@ -107,7 +107,7 @@ O depurador remoto tem suporte no Windows 7 e em versões mais recentes (não de
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Depurando no Visual Studio](../debugger/index.yml)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Configurar o Firewall do Windows para depuração remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
