@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 12/02/2020
 ms.topic: how-to
 description: Saiba mais sobre a assinatura de treinamento do Pluralsight incluída nas assinaturas do Visual Studio selecionadas.
-ms.openlocfilehash: 02ed0d2417317116182800980206a1fcc7fbfc16
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: c5503c2adad075bdf6f186567fc372705f1ab55f
+ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537975"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100542984"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Benefícios de treinamento do Pluralsight nas assinaturas do Visual Studio
 
@@ -47,7 +47,7 @@ A tabela a seguir fornece detalhes sobre quais benefícios de assinatura do Plur
 
 1. Insira a senha desejada no campo **nova senha** , insira-a novamente no campo **Confirmar senha** e clique em **salvar**.
 
-1. Pronto!  Agora você está pronto para começar a aprender com milhares de cursos do Pluralsight!
+1. É isso!  Agora você está pronto para começar a aprender com milhares de cursos do Pluralsight!
 
 ## <a name="status-of-your-pluralsight-subscription"></a>Status da sua assinatura do pluralsight
 Depois de ativar o benefício da Pluralsight, a aparência do bloco no portal de assinaturas do Visual Studio será alterada para ajudá-lo a acompanhar o status da sua assinatura.  
@@ -96,6 +96,9 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 ### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>P: Tenho uma assinatura do Visual Studio Enterprise, mas não vejo o bloco do Pluralsight na página Benefícios. Qual é o problema?
 R: Nem todas as assinaturas do Visual Studio Enterprise incluem os benefícios do Pluralsight.  Verifique a [tabela de qualificação](#eligibility) para ver se sua assinatura está qualificada.
 
+### <a name="q-can-i-use-the-pluralsight-benefit-more-than-once"></a>P: posso usar o benefício da Pluralsight mais de uma vez?  
+R: o benefício da Pluralsight nas assinaturas do Visual Studio selecionadas renova quando sua assinatura renova. Por exemplo, se você tiver uma assinatura anual que é renovada a cada ano, o benefício estará disponível para você a cada ano mediante a renovação. Se você tiver uma assinatura de vários anos, o benefício do Pluralsight estará disponível para você uma única vez durante a vigência da assinatura.  Se você renovar uma assinatura de vários anos, o benefício será disponibilizado novamente após a renovação.  Para localizar sua data de renovação, visite <https://my.visualstudio.com/subscriptions> e clique em *informações de suporte* e localize a data "válido até:". 
+
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>P: Tenho acesso a playlists ou canais de aprendizado personalizados?
 A: Sim. Como assinante do Visual Studio, você obtém acesso a funções em destaque, roteiros de aprendizado e canais personalizados (listas de reprodução) como parte do seu benefício de treinamento da Pluralsight. O conteúdo em destaque foi especialmente organizado pela Microsoft e Pluralsight e é voltado para o aprendizado em áreas-chave de interesse. Ative seu benefício da Pluralsight por meio de seu portal de assinatura do Visual Studio <https://my.visualstudio.com/benefits> para obter acesso a esse e a outros conteúdos no Home Page pluralsight.
 
@@ -110,7 +113,7 @@ R: ao final da sua assinatura gratuita do Pluralsight, você poderá optar por c
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

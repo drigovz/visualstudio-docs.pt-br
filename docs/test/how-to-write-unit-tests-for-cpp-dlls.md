@@ -2,19 +2,19 @@
 title: Escrever testes de unidade para DLLs C++
 description: Saiba mais sobre as várias maneiras de testar o código DLL, dependendo se a DLL exporta as funções que você deseja testar.
 ms.custom: SEO-VS-2020
-ms.date: 05/01/2019
+ms.date: 02/16/2021
 ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: b7eb7b7be524e20ca87c70c3f1f771f4f8a01141
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 06ad7bd437fca98c7be92a1e12ce31234d876b28
+ms.sourcegitcommit: cc8547eb211c43b67b8123d1211b80b5642e3b18
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328620"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100563424"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Escrever testes de unidade para DLLs em C++ no Visual Studio
 
@@ -28,13 +28,13 @@ Vá para o procedimento [Para fazer referência a funções exportadas do projet
 
 Vá para o procedimento [Para vincular os testes aos arquivos de biblioteca ou objeto](#objectRef).
 
-**Os testes de unidade chamam funções não membro que não são exportadas da DLL e a DLL pode ser compilada como uma biblioteca estática:** altere o projeto da DLL para que ele seja compilado em um arquivo *.lib*. Adicione um projeto de teste separado que referencia o projeto em teste.
+**Os testes de unidade chamam funções não-membro que não são exportadas da dll e a dll pode ser criada como uma biblioteca estática:** Altere o projeto de DLL para que ele seja compilado em um arquivo *. lib* . Adicione um projeto de teste separado que referencia o projeto em teste.
 
 Essa abordagem tem a vantagem de permitir que seus testes usem membros não exportados, mas mantenham os testes em um projeto separado.
 
 Vá para o procedimento [Para alterar a DLL para uma biblioteca estática](#staticLink).
 
-**Os testes de unidade devem chamar funções não membro que não são exportadas e o código precisa ser criado como uma DLL (biblioteca de vínculo dinâmico):** Adicionar testes de unidade no mesmo projeto que o código do produto.
+**Os testes de unidade devem chamar funções que não são de membro que não são exportadas e o código deve ser compilado como uma dll (biblioteca de vínculo dinâmico):** Adicione testes de unidade no mesmo projeto que o código do produto.
 
 Vá para o procedimento [Para adicionar testes de unidade no mesmo projeto](#sameProject).
 
@@ -42,7 +42,7 @@ Vá para o procedimento [Para adicionar testes de unidade no mesmo projeto](#sam
 
 ### <a name="to-change-the-dll-to-a-static-library"></a><a name="staticLink"></a> Para alterar uma DLL para uma biblioteca estática
 
-- Se os testes devem usar membros que não são exportados pelo projeto de DLL e este é criado como uma biblioteca dinâmica, considere a possibilidade de convertê-la em uma biblioteca estática.
+- Se seus testes precisarem usar membros que não são exportados pelo projeto de DLL e o projeto em teste for criado como uma biblioteca dinâmica, considere a possibilidade de convertê-lo em uma biblioteca estática.
 
   1. No **Gerenciador de Soluções**, no menu de atalho do projeto em teste, selecione **Propriedades**. A janela **Propriedades** do projeto é aberta.
 
@@ -86,7 +86,7 @@ Vá para o procedimento [Para adicionar testes de unidade no mesmo projeto](#sam
 
 ### <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="objectRef"></a>Para vincular os testes aos arquivos de biblioteca ou objeto
 
-- Se a DLL não exporta as funções que você deseja testar, é possível adicionar o arquivo de saída *.obj* ou *.lib* às dependências do projeto de teste.
+- Se a DLL não exportar as funções que você deseja testar, você poderá adicionar o arquivo output *. obj* ou *. lib* às dependências do projeto de teste.
 
   1. Criar um projeto de teste de unidade nativo.
 
@@ -102,17 +102,17 @@ Vá para o procedimento [Para adicionar testes de unidade no mesmo projeto](#sam
 
       ::: moniker-end
 
-  2. No **Gerenciador de soluções**, no menu de atalho do projeto de teste, escolha **Propriedades**.
+  1. No **Gerenciador de soluções**, no menu de atalho do projeto de teste, escolha **Propriedades**.
 
-  3. Escolha **configurações Propriedades** do  >  **vinculador**  >  **entrada**  >  **dependências adicionais**.
+  1. Escolha **configurações Propriedades** do  >  **vinculador**  >  **entrada**  >  **dependências adicionais**.
 
-       Escolha **Editar** e adicione os nomes dos arquivos **.obj** ou **.lib**. Não use os nomes de caminho completo.
+       Escolha **Editar** e adicione os nomes dos arquivos **.obj** ou **.lib**. Não use os nomes de caminho completos.
 
-  4. Escolha **Propriedades de configuração**  >  **vinculador**  >  **geral**  >  **diretórios de biblioteca adicionais**.
+  1. Escolha **Propriedades de configuração**  >  **vinculador**  >  **geral**  >  **diretórios de biblioteca adicionais**.
 
        Escolha **Editar** e adicione o caminho do diretório dos arquivos **.obj** ou **.lib**. O caminho fica geralmente dentro da pasta de compilação do projeto em teste.
 
-  5. Escolha **Propriedades de configuração**  >  **diretórios vc + +**  >  **incluir diretórios**.
+  1. Escolha **Propriedades de configuração**  >  **diretórios vc + +**  >  **incluir diretórios**.
 
        Escolha **Editar** e adicione o diretório de cabeçalho do projeto que está sendo testado.
 
@@ -124,18 +124,20 @@ Vá para o procedimento [Para adicionar testes de unidade no mesmo projeto](#sam
 
    1. No **Gerenciador de Soluções**, no menu de atalho do projeto em teste, escolha **Propriedades**. A janela **Propriedades** do projeto é aberta.
 
-   2. Escolha **Propriedades de configuração**  >  **diretórios vc + +**.
+   1. Escolha **Propriedades de configuração**  >  **diretórios vc + +**.
 
-   3. Edite os diretórios Incluir e Biblioteca:
+   1. Edite os diretórios Incluir e Biblioteca:
 
        |Diretório|Propriedade|
        |-|-|
-       |**Diretórios de inclusão** | **$(VCInstallDir)UnitTest\include;$(IncludePath)**|
-       |**Diretórios de Biblioteca** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
+       |**Diretórios de inclusão** | **$(VCInstallDir)Auxiliary\VS\UnitTest\include** |
+       |**Diretórios de Biblioteca** | **$(VCInstallDir)Auxiliary\VS\UnitTest\lib** |
 
-2. Adicione um arquivo de teste de unidade C++:
+1. Adicione um arquivo de teste de unidade C++:
 
-   - No **Gerenciador de Soluções**, no menu de atalho do projeto, escolha **Adicionar** > **Novo Item** > **Teste de Unidade C++**.
+   1. Clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** e escolha **Adicionar**  >  **novo item**.
+
+   1. Na caixa de diálogo **Adicionar novo item** , selecione  **arquivo C++ (. cpp)**, dê a ele um nome apropriado e, em seguida, escolha **Adicionar**.
 
    Acesse [Escrever os testes de unidade](#addTests).
 
@@ -143,7 +145,7 @@ Vá para o procedimento [Para adicionar testes de unidade no mesmo projeto](#sam
 
 1. Em cada arquivo de código de teste de unidade, adicione uma instrução `#include` aos cabeçalhos do projeto em teste.
 
-2. Adicione métodos e classes de teste aos arquivos de código do teste de unidade. Por exemplo:
+1. Adicione métodos e classes de teste aos arquivos de código do teste de unidade. Por exemplo:
 
     ```cpp
     #include "stdafx.h"
@@ -167,9 +169,9 @@ Vá para o procedimento [Para adicionar testes de unidade no mesmo projeto](#sam
 
 1. No menu **Teste**, escolha **Windows** > **Gerenciador de Testes**.
 
-1. Caso todos os testes não estejam visíveis na janela, crie o projeto de teste clicando com o botão direito no mouse no nó do **Gerenciador de Soluções** e escolhendo **Criar** ou **Recompilar**.
+1. Se nem todos os seus testes estiverem visíveis na janela, compile o projeto de teste: clique com o botão direito do mouse em seu nó em **Gerenciador de soluções** e escolha **Compilar** ou **Recompilar**.
 
-1. No **Gerenciador de testes**, escolha **executar tudo** ou selecione os testes específicos que você deseja executar. Clique com o botão direito do mouse para ver outras opções, incluindo a execução em modo de depuração com pontos de interrupção habilitados.
+1. No **Gerenciador de testes**, escolha **executar tudo** ou selecione os testes específicos que você deseja executar. Clique com o botão direito do mouse em um teste para obter outras opções, por exemplo, para executá-lo no modo de depuração com pontos de interrupção habilitados.
 
 ## <a name="see-also"></a>Confira também
 

@@ -2,7 +2,7 @@
 title: 'Tutorial: abrir um projeto de um repositório no Visual Studio 2017'
 description: Saiba como abrir um projeto em um repositório do git ou DevOps do Azure usando o Visual Studio 2017.
 ms.custom: get-started
-ms.date: 01/25/2021
+ms.date: 02/15/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,12 +15,12 @@ ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2017
-ms.openlocfilehash: 97bfe7178d3bd744d1e441f8428cd38e8241b721
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 01aca95bde7a20f746d4faece4090eac60b3849e
+ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951921"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100542971"
 ---
 # <a name="tutorial-open-a-project-from-a-repo-in-visual-studio-2017"></a>Tutorial: abrir um projeto de um repositório no Visual Studio 2017
 
@@ -60,6 +60,9 @@ Neste tutorial, você usará o Visual Studio 2017 para se conectar a um reposit�
 Exiba a animação a seguir para verificar o trabalho que você concluiu a seção anterior.
 
    ![Animação da abertura de um projeto em um repositório GitHub usando o Visual Studio](./media/open-project-from-github.gif)
+
+> [!NOTE]
+> Para obter informações específicas para o Visual Studio 2019, consulte a página [abrir um projeto de um repositório no visual studio 2019](tutorial-open-project-from-repo-visual-studio-2019.md) .
 
 ## <a name="open-a-project-from-an-azure-devops-repo-by-using-visual-studio-2017"></a>Abrir um projeto de um repositório DevOps do Azure usando o Visual Studio 2017
 
@@ -108,6 +111,7 @@ Se você estiver pronto para codificar com o Visual Studio 2017, aprofunde-se em
 
 ## <a name="see-also"></a>Confira também
 
+- [Abrir um projeto de um repositório no Visual Studio 2019](tutorial-open-project-from-repo-visual-studio-2019.md)
+- [Nova experiência de git no Visual Studio 2019](../ide/git-with-visual-studio.md)
 - [Azure DevOps Services: introdução ao Azure Repos e ao Visual Studio](/azure/devops/repos/git/gitquickstart/)
 - [Microsoft Learn: introdução ao Azure DevOps](/learn/modules/get-started-with-devops/)
-- [Nova experiência de git no Visual Studio 2019](../ide/git-with-visual-studio.md?view=vs-2019&preserve-view=true)

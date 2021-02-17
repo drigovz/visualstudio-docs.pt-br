@@ -5,17 +5,17 @@ ms.topic: include
 ms.assetid: 7e5d8886-538c-4e29-9c4c-8989cf4e09dd
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 8/14/2020
+ms.date: 02/15/2021
 user.type: subscriber
 tags: benefit, pluralsight
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 1ab283581d029d69b507271863420da71257d967
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: 6f47bbe5f01130eeca81dd75e9f9c33af02be006
+ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99541000"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100551707"
 ---
 ## <a name="im-unable-to-activate-my-pluralsight-benefit"></a>Não consigo ativar meu benefício do pluralsight.
 
@@ -29,5 +29,6 @@ Dependendo da assinatura do Visual Studio ou da associação do programa que voc
 1. Depois de ativar o benefício da Pluralsight, a aparência do bloco no portal de assinaturas do Visual Studio será alterada para ajudá-lo a acompanhar o status da sua assinatura. Talvez seja necessário atualizar o portal para ver isso. 
 
 ## <a name="more-information-about-the-pluralsight-benefit"></a>Mais informações sobre o benefício da Pluralsight
+O benefício da Pluralsight em assinaturas selecionadas do Visual Studio renova quando sua assinatura renova. Por exemplo, se você tiver uma assinatura anual que é renovada a cada ano, o benefício estará disponível para você a cada ano mediante a renovação. Se você tiver uma assinatura de vários anos, o benefício do Pluralsight estará disponível para você uma única vez durante a vigência da assinatura.  Se você renovar uma assinatura de vários anos, o benefício será disponibilizado novamente após a renovação.  Para localizar sua data de renovação, visite <https://my.visualstudio.com/subscriptions> e clique em *informações de suporte* e localize a data "válido até:". 
 
 Leia mais [informações sobre ativação, qualificação e perguntas frequentes sobre o benefício da Pluralsight](https://docs.microsoft.com/visualstudio/subscriptions/vs-pluralsight).  

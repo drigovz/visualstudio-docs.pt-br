@@ -5,33 +5,19 @@ ms.topic: include
 ms.assetid: 9109bf1e-f725-439d-a870-13741e0dbc90
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 10/13/2020
+ms.date: 02/15/2021
 ms.faqid: q3_2
-ms.openlocfilehash: 3c13e82af88030a33d5bedc6b8e9d8f518b8c88e
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
-ms.translationtype: HT
+ms.openlocfilehash: 2f68d8fcbdf9d4f92980f164181ccc2c6483a265
+ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560755"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100552271"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>Como fazer para usar meus benefícios?
 
-Assim como os tipos de benefícios, os métodos usados para ativá-los e usá-los variam. Por exemplo, muitos de nossos benefícios são fornecidos por parceiros, e os processos para configurar contas, instalar software e usar recursos online variam muito.
+Os tipos de benefícios variam.  Então, os métodos para ativá-los e usá-los. Por exemplo, muitos de nossos benefícios são fornecidos por parceiros.  Os processos de configuração de contas, instalação de software e uso de recursos online variam muito.
 
-Para cada benefício disponível no Portal do Assinante, fornecemos artigos que incluem informações como quais assinaturas incluem esses benefícios, além das etapas usadas para ativá-los.
+Para cada benefício disponível no portal do Assinante, fornecemos informações como quais assinaturas os incluem e as etapas para ativar os benefícios.
 
 Confira nossa documentação para [saber mais](https://docs.microsoft.com/visualstudio/subscriptions/whats-new-in-subscriptions) (clique em 'Assinaturas' no painel de navegação à esquerda e escolha 'Benefícios').
-
-As assinaturas do Visual Studio com o GitHub Enterprise são gerenciadas em duas partes:  
-- A assinatura do Visual Studio (Enterprise ou Professional)  
-- GitHub Enterprise  
-
-Quando você receber a atribuição de uma assinatura do Visual Studio com o GitHub Enterprise, receberá um email avisando que o administrador de Assinaturas do Visual Studio atribuiu uma assinatura a você. Nesse ponto, você poderá visualizar os benefícios da assinatura disponíveis em <https://my.visualstudio.com/benefits>. Isso inclui o benefício do GitHub Enterprise. 
-
-O GitHub Enterprise é gerenciado por um administrador do GitHub separadamente das assinaturas do Visual Studio. Quando sua empresa tiver configurado uma conta do GitHub Enterprise, você receberá um email do GitHub notificando que sua assinatura do Visual Studio foi vinculada e que o bloco de benefícios será atualizado. A configuração dessa conta pode demorar um pouco e depende da conclusão do processo de instalação pela sua empresa. Depois que os assinantes receberem esse email, eles poderão entrar em contato com o administrador da organização do GitHub para solicitarem um convite para sua organização e/ou repositório. 
-
-Quando um convite for enviado pelo administrador da organização do GitHub, você receberá um email do GitHub e o bloco de benefícios será atualizado novamente. 
-
-Depois de aceitar o convite da organização do GitHub, a aparência do bloco de benefícios em <https://my.visualstudio.com/benefits> será alterada de "Pendente" para "Ativado" e você poderá começar a usar o GitHub Enterprise. 
-
-[Leia mais](https://docs.microsoft.com/visualstudio/subscriptions/access-github) detalhes sobre o processo de configuração do GitHub Enterprise. 

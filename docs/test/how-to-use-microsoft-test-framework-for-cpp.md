@@ -1,19 +1,19 @@
 ---
 title: Usar a estrutura de teste de unidade da Microsoft para C++
 description: Use a estrutura de testes de unidade da Microsoft para C++ para criar testes de unidade para seu código C++.
-ms.date: 01/08/2020
+ms.date: 02/16/2021
 ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: a9393fd248f4e6520c261d405bc624a75d8cf69f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a76c6ac83956cd1e6514ff958278d0b4cbcf0d2f
+ms.sourcegitcommit: cc8547eb211c43b67b8123d1211b80b5642e3b18
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287110"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100563433"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usar o Microsoft Unit Testing Framework para C/C++ no Visual Studio
 
@@ -33,7 +33,7 @@ Em alguns casos, por exemplo, ao testar funções não exportadas em uma DLL, ta
 
    1. Na caixa de diálogo páginas de propriedades, selecione **Propriedades de configuração**  >  **diretórios vc + +**.
 
-   1. Clique na seta para baixo nas linhas a seguir e escolha **\<Edit>** . Adicione estes caminhos:
+   1. Selecione a seta para baixo nas linhas a seguir e escolha **\<Edit>** . Adicione estes caminhos:
 
       | Diretório | Propriedade |
       |-| - |
@@ -42,25 +42,27 @@ Em alguns casos, por exemplo, ao testar funções não exportadas em uma DLL, ta
 
 1. Adicione um arquivo de teste de unidade C++:
 
-   - No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do projeto e escolha **Adicionar** > **Novo Item** > **Arquivo C++**.
+   1. Clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** e escolha **Adicionar**  >  **novo item**.
+
+   1. Na caixa de diálogo **Adicionar novo item** , selecione  **arquivo C++ (. cpp)**, dê a ele um nome apropriado e, em seguida, escolha **Adicionar**.
 
 ## <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="object_files"></a>Para vincular os testes aos arquivos de biblioteca ou objeto
 
-Se o código em teste não exportar as funções que você deseja testar, você poderá adicionar o arquivo output **. obj** ou **. lib** às dependências do projeto de teste. Modifique as propriedades do projeto de teste para incluir os cabeçalhos e os arquivos de biblioteca ou de objeto que são necessários para o teste de unidade.
+Se o código em teste não exportar as funções que você deseja testar, você poderá adicionar o arquivo output *. obj* ou *. lib* às dependências do projeto de teste. Modifique as propriedades do projeto de teste para incluir os cabeçalhos e os arquivos de biblioteca ou de objeto que são necessários para o teste de unidade.
 
 1. No Gerenciador de Soluções, no menu de atalho do projeto de teste, selecione **Propriedades**. A janela de propriedades do projeto aparece.
 
-1. Selecione a página de entrada do vinculador de **Propriedades de configuração**  >  **Linker**  >  **Input** e, em seguida, selecione **dependências adicionais**.
+1. Selecione a página de entrada do vinculador de **Propriedades de configuração**  >    >   e, em seguida, selecione **dependências adicionais**.
 
-   Escolha **Editar**e adicione os nomes dos arquivos **.obj** ou **.lib**. Não use os nomes de caminho completos.
+   Escolha **Editar** e adicione os nomes dos arquivos *.obj* ou *.lib*. Não use os nomes de caminho completos.
 
-1. Selecione a página Geral do vinculador de **Propriedades de configuração**  >  **Linker**  >  **General** e, em seguida, selecione **diretórios de biblioteca adicionais**.
+1. Selecione a página Geral do vinculador de **Propriedades de configuração**  >    >   e, em seguida, selecione **diretórios de biblioteca adicionais**.
 
-   Escolha **Editar**e adicione o caminho do diretório dos arquivos **.obj** ou **.lib**. O caminho fica geralmente dentro da pasta de compilação do projeto em teste.
+   Escolha **Editar** e adicione o caminho do diretório dos arquivos *.obj* ou *.lib*. O caminho fica geralmente dentro da pasta de compilação do projeto em teste.
 
 1. Selecione a página de diretórios **Propriedades de configuração**  >  **vc + +** e, em seguida, selecione **incluir diretórios**.
 
-   Escolha **Editar**e adicione o diretório de cabeçalho do projeto que está sendo testado.
+   Escolha **Editar** e adicione o diretório de cabeçalho do projeto que está sendo testado.
 
 ## <a name="write-the-tests"></a>Gravar os testes
 
@@ -76,7 +78,7 @@ Use os métodos estáticos na classe [Assert](microsoft-visualstudio-testtools-c
 
 1. Se nem todos os testes estiverem visíveis na janela, crie o projeto de teste clicando com o botão direito do mouse em seu nó em **Gerenciador de soluções** e escolhendo **Compilar** ou **Recompilar**.
 
-1. No **Gerenciador de testes**, escolha **executar tudo**ou selecione os testes específicos que você deseja executar. Clique com o botão direito do mouse para ver outras opções, incluindo a execução em modo de depuração com pontos de interrupção habilitados.
+1. No **Gerenciador de testes**, escolha **executar tudo** ou selecione os testes específicos que você deseja executar. Clique com o botão direito do mouse para ver outras opções, incluindo a execução em modo de depuração com pontos de interrupção habilitados.
 
 1. Na **janela de saída** escolha **testes** na lista suspensa para exibir mensagens gravadas pela `Logger` classe:
 
@@ -108,7 +110,7 @@ TEST_METHOD(Method1)
 
 ### <a name="c-trait-attribute-macros"></a>Macros de atributo de característica do C++
 
-As seguintes características predefinidas são encontradas em `CppUnitTest.h`. Para obter mais informações, consulte [a estrutura de testes de unidade da Microsoft para referência de API do C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
+As seguintes características predefinidas são encontradas em *`CppUnitTest.h`* . Para obter mais informações, consulte [a estrutura de testes de unidade da Microsoft para referência de API do C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
 |Macro|Descrição|
 |-|-----------------|
